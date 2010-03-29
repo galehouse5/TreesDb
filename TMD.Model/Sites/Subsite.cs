@@ -5,7 +5,11 @@ using System.Text;
 
 namespace TMD.Model.Sites
 {
-    class Subsite
+    public class Subsite : IEntity
     {
+        public Guid Id { get; set; }
+        public DateTime Created { get; set; }
+        public string Code { get; set; }
+        public string Name { get; set; }
     }
 }

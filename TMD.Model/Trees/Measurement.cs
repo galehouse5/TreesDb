@@ -7,19 +7,25 @@ namespace TMD.Model.Trees
 {
     public class Measurement : IEntity
     {
+        private Measurement()
+        {
+            GpsDatum = EGpsDatum.WGS84NAD83;
+        }
+
         public Guid Id { get; set; }
         public DateTime Created { get; set; }
         public string CommonName { get; set; }
         public string Genus { get; set; }
         public string Species { get; set; }
         public string Name { get; set; }
-        public int Code { get; internal set; }
+        public string Code { get; internal set; }
         public string MeasurersTreeID { get; set; }
         public Coordinates Coordinates { get; set; }
         public Elevation Elevation { get; set; }
         public EPositionMeasurementType PositionMeasurementType { get; set; }
-        public GPSDatum GPSDatum { get; private set; }
+        public EGpsDatum GpsDatum { get; private set; }
         public Height Height { get; set; }
+        public HeightMeasurements HeightMeasurements { get; set; }
         public string HeightMeasurementType { get; set; }
         public string LaserBrand { get; set; }
         public string ClinometerBrand { get; set; }

@@ -19,8 +19,9 @@ namespace TMD.Model.Trees
         public Coordinates Coordinates { get; set; }
         public Elevation Elevation { get; set; }
         public EPositionMeasurementType PositionMeasurementType { get; set; }
-        public GPSDatum GPSDatum { get; private set; }
+        public EGpsDatum GpsDatum { get; private set; }
         public Height Height { get; set; }
+        public HeightMeasurements HeightMeasurements { get; set; }
         public string HeightMeasurementType { get; set; }
         public string LaserBrand { get; set; }
         public string ClinometerBrand { get; set; }

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TMD.Model.Imports
+namespace TMD.Model
 {
-    class Import
+    public interface IUnitOfWork
     {
+        void PersistAll();
+        void Clean();
     }
 }

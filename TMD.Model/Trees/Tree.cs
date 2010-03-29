@@ -14,14 +14,15 @@ namespace TMD.Model.Trees
         public string Genus { get; private set; }
         public string Species { get; private set; }
         public string Name { get; private set; }
-        public int Code { get; private set; }
-        public int MeasurementCode { get; private set; }
+        public string Code { get; private set; }
+        public string MeasurementCode { get; private set; }
         public string MeasurersTreeID { get; private set; }
         public Coordinates Coordinates { get; private set; }
         public Elevation Elevation { get; private set; }
         public EPositionMeasurementType PositionMeasurementType { get; private set; }
-        public GPSDatum GPSDatum { get; private set; }
+        public EGpsDatum GpsDatum { get; private set; }
         public Height Height { get; private set; }
+        public HeightMeasurements HeightMeasurements { get; private set; }
         public string HeightMeasurementType { get; private set; }
         public string LaserBrand { get; private set; }
         public string ClinometerBrand { get; private set; }
@@ -57,9 +58,9 @@ namespace TMD.Model.Trees
         public int Measurers { get; private set; }
         public IList<Measurement> Measurements { get; private set; }
         public IList<Correction> Corrections { get; private set; }
-        public bool IsDeleted { get; private set; }
-        public DateTime Deleted { get; private set; }
-        public User Deletor { get; private set; }
+        public bool IsDeleted { get; internal set; }
+        public DateTime Deleted { get; internal set; }
+        public User Deletor { get; internal set; }
 
         public void RecordMeasurement(Measurement measurement)
         {
@@ -75,7 +76,7 @@ namespace TMD.Model.Trees
             this.Coordinates = (Coordinates)measurement.Coordinates.Clone();
             this.Elevation = (Elevation)measurement.Elevation.Clone();
             this.PositionMeasurementType = measurement.PositionMeasurementType;
-            this.GPSDatum = (GPSDatum)measurement.GPSDatum.Clone();
+            this.GpsDatum = measurement.GpsDatum;
             this.Height = (Height)measurement.Height.Clone();
             this.HeightMeasurementType = measurement.HeightMeasurementType;
             this.LaserBrand = measurement.LaserBrand;

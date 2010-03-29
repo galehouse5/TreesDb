@@ -53,4 +53,12 @@ namespace TMD.Model.Trees
         FloodPlain,
         Swampy
     }
+
+    public enum EGpsDatum
+    {
+        WGS84NAD83,
+        WGS60,
+        WGS66,
+        WGS72
+    }
 }
