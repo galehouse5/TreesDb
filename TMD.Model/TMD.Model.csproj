@@ -61,7 +61,6 @@
     <Compile Include="Sites\Subsite.cs" />
     <Compile Include="Trees\Enums.cs" />
     <Compile Include="IEntity.cs" />
-    <Compile Include="ValueObjects\Height.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Trees\Measurement.cs" />
     <Compile Include="Trees\Correction.cs" />

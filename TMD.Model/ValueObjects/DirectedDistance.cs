@@ -136,7 +136,7 @@ namespace TMD.Model
             List<string> errors = new List<string>();
             if (InputFormat == EInputFormat.Invalid)
             {
-                errors.Add("Distance correction must be in f.f', f' i'', i'', m.mm m, or y.yy yd format.");
+                errors.Add("Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.");
             }
             return errors;
         }

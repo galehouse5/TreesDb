@@ -21,21 +21,21 @@ namespace TMD.Model.Trees
         public Elevation Elevation { get; private set; }
         public EPositionMeasurementType PositionMeasurementType { get; private set; }
         public EGpsDatum GpsDatum { get; private set; }
-        public Height Height { get; private set; }
+        public Distance Height { get; private set; }
         public HeightMeasurements HeightMeasurements { get; private set; }
         public string HeightMeasurementType { get; private set; }
         public string LaserBrand { get; private set; }
         public string ClinometerBrand { get; private set; }
         public string HeightComments { get; private set; }
-        public Height GirthBreatHeight { get; private set; }
-        public Height GirthMeasurementHeight { get; private set; }
-        public Height GirthRootCollarHeight { get; private set; }
+        public Distance GirthBreatHeight { get; private set; }
+        public Distance GirthMeasurementHeight { get; private set; }
+        public Distance GirthRootCollarHeight { get; private set; }
         public string GirthComments { get; private set; }
-        public Height MaximumCrownSpread { get; private set; }
-        public Height MaximumLimbLength { get; private set; }
-        public Height AverageCrownSpread { get; private set; }
+        public Distance MaximumCrownSpread { get; private set; }
+        public Distance MaximumLimbLength { get; private set; }
+        public Distance AverageCrownSpread { get; private set; }
         public string CrownSpreadMeasurementMethod { get; private set; }
-        public Height BaseCrownHeight { get; private set; }
+        public Distance BaseCrownHeight { get; private set; }
         public Volume CrownVolume { get; private set; }
         public string CrownVolumeCalculationMethod { get; private set; }
         public string CrownComments { get; private set; }
@@ -77,20 +77,20 @@ namespace TMD.Model.Trees
             this.Elevation = (Elevation)measurement.Elevation.Clone();
             this.PositionMeasurementType = measurement.PositionMeasurementType;
             this.GpsDatum = measurement.GpsDatum;
-            this.Height = (Height)measurement.Height.Clone();
+            this.Height = (Distance)measurement.Height.Clone();
             this.HeightMeasurementType = measurement.HeightMeasurementType;
             this.LaserBrand = measurement.LaserBrand;
             this.ClinometerBrand = measurement.ClinometerBrand;
             this.HeightComments = measurement.HeightComments;
-            this.GirthBreatHeight = (Height)measurement.GirthBreatHeight.Clone();
-            this.GirthMeasurementHeight = (Height)measurement.GirthMeasurementHeight.Clone();
-            this.GirthRootCollarHeight = (Height)measurement.GirthRootCollarHeight.Clone();
+            this.GirthBreatHeight = (Distance)measurement.GirthBreatHeight.Clone();
+            this.GirthMeasurementHeight = (Distance)measurement.GirthMeasurementHeight.Clone();
+            this.GirthRootCollarHeight = (Distance)measurement.GirthRootCollarHeight.Clone();
             this.GirthComments = measurement.GirthComments;
-            this.MaximumCrownSpread = (Height)measurement.MaximumCrownSpread.Clone();
-            this.MaximumLimbLength = (Height)measurement.MaximumLimbLength.Clone();
-            this.AverageCrownSpread = (Height)measurement.AverageCrownSpread.Clone();
+            this.MaximumCrownSpread = (Distance)measurement.MaximumCrownSpread.Clone();
+            this.MaximumLimbLength = (Distance)measurement.MaximumLimbLength.Clone();
+            this.AverageCrownSpread = (Distance)measurement.AverageCrownSpread.Clone();
             this.CrownSpreadMeasurementMethod = measurement.CrownSpreadMeasurementMethod;
-            this.BaseCrownHeight = (Height)measurement.BaseCrownHeight.Clone();
+            this.BaseCrownHeight = (Distance)measurement.BaseCrownHeight.Clone();
             this.CrownVolume = (Volume)measurement.CrownVolume.Clone();
             this.CrownVolumeCalculationMethod = measurement.CrownVolumeCalculationMethod;
             this.CrownComments = measurement.CrownComments;
@@ -123,20 +123,20 @@ namespace TMD.Model.Trees
             this.Coordinates = (Coordinates)correction.Coordinates.Clone();
             this.Elevation = (Elevation)correction.Elevation.Clone();
             this.PositionMeasurementType = correction.PositionMeasurementType;
-            this.Height = (Height)correction.Height.Clone();
+            this.Height = (Distance)correction.Height.Clone();
             this.HeightMeasurementType = correction.HeightMeasurementType;
             this.LaserBrand = correction.LaserBrand;
             this.ClinometerBrand = correction.ClinometerBrand;
             this.HeightComments = correction.HeightComments;
-            this.GirthBreatHeight = (Height)correction.GirthBreatHeight.Clone();
-            this.GirthMeasurementHeight = (Height)correction.GirthMeasurementHeight.Clone();
-            this.GirthRootCollarHeight = (Height)correction.GirthRootCollarHeight.Clone();
+            this.GirthBreatHeight = (Distance)correction.GirthBreatHeight.Clone();
+            this.GirthMeasurementHeight = (Distance)correction.GirthMeasurementHeight.Clone();
+            this.GirthRootCollarHeight = (Distance)correction.GirthRootCollarHeight.Clone();
             this.GirthComments = correction.GirthComments;
-            this.MaximumCrownSpread = (Height)correction.MaximumCrownSpread.Clone();
-            this.MaximumLimbLength = (Height)correction.MaximumLimbLength.Clone();
-            this.AverageCrownSpread = (Height)correction.AverageCrownSpread.Clone();
+            this.MaximumCrownSpread = (Distance)correction.MaximumCrownSpread.Clone();
+            this.MaximumLimbLength = (Distance)correction.MaximumLimbLength.Clone();
+            this.AverageCrownSpread = (Distance)correction.AverageCrownSpread.Clone();
             this.CrownSpreadMeasurementMethod = correction.CrownSpreadMeasurementMethod;
-            this.BaseCrownHeight = (Height)correction.BaseCrownHeight.Clone();
+            this.BaseCrownHeight = (Distance)correction.BaseCrownHeight.Clone();
             this.CrownVolume = (Volume)correction.CrownVolume.Clone();
             this.CrownVolumeCalculationMethod = correction.CrownVolumeCalculationMethod;
             this.CrownComments = correction.CrownComments;

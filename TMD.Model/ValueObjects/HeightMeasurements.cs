@@ -25,13 +25,13 @@ namespace TMD.Model
         public Distance DistanceBottom { get; private set; }
         public Angle AngleBottom { get; private set; }
         public DirectedDistance VerticalOffset { get; private set; }
-        public Height Height { get; private set; }
+        public Distance Height { get; private set; }
         public Distance Offset { get; private set; }
 
-        public static Height CalculateHeight(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
+        public static Distance CalculateHeight(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
         {
             float height = (float)(Math.Sin(angleTop.Degrees) * (double)distanceTop.Feet + Math.Sin(angleBottom.Degrees) * (double)distanceBottom.Feet + (double)verticalOffset.Feet);
-            return Height.Create(height);
+            return Distance.Create(height);
         }
 
         public static Distance CalculateOffset(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)

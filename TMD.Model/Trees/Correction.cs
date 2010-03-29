@@ -20,21 +20,21 @@ namespace TMD.Model.Trees
         public Elevation Elevation { get; set; }
         public EPositionMeasurementType PositionMeasurementType { get; set; }
         public EGpsDatum GpsDatum { get; private set; }
-        public Height Height { get; set; }
+        public Distance Height { get; set; }
         public HeightMeasurements HeightMeasurements { get; set; }
         public string HeightMeasurementType { get; set; }
         public string LaserBrand { get; set; }
         public string ClinometerBrand { get; set; }
         public string HeightComments { get; set; }
-        public Height GirthBreatHeight { get; set; }
-        public Height GirthMeasurementHeight { get; set; }
-        public Height GirthRootCollarHeight { get; set; }
+        public Distance GirthBreatHeight { get; set; }
+        public Distance GirthMeasurementHeight { get; set; }
+        public Distance GirthRootCollarHeight { get; set; }
         public string GirthComments { get; set; }
-        public Height MaximumCrownSpread { get; set; }
-        public Height MaximumLimbLength { get; set; }
-        public Height AverageCrownSpread { get; set; }
+        public Distance MaximumCrownSpread { get; set; }
+        public Distance MaximumLimbLength { get; set; }
+        public Distance AverageCrownSpread { get; set; }
         public string CrownSpreadMeasurementMethod { get; set; }
-        public Height BaseCrownHeight { get; set; }
+        public Distance BaseCrownHeight { get; set; }
         public Volume CrownVolume { get; set; }
         public string CrownVolumeCalculationMethod { get; set; }
         public string CrownComments { get; set; }

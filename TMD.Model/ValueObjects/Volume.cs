@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace TMD.Model
 {
@@ -121,5 +122,37 @@ namespace TMD.Model
         }
 
         #endregion
+
+        private static Regex DecimalCubicFeetFormat = new Regex("^\\s*(?<cubicFeet>[0-9]+(\\.[0-9]+)?)((\\s*cu ft)|(\\s*ft^3)|(\\s*cubic feet)|(\\s*cubic ft))\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalCubicMetersFormat = new Regex("^\\s*(?<cubicMeters>[0-9]+(\\.[0-9]+)?)((\\s*cu m)|(\\s*m^3)|(\\s*cubic meters)|(\\s*cubic m))\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalCubicYardsFormat = new Regex("^\\s*(?<cubicYards>[0-9]+(\\.[0-9]+)?)((\\s*cu yds)|(\\s*yds^3)|(\\s*cubic yards)|(\\s*cubic yds))\\s*$", RegexOptions.Compiled);
+
+        public static Volume Create(string s)
+        {
+            Match match;
+            float cubicFeet;
+            EInputFormat inputFormat;
+            if ((match = DecimalCubicFeetFormat.Match(s)).Success)
+            {
+                cubicFeet = float.Parse(match.Groups["cubicFeet"].Value);
+                inputFormat = EInputFormat.DecimalCubicFeet;
+            }
+            else if ((match = DecimalCubicMetersFormat.Match(s)).Success)
+            {
+                cubicFeet = float.Parse(match.Groups["cubicMeters"].Value) / 0.0283168466f;
+                inputFormat = EInputFormat.DecimalCubicMeters;
+            }
+            else if ((match = DecimalCubicYardsFormat.Match(s)).Success)
+            {
+                cubicFeet = float.Parse(match.Groups["cubicYards"].Value) / 0.037037037f;
+                inputFormat = EInputFormat.DecimalCubicYards;
+            }
+            else
+            {
+                cubicFeet = 0f;
+                inputFormat = EInputFormat.Invalid;
+            }
+            return new Volume(cubicFeet, inputFormat);
+        }
     }
 }
