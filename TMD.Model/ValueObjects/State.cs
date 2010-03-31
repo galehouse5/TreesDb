@@ -6,22 +6,22 @@ using TMD.Common;
 
 namespace TMD.Model
 {
-    public class State : ICloneable
+    public class State : ICloneable, IIsValid, IIsNull
     {
         private string m_Code;
-        private string m_Name;
-        private bool m_LoadOnPropertySet;
+        private bool m_IsKnown;
 
         private State()
         {
-            m_LoadOnPropertySet = true;
+            m_IsKnown = false;
         }
 
-        private State(string code, string name, CoordinateBounds coordinateBounds)
+        private State(string code, string name, CoordinateBounds coordinateBounds, bool isKnown)
         {
-            m_LoadOnPropertySet = false;
-            this.Code = code;
+            m_Code = code;
             this.Name = name;
+            this.CoordinateBounds = (CoordinateBounds)coordinateBounds.Clone();
+            m_IsKnown = isKnown;
         }
 
         public string Code
@@ -30,59 +30,36 @@ namespace TMD.Model
             private set
             {
                 m_Code = value.Trim().ToUpper();
-                if (m_LoadOnPropertySet)
+                foreach (State s in KnownStates)
                 {
-                    m_LoadOnPropertySet = false;
-                    foreach (State s in States)
+                    if (s.Code == m_Code)
                     {
-                        if (s.Code == m_Code)
-                        {
-                            Name = s.Name;
-                            CoordinateBounds = (CoordinateBounds)s.CoordinateBounds.Clone();
-                            return;
-                        }
+                        this.Name = s.Name;
+                        this.CoordinateBounds = (CoordinateBounds)s.CoordinateBounds.Clone();
+                        m_IsKnown = true;
                     }
-                    m_LoadOnPropertySet = true;
-                    throw new ApplicationException(string.Format("Unknown state '{0}'.", value));
                 }
-
             }
         }
 
-        public string Name
-        {
-            get { return m_Name; }
-            private set
-            {
-                m_Name = value.Trim().ToTitleCase();
-                if (m_LoadOnPropertySet)
-                {
-                    m_LoadOnPropertySet = false;
-                    foreach (State s in States)
-                    {
-                        if (s.Name == m_Name)
-                        {
-                            Code = s.Code;
-                            CoordinateBounds = (CoordinateBounds)s.CoordinateBounds.Clone();
-                            return;
-                        }
-                    }
-                    m_LoadOnPropertySet = true;
-                    throw new ApplicationException(string.Format("Unknown state '{0}'.", value));
-                }
-
-            }
-        }
-
+        public string Name { get; private set; }
         public CoordinateBounds CoordinateBounds { get; private set; }
 
         public static bool operator ==(State s1, State s2)
         {
+            if ((object)s1 == null || (object)s2 == null)
+            {
+                return (object)s1 == null && (object)s2 == null;
+            }
             return s1.Code == s2.Code;
         }
 
         public static bool operator !=(State s1, State s2)
         {
+            if ((object)s1 == null || (object)s2 == null)
+            {
+                return !((object)s1 == null && (object)s2 == null);
+            }
             return s1.Code != s2.Code;
         }
 
@@ -97,46 +74,78 @@ namespace TMD.Model
             return Code.GetHashCode();
         }
 
-        private static List<State> s_States;
-        private static List<State> States
+        private static List<State> s_KnownStates;
+        public static IList<State> KnownStates
         {
             get
             {
-                if (s_States == null)
+                if (s_KnownStates == null)
                 {
-                    s_States = new List<State>();
+                    s_KnownStates = new List<State>();
                     foreach (StateElement se in ModelRegistry.ModelSettings.States)
                     {
                         State s = new State(se.Code.Trim().ToUpper(),
                             se.Name.Trim().ToTitleCase(),
-                            CoordinateBounds.Create(Coordinates.Create(se.NECoordinates),
-                            Coordinates.Create(se.SWCoordinates)));
-                        s_States.Add(s);
+                            CoordinateBounds.Create(Coordinates.Create(se.NECoordinates), Coordinates.Create(se.SWCoordinates)),
+                            true);
+                        s_KnownStates.Add(s);
                     }
                 }
-                return s_States;
+                return s_KnownStates.AsReadOnly();
             }
         }
 
-        public static State Create(string s)
+        public static State Create(string code)
         {
-            string code = s.Trim().ToUpper();
-            string name = s.Trim().ToTitleCase();
-            foreach (State state in States)
+            code = code.Trim().ToUpper();
+            foreach (State s in KnownStates)
             {
-                if (state.Code == code || state.Name == name)
+                if (s.Code == code)
                 {
-                    return (State)state.Clone();
+                    return (State)s.Clone();
                 }
             }
-            throw new ApplicationException(string.Format("Unknown state '{0}'.", s));
+            return new State(code, string.Empty, CoordinateBounds.Null(), false);
+        }
+
+        public static State Null()
+        {
+            return new State(string.Empty, string.Empty, CoordinateBounds.Null(), true);
         }
 
         #region ICloneable Members
 
         public object Clone()
         {
-            return new State(Code, Name, (CoordinateBounds)CoordinateBounds.Clone());
+            return new State(Code, Name, (CoordinateBounds)CoordinateBounds.Clone(), m_IsKnown);
+        }
+
+        #endregion
+
+        #region IIsValid Members
+
+        public bool IsValid
+        {
+            get { return m_IsKnown; }
+        }
+
+        public IList<string> GetValidationErrors()
+        {
+            List<string> errors = new List<string>();
+            if (!m_IsKnown)
+            {
+                errors.Add(string.Format("Unknown country code '{0}'.", Code));
+            }
+            return errors;
+        }
+
+        #endregion
+
+        #region IIsNull Members
+
+        public bool IsNull
+        {
+            get { return string.IsNullOrWhiteSpace(Code); }
         }
 
         #endregion

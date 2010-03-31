@@ -44,11 +44,19 @@ namespace TMD.Model
 
         public static bool operator ==(Angle a1, Angle a2)
         {
+            if ((object)a1 == null || (object)a2 == null)
+            {
+                return (object)a1 == null && (object)a2 == null;
+            }
             return a1.Degrees == a2.Degrees;
         }
 
         public static bool operator !=(Angle a1, Angle a2)
         {
+            if ((object)a1 == null || (object)a2 == null)
+            {
+                return !((object)a1 == null && (object)a2 == null);
+            }
             return a1.Degrees != a2.Degrees;
         }
 

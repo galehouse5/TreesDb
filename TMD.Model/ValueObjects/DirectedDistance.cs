@@ -69,11 +69,19 @@ namespace TMD.Model
 
         public static bool operator ==(DirectedDistance d1, DirectedDistance d2)
         {
+            if ((object)d1 == null || (object)d2 == null)
+            {
+                return (object)d1 == null && (object)d2 == null;
+            }
             return d1.Feet == d2.Feet;
         }
 
         public static bool operator !=(DirectedDistance d1, DirectedDistance d2)
         {
+            if ((object)d1 == null || (object)d2 == null)
+            {
+                return !((object)d1 == null && (object)d2 == null);
+            }
             return d1.Feet != d2.Feet;
         }
 

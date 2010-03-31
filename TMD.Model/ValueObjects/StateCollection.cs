@@ -23,6 +23,7 @@ namespace TMD.Model
     {
         public const string NamePropertyName = "name";
         public const string CodePropertyName = "code";
+        public const string CountryCodePropertyName = "countryCode";
         public const string NECoordinatesPropertyName = "ne";
         public const string SWCoordinatesPropertyName = "sw";
 
@@ -38,6 +39,13 @@ namespace TMD.Model
         {
             get { return (string)this[CodePropertyName]; }
             set { this[CodePropertyName] = value; }
+        }
+
+        [ConfigurationProperty(CountryCodePropertyName, IsRequired = true)]
+        public string CountryCode
+        {
+            get { return (string)this[CountryCodePropertyName]; }
+            set { this[CountryCodePropertyName] = value; }
         }
 
         [ConfigurationProperty(NECoordinatesPropertyName, IsRequired = true)]

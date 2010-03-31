@@ -42,11 +42,19 @@ namespace TMD.Model
 
         public static bool operator ==(Volume v1, Volume v2)
         {
+            if ((object)v1 == null || (object)v2 == null)
+            {
+                return (object)v1 == null && (object)v2 == null;
+            }
             return v1.CubicFeet == v2.CubicFeet;
         }
 
         public static bool operator !=(Volume v1, Volume v2)
         {
+            if ((object)v1 == null || (object)v2 == null)
+            {
+                return (object)v1 == null && (object)v2 == null;
+            }
             return v1.CubicFeet != v2.CubicFeet;
         }
 

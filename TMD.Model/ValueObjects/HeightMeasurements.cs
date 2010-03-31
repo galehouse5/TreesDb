@@ -42,6 +42,10 @@ namespace TMD.Model
 
         public static bool operator ==(HeightMeasurements hm1, HeightMeasurements hm2)
         {
+            if ((object)hm1 == null || (object)hm2 == null)
+            {
+                return (object)hm1 == null && (object)hm2 == null;
+            }
             return hm1.DistanceTop == hm2.DistanceTop
                 && hm1.AngleTop == hm2.AngleTop
                 && hm1.DistanceBottom == hm2.DistanceBottom
@@ -51,6 +55,10 @@ namespace TMD.Model
 
         public static bool operator !=(HeightMeasurements hm1, HeightMeasurements hm2)
         {
+            if ((object)hm1 == null || (object)hm2 == null)
+            {
+                return !((object)hm1 == null && (object)hm2 == null);
+            }
             return hm1.DistanceTop != hm2.DistanceTop
                 || hm1.AngleTop != hm2.AngleTop
                 || hm1.DistanceBottom != hm2.DistanceBottom

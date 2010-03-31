@@ -22,12 +22,20 @@ namespace TMD.Model
 
         public static bool operator ==(Coordinates c1, Coordinates c2)
         {
+            if ((object)c1 == null || (object)c2 == null)
+            {
+                return (object)c1 == null && (object)c2 == null;
+            }
             return c1.Latitude == c2.Latitude
                 && c1.Longitude == c2.Longitude;
         }
 
         public static bool operator !=(Coordinates c1, Coordinates c2)
         {
+            if ((object)c1 == null || (object)c2 == null)
+            {
+                return !((object)c1 == null && (object)c2 == null);
+            }
             return c1.Latitude != c2.Latitude
                 || c1.Longitude != c2.Longitude;
         }
@@ -68,6 +76,11 @@ namespace TMD.Model
                 longitude = Longitude.Create(0f);
             }
             return new Coordinates(latitude, longitude);
+        }
+
+        public static Coordinates Null()
+        {
+            return new Coordinates(Latitude.Null(), Longitude.Null());
         }
 
         #region ICloneable Members

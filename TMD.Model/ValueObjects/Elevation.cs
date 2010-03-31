@@ -42,11 +42,19 @@ namespace TMD.Model
 
         public static bool operator ==(Elevation e1, Elevation e2)
         {
+            if ((object)e1 == null || (object)e2 == null)
+            {
+                return (object)e1 == null && (object)e2 == null;
+            }
             return e1.Feet == e2.Feet;
         }
 
         public static bool operator !=(Elevation e1, Elevation e2)
         {
+            if ((object)e1 == null || (object)e2 == null)
+            {
+                return !((object)e1 == null && (object)e2 == null);
+            }
             return e1.Feet != e2.Feet;
         }
 

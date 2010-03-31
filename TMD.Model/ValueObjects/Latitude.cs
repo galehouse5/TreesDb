@@ -23,37 +23,37 @@ namespace TMD.Model
 
         private Latitude(float degrees)
         {
-            this.Degrees = degrees;
+            this.TotalDegrees = degrees;
             this.InputFormat = EInputFormat.DegreesDecimalMinutes;
         }
 
         private Latitude(float degrees, EInputFormat inputFormat)
         {
-            this.Degrees = degrees;
+            this.TotalDegrees = degrees;
             this.InputFormat = inputFormat;
         }
 
-        public float Degrees { get; private set; }
+        public float TotalDegrees { get; private set; }
         public EInputFormat InputFormat { get; private set; }
 
         public int Sign 
         {
-            get { return Math.Sign(Degrees); }
+            get { return Math.Sign(TotalDegrees); }
         }
 
-        public float AbsoluteDegrees 
+        public float AbsoluteTotalDegrees 
         {
-            get { return Math.Abs(Degrees); }
+            get { return Math.Abs(TotalDegrees); }
         }
 
         public int AbsoluteWholeDegrees
         {
-            get { return (int)Math.Floor(AbsoluteDegrees); }
+            get { return (int)Math.Floor(AbsoluteTotalDegrees); }
         }
 
         public float AbsoluteMinutes
         {
-            get { return 60f * (AbsoluteDegrees - AbsoluteWholeDegrees); }
+            get { return 60f * (AbsoluteTotalDegrees - AbsoluteWholeDegrees); }
         }
 
         public int AbsoluteWholeMinutes
@@ -78,7 +78,7 @@ namespace TMD.Model
                     s = string.Format("{0:00} {1:00.000}", AbsoluteWholeDegrees * Sign, AbsoluteMinutes);
                     break;
                 case EInputFormat.DecimalDegrees :
-                    s = string.Format("{0:00.00000}", AbsoluteDegrees);
+                    s = string.Format("{0:00.00000}", AbsoluteTotalDegrees);
                     break;
                 default :
                     s = string.Empty;
@@ -89,12 +89,20 @@ namespace TMD.Model
 
         public static bool operator ==(Latitude l1, Latitude l2)
         {
-            return l1.Degrees == l2.Degrees;
+            if ((object)l1 == null || (object)l2 == null)
+            {
+                return (object)l1 == null && (object)l2 == null;
+            }
+            return l1.TotalDegrees == l2.TotalDegrees;
         }
 
         public static bool operator !=(Latitude l1, Latitude l2)
         {
-            return l1.Degrees != l2.Degrees;
+            if ((object)l1 == null || (object)l2 == null)
+            {
+                return !((object)l1 == null && (object)l2 == null);
+            }
+            return l1.TotalDegrees != l2.TotalDegrees;
         }
 
         public override bool Equals(object obj)
@@ -105,15 +113,14 @@ namespace TMD.Model
 
         public override int GetHashCode()
         {
-            return Degrees.GetHashCode();
+            return TotalDegrees.GetHashCode();
         }
-
 
         #region ICloneable Members
 
         public object Clone()
         {
-            return new Latitude(Degrees, InputFormat);
+            return new Latitude(TotalDegrees, InputFormat);
         }
 
         #endregion
@@ -122,7 +129,7 @@ namespace TMD.Model
 
         public bool IsValid
         {
-            get { return InputFormat != EInputFormat.Invalid && AbsoluteDegrees <= 90; }
+            get { return InputFormat != EInputFormat.Invalid && AbsoluteTotalDegrees <= 90; }
         }
 
         public IList<string> GetValidationErrors()
@@ -132,7 +139,7 @@ namespace TMD.Model
             {
                 errors.Add("Latitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format.");
             }
-            if (AbsoluteDegrees > 90)
+            if (AbsoluteTotalDegrees > 90)
             {
                 errors.Add("Latitude must be in the range of -90 to +90 degrees.");
             }
@@ -145,7 +152,7 @@ namespace TMD.Model
 
         public bool IsNull
         {
-            get { return Degrees == 0f; }
+            get { return TotalDegrees == 0f || TotalDegrees == float.MaxValue || TotalDegrees == float.MinValue; }
         }
 
         #endregion
@@ -197,6 +204,11 @@ namespace TMD.Model
         public static Latitude Create(float latitude)
         {
             return new Latitude(latitude);
+        }
+
+        public static Latitude Null()
+        {
+            return new Latitude(0f);
         }
     }
 }

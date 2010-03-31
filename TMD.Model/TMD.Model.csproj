@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="IIsConflicting.cs" />
     <Compile Include="ModelRegistry.cs" />
     <Compile Include="ModelSettings.cs" />
+    <Compile Include="Sites\ISiteRepository.cs" />
     <Compile Include="Trees\ITreeRepository.cs" />
     <Compile Include="Trips\SubsiteVisit.cs" />
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />
@@ -51,6 +54,7 @@
     <Compile Include="ValueObjects\Angle.cs" />
     <Compile Include="ValueObjects\CoordinateBounds.cs" />
     <Compile Include="ValueObjects\Coordinates.cs" />
+    <Compile Include="ValueObjects\CoordinateDistance.cs" />
     <Compile Include="ValueObjects\Country.cs" />
     <Compile Include="ValueObjects\CountryCollection.cs" />
     <Compile Include="ValueObjects\Distance.cs" />

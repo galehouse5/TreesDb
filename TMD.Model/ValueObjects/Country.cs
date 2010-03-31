@@ -6,22 +6,22 @@ using TMD.Common;
 
 namespace TMD.Model
 {
-    public class Country : ICloneable
+    public class Country : ICloneable, IIsValid, IIsNull
     {
         private string m_Code;
-        private string m_Name;
-        private bool m_LoadOnPropertySet;
+        private bool m_IsKnown;
 
         private Country() 
         {
-            m_LoadOnPropertySet = true;
+            m_IsKnown = false;
         }
 
-        private Country(string code, string name, CoordinateBounds coordinateBounds)
+        private Country(string code, string name, CoordinateBounds coordinateBounds, bool isKnown)
         {
-            m_LoadOnPropertySet = false;
-            this.Code = code;
+            m_Code = code;
             this.Name = name;
+            this.CoordinateBounds = coordinateBounds;
+            m_IsKnown = isKnown;
         }
 
         public string Code 
@@ -30,59 +30,36 @@ namespace TMD.Model
             private set
             {
                 m_Code = value.Trim().ToUpper();
-                if (m_LoadOnPropertySet)
+                foreach (Country c in KnownCountries)
                 {
-                    m_LoadOnPropertySet = false;
-                    foreach (Country c in Countries)
+                    if (c.Code == m_Code)
                     {
-                        if (c.Code == m_Code)
-                        {
-                            Name = c.Name;
-                            CoordinateBounds = (CoordinateBounds)c.CoordinateBounds.Clone();
-                            return;
-                        }
+                        m_IsKnown = true;
+                        this.Name = c.Name;
+                        this.CoordinateBounds = (CoordinateBounds)c.CoordinateBounds.Clone();
                     }
-                    m_LoadOnPropertySet = true;
-                    throw new ApplicationException(string.Format("Unknown country '{0}'.", value));
-                }
-                
+                }                
             }
         }
 
-        public string Name 
-        {
-            get { return m_Name; }
-            private set
-            {
-                m_Name = value.Trim().ToTitleCase();
-                if (m_LoadOnPropertySet)
-                {
-                    m_LoadOnPropertySet = false;
-                    foreach (Country c in Countries)
-                    {
-                        if (c.Name == m_Name)
-                        {
-                            Code = c.Code;
-                            CoordinateBounds = (CoordinateBounds)c.CoordinateBounds.Clone();
-                            return;
-                        }
-                    }
-                    m_LoadOnPropertySet = true;
-                    throw new ApplicationException(string.Format("Unknown country '{0}'.", value));
-                }
-
-            }
-        }
-
+        public string Name { get; private set; }
         public CoordinateBounds CoordinateBounds { get; private set; }
 
         public static bool operator ==(Country c1, Country c2)
         {
+            if ((object)c1 == null || (object)c2 == null)
+            {
+                return (object)c1 == null && (object)c2 == null;
+            }
             return c1.Code == c2.Code;
         }
 
         public static bool operator !=(Country c1, Country c2)
         {
+            if ((object)c1 == null || (object)c2 == null)
+            {
+                return !((object)c1 == null && (object)c2 == null);
+            }
             return c1.Code != c2.Code;
         }
 
@@ -97,46 +74,79 @@ namespace TMD.Model
             return Code.GetHashCode();
         }
 
-        private static List<Country> s_Countries;
-        private static List<Country> Countries
+        private static List<Country> s_KnownCountries;
+        private static IList<Country> KnownCountries
         {
             get
             {
-                if (s_Countries == null)
+                if (s_KnownCountries == null)
                 {
-                    s_Countries = new List<Country>();
+                    s_KnownCountries = new List<Country>();
                     foreach (CountryElement ce in ModelRegistry.ModelSettings.Countries)
                     {
-                        Country c = new Country(ce.Code.Trim().ToUpper(),
+                        Country c = new Country(
+                            ce.Code.Trim().ToUpper(),
                             ce.Name.Trim().ToTitleCase(),
-                            CoordinateBounds.Create(Coordinates.Create(ce.NECoordinates), 
-                            Coordinates.Create(ce.SWCoordinates)));
-                        s_Countries.Add(c);
+                            CoordinateBounds.Create(Coordinates.Create(ce.NECoordinates), Coordinates.Create(ce.SWCoordinates)),
+                            true);
+                        s_KnownCountries.Add(c);
                     }
                 }
-                return s_Countries;
+                return s_KnownCountries.AsReadOnly();
             }
         }
 
-        public static Country Create(string s)
+        public static Country Create(string code)
         {
-            string code = s.Trim().ToUpper();
-            string name = s.Trim().ToTitleCase();
-            foreach (Country c in Countries)
+            code = code.Trim().ToUpper();
+            foreach (Country c in KnownCountries)
             {
-                if (c.Code == code || c.Name == name)
+                if (c.Code == code)
                 {
                     return (Country)c.Clone();
                 }
             }
-            throw new ApplicationException(string.Format("Unknown country '{0}'.", s));
+            return new Country(code, string.Empty, CoordinateBounds.Null(), false);
+        }
+
+        public static Country Null()
+        {
+            return new Country(string.Empty, string.Empty, CoordinateBounds.Null(), true);
         }
 
         #region ICloneable Members
 
         public object Clone()
         {
-            return new Country(Code, Name, (CoordinateBounds)CoordinateBounds.Clone());
+            return new Country(Code, Name, (CoordinateBounds)CoordinateBounds.Clone(), m_IsKnown);
+        }
+
+        #endregion
+
+        #region IIsValid Members
+
+        public bool IsValid
+        {
+            get { return m_IsKnown; }
+        }
+
+        public IList<string> GetValidationErrors()
+        {
+            List<string> errors = new List<string>();
+            if (!m_IsKnown)
+            {
+                errors.Add(string.Format("Unknown country code '{0}'.", Code));
+            }
+            return errors;
+        }
+
+        #endregion
+
+        #region IIsNull Members
+
+        public bool IsNull
+        {
+            get { return string.IsNullOrWhiteSpace(Code); }
         }
 
         #endregion

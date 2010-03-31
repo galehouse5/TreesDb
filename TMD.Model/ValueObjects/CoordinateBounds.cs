@@ -14,8 +14,8 @@ namespace TMD.Model
             this.NE = ne;
             this.SW = sw;
             this.Center = Coordinates.Create(
-                (ne.Latitude.Degrees - sw.Latitude.Degrees) / 2f + sw.Latitude.Degrees,
-                (ne.Longitude.Degrees - sw.Longitude.Degrees) / 2f + sw.Longitude.Degrees);
+                (ne.Latitude.TotalDegrees - sw.Latitude.TotalDegrees) / 2f + sw.Latitude.TotalDegrees,
+                (ne.Longitude.TotalDegrees - sw.Longitude.TotalDegrees) / 2f + sw.Longitude.TotalDegrees);
         }
 
         public Coordinates NE { get; private set; }
@@ -24,12 +24,20 @@ namespace TMD.Model
 
         public static bool operator ==(CoordinateBounds cb1, CoordinateBounds cb2)
         {
+            if ((object)cb1 == null || (object)cb2 == null)
+            {
+                return (object)cb1 == null && (object)cb2 == null;
+            }
             return cb1.NE == cb2.NE
                 && cb1.SW == cb2.SW;
         }
 
         public static bool operator !=(CoordinateBounds cb1, CoordinateBounds cb2)
         {
+            if ((object)cb1 == null || (object)cb2 == null)
+            {
+                return !((object)cb1 == null && (object)cb2 == null);
+            }
             return cb1.NE != cb2.NE
                 || cb1.SW != cb2.SW;
         }
@@ -56,12 +64,20 @@ namespace TMD.Model
             float maxLatitude = float.MinValue, maxLongitude = float.MinValue, minLatitude = float.MaxValue, minLongitude = float.MaxValue;
             foreach (Coordinates coords in coordsEnumeration)
             {
-                maxLatitude = Math.Max(maxLatitude, coords.Latitude.Degrees);
-                maxLongitude = Math.Max(maxLongitude, coords.Longitude.Degrees);
-                minLatitude = Math.Min(minLatitude, coords.Latitude.Degrees);
-                minLongitude = Math.Min(minLongitude, coords.Longitude.Degrees);
+                if (!coords.IsNull)
+                {
+                    maxLatitude = Math.Max(maxLatitude, coords.Latitude.TotalDegrees);
+                    maxLongitude = Math.Max(maxLongitude, coords.Longitude.TotalDegrees);
+                    minLatitude = Math.Min(minLatitude, coords.Latitude.TotalDegrees);
+                    minLongitude = Math.Min(minLongitude, coords.Longitude.TotalDegrees);
+                }
             }
             return new CoordinateBounds(Coordinates.Create(maxLatitude, maxLongitude), Coordinates.Create(minLatitude, minLongitude));
+        }
+
+        public static CoordinateBounds Null()
+        {
+            return new CoordinateBounds(Coordinates.Null(), Coordinates.Null());
         }
 
         #region ICloneable Members

@@ -59,5 +59,6 @@ namespace TMD.Model.Trees
         public int LandformIndex { get; set; }
         public string OtherComments { get; set; }
         public IList<Measurer> Measurers { get; private set; }
+        public bool Reviewed { get; private set; }
     }
 }
