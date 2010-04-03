@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using TMD.Model.Validation;
 
 namespace TMD.Model
 {
@@ -208,6 +209,11 @@ namespace TMD.Model
         public static Distance Create(float feet)
         {
             return new Distance(feet);
+        }
+
+        public static Distance Null()
+        {
+            return new Distance(0f);
         }
     }
 }

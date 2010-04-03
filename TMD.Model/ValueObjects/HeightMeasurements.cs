@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TMD.Model.Validation;
 
 namespace TMD.Model
 {
@@ -133,6 +134,11 @@ namespace TMD.Model
         public static HeightMeasurements Create(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
         {
             return new HeightMeasurements(distanceTop, angleTop, distanceBottom, angleBottom, verticalOffset);
+        }
+
+        public static HeightMeasurements Null()
+        {
+            return new HeightMeasurements(Distance.Null(), Angle.Null(), Distance.Null(), Angle.Null(), DirectedDistance.Null());
         }
     }
 }

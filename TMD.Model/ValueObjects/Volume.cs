@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using TMD.Model.Validation;
 
 namespace TMD.Model
 {
@@ -161,6 +162,11 @@ namespace TMD.Model
                 inputFormat = EInputFormat.Invalid;
             }
             return new Volume(cubicFeet, inputFormat);
+        }
+
+        public static Volume Null()
+        {
+            return new Volume(0f, EInputFormat.DecimalCubicFeet);
         }
     }
 }

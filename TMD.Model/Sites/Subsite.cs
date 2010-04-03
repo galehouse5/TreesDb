@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Common;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Sites
 {
@@ -10,54 +11,23 @@ namespace TMD.Model.Sites
     {
         private string m_Name;
 
-        private Subsite()
-        { }
-
-        internal Subsite(Site site)
+        internal Subsite()
         {
             Created = DateTime.Now;
-            this.Site = site;
         }
 
-        public Site Site { get; private set; }
         public string Code { get; private set; }
+
+        [EmptyStringValidator("Site name must be specified.")]
+        [StringMaxLengthValidator("Site name must not exceed 100 characters.", 100)]
         public string Name 
         {
             get { return m_Name; }
             set { m_Name = value.Trim().ToTitleCase(); }
         }
+
+        [IsNullValidator("Site coordinates must be specified.")]
+        [IsValidValidator("Site coordinates must be valid.")]
         public Coordinates Coordinates { get; set; }
-
-        #region IIsValid Members
-
-        public bool IsValid
-        {
-            get 
-            { 
-                return !string.IsNullOrWhiteSpace(Name) 
-                    && !Coordinates.IsNull 
-                    && Coordinates.IsValid; 
-            }
-        }
-
-        public IList<string> GetValidationErrors()
-        {
-            List<string> errors = new List<string>();
-            if (string.IsNullOrWhiteSpace(Name))
-            {
-                errors.Add("Subsite name must be specified.");
-            }
-            if (Coordinates.IsNull)
-            {
-                errors.Add("Subsite coordinates must be specified.");
-            }
-            if (!Coordinates.IsValid)
-            {
-                errors.Add("Subsite coordinates must be valid.");
-            }
-            return errors;
-        }
-
-        #endregion
     }
 }

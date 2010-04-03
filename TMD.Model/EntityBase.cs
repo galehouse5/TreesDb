@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TMD.Model.Validation;
 
 namespace TMD.Model
 {
-    public class EntityBase : IEntity
+    public class EntityBase : PropertyAttributeValidator, IIsValid, IEntity
     {
         protected EntityBase()
         {
@@ -13,6 +14,8 @@ namespace TMD.Model
         }
 
         public Guid Id { get; protected set; }
+
+        [DateTimeRangeValidator("Created date must be specified.", "1/1/1753", "1/1/9999")]
         public DateTime Created { get; protected set; }
 
         public static bool operator ==(EntityBase e1, EntityBase e2)

@@ -3,214 +3,122 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Users;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Trees
 {
-    public class Tree : IEntity, IIsValid
+    public class Tree : EntityBase, IEntity, IIsValid
     {
-        public Guid Id { get; private set; }
-        public DateTime Created { get; private set; }
-        public string CommonName { get; private set; }
-        public string Genus { get; private set; }
-        public string Species { get; private set; }
-        public string Name { get; private set; }
+        private Tree()
+        { }
+
         public string Code { get; private set; }
         public string MeasurementCode { get; private set; }
-        public string MeasurersTreeID { get; private set; }
-        public Coordinates Coordinates { get; private set; }
-        public Elevation Elevation { get; private set; }
-        public EPositionMeasurementType PositionMeasurementType { get; private set; }
-        public EGpsDatum GpsDatum { get; private set; }
-        public Distance Height { get; private set; }
-        public HeightMeasurements HeightMeasurements { get; private set; }
-        public string HeightMeasurementType { get; private set; }
-        public string LaserBrand { get; private set; }
-        public string ClinometerBrand { get; private set; }
-        public string HeightComments { get; private set; }
-        public Distance GirthBreatHeight { get; private set; }
-        public Distance GirthMeasurementHeight { get; private set; }
-        public Distance GirthRootCollarHeight { get; private set; }
-        public string GirthComments { get; private set; }
-        public Distance MaximumCrownSpread { get; private set; }
-        public Distance MaximumLimbLength { get; private set; }
-        public Distance AverageCrownSpread { get; private set; }
-        public string CrownSpreadMeasurementMethod { get; private set; }
-        public Distance BaseCrownHeight { get; private set; }
-        public Volume CrownVolume { get; private set; }
-        public string CrownVolumeCalculationMethod { get; private set; }
-        public string CrownComments { get; private set; }
-        public Volume TrunkVolume { get; private set; }
-        public string TrunkVolumeCalculationMethod { get; private set; }
-        public string TrunkComments { get; private set; }
-        public EFormType FormType { get; private set; }
-        public int NumberOfTrunks { get; private set; }
-        public string TreeFormComments { get; private set; }
-        public DateTime Measured { get; private set; }
-        public EStatus Status { get; private set; }
-        public string HealthStatus { get; private set; }
-        public EAgeClass AgeClass { get; private set; }
-        public int Age { get; private set; }
-        public EAgeType AgeType { get; private set; }
-        public ETerrainType TerrainType { get; private set; }
-        public int TerrainShapeIndex { get; private set; }
-        public int LandformIndex { get; private set; }
-        public string OtherComments { get; private set; }
-        public int Measurers { get; private set; }
-        public IList<Measurement> Measurements { get; private set; }
-        public IList<Correction> Corrections { get; private set; }
-        public bool IsDeleted { get; internal set; }
-        public DateTime Deleted { get; internal set; }
-        public User Deletor { get; internal set; }
+        public Measurement Measurement { get; private set; }
 
-        public void RecordMeasurement(Measurement measurement)
+        public Measurer AddMeasurer()
         {
-            this.Measurements.Add(measurement);
-            this.Measurers = measurement.Measurers.Count;
-            this.CommonName = measurement.CommonName;
-            this.Genus = measurement.Genus;
-            this.Species = measurement.Species;
-            this.MeasurementCode = this.MeasurementCode + 1;
-            measurement.Code = this.MeasurementCode;
-            this.Name = measurement.Name;
-            this.MeasurersTreeID = measurement.MeasurersTreeID;
-            this.Coordinates = (Coordinates)measurement.Coordinates.Clone();
-            this.Elevation = (Elevation)measurement.Elevation.Clone();
-            this.PositionMeasurementType = measurement.PositionMeasurementType;
-            this.GpsDatum = measurement.GpsDatum;
-            this.Height = (Distance)measurement.Height.Clone();
-            this.HeightMeasurementType = measurement.HeightMeasurementType;
-            this.LaserBrand = measurement.LaserBrand;
-            this.ClinometerBrand = measurement.ClinometerBrand;
-            this.HeightComments = measurement.HeightComments;
-            this.GirthBreatHeight = (Distance)measurement.GirthBreatHeight.Clone();
-            this.GirthMeasurementHeight = (Distance)measurement.GirthMeasurementHeight.Clone();
-            this.GirthRootCollarHeight = (Distance)measurement.GirthRootCollarHeight.Clone();
-            this.GirthComments = measurement.GirthComments;
-            this.MaximumCrownSpread = (Distance)measurement.MaximumCrownSpread.Clone();
-            this.MaximumLimbLength = (Distance)measurement.MaximumLimbLength.Clone();
-            this.AverageCrownSpread = (Distance)measurement.AverageCrownSpread.Clone();
-            this.CrownSpreadMeasurementMethod = measurement.CrownSpreadMeasurementMethod;
-            this.BaseCrownHeight = (Distance)measurement.BaseCrownHeight.Clone();
-            this.CrownVolume = (Volume)measurement.CrownVolume.Clone();
-            this.CrownVolumeCalculationMethod = measurement.CrownVolumeCalculationMethod;
-            this.CrownComments = measurement.CrownComments;
-            this.TrunkVolume = (Volume)measurement.TrunkVolume.Clone();
-            this.TrunkVolumeCalculationMethod = measurement.TrunkVolumeCalculationMethod;
-            this.TrunkComments = measurement.TrunkComments;
-            this.FormType = measurement.FormType;
-            this.NumberOfTrunks = measurement.NumberOfTrunks;
-            this.TreeFormComments = measurement.TreeFormComments;
-            this.Measured = measurement.Measured;
-            this.Status = measurement.Status;
-            this.HealthStatus = measurement.HealthStatus;
-            this.AgeClass = measurement.AgeClass;
-            this.Age = measurement.Age;
-            this.AgeType = measurement.AgeType;
-            this.TerrainType = measurement.TerrainType;
-            this.TerrainShapeIndex = measurement.TerrainShapeIndex;
-            this.LandformIndex = measurement.LandformIndex;
-            this.OtherComments = measurement.OtherComments;
+            return Measurement.AddMeasurer();
         }
 
-        public void ApplyCorrection(Correction correction)
+        public bool RemoveMeasurer(Measurer m)
         {
-            this.Corrections.Add(correction);
-            this.CommonName = correction.CommonName;
-            this.Genus = correction.Genus;
-            this.Species = correction.Species;
-            this.Name = correction.Name;
-            this.MeasurersTreeID = correction.MeasurersTreeID;
-            this.Coordinates = (Coordinates)correction.Coordinates.Clone();
-            this.Elevation = (Elevation)correction.Elevation.Clone();
-            this.PositionMeasurementType = correction.PositionMeasurementType;
-            this.Height = (Distance)correction.Height.Clone();
-            this.HeightMeasurementType = correction.HeightMeasurementType;
-            this.LaserBrand = correction.LaserBrand;
-            this.ClinometerBrand = correction.ClinometerBrand;
-            this.HeightComments = correction.HeightComments;
-            this.GirthBreatHeight = (Distance)correction.GirthBreatHeight.Clone();
-            this.GirthMeasurementHeight = (Distance)correction.GirthMeasurementHeight.Clone();
-            this.GirthRootCollarHeight = (Distance)correction.GirthRootCollarHeight.Clone();
-            this.GirthComments = correction.GirthComments;
-            this.MaximumCrownSpread = (Distance)correction.MaximumCrownSpread.Clone();
-            this.MaximumLimbLength = (Distance)correction.MaximumLimbLength.Clone();
-            this.AverageCrownSpread = (Distance)correction.AverageCrownSpread.Clone();
-            this.CrownSpreadMeasurementMethod = correction.CrownSpreadMeasurementMethod;
-            this.BaseCrownHeight = (Distance)correction.BaseCrownHeight.Clone();
-            this.CrownVolume = (Volume)correction.CrownVolume.Clone();
-            this.CrownVolumeCalculationMethod = correction.CrownVolumeCalculationMethod;
-            this.CrownComments = correction.CrownComments;
-            this.TrunkVolume = (Volume)correction.TrunkVolume.Clone();
-            this.TrunkVolumeCalculationMethod = correction.TrunkVolumeCalculationMethod;
-            this.TrunkComments = correction.TrunkComments;
-            this.FormType = correction.FormType;
-            this.NumberOfTrunks = correction.NumberOfTrunks;
-            this.TreeFormComments = correction.TreeFormComments;
-            this.Measured = correction.Measured;
-            this.Status = correction.Status;
-            this.HealthStatus = correction.HealthStatus;
-            this.AgeClass = correction.AgeClass;
-            this.Age = correction.Age;
-            this.AgeType = correction.AgeType;
-            this.TerrainType = correction.TerrainType;
-            this.TerrainShapeIndex = correction.TerrainShapeIndex;
-            this.LandformIndex = correction.LandformIndex;
-            this.OtherComments = correction.OtherComments;
+            return Measurement.RemoveMeasurer(m);
         }
 
-        public void Delete(User responsibleUser)
+        public static Tree Create()
         {
-            IsDeleted = true;
-            Deleted = DateTime.Now;
-            Deletor = responsibleUser;
+            Tree t = new Tree();
+            t.MeasurementCode = "001";
+            t.Measurement = new Measurement(t.MeasurementCode);
+            return t;
         }
 
-        public bool IsValid
+        public override bool IsValid
         {
-            get 
+            get
             {
-                return !string.IsNullOrWhiteSpace(CommonName)
-                    && !string.IsNullOrWhiteSpace(Genus)
-                    && !string.IsNullOrWhiteSpace(Species)
-                    && FormType != EFormType.NotSpecified
-                    && NumberOfTrunks != 0
-                    && Measurers != 0
-                    && Measured != DateTime.MinValue;
+                return base.IsValid
+                    && Measurement.IsValid;
             }
         }
 
-        public IList<string> GetValidationErrors()
+        public override IList<string> GetValidationErrors()
         {
-            List<string> validationErrors = new List<string>();
-            if (string.IsNullOrWhiteSpace(CommonName))
+            List<string> errors = new List<string>();
+            errors.AddRange(base.GetValidationErrors());
+            errors.AddRange(Measurement.GetValidationErrors());
+            return errors;
+        }
+
+        public static Distance CalculateRuckerHeightIndex(int species, IEnumerable<Tree> trees)
+        {
+            Dictionary<string, float> speciesHeights = new Dictionary<string, float>();
+            foreach (Tree t in trees)
             {
-                validationErrors.Add("Common name is required.");
+                if (!t.Measurement.Height.IsNull)
+                {
+                    if (!speciesHeights.ContainsKey(t.Measurement.Species))
+                    {
+                        speciesHeights.Add(t.Measurement.Species, t.Measurement.Height.Feet);
+                    }
+                    else
+                    {
+                        speciesHeights[t.Measurement.Species] = Math.Max(speciesHeights[t.Measurement.Species], t.Measurement.Height.Feet);
+                    }
+                }
             }
-            if (string.IsNullOrWhiteSpace(Genus))
+            if (speciesHeights.Count >= species)
             {
-                validationErrors.Add("Genus is required.");
+                List<float> sortedHeights = speciesHeights.Values.ToList();
+                sortedHeights.Sort();
+                double ruckerHeightIndex = 0d;
+                for (int i = sortedHeights.Count - 1; i > sortedHeights.Count - 1 - species; i--)
+                {
+                    ruckerHeightIndex += sortedHeights[i];
+                }
+                ruckerHeightIndex /= species;
+                return Distance.Create((float)ruckerHeightIndex);
             }
-            if (string.IsNullOrWhiteSpace(Species))
+            else
             {
-                validationErrors.Add("Species is required.");
+                return Distance.Null();
             }
-            if (FormType == EFormType.NotSpecified)
+        }
+
+        public static Distance CalculateRuckerGirthIndex(int species, IEnumerable<Tree> trees)
+        {
+            Dictionary<string, float> speciesGirths = new Dictionary<string, float>();
+            foreach (Tree t in trees)
             {
-                validationErrors.Add("Tree form type is required.");
+                if (!t.Measurement.Height.IsNull)
+                {
+                    if (!speciesGirths.ContainsKey(t.Measurement.Species))
+                    {
+                        speciesGirths.Add(t.Measurement.Species, t.Measurement.GirthBreastHeight.Feet);
+                    }
+                    else
+                    {
+                        speciesGirths[t.Measurement.Species] = Math.Max(speciesGirths[t.Measurement.Species], t.Measurement.GirthBreastHeight.Feet);
+                    }
+                }
             }
-            if (NumberOfTrunks == 0)
+            if (speciesGirths.Count >= species)
             {
-                validationErrors.Add("Number of trunks is required.");
+                List<float> sortedGirths = speciesGirths.Values.ToList();
+                sortedGirths.Sort();
+                double ruckerGirthIndex = 0d;
+                for (int i = sortedGirths.Count - 1; i > sortedGirths.Count - 1 - species; i--)
+                {
+                    ruckerGirthIndex += sortedGirths[i];
+                }
+                ruckerGirthIndex /= species;
+                return Distance.Create((float)ruckerGirthIndex);
             }
-            if (Measurers == 0)
+            else
             {
-                validationErrors.Add("Measurers must be included.");
+                return Distance.Null();
             }
-            if (Measured == DateTime.MinValue)
-            {
-                validationErrors.Add("Measurement date is required.");
-            }
-            return validationErrors;
         }
     }
 }

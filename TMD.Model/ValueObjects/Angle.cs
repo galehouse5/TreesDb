@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TMD.Model.Validation;
 
 namespace TMD.Model
 {
@@ -79,6 +80,11 @@ namespace TMD.Model
                 return new Angle(degrees, EInputFormat.Decimal);
             }
             return new Angle(0f, EInputFormat.Invalid);
+        }
+
+        public static Angle Null()
+        {
+            return new Angle(0f, EInputFormat.Decimal);
         }
 
         #region ICloneable Members

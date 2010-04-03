@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using TMD.Model.Sites;
 using TMD.Model.Trees;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Trips
 {
@@ -22,26 +23,34 @@ namespace TMD.Model.Trips
             this.Site = site;
             m_Coordinates = Coordinates.Null();
             this.SubsiteVisits = new List<SubsiteVisit>();
-            this.Measurements = new List<Measurement>();
+            this.MeasuredTrees = new List<Tree>();
         }
 
-        public Site Site { get; set; }
+        public Site Site { get; private set; }
+
+        [EmptyStringValidator("Site ownership type must be specified.")]
+        [StringMaxLengthValidator("Site ownership type must not exceed 100 characters.", 100)]
         public string OwnershipType 
         {
             get { return m_OwnershipType; }
             set { m_OwnershipType = value.Trim(); }
         }
+
+        [StringMaxLengthValidator("Site ownership contact info must not exceed 200 characters.", 200)]
         public string OwnershipContactInfo 
         {
             get { return m_OwnershipContactInfo; }
             set { m_OwnershipContactInfo = value.Trim(); }
         }
+
+        [StringMaxLengthValidator("Site comments must not exceed 300 characters.", 300)]
         public string SiteComments 
         {
             get { return m_SiteComments; }
             set { m_SiteComments = value.Trim(); }
         }
 
+        [IsNullValidator("Site coordinates must be specified or contained measurements must have specified coordinates.")]
         public Coordinates Coordinates
         {
             get
@@ -49,6 +58,7 @@ namespace TMD.Model.Trips
                 if (m_Coordinates.IsNull)
                 {
                     m_Coordinates = calculateCoordinates();
+                    Site.Coordinates = m_Coordinates;
                     CoordinatesCalculated = true;
                 }
                 return m_Coordinates;
@@ -56,33 +66,36 @@ namespace TMD.Model.Trips
             set
             {
                 m_Coordinates = value;
+                Site.Coordinates = m_Coordinates;
                 CoordinatesCalculated = false;
             }
         }
 
         public bool CoordinatesCalculated { get; private set; }
         internal IList<SubsiteVisit> SubsiteVisits { get; private set; }
-        internal IList<Measurement> Measurements { get; private set; }
 
-        internal void AddMeasurement(Measurement m)
+        [EmptyCollectionValidator("Site must contain measurements.")]
+        internal IList<Tree> MeasuredTrees { get; private set; }
+
+        internal void AddMeasuredTree(Tree t)
         {
             invalidateCoordinatesCalculation();
-            Measurements.Add(m);
+            MeasuredTrees.Add(t);
         }
 
-        internal bool RemoveMeasurement(Measurement measurement)
+        internal bool RemoveMeasuredTree(Tree t)
         {
             invalidateCoordinatesCalculation();
-            return Measurements.Remove(measurement);
+            return MeasuredTrees.Remove(t);
         }
 
-        internal bool AddSubsiteMeasurement(Subsite s, Measurement m)
+        internal bool AddSubsiteMeasuredTree(Subsite s, Tree t)
         {
             foreach (SubsiteVisit sv in SubsiteVisits)
             {
                 if (sv.Subsite == s)
                 {
-                    sv.AddMeasurement(m);
+                    sv.AddMeasuredTree(t);
                     invalidateCoordinatesCalculation();
                     return true;
                 }
@@ -90,14 +103,14 @@ namespace TMD.Model.Trips
             return false;
         }
 
-        internal bool RemoveSubsiteMeasurement(Subsite s, Measurement m)
+        internal bool RemoveSubsiteMeasuredTree(Subsite s, Tree t)
         {
             foreach (SubsiteVisit sv in SubsiteVisits)
             {
                 if (sv.Subsite == s)
                 {
                     invalidateCoordinatesCalculation();
-                    return sv.RemoveMeasurement(m);
+                    return sv.RemoveMeasuredTree(t);
                 }
             }
             return false;
@@ -105,7 +118,7 @@ namespace TMD.Model.Trips
 
         internal SubsiteVisit AddSubsite(Subsite s)
         {
-            SubsiteVisit sv = new SubsiteVisit(this, s);
+            SubsiteVisit sv = new SubsiteVisit(s);
             SubsiteVisits.Add(sv);
             return sv;
         }
@@ -128,15 +141,15 @@ namespace TMD.Model.Trips
         private Coordinates calculateCoordinates()
         {
             List<Coordinates> coordinatesList = new List<Coordinates>();
-            foreach (Measurement m in Measurements)
+            foreach (Tree t in MeasuredTrees)
             {
-                coordinatesList.Add(m.Coordinates);
+                coordinatesList.Add(t.Measurement.Coordinates);
             }
             foreach (SubsiteVisit sv in SubsiteVisits)
             {
-                foreach (Measurement m in sv.Measurements)
+                foreach (Tree t in sv.MeasuredTrees)
                 {
-                    coordinatesList.Add(m.Coordinates);
+                    coordinatesList.Add(t.Measurement.Coordinates);
                 }
             }
             CoordinateBounds cb = CoordinateBounds.Create(coordinatesList);
@@ -153,7 +166,7 @@ namespace TMD.Model.Trips
 
         #region IIsValid Members
 
-        public bool IsValid
+        public override bool IsValid
         {
             get 
             {
@@ -164,27 +177,17 @@ namespace TMD.Model.Trips
                         return false;
                     }
                 }
-                return !Coordinates.IsNull && Measurements.Count > 0; 
+                return base.IsValid;
             }
         }
 
-        public IList<string> GetValidationErrors()
+        public override IList<string> GetValidationErrors()
         {
             List<string> errors = new List<string>();
-            if (Coordinates.IsNull)
-            {
-                errors.Add("Site coordinates must be specified or contained measurements must have specified coordinates.");
-            }
-            if (Measurements.Count == 0)
-            {
-                errors.Add("Site must contain measurements.");
-            }
+            errors.AddRange(base.GetValidationErrors());
             foreach (SubsiteVisit sv in SubsiteVisits)
             {
-                if (!sv.IsValid)
-                {
-                    errors.AddRange(sv.GetValidationErrors());
-                }
+                errors.AddRange(sv.GetValidationErrors());
             }
             return errors;
         }
@@ -217,10 +220,7 @@ namespace TMD.Model.Trips
             }
             foreach (SubsiteVisit sv in SubsiteVisits)
             {
-                if (sv.IsConflicting)
-                {
-                    errors.AddRange(sv.GetConflicts());
-                }
+                errors.AddRange(sv.GetConflicts());
             }
             return errors;
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TMD.Model
+namespace TMD.Model.Validation
 {
     public interface IIsValid
     {

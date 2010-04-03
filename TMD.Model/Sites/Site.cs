@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Common;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Sites
 {
@@ -20,24 +21,40 @@ namespace TMD.Model.Sites
         }
 
         public string Code { get; private set; }
+
+        [EmptyStringValidator("Site name must be specified.")]
+        [StringMaxLengthValidator("Site name must not exceed 100 characters.", 100)]
         public string Name
         {
             get { return m_Name; }
             set { m_Name = value.Trim().ToTitleCase(); }
         }
+
+        [IsNullValidator("Site country must be specified.")]
+        [IsValidValidator("Site country must be valid.")]
         public Country Country { get; set; }
+
+        [IsNullValidator("Site state must be specified.")]
+        [IsValidValidator("Site state must be valid.")]
         public State State { get; set; }
+
+        [EmptyStringValidator("Site county must be specified.")]
+        [StringMaxLengthValidator("Site county must not exceed 100 characters,", 100)]
         public string County
         {
             get { return m_County; }
             set { m_County = value.Trim().ToTitleCase(); }
         }
+
+        [IsNullValidator("Site coordinates must be specified.")]
+        [IsValidValidator("Site coordinates must be valid.")]
         public Coordinates Coordinates { get; set; }
+
         internal IList<Subsite> Subsites { get; private set; }
 
         public Subsite AddSubsite()
         {
-            Subsite subsite = new Subsite(this);
+            Subsite subsite = new Subsite();
             Subsites.Add(subsite);
             return subsite;
         }
@@ -46,58 +63,6 @@ namespace TMD.Model.Sites
         {
             return Subsites.Remove(subsite);
         }
-
-        #region IIsValid Members
-
-        public bool IsValid
-        {
-            get 
-            {
-                return !string.IsNullOrWhiteSpace(Name)
-                    && !Coordinates.IsNull
-                    && Coordinates.IsValid
-                    && !Country.IsNull
-                    && Country.IsValid
-                    && !State.IsNull
-                    && State.IsValid;
-            }
-        }
-
-        public IList<string> GetValidationErrors()
-        {
-            List<string> errors = new List<string>();
-            if (string.IsNullOrWhiteSpace(Name))
-            {
-                errors.Add("Site name must be specified.");
-            }
-            if (Coordinates.IsNull)
-            {
-                errors.Add("Site coordinates must be specified.");
-            }
-            if (!Coordinates.IsValid)
-            {
-                errors.Add("Site coordinates must be valid.");
-            }
-            if (Country.IsNull)
-            {
-                errors.Add("Site country must be specified.");
-            }
-            if (!Country.IsValid)
-            {
-                errors.Add("Site country must be valid.");
-            }
-            if (State.IsNull)
-            {
-                errors.Add("Site state must be specified.");
-            }
-            if (!State.IsValid)
-            {
-                errors.Add("Site state must be valid.");
-            }
-            return errors;
-        }
-
-        #endregion
 
         public static Site Create()
         {

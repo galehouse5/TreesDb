@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model;
+using TMD.Model.Trips;
 
 namespace TMD.Application
 {
@@ -12,10 +13,17 @@ namespace TMD.Application
         private const string GoToOnWizardCancelKey = "goToOnWizardCancel";
         private const string GoToOnWizardCompleteKey = "goToOnWizardComplete";
         private const string DialogNumberKey = "dialogNumber";
+        private const string CurrentImportTripKey = "currentImportTrip";
 
         public static IUnitOfWork UnitOfWork
         {
             get { return ApplicationRegistry.UserSessionProvider.UnitOfWork; }
+        }
+
+        public static Trip CurrentImportTrip
+        {
+            get { return ApplicationRegistry.UserSessionProvider.GetOrCreate<Trip>(CurrentImportTripKey, (Trip)null); }
+            set { ApplicationRegistry.UserSessionProvider.Set<Trip>(CurrentImportTripKey, value); }
         }
 
         public static InstanceCreationDelegate<Guid> DefaultCurrentUserIDCreator = delegate() { return Guid.Empty; };

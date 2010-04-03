@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntityBase.cs" />
-    <Compile Include="IIsConflicting.cs" />
+    <Compile Include="Trees\TreeService.cs" />
+    <Compile Include="Validation\CollectionMaxCountValidatorAttribute.cs" />
+    <Compile Include="Validation\DateTimeRangeValidatorAttribute.cs" />
+    <Compile Include="Validation\EmptyCollectionValidatorAttribute.cs" />
+    <Compile Include="Validation\IIsConflicting.cs" />
     <Compile Include="ModelRegistry.cs" />
     <Compile Include="ModelSettings.cs" />
     <Compile Include="Sites\ISiteRepository.cs" />
@@ -51,6 +55,15 @@
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="UnitOfWork\UnitOfWorkProvider.cs" />
     <Compile Include="Users\IUserRepository.cs" />
+    <Compile Include="Validation\EmptyStringValidatorAttribute.cs" />
+    <Compile Include="Validation\IsNullValidatorAttribute.cs" />
+    <Compile Include="Validation\IsValidValidatorAttribute.cs" />
+    <Compile Include="Validation\NonNegativeValidatorAttribute.cs" />
+    <Compile Include="Validation\NumberRangeValidatorAttribute.cs" />
+    <Compile Include="Validation\PropertyAttributeValidator.cs" />
+    <Compile Include="Validation\StringMaxLengthValidator.cs" />
+    <Compile Include="Validation\ValidatorBaseAttribute.cs" />
+    <Compile Include="Validation\ZeroValidatorAttribute.cs" />
     <Compile Include="ValueObjects\Angle.cs" />
     <Compile Include="ValueObjects\CoordinateBounds.cs" />
     <Compile Include="ValueObjects\Coordinates.cs" />
@@ -60,14 +73,13 @@
     <Compile Include="ValueObjects\Distance.cs" />
     <Compile Include="ValueObjects\DirectedDistance.cs" />
     <Compile Include="ValueObjects\Elevation.cs" />
-    <Compile Include="IIsValid.cs" />
+    <Compile Include="Validation\IIsValid.cs" />
     <Compile Include="Sites\Site.cs" />
     <Compile Include="Sites\Subsite.cs" />
     <Compile Include="Trees\Enums.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Trees\Measurement.cs" />
-    <Compile Include="Trees\Correction.cs" />
     <Compile Include="Trees\Measurer.cs" />
     <Compile Include="Trees\Tree.cs" />
     <Compile Include="Trips\Trip.cs" />

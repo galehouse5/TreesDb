@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using TMD.Model.Trees;
 using TMD.Model.Sites;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Trips
 {
@@ -14,17 +15,16 @@ namespace TMD.Model.Trips
         private SubsiteVisit()
         { }
 
-        internal SubsiteVisit(SiteVisit sv, Subsite s)
+        internal SubsiteVisit(Subsite s)
         {
-            this.SiteVisit = sv;
             this.Subsite = s;
             m_Coordinates = Coordinates.Null();
-            this.Measurements = new List<Measurement>();
+            this.MeasuredTrees = new List<Tree>();
         }
 
-        public SiteVisit SiteVisit { get; private set; }
         public Subsite Subsite { get; private set; }
        
+        [IsNullValidator("Subsite coordinates must be specified or contained measurements must have specified coordinates.")]
         public Coordinates Coordinates
         {
             get
@@ -32,6 +32,7 @@ namespace TMD.Model.Trips
                 if (m_Coordinates.IsNull)
                 {
                     m_Coordinates = calculateCoordinates();
+                    Subsite.Coordinates = m_Coordinates;
                     CoordinatesCalculated = true;
                 }
                 return m_Coordinates;
@@ -39,31 +40,34 @@ namespace TMD.Model.Trips
             set 
             { 
                 m_Coordinates = value;
+                Subsite.Coordinates = m_Coordinates;
                 CoordinatesCalculated = false;
             }
         }
 
         public bool CoordinatesCalculated { get; private set; }
-        internal IList<Measurement> Measurements { get; private set; }
 
-        internal void AddMeasurement(Measurement m)
+        [EmptyCollectionValidator("Subsite must contain measurements.")]
+        internal IList<Tree> MeasuredTrees { get; private set; }
+
+        internal void AddMeasuredTree(Tree t)
         {
             invalidateCoordinatesCalculation();
-            Measurements.Add(m);
+            MeasuredTrees.Add(t);
         }
 
-        internal bool RemoveMeasurement(Measurement m)
+        internal bool RemoveMeasuredTree(Tree t)
         {
             invalidateCoordinatesCalculation();
-            return Measurements.Remove(m);
+            return MeasuredTrees.Remove(t);
         }
 
         private Coordinates calculateCoordinates()
         {
             List<Coordinates> coordinatesList = new List<Coordinates>();
-            foreach (Measurement m in Measurements)
+            foreach (Tree t in MeasuredTrees)
             {
-                coordinatesList.Add(m.Coordinates);
+                coordinatesList.Add(t.Measurement.Coordinates);
             }
             CoordinateBounds cb = CoordinateBounds.Create(coordinatesList);
             return cb.Center;
@@ -79,21 +83,22 @@ namespace TMD.Model.Trips
 
         #region IIsValid Members
 
-        public bool IsValid
+        public override bool IsValid
         {
-            get { return !Coordinates.IsNull && Measurements.Count > 0; }
+            get
+            {
+                return base.IsValid
+                    && Subsite.IsValid;
+            }
         }
 
-        public IList<string> GetValidationErrors()
+        public override IList<string> GetValidationErrors()
         {
             List<string> errors = new List<string>();
-            if (Coordinates.IsNull)
+            errors.AddRange(base.GetValidationErrors());
+            if (!Subsite.IsValid)
             {
-                errors.Add("Subsite coordinates must be specified or contained measurements must have specified coordinates.");
-            }
-            if (Measurements.Count == 0)
-            {
-                errors.Add("Subsite must contain measurements.");
+                errors.AddRange(Subsite.GetValidationErrors());
             }
             return errors;
         }
@@ -104,7 +109,8 @@ namespace TMD.Model.Trips
 
         public bool IsConflicting
         {
-            get { return !CoordinatesCalculated && CoordinateDistance.Calculate(Coordinates, calculateCoordinates()).TotalMinutes > 1f; }
+            get { return !CoordinatesCalculated 
+                && CoordinateDistance.Calculate(Coordinates, calculateCoordinates()).TotalMinutes > 1f; }
         }
 
         public IList<string> GetConflicts()

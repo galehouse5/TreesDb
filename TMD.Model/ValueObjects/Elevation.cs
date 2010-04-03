@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using TMD.Model.Validation;
 
 namespace TMD.Model
 {
@@ -166,6 +167,11 @@ namespace TMD.Model
                 inputFormat = EInputFormat.Invalid;
             }
             return new Elevation(feet, inputFormat);
+        }
+
+        public static Elevation Null()
+        {
+            return new Elevation(0f, EInputFormat.DecimalFeet);
         }
     }
 }

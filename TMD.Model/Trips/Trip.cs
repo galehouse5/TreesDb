@@ -4,33 +4,42 @@ using System.Linq;
 using System.Text;
 using TMD.Model.Sites;
 using TMD.Model.Trees;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Trips
 {
     public class Trip : EntityBase, IEntity, IIsValid, IIsConflicting
     {
         private string m_Website;
-        private string m_MeasurerContact;
+        private string m_MeasurerContactInfo;
 
         private Trip()
         {
             this.Date = DateTime.Now;
             this.SiteVisits = new List<SiteVisit>();
+            this.PhotosAvailable = false;
         }
 
         public DateTime Date { get; set; }
+
+        [StringMaxLengthValidator("Trip website must not exceed 100 characters.", 100)]
         public string Website 
         {
             get { return m_Website; }
             set { m_Website = value.Trim(); }
         }
+
         public bool PhotosAvailable { get; set; }
-        public string MeasurerContact 
+
+        [EmptyStringValidator("Trip measurer contact info must be specified.")]
+        [StringMaxLengthValidator("Trip measurer contact info must not exceed 200 characters.", 200)]
+        public string MeasurerContactInfo 
         {
-            get { return m_MeasurerContact; }
-            set { m_MeasurerContact = value.Trim(); }
+            get { return m_MeasurerContactInfo; }
+            set { m_MeasurerContactInfo = value.Trim(); }
         }
-        public bool Reviewed { get; private set; }
+
+        [EmptyCollectionValidator("Trip must contain site visits.")]
         internal IList<SiteVisit> SiteVisits { get; private set; }
 
         public SiteVisit AddSite(Site s)
@@ -54,75 +63,75 @@ namespace TMD.Model.Trips
             return false;
         }
 
-        public SubsiteVisit AddSubsite(Subsite s)
+        public SubsiteVisit AddSubsite(Site s, Subsite ss)
         {
             foreach (SiteVisit sv in SiteVisits)
             {
-                if (sv.Site == s.Site)
+                if (sv.Site == s)
                 {
-                    return sv.AddSubsite(s);
+                    return sv.AddSubsite(ss);
                 }
             }
             return null;
         }
 
-        public bool RemoveSubsite(Subsite s)
-        {
-            foreach (SiteVisit sv in SiteVisits)
-            {
-                if (sv.Site == s.Site)
-                {
-                    return sv.RemoveSubsite(s);
-                }
-            }
-            return false;
-        }
-
-        public bool AddMeasurement(Site s, Measurement m)
+        public bool RemoveSubsite(Site s, Subsite ss)
         {
             foreach (SiteVisit sv in SiteVisits)
             {
                 if (sv.Site == s)
                 {
-                    sv.AddMeasurement(m);
+                    return sv.RemoveSubsite(ss);
+                }
+            }
+            return false;
+        }
+
+        public bool AddSiteMeasuredTree(Site s, Tree t)
+        {
+            foreach (SiteVisit sv in SiteVisits)
+            {
+                if (sv.Site == s)
+                {
+                    sv.AddMeasuredTree(t);
                     return true;
                 }
             }
             return false;
         }
 
-        public bool RemoveMeasurement(Site s, Measurement m)
+        public bool RemoveSiteMeasuredTree(Site s, Tree t)
         {
             foreach (SiteVisit sv in SiteVisits)
             {
                 if (sv.Site == s)
                 {
-                    return sv.RemoveMeasurement(m);
+                    return sv.RemoveMeasuredTree(t);
                 }
             }
             return false;
         }
 
-        public bool AddSubsiteMeasurement(Subsite s, Measurement m)
+        public bool AddSubsiteMeasuredTree(Subsite s, Tree t)
         {
             foreach (SiteVisit sv in SiteVisits)
             {
-                if (sv.Site == s.Site)
+                if (sv.Site.Subsites.Contains(s))
                 {
-                    sv.AddSubsiteMeasurement(s, m);
+                    sv.AddSubsiteMeasuredTree(s, t);
                     return true;
                 }
             }
             return false;
         }
 
-        public bool RemoveSubsiteMeasurement(Subsite s, Measurement m)
+        public bool RemoveSubsiteMeasuredTree(Subsite s, Tree t)
         {
             foreach (SiteVisit sv in SiteVisits)
             {
-                if (sv.Site == s.Site)
+                if (sv.Site.Subsites.Contains(s))
                 {
-                    sv.RemoveSubsiteMeasurement(s, m);
+                    sv.RemoveSubsiteMeasuredTree(s, t);
                     return true;
                 }
             }
@@ -131,7 +140,7 @@ namespace TMD.Model.Trips
 
         #region IIsValid Members
 
-        public bool IsValid
+        public override bool IsValid
         {
             get 
             {
@@ -142,23 +151,17 @@ namespace TMD.Model.Trips
                         return false;
                     }
                 }
-                return SiteVisits.Count > 0;
+                return base.IsValid;
             }
         }
 
-        public IList<string> GetValidationErrors()
+        public override IList<string> GetValidationErrors()
         {
             List<string> errors = new List<string>();
+            errors.AddRange(base.GetValidationErrors());
             foreach (SiteVisit sv in SiteVisits)
             {
-                if (!sv.IsValid)
-                {
-                    errors.AddRange(sv.GetValidationErrors());
-                }
-            }
-            if (SiteVisits.Count == 0)
-            {
-                errors.Add("Trip must contain site visits.");
+                errors.AddRange(sv.GetValidationErrors());
             }
             return errors;
         }
@@ -187,14 +190,16 @@ namespace TMD.Model.Trips
             List<string> errors = new List<string>();
             foreach (SiteVisit sv in SiteVisits)
             {
-                if (sv.IsConflicting)
-                {
-                    errors.AddRange(sv.GetConflicts());
-                }
+                errors.AddRange(sv.GetConflicts());
             }
             return errors;
         }
 
         #endregion
+
+        public static Trip Create()
+        {
+            return new Trip();
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using TMD.Model.Validation;
 
 namespace TMD.Model
 {
@@ -209,6 +210,11 @@ namespace TMD.Model
                 inputFormat = EInputFormat.Invalid;
             }
             return new DirectedDistance(sign * feet, inputFormat);
+        }
+
+        public static DirectedDistance Null()
+        {
+            return new DirectedDistance(0f, EInputFormat.DecimalFeet);
         }
     }
 }
