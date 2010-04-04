@@ -1,2 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DatabaseStats.ascx.cs" Inherits="TMD.DatabaseStats" %>
-<%= Measurements %> Trees | <%= Locations %> Parks | <%= States %> States | <%= Imports %> Imports | <%= Reporters %> Reporters | <%= Users %> Users
