@@ -8,13 +8,13 @@ namespace TMD.Application
 {
     internal class ApplicationSettings : ConfigurationSection
     {
-        private const string UserSessionProviderPropertyName = "userSessionProvider";
+        private const string ApplicationSessionProviderPropertyName = "applicationSessionProvider";
 
-        [ConfigurationProperty(UserSessionProviderPropertyName, IsRequired = true)]
-        public string UserSessionProvider
+        [ConfigurationProperty(ApplicationSessionProviderPropertyName, IsRequired = true)]
+        public string ApplicationSessionProvider
         {
-            get { return (string)this[UserSessionProviderPropertyName]; }
-            set { this[UserSessionProviderPropertyName] = value; }
+            get { return (string)this[ApplicationSessionProviderPropertyName]; }
+            set { this[ApplicationSessionProviderPropertyName] = value; }
         }
     }
 }

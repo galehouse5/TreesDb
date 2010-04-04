@@ -7,6 +7,7 @@ using TMD.Model.Validation;
 
 namespace TMD.Model
 {
+    [Serializable]
     public class Coordinates : ICloneable, IIsValid, IIsNull 
     {
         private Coordinates()

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using TMD.Common;
 using System.Configuration;
+using TMD.Model.Users;
 
 namespace TMD.Model
 {
@@ -14,7 +15,8 @@ namespace TMD.Model
 
         private static PluginFactory s_Repositories;
         private static ModelSettings s_ModelSettings;
-        private static UnitOfWorkProvider s_UnitOfWorkProvider;
+        private static IUnitOfWork s_UnitOfWork;
+        private static IUserSession s_UserSession;
 
         internal static ModelSettings ModelSettings
         {
@@ -40,16 +42,29 @@ namespace TMD.Model
             }
         }
 
-        public static UnitOfWorkProvider UnitOfWorkProvider
+        public static IUnitOfWork UnitOfWork
         {
             get
             {
-                if (s_UnitOfWorkProvider == null)
+                if (s_UnitOfWork == null)
                 {
-                    Type unitOfWorkProviderImplementationType = Type.GetType(ModelRegistry.ModelSettings.UnitOfWorkProviderImplementation);
-                    s_UnitOfWorkProvider = (UnitOfWorkProvider)Activator.CreateInstance(unitOfWorkProviderImplementationType);
+                    Type unitOfWorkProviderType = Type.GetType(ModelRegistry.ModelSettings.UnitOfWorkProvider);
+                    s_UnitOfWork = (IUnitOfWork)Activator.CreateInstance(unitOfWorkProviderType);
                 }
-                return s_UnitOfWorkProvider;
+                return s_UnitOfWork;
+            }
+        }
+
+        public static IUserSession UserSession
+        {
+            get
+            {
+                if (s_UserSession == null)
+                {
+                    Type userSessionProviderType = Type.GetType(ModelRegistry.ModelSettings.UserSessionProvider);
+                    s_UserSession = (IUserSession)Activator.CreateInstance(userSessionProviderType);
+                }
+                return s_UserSession;
             }
         }
     }

@@ -7,14 +7,13 @@ using TMD.Model.Validation;
 
 namespace TMD.Model.Sites
 {
+    [Serializable]
     public class Subsite : EntityBase, IEntity, IIsValid
     {
         private string m_Name;
 
         internal Subsite()
-        {
-            Created = DateTime.Now;
-        }
+        { }
 
         public string Code { get; private set; }
 

@@ -6,6 +6,7 @@ using TMD.Model.Validation;
 
 namespace TMD.Model
 {
+    [Serializable]
     public class HeightMeasurements : ICloneable, IIsValid, IIsNull
     {
         private HeightMeasurements() { }

@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/TMDSite.Master" AutoEventWireup="true" CodeBehind="TMDWizard.master.cs" Inherits="TMD.TMDWizard" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
+<div class='wizard'>
+    <div class='wizard-overview'>
+        <asp:ContentPlaceHolder ID="overview" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <div class='wizard-step'>
+        <asp:ContentPlaceHolder ID="step" runat="server"></asp:ContentPlaceHolder>
+        <div class="ui-helper-clearfix"></div>
+    </div>
+    <div class='wizard-nav'>
+        <asp:ContentPlaceHolder ID="nav" runat="server"></asp:ContentPlaceHolder>
+        <div class="ui-helper-clearfix"></div>
+    </div>
+</div>
+</asp:Content>

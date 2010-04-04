@@ -8,6 +8,7 @@ using TMD.Model.Validation;
 
 namespace TMD.Model.Trips
 {
+    [Serializable]
     public class SiteVisit : EntityBase, IEntity, IIsValid
     {
         private Coordinates m_Coordinates;
@@ -74,7 +75,6 @@ namespace TMD.Model.Trips
         public bool CoordinatesCalculated { get; private set; }
         internal IList<SubsiteVisit> SubsiteVisits { get; private set; }
 
-        [EmptyCollectionValidator("Site must contain measurements.")]
         internal IList<Tree> MeasuredTrees { get; private set; }
 
         internal void AddMeasuredTree(Tree t)
@@ -143,13 +143,13 @@ namespace TMD.Model.Trips
             List<Coordinates> coordinatesList = new List<Coordinates>();
             foreach (Tree t in MeasuredTrees)
             {
-                coordinatesList.Add(t.Measurement.Coordinates);
+                coordinatesList.Add(t.CurrentMeasurement.Coordinates);
             }
             foreach (SubsiteVisit sv in SubsiteVisits)
             {
                 foreach (Tree t in sv.MeasuredTrees)
                 {
-                    coordinatesList.Add(t.Measurement.Coordinates);
+                    coordinatesList.Add(t.CurrentMeasurement.Coordinates);
                 }
             }
             CoordinateBounds cb = CoordinateBounds.Create(coordinatesList);
@@ -177,13 +177,33 @@ namespace TMD.Model.Trips
                         return false;
                     }
                 }
-                return base.IsValid;
+                bool containsMeasurements = MeasuredTrees.Count > 0;
+                foreach (SubsiteVisit sv in SubsiteVisits)
+                {
+                    if (sv.MeasuredTrees.Count > 0)
+                    {
+                        containsMeasurements = true;
+                    }
+                }
+                return containsMeasurements && base.IsValid;
             }
         }
 
         public override IList<string> GetValidationErrors()
         {
             List<string> errors = new List<string>();
+            bool containsMeasurements = MeasuredTrees.Count > 0;
+            foreach (SubsiteVisit sv in SubsiteVisits)
+            {
+                if (sv.MeasuredTrees.Count > 0)
+                {
+                    containsMeasurements = true;
+                }
+            }
+            if (!containsMeasurements)
+            {
+                errors.Add("Site or contained subsites must have measurements.");
+            }
             errors.AddRange(base.GetValidationErrors());
             foreach (SubsiteVisit sv in SubsiteVisits)
             {

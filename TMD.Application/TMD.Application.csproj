@@ -42,10 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationRegistry.cs" />
+    <Compile Include="ApplicationSessionProviders\StaticApplicationSessionProvider.cs" />
+    <Compile Include="ApplicationSessionProviders\ThreadStaticApplicationSessionProvider.cs" />
     <Compile Include="ApplicationSettings.cs" />
+    <Compile Include="ApplicationUserSessionProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserSession.cs" />
-    <Compile Include="UserSessionProvider.cs" />
+    <Compile Include="ApplicationSession.cs" />
+    <Compile Include="ApplicationSessionProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TMD.Model\TMD.Model.csproj">

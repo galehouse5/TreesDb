@@ -6,6 +6,7 @@ using System.Reflection;
 
 namespace TMD.Model.Validation
 {
+    [Serializable]
     public class PropertyAttributeValidator : IIsValid
     {
         public virtual bool IsValid

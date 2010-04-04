@@ -5,6 +5,7 @@ using System.Text;
 
 namespace TMD.Model
 {
+    [Serializable]
     public class CoordinateDistance
     {
         private CoordinateDistance(float degrees)

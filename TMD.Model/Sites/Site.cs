@@ -7,6 +7,7 @@ using TMD.Model.Validation;
 
 namespace TMD.Model.Sites
 {
+    [Serializable]
     public class Site : EntityBase, IEntity
     {
         private string m_Name;

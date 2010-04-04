@@ -9,8 +9,9 @@ namespace TMD.Model.Users
     public enum EUserRoles
     {
         None = 0x0,
-        Administrator = 0x1,
+        UserAdmin = 0x1,
         Importer = 0x2,
         Exporter = 0x4,
+        DataAdmin = 0x8
     }
 }

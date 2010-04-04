@@ -8,10 +8,10 @@ namespace TMD.Model
 {
     internal class ModelSettings : ConfigurationSection
     {
-        private const string UnitOfWorkImplementationPropertyName = "unitOfWorkImplementation";
-        private const string UnitOfWorkProviderImplementationPropertyName = "unitOfWorkProviderImplementation";
+        private const string UnitOfWorkProviderPropertyName = "unitOfWorkProvider";
+        private const string UserSessionProviderPropertyName = "userSessionProvider";
         private const string StatesPropertyName = "states";
-        public const string CountriesPropertyName = "countires";
+        private const string CountriesPropertyName = "countries";
 
         [ConfigurationProperty(CountriesPropertyName, IsRequired = true)]
         public CountryCollection Countries
@@ -25,18 +25,18 @@ namespace TMD.Model
             get { return (StateCollection)this[StatesPropertyName]; }
         }
 
-        [ConfigurationProperty(UnitOfWorkImplementationPropertyName, IsRequired = true)]
-        public string UnitOfWorkImplementation
+        [ConfigurationProperty(UnitOfWorkProviderPropertyName, IsRequired = true)]
+        public string UnitOfWorkProvider
         {
-            get { return (string)this[UnitOfWorkImplementationPropertyName]; }
-            set { this[UnitOfWorkImplementationPropertyName] = value; }
+            get { return (string)this[UnitOfWorkProviderPropertyName]; }
+            set { this[UnitOfWorkProviderPropertyName] = value; }
         }
 
-        [ConfigurationProperty(UnitOfWorkProviderImplementationPropertyName, IsRequired = true)]
-        public string UnitOfWorkProviderImplementation
+        [ConfigurationProperty(UserSessionProviderPropertyName, IsRequired = true)]
+        public string UserSessionProvider
         {
-            get { return (string)this[UnitOfWorkProviderImplementationPropertyName]; }
-            set { this[UnitOfWorkProviderImplementationPropertyName] = value; }
+            get { return (string)this[UserSessionProviderPropertyName]; }
+            set { this[UserSessionProviderPropertyName] = value; }
         }
     }
 }

@@ -7,6 +7,7 @@ using TMD.Model.Validation;
 
 namespace TMD.Model
 {
+    [Serializable]
     public class Elevation : ICloneable, IIsValid, IIsNull
     {
         public enum EInputFormat

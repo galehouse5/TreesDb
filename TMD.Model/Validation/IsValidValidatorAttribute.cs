@@ -5,6 +5,7 @@ using System.Text;
 
 namespace TMD.Model.Validation
 {
+    [Serializable]
     public class IsValidValidatorAttribute : ValidatorBaseAttribute
     {
         public IsValidValidatorAttribute(string validationError)

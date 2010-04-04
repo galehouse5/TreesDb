@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="EntityBase.cs" />
     <Compile Include="Trees\TreeService.cs" />
+    <Compile Include="UserSession.cs" />
     <Compile Include="Validation\CollectionMaxCountValidatorAttribute.cs" />
     <Compile Include="Validation\DateTimeRangeValidatorAttribute.cs" />
     <Compile Include="Validation\EmptyCollectionValidatorAttribute.cs" />
@@ -52,8 +53,7 @@
     <Compile Include="Sites\ISiteRepository.cs" />
     <Compile Include="Trees\ITreeRepository.cs" />
     <Compile Include="Trips\SubsiteVisit.cs" />
-    <Compile Include="UnitOfWork\IUnitOfWork.cs" />
-    <Compile Include="UnitOfWork\UnitOfWorkProvider.cs" />
+    <Compile Include="UnitOfWork.cs" />
     <Compile Include="Users\IUserRepository.cs" />
     <Compile Include="Validation\EmptyStringValidatorAttribute.cs" />
     <Compile Include="Validation\IsNullValidatorAttribute.cs" />
@@ -84,7 +84,7 @@
     <Compile Include="Trees\Tree.cs" />
     <Compile Include="Trips\Trip.cs" />
     <Compile Include="Trips\SiteVisit.cs" />
-    <Compile Include="Users\EUserType.cs" />
+    <Compile Include="Users\EUserRoles.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="ValueObjects\HeightMeasurements.cs" />
     <Compile Include="ValueObjects\IIsNull.cs" />

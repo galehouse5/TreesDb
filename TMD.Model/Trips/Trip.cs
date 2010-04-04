@@ -5,21 +5,28 @@ using System.Text;
 using TMD.Model.Sites;
 using TMD.Model.Trees;
 using TMD.Model.Validation;
+using TMD.Common;
 
 namespace TMD.Model.Trips
 {
+    [Serializable]
     public class Trip : EntityBase, IEntity, IIsValid, IIsConflicting
     {
+        private string m_Name;
         private string m_Website;
         private string m_MeasurerContactInfo;
 
         private Trip()
+        { }
+
+        [StringMaxLengthValidator("Trip name must not exceed 100 characters.", 100)]
+        public string Name
         {
-            this.Date = DateTime.Now;
-            this.SiteVisits = new List<SiteVisit>();
-            this.PhotosAvailable = false;
+            get { return m_Name; }
+            set { m_Name = value.Trim().ToTitleCase(); }
         }
 
+        [DateTimeRangeValidator("Trip date must be specified.", "1/1/1753", "1/1/9999")]
         public DateTime Date { get; set; }
 
         [StringMaxLengthValidator("Trip website must not exceed 100 characters.", 100)]
@@ -199,7 +206,13 @@ namespace TMD.Model.Trips
 
         public static Trip Create()
         {
-            return new Trip();
+            Trip t = new Trip();
+            t.Date = DateTime.Now;
+            t.SiteVisits = new List<SiteVisit>();
+            t.PhotosAvailable = false;
+            t.MeasurerContactInfo = string.Empty;
+            t.Name = string.Empty;
+            return t;
         }
     }
 }

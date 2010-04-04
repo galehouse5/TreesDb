@@ -8,6 +8,7 @@ using TMD.Model.Validation;
 
 namespace TMD.Model.Trips
 {
+    [Serializable]
     public class SubsiteVisit : EntityBase, IEntity, IIsConflicting
     {
         private Coordinates m_Coordinates;
@@ -67,7 +68,7 @@ namespace TMD.Model.Trips
             List<Coordinates> coordinatesList = new List<Coordinates>();
             foreach (Tree t in MeasuredTrees)
             {
-                coordinatesList.Add(t.Measurement.Coordinates);
+                coordinatesList.Add(t.CurrentMeasurement.Coordinates);
             }
             CoordinateBounds cb = CoordinateBounds.Create(coordinatesList);
             return cb.Center;

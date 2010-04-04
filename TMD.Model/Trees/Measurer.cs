@@ -6,6 +6,7 @@ using TMD.Model.Validation;
 
 namespace TMD.Model.Trees
 {
+    [Serializable]
     public class Measurer : EntityBase, IEntity
     {
         internal Measurer()

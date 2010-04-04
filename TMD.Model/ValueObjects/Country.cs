@@ -7,6 +7,7 @@ using TMD.Model.Validation;
 
 namespace TMD.Model
 {
+    [Serializable]
     public class Country : ICloneable, IIsValid, IIsNull
     {
         private string m_Code;

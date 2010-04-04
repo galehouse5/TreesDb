@@ -11,7 +11,7 @@ namespace TMD.Application
         private const string ApplicationSettingsSectionName = "applicationSettings";
 
         private static ApplicationSettings s_ApplicationSettings;
-        private static UserSessionProvider s_UserSessionProvider;
+        private static ApplicationSessionProvider s_ApplicationUserSessionProvider;
 
         internal static ApplicationSettings ApplicationSettings
         {
@@ -25,16 +25,16 @@ namespace TMD.Application
             }
         }
 
-        public static UserSessionProvider UserSessionProvider
+        public static ApplicationSessionProvider ApplicationSessionProvider
         {
             get
             {
-                if (s_UserSessionProvider == null)
+                if (s_ApplicationUserSessionProvider == null)
                 {
-                    Type providerType = Type.GetType(ApplicationSettings.UserSessionProvider);
-                    s_UserSessionProvider = (UserSessionProvider)Activator.CreateInstance(providerType);
+                    Type providerType = Type.GetType(ApplicationSettings.ApplicationSessionProvider);
+                    s_ApplicationUserSessionProvider = (ApplicationSessionProvider)Activator.CreateInstance(providerType);
                 }
-                return s_UserSessionProvider;
+                return s_ApplicationUserSessionProvider;
             }
         }
     }

@@ -6,6 +6,7 @@ using TMD.Model.Validation;
 
 namespace TMD.Model
 {
+    [Serializable]
     public class CoordinateBounds : ICloneable, IIsValid, IIsNull
     {
         private CoordinateBounds() { }

@@ -7,7 +7,8 @@ using TMD.Common;
 
 namespace TMD.Model.Trees
 {
-    public class Measurement : EntityBase, IEntity, IIsValid
+    [Serializable]
+    public class Measurement : EntityBase, IEntity, IIsValid, ICloneable
     {
         private Distance m_Height;
         private HeightMeasurements m_HeightMeasurements;
@@ -33,34 +34,7 @@ namespace TMD.Model.Trees
         private Measurement()
         { }
 
-        internal Measurement(string code)
-        {
-            this.Code = code;
-            Coordinates = Coordinates.Null();
-            Elevation = Elevation.Null();
-            PositionMeasurementType = EPositionMeasurementType.NotSpecified;
-            GpsDatum = EGpsDatum.WGS84NAD83;
-            Height = Distance.Null();
-            HeightMeasurements = HeightMeasurements.Null();
-            GirthBreastHeight = Distance.Null();
-            GirthMeasurementHeight = Distance.Null();
-            GirthRootCollarHeight = Distance.Null();
-            MaximumCrownSpread = Distance.Null();
-            MaximumLimbLength = Distance.Null();
-            AverageCrownSpread = Distance.Null();
-            BaseCrownHeight = Distance.Null();
-            CrownVolume = Volume.Null();
-            TrunkVolume = Volume.Null();
-            FormType = EFormType.NotSpecified;
-            Measured = DateTime.Now;
-            Status = EStatus.Native;
-            AgeClass = EAgeClass.NotSpecified;
-            AgeType = EAgeType.NotSpecified;
-            TerrainType = ETerrainType.NotSpecified;
-            Measurers = new List<Measurer>();
-        }
-
-        public string Code { get; private set; }
+        public string Code { get; internal set; }
 
         [EmptyStringValidator("Common name must be specified.")]
         [StringMaxLengthValidator("Common name must not exceed 100 characters.", 100)]
@@ -299,23 +273,87 @@ namespace TMD.Model.Trees
             get { return (float)(((double)Height.Feet * (double)GirthBreastHeight.Feet * (double)GirthBreastHeight.Feet) / 100d); }
         }
 
-        public float TDI2
+        #region ICloneable Members
+
+        public object Clone()
         {
-            get 
-            {
-                return (float)((double)Height.Feet / (double)TreeService.FindTreeOfGreatestHeightBySpecies(Species).Measurement.Height.Feet
-                    + (double)GirthBreastHeight.Feet / (double)TreeService.FindTreeOfGreatestGirthBySpecies(Species).Measurement.Height.Feet);
-            }
+            Measurement c = new Measurement();
+            c.Age = Age;
+            c.AgeClass = AgeClass;
+            c.AgeType = AgeType;
+            c.AverageCrownSpread = (Distance)AverageCrownSpread.Clone();
+            c.BaseCrownHeight = (Distance)BaseCrownHeight.Clone();
+            c.ClinometerBrand = ClinometerBrand;
+            c.Code = Code;
+            c.CommonName = CommonName;
+            c.Coordinates = (Coordinates)Coordinates.Clone();
+            c.CrownComments = CrownComments;
+            c.CrownSpreadMeasurementMethod = CrownSpreadMeasurementMethod;
+            c.CrownVolume = (Volume)CrownVolume.Clone();
+            c.CrownVolumeCalculationMethod = CrownVolumeCalculationMethod;
+            c.Elevation = (Elevation)Elevation.Clone();
+            c.FormType = FormType;
+            c.Genus = Genus;
+            c.GirthBreastHeight = (Distance)GirthBreastHeight.Clone();
+            c.GirthComments = GirthComments;
+            c.GirthMeasurementHeight = (Distance)GirthMeasurementHeight.Clone();
+            c.GirthRootCollarHeight = (Distance)GirthRootCollarHeight.Clone();
+            c.GpsDatum = GpsDatum;
+            c.HealthStatus = HealthStatus;
+            c.Height = (Distance)Height.Clone();
+            c.HeightComments = HeightComments;
+            c.HeightMeasurements = (HeightMeasurements)HeightMeasurements.Clone();
+            c.HeightMeasurementType = HeightMeasurementType;
+            c.LandformIndex = LandformIndex;
+            c.LaserBrand = LaserBrand;
+            c.MaximumCrownSpread = (Distance)MaximumCrownSpread.Clone();
+            c.MaximumLimbLength = (Distance)MaximumLimbLength.Clone();
+            c.Measured = Measured;
+            c.Measurers = new List<Measurer>(Measurers);
+            c.MeasurersTreeId = MeasurersTreeId;
+            c.Name = Name;
+            c.NumberOfTrunks = NumberOfTrunks;
+            c.OtherComments = OtherComments;
+            c.PositionMeasurementType = PositionMeasurementType;
+            c.Species = Species;
+            c.Status = Status;
+            c.TerrainShapeIndex = TerrainShapeIndex;
+            c.TerrainType = TerrainType;
+            c.TreeFormComments = TreeFormComments;
+            c.TrunkComments = TrunkComments;
+            c.TrunkVolume = (Volume)TrunkVolume.Clone();
+            c.TrunkVolumeCalculationMethod = TrunkVolumeCalculationMethod;
+            return c;
         }
 
-        public float TDI3
+        #endregion
+
+        internal static Measurement Create()
         {
-            get 
-            {
-                return (float)((double)Height.Feet / (double)TreeService.FindTreeOfGreatestHeightBySpecies(Species).Measurement.Height.Feet
-                    + (double)GirthBreastHeight.Feet / (double)TreeService.FindTreeOfGreatestGirthBySpecies(Species).Measurement.Height.Feet
-                    + (double)TDICrownSpread.Feet / (double)TreeService.FindTreeOfGreatestTDICrownSpreadBySpecies(Species).Measurement.Height.Feet);
-            }
+            Measurement m = new Measurement();
+            m.Coordinates = Coordinates.Null();
+            m.Elevation = Elevation.Null();
+            m.PositionMeasurementType = EPositionMeasurementType.NotSpecified;
+            m.GpsDatum = EGpsDatum.WGS84NAD83;
+            m.Height = Distance.Null();
+            m.HeightMeasurements = HeightMeasurements.Null();
+            m.GirthBreastHeight = Distance.Null();
+            m.GirthMeasurementHeight = Distance.Null();
+            m.GirthRootCollarHeight = Distance.Null();
+            m.MaximumCrownSpread = Distance.Null();
+            m.MaximumLimbLength = Distance.Null();
+            m.AverageCrownSpread = Distance.Null();
+            m.BaseCrownHeight = Distance.Null();
+            m.CrownVolume = Volume.Null();
+            m.TrunkVolume = Volume.Null();
+            m.FormType = EFormType.NotSpecified;
+            m.Measured = DateTime.Now;
+            m.Status = EStatus.Native;
+            m.AgeClass = EAgeClass.NotSpecified;
+            m.AgeType = EAgeType.NotSpecified;
+            m.TerrainType = ETerrainType.NotSpecified;
+            m.Measurers = new List<Measurer>();
+            return m;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace TMD.Application
 {
     public delegate T InstanceCreationDelegate<T>();
 
-    public abstract class UserSessionProvider : UnitOfWorkProvider
+    public abstract class ApplicationSessionProvider 
     {
         public abstract bool Contains(string key);
         public abstract T Get<T>(string key);

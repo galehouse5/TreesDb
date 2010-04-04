@@ -3,20 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
+using TMD.Model.Users;
 
 namespace TMD.Model
 {
+    [Serializable]
     public class EntityBase : PropertyAttributeValidator, IIsValid, IEntity
     {
         protected EntityBase()
         {
             Created = DateTime.Now;
+            if (!UserSession.User.IsAnonymous)
+            {
+                Creator = UserSession.User;
+            }
         }
 
-        public Guid Id { get; protected set; }
+        protected EntityBase(bool ignoreCreator)
+        {
+            Created = DateTime.Now;
+            if (!ignoreCreator && !UserSession.User.IsAnonymous)
+            {
+                Creator = UserSession.User;
+            }
+        }
 
-        [DateTimeRangeValidator("Created date must be specified.", "1/1/1753", "1/1/9999")]
-        public DateTime Created { get; protected set; }
+        public Guid Id { get; private set; }
+        public DateTime Created { get; private set; }
+        public User Creator { get; private set; } 
 
         public static bool operator ==(EntityBase e1, EntityBase e2)
         {
