@@ -27,6 +27,7 @@
 </ul>
 <div class="sectionspacer"></div>
 <p>To proceed, click the start link in the lower right.</p>
+<div class="sectionspacer"></div>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="NavContent" runat="server">

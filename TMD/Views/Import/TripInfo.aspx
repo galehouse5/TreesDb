@@ -8,12 +8,13 @@
 <script type="text/javascript">
     $(document).ready(function () {
         CreateDatepicker($("#Date"));
-        InitializeTripFormValidation($('#tripForm'));
+        InitializeTripFormValidation();
+        $('#Name').focus();
         $('.wizard a').click(function () {
-            if ($(this).hasClass('retreat') || $('#tripForm').valid()) {
+            if (!$(this).hasClass('advance') || $('#tripForm').valid()) {
                 var link = $(this);
                 $.post('/Import/TripInfo',
-                    $('#tripForm').serialize(), 
+                    $('#tripForm').serialize(),
                     function () {
                         window.location.href = link.attr("href")
                     }
@@ -61,6 +62,7 @@
         <div class="ui-helper-clearfix"></div>
     </div>
 </form>
+<div class="sectionspacer"></div>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="NavContent" runat="server">

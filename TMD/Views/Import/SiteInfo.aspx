@@ -5,6 +5,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" rel="Stylesheet" href="/Styles/Import.css" />
 <script type="text/javascript" src="/Scripts/Import.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        InitializeSitesFormValidation();
+        $('.wizard a').click(function () {
+            if (!$(this).hasClass('advance') || $('#sitesForm').valid()) {
+                return true;
+            } else {
+                return false;
+            }
+        });
+    });
+</script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="OverviewContent" runat="server">
@@ -16,7 +28,7 @@
 <div class="sectionspacer"></div>
 <p>
     Click <a href="javascript:AddSite()">Add site</a> to build a list of the sites you visited on your trip.
-    Once finished, you can proceed to the next step to list the measurements you recorded at each site.
+    When finished, move to the next step to list the measurements you recorded at each site.
 </p>
 <ul class="sites">
 <% for (int i = 0; i < Model.Sites.Count; i++) { %>
@@ -45,6 +57,11 @@
     </li>
 <% } %>
 </ul>
+<form id="sitesForm" method="post" action="">
+    <%= Html.Hidden("NumberOfSites", Model.Sites.Count) %>
+    <div class="ui-helper-clearfix"></div>
+</form>
+<div class="sectionspacer"></div>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="NavContent" runat="server">

@@ -14,8 +14,8 @@ function PreloadImportIcons() {
 }
 
 // TripInfo
-function InitializeTripFormValidation(tripForm) {
-    $(tripForm).validate({
+function InitializeTripFormValidation() {
+    $('#tripForm').validate({
         rules: {
             Name: { TMDAlways: true, maxlength: 100 },
             Date: { TMDAlways: true, TMDDate: true },
@@ -82,6 +82,7 @@ function ConfirmDeleteSite(dialog, siteId) {
     $.post("/Import/ConfirmDeleteSite",
             { siteId: siteId },
             function (data) {
+                $('#NumberOfSites').val(parseInt($('#NumberOfSites').val()) - 1);
                 $('#' + siteId).remove();
                 $(dialog).dialog('destroy').remove();
             });
@@ -114,6 +115,17 @@ function ConfirmDeleteSubsite(dialog, siteId, subsiteId) {
                 $('#' + subsiteId).remove();
                 $(dialog).dialog('destroy').remove();
             });
+}
+
+function InitializeSitesFormValidation() {
+    $('#sitesForm').validate({
+        rules: {
+            NumberOfSites: { min: 1 }
+        },
+        messages: {
+            NumberOfSites: { min: "You must <a href='javascript:AddSite()'>add a site</a> before moving to the next step." }
+        }
+    });
 }
 
 function InitializeSiteFormValidation() {
@@ -149,6 +161,8 @@ function AddSite() {
                             $.post('/Import/SaveAddSiteDialog',
                                 $('#siteForm').serialize(),
                                 function (data) {
+                                    $('#NumberOfSites').val(parseInt($('#NumberOfSites').val()) + 1);
+                                    $('#sitesForm').validate().resetForm();
                                     $('ul.sites').prepend(buildListSiteDom(data.siteId, data.siteName));
                                     dialog.dialog('destroy').remove();
                                 }
@@ -164,6 +178,7 @@ function AddSite() {
                 }
             });
             InitializeSiteFormValidation();
+            $('#Name').focus();
         });
 }
 
@@ -194,6 +209,7 @@ function AddSubsite(siteId) {
                 }
             });
             InitializeSubsiteFormValidation();
+            $('#Name').focus();
         });
 }
 
@@ -224,6 +240,7 @@ function EditSite(siteId) {
                 }
             });
             InitializeSiteFormValidation();
+            $('#Name').focus();
         });
 }
 
@@ -254,5 +271,6 @@ function EditSubsite(siteId, subsiteId) {
                 }
             });
             InitializeSubsiteFormValidation();
+            $('#Name').focus();
         });
 }
