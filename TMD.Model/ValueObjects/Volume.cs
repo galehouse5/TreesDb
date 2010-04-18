@@ -99,16 +99,16 @@ namespace TMD.Model
             get { return InputFormat != EInputFormat.Invalid && CubicFeet >= 0f; }
         }
 
-        public IList<string> GetValidationErrors()
+        public IList<ValidationError> GetValidationErrors()
         {
-            List<string> errors = new List<string>();
+            List<ValidationError> errors = new List<ValidationError>();
             if (InputFormat == EInputFormat.Invalid)
             {
-                errors.Add("Volume must be in fffff ft^3 or mmmmm.mm m^3 format.");
+                errors.Add(ValidationError.Create(this, "InputFormat", "Volume must be in fffff ft^3 or mmmmm.mm m^3 format."));
             }
             if (CubicFeet < 0f)
             {
-                errors.Add("Volume must be non-negative.");
+                errors.Add(ValidationError.Create(this, "CubicFeet", "Volume must be non-negative."));
             }
             return errors;
         }

@@ -19,14 +19,6 @@ namespace TMD.Model.Trips
         private SiteVisit()
         { }
 
-        internal SiteVisit(Site site)
-        {
-            this.Site = site;
-            m_Coordinates = Coordinates.Null();
-            this.SubsiteVisits = new List<SubsiteVisit>();
-            this.MeasuredTrees = new List<Tree>();
-        }
-
         public Site Site { get; private set; }
 
         [EmptyStringValidator("Site ownership type must be specified.")]
@@ -34,21 +26,21 @@ namespace TMD.Model.Trips
         public string OwnershipType 
         {
             get { return m_OwnershipType; }
-            set { m_OwnershipType = value.Trim(); }
+            set { m_OwnershipType = (value ?? string.Empty).Trim(); }
         }
 
         [StringMaxLengthValidator("Site ownership contact info must not exceed 200 characters.", 200)]
         public string OwnershipContactInfo 
         {
             get { return m_OwnershipContactInfo; }
-            set { m_OwnershipContactInfo = value.Trim(); }
+            set { m_OwnershipContactInfo = (value ?? string.Empty).Trim(); }
         }
 
         [StringMaxLengthValidator("Site comments must not exceed 300 characters.", 300)]
         public string SiteComments 
         {
             get { return m_SiteComments; }
-            set { m_SiteComments = value.Trim(); }
+            set { m_SiteComments = (value ?? string.Empty).Trim(); }
         }
 
         [IsNullValidator("Site coordinates must be specified or contained measurements must have specified coordinates.")]
@@ -73,23 +65,45 @@ namespace TMD.Model.Trips
         }
 
         public bool CoordinatesCalculated { get; private set; }
-        internal IList<SubsiteVisit> SubsiteVisits { get; private set; }
+        private IList<SubsiteVisit> SubsiteVisits { get; set; }
 
-        internal IList<Tree> MeasuredTrees { get; private set; }
+        public IList<Tree> MeasuredTrees { get; private set; }
 
-        internal void AddMeasuredTree(Tree t)
+        public bool HasMeasuredTrees
+        {
+            get
+            {
+                if (SubsiteVisits.Count > 0)
+                {
+                    foreach (SubsiteVisit sv in SubsiteVisits)
+                    {
+                        if (!sv.HasMeasuredTrees)
+                        {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                else
+                {
+                    return MeasuredTrees.Count > 0;
+                }
+            }
+        }
+
+        public void AddMeasuredTree(Tree t)
         {
             invalidateCoordinatesCalculation();
             MeasuredTrees.Add(t);
         }
 
-        internal bool RemoveMeasuredTree(Tree t)
+        public bool RemoveMeasuredTree(Tree t)
         {
             invalidateCoordinatesCalculation();
             return MeasuredTrees.Remove(t);
         }
 
-        internal bool AddSubsiteMeasuredTree(Subsite s, Tree t)
+        public bool AddSubsiteMeasuredTree(Subsite s, Tree t)
         {
             foreach (SubsiteVisit sv in SubsiteVisits)
             {
@@ -103,7 +117,7 @@ namespace TMD.Model.Trips
             return false;
         }
 
-        internal bool RemoveSubsiteMeasuredTree(Subsite s, Tree t)
+        public bool RemoveSubsiteMeasuredTree(Subsite s, Tree t)
         {
             foreach (SubsiteVisit sv in SubsiteVisits)
             {
@@ -116,26 +130,32 @@ namespace TMD.Model.Trips
             return false;
         }
 
-        internal SubsiteVisit AddSubsite(Subsite s)
+        public IList<SubsiteVisit> ListSubsiteVisists()
         {
-            SubsiteVisit sv = new SubsiteVisit(s);
-            SubsiteVisits.Add(sv);
-            return sv;
+            IOrderedEnumerable<SubsiteVisit> ssvs = SubsiteVisits.OrderByDescending(ssv => ssv.Created);
+            return ssvs.ToList();
         }
 
-        internal bool RemoveSubsite(Subsite s)
+        public void AddSubsiteVisit(SubsiteVisit ssv)
         {
-            for (int i = SubsiteVisits.Count - 1; i >= 0; i--)
+            SubsiteVisits.Add(ssv);
+        }
+
+        public bool RemoveSubsiteVisit(SubsiteVisit ssv)
+        {
+            return SubsiteVisits.Remove(ssv);
+        }
+
+        public SubsiteVisit GetSubsiteVisitById(Guid id)
+        {
+            foreach (SubsiteVisit ssv in SubsiteVisits)
             {
-                SubsiteVisit sv = SubsiteVisits[i];
-                if (sv.Subsite == s)
+                if (ssv.Id == id)
                 {
-                    SubsiteVisits.RemoveAt(i);
-                    invalidateCoordinatesCalculation();
-                    return true;
+                    return ssv;
                 }
             }
-            return false;
+            return null;
         }
 
         private Coordinates calculateCoordinates()
@@ -170,6 +190,10 @@ namespace TMD.Model.Trips
         {
             get 
             {
+                if (!base.IsValid)
+                {
+                    return false;
+                }
                 foreach (SubsiteVisit sv in SubsiteVisits)
                 {
                     if (!sv.IsValid)
@@ -177,37 +201,36 @@ namespace TMD.Model.Trips
                         return false;
                     }
                 }
-                bool containsMeasurements = MeasuredTrees.Count > 0;
-                foreach (SubsiteVisit sv in SubsiteVisits)
+                foreach (Tree t in MeasuredTrees)
                 {
-                    if (sv.MeasuredTrees.Count > 0)
+                    if (!t.IsValid)
                     {
-                        containsMeasurements = true;
+                        return false;
                     }
                 }
-                return containsMeasurements && base.IsValid;
+                if (SubsiteVisits.Count == 0 && MeasuredTrees.Count == 0)
+                {
+                    return false;
+                }
+                return true;
             }
         }
 
-        public override IList<string> GetValidationErrors()
+        public override IList<ValidationError> GetValidationErrors()
         {
-            List<string> errors = new List<string>();
-            bool containsMeasurements = MeasuredTrees.Count > 0;
-            foreach (SubsiteVisit sv in SubsiteVisits)
-            {
-                if (sv.MeasuredTrees.Count > 0)
-                {
-                    containsMeasurements = true;
-                }
-            }
-            if (!containsMeasurements)
-            {
-                errors.Add("Site or contained subsites must have measurements.");
-            }
+            List<ValidationError> errors = new List<ValidationError>();
             errors.AddRange(base.GetValidationErrors());
             foreach (SubsiteVisit sv in SubsiteVisits)
             {
                 errors.AddRange(sv.GetValidationErrors());
+            }
+            foreach (Tree t in MeasuredTrees)
+            {
+                errors.AddRange(t.GetValidationErrors());
+            }
+            if (SubsiteVisits.Count == 0 && MeasuredTrees.Count == 0)
+            {
+                errors.Add(ValidationError.Create(this, "MeasuredTrees", "Site must have measurements."));
             }
             return errors;
         }
@@ -246,5 +269,15 @@ namespace TMD.Model.Trips
         }
 
         #endregion
+
+        public static SiteVisit Create(Site site)
+        {
+            SiteVisit sv = new SiteVisit();
+            sv.Site = site;
+            sv.m_Coordinates = (Coordinates)site.Coordinates.Clone();
+            sv.SubsiteVisits = new List<SubsiteVisit>();
+            sv.MeasuredTrees = new List<Tree>();
+            return sv;
+        }
     }
 }

@@ -12,14 +12,14 @@ namespace TMD.Application
     {
         public abstract bool Contains(string key);
         public abstract T Get<T>(string key);
-        public abstract void Set<T>(string key, T value);
+        public abstract void Set(string key, object value);
         public abstract bool Delete(string key);
 
         public T GetOrCreate<T>(string key, T defaultValue)
         {
             if (!Contains(key))
             {
-                Set<T>(key, defaultValue);
+                Set(key, defaultValue);
             }
             return Get<T>(key);
         }
@@ -29,7 +29,7 @@ namespace TMD.Application
             if (!Contains(key))
             {
                 T instance = instanceCreator();
-                Set<T>(key, instance);
+                Set(key, instance);
             }
             return Get<T>(key);
         }

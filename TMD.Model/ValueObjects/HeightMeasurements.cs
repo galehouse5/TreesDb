@@ -106,9 +106,9 @@ namespace TMD.Model
             }
         }
 
-        public IList<string> GetValidationErrors()
+        public IList<ValidationError> GetValidationErrors()
         {
-            List<string> errors = new List<string>();
+            List<ValidationError> errors = new List<ValidationError>();
             errors.AddRange(DistanceTop.GetValidationErrors());
             errors.AddRange(AngleTop.GetValidationErrors());
             errors.AddRange(DistanceBottom.GetValidationErrors());
@@ -116,7 +116,7 @@ namespace TMD.Model
             errors.AddRange(VerticalOffset.GetValidationErrors());
             if (Height.Feet < 0f)
             {
-                errors.Add("Calculated height is negative, double check angle measurements.");
+                errors.Add(ValidationError.Create(this, "Height.Feet", "Calculated height is negative, double check angle measurements."));
             }
             return errors;
         }

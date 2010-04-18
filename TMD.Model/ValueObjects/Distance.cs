@@ -137,16 +137,16 @@ namespace TMD.Model
             get { return InputFormat != EInputFormat.Invalid && Feet >= 0f; }
         }
 
-        public IList<string> GetValidationErrors()
+        public IList<ValidationError> GetValidationErrors()
         {
-            List<string> errors = new List<string>();
+            List<ValidationError> errors = new List<ValidationError>();
             if (InputFormat == EInputFormat.Invalid)
             {
-                errors.Add("Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.");
+                errors.Add(ValidationError.Create(this, "InputFormat", "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format."));
             }
             if (Feet < 0f)
             {
-                errors.Add("Distance must be non-negative.");
+                errors.Add(ValidationError.Create(this, "Feet", "Distance must be non-negative."));
             }
             return errors;
         }

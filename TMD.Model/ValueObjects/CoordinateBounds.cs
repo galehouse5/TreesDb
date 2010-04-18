@@ -98,9 +98,9 @@ namespace TMD.Model
             get { return NE.IsValid && SW.IsValid; }
         }
 
-        IList<string> IIsValid.GetValidationErrors()
+        IList<ValidationError> IIsValid.GetValidationErrors()
         {
-            List<string> errors = new List<string>();
+            List<ValidationError> errors = new List<ValidationError>();
             errors.AddRange(NE.GetValidationErrors());
             errors.AddRange(SW.GetValidationErrors());
             return errors;

@@ -16,13 +16,6 @@ namespace TMD.Model.Trips
         private SubsiteVisit()
         { }
 
-        internal SubsiteVisit(Subsite s)
-        {
-            this.Subsite = s;
-            m_Coordinates = Coordinates.Null();
-            this.MeasuredTrees = new List<Tree>();
-        }
-
         public Subsite Subsite { get; private set; }
        
         [IsNullValidator("Subsite coordinates must be specified or contained measurements must have specified coordinates.")]
@@ -49,15 +42,20 @@ namespace TMD.Model.Trips
         public bool CoordinatesCalculated { get; private set; }
 
         [EmptyCollectionValidator("Subsite must contain measurements.")]
-        internal IList<Tree> MeasuredTrees { get; private set; }
+        public IList<Tree> MeasuredTrees { get; private set; }
 
-        internal void AddMeasuredTree(Tree t)
+        public bool HasMeasuredTrees
+        {
+            get { return MeasuredTrees.Count > 0; }
+        }
+
+        public void AddMeasuredTree(Tree t)
         {
             invalidateCoordinatesCalculation();
             MeasuredTrees.Add(t);
         }
 
-        internal bool RemoveMeasuredTree(Tree t)
+        public bool RemoveMeasuredTree(Tree t)
         {
             invalidateCoordinatesCalculation();
             return MeasuredTrees.Remove(t);
@@ -88,19 +86,34 @@ namespace TMD.Model.Trips
         {
             get
             {
-                return base.IsValid
-                    && Subsite.IsValid;
+                if (MeasuredTrees.Count == 0)
+                {
+                    return false;
+                }
+                foreach (Tree t in MeasuredTrees)
+                {
+                    if (!t.IsValid)
+                    {
+                        return false;
+                    }
+                }
+                return base.IsValid && Subsite.IsValid;
             }
         }
 
-        public override IList<string> GetValidationErrors()
+        public override IList<ValidationError> GetValidationErrors()
         {
-            List<string> errors = new List<string>();
+            List<ValidationError> errors = new List<ValidationError>();
             errors.AddRange(base.GetValidationErrors());
-            if (!Subsite.IsValid)
+            if (MeasuredTrees.Count == 0)
             {
-                errors.AddRange(Subsite.GetValidationErrors());
+                errors.Add(ValidationError.Create(this, "MeasuredTrees", "Subsite must have measurements."));
             }
+            foreach (Tree t in MeasuredTrees)
+            {
+                errors.AddRange(t.GetValidationErrors());
+            }
+            errors.AddRange(Subsite.GetValidationErrors());
             return errors;
         }
 
@@ -125,5 +138,14 @@ namespace TMD.Model.Trips
         }
 
         #endregion
+
+        public static SubsiteVisit Create(Subsite ss)
+        {
+            SubsiteVisit ssv = new SubsiteVisit();
+            ssv.Subsite = ss;
+            ssv.m_Coordinates = (Coordinates)ss.Coordinates.Clone();
+            ssv.MeasuredTrees = new List<Tree>();
+            return ssv;
+        }
     }
 }

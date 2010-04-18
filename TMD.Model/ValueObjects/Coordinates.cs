@@ -101,9 +101,9 @@ namespace TMD.Model
             get { return Latitude.IsValid && Longitude.IsValid; }
         }
 
-        public IList<string> GetValidationErrors()
+        public IList<ValidationError> GetValidationErrors()
         {
-            List<string> errors = new List<string>();
+            List<ValidationError> errors = new List<ValidationError>();
             errors.AddRange(Latitude.GetValidationErrors());
             errors.AddRange(Longitude.GetValidationErrors());
             return errors;

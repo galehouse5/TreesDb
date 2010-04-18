@@ -17,13 +17,13 @@ namespace TMD.Application
         public DateTime StartTime
         {
             get { return GetOrCreate<DateTime>(StartTimeKey, DateTime.MaxValue); }
-            private set { Set<DateTime>(StartTimeKey, value); }
+            private set { Set(StartTimeKey, value); }
         }
 
         public User User
         {
             get { return GetOrCreate<User>(UserKey, delegate() { return User.Anonymous(); } ); }
-            private set { Set<User>(UserKey, value); }
+            private set { Set(UserKey, value); }
         }
 
         public void Start(User user)

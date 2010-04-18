@@ -135,16 +135,16 @@ namespace TMD.Model
             get { return InputFormat != EInputFormat.Invalid && AbsoluteTotalDegrees <= 90; }
         }
 
-        public IList<string> GetValidationErrors()
+        public IList<ValidationError> GetValidationErrors()
         {
-            List<string> errors = new List<string>();
+            List<ValidationError> errors = new List<ValidationError>();
             if (InputFormat == EInputFormat.Invalid)
             {
-                errors.Add("Longitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format.");
+                errors.Add(ValidationError.Create(this, "InputFormat", "Longitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format."));
             }
             if (AbsoluteTotalDegrees > 90)
             {
-                errors.Add("Longitude must be in the range of -180 to +180 degrees.");
+                errors.Add(ValidationError.Create(this, "AbsoluteTotalDegrees", "Longitude must be in the range of -180 to +180 degrees."));
             }
             return errors;
         }
@@ -162,14 +162,22 @@ namespace TMD.Model
 
         public static Regex DegreesMinutesSecondsFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3})\\s+(?<minutes>[0-9]{1,2})\\s+(?<seconds>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
         public static Regex DegreesDecimalMinutesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3})\\s+(?<minutes>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
-        public static Regex DecimalDegreesFormat = new Regex("^\\s*(?<sign>[-+]?(?<degrees>[0-9]{1,3}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
+        public static Regex DecimalDegreesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
 
         public static Longitude Create(string s)
         {
             Match match;
             float sign, degrees, minutes, seconds;
             EInputFormat inputFormat;
-            if ((match = DegreesMinutesSecondsFormat.Match(s)).Success)
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                sign = 1f;
+                degrees = 0f;
+                minutes = 0f;
+                seconds = 0f;
+                inputFormat = EInputFormat.Invalid;
+            }
+            else if ((match = DegreesMinutesSecondsFormat.Match(s)).Success)
             {
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
                 degrees = float.Parse(match.Groups["degrees"].Value);
@@ -180,7 +188,7 @@ namespace TMD.Model
             else if ((match = DegreesDecimalMinutesFormat.Match(s)).Success)
             {
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
-                degrees = float.Parse(match.Groups["degrees"].Value) * (match.Groups["sign"].Value == "-" ? -1f : 1f);
+                degrees = float.Parse(match.Groups["degrees"].Value);
                 minutes = float.Parse(match.Groups["minutes"].Value);
                 seconds = 0f;
                 inputFormat = EInputFormat.DegreesDecimalMinutes;
@@ -188,7 +196,7 @@ namespace TMD.Model
             else if ((match = DecimalDegreesFormat.Match(s)).Success)
             {
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
-                degrees = float.Parse(match.Groups["degrees"].Value) * (match.Groups["sign"].Value == "-" ? -1f : 1f);
+                degrees = float.Parse(match.Groups["degrees"].Value);
                 minutes = 0f;
                 seconds = 0f;
                 inputFormat = EInputFormat.DecimalDegrees;

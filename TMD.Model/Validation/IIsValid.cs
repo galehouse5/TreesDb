@@ -8,6 +8,6 @@ namespace TMD.Model.Validation
     public interface IIsValid
     {
         bool IsValid { get; }
-        IList<string> GetValidationErrors();
+        IList<ValidationError> GetValidationErrors();
     }
 }

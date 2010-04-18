@@ -8,6 +8,6 @@ namespace TMD.Model
     public interface IEntity 
     {
         Guid Id { get; }
-        DateTime Created { get; }
+        Date Created { get; }
     }
 }

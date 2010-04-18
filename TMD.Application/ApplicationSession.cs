@@ -9,35 +9,38 @@ namespace TMD.Application
 {
     public static class ApplicationSession
     {
-        private const string GoToOnWizardCancelKey = "goToOnWizardCancel";
-        private const string GoToOnWizardCompleteKey = "goToOnWizardComplete";
-        private const string DialogNumberKey = "dialogNumber";
-        private const string CurrentImportTripKey = "currentImportTrip";
-
-        public static Trip CurrentImportTrip
+        public static class Keys
         {
-            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<Trip>(CurrentImportTripKey, (Trip)null); }
-            set { ApplicationRegistry.ApplicationSessionProvider.Set<Trip>(CurrentImportTripKey, value); }
+            public const string GoToOnWizardCancelKey = "goToOnWizardCancel";
+            public const string GoToOnWizardCompleteKey = "goToOnWizardComplete";
+            public const string DialogNumberKey = "dialogNumber";
+            public const string ImportTripKey = "importTrip";
+        }
+
+        public static Trip ImportTrip
+        {
+            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<Trip>(Keys.ImportTripKey, () => Trip.Create()); }
+            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.ImportTripKey, value); }
         }
 
         public static InstanceCreationDelegate<object> DefaultGoToOnWizardCancelCreator = delegate() { return null; };
         public static object GoToOnWizardCancel
         {
-            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<object>(GoToOnWizardCancelKey, DefaultGoToOnWizardCancelCreator); }
-            set { ApplicationRegistry.ApplicationSessionProvider.Set<object>(GoToOnWizardCancelKey, value); }
+            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<object>(Keys.GoToOnWizardCancelKey, DefaultGoToOnWizardCancelCreator); }
+            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.GoToOnWizardCancelKey, value); }
         }
 
         public static InstanceCreationDelegate<object> DefaultGoToOnWizardCompleteCreator = delegate() { return null; };
         public static object GoToOnWizardComplete
         {
-            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<object>(GoToOnWizardCompleteKey, DefaultGoToOnWizardCompleteCreator); }
-            set { ApplicationRegistry.ApplicationSessionProvider.Set<object>(GoToOnWizardCompleteKey, value); }
+            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<object>(Keys.GoToOnWizardCompleteKey, DefaultGoToOnWizardCompleteCreator); }
+            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.GoToOnWizardCompleteKey, value); }
         }
 
         public static int DialogNumber
         {
-            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(DialogNumberKey, 0); }
-            set { ApplicationRegistry.ApplicationSessionProvider.Set<int>(DialogNumberKey, value); }
+            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(Keys.DialogNumberKey, 0); }
+            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.DialogNumberKey, value); }
         }
     }
 }

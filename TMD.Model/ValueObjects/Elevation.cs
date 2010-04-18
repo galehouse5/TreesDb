@@ -10,6 +10,8 @@ namespace TMD.Model
     [Serializable]
     public class Elevation : ICloneable, IIsValid, IIsNull
     {
+        public const int MaxElevationFeet = 17000;
+
         public enum EInputFormat
         {
             Invalid,
@@ -108,21 +110,21 @@ namespace TMD.Model
             get { return InputFormat != EInputFormat.Invalid && Feet >= 0f && Feet <= 17000; }
         }
 
-        public IList<string> GetValidationErrors()
+        public IList<ValidationError> GetValidationErrors()
         {
-            List<string> errors = new List<string>();
+            List<ValidationError> errors = new List<ValidationError>();
             if (InputFormat == EInputFormat.Invalid)
             {
-                errors.Add("Elevation must be in fffff ft or mmmmm m format.");
+                errors.Add(ValidationError.Create(this, "InputFormat", "Elevation must be in fffff ft or mmmmm m format."));
             }
             if (Feet < 0f)
             {
-                errors.Add("Elevation must be non-negative.");
+                errors.Add(ValidationError.Create(this, "Feet", "Elevation must be non-negative."));
             }
-            if (Feet > 17000)
+            if (Feet > MaxElevationFeet)
             {
                 Elevation maxElevation = new Elevation(17000, InputFormat);
-                errors.Add(string.Format("Elevation must not exceed {0}.", maxElevation.ToString()));
+                errors.Add(ValidationError.Create(this, "Feet", string.Format("Elevation must not exceed {0}.", maxElevation.ToString())));
             }
             return errors;
         }

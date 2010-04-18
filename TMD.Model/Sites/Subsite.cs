@@ -22,11 +22,19 @@ namespace TMD.Model.Sites
         public string Name 
         {
             get { return m_Name; }
-            set { m_Name = value.Trim().ToTitleCase(); }
+            set { m_Name = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
         [IsNullValidator("Site coordinates must be specified.")]
         [IsValidValidator("Site coordinates must be valid.")]
         public Coordinates Coordinates { get; set; }
+
+        public static Subsite Create()
+        {
+            Subsite ss = new Subsite();
+            ss.Name = string.Empty;
+            ss.Coordinates = Coordinates.Null();
+            return ss;
+        }
     }
 }

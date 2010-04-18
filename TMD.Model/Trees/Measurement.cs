@@ -214,8 +214,8 @@ namespace TMD.Model.Trees
             set { m_TreeFormComments = value.Trim(); }
         }
 
-        [DateTimeRangeValidator("Measured date must be specified.", "1/1/1753", "1/1/9999")]
-        public DateTime Measured { get; set; }
+        [DateRangeValidator("Measured date must be specified.", "1/1/1753", "1/1/9999")]
+        public Date Measured { get; set; }
 
         public EStatus Status { get; set; }
 
@@ -347,7 +347,7 @@ namespace TMD.Model.Trees
             m.CrownVolume = Volume.Null();
             m.TrunkVolume = Volume.Null();
             m.FormType = EFormType.NotSpecified;
-            m.Measured = DateTime.Now;
+            m.Measured = Date.Now;
             m.Status = EStatus.Native;
             m.AgeClass = EAgeClass.NotSpecified;
             m.AgeType = EAgeType.NotSpecified;

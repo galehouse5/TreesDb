@@ -5,30 +5,30 @@ using System.Text;
 
 namespace TMD.Model.Validation
 {
-    public class DateTimeRangeValidatorAttribute : ValidatorBaseAttribute
+    public class DateRangeValidatorAttribute : ValidatorBaseAttribute
     {
-        public DateTimeRangeValidatorAttribute(string validationError, DateTime min, DateTime max)
+        public DateRangeValidatorAttribute(string validationError, Date min, Date max)
             : base(validationError)
         {
             this.Min = min;
             this.Max = max;
         }
 
-        public DateTimeRangeValidatorAttribute(string validationError, string min, string max)
+        public DateRangeValidatorAttribute(string validationError, string min, string max)
             : base(validationError)
         {
-            this.Min = DateTime.Parse(min);
-            this.Max = DateTime.Parse(max);
+            this.Min = Date.Create(min);
+            this.Max = Date.Create(max);
         }
 
-        public DateTime Min { get; private set; }
-        public DateTime Max { get; private set; }
+        public Date Min { get; private set; }
+        public Date Max { get; private set; }
 
         public override bool IsValid(object propertyValue)
         {
-            if (propertyValue is DateTime)
+            if (propertyValue is Date)
             {
-                DateTime dt = (DateTime)propertyValue;
+                Date dt = (Date)propertyValue;
                 return dt >= Min && dt <= Max;
             }
             return false;

@@ -12,24 +12,26 @@ namespace TMD.Model
     {
         protected EntityBase()
         {
-            Created = DateTime.Now;
+            Created = Date.Now;
             if (!UserSession.User.IsAnonymous)
             {
                 Creator = UserSession.User;
             }
+            Id = Guid.NewGuid();
         }
 
         protected EntityBase(bool ignoreCreator)
         {
-            Created = DateTime.Now;
+            Created = Date.Now;
             if (!ignoreCreator && !UserSession.User.IsAnonymous)
             {
                 Creator = UserSession.User;
             }
+            Id = Guid.NewGuid();
         }
 
         public Guid Id { get; private set; }
-        public DateTime Created { get; private set; }
+        public Date Created { get; private set; }
         public User Creator { get; private set; } 
 
         public static bool operator ==(EntityBase e1, EntityBase e2)

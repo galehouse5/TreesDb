@@ -14,12 +14,7 @@ namespace TMD.Model.Sites
         private string m_County;
 
         private Site()
-        {
-            this.Country = Country.Null();
-            this.State = State.Null();
-            this.Coordinates = Coordinates.Null();
-            this.Subsites = new List<Subsite>();
-        }
+        { }
 
         public string Code { get; private set; }
 
@@ -28,7 +23,7 @@ namespace TMD.Model.Sites
         public string Name
         {
             get { return m_Name; }
-            set { m_Name = value.Trim().ToTitleCase(); }
+            set { m_Name = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
         [IsNullValidator("Site country must be specified.")]
@@ -44,7 +39,7 @@ namespace TMD.Model.Sites
         public string County
         {
             get { return m_County; }
-            set { m_County = value.Trim().ToTitleCase(); }
+            set { m_County = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
         [IsNullValidator("Site coordinates must be specified.")]
@@ -67,7 +62,14 @@ namespace TMD.Model.Sites
 
         public static Site Create()
         {
-            return new Site();
+            Site s = new Site();
+            s.Name = string.Empty;
+            s.Country = Country.Create("US");
+            s.State = State.Null();
+            s.County = string.Empty;
+            s.Coordinates = Coordinates.Null();
+            s.Subsites = new List<Subsite>();
+            return s;
         }
     }
 }

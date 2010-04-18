@@ -132,12 +132,12 @@ namespace TMD.Model
             get { return m_IsKnown; }
         }
 
-        public IList<string> GetValidationErrors()
+        public IList<ValidationError> GetValidationErrors()
         {
-            List<string> errors = new List<string>();
+            List<ValidationError> errors = new List<ValidationError>();
             if (!m_IsKnown)
             {
-                errors.Add(string.Format("Unknown country code '{0}'.", Code));
+                errors.Add(ValidationError.Create(this, "Code", string.Format("Unknown country code '{0}'.", Code)));
             }
             return errors;
         }

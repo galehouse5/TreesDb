@@ -32,7 +32,7 @@ namespace TMD.Application.ApplicationSessionProviders
             return (T)Store[key];
         }
 
-        public override void Set<T>(string key, T value)
+        public override void Set(string key, object value)
         {
             Store[key] = value;
         }

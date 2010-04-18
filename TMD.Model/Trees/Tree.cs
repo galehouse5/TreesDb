@@ -16,7 +16,7 @@ namespace TMD.Model.Trees
         public string Code { get; private set; }
         public bool IsDeleted { get; private set; }
         public User Deletor { get; private set; }
-        public DateTime Deleted { get; private set; }
+        public Date Deleted { get; private set; }
         public Measurement CurrentMeasurement { get; private set; }
         internal IList<Measurement> MeasurementHistory { get; private set; }
 
@@ -48,7 +48,7 @@ namespace TMD.Model.Trees
             UserSession.User.AssertRole(EUserRoles.DataAdmin);
             IsDeleted = true;
             Deletor = UserSession.User;
-            Deleted = DateTime.Now;
+            Deleted = Date.Now;
         }
 
         public Measurer AddMeasurer()
@@ -99,9 +99,9 @@ namespace TMD.Model.Trees
             }
         }
 
-        public override IList<string> GetValidationErrors()
+        public override IList<ValidationError> GetValidationErrors()
         {
-            List<string> errors = new List<string>();
+            List<ValidationError> errors = new List<ValidationError>();
             errors.AddRange(base.GetValidationErrors());
             errors.AddRange(CurrentMeasurement.GetValidationErrors());
             return errors;
