@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="Tree Measurement Database - Import Start" Language="C#" MasterPageFile="~/Views/Shared/TMDWizard.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportTripModel>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-<script type="text/javascript" src="/Scripts/Import.js"></script>
+<link type="text/css" rel="Stylesheet" href="/Styles/Import.css" />
+<script type="text/javascript" src="/Scripts/Import/Common.js"></script>
+<script type="text/javascript" src="/Scripts/Import/SitesTreeView.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         PreloadImportIcons();

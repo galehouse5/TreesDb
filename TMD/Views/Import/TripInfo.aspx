@@ -4,7 +4,7 @@
 
 <asp:Content ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" rel="Stylesheet" href="/Styles/Import.css" />
-<script type="text/javascript" src="/Scripts/Import.js"></script>
+<script type="text/javascript" src="/Scripts/Import/Common.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         CreateDatepicker($("#Date"));

@@ -48,6 +48,14 @@ namespace TMD.Model.Sites
 
         internal IList<Subsite> Subsites { get; private set; }
 
+        public bool IsValidIgnoringCoordinates
+        {
+            get
+            {
+                return base.isValidExcludingProperties("Coordinates");
+            }
+        }
+
         public Subsite AddSubsite()
         {
             Subsite subsite = new Subsite();

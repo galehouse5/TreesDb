@@ -4,13 +4,17 @@ label.valid { float: left; margin: 6px 0 0 4px; background: url('/Styles/Images/
 /*label.invalid { margin-top: 6px; color: #EA5200; background: url('/Styles/Images/unchecked.gif') no-repeat; padding-left: 16px; display: block; }
 label.valid { margin-left: 6px; background: url('/Styles/Images/checked.gif') no-repeat; display: inline; width: 16px; height: 16px; }*/
 
-ul.sites { margin: 0; padding: 0; list-style-type: none; line-height: 18px; }
-ul.subsites { margin: 0; padding: 0 36px; list-style-type: none; line-height: 18px; }
-ul.sites li { margin: 16px 0; }
-ul.subsites li { margin: 16px 0; }
-.site .icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/site.png"); }
-.subsite .icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/subsite.png"); }
-.site div a { margin-right: 4px; }
-.subsite div a { margin-right: 4px; }
+#SiteList { margin: 0; padding: 0; list-style-type: none; line-height: 18px; }
+.SubsiteList { margin: 0; padding-left: 36px; list-style-type: none; line-height: 18px; }
+.MeasurementList { margin: 0; padding-left: 54px; list-style-type: none; line-height: 18px; }
+#SiteList li { margin: 16px 0; }
+.SubsiteList li { margin: 16px 0; }
+.MeasurementList li { margin: 16px 0; }
+.Site .Icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/site.png"); }
+.Subsite .Icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/subsite.png"); }
+.Measurement .Icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/tree.png"); }
+.Site div a { margin-right: 4px; }
+.Subsite div a { margin-right: 4px; }
+.Measurement .Column { float: left; margin-right: 10px; }
 
 

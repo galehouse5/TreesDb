@@ -80,6 +80,32 @@ namespace TMD.Model.Trips
             }
         }
 
+        public bool IsValidIgnoringCoordinatesAndMeasuredTrees
+        {
+            get
+            {
+                return base.isValidExcludingProperties("Coordinates", "MeasuredTrees");
+            }
+        }
+
+        public Tree GetMeasuredTreeById(Guid id)
+        {
+            foreach (Tree mt in MeasuredTrees)
+            {
+                if (mt.Id == id)
+                {
+                    return mt;
+                }
+            }
+            return null;
+        }
+
+        public IList<Tree> ListMeasuredTrees()
+        {
+            IOrderedEnumerable<Tree> mts = MeasuredTrees.OrderByDescending(mt => mt.Created);
+            return mts.ToList();
+        }
+
         #region IIsValid Members
 
         public override bool IsValid

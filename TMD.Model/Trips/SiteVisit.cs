@@ -130,6 +130,12 @@ namespace TMD.Model.Trips
             return false;
         }
 
+        public IList<Tree> ListMeasuredTrees()
+        {
+            IOrderedEnumerable<Tree> mts = MeasuredTrees.OrderByDescending(mt => mt.Created);
+            return mts.ToList();
+        }
+
         public IList<SubsiteVisit> ListSubsiteVisists()
         {
             IOrderedEnumerable<SubsiteVisit> ssvs = SubsiteVisits.OrderByDescending(ssv => ssv.Created);
@@ -158,6 +164,18 @@ namespace TMD.Model.Trips
             return null;
         }
 
+        public Tree GetMeasuredTreeById(Guid id)
+        {
+            foreach (Tree mt in MeasuredTrees)
+            {
+                if (mt.Id == id)
+                {
+                    return mt;
+                }
+            }
+            return null;
+        }
+
         private Coordinates calculateCoordinates()
         {
             List<Coordinates> coordinatesList = new List<Coordinates>();
@@ -181,6 +199,25 @@ namespace TMD.Model.Trips
             if (CoordinatesCalculated)
             {
                 m_Coordinates = Coordinates.Null();
+            }
+        }
+
+        public bool IsValidIgnoringCoordinatesAndMeasuredTrees
+        {
+            get
+            {
+                if (!base.isValidExcludingProperties("Coordinates", "MeasuredTrees"))
+                {
+                    return false;
+                }
+                foreach (SubsiteVisit sv in SubsiteVisits)
+                {
+                    if (!sv.IsValidIgnoringCoordinatesAndMeasuredTrees)
+                    {
+                        return false;
+                    }
+                }
+                return true;
             }
         }
 

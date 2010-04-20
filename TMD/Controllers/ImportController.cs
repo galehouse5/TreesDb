@@ -8,6 +8,7 @@ using TMD.Model.Trips;
 using TMD.Extensions;
 using TMD.Models;
 using TMD.Model.Sites;
+using TMD.Model.Trees;
 
 namespace TMD.Controllers
 {
@@ -57,14 +58,16 @@ namespace TMD.Controllers
             ImportTripModel model = new ImportTripModel();
             model.Entity = ApplicationSession.ImportTrip;
             model.CurrentStep = EImportStep.SiteInfo;
-
+            if (model.IsCurrentStepPremature)
+            {
+                return RedirectToAction("TripInfo");
+            }
             model.Sites = new List<ImportSiteModel>();
             foreach (SiteVisit sv in model.Entity.ListSiteVisists())
             {
                 ImportSiteModel ism = new ImportSiteModel();
                 ism.Entity = sv;
                 ism.FillModelFromEntity();
-                ism.Subsites = new List<ImportSubsiteModel>();
                 model.Sites.Add(ism);
                 foreach (SubsiteVisit ssv in sv.ListSubsiteVisists())
                 {
@@ -73,11 +76,6 @@ namespace TMD.Controllers
                     issm.FillModelFromEntity();
                     ism.Subsites.Add(issm);
                 }
-            }
-
-            if (model.IsCurrentStepPremature)
-            {
-                return RedirectToAction("TripInfo");
             }
             return View(model);
         }
@@ -270,6 +268,324 @@ namespace TMD.Controllers
                 subsiteId = model.Id.ToString(),
                 subsiteName = model.Name
             });
+        }
+
+        public ActionResult Measurements()
+        {
+            ImportTripModel model = new ImportTripModel();
+            model.Entity = ApplicationSession.ImportTrip;
+            model.CurrentStep = EImportStep.Measurements;
+            if (model.IsCurrentStepPremature)
+            {
+                return RedirectToAction("SiteInfo");
+            }
+            model.Sites = new List<ImportSiteModel>();
+            foreach (SiteVisit sv in model.Entity.ListSiteVisists())
+            {
+                ImportSiteModel ism = new ImportSiteModel();
+                ism.Entity = sv;
+                ism.FillModelFromEntity();
+                foreach (Tree t in sv.ListMeasuredTrees())
+                {
+                    ImportMeasurementModel imm = new ImportMeasurementModel();
+                    imm.Entity = t;
+                    imm.FillModelFromEntity();
+                    ism.Measurements.Add(imm);
+                }
+                foreach (SubsiteVisit ssv in sv.ListSubsiteVisists())
+                {
+                    ImportSubsiteModel issm = new ImportSubsiteModel();
+                    issm.Entity = ssv;
+                    issm.FillModelFromEntity();
+                    ism.Subsites.Add(issm);
+                    foreach (Tree t in ssv.ListMeasuredTrees())
+                    {
+                        ImportMeasurementModel imm = new ImportMeasurementModel();
+                        imm.Entity = t;
+                        imm.FillModelFromEntity();
+                        issm.Measurements.Add(imm);
+                    }
+                }
+                model.Sites.Add(ism);
+            }
+            return View(model);
+        }
+
+        public ActionResult AddSiteMeasurementDialog(Guid siteId)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(siteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", siteId.ToString()));
+            }
+            Tree t = Tree.Create();
+            ImportMeasurementModel model = new ImportMeasurementModel();
+            model.Entity = t;
+            model.SiteVisit = sv;
+            model.FillModelFromEntity();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult SaveAddSiteMeasurementDialog(ImportMeasurementModel model)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(model.SiteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", model.SiteId.ToString()));
+            }
+            Tree t = Tree.Create();
+            model.Entity = t;
+            model.SiteVisit = sv;
+            model.FillEntityFromModel();
+            model.FillModelFromEntity();
+            sv.AddMeasuredTree(t);
+            return this.Json(new {
+                siteId = model.SiteId,
+                measurementId = model.Id,
+                genus = model.Genus,
+                species = model.Species,
+                commonName = model.CommonName
+            });
+        }
+
+        public ActionResult EditSiteMeasurementDialog(Guid siteId, Guid measurementId)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(siteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", siteId.ToString()));
+            }
+            Tree t = sv.GetMeasuredTreeById(measurementId);
+            if (t == null)
+            {
+                throw new ApplicationException(string.Format("Invalid measurementId '{0}'.", measurementId.ToString()));
+            }
+            ImportMeasurementModel model = new ImportMeasurementModel();
+            model.Entity = t;
+            model.SiteVisit = sv;
+            model.FillModelFromEntity();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult SaveEditSiteMeasurementDialog(ImportMeasurementModel model)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(model.SiteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", model.SiteId.ToString()));
+            }
+            Tree t = sv.GetMeasuredTreeById(model.Id);
+            if (t == null)
+            {
+                throw new ApplicationException(string.Format("Invalid measurementId '{0}'.", model.Id.ToString()));
+            }
+            model.Entity = t;
+            model.SiteVisit = sv;
+            model.FillEntityFromModel();
+            model.FillModelFromEntity();
+            return this.Json(new {
+                siteId = model.SiteId,
+                measurementId = model.Id,
+                genus = model.Genus,
+                species = model.Species,
+                commonName = model.CommonName
+            });
+        }
+
+        public ActionResult DeleteSiteMeasurementDialog(Guid siteId, Guid measurementId)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(siteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", siteId.ToString()));
+            }
+            Tree t = sv.GetMeasuredTreeById(measurementId);
+            if (t == null)
+            {
+                throw new ApplicationException(string.Format("Invalid measurementId '{0}'.", measurementId.ToString()));
+            }
+            ImportMeasurementModel model = new ImportMeasurementModel();
+            model.Entity = t;
+            model.SiteVisit = sv;
+            model.FillModelFromEntity();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult ConfirmDeleteSiteMeasurement(Guid siteId, Guid measurementId)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(siteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", siteId.ToString()));
+            }
+            Tree t = sv.GetMeasuredTreeById(measurementId);
+            if (t == null)
+            {
+                throw new ApplicationException(string.Format("Invalid measurementId '{0}'.", measurementId.ToString()));
+            }
+            sv.RemoveMeasuredTree(t);
+            return new EmptyResult();
+        }
+
+        public ActionResult AddSubsiteMeasurementDialog(Guid siteId, Guid subsiteId)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(siteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", siteId.ToString()));
+            }
+            SubsiteVisit ssv = sv.GetSubsiteVisitById(subsiteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid subsiteId '{0}'.", subsiteId.ToString()));
+            }
+            Tree t = Tree.Create();
+            ImportMeasurementModel model = new ImportMeasurementModel();
+            model.Entity = t;
+            model.SiteVisit = sv;
+            model.SubsiteVisit = ssv;
+            model.FillModelFromEntity();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult SaveAddSubsiteMeasurementDialog(ImportMeasurementModel model)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(model.SiteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", model.SiteId.ToString()));
+            }
+            SubsiteVisit ssv = sv.GetSubsiteVisitById(model.SubsiteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid subsiteId '{0}'.", model.SubsiteId.ToString()));
+            }
+            Tree t = Tree.Create();
+            model.Entity = t;
+            model.SiteVisit = sv;
+            model.SubsiteVisit = ssv;
+            model.FillEntityFromModel();
+            model.FillModelFromEntity();
+            ssv.AddMeasuredTree(t);
+            return this.Json(new
+            {
+                siteId = model.SiteId,
+                subsiteId = model.SubsiteId,
+                measurementId = model.Id,
+                genus = model.Genus,
+                species = model.Species,
+                commonName = model.CommonName
+            });
+        }
+
+        public ActionResult EditSubsiteMeasurementDialog(Guid siteId, Guid subsiteId, Guid measurementId)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(siteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", siteId.ToString()));
+            }
+            SubsiteVisit ssv = sv.GetSubsiteVisitById(subsiteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid subsiteId '{0}'.", subsiteId.ToString()));
+            }
+            Tree t = ssv.GetMeasuredTreeById(measurementId);
+            if (t == null)
+            {
+                throw new ApplicationException(string.Format("Invalid measurementId '{0}'.", measurementId.ToString()));
+            }
+            ImportMeasurementModel model = new ImportMeasurementModel();
+            model.Entity = t;
+            model.SiteVisit = sv;
+            model.SubsiteVisit = ssv;
+            model.FillModelFromEntity();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult SaveEditSubsiteMeasurementDialog(ImportMeasurementModel model)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(model.SiteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", model.SiteId.ToString()));
+            }
+            SubsiteVisit ssv = sv.GetSubsiteVisitById(model.SubsiteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid subsiteId '{0}'.", model.SubsiteId.ToString()));
+            }
+            Tree t = ssv.GetMeasuredTreeById(model.Id);
+            if (t == null)
+            {
+                throw new ApplicationException(string.Format("Invalid measurementId '{0}'.", model.Id.ToString()));
+            }
+            model.Entity = t;
+            model.SiteVisit = sv;
+            model.SubsiteVisit = ssv;
+            model.FillEntityFromModel();
+            model.FillModelFromEntity();
+            return this.Json(new
+            {
+                siteId = model.SiteId,
+                subsiteId = model.SubsiteId,
+                measurementId = model.Id,
+                genus = model.Genus,
+                species = model.Species,
+                commonName = model.CommonName
+            });
+        }
+
+        public ActionResult DeleteSubsiteMeasurementDialog(Guid siteId, Guid subsiteId, Guid measurementId)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(siteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", siteId.ToString()));
+            }
+            SubsiteVisit ssv = sv.GetSubsiteVisitById(subsiteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid subsiteId '{0}'.", subsiteId.ToString()));
+            }
+            Tree t = ssv.GetMeasuredTreeById(measurementId);
+            if (t == null)
+            {
+                throw new ApplicationException(string.Format("Invalid measurementId '{0}'.", measurementId.ToString()));
+            }
+            ImportMeasurementModel model = new ImportMeasurementModel();
+            model.Entity = t;
+            model.SiteVisit = sv;
+            model.SubsiteVisit = ssv;
+            model.FillModelFromEntity();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult ConfirmDeleteSubsiteMeasurement(Guid siteId, Guid subsiteId, Guid measurementId)
+        {
+            SiteVisit sv = ApplicationSession.ImportTrip.GetSiteVisitById(siteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid siteId '{0}'.", siteId.ToString()));
+            }
+            SubsiteVisit ssv = sv.GetSubsiteVisitById(subsiteId);
+            if (sv == null)
+            {
+                throw new ApplicationException(string.Format("Invalid subsiteId '{0}'.", subsiteId.ToString()));
+            }
+            Tree t = ssv.GetMeasuredTreeById(measurementId);
+            if (t == null)
+            {
+                throw new ApplicationException(string.Format("Invalid measurementId '{0}'.", measurementId.ToString()));
+            }
+            ssv.RemoveMeasuredTree(t);
+            return new EmptyResult();
         }
     }
 }

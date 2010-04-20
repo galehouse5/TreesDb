@@ -29,6 +29,22 @@ namespace TMD.Model.Sites
         [IsValidValidator("Site coordinates must be valid.")]
         public Coordinates Coordinates { get; set; }
 
+        public override bool IsValid
+        {
+            get
+            {
+                return base.IsValid;
+            }
+        }
+
+        public bool IsValidIgnoringCoordinates
+        {
+            get
+            {
+                return base.isValidExcludingProperties("Coordinates");
+            }
+        }
+
         public static Subsite Create()
         {
             Subsite ss = new Subsite();

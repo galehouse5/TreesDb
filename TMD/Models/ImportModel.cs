@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations;
 using TMD.Model.Trips;
 using TMD.Model.Sites;
 using System.Web.Mvc;
+using TMD.Model.Trees;
 
 namespace TMD.Models
 {
@@ -22,6 +23,11 @@ namespace TMD.Models
 
     public class ImportTripModel : IViewModel<Trip>
     {
+        public ImportTripModel()
+        {
+            Sites = new List<ImportSiteModel>();
+        }
+
         [DisplayName("Name:")]
         [StringLength(100)]
         public string Name { get; set; }
@@ -57,11 +63,11 @@ namespace TMD.Models
                 case EImportStep.TripInfo:
                     return CurrentStep != EImportStep.Finish;
                 case EImportStep.SiteInfo:
-                    return Entity.IsTripInfoValid && CurrentStep != EImportStep.Finish;
+                    return Entity.IsValidIgnoringSiteVisits && CurrentStep != EImportStep.Finish;
                 case EImportStep.Measurements:
-                    return Entity.IsTripInfoValid && Entity.HasSiteVisits && Entity.AreSiteVisitsValid && CurrentStep != EImportStep.Finish;
+                    return Entity.IsValidIgnoringSiteVisits && Entity.HasSiteVisits && Entity.AreSiteVisitsValidIgnoringCoordinatesAndMeasuredTrees && CurrentStep != EImportStep.Finish;
                 case EImportStep.Review:
-                    return Entity.IsTripInfoValid && Entity.HasSiteVisits && Entity.AreSiteVisitsValid && Entity.AllSitesAndSubsitesHaveMeasuredTrees && CurrentStep != EImportStep.Finish;
+                    return Entity.IsValidIgnoringSiteVisits && Entity.HasSiteVisits && Entity.AreSiteVisitsValidIgnoringCoordinatesAndMeasuredTrees && Entity.AllSitesAndSubsitesHaveMeasuredTrees && CurrentStep != EImportStep.Finish;
                 case EImportStep.Finish:
                     return Entity.IsValid;
                 default:
@@ -101,25 +107,15 @@ namespace TMD.Models
 
     public class ImportSiteModel : IViewModel<SiteVisit>
     {
-        public IEnumerable<SelectListItem> ListKnownStateCodes()
+        public ImportSiteModel()
         {
-            SelectListItem none = new SelectListItem();
-            none.Value = string.Empty;
-            none.Text = string.Empty;
-            none.Selected = string.IsNullOrEmpty(State);
-            yield return none;
-            foreach (Model.State s in Model.State.KnownStates)
-            {
-                SelectListItem sli = new SelectListItem();
-                sli.Value = s.Code;
-                sli.Text = s.Name;
-                sli.Selected = State == s.Code;
-                yield return sli;
-            }
+            Subsites = new List<ImportSubsiteModel>();
+            Measurements = new List<ImportMeasurementModel>();
         }
 
-
         public Guid Id { get; set; }
+        public IList<ImportSubsiteModel> Subsites { get; private set; }
+        public IList<ImportMeasurementModel> Measurements { get; private set; }
 
         [DisplayName("Name*:")]
         [StringLength(100)]
@@ -150,7 +146,22 @@ namespace TMD.Models
         [StringLength(300)]
         public string SiteComments { get; set; }
 
-        public IList<ImportSubsiteModel> Subsites { get; set; }
+        public IEnumerable<SelectListItem> ListKnownStateCodes()
+        {
+            SelectListItem none = new SelectListItem();
+            none.Value = string.Empty;
+            none.Text = string.Empty;
+            none.Selected = string.IsNullOrEmpty(State);
+            yield return none;
+            foreach (Model.State s in Model.State.KnownStates)
+            {
+                SelectListItem sli = new SelectListItem();
+                sli.Value = s.Code;
+                sli.Text = s.Name;
+                sli.Selected = State == s.Code;
+                yield return sli;
+            }
+        }
 
         #region IViewModel<SiteVisit> Members
 
@@ -185,7 +196,16 @@ namespace TMD.Models
 
     public class ImportSubsiteModel : IViewModel<SubsiteVisit>
     {
+        public ImportSubsiteModel()
+        {
+            Measurements = new List<ImportMeasurementModel>();
+        }
+
         public Guid Id { get; set; }
+        public SiteVisit SiteVisit { get; set; }
+        public Guid SiteId { get; set; }
+        public string SiteName { get; set; }
+        public IList<ImportMeasurementModel> Measurements { get; private set; }
 
         [DisplayName("Name*:")]
         [StringLength(100)]
@@ -197,13 +217,9 @@ namespace TMD.Models
         [DisplayName("Latitude:")]
         public string Latitude { get; set; }
 
-        public Guid SiteId { get; set; }
-        public string SiteName { get; set; }
-
         #region IViewModel<SubsiteVisit> Members
 
         public SubsiteVisit Entity { get; set; }
-        public SiteVisit SiteVisit { get; set; }
 
         public void FillModelFromEntity()
         {
@@ -222,6 +238,60 @@ namespace TMD.Models
         {
             Entity.Subsite.Name = Name;
             Entity.Coordinates = Model.Coordinates.Create(Model.Latitude.Create(Latitude), Model.Longitude.Create(Longitude));
+        }
+
+        #endregion
+    }
+
+    public class ImportMeasurementModel : IViewModel<Tree>
+    {
+        public Guid Id { get; set; }
+        public SiteVisit SiteVisit { get; set; }
+        public SubsiteVisit SubsiteVisit { get; set; }
+        public Guid SiteId { get; set; }
+        public string SiteName { get; set; }
+        public Guid SubsiteId { get; set; }
+        public string SubsiteName { get; set; }
+
+        [DisplayName("Common name*:")]
+        [StringLength(100)]
+        public string CommonName { get; set; }
+
+        [DisplayName("Genus*:")]
+        [StringLength(100)]
+        public string Genus { get; set; }
+
+        [DisplayName("Species*:")]
+        [StringLength(100)]
+        public string Species { get; set; }
+
+        #region IViewModel<Tree> Members
+
+        public Tree Entity { get; set; }
+
+        public void FillModelFromEntity()
+        {
+            Id = Entity.Id;
+            CommonName = Entity.CurrentMeasurement.CommonName;
+            Genus = Entity.CurrentMeasurement.Genus;
+            Species = Entity.CurrentMeasurement.Species;
+            if (SiteVisit != null)
+            {
+                SiteId = SiteVisit.Id;
+                SiteName = SiteVisit.Site.Name;
+            }
+            if (SubsiteVisit != null)
+            {
+                SubsiteId = SubsiteVisit.Id;
+                SubsiteName = SubsiteVisit.Subsite.Name;
+            }
+        }
+
+        public void FillEntityFromModel()
+        {
+            Entity.CurrentMeasurement.CommonName = CommonName;
+            Entity.CurrentMeasurement.Genus = Genus;
+            Entity.CurrentMeasurement.Species = Species;
         }
 
         #endregion

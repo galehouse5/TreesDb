@@ -69,13 +69,13 @@ namespace TMD.Model.Trips
             get { return SiteVisits.Count > 0; }
         }
 
-        public bool AreSiteVisitsValid
+        public bool AreSiteVisitsValidIgnoringCoordinatesAndMeasuredTrees
         {
             get
             {
                 foreach (SiteVisit sv in SiteVisits)
                 {
-                    if (!sv.IsValid)
+                    if (!sv.IsValidIgnoringCoordinatesAndMeasuredTrees)
                     {
                         return false;
                     }
@@ -84,7 +84,7 @@ namespace TMD.Model.Trips
             }
         }
 
-        public bool IsTripInfoValid
+        public bool IsValidIgnoringSiteVisits
         {
             get { return base.isValidExcludingProperties("SiteVisits"); }
         }
