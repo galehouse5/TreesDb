@@ -587,5 +587,60 @@ namespace TMD.Controllers
             ssv.RemoveMeasuredTree(t);
             return new EmptyResult();
         }
+
+        public ActionResult Review()
+        {
+            ImportTripModel model = new ImportTripModel();
+            model.Entity = ApplicationSession.ImportTrip;
+            model.CurrentStep = EImportStep.Review;
+            if (model.IsCurrentStepPremature)
+            {
+                return RedirectToAction("Measurements");
+            }
+            model.Sites = new List<ImportSiteModel>();
+            foreach (SiteVisit sv in model.Entity.ListSiteVisists())
+            {
+                ImportSiteModel ism = new ImportSiteModel();
+                ism.Entity = sv;
+                ism.FillModelFromEntity();
+                foreach (Tree t in sv.ListMeasuredTrees())
+                {
+                    ImportMeasurementModel imm = new ImportMeasurementModel();
+                    imm.Entity = t;
+                    imm.FillModelFromEntity();
+                    ism.Measurements.Add(imm);
+                }
+                foreach (SubsiteVisit ssv in sv.ListSubsiteVisists())
+                {
+                    ImportSubsiteModel issm = new ImportSubsiteModel();
+                    issm.Entity = ssv;
+                    issm.FillModelFromEntity();
+                    ism.Subsites.Add(issm);
+                    foreach (Tree t in ssv.ListMeasuredTrees())
+                    {
+                        ImportMeasurementModel imm = new ImportMeasurementModel();
+                        imm.Entity = t;
+                        imm.FillModelFromEntity();
+                        issm.Measurements.Add(imm);
+                    }
+                }
+                model.Sites.Add(ism);
+            }
+            return View(model);
+        }
+
+        public ActionResult Finish()
+        {
+            ImportTripModel model = new ImportTripModel();
+            model.Entity = ApplicationSession.ImportTrip;
+            model.CurrentStep = EImportStep.Finish;
+            if (model.IsCurrentStepPremature)
+            {
+                //return RedirectToAction("Review");
+            }
+            model.FillModelFromEntity();
+            ApplicationSession.ImportTrip = Trip.Create();
+            return View(model);
+        }
     }
 }

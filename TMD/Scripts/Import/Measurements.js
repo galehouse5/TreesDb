@@ -8,26 +8,24 @@
     });
 }
 
-function InitializeSiteNumberOfMeasurementsFormValidation(form, siteId) {
-    $(form).validate({
-        rules: {
-            NumberOfMeasurements: { min: 1 }
-        },
-        messages: {
-            NumberOfMeasurements: { min: "You must <a href='javascript:AddSiteMeasurement('" + siteId + "')'>add a measurement</a> before moving to the next step." }
-        }
-    });
-}
-
-function InitializeSubsiteNumberOfMeasurementsFormValidation(form, siteId, subsiteId) {
-    $(form).validate({
-        rules: {
-            NumberOfMeasurements: { min: 1 }
-        },
-        messages: {
-            NumberOfMeasurements: { min: "You must <a href='javascript:AddSubsiteMeasurement('" + siteId + "', '" + subsiteId + "')'>add a measurement</a> before moving to the next step." }
-        }
-    });
+function AddSiteListSiteMeasurement(siteId, measurementId, genus, species, commonName) {
+    var measurementDom = $('\
+        <li id="' + measurementId + '" class="Measurement">\
+            <span class="Icon"></span>\
+            <div class="Column">\
+                <span class="Genus">' + genus + '</span>\
+                <span class="Species">' + species + '</span>\
+                <br />\
+                <span class="CommonName">' + commonName + '</span>\
+            </div>\
+            <div class="Column">\
+                <a href="javascript:EditSiteMeasurement(\'' + siteId + '\', \'' + measurementId + '\')">Edit</a>\
+                <br />\
+                <a href="javascript:DeleteSiteMeasurement(\'' + siteId + '\', \'' + measurementId + '\')">Delete</a>\
+            </div>\
+            <div class="ui-helper-clearfix"></div>\
+        </li>');
+    $('#SiteList #' + siteId + ' > ul.MeasurementList').prepend(measurementDom);
 }
 
 function AddSiteMeasurement(siteId) {
@@ -43,7 +41,7 @@ function AddSiteMeasurement(siteId) {
                                 $('#measurementForm').serialize(),
                                 function (data) {                                    
                                     AddSiteListSiteMeasurement(data.siteId, data.measurementId, data.genus, data.species, data.commonName);
-                                    $('#' + siteId + '-NumberOfMeasurements').val(parseInt($('#' + siteId + '-NumberOfMeasurements').val()) + 1);
+                                    $('#' + siteId + ' > div > .NumberOfMeasurements').val(parseInt($('#' + siteId + ' > div > .NumberOfMeasurements').val()) + 1);
                                     $('#measurementsForm').validate().resetForm();
                                     dialog.dialog('destroy').remove();
                                 }
@@ -61,6 +59,12 @@ function AddSiteMeasurement(siteId) {
             InitializeMeasurementFormValidation();
             $('#Genus').focus();
         });
+}
+
+function UpdateSiteListSiteMeasurement(siteId, measurementId, genus, species, commonName) {
+    $('#SiteList #' + siteId + ' #' + measurementId + ' span.Genus').html(genus);
+    $('#SiteList #' + siteId + ' #' + measurementId + ' span.Species').html(species);
+    $('#SiteList #' + siteId + ' #' + measurementId + ' span.CommonName').html(commonName);
 }
 
 function EditSiteMeasurement(siteId, measurementId) {
@@ -94,6 +98,10 @@ function EditSiteMeasurement(siteId, measurementId) {
         });
 }
 
+function RemoveSiteListSiteMeasurement(siteId, measurementId) {
+    $('#SiteList #' + siteId + ' #' + measurementId).remove();
+}
+
 function DeleteSiteMeasurement(siteId, measurementId) {
     $.get("/Import/DeleteSiteMeasurementDialog",
         { siteId: siteId, measurementId: measurementId },
@@ -106,7 +114,7 @@ function DeleteSiteMeasurement(siteId, measurementId) {
                             { siteId: siteId, measurementId: measurementId },
                             function (data) {
                                 RemoveSiteListSiteMeasurement(siteId, measurementId);
-                                $('#' + siteId + '-NumberOfMeasurements').val(parseInt($('#' + siteId + '-NumberOfMeasurements').val()) - 1);
+                                $('#' + siteId + ' > div > .NumberOfMeasurements').val(parseInt($('#' + siteId + ' > div > .NumberOfMeasurements').val()) - 1);
                                 $(dialog).dialog('destroy').remove();
                             });
                     },
@@ -119,6 +127,26 @@ function DeleteSiteMeasurement(siteId, measurementId) {
                 }
             });
         });
+}
+
+function AddSiteListSubsiteMeasurement(siteId, subsiteId, measurementId, genus, species, commonName) {
+    var measurementDom = $('\
+        <li id="' + measurementId + '" class="Measurement">\
+            <span class="Icon"></span>\
+            <div class="Column">\
+                <span class="Genus">' + genus + '</span>\
+                <span class="Species">' + species + '</span>\
+                <br />\
+                <span class="CommonName">' + commonName + '</span>\
+            </div>\
+            <div class="Column">\
+                <a href="javascript:EditSubsiteMeasurement(\'' + siteId + '\', \'' + subsiteId + '\', \'' + measurementId + '\')">Edit</a>\
+                <br />\
+                <a href="javascript:DeleteSubsiteMeasurement(\'' + siteId + '\', \'' + subsiteId + '\', \'' + measurementId + '\')">Delete</a>\
+            </div>\
+            <div class="ui-helper-clearfix"></div>\
+        </li>');
+    $('#SiteList #' + siteId + ' #' + subsiteId + ' ul.MeasurementList').prepend(measurementDom);
 }
 
 function AddSubsiteMeasurement(siteId, subsiteId) {
@@ -134,7 +162,7 @@ function AddSubsiteMeasurement(siteId, subsiteId) {
                                 $('#measurementForm').serialize(),
                                 function (data) {
                                     AddSiteListSubsiteMeasurement(data.siteId, data.subsiteId, data.measurementId, data.genus, data.species, data.commonName);
-                                    $('#' + subsiteId + '-NumberOfMeasurements').val(parseInt($('#' + subsiteId + '-NumberOfMeasurements').val()) + 1);
+                                    $('#' + subsiteId + ' > div > .NumberOfMeasurements').val(parseInt($('#' + subsiteId + ' > div > .NumberOfMeasurements').val()) + 1);
                                     $('#measurementsForm').validate().resetForm();
                                     dialog.dialog('destroy').remove();
                                 }
@@ -152,6 +180,13 @@ function AddSubsiteMeasurement(siteId, subsiteId) {
             InitializeMeasurementFormValidation();
             $('#Genus').focus();
         });
+}
+
+
+function UpdateSiteListSubsiteMeasurement(siteId, subsiteId, measurementId, genus, species, commonName) {
+    $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.Genus').html(genus);
+    $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.Species').html(species);
+    $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.CommonName').html(commonName);
 }
 
 function EditSubsiteMeasurement(siteId, subsiteId, measurementId) {
@@ -185,6 +220,10 @@ function EditSubsiteMeasurement(siteId, subsiteId, measurementId) {
         });
 }
 
+function RemoveSiteListSubsiteMeasurement(siteId, subsiteId, measurementId) {
+    $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId).remove();
+}
+
 function DeleteSubsiteMeasurement(siteId, subsiteId, measurementId) {
     $.get("/Import/DeleteSubsiteMeasurementDialog",
         { siteId: siteId, subsiteId: subsiteId, measurementId: measurementId },
@@ -197,7 +236,7 @@ function DeleteSubsiteMeasurement(siteId, subsiteId, measurementId) {
                             { siteId: siteId, subsiteId: subsiteId, measurementId: measurementId },
                             function (data) {
                                 RemoveSiteListSubsiteMeasurement(siteId, subsiteId, measurementId);
-                                $('#' + subsiteId + '-NumberOfMeasurements').val(parseInt($('#' + subsiteId + '-NumberOfMeasurements').val()) - 1);
+                                $('#' + subsiteId + ' > div > .NumberOfMeasurements').val(parseInt($('#' + subsiteId + ' > div > .NumberOfMeasurements').val()) - 1);
                                 $(dialog).dialog('destroy').remove();
                             });
                     },
@@ -211,3 +250,34 @@ function DeleteSubsiteMeasurement(siteId, subsiteId, measurementId) {
             });
         });
 }
+
+$(document).ready(function () {
+    $('#measurementsForm').validate();
+    $('#SiteList .Site').each(function (index, value) {
+        var siteId = value.id;
+        $(value).find('div > .NumberOfMeasurements')
+                .rules("add", {
+                    min: 1,
+                    messages: {
+                        min: "You must <a href='javascript:AddSiteMeasurement(\"" + siteId + "\")'>add a measurement</a> before moving on."
+                    }
+                });
+        $(value).find('.Subsite').each(function (index, value) {
+            var subsiteId = value.id;
+            $(value).find('div > .NumberOfMeasurements')
+                    .rules("add", {
+                        min: 1,
+                        messages: {
+                            min: "You must <a href='javascript:AddSubsiteMeasurement(\"" + siteId + "\", \"" + subsiteId + "\")'>add a measurement</a> before moving on."
+                        }
+                    });
+        });
+    });
+    $('.wizard a').click(function () {
+        if (!$(this).hasClass('advance') || $('#measurementsForm').valid()) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+});

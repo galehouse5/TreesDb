@@ -2,13 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" rel="Stylesheet" href="/Styles/Import.css" />
-<script type="text/javascript" src="/Scripts/Import/Common.js"></script>
-<script type="text/javascript" src="/Scripts/Import/SitesTreeView.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        PreloadImportIcons();
-    });
-</script>
+<script type="text/javascript" src="/Scripts/Import/Start.js"></script>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="OverviewContent" runat="server">

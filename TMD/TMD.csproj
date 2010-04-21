@@ -82,9 +82,11 @@
     <Content Include="Content\white oak in fog.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\Common.js" />
-    <Content Include="Scripts\Import\Common.js" />
     <Content Include="Scripts\Import\Measurements.js" />
-    <Content Include="Scripts\Import\SitesTreeView.js" />
+    <Content Include="Scripts\Import\Review.js" />
+    <Content Include="Scripts\Import\SiteInfo.js" />
+    <Content Include="Scripts\Import\Start.js" />
+    <Content Include="Scripts\Import\TripInfo.js" />
     <Content Include="Scripts\ThirdParty\grid.locale-en.js" />
     <Content Include="Scripts\ThirdParty\jquery.jqGrid.min.js" />
     <Content Include="Scripts\Validation.js" />
@@ -128,9 +130,10 @@
     <Content Include="Views\Import\EditSiteMeasurementDialog.aspx" />
     <Content Include="Views\Import\EditSubsiteDialog.aspx" />
     <Content Include="Views\Import\EditSubsiteMeasurementDialog.aspx" />
+    <Content Include="Views\Import\Finish.aspx" />
     <Content Include="Views\Import\Measurements.aspx" />
+    <Content Include="Views\Import\Review.aspx" />
     <Content Include="Views\Import\SiteInfo.aspx" />
-    <Content Include="Views\Import\SitesTreeView.ascx" />
     <Content Include="Views\Import\Start.aspx" />
     <Content Include="Views\Import\Steps.ascx" />
     <Content Include="Views\Import\TripInfo.aspx" />

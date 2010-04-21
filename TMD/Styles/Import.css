@@ -13,8 +13,8 @@ label.valid { margin-left: 6px; background: url('/Styles/Images/checked.gif') no
 .Site .Icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/site.png"); }
 .Subsite .Icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/subsite.png"); }
 .Measurement .Icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/tree.png"); }
-.Site div a { margin-right: 4px; }
-.Subsite div a { margin-right: 4px; }
-.Measurement .Column { float: left; margin-right: 10px; }
+.Site .Column { float: left; margin-right: 10px; width: auto; }
+.Subsite .Column { float: left; margin-right: 10px; width: auto; }
+.Measurement .Column { float: left; margin-right: 10px; width: auto; }
 
 
