@@ -81,7 +81,7 @@ function AddSite() {
 }
 
 function UpdateSiteListSite(siteId, siteName) {
-    $('#SiteList #' + siteId + ' span.Name').html(siteName);
+    $('#SiteList #' + siteId + ' > div > span.Name').html(siteName);
 }
 
 function EditSite(siteId) {
