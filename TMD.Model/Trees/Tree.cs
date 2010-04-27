@@ -65,8 +65,8 @@ namespace TMD.Model.Trees
         {
             get
             {
-                return (float)((double)CurrentMeasurement.Height.Feet / (double)TreeService.FindTreeOfGreatestHeightBySpecies(CurrentMeasurement.Species).CurrentMeasurement.Height.Feet
-                    + (double)CurrentMeasurement.GirthBreastHeight.Feet / (double)TreeService.FindTreeOfGreatestGirthBySpecies(CurrentMeasurement.Species).CurrentMeasurement.Height.Feet);
+                return (float)((double)CurrentMeasurement.Height.Feet / (double)TreeService.FindTreeOfGreatestHeightBySpecies(CurrentMeasurement.ScientificName).CurrentMeasurement.Height.Feet
+                    + (double)CurrentMeasurement.GirthBreastHeight.Feet / (double)TreeService.FindTreeOfGreatestGirthBySpecies(CurrentMeasurement.ScientificName).CurrentMeasurement.Height.Feet);
             }
         }
 
@@ -74,9 +74,9 @@ namespace TMD.Model.Trees
         {
             get
             {
-                return (float)((double)CurrentMeasurement.Height.Feet / (double)TreeService.FindTreeOfGreatestHeightBySpecies(CurrentMeasurement.Species).CurrentMeasurement.Height.Feet
-                    + (double)CurrentMeasurement.GirthBreastHeight.Feet / (double)TreeService.FindTreeOfGreatestGirthBySpecies(CurrentMeasurement.Species).CurrentMeasurement.Height.Feet
-                    + (double)CurrentMeasurement.TDICrownSpread.Feet / (double)TreeService.FindTreeOfGreatestTDICrownSpreadBySpecies(CurrentMeasurement.Species).CurrentMeasurement.Height.Feet);
+                return (float)((double)CurrentMeasurement.Height.Feet / (double)TreeService.FindTreeOfGreatestHeightBySpecies(CurrentMeasurement.ScientificName).CurrentMeasurement.Height.Feet
+                    + (double)CurrentMeasurement.GirthBreastHeight.Feet / (double)TreeService.FindTreeOfGreatestGirthBySpecies(CurrentMeasurement.ScientificName).CurrentMeasurement.Height.Feet
+                    + (double)CurrentMeasurement.TDICrownSpread.Feet / (double)TreeService.FindTreeOfGreatestTDICrownSpreadBySpecies(CurrentMeasurement.ScientificName).CurrentMeasurement.Height.Feet);
             }
         }
 
@@ -114,13 +114,13 @@ namespace TMD.Model.Trees
             {
                 if (!t.CurrentMeasurement.Height.IsNull)
                 {
-                    if (!speciesHeights.ContainsKey(t.CurrentMeasurement.Species))
+                    if (!speciesHeights.ContainsKey(t.CurrentMeasurement.ScientificName))
                     {
-                        speciesHeights.Add(t.CurrentMeasurement.Species, t.CurrentMeasurement.Height.Feet);
+                        speciesHeights.Add(t.CurrentMeasurement.ScientificName, t.CurrentMeasurement.Height.Feet);
                     }
                     else
                     {
-                        speciesHeights[t.CurrentMeasurement.Species] = Math.Max(speciesHeights[t.CurrentMeasurement.Species], t.CurrentMeasurement.Height.Feet);
+                        speciesHeights[t.CurrentMeasurement.ScientificName] = Math.Max(speciesHeights[t.CurrentMeasurement.ScientificName], t.CurrentMeasurement.Height.Feet);
                     }
                 }
             }
@@ -149,13 +149,13 @@ namespace TMD.Model.Trees
             {
                 if (!t.CurrentMeasurement.Height.IsNull)
                 {
-                    if (!speciesGirths.ContainsKey(t.CurrentMeasurement.Species))
+                    if (!speciesGirths.ContainsKey(t.CurrentMeasurement.ScientificName))
                     {
-                        speciesGirths.Add(t.CurrentMeasurement.Species, t.CurrentMeasurement.GirthBreastHeight.Feet);
+                        speciesGirths.Add(t.CurrentMeasurement.ScientificName, t.CurrentMeasurement.GirthBreastHeight.Feet);
                     }
                     else
                     {
-                        speciesGirths[t.CurrentMeasurement.Species] = Math.Max(speciesGirths[t.CurrentMeasurement.Species], t.CurrentMeasurement.GirthBreastHeight.Feet);
+                        speciesGirths[t.CurrentMeasurement.ScientificName] = Math.Max(speciesGirths[t.CurrentMeasurement.ScientificName], t.CurrentMeasurement.GirthBreastHeight.Feet);
                     }
                 }
             }

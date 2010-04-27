@@ -33,8 +33,7 @@
             <li id="<%= Model.Sites[s].Measurements[m].Id %>" class="Measurement">
                 <span class="Icon"></span>
                 <div class="Column">
-                    <span class="Genus"><%= Model.Sites[s].Measurements[m].Genus %></span>
-                    <span class="Species"><%= Model.Sites[s].Measurements[m].Species %></span>
+                    <span class="ScientificName"><%= Model.Sites[s].Measurements[m].ScientificName %></span>
                     <br />
                     <span class="CommonName"><%= Model.Sites[s].Measurements[m].CommonName %></span>
                 </div>
@@ -60,8 +59,7 @@
                     <li id="<%= Model.Sites[s].Subsites[ss].Measurements[m].Id %>" class="Measurement">
                         <span class="Icon"></span>
                         <div class="Column">
-                            <span class="Genus"><%= Model.Sites[s].Subsites[ss].Measurements[m].Genus %></span>
-                            <span class="Species"><%= Model.Sites[s].Subsites[ss].Measurements[m].Species %></span>
+                            <span class="ScientificName"><%= Model.Sites[s].Subsites[ss].Measurements[m].ScientificName %></span>
                             <br />
                             <span class="CommonName"><%= Model.Sites[s].Subsites[ss].Measurements[m].CommonName %></span>
                         </div>

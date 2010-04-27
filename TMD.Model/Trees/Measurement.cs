@@ -5,6 +5,7 @@ using System.Text;
 using TMD.Model.Validation;
 using TMD.Common;
 
+
 namespace TMD.Model.Trees
 {
     [Serializable]
@@ -13,8 +14,7 @@ namespace TMD.Model.Trees
         private Distance m_Height;
         private HeightMeasurements m_HeightMeasurements;
         private string m_CommonName;
-        private string m_Genus;
-        private string m_Species;
+        private string m_ScientificName;
         private string m_Name;
         private string m_MeasurersTreeId;
         private string m_HeightMeasurementType;
@@ -46,18 +46,10 @@ namespace TMD.Model.Trees
 
         [EmptyStringValidator("Genus must be specified.")]
         [StringMaxLengthValidator("Genus must not exceed 100 characters.", 100)]
-        public string Genus 
+        public string ScientificName 
         {
-            get { return m_Genus; }
-            set { m_Genus = value.Trim().ToTitleCase(); }
-        }
-
-        [EmptyStringValidator("Species must be specified.")]
-        [StringMaxLengthValidator("Species must not exceed 100 characters.", 100)]
-        public string Species 
-        {
-            get { return m_Species; }
-            set { m_Species = value.Trim().ToLower(); }
+            get { return m_ScientificName; }
+            set { m_ScientificName = (value ?? string.Empty).ToSentenceCase(); }
         }
 
         [StringMaxLengthValidator("Name must not exceed 100 characters.", 100)]
@@ -293,7 +285,7 @@ namespace TMD.Model.Trees
             c.CrownVolumeCalculationMethod = CrownVolumeCalculationMethod;
             c.Elevation = (Elevation)Elevation.Clone();
             c.FormType = FormType;
-            c.Genus = Genus;
+            c.ScientificName = ScientificName;
             c.GirthBreastHeight = (Distance)GirthBreastHeight.Clone();
             c.GirthComments = GirthComments;
             c.GirthMeasurementHeight = (Distance)GirthMeasurementHeight.Clone();
@@ -315,7 +307,6 @@ namespace TMD.Model.Trees
             c.NumberOfTrunks = NumberOfTrunks;
             c.OtherComments = OtherComments;
             c.PositionMeasurementType = PositionMeasurementType;
-            c.Species = Species;
             c.Status = Status;
             c.TerrainShapeIndex = TerrainShapeIndex;
             c.TerrainType = TerrainType;

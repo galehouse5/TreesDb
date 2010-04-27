@@ -22,8 +22,7 @@ function InitializeSubsiteFormValidation() {
 function InitializeMeasurementFormValidation() {
     $('#measurementForm').validate({
         rules: {
-            Genus: { TMDAlways: true, required: true, maxlength: 100 },
-            Species: { TMDAlways: true, required: true, maxlength: 100 },
+            ScientificName: { TMDAlways: true, required: true, maxlength: 100 },
             CommonName: { TMDAlways: true, required: true, maxlength: 100 }
         }
     });
@@ -99,9 +98,8 @@ function EditSubsite(siteId, subsiteId) {
         });
 }
 
-function UpdateSiteListSiteMeasurement(siteId, measurementId, genus, species, commonName) {
-    $('#SiteList #' + siteId + ' #' + measurementId + ' span.Genus').html(genus);
-    $('#SiteList #' + siteId + ' #' + measurementId + ' span.Species').html(species);
+function UpdateSiteListSiteMeasurement(siteId, measurementId, scientificName, commonName) {
+    $('#SiteList #' + siteId + ' #' + measurementId + ' span.ScientificName').html(scientificName);
     $('#SiteList #' + siteId + ' #' + measurementId + ' span.CommonName').html(commonName);
 }
 
@@ -117,7 +115,7 @@ function EditSiteMeasurement(siteId, measurementId) {
                             $.post('/Import/SaveEditSiteMeasurementDialog',
                                 $('#measurementForm').serialize(),
                                 function (data) {
-                                    UpdateSiteListSiteMeasurement(data.siteId, data.measurementId, data.genus, data.species, data.commonName);
+                                    UpdateSiteListSiteMeasurement(data.siteId, data.measurementId, data.scientificName, data.commonName);
                                     dialog.dialog('destroy').remove();
                                 }
                             );
@@ -136,9 +134,8 @@ function EditSiteMeasurement(siteId, measurementId) {
         });
 }
 
-function UpdateSiteListSubsiteMeasurement(siteId, subsiteId, measurementId, genus, species, commonName) {
-    $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.Genus').html(genus);
-    $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.Species').html(species);
+function UpdateSiteListSubsiteMeasurement(siteId, subsiteId, measurementId, scientificName, commonName) {
+    $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.ScientificName').html(scientificName);
     $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.CommonName').html(commonName);
 }
 
@@ -154,7 +151,7 @@ function EditSubsiteMeasurement(siteId, subsiteId, measurementId) {
                             $.post('/Import/SaveEditSubsiteMeasurementDialog',
                                 $('#measurementForm').serialize(),
                                 function (data) {
-                                    UpdateSiteListSubsiteMeasurement(data.siteId, data.subsiteId, data.measurementId, data.genus, data.species, data.commonName);
+                                    UpdateSiteListSubsiteMeasurement(data.siteId, data.subsiteId, data.measurementId, data.scientificName, data.commonName);
                                     dialog.dialog('destroy').remove();
                                 }
                             );

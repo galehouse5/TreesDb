@@ -117,6 +117,19 @@ namespace TMD.Models
         public IList<ImportSubsiteModel> Subsites { get; private set; }
         public IList<ImportMeasurementModel> Measurements { get; private set; }
 
+        public int MeasurementCount
+        {
+            get
+            {
+                int count = Measurements.Count;
+                foreach (ImportSubsiteModel issm in Subsites)
+                {
+                    count += issm.Measurements.Count;
+                }
+                return count;
+            }
+        }
+
         [DisplayName("Name*:")]
         [StringLength(100)]
         public string Name { get; set; }
@@ -257,13 +270,9 @@ namespace TMD.Models
         [StringLength(100)]
         public string CommonName { get; set; }
 
-        [DisplayName("Genus*:")]
+        [DisplayName("Scientific name*:")]
         [StringLength(100)]
-        public string Genus { get; set; }
-
-        [DisplayName("Species*:")]
-        [StringLength(100)]
-        public string Species { get; set; }
+        public string ScientificName { get; set; }
 
         #region IViewModel<Tree> Members
 
@@ -273,8 +282,7 @@ namespace TMD.Models
         {
             Id = Entity.Id;
             CommonName = Entity.CurrentMeasurement.CommonName;
-            Genus = Entity.CurrentMeasurement.Genus;
-            Species = Entity.CurrentMeasurement.Species;
+            ScientificName = Entity.CurrentMeasurement.ScientificName;
             if (SiteVisit != null)
             {
                 SiteId = SiteVisit.Id;
@@ -290,8 +298,7 @@ namespace TMD.Models
         public void FillEntityFromModel()
         {
             Entity.CurrentMeasurement.CommonName = CommonName;
-            Entity.CurrentMeasurement.Genus = Genus;
-            Entity.CurrentMeasurement.Species = Species;
+            Entity.CurrentMeasurement.ScientificName = ScientificName;
         }
 
         #endregion

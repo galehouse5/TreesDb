@@ -9,6 +9,16 @@ namespace TMD.Common
 {
     public static class TextHelper
     {
+        public static string ToSentenceCase(this string str)
+        {
+            if (str.Length > 0)
+            {
+                return str.Substring(0, 1).ToUpper() 
+                    + str.Substring(1, str.Length - 1).ToLower();
+            }
+            return str;
+        }
+
         public static string ToTitleCase(this string str)
         {
             return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);

@@ -3,6 +3,6 @@
     <p>
         <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;">
         </span>
-        Are you sure you want to delete <%= Model.Genus %> <%= Model.Species %>?
+        Are you sure you want to delete <%= Model.ScientificName %>?
     </p>
 </div>

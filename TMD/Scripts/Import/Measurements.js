@@ -1,20 +1,18 @@
 ﻿function InitializeMeasurementFormValidation() {
     $('#measurementForm').validate({
         rules: {
-            Genus: { TMDAlways: true, required: true, maxlength: 100 },
-            Species: { TMDAlways: true, required: true, maxlength: 100 },
+            ScientificName: { TMDAlways: true, required: true, maxlength: 100 },
             CommonName: { TMDAlways: true, required: true, maxlength: 100 }
         }
     });
 }
 
-function AddSiteListSiteMeasurement(siteId, measurementId, genus, species, commonName) {
+function AddSiteListSiteMeasurement(siteId, measurementId, scientificName, commonName) {
     var measurementDom = $('\
         <li id="' + measurementId + '" class="Measurement">\
             <span class="Icon"></span>\
             <div class="Column">\
-                <span class="Genus">' + genus + '</span>\
-                <span class="Species">' + species + '</span>\
+                <span class="ScientificName">' + scientificName + '</span>\
                 <br />\
                 <span class="CommonName">' + commonName + '</span>\
             </div>\
@@ -40,7 +38,7 @@ function AddSiteMeasurement(siteId) {
                             $.post('/Import/SaveAddSiteMeasurementDialog',
                                 $('#measurementForm').serialize(),
                                 function (data) {                                    
-                                    AddSiteListSiteMeasurement(data.siteId, data.measurementId, data.genus, data.species, data.commonName);
+                                    AddSiteListSiteMeasurement(data.siteId, data.measurementId, data.scientificName, data.commonName);
                                     $('#' + siteId + ' > div > .NumberOfMeasurements').val(parseInt($('#' + siteId + ' > div > .NumberOfMeasurements').val()) + 1);
                                     $('#measurementsForm').validate().resetForm();
                                     dialog.dialog('destroy').remove();
@@ -61,9 +59,8 @@ function AddSiteMeasurement(siteId) {
         });
 }
 
-function UpdateSiteListSiteMeasurement(siteId, measurementId, genus, species, commonName) {
-    $('#SiteList #' + siteId + ' #' + measurementId + ' span.Genus').html(genus);
-    $('#SiteList #' + siteId + ' #' + measurementId + ' span.Species').html(species);
+function UpdateSiteListSiteMeasurement(siteId, measurementId, scientificName, commonName) {
+    $('#SiteList #' + siteId + ' #' + measurementId + ' span.ScientificName').html(scientificName);
     $('#SiteList #' + siteId + ' #' + measurementId + ' span.CommonName').html(commonName);
 }
 
@@ -79,7 +76,7 @@ function EditSiteMeasurement(siteId, measurementId) {
                             $.post('/Import/SaveEditSiteMeasurementDialog',
                                 $('#measurementForm').serialize(),
                                 function (data) {
-                                    UpdateSiteListSiteMeasurement(data.siteId, data.measurementId, data.genus, data.species, data.commonName);
+                                    UpdateSiteListSiteMeasurement(data.siteId, data.measurementId, data.scientificName, data.commonName);
                                     dialog.dialog('destroy').remove();
                                 }
                             );
@@ -129,13 +126,12 @@ function DeleteSiteMeasurement(siteId, measurementId) {
         });
 }
 
-function AddSiteListSubsiteMeasurement(siteId, subsiteId, measurementId, genus, species, commonName) {
+function AddSiteListSubsiteMeasurement(siteId, subsiteId, measurementId, scientificName, commonName) {
     var measurementDom = $('\
         <li id="' + measurementId + '" class="Measurement">\
             <span class="Icon"></span>\
             <div class="Column">\
-                <span class="Genus">' + genus + '</span>\
-                <span class="Species">' + species + '</span>\
+                <span class="ScientificName">' + scientificName + '</span>\
                 <br />\
                 <span class="CommonName">' + commonName + '</span>\
             </div>\
@@ -161,8 +157,9 @@ function AddSubsiteMeasurement(siteId, subsiteId) {
                             $.post('/Import/SaveAddSubsiteMeasurementDialog',
                                 $('#measurementForm').serialize(),
                                 function (data) {
-                                    AddSiteListSubsiteMeasurement(data.siteId, data.subsiteId, data.measurementId, data.genus, data.species, data.commonName);
+                                    AddSiteListSubsiteMeasurement(data.siteId, data.subsiteId, data.measurementId, data.scientificName, data.commonName);
                                     $('#' + subsiteId + ' > div > .NumberOfMeasurements').val(parseInt($('#' + subsiteId + ' > div > .NumberOfMeasurements').val()) + 1);
+                                    $('#' + siteId + ' > div > .NumberOfMeasurements').val(parseInt($('#' + siteId + ' > div > .NumberOfMeasurements').val()) + 1);
                                     $('#measurementsForm').validate().resetForm();
                                     dialog.dialog('destroy').remove();
                                 }
@@ -183,9 +180,8 @@ function AddSubsiteMeasurement(siteId, subsiteId) {
 }
 
 
-function UpdateSiteListSubsiteMeasurement(siteId, subsiteId, measurementId, genus, species, commonName) {
-    $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.Genus').html(genus);
-    $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.Species').html(species);
+function UpdateSiteListSubsiteMeasurement(siteId, subsiteId, measurementId, scientificName, commonName) {
+    $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.ScientificName').html(scientificName);
     $('#SiteList #' + siteId + ' #' + subsiteId + ' #' + measurementId + ' span.CommonName').html(commonName);
 }
 
@@ -201,7 +197,7 @@ function EditSubsiteMeasurement(siteId, subsiteId, measurementId) {
                             $.post('/Import/SaveEditSubsiteMeasurementDialog',
                                 $('#measurementForm').serialize(),
                                 function (data) {
-                                    UpdateSiteListSubsiteMeasurement(data.siteId, data.subsiteId, data.measurementId, data.genus, data.species, data.commonName);
+                                    UpdateSiteListSubsiteMeasurement(data.siteId, data.subsiteId, data.measurementId, data.scientificName, data.commonName);
                                     dialog.dialog('destroy').remove();
                                 }
                             );
@@ -237,6 +233,7 @@ function DeleteSubsiteMeasurement(siteId, subsiteId, measurementId) {
                             function (data) {
                                 RemoveSiteListSubsiteMeasurement(siteId, subsiteId, measurementId);
                                 $('#' + subsiteId + ' > div > .NumberOfMeasurements').val(parseInt($('#' + subsiteId + ' > div > .NumberOfMeasurements').val()) - 1);
+                                $('#' + siteId + ' > div > .NumberOfMeasurements').val(parseInt($('#' + siteId + ' > div > .NumberOfMeasurements').val()) - 1);
                                 $(dialog).dialog('destroy').remove();
                             });
                     },

@@ -3,18 +3,13 @@
 <form id="measurementForm" method="post" action="">
     <%= Html.HiddenFor(m => m.SiteId) %>
     <div class="form-row">
-        <div class="form-col-brief"><%= Html.LabelFor(m => m.Genus) %></div>
-        <div class="form-col-normal"><%= Html.CustomTextBoxFor(m => m.Genus)%></div>
-        <div class="ui-helper-clearfix"></div>
-    </div>
-    <div class="form-row">
-        <div class="form-col-brief"><%= Html.LabelFor(m => m.Species) %></div>
-        <div class="form-col-normal"><%= Html.CustomTextBoxFor(m => m.Species)%></div>
-        <div class="ui-helper-clearfix"></div>
-    </div>
-    <div class="form-row">
         <div class="form-col-brief"><%= Html.LabelFor(m => m.CommonName) %></div>
         <div class="form-col-normal"><%= Html.CustomTextBoxFor(m => m.CommonName)%></div>
+        <div class="ui-helper-clearfix"></div>
+    </div>
+    <div class="form-row">
+        <div class="form-col-brief"><%= Html.LabelFor(m => m.ScientificName) %></div>
+        <div class="form-col-normal"><%= Html.CustomTextBoxFor(m => m.ScientificName)%></div>
         <div class="ui-helper-clearfix"></div>
     </div>
 </form>

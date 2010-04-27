@@ -4,18 +4,13 @@
     <%= Html.HiddenFor(m => m.SiteId) %>
     <%= Html.HiddenFor(m => m.Id) %>
     <div class="form-row">
-        <div class="form-col-brief"><%= Html.LabelFor(m => m.Genus) %></div>
-        <div class="form-col-normal"><%= Html.CustomTextBoxFor(m => m.Genus)%></div>
-        <div class="ui-helper-clearfix"></div>
-    </div>
-    <div class="form-row">
-        <div class="form-col-brief"><%= Html.LabelFor(m => m.Species) %></div>
-        <div class="form-col-normal"><%= Html.CustomTextBoxFor(m => m.Species)%></div>
-        <div class="ui-helper-clearfix"></div>
-    </div>
-    <div class="form-row">
         <div class="form-col-brief"><%= Html.LabelFor(m => m.CommonName) %></div>
         <div class="form-col-normal"><%= Html.CustomTextBoxFor(m => m.CommonName)%></div>
+        <div class="ui-helper-clearfix"></div>
+    </div>
+    <div class="form-row">
+        <div class="form-col-brief"><%= Html.LabelFor(m => m.ScientificName) %></div>
+        <div class="form-col-normal"><%= Html.CustomTextBoxFor(m => m.ScientificName)%></div>
         <div class="ui-helper-clearfix"></div>
     </div>
 </form>

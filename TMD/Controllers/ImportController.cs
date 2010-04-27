@@ -343,8 +343,7 @@ namespace TMD.Controllers
             return this.Json(new {
                 siteId = model.SiteId,
                 measurementId = model.Id,
-                genus = model.Genus,
-                species = model.Species,
+                scientificName = model.ScientificName,
                 commonName = model.CommonName
             });
         }
@@ -388,8 +387,7 @@ namespace TMD.Controllers
             return this.Json(new {
                 siteId = model.SiteId,
                 measurementId = model.Id,
-                genus = model.Genus,
-                species = model.Species,
+                scientificName = model.ScientificName,
                 commonName = model.CommonName
             });
         }
@@ -476,8 +474,7 @@ namespace TMD.Controllers
                 siteId = model.SiteId,
                 subsiteId = model.SubsiteId,
                 measurementId = model.Id,
-                genus = model.Genus,
-                species = model.Species,
+                scientificName = model.ScientificName,
                 commonName = model.CommonName
             });
         }
@@ -535,8 +532,7 @@ namespace TMD.Controllers
                 siteId = model.SiteId,
                 subsiteId = model.SubsiteId,
                 measurementId = model.Id,
-                genus = model.Genus,
-                species = model.Species,
+                scientificName = model.ScientificName,
                 commonName = model.CommonName
             });
         }
