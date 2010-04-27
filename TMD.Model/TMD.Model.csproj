@@ -42,6 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntityBase.cs" />
+    <Compile Include="TreeNames\TreeNameFuzzySearchByCommonName.cs" />
+    <Compile Include="TreeNames\TreeName.cs" />
+    <Compile Include="TreeNames\TreeNameFactory.cs" />
+    <Compile Include="TreeNames\TreeNameService.cs" />
     <Compile Include="Trees\TreeService.cs" />
     <Compile Include="UserSession.cs" />
     <Compile Include="Validation\CollectionMaxCountValidatorAttribute.cs" />
@@ -101,6 +105,9 @@
       <Project>{5CE0121A-A36A-4504-8CD2-658548A79108}</Project>
       <Name>TMD.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TreeNames\treelist.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

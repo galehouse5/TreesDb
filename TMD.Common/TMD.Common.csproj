@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EncodingHelper.cs" />
+    <Compile Include="InMemoryFuzzySearch.cs" />
     <Compile Include="PluginFactory.cs" />
     <Compile Include="PluginSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

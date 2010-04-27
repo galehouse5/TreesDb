@@ -37,7 +37,7 @@ function AddSiteMeasurement(siteId) {
                             var dialog = $(this);
                             $.post('/Import/SaveAddSiteMeasurementDialog',
                                 $('#measurementForm').serialize(),
-                                function (data) {                                    
+                                function (data) {
                                     AddSiteListSiteMeasurement(data.siteId, data.measurementId, data.scientificName, data.commonName);
                                     $('#' + siteId + ' > div > .NumberOfMeasurements').val(parseInt($('#' + siteId + ' > div > .NumberOfMeasurements').val()) + 1);
                                     $('#measurementsForm').validate().resetForm();
@@ -55,7 +55,14 @@ function AddSiteMeasurement(siteId) {
                 }
             });
             InitializeMeasurementFormValidation();
-            $('#Genus').focus();
+            $('#CommonName').autocomplete({
+                source: "/Import/TreeNameAutocomplete",
+                minLength: 2,
+                select: function (event, ui) {
+                    $('#ScientificName').val(ui.item.scientificName);
+                }
+            });
+            $('#CommonName').focus();
         });
 }
 
@@ -91,7 +98,14 @@ function EditSiteMeasurement(siteId, measurementId) {
                 }
             });
             InitializeMeasurementFormValidation();
-            $('#Genus').focus();
+            $('#CommonName').autocomplete({
+                source: "/Import/TreeNameAutocomplete",
+                minLength: 2,
+                select: function (event, ui) {
+                    $('#ScientificName').val(ui.item.scientificName);
+                }
+            });
+            $('#CommonName').focus();
         });
 }
 
@@ -175,7 +189,14 @@ function AddSubsiteMeasurement(siteId, subsiteId) {
                 }
             });
             InitializeMeasurementFormValidation();
-            $('#Genus').focus();
+            $('#CommonName').autocomplete({
+                source: "/Import/TreeNameAutocomplete",
+                minLength: 2,
+                select: function (event, ui) {
+                    $('#ScientificName').val(ui.item.scientificName);
+                }
+            });
+            $('#CommonName').focus();
         });
 }
 
@@ -212,7 +233,14 @@ function EditSubsiteMeasurement(siteId, subsiteId, measurementId) {
                 }
             });
             InitializeMeasurementFormValidation();
-            $('#Genus').focus();
+            $('#CommonName').autocomplete({
+                source: "/Import/TreeNameAutocomplete",
+                minLength: 2,
+                select: function (event, ui) {
+                    $('#ScientificName').val(ui.item.scientificName);
+                }
+            });
+            $('#CommonName').focus();
         });
 }
 

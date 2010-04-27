@@ -9,6 +9,8 @@ using TMD.Extensions;
 using TMD.Models;
 using TMD.Model.Sites;
 using TMD.Model.Trees;
+using TMD.Model.TreeNames;
+using TMD.Common;
 
 namespace TMD.Controllers
 {
@@ -637,6 +639,22 @@ namespace TMD.Controllers
             model.FillModelFromEntity();
             ApplicationSession.ImportTrip = Trip.Create();
             return View(model);
+        }
+
+        public ActionResult TreeNameAutocomplete(string term)
+        {
+            IList<TreeName> treeNames = TreeNameService.FindTreeNamesSimilarToCommonName(term, 5);
+            List<object> autocompleteResults = new List<object>();
+            foreach (TreeName tn in treeNames)
+            {
+                autocompleteResults.Add(new
+                {
+                    label = string.Format("{0} ({1})", tn.CommonName.ToTitleCase(), tn.ScientificName),
+                    value = tn.CommonName.ToTitleCase(),
+                    scientificName = tn.ScientificName
+                });
+            }
+            return this.Json(autocompleteResults, JsonRequestBehavior.AllowGet);
         }
     }
 }
