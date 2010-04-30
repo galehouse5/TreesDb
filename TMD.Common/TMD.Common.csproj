@@ -42,7 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EncodingHelper.cs" />
-    <Compile Include="InMemoryFuzzySearch.cs" />
+    <Compile Include="FuzzyStringMatching\ContainmentMatchingStrategy.cs" />
+    <Compile Include="FuzzyStringMatching\EqualityMatchingStrategy.cs" />
+    <Compile Include="FuzzyStringMatching\FuzzyStringMatcher.cs" />
+    <Compile Include="FuzzyStringMatching\IFuzzyStringMatchingStrategy.cs" />
+    <Compile Include="FuzzyStringMatching\LevenshteinDistance.cs" />
+    <Compile Include="FuzzyStringMatching\LevenshteinDistanceMatchingStrategy.cs" />
+    <Compile Include="FuzzyStringMatching\SetExtensions.cs" />
+    <Compile Include="FuzzyStringMatching\Terms.cs" />
     <Compile Include="PluginFactory.cs" />
     <Compile Include="PluginSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

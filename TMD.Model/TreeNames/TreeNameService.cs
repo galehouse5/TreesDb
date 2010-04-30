@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Reflection;
 using System.IO;
+using TMD.Common.FuzzyStringMatching;
 
 namespace TMD.Model.TreeNames
 {
@@ -32,9 +33,9 @@ namespace TMD.Model.TreeNames
         {
             TreeNameFuzzySearchByCommonName search = TreeNameFuzzySearchByCommonName.Create(TreeNames);
             List<TreeName> treeNames = new List<TreeName>();
-            foreach (var item in search.Search(expression, results))
+            foreach (FuzzyStringMatch<TreeName> match in search.Search(expression, results))
             {
-                treeNames.Add(item.Item);
+                treeNames.Add(match);
             }
             return treeNames;
         }
