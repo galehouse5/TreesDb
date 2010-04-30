@@ -19,6 +19,12 @@ namespace TMD.Common.FuzzyStringMatching
         public IList<int> WeighMatchableTermsSet(string[] searchTerms)
         {
             List<int> weights = new List<int>(MatchableTermsSet.Count);
+            int sumSearchTermLength = 0;
+            for (int i = 0; i < searchTerms.Length; i++)
+            {
+                sumSearchTermLength += searchTerms[i].Length;
+            }
+            int distanceCutoff = sumSearchTermLength  - (int)Math.Sqrt(sumSearchTermLength);
             for (int i = 0; i < MatchableTermsSet.Count; i++)
             {
                 int distance = 0;
@@ -32,7 +38,8 @@ namespace TMD.Common.FuzzyStringMatching
                     }
                     distance += minDistance;
                 }
-                weights.Add(-distance);
+                int weight = Math.Max(0, distanceCutoff - distance);
+                weights.Add(weight);
             }
             return weights;
         }

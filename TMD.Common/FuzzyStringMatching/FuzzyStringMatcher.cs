@@ -107,6 +107,7 @@ namespace TMD.Common.FuzzyStringMatching
             {
                 matches.Add(FuzzyStringMatch<T>.Create(Matchables[i], matchableWeights[i]));
             }
+            matches.RemoveAll(m => m.Weight == 0);
             matches.Sort((a, b) => (-a.Weight.CompareTo(b.Weight)));
             if (matches.Count > results)
             {

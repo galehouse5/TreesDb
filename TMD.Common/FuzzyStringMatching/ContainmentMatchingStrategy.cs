@@ -22,9 +22,9 @@ namespace TMD.Common.FuzzyStringMatching
             for (int i = 0; i < MatchableTermsSet.Count; i++)
             {
                 int weight = 0;
-                foreach (string matchableTerm in MatchableTermsSet[i])
+                foreach (string searchTerm in searchTerms)
                 {
-                    foreach (string searchTerm in searchTerms)
+                    foreach (string matchableTerm in MatchableTermsSet[i])
                     {
                         if (matchableTerm.Contains(searchTerm))
                         {
