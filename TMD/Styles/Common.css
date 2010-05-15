@@ -62,7 +62,7 @@ a.selected { color: Black; font-weight: bold; text-decoration: none; }
 .dialog-reporters-grid { float: left; }
 
 /* fixes jquery widget font sizes */
-.ui-widget { font-size: 90% }
+.ui-widget { font-size: 80%; }
 /* fixes ie8 horizontal scrollbar when jquery modal dialog is displayed  */
 .ui-widget-overlay { position: fixed; }
 

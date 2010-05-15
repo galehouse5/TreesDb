@@ -6,6 +6,10 @@
             Website: { TMDAlways: true, maxlength: 100 },
             MeasurerContactInfo: { TMDAlways: true, required: true, maxlength: 200 },
             PhotosAvailable: { TMDAlways: true }
+        },
+        invalidHandler: function (form, validator) {
+            var firstInvalidElement = $(validator.errorList[0].element);
+            firstInvalidElement.focus();
         }
     });
 }

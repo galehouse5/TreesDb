@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="Controllers\ImportController.cs" />
     <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Extensions\GoogleMapsExtensions.cs" />
     <Compile Include="Extensions\HtmlElementExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -76,7 +77,9 @@
     <Compile Include="Models\ImportModel.cs" />
     <Compile Include="Models\IViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebApplicationRegistry.cs" />
     <Compile Include="WebApplicationSessionProvider.cs" />
+    <Compile Include="WebApplicationSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\white oak in fog.jpg" />
@@ -119,7 +122,6 @@
     <Content Include="Styles\ThirdParty\smoothness\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="Styles\ThirdParty\smoothness\jquery-ui-1.8.custom.css" />
     <Content Include="Styles\ThirdParty\ui.jqgrid.css" />
-    <Content Include="Views\Import\AddSiteDialog.aspx" />
     <Content Include="Views\Import\AddSiteMeasurementDialog.aspx" />
     <Content Include="Views\Import\AddSubsiteDialog.aspx" />
     <Content Include="Views\Import\AddSubsiteMeasurementDialog.aspx" />
@@ -127,7 +129,7 @@
     <Content Include="Views\Import\DeleteSiteMeasurementDialog.aspx" />
     <Content Include="Views\Import\DeleteSubsiteDialog.aspx" />
     <Content Include="Views\Import\DeleteSubsiteMeasurementDialog.aspx" />
-    <Content Include="Views\Import\EditSiteDialog.aspx" />
+    <Content Include="Views\Import\SiteDialog.aspx" />
     <Content Include="Views\Import\EditSiteMeasurementDialog.aspx" />
     <Content Include="Views\Import\EditSubsiteDialog.aspx" />
     <Content Include="Views\Import\EditSubsiteMeasurementDialog.aspx" />

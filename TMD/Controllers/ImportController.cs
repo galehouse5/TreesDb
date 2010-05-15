@@ -147,7 +147,7 @@ namespace TMD.Controllers
             SiteVisit sv = SiteVisit.Create(Site.Create());
             ImportSiteModel model = new ImportSiteModel();
             model.Entity = sv;
-            return View(model);
+            return View("SiteDialog", model);
         }
 
         public ActionResult AddSubsiteDialog(Guid siteId)
@@ -175,7 +175,7 @@ namespace TMD.Controllers
             ImportSiteModel model = new ImportSiteModel();
             model.Entity = sv;
             model.FillModelFromEntity();
-            return View(model);
+            return View("SiteDialog", model);
         }
 
         public ActionResult EditSubsiteDialog(Guid siteId, Guid subsiteId)

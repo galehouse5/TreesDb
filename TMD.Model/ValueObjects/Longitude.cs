@@ -13,6 +13,7 @@ namespace TMD.Model
         public enum EInputFormat
         {
             Invalid,
+            Unspecified,
             DegreesMinutesDecimalSeconds,
             DegreesDecimalMinutes,
             DecimalDegrees
@@ -155,7 +156,7 @@ namespace TMD.Model
 
         public bool IsNull
         {
-            get { return TotalDegrees == 0f || TotalDegrees == float.MaxValue || TotalDegrees == float.MinValue; }
+            get { return InputFormat == EInputFormat.Unspecified; }
         }
 
         #endregion
@@ -175,7 +176,7 @@ namespace TMD.Model
                 degrees = 0f;
                 minutes = 0f;
                 seconds = 0f;
-                inputFormat = EInputFormat.Invalid;
+                inputFormat = EInputFormat.Unspecified;
             }
             else if ((match = DegreesMinutesSecondsFormat.Match(s)).Success)
             {

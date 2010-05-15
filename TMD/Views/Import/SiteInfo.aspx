@@ -5,6 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" rel="Stylesheet" href="/Styles/Import.css" />
 <script type="text/javascript" src="/Scripts/Import/SiteInfo.js"></script>
+<%= Html.LoadGoogleMapsApiV3() %>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="OverviewContent" runat="server">

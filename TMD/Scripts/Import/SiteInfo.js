@@ -4,9 +4,15 @@
             Name: { TMDAlways: true, maxlength: 100, required: true },
             County: { TMDAlways: true, maxlength: 100, required: true },
             State: { TMDAlways: true, required: true },
+            SiteComments: { TMDAlways: true, maxlength: 300 },
             OwnershipType: { TMDAlways: true, maxlength: 100, required: true },
-            OwnershipContactInfo: { TMDAlways: true, maxlength: 200 },
-            SiteComments: { TMDAlways: true, maxlength: 300 }
+            OwnershipContactInfo: { TMDAlways: true, maxlength: 200 }
+        },
+        invalidHandler: function (form, validator) {
+            var firstInvalidElement = $(validator.errorList[0].element);
+            var accordionTabHeader = firstInvalidElement.parents('.ui-accordion-content').prev();
+            $('.accordion').accordion('activate', accordionTabHeader);
+            firstInvalidElement.focus();
         }
     });
 }
@@ -51,7 +57,7 @@ function AddSite() {
     $.get('/Import/AddSiteDialog',
         {},
         function (data) {
-            $(data).dialog({ resizable: false, modal: true, width: 640, height: 500,
+            $(data).dialog({ resizable: false, modal: true, width: 800, height: 600,
                 buttons: {
                     'Save': function () {
                         if ($('#siteForm').valid()) {
@@ -75,9 +81,41 @@ function AddSite() {
                     $(this).dialog('destroy').remove();
                 }
             });
+            var map = InitializeLocationPicker();
+            $(".accordion").accordion({
+                fillSpace: true,
+                change: function (event, ui) {
+                    google.maps.event.trigger(map, 'resize')
+                }
+            });
             InitializeSiteFormValidation();
             $('#Name').focus();
         });
+}
+
+function InitializeLocationPicker() {
+    var latlng = new google.maps.LatLng(-34.397, 150.644);
+    var myOptions = {
+        zoom: 8,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.TERRAIN,
+        mapTypeControlOptions: {
+            mapTypeIds: [ google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.HYBRID ]
+        }
+    };
+    var map = new google.maps.Map(document.getElementById("locationMap"), myOptions);
+
+    var marker = new google.maps.Marker({
+        map: map,
+        position: latlng,
+        draggable: true
+    });
+
+    google.maps.event.addListener(marker, 'dragend', function (mouseEvent) {
+        map.setCenter(marker.position);
+    });
+
+    return map;
 }
 
 function UpdateSiteListSite(siteId, siteName) {
@@ -88,7 +126,7 @@ function EditSite(siteId) {
     $.get('/Import/EditSiteDialog',
         { siteId: siteId },
         function (data) {
-            $(data).dialog({ resizable: false, modal: true, width: 640, height: 500,
+            $(data).dialog({ resizable: false, modal: true, width: 700, height: 500,
                 buttons: {
                     'Save': function () {
                         if ($('#siteForm').valid()) {
@@ -109,6 +147,9 @@ function EditSite(siteId) {
                 close: function () {
                     $(this).dialog('destroy').remove();
                 }
+            });
+            $(".accordion").accordion({
+                fillSpace: true
             });
             InitializeSiteFormValidation();
             $('#Name').focus();

@@ -1,9 +1,6 @@
 ﻿label.invalid { float: left; margin: 6px 0 0 4px; background: url('/Styles/Images/unchecked.gif') no-repeat; height: 16px; color: #EA5200; padding-left: 16px; }
 label.valid { float: left; margin: 6px 0 0 4px; background: url('/Styles/Images/checked.gif') no-repeat; height: 16px; width: 16px; }
 
-/*label.invalid { margin-top: 6px; color: #EA5200; background: url('/Styles/Images/unchecked.gif') no-repeat; padding-left: 16px; display: block; }
-label.valid { margin-left: 6px; background: url('/Styles/Images/checked.gif') no-repeat; display: inline; width: 16px; height: 16px; }*/
-
 #SiteList { margin: 0; padding: 0; list-style-type: none; line-height: 18px; }
 .SubsiteList { margin: 0; padding-left: 36px; list-style-type: none; line-height: 18px; }
 .MeasurementList { margin: 0; padding-left: 54px; list-style-type: none; line-height: 18px; }
@@ -18,3 +15,8 @@ label.valid { margin-left: 6px; background: url('/Styles/Images/checked.gif') no
 .Measurement .Column { float: left; margin-right: 10px; width: auto; }
 
 
+.dialog .accordion { height: 510px; }
+.dialog .accordion h3.ui-accordion-header.ui-state-default > a { color: #0000FF; text-decoration: underline; }
+.dialog .accordion h3.ui-accordion-header.ui-state-active > a { font-weight: bold; }
+
+#locationMap { height: 325px; width: 725px; }

@@ -28,14 +28,14 @@ namespace TMD.Models
             Sites = new List<ImportSiteModel>();
         }
 
-        [DisplayName("Name:")]
+        [DisplayName("Trip name:")]
         [StringLength(100)]
         public string Name { get; set; }
 
-        [DisplayName("Date:")]
+        [DisplayName("Trip date:")]
         public string Date { get; set; }
 
-        [DisplayName("Website:")]
+        [DisplayName("Trip website:")]
         [StringLength(100)]
         public string Website { get; set; }
 
@@ -113,6 +113,11 @@ namespace TMD.Models
             Measurements = new List<ImportMeasurementModel>();
         }
 
+        public bool IsNew
+        {
+            get { return Id == Guid.Empty; }
+        }
+
         public Guid Id { get; set; }
         public IList<ImportSubsiteModel> Subsites { get; private set; }
         public IList<ImportMeasurementModel> Measurements { get; private set; }
@@ -130,14 +135,14 @@ namespace TMD.Models
             }
         }
 
-        [DisplayName("Name*:")]
+        [DisplayName("Site name*:")]
         [StringLength(100)]
         public string Name { get; set; }
 
-        [DisplayName("State*:")]
+        [DisplayName("Site state*:")]
         public string State { get; set; }
 
-        [DisplayName("County*:")]
+        [DisplayName("Site county*:")]
         [StringLength(100)]
         public string County { get; set; }
 
@@ -155,7 +160,7 @@ namespace TMD.Models
         [StringLength(200)]
         public string OwnershipContactInfo { get; set; }
 
-        [DisplayName("Comments:")]
+        [DisplayName("Site comments:")]
         [StringLength(300)]
         public string SiteComments { get; set; }
 

@@ -13,7 +13,7 @@ namespace TMD.Model.Validation
 
         public override bool IsValid(object propertyValue)
         {
-            double v = (double)propertyValue;
+            double v = Convert.ToDouble(propertyValue);
             return v != 0d;
         }
     }
