@@ -33,6 +33,25 @@ namespace TMD.SQLCLR
             return rank;
         }
 
+        private class SentenceWordComparisonRank : IComparable<SentenceWordComparisonRank>
+        {
+            public SentenceWordComparisonRank(int firstSentenceWordIndex, int secondSentenceWordIndex, double rank)
+            {
+                this.FirstSentenceWordIndex = firstSentenceWordIndex;
+                this.SecondSentenceWordIndex = secondSentenceWordIndex;
+                this.Rank = rank;
+            }
+
+            public readonly int FirstSentenceWordIndex;
+            public readonly int SecondSentenceWordIndex;
+            public readonly double Rank;
+
+            public int CompareTo(SentenceWordComparisonRank other)
+            {
+                // descending order
+                return -Rank.CompareTo(other.Rank);
+            }
+        }
 
         public static double InternalRankSentences(string firstSentence, string secondSentence, string expression)
         {
@@ -40,27 +59,45 @@ namespace TMD.SQLCLR
             
             string normalizedFirstSentence = firstSentence.Trim().ToLower();
             string normalizedSecondSentence = secondSentence.Trim().ToLower();
-            string[] normalizedFirstWords = normalizedFirstSentence.Split(s_SentenceSeperators, StringSplitOptions.RemoveEmptyEntries);
-            string[] normalizedSecondWords = normalizedSecondSentence.Split(s_SentenceSeperators, StringSplitOptions.RemoveEmptyEntries);
-            
-            List<double> cartesianProductRanks = new List<double>(normalizedFirstWords.Length * normalizedSecondWords.Length);
-            for (int w1 = 0; w1 < normalizedFirstWords.Length; w1++)
+            string[] normalizedFirstSentenceWords = normalizedFirstSentence.Split(s_SentenceSeperators, StringSplitOptions.RemoveEmptyEntries);
+            string[] normalizedSecondSentenceWords = normalizedSecondSentence.Split(s_SentenceSeperators, StringSplitOptions.RemoveEmptyEntries);
+
+            List<SentenceWordComparisonRank> sentenceWordComparisonRanks = new List<SentenceWordComparisonRank>(normalizedFirstSentenceWords.Length * normalizedSecondSentenceWords.Length);
+            for (int firstSentenceWordIndex = 0; firstSentenceWordIndex < normalizedFirstSentenceWords.Length; firstSentenceWordIndex++)
             {
-                for (int w2 = 0; w2 < normalizedSecondWords.Length; w2++)
+                for (int secondSentenceWordIndex = 0; secondSentenceWordIndex < normalizedSecondSentenceWords.Length; secondSentenceWordIndex++)
                 {
-                    cartesianProductRanks.Add(e.Evaluate(normalizedFirstWords[w1], normalizedSecondWords[w2]));
+                    SentenceWordComparisonRank sentenceWordComparisonRank = new SentenceWordComparisonRank(
+                        firstSentenceWordIndex,
+                        secondSentenceWordIndex,
+                        e.Evaluate(normalizedFirstSentenceWords[firstSentenceWordIndex], normalizedSecondSentenceWords[secondSentenceWordIndex]));
+                    sentenceWordComparisonRanks.Add(sentenceWordComparisonRank);
                 }
             }
 
-            cartesianProductRanks.Sort();
-            double rank = 0;
-            int significantRanks = Math.Min(normalizedFirstWords.Length, normalizedSecondWords.Length);
-            for (int i = cartesianProductRanks.Count - 1; i >= cartesianProductRanks.Count - significantRanks; i--)
-            {
-                rank += cartesianProductRanks[i];
-            }
+            sentenceWordComparisonRanks.Sort();
 
-            return rank;
+            double sentenceRank = 0;
+            List<int> usedFirstSentenceWordIndexes = new List<int>();
+            List<int> usedSecondSentenceWordIndexes = new List<int>();
+            int numberOfWordComparisons = 0;
+            int numberOfSignificantWordComparisons = Math.Min(normalizedFirstSentenceWords.Length, normalizedSecondSentenceWords.Length);
+            foreach (SentenceWordComparisonRank sentenceWordComparisonRank in sentenceWordComparisonRanks)
+            {
+                if (!usedFirstSentenceWordIndexes.Contains(sentenceWordComparisonRank.FirstSentenceWordIndex)
+                    && !usedSecondSentenceWordIndexes.Contains(sentenceWordComparisonRank.SecondSentenceWordIndex))
+                {
+                    sentenceRank += sentenceWordComparisonRank.Rank;
+                    usedFirstSentenceWordIndexes.Add(sentenceWordComparisonRank.FirstSentenceWordIndex);
+                    usedSecondSentenceWordIndexes.Add(sentenceWordComparisonRank.SecondSentenceWordIndex);
+                    numberOfWordComparisons++;
+                }
+                if (numberOfWordComparisons >= numberOfSignificantWordComparisons)
+                {
+                    break;
+                }
+            }
+            return sentenceRank;
         }
 
         [SqlFunction(IsDeterministic = true, IsPrecise = true)]

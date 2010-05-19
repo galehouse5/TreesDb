@@ -18,7 +18,7 @@ namespace TMD.SQLCLR
             m_StringMetrics.Add("levenstein", new Levenstein());
             m_StringMetrics.Add("needlemanwunch", new NeedlemanWunch());
             m_StringMetrics.Add("smithwaterman", new SmithWaterman());
-            m_StringMetrics.Add("smithwatermangotoh ", new SmithWatermanGotoh());
+            m_StringMetrics.Add("smithwatermangotoh", new SmithWatermanGotoh());
             m_StringMetrics.Add("smithwatermangotohwindowedaffine", new SmithWatermanGotohWindowedAffine());
             m_StringMetrics.Add("jaro", new Jaro());
             m_StringMetrics.Add("jarowinkler", new JaroWinkler());
