@@ -2,110 +2,136 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TMD.Model.Sites;
-using TMD.Model.Trees;
+using TMD.Model.Locations;
 using TMD.Model.Validation;
-using TMD.Common;
+using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using Microsoft.Practices.EnterpriseLibrary.Validation;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace TMD.Model.Trips
 {
     [Serializable]
-    public class Trip : EntityBase, IEntity, IIsValid, IIsConflicting
+    public class Trip : IEntity
     {
-        private string m_Name;
-        private string m_Website;
-        private string m_MeasurerContactInfo;
-
         protected Trip()
         { }
 
-        [StringMaxLengthValidator("Trip name must not exceed 100 characters.", 100)]
-        public string Name
+        public virtual int Id { get; private set; }
+
+        private string m_Name;
+        [DisplayName("*Trip name:")]
+        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Trip name must be specified.", Ruleset = "Screening", Tag = "Trip")]
+        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Trip name must not exceed 100 characters.", Ruleset = "Persistence", Tag = "Trip")]
+        public virtual string Name
         {
             get { return m_Name; }
             set { m_Name = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
-        [DateRangeValidator("Trip date must be specified.", "1/1/1753", "1/1/9999")]
-        public Date Date { get; set; }
+        [DisplayName("*Trip date:")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        [NotNullValidator(MessageTemplate = "Trip date must be specified.", Ruleset = "Screening", Tag = "Trip")]
+        public virtual DateTime? Date { get; set; }
 
-        [StringMaxLengthValidator("Trip website must not exceed 100 characters.", 100)]
-        public string Website 
+        private string m_Website;
+        
+        [DisplayName("Trip website:")]
+        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Trip website must not exceed 100 characters.", Ruleset = "Persistence", Tag = "Trip")]
+        public virtual string Website
         {
             get { return m_Website; }
             set { m_Website = (value ?? string.Empty).Trim(); }
         }
 
-        public bool PhotosAvailable { get; set; }
+        [DisplayName("Photos available:")]
+        public virtual bool PhotosAvailable { get; set; }
 
-        [EmptyStringValidator("Trip measurer contact info must be specified.")]
-        [StringMaxLengthValidator("Trip measurer contact info must not exceed 200 characters.", 200)]
-        public string MeasurerContactInfo 
+        private string m_MeasurerContactInfo;
+        [DisplayName("*Measurer contact:")]
+        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Measurer contact must be specified for this trip.", Ruleset = "Screening", Tag = "Trip")]
+        [StringLengthWhenNotNullOrWhitespaceValidator(200, MessageTemplate = "Trip measurer contact info must not exceed 200 characters.", Ruleset = "Persistence", Tag = "Trip")]
+        public virtual string MeasurerContactInfo
         {
             get { return m_MeasurerContactInfo; }
             set { m_MeasurerContactInfo = (value ?? string.Empty).Trim(); }
         }
 
-        [EmptyCollectionValidator("Trip must contain site visits.")]
-        private IList<SiteVisit> SiteVisits { get; set; }
+        [ObjectCollectionValidator(TargetRuleset = "Persistence", Ruleset = "Persistence")]
+        [ObjectCollectionValidator(TargetRuleset = "Import", Ruleset = "Import")]
+        [ObjectCollectionValidator(TargetRuleset = "Screening", Ruleset="Screening")]
+        [CollectionCountWhenNotNullValidator(1, 100, MessageTemplate = "Trip must contain sites.", Ruleset = "Screening", Tag = "SiteVisits")]
+        public virtual IList<SiteVisit> SiteVisits { get; private set; }
 
-        public bool AllSitesAndSubsitesHaveMeasuredTrees
-        {
-            get
-            {
-                foreach (SiteVisit sv in SiteVisits)
-                {
-                    if (!sv.HasMeasuredTrees)
-                    {
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
+        public virtual bool IsImported { get; private set; }
 
-        public bool HasSiteVisits
+        public virtual SiteVisit AddSiteVisit()
         {
-            get { return SiteVisits.Count > 0; }
-        }
-
-        public bool AreSiteVisitsValidIgnoringCoordinatesAndMeasuredTrees
-        {
-            get
-            {
-                foreach (SiteVisit sv in SiteVisits)
-                {
-                    if (!sv.IsValidIgnoringCoordinatesAndMeasuredTrees)
-                    {
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
-
-        public bool IsValidIgnoringSiteVisits
-        {
-            get { return base.isValidExcludingProperties("SiteVisits"); }
-        }
-
-        public IList<SiteVisit> ListSiteVisists()
-        {
-            IOrderedEnumerable<SiteVisit> svs = SiteVisits.OrderByDescending(sv => sv.Created);
-            return svs.ToList();
-        }
-
-        public void AddSiteVisist(SiteVisit sv)
-        {
+            SiteVisit sv = SiteVisit.Create(this);
             SiteVisits.Add(sv);
+            return sv;
         }
 
-        public bool RemoveSiteVisit(SiteVisit sv)
+        public virtual SiteVisit AddSiteVisit(SiteVisit sv)
+        {
+            sv.SetPrivatePropertyValue<Trip>("Trip", this);
+            SiteVisits.Add(sv);
+            return sv;
+        }
+
+        public virtual bool RemoveSiteVisit(SiteVisit sv)
         {
             return SiteVisits.Remove(sv);
         }
 
-        public SiteVisit GetSiteVisitById(Guid id)
+        public virtual bool HasSiteVisits
+        {
+            get { return SiteVisits.Count > 0; }
+        }
+
+        public virtual bool AllSubsiteVisitsOfAllSiteVisitsHaveTreeMeasurements
+        {
+            get
+            {
+                foreach (SiteVisit sv in SiteVisits)
+                {
+                    if (!sv.AllSubsiteVisitsHaveTreeMeasurements)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+
+        public virtual ValidationResults ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
+        {
+            return this.Validate("Screening", "Persistence")
+                .FindAll(TagFilter.Include, "Trip");
+        }
+
+        public virtual ValidationResults ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
+        {
+            return this.Validate("Screening", "Persistence")
+                .FindAll(TagFilter.Include, "Trip", "SiteVisit", "SiteVisits", "SubsiteVisit", "SubsiteVisits");
+        }
+
+        public virtual ValidationResults ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates()
+        {
+            return this.Validate("Screening", "Persistence");
+        }
+
+        public virtual ValidationResults ValidateRegardingPersistence()
+        {
+            return this.Validate("Persistence");
+        }
+
+        public virtual ValidationResults ValidateRegardingImport()
+        {
+            return this.Validate("Screening", "Persistence", "Import");
+        }
+
+        public virtual SiteVisit GetSiteVisit(int id)
         {
             foreach (SiteVisit sv in SiteVisits)
             {
@@ -117,81 +143,33 @@ namespace TMD.Model.Trips
             return null;
         }
 
-        #region IIsValid Members
-
-        public override bool IsValid
+        public virtual bool AllSiteVisitsHaveSubsiteVisits
         {
-            get 
+            get
             {
                 foreach (SiteVisit sv in SiteVisits)
                 {
-                    if (!sv.IsValid)
+                    if (!sv.HasSubsiteVisits)
                     {
                         return false;
                     }
                 }
-                return base.IsValid;
+                return true;
             }
         }
-
-        public int SiteVisistCount
-        {
-            get { return SiteVisits.Count; }
-        }
-
-        public override IList<ValidationError> GetValidationErrors()
-        {
-            List<ValidationError> errors = new List<ValidationError>();
-            errors.AddRange(base.GetValidationErrors());
-            foreach (SiteVisit sv in SiteVisits)
-            {
-                errors.AddRange(sv.GetValidationErrors());
-            }
-            return errors;
-        }
-
-        #endregion
-
-        #region IIsConflicting Members
-
-        public bool IsConflicting
-        {
-            get 
-            {
-                foreach (SiteVisit sv in SiteVisits)
-                {
-                    if (sv.IsConflicting)
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
-        }
-
-        public IList<string> GetConflicts()
-        {
-            List<string> errors = new List<string>();
-            foreach (SiteVisit sv in SiteVisits)
-            {
-                errors.AddRange(sv.GetConflicts());
-            }
-            return errors;
-        }
-
-        #endregion
 
         public static Trip Create()
         {
-            Trip t = new Trip();
-            t.Date = Date.Null;
-            t.SiteVisits = new List<SiteVisit>();
-            t.PhotosAvailable = false;
-            t.MeasurerContactInfo = string.Empty;
-            t.Name = string.Empty;
-            t.Website = string.Empty;
-            t.MeasurerContactInfo = string.Empty;
-            return t;
+            return new Trip()
+            {
+                Name = string.Empty,
+                Date = null,
+                Website = string.Empty,
+                PhotosAvailable = false,
+                MeasurerContactInfo = string.Empty,
+                SiteVisits = new List<SiteVisit>(),
+                IsImported = false
+            };
         }
     }
 }

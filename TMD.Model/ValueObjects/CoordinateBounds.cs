@@ -3,26 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
+using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 
 namespace TMD.Model
 {
     [Serializable]
-    public class CoordinateBounds : ICloneable, IIsValid, IIsNull
+    public class CoordinateBounds : IIsSpecified
     {
         private CoordinateBounds() { }
 
-        private CoordinateBounds(Coordinates ne, Coordinates sw)
+        [ObjectValidator]
+        public Coordinates NE { get; private set; }
+
+        [ObjectValidator]
+        public Coordinates SW { get; private set; }
+
+        private Coordinates m_Center;
+        public Coordinates Center 
         {
-            this.NE = ne;
-            this.SW = sw;
-            this.Center = Coordinates.Create(
-                (ne.Latitude.TotalDegrees - sw.Latitude.TotalDegrees) / 2f + sw.Latitude.TotalDegrees,
-                (ne.Longitude.TotalDegrees - sw.Longitude.TotalDegrees) / 2f + sw.Longitude.TotalDegrees);
+            get 
+            {
+                if (m_Center == null)
+                {
+                    m_Center = computeCenter(NE, SW);
+                }
+                return m_Center; 
+            }
+            private set { m_Center = value; }
         }
 
-        public Coordinates NE { get; private set; }
-        public Coordinates SW { get; private set; }
-        public Coordinates Center { get; private set; }
+        public override string ToString()
+        {
+            return string.Format("{1} to {0}", NE, SW);
+        }
 
         public static bool operator ==(CoordinateBounds cb1, CoordinateBounds cb2)
         {
@@ -36,12 +49,7 @@ namespace TMD.Model
 
         public static bool operator !=(CoordinateBounds cb1, CoordinateBounds cb2)
         {
-            if ((object)cb1 == null || (object)cb2 == null)
-            {
-                return !((object)cb1 == null && (object)cb2 == null);
-            }
-            return cb1.NE != cb2.NE
-                || cb1.SW != cb2.SW;
+            return !(cb1 == cb2);
         }
 
         public override bool Equals(object obj)
@@ -52,13 +60,27 @@ namespace TMD.Model
 
         public override int GetHashCode()
         {
-            return NE.GetHashCode()
-                ^ SW.GetHashCode();
+            return NE.GetHashCode() ^ SW.GetHashCode();
+        }
+
+        private static Coordinates computeCenter(Coordinates ne, Coordinates sw)
+        {
+            if (!ne.IsSpecified && !sw.IsSpecified)
+            {
+                return Coordinates.Null();
+            }
+            return Coordinates.Create(
+                (ne.Latitude.TotalDegrees - sw.Latitude.TotalDegrees) / 2f + sw.Latitude.TotalDegrees,
+                (ne.Longitude.TotalDegrees - sw.Longitude.TotalDegrees) / 2f + sw.Longitude.TotalDegrees);
         }
 
         public static CoordinateBounds Create(Coordinates ne, Coordinates sw)
         {
-            return new CoordinateBounds(ne, sw);
+            CoordinateBounds cb = new CoordinateBounds();
+            cb.NE = ne;
+            cb.SW = sw;
+            cb.Center = computeCenter(ne, sw);
+            return cb;
         }
 
         public static CoordinateBounds Create(IEnumerable<Coordinates> coordsEnumeration)
@@ -66,7 +88,7 @@ namespace TMD.Model
             float maxLatitude = float.MinValue, maxLongitude = float.MinValue, minLatitude = float.MaxValue, minLongitude = float.MaxValue;
             foreach (Coordinates coords in coordsEnumeration)
             {
-                if (!coords.IsNull)
+                if (coords.IsSpecified)
                 {
                     maxLatitude = Math.Max(maxLatitude, coords.Latitude.TotalDegrees);
                     maxLongitude = Math.Max(maxLongitude, coords.Longitude.TotalDegrees);
@@ -74,47 +96,25 @@ namespace TMD.Model
                     minLongitude = Math.Min(minLongitude, coords.Longitude.TotalDegrees);
                 }
             }
-            return new CoordinateBounds(Coordinates.Create(maxLatitude, maxLongitude), Coordinates.Create(minLatitude, minLongitude));
+            Coordinates ne = maxLatitude == float.MinValue && maxLongitude == float.MinValue ? 
+                Coordinates.Null() : Coordinates.Create(maxLatitude, maxLongitude);
+            Coordinates sw = minLatitude == float.MaxValue && minLongitude == float.MaxValue ?
+                Coordinates.Null() : Coordinates.Create(minLatitude, minLongitude);
+            return Create(ne, sw);
         }
 
         public static CoordinateBounds Null()
         {
-            return new CoordinateBounds(Coordinates.Null(), Coordinates.Null());
+            CoordinateBounds cb = new CoordinateBounds();
+            cb.NE = Coordinates.Null();
+            cb.SW = Coordinates.Null();
+            cb.Center = Coordinates.Null();
+            return cb;
         }
 
-        #region ICloneable Members
-
-        public object Clone()
+        public bool IsSpecified
         {
-            return new CoordinateBounds((Coordinates)NE.Clone(), (Coordinates)SW.Clone());
+            get { return NE.IsSpecified && SW.IsSpecified; }
         }
-
-        #endregion
-
-        #region IIsValid Members
-
-        bool IIsValid.IsValid
-        {
-            get { return NE.IsValid && SW.IsValid; }
-        }
-
-        IList<ValidationError> IIsValid.GetValidationErrors()
-        {
-            List<ValidationError> errors = new List<ValidationError>();
-            errors.AddRange(NE.GetValidationErrors());
-            errors.AddRange(SW.GetValidationErrors());
-            return errors;
-        }
-
-        #endregion
-
-        #region IIsNull Members
-
-        public bool IsNull
-        {
-            get { return NE.IsNull || SW.IsNull; }
-        }
-
-        #endregion
     }
 }

@@ -3,42 +3,63 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
+using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 
 namespace TMD.Model
 {
     [Serializable]
-    public class HeightMeasurements : ICloneable, IIsValid, IIsNull
+    public class HeightMeasurements : IIsSpecified
     {
-        private HeightMeasurements() { }
+        private HeightMeasurements() 
+        { }
 
-        private HeightMeasurements(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
+        [ObjectValidator("Screening", Ruleset = "Screening")]
+        public Distance DistanceTop { get; private set; }
+
+        [ObjectValidator("Screening", Ruleset = "Screening")]
+        public Angle AngleTop { get; private set; }
+
+        [ObjectValidator("Screening", Ruleset = "Screening")]
+        public Distance DistanceBottom { get; private set; }
+
+        [ObjectValidator("Screening", Ruleset = "Screening")]
+        public Angle AngleBottom { get; private set; }
+
+        [ObjectValidator("Screening", Ruleset = "Screening")]
+        public DirectedDistance VerticalOffset { get; private set; }
+
+        [ObjectValidator("Screening", Ruleset = "Screening")]
+        public Distance Height 
         {
-            this.DistanceTop = distanceTop;
-            this.AngleTop = angleTop;
-            this.DistanceBottom = distanceBottom;
-            this.AngleBottom = angleBottom;
-            this.VerticalOffset = verticalOffset;
-            this.Height = CalculateHeight(distanceTop, angleTop, distanceBottom, angleBottom, verticalOffset);
-            this.Offset = CalculateOffset(distanceTop, angleTop, distanceBottom, angleBottom, verticalOffset);
+            get { return calculateHeight(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); }
         }
 
-        public Distance DistanceTop { get; private set; }
-        public Angle AngleTop { get; private set; }
-        public Distance DistanceBottom { get; private set; }
-        public Angle AngleBottom { get; private set; }
-        public DirectedDistance VerticalOffset { get; private set; }
-        public Distance Height { get; private set; }
-        public Distance Offset { get; private set; }
-
-        public static Distance CalculateHeight(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
+        [ObjectValidator("Screening", Ruleset = "Screening")]
+        public Distance Offset
         {
-            float height = (float)(Math.Sin(angleTop.Degrees) * (double)distanceTop.Feet + Math.Sin(angleBottom.Degrees) * (double)distanceBottom.Feet + (double)verticalOffset.Feet);
+            get { return calculateOffset(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); }
+        }
+
+        private static Distance calculateHeight(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
+        {
+            float height = (float)(Math.Sin(angleTop.Degrees) * (double)distanceTop.Feet 
+                + Math.Sin(angleBottom.Degrees) * (double)distanceBottom.Feet 
+                + (double)verticalOffset.Feet);
+            if (height == 0f)
+            {
+                return Distance.Null();
+            }
             return Distance.Create(height);
         }
 
-        public static Distance CalculateOffset(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
+        private static Distance calculateOffset(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
         {
-            float offset = (float)(Math.Cos(angleBottom.Degrees) * (double)distanceBottom.Feet - Math.Cos(angleTop.Degrees) * (double)distanceTop.Feet);
+            float offset = (float)(Math.Cos(angleBottom.Degrees) * (double)distanceBottom.Feet 
+                - Math.Cos(angleTop.Degrees) * (double)distanceTop.Feet);
+            if (offset == 0f)
+            {
+                return Distance.Null();
+            }
             return Distance.Create(Math.Abs(offset));
         }
 
@@ -82,64 +103,37 @@ namespace TMD.Model
                 ^ AngleBottom.GetHashCode();
         }
 
-        #region ICloneable Members
+        #region IIsSpecified Members
 
-        public object Clone()
+        public bool IsSpecified
         {
-            return new HeightMeasurements((Distance)DistanceTop.Clone(), (Angle)AngleTop.Clone(), (Distance)DistanceBottom.Clone(), (Angle)AngleBottom.Clone(), (DirectedDistance)VerticalOffset.Clone());
-        }
-
-        #endregion
-
-        #region IIsValid Members
-
-        public bool IsValid
-        {
-            get 
-            {
-                return DistanceTop.IsValid
-                    && AngleTop.IsValid
-                    && DistanceBottom.IsValid
-                    && AngleBottom.IsValid
-                    && VerticalOffset.IsValid
-                    && Height.Feet >= 0f;
-            }
-        }
-
-        public IList<ValidationError> GetValidationErrors()
-        {
-            List<ValidationError> errors = new List<ValidationError>();
-            errors.AddRange(DistanceTop.GetValidationErrors());
-            errors.AddRange(AngleTop.GetValidationErrors());
-            errors.AddRange(DistanceBottom.GetValidationErrors());
-            errors.AddRange(AngleBottom.GetValidationErrors());
-            errors.AddRange(VerticalOffset.GetValidationErrors());
-            if (Height.Feet < 0f)
-            {
-                errors.Add(ValidationError.Create(this, "Height.Feet", "Calculated height is negative, double check angle measurements."));
-            }
-            return errors;
-        }
-
-        #endregion
-
-        #region IIsNull Members
-
-        public bool IsNull
-        {
-            get { return Height.IsNull; }
+            get { return Height.IsSpecified; }
         }
 
         #endregion
 
         public static HeightMeasurements Create(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
         {
-            return new HeightMeasurements(distanceTop, angleTop, distanceBottom, angleBottom, verticalOffset);
+            return new HeightMeasurements()
+            {
+                AngleBottom = angleBottom,
+                AngleTop = angleTop,
+                DistanceBottom = distanceBottom,
+                DistanceTop = distanceTop,
+                VerticalOffset = verticalOffset
+            };
         }
 
         public static HeightMeasurements Null()
         {
-            return new HeightMeasurements(Distance.Null(), Angle.Null(), Distance.Null(), Angle.Null(), DirectedDistance.Null());
+            return new HeightMeasurements()
+            {
+                AngleBottom = Angle.Null(),
+                AngleTop = Angle.Null(),
+                DistanceBottom = Distance.Null(),
+                DistanceTop = Distance.Null(),
+                VerticalOffset = DirectedDistance.Null()
+            };
         }
     }
 }

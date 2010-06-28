@@ -4,33 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
+using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 
 namespace TMD.Model
 {
-    [Serializable]
-    public class Volume : ICloneable, IIsValid, IIsNull
+    public enum VolumeFormat
     {
-        public enum EInputFormat
-        {
-            Invalid,
-            DecimalCubicFeet,
-            DecimalCubicMeters,
-            DecimalCubicYards
-        }
+        Invalid = 0,
+        Unspecified = 1,
+        Default = 2,
+        DecimalCubicFeet = 3,
+        DecimalCubicMeters = 4,
+        DecimalCubicYards = 5
+    }
 
-        private Volume() 
-        {
-            this.InputFormat = EInputFormat.DecimalCubicFeet;
-        }
+    [Serializable]
+    public class Volume : IIsSpecified
+    {
+        private Volume()
+        { }
 
-        public Volume(float cubicFeet, EInputFormat inputFormat)
-        {
-            this.CubicFeet = cubicFeet;
-            this.InputFormat = inputFormat;
-        }
-
+        [RangeValidator(0f, RangeBoundaryType.Inclusive, float.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Volume must be non-negative.", Ruleset = "Screening")]
         public float CubicFeet { get; private set; }
-        public EInputFormat InputFormat { get; private set; }
+
+        [ObjectEqualityValidator(VolumeFormat.Invalid, Negated = true, MessageTemplate = "Volume must be in fffff ft^3 or mmmmm.mm m^3 format.", Ruleset = "Screening")]
+        public VolumeFormat InputFormat { get; private set; }
 
         public float CubicMeters
         {
@@ -76,59 +74,28 @@ namespace TMD.Model
             string s;
             switch (InputFormat)
             {
-                case EInputFormat.DecimalCubicFeet :
+                case VolumeFormat.Default:
+                case VolumeFormat.DecimalCubicFeet:
                     s = string.Format("{0:0} ft^3", CubicFeet);
                     break;
-                case EInputFormat.DecimalCubicMeters :
+                case VolumeFormat.DecimalCubicMeters:
                     s = string.Format("{0:0} m^3", CubicMeters);
                     break;
-                case EInputFormat.DecimalCubicYards :
+                case VolumeFormat.DecimalCubicYards:
                     s = string.Format("{0:0} yd^3", CubicYards);
                     break;
-                default :
+                default:
                     s = string.Empty;
                     break;
             }
             return s;
         }
 
-        #region IIsValid Members
+        #region IIsSpecified Members
 
-        public bool IsValid
+        public bool IsSpecified
         {
-            get { return InputFormat != EInputFormat.Invalid && CubicFeet >= 0f; }
-        }
-
-        public IList<ValidationError> GetValidationErrors()
-        {
-            List<ValidationError> errors = new List<ValidationError>();
-            if (InputFormat == EInputFormat.Invalid)
-            {
-                errors.Add(ValidationError.Create(this, "InputFormat", "Volume must be in fffff ft^3 or mmmmm.mm m^3 format."));
-            }
-            if (CubicFeet < 0f)
-            {
-                errors.Add(ValidationError.Create(this, "CubicFeet", "Volume must be non-negative."));
-            }
-            return errors;
-        }
-
-        #endregion
-
-        #region IIsNull Members
-
-        public bool IsNull
-        {
-            get { return CubicFeet == 0f; }
-        }
-
-        #endregion
-
-        #region ICloneable Members
-
-        public object Clone()
-        {
-            return new Volume(CubicFeet, InputFormat);
+            get { return InputFormat != VolumeFormat.Unspecified; }
         }
 
         #endregion
@@ -141,33 +108,50 @@ namespace TMD.Model
         {
             Match match;
             float cubicFeet;
-            EInputFormat inputFormat;
+            VolumeFormat inputFormat;
             if ((match = DecimalCubicFeetFormat.Match(s)).Success)
             {
                 cubicFeet = float.Parse(match.Groups["cubicFeet"].Value);
-                inputFormat = EInputFormat.DecimalCubicFeet;
+                inputFormat = VolumeFormat.DecimalCubicFeet;
             }
             else if ((match = DecimalCubicMetersFormat.Match(s)).Success)
             {
                 cubicFeet = float.Parse(match.Groups["cubicMeters"].Value) / 0.0283168466f;
-                inputFormat = EInputFormat.DecimalCubicMeters;
+                inputFormat = VolumeFormat.DecimalCubicMeters;
             }
             else if ((match = DecimalCubicYardsFormat.Match(s)).Success)
             {
                 cubicFeet = float.Parse(match.Groups["cubicYards"].Value) / 0.037037037f;
-                inputFormat = EInputFormat.DecimalCubicYards;
+                inputFormat = VolumeFormat.DecimalCubicYards;
             }
             else
             {
                 cubicFeet = 0f;
-                inputFormat = EInputFormat.Invalid;
+                inputFormat = VolumeFormat.Invalid;
             }
-            return new Volume(cubicFeet, inputFormat);
+            return new Volume()
+            {
+                CubicFeet = cubicFeet,
+                InputFormat = inputFormat
+            };
+        }
+
+        public static Volume Create(float cubicFeet)
+        {
+            return new Volume()
+            {
+                CubicFeet = cubicFeet,
+                InputFormat = VolumeFormat.Default
+            };
         }
 
         public static Volume Null()
         {
-            return new Volume(0f, EInputFormat.DecimalCubicFeet);
+            return new Volume()
+            {
+                CubicFeet = 0f,
+                InputFormat = VolumeFormat.Unspecified
+            };
         }
     }
 }

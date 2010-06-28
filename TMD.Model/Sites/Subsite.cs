@@ -1,56 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Common;
-using TMD.Model.Validation;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using TMD.Model.Validation;
+//using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+//using System.Diagnostics;
 
-namespace TMD.Model.Sites
-{
-    [Serializable]
-    public class Subsite : EntityBase, IEntity, IIsValid
-    {
-        private string m_Name;
+//namespace TMD.Model.Sites
+//{
+//    [Serializable]
+//    [DebuggerDisplay("{Name}")]
+//    public class Subsite : IEntity
+//    {
+//        internal Subsite()
+//        { }
 
-        internal Subsite()
-        { }
+//        public virtual int Id { get; private set; }
+//        public virtual bool IsImported { get; private set; }
 
-        public string Code { get; private set; }
+//        private string m_Name;
+//        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Subsite name must be specified.", Ruleset = "Screening")]
+//        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Subsite name must not exceed 100 characters.", Ruleset = "Screening")]
+//        public virtual string Name 
+//        {
+//            get { return m_Name; }
+//            set { m_Name = (value ?? string.Empty).Trim().ToTitleCase(); }
+//        }
 
-        [EmptyStringValidator("Site name must be specified.")]
-        [StringMaxLengthValidator("Site name must not exceed 100 characters.", 100)]
-        public string Name 
-        {
-            get { return m_Name; }
-            set { m_Name = (value ?? string.Empty).Trim().ToTitleCase(); }
-        }
+//        [ObjectValidator("Screening", Ruleset = "Screening")]
+//        [SpecifiedValidator(MessageTemplate = "Subsite coordinates must be specified.")]
+//        public virtual Coordinates Coordinates { get; set; }
 
-        [IsNullValidator("Site coordinates must be specified.")]
-        [IsValidValidator("Site coordinates must be valid.")]
-        public Coordinates Coordinates { get; set; }
+//        [NotNullValidator(MessageTemplate = "Subsite country must be specified.", Ruleset = "Screening")]
+//        public virtual Country Country { get; set; }
 
-        public override bool IsValid
-        {
-            get
-            {
-                return base.IsValid;
-            }
-        }
+//        [NotNullValidator(MessageTemplate = "Subsite state must be specified.", Ruleset = "Screening")]
+//        public virtual State State { get; set; }
 
-        public bool IsValidIgnoringCoordinates
-        {
-            get
-            {
-                return base.isValidExcludingProperties("Coordinates");
-            }
-        }
+//        private string m_County;
+//        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Subsite county must be specified.", Ruleset = "Screening")]
+//        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Site county must not exceed 100 characters.", Ruleset = "Screening")]
+//        public virtual string County
+//        {
+//            get { return m_County; }
+//            set { m_County = (value ?? string.Empty).Trim().ToTitleCase(); }
+//        }
 
-        public static Subsite Create()
-        {
-            Subsite ss = new Subsite();
-            ss.Name = string.Empty;
-            ss.Coordinates = Coordinates.Null();
-            return ss;
-        }
-    }
-}
+//        public static Subsite Create()
+//        {
+//            return new Subsite()
+//            {
+//                IsImported = false,
+//                Name = string.Empty,
+//                Coordinates = Coordinates.Null(),
+//                County = string.Empty
+//            };
+//        }
+//    }
+//}

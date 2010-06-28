@@ -1,83 +1,84 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Common;
-using TMD.Model.Validation;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using TMD.Model.Validation;
+//using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+//using System.Diagnostics;
 
-namespace TMD.Model.Sites
-{
-    [Serializable]
-    public class Site : EntityBase, IEntity
-    {
-        private string m_Name;
-        private string m_County;
+//namespace TMD.Model.Sites
+//{
+//    [Serializable]
+//    [DebuggerDisplay("{Name}")]
+//    public class Site : IEntity
+//    {
+//        protected Site()
+//        { }
 
-        private Site()
-        { }
+//        public virtual int Id { get; private set; }
+//        public virtual bool IsImported { get; private set; }
 
-        public string Code { get; private set; }
+//        private string m_Name;
+//        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Site name must be specified.", Ruleset = "Screening")]
+//        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Site name must not exceed 100 characters.", Ruleset = "Screening")]
+//        public virtual string Name
+//        {
+//            get { return m_Name; }
+//            set { m_Name = (value ?? string.Empty).Trim().ToTitleCase(); }
+//        }
 
-        [EmptyStringValidator("Site name must be specified.")]
-        [StringMaxLengthValidator("Site name must not exceed 100 characters.", 100)]
-        public string Name
-        {
-            get { return m_Name; }
-            set { m_Name = (value ?? string.Empty).Trim().ToTitleCase(); }
-        }
+//        private Coordinates m_Coordinates;
+//        [ObjectValidator("Screening", Ruleset = "Screening")]
+//        [SpecifiedValidator(MessageTemplate = "Site coordinates must be specified.")]
+//        public virtual Coordinates Coordinates
+//        {
+//            get
+//            {
+//                if (Subsites.Count > 0)
+//                {
+//                    List<Coordinates> ssCoords = new List<Coordinates>();
+//                    foreach (Subsite ss in Subsites)
+//                    {
+//                        if (ss.Coordinates.IsSpecified)
+//                        {
+//                            ssCoords.Add(ss.Coordinates);
+//                        }
+//                    }
+//                    CoordinateBounds cb = CoordinateBounds.Create(ssCoords);
+//                    return cb.Center;
+//                }
+//                return m_Coordinates;
+//            }
+//            private set { m_Coordinates = value; }
+//        }
 
-        [IsNullValidator("Site country must be specified.")]
-        [IsValidValidator("Site country must be valid.")]
-        public Country Country { get; set; }
+//        [ObjectCollectionValidator]
+//        [ObjectCollectionValidator(TargetRuleset = "Screening", Ruleset = "Screening")]
+//        [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "Site must contain at least one subsite.")]
+//        [CollectionCountWhenNotNullValidator(int.MinValue, 100, MessageTemplate = "Site contains too many subsites.")]
+//        public virtual IList<Subsite> Subsites { get; private set; }
 
-        [IsNullValidator("Site state must be specified.")]
-        [IsValidValidator("Site state must be valid.")]
-        public State State { get; set; }
+//        public virtual Subsite AddSubsite()
+//        {
+//            Subsite subsite = Subsite.Create();
+//            Subsites.Add(subsite);
+//            return subsite;
+//        }
 
-        [EmptyStringValidator("Site county must be specified.")]
-        [StringMaxLengthValidator("Site county must not exceed 100 characters,", 100)]
-        public string County
-        {
-            get { return m_County; }
-            set { m_County = (value ?? string.Empty).Trim().ToTitleCase(); }
-        }
+//        public virtual bool RemoveSubsite(Subsite subsite)
+//        {
+//            return Subsites.Remove(subsite);
+//        }
 
-        [IsNullValidator("Site coordinates must be specified.")]
-        [IsValidValidator("Site coordinates must be valid.")]
-        public Coordinates Coordinates { get; set; }
-
-        internal IList<Subsite> Subsites { get; private set; }
-
-        public bool IsValidIgnoringCoordinates
-        {
-            get
-            {
-                return base.isValidExcludingProperties("Coordinates");
-            }
-        }
-
-        public Subsite AddSubsite()
-        {
-            Subsite subsite = new Subsite();
-            Subsites.Add(subsite);
-            return subsite;
-        }
-
-        public bool RemoveSubsite(Subsite subsite)
-        {
-            return Subsites.Remove(subsite);
-        }
-
-        public static Site Create()
-        {
-            Site s = new Site();
-            s.Name = string.Empty;
-            s.Country = Country.Create("US");
-            s.State = State.Null();
-            s.County = string.Empty;
-            s.Coordinates = Coordinates.Null();
-            s.Subsites = new List<Subsite>();
-            return s;
-        }
-    }
-}
+//        public static Site Create()
+//        {
+//            return new Site()
+//            {
+//                IsImported = false,
+//                Name = string.Empty,
+//                Coordinates = Coordinates.Null(),
+//                Subsites = new List<Subsite>()
+//            };
+//        }
+//    }
+//}

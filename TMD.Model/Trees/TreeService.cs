@@ -2,27 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Practices.Unity;
 
 namespace TMD.Model.Trees
 {
     public static class TreeService
     {
-        private static ITreeRepository m_Repository 
-            = ModelRegistry.RepositoryFactory.Instantiate<ITreeRepository>();
+        private static ITreeRepository s_Repository = ModelRegistry.RepositoryFactory.Resolve<ITreeRepository>();
 
-        public static Tree FindTreeOfGreatestHeightBySpecies(string s)
+        public static IList<KnownTree> FindTreesWithSimilarCommonName(string commonName, int results)
         {
-            return m_Repository.FindTreeOfGreatestHeightBySpecies(s);
-        }
-
-        public static Tree FindTreeOfGreatestGirthBySpecies(string s)
-        {
-            return m_Repository.FindTreeOfGreatestGirthBySpecies(s);
-        }
-
-        public static Tree FindTreeOfGreatestTDICrownSpreadBySpecies(string s)
-        {
-            return m_Repository.FindTreeOfGreatestTDICrownSpreadBySpecies(s);
+            return s_Repository.FindTreesWithSimilarCommonName(commonName, results);
         }
     }
 }

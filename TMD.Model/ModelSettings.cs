@@ -8,22 +8,10 @@ namespace TMD.Model
 {
     internal class ModelSettings : ConfigurationSection
     {
+        private const string UnitOfWorkContextProviderPropertyName = "unitOfWorkContextProvider";
         private const string UnitOfWorkProviderPropertyName = "unitOfWorkProvider";
+        private const string UserSessionContextProviderPropertyName = "userSessionContextProvider";
         private const string UserSessionProviderPropertyName = "userSessionProvider";
-        private const string StatesPropertyName = "states";
-        private const string CountriesPropertyName = "countries";
-
-        [ConfigurationProperty(CountriesPropertyName, IsRequired = true)]
-        public CountryCollection Countries
-        {
-            get { return (CountryCollection)this[CountriesPropertyName]; }
-        }
-
-        [ConfigurationProperty(StatesPropertyName, IsRequired = true)]
-        public StateCollection States
-        {
-            get { return (StateCollection)this[StatesPropertyName]; }
-        }
 
         [ConfigurationProperty(UnitOfWorkProviderPropertyName, IsRequired = true)]
         public string UnitOfWorkProvider
@@ -32,11 +20,25 @@ namespace TMD.Model
             set { this[UnitOfWorkProviderPropertyName] = value; }
         }
 
+        [ConfigurationProperty(UnitOfWorkContextProviderPropertyName, IsRequired = true)]
+        public string UnitOfWorkContextProvider
+        {
+            get { return (string)this[UnitOfWorkContextProviderPropertyName]; }
+            set { this[UnitOfWorkContextProviderPropertyName] = value; }
+        }
+
         [ConfigurationProperty(UserSessionProviderPropertyName, IsRequired = true)]
         public string UserSessionProvider
         {
             get { return (string)this[UserSessionProviderPropertyName]; }
             set { this[UserSessionProviderPropertyName] = value; }
+        }
+
+        [ConfigurationProperty(UserSessionContextProviderPropertyName, IsRequired = true)]
+        public string UserSessionContextProvider
+        {
+            get { return (string)this[UserSessionContextProviderPropertyName]; }
+            set { this[UserSessionContextProviderPropertyName] = value; }
         }
     }
 }

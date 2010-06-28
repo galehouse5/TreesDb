@@ -1,40 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Users;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using TMD.Model.Users;
 
-namespace TMD.Model
-{
-    public interface IUserSession
-    {
-        DateTime StartTime { get; }
-        User User { get; }
+//namespace TMD.Model
+//{
+//    public interface IUserSessionProvider
+//    {
+//        DateTime StartTime { get; }
+//        User User { get; }
 
-        void Start(User user);
-        void End(User user);
-    }
+//        void Start(User user);
+//        void End(User user);
+//    }
 
-    public static class UserSession
-    {
-        public static DateTime StartTime
-        {
-            get { return ModelRegistry.UserSession.StartTime; }
-        }
+//    public static class UserSession
+//    {
+//        private static IUserSessionProvider s_Provider;
+//        public static IUserSessionProvider Provider
+//        {
+//            get
+//            {
+//                if (s_Provider == null)
+//                {
+//                    Type t = Type.GetType(ModelRegistry.ModelSettings.UserSessionProvider);
+//                    s_Provider = (IUserSessionProvider)Activator.CreateInstance(t);
+//                }
+//                return s_Provider;
+//            }
+//        }
 
-        public static User User 
-        {
-            get { return ModelRegistry.UserSession.User; }
-        }
+//        public static DateTime StartTime
+//        {
+//            get { return Provider.StartTime; }
+//        }
 
-        public static void Start(User user)
-        {
-            ModelRegistry.UserSession.Start(user);
-        }
+//        public static User User 
+//        {
+//            get { return Provider.User; }
+//        }
 
-        public static void End(User user)
-        {
-            ModelRegistry.UserSession.End(user);
-        }
-    }
-}
+//        public static void Start(User user)
+//        {
+//            Provider.Start(user);
+//        }
+
+//        public static void End(User user)
+//        {
+//            Provider.End(user);
+//        }
+//    }
+//}

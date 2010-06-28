@@ -4,23 +4,52 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
+using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using System.ComponentModel;
 
 namespace TMD.Model
 {
+    public enum CoordinatesFormat
+    {
+        Invalid = 0,
+        Unspecified = 1,
+        Default = 2,
+        DegreesMinutesDecimalSeconds = 3,
+        DegreesDecimalMinutes = 4,
+        DecimalDegrees = 5
+    }
+
     [Serializable]
-    public class Coordinates : ICloneable, IIsValid, IIsNull 
+    public class Coordinates : IIsSpecified 
     {
         private Coordinates()
         { }
 
-        private Coordinates(Latitude latitude, Longitude longitude) 
+        [DisplayName("Latitude:")]
+        [ValueObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        public Latitude Latitude { get; private set; }
+
+        [DisplayName("Longitude:")]
+        [ValueObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        public Longitude Longitude { get; private set; }
+
+        public override string ToString()
         {
-            this.Latitude = latitude;
-            this.Longitude = longitude;
+            if (IsSpecified)
+            {
+                return string.Format("{0}, {1}", Latitude, Longitude);
+            }
+            return "not specified";
         }
 
-        public Latitude Latitude { get; private set; }
-        public Longitude Longitude { get; private set; }
+        public string ToString(CoordinatesFormat format)
+        {
+            if (IsSpecified)
+            {
+                return string.Format("{0}, {1}", Latitude.ToString(format), Longitude.ToString(format));
+            }
+            return "not specified";
+        }
 
         public static bool operator ==(Coordinates c1, Coordinates c2)
         {
@@ -56,12 +85,20 @@ namespace TMD.Model
 
         public static Coordinates Create(Latitude latitude, Longitude longitude)
         {
-            return new Coordinates(latitude, longitude);
+            return new Coordinates()
+            {
+                Latitude = latitude,
+                Longitude = longitude
+            };
         }
 
         public static Coordinates Create(float latitude, float longitude)
         {
-            return new Coordinates(Latitude.Create(latitude), Longitude.Create(longitude));
+            return new Coordinates()
+            {
+                Latitude = Latitude.Create(latitude),
+                Longitude = Longitude.Create(longitude)
+            };
         }
 
         public static Coordinates Create(string s)
@@ -77,47 +114,393 @@ namespace TMD.Model
             {
                 longitude = Longitude.Create(0f);
             }
-            return new Coordinates(latitude, longitude);
+            return new Coordinates()
+            {
+                Latitude = latitude,
+                Longitude = longitude
+            };
         }
 
         public static Coordinates Null()
         {
-            return new Coordinates(Latitude.Null(), Longitude.Null());
+            return new Coordinates()
+            {
+                Latitude = Latitude.Null(),
+                Longitude = Longitude.Null()
+            };
         }
 
-        #region ICloneable Members
+        #region IIsSpecified Members
 
-        public object Clone()
+        public bool IsSpecified
         {
-            return new Coordinates((Latitude)Latitude.Clone(), (Longitude)Longitude.Clone());
+            get { return Latitude.IsSpecified && Longitude.IsSpecified; }
+        }
+
+        #endregion
+    }
+
+    [Serializable]
+    public class Latitude : IIsSpecified
+    {
+        private Latitude()
+        { }
+
+        [RangeValidator(-90f, RangeBoundaryType.Inclusive, 90f, RangeBoundaryType.Inclusive, MessageTemplate = "Latitude must be in the range of -90 to +90 degrees.", Ruleset = "Screening")]
+        public float TotalDegrees { get; private set; }
+
+        [ObjectEqualityValidator(CoordinatesFormat.Invalid, Negated = true, MessageTemplate = "Latitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format.", Ruleset = "Screening")]
+        public CoordinatesFormat InputFormat { get; private set; }
+
+        public int Sign
+        {
+            get { return Math.Sign(TotalDegrees); }
+        }
+
+        public float AbsoluteTotalDegrees
+        {
+            get { return Math.Abs(TotalDegrees); }
+        }
+
+        public int AbsoluteWholeDegrees
+        {
+            get { return (int)Math.Floor(AbsoluteTotalDegrees); }
+        }
+
+        public float AbsoluteMinutes
+        {
+            get { return 60f * (AbsoluteTotalDegrees - AbsoluteWholeDegrees); }
+        }
+
+        public int AbsoluteWholeMinutes
+        {
+            get { return (int)Math.Floor(AbsoluteMinutes); }
+        }
+
+        public float AbsoluteSeconds
+        {
+            get { return 60f * (AbsoluteMinutes - AbsoluteWholeMinutes); }
+        }
+
+        public string ToString(CoordinatesFormat format)
+        {
+            string s;
+            switch (InputFormat)
+            {
+                case CoordinatesFormat.DegreesMinutesDecimalSeconds:
+                    s = string.Format("{0:00} {1:00} {2:00.0}", AbsoluteWholeDegrees * Sign, AbsoluteWholeMinutes, AbsoluteSeconds);
+                    break;
+                case CoordinatesFormat.Default:
+                case CoordinatesFormat.DegreesDecimalMinutes:
+                    s = string.Format("{0:00} {1:00.000}", AbsoluteWholeDegrees * Sign, AbsoluteMinutes);
+                    break;
+                case CoordinatesFormat.DecimalDegrees:
+                    s = string.Format("{0:00.00000}", AbsoluteTotalDegrees * Sign);
+                    break;
+                default:
+                    s = string.Empty;
+                    break;
+            }
+            return s;
+        }
+
+        public override string ToString()
+        {
+            return ToString(InputFormat);
+        }
+
+        public static bool operator ==(Latitude l1, Latitude l2)
+        {
+            if ((object)l1 == null || (object)l2 == null)
+            {
+                return (object)l1 == null && (object)l2 == null;
+            }
+            return l1.TotalDegrees == l2.TotalDegrees;
+        }
+
+        public static bool operator !=(Latitude l1, Latitude l2)
+        {
+            if ((object)l1 == null || (object)l2 == null)
+            {
+                return !((object)l1 == null && (object)l2 == null);
+            }
+            return l1.TotalDegrees != l2.TotalDegrees;
+        }
+
+        public override bool Equals(object obj)
+        {
+            Latitude l = obj as Latitude;
+            return l != null && l == this;
+        }
+
+        public override int GetHashCode()
+        {
+            return TotalDegrees.GetHashCode();
+        }
+
+        #region IIsSpecified Members
+
+        public bool IsSpecified
+        {
+            get { return InputFormat != CoordinatesFormat.Unspecified; }
         }
 
         #endregion
 
-        #region IIsValid Members
+        public static Regex DegreesMinutesSecondsFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,2})\\s+(?<minutes>[0-9]{1,2})\\s+(?<seconds>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
+        public static Regex DegreesDecimalMinutesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,2})\\s+(?<minutes>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
+        public static Regex DecimalDegreesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
 
-        public bool IsValid
+        public static Latitude Create(string s)
         {
-            get { return Latitude.IsValid && Longitude.IsValid; }
+            Match match;
+            float sign, degrees, minutes, seconds;
+            CoordinatesFormat inputFormat;
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                sign = 1f;
+                degrees = 0f;
+                minutes = 0f;
+                seconds = 0f;
+                inputFormat = CoordinatesFormat.Unspecified;
+            }
+            else if ((match = DegreesMinutesSecondsFormat.Match(s)).Success)
+            {
+                sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
+                degrees = float.Parse(match.Groups["degrees"].Value);
+                minutes = float.Parse(match.Groups["minutes"].Value);
+                seconds = float.Parse(match.Groups["seconds"].Value);
+                inputFormat = CoordinatesFormat.DegreesMinutesDecimalSeconds;
+            }
+            else if ((match = DegreesDecimalMinutesFormat.Match(s)).Success)
+            {
+                sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
+                degrees = float.Parse(match.Groups["degrees"].Value);
+                minutes = float.Parse(match.Groups["minutes"].Value);
+                seconds = 0f;
+                inputFormat = CoordinatesFormat.DegreesDecimalMinutes;
+            }
+            else if ((match = DecimalDegreesFormat.Match(s)).Success)
+            {
+                sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
+                degrees = float.Parse(match.Groups["degrees"].Value);
+                minutes = 0f;
+                seconds = 0f;
+                inputFormat = CoordinatesFormat.DecimalDegrees;
+            }
+            else
+            {
+                sign = 1f;
+                degrees = 0f;
+                minutes = 0f;
+                seconds = 0f;
+                inputFormat = CoordinatesFormat.Invalid;
+            }
+            return new Latitude() 
+            {
+                InputFormat = inputFormat,
+                TotalDegrees = sign * (degrees + (minutes / 60f) + (seconds / 3600f))
+            };
         }
 
-        public IList<ValidationError> GetValidationErrors()
+        public static Latitude Create(float degrees)
         {
-            List<ValidationError> errors = new List<ValidationError>();
-            errors.AddRange(Latitude.GetValidationErrors());
-            errors.AddRange(Longitude.GetValidationErrors());
-            return errors;
+            return new Latitude()
+            {
+                InputFormat = CoordinatesFormat.Default,
+                TotalDegrees = degrees
+            };
+        }
+
+        public static Latitude Null()
+        {
+            return new Latitude()
+            {
+                InputFormat = CoordinatesFormat.Unspecified,
+                TotalDegrees = 0f
+            };
+        }
+    }
+
+    [Serializable]
+    public class Longitude : IIsSpecified
+    {
+        private Longitude()
+        { }
+
+        [RangeValidator(-180f, RangeBoundaryType.Inclusive, 180f, RangeBoundaryType.Inclusive, MessageTemplate = "Longitude must be in the range of -180 to +180 degrees.", Ruleset = "Screening")]
+        public float TotalDegrees { get; private set; }
+
+        [ObjectEqualityValidator(CoordinatesFormat.Invalid, Negated = true, MessageTemplate = "Longitude must be in ddd_mm_ss.s, ddd_mm.mmm, or ddd.ddddd format.", Ruleset = "Screening")]
+        public CoordinatesFormat InputFormat { get; private set; }
+
+        public int Sign
+        {
+            get { return Math.Sign(TotalDegrees); }
+        }
+
+        public float AbsoluteTotalDegrees
+        {
+            get { return Math.Abs(TotalDegrees); }
+        }
+
+        public int AbsoluteWholeDegrees
+        {
+            get { return (int)Math.Floor(AbsoluteTotalDegrees); }
+        }
+
+        public float AbsoluteMinutes
+        {
+            get { return 60f * (AbsoluteTotalDegrees - AbsoluteWholeDegrees); }
+        }
+
+        public int AbsoluteWholeMinutes
+        {
+            get { return (int)Math.Floor(AbsoluteMinutes); }
+        }
+
+        public float AbsoluteSeconds
+        {
+            get { return 60f * (AbsoluteMinutes - AbsoluteWholeMinutes); }
+        }
+
+        public string ToString(CoordinatesFormat format)
+        {
+            string s;
+            switch (format)
+            {
+                case CoordinatesFormat.DegreesMinutesDecimalSeconds:
+                    s = string.Format("{0:000} {1:00} {2:00.0}", AbsoluteWholeDegrees * Sign, AbsoluteWholeMinutes, AbsoluteSeconds);
+                    break;
+                case CoordinatesFormat.Default:
+                case CoordinatesFormat.DegreesDecimalMinutes:
+                    s = string.Format("{0:000} {1:00.000}", AbsoluteWholeDegrees * Sign, AbsoluteMinutes);
+                    break;
+                case CoordinatesFormat.DecimalDegrees:
+                    s = string.Format("{0:000.00000}", AbsoluteTotalDegrees * Sign);
+                    break;
+                default:
+                    s = string.Empty;
+                    break;
+            }
+            return s;
+        }
+
+        public override string ToString()
+        {
+            return ToString(InputFormat);
+        }
+
+        public static bool operator ==(Longitude l1, Longitude l2)
+        {
+            if ((object)l1 == null || (object)l2 == null)
+            {
+                return (object)l1 == null && (object)l2 == null;
+            }
+            return l1.TotalDegrees == l2.TotalDegrees;
+        }
+
+        public static bool operator !=(Longitude l1, Longitude l2)
+        {
+            if ((object)l1 == null || (object)l2 == null)
+            {
+                return !((object)l1 == null && (object)l2 == null);
+            }
+            return l1.TotalDegrees != l2.TotalDegrees;
+        }
+
+        public override bool Equals(object obj)
+        {
+            Longitude l = obj as Longitude;
+            return l != null && l == this;
+        }
+
+        public override int GetHashCode()
+        {
+            return TotalDegrees.GetHashCode();
+        }
+
+        #region IIsSpecified Members
+
+        public bool IsSpecified
+        {
+            get { return InputFormat != CoordinatesFormat.Unspecified; }
         }
 
         #endregion
 
-        #region IIsNull Members
+        public static Regex DegreesMinutesSecondsFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3})\\s+(?<minutes>[0-9]{1,2})\\s+(?<seconds>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
+        public static Regex DegreesDecimalMinutesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3})\\s+(?<minutes>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
+        public static Regex DecimalDegreesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
 
-        public bool IsNull
+        public static Longitude Create(string s)
         {
-            get { return Latitude.IsNull || Longitude.IsNull; }
+            Match match;
+            float sign, degrees, minutes, seconds;
+            CoordinatesFormat inputFormat;
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                sign = 1f;
+                degrees = 0f;
+                minutes = 0f;
+                seconds = 0f;
+                inputFormat = CoordinatesFormat.Unspecified;
+            }
+            else if ((match = DegreesMinutesSecondsFormat.Match(s)).Success)
+            {
+                sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
+                degrees = float.Parse(match.Groups["degrees"].Value);
+                minutes = float.Parse(match.Groups["minutes"].Value);
+                seconds = float.Parse(match.Groups["seconds"].Value);
+                inputFormat = CoordinatesFormat.DegreesMinutesDecimalSeconds;
+            }
+            else if ((match = DegreesDecimalMinutesFormat.Match(s)).Success)
+            {
+                sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
+                degrees = float.Parse(match.Groups["degrees"].Value);
+                minutes = float.Parse(match.Groups["minutes"].Value);
+                seconds = 0f;
+                inputFormat = CoordinatesFormat.DegreesDecimalMinutes;
+            }
+            else if ((match = DecimalDegreesFormat.Match(s)).Success)
+            {
+                sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
+                degrees = float.Parse(match.Groups["degrees"].Value);
+                minutes = 0f;
+                seconds = 0f;
+                inputFormat = CoordinatesFormat.DecimalDegrees;
+            }
+            else
+            {
+                sign = 1f;
+                degrees = 0f;
+                minutes = 0f;
+                seconds = 0f;
+                inputFormat = CoordinatesFormat.Invalid;
+            }
+            return new Longitude()
+            {
+                InputFormat = inputFormat,
+                TotalDegrees = sign * (degrees + (minutes / 60f) + (seconds / 3600f))
+            };
         }
 
-        #endregion
+        public static Longitude Create(float degrees)
+        {
+            return new Longitude()
+            {
+                InputFormat = CoordinatesFormat.Default,
+                TotalDegrees = degrees
+            };
+        }
+
+        public static Longitude Null()
+        {
+            return new Longitude()
+            {
+                InputFormat = CoordinatesFormat.Unspecified,
+                TotalDegrees = 0f
+            };
+        }
     }
 }

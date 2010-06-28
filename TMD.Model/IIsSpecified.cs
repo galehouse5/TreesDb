@@ -5,8 +5,8 @@ using System.Text;
 
 namespace TMD.Model
 {
-    public interface IIsNull
+    public interface IIsSpecified
     {
-        bool IsNull { get; }
+        bool IsSpecified { get; }
     }
 }

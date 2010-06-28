@@ -4,41 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
+using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 
 namespace TMD.Model
 {
-    [Serializable]
-    public class Distance : ICloneable, IIsValid, IIsNull
+    public enum DistanceFormat
     {
-        public enum EInputFormat
-        {
-            Invalid,
-            FeetDecimalInches,
-            DecimalFeet,
-            DecimalInches,
-            DecimalMeters,
-            DecimalYards
-        }
+        Invalid = 0,
+        Unspecified = 1,
+        Default = 2,
+        FeetDecimalInches = 3,
+        DecimalFeet = 4,
+        DecimalInches = 5,
+        DecimalMeters = 6,
+        DecimalYards = 7
+    }
 
-        private Distance() 
-        { 
-            InputFormat = EInputFormat.DecimalFeet;
-        }
+    [Serializable]
+    public class Distance : IIsSpecified
+    {
+        private Distance()
+        { }
 
-        private Distance(float feet)
-        {
-            this.Feet = feet;
-            InputFormat = EInputFormat.DecimalFeet;
-        }
-
-        private Distance(float feet, EInputFormat inputFormat)
-        {
-            this.Feet = feet;
-            this.InputFormat = inputFormat;
-        }
-
+        [RangeValidator(0f, RangeBoundaryType.Inclusive, float.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Distance must be non-negative.")]
         public float Feet { get; private set; }
-        public EInputFormat InputFormat { get; private set; }
+
+        [ObjectEqualityValidator(DistanceFormat.Invalid, Negated = true, MessageTemplate = "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.", Ruleset = "Screening")]
+        public DistanceFormat InputFormat { get; private set; }
 
         public int WholeFeet
         {
@@ -65,7 +57,7 @@ namespace TMD.Model
             get { return Feet / 3.2808399f; }
         }
 
-        public static bool operator==(Distance d1, Distance d2)
+        public static bool operator ==(Distance d1, Distance d2)
         {
             if ((object)d1 == null || (object)d2 == null)
             {
@@ -99,65 +91,34 @@ namespace TMD.Model
             string s;
             switch (InputFormat)
             {
-                case EInputFormat.DecimalFeet :
+                case DistanceFormat.Default:
+                case DistanceFormat.DecimalFeet:
                     s = string.Format("{0:0.0}'", Feet);
                     break;
-                case EInputFormat.DecimalInches :
+                case DistanceFormat.DecimalInches:
                     s = string.Format("{0:0}''", Inches);
                     break;
-                case EInputFormat.DecimalMeters :
+                case DistanceFormat.DecimalMeters:
                     s = string.Format("{0:0.00} m", Meters);
                     break;
-                case EInputFormat.DecimalYards :
+                case DistanceFormat.DecimalYards:
                     s = string.Format("{0:0.00} yd", Yards);
                     break;
-                case EInputFormat.FeetDecimalInches :
+                case DistanceFormat.FeetDecimalInches:
                     s = string.Format("{0:0}' {1:0}''", WholeFeet, RemainderInches);
                     break;
-                default :
+                default:
                     s = string.Empty;
                     break;
             }
             return s;
         }
 
-        #region ICloneable Members
+        #region IIsSpecified Members
 
-        public object Clone()
+        public bool IsSpecified
         {
-            return new Distance(Feet, InputFormat);
-        }
-
-        #endregion
-
-        #region IIsValid Members
-
-        public bool IsValid
-        {
-            get { return InputFormat != EInputFormat.Invalid && Feet >= 0f; }
-        }
-
-        public IList<ValidationError> GetValidationErrors()
-        {
-            List<ValidationError> errors = new List<ValidationError>();
-            if (InputFormat == EInputFormat.Invalid)
-            {
-                errors.Add(ValidationError.Create(this, "InputFormat", "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format."));
-            }
-            if (Feet < 0f)
-            {
-                errors.Add(ValidationError.Create(this, "Feet", "Distance must be non-negative."));
-            }
-            return errors;
-        }
-
-        #endregion
-
-        #region IIsNull Members
-
-        public bool IsNull
-        {
-            get { return Feet != 0f; }
+            get { return InputFormat != DistanceFormat.Unspecified; }
         }
 
         #endregion
@@ -172,49 +133,61 @@ namespace TMD.Model
         {
             Match match;
             float feet;
-            EInputFormat inputFormat;
+            DistanceFormat inputFormat;
             if ((match = FeetDecimalInchesFormat.Match(s)).Success)
             {
                 feet = float.Parse(match.Groups["feet"].Value);
                 feet += float.Parse(match.Groups["inches"].Value) * 12f;
-                inputFormat = EInputFormat.FeetDecimalInches;
+                inputFormat = DistanceFormat.FeetDecimalInches;
             }
             else if ((match = DecimalFeetFormat.Match(s)).Success)
             {
                 feet = float.Parse(match.Groups["feet"].Value);
-                inputFormat = EInputFormat.DecimalFeet;
+                inputFormat = DistanceFormat.DecimalFeet;
             }
             else if ((match = DecimalInchesFormat.Match(s)).Success)
             {
                 feet = float.Parse(match.Groups["inches"].Value) * 12f;
-                inputFormat = EInputFormat.DecimalInches;
+                inputFormat = DistanceFormat.DecimalInches;
             }
             else if ((match = DecimalMetersFormat.Match(s)).Success)
             {
                 feet = float.Parse(match.Groups["meters"].Value) * 3.2808399f;
-                inputFormat = EInputFormat.DecimalMeters;
+                inputFormat = DistanceFormat.DecimalMeters;
             }
             else if ((match = DecimalYardsFormat.Match(s)).Success)
             {
                 feet = float.Parse(match.Groups["yards"].Value) * 3f;
-                inputFormat = EInputFormat.DecimalYards;
+                inputFormat = DistanceFormat.DecimalYards;
             }
             else
             {
                 feet = 0f;
-                inputFormat = EInputFormat.Invalid;
+                inputFormat = DistanceFormat.Invalid;
             }
-            return new Distance(feet, inputFormat);
+            return new Distance()
+            {
+                Feet = feet,
+                InputFormat = inputFormat
+            };
         }
 
         public static Distance Create(float feet)
         {
-            return new Distance(feet);
+            return new Distance()
+            {
+                Feet = feet,
+                InputFormat = DistanceFormat.Default
+            };
         }
 
         public static Distance Null()
         {
-            return new Distance(0f);
+            return new Distance()
+            {
+                Feet = 0f,
+                InputFormat = DistanceFormat.Unspecified
+            };
         }
     }
 }

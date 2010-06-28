@@ -2,176 +2,184 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TMD.Model.Trees;
-using TMD.Model.Sites;
 using TMD.Model.Validation;
+using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using System.Diagnostics;
+using TMD.Model.Locations;
+using Microsoft.Practices.EnterpriseLibrary.Validation;
+using System.ComponentModel;
 
 namespace TMD.Model.Trips
 {
     [Serializable]
-    public class SubsiteVisit : EntityBase, IEntity, IIsConflicting
+    [DebuggerDisplay("{Name}")]
+    [HasSelfValidation]
+    public class SubsiteVisit : IEntity
     {
-        private Coordinates m_Coordinates;
-
-        private SubsiteVisit()
+        protected SubsiteVisit()
         { }
 
-        public Subsite Subsite { get; private set; }
-       
-        [IsNullValidator("Subsite coordinates must be specified or contained measurements must have specified coordinates.")]
-        public Coordinates Coordinates
+        public virtual int Id { get; private set; }
+        public virtual SiteVisit SiteVisit { get; private set; }
+
+        private string m_Name;
+        [DisplayName("*Subsite name:")]
+        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Subsite name must be specified.", Ruleset = "Screening", Tag = "SubsiteVisit")]
+        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Subsite name must not exceed 100 characters.", Ruleset = "Persistence", Tag = "SubsiteVisit")]
+        public virtual string Name
+        {
+            get { return m_Name; }
+            set { m_Name = (value ?? string.Empty).Trim().ToTitleCase(); }
+        }
+
+        private Coordinates m_Coordinates;
+        [ValueObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "SubsiteVisit")]
+        [SpecifiedValidator(MessageTemplate = "Subsite coordinates must be specified.", Ruleset = "Import", Tag = "SubsiteVisit")]
+        public virtual Coordinates Coordinates
         {
             get
             {
-                if (m_Coordinates.IsNull)
+                if (CoordinatesCalculated && Measurements.Count > 0)
                 {
-                    m_Coordinates = calculateCoordinates();
-                    Subsite.Coordinates = m_Coordinates;
-                    CoordinatesCalculated = true;
+                    m_Coordinates = calculateAverageCoordinates();
                 }
                 return m_Coordinates;
             }
-            set 
-            { 
-                m_Coordinates = value;
-                Subsite.Coordinates = m_Coordinates;
-                CoordinatesCalculated = false;
-            }
-        }
-
-        public bool CoordinatesCalculated { get; private set; }
-
-        [EmptyCollectionValidator("Subsite must contain measurements.")]
-        public IList<Tree> MeasuredTrees { get; private set; }
-
-        public bool HasMeasuredTrees
-        {
-            get { return MeasuredTrees.Count > 0; }
-        }
-
-        public void AddMeasuredTree(Tree t)
-        {
-            invalidateCoordinatesCalculation();
-            MeasuredTrees.Add(t);
-        }
-
-        public bool RemoveMeasuredTree(Tree t)
-        {
-            invalidateCoordinatesCalculation();
-            return MeasuredTrees.Remove(t);
-        }
-
-        private Coordinates calculateCoordinates()
-        {
-            List<Coordinates> coordinatesList = new List<Coordinates>();
-            foreach (Tree t in MeasuredTrees)
+            set
             {
-                coordinatesList.Add(t.CurrentMeasurement.Coordinates);
+                m_Coordinates = value;
             }
-            CoordinateBounds cb = CoordinateBounds.Create(coordinatesList);
+        }
+
+        public virtual bool CoordinatesCalculated { get; set; }
+
+        public virtual bool CoordinatesEntered
+        {
+            get { return !CoordinatesCalculated; }
+            set { CoordinatesCalculated = !value; }
+        }
+
+        [SelfValidation(Ruleset = "Screening")]
+        public virtual void CheckCoordinatesAreSpecifiedIfCoordinatesAreEntered(ValidationResults results)
+        {
+            if (CoordinatesEntered)
+            {
+                if (!Coordinates.Latitude.IsSpecified)
+                {
+                    results.AddResult(new ValidationResult("Latitude must be specified.", Coordinates.Latitude, "Coordinates.Latitude", "SubsiteVisit", null));
+                }
+                if (!Coordinates.Longitude.IsSpecified)
+                {
+                    results.AddResult(new ValidationResult("Longitude must be specified.", Coordinates.Longitude, "Coordinates.Longitude", "SubsiteVisit", null));
+                }
+            }
+        }
+
+        private Coordinates calculateAverageCoordinates()
+        {
+            List<Coordinates> coords = new List<Coordinates>();
+            foreach (TreeMeasurement tm in Measurements)
+            {
+                if (tm.Coordinates.IsSpecified)
+                {
+                    coords.Add(tm.Coordinates);
+                }
+            }
+            CoordinateBounds cb = CoordinateBounds.Create(coords);
             return cb.Center;
         }
 
-        private void invalidateCoordinatesCalculation()
+        [DisplayName("*Subsite country:")]
+        [NotNullValidator(MessageTemplate = "Subsite country must be specified.", Ruleset = "Screening", Tag = "SubsiteVisit")]
+        public virtual Country Country { get; set; }
+
+        [DisplayName("*Subsite state:")]
+        [NotNullValidator(MessageTemplate = "Subsite state must be specified.", Ruleset = "Screening", Tag = "SubsiteVisit")]
+        public virtual State State { get; set; }
+
+        private string m_County;
+        [DisplayName("*Subsite county:")]
+        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Subsite county must be specified.", Ruleset = "Screening", Tag = "SubsiteVisit")]
+        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Site county must not exceed 100 characters.", Ruleset = "Persistence", Tag = "SubsiteVisit")]
+        public virtual string County
         {
-            if (CoordinatesCalculated)
+            get { return m_County; }
+            set { m_County = (value ?? string.Empty).Trim().ToTitleCase(); }
+        }
+
+        private string m_OwnershipType;
+        [DisplayName("*Ownership type:")]
+        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Subsite ownership type name must be specified.", Ruleset = "Screening", Tag = "SubsiteVisit")]
+        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Subsite ownership type must not exceed 100 characters.", Ruleset = "Persistence", Tag = "SubsiteVisit")]
+        public virtual string OwnershipType
+        {
+            get { return m_OwnershipType; }
+            set { m_OwnershipType = (value ?? string.Empty).Trim(); }
+        }
+
+        private string m_OwnershipContactInfo;
+        [DisplayName("Ownership contact:")]
+        [StringLengthWhenNotNullOrWhitespaceValidator(200, MessageTemplate = "Subsite ownership contact info must not exceed 200 characters.", Ruleset = "Persistence", Tag = "SubsiteVisit")]
+        public virtual string OwnershipContactInfo
+        {
+            get { return m_OwnershipContactInfo; }
+            set { m_OwnershipContactInfo = (value ?? string.Empty).Trim(); }
+        }
+
+        private string m_Comments;
+        [DisplayName("Subsite comments:")]
+        [StringLengthWhenNotNullOrWhitespaceValidator(300, MessageTemplate = "Subsite comments must not exceed 300 characters.", Ruleset = "Persistence", Tag = "SubsiteVisit")]
+        public virtual string Comments
+        {
+            get { return m_Comments; }
+            set { m_Comments = (value ?? string.Empty).Trim(); }
+        }
+
+        [ObjectCollectionValidator(TargetRuleset = "Persistence", Ruleset = "Persistence")]
+        [ObjectCollectionValidator(TargetRuleset = "Import", Ruleset = "Import")]
+        [ObjectCollectionValidator(TargetRuleset = "Screening", Ruleset = "Screening")]
+        [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "Subsite must have measurements.", Ruleset = "Screening", Tag = "TreeMeasurements")]
+        [CollectionCountWhenNotNullValidator(0, 10000, MessageTemplate = "Subsites Measurement cannot be attributed to more than three measurers.", Ruleset = "Screening", Tag = "TreeMeasurements")]
+        public virtual IList<TreeMeasurement> Measurements { get; private set; }
+
+        public virtual TreeMeasurement AddMeasurement()
+        {
+            TreeMeasurement tm = TreeMeasurement.Create(this);
+            Measurements.Add(tm);
+            return tm;
+        }
+
+        public virtual bool RemoveMeasurement(TreeMeasurement tm)
+        {
+            return Measurements.Remove(tm);
+        }
+
+        public virtual bool HasTreeMeasurements
+        {
+            get { return Measurements.Count > 0; }
+        }
+
+        public virtual ValidationResults ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers()
+        {
+            return this.Validate("Screening", "Persistence")
+                .FindAll(TagFilter.Include, "SubsiteVisit");
+        }
+
+        internal static SubsiteVisit Create(SiteVisit sv)
+        {
+            return new SubsiteVisit()
             {
-                m_Coordinates = Coordinates.Null();
-            }
-        }
-
-        public bool IsValidIgnoringCoordinatesAndMeasuredTrees
-        {
-            get
-            {
-                return base.isValidExcludingProperties("Coordinates", "MeasuredTrees");
-            }
-        }
-
-        public Tree GetMeasuredTreeById(Guid id)
-        {
-            foreach (Tree mt in MeasuredTrees)
-            {
-                if (mt.Id == id)
-                {
-                    return mt;
-                }
-            }
-            return null;
-        }
-
-        public IList<Tree> ListMeasuredTrees()
-        {
-            IOrderedEnumerable<Tree> mts = MeasuredTrees.OrderByDescending(mt => mt.Created);
-            return mts.ToList();
-        }
-
-        #region IIsValid Members
-
-        public override bool IsValid
-        {
-            get
-            {
-                if (MeasuredTrees.Count == 0)
-                {
-                    return false;
-                }
-                foreach (Tree t in MeasuredTrees)
-                {
-                    if (!t.IsValid)
-                    {
-                        return false;
-                    }
-                }
-                return base.IsValid && Subsite.IsValid;
-            }
-        }
-
-        public override IList<ValidationError> GetValidationErrors()
-        {
-            List<ValidationError> errors = new List<ValidationError>();
-            errors.AddRange(base.GetValidationErrors());
-            if (MeasuredTrees.Count == 0)
-            {
-                errors.Add(ValidationError.Create(this, "MeasuredTrees", "Subsite must have measurements."));
-            }
-            foreach (Tree t in MeasuredTrees)
-            {
-                errors.AddRange(t.GetValidationErrors());
-            }
-            errors.AddRange(Subsite.GetValidationErrors());
-            return errors;
-        }
-
-        #endregion
-
-        #region IIsConflicting Members
-
-        public bool IsConflicting
-        {
-            get { return !CoordinatesCalculated 
-                && CoordinateDistance.Calculate(Coordinates, calculateCoordinates()).TotalMinutes > 1f; }
-        }
-
-        public IList<string> GetConflicts()
-        {
-            List<string> errors = new List<string>();
-            if (!CoordinatesCalculated && CoordinateDistance.Calculate(Coordinates, calculateCoordinates()).TotalMinutes > 1f)
-            {
-                errors.Add("Subsite specified coordinates diverge from calculated coordinates by more than one minute.");
-            }
-            return errors;
-        }
-
-        #endregion
-
-        public static SubsiteVisit Create(Subsite ss)
-        {
-            SubsiteVisit ssv = new SubsiteVisit();
-            ssv.Subsite = ss;
-            ssv.m_Coordinates = (Coordinates)ss.Coordinates.Clone();
-            ssv.MeasuredTrees = new List<Tree>();
-            return ssv;
+                Name = string.Empty,
+                Coordinates = sv.Coordinates,
+                CoordinatesCalculated = true,
+                County = string.Empty,
+                OwnershipType = string.Empty,
+                OwnershipContactInfo = string.Empty,
+                Comments = string.Empty,
+                Measurements = new List<TreeMeasurement>(),
+                Country = LocationService.FindCountryByCode("US"),
+                SiteVisit = sv
+            };
         }
     }
 }
