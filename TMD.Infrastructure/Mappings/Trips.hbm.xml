@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="TMD.Model"
+                   namespace="TMD.Model">
+
+  <class name="TMD.Model.Trips.TreeMeasurer" table="Trips.TreeMeasurers">
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <many-to-one name="TreeMeasurement" column="TreeMeasurementId" />
+    <property name="FirstName"/>
+    <property name="LastName"/>
+  </class>
+
+  <class name="TMD.Model.Trips.TreeMeasurement" table="Trips.TreeMeasurements">
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <many-to-one name="SubsiteVisit" column="SubsiteVisitId" />
+    <property name="TreeName" />
+    <property name="TreeNumber" />
+    <property name="CommonName"/>
+    <property name="ScientificName"/>
+    <property name="Measured" type="date"/>
+    <property name="Status"/>
+    <property name="HealthStatus"/>
+    <property name="AgeClass"/>
+    <property name="AgeType"/>
+    <property name="Age"/>
+    <property name="GeneralComments"/>
+    <component name="Coordinates" class="Coordinates">
+      <component name="Latitude" class="Latitude">
+        <property name="TotalDegrees" column="Latitude" />
+        <property name="InputFormat" column="LatitudeInputFormat"/>
+      </component>
+      <component name="Longitude" class="Longitude">
+        <property name="TotalDegrees" column="Longitude" />
+        <property name="InputFormat" column="LongitudeInputFormat"/>
+      </component>
+    </component>
+    <component name="Elevation" class="Elevation">
+      <property name="Feet" column="Elevation"/>
+      <property name="InputFormat" column="ElevationInputFormat"/>
+    </component>
+    <property name="GpsDatum"/>
+    <property name="PositionMeasurementType"/>
+    <component name="Height" class="Distance">
+      <property name="Feet" column="Height"/>
+      <property name="InputFormat" column="HeightInputFormat"/>
+    </component>
+    <component name="HeightMeasurements" class="HeightMeasurements">
+      <component name="DistanceTop" class="Distance">
+        <property name="Feet" column="HeightMeasurementsDistanceTop"/>
+        <property name="InputFormat" column="HeightMeasurementsDistanceTopInputFormat"/>
+      </component>
+      <component name="AngleTop" class="Angle">
+        <property name="Degrees" column="HeightMeasurementsAngleTop"/>
+        <property name="InputFormat" column="HeightMeasurementsAngleTopInputFormat"/>
+      </component>
+      <component name="DistanceBottom" class="Distance">
+        <property name="Feet" column="HeightMeasurementsDistanceBottom"/>
+        <property name="InputFormat" column="HeightMeasurementsDistanceBottomInputFormat"/>
+      </component>
+      <component name="AngleBottom" class="Angle">
+        <property name="Degrees" column="HeightMeasurementsAngleBottom"/>
+        <property name="InputFormat" column="HeightMeasurementsAngleBottomInputFormat"/>
+      </component>
+      <component name="VerticalOffset" class="DirectedDistance">
+        <property name="Feet" column="HeightMeasurementsVerticalOffset"/>
+        <property name="InputFormat" column="HeightMeasurementsVerticalOffsetInputFormat"/>
+      </component>
+    </component>
+    <property name="HeightMeasurementType"/>
+    <property name="LaserBrand"/>
+    <property name="ClinometerBrand"/>
+    <property name="HeightComments"/>
+    <component name="GirthBreastHeight" class="Distance">
+      <property name="Feet" column="GirthBreastHeight"/>
+      <property name="InputFormat" column="GirthBreastHeightInputFormat"/>
+    </component>
+    <component name="GirthMeasurementHeight" class="Distance">
+      <property name="Feet" column="GirthMeasurementHeight"/>
+      <property name="InputFormat" column="GirthMeasurementHeightInputFormat"/>
+    </component>
+    <component name="GirthRootCollarHeight" class="Distance">
+      <property name="Feet" column="GirthRootCollarHeight"/>
+      <property name="InputFormat" column="GirthRootCollarHeightInputFormat"/>
+    </component>
+    <property name="GirthComments"/>
+    <component name="MaximumCrownSpread" class="Distance">
+      <property name="Feet" column="MaximumCrownSpread"/>
+      <property name="InputFormat" column="MaximumCrownSpreadInputFormat"/>
+    </component>
+    <component name="AverageCrownSpread" class="Distance">
+      <property name="Feet" column="AverageCrownSpread"/>
+      <property name="InputFormat" column="AverageCrownSpreadInputFormat"/>
+    </component>
+    <component name="MaximumLimbLength" class="Distance">
+      <property name="Feet" column="MaximumLimbLength"/>
+      <property name="InputFormat" column="MaximumLimbLengthInputFormat"/>
+    </component>
+    <property name="CrownSpreadMeasurementMethod"/>
+    <component name="BaseCrownHeight" class="Distance">
+      <property name="Feet" column="BaseCrownHeight"/>
+      <property name="InputFormat" column="BaseCrownHeightInputFormat"/>
+    </component>
+    <component name="CrownVolume" class="Volume">
+      <property name="CubicFeet" column="CrownVolume"/>
+      <property name="InputFormat" column="CrownVolumeInputFormat"/>
+    </component>
+    <property name="CrownVolumeCalculationMethod"/>
+    <property name="CrownComments"/>
+    <component name="TrunkVolume" class="Volume">
+      <property name="CubicFeet" column="TrunkVolume"/>
+      <property name="InputFormat" column="TrunkVolumeInputFormat"/>
+    </component>
+    <property name="TrunkVolumeCalculationMethod"/>
+    <property name="TrunkComments"/>
+    <property name="FormType"/>
+    <property name="NumberOfTrunks"/>
+    <property name="TreeFormComments"/>
+    <property name="TerrainType"/>
+    <property name="TerrainShapeIndex"/>
+    <property name="LandformIndex"/>
+    <property name="TerrainComments"/>
+    <bag name="Measurers" table="Trips.Measurers" cascade="all-delete-orphan" inverse="true">
+      <key column="MeasurementId" />
+      <one-to-many class="TMD.Model.Trips.TreeMeasurer"/>
+    </bag>
+  </class>
+
+  <class name="TMD.Model.Trips.SubsiteVisit" table="Trips.SubsiteVisits">
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <many-to-one name="SiteVisit" column="SiteVisitId" />
+    <property name="Name" />
+    <component name="Coordinates" class="Coordinates">
+      <component name="Latitude" class="Latitude">
+        <property name="TotalDegrees" column="Latitude" />
+        <property name="InputFormat" column="LatitudeInputFormat"/>
+      </component>
+      <component name="Longitude" class="Longitude">
+        <property name="TotalDegrees" column="Longitude" />
+        <property name="InputFormat" column="LongitudeInputFormat"/>
+      </component>
+    </component>
+    <property name="CoordinatesCalculated" />    
+    <many-to-one name="Country" column="CountryCode" />
+    <many-to-one name="State" column="StateCode" />
+    <property name="County" />
+    <property name="OwnershipType" />
+    <property name="OwnershipContactInfo" />
+    <property name="Comments" />
+    <bag name="Measurements" table="Trips.TreeMeasurements" cascade="all-delete-orphan" inverse="true">
+      <key column="SubsiteVisitId" />
+      <one-to-many class="TMD.Model.Trips.TreeMeasurement"/>
+    </bag>
+  </class>  
+  
+  <class name="TMD.Model.Trips.SiteVisit" table="Trips.SiteVisits">
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <many-to-one name="Trip" column="TripId" />
+    <property name="Name" />
+    <component name="Coordinates" class="Coordinates">
+      <component name="Latitude" class="Latitude">
+        <property name="TotalDegrees" column="Latitude" />
+        <property name="InputFormat" column="LatitudeInputFormat"/>
+      </component>
+      <component name="Longitude" class="Longitude">
+        <property name="TotalDegrees" column="Longitude" />
+        <property name="InputFormat" column="LongitudeInputFormat"/>
+      </component>
+    </component>
+    <property name="CoordinatesCalculated" />
+    <property name="Comments" />
+    <bag name="SubsiteVisits" table="Trips.SubsiteVisits" cascade="all-delete-orphan" inverse="true">
+      <key column="SiteVisitId" />
+      <one-to-many class="TMD.Model.Trips.SubsiteVisit"/>
+    </bag>
+  </class>
+
+  <class name="TMD.Model.Trips.Trip" table="Trips.Trips">
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <property name="Name" />
+    <property name="IsImported" />
+    <property name="Date" type="date" />
+    <property name="Website" />
+    <property name="PhotosAvailable" />
+    <property name="MeasurerContactInfo" />
+    <bag name="SiteVisits" table="Trips.SiteVisits" cascade="all-delete-orphan" inverse="true">
+      <key column="TripId" />
+      <one-to-many class="TMD.Model.Trips.SiteVisit"/>
+    </bag>
+  </class>
+  
+</hibernate-mapping>

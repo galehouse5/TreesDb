@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB757EFB-7C14-48EC-A77A-4B2415FA6060}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TMD.Infrastructure</RootNamespace>
+    <AssemblyName>TMD.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\LazyLoading\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\LazyLoading\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\ReflectionExtensions.cs" />
+    <Compile Include="InfrastructureRegistry.cs" />
+    <Compile Include="Repositories\LocationRepository.cs" />
+    <Compile Include="Repositories\TreeRepository.cs" />
+    <Compile Include="Repositories\TripRepository.cs" />
+    <Compile Include="StaticUnitOfWorkContextProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NHibernateUnitOfWorkProvider.cs" />
+    <Compile Include="Repositories\SiteRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Trees.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TMD.Model\TMD.Model.csproj">
+      <Project>{82C94CBA-58DA-46EA-A3F6-9786EB32CC17}</Project>
+      <Name>TMD.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mappings\Sites.hbm.xml.ignore">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mappings\Trees.hbm.xml.ignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Locations.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Trips.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
