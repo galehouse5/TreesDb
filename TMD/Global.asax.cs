@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using TMD.Model;
+using TMD.Extensions;
+using TMD.Model.Trips;
+using TMD.Model.Locations;
 
 namespace TMD
 {
@@ -21,7 +25,6 @@ namespace TMD
                 "{controller}/{action}/{id}",                           // URL with parameters
                 new { controller = "Main", action = "Index", id = "" }  // Parameter defaults
             );
-
         }
 
         protected void Application_Start()
@@ -29,6 +32,10 @@ namespace TMD
             AreaRegistration.RegisterAllAreas();
 
             RegisterRoutes(RouteTable.Routes);
+
+            ModelBinders.Binders.DefaultBinder = new DefaultGraphModelBinder();
+            ModelBinders.Binders.Add(typeof(Coordinates), new CoordinatesModelBinder());
+            ModelBinders.Binders.Add(typeof(State), new StateModelBinder());
         }
     }
 }

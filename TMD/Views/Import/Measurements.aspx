@@ -13,7 +13,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="StepContent" runat="server">
 <h3>Enter measurements</h3>
-<div class="sectionspacer"></div>
+<div class="sectionspacer">&nbsp;</div>
 <p>
     Click Add measurement below each site to build a list of the measurements you recorded on your visit.
     When finished, advance to the final step to review your data and check for errors.
@@ -92,10 +92,10 @@
 <% } %>
 </ul>
 </form>
-<div class="sectionspacer"></div>
+<div class="sectionspacer">&nbsp;</div>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="NavContent" runat="server">
 <%= Html.ActionLink("Next >", "Review", null, new { @class = "advance" })%>
-<%= Html.ActionLink("< Back", "SiteInfo", null, new { @class = "retreat" })%>
+<%= Html.ActionLink("< Back", "SiteVisits", null, new { @class = "retreat" })%>
 </asp:Content>

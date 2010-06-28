@@ -44,11 +44,11 @@ a.selected { color: Black; font-weight: bold; text-decoration: none; }
 .browse-search input[type=submit] { margin-left: 50px; float: left; }
 
 .wizard { margin: 50px auto; clear: both; width: 980px; }
-.wizard-overview { float: left; margin: 0 10px; width: 160px; }
+.wizard-overview { float: left; margin: 0 10px; width: 160px; font-size: 90%; }
 .wizard-overview ul { list-style-type: decimal; }
 .wizard-step { margin: auto 20px; float: left; width: 715px; padding: 5px 20px; border: 1px solid #CCCCCC; }
 .wizard-nav { margin: 50px auto; clear: both; width: 980px; }
-.wizard-nav > a { float: right; margin: 20px; }
+.wizard-nav > a { float: right; margin: 20px; font-size: 110%; }
 
 /* maps */
 #globalMap { width: 100%; }
@@ -65,4 +65,5 @@ a.selected { color: Black; font-weight: bold; text-decoration: none; }
 .ui-widget { font-size: 80%; }
 /* fixes ie8 horizontal scrollbar when jquery modal dialog is displayed  */
 .ui-widget-overlay { position: fixed; }
-
+/* fixes anchor text coloration */
+.ui-widget-content a { color: #0000FF; }

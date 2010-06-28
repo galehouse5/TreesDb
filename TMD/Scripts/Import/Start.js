@@ -1,18 +1,17 @@
 ﻿var importIconPaths = [
-    "/Styles/Images/checked.gif",
-    "/Styles/Images/unchecked.gif",
-    "/Styles/Images/tree.png",
-    "/Styles/Images/site.png",
-    "/Styles/Images/subsite.png",
-    "/Styles/ThirdParty/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png"];
+    "/Styles/Images/checked14.gif",
+    "/Styles/Images/unchecked14.gif",
+    "/Styles/Images/tree16.png",
+    "/Styles/Images/tree32.png",
+    "/Styles/Images/site16.png",
+    "/Styles/Images/site32.png",
+    "/Styles/Images/subsite16.png",
+    "/Styles/Images/subsite32.png"];
 
-function PreloadImportIcons() {
+$(document).ready(function () {
+    // warm up import icons cache
     for (i in importIconPaths) {
         var importIcon = new Image();
         importIcon.src = importIconPaths[i];
     }
-}
-
-$(document).ready(function () {
-    PreloadImportIcons();
 });

@@ -13,7 +13,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="StepContent" runat="server">
 <h3>Review</h3>
-<div class="sectionspacer"></div>
+<div class="sectionspacer">&nbsp;</div>
 <p>
     Review the list of sites and measurements you have constructed to correct any indicated errors.
     When finished, move to the final step to save your data to the database.
@@ -76,7 +76,7 @@
     </li>
 <% } %>
 </ul>
-<div class="sectionspacer"></div>
+<div class="sectionspacer">&nbsp;</div>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="NavContent" runat="server">

@@ -11,11 +11,11 @@
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
 <h3>Finish</h3>
-<div class="sectionspacer"></div>
+<div class="sectionspacer">&nbsp;</div>
 <p>Your data has been imported successfully! (not really)</p>
-<div class="sectionspacer"></div>
+<div class="sectionspacer">&nbsp;</div>
 <p>Keep your import code <strong>xxxx</strong> for later reference.</p>
-<div class="sectionspacer"></div>
+<div class="sectionspacer">&nbsp;</div>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="NavContent" runat="server">

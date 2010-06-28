@@ -1,8 +1,6 @@
 ﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" MasterPageFile="~/Views/Shared/TMDJavascript.Master" %>
 
 <asp:Content ContentPlaceHolderID="HeadContent" runat="server">
-<script type="text/javascript" src="/Scripts/ThirdParty/jquery.validate.js"></script>
-<script type="text/javascript" src="/Scripts/Validation.js" ></script>
 <asp:ContentPlaceHolder ID="HeadContent" runat="server" ></asp:ContentPlaceHolder>
 </asp:Content>
 

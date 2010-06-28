@@ -1,22 +1,13 @@
-﻿label.invalid { float: left; margin: 6px 0 0 4px; background: url('/Styles/Images/unchecked.gif') no-repeat; height: 16px; color: #EA5200; padding-left: 16px; }
-label.valid { float: left; margin: 6px 0 0 4px; background: url('/Styles/Images/checked.gif') no-repeat; height: 16px; width: 16px; }
+﻿.site-visit .icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/site32.png"); }
+.site-visit .column { float: left; margin-right: 10px; width: auto; }
+.site-visit-list { margin: 0; padding: 0; list-style-type: none; line-height: 18px; }
+.site-visit-list li { margin: 16px 0; }
+a.site-visit { margin-top: 4px; background: url('/Styles/Images/site16.png') no-repeat; height: 16px; padding-left: 16px; }
 
-#SiteList { margin: 0; padding: 0; list-style-type: none; line-height: 18px; }
-.SubsiteList { margin: 0; padding-left: 36px; list-style-type: none; line-height: 18px; }
-.MeasurementList { margin: 0; padding-left: 54px; list-style-type: none; line-height: 18px; }
-#SiteList li { margin: 16px 0; }
-.SubsiteList li { margin: 16px 0; }
-.MeasurementList li { margin: 16px 0; }
-.Site .Icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/site.png"); }
-.Subsite .Icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/subsite.png"); }
-.Measurement .Icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/tree.png"); }
-.Site .Column { float: left; margin-right: 10px; width: auto; }
-.Subsite .Column { float: left; margin-right: 10px; width: auto; }
-.Measurement .Column { float: left; margin-right: 10px; width: auto; }
+.subsite-visit .icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/subsite32.png"); }
+.subsite-visit .column { float: left; margin-right: 10px; width: auto; }
+.subsite-visit-list { margin: 0; padding-left: 36px; list-style-type: none; line-height: 18px; }
+.subsite-visit-list li { margin: 16px 0; }
+a.subsite-visit { margin-top: 4px; background: url('/Styles/Images/subsite16.png') no-repeat; height: 16px; padding-left: 16px; }
 
-
-.dialog .accordion { height: 510px; }
-.dialog .accordion h3.ui-accordion-header.ui-state-default > a { color: #0000FF; text-decoration: underline; }
-.dialog .accordion h3.ui-accordion-header.ui-state-active > a { font-weight: bold; }
-
-#locationMap { height: 325px; width: 725px; }
+span.field-validation-error { margin: 2px 0 0 2px; background: url('/Styles/Images/unchecked14.gif') no-repeat; height: 14px; color: #EA5200; padding-left: 16px; }

@@ -6,7 +6,7 @@ using TMD.Application;
 
 namespace TMD
 {
-    public class WebApplicationSessionProvider : ApplicationUserSessionProvider
+    public class WebApplicationSessionProvider : ApplicationSessionProvider
     {
         public override bool Contains(string key)
         {
