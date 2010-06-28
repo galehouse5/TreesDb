@@ -6,7 +6,7 @@ using SimMetricsApi;
 
 namespace TMD.SQLCLR.Expressions
 {
-    public enum EFactorType
+    public enum FactorType
     {
         Constant,
         SimilarityMetric,
@@ -14,7 +14,7 @@ namespace TMD.SQLCLR.Expressions
         Function
     }
 
-    public enum EFactorFunctionType
+    public enum FactorFunctionType
     {
         SumLength,
         MinLength,
@@ -27,52 +27,52 @@ namespace TMD.SQLCLR.Expressions
     {
         private static readonly SimilarityMetricFactory s_SimilarityMetricFactory = new SimilarityMetricFactory();
 
-        public EFactorType Type { get; private set; }
+        public FactorType Type { get; private set; }
         public double ConstantValue { get; private set; }
         public IStringMetric SimilarityMetric { get; private set; }
         public Expression Expression { get; private set; }
-        public EFactorFunctionType FunctionType { get; private set; }
+        public FactorFunctionType FunctionType { get; private set; }
 
         public void Parse(Tokenizer t)
         {
             if (t.CurrentToken == EToken.CONST)
             {
-                Type = EFactorType.Constant;
+                Type = FactorType.Constant;
                 ConstantValue = double.Parse(t.CurrentValue);
                 t.NextToken();
             }
             else if (t.CurrentToken == EToken.SIMMETRIC)
             {
-                Type = EFactorType.SimilarityMetric;
+                Type = FactorType.SimilarityMetric;
                 SimilarityMetric = s_SimilarityMetricFactory.Create(t.CurrentValue);
                 t.NextToken();
             }
             else if (t.CurrentToken == EToken.FUNCTION)
             {
-                Type = EFactorType.Function;
+                Type = FactorType.Function;
                 switch (t.CurrentValue)
                 {
                     case "sumlength":
-                        FunctionType = EFactorFunctionType.SumLength;
+                        FunctionType = FactorFunctionType.SumLength;
                         break;
                     case "minlength":
-                        FunctionType = EFactorFunctionType.MinLength;
+                        FunctionType = FactorFunctionType.MinLength;
                         break;
                     case "maxlength":
-                        FunctionType = EFactorFunctionType.MaxLength;
+                        FunctionType = FactorFunctionType.MaxLength;
                         break;
                     case "firstlength":
-                        FunctionType = EFactorFunctionType.FirstLength;
+                        FunctionType = FactorFunctionType.FirstLength;
                         break;
                     case "secondlength":
-                        FunctionType = EFactorFunctionType.SecondLength;
+                        FunctionType = FactorFunctionType.SecondLength;
                         break;
                 }
                 t.NextToken();
             }
             else if (t.CurrentToken == EToken.LPAREN)
             {
-                Type = EFactorType.Expression;
+                Type = FactorType.Expression;
                 t.NextToken();
                 Expression = new Expression();
                 Expression.Parse(t);
@@ -93,18 +93,18 @@ namespace TMD.SQLCLR.Expressions
             StringBuilder sb = new StringBuilder();
             switch (Type)
             {
-                case EFactorType.Constant :
+                case FactorType.Constant :
                     sb.Append(ConstantValue.ToString());
                     break;
-                case EFactorType.SimilarityMetric :
+                case FactorType.SimilarityMetric :
                     sb.Append(SimilarityMetric.GetType().Name);
                     break;
-                case EFactorType.Expression :
+                case FactorType.Expression :
                     sb.Append("(");
                     sb.Append(Expression.Print());
                     sb.Append(")");
                     break;
-                case EFactorType.Function :
+                case FactorType.Function :
                     sb.Append(FunctionType.ToString());
                     break;
             }
@@ -116,31 +116,31 @@ namespace TMD.SQLCLR.Expressions
             double rank = 0d;
             switch (Type)
             {
-                case EFactorType.Constant :
+                case FactorType.Constant :
                     rank = ConstantValue;
                     break;
-                case EFactorType.SimilarityMetric :
+                case FactorType.SimilarityMetric :
                     rank = SimilarityMetric.GetSimilarity(firstWord, secondWord);
                     break;
-                case EFactorType.Expression :
+                case FactorType.Expression :
                     rank = Expression.Evaluate(firstWord, secondWord);
                     break;
-                case EFactorType.Function :
+                case FactorType.Function :
                     switch (FunctionType)
                     {
-                        case EFactorFunctionType.MaxLength :
+                        case FactorFunctionType.MaxLength :
                             rank = Math.Max(firstWord.Length, secondWord.Length);
                             break;
-                        case EFactorFunctionType.MinLength :
+                        case FactorFunctionType.MinLength :
                             rank = Math.Min(firstWord.Length, secondWord.Length);
                             break;
-                        case EFactorFunctionType.SumLength :
+                        case FactorFunctionType.SumLength :
                             rank = firstWord.Length + secondWord.Length;
                             break;
-                        case EFactorFunctionType.FirstLength :
+                        case FactorFunctionType.FirstLength :
                             rank = firstWord.Length;
                             break;
-                        case EFactorFunctionType.SecondLength :
+                        case FactorFunctionType.SecondLength :
                             rank = secondWord.Length;
                             break;
                     }

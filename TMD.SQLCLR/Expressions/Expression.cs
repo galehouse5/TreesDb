@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TMD.SQLCLR.Expressions
 {
-    public enum ETermOperation
+    public enum TermOperation
     {
         Positive,
         Negative,
@@ -17,29 +17,29 @@ namespace TMD.SQLCLR.Expressions
         public Expression()
         {
             Terms = new List<Term>();
-            Operations = new List<ETermOperation>();
+            Operations = new List<TermOperation>();
         }
 
         public List<Term> Terms { get; private set; }
-        public List<ETermOperation> Operations { get; private set; }
+        public List<TermOperation> Operations { get; private set; }
 
         public void Parse(Tokenizer t)
         {
             if (t.CurrentToken == EToken.MINUS || t.CurrentToken == EToken.PLUS)
             {
-                Operations.Add(t.CurrentToken == EToken.MINUS ? ETermOperation.Negative : ETermOperation.Positive);
+                Operations.Add(t.CurrentToken == EToken.MINUS ? TermOperation.Negative : TermOperation.Positive);
                 t.NextToken();
             }
             else
             {
-                Operations.Add(ETermOperation.None);
+                Operations.Add(TermOperation.None);
             }
             Term parent = new Term();
             Terms.Add(parent);
             parent.Parse(t);
             while (t.CurrentToken == EToken.MINUS || t.CurrentToken == EToken.PLUS)
             {
-                Operations.Add(t.CurrentToken == EToken.MINUS ? ETermOperation.Negative : ETermOperation.Positive);
+                Operations.Add(t.CurrentToken == EToken.MINUS ? TermOperation.Negative : TermOperation.Positive);
                 t.NextToken();
                 Term child = new Term();
                 Terms.Add(child);
@@ -59,10 +59,10 @@ namespace TMD.SQLCLR.Expressions
                 {
                     switch (Operations[0])
                     {
-                        case ETermOperation.Negative :
+                        case TermOperation.Negative :
                             sb.Append('-');
                             break;
-                        case ETermOperation.Positive :
+                        case TermOperation.Positive :
                             sb.Append('+');
                             break;
                         default :
@@ -72,7 +72,7 @@ namespace TMD.SQLCLR.Expressions
                 }
                 else
                 {
-                    sb.Append(Operations[0] == ETermOperation.Negative ? " - " : " + ");
+                    sb.Append(Operations[0] == TermOperation.Negative ? " - " : " + ");
                     sb.Append(Terms[i].Print());
                 }
             }
@@ -86,7 +86,7 @@ namespace TMD.SQLCLR.Expressions
             {
                 switch (Operations[i])
                 {
-                    case ETermOperation.Negative :
+                    case TermOperation.Negative :
                         rank -= Terms[i].Evaluate(firstWord, secondWord);
                         break;
                     default :

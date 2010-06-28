@@ -10,7 +10,7 @@ using TMD.SQLCLR.Expressions;
 
 namespace TMD.SQLCLR
 {
-    public partial class StringComparison
+    public class StringComparison
     {
         private static readonly string[] s_SentenceSeperators = new string[] { " ", ".", ",", "-", "!", "?" };
         private static readonly ExpressionFactory s_ExpressionFactory = new ExpressionFactory();
@@ -78,8 +78,8 @@ namespace TMD.SQLCLR
             sentenceWordComparisonRanks.Sort();
 
             double sentenceRank = 0;
-            List<int> usedFirstSentenceWordIndexes = new List<int>();
-            List<int> usedSecondSentenceWordIndexes = new List<int>();
+            List<int> usedFirstSentenceWordIndexes = new List<int>(normalizedFirstSentenceWords.Length);
+            List<int> usedSecondSentenceWordIndexes = new List<int>(normalizedSecondSentenceWords.Length);
             int numberOfWordComparisons = 0;
             int numberOfSignificantWordComparisons = Math.Min(normalizedFirstSentenceWords.Length, normalizedSecondSentenceWords.Length);
             foreach (SentenceWordComparisonRank sentenceWordComparisonRank in sentenceWordComparisonRanks)

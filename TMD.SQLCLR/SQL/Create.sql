@@ -9,3 +9,7 @@ GO
 CREATE FUNCTION ParseExpression(@expression NVARCHAR(100))
 RETURNS NVARCHAR(100) EXTERNAL NAME [TMD.SQLCLR].[TMD.SQLCLR.StringComparison].ParseExpression
 GO
+
+CREATE FUNCTION GenerateSequentialNumbers(@min INT, @max INT)
+RETURNS TABLE (Number INT) EXTERNAL NAME [TMD.SQLCLR].[TMD.SQLCLR.NumberGeneration].GenerateSequentialNumbers
+GO

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TMD.SQLCLR.Expressions
 {
-    public enum EFactorOperation
+    public enum FactorOperation
     {
         Division,
         Multiplication,
@@ -17,21 +17,21 @@ namespace TMD.SQLCLR.Expressions
         public Term()
         {
             Factors = new List<Factor>();
-            Operations = new List<EFactorOperation>();
+            Operations = new List<FactorOperation>();
         }
 
         public List<Factor> Factors { get; private set; }
-        public List<EFactorOperation> Operations { get; private set; }
+        public List<FactorOperation> Operations { get; private set; }
 
         public void Parse(Tokenizer t)
         {
-            Operations.Add(EFactorOperation.None);
+            Operations.Add(FactorOperation.None);
             Factor parent = new Factor();
             Factors.Add(parent);
             parent.Parse(t);
             while (t.CurrentToken == EToken.TIMES || t.CurrentToken == EToken.SLASH)
             {
-                Operations.Add(t.CurrentToken == EToken.TIMES ? EFactorOperation.Multiplication : EFactorOperation.Division);
+                Operations.Add(t.CurrentToken == EToken.TIMES ? FactorOperation.Multiplication : FactorOperation.Division);
                 t.NextToken();
                 Factor child = new Factor();
                 Factors.Add(child);
@@ -49,10 +49,10 @@ namespace TMD.SQLCLR.Expressions
             {
                 switch (Operations[i])
                 {
-                    case EFactorOperation.Division :
+                    case FactorOperation.Division :
                         sb.Append(" / ");
                         break;
-                    case  EFactorOperation.Multiplication :
+                    case  FactorOperation.Multiplication :
                         sb.Append(" * ");
                         break;
                     default :
@@ -70,13 +70,13 @@ namespace TMD.SQLCLR.Expressions
             {
                 switch (Operations[i])
                 {
-                    case EFactorOperation.Division :
+                    case FactorOperation.Division :
                         rank /= Factors[i].Evaluate(firstWord, secondWord);
                         break;
-                    case EFactorOperation.Multiplication :
+                    case FactorOperation.Multiplication :
                         rank *= Factors[i].Evaluate(firstWord, secondWord);
                         break;
-                    case EFactorOperation.None :
+                    case FactorOperation.None :
                         rank = Factors[i].Evaluate(firstWord, secondWord);
                         break;
                 }
