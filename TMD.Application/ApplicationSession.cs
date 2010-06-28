@@ -14,33 +14,34 @@ namespace TMD.Application
             public const string GoToOnWizardCancelKey = "goToOnWizardCancel";
             public const string GoToOnWizardCompleteKey = "goToOnWizardComplete";
             public const string DialogNumberKey = "dialogNumber";
-            public const string ImportTripKey = "importTrip";
+            public const string ImportTripIdKey = "importTripId";
+            public const string ImportSelectedSiteVisitIndexKey = "importSelectedSiteVisitIndex";
+            public const string ImportSelectedSubsiteVisitIndexKey = "importSelectedSubsiteVisitIndex";
+            public const string ImportSelectedMeasurementIndexKey = "importSelectedMeasurementIndex";
         }
 
-        public static Trip ImportTrip
+        public static int ImportTripId
         {
-            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<Trip>(Keys.ImportTripKey, () => Trip.Create()); }
-            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.ImportTripKey, value); }
+            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(Keys.ImportTripIdKey, -1); }
+            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.ImportTripIdKey, value); }
         }
 
-        public static InstanceCreationDelegate<object> DefaultGoToOnWizardCancelCreator = delegate() { return null; };
-        public static object GoToOnWizardCancel
+        public static int ImportSelectedSiteVisitIndex
         {
-            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<object>(Keys.GoToOnWizardCancelKey, DefaultGoToOnWizardCancelCreator); }
-            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.GoToOnWizardCancelKey, value); }
+            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(Keys.ImportSelectedSiteVisitIndexKey, -1); }
+            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.ImportSelectedSiteVisitIndexKey, value); }
         }
 
-        public static InstanceCreationDelegate<object> DefaultGoToOnWizardCompleteCreator = delegate() { return null; };
-        public static object GoToOnWizardComplete
+        public static int ImportSelectedSubsiteVisitIndex
         {
-            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<object>(Keys.GoToOnWizardCompleteKey, DefaultGoToOnWizardCompleteCreator); }
-            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.GoToOnWizardCompleteKey, value); }
+            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(Keys.ImportSelectedSubsiteVisitIndexKey, -1); }
+            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.ImportSelectedSubsiteVisitIndexKey, value); }
         }
 
-        public static int DialogNumber
+        public static int ImportSelectedMeasurementIndex
         {
-            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(Keys.DialogNumberKey, 0); }
-            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.DialogNumberKey, value); }
+            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(Keys.ImportSelectedMeasurementIndexKey, -1); }
+            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.ImportSelectedMeasurementIndexKey, value); }
         }
     }
 }

@@ -11,8 +11,6 @@ namespace TMD.Application
         private const string ApplicationSettingsSectionName = "applicationSettings";
 
         private static ApplicationSettings s_ApplicationSettings;
-        private static ApplicationSessionProvider s_ApplicationUserSessionProvider;
-
         internal static ApplicationSettings ApplicationSettings
         {
             get
@@ -25,6 +23,7 @@ namespace TMD.Application
             }
         }
 
+        private static ApplicationSessionProvider s_ApplicationUserSessionProvider;
         public static ApplicationSessionProvider ApplicationSessionProvider
         {
             get
