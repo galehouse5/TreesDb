@@ -188,12 +188,6 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
     <Content Include="Scripts\ThirdParty\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\ThirdParty\MicrosoftAjax.js" />
     <Content Include="Scripts\ThirdParty\MicrosoftAjax.debug.js" />
@@ -203,7 +197,6 @@
     <Content Include="Scripts\ThirdParty\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Views\Shared\TMDSite.Master" />
   </ItemGroup>

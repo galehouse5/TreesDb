@@ -235,7 +235,7 @@ namespace TMD.Controllers
             for (int sv = 0; sv < model.Trip.SiteVisits.Count; sv++)
             {
                 if (!model.Trip.SiteVisits[sv]
-                    .ValidateIgnoringCoordinatesSubsiteVisitsTreeMeasurementsAndTreeMeasurers().IsValid)
+                    .ValidateIgnoringCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
                 {
                     ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}]", sv), 
                         "You must edit or remove this site visit to fix invalid data.");

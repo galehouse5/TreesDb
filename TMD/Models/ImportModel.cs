@@ -115,7 +115,7 @@ namespace TMD.Models
 
         public SubsiteVisit SelectedSubsiteVisit
         {
-            get { return SelectedSiteVisit.SubsiteVisits[SelectedSubsiteVisitIndex]; }
+            get { return SelectedSubsiteVisitIndex > -1 ? SelectedSiteVisit.SubsiteVisits[SelectedSubsiteVisitIndex] : null; }
             set
             {
                 if (value == null)
@@ -137,7 +137,7 @@ namespace TMD.Models
 
         public SiteVisit SelectedSiteVisit
         {
-            get { return Trip.SiteVisits[SelectedSiteVisitIndex]; }
+            get { return SelectedSiteVisitIndex > -1 ? Trip.SiteVisits[SelectedSiteVisitIndex] : null; }
             set 
             {
                 if (value == null)
