@@ -18,27 +18,27 @@
         <div class="form-row">
             <div class="form-col-brief"><%= Html.LabelFor(m => m.Trip.Name) %></div>
             <div class="form-col-normal"><%= Html.TextBoxFor(m => m.Trip.Name)%><%= Html.ValidationMessageFor(m => m.Trip.Name)%></div>
-            <div class="ui-helper-clearfix"></div>
+            <div class='ui-helper-clearfix'></div>
         </div>
         <div class="form-row">
             <div class="form-col-brief"><%= Html.LabelFor(m => m.Trip.Date)%></div>
             <div class="form-col-normal"><%= Html.EditorFor(m => m.Trip.Date)%><%= Html.ValidationMessageFor(m => m.Trip.Date)%></div>
-            <div class="ui-helper-clearfix"></div>
+            <div class='ui-helper-clearfix'></div>
         </div>
         <div class="form-row">
             <div class="form-col-brief"><%= Html.LabelFor(m => m.Trip.MeasurerContactInfo)%></div>
             <div class="form-col-normal"><%= Html.TextAreaFor(m => m.Trip.MeasurerContactInfo, 4, 50, null)%><%= Html.ValidationMessageFor(m => m.Trip.MeasurerContactInfo)%></div>
-            <div class="ui-helper-clearfix"></div>
+            <div class='ui-helper-clearfix'></div>
         </div>
         <div class="form-row">
             <div class="form-col-brief"><%= Html.LabelFor(m => m.Trip.Website)%></div>
             <div class="form-col-normal"><%= Html.TextBoxFor(m => m.Trip.Website)%><%= Html.ValidationMessageFor(m => m.Trip.Website)%></div>
-            <div class="ui-helper-clearfix"></div>
+            <div class='ui-helper-clearfix'></div>
         </div>
         <div class="form-row">
             <div class="form-col-brief"><%= Html.LabelFor(m => m.Trip.PhotosAvailable)%></div>
             <div class="form-col-normal"><%= Html.CheckBoxFor(m => m.Trip.PhotosAvailable)%><%= Html.ValidationMessageFor(m => m.Trip.PhotosAvailable)%></div>
-            <div class="ui-helper-clearfix"></div>
+            <div class='ui-helper-clearfix'></div>
         </div>
     </form>
     <div class="sectionspacer"></div>

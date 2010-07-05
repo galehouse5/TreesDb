@@ -104,7 +104,7 @@ namespace TMD.Model
 
         #endregion
 
-        private static Regex DecimalFeetFormat = new Regex("^\\s*(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*'')|(\\s*ft)|(\\s*feet))\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalFeetFormat = new Regex("^\\s*(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*')|(\\s*ft)|(\\s*feet))?\\s*$", RegexOptions.Compiled);
         private static Regex DecimalMetersFormat = new Regex("^\\s*(?<meters>[0-9]+(\\.[0-9]+)?)((\\s*m)|(\\s*meters?))\\s*$", RegexOptions.Compiled);
         private static Regex DecimalYardsFormat = new Regex("^\\s*(?<yards>[0-9]+(\\.[0-9]+)?)((\\s*yds?)|(\\s*yards?))\\s*$", RegexOptions.Compiled);
 
@@ -113,7 +113,12 @@ namespace TMD.Model
             Match match;
             float feet;
             ElevationFormat inputFormat;
-            if ((match = DecimalFeetFormat.Match(s)).Success)
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                feet = 0;
+                inputFormat = ElevationFormat.Unspecified;
+            }
+            else if ((match = DecimalFeetFormat.Match(s)).Success)
             {
                 feet = float.Parse(match.Groups["feet"].Value);
                 inputFormat = ElevationFormat.DecimalFeet;

@@ -91,7 +91,6 @@
     <Compile Include="Trips\Trip.cs" />
     <Compile Include="Trips\SiteVisit.cs" />
     <Compile Include="Validation\CollectionCountWhenNotNullValidator.cs" />
-    <Compile Include="Validation\DateTimeRangeWhenNotNullValidator.cs" />
     <Compile Include="Validation\ModelObjectCollectionValidator.cs" />
     <Compile Include="Validation\ObjectEqualityValidator.cs" />
     <Compile Include="Validation\SpecifiedValidator.cs" />

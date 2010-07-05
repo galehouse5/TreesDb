@@ -189,19 +189,19 @@ namespace TMD.Controllers
             List<MapMarker> markers = new List<MapMarker>();
             foreach (SiteVisit sv in model.Trip.SiteVisits)
             {
-                if (sv.Coordinates.IsSpecified && sv != model.SelectedSiteVisit)
+                if (sv.Coordinates.IsSpecified && sv.CoordinatesEntered && sv != model.SelectedSiteVisit)
                 {
                     markers.Add(sv.ToMapMarker());
                 }
                 foreach (SubsiteVisit ssv in sv.SubsiteVisits)
                 {
-                    if (ssv.Coordinates.IsSpecified)
+                    if (ssv.Coordinates.IsSpecified && ssv.CoordinatesEntered)
                     {
                         markers.Add(ssv.ToMapMarker());
                     }
                     foreach (TreeMeasurement tm in ssv.TreeMeasurements)
                     {
-                        if (tm.Coordinates.IsSpecified)
+                        if (tm.Coordinates.IsSpecified && tm.CoordinatesEntered)
                         {
                             markers.Add(tm.ToMapMarker());
                         }
@@ -296,19 +296,19 @@ namespace TMD.Controllers
             List<MapMarker> markers = new List<MapMarker>();
             foreach (SiteVisit sv in model.Trip.SiteVisits)
             {
-                if (sv.Coordinates.IsSpecified)
+                if (sv.Coordinates.IsSpecified && sv.CoordinatesEntered)
                 {
                     markers.Add(sv.ToMapMarker());
                 }
                 foreach (SubsiteVisit ssv in sv.SubsiteVisits)
                 {
-                    if (ssv.Coordinates.IsSpecified && ssv != model.SelectedSubsiteVisit)
+                    if (ssv.Coordinates.IsSpecified && ssv.CoordinatesEntered && ssv != model.SelectedSubsiteVisit)
                     {
                         markers.Add(ssv.ToMapMarker());
                     }
                     foreach (TreeMeasurement tm in ssv.TreeMeasurements)
                     {
-                        if (tm.Coordinates.IsSpecified)
+                        if (tm.Coordinates.IsSpecified && tm.CoordinatesEntered)
                         {
                             markers.Add(tm.ToMapMarker());
                         }
@@ -340,6 +340,21 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.Trip.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().CopyToModelState(ModelState, "Trip");
+            for (int sv = 0; sv < model.Trip.SiteVisits.Count; sv++)
+            {
+                for (int ssv = 0; ssv < model.Trip.SiteVisits[sv].SubsiteVisits.Count; ssv++)
+                {
+                    for (int tm = 0; tm < model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements.Count; tm++)
+                    {
+                        if (!model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm]
+                            .ValidateRegardingScreeningAndPersistence().IsValid)
+                        {
+                            ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements[{2}]", sv, ssv, tm),
+                                "You must edit or remove this tree measurement to fix invalid data.");
+                        }
+                    }
+                }
+            }
             return View("TreeMeasurements", model);
         }
 
@@ -354,6 +369,7 @@ namespace TMD.Controllers
             model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
             model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.AddTreeMeasurement();
+            model.SelectedTreeMeasurement.AddMeasurer();
             model.SaveTrip();
             return View("TreeMeasurement", model);
         }
@@ -366,12 +382,11 @@ namespace TMD.Controllers
             model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
             model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.TreeMeasurements[treeMeasurementIndex];
+            model.SaveTrip();
             return View("TreeMeasurement", model);
         }
 
-        [HttpPut]
-        [ActionName("TreeMeasurement")]
-        public ActionResult SaveTreeMeasurement(ImportModel model)
+        private void validateTreeMeasurement(ImportModel model)
         {
             ValidationResults generalValidationResults = model.SelectedTreeMeasurement.ValidateRegardingGeneralInformation();
             if (!generalValidationResults.IsValid)
@@ -397,6 +412,13 @@ namespace TMD.Controllers
                 ModelState.AddModelError("SelectedTreeMeasurement.Misc.HasErrors", "");
                 miscValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
             }
+        }
+
+        [HttpPut]
+        [ActionName("TreeMeasurement")]
+        public ActionResult SaveTreeMeasurement(ImportModel model)
+        {
+            validateTreeMeasurement(model);
             if (ModelState.IsValid)
             {
                 model.SaveTrip();
@@ -436,19 +458,19 @@ namespace TMD.Controllers
             List<MapMarker> markers = new List<MapMarker>();
             foreach (SiteVisit sv in model.Trip.SiteVisits)
             {
-                if (sv.Coordinates.IsSpecified)
+                if (sv.Coordinates.IsSpecified && sv.CoordinatesEntered)
                 {
                     markers.Add(sv.ToMapMarker());
                 }
                 foreach (SubsiteVisit ssv in sv.SubsiteVisits)
                 {
-                    if (ssv.Coordinates.IsSpecified)
+                    if (ssv.Coordinates.IsSpecified && ssv.CoordinatesEntered)
                     {
                         markers.Add(ssv.ToMapMarker());
                     }
                     foreach (TreeMeasurement tm in ssv.TreeMeasurements)
                     {
-                        if (tm.Coordinates.IsSpecified && tm != model.SelectedTreeMeasurement)
+                        if (tm.Coordinates.IsSpecified && tm.CoordinatesEntered && tm != model.SelectedTreeMeasurement)
                         {
                             markers.Add(tm.ToMapMarker());
                         }
@@ -473,6 +495,30 @@ namespace TMD.Controllers
                 });
             }
             return this.Json(autocompleteResults, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
+        public ActionResult CreateTreeMeasurementMeasurer()
+        {
+            ImportModel model = new ImportModel();
+            if (model.SelectedTreeMeasurement.Measurers.Count < 3)
+            {
+                model.SelectedTreeMeasurement.AddMeasurer();
+                model.SaveTrip();
+            }
+            return View("TreeMeasurement", model);
+        }
+
+        [HttpPost]
+        public ActionResult RemoveTreeMeasurementMeasurer()
+        {
+            ImportModel model = new ImportModel();
+            if (model.SelectedTreeMeasurement.Measurers.Count > 1)
+            {
+                model.SelectedTreeMeasurement.Measurers.RemoveAt(model.SelectedTreeMeasurement.Measurers.Count - 1);
+                model.SaveTrip();
+            }
+            return View("TreeMeasurement", model);
         }
 
         #endregion

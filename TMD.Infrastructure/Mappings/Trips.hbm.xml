@@ -42,6 +42,7 @@
       <property name="Feet" column="Elevation"/>
       <property name="InputFormat" column="ElevationInputFormat"/>
     </component>
+    <property name="CoordinatesCalculated" />
     <property name="GpsDatum"/>
     <property name="PositionMeasurementType"/>
     <component name="Height" class="Distance">

@@ -1,7 +1,7 @@
 ﻿var TreeMeasurementEditor = new function () {
     var public = this;
     var dom = $(
-            "<div id='treemeasurement-editor' class='dialog'>\
+            "<div id='treemeasurement-editor' class='editor-big'>\
                 <div class='accordion'>\
                     <h3 class='general-placeholder'></h3>\
                     <div class='general-placeholder'></div>\
@@ -17,7 +17,7 @@
     var closeCallback;
 
     function initialize() {
-        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 768, height: 'auto', minHeight: 600,
+        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 896, height: 'auto', minHeight: 720,
             buttons: { 'Save': save, 'Cancel': function () { dom.dialog('close'); } }
         });
         if (isAdding) {
@@ -56,9 +56,10 @@
         dom.find('.accordion').accordion('resize');
         dom.find('#SelectedTreeMeasurement_Measured').datepicker({ onClose: function () { dom.find('#SelectedTreeMeasurement_Measured').focus(); } });
         dom.find('#SelectedTreeMeasurement_CommonName').autocomplete({ source: "AutocompleteCommonName", minLength: 2, select: function (event, ui) {
-                dom.find('#SelectedTreeMeasurement_ScientificName').val(ui.item.scientificName);
-            }
+            dom.find('#SelectedTreeMeasurement_ScientificName').val(ui.item.scientificName);
+        }
         });
+        dom.find('div.general-placeholder form').inputHintOverlay(5, 6);
     }
 
     function validate() {
@@ -117,6 +118,22 @@
         });
     };
 
+    public.AddMeasurer = function () {
+        $.post('CreateTreeMeasurementMeasurer', {}, function (data) {
+            var newDom = $(data);
+            dom.find('.treemeasurer-placeholder').replaceWith(newDom.find('.treemeasurer-placeholder'));
+            dom.find('.general-placeholder form').inputHintOverlay(5, 6);
+        });
+    }
+
+    public.RemoveMeasurer = function () {
+        $.post('RemoveTreeMeasurementMeasurer', {}, function (data) {
+            var newDom = $(data);
+            dom.find('.treemeasurer-placeholder').replaceWith(newDom.find('.treemeasurer-placeholder'));
+            dom.find('.general-placeholder form').inputHintOverlay(5, 6);
+        });
+    }
+
     public.Show = function () {
         dom.bind('dialogclose', dispose);
         dom.dialog('open');
@@ -132,11 +149,11 @@
             if (result.coordinatesPicked) {
                 if (coordinates.IsSpecified) {
                     var newCoordinates = ValueObjectService.CreateCoordinatesWithFormat(result.latitude, result.longitude, coordinates.InputFormat);
-                    dom.find('input.treemeasurement-latitude').val(newCoordinates.Latitude);
-                    dom.find('input.treemeasurement-longitude').val(newCoordinates.Longitude);
+                    dom.find('#SelectedTreeMeasurement_Coordinates_Latitude').val(newCoordinates.Latitude);
+                    dom.find('#SelectedTreeMeasurement_Coordinates_Longitude').val(newCoordinates.Longitude);
                 } else {
-                    dom.find('input.treemeasurement-latitude').val(result.latitude);
-                    dom.find('input.treemeasurement-longitude').val(result.longitude);
+                    dom.find('#SelectedTreeMeasurement_Coordinates_Latitude').val(result.latitude);
+                    dom.find('#SelectedTreeMeasurement_Coordinates_Longitude').val(result.longitude);
                 }
             }
             public.Show();
@@ -146,8 +163,8 @@
         };
         public.Hide();
         var coordinates = ValueObjectService.CreateCoordinates(
-            dom.find('input.treemeasurement-latitude').val(),
-            dom.find('input.treemeasurement-longitude').val());
+            dom.find('#SelectedTreeMeasurement_Coordinates_Latitude').val(),
+            dom.find('#SelectedTreeMeasurement_Coordinates_Longitude').val());
         var options = { markerLoader: loadMapMarkers };
         if (coordinates.IsSpecified) {
             options.coordinatesSpecified = true;

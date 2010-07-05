@@ -27,7 +27,7 @@
             <br />
             <a href="javascript:EditSite('<%= Model.Sites[s].Id %>')">Edit</a>
         </div>
-        <div class="ui-helper-clearfix"></div>
+        <div class='ui-helper-clearfix'></div>
         <ul class="MeasurementList">
         <% for (int m = 0; m < Model.Sites[s].Measurements.Count; m++) { %>
             <li id="<%= Model.Sites[s].Measurements[m].Id %>" class="Measurement">
@@ -40,7 +40,7 @@
                 <div class="Column">
                     <a href="javascript:EditSiteMeasurement('<%= Model.Sites[s].Id %>', '<%= Model.Sites[s].Measurements[m].Id %>')">Edit</a>
                 </div>
-                <div class="ui-helper-clearfix"></div>
+                <div class='ui-helper-clearfix'></div>
             </li>
         <% } %>
         </ul>
@@ -53,7 +53,7 @@
                     <br />
                     <a href="javascript:EditSubsite('<%= Model.Sites[s].Id %>', '<%= Model.Sites[s].Subsites[ss].Id %>')">Edit</a>
                 </div>
-                <div class="ui-helper-clearfix"></div>
+                <div class='ui-helper-clearfix'></div>
                 <ul class="MeasurementList">
                     <% for (int m = 0; m < Model.Sites[s].Subsites[ss].Measurements.Count; m++) { %>
                     <li id="<%= Model.Sites[s].Subsites[ss].Measurements[m].Id %>" class="Measurement">
@@ -66,7 +66,7 @@
                         <div class="Column">
                             <a href="javascript:EditSubsiteMeasurement('<%= Model.Sites[s].Id %>', '<%= Model.Sites[s].Subsites[ss].Id %>', '<%= Model.Sites[s].Subsites[ss].Measurements[m].Id %>')">Edit</a>                            
                         </div>
-                        <div class="ui-helper-clearfix"></div>
+                        <div class='ui-helper-clearfix'></div>
                     </li>
                     <% } %>
                 </ul>

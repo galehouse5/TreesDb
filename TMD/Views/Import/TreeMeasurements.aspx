@@ -4,8 +4,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" rel="Stylesheet" href="/Styles/Import.css" />
+<script type="text/javascript" src="/Scripts/ThirdParty/jquery.inputHintOverlay.js"></script>
 <script type="text/javascript" src="/Scripts/Import/TreeMeasurementsEditor.js"></script>
 <script type="text/javascript" src="/Scripts/Import/TreeMeasurementEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/CoordinatePicker.js"></script>
+<script type="text/javascript" src="/Scripts/ValueObjectService.js"></script>
+<%= Html.LoadGoogleMapsApiV3() %>
+<script type="text/javascript" src="/Scripts/GeocoderService.js"></script>
+<script type="text/javascript" src="/Scripts/MapMarkerService.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="OverviewContent" runat="server">

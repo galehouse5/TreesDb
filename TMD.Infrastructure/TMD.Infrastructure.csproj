@@ -90,7 +90,6 @@
     <Compile Include="StaticUnitOfWorkContextProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NHibernateUnitOfWorkProvider.cs" />
-    <Compile Include="Repositories\SiteRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Mappings\Trees.hbm.xml">

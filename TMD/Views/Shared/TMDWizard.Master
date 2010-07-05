@@ -11,11 +11,11 @@
     </div>
     <div class='wizard-step ui-corner-all'>
         <asp:ContentPlaceHolder ID="StepContent" runat="server"></asp:ContentPlaceHolder>
-        <div class="ui-helper-clearfix"></div>
+        <div class='ui-helper-clearfix'></div>
     </div>
     <div class='wizard-nav'>
         <asp:ContentPlaceHolder ID="NavContent" runat="server"></asp:ContentPlaceHolder>
-        <div class="ui-helper-clearfix"></div>
+        <div class='ui-helper-clearfix'></div>
     </div>
 </div>
 </asp:Content>

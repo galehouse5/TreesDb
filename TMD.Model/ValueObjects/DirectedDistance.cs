@@ -131,9 +131,9 @@ namespace TMD.Model
 
         #endregion
 
-        private static Regex FeetDecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*'')|(\\s*ft)|(\\s*feet))\\s+(?<inches>[0-9]+(\\.[0-9]+)?)((\\s*')|(\\s*in)|(\\s*inches?))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalFeetFormat = new Regex("^\\s*(?<sign>[+-])?(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*'')|(\\s*ft)|(\\s*feet))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?(?<inches>[0-9]+(\\.[0-9]+)?)((\\s*')|(\\s*in)|(\\s*inches?))\\s*$", RegexOptions.Compiled);
+        private static Regex FeetDecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*')|(\\s*ft)|(\\s*feet))\\s+(?<inches>[0-9]+(\\.[0-9]+)?)((\\s*'')|(\\s*in)|(\\s*inches?))\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalFeetFormat = new Regex("^\\s*(?<sign>[+-])?(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*')|(\\s*ft)|(\\s*feet))?\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?(?<inches>[0-9]+(\\.[0-9]+)?)((\\s*'')|(\\s*in)|(\\s*inches?))\\s*$", RegexOptions.Compiled);
         private static Regex DecimalMetersFormat = new Regex("^\\s*(?<sign>[+-])?(?<meters>[0-9]+(\\.[0-9]+)?)((\\s*m)|(\\s*meters?))\\s*$", RegexOptions.Compiled);
         private static Regex DecimalYardsFormat = new Regex("^\\s*(?<sign>[+-])?(?<yards>[0-9]+(\\.[0-9]+)?)((\\s*yds?)|(\\s*yards?))\\s*$", RegexOptions.Compiled);
 
@@ -142,11 +142,17 @@ namespace TMD.Model
             Match match;
             float sign, feet;
             DirectedDistanceFormat inputFormat;
-            if ((match = FeetDecimalInchesFormat.Match(s)).Success)
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                sign = 1f;
+                feet = 0;
+                inputFormat = DirectedDistanceFormat.Unspecified;
+            }
+            else if ((match = FeetDecimalInchesFormat.Match(s)).Success)
             {
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
                 feet = float.Parse(match.Groups["feet"].Value);
-                feet += float.Parse(match.Groups["inches"].Value) * 12f;
+                feet += float.Parse(match.Groups["inches"].Value) / 12f;
                 inputFormat = DirectedDistanceFormat.FeetDecimalInches;
             }
             else if ((match = DecimalFeetFormat.Match(s)).Success)
@@ -158,7 +164,7 @@ namespace TMD.Model
             else if ((match = DecimalInchesFormat.Match(s)).Success)
             {
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
-                feet = float.Parse(match.Groups["inches"].Value) * 12f;
+                feet = float.Parse(match.Groups["inches"].Value) / 12f;
                 inputFormat = DirectedDistanceFormat.DecimalInches;
             }
             else if ((match = DecimalMetersFormat.Match(s)).Success)

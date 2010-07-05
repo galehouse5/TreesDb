@@ -17,3 +17,11 @@
 .treemeasurement-add { margin-top: 4px; background: url('/Styles/Images/tree16.png') no-repeat; height: 16px; padding-left: 16px; }
 
 span.field-validation-error { margin: 2px 0 0 2px; background: url('/Styles/Images/unchecked14.gif') no-repeat; height: 14px; color: #EA5200; padding-left: 16px; }
+
+label.inputHintOverlay { color: #808080; }
+
+.editor-big .form-row { text-align: left; padding: 0 0 14px 0; }
+.editor-big .form-row .label-col { float: left; width: 250px; }
+.editor-big .form-row .input-col { float: left; width: 550px; }
+.editor-big .form-row .input-col input[type=text] { float: left; width: 200px; }
+.editor-big .form-row .input-col input[type=checkbox], select, textarea { float: left; overflow-x: hidden; }

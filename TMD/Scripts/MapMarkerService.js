@@ -50,7 +50,7 @@
                     position: new google.maps.LatLng(options.Latitude, options.Longitude)
                 });
                 break;
-            case 'Site':
+            case 'Tree':
                 marker = new google.maps.Marker({
                     icon: treeMarkerImage,
                     shadow: treeMarkerShadowImage,

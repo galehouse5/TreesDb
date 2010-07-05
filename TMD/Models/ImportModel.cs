@@ -109,7 +109,7 @@ namespace TMD.Models
 
         public TreeMeasurement SelectedTreeMeasurement
         {
-            get { return SelectedTreeMeasurementIndex > -1 ? SelectedSubsiteVisit.TreeMeasurements[SelectedSubsiteVisitIndex] : null; }
+            get { return SelectedTreeMeasurementIndex > -1 ? SelectedSubsiteVisit.TreeMeasurements[SelectedTreeMeasurementIndex] : null; }
             set { SelectedTreeMeasurementIndex = value == null ? -1 : SelectedSubsiteVisit.TreeMeasurements.IndexOf(value); }
         }
 

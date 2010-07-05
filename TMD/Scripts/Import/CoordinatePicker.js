@@ -17,6 +17,7 @@
     var latitude = 36.94167;
     var longitude = -95.825;
     var zoom = 5;
+    var abortAddressLookup = false;
 
     this.Open = function (options, callback) {
         if (options.coordinatesSpecified) {
@@ -122,6 +123,7 @@
             mapMarker.setMap(map);
             bounds.extend(mapMarker.getPosition());
         }
+        abortAddressLookup = true;
         map.fitBounds(bounds);
     }
 
@@ -171,6 +173,10 @@
     };
 
     function handleAddressSearchResult(result) {
+        if (abortAddressLookup) {
+            abortAddressLookup = false;
+            return;
+        }
         if (result.found) {
             marker.setPosition(result.location);
             map.fitBounds(result.viewport);

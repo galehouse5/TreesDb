@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using TMD.Model.Validation;
+using Microsoft.Practices.EnterpriseLibrary.Validation;
 
 namespace TMD.Model.Trips
 {
@@ -33,6 +34,16 @@ namespace TMD.Model.Trips
         {
             get { return m_LastName; }
             set { m_LastName = (value ?? string.Empty).Trim().ToTitleCase(); }
+        }
+
+        public virtual ValidationResults ValidateRegardingPersistence()
+        {
+            return ModelValidator.Validate(this, "Persistence");
+        }
+
+        public virtual bool IsSpecified
+        {
+            get { return !string.IsNullOrWhiteSpace(FirstName) || !string.IsNullOrWhiteSpace(LastName); }
         }
 
         internal static TreeMeasurer Create(TreeMeasurement tm)

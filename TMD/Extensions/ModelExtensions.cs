@@ -14,14 +14,15 @@ namespace TMD.Extensions
         public static IEnumerable<SelectListItem> BuildSelectList<T>()
             where T : struct, IComparable, IFormattable, IConvertible
         {
-            Array values = Enum.GetValues(typeof(T));
-            for (int i = 0; i < values.Length; i++)
+            string[] names = Enum.GetNames(typeof(T));
+            for (int i = 0; i < names.Length; i++)
             {
-                Enum value = (Enum)Enum.ToObject(typeof(T), i);
+                string name = names[i];
+                Enum value = (Enum)Enum.Parse(typeof(T), name);
                 string text = value.GetEnumDescription();
                 yield return new SelectListItem() 
                 {
-                    Value = i.ToString(),
+                    Value = name,
                     Text = text
                 };
             }
@@ -46,6 +47,33 @@ namespace TMD.Extensions
         {
             string stateCode = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).AttemptedValue;
             return LocationService.FindStateByCountryCodeAndCode("US", stateCode);
+        }
+    }
+
+    public class ElevationModelBinder : IModelBinder
+    {
+        public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+        {
+            string value = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).AttemptedValue;
+            return Elevation.Create(value);
+        }
+    }
+
+    public class DistanceModelBinder : IModelBinder
+    {
+        public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+        {
+            string value = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).AttemptedValue;
+            return Distance.Create(value);
+        }
+    }
+
+    public class VolumeModelBinder : IModelBinder
+    {
+        public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+        {
+            string value = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).AttemptedValue;
+            return Volume.Create(value);
         }
     }
 }

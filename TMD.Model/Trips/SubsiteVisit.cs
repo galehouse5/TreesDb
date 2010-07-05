@@ -80,7 +80,7 @@ namespace TMD.Model.Trips
             List<Coordinates> coords = new List<Coordinates>();
             foreach (TreeMeasurement tm in TreeMeasurements)
             {
-                if (tm.Coordinates.IsSpecified)
+                if (!tm.CoordinatesCalculated && tm.Coordinates.IsSpecified)
                 {
                     coords.Add(tm.Coordinates);
                 }

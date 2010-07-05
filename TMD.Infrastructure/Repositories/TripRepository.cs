@@ -19,10 +19,9 @@ namespace TMD.Infrastructure.Repositories
                     sv.SetPrivatePropertyValue<Trip>("Trip", t);
                 }
             }
-            ValidationResults vr = t.ValidateRegardingPersistence();
-            if (!vr.IsValid)
+            if (!t.ValidateRegardingPersistence().IsValid)
             {
-                throw new ApplicationException("Unable to add trip due to validation failure.");
+                throw new ApplicationException("Unable to save trip due to validation failure.");
             }
             InfrastructureRegistry.UnitOfWorkSession.SaveOrUpdate(t);
         }

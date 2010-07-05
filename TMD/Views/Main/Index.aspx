@@ -37,7 +37,7 @@
             <div class="panel">
                 <img alt="white oak in fog" src="/Content/white oak in fog.jpg" width="400px" />
             </div>
-            <div class="ui-helper-clearfix"></div>
+            <div class='ui-helper-clearfix'></div>
         </div>
     </div>
 </div>
