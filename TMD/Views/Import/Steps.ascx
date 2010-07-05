@@ -31,9 +31,9 @@
     </li>
     <li>
     <% if (Model.CurrentStep == ImportStep.Measurements) { %>
-        <%= Html.ActionLink("Measurements", "Measurements", null, new { @class = "selected retreat" })%>
+        <%= Html.ActionLink("Measurements", "TreeMeasurements", null, new { @class = "selected retreat" })%>
     <% } else if (Model.CanAdvanceToStep(ImportStep.Measurements)) { %>
-        <%= Html.ActionLink("Measurements", "Measurements", null, new { @class = Model.IsStepAnAdvance(ImportStep.Measurements) ? "advance" : "retreat" })%>
+        <%= Html.ActionLink("Measurements", "TreeMeasurements", null, new { @class = Model.IsStepAnAdvance(ImportStep.Measurements) ? "advance" : "retreat" })%>
     <% } else { %>
         Measurements        
     <% } %>

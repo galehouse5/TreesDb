@@ -13,88 +13,68 @@
             <a class='save' style='position: absolute; right: 50px; bottom: 50px;'>Save</a>\
             <a class='cancel' style='position: absolute; right: 150px; bottom: 50px;'>Cancel</a>\
         </div>");
-    var coordinatePickedCallback;
+    var resultCallback;
     var latitude = 36.94167;
     var longitude = -95.825;
     var zoom = 5;
 
-    function CoordinatePickerResult(coordinatesPicked, latitude, longitude) {
-        this.CoordinatePicked = coordinatesPicked;
-        this.Latitude = latitude;
-        this.Longitude = longitude;
-    }
-
-    this.Open = function (callback, options) {
-        var performStateAndCountySearch = false;
-        if (options != null) {
-            if (!IsFloatParsable(options.latitude) || !IsFloatParsable(options.longitude)) {
-                if (!IsNullOrEmpty(options.state)) {
-                    performStateAndCountySearch = true;
-                }
-            } else {
-                latitude = parseFloat(options.latitude);
-                longitude = parseFloat(options.longitude);
-            }
+    this.Open = function (options, callback) {
+        if (options.coordinatesSpecified) {
+            latitude = options.latitude;
+            longitude = options.longitude;
+        } else if (options.addressSpecified) {
+            GeocoderService.Lookup({ state: options.state, county: options.county }, handleAddressSearchResult);
         }
-        initializeDom();
+        resultCallback = callback;
+        initialize();
         initializeMap();
         initializeAddressSearch();
-        coordinatePickedCallback = callback;
-        if (performStateAndCountySearch) {
-            handleStateAndCountySearchAction(options.state, options.county);
+        if (options.markerLoader != null) {
+            options.markerLoader(loadMarkers);
         }
     };
 
     // general dom
-    var initializeDom = function () {
+    function initialize() {
         $('body').append(dom);
+        $(window).bind('resize', windowResize);
+        $(window).bind('keyup', windowKeyPress);
         dom.find('a').button();
-
-        $(window).bind('resize', handleWindowResizeAction);
-        $(window).bind('keyup', handleWindowKeyPressActionAction);
-        dom.find('a.save').bind('click', handleSaveAction);
-        dom.find('a.cancel').bind('click', handleCloseAction);
-
-        handleWindowResizeAction();
+        dom.find('a.save').bind('click', save);
+        dom.find('a.cancel').bind('click', close);
+        windowResize();
     };
 
-    var disposeDom = function () {
+    function dispose() {
         $(window).unbind('resize');
         $(window).unbind('keyup');
         dom.find('a.save').unbind('click');
         dom.find('a.cancel').unbind('click');
-
         dom.remove();
     };
 
-    var handleWindowResizeAction = function () {
+    function windowResize() {
         dom.find('.map')
             .css('height', document.documentElement.clientHeight)
             .css('width', document.documentElement.clientWidth);
     };
 
-    var handleWindowKeyPressActionAction = function (event) {
-        if (event.keyCode == 27) {
-            handleCloseAction();
-        }
+    function windowKeyPress(event) {
+        if (event.keyCode == 27) { close(); }
     };
 
-    var handleCloseAction = function () {
+    function close() {
         disposeAddressSearch();
         disposeMap();
-        disposeDom();
-        if (coordinatePickedCallback != null) {
-            coordinatePickedCallback(new CoordinatePickerResult(false));
-        }
+        dispose();
+        resultCallback({ coordinatesPicked: false });
     };
 
-    var handleSaveAction = function () {
+    function save() {
         disposeAddressSearch();
         disposeMap();
-        disposeDom();
-        if (coordinatePickedCallback != null) {
-            coordinatePickedCallback(new CoordinatePickerResult(true, latitude, longitude));
-        }
+        dispose();
+        resultCallback({ coordinatesPicked: true, latitude: latitude, longitude: longitude });
     };
 
     // map
@@ -102,7 +82,7 @@
     var marker;
     var infoWindow;
     var eventListeners = new Array();
-    var initializeMap = function () {
+    function initializeMap() {
         var center = new google.maps.LatLng(latitude, longitude);
         var options = {
             center: center,
@@ -117,33 +97,45 @@
         marker = new google.maps.Marker({
             position: center,
             map: map,
-            draggable: true
+            draggable: true,
+            zIndex: 1000
         });
         infowindow = new google.maps.InfoWindow({
             content: "Drag me into position and click 'Save' to pick my coordinates..."
         });
 
-        eventListeners.push(google.maps.event.addListener(map, 'zoom_changed', handleMapZoomChangedAction));
-        eventListeners.push(google.maps.event.addListener(marker, 'position_changed', handleMarkerPositionChangedAction));
-        eventListeners.push(google.maps.event.addListener(map, 'click', handleMarkerClickAction));
-        eventListeners.push(google.maps.event.addListener(marker, 'dragend', handleMapDragEndedAction));
-        eventListeners.push(google.maps.event.addListener(marker, 'dblclick', handleSaveAction));
+        eventListeners.push(google.maps.event.addListener(map, 'zoom_changed', mapZoomChanged));
+        eventListeners.push(google.maps.event.addListener(marker, 'position_changed', markerPositionChanged));
+        eventListeners.push(google.maps.event.addListener(map, 'click', markerClick));
+        eventListeners.push(google.maps.event.addListener(marker, 'dragend', markerClick));
+        eventListeners.push(google.maps.event.addListener(marker, 'dblclick', save));
 
-        handleMarkerPositionChangedAction();
+        markerPositionChanged();
         infowindow.open(map, marker);
     };
 
-    var disposeMap = function () {
+    function loadMarkers(markers) {
+        var bounds = new google.maps.LatLngBounds();
+        bounds.extend(marker.getPosition());
+        for (var i in markers) {
+            var mapMarker = MapMarkerService.CreateMapMarker(markers[i]);
+            mapMarker.setMap(map);
+            bounds.extend(mapMarker.getPosition());
+        }
+        map.fitBounds(bounds);
+    }
+
+    function disposeMap() {
         while (eventListeners.length > 0) {
             google.maps.event.removeListener(eventListeners.pop());
         }
     };
 
-    var handleMapZoomChangedAction = function () {
+    function mapZoomChanged() {
         zoom = map.getZoom()
     };
 
-    var handleMarkerPositionChangedAction = function () {
+    function markerPositionChanged() {
         latitude = marker.getPosition().lat().toFixed(5);
         longitude = marker.getPosition().lng().toFixed(5);
         infowindow.close();
@@ -155,56 +147,36 @@
             + ' )');
     };
 
-    var handleMarkerClickAction = function (event) {
+    function markerClick(event) {
         var newCenter = event.latLng;
         marker.setPosition(newCenter);
         map.panTo(newCenter);
     };
 
-    var handleMapDragEndedAction = function (event) {
-        var newCenter = event.latLng;
-        map.panTo(newCenter);
-    };
-
     // address search
-    var geocoder;
-    var initializeAddressSearch = function () {
-        if (geocoder == null) {
-            geocoder = new google.maps.Geocoder();
-        }
-        dom.find('.address-search form').bind('submit', handleAddressSearchAction);
-        dom.find('.address-search').effect('slide', null, 1500);
+    function initializeAddressSearch() {
+        dom.find('.address-search form').bind('submit', performAddressSearch);
+        dom.find('.address-search').show('slide', {}, 1500, function () {
+            dom.find('.address-search form input').focus();
+        });
     };
 
-    var disposeAddressSearch = function () {
+    function disposeAddressSearch() {
         dom.find('.address-search form').unbind('submit');
     };
 
-    var handleAddressSearchAction = function () {
-        var searchTerms = $('.address-search input').val();
-        var geocoderRequest = {
-            address: searchTerms,
-            location: marker.getPosition()
-        };
-        geocoder.geocode(geocoderRequest, handleGeocoderResultsReceivedAction);
+    function performAddressSearch() {
+        var address = $('.address-search input').val();
+        GeocoderService.Lookup({ address: address, location: marker.getPosition() }, handleAddressSearchResult);
     };
 
-    var handleGeocoderResultsReceivedAction = function (geocoderResults, geocoderStatus) {
-        if (geocoderStatus == google.maps.GeocoderStatus.OK) {
-            var bestGeocoderResult = geocoderResults[0];
-            marker.setPosition(bestGeocoderResult.geometry.location);
-            map.fitBounds(bestGeocoderResult.geometry.viewport);
-            dom.find('.address-search input').val(bestGeocoderResult.formatted_address);
+    function handleAddressSearchResult(result) {
+        if (result.found) {
+            marker.setPosition(result.location);
+            map.fitBounds(result.viewport);
+            dom.find('.address-search input').val(result.address);
         } else {
             dom.find('.address-search input').val('...Sorry, I can\'t find the address you entered.');
         }
-    }
-
-    var handleStateAndCountySearchAction = function (state, county) {
-        var geocoderRequest = {
-            address: IsNullOrEmpty(county) ? state : county + ' County, ' + state,
-            location: new google.maps.LatLng(latitude, longitude)
-        };
-        geocoder.geocode(geocoderRequest, handleGeocoderResultsReceivedAction);
     };
 };

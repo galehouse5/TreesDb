@@ -1,14 +1,14 @@
 ﻿var TripEditor = new function () {
     this.SaveAndChangeLocation = function (href) {
         $.put('Trip', $('.trip-placeholder').find('form').serialize(), function (data) {
-            renderPlaceholder(data);
+            renderContent(data);
             if ($('.trip-placeholder').find('.field-validation-error').length == 0) {
                 window.location.href = href;
             }
         });
     };
 
-    var renderPlaceholder = function (data) {
+    var renderContent = function (data) {
         var newDom = $(data);
         $('.trip-placeholder').replaceWith(newDom.find('.trip-placeholder'));
         $('#Trip_Date').datepicker({

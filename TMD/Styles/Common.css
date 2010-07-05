@@ -21,7 +21,7 @@ a.selected { color: Black; font-weight: bold; text-decoration: none; }
 
 .form-row { text-align: left; padding: 0 0 15px 0; }
 .form-col-brief { float: left; width: 150px; }
-.form-col-normal { float: left; width: 450px; }
+.form-col-normal { float: left; width: 400px; }
 .form-col-normal input[type=text], .form-col-normal input[type=password] { float: left; width: 220px; }
 .form-col-normal select, .form-col-normal textarea, .form-col-normal input[type=checkbox] { float: left; }
 

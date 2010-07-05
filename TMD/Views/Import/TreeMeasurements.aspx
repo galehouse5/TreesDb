@@ -1,16 +1,11 @@
 ﻿<%@ Page Title="Tree Measurement Database - Import Site Info" Language="C#" MasterPageFile="~/Views/Shared/TMDWizard.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
+<%@ Import Namespace="TMD.Application" %>
 <%@ Import Namespace="TMD.Model.Trips" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" rel="Stylesheet" href="/Styles/Import.css" />
-<script type="text/javascript" src="/Scripts/Import/CoordinatePicker.js"></script>
-<script type="text/javascript" src="/Scripts/Import/SiteVisitsEditor.js"></script>
-<script type="text/javascript" src="/Scripts/Import/SiteVisitEditor.js"></script>
-<script type="text/javascript" src="/Scripts/Import/SubsiteVisitEditor.js"></script>
-<script type="text/javascript" src="/Scripts/ValueObjectService.js"></script>
-<%= Html.LoadGoogleMapsApiV3() %>
-<script type="text/javascript" src="/Scripts/GeocoderService.js"></script>
-<script type="text/javascript" src="/Scripts/MapMarkerService.js"></script>
+<script type="text/javascript" src="/Scripts/Import/TreeMeasurementsEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/TreeMeasurementEditor.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="OverviewContent" runat="server">
@@ -18,10 +13,9 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="StepContent" runat="server">
-<div class='sitevisits-placeholder'>
-    <h3>Add the sites you visited on your trip.</h3>
+<div class='treemeasurements-placeholder'>
+    <h3>Add the measurements you recorded at the subsites you visited.</h3>
     <div class='sectionspacer'></div>
-    <a class='sitevisit-add' href='javascript:SiteVisitEditor.Add(SiteVisitsEditor.Refresh)'>Add site visit</a><%= Html.ValidationMessage("Trip.SiteVisits")%>
     <ul class='sitevisit-list'>
     <% for (int sv = 0; sv < Model.Trip.SiteVisits.Count; sv++) { %>
         <li class='sitevisit'>
@@ -30,8 +24,6 @@
                 <span><%= Model.Trip.SiteVisits[sv].Name%></span>
                 <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}]", sv))%>
                 <br />
-                <a href='javascript:SiteVisitEditor.Edit(<%= sv %>, SiteVisitsEditor.Refresh)'>Edit</a>
-                <a href='javascript:SiteVisitRemover.Open(<%= sv %>, SiteVisitsEditor.Refresh)'>Remove</a>
             </div>
             <div class='ui-helper-clearfix'></div>
             <ul class='subsitevisit-list'>
@@ -42,10 +34,24 @@
                         <span><%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Name%></span>
                         <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}]", sv, ssv))%>
                         <br />
-                        <a href='javascript:SubsiteVisitEditor.EditForSiteVisit(<%= sv %>, <%= ssv %>, {onClose: SiteVisitsEditor.Refresh})'>Edit</a>
-                        <a href='javascript:SubsiteVisitRemover.OpenForSiteVisit(<%= sv %>, <%= ssv %>, {onClose: SiteVisitsEditor.Refresh})'>Remove</a>
+                        <a href='javascript:TreeMeasurementEditor.Add(<%= sv %>, <%= ssv %>)'>Add measurement</a>
+                        <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements", sv, ssv))%>
                     </div>
                     <div class='ui-helper-clearfix'></div>
+                    <ul class='treemeasurement-list'>
+                    <% for (int tm = 0; tm < Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements.Count; tm++) { %>
+                        <li class='treemeasurement'>
+                            <span class='icon'></span>
+                            <div class='column'>
+                                <span><%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].ScientificName %> <%= string.Format("({0})", Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName)%></span>
+                                <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements[{2}]", sv, ssv, tm))%>
+                                <br />
+                                <a href='javascript:TreeMeasurementEditor.Edit(<%= sv %>, <%= ssv %>, <%= tm %>)'>Edit</a>
+                                <a href='javascript:TreeMeasurementRemover.Open(<%= sv %>, <%= ssv %>, <%= tm %>)'>Remove</a>
+                            </div>
+                        </li>
+                    <% } %>
+                    </ul>
                 </li>
             <% } %>
             </ul>
@@ -57,6 +63,6 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="NavContent" runat="server">
-<%= Html.ActionLink("Next >", "TreeMeasurements", null, new { @class = "advance" })%>
-<%= Html.ActionLink("< Back", "Trip", null, new { @class = "retreat" })%>
+<%= Html.ActionLink("Next >", "Review", null, new { @class = "advance" })%>
+<%= Html.ActionLink("< Back", "SiteVisits", null, new { @class = "retreat" })%>
 </asp:Content>

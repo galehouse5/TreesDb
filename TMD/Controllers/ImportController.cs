@@ -7,6 +7,8 @@ using TMD.Application;
 using TMD.Model.Trips;
 using TMD.Models;
 using TMD.Extensions;
+using TMD.Model;
+using Microsoft.Practices.EnterpriseLibrary.Validation;
 
 namespace TMD.Controllers
 {
@@ -23,6 +25,8 @@ namespace TMD.Controllers
             model.CurrentStep = ImportStep.Start;
             return View(model);
         }
+
+        #region Trip actions
 
         [HttpGet]
         [ActionName("Trip")]
@@ -55,6 +59,10 @@ namespace TMD.Controllers
             return View("Trip", model);
         }
 
+        #endregion
+
+        #region SiteVisits actions
+
         [HttpGet]
         [ActionName("SiteVisits")]
         public ActionResult EditSiteVisits()
@@ -68,35 +76,86 @@ namespace TMD.Controllers
             return View("SiteVisits", model);
         }
 
+        [HttpGet]
+        public ActionResult ValidateSiteVisits()
+        {
+            ImportModel model = new ImportModel();
+            for (int sv = 0; sv < model.Trip.SiteVisits.Count; sv++)
+            {
+                if (!model.Trip.SiteVisits[sv]
+                    .ValidateIgnoringCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
+                {
+                    ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}]", sv),
+                        "You must edit or remove this site visit to fix invalid data.");
+                }
+                for (int ssv = 0; ssv < model.Trip.SiteVisits[sv].SubsiteVisits.Count; ssv++)
+                {
+                    if (!model.Trip.SiteVisits[sv].SubsiteVisits[ssv]
+                        .ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
+                    {
+                        ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}]", sv, ssv),
+                            "You must edit or remove this subsite visit to fix invalid data.");
+                    }
+                }
+            }
+            model.Trip.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
+                .CopyToModelState(ModelState, "Trip");
+            return View("SiteVisits", model);
+        }
+
+        #endregion
+
+        #region SiteVisit actions
+
         [HttpPost]
         public ActionResult CreateSiteVisit()
         {
             ImportModel model = new ImportModel();
             model.SelectedSiteVisit = model.Trip.AddSiteVisit();
             model.SaveTrip();
-            return View("SiteVisitStep1", model);
+            return View("SiteVisit", model);
         }
 
         [HttpGet]
         [ActionName("SiteVisit")]
-        public ActionResult EditSiteVisitStep1(int siteVisitIndex)
+        public ActionResult EditSiteVisit(int siteVisitIndex)
         {
             ImportModel model = new ImportModel();
             model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
-            return View("SiteVisitStep1", model);
+            return View("SiteVisit", model);
         }
 
         [HttpPut]
         [ActionName("SiteVisit")]
-        public ActionResult SaveSiteVisitStep1(ImportModel model)
+        public ActionResult SaveSiteVisit(ImportModel model)
         {
-            model.SelectedSiteVisit.ValidateIgnoringCoordinatesSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
-                .CopyToModelState(ModelState, "SelectedSiteVisit");
-            if (ModelState.IsValid)
+            ValidationResults siteVisitValidationResults = model.SelectedSiteVisit.ValidateIgnoringCoordinatesSubsiteVisitsTreeMeasurementsAndTreeMeasurers();
+            if (!siteVisitValidationResults.IsValid)
+            {
+                ModelState.AddModelError("SelectedSiteVisit.HasErrors", "");
+                siteVisitValidationResults.CopyToModelState(ModelState, "SelectedSiteVisit");
+            }
+            ValidationResults subsiteVisitsValidationResults = model.SelectedSiteVisit.ValidateIgnoringCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
+                .FindAllContainingTag(TagFilter.Ignore, "SiteVisit");
+            if (!subsiteVisitsValidationResults.IsValid)
+            {
+                ModelState.AddModelError("SelectedSiteVisit.SubsiteVisits.HasErrors", "");
+                subsiteVisitsValidationResults.CopyToModelState(ModelState, "SelectedSiteVisit");
+            }
+            for (int ssv = 0; ssv < model.SelectedSiteVisit.SubsiteVisits.Count; ssv++)
+            {
+                if (!model.SelectedSiteVisit.SubsiteVisits[ssv]
+                    .ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
+                {
+                    ModelState.AddModelError(string.Format("SelectedSiteVisit.SubsiteVisits[{0}]", ssv),
+                        "You must edit or remove this subsite visit to correct invalid data.");
+                }
+            }
+            if (model.Trip.ValidateRegardingPersistence().IsValid)
             {
                 model.SaveTrip();
             }
-            return View("SiteVisitStep1", model);
+            return View("SiteVisit", model);
         }
 
         [HttpGet]
@@ -122,20 +181,38 @@ namespace TMD.Controllers
         }
 
         [HttpGet]
-        [ActionName("SiteVisitStep2")]
-        public ActionResult EditSiteVisitStep2()
+        [ActionName("MapMarkersIgnoringSelectedSiteVisit")]
+        public ActionResult GetMapMarkersIgnoringSelectedSiteVisit()
         {
             ImportModel model = new ImportModel();
-            return View("SiteVisitStep2", model);
+            List<MapMarker> markers = new List<MapMarker>();
+            foreach (SiteVisit sv in model.Trip.SiteVisits)
+            {
+                if (sv.Coordinates.IsSpecified && sv != model.SelectedSiteVisit)
+                {
+                    markers.Add(sv.ToMapMarker());
+                }
+                foreach (SubsiteVisit ssv in sv.SubsiteVisits)
+                {
+                    if (ssv.Coordinates.IsSpecified)
+                    {
+                        markers.Add(ssv.ToMapMarker());
+                    }
+                    foreach (TreeMeasurement tm in ssv.TreeMeasurements)
+                    {
+                        if (tm.Coordinates.IsSpecified)
+                        {
+                            markers.Add(tm.ToMapMarker());
+                        }
+                    }
+                }
+            }
+            return Json(markers, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpGet]
-        [ActionName("SiteVisitStep1")]
-        public ActionResult EditSiteVisitStep1()
-        {
-            ImportModel model = new ImportModel();
-            return View("SiteVisitStep1", model);
-        }
+        #endregion
+
+        #region SubsiteVisit actions
 
         [HttpPost]
         public ActionResult CreateSubsiteVisit()
@@ -183,7 +260,7 @@ namespace TMD.Controllers
         }
 
         [HttpGet]
-        [ActionName("SubsiteVisitIndependent")]
+        [ActionName("SubsiteVisitForSiteVisit")]
         public ActionResult EditSubsiteVisit(int siteVisitIndex, int subsiteVisitIndex)
         {
             ImportModel model = new ImportModel();
@@ -201,7 +278,7 @@ namespace TMD.Controllers
         }
 
         [HttpGet]
-        [ActionName("RemoveSubsiteVisitIndependent")]
+        [ActionName("RemoveSubsiteVisitForSiteVisit")]
         public ActionResult RemoveSubsiteVisit(int siteVisitIndex, int subsiteVisitIndex)
         {
             ImportModel model = new ImportModel();
@@ -211,48 +288,175 @@ namespace TMD.Controllers
         }
 
         [HttpGet]
-        public ActionResult ValidateSiteVisit()
+        [ActionName("MapMarkersIgnoringSelectedSubsiteVisit")]
+        public ActionResult GetMapMarkersIgnoringSelectedSubsiteVisit()
         {
             ImportModel model = new ImportModel();
-            for (int ssv = 0; ssv < model.SelectedSiteVisit.SubsiteVisits.Count; ssv++)
+            List<MapMarker> markers = new List<MapMarker>();
+            foreach (SiteVisit sv in model.Trip.SiteVisits)
             {
-                if (!model.SelectedSiteVisit.SubsiteVisits[ssv]
-                    .ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
+                if (sv.Coordinates.IsSpecified)
                 {
-                    ModelState.AddModelError(string.Format("SelectedSiteVisit.SubsiteVisits[{0}]", ssv),
-                        "You must edit or remove this subsite visit to fix invalid data.");
+                    markers.Add(sv.ToMapMarker());
                 }
-            }
-            model.SelectedSiteVisit.ValidateIgnoringCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
-                .CopyToModelState(ModelState, "SelectedSiteVisit");
-            return View("SiteVisitStep2", model);
-        }
-
-        [HttpGet]
-        public ActionResult ValidateSiteVisits()
-        {
-            ImportModel model = new ImportModel();
-            for (int sv = 0; sv < model.Trip.SiteVisits.Count; sv++)
-            {
-                if (!model.Trip.SiteVisits[sv]
-                    .ValidateIgnoringCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
+                foreach (SubsiteVisit ssv in sv.SubsiteVisits)
                 {
-                    ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}]", sv), 
-                        "You must edit or remove this site visit to fix invalid data.");
-                }
-                for (int ssv = 0; ssv < model.Trip.SiteVisits[sv].SubsiteVisits.Count; ssv++)
-                {
-                    if (!model.Trip.SiteVisits[sv].SubsiteVisits[ssv]
-                        .ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
+                    if (ssv.Coordinates.IsSpecified && ssv != model.SelectedSubsiteVisit)
                     {
-                        ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}]", sv, ssv),
-                            "You must edit or remove this subsite visit to fix invalid data.");
+                        markers.Add(ssv.ToMapMarker());
+                    }
+                    foreach (TreeMeasurement tm in ssv.TreeMeasurements)
+                    {
+                        if (tm.Coordinates.IsSpecified)
+                        {
+                            markers.Add(tm.ToMapMarker());
+                        }
                     }
                 }
             }
-            model.Trip.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
-                .CopyToModelState(ModelState, "Trip");
-            return View("SiteVisits", model);
+            return Json(markers, JsonRequestBehavior.AllowGet);
         }
+
+        #endregion
+
+        #region TreeMeasurements actions
+
+        [HttpGet]
+        [ActionName("TreeMeasurements")]
+        public ActionResult EditTreeMeasurements()
+        {
+            ImportModel model = new ImportModel();
+            model.CurrentStep = ImportStep.Measurements;
+            if (model.IsCurrentStepPremature)
+            {
+                return RedirectToAction("SiteVisits");
+            }
+            return View("TreeMeasurements", model);
+        }
+
+        [HttpGet]
+        public ActionResult ValidateTreeMeasurements()
+        {
+            ImportModel model = new ImportModel();
+            model.Trip.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().CopyToModelState(ModelState, "Trip");
+            return View("TreeMeasurements", model);
+        }
+
+        #endregion
+
+        #region TreeMeasurement actions
+
+        [HttpPost]
+        public ActionResult CreateTreeMeasurement(int siteVisitIndex, int subsiteVisitIndex)
+        {
+            ImportModel model = new ImportModel();
+            model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
+            model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
+            model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.AddTreeMeasurement();
+            model.SaveTrip();
+            return View("TreeMeasurement", model);
+        }
+
+        [HttpGet]
+        [ActionName("TreeMeasurement")]
+        public ActionResult EditTreeMeasurement(int siteVisitIndex, int subsiteVisitIndex, int treeMeasurementIndex)
+        {
+            ImportModel model = new ImportModel();
+            model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
+            model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
+            model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.TreeMeasurements[treeMeasurementIndex];
+            return View("TreeMeasurement", model);
+        }
+
+        [HttpPut]
+        [ActionName("TreeMeasurement")]
+        public ActionResult SaveTreeMeasurement(ImportModel model)
+        {
+            ValidationResults generalValidationResults = model.SelectedTreeMeasurement.ValidateRegardingGeneralInformation();
+            if (!generalValidationResults.IsValid)
+            {
+                ModelState.AddModelError("SelectedTreeMeasurement.General.HasErrors", "");
+                generalValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
+            }
+            ValidationResults heightAndGirthValidationResults = model.SelectedTreeMeasurement.ValidateRegardingHeightAndGirthInformation();
+            if (!heightAndGirthValidationResults.IsValid)
+            {
+                ModelState.AddModelError("SelectedTreeMeasurement.HeightAndGirth.HasErrors", "");
+                heightAndGirthValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
+            }
+            ValidationResults trunkAndCrownValidationResults = model.SelectedTreeMeasurement.ValidateRegardingTrunkAndCrownInformation();
+            if (!trunkAndCrownValidationResults.IsValid)
+            {
+                ModelState.AddModelError("SelectedTreeMeasurement.TrunkAndCrown.HasErrors", "");
+                trunkAndCrownValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
+            }
+            ValidationResults miscValidationResults = model.SelectedTreeMeasurement.ValidateRegardingMiscInformation();
+            if (!miscValidationResults.IsValid)
+            {
+                ModelState.AddModelError("SelectedTreeMeasurement.Misc.HasErrors", "");
+                miscValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
+            }
+            if (ModelState.IsValid)
+            {
+                model.SaveTrip();
+            }
+            return View("SiteVisit", model);
+        }
+
+        [HttpGet]
+        public ActionResult RemoveTreeMeasurement(int siteVisitIndex, int subsiteVisitIndex, int treeMeasurementIndex)
+        {
+            ImportModel model = new ImportModel();
+            model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
+            model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
+            model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.TreeMeasurements[treeMeasurementIndex];
+            return View(model);
+        }
+
+        [HttpDelete]
+        [ActionName("TreeMeasurement")]
+        public ActionResult ConfirmRemoveTreeMeasurement()
+        {
+            ImportModel model = new ImportModel();
+            if (model.SelectedTreeMeasurement != null)
+            {
+                model.SelectedSubsiteVisit.RemoveTreeMeasurement(model.SelectedTreeMeasurement);
+                model.SelectedTreeMeasurement = null;
+                model.SaveTrip();
+            }
+            return new EmptyResult();
+        }
+
+        [HttpGet]
+        [ActionName("MapMarkersIgnoringSelectedTreeMeasurement")]
+        public ActionResult GetMapMarkersIgnoringSelectedTreeMeasurement()
+        {
+            ImportModel model = new ImportModel();
+            List<MapMarker> markers = new List<MapMarker>();
+            foreach (SiteVisit sv in model.Trip.SiteVisits)
+            {
+                if (sv.Coordinates.IsSpecified)
+                {
+                    markers.Add(sv.ToMapMarker());
+                }
+                foreach (SubsiteVisit ssv in sv.SubsiteVisits)
+                {
+                    if (ssv.Coordinates.IsSpecified)
+                    {
+                        markers.Add(ssv.ToMapMarker());
+                    }
+                    foreach (TreeMeasurement tm in ssv.TreeMeasurements)
+                    {
+                        if (tm.Coordinates.IsSpecified && tm != model.SelectedTreeMeasurement)
+                        {
+                            markers.Add(tm.ToMapMarker());
+                        }
+                    }
+                }
+            }
+            return Json(markers, JsonRequestBehavior.AllowGet);
+        }
+
+        #endregion
     }
 }

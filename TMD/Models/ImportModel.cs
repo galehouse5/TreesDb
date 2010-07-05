@@ -101,10 +101,16 @@ namespace TMD.Models
             ApplicationSession.ImportTripId = Trip.Id;
         }
 
-        public int SelectedMeasurementIndex
+        public int SelectedTreeMeasurementIndex
         {
             get { return ApplicationSession.ImportSelectedMeasurementIndex; }
             set { ApplicationSession.ImportSelectedMeasurementIndex = value; }
+        }
+
+        public TreeMeasurement SelectedTreeMeasurement
+        {
+            get { return SelectedTreeMeasurementIndex > -1 ? SelectedSubsiteVisit.TreeMeasurements[SelectedSubsiteVisitIndex] : null; }
+            set { SelectedTreeMeasurementIndex = value == null ? -1 : SelectedSubsiteVisit.TreeMeasurements.IndexOf(value); }
         }
 
         public int SelectedSubsiteVisitIndex
@@ -116,17 +122,7 @@ namespace TMD.Models
         public SubsiteVisit SelectedSubsiteVisit
         {
             get { return SelectedSubsiteVisitIndex > -1 ? SelectedSiteVisit.SubsiteVisits[SelectedSubsiteVisitIndex] : null; }
-            set
-            {
-                if (value == null)
-                {
-                    SelectedSubsiteVisitIndex = -1;
-                }
-                else
-                {
-                    SelectedSubsiteVisitIndex = SelectedSiteVisit.SubsiteVisits.IndexOf(value);
-                }
-            }
+            set { SelectedSubsiteVisitIndex = value == null ? -1 : SelectedSiteVisit.SubsiteVisits.IndexOf(value); }
         }
 
         public int SelectedSiteVisitIndex
@@ -138,17 +134,7 @@ namespace TMD.Models
         public SiteVisit SelectedSiteVisit
         {
             get { return SelectedSiteVisitIndex > -1 ? Trip.SiteVisits[SelectedSiteVisitIndex] : null; }
-            set 
-            {
-                if (value == null)
-                {
-                    SelectedSiteVisitIndex = -1;
-                }
-                else
-                {
-                    SelectedSiteVisitIndex = Trip.SiteVisits.IndexOf(value); 
-                }
-            }
+            set { SelectedSiteVisitIndex = value == null ? -1 : Trip.SiteVisits.IndexOf(value); }
         }
 
         public IEnumerable<SelectListItem> BuildStateSelectList()

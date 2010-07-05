@@ -3,7 +3,6 @@
 
 <asp:Content ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" rel="Stylesheet" href="/Styles/Import.css" />
-<script type="text/javascript" src="/Scripts/Import/Common.js"></script>
 <script type="text/javascript" src="/Scripts/Import/TripEditor.js"></script>
 </asp:Content>
 
@@ -13,7 +12,7 @@
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
 <div class="trip-placeholder">
-    <h3>Enter general information about your trip</h3>
+    <h3>Enter general information about your trip.</h3>
     <div class="sectionspacer"></div>
     <form method="post" action="">
         <div class="form-row">
