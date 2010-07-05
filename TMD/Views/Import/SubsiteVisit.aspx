@@ -23,7 +23,7 @@
         </div>
         <div class="form-row coordinates-entered-selector">
             Enter coordinates for this subsite to simplify remaining steps? <%= Html.CheckBoxFor(m => m.SelectedSiteVisit.CoordinatesEntered)%>
-            <span class="coordinates-entered-visible"><a href="javascript:SiteVisitEditor.OpenCoordinatePicker()">Use coordinate picker</a></span>
+            <span class="coordinates-entered-visible"><a href="javascript:SubsiteVisitEditor.OpenCoordinatePicker()">Use coordinate picker</a></span>
             <div class='ui-helper-clearfix'></div>
         </div>
         <div class="form-row coordinates-entered-visible">
@@ -34,11 +34,6 @@
         <div class="form-row coordinates-entered-visible">
             <div class="form-col-brief"><%= Html.LabelFor(m => m.SelectedSubsiteVisit.Coordinates.Longitude)%></div>
             <div class="form-col-normal"><%= Html.TextBoxFor(m => m.SelectedSubsiteVisit.Coordinates.Longitude, new { @class = "subsitevisit-longitude" })%><%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.Coordinates.Longitude)%></div>
-            <div class='ui-helper-clearfix'></div>
-        </div>
-        <div class="form-row coordinates-entered-visible">
-            <div class="form-col-brief">&nbsp;</div>
-            <div class="form-col-brief"><a href="javascript:SubsiteVisitEditor.OpenCoordinatePicker()">Use coordinate picker</a></div>
             <div class='ui-helper-clearfix'></div>
         </div>
         <div class="form-row">
