@@ -10,4 +10,10 @@
 .subsitevisit-list li { margin: 16px 0; }
 .subsitevisit-add { margin-top: 4px; background: url('/Styles/Images/subsite16.png') no-repeat; height: 16px; padding-left: 16px; }
 
+.treemeasurement .icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/tree32.png"); }
+.treemeasurement .column { float: left; margin-right: 10px; width: auto; }
+.treemeasurement-list { margin: 0; padding-left: 36px; list-style-type: none; line-height: 18px; }
+.treemeasurement-list li { margin: 16px 0; }
+.treemeasurement-add { margin-top: 4px; background: url('/Styles/Images/tree16.png') no-repeat; height: 16px; padding-left: 16px; }
+
 span.field-validation-error { margin: 2px 0 0 2px; background: url('/Styles/Images/unchecked14.gif') no-repeat; height: 14px; color: #EA5200; padding-left: 16px; }

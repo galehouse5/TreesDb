@@ -33,13 +33,13 @@ namespace TMD.Model.Trips
         }
 
         private Coordinates m_Coordinates;
-        [ValueObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "SubsiteVisit")]
+        [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "SubsiteVisit")]
         [SpecifiedValidator(MessageTemplate = "Subsite coordinates must be specified.", Ruleset = "Import", Tag = "SubsiteVisit")]
         public virtual Coordinates Coordinates
         {
             get
             {
-                if (CoordinatesCalculated && Measurements.Count > 0)
+                if (CoordinatesCalculated && TreeMeasurements.Count > 0)
                 {
                     m_Coordinates = calculateAverageCoordinates();
                 }
@@ -78,7 +78,7 @@ namespace TMD.Model.Trips
         private Coordinates calculateAverageCoordinates()
         {
             List<Coordinates> coords = new List<Coordinates>();
-            foreach (TreeMeasurement tm in Measurements)
+            foreach (TreeMeasurement tm in TreeMeasurements)
             {
                 if (tm.Coordinates.IsSpecified)
                 {
@@ -135,34 +135,39 @@ namespace TMD.Model.Trips
             set { m_Comments = (value ?? string.Empty).Trim(); }
         }
 
-        [ObjectCollectionValidator(TargetRuleset = "Persistence", Ruleset = "Persistence")]
-        [ObjectCollectionValidator(TargetRuleset = "Import", Ruleset = "Import")]
-        [ObjectCollectionValidator(TargetRuleset = "Screening", Ruleset = "Screening")]
-        [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "Subsite must have measurements.", Ruleset = "Screening", Tag = "TreeMeasurements")]
-        [CollectionCountWhenNotNullValidator(0, 10000, MessageTemplate = "Subsites Measurement cannot be attributed to more than three measurers.", Ruleset = "Screening", Tag = "TreeMeasurements")]
-        public virtual IList<TreeMeasurement> Measurements { get; private set; }
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Import", Ruleset = "Import")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening")]
+        [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "You must add tree measurements to this subsite.", Ruleset = "Screening", Tag = "TreeMeasurements")]
+        [CollectionCountWhenNotNullValidator(0, 10000, MessageTemplate = "This subsite contains too many tree measurements.", Ruleset = "Screening", Tag = "TreeMeasurements")]
+        public virtual IList<TreeMeasurement> TreeMeasurements { get; private set; }
 
-        public virtual TreeMeasurement AddMeasurement()
+        public virtual TreeMeasurement AddTreeMeasurement()
         {
             TreeMeasurement tm = TreeMeasurement.Create(this);
-            Measurements.Add(tm);
+            TreeMeasurements.Add(tm);
             return tm;
         }
 
-        public virtual bool RemoveMeasurement(TreeMeasurement tm)
+        public virtual bool RemoveTreeMeasurement(TreeMeasurement tm)
         {
-            return Measurements.Remove(tm);
+            return TreeMeasurements.Remove(tm);
         }
 
         public virtual bool HasTreeMeasurements
         {
-            get { return Measurements.Count > 0; }
+            get { return TreeMeasurements.Count > 0; }
         }
 
         public virtual ValidationResults ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAll(TagFilter.Include, "SubsiteVisit");
+                .FindAllContainingTag(TagFilter.Include, "SubsiteVisit");
+        }
+
+        public virtual ValidationResults ValidateIgnoringCoordinates()
+        {
+            return this.Validate("Screening", "Persistence");
         }
 
         internal static SubsiteVisit Create(SiteVisit sv)
@@ -176,7 +181,7 @@ namespace TMD.Model.Trips
                 OwnershipType = string.Empty,
                 OwnershipContactInfo = string.Empty,
                 Comments = string.Empty,
-                Measurements = new List<TreeMeasurement>(),
+                TreeMeasurements = new List<TreeMeasurement>(),
                 Country = LocationService.FindCountryByCode("US"),
                 SiteVisit = sv
             };

@@ -57,10 +57,10 @@ namespace TMD.Model.Trips
             set { m_MeasurerContactInfo = (value ?? string.Empty).Trim(); }
         }
 
-        [ObjectCollectionValidator(TargetRuleset = "Persistence", Ruleset = "Persistence")]
-        [ObjectCollectionValidator(TargetRuleset = "Import", Ruleset = "Import")]
-        [ObjectCollectionValidator(TargetRuleset = "Screening", Ruleset="Screening")]
-        [CollectionCountWhenNotNullValidator(1, 100, MessageTemplate = "Trip must contain sites.", Ruleset = "Screening", Tag = "SiteVisits")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Import", Ruleset = "Import")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening")]
+        [CollectionCountWhenNotNullValidator(1, 100, MessageTemplate = "Your must add site visits to your trip.", Ruleset = "Screening", Tag = "SiteVisits")]
         public virtual IList<SiteVisit> SiteVisits { get; private set; }
 
         public virtual bool IsImported { get; private set; }
@@ -107,13 +107,13 @@ namespace TMD.Model.Trips
         public virtual ValidationResults ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAll(TagFilter.Include, "Trip");
+                .FindAllContainingTag(TagFilter.Include, "Trip");
         }
 
         public virtual ValidationResults ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAll(TagFilter.Include, "Trip", "SiteVisit", "SiteVisits", "SubsiteVisit", "SubsiteVisits");
+                .FindAllContainingTag(TagFilter.Include, "Trip", "SiteVisit", "SiteVisits", "SubsiteVisit", "SubsiteVisits");
         }
 
         public virtual ValidationResults ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates()

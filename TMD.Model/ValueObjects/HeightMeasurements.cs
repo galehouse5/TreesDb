@@ -13,28 +13,28 @@ namespace TMD.Model
         private HeightMeasurements() 
         { }
 
-        [ObjectValidator("Screening", Ruleset = "Screening")]
+        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance DistanceTop { get; private set; }
 
-        [ObjectValidator("Screening", Ruleset = "Screening")]
+        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Angle AngleTop { get; private set; }
 
-        [ObjectValidator("Screening", Ruleset = "Screening")]
+        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance DistanceBottom { get; private set; }
 
-        [ObjectValidator("Screening", Ruleset = "Screening")]
+        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Angle AngleBottom { get; private set; }
 
-        [ObjectValidator("Screening", Ruleset = "Screening")]
+        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public DirectedDistance VerticalOffset { get; private set; }
 
-        [ObjectValidator("Screening", Ruleset = "Screening")]
+        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance Height 
         {
             get { return calculateHeight(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); }
         }
 
-        [ObjectValidator("Screening", Ruleset = "Screening")]
+        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance Offset
         {
             get { return calculateOffset(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); }

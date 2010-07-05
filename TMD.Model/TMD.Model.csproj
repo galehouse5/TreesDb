@@ -92,11 +92,12 @@
     <Compile Include="Trips\SiteVisit.cs" />
     <Compile Include="Validation\CollectionCountWhenNotNullValidator.cs" />
     <Compile Include="Validation\DateTimeRangeWhenNotNullValidator.cs" />
+    <Compile Include="Validation\ModelObjectCollectionValidator.cs" />
     <Compile Include="Validation\ObjectEqualityValidator.cs" />
     <Compile Include="Validation\SpecifiedValidator.cs" />
     <Compile Include="Validation\StringNotNullOrWhitespaceValidator.cs" />
     <Compile Include="Validation\StringLengthWhenNotNullOrWhitespaceValidator.cs" />
-    <Compile Include="EntityValidator.cs" />
+    <Compile Include="ModelValidator.cs" />
     <Compile Include="ValueObjects\Angle.cs" />
     <Compile Include="ValueObjects\CoordinateBounds.cs" />
     <Compile Include="ValueObjects\CoordinateDistance.cs" />
@@ -108,7 +109,7 @@
     <Compile Include="ValueObjects\HeightMeasurements.cs" />
     <Compile Include="IIsSpecified.cs" />
     <Compile Include="Locations\State.cs" />
-    <Compile Include="Validation\ValueObjectValidator.cs" />
+    <Compile Include="Validation\ModelObjectValidator.cs" />
     <Compile Include="ValueObjects\Volume.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

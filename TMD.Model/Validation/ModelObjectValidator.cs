@@ -14,13 +14,13 @@ namespace TMD.Model.Validation
         ReplaceKey
     }
 
-    public class ValueObjectValidatorAttribute : ValidatorAttribute
+    public class ModelObjectValidatorAttribute : ValidatorAttribute
     {
-        public ValueObjectValidatorAttribute(NamespaceQualificationMode mode)
+        public ModelObjectValidatorAttribute(NamespaceQualificationMode mode)
             : this(mode, string.Empty)
         { }
 
-        public ValueObjectValidatorAttribute(NamespaceQualificationMode mode, string targetRuleset)
+        public ModelObjectValidatorAttribute(NamespaceQualificationMode mode, string targetRuleset)
         {
             if (targetRuleset == null)
             {
@@ -43,45 +43,45 @@ namespace TMD.Model.Validation
         {
             if (this.ValidateActualType)
             {
-                return new ValueObjectValidator(Mode, validatorFactory, TargetRuleset);
+                return new ModelObjectValidator(Mode, validatorFactory, TargetRuleset);
             }
-            return new ValueObjectValidator(Mode, targetType, validatorFactory, TargetRuleset);
+            return new ModelObjectValidator(Mode, targetType, validatorFactory, TargetRuleset);
         }
     }
 
-    public class ValueObjectValidator : ObjectValidator
+    public class ModelObjectValidator : ObjectValidator
     {
-        public ValueObjectValidator(NamespaceQualificationMode mode)
+        public ModelObjectValidator(NamespaceQualificationMode mode)
             : base()
         {
             Mode = mode;
         }
 
-        public ValueObjectValidator(NamespaceQualificationMode mode, ValidatorFactory validatorFactory)
+        public ModelObjectValidator(NamespaceQualificationMode mode, ValidatorFactory validatorFactory)
             : base(validatorFactory)
         {
             Mode = mode;
         }
 
-        public ValueObjectValidator(NamespaceQualificationMode mode, Type targetType)
+        public ModelObjectValidator(NamespaceQualificationMode mode, Type targetType)
             : base(targetType)
         {
             Mode = mode;
         }
 
-        public ValueObjectValidator(NamespaceQualificationMode mode, ValidatorFactory validatorFactory, string targetRuleset)
+        public ModelObjectValidator(NamespaceQualificationMode mode, ValidatorFactory validatorFactory, string targetRuleset)
             : base(validatorFactory, targetRuleset)
         {
             Mode = mode;
         }
 
-        public ValueObjectValidator(NamespaceQualificationMode mode, Type targetType, string targetRuleset)
+        public ModelObjectValidator(NamespaceQualificationMode mode, Type targetType, string targetRuleset)
             : base(targetType, targetRuleset)
         {
             Mode = mode;
         }
 
-        public ValueObjectValidator(NamespaceQualificationMode mode, Type targetType, ValidatorFactory validatorFactory, string targetRuleset)
+        public ModelObjectValidator(NamespaceQualificationMode mode, Type targetType, ValidatorFactory validatorFactory, string targetRuleset)
             : base(targetType, validatorFactory, targetRuleset)
         {
             Mode = mode;

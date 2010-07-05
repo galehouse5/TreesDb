@@ -9,6 +9,25 @@ using TMD.Model.Locations;
 
 namespace TMD.Extensions
 {
+    public static class ModelExtensions
+    {
+        public static IEnumerable<SelectListItem> BuildSelectList<T>()
+            where T : struct, IComparable, IFormattable, IConvertible
+        {
+            Array values = Enum.GetValues(typeof(T));
+            for (int i = 0; i < values.Length; i++)
+            {
+                Enum value = (Enum)Enum.ToObject(typeof(T), i);
+                string text = value.GetEnumDescription();
+                yield return new SelectListItem() 
+                {
+                    Value = i.ToString(),
+                    Text = text
+                };
+            }
+        }
+    }
+
     public class CoordinatesModelBinder : IModelBinder
     {
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)

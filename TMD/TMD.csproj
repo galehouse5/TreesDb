@@ -113,7 +113,7 @@
     <Compile Include="Controllers\ValueObjectsController.cs" />
     <Compile Include="Extensions\DefaultGraphModelBinder.cs" />
     <Compile Include="Extensions\GoogleMapsExtensions.cs" />
-    <Compile Include="Extensions\ModelBinders.cs" />
+    <Compile Include="Extensions\ModelExtensions.cs" />
     <Compile Include="Extensions\ValidationExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

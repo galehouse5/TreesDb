@@ -54,6 +54,11 @@
         }));
         dom.find('.coordinates-entered-selector input').trigger('change');
         dom.find('.accordion').accordion('resize');
+        dom.find('#SelectedTreeMeasurement_Measured').datepicker({ onClose: function () { dom.find('#SelectedTreeMeasurement_Measured').focus(); } });
+        dom.find('#SelectedTreeMeasurement_CommonName').autocomplete({ source: "AutocompleteCommonName", minLength: 2, select: function (event, ui) {
+                dom.find('#SelectedTreeMeasurement_ScientificName').val(ui.item.scientificName);
+            }
+        });
     }
 
     function validate() {
@@ -78,13 +83,16 @@
     }
 
     function save() {
-        $.put('TreeMeasurement', dom.find('form').serialize(), function (data) {
-            render(data);
-            if (validate()) {
-                isSaved = true;
-                dom.dialog('close');
-            }
-        });
+        $.put('TreeMeasurement', dom.find('div.general-placeholder form').serialize()
+            + '&' + dom.find('div.heightandgirth-placeholder form').serialize()
+            + '&' + dom.find('div.trunkandcrown-placeholder form').serialize()
+            + '&' + dom.find('div.misc-placeholder form').serialize(), function (data) {
+                render(data);
+                if (validate()) {
+                    isSaved = true;
+                    dom.dialog('close');
+                }
+            });
     }
 
     public.Add = function (siteVisitIndex, subsiteVisitIndex, callback) {

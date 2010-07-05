@@ -124,7 +124,7 @@
     <property name="LandformIndex"/>
     <property name="TerrainComments"/>
     <bag name="Measurers" table="Trips.Measurers" cascade="all-delete-orphan" inverse="true">
-      <key column="MeasurementId" />
+      <key column="TreeMeasurementId" />
       <one-to-many class="TMD.Model.Trips.TreeMeasurer"/>
     </bag>
   </class>
@@ -152,7 +152,7 @@
     <property name="OwnershipType" />
     <property name="OwnershipContactInfo" />
     <property name="Comments" />
-    <bag name="Measurements" table="Trips.TreeMeasurements" cascade="all-delete-orphan" inverse="true">
+    <bag name="TreeMeasurements" table="Trips.TreeMeasurements" cascade="all-delete-orphan" inverse="true">
       <key column="SubsiteVisitId" />
       <one-to-many class="TMD.Model.Trips.TreeMeasurement"/>
     </bag>

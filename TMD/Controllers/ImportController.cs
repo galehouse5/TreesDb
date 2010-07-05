@@ -9,6 +9,7 @@ using TMD.Models;
 using TMD.Extensions;
 using TMD.Model;
 using Microsoft.Practices.EnterpriseLibrary.Validation;
+using TMD.Model.Trees;
 
 namespace TMD.Controllers
 {
@@ -400,7 +401,7 @@ namespace TMD.Controllers
             {
                 model.SaveTrip();
             }
-            return View("SiteVisit", model);
+            return View("TreeMeasurement", model);
         }
 
         [HttpGet]
@@ -455,6 +456,23 @@ namespace TMD.Controllers
                 }
             }
             return Json(markers, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public ActionResult AutocompleteCommonName(string term)
+        {
+            IList<KnownTree> knownTrees = TreeService.FindTreesWithSimilarCommonName(term, 5);
+            List<object> autocompleteResults = new List<object>();
+            foreach (KnownTree kt in knownTrees)
+            {
+                autocompleteResults.Add(new
+                {
+                    label = string.Format("{0} ({1})", kt.CommonName.ToTitleCase(), kt.ScientificName),
+                    value = kt.CommonName.ToTitleCase(),
+                    scientificName = kt.ScientificName
+                });
+            }
+            return this.Json(autocompleteResults, JsonRequestBehavior.AllowGet);
         }
 
         #endregion

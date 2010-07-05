@@ -26,12 +26,22 @@ namespace TMD.Model
         { }
 
         [DisplayName("Latitude:")]
-        [ValueObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Latitude Latitude { get; private set; }
 
         [DisplayName("Longitude:")]
-        [ValueObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Longitude Longitude { get; private set; }
+
+        public bool IsValid
+        {
+            get { return ModelValidator.Validate(this, "Screening").IsValid; }
+        }
+
+        public CoordinatesFormat InputFormat
+        {
+            get { return Latitude.InputFormat; }
+        }
 
         public override string ToString()
         {
@@ -101,6 +111,24 @@ namespace TMD.Model
             };
         }
 
+        public static Coordinates Create(string latitude, string longitude)
+        {
+            return new Coordinates()
+            {
+                Latitude = Latitude.Create(latitude),
+                Longitude = Longitude.Create(longitude)
+            };
+        }
+
+        public static Coordinates Create(float latitude, float longitude, CoordinatesFormat format)
+        {
+            return new Coordinates()
+            {
+                Latitude = Latitude.Create(latitude, format),
+                Longitude = Longitude.Create(longitude, format)
+            };
+        }
+
         public static Coordinates Create(string s)
         {
             string[] latLng = s.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
@@ -151,6 +179,11 @@ namespace TMD.Model
 
         [ObjectEqualityValidator(CoordinatesFormat.Invalid, Negated = true, MessageTemplate = "Latitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format.", Ruleset = "Screening")]
         public CoordinatesFormat InputFormat { get; private set; }
+
+        public bool IsValid
+        {
+            get { return ModelValidator.Validate(this, "Screening").IsValid; }
+        }
 
         public int Sign
         {
@@ -312,6 +345,15 @@ namespace TMD.Model
             };
         }
 
+        public static Latitude Create(float degrees, CoordinatesFormat format)
+        {
+            return new Latitude()
+            {
+                InputFormat = format,
+                TotalDegrees = degrees
+            };
+        }
+
         public static Latitude Null()
         {
             return new Latitude()
@@ -333,6 +375,11 @@ namespace TMD.Model
 
         [ObjectEqualityValidator(CoordinatesFormat.Invalid, Negated = true, MessageTemplate = "Longitude must be in ddd_mm_ss.s, ddd_mm.mmm, or ddd.ddddd format.", Ruleset = "Screening")]
         public CoordinatesFormat InputFormat { get; private set; }
+
+        public bool IsValid
+        {
+            get { return ModelValidator.Validate(this, "Screening").IsValid; }
+        }
 
         public int Sign
         {
@@ -490,6 +537,15 @@ namespace TMD.Model
             return new Longitude()
             {
                 InputFormat = CoordinatesFormat.Default,
+                TotalDegrees = degrees
+            };
+        }
+
+        public static Longitude Create(float degrees, CoordinatesFormat format)
+        {
+            return new Longitude()
+            {
+                InputFormat = format,
                 TotalDegrees = degrees
             };
         }

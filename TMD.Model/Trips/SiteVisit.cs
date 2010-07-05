@@ -32,7 +32,7 @@ namespace TMD.Model.Trips
         }
 
         private Coordinates m_Coordinates;
-        [ValueObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "SiteVisit")]
+        [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "SiteVisit")]
         [SpecifiedValidator(MessageTemplate = "Site coordinates must be specified.", Ruleset = "Import", Tag = "SiteVisit")]
         public virtual Coordinates Coordinates
         {
@@ -97,9 +97,9 @@ namespace TMD.Model.Trips
             return cb.Center;
         }
 
-        [ObjectCollectionValidator(TargetRuleset = "Persistence", Ruleset = "Persistence")]
-        [ObjectCollectionValidator(TargetRuleset = "Import", Ruleset = "Import")]
-        [ObjectCollectionValidator(TargetRuleset = "Screening", Ruleset = "Screening")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Import", Ruleset = "Import")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening")]
         [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "Site must contain at least one subsite.", Ruleset = "Screening", Tag = "SubsiteVisits")]
         [CollectionCountWhenNotNullValidator(int.MinValue, 100, MessageTemplate = "Site contains too many subsites.", Ruleset = "Screening", Tag = "SubsiteVisits")]
         public virtual IList<SubsiteVisit> SubsiteVisits { get; private set; }
@@ -146,13 +146,13 @@ namespace TMD.Model.Trips
         public virtual ValidationResults ValidateIgnoringCoordinatesSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAll(TagFilter.Include, "SiteVisit");
+                .FindAllContainingTag(TagFilter.Include, "SiteVisit");
         }
 
         public virtual ValidationResults ValidateIgnoringCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAll(TagFilter.Include, "SiteVisit", "SubsiteVisits", "SubsiteVisit");
+                .FindAllContainingTag(TagFilter.Include, "SiteVisit", "SubsiteVisits", "SubsiteVisit");
         }
 
         public virtual SubsiteVisit GetSubsiteVisit(int id)

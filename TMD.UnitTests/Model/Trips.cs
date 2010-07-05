@@ -160,7 +160,7 @@ namespace TMD.UnitTests.Model
             ssv2.OwnershipType = "subsite visit 2 ownership type";
             ssv2.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
 
-            TreeMeasurement tm1 = ssv2.AddMeasurement();
+            TreeMeasurement tm1 = ssv2.AddTreeMeasurement();
             tm1.Age = 10;
             tm1.AgeClass = TreeAgeClass.VeryOld;
             tm1.AgeType = TreeAgeType.RingCount;
@@ -214,7 +214,7 @@ namespace TMD.UnitTests.Model
             TreeMeasurer tmeasurer2 = tm1.AddMeasurer();
             tmeasurer2.FirstName = "tree measurer 2 first name";
             tmeasurer2.LastName = "tree measurer 2 last name";
-            TreeMeasurement tm2 = ssv2.AddMeasurement();
+            TreeMeasurement tm2 = ssv2.AddTreeMeasurement();
             tm2.Age = 10;
             tm2.AgeClass = TreeAgeClass.VeryOld;
             tm2.AgeType = TreeAgeType.RingCount;
@@ -279,9 +279,9 @@ namespace TMD.UnitTests.Model
             Assert.IsNotNull(found);
             Assert.IsTrue(found.SiteVisits.Count == 2);
             Assert.IsTrue(found.SiteVisits[1].SubsiteVisits.Count == 2);
-            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits[1].Measurements.Count == 2);
-            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits[1].Measurements[0].Measurers.Count == 2);
-            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits[1].Measurements[1].Measurers.Count == 2);
+            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements.Count == 2);
+            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements[0].Measurers.Count == 2);
+            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements[1].Measurers.Count == 2);
 
             using (UnitOfWork.BeginBusinessTransaction())
             {
@@ -331,7 +331,7 @@ namespace TMD.UnitTests.Model
             ssv.OwnershipType = "subsite visit ownership type";
             ssv.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
             Assert.IsTrue(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
-            TreeMeasurement tm = ssv.AddMeasurement();
+            TreeMeasurement tm = ssv.AddTreeMeasurement();
             Assert.IsTrue(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
         }
 
@@ -361,7 +361,7 @@ namespace TMD.UnitTests.Model
             ssv.OwnershipType = "subsite visit ownership type";
             ssv.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
             Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-            TreeMeasurement tm = ssv.AddMeasurement();
+            TreeMeasurement tm = ssv.AddTreeMeasurement();
             Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
             tm.CommonName = "tree measurement common name";
             tm.ScientificName = "tree measurement scientific name";
@@ -399,7 +399,7 @@ namespace TMD.UnitTests.Model
             ssv.OwnershipType = "subsite visit ownership type";
             ssv.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
             Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-            TreeMeasurement tm = ssv.AddMeasurement();
+            TreeMeasurement tm = ssv.AddTreeMeasurement();
             Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
             tm.CommonName = "tree measurement common name";
             tm.ScientificName = "tree measurement scientific name";
@@ -436,7 +436,7 @@ namespace TMD.UnitTests.Model
             ssv.OwnershipType = "subsite visit ownership type";
             ssv.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
             Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-            TreeMeasurement tm = ssv.AddMeasurement();
+            TreeMeasurement tm = ssv.AddTreeMeasurement();
             Assert.IsFalse(t.ValidateRegardingImport().IsValid);
             tm.CommonName = "tree measurement common name";
             tm.ScientificName = "tree measurement scientific name";

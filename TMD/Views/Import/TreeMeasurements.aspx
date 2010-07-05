@@ -14,7 +14,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="StepContent" runat="server">
 <div class='treemeasurements-placeholder'>
-    <h3>Add the measurements you recorded at the subsites you visited.</h3>
+    <h3>Add the measurements you recorded at your subsites .</h3>
     <div class='sectionspacer'></div>
     <ul class='sitevisit-list'>
     <% for (int sv = 0; sv < Model.Trip.SiteVisits.Count; sv++) { %>
@@ -34,7 +34,7 @@
                         <span><%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Name%></span>
                         <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}]", sv, ssv))%>
                         <br />
-                        <a href='javascript:TreeMeasurementEditor.Add(<%= sv %>, <%= ssv %>)'>Add measurement</a>
+                        <a href='javascript:TreeMeasurementEditor.Add(<%= sv %>, <%= ssv %>, TreeMeasurementsEditor.Refresh)'>Add measurement</a>
                         <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements", sv, ssv))%>
                     </div>
                     <div class='ui-helper-clearfix'></div>
@@ -46,9 +46,10 @@
                                 <span><%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].ScientificName %> <%= string.Format("({0})", Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName)%></span>
                                 <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements[{2}]", sv, ssv, tm))%>
                                 <br />
-                                <a href='javascript:TreeMeasurementEditor.Edit(<%= sv %>, <%= ssv %>, <%= tm %>)'>Edit</a>
-                                <a href='javascript:TreeMeasurementRemover.Open(<%= sv %>, <%= ssv %>, <%= tm %>)'>Remove</a>
+                                <a href='javascript:TreeMeasurementEditor.Edit(<%= sv %>, <%= ssv %>, <%= tm %>, TreeMeasurementsEditor.Refresh)'>Edit</a>
+                                <a href='javascript:TreeMeasurementRemover.Open(<%= sv %>, <%= ssv %>, <%= tm %>, TreeMeasurementsEditor.Refresh)'>Remove</a>
                             </div>
+                            <div class='ui-helper-clearfix'></div>
                         </li>
                     <% } %>
                     </ul>

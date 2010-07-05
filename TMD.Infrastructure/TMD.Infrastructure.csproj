@@ -104,14 +104,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Mappings\Sites.hbm.xml.ignore">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Mappings\Trees.hbm.xml.ignore" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Mappings\Locations.hbm.xml" />
     <EmbeddedResource Include="Mappings\Trips.hbm.xml" />
   </ItemGroup>
