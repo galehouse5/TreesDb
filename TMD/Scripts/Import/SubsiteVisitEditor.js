@@ -70,6 +70,7 @@
             dom.dialog('open');
             render(data);
             lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
+            setTimeout(function () { dom.find('.subsitevisit-placeholder input').first().focus(); }, 1);
         });
     }
 
@@ -82,6 +83,7 @@
             dom.dialog('open');
             render(data);
             lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
+            setTimeout(function () { dom.find('.subsitevisit-placeholder input').first().focus(); }, 1);
         });
     }
 
@@ -94,6 +96,7 @@
             dom.dialog('open');
             render(data);
             lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
+            setTimeout(function () { dom.find('.subsitevisit-placeholder input').first().focus(); }, 1);
         });
     }
 

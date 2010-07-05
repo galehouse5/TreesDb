@@ -406,10 +406,10 @@ namespace TMD.Controllers
                 ModelState.AddModelError("SelectedTreeMeasurement.TrunkAndCrown.HasErrors", "");
                 trunkAndCrownValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
             }
-            ValidationResults miscValidationResults = model.SelectedTreeMeasurement.ValidateRegardingMiscInformation();
+            ValidationResults miscValidationResults = model.SelectedTreeMeasurement.ValidateRegardingTreeFormAgeStatusTerrainAndOtherInformation();
             if (!miscValidationResults.IsValid)
             {
-                ModelState.AddModelError("SelectedTreeMeasurement.Misc.HasErrors", "");
+                ModelState.AddModelError("SelectedTreeMeasurement.TreeFormAgeStatusTerrainAndOther.HasErrors", "");
                 miscValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
             }
         }

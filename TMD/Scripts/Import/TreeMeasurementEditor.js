@@ -13,7 +13,7 @@
                     <div class='misc-placeholder'></div>\
                 </div>\
             </div>");
-    var isSaved, isAdding;
+    var isSaved, isAdding, isValidating;
     var closeCallback;
 
     function initialize() {
@@ -26,13 +26,34 @@
             dom.dialog({ title: 'Edit tree measurement' });
         }
         dom.find('.accordion').accordion({ fillSpace: true, animated: false, active: 0 });
+        dom.find('.accordion').bind('accordionchange', changeStep);
         dom.bind('dialogclose', dispose);
+    }
+
+    function changeStep(event, ui) {
+        if (!isValidating) {
+            switch (ui.options.active) {
+                case 0:
+                    setTimeout(function () { dom.find('.general-placeholder input').first().focus(); });
+                    break;
+                case 1:
+                    setTimeout(function () { dom.find('.heightandgirth-placeholder input').first().focus(); });
+                    break;
+                case 2:
+                    setTimeout(function () { dom.find('.trunkandcrown-placeholder input').first().focus(); });
+                    break;
+                case 3:
+                    setTimeout(function () { dom.find('.misc-placeholder input, .misc-placeholder select').first().focus(); });
+                    break;
+            }
+        }
     }
 
     function dispose() {
         if (isAdding && !isSaved) {
             $.delete_('TreeMeasurement');
         }
+        dom.find('.accordion').unbind('accordionchange');
         dom.unbind('dialogclose');
         closeCallback(isSaved);
     }
@@ -53,6 +74,12 @@
                     dom.find('.coordinates-entered-visible').hide();
         }));
         dom.find('.coordinates-entered-selector input').trigger('change');
+        dom.find('.treename-entered-selector input').bind('change', (function () {
+            dom.find('.treename-entered-selector input').attr('checked') ?
+                    dom.find('.treename-entered-visible').show() :
+                    dom.find('.treename-entered-visible').hide();
+        }));
+        dom.find('.treename-entered-selector input').trigger('change');
         dom.find('.accordion').accordion('resize');
         dom.find('#SelectedTreeMeasurement_Measured').datepicker({ onClose: function () { dom.find('#SelectedTreeMeasurement_Measured').focus(); } });
         dom.find('#SelectedTreeMeasurement_CommonName').autocomplete({ source: "AutocompleteCommonName", minLength: 2, select: function (event, ui) {
@@ -63,31 +90,36 @@
     }
 
     function validate() {
+        isValidating = true;
         if (dom.find('.general-placeholder .field-validation-error').length > 0) {
             dom.find('.accordion').accordion('activate', 0);
             dom.find('.general-placeholder .input-validation-error').first().focus();
+            isValidating = false;
             return false;
         } else if (dom.find('.heightandgirth-placeholder .field-validation-error').length > 0) {
             dom.find('.accordion').accordion('activate', 1);
             dom.find('.heightandgirth-placeholder .input-validation-error').first().focus();
+            isValidating = false;
             return false;
         } else if (dom.find('.trunkandcrown-placeholder .field-validation-error').length > 0) {
             dom.find('.accordion').accordion('activate', 2);
             dom.find('.trunkandcrown-placeholder .input-validation-error').first().focus();
+            isValidating = false;
             return false;
         } else if (dom.find('.misc-placeholder .field-validation-error').length > 0) {
             dom.find('.accordion').accordion('activate', 3);
             dom.find('.misc-placeholder .input-validation-error').first().focus();
+            isValidating = false;
             return false;
         }
         return true;
     }
 
     function save() {
-        $.put('TreeMeasurement', dom.find('div.general-placeholder form').serialize()
-            + '&' + dom.find('div.heightandgirth-placeholder form').serialize()
-            + '&' + dom.find('div.trunkandcrown-placeholder form').serialize()
-            + '&' + dom.find('div.misc-placeholder form').serialize(), function (data) {
+        $.put('TreeMeasurement', dom.find('.general-placeholder form').serialize()
+            + '&' + dom.find('.heightandgirth-placeholder form').serialize()
+            + '&' + dom.find('.trunkandcrown-placeholder form').serialize()
+            + '&' + dom.find('.misc-placeholder form').serialize(), function (data) {
                 render(data);
                 if (validate()) {
                     isSaved = true;
@@ -104,6 +136,7 @@
         $.post('CreateTreeMeasurement', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex }, function (data) {
             dom.dialog('open');
             render(data);
+            setTimeout(function () { dom.find('.general-placeholder input').first().focus(); }, 1);
         });
     };
 
@@ -115,6 +148,7 @@
         $.get('TreeMeasurement', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex, treeMeasurementIndex: treeMeasurementIndex }, function (data) {
             dom.dialog('open');
             render(data);
+            setTimeout(function () { dom.find('.general-placeholder input').first().focus(); }, 1);
         });
     };
 

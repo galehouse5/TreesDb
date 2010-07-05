@@ -17,6 +17,7 @@
       <generator class="native"/>
     </id>
     <many-to-one name="SubsiteVisit" column="SubsiteVisitId" />
+    <property name="TreeNameSpecified"/>
     <property name="TreeName" />
     <property name="TreeNumber" />
     <property name="CommonName"/>

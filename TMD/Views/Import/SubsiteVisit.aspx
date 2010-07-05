@@ -22,7 +22,8 @@
             <div class='ui-helper-clearfix'></div>
         </div>
         <div class="form-row coordinates-entered-selector">
-            Pick rough coordinates for this subsite to simplify remaining steps? <%= Html.CheckBoxFor(m => m.SelectedSubsiteVisit.CoordinatesEntered)%>
+            Enter coordinates for this subsite to simplify remaining steps? <%= Html.CheckBoxFor(m => m.SelectedSiteVisit.CoordinatesEntered)%>
+            <span class="coordinates-entered-visible"><a href="javascript:SiteVisitEditor.OpenCoordinatePicker()">Use coordinate picker</a></span>
             <div class='ui-helper-clearfix'></div>
         </div>
         <div class="form-row coordinates-entered-visible">

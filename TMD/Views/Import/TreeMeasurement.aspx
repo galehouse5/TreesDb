@@ -16,6 +16,15 @@
                 <div class='input-col'><%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.ScientificName)%><%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.ScientificName)%></div>
                 <div class='ui-helper-clearfix'></div>
             </div>
+            <div class="form-row treename-entered-selector">
+                Name this tree? <%= Html.CheckBoxFor(m => m.SelectedTreeMeasurement.TreeNameSpecified) %>
+                <div class='ui-helper-clearfix'></div>
+            </div>
+            <div class="form-row treename-entered-visible">
+                <div class='label-col'><%= Html.LabelFor(m => m.SelectedTreeMeasurement.TreeName)%></div>
+                <div class='input-col'><%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.TreeName)%><%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.TreeName)%></div>
+                <div class='ui-helper-clearfix'></div>
+            </div>
             <div class='form-row'>
                 <div class='label-col'><%= Html.LabelFor(m => m.SelectedTreeMeasurement.Measured)%></div>
                 <div class='input-col'><%= Html.EditorFor(m => m.SelectedTreeMeasurement.Measured, new { @class = "date" })%><%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.Measured)%></div>
@@ -89,7 +98,8 @@
                 </div>
             </div>
             <div class="form-row coordinates-entered-selector">
-                Enter coordinates for this measurement? <%= Html.CheckBoxFor(m => m.SelectedTreeMeasurement.CoordinatesEntered)%>
+                Enter coordinates for this tree? <%= Html.CheckBoxFor(m => m.SelectedTreeMeasurement.CoordinatesEntered)%>
+                <span class='coordinates-entered-visible'><a href="javascript:TreeMeasurementEditor.OpenCoordinatePicker()">Use coordinate picker</a></span>
                 <div class='ui-helper-clearfix'></div>
             </div>
             <div class="form-row coordinates-entered-visible">
@@ -100,11 +110,6 @@
             <div class="form-row coordinates-entered-visible">
                 <div class='label-col'><%= Html.LabelFor(m => m.SelectedTreeMeasurement.Coordinates.Longitude)%></div>
                 <div class='input-col'><%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Coordinates.Longitude)%><%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.Coordinates.Longitude)%></div>
-                <div class='ui-helper-clearfix'></div>
-            </div>
-            <div class="form-row coordinates-entered-visible">
-                <div class='label-col'>&nbsp;</div>
-                <div class='input-col'><a href="javascript:TreeMeasurementEditor.OpenCoordinatePicker()">Use coordinate picker</a></div>
                 <div class='ui-helper-clearfix'></div>
             </div>
             <div class='form-row'>
@@ -249,7 +254,7 @@
         </form>
     </div>
     <h3 class="misc-placeholder">
-        <a href="#">4. Enter tree form, age, status, and other information <%= Html.ValidationMessage("SelectedTreeMeasurement.Misc.HasErrors", "...")%></a>
+        <a href="#">4. Enter tree form, age, status, terrain, and other information <%= Html.ValidationMessage("SelectedTreeMeasurement.TreeFormAgeStatusTerrainAndOther.HasErrors", "...")%></a>
     </h3>
     <div class="misc-placeholder"> 
         <form method="post" action="">
@@ -289,11 +294,6 @@
                 <div class='ui-helper-clearfix'></div>
             </div>
             <div class='form-row'>
-                <div class='label-col'><%= Html.LabelFor(m => m.SelectedTreeMeasurement.Elevation)%></div>
-                <div class='input-col'><%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Elevation)%><%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.Elevation)%></div>
-                <div class='ui-helper-clearfix'></div>
-            </div>
-            <div class='form-row'>
                 <div class='label-col'><%= Html.LabelFor(m => m.SelectedTreeMeasurement.TerrainType)%></div>
                 <div class='input-col'><%= Html.DropDownListFor(m => m.SelectedTreeMeasurement.TerrainType, ModelExtensions.BuildSelectList<TreeTerrainType>())%><%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.TerrainType)%></div>
                 <div class='ui-helper-clearfix'></div>
@@ -311,6 +311,11 @@
             <div class='form-row'>
                 <div class='label-col'><%= Html.LabelFor(m => m.SelectedTreeMeasurement.TerrainComments)%></div>
                 <div class='input-col'><%= Html.TextAreaFor(m => m.SelectedTreeMeasurement.TerrainComments, 4, 50, null)%><%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.TerrainComments)%></div>
+                <div class='ui-helper-clearfix'></div>
+            </div>
+            <div class='form-row'>
+                <div class='label-col'><%= Html.LabelFor(m => m.SelectedTreeMeasurement.Elevation)%></div>
+                <div class='input-col'><%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Elevation)%><%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.Elevation)%></div>
                 <div class='ui-helper-clearfix'></div>
             </div>
         </form>

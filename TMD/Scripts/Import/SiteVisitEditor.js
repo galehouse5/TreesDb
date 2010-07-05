@@ -9,7 +9,7 @@
                     <div class='subsitevisits-placeholder'></div>\
                 </div>\
             </div>");
-    var isSaved, isAdding;
+    var isSaved, isAdding, isValidating;
     var closeCallback;
 
     function initialize() {
@@ -22,12 +22,16 @@
             dom.dialog({ title: 'Edit site visit' });
         }
         dom.find('.accordion').accordion({ fillSpace: true, animated: false, active: 0 });
-        dom.find('.accordion').bind('accordionchange', saveStep);
+        dom.find('.accordion').bind('accordionchange', changeStep);
         dom.bind('dialogclose', dispose);
     }
 
-    function saveStep(event, ui) {
-        if (ui.options.active == 1) {
+    function changeStep(event, ui) {
+        if (ui.options.active == 0) {
+            if (!isValidating) {
+                setTimeout(function () { dom.find('div.sitevisit-placeholder input').first().focus(); }, 1);
+            }
+        } else if (ui.options.active == 1) {
             var newSerializedDom = dom.find('form').serialize();
             if (serializedDom != newSerializedDom) {
                 serializedDom = newSerializedDom;
@@ -67,19 +71,23 @@
     }
 
     function validate() {
+        isValidating = true;
         if (dom.find('.sitevisit-placeholder .field-validation-error').length > 0) {
             dom.find('.accordion').accordion('activate', 0);
             dom.find('.sitevisit-placeholder .input-validation-error').first().focus();
+            isValidating = false;
             return false;
         } else if (dom.find('.subsitevisits-placeholder .field-validation-error').length > 0) {
             dom.find('.accordion').accordion('activate', 1);
+            isValidating = false;
             return false;
         }
         return true;
     }
 
     function save() {
-        $.put('SiteVisit', dom.find('form').serialize(), function (data) {
+        serializedDom = dom.find('form').serialize();
+        $.put('SiteVisit', serializedDom, function (data) {
             render(data);
             if (validate()) {
                 isSaved = true;
@@ -112,6 +120,7 @@
         $.post('CreateSiteVisit', {}, function (data) {
             dom.dialog('open');
             render(data);
+            setTimeout(function () { dom.find('div.sitevisit-placeholder input').first().focus(); }, 1);
         });
     };
 
@@ -123,6 +132,7 @@
         $.get('SiteVisit', { siteVisitIndex: index }, function (data) {
             dom.dialog('open');
             render(data);
+            setTimeout(function () { dom.find('div.sitevisit-placeholder input').first().focus(); }, 1);
         });
     };
 

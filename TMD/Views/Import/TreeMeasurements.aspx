@@ -20,7 +20,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="StepContent" runat="server">
 <div class='treemeasurements-placeholder'>
-    <h3>Add the measurements you recorded at your subsites .</h3>
+    <h3>Add the measurements you recorded at your subsites.</h3>
     <div class='sectionspacer'></div>
     <ul class='sitevisit-list'>
     <% for (int sv = 0; sv < Model.Trip.SiteVisits.Count; sv++) { %>
@@ -49,7 +49,16 @@
                         <li class='treemeasurement'>
                             <span class='icon'></span>
                             <div class='column'>
-                                <span><%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].ScientificName %> <%= string.Format("({0})", Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName)%></span>
+                                <span>
+                                    <% if (Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeNameSpecified) { %>
+                                       <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeName %>
+                                    <% } else { %>
+                                        <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].ScientificName %> 
+                                        <% if (!string.IsNullOrWhiteSpace(Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName)) { %>
+                                            <%= string.Format("({0})", Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName)%>
+                                        <% } %>
+                                    <% } %>
+                                </span>
                                 <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements[{2}]", sv, ssv, tm))%>
                                 <br />
                                 <a href='javascript:TreeMeasurementEditor.Edit(<%= sv %>, <%= ssv %>, <%= tm %>, TreeMeasurementsEditor.Refresh)'>Edit</a>
