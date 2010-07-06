@@ -82,6 +82,7 @@
             isValidating = false;
             return false;
         }
+        isValidating = false;
         return true;
     }
 

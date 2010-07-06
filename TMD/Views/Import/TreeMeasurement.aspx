@@ -27,7 +27,7 @@
             </div>
             <div class='form-row'>
                 <div class='label-col'><%= Html.LabelFor(m => m.SelectedTreeMeasurement.Measured)%></div>
-                <div class='input-col'><%= Html.EditorFor(m => m.SelectedTreeMeasurement.Measured, new { @class = "date" })%><%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.Measured)%></div>
+                <div class='input-col'><%= Html.EditorFor(m => m.SelectedTreeMeasurement.Measured)%><%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.Measured)%></div>
                 <div class='ui-helper-clearfix'></div>
             </div>
             <div class="treemeasurer-placeholder">

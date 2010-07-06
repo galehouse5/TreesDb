@@ -287,9 +287,10 @@ namespace TMD.Model.Trips
 
         #region Trunk information
 
+        [IgnoreNulls(Ruleset = "Screening")]
         [DisplayName("Number of trunks:")]
         [RangeValidator(0, RangeBoundaryType.Inclusive, int.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Number of trunks must be non-negative.", Ruleset = "Screening", Tag = "TreeMeasurement Trunk")]
-        public virtual int NumberOfTrunks { get; set; }
+        public virtual int? NumberOfTrunks { get; set; }
 
         [DisplayName("Trunk volume:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Trunk")]
@@ -540,11 +541,11 @@ namespace TMD.Model.Trips
                 TrunkVolumeCalculationMethod = string.Empty,
                 TrunkComments = string.Empty,
                 FormType = TreeFormType.NotSpecified,
-                NumberOfTrunks = 0,
+                NumberOfTrunks = null,
                 TreeFormComments = string.Empty,
                 TerrainType = TreeTerrainType.NotSpecified,
-                TerrainShapeIndex = 0f,
-                LandformIndex = 0f,
+                TerrainShapeIndex = null,
+                LandformIndex = null,
                 TerrainComments = string.Empty,
                 CoordinatesCalculated = true,
                 Measurers = new List<TreeMeasurer>(),
