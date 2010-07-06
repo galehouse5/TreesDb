@@ -498,25 +498,33 @@ namespace TMD.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateTreeMeasurementMeasurer()
+        public ActionResult CreateTreeMeasurementMeasurer(ImportModel model)
         {
-            ImportModel model = new ImportModel();
             if (model.SelectedTreeMeasurement.Measurers.Count < 3)
             {
-                model.SelectedTreeMeasurement.AddMeasurer();
-                model.SaveTrip();
+                model.SelectedTreeMeasurement.ValidateRegardingPersistence()
+                    .CopyToModelState(ModelState, "SelectedTreeMeasurement");
+                if (ModelState.IsValid)
+                {
+                    model.SelectedTreeMeasurement.AddMeasurer();
+                    model.SaveTrip();
+                }
             }
             return View("TreeMeasurement", model);
         }
 
         [HttpPost]
-        public ActionResult RemoveTreeMeasurementMeasurer()
+        public ActionResult RemoveTreeMeasurementMeasurer(ImportModel model)
         {
-            ImportModel model = new ImportModel();
             if (model.SelectedTreeMeasurement.Measurers.Count > 1)
             {
-                model.SelectedTreeMeasurement.Measurers.RemoveAt(model.SelectedTreeMeasurement.Measurers.Count - 1);
-                model.SaveTrip();
+                model.SelectedTreeMeasurement.ValidateRegardingPersistence()
+                    .CopyToModelState(ModelState, "SelectedTreeMeasurement");
+                if (ModelState.IsValid)
+                {
+                    model.SelectedTreeMeasurement.Measurers.RemoveAt(model.SelectedTreeMeasurement.Measurers.Count - 1);
+                    model.SaveTrip();
+                }
             }
             return View("TreeMeasurement", model);
         }

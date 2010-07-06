@@ -444,6 +444,7 @@ namespace TMD.Model.Trips
         #endregion
 
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening", Tag = "TreeMeasurers General")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence", Tag = "TreeMeasurers General")]
         [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "You must record at least one measurer.", Ruleset = "Screening", Tag = "TreeMeasurers General")]
         [CollectionCountWhenNotNullValidator(0, 3, MessageTemplate = "You have recorded too many measurers.", Ruleset = "Screening", Tag = "TreeMeasurers General")]
         public virtual IList<TreeMeasurer> Measurers { get; private set; }
@@ -491,6 +492,11 @@ namespace TMD.Model.Trips
         public virtual ValidationResults ValidateRegardingScreeningAndPersistence()
         {
             return ModelValidator.Validate(this, "Screening", "Persistence");
+        }
+
+        public virtual ValidationResults ValidateRegardingPersistence()
+        {
+            return ModelValidator.Validate(this, "Persistence");
         }
 
         internal static TreeMeasurement Create(SubsiteVisit ssv)

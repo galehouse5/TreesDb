@@ -153,7 +153,7 @@
     };
 
     public.AddMeasurer = function () {
-        $.post('CreateTreeMeasurementMeasurer', {}, function (data) {
+        $.post('CreateTreeMeasurementMeasurer', dom.find('.treemeasurer-placeholder input').serialize(), function (data) {
             var newDom = $(data);
             dom.find('.treemeasurer-placeholder').replaceWith(newDom.find('.treemeasurer-placeholder'));
             dom.find('.general-placeholder form').inputHintOverlay(5, 6);
@@ -161,7 +161,7 @@
     }
 
     public.RemoveMeasurer = function () {
-        $.post('RemoveTreeMeasurementMeasurer', {}, function (data) {
+        $.post('RemoveTreeMeasurementMeasurer', dom.find('.treemeasurer-placeholder input').serialize(), function (data) {
             var newDom = $(data);
             dom.find('.treemeasurer-placeholder').replaceWith(newDom.find('.treemeasurer-placeholder'));
             dom.find('.general-placeholder form').inputHintOverlay(5, 6);

@@ -116,15 +116,17 @@
     };
 
     function loadMarkers(markers) {
-        var bounds = new google.maps.LatLngBounds();
-        bounds.extend(marker.getPosition());
-        for (var i in markers) {
-            var mapMarker = MapMarkerService.CreateMapMarker(markers[i]);
-            mapMarker.setMap(map);
-            bounds.extend(mapMarker.getPosition());
+        if (markers.length > 0) {
+            var bounds = new google.maps.LatLngBounds();
+            bounds.extend(marker.getPosition());
+            for (var i in markers) {
+                var mapMarker = MapMarkerService.CreateMapMarker(markers[i]);
+                mapMarker.setMap(map);
+                bounds.extend(mapMarker.getPosition());
+            }
+            abortAddressLookup = true;
+            map.fitBounds(bounds);
         }
-        abortAddressLookup = true;
-        map.fitBounds(bounds);
     }
 
     function disposeMap() {
