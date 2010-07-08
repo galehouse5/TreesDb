@@ -530,5 +530,23 @@ namespace TMD.Controllers
         }
 
         #endregion
+
+        #region Review actions
+
+        [HttpGet]
+        public ActionResult Review()
+        {
+            ImportModel model = new ImportModel();
+            model.CurrentStep = ImportStep.Review;
+            if (model.IsCurrentStepPremature)
+            {
+                return RedirectToAction("TreeMeasurements");
+            }
+            model.Trip.ValidateRegardingImport().CopyToModelState(ModelState, "Trip");
+            model.Trip.ValidateRegardingOptionalRules().CopyToModelState(ModelState, "Trip");
+            return View("Review", model);
+        }
+
+        #endregion
     }
 }

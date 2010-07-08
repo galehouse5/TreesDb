@@ -30,7 +30,7 @@
                 <span><%= Model.Trip.SiteVisits[sv].Name%></span>
                 <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}]", sv))%>
                 <br />
-                <a href='javascript:SiteVisitEditor.Edit(<%= sv %>, SiteVisitsEditor.Refresh)'>Edit</a>
+                <a href='javascript:SiteVisitEditor.Edit(<%= sv %>, {onClose: SiteVisitsEditor.Refresh})'>Edit</a>
                 <a href='javascript:SiteVisitRemover.Open(<%= sv %>, SiteVisitsEditor.Refresh)'>Remove</a>
             </div>
             <div class='ui-helper-clearfix'></div>

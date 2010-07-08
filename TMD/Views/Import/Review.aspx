@@ -1,10 +1,18 @@
-﻿<%@ Page Title="Tree Measurement Database - Import Site Info" Language="C#" MasterPageFile="~/Views/Shared/TMDWizard.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportTripModel>" %>
-<%@ Import Namespace="TMD.Application" %>
+﻿<%@ Page Title="Tree Measurement Database - Import Site Info" Language="C#" MasterPageFile="~/Views/Shared/TMDWizard.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
 <%@ Import Namespace="TMD.Model.Trips" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" rel="Stylesheet" href="/Styles/Import.css" />
-<script type="text/javascript" src="/Scripts/Import/Review.js"></script>
+<script type="text/javascript" src="/Scripts/ThirdParty/jquery.inputHintOverlay.js"></script>
+<script type="text/javascript" src="/Scripts/Import/ReviewEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/TreeMeasurementEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/CoordinatePicker.js"></script>
+<script type="text/javascript" src="/Scripts/Import/SiteVisitEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/SubsiteVisitEditor.js"></script>
+<script type="text/javascript" src="/Scripts/ValueObjectService.js"></script>
+<%= Html.LoadGoogleMapsApiV3() %>
+<script type="text/javascript" src="/Scripts/GeocoderService.js"></script>
+<script type="text/javascript" src="/Scripts/MapMarkerService.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="OverviewContent" runat="server">
@@ -12,74 +20,65 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="StepContent" runat="server">
-<h3>Review</h3>
-<div class="sectionspacer">&nbsp;</div>
-<p>
-    Review the list of sites and measurements you have constructed to correct any indicated errors.
-    When finished, move to the final step to save your data to the database.
-</p>
-<ul id="SiteList">
-<% for (int s = 0; s < Model.Sites.Count; s++) { %>
-    <li id="<%= Model.Sites[s].Id %>" class="Site">
-        <span class="Icon"></span>
-        <div class="Column">
-            <span class="Name"><%= Model.Sites[s].Name %></span>
-            <br />
-            <a href="javascript:EditSite('<%= Model.Sites[s].Id %>')">Edit</a>
-        </div>
-        <div class='ui-helper-clearfix'></div>
-        <ul class="MeasurementList">
-        <% for (int m = 0; m < Model.Sites[s].Measurements.Count; m++) { %>
-            <li id="<%= Model.Sites[s].Measurements[m].Id %>" class="Measurement">
-                <span class="Icon"></span>
-                <div class="Column">
-                    <span class="ScientificName"><%= Model.Sites[s].Measurements[m].ScientificName %></span>
-                    <br />
-                    <span class="CommonName"><%= Model.Sites[s].Measurements[m].CommonName %></span>
-                </div>
-                <div class="Column">
-                    <a href="javascript:EditSiteMeasurement('<%= Model.Sites[s].Id %>', '<%= Model.Sites[s].Measurements[m].Id %>')">Edit</a>
-                </div>
-                <div class='ui-helper-clearfix'></div>
-            </li>
-        <% } %>
-        </ul>
-        <ul class="SubsiteList">
-        <% for (int ss = 0; ss < Model.Sites[s].Subsites.Count; ss++) { %>
-            <li id="<%= Model.Sites[s].Subsites[ss].Id %>" class="Subsite">
-                <span class="Icon"></span>
-                <div class="Column">
-                    <span class="Name"><%= Model.Sites[s].Subsites[ss].Name %></span>
-                    <br />
-                    <a href="javascript:EditSubsite('<%= Model.Sites[s].Id %>', '<%= Model.Sites[s].Subsites[ss].Id %>')">Edit</a>
-                </div>
-                <div class='ui-helper-clearfix'></div>
-                <ul class="MeasurementList">
-                    <% for (int m = 0; m < Model.Sites[s].Subsites[ss].Measurements.Count; m++) { %>
-                    <li id="<%= Model.Sites[s].Subsites[ss].Measurements[m].Id %>" class="Measurement">
-                        <span class="Icon"></span>
-                        <div class="Column">
-                            <span class="ScientificName"><%= Model.Sites[s].Subsites[ss].Measurements[m].ScientificName %></span>
-                            <br />
-                            <span class="CommonName"><%= Model.Sites[s].Subsites[ss].Measurements[m].CommonName %></span>
-                        </div>
-                        <div class="Column">
-                            <a href="javascript:EditSubsiteMeasurement('<%= Model.Sites[s].Id %>', '<%= Model.Sites[s].Subsites[ss].Id %>', '<%= Model.Sites[s].Subsites[ss].Measurements[m].Id %>')">Edit</a>                            
-                        </div>
-                        <div class='ui-helper-clearfix'></div>
-                    </li>
+<div class='sitevisits-placeholder'>
+    <h3>Review the sites, subsites, and measurements you visited on your trip.</h3>
+    <div class='sectionspacer'></div>
+    <ul class='sitevisit-list'>
+    <% for (int sv = 0; sv < Model.Trip.SiteVisits.Count; sv++) { %>
+        <li class='sitevisit'>
+            <span class='icon'></span>
+            <div class='column'>
+                <span><%= Model.Trip.SiteVisits[sv].Name%></span>
+                <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].Coordinates", sv))%>
+                <br />
+                <a href='javascript:SiteVisitEditor.Edit(<%= sv %>, {onClose: ReviewEditor.Refresh, disableSubsiteVisitAdding: true})'>Edit</a>
+            </div>
+            <div class='ui-helper-clearfix'></div>
+            <ul class='subsitevisit-list'>
+            <% for (int ssv = 0; ssv < Model.Trip.SiteVisits[sv].SubsiteVisits.Count; ssv++) { %>
+                <li class='subsitevisit'>
+                    <span class='icon'></span>
+                    <div class='column'>
+                        <span><%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Name%></span>
+                        <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].Coordinates", sv, ssv))%>
+                        <br />
+                        <a href='javascript:SubsiteVisitEditor.EditForSiteVisit(<%= sv %>, <%= ssv %>, {onClose: ReviewEditor.Refresh})'>Edit</a>
+                    </div>
+                    <div class='ui-helper-clearfix'></div>
+                    <ul class='treemeasurement-list'>
+                    <% for (int tm = 0; tm < Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements.Count; tm++) { %>
+                        <li class='treemeasurement'>
+                            <span class='icon'></span>
+                            <div class='column'>
+                                <span>
+                                    <% if (Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeNameSpecified) { %>
+                                       <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeName %>
+                                    <% } else { %>
+                                        <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].ScientificName %> 
+                                        <% if (!string.IsNullOrWhiteSpace(Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName)) { %>
+                                            <%= string.Format("({0})", Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName)%>
+                                        <% } %>
+                                    <% } %>
+                                </span>
+                                <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements[{2}].Coordinates", sv, ssv, tm))%>
+                                <br />
+                                <a href='javascript:TreeMeasurementEditor.Edit(<%= sv %>, <%= ssv %>, <%= tm %>, ReviewEditor.Refresh)'>Edit</a>
+                            </div>
+                            <div class='ui-helper-clearfix'></div>
+                        </li>
                     <% } %>
-                </ul>
-            </li>
-        <% } %>
-        </ul>
-    </li>
-<% } %>
-</ul>
-<div class="sectionspacer">&nbsp;</div>
+                    </ul>
+                </li>
+            <% } %>
+            </ul>
+        </li>
+    <% } %>
+    </ul>
+    <div class='sectionspacer'></div>
+</div>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="NavContent" runat="server">
-<%= Html.ActionLink("Finish >", "Finish", null, new { @class = "advance" })%>
-<%= Html.ActionLink("< Back", "Measurements", null, new { @class = "retreat" })%>
+<%= Html.ActionLink("Next >", "Finish", null, new { @class = "advance" })%>
+<%= Html.ActionLink("< Back", "TreeMeasurements", null, new { @class = "retreat" })%>
 </asp:Content>

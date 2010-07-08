@@ -9,7 +9,7 @@
                     <div class='subsitevisits-placeholder'></div>\
                 </div>\
             </div>");
-    var isSaved, isAdding, isValidating;
+    var isSaved, isAdding, isValidating, isSubsiteAddingDisabled;
     var closeCallback;
 
     function initialize() {
@@ -67,6 +67,9 @@
         }));
         dom.find('.coordinates-entered-selector input').trigger('change');
         dom.find('.accordion').accordion('resize');
+        if (isSubsiteAddingDisabled) {
+            dom.find('.subsitevisits-placeholder').css('display', 'none');
+        }
         serializedDom = dom.find('form').serialize();
     }
 
@@ -117,6 +120,7 @@
         isAdding = true;
         isSaved = false;
         closeCallback = callback;
+        isSubsiteAddingDisabled = false;
         initialize();
         $.post('CreateSiteVisit', {}, function (data) {
             dom.dialog('open');
@@ -125,10 +129,11 @@
         });
     };
 
-    public.Edit = function (index, callback) {
+    public.Edit = function (index, options) {
         isAdding = false;
         isSaved = false;
-        closeCallback = callback;
+        closeCallback = options.onClose;
+        isSubsiteAddingDisabled = options.disableSubsiteVisitAdding;
         initialize();
         $.get('SiteVisit', { siteVisitIndex: index }, function (data) {
             dom.dialog('open');

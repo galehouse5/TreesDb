@@ -132,7 +132,7 @@
     <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\GeocoderService.js" />
     <Content Include="Scripts\Import\CoordinatePicker.js" />
-    <Content Include="Scripts\Import\Review.js" />
+    <Content Include="Scripts\Import\ReviewEditor.js" />
     <Content Include="Scripts\Import\SiteVisitEditor.js" />
     <Content Include="Scripts\Import\SiteVisitsEditor.js" />
     <Content Include="Scripts\Import\TreeMeasurementEditor.js" />
