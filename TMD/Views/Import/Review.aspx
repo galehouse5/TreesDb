@@ -21,7 +21,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="StepContent" runat="server">
 <div class='sitevisits-placeholder'>
-    <h3>Review the sites, subsites, and measurements you visited on your trip.</h3>
+    <h3>Review your sites, subsites, and measurements before finishing.</h3>
     <div class='sectionspacer'></div>
     <ul class='sitevisit-list'>
     <% for (int sv = 0; sv < Model.Trip.SiteVisits.Count; sv++) { %>
@@ -79,6 +79,6 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="NavContent" runat="server">
-<%= Html.ActionLink("Next >", "Finish", null, new { @class = "advance" })%>
+<%= Html.ActionLink("Finish >", "Finish", null, new { @class = "advance" })%>
 <%= Html.ActionLink("< Back", "TreeMeasurements", null, new { @class = "retreat" })%>
 </asp:Content>
