@@ -34,14 +34,25 @@ namespace TMD.Model.Trips
 
         private Coordinates m_Coordinates;
         [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "SubsiteVisit")]
-        [SpecifiedValidator(MessageTemplate = "Subsite coordinates must be specified.", Ruleset = "Import", Tag = "SubsiteVisit")]
+        [SpecifiedValidator(MessageTemplate = "You must specify coordinates for this subsite, its containing site, or some contained measurement.", Ruleset = "Import", Tag = "SubsiteVisit")]
         public virtual Coordinates Coordinates
         {
             get
             {
-                if (CoordinatesCalculated && TreeMeasurements.Count > 0)
+                if (CoordinatesCalculated)
                 {
-                    m_Coordinates = calculateAverageCoordinates();
+                    if (doesSomeContainedTreeMeasurementHaveEneteredCoordinates())
+                    {
+                        m_Coordinates = calculateCoordinatesByAveragingContainedTreeMeasurements();
+                    }
+                    else if (SiteVisit.CoordinatesEntered && SiteVisit.Coordinates.IsSpecified)
+                    {
+                        m_Coordinates = SiteVisit.Coordinates;
+                    }
+                    else
+                    {
+                        m_Coordinates = Coordinates.Null();
+                    }
                 }
                 return m_Coordinates;
             }
@@ -59,7 +70,7 @@ namespace TMD.Model.Trips
             set { CoordinatesCalculated = !value; }
         }
 
-        [SelfValidation(Ruleset = "Screening")]
+        [SelfValidation(Ruleset = "Import")]
         public virtual void CheckCoordinatesAreSpecifiedIfCoordinatesAreEntered(ValidationResults results)
         {
             if (CoordinatesEntered)
@@ -75,12 +86,24 @@ namespace TMD.Model.Trips
             }
         }
 
-        private Coordinates calculateAverageCoordinates()
+        private bool doesSomeContainedTreeMeasurementHaveEneteredCoordinates()
+        {
+            foreach (TreeMeasurement tm in TreeMeasurements)
+            {
+                if (tm.CoordinatesEntered && tm.Coordinates.IsSpecified)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private Coordinates calculateCoordinatesByAveragingContainedTreeMeasurements()
         {
             List<Coordinates> coords = new List<Coordinates>();
             foreach (TreeMeasurement tm in TreeMeasurements)
             {
-                if (!tm.CoordinatesCalculated && tm.Coordinates.IsSpecified)
+                if (tm.CoordinatesEntered && tm.Coordinates.IsSpecified)
                 {
                     coords.Add(tm.Coordinates);
                 }
@@ -138,6 +161,7 @@ namespace TMD.Model.Trips
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence")]
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Import", Ruleset = "Import")]
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Optional", Ruleset = "Optional")]
         [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "You must add tree measurements to this subsite.", Ruleset = "Screening", Tag = "TreeMeasurements")]
         [CollectionCountWhenNotNullValidator(0, 10000, MessageTemplate = "This subsite contains too many tree measurements.", Ruleset = "Screening", Tag = "TreeMeasurements")]
         public virtual IList<TreeMeasurement> TreeMeasurements { get; private set; }

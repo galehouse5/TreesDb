@@ -38,7 +38,7 @@
     </h3>
     <div class="subsitevisits-placeholder">   
         <a class='subsitevisit-add' href="javascript:SubsiteVisitEditor.Add({onClose: SiteVisitEditor.Refresh, onShow: SiteVisitEditor.Show, onHide: SiteVisitEditor.Hide})">Add subsite visit</a><%= Html.ValidationMessage("SelectedSiteVisit.SubsiteVisits") %>
-        <ul class='subsitevisit-list'>
+        <ul class='subui-placeholder-import-sitevisit-list'>
         <% for (int ssv = 0; ssv < Model.SelectedSiteVisit.SubsiteVisits.Count; ssv++) { %>
             <li class='subsitevisit'>
                 <span class="icon"></span>

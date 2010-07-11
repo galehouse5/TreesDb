@@ -6,8 +6,8 @@ using TMD.Model.Validation;
 using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 using Microsoft.Practices.EnterpriseLibrary.Validation;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
+using System.ComponentModel.DataAnnotations;
 
 namespace TMD.Model.Trips
 {
@@ -158,18 +158,37 @@ namespace TMD.Model.Trips
 
         private Coordinates m_Coordinates;
         [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement General")]
-        [SpecifiedValidator(MessageTemplate = "Tree measurement coordinates must be specified.", Ruleset = "Import", Tag = "TreeMeasurement General")]
+        [SpecifiedValidator(MessageTemplate = "You must specify coordinates for this measurement or its containing subsite.", Ruleset = "Import", Tag = "TreeMeasurement General")]
         public virtual Coordinates Coordinates
         {
             get
             {
                 if (CoordinatesCalculated)
                 {
-                    m_Coordinates = SubsiteVisit.Coordinates;
+                    if (SubsiteVisit.CoordinatesEntered && SubsiteVisit.Coordinates.IsSpecified)
+                    {
+                        m_Coordinates = SubsiteVisit.Coordinates;
+                    }
+                    else
+                    {
+                        m_Coordinates = Coordinates.Null();
+                    }
                 }
                 return m_Coordinates;
             }
             set { m_Coordinates = value; }
+        }
+
+        [SelfValidation(Ruleset = "Optional")]
+        public virtual void CheckedCoordinatesAreWithinOneMinuteOfSubsiteCoordinates(ValidationResults results)
+        {
+            if (Coordinates.IsSpecified && SubsiteVisit.Coordinates.IsSpecified)
+            {
+                if (Coordinates.CalculateDistanceInMinutesTo(SubsiteVisit.Coordinates) > 1f)
+                {
+                    results.AddResult(new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult("Coordinates are not within one minute of containing subsite coordinates.", this, "Coordinates", "TreeMeasurement", null));
+                }
+            }
         }
 
         public virtual bool CoordinatesCalculated { get; set; }
@@ -178,6 +197,22 @@ namespace TMD.Model.Trips
         {
             get { return !CoordinatesCalculated; }
             set { CoordinatesCalculated = !value; }
+        }
+
+        [SelfValidation(Ruleset = "Import")]
+        public virtual void CheckCoordinatesAreSpecifiedIfCoordinatesAreEntered(ValidationResults results)
+        {
+            if (CoordinatesEntered)
+            {
+                if (!Coordinates.Latitude.IsSpecified)
+                {
+                    results.AddResult(new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult("Latitude must be specified.", Coordinates.Latitude, "Coordinates.Latitude", "TreeMeasurement", null));
+                }
+                if (!Coordinates.Longitude.IsSpecified)
+                {
+                    results.AddResult(new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult("Longitude must be specified.", Coordinates.Longitude, "Coordinates.Longitude", "TreeMeasurement", null));
+                }
+            }
         }
 
         private string m_GeneralComments;

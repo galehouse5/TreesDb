@@ -50,13 +50,3 @@ jQuery.extend({
         return _ajax_request(url, data, callback, type, 'DELETE');
     }
 });
-
-if (top.location != location) {
-    top.location.href = document.location.href;
-}
-
-$(document).ready(function () {
-    $('.noscript').hide();
-    $('.hasscript').fadeIn();
-    $.ajaxSetup({ cache: false });
-});

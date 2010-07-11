@@ -1,8 +1,8 @@
 ﻿var TripEditor = new function () {
     this.SaveAndChangeLocation = function (href) {
-        $.put('Trip', $('.trip-placeholder').find('form').serialize(), function (data) {
+        $.put('Trip', $('.ui-placeholder-import-trip').find('form').serialize(), function (data) {
             renderContent(data);
-            if ($('.trip-placeholder').find('.field-validation-error').length == 0) {
+            if ($('.ui-placeholder-import-trip').find('.field-validation-error').length == 0) {
                 window.location.href = href;
             }
         });
@@ -10,7 +10,7 @@
 
     var renderContent = function (data) {
         var newDom = $(data);
-        $('.trip-placeholder').replaceWith(newDom.find('.trip-placeholder'));
+        $('.ui-placeholder-import-trip').replaceWith(newDom.find('.ui-placeholder-import-trip'));
         $('#Trip_Date').datepicker({
             onClose: function () { $('#Trip_Date').focus(); }
         });
@@ -27,8 +27,8 @@
 
 $(document).ready(function () {
     TripEditor.Initialize();
-    $('.wizard a.advance').click(function (eventObject) {
-        var clickedAnchor = $(eventObject.target);
+    $('a.ui-direction-import-forward').click(function (eventObject) {
+        var clickedAnchor = $(eventObject.target).parent();
         TripEditor.SaveAndChangeLocation(clickedAnchor.attr('href'));
         return false;
     });

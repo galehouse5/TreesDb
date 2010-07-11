@@ -1,9 +1,8 @@
-﻿<%@ Page Title="Tree Measurement Database - Import Site Info" Language="C#" MasterPageFile="~/Views/Shared/TMDWizard.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
+﻿<%@ Page Title="Tree Measurement Database - Import Site Info" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
 <%@ Import Namespace="TMD.Application" %>
 <%@ Import Namespace="TMD.Model.Trips" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-<link type="text/css" rel="Stylesheet" href="/Styles/Import.css" />
 <script type="text/javascript" src="/Scripts/ThirdParty/jquery.inputHintOverlay.js"></script>
 <script type="text/javascript" src="/Scripts/Import/TreeMeasurementsEditor.js"></script>
 <script type="text/javascript" src="/Scripts/Import/TreeMeasurementEditor.js"></script>
@@ -14,71 +13,85 @@
 <script type="text/javascript" src="/Scripts/MapMarkerService.js"></script>
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="OverviewContent" runat="server">
-<% Html.RenderPartial("Steps"); %>
-</asp:Content>
-
 <asp:Content ID="Content3" ContentPlaceHolderID="StepContent" runat="server">
-<div class='treemeasurements-placeholder'>
-    <h3>Add the measurements you recorded at your subsites.</h3>
-    <div class='sectionspacer'></div>
-    <ul class='sitevisit-list'>
+<h2>Add the measurements you recorded at your subsite visits.</h2>
+<div class="ui-placeholder-import-sitevisits">
     <% for (int sv = 0; sv < Model.Trip.SiteVisits.Count; sv++) { %>
-        <li class='sitevisit'>
-            <span class='icon'></span>
-            <div class='column'>
-                <span><%= Model.Trip.SiteVisits[sv].Name%></span>
-                <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}]", sv))%>
-                <br />
+        <div class="ui-content-import-sitevisit ui-widget ui-widget-content ui-corner-all">
+            <div class="ui-content-import-header ui-widget-header ui-corner-all">
+                <span class="ui-icon-import-sitevisit"></span>
+                <div class="ui-helper-clearfix"></div>
             </div>
-            <div class='ui-helper-clearfix'></div>
-            <ul class='subsitevisit-list'>
+            <div class="ui-content-import-summary ui-widget-content ui-corner-all">
+                Name: <%= Model.Trip.SiteVisits[sv].Name %>
+                <br />
+                Coordinates: <%= Model.Trip.SiteVisits[sv].Coordinates %>
+            </div>
+            <div class="ui-helper-clearfix"></div>
+        </div>
+        <div class="ui-content-import-subsitevisits">
             <% for (int ssv = 0; ssv < Model.Trip.SiteVisits[sv].SubsiteVisits.Count; ssv++) { %>
-                <li class='subsitevisit'>
-                    <span class='icon'></span>
-                    <div class='column'>
-                        <span><%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Name%></span>
-                        <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}]", sv, ssv))%>
-                        <br />
-                        <a href='javascript:TreeMeasurementEditor.Add(<%= sv %>, <%= ssv %>, TreeMeasurementsEditor.Refresh)'>Add measurement</a>
-                        <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements", sv, ssv))%>
+                <div class="ui-content-import-subsitevisit ui-widget ui-widget-content ui-corner-all">
+                    <div class="ui-content-import-header ui-widget-header ui-corner-all">
+                        <span class="ui-icon-import-subsitevisit"></span>
+                        <a href='javascript:TreeMeasurementEditor.Add(<%= sv %>, <%= ssv %>, TreeMeasurementsEditor.Refresh)' class="ui-button-import-add-treemeasurement">Add measurement</a>
+                        <div class="ui-helper-clearfix"></div>
                     </div>
-                    <div class='ui-helper-clearfix'></div>
-                    <ul class='treemeasurement-list'>
+                    <div class="ui-validation-error ui-state-error-text">
+                        <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements", sv, ssv), " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                        <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements", sv, ssv), "", new { @class = "ui-validation-error-message" })%>
+                    </div>
+                    <div class="ui-content-import-summary ui-widget-content ui-corner-all">
+                        Name: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Name %>
+                        <br />
+                        Location: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].County %>, <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].State %>
+                        <br />
+                        Coordinates: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Coordinates%>
+                    </div>
+                    <div class="ui-helper-clearfix"></div>
+                </div>
+                <div class="ui-content-import-treemeasurements">
                     <% for (int tm = 0; tm < Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements.Count; tm++) { %>
-                        <li class='treemeasurement'>
-                            <span class='icon'></span>
-                            <div class='column'>
-                                <span>
-                                    <% if (Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeNameSpecified) { %>
-                                       <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeName %>
-                                    <% } else { %>
-                                        <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].ScientificName %> 
-                                        <% if (!string.IsNullOrWhiteSpace(Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName)) { %>
-                                            <%= string.Format("({0})", Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName)%>
-                                        <% } %>
-                                    <% } %>
-                                </span>
-                                <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements[{2}]", sv, ssv, tm))%>
-                                <br />
-                                <a href='javascript:TreeMeasurementEditor.Edit(<%= sv %>, <%= ssv %>, <%= tm %>, TreeMeasurementsEditor.Refresh)'>Edit</a>
-                                <a href='javascript:TreeMeasurementRemover.Open(<%= sv %>, <%= ssv %>, <%= tm %>, TreeMeasurementsEditor.Refresh)'>Remove</a>
+                        <div class="ui-content-import-treemeasurement ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-content-import-header ui-widget-header ui-corner-all">
+                                <span class="ui-icon-import-treemeasurement"></span>
+                                <a href='javascript:TreeMeasurementEditor.Edit(<%= sv %>, <%= ssv %>, <%= tm %>, TreeMeasurementsEditor.Refresh)' class="ui-button-import-edit">Edit</a>
+                                <a href='javascript:TreeMeasurementRemover.Open(<%= sv %>, <%= ssv %>, <%= tm %>, TreeMeasurementsEditor.Refresh)' class="ui-button-import-remove">Remove</a>
+                                <div class="ui-helper-clearfix"></div>
                             </div>
-                            <div class='ui-helper-clearfix'></div>
-                        </li>
+                            <div class="ui-validation-error ui-state-error-text">
+                                <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements[{2}]", sv, ssv, tm), " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                                <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements[{2}]", sv, ssv, tm), "", new { @class = "ui-validation-error-message" })%>
+                            </div>
+                            <div class="ui-content-import-summary ui-widget-content ui-corner-all">
+                                <% if (Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeNameSpecified) { %>
+                                   Name : <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeName %>
+                                   <br />
+                                <% } %>
+                                Common name: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName %>
+                                <br />
+                                Scientific name: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].ScientificName %>
+                                <br />
+                                Coordinates: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Coordinates%>
+                            </div>
+                            <div class="ui-helper-clearfix"></div>
+                        </div>
                     <% } %>
-                    </ul>
-                </li>
+                    <div class="ui-helper-clearfix"></div>
+                </div>
+                <div class="ui-helper-clearfix"></div>
             <% } %>
-            </ul>
-        </li>
+        </div>
+        <div class="ui-helper-clearfix"></div>
     <% } %>
-    </ul>
-    <div class='sectionspacer'></div>
 </div>
 </asp:Content>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="NavContent" runat="server">
-<%= Html.ActionLink("Next >", "Review", null, new { @class = "advance" })%>
-<%= Html.ActionLink("< Back", "SiteVisits", null, new { @class = "retreat" })%>
+<asp:Content ID="Content2" ContentPlaceHolderID="LeftNavigationContent" runat="server">
+<%= Html.ActionLink("Back", "SiteVisits", null, new { @class = "ui-direction-import-backward" })%>
 </asp:Content>
+
+<asp:Content ID="Content5" ContentPlaceHolderID="RightNavigationContent" runat="server">
+<%= Html.ActionLink("Next", "Review", null, new { @class = "ui-direction-import-forward" })%>
+</asp:Content>
+

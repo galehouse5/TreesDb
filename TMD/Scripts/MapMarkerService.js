@@ -5,26 +5,26 @@
 
     var initialize = function () {
         siteMarkerImage = new google.maps.MarkerImage(
-            '/Styles/Images/site32.png',
+            '/Images/site32.png',
             new google.maps.Size(32, 32));
         siteMarkerShadowImage = new google.maps.MarkerImage(
-            '/Styles/Images/site32s.png',
+            '/Images/site32s.png',
             new google.maps.Size(59, 32),
             new google.maps.Point(0, 0),
             new google.maps.Point(16, 32));
         subsiteMarkerImage = new google.maps.MarkerImage(
-            '/Styles/Images/subsite32.png',
+            '/Images/subsite32.png',
             new google.maps.Size(32, 32));
         subsiteMarkerShadowImage = new google.maps.MarkerImage(
-            '/Styles/Images/subsite32s.png',
+            '/Images/subsite32s.png',
             new google.maps.Size(59, 32),
             new google.maps.Point(0, 0),
             new google.maps.Point(16, 32));
         treeMarkerImage = new google.maps.MarkerImage(
-            '/Styles/Images/tree32.png',
+            '/Images/tree32.png',
             new google.maps.Size(32, 32));
         treeMarkerShadowImage = new google.maps.MarkerImage(
-            '/Styles/Images/tree32s.png',
+            '/Images/tree32s.png',
             new google.maps.Size(59, 32),
             new google.maps.Point(0, 0),
             new google.maps.Point(16, 32));

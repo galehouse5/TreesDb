@@ -127,11 +127,12 @@
     <Compile Include="WebApplicationSettings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\white oak in fog.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\white oak in fog.jpg" />
     <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\GeocoderService.js" />
     <Content Include="Scripts\Import\CoordinatePicker.js" />
+    <Content Include="Scripts\Import\Initialize.js" />
     <Content Include="Scripts\Import\ReviewEditor.js" />
     <Content Include="Scripts\Import\SiteVisitEditor.js" />
     <Content Include="Scripts\Import\SiteVisitsEditor.js" />
@@ -139,45 +140,51 @@
     <Content Include="Scripts\Import\TreeMeasurementsEditor.js" />
     <Content Include="Scripts\Import\TripEditor.js" />
     <Content Include="Scripts\Import\SubsiteVisitEditor.js" />
+    <Content Include="Scripts\Initialize.js" />
     <Content Include="Scripts\MapMarkerService.js" />
     <Content Include="Scripts\ThirdParty\grid.locale-en.js" />
+    <Content Include="Scripts\ThirdParty\jquery-ui-1.8.2.custom.min.js" />
     <Content Include="Scripts\ThirdParty\jquery.inputHintOverlay.js" />
     <Content Include="Scripts\ThirdParty\jquery.jqGrid.min.js" />
     <Content Include="Scripts\ThirdParty\jquery-1.4.2-vsdoc.js" />
     <Content Include="Scripts\ThirdParty\jquery-1.4.2.js" />
     <Content Include="Scripts\ThirdParty\jquery-1.4.2.min.js" />
-    <Content Include="Scripts\ThirdParty\jquery-ui-1.8.custom.min.js" />
     <Content Include="Scripts\ThirdParty\jquery.validate.js" />
     <Content Include="Scripts\ThirdParty\jquery.validate.min.js" />
     <Content Include="Scripts\ValueObjectService.js" />
     <Content Include="Styles\Common.css" />
-    <Content Include="Styles\Images\checked14.gif" />
-    <Content Include="Styles\Images\site16.png" />
-    <Content Include="Styles\Images\site32.png" />
-    <Content Include="Styles\Images\site32s.png" />
-    <Content Include="Styles\Images\subsite16.png" />
-    <Content Include="Styles\Images\subsite32.png" />
-    <Content Include="Styles\Images\subsite32s.png" />
-    <Content Include="Styles\Images\tree16.png" />
-    <Content Include="Styles\Images\tree32.png" />
-    <Content Include="Styles\Images\tree32s.png" />
-    <Content Include="Styles\Images\unchecked14.gif" />
+    <Content Include="Styles\Common.old.css" />
+    <Content Include="Images\checked14.gif" />
+    <Content Include="Images\ui-logo-background.jpg" />
+    <Content Include="Images\ui-logo-main.png" />
+    <Content Include="Images\site16.png" />
+    <Content Include="Images\site32.png" />
+    <Content Include="Images\site32s.png" />
+    <Content Include="Images\subsite16.png" />
+    <Content Include="Images\subsite32.png" />
+    <Content Include="Images\subsite32s.png" />
+    <Content Include="Images\tree16.png" />
+    <Content Include="Images\tree32.png" />
+    <Content Include="Images\tree32s.png" />
+    <Content Include="Images\unchecked14.gif" />
     <Content Include="Styles\Import.css" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-anim_basic_16x16.gif" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-icons_222222_256x240.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-icons_454545_256x240.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-icons_888888_256x240.png" />
-    <Content Include="Styles\ThirdParty\smoothness\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="Styles\ThirdParty\smoothness\jquery-ui-1.8.custom.css" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-anim_basic_16x16.gif" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-icons_808080_256x240.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-icons_847e71_256x240.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-icons_8dc262_256x240.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="Styles\ThirdParty\south-street\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\ThirdParty\south-street\jquery-ui-1.8.2.custom.css" />
     <Content Include="Styles\ThirdParty\ui.jqgrid.css" />
     <Content Include="Views\Import\RemoveSiteVisit.aspx" />
     <Content Include="Views\Import\RemoveSubsiteVisit.aspx" />
@@ -206,13 +213,10 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\TMDSite.Master" />
+    <Content Include="Views\Shared\Site.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\TMDJavascript.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\TMDWizard.Master" />
+    <Content Include="Views\Import\Import.Master" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TMD.Application\TMD.Application.csproj">
@@ -228,6 +232,7 @@
       <Name>TMD.Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

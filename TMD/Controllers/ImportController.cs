@@ -543,8 +543,24 @@ namespace TMD.Controllers
                 return RedirectToAction("TreeMeasurements");
             }
             model.Trip.ValidateRegardingImport().CopyToModelState(ModelState, "Trip");
-            model.Trip.ValidateRegardingOptionalRules().CopyToModelState(ModelState, "Trip");
+            model.Trip.ValidateRegardingOptionalRules().CopyToModelState(ModelState, "Trip", "Warning");
             return View("Review", model);
+        }
+
+        #endregion
+
+        #region Finish actions
+
+        [HttpGet]
+        public ActionResult Finish()
+        {
+            ImportModel model = new ImportModel();
+            model.CurrentStep = ImportStep.Finish;
+            if (model.IsCurrentStepPremature)
+            {
+                return RedirectToAction("Review");
+            }
+            return View("Finish", model);
         }
 
         #endregion

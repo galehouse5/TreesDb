@@ -33,14 +33,21 @@ namespace TMD.Model.Trips
 
         private Coordinates m_Coordinates;
         [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "SiteVisit")]
-        [SpecifiedValidator(MessageTemplate = "Site coordinates must be specified.", Ruleset = "Import", Tag = "SiteVisit")]
+        [SpecifiedValidator(MessageTemplate = "You must specify coordinates for this site or some contained subsite.", Ruleset = "Import", Tag = "SiteVisit")]
         public virtual Coordinates Coordinates
         {
             get
             {
-                if (CoordinatesCalculated && SubsiteVisits.Count > 0)
+                if (CoordinatesCalculated)
                 {
-                    m_Coordinates = calculateAverageCoordinates();
+                    if (doesSomeContainedSubsiteVisitHaveEneteredCoordinates())
+                    {
+                        m_Coordinates = calculateCoordinatesByAveragingContainedSubsiteVisits();
+                    }
+                    else
+                    {
+                        m_Coordinates = Coordinates.Null();
+                    }
                 }
                 return m_Coordinates;
             }
@@ -58,7 +65,7 @@ namespace TMD.Model.Trips
             set { CoordinatesCalculated = !value; }
         }
 
-        [SelfValidation(Ruleset = "Screening")]
+        [SelfValidation(Ruleset = "Import")]
         public virtual void CheckCoordinatesAreSpecifiedIfCoordinatesAreEntered(ValidationResults results)
         {
             if (CoordinatesEntered)
@@ -83,12 +90,24 @@ namespace TMD.Model.Trips
             set { m_Comments = (value ?? string.Empty).Trim(); }
         }
 
-        private Coordinates calculateAverageCoordinates()
+        private bool doesSomeContainedSubsiteVisitHaveEneteredCoordinates()
+        {
+            foreach (SubsiteVisit ssv in SubsiteVisits)
+            {
+                if (ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private Coordinates calculateCoordinatesByAveragingContainedSubsiteVisits()
         {
             List<Coordinates> coords = new List<Coordinates>();
             foreach (SubsiteVisit ssv in SubsiteVisits)
             {
-                if (ssv.Coordinates.IsSpecified)
+                if (ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified)
                 {
                     coords.Add(ssv.Coordinates);
                 }
@@ -100,6 +119,7 @@ namespace TMD.Model.Trips
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence")]
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Import", Ruleset = "Import")]
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Optional", Ruleset = "Optional")]
         [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "Site must contain at least one subsite.", Ruleset = "Screening", Tag = "SubsiteVisits")]
         [CollectionCountWhenNotNullValidator(int.MinValue, 100, MessageTemplate = "Site contains too many subsites.", Ruleset = "Screening", Tag = "SubsiteVisits")]
         public virtual IList<SubsiteVisit> SubsiteVisits { get; private set; }

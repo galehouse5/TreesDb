@@ -25,5 +25,13 @@ namespace TMD.Extensions
                 modelState.AddModelError(result.Key == null ? "_FORM" : string.Format("{0}.{1}", formElementNamespace, result.Key), result.Message);
             }
         }
+
+        public static void CopyToModelState(this ValidationResults results, ModelStateDictionary modelState, string formElementNamespace, string appendQualification)
+        {
+            foreach (ValidationResult result in results)
+            {
+                modelState.AddModelError(result.Key == null ? "_FORM" : string.Format("{0}.{1}.{2}", formElementNamespace, result.Key, appendQualification), result.Message);
+            }
+        }
     }
 }

@@ -99,7 +99,6 @@
     <Compile Include="ModelValidator.cs" />
     <Compile Include="ValueObjects\Angle.cs" />
     <Compile Include="ValueObjects\CoordinateBounds.cs" />
-    <Compile Include="ValueObjects\CoordinateDistance.cs" />
     <Compile Include="ValueObjects\Coordinates.cs" />
     <Compile Include="Locations\Country.cs" />
     <Compile Include="ValueObjects\DirectedDistance.cs" />

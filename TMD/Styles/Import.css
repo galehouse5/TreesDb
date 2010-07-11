@@ -1,22 +1,55 @@
-﻿.sitevisit .icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/site32.png"); }
-.sitevisit .column { float: left; margin-right: 10px; width: auto; }
-.sitevisit-list { margin: 0; padding: 0; list-style-type: none; line-height: 18px; }
-.sitevisit-list li { margin: 16px 0; }
-.sitevisit-add { margin-top: 4px; background: url('/Styles/Images/site16.png') no-repeat; height: 16px; padding-left: 16px; }
+﻿.ui-content-import-step { width: 820px; margin: 50px auto; }
 
-.subsitevisit .icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/subsite32.png"); }
-.subsitevisit .column { float: left; margin-right: 10px; width: auto; }
-.subsitevisit-list { margin: 0; padding-left: 36px; list-style-type: none; line-height: 18px; }
-.subsitevisit-list li { margin: 16px 0; }
-.subsitevisit-add { margin-top: 4px; background: url('/Styles/Images/subsite16.png') no-repeat; height: 16px; padding-left: 16px; }
+.ui-navigation-import { margin: 25px auto;  }
+.ui-navigation-import-left { float: left; width: 170px; margin: 0 15px; text-align: right; font-size: 12px; }
+.ui-navigation-import-middle { float: left; width: 570px; margin: 0 15px; text-align: center; padding-top: 3px; }
+.ui-navigation-import-middle ul { list-style: none; padding: 0; margin: 0; }
+.ui-navigation-import-middle ul li { display: inline; }
+.ui-navigation-import-right { float: right; width: 170px; margin: 0 15px; text-align: left; font-size: 12px; }
 
-.treemeasurement .icon { float: left; margin: 4px 8px 0 0; height: 32px; width: 32px; background-image: url("/Styles/Images/tree32.png"); }
-.treemeasurement .column { float: left; margin-right: 10px; width: auto; }
-.treemeasurement-list { margin: 0; padding-left: 36px; list-style-type: none; line-height: 18px; }
-.treemeasurement-list li { margin: 16px 0; }
-.treemeasurement-add { margin-top: 4px; background: url('/Styles/Images/tree16.png') no-repeat; height: 16px; padding-left: 16px; }
+.ui-form-column { float: left; width: 400px; }
+.ui-form-row { clear: both; padding: 5px 0; }
+.ui-form-row label { float: left; display: block; width: 120px; text-align: right; padding-right: 5px; }
+.ui-form-row input[type=text] { float: left; display: block; width: 260px; margin-top: 6px; }
+.ui-form-row textarea { float: left; display: block; width: 260px; margin-top: 6px; height: 60px; }
+.ui-form-row input[type=checkbox] { float: left; display: block; margin-top: 8px; }
+.ui-form-row .ui-validation-error { float: left; clear: both; display: block; }
+.ui-form-row .ui-validation-error .field-validation-error.ui-icon { float: left; display: block; margin-left: 108px; }
+.ui-form-row .ui-validation-error .field-validation-error.ui-validation-error-message  { float: left; display: block; width: 260px; line-height: 15px; }
 
-span.field-validation-error { margin: 2px 0 0 2px; background: url('/Styles/Images/unchecked14.gif') no-repeat; height: 14px; color: #EA5200; padding-left: 16px; }
+.ui-validation-error .field-validation-error.ui-icon { float: left; display: block;}
+.ui-validation-error .field-validation-error.ui-validation-error-message  { font-size: 12px; float: left; display: block; line-height: 15px; }
+
+.ui-validation-warning .field-validation-error.ui-icon { float: left; display: block;}
+.ui-validation-warning .field-validation-error.ui-validation-warning-message  { font-weight: normal; font-size: 12px; float: left; display: block; line-height: 15px; }
+
+.ui-button-import-edit { float: right; }
+.ui-button-import-remove { float: right; }
+.ui-content-import-summary { font-size: 12px; line-height: 20px; padding-left: 5px; }
+
+.ui-button-import-add-sitevisit { font-size: 12px; background-image: url('/Images/site16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
+.ui-content-import-sitevisit { float: left; font-size: 10px; width: 250px; margin: 10px; }
+.ui-content-import-sitevisit .field-validation-error.ui-validation-error-message { width: 225px; }
+.ui-icon-import-sitevisit { float: left; height: 25px; width: 32px; background-image: url("/Images/site32.png"); background-position: 0 -3px; }
+
+.ui-content-import-subsitevisits { float: left; width: 545px; }
+
+.ui-button-import-add-subsitevisit { font-size: 12px; background-image: url('/Images/subsite16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
+.ui-content-import-subsitevisit { float: left; font-size: 10px; width: 250px; margin: 10px; }
+.ui-content-import-subsitevisit .field-validation-error.ui-validation-error-message { width: 225px; }
+.ui-icon-import-subsitevisit { float: left; height: 25px; width: 32px; background-image: url("/Images/subsite32.png"); background-position: 0 -3px; }
+
+.ui-content-import-treemeasurements { float: left; width: 270px; }
+
+.ui-content-import-header .ui-button-import-add-treemeasurement { float: right; background-image: url('/Images/tree16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
+.ui-content-import-treemeasurement { float: left; font-size: 10px; width: 250px; margin: 10px; }
+.ui-content-import-treemeasurement .field-validation-error.ui-validation-error-message, .ui-content-import-treemeasurement .field-validation-error.ui-validation-warning-message { width: 225px; }
+.ui-icon-import-treemeasurement { float: left; height: 25px; width: 32px; background-image: url("/Images/tree32.png"); background-position: 0 -3px; }
+
+
+
+
+
 
 label.inputHintOverlay { color: #808080; }
 
@@ -25,3 +58,4 @@ label.inputHintOverlay { color: #808080; }
 .editor-big .form-row .input-col { float: left; width: 550px; }
 .editor-big .form-row .input-col input[type=text] { float: left; width: 200px; }
 .editor-big .form-row .input-col input[type=checkbox], select, textarea { float: left; overflow-x: hidden; }
+

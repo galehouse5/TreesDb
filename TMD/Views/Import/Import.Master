@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" MasterPageFile="~/Views/Shared/Site.Master" %>
+
+<asp:Content ContentPlaceHolderID="HeadContent" runat="server">
+<link type="text/css" rel="stylesheet" href="/Styles/Import.css" />
+<script type="text/javascript" src="/Scripts/Import/Initialize.js"></script>
+<asp:ContentPlaceHolder ID="HeadContent" runat="server" ></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+<div class="ui-content-import-step ui-content-emphasize">
+    <asp:ContentPlaceHolder ID="StepContent" runat="server"></asp:ContentPlaceHolder>
+</div>
+<div class="ui-helper-clearfix"></div>
+<div class="ui-navigation-import">
+    <div class="ui-navigation-import-middle">
+        <% Html.RenderPartial("Steps"); %>
+    </div>
+    <div class="ui-navigation-import-left">
+        <asp:ContentPlaceHolder ID="LeftNavigationContent" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <div class="ui-navigation-import-right">
+        <asp:ContentPlaceHolder ID="RightNavigationContent" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <div class="ui-helper-clearfix"></div>
+</div>
+</asp:Content>

@@ -43,6 +43,14 @@ namespace TMD.Model
             get { return Latitude.InputFormat; }
         }
 
+        public float CalculateDistanceInMinutesTo(Coordinates otherCoordinates)
+        {
+            float degrees = (float)Math.Sqrt(
+                (Latitude.TotalDegrees - otherCoordinates.Latitude.TotalDegrees) * (Latitude.TotalDegrees - otherCoordinates.Latitude.TotalDegrees)
+                + (Longitude.TotalDegrees - otherCoordinates.Longitude.TotalDegrees) * (Longitude.TotalDegrees - otherCoordinates.Longitude.TotalDegrees));
+            return degrees * 60f;
+        }
+
         public override string ToString()
         {
             if (IsSpecified)

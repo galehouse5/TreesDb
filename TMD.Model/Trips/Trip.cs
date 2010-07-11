@@ -60,6 +60,7 @@ namespace TMD.Model.Trips
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence")]
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Import", Ruleset = "Import")]
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Optional", Ruleset = "Optional")]
         [CollectionCountWhenNotNullValidator(1, 100, MessageTemplate = "Your must add site visits to your trip.", Ruleset = "Screening", Tag = "SiteVisits")]
         public virtual IList<SiteVisit> SiteVisits { get; private set; }
 
@@ -129,6 +130,11 @@ namespace TMD.Model.Trips
         public virtual ValidationResults ValidateRegardingImport()
         {
             return this.Validate("Screening", "Persistence", "Import");
+        }
+
+        public virtual ValidationResults ValidateRegardingOptionalRules()
+        {
+            return this.Validate("Optional");
         }
 
         public virtual SiteVisit GetSiteVisit(int id)
