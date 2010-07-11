@@ -19,12 +19,12 @@
             </a>
         </div>
     </div>
-    <div class="ui-account">
+    <div class="ui-account ui-script-show">
         <% if (!Request.IsAuthenticated) { %>
             <%= Html.ActionLink("Login", "Login", "Account", new { @class = "ui-account-login" })%>
         <% } %>
     </div>
-    <div class="ui-navigation">
+    <div class="ui-navigation ui-script-show">
         <ul>
             <li><%= Html.ActionLink("Import", "Index", "Import", null, Html.IsCurrentController("Import") ? new { @class = "ui-state-activate" } : null) %></li>
             <li><%= Html.ActionLink("Map", "Index", "Map", null, Html.IsCurrentController("Map") ? new { @class = "ui-state-activate" } : null)%></li>
@@ -35,16 +35,15 @@
     <div class="ui-content ui-script-show">
         <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
     </div>
-    <div class="ui-content ui-script-hide">
-        <h2>Javascript Disabled</h2>
+    <div class="ui-content ui-script-hide ui-content-emphasize">
+        <h2>Javascript is disabled.</h2>
         <p>
-            Sorry, this page requires Javascript. Please see 
+            The Tree Measurement Database requires Javascript. For instruction on enabling Javascript in your browser, follow
             <% if (Request.Browser.Browser.Equals("firefox", StringComparison.CurrentCultureIgnoreCase)) { %>
-                <a href="http://support.mozilla.com/en-US/kb/Javascript">this link</a> 
+                <a href="http://support.mozilla.com/en-US/kb/Javascript">this link</a>. 
             <% } else if (Request.Browser.Browser.Equals("ie", StringComparison.CurrentCultureIgnoreCase)) { %>
-                <a href="http://support.microsoft.com/gp/howtoscript">this link</a> 
+                <a href="http://support.microsoft.com/gp/howtoscript">this link</a>.
             <% } %>
-            for instructions on enabling Javascript in your browser.
         </p>
     </div>
 </body>

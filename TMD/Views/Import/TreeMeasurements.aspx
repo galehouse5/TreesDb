@@ -16,7 +16,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="StepContent" runat="server">
 <h2>Add the measurements you recorded at your subsite visits.</h2>
 <div class="ui-placeholder-import-sitevisits">
-    <% for (int sv = 0; sv < Model.Trip.SiteVisits.Count; sv++) { %>
+    <% for (int sv = Model.Trip.SiteVisits.Count - 1; sv >= 0; sv--) { %>
         <div class="ui-content-import-sitevisit ui-widget ui-widget-content ui-corner-all">
             <div class="ui-content-import-header ui-widget-header ui-corner-all">
                 <span class="ui-icon-import-sitevisit"></span>
@@ -30,7 +30,7 @@
             <div class="ui-helper-clearfix"></div>
         </div>
         <div class="ui-content-import-subsitevisits">
-            <% for (int ssv = 0; ssv < Model.Trip.SiteVisits[sv].SubsiteVisits.Count; ssv++) { %>
+            <% for (int ssv = Model.Trip.SiteVisits[sv].SubsiteVisits.Count - 1; ssv >= 0; ssv--) { %>
                 <div class="ui-content-import-subsitevisit ui-widget ui-widget-content ui-corner-all">
                     <div class="ui-content-import-header ui-widget-header ui-corner-all">
                         <span class="ui-icon-import-subsitevisit"></span>
@@ -51,7 +51,7 @@
                     <div class="ui-helper-clearfix"></div>
                 </div>
                 <div class="ui-content-import-treemeasurements">
-                    <% for (int tm = 0; tm < Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements.Count; tm++) { %>
+                    <% for (int tm = Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements.Count - 1; tm >= 0; tm--) { %>
                         <div class="ui-content-import-treemeasurement ui-widget ui-widget-content ui-corner-all">
                             <div class="ui-content-import-header ui-widget-header ui-corner-all">
                                 <span class="ui-icon-import-treemeasurement"></span>

@@ -87,7 +87,7 @@ namespace TMD.Controllers
                     .ValidateIgnoringCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
                 {
                     ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}]", sv),
-                        "You must edit or remove this site visit to fix invalid data.");
+                        "This site visit contains invalid data.");
                 }
                 for (int ssv = 0; ssv < model.Trip.SiteVisits[sv].SubsiteVisits.Count; ssv++)
                 {
@@ -95,7 +95,7 @@ namespace TMD.Controllers
                         .ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
                     {
                         ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}]", sv, ssv),
-                            "You must edit or remove this subsite visit to fix invalid data.");
+                            "This subsite visit contains invalid data.");
                     }
                 }
             }
@@ -149,7 +149,7 @@ namespace TMD.Controllers
                     .ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
                 {
                     ModelState.AddModelError(string.Format("SelectedSiteVisit.SubsiteVisits[{0}]", ssv),
-                        "You must edit or remove this subsite visit to correct invalid data.");
+                        "This subsite visit contains invalid data.");
                 }
             }
             if (model.Trip.ValidateRegardingPersistence().IsValid)
@@ -350,7 +350,7 @@ namespace TMD.Controllers
                             .ValidateRegardingScreeningAndPersistence().IsValid)
                         {
                             ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements[{2}]", sv, ssv, tm),
-                                "You must edit or remove this tree measurement to fix invalid data.");
+                                "This tree measurement contains invalid data.");
                         }
                     }
                 }

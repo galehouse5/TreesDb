@@ -8,7 +8,14 @@ namespace TMD.Controllers
 {
     public class MainController : Controller
     {
+        [HttpGet]
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult UntestedBrowser()
         {
             return View();
         }

@@ -40,5 +40,33 @@ namespace TMD
             ModelBinders.Binders.Add(typeof(Distance), new DistanceModelBinder());
             ModelBinders.Binders.Add(typeof(Volume), new VolumeModelBinder());
         }
+
+        public override void Init()
+        {
+            base.Init();
+            base.BeginRequest += new EventHandler(BeginRequest_EnforceBrowserCompatibility);
+        }
+
+        public override void Dispose()
+        {
+            base.BeginRequest -= BeginRequest_EnforceBrowserCompatibility;
+            base.Dispose();
+        }
+
+        void BeginRequest_EnforceBrowserCompatibility(object sender, EventArgs e)
+        {
+            if (Request.Browser.Browser == "Firefox" && Request.Browser.MajorVersion == 3)
+            {
+                return;
+            }
+            if (Request.Browser.Browser == "IE" && Request.Browser.MajorVersion == 8)
+            {
+                return;
+            }
+            if (Request.Path != "/Main/UntestedBrowser" && string.IsNullOrWhiteSpace(Request.CurrentExecutionFilePathExtension))
+            {
+                HttpContext.Current.RewritePath("/Main/UntestedBrowser");
+            }            
+        }
     }
 }

@@ -153,7 +153,6 @@
     <Content Include="Scripts\ThirdParty\jquery.validate.min.js" />
     <Content Include="Scripts\ValueObjectService.js" />
     <Content Include="Styles\Common.css" />
-    <Content Include="Styles\Common.old.css" />
     <Content Include="Images\checked14.gif" />
     <Content Include="Images\ui-logo-background.jpg" />
     <Content Include="Images\ui-logo-main.png" />
@@ -200,6 +199,7 @@
     <Content Include="Views\Import\SubsiteVisit.aspx" />
     <Content Include="Views\Import\Trip.aspx" />
     <Content Include="Views\Main\Index.aspx" />
+    <Content Include="Views\Main\UntestedBrowser.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
