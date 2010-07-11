@@ -179,15 +179,15 @@
 
 var SubsiteVisitRemover = new function () {
     var dom = $(
-        "<div id='subsitevisit-editor' class='dialog'>\
-            <div class='subsitevisit-placeholder'></div>\
+        "<div title='Removing subsite visit'>\
+            <div class='ui-placeholder-import-subsitevisit'></div>\
         </div>");
     var isSaved;
     var closeCallback;
 
     var initialize = function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
-            width: 480, height: 160, title: 'Remove subsite visit',
+            width: 320,
             buttons: { 'Remove': remove, 'Cancel': function () { dom.dialog('close'); } }
         });
         dom.bind('dialogclose', dispose);
@@ -199,7 +199,7 @@ var SubsiteVisitRemover = new function () {
     }
 
     var render = function (data) {
-        dom.find('.subsitevisit-placeholder').replaceWith($(data));
+        dom.find('.ui-placeholder-import-subsitevisit').replaceWith($(data));
     }
 
     var remove = function () {

@@ -34,7 +34,7 @@ namespace TMD.Model.Trips
 
         private Coordinates m_Coordinates;
         [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "SubsiteVisit")]
-        [SpecifiedValidator(MessageTemplate = "You must specify coordinates for this subsite, its containing site, or some contained measurement.", Ruleset = "Import", Tag = "SubsiteVisit")]
+        [SpecifiedValidator(MessageTemplate = "You must specify coordinates for this subsite, its containing site, or any contained measurement.", Ruleset = "Import", Tag = "SubsiteVisit")]
         public virtual Coordinates Coordinates
         {
             get

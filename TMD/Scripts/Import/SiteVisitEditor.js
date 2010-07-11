@@ -186,8 +186,8 @@
 
 var SiteVisitRemover = new function () {
     var dom = $(
-        "<div id='sitevisit-editor' class='dialog'>\
-            <div class='sitevisit-placeholder'>\
+        "<div title='Removing site visit'>\
+            <div class='ui-placeholder-import-sitevisit'>\
             </div>\
         </div>");
     var isSaved;
@@ -195,7 +195,7 @@ var SiteVisitRemover = new function () {
 
     function initialize() {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
-            width: 480, height: 160, title: 'Remove site visit',
+            width: 320,
             buttons: { 'Remove': remove, 'Cancel': function () { dom.dialog('close'); } }
         });
         dom.bind('dialogclose', dispose);
@@ -207,7 +207,7 @@ var SiteVisitRemover = new function () {
     }
 
     function render(data) {
-        dom.find('.sitevisit-placeholder').replaceWith($(data));
+        dom.find('.ui-placeholder-import-sitevisit').replaceWith($(data));
     }
 
     function remove() {

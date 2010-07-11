@@ -1,8 +1,18 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
-<div class='sitevisit-placeholder'>
+<div class='ui-placeholder-import-sitevisit'>
     <p>
-        <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;">
-        </span>
-        Are you sure you want to remove your visit to <%= Model.Trip.SiteVisits[Model.SelectedSiteVisitIndex].Name %>?
+        Are you sure you want to remove this site visit?
     </p>
+    <div class="ui-content-import-sitevisit ui-widget ui-widget-content ui-corner-all">
+        <div class="ui-content-import-header ui-widget-header ui-corner-all">
+            <span class="ui-icon-import-sitevisit"></span>
+            <div class="ui-helper-clearfix"></div>
+        </div>
+        <div class="ui-content-import-summary ui-widget-content ui-corner-all">
+            Name: <%= Model.SelectedSiteVisit.Name%>
+            <br />
+            Coordinates: <%= Model.SelectedSiteVisit.Coordinates%>
+        </div>
+        <div class="ui-helper-clearfix"></div>
+    </div>
 </div>

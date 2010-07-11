@@ -212,8 +212,8 @@
 
 var TreeMeasurementRemover = new function () {
     var dom = $(
-        "<div id='treemeasurement-editor' class='dialog'>\
-            <div class='treemeasurement-placeholder'>\
+        "<div title='Removing tree measurement'>\
+            <div class='ui-placeholder-import-treemeasurement'>\
             </div>\
         </div>");
     var isSaved;
@@ -221,7 +221,7 @@ var TreeMeasurementRemover = new function () {
 
     function initialize() {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
-            width: 480, height: 160, title: 'Remove tree measurement',
+            width: 320,
             buttons: { 'Remove': remove, 'Cancel': function () { dom.dialog('close'); } }
         });
         dom.bind('dialogclose', dispose);
@@ -233,7 +233,7 @@ var TreeMeasurementRemover = new function () {
     }
 
     function render(data) {
-        dom.find('.treemeasurement-placeholder').replaceWith($(data));
+        dom.find('.ui-placeholder-import-treemeasurement').replaceWith($(data));
     }
 
     function remove() {

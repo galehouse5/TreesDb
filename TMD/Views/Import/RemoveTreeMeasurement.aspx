@@ -1,8 +1,24 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
-<div class='treemeasurement-placeholder'>
+<div class='ui-placeholder-import-treemeasurement'>
     <p>
-        <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;">
-        </span>
-        Are you sure you want to remove your measurement of <%= Model.SelectedTreeMeasurement.ScientificName %>?
+        Are you sure you want to remove this tree measurement?
     </p>
+    <div class="ui-content-import-treemeasurement ui-widget ui-widget-content ui-corner-all">
+        <div class="ui-content-import-header ui-widget-header ui-corner-all">
+            <span class="ui-icon-import-treemeasurement"></span>
+            <div class="ui-helper-clearfix"></div>
+        </div>
+        <div class="ui-content-import-summary ui-widget-content ui-corner-all">
+            <% if (Model.SelectedTreeMeasurement.TreeNameSpecified) { %>
+               Name : <%= Model.SelectedTreeMeasurement.TreeName%>
+               <br />
+            <% } %>
+            Common name: <%= Model.SelectedTreeMeasurement.CommonName%>
+            <br />
+            Scientific name: <%= Model.SelectedTreeMeasurement.ScientificName%>
+            <br />
+            Coordinates: <%= Model.SelectedTreeMeasurement.Coordinates%>
+        </div>
+        <div class="ui-helper-clearfix"></div>
+    </div>
 </div>
