@@ -120,8 +120,8 @@
 
     public.GetCoordinates = function () {
         var coordinates = ValueObjectService.CreateCoordinates(
-            dom.find('input .latitude').val(),
-            dom.find('input .longitude').val());
+            dom.find('.latitude input').val(),
+            dom.find('.longitude input').val());
         return coordinates;
     };
 
@@ -175,11 +175,11 @@
             if (result.coordinatesPicked) {
                 if (coordinates.IsSpecified) {
                     var newCoordinates = ValueObjectService.CreateCoordinatesWithFormat(result.latitude, result.longitude, coordinates.InputFormat);
-                    dom.find('input .latitude').val(newCoordinates.Latitude);
-                    dom.find('input .longitude').val(newCoordinates.Longitude);
+                    dom.find('.latitude input').val(newCoordinates.Latitude);
+                    dom.find('.longitude input').val(newCoordinates.Longitude);
                 } else {
-                    dom.find('input .latitude').val(result.latitude);
-                    dom.find('input .longitude').val(result.longitude);
+                    dom.find('.latitude input').val(result.latitude);
+                    dom.find('.longitude input').val(result.longitude);
                 }
             }
             public.Show();
@@ -189,8 +189,8 @@
         };
         public.Hide();
         var coordinates = ValueObjectService.CreateCoordinates(
-            dom.find('input .latitude').val(),
-            dom.find('input .longitude').val());
+            dom.find('.latitude input').val(),
+            dom.find('.longitude input').val());
         var options = { markerLoader: loadMapMarkers };
         if (coordinates.IsSpecified) {
             options.coordinatesSpecified = true;

@@ -14,7 +14,7 @@
                     <div class='ui-helper-clearfix'></div>
                 </div>
                 <div class="ui-form-row coordinates-entered" style="float: left; margin-left: 10px;">
-                    <span >Enter coordinates to simplify remaining steps?</span>
+                    <span>Enter coordinates to simplify remaining steps?</span>
                     <%= Html.CheckBoxFor(m => m.SelectedSiteVisit.CoordinatesEntered)%>
                     <div class='ui-helper-clearfix'></div>
                 </div>

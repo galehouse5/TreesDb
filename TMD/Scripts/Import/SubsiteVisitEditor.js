@@ -1,20 +1,20 @@
 ﻿var SubsiteVisitEditor = new function () {
     var public = this;
     var dom = $(
-        "<div id='subsitevisit-editor' class='dialog'>\
-            <div class='subsitevisit-placeholder'></div>\
+        "<div>\
+            <div class='ui-placeholder-import-subsitevisit' style='height: 500px;'></div>\
         </div>");
     var isSaved, isAdding;
     var closeCallback, showCallback, hideCallback;
 
     function initialize() {
-        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 640, height: 'auto', minHeight: 560,
+        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 410,
             buttons: { 'Save': save, 'Cancel': function () { dom.dialog('close'); } }
         });
         if (isAdding) {
-            dom.dialog({ title: 'Add subsite visit' });
+            dom.dialog({ title: 'Adding subsite visit' });
         } else {
-            dom.dialog({ title: 'Edit subsite visit' });
+            dom.dialog({ title: 'Editing subsite visit' });
         }
         dom.bind('dialogclose', dispose);
     }
@@ -28,13 +28,14 @@
     }
 
     function render(data) {
-        dom.find('.subsitevisit-placeholder').replaceWith($(data));
-        dom.find('.coordinates-entered-selector input').bind('change', (function () {
-            dom.find('.coordinates-entered-selector input').attr('checked') ?
+        dom.find('.ui-placeholder-import-subsitevisit').replaceWith($(data));
+        dom.find('.coordinates-entered input').bind('change', (function () {
+            dom.find('.coordinates-entered input').attr('checked') ?
                     dom.find('.coordinates-entered-visible').show() :
                     dom.find('.coordinates-entered-visible').hide();
         }));
-        dom.find('.coordinates-entered-selector input').trigger('change');
+        dom.find('.coordinates-entered input').trigger('change');
+        dom.find('.coordinate-picker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
     }
 
     function validate() {
@@ -70,7 +71,7 @@
             dom.dialog('open');
             render(data);
             lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
-            setTimeout(function () { dom.find('.subsitevisit-placeholder input').first().focus(); }, 1);
+            dom.find('input').first().focus();
         });
     }
 
@@ -83,7 +84,7 @@
             dom.dialog('open');
             render(data);
             lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
-            setTimeout(function () { dom.find('.subsitevisit-placeholder input').first().focus(); }, 1);
+            dom.find('input').first().focus();
         });
     }
 
@@ -96,30 +97,30 @@
             dom.dialog('open');
             render(data);
             lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
-            setTimeout(function () { dom.find('.subsitevisit-placeholder input').first().focus(); }, 1);
+            dom.find('input').first().focus();
         });
     }
 
     function lookupStateAndCountyIfEmtpyAndCoordinatesSpecified() {
-        if (IsNullOrEmpty(dom.find('.subsitevisit-state').val())
-            && IsNullOrEmpty(dom.find('.subsitevisit-county').val())
-            && !IsNullOrEmpty(dom.find('.subsitevisit-latitude').val())
-            && !IsNullOrEmpty(dom.find('.subsitevisit-longitude').val())) {
+        if (IsNullOrEmpty(dom.find('.state select').val())
+            && IsNullOrEmpty(dom.find('.county input').val())
+            && !IsNullOrEmpty(dom.find('.latitude input').val())
+            && !IsNullOrEmpty(dom.find('.longitude input').val())) {
             lookupStateAndCounty();
         }
     };
 
     function lookupStateAndCounty() {
         var location = new google.maps.LatLng(
-                dom.find('.subsitevisit-latitude').val(),
-                dom.find('.subsitevisit-longitude').val());
+                dom.find('.latitude input').val(),
+                dom.find('.longitude input').val());
         GeocoderService.Lookup({ location: location }, function (result) {
             if (result.found) {
                 if (!IsNullOrEmpty(result.state)) {
-                    dom.find('.subsitevisit-state').val(result.state);
+                    dom.find('.state select').val(result.state);
                 }
                 if (!IsNullOrEmpty(result.county)) {
-                    dom.find('.subsitevisit-county').val(result.county);
+                    dom.find('.county input').val(result.county);
                 }
             }
         });
@@ -146,12 +147,12 @@
             if (result.coordinatesPicked) {
                 if (coordinates.IsSpecified) {
                     var newCoordinates = ValueObjectService.CreateCoordinatesWithFormat(result.latitude, result.longitude, coordinates.InputFormat);
-                    dom.find('input.subsitevisit-latitude').val(newCoordinates.Latitude);
-                    dom.find('input.subsitevisit-longitude').val(newCoordinates.Longitude);
+                    dom.find('.latitude input').val(newCoordinates.Latitude);
+                    dom.find('.longitude input').val(newCoordinates.Longitude);
                     lookupStateAndCounty();
                 } else {
-                    dom.find('input.subsitevisit-latitude').val(result.latitude);
-                    dom.find('input.subsitevisit-longitude').val(result.longitude);
+                    dom.find('.latitude input').val(result.latitude);
+                    dom.find('.longitude input').val(result.longitude);
                 }
             }
             public.Show();
@@ -161,17 +162,17 @@
         };
         public.Hide();
         var coordinates = ValueObjectService.CreateCoordinates(
-            dom.find('input.subsitevisit-latitude').val(),
-            dom.find('input.subsitevisit-longitude').val());
+            dom.find('.latitude input').val(),
+            dom.find('.longitude input').val());
         var options = { markerLoader: loadMapMarkers };
         if (coordinates.IsSpecified && coordinates.IsValid) {
             options.coordinatesSpecified = true;
             options.latitude = coordinates.LatitudeDegrees;
             options.longitude = coordinates.LongitudeDegrees;
-        } else if (!IsNullOrEmpty(dom.find('select.subsitevisit-state').val())) {
+        } else if (!IsNullOrEmpty(dom.find('.state select').val())) {
             options.addressSpecified = true;
-            options.state = dom.find('select.subsitevisit-state').val();
-            options.county = dom.find('input.subsitevisit-county').val();
+            options.state = dom.find('.state select').val();
+            options.county = dom.find('.county input').val();
         }
         CoordinatePicker.Open(options, coordinatePickerClosed);
     };
