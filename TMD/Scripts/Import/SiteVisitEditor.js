@@ -1,44 +1,87 @@
 ﻿var SiteVisitEditor = new function () {
     var public = this;
     var dom = $(
-            "<div id='sitevisit-editor' class='dialog'>\
-                <div class='accordion'>\
-                    <h3 class='sitevisit-placeholder'></h3>\
-                    <div class='sitevisit-placeholder'></div>\
-                    <h3 class='subsitevisits-placeholder'></h3>\
-                    <div class='subsitevisits-placeholder'></div>\
-                </div>\
-            </div>");
+"<div>\
+    <div class='ui-placeholder-import-sitevisit-step1' style='height: 400px;'></div>\
+    <div class='ui-placeholder-import-sitevisit-step2'></div>\
+</div>");
     var isSaved, isAdding, isValidating, isSubsiteAddingDisabled;
     var closeCallback;
+    var step;
 
     function initialize() {
-        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 640, height: 'auto', minHeight: 560,
-            buttons: { 'Save': save, 'Cancel': function () { dom.dialog('close'); } }
-        });
-        if (isAdding) {
-            dom.dialog({ title: 'Add site visit' });
+        step = 1;
+        if (isSubsiteAddingDisabled) {
+            dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 410,
+                buttons: {
+                    'Save': save,
+                    'Cancel': function () { dom.dialog('close'); }
+                }
+            });
         } else {
-            dom.dialog({ title: 'Edit site visit' });
+            dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 410,
+                buttons: {
+                    'Next >': advanceToStep2,
+                    'Cancel': function () { dom.dialog('close'); }
+                }
+            });
         }
-        dom.find('.accordion').accordion({ fillSpace: true, animated: false, active: 0 });
-        dom.find('.accordion').bind('accordionchange', changeStep);
+        dom.dialog({ title: isAdding ? 'Adding site visit' : 'Editing site visit' });
         dom.bind('dialogclose', dispose);
     }
 
-    function changeStep(event, ui) {
-        if (ui.options.active == 0) {
-            if (!isValidating) {
-                setTimeout(function () { dom.find('div.sitevisit-placeholder input').first().focus(); }, 1);
-            }
-        } else if (ui.options.active == 1) {
-            var newSerializedDom = dom.find('form').serialize();
-            if (serializedDom != newSerializedDom) {
-                serializedDom = newSerializedDom;
-                $.put('SiteVisit', dom.find('form').serialize(), function (data) {
-                    render(data, true);
+    function advanceToStep2() {
+        $.put('SiteVisit', dom.find('form').serialize(), function (data) {
+            render(data);
+            if (validateCurrentStep()) {
+                step = 2;
+                dom.dialog('option', {
+                    buttons: {
+                        'Save': save,
+                        'Cancel': function () { dom.dialog('close'); },
+                        '< Back': retreatToStep1
+                    }
                 });
+                render(data);
             }
+        });
+    }
+
+    function retreatToStep1() {
+        $.put('SiteVisit', dom.find('form').serialize(), function (data) {
+            step = 1;
+            dom.dialog('option', {
+                buttons: {
+                    'Next >': advanceToStep2,
+                    'Cancel': function () { dom.dialog('close'); }
+                }
+            });
+            render(data);
+        });
+    }
+
+    function render(data) {
+        var newDom = $(data);
+        dom.find('.ui-placeholder-import-sitevisit-step1').replaceWith(newDom.find('.ui-placeholder-import-sitevisit-step1'));
+        dom.find('.ui-placeholder-import-sitevisit-step2').replaceWith(newDom.find('.ui-placeholder-import-sitevisit-step2'));
+        if (step == 1) {
+            dom.find('.ui-placeholder-import-sitevisit-step1').css('display', 'block');
+            dom.find('.ui-placeholder-import-sitevisit-step2').css('display', 'none');
+            dom.find('.ui-placeholder-import-sitevisit').replaceWith(
+                newDom.find('.step2'));
+            dom.find('.coordinates-entered input').bind('change', (function () {
+                dom.find('.coordinates-entered input').attr('checked') ?
+                    dom.find('.coordinates-entered-visible').show() :
+                    dom.find('.coordinates-entered-visible').hide();
+            }));
+            dom.find('.coordinates-entered input').trigger('change');
+            dom.find('.coordinate-picker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
+        } else {
+            dom.find('.ui-placeholder-import-sitevisit-step1').css('display', 'none');
+            dom.find('.ui-placeholder-import-sitevisit-step2').css('display', 'block');
+            dom.find('.ui-button-import-add-subsitevisit').button();
+            dom.find('.ui-button-import-edit').button({ icons: { primary: 'ui-icon-pencil'} });
+            dom.find('.ui-button-import-remove').button({ icons: { primary: 'ui-icon-trash'} });
         }
     }
 
@@ -47,41 +90,17 @@
             $.delete_('SiteVisit');
         }
         dom.unbind('dialogclose');
-        dom.find('.accordion').unbind('accordionchange');
         closeCallback(isSaved);
     }
 
-    var serializedDom;
-    function render(data, ignoreSubsiteVisits) {
-        var newDom = $(data);
-        dom.find('h3.sitevisit-placeholder').html(newDom.find('h3.sitevisit-placeholder').html())
-        dom.find('div.sitevisit-placeholder').html(newDom.find('div.sitevisit-placeholder').html());
-        if (!ignoreSubsiteVisits) {
-            dom.find('h3.subsitevisits-placeholder').html(newDom.find('h3.subsitevisits-placeholder').html());
-            dom.find('div.subsitevisits-placeholder').html(newDom.find('div.subsitevisits-placeholder').html());
-        }
-        dom.find('.coordinates-entered-selector input').bind('change', (function () {
-            dom.find('.coordinates-entered-selector input').attr('checked') ?
-                    dom.find('.coordinates-entered-visible').show() :
-                    dom.find('.coordinates-entered-visible').hide();
-        }));
-        dom.find('.coordinates-entered-selector input').trigger('change');
-        dom.find('.accordion').accordion('resize');
-        if (isSubsiteAddingDisabled) {
-            dom.find('.subsitevisits-placeholder').css('display', 'none');
-        }
-        serializedDom = dom.find('form').serialize();
-    }
-
-    function validate() {
+    function validateCurrentStep() {
         isValidating = true;
-        if (dom.find('.sitevisit-placeholder .field-validation-error').length > 0) {
-            dom.find('.accordion').accordion('activate', 0);
-            dom.find('.sitevisit-placeholder .input-validation-error').first().focus();
+        var currentStepDom = dom.find(step == 1 ? '.ui-placeholder-import-sitevisit-step1' : '.ui-placeholder-import-sitevisit-step2');
+        if (currentStepDom.find('.field-validation-error').length > 0) {
+            currentStepDom.find('.input-validation-error').first().focus();
             isValidating = false;
             return false;
-        } else if (dom.find('.subsitevisits-placeholder .field-validation-error').length > 0) {
-            dom.find('.accordion').accordion('activate', 1);
+        } else if (currentStepDom.find('.field-validation-error').length > 0) {
             isValidating = false;
             return false;
         }
@@ -90,10 +109,9 @@
     }
 
     function save() {
-        serializedDom = dom.find('form').serialize();
-        $.put('SiteVisit', serializedDom, function (data) {
+        $.put('SiteVisit', dom.find('form').serialize(), function (data) {
             render(data);
-            if (validate()) {
+            if (validateCurrentStep()) {
                 isSaved = true;
                 dom.dialog('close');
             }
@@ -102,8 +120,8 @@
 
     public.GetCoordinates = function () {
         var coordinates = ValueObjectService.CreateCoordinates(
-            dom.find('input.sitevisit-latitude').val(),
-            dom.find('input.sitevisit-longitude').val());
+            dom.find('input .latitude').val(),
+            dom.find('input .longitude').val());
         return coordinates;
     };
 
@@ -111,7 +129,7 @@
         if (refresh) {
             $.put('SiteVisit', dom.find('form').serialize(), function (data) {
                 render(data);
-                validate();
+                validateCurrentStep();
             });
         }
     };
@@ -125,7 +143,7 @@
         $.post('CreateSiteVisit', {}, function (data) {
             dom.dialog('open');
             render(data);
-            setTimeout(function () { dom.find('div.sitevisit-placeholder input').first().focus(); }, 1);
+            dom.find('input').first().focus();
         });
     };
 
@@ -138,7 +156,7 @@
         $.get('SiteVisit', { siteVisitIndex: index }, function (data) {
             dom.dialog('open');
             render(data);
-            setTimeout(function () { dom.find('div.sitevisit-placeholder input').first().focus(); }, 1);
+            dom.find('input').first().focus();
         });
     };
 
@@ -157,11 +175,11 @@
             if (result.coordinatesPicked) {
                 if (coordinates.IsSpecified) {
                     var newCoordinates = ValueObjectService.CreateCoordinatesWithFormat(result.latitude, result.longitude, coordinates.InputFormat);
-                    dom.find('input.sitevisit-latitude').val(newCoordinates.Latitude);
-                    dom.find('input.sitevisit-longitude').val(newCoordinates.Longitude);
+                    dom.find('input .latitude').val(newCoordinates.Latitude);
+                    dom.find('input .longitude').val(newCoordinates.Longitude);
                 } else {
-                    dom.find('input.sitevisit-latitude').val(result.latitude);
-                    dom.find('input.sitevisit-longitude').val(result.longitude);
+                    dom.find('input .latitude').val(result.latitude);
+                    dom.find('input .longitude').val(result.longitude);
                 }
             }
             public.Show();
@@ -171,8 +189,8 @@
         };
         public.Hide();
         var coordinates = ValueObjectService.CreateCoordinates(
-            dom.find('input.sitevisit-latitude').val(),
-            dom.find('input.sitevisit-longitude').val());
+            dom.find('input .latitude').val(),
+            dom.find('input .longitude').val());
         var options = { markerLoader: loadMapMarkers };
         if (coordinates.IsSpecified) {
             options.coordinatesSpecified = true;
@@ -183,13 +201,12 @@
     };
 };
 
-
 var SiteVisitRemover = new function () {
     var dom = $(
-        "<div title='Removing site visit'>\
-            <div class='ui-placeholder-import-sitevisit'>\
-            </div>\
-        </div>");
+"<div title='Removing site visit'>\
+    <div class='ui-placeholder-import-sitevisit' style='height: 200px'>\
+    </div>\
+</div>");
     var isSaved;
     var closeCallback;
 

@@ -7,14 +7,14 @@
 .ui-navigation-import-middle ul li { display: inline; }
 .ui-navigation-import-right { float: right; width: 170px; margin: 0 15px; text-align: left; font-size: 12px; }
 
-.ui-form-column { float: left; width: 400px; }
+.ui-form-column { float: left; width: 380px; padding: 5px 0; }
 .ui-form-row { clear: both; padding: 5px 0; }
-.ui-form-row label { float: left; display: block; width: 120px; text-align: right; padding-right: 5px; }
-.ui-form-row input[type=text] { float: left; display: block; width: 260px; margin-top: 6px; }
-.ui-form-row textarea { float: left; display: block; width: 260px; margin-top: 6px; height: 60px; }
-.ui-form-row input[type=checkbox] { float: left; display: block; margin-top: 8px; }
+.ui-form-row label { float: left; display: block; width: 100px; text-align: right; padding-right: 5px; }
+.ui-form-row input[type=text] { float: left; display: block; width: 260px; }
+.ui-form-row textarea { float: left; display: block; width: 260px; height: 60px; }
+.ui-form-row input[type=checkbox] { float: left; display: block; }
 .ui-form-row .ui-validation-error { float: left; clear: both; display: block; }
-.ui-form-row .ui-validation-error .field-validation-error.ui-icon { float: left; display: block; margin-left: 108px; }
+.ui-form-row .ui-validation-error .field-validation-error.ui-icon { float: left; display: block; margin-left: 88px; }
 .ui-form-row .ui-validation-error .field-validation-error.ui-validation-error-message  { float: left; display: block; width: 260px; line-height: 15px; }
 
 .ui-validation-error .field-validation-error.ui-icon { float: left; display: block;}
@@ -34,7 +34,7 @@
 
 .ui-content-import-subsitevisits { float: left; width: 545px; }
 
-.ui-button-import-add-subsitevisit { font-size: 12px; background-image: url('/Images/subsite16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
+.ui-placeholder-import-sitevisit-step2 .ui-button-import-add-subsitevisit { font-size: 12px; background-image: url('/Images/subsite16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
 .ui-content-import-subsitevisit { float: left; font-size: 10px; width: 250px; margin: 10px; }
 .ui-content-import-subsitevisit .field-validation-error.ui-validation-error-message { width: 225px; }
 .ui-icon-import-subsitevisit { float: left; height: 25px; width: 32px; background-image: url("/Images/subsite32.png"); background-position: 0 -3px; }
@@ -46,6 +46,7 @@
 .ui-content-import-treemeasurement .field-validation-error.ui-validation-error-message, .ui-content-import-treemeasurement .field-validation-error.ui-validation-warning-message { width: 225px; }
 .ui-icon-import-treemeasurement { float: left; height: 25px; width: 32px; background-image: url("/Images/tree32.png"); background-position: 0 -3px; }
 
+.ui-placeholder-import-trip { margin-top: 25px; font-size: 10px; width: 780px; }
 
 
 

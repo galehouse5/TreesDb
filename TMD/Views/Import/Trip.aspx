@@ -7,7 +7,7 @@
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
 <h2>Enter general information about your trip.</h2>
-<div class="ui-placeholder-import-trip ui-widget-content ui-corner-all" style="margin-top: 25px; font-size: 10px;">
+<div class="ui-placeholder-import-trip ui-widget-content ui-corner-all">
     <form>
         <div class="ui-form-column">
             <div class="ui-form-row">
@@ -32,7 +32,7 @@
                 <%= Html.LabelFor(m => m.Trip.Website)%>
                 <%= Html.TextBoxFor(m => m.Trip.Website)%>
                 <div class="ui-validation-error ">
-                <%= Html.ValidationMessageFor(m => m.Trip.Website, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                    <%= Html.ValidationMessageFor(m => m.Trip.Website, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
                     <%= Html.ValidationMessageFor(m => m.Trip.Website, "", new { @class = "ui-validation-error-message" })%>
                 </div>
                 <div class="ui-helper-clearfix"></div>
@@ -44,7 +44,7 @@
                 <%= Html.LabelFor(m => m.Trip.MeasurerContactInfo)%>
                 <%= Html.TextAreaFor(m => m.Trip.MeasurerContactInfo)%>
                 <div class="ui-validation-error ui-state-error-text">
-                <%= Html.ValidationMessageFor(m => m.Trip.MeasurerContactInfo, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                    <%= Html.ValidationMessageFor(m => m.Trip.MeasurerContactInfo, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
                     <%= Html.ValidationMessageFor(m => m.Trip.MeasurerContactInfo, "", new { @class = "ui-validation-error-message" })%>
                 </div>
                 <div class="ui-helper-clearfix"></div>
@@ -53,7 +53,7 @@
                 <%= Html.LabelFor(m => m.Trip.PhotosAvailable)%>
                 <%= Html.CheckBoxFor(m => m.Trip.PhotosAvailable)%>
                 <div class="ui-validation-error ui-state-error-text">
-                <%= Html.ValidationMessageFor(m => m.Trip.PhotosAvailable, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                    <%= Html.ValidationMessageFor(m => m.Trip.PhotosAvailable, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
                     <%= Html.ValidationMessageFor(m => m.Trip.PhotosAvailable, "", new { @class = "ui-validation-error-message" })%>
                 </div>
                 <div class="ui-helper-clearfix"></div>

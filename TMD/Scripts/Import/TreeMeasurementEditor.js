@@ -213,7 +213,7 @@
 var TreeMeasurementRemover = new function () {
     var dom = $(
         "<div title='Removing tree measurement'>\
-            <div class='ui-placeholder-import-treemeasurement'>\
+            <div class='ui-placeholder-import-treemeasurement' style='height: 200px'>\
             </div>\
         </div>");
     var isSaved;

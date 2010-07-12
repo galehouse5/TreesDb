@@ -180,7 +180,7 @@
 var SubsiteVisitRemover = new function () {
     var dom = $(
         "<div title='Removing subsite visit'>\
-            <div class='ui-placeholder-import-subsitevisit'></div>\
+            <div class='ui-placeholder-import-subsitevisit' style='height: 200px'></div>\
         </div>");
     var isSaved;
     var closeCallback;

@@ -11,7 +11,7 @@
                 </form>\
             </div>\
             <a class='save' style='position: absolute; right: 50px; bottom: 50px;'>Save</a>\
-            <a class='cancel' style='position: absolute; right: 150px; bottom: 50px;'>Cancel</a>\
+            <a class='cancel' style='position: absolute; right: 115px; bottom: 50px;'>Cancel</a>\
         </div>");
     var resultCallback;
     var latitude = 36.94167;

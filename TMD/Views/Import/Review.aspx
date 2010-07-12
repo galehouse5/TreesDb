@@ -35,7 +35,6 @@
                 <br />
                 Coordinates: <%= Model.Trip.SiteVisits[sv].Coordinates %>
             </div>
-            <div class="ui-helper-clearfix"></div>
         </div>
         <div class="ui-content-import-subsitevisits">
             <% for (int ssv = Model.Trip.SiteVisits[sv].SubsiteVisits.Count - 1; ssv >= 0; ssv--) { %>
@@ -56,7 +55,6 @@
                         <br />
                         Coordinates: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Coordinates%>
                     </div>
-                    <div class="ui-helper-clearfix"></div>
                 </div>
                 <div class="ui-content-import-treemeasurements">
                     <% for (int tm = Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements.Count - 1; tm >= 0; tm--) { %>
@@ -85,7 +83,6 @@
                                 <br />
                                 Coordinates: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Coordinates%>
                             </div>
-                            <div class="ui-helper-clearfix"></div>
                         </div>
                     <% } %>
                     <div class="ui-helper-clearfix"></div>

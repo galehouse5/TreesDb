@@ -19,7 +19,8 @@
     <div class="ui-validation-error ui-state-error-text">
         <%= Html.ValidationMessage("Trip.SiteVisits", " ", new { @class = "ui-icon ui-icon-circle-close" })%>
         <%= Html.ValidationMessage("Trip.SiteVisits", "", new { @class = "ui-validation-error-message" })%>
-    </div>    
+    </div>
+    <div class="ui-helper-clearfix"></div>
     <% for (int sv = Model.Trip.SiteVisits.Count - 1; sv >= 0; sv--) { %>
         <div class="ui-content-import-sitevisit ui-widget ui-widget-content ui-corner-all">
             <div class="ui-content-import-header ui-widget-header ui-corner-all">
@@ -37,7 +38,6 @@
                 <br />
                 Coordinates: <%= Model.Trip.SiteVisits[sv].Coordinates %>
             </div>
-            <div class="ui-helper-clearfix"></div>
         </div>
         <div class="ui-content-import-subsitevisits">
             <% for (int ssv = Model.Trip.SiteVisits[sv].SubsiteVisits.Count - 1; ssv >= 0; ssv--) { %>
@@ -59,7 +59,6 @@
                         <br />
                         Coordinates: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Coordinates%>
                     </div>
-                    <div class="ui-helper-clearfix"></div>
                 </div>
                 <div class="ui-helper-clearfix"></div>
             <% } %>
