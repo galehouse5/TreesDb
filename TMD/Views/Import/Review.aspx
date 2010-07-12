@@ -21,7 +21,7 @@
         <div class="ui-content-import-sitevisit ui-widget ui-widget-content ui-corner-all">
             <div class="ui-content-import-header ui-widget-header ui-corner-all">
                 <span class="ui-icon-import-sitevisit"></span>
-                <a href='javascript:SiteVisitEditor.Edit(<%= sv %>, {onClose: ReviewEditor.Refresh})' class="ui-button-import-edit">Edit</a>
+                <a href='javascript:SiteVisitEditor.Edit(<%= sv %>, {onClose: ReviewEditor.Refresh, disableSubsiteVisitAdding: true})' class="ui-button-import-edit">Edit</a>
                 <div class="ui-helper-clearfix"></div>
             </div>
             <div class="ui-validation-error ui-state-error-text">
