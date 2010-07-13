@@ -38,37 +38,5 @@ namespace TMD.Model
             Type t = obj.GetType();
             return ValidatorFactory.CreateValidator(t).Validate(obj);
         }
-
-        private static readonly char[] s_TagSplitters = new char[] { ',', ' ' };
-        public static ValidationResults FindAllContainingTag(this ValidationResults results, TagFilter tagFilter, params string[] tags)
-        {
-            ValidationResults filteredResults = new ValidationResults();
-            foreach (ValidationResult result in results)
-            {
-                if (!string.IsNullOrEmpty(result.Tag))
-                {
-                    string[] containedTags = result.Tag.Split(s_TagSplitters, StringSplitOptions.RemoveEmptyEntries);
-                    bool resultContainsTag = false;
-                    for (int i = 0; i < tags.Length && !resultContainsTag; i++)
-                    {
-                        string tag = tags[i];
-                        for (int j = 0; j < containedTags.Length && !resultContainsTag; j++)
-                        {
-                            string containedTag = containedTags[j];
-                            if (tag == containedTag)
-                            {
-                                resultContainsTag = true;
-                            }
-                        }
-                    }
-                    if (resultContainsTag && tagFilter == TagFilter.Include
-                        || !resultContainsTag && tagFilter == TagFilter.Ignore)
-                    {
-                        filteredResults.AddResult(result);
-                    }
-                }
-            }
-            return filteredResults;
-        }
     }
 }

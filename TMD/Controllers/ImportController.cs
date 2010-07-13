@@ -137,7 +137,7 @@ namespace TMD.Controllers
                 siteVisitValidationResults.CopyToModelState(ModelState, "SelectedSiteVisit");
             }
             ValidationResults subsiteVisitsValidationResults = model.SelectedSiteVisit.ValidateIgnoringCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
-                .FindAllContainingTag(TagFilter.Ignore, "SiteVisit");
+                .FindAll(TagFilter.Ignore, "SiteVisit");
             if (!subsiteVisitsValidationResults.IsValid)
             {
                 ModelState.AddModelError("SelectedSiteVisit.SubsiteVisits.HasErrors", "");
@@ -386,39 +386,12 @@ namespace TMD.Controllers
             return View("TreeMeasurement", model);
         }
 
-        private void validateTreeMeasurement(ImportModel model)
-        {
-            ValidationResults generalValidationResults = model.SelectedTreeMeasurement.ValidateRegardingGeneralInformation();
-            if (!generalValidationResults.IsValid)
-            {
-                ModelState.AddModelError("SelectedTreeMeasurement.General.HasErrors", "");
-                generalValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
-            }
-            ValidationResults heightAndGirthValidationResults = model.SelectedTreeMeasurement.ValidateRegardingHeightAndGirthInformation();
-            if (!heightAndGirthValidationResults.IsValid)
-            {
-                ModelState.AddModelError("SelectedTreeMeasurement.HeightAndGirth.HasErrors", "");
-                heightAndGirthValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
-            }
-            ValidationResults trunkAndCrownValidationResults = model.SelectedTreeMeasurement.ValidateRegardingTrunkAndCrownInformation();
-            if (!trunkAndCrownValidationResults.IsValid)
-            {
-                ModelState.AddModelError("SelectedTreeMeasurement.TrunkAndCrown.HasErrors", "");
-                trunkAndCrownValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
-            }
-            ValidationResults miscValidationResults = model.SelectedTreeMeasurement.ValidateRegardingTreeFormAgeStatusTerrainAndOtherInformation();
-            if (!miscValidationResults.IsValid)
-            {
-                ModelState.AddModelError("SelectedTreeMeasurement.TreeFormAgeStatusTerrainAndOther.HasErrors", "");
-                miscValidationResults.CopyToModelState(ModelState, "SelectedTreeMeasurement");
-            }
-        }
-
         [HttpPut]
         [ActionName("TreeMeasurement")]
         public ActionResult SaveTreeMeasurement(ImportModel model)
         {
-            validateTreeMeasurement(model);
+            ValidationResults results = model.SelectedTreeMeasurement.ValidateRegardingScreeningAndPersistence();
+            results.CopyToModelState(ModelState, "SelectedTreeMeasurement");
             if (ModelState.IsValid)
             {
                 model.SaveTrip();

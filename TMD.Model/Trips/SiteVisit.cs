@@ -166,13 +166,13 @@ namespace TMD.Model.Trips
         public virtual ValidationResults ValidateIgnoringCoordinatesSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAllContainingTag(TagFilter.Include, "SiteVisit");
+                .FindAll(TagFilter.Include, "SiteVisit");
         }
 
         public virtual ValidationResults ValidateIgnoringCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAllContainingTag(TagFilter.Include, "SiteVisit", "SubsiteVisits", "SubsiteVisit");
+                .FindAll(TagFilter.Include, "SiteVisit", "SubsiteVisits", "SubsiteVisit");
         }
 
         public virtual SubsiteVisit GetSubsiteVisit(int id)

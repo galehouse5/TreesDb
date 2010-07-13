@@ -13,7 +13,7 @@
             </div>
             <div class="ui-form-row state">
                 <%= Html.LabelFor(m => m.SelectedSubsiteVisit.State)%>
-                <%= Html.DropDownListFor(m => m.SelectedSubsiteVisit.State, Model.BuildStateSelectList(), new { @class = "subsitevisit-state" })%>
+                <%= Html.DropDownListFor(m => m.SelectedSubsiteVisit.State, Model.BuildStateSelectList())%>
                 <div class="ui-validation-error ui-state-error-text">
                     <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.State, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
                     <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.State, "", new { @class = "ui-validation-error-message" })%>

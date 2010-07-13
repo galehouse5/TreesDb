@@ -186,7 +186,7 @@ namespace TMD.Model.Trips
         public virtual ValidationResults ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAllContainingTag(TagFilter.Include, "SubsiteVisit");
+                .FindAll(TagFilter.Include, "SubsiteVisit");
         }
 
         public virtual ValidationResults ValidateIgnoringCoordinates()

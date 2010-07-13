@@ -108,13 +108,13 @@ namespace TMD.Model.Trips
         public virtual ValidationResults ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAllContainingTag(TagFilter.Include, "Trip");
+                .FindAll(TagFilter.Include, "Trip");
         }
 
         public virtual ValidationResults ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAllContainingTag(TagFilter.Include, "Trip", "SiteVisit", "SiteVisits", "SubsiteVisit", "SubsiteVisits");
+                .FindAll(TagFilter.Include, "Trip", "SiteVisit", "SiteVisits", "SubsiteVisit", "SubsiteVisits");
         }
 
         public virtual ValidationResults ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates()

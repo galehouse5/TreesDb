@@ -151,7 +151,7 @@ namespace TMD.Model.Trips
             set { m_ScientificName = (value ?? string.Empty).Trim().ToSentenceCase(); }
         }
 
-        [DisplayName("*Measurement date:")]
+        [DisplayName("*Measured:")]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         [NotNullValidator(MessageTemplate = "Measurement date must be specified.", Ruleset = "Screening", Tag = "TreeMeasurement General")]
         public virtual DateTime? Measured { get; set; }
@@ -353,16 +353,16 @@ namespace TMD.Model.Trips
 
         #region Crown information
 
-        [DisplayName("Crown maximum spread:")]
+        [DisplayName("Max crown spread:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Crown")]
         public virtual Distance MaximumCrownSpread { get; set; }
 
-        [DisplayName("Crown average spread:")]
+        [DisplayName("Avg crown spread:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Crown")]
         public virtual Distance AverageCrownSpread { get; set; }
 
         private string m_CrownSpreadMeasurementMethod;
-        [DisplayName("Crown spread measurement method:")]
+        [DisplayName("Spread measurement method:")]
         [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Crown spread measurement method must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement Crown")]
         public virtual string CrownSpreadMeasurementMethod
         {
@@ -370,7 +370,7 @@ namespace TMD.Model.Trips
             set { m_CrownSpreadMeasurementMethod = (value ?? string.Empty).Trim(); }
         }
 
-        [DisplayName("Maximum limb length:")]
+        [DisplayName("Max limb length:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Crown")]
         public virtual Distance MaximumLimbLength { get; set; }
 
@@ -379,7 +379,7 @@ namespace TMD.Model.Trips
         public virtual Volume CrownVolume { get; set; }
 
         private string m_CrownVolumeCalculationMethod;
-        [DisplayName("Crown volume calculation method:")]
+        [DisplayName("Volume calculation method:")]
         [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Crown volume calculation method must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement Crown")]
         public virtual string CrownVolumeCalculationMethod
         {
@@ -495,34 +495,6 @@ namespace TMD.Model.Trips
         public virtual bool RemoveMeasurer(TreeMeasurer m)
         {
             return Measurers.Remove(m);
-        }
-
-        public virtual ValidationResults ValidateRegardingGeneralInformation()
-        {
-            return ModelValidator.Validate(this, "Screening", "Persistence")
-                .FindAllContainingTag(TagFilter.Include, "TreeMeasurement", "TreeMeasurers", "TreeMeasurer")
-                .FindAllContainingTag(TagFilter.Include, "General", "Location", "TreeMeasurer");
-        }
-
-        public virtual ValidationResults ValidateRegardingHeightAndGirthInformation()
-        {
-            return ModelValidator.Validate(this, "Screening", "Persistence")
-                .FindAllContainingTag(TagFilter.Include, "TreeMeasurement", "TreeMeasurers")
-                .FindAllContainingTag(TagFilter.Include, "Height", "Girth");
-        }
-
-        public virtual ValidationResults ValidateRegardingTrunkAndCrownInformation()
-        {
-            return ModelValidator.Validate(this, "Screening", "Persistence")
-                .FindAllContainingTag(TagFilter.Include, "TreeMeasurement", "TreeMeasurers")
-                .FindAllContainingTag(TagFilter.Include, "Trunk", "Crown");
-        }
-
-        public virtual ValidationResults ValidateRegardingTreeFormAgeStatusTerrainAndOtherInformation()
-        {
-            return ModelValidator.Validate(this, "Screening", "Persistence")
-                .FindAllContainingTag(TagFilter.Include, "TreeMeasurement", "TreeMeasurers")
-                .FindAllContainingTag(TagFilter.Include, "Terrain", "Age", "FormType", "Status", "Other");
         }
 
         public virtual ValidationResults ValidateRegardingScreeningAndPersistence()

@@ -1,51 +1,97 @@
 ﻿var TreeMeasurementEditor = new function () {
     var public = this;
     var dom = $(
-            "<div id='treemeasurement-editor' class='editor-big'>\
-                <div class='accordion'>\
-                    <h3 class='general-placeholder'></h3>\
-                    <div class='general-placeholder'></div>\
-                    <h3 class='heightandgirth-placeholder'></h3>\
-                    <div class='heightandgirth-placeholder'></div>\
-                    <h3 class='trunkandcrown-placeholder'></h3>\
-                    <div class='trunkandcrown-placeholder'></div>\
-                    <h3 class='misc-placeholder'></h3>\
-                    <div class='misc-placeholder'></div>\
-                </div>\
-            </div>");
-    var isSaved, isAdding, isValidating;
+"<div>\
+    <form>\
+        <div class='tabs'>\
+            <ul>\
+                <li><a href='#editor-treemeasurement-general' class='placeholder-general'>General</a></li>\
+                <li><a href='#editor-treemeasurement-height' class='placeholder-height'>Height</a></li>\
+                <li><a href='#editor-treemeasurement-girth' class='placeholder-girth'>Girth</a></li>\
+                <li><a href='#editor-treemeasurement-trunk' class='placeholder-trunk'>Trunk</a></li>\
+                <li><a href='#editor-treemeasurement-crown' class='placeholder-crown'>Crown</a></li>\
+                <li><a href='#editor-treemeasurement-status' class='placeholder-status'>Status</a></li>\
+                <li><a href='#editor-treemeasurement-misc' class='placeholder-misc'>Misc</a></li>\
+            </ul>\
+            <div id='editor-treemeasurement-general' class='placeholder-general'></div>\
+            <div id='editor-treemeasurement-height' class='placeholder-height'></div>\
+            <div id='editor-treemeasurement-girth' class='placeholder-girth'></div>\
+            <div id='editor-treemeasurement-trunk' class='placeholder-trunk'></div>\
+            <div id='editor-treemeasurement-crown' class='placeholder-crown'></div>\
+            <div id='editor-treemeasurement-status' class='placeholder-status'></div>\
+            <div id='editor-treemeasurement-misc' class='placeholder-misc'></div>\
+        </div>\
+    </form>\
+</div>");
+    var isSaved, isAdding;
     var closeCallback;
 
     function initialize() {
-        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 896, height: 'auto', minHeight: 720,
+        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 440,
             buttons: { 'Save': save, 'Cancel': function () { dom.dialog('close'); } }
         });
         if (isAdding) {
-            dom.dialog({ title: 'Add tree measurement' });
+            dom.dialog({ title: 'Adding tree measurement' });
         } else {
-            dom.dialog({ title: 'Edit tree measurement' });
+            dom.dialog({ title: 'Editing tree measurement' });
         }
-        dom.find('.accordion').accordion({ fillSpace: true, animated: false, active: 0 });
-        dom.find('.accordion').bind('accordionchange', changeStep);
+        dom.find('.tabs').tabs({ selected: 0 }).bind('tabsselect', function () {
+            setTimeout(focusFirstVisibleErrorOrInput, 1);
+        });
         dom.bind('dialogclose', dispose);
     }
 
-    function changeStep(event, ui) {
-        if (!isValidating) {
-            switch (ui.options.active) {
-                case 0:
-                    setTimeout(function () { dom.find('.general-placeholder input').first().focus(); });
-                    break;
-                case 1:
-                    setTimeout(function () { dom.find('.heightandgirth-placeholder input').first().focus(); });
-                    break;
-                case 2:
-                    setTimeout(function () { dom.find('.trunkandcrown-placeholder input').first().focus(); });
-                    break;
-                case 3:
-                    setTimeout(function () { dom.find('.misc-placeholder input, .misc-placeholder select').first().focus(); });
-                    break;
-            }
+    function focusFirstVisibleErrorOrInput() {
+        switch (dom.find('.tabs').tabs('option', 'selected')) {
+            case 0:
+                if (dom.find('div.placeholder-general .input-validation-error').length > 0) {
+                    dom.find('div.placeholder-general .input-validation-error').first().focus();
+                } else {
+                    dom.find('div.placeholder-general input').first().focus();
+                }
+                break;
+            case 1:
+                if (dom.find('div.placeholder-height .input-validation-error').length > 0) {
+                    dom.find('div.placeholder-height .input-validation-error').first().focus();
+                } else {
+                    dom.find('div.placeholder-height input').first().focus();
+                }
+                break;
+            case 2:
+                if (dom.find('div.placeholder-girth .input-validation-error').length > 0) {
+                    dom.find('div.placeholder-girth .input-validation-error').first().focus();
+                } else {
+                    dom.find('div.placeholder-girth input').first().focus();
+                }
+                break;
+            case 3:
+                if (dom.find('div.placeholder-trunk .input-validation-error').length > 0) {
+                    dom.find('div.placeholder-trunk .input-validation-error').first().focus();
+                } else {
+                    dom.find('div.placeholder-trunk input').first().focus();
+                }
+                break;
+            case 4:
+                if (dom.find('div.placeholder-crown .input-validation-error').length > 0) {
+                    dom.find('div.placeholder-crown .input-validation-error').first().focus();
+                } else {
+                    dom.find('div.placeholder-crown input').first().focus();
+                }
+                break;
+            case 5:
+                if (dom.find('div.placeholder-status .input-validation-error').length > 0) {
+                    dom.find('div.placeholder-status .input-validation-error').first().focus();
+                } else {
+                    dom.find('div.placeholder-status input').first().focus();
+                }
+                break;
+            case 6:
+                if (dom.find('div.placeholder-misc .input-validation-error').length > 0) {
+                    dom.find('div.placeholder-misc .input-validation-error').first().focus();
+                } else {
+                    dom.find('div.placeholder-misc input').first().focus();
+                }
+                break;
         }
     }
 
@@ -53,80 +99,91 @@
         if (isAdding && !isSaved) {
             $.delete_('TreeMeasurement');
         }
-        dom.find('.accordion').unbind('accordionchange');
+        dom.find('.tabs').unbind('tabsselect');
         dom.unbind('dialogclose');
         closeCallback(isSaved);
     }
 
     function render(data) {
         var newDom = $(data);
-        dom.find('h3.general-placeholder').html(newDom.find('h3.general-placeholder').html());
-        dom.find('div.general-placeholder').html(newDom.find('div.general-placeholder').html());
-        dom.find('h3.heightandgirth-placeholder').html(newDom.find('h3.heightandgirth-placeholder').html());
-        dom.find('div.heightandgirth-placeholder').html(newDom.find('div.heightandgirth-placeholder').html());
-        dom.find('h3.trunkandcrown-placeholder').html(newDom.find('h3.trunkandcrown-placeholder').html());
-        dom.find('div.trunkandcrown-placeholder').html(newDom.find('div.trunkandcrown-placeholder').html());
-        dom.find('h3.misc-placeholder').html(newDom.find('h3.misc-placeholder').html());
-        dom.find('div.misc-placeholder').html(newDom.find('div.misc-placeholder').html());
-        dom.find('.coordinates-entered-selector input').bind('change', (function () {
-            dom.find('.coordinates-entered-selector input').attr('checked') ?
+        dom.find('div.placeholder-general').html(newDom.find('div.placeholder-general').html());
+        dom.find('div.placeholder-height').html(newDom.find('div.placeholder-height').html());
+        dom.find('div.placeholder-girth').html(newDom.find('div.placeholder-girth').html());
+        dom.find('div.placeholder-trunk').html(newDom.find('div.placeholder-trunk').html());
+        dom.find('div.placeholder-crown').html(newDom.find('div.placeholder-crown').html());
+        dom.find('div.placeholder-status').html(newDom.find('div.placeholder-status').html());
+        dom.find('div.placeholder-misc').html(newDom.find('div.placeholder-misc').html());
+        dom.find('.coordinates-entered input').bind('change', (function () {
+            dom.find('.coordinates-entered input').attr('checked') ?
                     dom.find('.coordinates-entered-visible').show() :
                     dom.find('.coordinates-entered-visible').hide();
         }));
-        dom.find('.coordinates-entered-selector input').trigger('change');
-        dom.find('.treename-entered-selector input').bind('change', (function () {
-            dom.find('.treename-entered-selector input').attr('checked') ?
+        dom.find('.coordinates-entered input').trigger('change');
+        dom.find('.treename-entered input').bind('change', (function () {
+            dom.find('.treename-entered input').attr('checked') ?
                     dom.find('.treename-entered-visible').show() :
                     dom.find('.treename-entered-visible').hide();
         }));
-        dom.find('.treename-entered-selector input').trigger('change');
-        dom.find('.accordion').accordion('resize');
-        dom.find('#SelectedTreeMeasurement_Measured').datepicker({ onClose: function () { dom.find('#SelectedTreeMeasurement_Measured').focus(); } });
-        dom.find('#SelectedTreeMeasurement_CommonName').autocomplete({ source: "AutocompleteCommonName", minLength: 2, select: function (event, ui) {
-            dom.find('#SelectedTreeMeasurement_ScientificName').val(ui.item.scientificName);
+        dom.find('.treename-entered input').trigger('change');
+        dom.find('.measured input').datepicker({ onClose: function () { dom.find('.measured input').focus(); } });
+        dom.find('.common-name input').autocomplete({ source: "AutocompleteCommonName", minLength: 2, select: function (event, ui) {
+            dom.find('.scientific-name input').val(ui.item.scientificName);
         }
         });
-        dom.find('div.general-placeholder form').inputHintOverlay(5, 6);
+        dom.find('form').inputHintOverlay(5, 6);
+        dom.find('.coordinate-picker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
+        dom.find('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
+        dom.find('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
     }
 
     function validate() {
-        isValidating = true;
-        if (dom.find('.general-placeholder .field-validation-error').length > 0) {
-            dom.find('.accordion').accordion('activate', 0);
-            dom.find('.general-placeholder .input-validation-error').first().focus();
-            isValidating = false;
-            return false;
-        } else if (dom.find('.heightandgirth-placeholder .field-validation-error').length > 0) {
-            dom.find('.accordion').accordion('activate', 1);
-            dom.find('.heightandgirth-placeholder .input-validation-error').first().focus();
-            isValidating = false;
-            return false;
-        } else if (dom.find('.trunkandcrown-placeholder .field-validation-error').length > 0) {
-            dom.find('.accordion').accordion('activate', 2);
-            dom.find('.trunkandcrown-placeholder .input-validation-error').first().focus();
-            isValidating = false;
-            return false;
-        } else if (dom.find('.misc-placeholder .field-validation-error').length > 0) {
-            dom.find('.accordion').accordion('activate', 3);
-            dom.find('.misc-placeholder .input-validation-error').first().focus();
-            isValidating = false;
-            return false;
+        var tabsWithErrors = new Array();
+        if (dom.find('.placeholder-general .input-validation-error').length > 0) {
+            tabsWithErrors.push(0);
         }
-        isValidating = false;
-        return true;
+        if (dom.find('.placeholder-height .input-validation-error').length > 0) {
+            tabsWithErrors.push(1);
+        }
+        if (dom.find('.placeholder-girth .input-validation-error').length > 0) {
+            tabsWithErrors.push(2);
+        }
+        if (dom.find('.placeholder-trunk .input-validation-error').length > 0) {
+            tabsWithErrors.push(3);
+        }
+        if (dom.find('.placeholder-crown .input-validation-error').length > 0) {
+            tabsWithErrors.push(4);
+        }
+        if (dom.find('.placeholder-status .input-validation-error').length > 0) {
+            tabsWithErrors.push(5);
+        }
+        if (dom.find('.placeholder-misc .input-validation-error').length > 0) {
+            tabsWithErrors.push(6);
+        }
+        if (tabsWithErrors.length > 0) {
+            var currentlySelectedTab = dom.find('.tabs').tabs('option', 'selected');
+            var tabWithError;
+            while (tabsWithErrors.length > 0) {
+                tabWithError = tabsWithErrors.pop();
+                if (tabWithError == currentlySelectedTab) {
+                    focusFirstVisibleErrorOrInput();
+                    return false;
+                }
+            }
+            dom.find('.tabs').tabs('select', tabWithError);
+            return false;
+        } else {
+            return true;
+        }
     }
 
     function save() {
-        $.put('TreeMeasurement', dom.find('.general-placeholder form').serialize()
-            + '&' + dom.find('.heightandgirth-placeholder form').serialize()
-            + '&' + dom.find('.trunkandcrown-placeholder form').serialize()
-            + '&' + dom.find('.misc-placeholder form').serialize(), function (data) {
-                render(data);
-                if (validate()) {
-                    isSaved = true;
-                    dom.dialog('close');
-                }
-            });
+        $.put('TreeMeasurement', dom.find('form').serialize(), function (data) {
+            render(data);
+            if (validate()) {
+                isSaved = true;
+                dom.dialog('close');
+            }
+        });
     }
 
     public.Add = function (siteVisitIndex, subsiteVisitIndex, callback) {
@@ -137,7 +194,7 @@
         $.post('CreateTreeMeasurement', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex }, function (data) {
             dom.dialog('open');
             render(data);
-            setTimeout(function () { dom.find('.general-placeholder input').first().focus(); }, 1);
+            setTimeout(function () { dom.find('input').first().focus(); }, 1);
         });
     };
 
@@ -149,23 +206,27 @@
         $.get('TreeMeasurement', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex, treeMeasurementIndex: treeMeasurementIndex }, function (data) {
             dom.dialog('open');
             render(data);
-            setTimeout(function () { dom.find('.general-placeholder input').first().focus(); }, 1);
+            setTimeout(function () { dom.find('input').first().focus(); }, 1);
         });
     };
 
     public.AddMeasurer = function () {
-        $.post('CreateTreeMeasurementMeasurer', dom.find('.treemeasurer-placeholder input').serialize(), function (data) {
+        $.post('CreateTreeMeasurementMeasurer', dom.find('.treemeasurers input').serialize(), function (data) {
             var newDom = $(data);
-            dom.find('.treemeasurer-placeholder').replaceWith(newDom.find('.treemeasurer-placeholder'));
-            dom.find('.general-placeholder form').inputHintOverlay(5, 6);
+            dom.find('.treemeasurers').replaceWith(newDom.find('.treemeasurers'));
+            dom.find('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
+            dom.find('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
+            dom.find('form').inputHintOverlay(5, 6);
         });
     }
 
     public.RemoveMeasurer = function () {
-        $.post('RemoveTreeMeasurementMeasurer', dom.find('.treemeasurer-placeholder input').serialize(), function (data) {
+        $.post('RemoveTreeMeasurementMeasurer', dom.find('.treemeasurers input').serialize(), function (data) {
             var newDom = $(data);
-            dom.find('.treemeasurer-placeholder').replaceWith(newDom.find('.treemeasurer-placeholder'));
-            dom.find('.general-placeholder form').inputHintOverlay(5, 6);
+            dom.find('.treemeasurers').replaceWith(newDom.find('.treemeasurers'));
+            dom.find('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
+            dom.find('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
+            dom.find('form').inputHintOverlay(5, 6);
         });
     }
 
@@ -184,11 +245,11 @@
             if (result.coordinatesPicked) {
                 if (coordinates.IsSpecified) {
                     var newCoordinates = ValueObjectService.CreateCoordinatesWithFormat(result.latitude, result.longitude, coordinates.InputFormat);
-                    dom.find('#SelectedTreeMeasurement_Coordinates_Latitude').val(newCoordinates.Latitude);
-                    dom.find('#SelectedTreeMeasurement_Coordinates_Longitude').val(newCoordinates.Longitude);
+                    dom.find('.latitude input').val(newCoordinates.Latitude);
+                    dom.find('.longitude input').val(newCoordinates.Longitude);
                 } else {
-                    dom.find('#SelectedTreeMeasurement_Coordinates_Latitude').val(result.latitude);
-                    dom.find('#SelectedTreeMeasurement_Coordinates_Longitude').val(result.longitude);
+                    dom.find('.latitude input').val(result.latitude);
+                    dom.find('.longitude input').val(result.longitude);
                 }
             }
             public.Show();
@@ -198,8 +259,8 @@
         };
         public.Hide();
         var coordinates = ValueObjectService.CreateCoordinates(
-            dom.find('#SelectedTreeMeasurement_Coordinates_Latitude').val(),
-            dom.find('#SelectedTreeMeasurement_Coordinates_Longitude').val());
+            dom.find('.latitude input').val(),
+            dom.find('.longitude input').val());
         var options = { markerLoader: loadMapMarkers };
         if (coordinates.IsSpecified) {
             options.coordinatesSpecified = true;
@@ -212,10 +273,10 @@
 
 var TreeMeasurementRemover = new function () {
     var dom = $(
-        "<div title='Removing tree measurement'>\
-            <div class='ui-placeholder-import-treemeasurement' style='height: 200px'>\
-            </div>\
-        </div>");
+"<div title='Removing tree measurement'>\
+    <div class='placeholder' style='height: 200px'>\
+    </div>\
+</div>");
     var isSaved;
     var closeCallback;
 
@@ -233,7 +294,7 @@ var TreeMeasurementRemover = new function () {
     }
 
     function render(data) {
-        dom.find('.ui-placeholder-import-treemeasurement').replaceWith($(data));
+        dom.find('.placeholder').replaceWith($(data));
     }
 
     function remove() {

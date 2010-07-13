@@ -1,9 +1,9 @@
 ﻿var SubsiteVisitEditor = new function () {
     var public = this;
     var dom = $(
-        "<div>\
-            <div class='ui-placeholder-import-subsitevisit' style='height: 500px;'></div>\
-        </div>");
+"<div>\
+    <div class='ui-placeholder-import-subsitevisit' style='height: 500px;'></div>\
+</div>");
     var isSaved, isAdding;
     var closeCallback, showCallback, hideCallback;
 
@@ -180,9 +180,9 @@
 
 var SubsiteVisitRemover = new function () {
     var dom = $(
-        "<div title='Removing subsite visit'>\
-            <div class='ui-placeholder-import-subsitevisit' style='height: 200px'></div>\
-        </div>");
+"<div title='Removing subsite visit'>\
+    <div class='ui-placeholder-import-subsitevisit' style='height: 200px'></div>\
+</div>");
     var isSaved;
     var closeCallback;
 
