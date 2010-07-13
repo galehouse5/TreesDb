@@ -2,7 +2,7 @@
     var public = this;
     var dom = $(
 "<div>\
-    <div class='ui-placeholder-import-subsitevisit' style='height: 500px;'></div>\
+    <div class='ui-placeholder-import-subsitevisit'></div>\
 </div>");
     var isSaved, isAdding;
     var closeCallback, showCallback, hideCallback;
@@ -68,8 +68,8 @@
         setOptions(options);
         initialize();
         $.post('CreateSubsiteVisit', {}, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
             lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
             dom.find('input').first().focus();
         });
@@ -81,8 +81,8 @@
         setOptions(options);
         initialize();
         $.get('SubsiteVisit', { subsiteVisitIndex: index }, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
             lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
             dom.find('input').first().focus();
         });
@@ -94,8 +94,8 @@
         setOptions(options);
         initialize();
         $.get('SubsiteVisitForSiteVisit', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex }, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
             lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
             dom.find('input').first().focus();
         });
@@ -181,7 +181,7 @@
 var SubsiteVisitRemover = new function () {
     var dom = $(
 "<div title='Removing subsite visit'>\
-    <div class='ui-placeholder-import-subsitevisit' style='height: 200px'></div>\
+    <div class='ui-placeholder-import-subsitevisit'></div>\
 </div>");
     var isSaved;
     var closeCallback;
@@ -215,8 +215,8 @@ var SubsiteVisitRemover = new function () {
         closeCallback = options.onClose;
         initialize();
         $.get('RemoveSubsiteVisit', { subsiteVisitIndex: index }, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
         });
     }
 
@@ -225,8 +225,8 @@ var SubsiteVisitRemover = new function () {
         closeCallback = options.onClose;
         initialize();
         $.get('RemoveSubsiteVisitForSiteVisit', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex }, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
         });
     };
 };

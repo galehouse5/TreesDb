@@ -40,7 +40,7 @@
                     <div class='ui-helper-clearfix'></div>
                 </div>
                 <div class="treemeasurers">
-                    <div class="ui-form-row">
+                    <div class="ui-form-row treemeasurer">
                         <label>*First measuer:</label>
                         <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Measurers[0].FirstName, new { Title = "First name", style = "width: 125px;" })%>
                         <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Measurers[0].LastName, new { Title = "Last name", style = "width: 125px; margin-left: 4px;"  })%>
@@ -59,7 +59,7 @@
                         <div class='ui-helper-clearfix'></div>
                     </div>
                     <% if (Model.SelectedTreeMeasurement.Measurers.Count > 1) { %>
-                        <div class="ui-form-row">
+                        <div class="ui-form-row treemeasurer">
                             <label>*Second measuer:</label>
                             <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Measurers[1].FirstName, new { Title = "First name", style = "width: 125px;" })%>
                             <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Measurers[1].LastName, new { Title = "Last name", style = "width: 125px; margin-left: 4px;"  })%>
@@ -79,7 +79,7 @@
                         </div>
                     <% } %>
                     <% if (Model.SelectedTreeMeasurement.Measurers.Count > 2) { %>
-                        <div class="ui-form-row">
+                        <div class="ui-form-row treemeasurer">
                             <label>*Third measuer:</label>
                             <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Measurers[2].FirstName, new { Title = "First name", style = "width: 125px;" })%>
                             <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Measurers[2].LastName, new { Title = "Last name", style = "width: 125px; margin-left: 4px;"  })%>

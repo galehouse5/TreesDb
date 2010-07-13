@@ -2,7 +2,6 @@
 <%@ Import Namespace="TMD.Model.Trips" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-<script type="text/javascript" src="/Scripts/ThirdParty/jquery.inputHintOverlay.js"></script>
 <script type="text/javascript" src="/Scripts/Import/ReviewEditor.js"></script>
 <script type="text/javascript" src="/Scripts/Import/TreeMeasurementEditor.js"></script>
 <script type="text/javascript" src="/Scripts/Import/CoordinatePicker.js"></script>

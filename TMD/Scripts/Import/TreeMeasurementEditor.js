@@ -130,7 +130,6 @@
             dom.find('.scientific-name input').val(ui.item.scientificName);
         }
         });
-        dom.find('form').inputHintOverlay(5, 6);
         dom.find('.coordinate-picker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
         dom.find('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
         dom.find('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
@@ -192,8 +191,8 @@
         closeCallback = callback;
         initialize();
         $.post('CreateTreeMeasurement', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex }, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
             setTimeout(function () { dom.find('input').first().focus(); }, 1);
         });
     };
@@ -204,8 +203,8 @@
         closeCallback = callback;
         initialize();
         $.get('TreeMeasurement', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex, treeMeasurementIndex: treeMeasurementIndex }, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
             setTimeout(function () { dom.find('input').first().focus(); }, 1);
         });
     };
@@ -216,7 +215,7 @@
             dom.find('.treemeasurers').replaceWith(newDom.find('.treemeasurers'));
             dom.find('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
             dom.find('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
-            dom.find('form').inputHintOverlay(5, 6);
+            dom.find('.treemeasurers .treemeasurer').last().find('input').first().focus();
         });
     }
 
@@ -226,7 +225,7 @@
             dom.find('.treemeasurers').replaceWith(newDom.find('.treemeasurers'));
             dom.find('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
             dom.find('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
-            dom.find('form').inputHintOverlay(5, 6);
+            dom.find('.treemeasurers .treemeasurer').last().find('input').first().focus();
         });
     }
 
@@ -274,7 +273,7 @@
 var TreeMeasurementRemover = new function () {
     var dom = $(
 "<div title='Removing tree measurement'>\
-    <div class='placeholder' style='height: 200px'>\
+    <div class='placeholder'>\
     </div>\
 </div>");
     var isSaved;
@@ -309,8 +308,8 @@ var TreeMeasurementRemover = new function () {
         closeCallback = callback;
         initialize();
         $.get('RemoveTreeMeasurement', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex, treeMeasurementIndex: treeMeasurementIndex }, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
         });
     };
 };

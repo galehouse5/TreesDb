@@ -2,7 +2,7 @@
     var public = this;
     var dom = $(
 "<div>\
-    <div class='ui-placeholder-import-sitevisit-step1' style='height: 400px;'></div>\
+    <div class='ui-placeholder-import-sitevisit-step1'></div>\
     <div class='ui-placeholder-import-sitevisit-step2'></div>\
 </div>");
     var isSaved, isAdding, isValidating, isSubsiteAddingDisabled;
@@ -141,8 +141,8 @@
         isSubsiteAddingDisabled = false;
         initialize();
         $.post('CreateSiteVisit', {}, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
             dom.find('input').first().focus();
         });
     };
@@ -154,8 +154,8 @@
         isSubsiteAddingDisabled = options.disableSubsiteVisitAdding;
         initialize();
         $.get('SiteVisit', { siteVisitIndex: index }, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
             dom.find('input').first().focus();
         });
     };
@@ -204,7 +204,7 @@
 var SiteVisitRemover = new function () {
     var dom = $(
 "<div title='Removing site visit'>\
-    <div class='ui-placeholder-import-sitevisit' style='height: 200px'>\
+    <div class='ui-placeholder-import-sitevisit'>\
     </div>\
 </div>");
     var isSaved;
@@ -239,8 +239,8 @@ var SiteVisitRemover = new function () {
         closeCallback = callback;
         initialize();
         $.get('RemoveSiteVisit', { siteVisitIndex: index }, function (data) {
-            dom.dialog('open');
             render(data);
+            dom.dialog('open');
         });
     };
 };
