@@ -63,7 +63,7 @@ namespace TMD.Model
         private static Distance calculateOffset(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
         {
             float offset = (float)(Math.Cos(angleBottom.Radians) * (double)distanceBottom.Feet
-                - Math.Cos(angleTop.Radians) * (double)distanceTop.Feet);
+                - Math.Cos(angleTop.Radians) * (double)distanceBottom.Feet);
             if (offset == 0f)
             {
                 return Distance.Null();

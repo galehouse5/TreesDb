@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
+using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 
 namespace TMD.Model
 {
@@ -20,6 +21,7 @@ namespace TMD.Model
         private Angle()
         { }
 
+        [RangeValidator(0f, RangeBoundaryType.Inclusive, 90f, RangeBoundaryType.Inclusive, MessageTemplate = "Angle must be in the range of 0 to 90 degrees.", Ruleset = "Screening")]
         public float Degrees { get; private set; }
 
         [ObjectEqualityValidator(AngleFormat.Invalid, Negated = true, MessageTemplate = "Angle must be in decimal format.", Ruleset = "Screening")]
