@@ -18,7 +18,7 @@ namespace TMD.Model
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance DistanceTop { get; private set; }
 
-        [DisplayName("Angle top:")]
+        [DisplayName("Angle to top:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Angle AngleTop { get; private set; }
 
@@ -26,7 +26,7 @@ namespace TMD.Model
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance DistanceBottom { get; private set; }
 
-        [DisplayName("Angle bottom:")]
+        [DisplayName("Angle to bottom:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Angle AngleBottom { get; private set; }
 
@@ -50,8 +50,8 @@ namespace TMD.Model
 
         private static Distance calculateHeight(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
         {
-            float height = (float)(Math.Sin(angleTop.Degrees) * (double)distanceTop.Feet 
-                + Math.Sin(angleBottom.Degrees) * (double)distanceBottom.Feet 
+            float height = (float)(Math.Sin(angleTop.Radians) * (double)distanceTop.Feet
+                + Math.Sin(angleBottom.Radians) * (double)distanceBottom.Feet 
                 + (double)verticalOffset.Feet);
             if (height == 0f)
             {
@@ -62,8 +62,8 @@ namespace TMD.Model
 
         private static Distance calculateOffset(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
         {
-            float offset = (float)(Math.Cos(angleBottom.Degrees) * (double)distanceBottom.Feet 
-                - Math.Cos(angleTop.Degrees) * (double)distanceTop.Feet);
+            float offset = (float)(Math.Cos(angleBottom.Radians) * (double)distanceBottom.Feet
+                - Math.Cos(angleTop.Radians) * (double)distanceTop.Feet);
             if (offset == 0f)
             {
                 return Distance.Null();

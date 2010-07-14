@@ -25,6 +25,14 @@ namespace TMD.Model
         [ObjectEqualityValidator(AngleFormat.Invalid, Negated = true, MessageTemplate = "Angle must be in decimal format.", Ruleset = "Screening")]
         public AngleFormat InputFormat { get; private set; }
 
+        public float Radians
+        {
+            get
+            {
+                return (float)(((double)Degrees / 360d) * 2d * Math.PI);
+            }
+        }
+
         public override string ToString()
         {
             string s;
