@@ -1,8 +1,8 @@
 ﻿var CoordinatePicker = new function () {
     var dom = $(
-        "<div id='coordinate-picker' style='font-size: 120%;'>\
+        "<div id='coordinate-picker' style='font-size: 1.2em;'>\
             <div class='map' style='position: absolute; left: 0px; top: 0px;'></div>\
-            <div class='coordinates' style='position: absolute; left: 45%; top: 10px;'></div>\
+            <div class='coordinates' style='position: absolute; left: 45%; top: 10px; font-size: 1.4em;'></div>\
             <div class='address-search' style='position: absolute; left: 50px; bottom: 50px;'>\
                 Type an address and press 'Enter' for help positioning the marker...\
                 <br />\
@@ -29,6 +29,7 @@
         resultCallback = callback;
         initialize();
         initializeMap();
+        windowResize();
         initializeAddressSearch();
         if (options.markerLoader != null) {
             options.markerLoader(loadMarkers);
@@ -43,10 +44,11 @@
         dom.find('a').button();
         dom.find('a.save').bind('click', save);
         dom.find('a.cancel').bind('click', close);
-        windowResize();
+        $('body').css('overflow', 'hidden');
     };
 
     function dispose() {
+        $('body').css('overflow', 'visible');
         $(window).unbind('resize');
         $(window).unbind('keyup');
         dom.find('a.save').unbind('click');
@@ -56,8 +58,13 @@
 
     function windowResize() {
         dom.find('.map')
-            .css('height', document.documentElement.clientHeight)
-            .css('width', document.documentElement.clientWidth);
+            .css('height', $(window).height())
+            .css('width', $(window).width())
+            .css('top', $(window).scrollTop());
+        dom.find('.coordinates')
+            .css('top', $(window).scrollTop() + 10 + 'px');
+        dom.find('.save, .cancel, .address-search')
+            .css('bottom', 50 - $(window).scrollTop() + 'px');
     };
 
     function windowKeyPress(event) {
