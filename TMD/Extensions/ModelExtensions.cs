@@ -76,4 +76,22 @@ namespace TMD.Extensions
             return Volume.Create(value);
         }
     }
+
+    public class HeightMeasurementModelBinder : IModelBinder
+    {
+        public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+        {
+            string distanceTopModelName = string.Format("{0}.DistanceTop", bindingContext.ModelName);
+            Distance distanceTop = Distance.Create(bindingContext.ValueProvider.GetValue(distanceTopModelName).AttemptedValue);
+            string angleTopModelName = string.Format("{0}.AngleTop", bindingContext.ModelName);
+            Angle angleTop = Angle.Create(bindingContext.ValueProvider.GetValue(angleTopModelName).AttemptedValue);
+            string distanceBottomModelName = string.Format("{0}.DistanceBottom", bindingContext.ModelName);
+            Distance distanceBottom = Distance.Create(bindingContext.ValueProvider.GetValue(distanceBottomModelName).AttemptedValue);
+            string angleBottomModelName = string.Format("{0}.AngleBottom", bindingContext.ModelName);
+            Angle angleBottom = Angle.Create(bindingContext.ValueProvider.GetValue(angleBottomModelName).AttemptedValue);
+            string verticalOffsetModelName = string.Format("{0}.VerticalOffset", bindingContext.ModelName);
+            DirectedDistance verticalOffset = DirectedDistance.Create(bindingContext.ValueProvider.GetValue(verticalOffsetModelName).AttemptedValue);
+            return HeightMeasurements.Create(distanceTop, angleTop, distanceBottom, angleBottom, verticalOffset);
+        }
+    }
 }

@@ -46,6 +46,7 @@
     <property name="CoordinatesCalculated" />
     <property name="GpsDatum"/>
     <property name="PositionMeasurementType"/>
+    <property name="DetailedHeightMeasurements"/>
     <component name="Height" class="Distance">
       <property name="Feet" column="Height"/>
       <property name="InputFormat" column="HeightInputFormat"/>

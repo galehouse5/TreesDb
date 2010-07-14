@@ -73,6 +73,14 @@ namespace TMD.Model
         public static Angle Create(string s)
         {
             float degrees;
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                return new Angle()
+                {
+                    Degrees = 0,
+                    InputFormat = AngleFormat.Unspecified
+                };
+            }
             if (float.TryParse(s.Trim(), out degrees))
             {
                 return new Angle()

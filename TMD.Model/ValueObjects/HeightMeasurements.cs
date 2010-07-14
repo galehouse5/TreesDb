@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
 using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using System.ComponentModel;
 
 namespace TMD.Model
 {
@@ -13,27 +14,34 @@ namespace TMD.Model
         private HeightMeasurements() 
         { }
 
+        [DisplayName("Distance top:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance DistanceTop { get; private set; }
 
+        [DisplayName("Angle top:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Angle AngleTop { get; private set; }
 
+        [DisplayName("Distance bottom:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance DistanceBottom { get; private set; }
 
+        [DisplayName("Angle bottom:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Angle AngleBottom { get; private set; }
 
+        [DisplayName("Vertical offset:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public DirectedDistance VerticalOffset { get; private set; }
 
+        [DisplayName("Calculated height:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance Height 
         {
             get { return calculateHeight(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); }
         }
 
+        [DisplayName("Calculated offset:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance Offset
         {

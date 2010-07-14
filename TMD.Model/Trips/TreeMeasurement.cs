@@ -241,13 +241,21 @@ namespace TMD.Model.Trips
         {
             get
             {
-                if (HeightMeasurements.IsSpecified)
+                if (DetailedHeightMeasurements)
                 {
-                    return HeightMeasurements.Height;
+                    m_Height = HeightMeasurements.Height;
                 }
                 return m_Height;
             }
             set { m_Height = value; }
+        }
+
+        public virtual bool DetailedHeightMeasurements { get; set; }
+
+        public virtual bool SimpleHeightMeasurements
+        {
+            get { return !DetailedHeightMeasurements; }
+            set { DetailedHeightMeasurements = !value; }
         }
 
         [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Height")]

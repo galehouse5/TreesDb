@@ -39,6 +39,7 @@ namespace TMD
             ModelBinders.Binders.Add(typeof(Elevation), new ElevationModelBinder());
             ModelBinders.Binders.Add(typeof(Distance), new DistanceModelBinder());
             ModelBinders.Binders.Add(typeof(Volume), new VolumeModelBinder());
+            ModelBinders.Binders.Add(typeof(HeightMeasurements), new HeightMeasurementModelBinder());
         }
 
         public override void Init()

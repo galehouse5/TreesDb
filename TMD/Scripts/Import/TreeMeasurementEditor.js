@@ -128,11 +128,24 @@
         dom.find('.measured input').datepicker({ onClose: function () { dom.find('.measured input').focus(); } });
         dom.find('.common-name input').autocomplete({ source: "AutocompleteCommonName", minLength: 2, select: function (event, ui) {
             dom.find('.scientific-name input').val(ui.item.scientificName);
-        }
+        } 
         });
         dom.find('.coordinate-picker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
         dom.find('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
         dom.find('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
+        dom.find('.height-detailed input').bind('change', (function () {
+            if (dom.find('.height-detailed input').attr('checked')) {
+                dom.find('.height-detailed-visible').hide();
+                dom.find('.height-simple-visible').show();
+            } else {
+
+                dom.find('.height-simple-visible').hide();
+                dom.find('.height-detailed-visible').show();
+            }
+        }));
+        dom.find('.height-detailed input').trigger('change');
+        dom.find('.height-detailed').buttonset();
+        dom.find('.height-detailed-calculate').button({ icons: { primary: 'ui-icon-calculator'} });
     }
 
     function validate() {
@@ -182,6 +195,12 @@
                 isSaved = true;
                 dom.dialog('close');
             }
+        });
+    }
+
+    public.CalculateDetailedHeightMeasurements = function () {
+        $.put('TreeMeasurement', dom.find('form').serialize(), function (data) {
+            render(data);
         });
     }
 

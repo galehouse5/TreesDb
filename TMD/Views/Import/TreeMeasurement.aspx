@@ -158,7 +158,7 @@
                 </div>
             </div>
             <div id='editor-treemeasurement-height' class='placeholder-height'>
-                <div class="ui-form-row">
+                <div class="ui-form-row height-simple-visible">
                     <%= Html.LabelFor(m => m.SelectedTreeMeasurement.Height)%>
                     <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Height)%>
                     <div class="ui-validation-error ui-state-error-text">
@@ -167,9 +167,77 @@
                     </div>
                     <div class='ui-helper-clearfix'></div>
                 </div>
-                <div class="ui-form-row coordinates-entered" style="float: left; margin-left: 10px;">
-                    <span>Enter detailed height and angle measurements?</span>
-                    <%= Html.CheckBox("notimplemented") %>
+                <div class="ui-form-row height-detailed-visible">
+                    <%= Html.LabelFor(m => m.SelectedTreeMeasurement.HeightMeasurements.AngleTop)%>
+                    <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.HeightMeasurements.AngleTop)%>
+                    <div class="ui-validation-error ui-state-error-text">
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.AngleTop, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.AngleTop, "", new { @class = "ui-validation-error-message" })%>
+                    </div>
+                    <div class='ui-helper-clearfix'></div>
+                </div>
+                <div class="ui-form-row height-detailed-visible">
+                    <%= Html.LabelFor(m => m.SelectedTreeMeasurement.HeightMeasurements.DistanceTop)%>
+                    <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.HeightMeasurements.DistanceTop)%>
+                    <div class="ui-validation-error ui-state-error-text">
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.DistanceTop, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.DistanceTop, "", new { @class = "ui-validation-error-message" })%>
+                    </div>
+                    <div class='ui-helper-clearfix'></div>
+                </div>                
+                <div class="ui-form-row height-detailed-visible">
+                    <%= Html.LabelFor(m => m.SelectedTreeMeasurement.HeightMeasurements.VerticalOffset)%>
+                    <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.HeightMeasurements.VerticalOffset)%>
+                    <div class="ui-validation-error ui-state-error-text">
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.VerticalOffset, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.VerticalOffset, "", new { @class = "ui-validation-error-message" })%>
+                    </div>
+                    <div class='ui-helper-clearfix'></div>
+                </div>
+                <div class="ui-form-row height-detailed-visible">
+                    <%= Html.LabelFor(m => m.SelectedTreeMeasurement.HeightMeasurements.AngleBottom)%>
+                    <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.HeightMeasurements.AngleBottom)%>
+                    <div class="ui-validation-error ui-state-error-text">
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.AngleBottom, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.AngleBottom, "", new { @class = "ui-validation-error-message" })%>
+                    </div>
+                    <div class='ui-helper-clearfix'></div>
+                </div>
+                <div class="ui-form-row height-detailed-visible">
+                    <%= Html.LabelFor(m => m.SelectedTreeMeasurement.HeightMeasurements.DistanceBottom)%>
+                    <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.HeightMeasurements.DistanceBottom)%>
+                    <div class="ui-validation-error ui-state-error-text">
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.DistanceBottom, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.DistanceBottom, "", new { @class = "ui-validation-error-message" })%>
+                    </div>
+                    <div class='ui-helper-clearfix'></div>
+                </div>
+                <div class="ui-form-row height-detailed-visible" style="float: left; margin-left: 100px">
+                    <a href="javascript:TreeMeasurementEditor.CalculateDetailedHeightMeasurements()" class="height-detailed-calculate">Calculate height and offset</a>
+                </div>
+                <div class="ui-form-row height-detailed-visible">
+                    <%= Html.LabelFor(m => m.SelectedTreeMeasurement.HeightMeasurements.Height)%>
+                    <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.HeightMeasurements.Height, new { disabled = true })%>
+                    <div class="ui-validation-error ui-state-error-text">
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.Height, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.Height, "", new { @class = "ui-validation-error-message" })%>
+                    </div>
+                    <div class='ui-helper-clearfix'></div>
+                </div>
+                <div class="ui-form-row height-detailed-visible">
+                    <%= Html.LabelFor(m => m.SelectedTreeMeasurement.HeightMeasurements.Offset)%>
+                    <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.HeightMeasurements.Offset, new { disabled = true })%>
+                    <div class="ui-validation-error ui-state-error-text">
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.Offset, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.HeightMeasurements.Offset, "", new { @class = "ui-validation-error-message" })%>
+                    </div>
+                    <div class='ui-helper-clearfix'></div>
+                </div>
+                <div class="ui-form-row height-detailed" style="float: left; margin-left: 100px">
+                    <label for="treemeasurement-simpleheight" style="width: 105px;">Simple height</label>
+                    <%= Html.RadioButtonFor(m => m.SelectedTreeMeasurement.SimpleHeightMeasurements, true, new { Id = "treemeasurement-simpleheight" })%>
+                    <label for="treemeasurement-detailedheight" style="width: 105px;">Detailed height</label>
+                    <%= Html.RadioButtonFor(m => m.SelectedTreeMeasurement.SimpleHeightMeasurements, false, new { Id = "treemeasurement-detailedheight" })%>
                     <div class='ui-helper-clearfix'></div>
                 </div>
                 <div class="ui-form-row">
