@@ -162,11 +162,11 @@ namespace TMD.Models
         public string Email { get; set; }
 
         [DisplayName("Firstname:")]
-        [StringLengthValidator(50, MessageTemplate = "First name must not exceed 50 characters.", Ruleset = "Account")]
+        [StringLengthWhenNotNullOrWhitespaceValidator(50, MessageTemplate = "First name must not exceed 50 characters.", Ruleset = "Account")]
         public string Firstname { get; set; }
 
         [DisplayName("Lastname:")]
-        [StringLengthValidator(50, MessageTemplate = "Last name must not exceed 50 characters.", Ruleset = "Account")]
+        [StringLengthWhenNotNullOrWhitespaceValidator(50, MessageTemplate = "Last name must not exceed 50 characters.", Ruleset = "Account")]
         public string Lastname { get; set; }
 
         [DisplayName("Existing password:")]
