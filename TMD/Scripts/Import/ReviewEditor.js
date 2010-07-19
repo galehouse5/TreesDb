@@ -26,7 +26,7 @@
 
 $(document).ready(function () {
     $('a.ui-direction-import-forward').click(function (eventObject) {
-        var clickedAnchor = $(eventObject.target).parent();
+        var clickedAnchor = $(eventObject.target).closest('a');
         ReviewEditor.ValidateAndChangeLocation(clickedAnchor.attr('href'));
         return false;
     });

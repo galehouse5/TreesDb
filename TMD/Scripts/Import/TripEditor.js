@@ -28,7 +28,7 @@
 $(document).ready(function () {
     TripEditor.Initialize();
     $('a.ui-direction-import-forward').click(function (eventObject) {
-        var clickedAnchor = $(eventObject.target).parent();
+        var clickedAnchor = $(eventObject.target).closest('a');
         TripEditor.SaveAndChangeLocation(clickedAnchor.attr('href'));
         return false;
     });
