@@ -6,6 +6,14 @@ using Microsoft.Practices.Unity;
 
 namespace TMD.Model.Locations
 {
+    public interface ILocationRepository
+    {
+        State FindStateByCountryCodeAndCode(string countryCode, string code);
+        Country FindCountryByCode(string code);
+        IList<State> FindStatesByCountryCode(string countryCode);
+        IList<Country> FindAllCountries();
+    }
+
     public static class LocationService
     {
         private static ILocationRepository s_Repository = ModelRegistry.RepositoryFactory.Resolve<ILocationRepository>();

@@ -47,16 +47,3 @@
 .ui-icon-import-treemeasurement { float: left; height: 25px; width: 32px; background-image: url("/Images/tree32.png"); background-position: 0 -3px; }
 
 .ui-placeholder-import-trip { margin-top: 25px; font-size: 10px; width: 780px; }
-
-
-
-
-
-/*label.inputHintOverlay { color: #808080; }
-
-.editor-big .form-row { text-align: left; padding: 0 0 14px 0; }
-.editor-big .form-row .label-col { float: left; width: 250px; }
-.editor-big .form-row .input-col { float: left; width: 550px; }
-.editor-big .form-row .input-col input[type=text] { float: left; width: 200px; }
-.editor-big .form-row .input-col input[type=checkbox], select, textarea { float: left; overflow-x: hidden; }*/
-

@@ -87,9 +87,12 @@
     <Compile Include="Repositories\LocationRepository.cs" />
     <Compile Include="Repositories\TreeRepository.cs" />
     <Compile Include="Repositories\TripRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="StaticUnitOfWorkContextProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NHibernateUnitOfWorkProvider.cs" />
+    <Compile Include="StaticUserSessionContextProvider.cs" />
+    <Compile Include="StaticUserSessionProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Mappings\Trees.hbm.xml">
@@ -105,6 +108,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Mappings\Locations.hbm.xml" />
     <EmbeddedResource Include="Mappings\Trips.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Users.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

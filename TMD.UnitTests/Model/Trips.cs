@@ -445,6 +445,8 @@ namespace TMD.UnitTests.Model
             Assert.IsFalse(t.ValidateRegardingImport().IsValid);
             tmeasurer.FirstName = "tree measurer first name";
             tmeasurer.LastName = "tree measurer last name";
+            ssv.CoordinatesEntered = true;
+            ssv.Coordinates = Coordinates.Create(1, 2);
             Assert.IsTrue(t.ValidateRegardingImport().IsValid);
         }
     }

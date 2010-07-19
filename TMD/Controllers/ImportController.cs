@@ -10,9 +10,12 @@ using TMD.Extensions;
 using TMD.Model;
 using Microsoft.Practices.EnterpriseLibrary.Validation;
 using TMD.Model.Trees;
+using TMD.Model.Users;
 
 namespace TMD.Controllers
 {
+    [UserAuthorizationFilter(Roles = UserRoles.Import)]
+    [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
     public class ImportController : Controller
     {
         public ActionResult Index()

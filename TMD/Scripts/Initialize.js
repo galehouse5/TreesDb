@@ -16,6 +16,7 @@ $(document).ready(function () {
     });
     $('.ui-navigation .ui-state-activate').trigger('mouseout');
 
-    $('.ui-account-login').button({ icons: { primary: 'ui-icon-unlocked'} });
-    $('.ui-account-logout').button({ icons: { primary: 'ui-icon-locked'} });
+    $('.ui-account-login').button({ icons: { primary: 'ui-icon-locked'} });
+    $('.ui-account-logout').button({ icons: { primary: 'ui-icon-unlocked'} });
+    $('.ui-account-edit').button({ icons: { primary: 'ui-icon-gear'} });
 });

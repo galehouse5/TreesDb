@@ -22,7 +22,7 @@ namespace TMD.Model
         {
             if (Context == null)
             {
-                Type t = Type.GetType(ModelRegistry.ModelSettings.UnitOfWorkProvider);
+                Type t = Type.GetType(ModelRegistry.Settings.UnitOfWorkProvider);
                 Context = (IUnitOfWorkProvider)Activator.CreateInstance(t);
             }
             Context.Initialize();
@@ -51,7 +51,7 @@ namespace TMD.Model
             {
                 if (s_ContextProvider == null)
                 {
-                    Type t = Type.GetType(ModelRegistry.ModelSettings.UnitOfWorkContextProvider);
+                    Type t = Type.GetType(ModelRegistry.Settings.UnitOfWorkContextProvider);
                     s_ContextProvider = (UnitOfWorkContextProvider)Activator.CreateInstance(t);
                 }
                 return s_ContextProvider;
@@ -76,6 +76,12 @@ namespace TMD.Model
         public static void Rollback()
         {
             Context.Rollback();
+        }
+
+        public static void BeginNewUnitOfWorkToRecoverFromException()
+        {
+            Context.Dispose();
+            Context.Initialize();
         }
     }
 }

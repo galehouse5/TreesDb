@@ -2,6 +2,11 @@
 .ui-header-logo { margin: 0 auto; width: 100px; background-color: #ffffff; text-align: center; }
 
 .ui-account { position: absolute; right: 10px; top: 10px; }
+.ui-account-info { float: right; margin: 5px; font-size: 12px; }
+.ui-account-info span { padding: 1px 5px; }
+
+.ui-status { position: absolute; top: 127px; left: 50%; width: 400px; text-align: center; margin-left: -200px; font-size: 12px; }
+.ui-status span { padding: 1px 5px; }
 
 .ui-navigation { margin: 25px auto; width: 405px; font-size: 12px; }
 .ui-navigation ul { list-style: none; padding: 0; }
@@ -19,7 +24,7 @@
 .ui-content-column-two { float: left; width: 340px; padding: 0 15px; }
 .ui-content-column-three { float: left; width: 280px; padding: 0 15px; }
 
-body { margin: 0; font-size: 10px; color: #433f38; font-family: Arial, Helvetica, Verdana, sans-serif; }
+body { margin: 0; font-size: 10px; color: #433f38; font-family: Arial, Helvetica, Verdana, sans-serif; min-width: 1000px; }
 a img { border: none; }
 a { color: #0000FF; text-decoration: underline; }
 h2 a { color: #433f38; text-decoration: none; }

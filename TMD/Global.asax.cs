@@ -8,6 +8,7 @@ using TMD.Model;
 using TMD.Extensions;
 using TMD.Model.Trips;
 using TMD.Model.Locations;
+using Recaptcha;
 
 namespace TMD
 {
@@ -40,6 +41,9 @@ namespace TMD
             ModelBinders.Binders.Add(typeof(Distance), new DistanceModelBinder());
             ModelBinders.Binders.Add(typeof(Volume), new VolumeModelBinder());
             ModelBinders.Binders.Add(typeof(HeightMeasurements), new HeightMeasurementModelBinder());
+
+            RecaptchaControlMvc.PublicKey = WebApplicationRegistry.Settings.RecaptchaPublicKey;
+            RecaptchaControlMvc.PrivateKey = WebApplicationRegistry.Settings.RecaptchaPrivateKey;
         }
 
         public override void Init()

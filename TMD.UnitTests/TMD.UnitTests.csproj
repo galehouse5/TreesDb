@@ -97,6 +97,8 @@
     <Compile Include="Model\Locations.cs" />
     <Compile Include="Model\Trees.cs" />
     <Compile Include="Model\Trips.cs" />
+    <Compile Include="Model\Users.cs" />
+    <Compile Include="Model\UserSessions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLCLR.cs" />
   </ItemGroup>

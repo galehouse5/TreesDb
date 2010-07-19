@@ -6,6 +6,13 @@ using Microsoft.Practices.Unity;
 
 namespace TMD.Model.Trips
 {
+    public interface ITripRepository
+    {
+        void Save(Trip t);
+        Trip FindById(int id);
+        void Remove(Trip t);
+    }
+
     public static class TripService
     {
         private static ITripRepository m_Repository = ModelRegistry.RepositoryFactory.Resolve<ITripRepository>();

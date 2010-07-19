@@ -1,54 +1,108 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using TMD.Model.Users;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using TMD.Model.Users;
 
-//namespace TMD.Model
-//{
-//    public interface IUserSessionProvider
-//    {
-//        DateTime StartTime { get; }
-//        User User { get; }
+namespace TMD.Model
+{
+    public abstract class UserSessionProvider
+    {
+        public abstract User ActiveUser { get; set; }
 
-//        void Start(User user);
-//        void End(User user);
-//    }
+        public void Initialize()
+        {
+            if (ActiveUser != null)
+            {
+                ActiveUser.ReportActivity();
+            }
+        }
 
-//    public static class UserSession
-//    {
-//        private static IUserSessionProvider s_Provider;
-//        public static IUserSessionProvider Provider
-//        {
-//            get
-//            {
-//                if (s_Provider == null)
-//                {
-//                    Type t = Type.GetType(ModelRegistry.ModelSettings.UserSessionProvider);
-//                    s_Provider = (IUserSessionProvider)Activator.CreateInstance(t);
-//                }
-//                return s_Provider;
-//            }
-//        }
+        public void Dispose()
+        {
+            if (ActiveUser != null)
+            {
+                using (UnitOfWork.BeginBusinessTransaction())
+                {
+                    UserService.Save(ActiveUser);
+                    UnitOfWork.Persist();
+                }
+            }
+        }
+    }
+     
+    public abstract class UserSessionContextProvider
+    {
+        /// <summary>
+        /// This method must be called before the context can be consumed.
+        /// </summary>
+        protected void InitializeContext()
+        {
+            if (Context == null)
+            {
+                Type t = Type.GetType(ModelRegistry.Settings.UserSessionProvider);
+                Context = (UserSessionProvider)Activator.CreateInstance(t);
+            }
+            Context.Initialize();
+        }
 
-//        public static DateTime StartTime
-//        {
-//            get { return Provider.StartTime; }
-//        }
+        public abstract UserSessionProvider Context { get; protected set; }
 
-//        public static User User 
-//        {
-//            get { return Provider.User; }
-//        }
+        /// <summary>
+        /// This method must be called after the context has gone out of scope.
+        /// </summary>
+        protected void DisposeContext()
+        {
+            if (Context != null)
+            {
+                Context.Dispose();
+            }
+        }
+    }
 
-//        public static void Start(User user)
-//        {
-//            Provider.Start(user);
-//        }
+    public static class UserSession
+    {
+        private static UserSessionContextProvider s_ContextProvider;
+        private static UserSessionContextProvider ContextProvider
+        {
+            get
+            {
+                if (s_ContextProvider == null)
+                {
+                    Type t = Type.GetType(ModelRegistry.Settings.UserSessionContextProvider);
+                    s_ContextProvider = (UserSessionContextProvider)Activator.CreateInstance(t);
+                }
+                return s_ContextProvider;
+            }
+        }
 
-//        public static void End(User user)
-//        {
-//            Provider.End(user);
-//        }
-//    }
-//}
+        public static User AuthenticatedUser
+        {
+            get { return ContextProvider.Context.ActiveUser; }
+            internal set { ContextProvider.Context.ActiveUser = value; }
+        }
+
+        public static bool Authenticate(User user, string password)
+        {
+            if (user.AttemptLogin(password))
+            {
+                AuthenticatedUser = user;
+                return true;
+            }
+            return false;
+        }
+
+        public static bool IsAuthenticated
+        {
+            get
+            {
+                return AuthenticatedUser != null;
+            }
+        }
+
+        public static void Abandon()
+        {
+            AuthenticatedUser = null;
+        }
+    }
+}

@@ -6,6 +6,11 @@ using Microsoft.Practices.Unity;
 
 namespace TMD.Model.Trees
 {
+    public interface ITreeRepository
+    {
+        IList<KnownTree> FindTreesWithSimilarCommonName(string commonName, int results);
+    }
+
     public static class TreeService
     {
         private static ITreeRepository s_Repository = ModelRegistry.RepositoryFactory.Resolve<ITreeRepository>();

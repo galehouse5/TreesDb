@@ -33,5 +33,13 @@ namespace TMD.Extensions
                 modelState.AddModelError(result.Key == null ? "_FORM" : string.Format("{0}.{1}.{2}", formElementNamespace, result.Key, appendQualification), result.Message);
             }
         }
+
+        public static void CopyToModelStateForKey(this ValidationResults results, ModelStateDictionary modelState, string key)
+        {
+            foreach (ValidationResult result in results)
+            {
+                modelState.AddModelError(key, result.Message);
+            }
+        }
     }
 }

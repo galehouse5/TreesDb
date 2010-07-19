@@ -101,40 +101,22 @@ namespace TMD.Models
             ApplicationSession.ImportTripId = Trip.Id;
         }
 
-        public int SelectedTreeMeasurementIndex
-        {
-            get { return ApplicationSession.ImportSelectedMeasurementIndex; }
-            set { ApplicationSession.ImportSelectedMeasurementIndex = value; }
-        }
-
         public TreeMeasurement SelectedTreeMeasurement
         {
-            get { return SelectedTreeMeasurementIndex > -1 ? SelectedSubsiteVisit.TreeMeasurements[SelectedTreeMeasurementIndex] : null; }
-            set { SelectedTreeMeasurementIndex = value == null ? -1 : SelectedSubsiteVisit.TreeMeasurements.IndexOf(value); }
-        }
-
-        public int SelectedSubsiteVisitIndex
-        {
-            get { return ApplicationSession.ImportSelectedSubsiteVisitIndex; }
-            set { ApplicationSession.ImportSelectedSubsiteVisitIndex = value; }
+            get { return ApplicationSession.ImportSelectedMeasurementIndex > -1 ? SelectedSubsiteVisit.TreeMeasurements[ApplicationSession.ImportSelectedMeasurementIndex] : null; }
+            set { ApplicationSession.ImportSelectedMeasurementIndex = value == null ? -1 : SelectedSubsiteVisit.TreeMeasurements.IndexOf(value); }
         }
 
         public SubsiteVisit SelectedSubsiteVisit
         {
-            get { return SelectedSubsiteVisitIndex > -1 ? SelectedSiteVisit.SubsiteVisits[SelectedSubsiteVisitIndex] : null; }
-            set { SelectedSubsiteVisitIndex = value == null ? -1 : SelectedSiteVisit.SubsiteVisits.IndexOf(value); }
-        }
-
-        public int SelectedSiteVisitIndex
-        {
-            get { return ApplicationSession.ImportSelectedSiteVisitIndex; }
-            set { ApplicationSession.ImportSelectedSiteVisitIndex = value; }
+            get { return ApplicationSession.ImportSelectedSubsiteVisitIndex > -1 ? SelectedSiteVisit.SubsiteVisits[ApplicationSession.ImportSelectedSubsiteVisitIndex] : null; }
+            set { ApplicationSession.ImportSelectedSubsiteVisitIndex = value == null ? -1 : SelectedSiteVisit.SubsiteVisits.IndexOf(value); }
         }
 
         public SiteVisit SelectedSiteVisit
         {
-            get { return SelectedSiteVisitIndex > -1 ? Trip.SiteVisits[SelectedSiteVisitIndex] : null; }
-            set { SelectedSiteVisitIndex = value == null ? -1 : Trip.SiteVisits.IndexOf(value); }
+            get { return ApplicationSession.ImportSelectedSiteVisitIndex > -1 ? Trip.SiteVisits[ApplicationSession.ImportSelectedSiteVisitIndex] : null; }
+            set { ApplicationSession.ImportSelectedSiteVisitIndex = value == null ? -1 : Trip.SiteVisits.IndexOf(value); }
         }
 
         public IEnumerable<SelectListItem> BuildStateSelectList()

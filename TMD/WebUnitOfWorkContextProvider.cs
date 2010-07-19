@@ -6,7 +6,7 @@ using TMD.Model;
 
 namespace TMD
 {
-    public class HttpUnitOfWorkContextProvider : UnitOfWorkContextProvider, IHttpModule
+    public class WebUnitOfWorkContextProvider : UnitOfWorkContextProvider, IHttpModule
     {
         private HttpApplication ApplicationContext { get; set; }
 
@@ -36,7 +36,7 @@ namespace TMD
         private const string HttpContextItemsKey = "unitOfWorkProvider";
         public override IUnitOfWorkProvider Context
         {
-            get { return HttpContext.Current.Items[HttpContextItemsKey] as IUnitOfWorkProvider; }
+            get { return (IUnitOfWorkProvider)HttpContext.Current.Items[HttpContextItemsKey]; }
             protected set { HttpContext.Current.Items[HttpContextItemsKey] = value; }
         }
     }

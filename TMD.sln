@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD", "TMD\TMD.csproj", "{6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdPartyAssemblies", "ThirdPartyAssemblies", "{E408F1F3-6FFB-475E-A1AF-76A6500BD730}"
 	ProjectSection(SolutionItems) = preProject
+		ThirdPartyAssemblies\Recaptcha.dll = ThirdPartyAssemblies\Recaptcha.dll
+		ThirdPartyAssemblies\Recaptcha.pdb = ThirdPartyAssemblies\Recaptcha.pdb
 		ThirdPartyAssemblies\SimMetrics.dll = ThirdPartyAssemblies\SimMetrics.dll
 		ThirdPartyAssemblies\SimMetrics.XML = ThirdPartyAssemblies\SimMetrics.XML
 		ThirdPartyAssemblies\Wintellect.Threading.dll = ThirdPartyAssemblies\Wintellect.Threading.dll

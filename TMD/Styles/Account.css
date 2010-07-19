@@ -1,0 +1,19 @@
+﻿.ui-centered { margin: 0 auto; width: 490px; }
+
+.ui-form-column { float: left; width: 480px; padding: 5px 0; margin: 0 5px; }
+.ui-form-column h2 { margin: 25px; }
+.ui-form-column p { margin: 25px; }
+
+.ui-form-row { clear: both; padding: 5px 15px; }
+.ui-form-row label { float: left; display: block; width: 130px; text-align: right; padding-right: 5px; }
+.ui-form-row input[type=text], .ui-form-row input[type=password] { float: left; display: block; width: 260px; }
+.ui-form-row input[type=checkbox] { float: left; display: block; }
+.ui-form-row .ui-validation-error { float: left; clear: both; display: block; }
+.ui-form-row .ui-validation-error .field-validation-error.ui-icon { float: left; display: block; margin-left: 118px; }
+.ui-form-row .ui-validation-error .field-validation-error.ui-validation-error-message  { float: left; display: block; width: 260px; line-height: 15px; }
+
+.ui-form-button-row { clear: both; padding: 25px; font-size: 12px; }
+.ui-form-button-row input[type=submit] { float: right; margin: 5px; }
+.ui-form-button-row a { float: right; margin: 5px; }
+
+#recaptcha_area { margin: 0 auto; }

@@ -8,37 +8,40 @@ namespace TMD.Model
 {
     internal class ModelSettings : ConfigurationSection
     {
-        private const string UnitOfWorkContextProviderPropertyName = "unitOfWorkContextProvider";
-        private const string UnitOfWorkProviderPropertyName = "unitOfWorkProvider";
-        private const string UserSessionContextProviderPropertyName = "userSessionContextProvider";
-        private const string UserSessionProviderPropertyName = "userSessionProvider";
+        private class Keys
+        {
+            public const string UnitOfWorkContextProvider = "unitOfWorkContextProvider";
+            public const string UnitOfWorkProvider = "unitOfWorkProvider";
+            public const string UserSessionContextProvider = "userSessionContextProvider";
+            public const string UserSessionProvider = "userSessionProvider";
+        }
 
-        [ConfigurationProperty(UnitOfWorkProviderPropertyName, IsRequired = true)]
+        [ConfigurationProperty(Keys.UnitOfWorkProvider, IsRequired = true)]
         public string UnitOfWorkProvider
         {
-            get { return (string)this[UnitOfWorkProviderPropertyName]; }
-            set { this[UnitOfWorkProviderPropertyName] = value; }
+            get { return (string)this[Keys.UnitOfWorkProvider]; }
+            set { this[Keys.UnitOfWorkProvider] = value; }
         }
 
-        [ConfigurationProperty(UnitOfWorkContextProviderPropertyName, IsRequired = true)]
+        [ConfigurationProperty(Keys.UnitOfWorkContextProvider, IsRequired = true)]
         public string UnitOfWorkContextProvider
         {
-            get { return (string)this[UnitOfWorkContextProviderPropertyName]; }
-            set { this[UnitOfWorkContextProviderPropertyName] = value; }
+            get { return (string)this[Keys.UnitOfWorkContextProvider]; }
+            set { this[Keys.UnitOfWorkContextProvider] = value; }
         }
 
-        [ConfigurationProperty(UserSessionProviderPropertyName, IsRequired = true)]
+        [ConfigurationProperty(Keys.UserSessionProvider, IsRequired = true)]
         public string UserSessionProvider
         {
-            get { return (string)this[UserSessionProviderPropertyName]; }
-            set { this[UserSessionProviderPropertyName] = value; }
+            get { return (string)this[Keys.UserSessionProvider]; }
+            set { this[Keys.UserSessionProvider] = value; }
         }
 
-        [ConfigurationProperty(UserSessionContextProviderPropertyName, IsRequired = true)]
+        [ConfigurationProperty(Keys.UserSessionContextProvider, IsRequired = true)]
         public string UserSessionContextProvider
         {
-            get { return (string)this[UserSessionContextProviderPropertyName]; }
-            set { this[UserSessionContextProviderPropertyName] = value; }
+            get { return (string)this[Keys.UserSessionContextProvider]; }
+            set { this[Keys.UserSessionContextProvider] = value; }
         }
     }
 }

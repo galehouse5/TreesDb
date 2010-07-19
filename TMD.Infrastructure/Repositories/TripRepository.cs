@@ -12,13 +12,6 @@ namespace TMD.Infrastructure.Repositories
     {
         public void Save(Trip t)
         {
-            foreach (SiteVisit sv in t.SiteVisits)
-            {
-                if (sv.Trip != t)
-                {
-                    sv.SetPrivatePropertyValue<Trip>("Trip", t);
-                }
-            }
             if (!t.ValidateRegardingPersistence().IsValid)
             {
                 throw new ApplicationException("Unable to save trip due to validation failure.");
