@@ -46,4 +46,4 @@
 .ui-content-import-treemeasurement .field-validation-error.ui-validation-error-message, .ui-content-import-treemeasurement .field-validation-error.ui-validation-warning-message { width: 225px; }
 .ui-icon-import-treemeasurement { float: left; height: 25px; width: 32px; background-image: url("/Images/tree32.png"); background-position: 0 -3px; }
 
-.ui-placeholder-import-trip { margin-top: 25px; font-size: 10px; width: 780px; }
+.ui-placeholder-import-trip { margin-top: 25px; font-size: 12px; width: 780px; }
