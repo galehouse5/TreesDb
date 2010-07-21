@@ -117,6 +117,7 @@
     <Compile Include="Controllers\ValueObjectsController.cs" />
     <Compile Include="EmailTemplates\PasswordAssistanceEmail.cs" />
     <Compile Include="EmailTemplates\EmailVerificationEmail.cs" />
+    <Compile Include="Extensions\SessionFixationPreventionModule.cs" />
     <Compile Include="Extensions\UserCookieModule.cs" />
     <Compile Include="Extensions\DefaultGraphModelBinder.cs" />
     <Compile Include="Extensions\GoogleMapsExtensions.cs" />

@@ -131,11 +131,11 @@ namespace TMD.Model
 
         #endregion
 
-        private static Regex FeetDecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*')|(\\s*ft)|(\\s*feet))\\s+(?<inches>[0-9]+(\\.[0-9]+)?)((\\s*'')|(\\s*in)|(\\s*inches?))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalFeetFormat = new Regex("^\\s*(?<sign>[+-])?(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*')|(\\s*ft)|(\\s*feet))?\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?(?<inches>[0-9]+(\\.[0-9]+)?)((\\s*'')|(\\s*in)|(\\s*inches?))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalMetersFormat = new Regex("^\\s*(?<sign>[+-])?(?<meters>[0-9]+(\\.[0-9]+)?)((\\s*m)|(\\s*meters?))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalYardsFormat = new Regex("^\\s*(?<sign>[+-])?(?<yards>[0-9]+(\\.[0-9]+)?)((\\s*yds?)|(\\s*yards?))\\s*$", RegexOptions.Compiled);
+        private static Regex FeetDecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?|\\s)\\s*(?<inches>[0-9]+(\\.[0-9]+)?)\\s*(\"|''|``|ins?|inchs?|inches?)?\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalFeetFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?)?\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<inches>[0-9]+(\\.[0-9]+)?)\\s*(\"|''|``|ins?|inchs?|inches?)\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalMetersFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<meters>[0-9]+(\\.[0-9]+)?)\\s*(ms?|meters?|metres?)\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalYardsFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<yards>[0-9]+(\\.[0-9]+)?)\\s*(ys?|yds?|yards?)\\s*$", RegexOptions.Compiled);
 
         public static DirectedDistance Create(string s)
         {

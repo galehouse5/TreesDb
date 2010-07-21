@@ -64,7 +64,11 @@ namespace TMD.Model.Trips
         [Description("Exotic planted")]
         ExoticPlanted = 3,
         [Description("Exotic naturalizing")]
-        ExoticNaturalizing = 4
+        ExoticNaturalizing = 4,
+        [Description("Introduced planted")]
+        IntroducedPlanted = 5,
+        [Description("Introduced naturalized")]
+        IntroducedNaturalized = 6
     }
 
     public enum TreeTerrainType
