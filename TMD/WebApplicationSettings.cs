@@ -15,7 +15,6 @@ namespace TMD
             public const string RecaptchaPrivateKey = "recaptchaPrivateKey";
             public const string HostName = "hostName";
             public const string WebmasterEmail = "webmasterEmail";
-            public const string UserCookieLifetime = "userCookieLifetime";
         }
 
         [ConfigurationProperty(PropertyNames.GoogleApiKey, IsRequired = true)]
@@ -51,13 +50,6 @@ namespace TMD
         {
             get { return (string)this[PropertyNames.WebmasterEmail]; }
             set { this[PropertyNames.WebmasterEmail] = value; }
-        }
-
-        [ConfigurationProperty(PropertyNames.UserCookieLifetime, IsRequired = true)]
-        public TimeSpan UserCookieLifetime
-        {
-            get { return (TimeSpan)this[PropertyNames.UserCookieLifetime]; }
-            set { this[PropertyNames.UserCookieLifetime] = value; }
         }
     }
 }

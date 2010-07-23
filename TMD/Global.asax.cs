@@ -50,12 +50,33 @@ namespace TMD
         {
             base.Init();
             base.BeginRequest += new EventHandler(BeginRequest_EnforceBrowserCompatibility);
+            base.Error += new EventHandler(Error_EnforceUserAuthorization);
         }
 
         public override void Dispose()
         {
+            base.Error -= Error_EnforceUserAuthorization;
             base.BeginRequest -= BeginRequest_EnforceBrowserCompatibility;
             base.Dispose();
+        }
+
+        void Error_EnforceUserAuthorization(object sender, EventArgs e)
+        {
+            if (HttpContext.Current.Error is UserAuthorizationException)
+            {
+                UserAuthorizationException uae = (UserAuthorizationException)HttpContext.Current.Error;
+                HttpContext.Current.ClearError();
+                if (uae.NeedsToAuthenticate)
+                {
+                    HttpContext.Current.Response.Redirect("/Account/Login?ReturnUrl=" + HttpContext.Current.Request.RawUrl, false);
+                }
+                else
+                {
+                    HttpContext.Current.RewritePath("/Account/Unauthorized", false);
+                    IHttpHandler handler = new MvcHttpHandler();
+                    handler.ProcessRequest(HttpContext.Current);
+                }
+            }
         }
 
         void BeginRequest_EnforceBrowserCompatibility(object sender, EventArgs e)

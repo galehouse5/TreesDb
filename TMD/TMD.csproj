@@ -117,12 +117,11 @@
     <Compile Include="Controllers\ValueObjectsController.cs" />
     <Compile Include="EmailTemplates\PasswordAssistanceEmail.cs" />
     <Compile Include="EmailTemplates\EmailVerificationEmail.cs" />
-    <Compile Include="Extensions\SessionFixationPreventionModule.cs" />
-    <Compile Include="Extensions\UserCookieModule.cs" />
     <Compile Include="Extensions\DefaultGraphModelBinder.cs" />
     <Compile Include="Extensions\GoogleMapsExtensions.cs" />
     <Compile Include="Extensions\ModelExtensions.cs" />
     <Compile Include="Extensions\SetDefaultControllerAndActionToCurrentControllerAndActionFilter.cs" />
+    <Compile Include="Extensions\UserAuthenticationModule.cs" />
     <Compile Include="Extensions\UserAuthorizationFilter.cs" />
     <Compile Include="Extensions\ValidationExtensions.cs" />
     <Compile Include="Global.asax.cs">

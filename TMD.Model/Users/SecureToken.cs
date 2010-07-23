@@ -19,14 +19,14 @@ namespace TMD.Model.Users
             get
             {
                 string base64Token = Convert.ToBase64String(Value);
-                string urlEncodedToken = base64Token.Substring(0, base64Token.Length - 2).Replace('/', '_').Replace('+', '-');
+                string urlEncodedToken = base64Token.Substring(0, base64Token.Length - 1).Replace('/', '_').Replace('+', '-');
                 return urlEncodedToken;
             }
         }
 
         public static byte[] Decode(string urlEncodedToken)
         {
-            string base64Token = urlEncodedToken.Replace('_', '/').Replace('-', '+') + "==";
+            string base64Token = urlEncodedToken.Replace('_', '/').Replace('-', '+') + "=";
             byte[] token;
             try
             {
@@ -34,7 +34,7 @@ namespace TMD.Model.Users
             }
             catch (FormatException)
             {
-                token = new byte[64];
+                token = new byte[32];
             }
             return token;
         }
@@ -42,7 +42,7 @@ namespace TMD.Model.Users
         private static RandomNumberGenerator s_RNG = RNGCryptoServiceProvider.Create();
         public static SecureToken Create()
         {
-            byte[] token = new byte[64];
+            byte[] token = new byte[32];
             s_RNG.GetBytes(token);
             return new SecureToken() { Value = token };
         }

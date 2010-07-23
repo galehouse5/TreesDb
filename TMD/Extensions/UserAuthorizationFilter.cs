@@ -8,73 +8,42 @@ using TMD.Model;
 
 namespace TMD.Extensions
 {
+    public class UserAuthorizationException : Exception
+    {
+        protected UserAuthorizationException()
+            : base()
+        { }
+
+        public bool NeedsToAuthenticate { get; private set; }
+
+        public static UserAuthorizationException Create(bool needsToAuthenticate)
+        {
+            return new UserAuthorizationException()
+            {
+                NeedsToAuthenticate = !UserSession.IsAuthenticated
+            };
+        }
+    }
+
     public class UserAuthorizationFilterAttribute : FilterAttribute, IAuthorizationFilter
     {
         private class Keys
         {
-            public const string IsUserAuthenticated = "isUserAuthenticated";
+            public const string IsUserAuthorized = "isUserAuthorized";
         }
 
         public void OnAuthorization(AuthorizationContext filterContext)
         {
             if (!UserSession.IsAuthenticated)
             {
-                HttpContext.Current.Items[Keys.IsUserAuthenticated] = false;
-                filterContext.Result = new HttpUnauthorizedResult();
+                throw UserAuthorizationException.Create(true);
             }
-            else if ((UserSession.AuthenticatedUser.Roles & Roles) != Roles)
+            if ((UserSession.AuthenticatedUser.Roles & Roles) != Roles)
             {
-                HttpContext.Current.Items[Keys.IsUserAuthenticated] = true;
-                filterContext.Result = new HttpUnauthorizedResult();
+                throw UserAuthorizationException.Create(false);
             }
         }
 
         public UserRoles Roles { get; set; }
-    }
-
-    public class UserAuthorizationModule : IHttpModule
-    {
-        private class Keys
-        {
-            public const string IsUserAuthenticated = "isUserAuthenticated";
-        }
-
-        public bool IsReusable
-        {
-            get { return true; }
-        }
-
-        private HttpApplication ApplicationContext { get; set; }
-
-        public void Dispose()
-        {
-            this.ApplicationContext.PostRequestHandlerExecute -= ApplicationContext_PostRequestHandlerExecute;
-        }
-
-        public void Init(HttpApplication context)
-        {
-            this.ApplicationContext = context;
-            this.ApplicationContext.PostRequestHandlerExecute += new EventHandler(ApplicationContext_PostRequestHandlerExecute);
-        }
-
-        private static
-        void ApplicationContext_PostRequestHandlerExecute(object sender, EventArgs e)
-        {
-            if (HttpContext.Current.Response.StatusCode == 401)
-            {
-                if ((bool)HttpContext.Current.Items[Keys.IsUserAuthenticated])
-                {
-                    HttpContext.Current.RewritePath("/Account/Unauthorized", false);
-                    IHttpHandler handler = new MvcHttpHandler();
-                    handler.ProcessRequest(HttpContext.Current);
-                }
-                else
-                {
-                    HttpContext.Current.Response.Redirect(
-                        "/Account/Login?ReturnUrl=" + HttpContext.Current.Request.RawUrl,
-                        false);
-                }
-            }
-        }
     }
 }
