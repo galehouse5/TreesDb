@@ -16,8 +16,8 @@
     <div class="ui-content ui-content-emphasize" >
         <h2>This page cannot be found.</h2>
         <p>
-            Sorry but this page is still under maintenance or does not exist. 
-            To get back to the homepage  <a href="/">click here</a>.
+            Sorry but this page is still under construction or does not exist. 
+            To get back to the homepage <a href="/">click here</a>.
         </p>
     </div>
 </body>

@@ -19,7 +19,7 @@
         <p>
             Sorry but the server has encountered an error while processing your request.  
             Please try again in a minute or email <a href="mailto:<%= WebApplicationRegistry.Settings.WebmasterEmail %>"><%= WebApplicationRegistry.Settings.WebmasterEmail %></a> if the problem persists.
-            To get back to the homepage  <a href="/">click here</a>.
+            To get back to the homepage <a href="/">click here</a>.
         </p>
     </div>
 </body>
