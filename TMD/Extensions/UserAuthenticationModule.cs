@@ -132,7 +132,12 @@ namespace TMD.Extensions
         {
             if (HttpContext.Current.Session != null)
             {
-                if (UserSession.CurrentUser != null)
+                if (m_Context.Request.HttpMethod.Equals("POST", StringComparison.InvariantCultureIgnoreCase)
+                    && m_Context.Request.Url.AbsolutePath.Equals("/Account/Login", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    m_Context.Session.Clear();
+                }
+                else if (UserSession.CurrentUser != null)
                 {
                     if (isCurrentUserAuthenticationTokenValid)
                     {
@@ -140,7 +145,7 @@ namespace TMD.Extensions
                     }
                     else
                     {
-                        UserSession.CurrentUser = null;
+                        m_Context.Session.Clear();
                         revokeAllUserAuthenticationTokens();
                     }
                 }
@@ -167,7 +172,7 @@ namespace TMD.Extensions
             else if (m_Context.Request.HttpMethod.Equals("POST", StringComparison.InvariantCultureIgnoreCase)
                 && m_Context.Request.Url.AbsolutePath.Equals("/Account/Logout", StringComparison.InvariantCultureIgnoreCase))
             {
-                UserSession.CurrentUser = null;
+                m_Context.Session.Clear();
                 revokeAllUserAuthenticationTokens();
             }
         }

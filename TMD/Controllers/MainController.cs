@@ -21,5 +21,17 @@ namespace TMD.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public ActionResult NotFound()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult ServerError()
+        {
+            return View();
+        }
     }
 }

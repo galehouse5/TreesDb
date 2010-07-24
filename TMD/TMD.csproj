@@ -228,6 +228,8 @@
     <Content Include="Views\Import\SubsiteVisit.aspx" />
     <Content Include="Views\Import\Trip.aspx" />
     <Content Include="Views\Main\Index.aspx" />
+    <Content Include="Views\Main\NotFound.aspx" />
+    <Content Include="Views\Main\ServerError.aspx" />
     <Content Include="Views\Main\UntestedBrowser.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

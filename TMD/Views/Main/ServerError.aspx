@@ -1,8 +1,9 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage" %>
+<%@ Import Namespace="TMD" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
-    <title>Tree Measurement Database</title>
+    <title>Tree Measurement Database - Server Error</title>
     <link type="text/css" rel="stylesheet" href="/Styles/Common.css" />
 </head>
 <body>
@@ -14,15 +15,12 @@
         </div>
     </div>
     <div class="ui-content ui-content-emphasize" >
-        <h2>Your web browser is untested.</h2>
+        <h2>The server has encountered an error.</h2>
         <p>
-            Sorry but your web browser hasn't been tested with the Tree Measurement Database yet.  
-            Can I suggest that you download one of the following web browsers instead?
+            Sorry but the server has encountered an error while processing your request.  
+            Please try again in a minute or email <a href="mailto:<%= WebApplicationRegistry.Settings.WebmasterEmail %>"><%= WebApplicationRegistry.Settings.WebmasterEmail %></a> if the problem persists.
+            To get back to the homepage  <a href="/">click here</a>.
         </p>
-        <ul>
-            <li><b>Firefox 3 (Recommended)</b> - <a href="http://www.mozilla.com/en-US/products/download.html">download here</a></li>
-            <li>Internet Explorer 8 - <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">download here</a></li>
-        </ul>
     </div>
 </body>
 </html>
