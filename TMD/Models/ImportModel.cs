@@ -43,6 +43,10 @@ namespace TMD.Models
 
         public bool CanAdvanceToStep(ImportStep step)
         {
+            if (Trip == null && step != ImportStep.Start)
+            {
+                return false;
+            }
             switch (step)
             {
                 case ImportStep.Start:
