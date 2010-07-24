@@ -24,7 +24,10 @@ namespace TMD.Infrastructure.Repositories
         {
             using (ISession session = InfrastructureRegistry.SessionFactory.OpenSession())
             {
-                return session.CreateQuery("from State s where s.CountryCode = :countryCode")
+                return session.CreateQuery(@"
+                    from State s 
+                    inner join fetch s.Country
+                    where s.Country.Code = :countryCode")
                     .SetParameter("countryCode", countryCode)
                     .SetCacheable(true)
                     .List<State>();
@@ -45,7 +48,10 @@ namespace TMD.Infrastructure.Repositories
         {
             using (ISession session = InfrastructureRegistry.SessionFactory.OpenSession())
             {
-                return session.CreateQuery("from State s where s.Code = :code and s.CountryCode = :countryCode")
+                return session.CreateQuery(@"
+                    from State s 
+                    inner join fetch s.Country
+                    where s.Code = :code and s.Country.Code = :countryCode")
                     .SetParameter("code", code)
                     .SetParameter("countryCode", countryCode)
                     .SetCacheable(true)

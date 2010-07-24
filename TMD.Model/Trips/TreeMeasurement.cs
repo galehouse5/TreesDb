@@ -98,12 +98,11 @@ namespace TMD.Model.Trips
     [Serializable]
     [DebuggerDisplay("{ScientificName} ({CommonName})")]
     [HasSelfValidation]
-    public class TreeMeasurement : IEntity
+    public class TreeMeasurement : BaseUserCreatedEntity
     {
         protected TreeMeasurement()
         { }
 
-        public virtual int Id { get; private set; }
         public virtual SubsiteVisit SubsiteVisit { get; private set; }
 
         /// <summary>
@@ -491,23 +490,6 @@ namespace TMD.Model.Trips
 
         #endregion
 
-        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening", Tag = "TreeMeasurers General")]
-        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence", Tag = "TreeMeasurers General")]
-        [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "You must record at least one measurer.", Ruleset = "Screening", Tag = "TreeMeasurers General")]
-        [CollectionCountWhenNotNullValidator(0, 3, MessageTemplate = "You have recorded too many measurers.", Ruleset = "Screening", Tag = "TreeMeasurers General")]
-        public virtual IList<TreeMeasurer> Measurers { get; private set; }
-
-        public virtual TreeMeasurer AddMeasurer()
-        {
-            TreeMeasurer m = TreeMeasurer.Create(this);
-            Measurers.Add(m);
-            return m;
-        }
-
-        public virtual bool RemoveMeasurer(TreeMeasurer m)
-        {
-            return Measurers.Remove(m);
-        }
 
         public virtual ValidationResults ValidateRegardingScreeningAndPersistence()
         {
@@ -567,7 +549,6 @@ namespace TMD.Model.Trips
                 LandformIndex = null,
                 TerrainComments = string.Empty,
                 CoordinatesCalculated = true,
-                Measurers = new List<TreeMeasurer>(),
                 SubsiteVisit = ssv
             };
         }

@@ -3,11 +3,13 @@
                    assembly="TMD.Model"
                    namespace="TMD.Model">
 
-  <class name="TMD.Model.Trips.TreeMeasurer" table="Trips.TreeMeasurers">
+  <class name="TMD.Model.Trips.Measurer" table="Trips.Measurers">
     <id name="Id">
       <generator class="native"/>
     </id>
-    <many-to-one name="TreeMeasurement" column="TreeMeasurementId" />
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
+    <many-to-one name="Trip" column="TripId" />
     <property name="FirstName"/>
     <property name="LastName"/>
   </class>
@@ -16,6 +18,8 @@
     <id name="Id">
       <generator class="native"/>
     </id>
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <many-to-one name="SubsiteVisit" column="SubsiteVisitId" />
     <property name="TreeNameSpecified"/>
     <property name="TreeName" />
@@ -126,16 +130,14 @@
     <property name="TerrainShapeIndex"/>
     <property name="LandformIndex"/>
     <property name="TerrainComments"/>
-    <bag name="Measurers" table="Trips.Measurers" cascade="all-delete-orphan" inverse="true">
-      <key column="TreeMeasurementId" />
-      <one-to-many class="TMD.Model.Trips.TreeMeasurer"/>
-    </bag>
   </class>
 
   <class name="TMD.Model.Trips.SubsiteVisit" table="Trips.SubsiteVisits">
     <id name="Id">
       <generator class="native"/>
     </id>
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <many-to-one name="SiteVisit" column="SiteVisitId" />
     <property name="Name" />
     <component name="Coordinates" class="Coordinates">
@@ -149,13 +151,13 @@
       </component>
     </component>
     <property name="CoordinatesCalculated" />    
-    <many-to-one name="Country" column="CountryCode" />
-    <many-to-one name="State" column="StateCode" />
+    <many-to-one name="Country" column="CountryId" />
+    <many-to-one name="State" column="StateId" />
     <property name="County" />
     <property name="OwnershipType" />
     <property name="OwnershipContactInfo" />
     <property name="Comments" />
-    <bag name="TreeMeasurements" table="Trips.TreeMeasurements" cascade="all-delete-orphan" inverse="true">
+    <bag name="TreeMeasurements" cascade="all-delete-orphan" inverse="true">
       <key column="SubsiteVisitId" />
       <one-to-many class="TMD.Model.Trips.TreeMeasurement"/>
     </bag>
@@ -165,6 +167,8 @@
     <id name="Id">
       <generator class="native"/>
     </id>
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <many-to-one name="Trip" column="TripId" />
     <property name="Name" />
     <component name="Coordinates" class="Coordinates">
@@ -179,7 +183,7 @@
     </component>
     <property name="CoordinatesCalculated" />
     <property name="Comments" />
-    <bag name="SubsiteVisits" table="Trips.SubsiteVisits" cascade="all-delete-orphan" inverse="true">
+    <bag name="SubsiteVisits" cascade="all-delete-orphan" inverse="true">
       <key column="SiteVisitId" />
       <one-to-many class="TMD.Model.Trips.SubsiteVisit"/>
     </bag>
@@ -189,15 +193,21 @@
     <id name="Id">
       <generator class="native"/>
     </id>
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <property name="Name" />
     <property name="IsImported" />
     <property name="Date" type="date" />
     <property name="Website" />
     <property name="PhotosAvailable" />
     <property name="MeasurerContactInfo" />
-    <bag name="SiteVisits" table="Trips.SiteVisits" cascade="all-delete-orphan" inverse="true">
+    <bag name="SiteVisits" cascade="all-delete-orphan" inverse="true">
       <key column="TripId" />
       <one-to-many class="TMD.Model.Trips.SiteVisit"/>
+    </bag>
+    <bag name="Measurers" cascade="all-delete-orphan" inverse="true">
+      <key column="TripId" />
+      <one-to-many class="TMD.Model.Trips.Measurer"/>
     </bag>
   </class>
   

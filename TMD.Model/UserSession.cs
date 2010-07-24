@@ -76,33 +76,15 @@ namespace TMD.Model
             }
         }
 
-        public static User AuthenticatedUser
+        public static User CurrentUser
         {
             get { return ContextProvider.Context.ActiveUser; }
-            internal set { ContextProvider.Context.ActiveUser = value; }
+            set { ContextProvider.Context.ActiveUser = value; }
         }
 
-        public static bool Authenticate(User user, string password)
+        public static bool IsAnonymous
         {
-            if (user.AttemptLogin(password))
-            {
-                AuthenticatedUser = user;
-                return true;
-            }
-            return false;
-        }
-
-        public static bool IsAuthenticated
-        {
-            get
-            {
-                return AuthenticatedUser != null;
-            }
-        }
-
-        public static void Abandon()
-        {
-            AuthenticatedUser = null;
+            get { return CurrentUser == null; }
         }
     }
 }

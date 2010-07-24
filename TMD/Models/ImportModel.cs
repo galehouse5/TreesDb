@@ -77,14 +77,7 @@ namespace TMD.Models
             {
                 if (m_Trip == null)
                 {
-                    if (ApplicationSession.ImportTripId == -1)
-                    {
-                        m_Trip = Trip.Create();
-                    }
-                    else
-                    {
-                        m_Trip = TripService.FindById(ApplicationSession.ImportTripId);
-                    }
+                    m_Trip = TripService.FindById(ApplicationSession.ImportTripId);
                 }
                 return m_Trip;
             }

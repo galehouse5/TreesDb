@@ -18,7 +18,6 @@ namespace TMD.Model
             public const string ModelSettings = "modelSettings";
             public const string RepositoryFactory = "repositoryFactory";
             public const string UserSettings = "userSettings";
-            
         }
 
         private static UserSettings s_UserSettings;

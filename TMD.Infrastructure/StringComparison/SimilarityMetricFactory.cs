@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using SimMetricsApi;
 using SimMetricsMetricUtilities;
-using TMD.SQLCLR.SimilarityMetrics;
+using TMD.Infrastructure.StringComparison.SimilarityMetrics;
 
-namespace TMD.SQLCLR
+namespace TMD.Infrastructure.StringComparison
 {
     internal class SimilarityMetricFactory
     {

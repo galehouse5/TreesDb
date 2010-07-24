@@ -14,18 +14,14 @@ namespace TMD.Model.Locations
         protected State()
         { }
 
+        public virtual int Id { get; private set; }
+        public virtual Country Country { get; private set; }
+
         private string m_Code;
         public virtual string Code
         {
             get { return m_Code; }
             private set { m_Code = (value ?? string.Empty).Trim().ToUpper(); }
-        }
-
-        private string m_CountryCode;
-        public virtual string CountryCode
-        {
-            get { return m_CountryCode; }
-            private set { m_CountryCode = (value ?? string.Empty).Trim().ToUpper(); }
         }
 
         private string m_Name;

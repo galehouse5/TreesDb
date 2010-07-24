@@ -8,18 +8,18 @@ using System.Diagnostics;
 using TMD.Model.Locations;
 using Microsoft.Practices.EnterpriseLibrary.Validation;
 using System.ComponentModel;
+using TMD.Model.Users;
 
 namespace TMD.Model.Trips
 {
     [Serializable]
     [DebuggerDisplay("{Name}")]
     [HasSelfValidation]
-    public class SubsiteVisit : IEntity
+    public class SubsiteVisit : BaseUserCreatedEntity
     {
         protected SubsiteVisit()
         { }
 
-        public virtual int Id { get; private set; }
         public virtual SiteVisit SiteVisit { get; private set; }
 
         private string m_Name;

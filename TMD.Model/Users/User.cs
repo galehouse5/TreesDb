@@ -28,7 +28,6 @@ namespace TMD.Model.Users
         { }
 
         public virtual int Id { get; private set; }
-
         public virtual UserRoles Roles { get; private set; }
 
         private string m_Email;

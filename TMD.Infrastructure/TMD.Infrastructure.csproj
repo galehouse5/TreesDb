@@ -73,7 +73,11 @@
     <Reference Include="NHibernate.ByteCode.LinFu">
       <HintPath>..\ThirdPartyAssemblies\NHibernate\LazyLoading\NHibernate.ByteCode.LinFu.dll</HintPath>
     </Reference>
+    <Reference Include="SimMetrics">
+      <HintPath>..\ThirdPartyAssemblies\SimMetrics.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -85,6 +89,7 @@
     <Compile Include="Extensions\ReflectionExtensions.cs" />
     <Compile Include="InfrastructureRegistry.cs" />
     <Compile Include="Repositories\LocationRepository.cs" />
+    <Compile Include="Repositories\RepositorySettings.cs" />
     <Compile Include="Repositories\TreeRepository.cs" />
     <Compile Include="Repositories\TripRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
@@ -93,6 +98,20 @@
     <Compile Include="NHibernateUnitOfWorkProvider.cs" />
     <Compile Include="StaticUserSessionContextProvider.cs" />
     <Compile Include="StaticUserSessionProvider.cs" />
+    <Compile Include="StringComparison\Expressions\EToken.cs" />
+    <Compile Include="StringComparison\Expressions\Expression.cs" />
+    <Compile Include="StringComparison\Expressions\Factor.cs" />
+    <Compile Include="StringComparison\Expressions\IEvaluator.cs" />
+    <Compile Include="StringComparison\Expressions\IParser.cs" />
+    <Compile Include="StringComparison\Expressions\IPrinter.cs" />
+    <Compile Include="StringComparison\Expressions\Term.cs" />
+    <Compile Include="StringComparison\Expressions\Tokenizer.cs" />
+    <Compile Include="StringComparison\SimilarityMetricFactory.cs" />
+    <Compile Include="StringComparison\SimilarityMetrics\Equality.cs" />
+    <Compile Include="StringComparison\SimilarityMetrics\FirstContains.cs" />
+    <Compile Include="StringComparison\SimilarityMetrics\SecondContains.cs" />
+    <Compile Include="StringComparison\StringComparisonExpression.cs" />
+    <Compile Include="StringComparison\StringComparisonService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Mappings\Trees.hbm.xml">

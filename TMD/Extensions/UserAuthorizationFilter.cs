@@ -20,7 +20,7 @@ namespace TMD.Extensions
         {
             return new UserAuthorizationException()
             {
-                NeedsToAuthenticate = !UserSession.IsAuthenticated
+                NeedsToAuthenticate = UserSession.IsAnonymous
             };
         }
     }
@@ -34,11 +34,11 @@ namespace TMD.Extensions
 
         public void OnAuthorization(AuthorizationContext filterContext)
         {
-            if (!UserSession.IsAuthenticated)
+            if (UserSession.IsAnonymous)
             {
                 throw UserAuthorizationException.Create(true);
             }
-            if ((UserSession.AuthenticatedUser.Roles & Roles) != Roles)
+            if ((UserSession.CurrentUser.Roles & Roles) != Roles)
             {
                 throw UserAuthorizationException.Create(false);
             }

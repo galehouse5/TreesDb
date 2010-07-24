@@ -74,7 +74,7 @@
     <Compile Include="Sites\SiteService.cs" />
     <Compile Include="Trees\TreeService.cs" />
     <Compile Include="Trips\TreeMeasurement.cs" />
-    <Compile Include="Trips\TreeMeasurer.cs" />
+    <Compile Include="Trips\Measurer.cs" />
     <Compile Include="Trips\TripService.cs" />
     <Compile Include="UserSession.cs" />
     <Compile Include="ModelRegistry.cs" />
@@ -84,7 +84,7 @@
     <Compile Include="UnitOfWork.cs" />
     <Compile Include="Sites\Site.cs" />
     <Compile Include="Sites\Subsite.cs" />
-    <Compile Include="IEntity.cs" />
+    <Compile Include="BaseEntities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Trips\Trip.cs" />
     <Compile Include="Trips\SiteVisit.cs" />

@@ -15,6 +15,8 @@ namespace TMD
             public const string RecaptchaPrivateKey = "recaptchaPrivateKey";
             public const string HostName = "hostName";
             public const string WebmasterEmail = "webmasterEmail";
+            public const string ExpiringTokensToRemember = "expiringTokensToRemember";
+            public const string ExpiringTokenLifetime = "expiringTokenLifetime";
         }
 
         [ConfigurationProperty(PropertyNames.GoogleApiKey, IsRequired = true)]
@@ -50,6 +52,20 @@ namespace TMD
         {
             get { return (string)this[PropertyNames.WebmasterEmail]; }
             set { this[PropertyNames.WebmasterEmail] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.ExpiringTokensToRemember, DefaultValue = 5)]
+        public int ExpiringTokensToRemember
+        {
+            get { return (int)this[PropertyNames.ExpiringTokensToRemember]; }
+            set { this[PropertyNames.ExpiringTokensToRemember] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.ExpiringTokenLifetime, DefaultValue="00:00:05")]
+        public TimeSpan ExpiringTokenLifetime
+        {
+            get { return (TimeSpan)this[PropertyNames.ExpiringTokenLifetime]; }
+            set { this[PropertyNames.ExpiringTokenLifetime] = value; }
         }
     }
 }

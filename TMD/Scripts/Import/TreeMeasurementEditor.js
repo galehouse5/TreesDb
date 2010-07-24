@@ -131,8 +131,6 @@
         } 
         });
         dom.find('.coordinate-picker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
-        dom.find('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
-        dom.find('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
         dom.find('.height-detailed input').bind('change', (function () {
             if (dom.find('.height-detailed input').attr('checked')) {
                 dom.find('.height-detailed-visible').hide();
@@ -227,26 +225,6 @@
             setTimeout(function () { dom.find('input').first().focus(); }, 1);
         });
     };
-
-    public.AddMeasurer = function () {
-        $.post('CreateTreeMeasurementMeasurer', dom.find('.treemeasurers input').serialize(), function (data) {
-            var newDom = $(data);
-            dom.find('.treemeasurers').replaceWith(newDom.find('.treemeasurers'));
-            dom.find('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
-            dom.find('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
-            dom.find('.treemeasurers .treemeasurer').last().find('input').first().focus();
-        });
-    }
-
-    public.RemoveMeasurer = function () {
-        $.post('RemoveTreeMeasurementMeasurer', dom.find('.treemeasurers input').serialize(), function (data) {
-            var newDom = $(data);
-            dom.find('.treemeasurers').replaceWith(newDom.find('.treemeasurers'));
-            dom.find('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
-            dom.find('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
-            dom.find('.treemeasurers .treemeasurer').last().find('input').first().focus();
-        });
-    }
 
     public.Show = function () {
         dom.bind('dialogclose', dispose);

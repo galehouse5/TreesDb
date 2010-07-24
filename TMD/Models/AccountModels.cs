@@ -45,21 +45,22 @@ namespace TMD.Models
 
         public bool Authenticate()
         {
-            if (!UserSession.Authenticate(User, Password))
+            bool authenticated = User.AttemptLogin(Password);
+            if (authenticated)
             {
-                using (UnitOfWork.BeginBusinessTransaction())
-                {
-                    UserService.Save(User);
-                    UnitOfWork.Persist();
-                }
-                return false;
+                UserSession.CurrentUser = User;
             }
-            return true;
+            using (UnitOfWork.BeginBusinessTransaction())
+            {
+                UserService.Save(User);
+                UnitOfWork.Persist();
+            }
+            return authenticated;
         }
 
         public void Logout()
         {
-            UserSession.Abandon();
+            UserSession.CurrentUser = null;
         }
     }
 
@@ -183,7 +184,7 @@ namespace TMD.Models
 
         public User User
         {
-            get { return UserSession.AuthenticatedUser; }
+            get { return UserSession.CurrentUser; }
         }
 
         public void SaveAccountModifications()

@@ -11,6 +11,8 @@ namespace TMD.Model.Trees
         protected KnownTree()
         {}
 
+        public virtual int Id { get; private set; }
+
         private string m_AcceptedSymbol;
         public virtual string AcceptedSymbol 
         {

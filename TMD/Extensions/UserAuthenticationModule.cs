@@ -11,12 +11,9 @@ namespace TMD.Extensions
 {
     public class UserAuthenticationModule : IHttpModule
     {
-        public static int ExpiringTokensToRemeber = 5;
-        public static TimeSpan ExpiringTokenLifetime = TimeSpan.FromSeconds(5);
-
         private class Cookies
         {
-            public const string Token = "UserAuthenticationToken";
+            public const string Token = "A";
         }
 
         private class SessionKeys
@@ -87,7 +84,7 @@ namespace TMD.Extensions
         private void expireAndReissueCurrentUserAuthenticationToken()
         {
             expiringTokens.Insert(0, new Tuple<string, DateTime>(sessionToken, DateTime.Now));
-            if (expiringTokens.Count > ExpiringTokensToRemeber)
+            if (expiringTokens.Count > WebApplicationRegistry.Settings.ExpiringTokensToRemember)
             {
                 expiringTokens.RemoveAt(expiringTokens.Count - 1);
             }
@@ -106,7 +103,7 @@ namespace TMD.Extensions
                 {
                     return true;
                 }
-                DateTime expirationThreshold = DateTime.Now.Subtract(ExpiringTokenLifetime.Add(ExpiringTokenLifetime));
+                DateTime expirationThreshold = DateTime.Now.Subtract(WebApplicationRegistry.Settings.ExpiringTokenLifetime);
                 foreach (Tuple<string, DateTime> expiringToken in expiringTokens)
                 {
                     if (cookieToken.Equals(expiringToken.Item1) && expiringToken.Item2 >= expirationThreshold)
@@ -135,7 +132,7 @@ namespace TMD.Extensions
         {
             if (HttpContext.Current.Session != null)
             {
-                if (UserSession.IsAuthenticated)
+                if (UserSession.CurrentUser != null)
                 {
                     if (isCurrentUserAuthenticationTokenValid)
                     {
@@ -143,7 +140,7 @@ namespace TMD.Extensions
                     }
                     else
                     {
-                        UserSession.Abandon();
+                        UserSession.CurrentUser = null;
                         revokeAllUserAuthenticationTokens();
                     }
                 }
@@ -162,7 +159,7 @@ namespace TMD.Extensions
             if (m_Context.Request.HttpMethod.Equals("POST", StringComparison.InvariantCultureIgnoreCase)
                 && m_Context.Request.Url.AbsolutePath.Equals("/Account/Login", StringComparison.InvariantCultureIgnoreCase))
             {
-                if (UserSession.IsAuthenticated)
+                if (UserSession.CurrentUser != null)
                 {
                     issueNewUserAuthenticationToken();
                 }
@@ -170,7 +167,7 @@ namespace TMD.Extensions
             else if (m_Context.Request.HttpMethod.Equals("POST", StringComparison.InvariantCultureIgnoreCase)
                 && m_Context.Request.Url.AbsolutePath.Equals("/Account/Logout", StringComparison.InvariantCultureIgnoreCase))
             {
-                UserSession.Abandon();
+                UserSession.CurrentUser = null;
                 revokeAllUserAuthenticationTokens();
             }
         }

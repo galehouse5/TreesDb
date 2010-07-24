@@ -6,33 +6,11 @@ using System.Data.SqlTypes;
 using SimMetricsMetricUtilities;
 using SimMetricsApi;
 using Microsoft.SqlServer.Server;
-using TMD.SQLCLR.Expressions;
 
-namespace TMD.SQLCLR
+namespace TMD.Infrastructure.StringComparison
 {
-    public class StringComparison
+    public static class StringComparison
     {
-        private static readonly string[] s_SentenceSeperators = new string[] { " ", ".", ",", "-", "!", "?" };
-        private static readonly ExpressionFactory s_ExpressionFactory = new ExpressionFactory();
-
-        public static string InternalParseExpression(string expression)
-        {
-            Expression e = s_ExpressionFactory.Create(expression);
-            return e.Print();
-        }
-
-        public static double InternalRankWords(string firstWord, string secondWord, string expression)
-        {
-            Expression e = s_ExpressionFactory.Create(expression);
-            
-            string normalizedFirstWord = firstWord.Trim().ToLower();
-            string normalizedSecondWord = secondWord.Trim().ToLower();
-            
-            double rank = e.Evaluate(normalizedFirstWord, normalizedSecondWord);
-            
-            return rank;
-        }
-
         private class SentenceWordComparisonRank : IComparable<SentenceWordComparisonRank>
         {
             public SentenceWordComparisonRank(int firstSentenceWordIndex, int secondSentenceWordIndex, double rank)
@@ -53,10 +31,14 @@ namespace TMD.SQLCLR
             }
         }
 
-        public static double InternalRankSentences(string firstSentence, string secondSentence, string expression)
+        private static readonly string[] s_SentenceSeperators = new string[] { " ", ".", ",", "-", "!", "?" };
+        public static double RateSentenceSimilarity(this StringComparisonExpression expression, string firstSentence, string secondSentence)
         {
-            Expression e = s_ExpressionFactory.Create(expression);
-            
+            if (string.IsNullOrWhiteSpace(firstSentence) || string.IsNullOrWhiteSpace(secondSentence))
+            {
+                return 0d;
+            }
+
             string normalizedFirstSentence = firstSentence.Trim().ToLower();
             string normalizedSecondSentence = secondSentence.Trim().ToLower();
             string[] normalizedFirstSentenceWords = normalizedFirstSentence.Split(s_SentenceSeperators, StringSplitOptions.RemoveEmptyEntries);
@@ -70,7 +52,7 @@ namespace TMD.SQLCLR
                     SentenceWordComparisonRank sentenceWordComparisonRank = new SentenceWordComparisonRank(
                         firstSentenceWordIndex,
                         secondSentenceWordIndex,
-                        e.Evaluate(normalizedFirstSentenceWords[firstSentenceWordIndex], normalizedSecondSentenceWords[secondSentenceWordIndex]));
+                        expression.Evaluate(normalizedFirstSentenceWords[firstSentenceWordIndex], normalizedSecondSentenceWords[secondSentenceWordIndex]));
                     sentenceWordComparisonRanks.Add(sentenceWordComparisonRank);
                 }
             }
@@ -100,33 +82,17 @@ namespace TMD.SQLCLR
             return sentenceRank;
         }
 
-        [SqlFunction(IsDeterministic = true, IsPrecise = true)]
-        public static SqlString ParseExpression(SqlString expression)
+        public static double RateWordSimilarity(this StringComparisonExpression expression, string firstWord, string secondWord)
         {
-            string s = InternalParseExpression(expression.Value);
-            return new SqlString(s);
-        }
-
-        [SqlFunction(IsDeterministic = true, IsPrecise = true)]
-        public static SqlDouble RankSentences(SqlString firstSentence, SqlString secondSentence, SqlString expression)
-        {
-            if (firstSentence.IsNull || secondSentence.IsNull || expression.IsNull)
+            if (string.IsNullOrWhiteSpace(firstWord) || string.IsNullOrWhiteSpace(secondWord))
             {
-                return 0;
+                return 0d;
             }
-            double rank = InternalRankSentences(firstSentence.Value, secondSentence.Value, expression.Value);
-            return new SqlDouble(rank);
-        }
 
-        [SqlFunction(IsDeterministic = true, IsPrecise = true)]
-        public static SqlDouble RankWords(SqlString firstWord, SqlString secondWord, SqlString expression)
-        {
-            if (firstWord.IsNull || secondWord.IsNull || expression.IsNull)
-            {
-                return 0;
-            }
-            double rank = InternalRankWords(firstWord.Value, secondWord.Value, expression.Value);
-            return new SqlDouble(rank);
+            string normalizedFirstWord = firstWord.Trim().ToLower();
+            string normalizedSecondWord = secondWord.Trim().ToLower();
+
+            return expression.Evaluate(normalizedFirstWord, normalizedSecondWord);
         }
     }
 }

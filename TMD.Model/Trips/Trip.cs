@@ -12,12 +12,10 @@ using System.ComponentModel.DataAnnotations;
 namespace TMD.Model.Trips
 {
     [Serializable]
-    public class Trip : IEntity
+    public class Trip : BaseUserCreatedEntity
     {
         protected Trip()
         { }
-
-        public virtual int Id { get; private set; }
 
         private string m_Name;
         [DisplayName("*Trip name:")]
@@ -64,6 +62,12 @@ namespace TMD.Model.Trips
         [CollectionCountWhenNotNullValidator(1, 100, MessageTemplate = "Your must add site visits to your trip.", Ruleset = "Screening", Tag = "SiteVisits")]
         public virtual IList<SiteVisit> SiteVisits { get; private set; }
 
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening", Tag = "Measurers")]
+        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence", Tag = "Measurers")]
+        [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "You must record at least one measurer.", Ruleset = "Screening", Tag = "Measurers")]
+        [CollectionCountWhenNotNullValidator(0, 3, MessageTemplate = "You have recorded too many measurers.", Ruleset = "Screening", Tag = "Measurers")]
+        public virtual IList<Measurer> Measurers { get; private set; }
+        
         public virtual bool IsImported { get; private set; }
 
         public virtual SiteVisit AddSiteVisit()
@@ -90,6 +94,18 @@ namespace TMD.Model.Trips
             get { return SiteVisits.Count > 0; }
         }
 
+        public virtual Measurer AddMeasurer()
+        {
+            Measurer m = Measurer.Create(this);
+            Measurers.Add(m);
+            return m;
+        }
+
+        public virtual bool RemoveMeasurer(Measurer m)
+        {
+            return Measurers.Remove(m);
+        }
+
         public virtual bool AllSubsiteVisitsOfAllSiteVisitsHaveTreeMeasurements
         {
             get
@@ -108,13 +124,13 @@ namespace TMD.Model.Trips
         public virtual ValidationResults ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAll(TagFilter.Include, "Trip");
+                .FindAll(TagFilter.Include, "Trip", "TreeMeasurers", "TreeMeasurer");
         }
 
         public virtual ValidationResults ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
         {
             return this.Validate("Screening", "Persistence")
-                .FindAll(TagFilter.Include, "Trip", "SiteVisit", "SiteVisits", "SubsiteVisit", "SubsiteVisits");
+                .FindAll(TagFilter.Include, "Trip", "TreeMeasurers", "TreeMeasurer", "SiteVisit", "SiteVisits", "SubsiteVisit", "SubsiteVisits");
         }
 
         public virtual ValidationResults ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates()
@@ -174,7 +190,8 @@ namespace TMD.Model.Trips
                 PhotosAvailable = false,
                 MeasurerContactInfo = string.Empty,
                 SiteVisits = new List<SiteVisit>(),
-                IsImported = false
+                IsImported = false,
+                Measurers = new List<Measurer>(),
             };
         }
     }

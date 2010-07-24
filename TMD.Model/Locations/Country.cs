@@ -13,6 +13,8 @@ namespace TMD.Model.Locations
         protected Country()
         { }
 
+        public virtual int Id { get; private set; }
+
         private string m_Code;
         public virtual string Code
         {

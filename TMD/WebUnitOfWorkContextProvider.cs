@@ -12,23 +12,23 @@ namespace TMD
 
         public void Dispose()
         {
-            this.ApplicationContext.BeginRequest -= Context_BeginRequest;
-            this.ApplicationContext.EndRequest -= Context_EndRequest;
+            this.ApplicationContext.AcquireRequestState -= Context_AcquireRequestState;
+            this.ApplicationContext.PostRequestHandlerExecute -= Context_PostRequestHandlerExecute;
         }
 
         public void Init(HttpApplication context)
         {
             this.ApplicationContext = context;
-            this.ApplicationContext.BeginRequest += new EventHandler(Context_BeginRequest);
-            this.ApplicationContext.EndRequest += new EventHandler(Context_EndRequest);
+            this.ApplicationContext.AcquireRequestState += new EventHandler(Context_AcquireRequestState);
+            this.ApplicationContext.PostRequestHandlerExecute += new EventHandler(Context_PostRequestHandlerExecute);
         }
 
-        void Context_BeginRequest(object sender, EventArgs e)
+        void Context_AcquireRequestState(object sender, EventArgs e)
         {
             base.InitializeContext();
         }
 
-        void Context_EndRequest(object sender, EventArgs e)
+        void Context_PostRequestHandlerExecute(object sender, EventArgs e)
         {
             base.DisposeContext();
         }

@@ -7,18 +7,18 @@ using System.Diagnostics;
 using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 using System.ComponentModel;
 using Microsoft.Practices.EnterpriseLibrary.Validation;
+using TMD.Model.Users;
 
 namespace TMD.Model.Trips
 {
     [Serializable]
     [DebuggerDisplay("{Name}")]
     [HasSelfValidation]
-    public class SiteVisit : IEntity
+    public class SiteVisit : BaseUserCreatedEntity
     {
         protected SiteVisit()
         { }
 
-        public virtual int Id { get; private set; }
         public virtual Trip Trip { get; private set; }
 
         private string m_Name;

@@ -26,6 +26,13 @@ namespace TMD.Controllers
         public ActionResult Start()
         {
             ImportModel model = new ImportModel();
+            // TODO: remove if statement and all contained code
+            if (model.Trip == null)
+            {
+                model.Trip = Trip.Create();
+                model.Trip.AddMeasurer();
+                model.SaveTrip();
+            }
             model.CurrentStep = ImportStep.Start;
             return View(model);
         }
@@ -56,9 +63,47 @@ namespace TMD.Controllers
             }
             model.Trip.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
                 .CopyToModelState(ModelState, "Trip");
-            if (ModelState.IsValid)
+            if (model.Trip.ValidateRegardingPersistence().IsValid)
             {
                 model.SaveTrip();
+            }
+            return View("Trip", model);
+        }
+
+        [HttpPost]
+        public ActionResult CreateTripMeasurer(ImportModel model, bool validate)
+        {
+            if (model.Trip.Measurers.Count < 3)
+            {
+                if (validate)
+                {
+                    model.Trip.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
+                        .CopyToModelState(ModelState, "Trip");
+                }
+                model.Trip.AddMeasurer();
+                if (model.Trip.ValidateRegardingPersistence().IsValid)
+                {
+                    model.SaveTrip();
+                }
+            }
+            return View("Trip", model);
+        }
+
+        [HttpPost]
+        public ActionResult RemoveTripMeasurer(ImportModel model, bool validate)
+        {
+            if (model.Trip.Measurers.Count > 1)
+            {
+                model.Trip.Measurers.RemoveAt(model.Trip.Measurers.Count - 1);
+                if (validate)
+                {
+                    model.Trip.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
+                        .CopyToModelState(ModelState, "Trip");
+                }
+                if (model.Trip.ValidateRegardingPersistence().IsValid)
+                {
+                    model.SaveTrip();
+                }
             }
             return View("Trip", model);
         }
@@ -372,7 +417,6 @@ namespace TMD.Controllers
             model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
             model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.AddTreeMeasurement();
-            model.SelectedTreeMeasurement.AddMeasurer();
             model.SaveTrip();
             return View("TreeMeasurement", model);
         }
@@ -471,38 +515,6 @@ namespace TMD.Controllers
                 });
             }
             return this.Json(autocompleteResults, JsonRequestBehavior.AllowGet);
-        }
-
-        [HttpPost]
-        public ActionResult CreateTreeMeasurementMeasurer(ImportModel model)
-        {
-            if (model.SelectedTreeMeasurement.Measurers.Count < 3)
-            {
-                model.SelectedTreeMeasurement.ValidateRegardingPersistence()
-                    .CopyToModelState(ModelState, "SelectedTreeMeasurement");
-                if (ModelState.IsValid)
-                {
-                    model.SelectedTreeMeasurement.AddMeasurer();
-                    model.SaveTrip();
-                }
-            }
-            return View("TreeMeasurement", model);
-        }
-
-        [HttpPost]
-        public ActionResult RemoveTreeMeasurementMeasurer(ImportModel model)
-        {
-            if (model.SelectedTreeMeasurement.Measurers.Count > 1)
-            {
-                model.SelectedTreeMeasurement.ValidateRegardingPersistence()
-                    .CopyToModelState(ModelState, "SelectedTreeMeasurement");
-                if (ModelState.IsValid)
-                {
-                    model.SelectedTreeMeasurement.Measurers.RemoveAt(model.SelectedTreeMeasurement.Measurers.Count - 1);
-                    model.SaveTrip();
-                }
-            }
-            return View("TreeMeasurement", model);
         }
 
         #endregion

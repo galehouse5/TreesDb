@@ -37,6 +37,15 @@
                 </div>
                 <div class="ui-helper-clearfix"></div>
             </div>
+            <div class="ui-form-row">
+                <%= Html.LabelFor(m => m.Trip.PhotosAvailable)%>
+                <%= Html.CheckBoxFor(m => m.Trip.PhotosAvailable)%>
+                <div class="ui-validation-error ui-state-error-text">
+                    <%= Html.ValidationMessageFor(m => m.Trip.PhotosAvailable, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                    <%= Html.ValidationMessageFor(m => m.Trip.PhotosAvailable, "", new { @class = "ui-validation-error-message" })%>
+                </div>
+                <div class="ui-helper-clearfix"></div>
+            </div>
             <div class="ui-helper-clearfix"></div>
         </div>
         <div class="ui-form-column">
@@ -49,14 +58,73 @@
                 </div>
                 <div class="ui-helper-clearfix"></div>
             </div>
-            <div class="ui-form-row">
-                <%= Html.LabelFor(m => m.Trip.PhotosAvailable)%>
-                <%= Html.CheckBoxFor(m => m.Trip.PhotosAvailable)%>
-                <div class="ui-validation-error ui-state-error-text">
-                    <%= Html.ValidationMessageFor(m => m.Trip.PhotosAvailable, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-                    <%= Html.ValidationMessageFor(m => m.Trip.PhotosAvailable, "", new { @class = "ui-validation-error-message" })%>
+            <div class="treemeasurers">
+                <div class="ui-form-row treemeasurer">
+                    <label>*First measuer:</label>
+                    <%= Html.TextBoxFor(m => m.Trip.Measurers[0].FirstName, new { Title = "First name", style = "width: 125px;" })%>
+                    <%= Html.TextBoxFor(m => m.Trip.Measurers[0].LastName, new { Title = "Last name", style = "width: 125px; margin-left: 4px;" })%>
+                    <% if (Html.ValidationMessageFor(m => m.Trip.Measurers[0].FirstName) != null) { %>
+                        <div class="ui-validation-error ui-state-error-text">
+                            <%= Html.ValidationMessageFor(m => m.Trip.Measurers[0].FirstName, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                            <%= Html.ValidationMessageFor(m => m.Trip.Measurers[0].FirstName, "", new { @class = "ui-validation-error-message" })%>
+                        </div>
+                    <% } %>
+                    <% if (Html.ValidationMessageFor(m => m.Trip.Measurers[0].LastName) != null) { %>
+                        <div class="ui-validation-error ui-state-error-text">
+                            <%= Html.ValidationMessageFor(m => m.Trip.Measurers[0].LastName, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                            <%= Html.ValidationMessageFor(m => m.Trip.Measurers[0].LastName, "", new { @class = "ui-validation-error-message" })%>
+                        </div>
+                    <% } %>
+                    <div class='ui-helper-clearfix'></div>
                 </div>
-                <div class="ui-helper-clearfix"></div>
+                <% if (Model.Trip.Measurers.Count > 1) { %>
+                    <div class="ui-form-row treemeasurer">
+                        <label>*Second measuer:</label>
+                        <%= Html.TextBoxFor(m => m.Trip.Measurers[1].FirstName, new { Title = "First name", style = "width: 125px;" })%>
+                        <%= Html.TextBoxFor(m => m.Trip.Measurers[1].LastName, new { Title = "Last name", style = "width: 125px; margin-left: 4px;" })%>
+                        <% if (Html.ValidationMessageFor(m => m.Trip.Measurers[1].FirstName) != null) { %>
+                            <div class="ui-validation-error ui-state-error-text">
+                                <%= Html.ValidationMessageFor(m => m.Trip.Measurers[1].FirstName, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                                <%= Html.ValidationMessageFor(m => m.Trip.Measurers[1].FirstName, "", new { @class = "ui-validation-error-message" })%>
+                            </div>
+                        <% } %>
+                        <% if (Html.ValidationMessageFor(m => m.Trip.Measurers[1].LastName) != null) { %>
+                            <div class="ui-validation-error ui-state-error-text">
+                                <%= Html.ValidationMessageFor(m => m.Trip.Measurers[1].LastName, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                                <%= Html.ValidationMessageFor(m => m.Trip.Measurers[1].LastName, "", new { @class = "ui-validation-error-message" })%>
+                            </div>
+                        <% } %>
+                        <div class='ui-helper-clearfix'></div>
+                    </div>
+                <% } %>
+                <% if (Model.Trip.Measurers.Count > 2) { %>
+                    <div class="ui-form-row treemeasurer">
+                        <label>*Third measuer:</label>
+                        <%= Html.TextBoxFor(m => m.Trip.Measurers[2].FirstName, new { Title = "First name", style = "width: 125px;" })%>
+                        <%= Html.TextBoxFor(m => m.Trip.Measurers[2].LastName, new { Title = "Last name", style = "width: 125px; margin-left: 4px;" })%>
+                        <% if (Html.ValidationMessageFor(m => m.Trip.Measurers[2].FirstName) != null) { %>
+                            <div class="ui-validation-error ui-state-error-text">
+                                <%= Html.ValidationMessageFor(m => m.Trip.Measurers[2].FirstName, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                                <%= Html.ValidationMessageFor(m => m.Trip.Measurers[2].FirstName, "", new { @class = "ui-validation-error-message" })%>
+                            </div>
+                        <% } %>
+                        <% if (Html.ValidationMessageFor(m => m.Trip.Measurers[2].LastName) != null) { %>
+                            <div class="ui-validation-error ui-state-error-text">
+                                <%= Html.ValidationMessageFor(m => m.Trip.Measurers[2].LastName, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                                <%= Html.ValidationMessageFor(m => m.Trip.Measurers[2].LastName, "", new { @class = "ui-validation-error-message" })%>
+                            </div>
+                        <% } %>
+                        <div class='ui-helper-clearfix'></div>
+                    </div>
+                <% } %>
+                <div class="ui-form-row" style="float: left; margin-left: 100px">
+                    <% if (Model.Trip.Measurers.Count > 1) { %>
+                        <a href="javascript:TripEditor.RemoveMeasurer()" class="measurer-remove">Remove</a>
+                    <% } %>
+                    <% if (Model.Trip.Measurers.Count < 3) { %>
+                        <a href="javascript:TripEditor.AddMeasurer()" class="measurer-add">Add another measurer</a>
+                    <% } %>
+                </div>
             </div>
             <div class="ui-helper-clearfix"></div>
         </div>

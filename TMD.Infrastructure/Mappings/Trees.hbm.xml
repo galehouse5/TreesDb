@@ -4,9 +4,10 @@
                    namespace="TMD.Model">
   
   <class name="TMD.Model.Trees.KnownTree" table="Trees.KnownTrees">
-    <id name="AcceptedSymbol">
-      <generator class="assigned"/>
+    <id name="Id">
+      <generator class="native" />
     </id>
+    <property name="AcceptedSymbol" />
     <property name="ScientificName" />
     <property name="CommonName" />
   </class>

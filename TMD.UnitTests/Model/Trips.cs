@@ -135,6 +135,12 @@ namespace TMD.UnitTests.Model
             t.PhotosAvailable = true;
             t.Website = "website";
             t.Date = DateTime.Now;
+            Measurer tmeasurer1 = t.AddMeasurer();
+            tmeasurer1.FirstName = "tree measurer 1 first name";
+            tmeasurer1.LastName = "tree measurer 1 last name";
+            Measurer tmeasurer2 = t.AddMeasurer();
+            tmeasurer2.FirstName = "tree measurer 2 first name";
+            tmeasurer2.LastName = "tree measurer 2 last name";
 
             SiteVisit sv1 = t.AddSiteVisit();
             sv1.Name = "site visit 1 name";
@@ -208,12 +214,6 @@ namespace TMD.UnitTests.Model
             tm1.TrunkComments = "tree measurement 1 trunk comments";
             tm1.TrunkVolume = Volume.Create(20);
             tm1.TrunkVolumeCalculationMethod = "tree measurement 1 trunk volume calculation method";
-            TreeMeasurer tmeasurer1 = tm1.AddMeasurer();
-            tmeasurer1.FirstName = "tree measurer 1 first name";
-            tmeasurer1.LastName = "tree measurer 1 last name";
-            TreeMeasurer tmeasurer2 = tm1.AddMeasurer();
-            tmeasurer2.FirstName = "tree measurer 2 first name";
-            tmeasurer2.LastName = "tree measurer 2 last name";
             TreeMeasurement tm2 = ssv2.AddTreeMeasurement();
             tm2.Age = 10;
             tm2.AgeClass = TreeAgeClass.VeryOld;
@@ -262,12 +262,6 @@ namespace TMD.UnitTests.Model
             tm2.TrunkComments = "tree measurement 2 trunk comments";
             tm2.TrunkVolume = Volume.Create(20);
             tm2.TrunkVolumeCalculationMethod = "tree measurement 1 trunk volume calculation method";
-            TreeMeasurer tmeasurer3 = tm2.AddMeasurer();
-            tmeasurer3.FirstName = "tree measurer 3 first name";
-            tmeasurer3.LastName = "tree measurer 3 last name";
-            TreeMeasurer tmeasurer4 = tm2.AddMeasurer();
-            tmeasurer4.FirstName = "tree measurer 4 first name";
-            tmeasurer4.LastName = "tree measurer 4 last name";
 
             using (UnitOfWork.BeginBusinessTransaction())
             {
@@ -280,8 +274,6 @@ namespace TMD.UnitTests.Model
             Assert.IsTrue(found.SiteVisits.Count == 2);
             Assert.IsTrue(found.SiteVisits[1].SubsiteVisits.Count == 2);
             Assert.IsTrue(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements.Count == 2);
-            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements[0].Measurers.Count == 2);
-            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements[1].Measurers.Count == 2);
 
             using (UnitOfWork.BeginBusinessTransaction())
             {
@@ -366,10 +358,10 @@ namespace TMD.UnitTests.Model
             tm.CommonName = "tree measurement common name";
             tm.ScientificName = "tree measurement scientific name";
             tm.Coordinates = Coordinates.Create(10, 20);
-            TreeMeasurer tmeasurer = tm.AddMeasurer();
             Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-            tmeasurer.FirstName = "tree measurer first name";
-            tmeasurer.LastName = "tree measurer last name";
+            Measurer tmeasurer1 = t.AddMeasurer();
+            tmeasurer1.FirstName = "tree measurer 1 first name";
+            tmeasurer1.LastName = "tree measurer 1 last name";
             Assert.IsTrue(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
         }
 
@@ -403,10 +395,6 @@ namespace TMD.UnitTests.Model
             Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
             tm.CommonName = "tree measurement common name";
             tm.ScientificName = "tree measurement scientific name";
-            TreeMeasurer tmeasurer = tm.AddMeasurer();
-            Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-            tmeasurer.FirstName = "tree measurer first name";
-            tmeasurer.LastName = "tree measurer last name";
             Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
         }
 
@@ -441,12 +429,12 @@ namespace TMD.UnitTests.Model
             tm.CommonName = "tree measurement common name";
             tm.ScientificName = "tree measurement scientific name";
             tm.Coordinates = Coordinates.Create(10, 20);
-            TreeMeasurer tmeasurer = tm.AddMeasurer();
-            Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-            tmeasurer.FirstName = "tree measurer first name";
-            tmeasurer.LastName = "tree measurer last name";
             ssv.CoordinatesEntered = true;
             ssv.Coordinates = Coordinates.Create(1, 2);
+            Assert.IsFalse(t.ValidateRegardingImport().IsValid);
+            Measurer tmeasurer1 = t.AddMeasurer();
+            tmeasurer1.FirstName = "tree measurer 1 first name";
+            tmeasurer1.LastName = "tree measurer 1 last name";
             Assert.IsTrue(t.ValidateRegardingImport().IsValid);
         }
     }
