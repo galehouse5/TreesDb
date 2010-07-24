@@ -6,6 +6,7 @@ using System.Web.Security;
 using TMD.Model;
 using System.Security.Principal;
 using TMD.Model.Users;
+using TMD.Application;
 
 namespace TMD.Extensions
 {
@@ -172,7 +173,9 @@ namespace TMD.Extensions
             else if (m_Context.Request.HttpMethod.Equals("POST", StringComparison.InvariantCultureIgnoreCase)
                 && m_Context.Request.Url.AbsolutePath.Equals("/Account/Logout", StringComparison.InvariantCultureIgnoreCase))
             {
+                string clearedSessionStatusMessage = ApplicationSession.StatusMessage;
                 m_Context.Session.Clear();
+                ApplicationSession.StatusMessage = clearedSessionStatusMessage;
                 revokeAllUserAuthenticationTokens();
             }
         }
