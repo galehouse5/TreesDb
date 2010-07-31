@@ -140,22 +140,15 @@ namespace TMD.Extensions
                 }
                 else if (UserSession.CurrentUser != null)
                 {
-                    if (isCurrentUserAuthenticationTokenValid)
-                    {
-                        expireAndReissueCurrentUserAuthenticationToken();
-                    }
-                    else
+                    if (!isCurrentUserAuthenticationTokenValid)
                     {
                         m_Context.Session.Clear();
                         revokeAllUserAuthenticationTokens();
                     }
                 }
-                else
+                else if (!string.IsNullOrEmpty(cookieToken))
                 {
-                    if (!string.IsNullOrEmpty(cookieToken))
-                    {
-                        revokeAllUserAuthenticationTokens();
-                    }
+                    revokeAllUserAuthenticationTokens();
                 }
             }
         }
@@ -177,6 +170,12 @@ namespace TMD.Extensions
                 m_Context.Session.Clear();
                 ApplicationSession.StatusMessage = clearedSessionStatusMessage;
                 revokeAllUserAuthenticationTokens();
+            }
+            else if (HttpContext.Current.Session != null
+                && UserSession.CurrentUser != null
+                && isCurrentUserAuthenticationTokenValid)
+            {
+                expireAndReissueCurrentUserAuthenticationToken();
             }
         }
     }

@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
-<div class='ui-placeholder-import-subsitevisit'>
+<div class='import-subsitevisit'>
     <p>
         Are you sure you want to remove this subsite visit?'
     </p>

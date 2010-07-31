@@ -55,6 +55,16 @@ namespace TMD.Model.Trips
             set { m_MeasurerContactInfo = (value ?? string.Empty).Trim(); }
         }
 
+        [DisplayName("Make public")]
+        public virtual bool MakeMeasurerContactInfoPublic { get; set; }
+
+        [DisplayName("Keep private")]
+        public virtual bool KeepMeasurerContactInfoPrivate
+        {
+            get { return !MakeMeasurerContactInfoPublic; }
+            set { MakeMeasurerContactInfoPublic = !value; }
+        }
+
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence")]
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Import", Ruleset = "Import")]
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening")]
@@ -69,6 +79,68 @@ namespace TMD.Model.Trips
         public virtual IList<Measurer> Measurers { get; private set; }
         
         public virtual bool IsImported { get; private set; }
+
+        public virtual Coordinates SiteVisitCentralCoordinates
+        {
+            get
+            {
+                CoordinateBounds cb = CoordinateBounds.Null();
+                foreach (SiteVisit sv in SiteVisits)
+                {
+                    if (sv.CoordinatesEntered && sv.Coordinates.IsSpecified)
+                    {
+                        cb.Extend(sv.Coordinates);
+                    }
+                }
+                return cb.Center;
+            }
+        }
+
+        public virtual bool HasEnteredCoordinates
+        {
+            get
+            {
+                foreach (SiteVisit sv in SiteVisits)
+                {
+                    if (sv.CoordinatesEntered)
+                    {
+                        return true; 
+                    }
+                    foreach (SubsiteVisit ssv in sv.SubsiteVisits)
+                    {
+                        if (ssv.CoordinatesEntered)
+                        {
+                            return true;
+                        }
+                        foreach (TreeMeasurement tm in ssv.TreeMeasurements)
+                        {
+                            if (tm.CoordinatesEntered)
+                            {
+                                return true;
+                            }
+                        }
+                    }
+                }
+                return false;
+            }
+        }
+
+        private string m_DefaultClinometerBrand;
+        public virtual string DefaultClinometerBrand
+        {
+            get { return m_DefaultClinometerBrand; }
+            set { m_DefaultClinometerBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
+        }
+
+        private string m_DefaultLaserBrand;
+        public virtual string DefaultLaserBrand
+        {
+            get { return m_DefaultLaserBrand; }
+            set { m_DefaultLaserBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
+        }
+
+        public virtual Country DefaultCountry { get; private set; }
+        public virtual State DefaultState { get; private set; }
 
         public virtual SiteVisit AddSiteVisit()
         {
@@ -192,6 +264,11 @@ namespace TMD.Model.Trips
                 SiteVisits = new List<SiteVisit>(),
                 IsImported = false,
                 Measurers = new List<Measurer>(),
+                DefaultClinometerBrand = string.Empty,
+                DefaultLaserBrand = string.Empty,
+                DefaultCountry = LocationService.FindCountryByCode("US"),
+                DefaultState = null,
+                MakeMeasurerContactInfoPublic = true
             };
         }
     }

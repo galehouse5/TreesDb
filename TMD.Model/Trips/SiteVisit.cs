@@ -42,11 +42,7 @@ namespace TMD.Model.Trips
                 {
                     if (doesSomeContainedSubsiteVisitHaveEneteredCoordinates())
                     {
-                        m_Coordinates = calculateCoordinatesByAveragingContainedSubsiteVisits();
-                    }
-                    else
-                    {
-                        m_Coordinates = Coordinates.Null();
+                        m_Coordinates = calculateCentralSubsiteVisitCoordinates();
                     }
                 }
                 return m_Coordinates;
@@ -57,8 +53,25 @@ namespace TMD.Model.Trips
             }
         }
 
+        public virtual Coordinates SubsiteVisitCentralCoordinates
+        {
+            get
+            {
+                CoordinateBounds cb = CoordinateBounds.Null();
+                foreach (SubsiteVisit ssv in SubsiteVisits)
+                {
+                    if (ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified)
+                    {
+                        cb.Extend(ssv.Coordinates);
+                    }
+                }
+                return cb.Center;
+            }
+        }
+
         public virtual bool CoordinatesCalculated { get; set; }
 
+        [DisplayName("Enter coordinates to simplify later steps")]
         public virtual bool CoordinatesEntered
         {
             get { return !CoordinatesCalculated; }
@@ -102,17 +115,16 @@ namespace TMD.Model.Trips
             return false;
         }
 
-        private Coordinates calculateCoordinatesByAveragingContainedSubsiteVisits()
+        private Coordinates calculateCentralSubsiteVisitCoordinates()
         {
-            List<Coordinates> coords = new List<Coordinates>();
+            CoordinateBounds cb = CoordinateBounds.Null();
             foreach (SubsiteVisit ssv in SubsiteVisits)
             {
                 if (ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified)
                 {
-                    coords.Add(ssv.Coordinates);
+                    cb.Extend(ssv.Coordinates);
                 }
             }
-            CoordinateBounds cb = CoordinateBounds.Create(coords);
             return cb.Center;
         }
 
@@ -205,23 +217,10 @@ namespace TMD.Model.Trips
             {
                 Name = string.Empty,
                 CoordinatesCalculated = true,
-                Coordinates = Coordinates.Null(),
+                Coordinates = t.SiteVisitCentralCoordinates,
                 SubsiteVisits = new List<SubsiteVisit>(),
                 Comments = string.Empty,
                 Trip = t
-            };
-        }
-
-        public static SiteVisit Create()
-        {
-            return new SiteVisit()
-            {
-                Name = string.Empty,
-                CoordinatesCalculated = true,
-                Coordinates = Coordinates.Null(),
-                SubsiteVisits = new List<SubsiteVisit>(),
-                Comments = string.Empty,
-                Trip = null
             };
         }
     }

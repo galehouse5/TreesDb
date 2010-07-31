@@ -1,65 +1,69 @@
 ﻿var TripEditor = new function () {
     var public = this;
-    var validated = false;
+    var isValidated = false;
 
     public.SaveAndChangeLocation = function (href) {
-        $.put('Trip', $('.ui-placeholder-import-trip').find('form').serialize(), function (data) {
-            validated = true;
+        $.put('Trip', $('.import-trip').find('form').serialize(), function (data) {
+            isValidated = true;
             render(data);
-            if ($('.ui-placeholder-import-trip').find('.field-validation-error').length == 0) {
+            if ($('.import-trip').find('.field-validation-error').length == 0) {
                 window.location.href = href;
             }
         });
     };
 
     var render = function (data) {
-        var newDom = $(data);
-        $('.ui-placeholder-import-trip').replaceWith(newDom.find('.ui-placeholder-import-trip'));
+        if (data) {
+            var newDom = $(data);
+            $('.import-trip').replaceWith(newDom.find('.import-trip'));
+        }
         $('#Trip_Date').datepicker({
             onClose: function () { $('#Trip_Date').focus(); }
         });
         $('input[type=text].input-validation-error, textarea.input-validation-error').first().focus();
         $('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
         $('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
+        $('.enterpublicaccess').buttonset();
     };
 
     public.Initialize = function () {
-        $('#Trip_Date').datepicker({
-            onClose: function () { $('#Trip_Date').focus(); }
-        });
-        $('input[type=text], textarea').first().focus();
-        $('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
-        $('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
+        render();
     };
 
     public.AddMeasurer = function () {
         $.post('CreateTripMeasurer',
-            $('.treemeasurers input').serialize() + "&validate=" + validated.toString(), 
+            $('.treemeasurers input').serialize(),
             function (data) {
                 var newDom = $(data);
+                if (!isValidated) {
+                    newDom.find('.field-validation-error').remove();
+                }
                 $('.treemeasurers').replaceWith(newDom.find('.treemeasurers'));
                 $('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
                 $('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
                 $('.treemeasurers .treemeasurer').last().find('input').first().focus();
-        });
+            });
     }
 
     public.RemoveMeasurer = function () {
         $.post('RemoveTripMeasurer',
-            $('.treemeasurers input').serialize() + "&validate=" + validated.toString(), 
+            $('.treemeasurers input').serialize(),
             function (data) {
                 var newDom = $(data);
+                if (!isValidated) {
+                    newDom.find('.field-validation-error').remove();
+                }
                 $('.treemeasurers').replaceWith(newDom.find('.treemeasurers'));
                 $('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
                 $('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
                 $('.treemeasurers .treemeasurer').last().find('input').first().focus();
-        });
+            });
     }
 };
 
 $(document).ready(function () {
     TripEditor.Initialize();
-    $('a.ui-direction-import-forward').click(function (eventObject) {
+    $('a.import-navigation-forward').click(function (eventObject) {
         var clickedAnchor = $(eventObject.target).closest('a');
         TripEditor.SaveAndChangeLocation(clickedAnchor.attr('href'));
         return false;

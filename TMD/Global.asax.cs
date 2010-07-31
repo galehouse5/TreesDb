@@ -37,6 +37,7 @@ namespace TMD
             ModelBinders.Binders.DefaultBinder = new DefaultGraphModelBinder();
             ModelBinders.Binders.Add(typeof(Coordinates), new CoordinatesModelBinder());
             ModelBinders.Binders.Add(typeof(State), new StateModelBinder());
+            ModelBinders.Binders.Add(typeof(Country), new CountryModelBinder());
             ModelBinders.Binders.Add(typeof(Elevation), new ElevationModelBinder());
             ModelBinders.Binders.Add(typeof(Distance), new DistanceModelBinder());
             ModelBinders.Binders.Add(typeof(Volume), new VolumeModelBinder());

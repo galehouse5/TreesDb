@@ -46,7 +46,18 @@ namespace TMD.Extensions
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
             string stateCode = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).AttemptedValue;
-            return LocationService.FindStateByCountryCodeAndCode("US", stateCode);
+            string countryCodeModelName = bindingContext.ModelName.Replace(".State", ".Country");
+            string countryCode = bindingContext.ValueProvider.GetValue(countryCodeModelName).AttemptedValue;
+            return LocationService.FindStateByCountryAndStateCodes(countryCode, stateCode);
+        }
+    }
+
+    public class CountryModelBinder : IModelBinder
+    {
+        public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+        {
+            string countryCode = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).AttemptedValue;
+            return LocationService.FindCountryByCode(countryCode);
         }
     }
 

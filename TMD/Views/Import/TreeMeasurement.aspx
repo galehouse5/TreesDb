@@ -30,24 +30,13 @@
                     </div>
                     <div class='ui-helper-clearfix'></div>
                 </div>
-                <div class="ui-form-row measured">
-                    <%= Html.LabelFor(m => m.SelectedTreeMeasurement.Measured)%>
-                    <%= Html.EditorFor(m => m.SelectedTreeMeasurement.Measured)%>
-                    <div class="ui-validation-error ui-state-error-text">
-                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.Measured, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.Measured, "", new { @class = "ui-validation-error-message" })%>
-                    </div>
-                    <div class='ui-helper-clearfix'></div>
-                </div>
-                <div class="ui-form-row coordinates-entered" style="float: left; margin-left: 10px;">
-                    <span>Enter coordinates?</span>
+                <div class="ui-form-row entercoordinates">
+                    <%= Html.LabelFor(m => m.SelectedTreeMeasurement.CoordinatesEntered)%>
                     <%= Html.CheckBoxFor(m => m.SelectedTreeMeasurement.CoordinatesEntered)%>
+                    <a href="javascript:TreeMeasurementEditor.OpenCoordinatePicker(<%= Model.Trip.HasEnteredCoordinates ? "true" : "false" %>)" class="coordinatepicker entercoordinates-visible">Pick coordinates</a>
                     <div class='ui-helper-clearfix'></div>
                 </div>
-                <div class="ui-form-row coordinates-entered-visible" style="float: left; margin-left: 100px">
-                    <a href="javascript:TreeMeasurementEditor.OpenCoordinatePicker()" class="coordinate-picker">Open coordinate picker</a>
-                </div>
-                <div class="ui-form-row coordinates-entered-visible latitude">
+                <div class="ui-form-row entercoordinates-visible latitude">
                     <%= Html.LabelFor(m => m.SelectedTreeMeasurement.Coordinates.Latitude)%>
                     <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Coordinates.Latitude)%>
                     <div class="ui-validation-error ui-state-error-text">
@@ -56,7 +45,7 @@
                     </div>
                     <div class='ui-helper-clearfix'></div>
                 </div>
-                <div class="ui-form-row coordinates-entered-visible longitude">
+                <div class="ui-form-row entercoordinates-visible longitude">
                     <%= Html.LabelFor(m => m.SelectedTreeMeasurement.Coordinates.Longitude)%>
                     <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.Coordinates.Longitude)%>
                     <div class="ui-validation-error ui-state-error-text">
@@ -65,18 +54,11 @@
                     </div>
                     <div class='ui-helper-clearfix'></div>
                 </div>
-                <div class="ui-form-row treename-entered" style="float: left; margin-left: 10px;">
-                    <span>Name this tree now?</span>
-                    <%= Html.CheckBoxFor(m => m.SelectedTreeMeasurement.TreeNameSpecified) %>
-                    <div class='ui-helper-clearfix'></div>
-                </div>
-                <div class="ui-form-row treename-entered-visible">
-                    <%= Html.LabelFor(m => m.SelectedTreeMeasurement.TreeName)%>
-                    <%= Html.TextBoxFor(m => m.SelectedTreeMeasurement.TreeName)%>
-                    <div class="ui-validation-error ui-state-error-text">
-                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.TreeName, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-                        <%= Html.ValidationMessageFor(m => m.SelectedTreeMeasurement.TreeName, "", new { @class = "ui-validation-error-message" })%>
-                    </div>
+                <div class="ui-form-row enterpublicaccess entercoordinates-visible">
+                    <label for="KeepCoordinatesPrivate">Keep private</label>
+                    <%= Html.RadioButtonFor(m => m.SelectedTreeMeasurement.MakeCoordinatesPublic, false, new { Id = "KeepCoordinatesPrivate" })%>
+                    <label for="MakeCoordinatesPublic">Make public</label>
+                    <%= Html.RadioButtonFor(m => m.SelectedTreeMeasurement.MakeCoordinatesPublic, true, new { Id = "MakeCoordinatesPublic" })%>
                     <div class='ui-helper-clearfix'></div>
                 </div>
                 <div class="ui-form-row">

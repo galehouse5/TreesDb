@@ -98,7 +98,7 @@ namespace TMD.UnitTests.Model
             ssv1.Name = "subsite visit 1 name";
             ssv1.OwnershipContactInfo = "subsite visit 1 ownership contact info";
             ssv1.OwnershipType = "subsite visit 1 ownership type";            
-            ssv1.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
+            ssv1.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             SubsiteVisit ssv2 = sv2.AddSubsiteVisit();
             ssv2.Comments = "subsite visit 2 comments";
             ssv2.Country = LocationService.FindCountryByCode("US");
@@ -106,7 +106,7 @@ namespace TMD.UnitTests.Model
             ssv2.Name = "subsite visit 2 name";
             ssv2.OwnershipContactInfo = "subsite visit 2 ownership contact info";
             ssv2.OwnershipType = "subsite visit 2 ownership type";
-            ssv2.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
+            ssv2.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             
             using (UnitOfWork.BeginBusinessTransaction())
             {
@@ -156,7 +156,7 @@ namespace TMD.UnitTests.Model
             ssv1.Name = "subsite visit 1 name";
             ssv1.OwnershipContactInfo = "subsite visit 1 ownership contact info";
             ssv1.OwnershipType = "subsite visit 1 ownership type";
-            ssv1.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
+            ssv1.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             SubsiteVisit ssv2 = sv2.AddSubsiteVisit();
             ssv2.Comments = "subsite visit 2 comments";
             ssv2.Country = LocationService.FindCountryByCode("US");
@@ -164,7 +164,7 @@ namespace TMD.UnitTests.Model
             ssv2.Name = "subsite visit 2 name";
             ssv2.OwnershipContactInfo = "subsite visit 2 ownership contact info";
             ssv2.OwnershipType = "subsite visit 2 ownership type";
-            ssv2.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
+            ssv2.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
 
             TreeMeasurement tm1 = ssv2.AddTreeMeasurement();
             tm1.Age = 10;
@@ -210,7 +210,7 @@ namespace TMD.UnitTests.Model
             tm1.TerrainShapeIndex = .10f;
             tm1.TerrainType = TreeTerrainType.HillTop;
             tm1.TreeFormComments = "tree measurement 1 tree form comments";
-            tm1.TreeName = "tree measurement 1 tree name";
+            tm1.TreeNameOrNumber = "tree measurement 1 tree name";
             tm1.TrunkComments = "tree measurement 1 trunk comments";
             tm1.TrunkVolume = Volume.Create(20);
             tm1.TrunkVolumeCalculationMethod = "tree measurement 1 trunk volume calculation method";
@@ -258,7 +258,7 @@ namespace TMD.UnitTests.Model
             tm2.TerrainShapeIndex = .10f;
             tm2.TerrainType = TreeTerrainType.HillTop;
             tm2.TreeFormComments = "tree measurement 2 tree form comments";
-            tm2.TreeName = "tree measurement 2 tree name";
+            tm2.TreeNameOrNumber = "tree measurement 2 tree name";
             tm2.TrunkComments = "tree measurement 2 trunk comments";
             tm2.TrunkVolume = Volume.Create(20);
             tm2.TrunkVolumeCalculationMethod = "tree measurement 1 trunk volume calculation method";
@@ -321,7 +321,7 @@ namespace TMD.UnitTests.Model
             ssv.Name = "subsite visit name";
             ssv.OwnershipContactInfo = "subsite visit ownership contact info";
             ssv.OwnershipType = "subsite visit ownership type";
-            ssv.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
+            ssv.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             Assert.IsTrue(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
             TreeMeasurement tm = ssv.AddTreeMeasurement();
             Assert.IsTrue(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
@@ -351,7 +351,7 @@ namespace TMD.UnitTests.Model
             ssv.Name = "subsite visit name";
             ssv.OwnershipContactInfo = "subsite visit ownership contact info";
             ssv.OwnershipType = "subsite visit ownership type";
-            ssv.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
+            ssv.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
             TreeMeasurement tm = ssv.AddTreeMeasurement();
             Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
@@ -389,7 +389,7 @@ namespace TMD.UnitTests.Model
             ssv.Name = "subsite visit name";
             ssv.OwnershipContactInfo = "subsite visit ownership contact info";
             ssv.OwnershipType = "subsite visit ownership type";
-            ssv.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
+            ssv.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
             TreeMeasurement tm = ssv.AddTreeMeasurement();
             Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
@@ -422,7 +422,7 @@ namespace TMD.UnitTests.Model
             ssv.Name = "subsite visit name";
             ssv.OwnershipContactInfo = "subsite visit ownership contact info";
             ssv.OwnershipType = "subsite visit ownership type";
-            ssv.State = LocationService.FindStateByCountryCodeAndCode("US", "OH");
+            ssv.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             Assert.IsFalse(t.ValidateRegardingImport().IsValid);
             TreeMeasurement tm = ssv.AddTreeMeasurement();
             Assert.IsFalse(t.ValidateRegardingImport().IsValid);

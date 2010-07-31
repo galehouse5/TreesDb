@@ -1,6 +1,6 @@
 ﻿var CoordinatePicker = new function () {
     var dom = $(
-        "<div id='coordinate-picker' style='font-size: 1.2em;'>\
+        "<div id='coordinatepicker' style='font-size: 1.2em;'>\
             <div class='map' style='position: absolute; left: 0px; top: 0px;'></div>\
             <div class='coordinates' style='position: absolute; left: 45%; top: 10px; font-size: 1.4em;'></div>\
             <div class='address-search' style='position: absolute; left: 50px; bottom: 50px;'>\
@@ -13,27 +13,34 @@
             <a class='save' style='position: absolute; right: 50px; bottom: 50px;'>Save</a>\
             <a class='cancel' style='position: absolute; right: 115px; bottom: 50px;'>Cancel</a>\
         </div>");
-    var resultCallback;
-    var latitude = 36.94167;
-    var longitude = -95.825;
-    var zoom = 5;
-    var abortAddressLookup = false;
+    var m_ResultCallback;
+    var m_Latitude = 36.94167, m_Longitude = -95.825, m_Zoom = 5;
 
     this.Open = function (options, callback) {
-        if (options.coordinatesSpecified) {
-            latitude = options.latitude;
-            longitude = options.longitude;
-        } else if (options.addressSpecified) {
-            GeocoderService.Lookup({ state: options.state, county: options.county }, handleAddressSearchResult);
-        }
-        resultCallback = callback;
+        m_ResultCallback = callback;
         initialize();
-        initializeMap();
+
+        if (options.coordinatesSpecified) {
+            m_Zoom = 15;
+            m_Latitude = options.latitude;
+            m_Longitude = options.longitude;
+            initializeMap();
+            if (options.hasMarkersToLoad) {
+                options.markerLoader(loadMarkers)
+            }
+        } else {
+            initializeMap();
+            if (options.hasMarkersToLoad) {
+                options.markerLoader(loadMarkersAndPositionCoordinateMarkerSensibly)
+            } else if (options.addressSpecified) {
+                GeocoderService.Lookup({ 
+                    state: options.state, county: options.county, country: options.country },
+                    handleAddressSearchResult);
+            }
+        }
+
         windowResize();
         initializeAddressSearch();
-        if (options.markerLoader != null) {
-            options.markerLoader(loadMarkers);
-        }
     };
 
     // general dom
@@ -51,6 +58,7 @@
         $('body').css('overflow', 'visible');
         $(window).unbind('resize');
         $(window).unbind('keyup');
+        dom.find('a').button('destroy');
         dom.find('a.save').unbind('click');
         dom.find('a.cancel').unbind('click');
         dom.remove();
@@ -75,93 +83,120 @@
         disposeAddressSearch();
         disposeMap();
         dispose();
-        resultCallback({ coordinatesPicked: false });
+        m_ResultCallback({ coordinatesPicked: false });
     };
 
     function save() {
         disposeAddressSearch();
         disposeMap();
         dispose();
-        resultCallback({ coordinatesPicked: true, latitude: latitude, longitude: longitude });
+        m_ResultCallback({ coordinatesPicked: true, latitude: m_Latitude, longitude: m_Longitude });
     };
 
     // map
-    var map;
-    var marker;
-    var infoWindow;
-    var eventListeners = new Array();
+    var m_Map, m_CoordinateMarker, m_InfoWindow, m_MapEventListeners = new Array(), m_EntityMarkers = new Array();
     function initializeMap() {
-        var center = new google.maps.LatLng(latitude, longitude);
+        var center = new google.maps.LatLng(m_Latitude, m_Longitude);
         var options = {
             center: center,
-            zoom: zoom,
+            zoom: m_Zoom,
             mapTypeId: google.maps.MapTypeId.TERRAIN,
             navigationControlOptions: {
                 style: google.maps.NavigationControlStyle.HORIZONTAL_BAR
             },
             scaleControl: true
         };
-        map = new google.maps.Map(dom.find('.map')[0], options);
-        marker = new google.maps.Marker({
+        m_Map = new google.maps.Map(dom.find('.map')[0], options);
+        m_CoordinateMarker = new google.maps.Marker({
             position: center,
-            map: map,
+            map: m_Map,
             draggable: true,
             zIndex: 1000
         });
-        infowindow = new google.maps.InfoWindow({
+        m_InfoWindow = new google.maps.InfoWindow({
             content: "Drag me into position and click 'Save' to pick my coordinates..."
         });
 
-        eventListeners.push(google.maps.event.addListener(map, 'zoom_changed', mapZoomChanged));
-        eventListeners.push(google.maps.event.addListener(marker, 'position_changed', markerPositionChanged));
-        eventListeners.push(google.maps.event.addListener(map, 'click', markerClick));
-        eventListeners.push(google.maps.event.addListener(marker, 'dragend', markerClick));
-        eventListeners.push(google.maps.event.addListener(marker, 'dblclick', save));
+        m_MapEventListeners.push(google.maps.event.addListener(m_Map, 'zoom_changed', mapZoomChanged));
+        m_MapEventListeners.push(google.maps.event.addListener(m_CoordinateMarker, 'position_changed', markerPositionChanged));
+        m_MapEventListeners.push(google.maps.event.addListener(m_Map, 'click', markerClick));
+        m_MapEventListeners.push(google.maps.event.addListener(m_CoordinateMarker, 'dragend', markerClick));
+        m_MapEventListeners.push(google.maps.event.addListener(m_CoordinateMarker, 'dblclick', save));
 
         markerPositionChanged();
-        infowindow.open(map, marker);
+        m_InfoWindow.open(m_Map, m_CoordinateMarker);
     };
 
-    function loadMarkers(markers) {
+    function loadMarkersAndPositionCoordinateMarkerSensibly(markers) {
         if (markers.length > 0) {
-            var bounds = new google.maps.LatLngBounds();
-            bounds.extend(marker.getPosition());
             for (var i in markers) {
-                var mapMarker = MapMarkerService.CreateMapMarker(markers[i]);
-                mapMarker.setMap(map);
-                bounds.extend(mapMarker.getPosition());
+                var marker = MapMarkerService.CreateMapMarker(markers[i]);
+                marker.setMap(m_Map);
+                m_EntityMarkers.push(marker);
             }
-            abortAddressLookup = true;
-            map.fitBounds(bounds);
+            setMarkerToAverageEntityMarkerPosition();
+            fitMarkerBounds();
         }
     }
 
+    function loadMarkers(markers) {
+        if (markers.length > 0) {
+            for (var i in markers) {
+                var marker = MapMarkerService.CreateMapMarker(markers[i]);
+                marker.setMap(m_Map);
+                m_EntityMarkers.push(marker);
+            }
+            fitMarkerBounds();
+        }
+    }
+
+    function fitMarkerBounds() {
+        var bounds = new google.maps.LatLngBounds();
+        bounds.extend(m_CoordinateMarker.getPosition());
+        for (var i in m_EntityMarkers) {
+            bounds.extend(m_EntityMarkers[i].getPosition());
+        }
+        m_Map.fitBounds(bounds);
+    }
+
+    function setMarkerToAverageEntityMarkerPosition() {
+        var bounds = new google.maps.LatLngBounds();
+        for (var i in m_EntityMarkers) {
+            bounds.extend(m_EntityMarkers[i].getPosition());
+        }
+        m_CoordinateMarker.setPosition(bounds.getCenter());
+    }
+
     function disposeMap() {
-        while (eventListeners.length > 0) {
-            google.maps.event.removeListener(eventListeners.pop());
+        while (m_EntityMarkers.length > 0) {
+            var marker = m_EntityMarkers.pop();
+            marker.setMap(null);
+        }
+        while (m_MapEventListeners.length > 0) {
+            google.maps.event.removeListener(m_MapEventListeners.pop());
         }
     };
 
     function mapZoomChanged() {
-        zoom = map.getZoom()
+        m_Zoom = m_Map.getZoom()
     };
 
     function markerPositionChanged() {
-        latitude = marker.getPosition().lat().toFixed(5);
-        longitude = marker.getPosition().lng().toFixed(5);
-        infowindow.close();
+        m_Latitude = m_CoordinateMarker.getPosition().lat().toFixed(5);
+        m_Longitude = m_CoordinateMarker.getPosition().lng().toFixed(5);
+        m_InfoWindow.close();
         dom.find('.coordinates').text(
             '( '
-            + marker.getPosition().lat().toFixed(5)
+            + m_CoordinateMarker.getPosition().lat().toFixed(5)
             + ', '
-            + marker.getPosition().lng().toFixed(5)
+            + m_CoordinateMarker.getPosition().lng().toFixed(5)
             + ' )');
     };
 
     function markerClick(event) {
         var newCenter = event.latLng;
-        marker.setPosition(newCenter);
-        map.panTo(newCenter);
+        m_CoordinateMarker.setPosition(newCenter);
+        m_Map.panTo(newCenter);
     };
 
     // address search
@@ -178,17 +213,13 @@
 
     function performAddressSearch() {
         var address = $('.address-search input').val();
-        GeocoderService.Lookup({ address: address, location: marker.getPosition() }, handleAddressSearchResult);
+        GeocoderService.Lookup({ address: address, location: m_CoordinateMarker.getPosition() }, handleAddressSearchResult);
     };
 
     function handleAddressSearchResult(result) {
-        if (abortAddressLookup) {
-            abortAddressLookup = false;
-            return;
-        }
         if (result.found) {
-            marker.setPosition(result.location);
-            map.fitBounds(result.viewport);
+            m_CoordinateMarker.setPosition(result.location);
+            fitMarkerBounds();
             dom.find('.address-search input').val(result.address);
         } else {
             dom.find('.address-search input').val('...Sorry, I can\'t find the address you entered.');

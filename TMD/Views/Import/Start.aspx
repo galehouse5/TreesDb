@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Tree Measurement Database - Import Start" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
-<h2>Before you start, please ready the listed information.</h2>
+<h2>Ready the listed information before you start</h2>
 <ul>
     <li>Contact info for the primary measurer on your trip</li>
     <li>Names, counties, states, and ownership info for all visited sites</li>
@@ -17,6 +17,6 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="RightNavigationContent" runat="server">
-<%= Html.ActionLink("Start", "Trip", null, new { @class = "ui-direction-import-forward" })%>
+<%= Html.ActionLink("Start", "Trip", null, new { @class = "import-navigation-forward" })%>
 </asp:Content>
 

@@ -2,7 +2,7 @@
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
 <h2>Your trip has been saved.  You should note the assigned tree numbers for later reference.</h2>
-<div class="ui-placeholder-import-sitevisits">
+<div class="import-sitevisits">
     <% for (int sv = Model.Trip.SiteVisits.Count - 1; sv >= 0; sv--) { %>
         <div class="ui-content-import-sitevisit ui-widget ui-widget-content ui-corner-all">
             <div class="ui-content-import-header ui-widget-header ui-corner-all">
@@ -15,7 +15,7 @@
                 Coordinates: <%= Model.Trip.SiteVisits[sv].Coordinates %>
             </div>
         </div>
-        <div class="ui-content-import-subsitevisits">
+        <div class="import-subsitevisits">
             <% for (int ssv = Model.Trip.SiteVisits[sv].SubsiteVisits.Count - 1; ssv >= 0; ssv--) { %>
                 <div class="ui-content-import-subsitevisit ui-widget ui-widget-content ui-corner-all">
                     <div class="ui-content-import-header ui-widget-header ui-corner-all">
@@ -40,15 +40,15 @@
                             <div class="ui-content-import-summary ui-widget-content ui-corner-all">
                                 Tree number: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeNumber %>
                                 <br />
-                                <% if (Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeNameSpecified) { %>
-                                   Name : <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeName %>
+                                <% if (Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeNameOrNumberSpecified) { %>
+                                   Name : <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].TreeNameOrNumber %>
                                    <br />
                                 <% } %>
                                 Common name: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].CommonName %>
                                 <br />
                                 Scientific name: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].ScientificName %>
                                 <br />
-                                Coordinates: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Coordinates%>
+                                Coordinates: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].TreeMeasurements[tm].Coordinates %>
                             </div>
                         </div>
                     <% } %>
@@ -67,5 +67,5 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="RightNavigationContent" runat="server">
-<%= Html.ActionLink("New import", "Start", null, new { @class = "ui-direction-import-forward" })%>
+<%= Html.ActionLink("New import", "Start", null, new { @class = "import-navigation-forward" })%>
 </asp:Content>

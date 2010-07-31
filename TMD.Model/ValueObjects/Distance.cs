@@ -49,7 +49,7 @@ namespace TMD.Model
 
         public float Yards
         {
-            get { return 3f * Feet; }
+            get { return Feet / 3f; }
         }
 
         public float Meters

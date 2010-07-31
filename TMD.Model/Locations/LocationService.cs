@@ -8,9 +8,9 @@ namespace TMD.Model.Locations
 {
     public interface ILocationRepository
     {
-        State FindStateByCountryCodeAndCode(string countryCode, string code);
+        State FindStateByCountryAndStateCodes(string countryCode, string stateCode);
         Country FindCountryByCode(string code);
-        IList<State> FindStatesByCountryCode(string countryCode);
+        IList<State> FindStatesByCountryCode(string code);
         IList<Country> FindAllCountries();
     }
 
@@ -18,9 +18,9 @@ namespace TMD.Model.Locations
     {
         private static ILocationRepository s_Repository = ModelRegistry.RepositoryFactory.Resolve<ILocationRepository>();
 
-        public static State FindStateByCountryCodeAndCode(string countryCode, string code)
+        public static State FindStateByCountryAndStateCodes(string countryCode, string stateCode)
         {
-            return s_Repository.FindStateByCountryCodeAndCode(countryCode, code);
+            return s_Repository.FindStateByCountryAndStateCodes(countryCode, stateCode);
         }
 
         public static Country FindCountryByCode(string code)
@@ -28,9 +28,9 @@ namespace TMD.Model.Locations
             return s_Repository.FindCountryByCode(code);
         }
 
-        public static IList<State> FindStatesByCountryCode(string countryCode)
+        public static IList<State> FindStatesByCountryCode(string code)
         {
-            return s_Repository.FindStatesByCountryCode(countryCode);
+            return s_Repository.FindStatesByCountryCode(code);
         }
 
         public static IList<Country> FindAllCountries()

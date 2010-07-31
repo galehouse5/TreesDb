@@ -6,8 +6,8 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
-<h2>Enter general information about your trip.</h2>
-<div class="ui-placeholder-import-trip ui-widget-content ui-corner-all">
+<h2>Enter general information about your trip</h2>
+<div class="import-trip ui-widget-content ui-corner-all">
     <form>
         <div class="ui-form-column">
             <div class="ui-form-row">
@@ -57,6 +57,13 @@
                     <%= Html.ValidationMessageFor(m => m.Trip.MeasurerContactInfo, "", new { @class = "ui-validation-error-message" })%>
                 </div>
                 <div class="ui-helper-clearfix"></div>
+            </div>
+            <div class="ui-form-row enterpublicaccess">
+                <label for="MakeMeasurerContactInfoPublic">Keep private</label>
+                <%= Html.RadioButtonFor(m => m.Trip.MakeMeasurerContactInfoPublic, false, new { Id = "MakeMeasurerContactInfoPublic" })%>
+                <label for="KeepMeasurerContactInfoPrivate">Make public</label>
+                <%= Html.RadioButtonFor(m => m.Trip.MakeMeasurerContactInfoPublic, true, new { Id = "KeepMeasurerContactInfoPrivate" })%>
+                <div class='ui-helper-clearfix'></div>
             </div>
             <div class="treemeasurers">
                 <div class="ui-form-row treemeasurer">
@@ -138,5 +145,5 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="RightNavigationContent" runat="server">
-<%= Html.ActionLink("Next", "SiteVisits", null, new { @class = "ui-direction-import-forward" })%>
+<%= Html.ActionLink("Next", "SiteVisits", null, new { @class = "import-navigation-forward" })%>
 </asp:Content>

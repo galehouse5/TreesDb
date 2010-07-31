@@ -53,7 +53,7 @@
         <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
     </div>
     <div class="ui-content ui-script-hide ui-content-emphasize">
-        <h2>Javascript is disabled.</h2>
+        <h2>Javascript is disabled</h2>
         <p>
             The Tree Measurement Database requires Javascript. For instruction on enabling Javascript in your browser, follow
             <% if (Request.Browser.Browser.Equals("firefox", StringComparison.CurrentCultureIgnoreCase)) { %>

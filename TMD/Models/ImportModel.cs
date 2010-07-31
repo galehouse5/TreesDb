@@ -115,22 +115,5 @@ namespace TMD.Models
             get { return ApplicationSession.ImportSelectedSiteVisitIndex > -1 ? Trip.SiteVisits[ApplicationSession.ImportSelectedSiteVisitIndex] : null; }
             set { ApplicationSession.ImportSelectedSiteVisitIndex = value == null ? -1 : Trip.SiteVisits.IndexOf(value); }
         }
-
-        public IEnumerable<SelectListItem> BuildStateSelectList()
-        {
-            yield return new SelectListItem()
-            {
-                Text = string.Empty,
-                Value = string.Empty
-            };
-            foreach (State s in LocationService.FindStatesByCountryCode("US"))
-            {
-                yield return new SelectListItem()
-                {
-                    Text = s.Name,
-                    Value = s.Code
-                };
-            }
-        }
     }
 }

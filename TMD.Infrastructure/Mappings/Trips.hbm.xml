@@ -21,12 +21,11 @@
     <property name="Created" />
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <many-to-one name="SubsiteVisit" column="SubsiteVisitId" />
-    <property name="TreeNameSpecified"/>
-    <property name="TreeName" />
+    <property name="TreeNameOrNumberSpecified"/>
+    <property name="TreeNameOrNumber" />
     <property name="TreeNumber" />
     <property name="CommonName"/>
     <property name="ScientificName"/>
-    <property name="Measured" type="date"/>
     <property name="Status"/>
     <property name="HealthStatus"/>
     <property name="AgeClass"/>
@@ -130,6 +129,7 @@
     <property name="TerrainShapeIndex"/>
     <property name="LandformIndex"/>
     <property name="TerrainComments"/>
+    <property name="MakeCoordinatesPublic"/>
   </class>
 
   <class name="TMD.Model.Trips.SubsiteVisit" table="Trips.SubsiteVisits">
@@ -151,8 +151,8 @@
       </component>
     </component>
     <property name="CoordinatesCalculated" />    
-    <many-to-one name="Country" column="CountryId" />
-    <many-to-one name="State" column="StateId" />
+    <many-to-one name="Country" column="CountryId" cascade="none" />
+    <many-to-one name="State" column="StateId" cascade="none" />
     <property name="County" />
     <property name="OwnershipType" />
     <property name="OwnershipContactInfo" />
@@ -161,6 +161,7 @@
       <key column="SubsiteVisitId" />
       <one-to-many class="TMD.Model.Trips.TreeMeasurement"/>
     </bag>
+    <property name="MakeOwnershipContactInfoPublic" />
   </class>  
   
   <class name="TMD.Model.Trips.SiteVisit" table="Trips.SiteVisits">
@@ -209,6 +210,11 @@
       <key column="TripId" />
       <one-to-many class="TMD.Model.Trips.Measurer"/>
     </bag>
+    <property name="DefaultClinometerBrand" />
+    <property name="DefaultLaserBrand" />
+    <many-to-one name="DefaultCountry" column="DefaultCountryId" cascade="none" />
+    <many-to-one name="DefaultState" column="DefaultStateId" cascade="none" />
+    <property name="MakeMeasurerContactInfoPublic"/>
   </class>
   
 </hibernate-mapping>

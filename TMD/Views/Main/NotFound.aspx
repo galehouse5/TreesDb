@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="ui-content ui-content-emphasize" >
-        <h2>This page cannot be found.</h2>
+        <h2>This page cannot be found</h2>
         <p>
             Sorry but this page is still under construction or does not exist. 
             To get back to the homepage <a href="/">click here</a>.

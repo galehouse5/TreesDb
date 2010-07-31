@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
-<div class="ui-placeholder-import-subsitevisit">
+<div class="import-subsitevisit">
     <div class="ui-form-column ui-widget-content ui-corner-all">
         <form>
             <div class="ui-form-row">
@@ -11,9 +11,18 @@
                 </div>
                 <div class='ui-helper-clearfix'></div>
             </div>
+            <div class="ui-form-row country">
+                <%= Html.LabelFor(m => m.SelectedSubsiteVisit.Country)%>
+                <%= Html.TextBoxFor(m => m.SelectedSubsiteVisit.Country)%>
+                <div class="ui-validation-error ui-state-error-text">
+                    <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.Country, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
+                    <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.Country, "", new { @class = "ui-validation-error-message" })%>
+                </div>
+                <div class='ui-helper-clearfix'></div>
+            </div>
             <div class="ui-form-row state">
                 <%= Html.LabelFor(m => m.SelectedSubsiteVisit.State)%>
-                <%= Html.DropDownListFor(m => m.SelectedSubsiteVisit.State, Model.BuildStateSelectList())%>
+                <%= Html.TextBoxFor(m => m.SelectedSubsiteVisit.State)%>
                 <div class="ui-validation-error ui-state-error-text">
                     <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.State, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
                     <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.State, "", new { @class = "ui-validation-error-message" })%>
@@ -29,26 +38,24 @@
                 </div>
                 <div class='ui-helper-clearfix'></div>
             </div>
-            <div class="ui-form-row coordinates-entered" style="float: left; margin-left: 10px;">
-                <span>Enter coordinates to simplify remaining steps?</span>
+            <div class="ui-form-row entercoordinates">
+                <%= Html.LabelFor(m => m.SelectedSubsiteVisit.CoordinatesEntered)%>
                 <%= Html.CheckBoxFor(m => m.SelectedSubsiteVisit.CoordinatesEntered)%>
+                <a href="javascript:SubsiteVisitEditor.OpenCoordinatePicker(<%= Model.Trip.HasEnteredCoordinates ? "true" : "false" %>)" class="coordinatepicker entercoordinates-visible">Pick coordinates</a>
                 <div class='ui-helper-clearfix'></div>
             </div>
-            <div class="ui-form-row coordinates-entered-visible" style="float: left; margin-left: 100px">
-                <a href="javascript:SubsiteVisitEditor.OpenCoordinatePicker()" class="coordinate-picker">Open coordinate picker</a>
-            </div>
-            <div class="ui-form-row coordinates-entered-visible latitude">
+            <div class="ui-form-row entercoordinates-visible latitude">
                 <%= Html.LabelFor(m => m.SelectedSubsiteVisit.Coordinates.Latitude)%>
-                <%= Html.TextBoxFor(m => m.SelectedSubsiteVisit.Coordinates.Latitude)%>
+                <%= Html.TextBoxFor(m => m.SelectedSubsiteVisit.Coordinates.Latitude, new Dictionary<string, object> { { "data-degrees", Model.SelectedSiteVisit.Coordinates.Latitude.TotalDegrees } })%>
                 <div class="ui-validation-error ui-state-error-text">
                     <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.Coordinates.Latitude, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
                     <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.Coordinates.Latitude, "", new { @class = "ui-validation-error-message" })%>
                 </div>
                 <div class='ui-helper-clearfix'></div>
             </div>
-            <div class="ui-form-row coordinates-entered-visible longitude">
+            <div class="ui-form-row entercoordinates-visible longitude">
                 <%= Html.LabelFor(m => m.SelectedSubsiteVisit.Coordinates.Longitude)%>
-                <%= Html.TextBoxFor(m => m.SelectedSubsiteVisit.Coordinates.Longitude)%>
+                <%= Html.TextBoxFor(m => m.SelectedSubsiteVisit.Coordinates.Longitude, new Dictionary<string, object> { { "data-degrees", Model.SelectedSiteVisit.Coordinates.Longitude.TotalDegrees } })%>
                 <div class="ui-validation-error ui-state-error-text">
                     <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.Coordinates.Longitude, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
                     <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.Coordinates.Longitude, "", new { @class = "ui-validation-error-message" })%>
@@ -72,6 +79,13 @@
                     <%= Html.ValidationMessageFor(m => m.SelectedSubsiteVisit.OwnershipContactInfo, "", new { @class = "ui-validation-error-message" })%>
                 </div>
                 <div class="ui-helper-clearfix"></div>
+            </div>
+            <div class="ui-form-row enterpublicaccess">
+                <label for="KeepOwnershipContactInfoPrivate">Keep private</label>
+                <%= Html.RadioButtonFor(m => m.SelectedSubsiteVisit.MakeOwnershipContactInfoPublic, false, new { Id = "KeepOwnershipContactInfoPrivate" })%>
+                <label for="MakeOwnershipContactInfoPublic">Make public</label>
+                <%= Html.RadioButtonFor(m => m.SelectedSubsiteVisit.MakeOwnershipContactInfoPublic, true, new { Id = "MakeOwnershipContactInfoPublic" })%>
+                <div class='ui-helper-clearfix'></div>
             </div>
             <div class="ui-form-row">
                 <%= Html.LabelFor(m => m.SelectedSubsiteVisit.Comments)%>

@@ -41,17 +41,13 @@ namespace TMD.Model.Trips
             {
                 if (CoordinatesCalculated)
                 {
-                    if (doesSomeContainedTreeMeasurementHaveEneteredCoordinates())
+                    if (TreeMeasurementCentralCoordinates.IsSpecified)
                     {
-                        m_Coordinates = calculateCoordinatesByAveragingContainedTreeMeasurements();
+                        m_Coordinates = TreeMeasurementCentralCoordinates;
                     }
                     else if (SiteVisit.CoordinatesEntered && SiteVisit.Coordinates.IsSpecified)
                     {
                         m_Coordinates = SiteVisit.Coordinates;
-                    }
-                    else
-                    {
-                        m_Coordinates = Coordinates.Null();
                     }
                 }
                 return m_Coordinates;
@@ -62,8 +58,25 @@ namespace TMD.Model.Trips
             }
         }
 
+        public virtual Coordinates TreeMeasurementCentralCoordinates
+        {
+            get
+            {
+                CoordinateBounds cb = CoordinateBounds.Null();
+                foreach (TreeMeasurement tm in TreeMeasurements)
+                {
+                    if (tm.CoordinatesEntered && tm.Coordinates.IsSpecified)
+                    {
+                        cb.Extend(tm.Coordinates);
+                    }
+                }
+                return cb.Center;
+            }
+        }
+
         public virtual bool CoordinatesCalculated { get; set; }
 
+        [DisplayName("Enter coordinates to simplify later steps")]
         public virtual bool CoordinatesEntered
         {
             get { return !CoordinatesCalculated; }
@@ -86,39 +99,37 @@ namespace TMD.Model.Trips
             }
         }
 
-        private bool doesSomeContainedTreeMeasurementHaveEneteredCoordinates()
-        {
-            foreach (TreeMeasurement tm in TreeMeasurements)
-            {
-                if (tm.CoordinatesEntered && tm.Coordinates.IsSpecified)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        private Coordinates calculateCoordinatesByAveragingContainedTreeMeasurements()
-        {
-            List<Coordinates> coords = new List<Coordinates>();
-            foreach (TreeMeasurement tm in TreeMeasurements)
-            {
-                if (tm.CoordinatesEntered && tm.Coordinates.IsSpecified)
-                {
-                    coords.Add(tm.Coordinates);
-                }
-            }
-            CoordinateBounds cb = CoordinateBounds.Create(coords);
-            return cb.Center;
-        }
-
+        private Country m_Country;
         [DisplayName("*Subsite country:")]
         [NotNullValidator(MessageTemplate = "Subsite country must be specified.", Ruleset = "Screening", Tag = "SubsiteVisit")]
-        public virtual Country Country { get; set; }
+        public virtual Country Country 
+        {
+            get { return m_Country; }
+            set
+            {
+                m_Country = value;
+                if (SiteVisit != null && SiteVisit.Trip != null)
+                {
+                    SiteVisit.Trip.SetPrivatePropertyValue<Country>("DefaultCountry", value);
+                }
+            }
+        }
 
+        private State m_State;
         [DisplayName("*Subsite state:")]
         [NotNullValidator(MessageTemplate = "Subsite state must be specified.", Ruleset = "Screening", Tag = "SubsiteVisit")]
-        public virtual State State { get; set; }
+        public virtual State State 
+        {
+            get { return m_State; }
+            set
+            {
+                m_State = value;
+                if (SiteVisit != null && SiteVisit.Trip != null)
+                {
+                    SiteVisit.Trip.SetPrivatePropertyValue<State>("DefaultState", value);
+                }
+            }
+        }
 
         private string m_County;
         [DisplayName("*Subsite county:")]
@@ -147,6 +158,16 @@ namespace TMD.Model.Trips
         {
             get { return m_OwnershipContactInfo; }
             set { m_OwnershipContactInfo = (value ?? string.Empty).Trim(); }
+        }
+
+        [DisplayName("Make public")]
+        public virtual bool MakeOwnershipContactInfoPublic { get; set; }
+
+        [DisplayName("Keep private")]
+        public virtual bool KeepOwnershipContactInfoPrivate
+        {
+            get { return !MakeOwnershipContactInfoPublic; }
+            set { MakeOwnershipContactInfoPublic = !value; }
         }
 
         private string m_Comments;
@@ -206,8 +227,10 @@ namespace TMD.Model.Trips
                 OwnershipContactInfo = string.Empty,
                 Comments = string.Empty,
                 TreeMeasurements = new List<TreeMeasurement>(),
-                Country = LocationService.FindCountryByCode("US"),
-                SiteVisit = sv
+                Country = sv.Trip.DefaultCountry,
+                State = sv.Trip.DefaultState,
+                SiteVisit = sv,
+                MakeOwnershipContactInfoPublic = true
             };
         }
     }

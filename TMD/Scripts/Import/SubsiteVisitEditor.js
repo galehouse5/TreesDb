@@ -1,41 +1,50 @@
 ﻿var SubsiteVisitEditor = new function () {
     var public = this;
-    var dom = $(
-"<div>\
-    <div class='ui-placeholder-import-subsitevisit'></div>\
-</div>");
     var isSaved, isAdding;
     var closeCallback, showCallback, hideCallback;
 
-    function initialize() {
-        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 410,
+    var dom = $(
+"<div>\
+    <div class='import-subsitevisit'></div>\
+</div>");
+    $(document).ready(function () {
+        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
+            width: 410, position: 'center',
             buttons: { 'Save': save, 'Cancel': function () { dom.dialog('close'); } }
         });
-        if (isAdding) {
-            dom.dialog({ title: 'Adding subsite visit' });
-        } else {
-            dom.dialog({ title: 'Editing subsite visit' });
-        }
         dom.bind('dialogclose', dispose);
-    }
+    });
 
     function dispose() {
+        dom.find('.import-subsitevisit').empty();
         if (isAdding && !isSaved) {
             $.delete_('SubsiteVisit');
         }
-        dom.unbind('dialogclose');
         closeCallback(isSaved);
     }
 
     function render(data) {
-        dom.find('.ui-placeholder-import-subsitevisit').replaceWith($(data));
-        dom.find('.coordinates-entered input').bind('change', (function () {
-            dom.find('.coordinates-entered input').attr('checked') ?
-                    dom.find('.coordinates-entered-visible').show() :
-                    dom.find('.coordinates-entered-visible').hide();
-        }));
-        dom.find('.coordinates-entered input').trigger('change');
-        dom.find('.coordinate-picker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
+        dom.find('.import-subsitevisit').replaceWith($(data));
+        dom.find('.coordinatepicker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
+        dom.find('.entercoordinates input')
+            .bind('change', (function () {
+                if (dom.find('.entercoordinates input').attr('checked')) {
+                    dom.find('.entercoordinates-visible').show();
+                    dom.find('.entercoordinates-visible input').first().focus();
+                } else {
+                    dom.find('.entercoordinates-visible').hide();
+                }
+            }))
+            .trigger('change')
+            .button();
+        dom.find('.country input')
+            .autocomplete({ delay: 0, minLength: 2, source: LocationsService.FindAllCountries() })
+            .change(function () {
+                dom.find('.state input').autocomplete('option', { source: LocationsService.FindStatesByCountryCode($('.country input').val()) });
+            });
+        dom.find('.state input')
+            .autocomplete({ delay: 0, minLength: 2, source: LocationsService.FindStatesByCountryCode($('.country input').val()) });
+        dom.find('.enterpublicaccess').buttonset();
     }
 
     function validate() {
@@ -66,11 +75,11 @@
         isAdding = true;
         isSaved = false;
         setOptions(options);
-        initialize();
+        dom.dialog('option', { title: 'Adding subsite visit' });
         $.post('CreateSubsiteVisit', {}, function (data) {
             render(data);
             dom.dialog('open');
-            lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
+            lookupLocationIfEmtpyAndCoordinatesSpecified();
             dom.find('input').first().focus();
         });
     }
@@ -79,11 +88,11 @@
         isAdding = false;
         isSaved = false;
         setOptions(options);
-        initialize();
+        dom.dialog('option', { title: 'Editing subsite visit' });
         $.get('SubsiteVisit', { subsiteVisitIndex: index }, function (data) {
             render(data);
             dom.dialog('open');
-            lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
+            lookupLocationIfEmtpyAndCoordinatesSpecified();
             dom.find('input').first().focus();
         });
     }
@@ -92,32 +101,39 @@
         isAdding = false;
         isSaved = false;
         setOptions(options);
-        initialize();
+        dom.dialog('option', { title: 'Editing subsite visit' });
         $.get('SubsiteVisitForSiteVisit', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex }, function (data) {
             render(data);
             dom.dialog('open');
-            lookupStateAndCountyIfEmtpyAndCoordinatesSpecified();
+            lookupLocationIfEmtpyAndCoordinatesSpecified();
             dom.find('input').first().focus();
         });
     }
 
-    function lookupStateAndCountyIfEmtpyAndCoordinatesSpecified() {
-        if (IsNullOrEmpty(dom.find('.state select').val())
-            && IsNullOrEmpty(dom.find('.county input').val())
-            && !IsNullOrEmpty(dom.find('.latitude input').val())
+    function lookupLocationIfEmtpyAndCoordinatesSpecified() {
+        if (!IsNullOrEmpty(dom.find('.latitude input').val())
             && !IsNullOrEmpty(dom.find('.longitude input').val())) {
-            lookupStateAndCounty();
+            if (IsNullOrEmpty(dom.find('.country input').val())
+                || IsNullOrEmpty(dom.find('.state input').val())
+                || IsNullOrEmpty(dom.find('.county input').val())) {
+                lookupLocation();
+            }
         }
     };
 
-    function lookupStateAndCounty() {
+    function lookupLocation() {
         var location = new google.maps.LatLng(
-                dom.find('.latitude input').val(),
-                dom.find('.longitude input').val());
+            dom.find('.latitude input').attr('data-degrees'),
+            dom.find('.longitude input').attr('data-degrees'));
         GeocoderService.Lookup({ location: location }, function (result) {
             if (result.found) {
+                if (!IsNullOrEmpty(result.country)) {
+                    dom.find('.country input')
+                        .val(result.country)
+                        .trigger('change');
+                }
                 if (!IsNullOrEmpty(result.state)) {
-                    dom.find('.state select').val(result.state);
+                    dom.find('.state input').val(result.state);
                 }
                 if (!IsNullOrEmpty(result.county)) {
                     dom.find('.county input').val(result.county);
@@ -142,18 +158,22 @@
         }
     };
 
-    public.OpenCoordinatePicker = function () {
+    public.OpenCoordinatePicker = function (tripHasEnteredCoordinates) {
         function coordinatePickerClosed(result) {
             if (result.coordinatesPicked) {
                 if (coordinates.IsSpecified) {
                     var newCoordinates = ValueObjectService.CreateCoordinatesWithFormat(result.latitude, result.longitude, coordinates.InputFormat);
-                    dom.find('.latitude input').val(newCoordinates.Latitude);
-                    dom.find('.longitude input').val(newCoordinates.Longitude);
-                    lookupStateAndCounty();
+                    dom.find('.latitude input').val(newCoordinates.Latitude)
+                        .attr('data-degrees', newCoordinates.LatitudeDegrees);
+                    dom.find('.longitude input').val(newCoordinates.Longitude)
+                        .attr('data-degrees', newCoordinates.LongitudeDegrees);
                 } else {
-                    dom.find('.latitude input').val(result.latitude);
-                    dom.find('.longitude input').val(result.longitude);
+                    dom.find('.latitude input').val(result.latitude)
+                        .attr('data-degrees', result.latitude);
+                    dom.find('.longitude input').val(result.longitude)
+                        .attr('data-degrees', result.longitude);
                 }
+                lookupLocation();
             }
             public.Show();
         };
@@ -164,35 +184,36 @@
         var coordinates = ValueObjectService.CreateCoordinates(
             dom.find('.latitude input').val(),
             dom.find('.longitude input').val());
-        var options = { markerLoader: loadMapMarkers };
+        var options = { markerLoader: loadMapMarkers, hasMarkersToLoad: tripHasEnteredCoordinates };
         if (coordinates.IsSpecified && coordinates.IsValid) {
             options.coordinatesSpecified = true;
             options.latitude = coordinates.LatitudeDegrees;
             options.longitude = coordinates.LongitudeDegrees;
-        } else if (!IsNullOrEmpty(dom.find('.state select').val())) {
+        } else if (!IsNullOrEmpty(dom.find('.state input').val())) {
             options.addressSpecified = true;
-            options.state = dom.find('.state select').val();
+            options.state = dom.find('.state input').val();
             options.county = dom.find('.county input').val();
+            options.country = dom.find('.country input').val();
         }
         CoordinatePicker.Open(options, coordinatePickerClosed);
     };
 };
 
 var SubsiteVisitRemover = new function () {
-    var dom = $(
-"<div title='Removing subsite visit'>\
-    <div class='ui-placeholder-import-subsitevisit'></div>\
-</div>");
     var isSaved;
     var closeCallback;
 
-    var initialize = function () {
-        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
-            width: 320,
-            buttons: { 'Remove': remove, 'Cancel': function () { dom.dialog('close'); } }
+    var dom = $(
+"<div title='Removing subsite visit'>\
+    <div class='import-subsitevisit'></div>\
+</div>");
+    $(document).ready(function () {
+        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, 
+            position: 'center', width: 320,
+            buttons: { 'Remove': remove, 'Cancel': function () { dom.dialog('close'); } },
+            close: dispose
         });
-        dom.bind('dialogclose', dispose);
-    }
+    });
 
     var dispose = function () {
         dom.unbind('dialogclose');
@@ -200,7 +221,7 @@ var SubsiteVisitRemover = new function () {
     }
 
     var render = function (data) {
-        dom.find('.ui-placeholder-import-subsitevisit').replaceWith($(data));
+        dom.find('.import-subsitevisit').replaceWith($(data));
     }
 
     var remove = function () {
@@ -213,7 +234,6 @@ var SubsiteVisitRemover = new function () {
     this.Open = function (index, options) {
         isSaved = false;
         closeCallback = options.onClose;
-        initialize();
         $.get('RemoveSubsiteVisit', { subsiteVisitIndex: index }, function (data) {
             render(data);
             dom.dialog('open');
@@ -223,7 +243,6 @@ var SubsiteVisitRemover = new function () {
     this.OpenForSiteVisit = function (siteVisitIndex, subsiteVisitIndex, options) {
         isSaved = false;
         closeCallback = options.onClose;
-        initialize();
         $.get('RemoveSubsiteVisitForSiteVisit', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex }, function (data) {
             render(data);
             dom.dialog('open');

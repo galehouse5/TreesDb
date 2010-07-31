@@ -1,9 +1,4 @@
-﻿var User = new function () {
-
-
-}
-
-$(document).ready(function () {
+﻿$(document).ready(function () {
     $('input[type=submit]').button();
     $('a.button').button();
     if ($('input[type=text].input-validation-error, input[type=password].input-validation-error').length > 0) {

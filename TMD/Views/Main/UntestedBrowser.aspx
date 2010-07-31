@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="ui-content ui-content-emphasize" >
-        <h2>Your web browser is untested.</h2>
+        <h2>Your web browser is untested</h2>
         <p>
             Sorry but your web browser hasn't been tested with the Tree Measurement Database yet.  
             Can I suggest that you download one of the following web browsers instead?

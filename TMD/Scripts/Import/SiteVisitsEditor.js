@@ -5,18 +5,18 @@
         $.get('ValidateSiteVisits', {}, function (data) {
             isValidated = true;
             render(data);
-            if ($('.ui-placeholder-import-sitevisits').find('.field-validation-error').length == 0) {
+            if ($('.import-sitevisits').find('.field-validation-error').length == 0) {
                 window.location.href = href;
             }
         });
     };
 
     var render = function (data) {
-        $('.ui-placeholder-import-sitevisits').replaceWith(
-            $(data).find('.ui-placeholder-import-sitevisits'));
-        $('.ui-button-import-add-sitevisit').button();
-        $('.ui-button-import-edit').button({ icons: { primary: 'ui-icon-pencil'} });
-        $('.ui-button-import-remove').button({ icons: { primary: 'ui-icon-trash'} });
+        $('.import-sitevisits').replaceWith(
+            $(data).find('.import-sitevisits'));
+        $('.import-button-add-sitevisit').button();
+        $('.import-button-edit').button({ icons: { primary: 'ui-icon-pencil'} });
+        $('.import-button-remove').button({ icons: { primary: 'ui-icon-trash'} });
     };
 
     this.Refresh = function (refresh) {
@@ -35,12 +35,12 @@
 };
 
 $(document).ready(function () {
-    $('a.ui-direction-import-forward').click(function (eventObject) {
+    $('a.import-navigation-forward').click(function (eventObject) {
         var clickedAnchor = $(eventObject.target).closest('a');
         SiteVisitsEditor.ValidateAndChangeLocation(clickedAnchor.attr('href'));
         return false;
     });
-    $('.ui-button-import-add-sitevisit').button();
-    $('.ui-button-import-edit').button({ icons: { primary: 'ui-icon-pencil'} });
-    $('.ui-button-import-remove').button({ icons: { primary: 'ui-icon-trash'} });
+    $('.import-button-add-sitevisit').button();
+    $('.import-button-edit').button({ icons: { primary: 'ui-icon-pencil'} });
+    $('.import-button-remove').button({ icons: { primary: 'ui-icon-trash'} });
 });

@@ -71,15 +71,12 @@ namespace TMD.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateTripMeasurer(ImportModel model, bool validate)
+        public ActionResult CreateTripMeasurer(ImportModel model)
         {
             if (model.Trip.Measurers.Count < 3)
             {
-                if (validate)
-                {
-                    model.Trip.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
-                        .CopyToModelState(ModelState, "Trip");
-                }
+                model.Trip.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
+                    .CopyToModelState(ModelState, "Trip");
                 model.Trip.AddMeasurer();
                 if (model.Trip.ValidateRegardingPersistence().IsValid)
                 {
@@ -90,16 +87,13 @@ namespace TMD.Controllers
         }
 
         [HttpPost]
-        public ActionResult RemoveTripMeasurer(ImportModel model, bool validate)
+        public ActionResult RemoveTripMeasurer(ImportModel model)
         {
             if (model.Trip.Measurers.Count > 1)
             {
                 model.Trip.Measurers.RemoveAt(model.Trip.Measurers.Count - 1);
-                if (validate)
-                {
-                    model.Trip.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
-                        .CopyToModelState(ModelState, "Trip");
-                }
+                model.Trip.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
+                    .CopyToModelState(ModelState, "Trip");
                 if (model.Trip.ValidateRegardingPersistence().IsValid)
                 {
                     model.SaveTrip();

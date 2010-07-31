@@ -3,12 +3,13 @@
                    assembly="TMD.Model"
                    namespace="TMD.Model">
 
-  <class name="TMD.Model.Locations.Country" table="Locations.Countries">
+  <class name="TMD.Model.Locations.Country" table="Locations.Countries" mutable="false">
     <cache usage="read-only" />
     <id name="Id">
       <generator class="native" />
     </id>
-    <property name="Code" />
+    <property name="DoubleLetterCode" />
+    <property name="TripleLetterCode" />
     <property name="Name" />
     <component name="CoordinateBounds" class="CoordinateBounds">
       <component name="NE" class="Coordinates">
@@ -34,12 +35,13 @@
     </component>
   </class>
   
-  <class name="TMD.Model.Locations.State" table="Locations.States">
+  <class name="TMD.Model.Locations.State" table="Locations.States" mutable="false">
     <cache usage="read-only" />
     <id name="Id">
       <generator class="native" />
     </id>
-    <property name="Code" />
+    <property name="DoubleLetterCode" />
+    <property name="TripleLetterCode" />
     <many-to-one name="Country" column="CountryId" cascade="none"  />
     <property name="Name" />
     <component name="CoordinateBounds" class="CoordinateBounds">

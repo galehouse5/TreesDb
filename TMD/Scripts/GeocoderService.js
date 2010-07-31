@@ -52,7 +52,6 @@
         }
 
         var geocoderRequest = {};
-        geocoderRequest.region = 'US';
 
         // build request location
         if (options.location != null) {
@@ -73,6 +72,12 @@
                     address += ', ';
                 }
                 address += options.state;
+            }
+            if (!IsNullOrEmpty(options.country)) {
+                if (address.length > 0) {
+                    address += ', ';
+                }
+                address += options.country;
             }
             if (!IsNullOrEmpty(address)) {
                 geocoderRequest.address = address;

@@ -3,7 +3,7 @@
                    assembly="TMD.Model"
                    namespace="TMD.Model">
   
-  <class name="TMD.Model.Trees.KnownTree" table="Trees.KnownTrees">
+  <class name="TMD.Model.Trees.KnownTree" table="Trees.KnownTrees" mutable="false">
     <id name="Id">
       <generator class="native" />
     </id>

@@ -2,7 +2,16 @@
 
 <asp:Content ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" rel="stylesheet" href="/Styles/Import.css" />
+<script type="text/javascript" src="/Scripts/ValueObjectService.js"></script>
+<script type="text/javascript" src="/Scripts/LocationsService.js"></script>
 <script type="text/javascript" src="/Scripts/Import/Initialize.js"></script>
+<script type="text/javascript" src="/Scripts/Import/SiteVisitEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/SubsiteVisitEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/TreeMeasurementEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/CoordinatePicker.js"></script>
+<%= Html.LoadGoogleMapsApiV3() %>
+<script type="text/javascript" src="/Scripts/GeocoderService.js"></script>
+<script type="text/javascript" src="/Scripts/MapMarkerService.js"></script>
 <asp:ContentPlaceHolder ID="HeadContent" runat="server" ></asp:ContentPlaceHolder>
 </asp:Content>
 

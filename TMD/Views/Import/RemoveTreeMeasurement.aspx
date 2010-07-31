@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
-<div class='ui-placeholder-import-treemeasurement'>
+<div class='import-treemeasurement'>
     <p>
         Are you sure you want to remove this tree measurement?
     </p>
@@ -9,8 +9,8 @@
             <div class="ui-helper-clearfix"></div>
         </div>
         <div class="ui-content-import-summary ui-widget-content ui-corner-all">
-            <% if (Model.SelectedTreeMeasurement.TreeNameSpecified) { %>
-               Name : <%= Model.SelectedTreeMeasurement.TreeName%>
+            <% if (Model.SelectedTreeMeasurement.TreeNameOrNumberSpecified) { %>
+               Name : <%= Model.SelectedTreeMeasurement.TreeNameOrNumber%>
                <br />
             <% } %>
             Common name: <%= Model.SelectedTreeMeasurement.CommonName%>

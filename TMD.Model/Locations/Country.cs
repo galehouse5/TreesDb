@@ -15,11 +15,30 @@ namespace TMD.Model.Locations
 
         public virtual int Id { get; private set; }
 
-        private string m_Code;
+        private string m_DoubleLetterCode;
+        public virtual string DoubleLetterCode
+        {
+            get { return m_DoubleLetterCode; }
+            private set { m_DoubleLetterCode = (value ?? string.Empty).Trim().ToUpper(); }
+        }
+
+        private string m_TripleLetterCode;
+        public virtual string TripleLetterCode
+        {
+            get { return m_TripleLetterCode; }
+            private set { m_TripleLetterCode = (value ?? string.Empty).Trim().ToUpper(); }
+        }
+
         public virtual string Code
         {
-            get { return m_Code; }
-            private set { m_Code = (value ?? string.Empty).Trim().ToUpper(); }
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(DoubleLetterCode))
+                {
+                    return DoubleLetterCode;
+                }
+                return TripleLetterCode;
+            }
         }
 
         private string m_Name;
@@ -30,5 +49,10 @@ namespace TMD.Model.Locations
         }
 
         public virtual CoordinateBounds CoordinateBounds { get; private set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

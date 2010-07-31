@@ -11,6 +11,22 @@ namespace TMD.UnitTests.Model
     public class ValueObjects
     {
         [TestMethod]
+        public void ExtendCoordinateBounds()
+        {
+            CoordinateBounds cb1 = CoordinateBounds.Null();
+            Assert.AreEqual(cb1.NE, Coordinates.Null());
+            Assert.AreEqual(cb1.SW, Coordinates.Null());
+            Assert.AreEqual(cb1.Center, Coordinates.Null());
+            CoordinateBounds cb2 = CoordinateBounds.Null()
+                .Extend(Coordinates.Create(50, 50))
+                .Extend(Coordinates.Create(25, 75))
+                .Extend(Coordinates.Create(75, 25));
+            Assert.AreEqual(cb2.NE, Coordinates.Create(75, 75));
+            Assert.AreEqual(cb2.SW, Coordinates.Create(25, 25));
+            Assert.AreEqual(cb2.Center, Coordinates.Create(50, 50));
+        }
+
+        [TestMethod]
         public void CreateDistance()
         {
             Distance d = Distance.Create("7' 10\"");

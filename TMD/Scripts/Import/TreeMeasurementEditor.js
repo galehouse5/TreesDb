@@ -1,5 +1,8 @@
 ﻿var TreeMeasurementEditor = new function () {
     var public = this;
+    var isSaved, isAdding;
+    var closeCallback;
+
     var dom = $(
 "<div>\
     <form>\
@@ -23,22 +26,20 @@
         </div>\
     </form>\
 </div>");
-    var isSaved, isAdding;
-    var closeCallback;
-
-    function initialize() {
-        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, width: 440,
+    $(document).ready(function () {
+        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
+            width: 440, position: 'center',
             buttons: { 'Save': save, 'Cancel': function () { dom.dialog('close'); } }
         });
-        if (isAdding) {
-            dom.dialog({ title: 'Adding tree measurement' });
-        } else {
-            dom.dialog({ title: 'Editing tree measurement' });
-        }
         dom.find('.tabs').tabs({ selected: 0 }).bind('tabsselect', function () {
             setTimeout(focusFirstVisibleErrorOrInput, 1);
         });
         dom.bind('dialogclose', dispose);
+    });
+
+
+    function initialize() {
+        dom.dialog('option', 'title', isAdding ? 'Adding tree measurement' : 'Editing tree measurement');
     }
 
     function focusFirstVisibleErrorOrInput() {
@@ -99,8 +100,6 @@
         if (isAdding && !isSaved) {
             $.delete_('TreeMeasurement');
         }
-        dom.find('.tabs').unbind('tabsselect');
-        dom.unbind('dialogclose');
         closeCallback(isSaved);
     }
 
@@ -113,24 +112,23 @@
         dom.find('div.placeholder-crown').html(newDom.find('div.placeholder-crown').html());
         dom.find('div.placeholder-status').html(newDom.find('div.placeholder-status').html());
         dom.find('div.placeholder-misc').html(newDom.find('div.placeholder-misc').html());
-        dom.find('.coordinates-entered input').bind('change', (function () {
-            dom.find('.coordinates-entered input').attr('checked') ?
-                    dom.find('.coordinates-entered-visible').show() :
-                    dom.find('.coordinates-entered-visible').hide();
-        }));
-        dom.find('.coordinates-entered input').trigger('change');
-        dom.find('.treename-entered input').bind('change', (function () {
-            dom.find('.treename-entered input').attr('checked') ?
-                    dom.find('.treename-entered-visible').show() :
-                    dom.find('.treename-entered-visible').hide();
-        }));
-        dom.find('.treename-entered input').trigger('change');
-        dom.find('.measured input').datepicker({ onClose: function () { dom.find('.measured input').focus(); } });
+        dom.find('.coordinatepicker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
+        dom.find('.enterpublicaccess').buttonset();
+        dom.find('.entercoordinates input')
+            .bind('change', (function () {
+                if (dom.find('.entercoordinates input').attr('checked')) {
+                    dom.find('.entercoordinates-visible').show();
+                    dom.find('.entercoordinates-visible input').first().focus();
+                } else {
+                    dom.find('.entercoordinates-visible').hide();
+                }
+            }))
+            .trigger('change')
+            .button();
         dom.find('.common-name input').autocomplete({ source: "AutocompleteCommonName", minLength: 2, select: function (event, ui) {
             dom.find('.scientific-name input').val(ui.item.scientificName);
-        } 
+        }
         });
-        dom.find('.coordinate-picker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
         dom.find('.height-detailed input').bind('change', (function () {
             if (dom.find('.height-detailed input').attr('checked')) {
                 dom.find('.height-detailed-visible').hide();
@@ -236,7 +234,7 @@
         dom.dialog('close');
     };
 
-    public.OpenCoordinatePicker = function () {
+    public.OpenCoordinatePicker = function (tripHasEnteredCoordinates) {
         function coordinatePickerClosed(result) {
             if (result.coordinatesPicked) {
                 if (coordinates.IsSpecified) {
@@ -257,7 +255,7 @@
         var coordinates = ValueObjectService.CreateCoordinates(
             dom.find('.latitude input').val(),
             dom.find('.longitude input').val());
-        var options = { markerLoader: loadMapMarkers };
+        var options = { markerLoader: loadMapMarkers, hasMarkersToLoad: tripHasEnteredCoordinates };
         if (coordinates.IsSpecified) {
             options.coordinatesSpecified = true;
             options.latitude = coordinates.LatitudeDegrees;
@@ -268,24 +266,23 @@
 };
 
 var TreeMeasurementRemover = new function () {
+    var isSaved;
+    var closeCallback;
+
     var dom = $(
 "<div title='Removing tree measurement'>\
     <div class='placeholder'>\
     </div>\
 </div>");
-    var isSaved;
-    var closeCallback;
-
-    function initialize() {
+    $(document).ready(function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
             width: 320,
-            buttons: { 'Remove': remove, 'Cancel': function () { dom.dialog('close'); } }
+            buttons: { 'Remove': remove, 'Cancel': function () { dom.dialog('close'); } },
+            close: dispose
         });
-        dom.bind('dialogclose', dispose);
-    }
+    });
 
     function dispose() {
-        dom.unbind('dialogclose');
         closeCallback(isSaved);
     }
 
@@ -303,7 +300,6 @@ var TreeMeasurementRemover = new function () {
     this.Open = function (siteVisitIndex, subsiteVisitIndex, treeMeasurementIndex, callback) {
         isSaved = false;
         closeCallback = callback;
-        initialize();
         $.get('RemoveTreeMeasurement', { siteVisitIndex: siteVisitIndex, subsiteVisitIndex: subsiteVisitIndex, treeMeasurementIndex: treeMeasurementIndex }, function (data) {
             render(data);
             dom.dialog('open');

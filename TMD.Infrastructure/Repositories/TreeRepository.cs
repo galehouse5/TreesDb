@@ -25,7 +25,6 @@ namespace TMD.Infrastructure.Repositories
             return m_AllKnownTrees;
         }
 
-
         private StringComparisonExpression m_AcceptedSymbolComparisonExpression = StringComparisonExpression.Create(
             InfrastructureRegistry.RepositorySettings.KnownTreeAcceptedSymbolComparisonExpression);
         private StringComparisonExpression m_CommonNameComparisonExpression = StringComparisonExpression.Create(

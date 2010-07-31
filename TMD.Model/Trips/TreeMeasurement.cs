@@ -112,24 +112,25 @@ namespace TMD.Model.Trips
 
         #region General information
 
-        public virtual bool TreeNameSpecified { get; set; }
+        [DisplayName("Assign a name or number to this tree")]
+        public virtual bool TreeNameOrNumberSpecified { get; set; }
 
         private string m_TreeName;
-        [DisplayName("*Tree name:")]
+        [DisplayName("*Name or number:")]
         [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Tree name must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement General")]
-        public virtual string TreeName
+        public virtual string TreeNameOrNumber
         {
             get { return m_TreeName; }
             set { m_TreeName = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
         [SelfValidation(Ruleset = "Screening")]
-        protected virtual void validateTreeNameIsSpecified(ValidationResults results)
+        protected virtual void validateTreeNameOrNumberIsSpecified(ValidationResults results)
         {
-            if (TreeNameSpecified && string.IsNullOrWhiteSpace(TreeName))
+            if (TreeNameOrNumberSpecified && string.IsNullOrWhiteSpace(TreeNameOrNumber))
             {
                 Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult result = new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult(
-                    "Tree name must be specified.", TreeName, "TreeName", "TreeMeasurement General", null);
+                    "Tree name or number must be specified.", TreeNameOrNumber, "TreeNameOrNumber", "TreeMeasurement General", null);
                 results.AddResult(result);
             }
         }
@@ -154,11 +155,6 @@ namespace TMD.Model.Trips
             set { m_ScientificName = (value ?? string.Empty).Trim().ToSentenceCase(); }
         }
 
-        [DisplayName("*Measured:")]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
-        [NotNullValidator(MessageTemplate = "Measurement date must be specified.", Ruleset = "Screening", Tag = "TreeMeasurement General")]
-        public virtual DateTime? Measured { get; set; }
-
         private Coordinates m_Coordinates;
         [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement General")]
         [SpecifiedValidator(MessageTemplate = "You must specify coordinates for this measurement or its containing subsite.", Ruleset = "Import", Tag = "TreeMeasurement General")]
@@ -171,10 +167,6 @@ namespace TMD.Model.Trips
                     if (SubsiteVisit.CoordinatesEntered && SubsiteVisit.Coordinates.IsSpecified)
                     {
                         m_Coordinates = SubsiteVisit.Coordinates;
-                    }
-                    else
-                    {
-                        m_Coordinates = Coordinates.Null();
                     }
                 }
                 return m_Coordinates;
@@ -195,7 +187,18 @@ namespace TMD.Model.Trips
         }
 
         public virtual bool CoordinatesCalculated { get; set; }
+    
+        [DisplayName("Make public")]
+        public virtual bool MakeCoordinatesPublic { get; set; }
 
+        [DisplayName("Keep private")]
+        public virtual bool KeepCoordinatesPrivate
+        {
+            get { return !MakeCoordinatesPublic; }
+            set { MakeCoordinatesPublic = !value; }
+        }
+
+        [DisplayName("Enter coordinates for this tree")]
         public virtual bool CoordinatesEntered
         {
             get { return !CoordinatesCalculated; }
@@ -283,7 +286,14 @@ namespace TMD.Model.Trips
         public virtual string LaserBrand
         {
             get { return m_LaserBrand; }
-            set { m_LaserBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
+            set 
+            { 
+                m_LaserBrand = (value ?? string.Empty).Trim().ToTitleCase();
+                if (SubsiteVisit != null && SubsiteVisit.SiteVisit != null && SubsiteVisit.SiteVisit.Trip != null)
+                {
+                    SubsiteVisit.SiteVisit.Trip.DefaultLaserBrand = m_LaserBrand;
+                }
+            }
         }
 
         private string m_ClinometerBrand;
@@ -292,7 +302,14 @@ namespace TMD.Model.Trips
         public virtual string ClinometerBrand
         {
             get { return m_ClinometerBrand; }
-            set { m_ClinometerBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
+            set 
+            { 
+                m_ClinometerBrand = (value ?? string.Empty).Trim().ToTitleCase();
+                if (SubsiteVisit != null && SubsiteVisit.SiteVisit != null && SubsiteVisit.SiteVisit.Trip != null)
+                {
+                    SubsiteVisit.SiteVisit.Trip.DefaultClinometerBrand = m_ClinometerBrand;
+                }
+            }
         }
 
         private string m_HeightComments;
@@ -505,12 +522,11 @@ namespace TMD.Model.Trips
         {
             return new TreeMeasurement()
             {
-                TreeName = string.Empty,
-                TreeNameSpecified = false,
+                TreeNameOrNumber = string.Empty,
+                TreeNameOrNumberSpecified = false,
                 TreeNumber = 0,
                 CommonName = string.Empty,
                 ScientificName = string.Empty,
-                Measured = ssv.SiteVisit.Trip.Date,
                 Status = TreeStatus.NotSpecified,
                 HealthStatus = string.Empty,
                 AgeClass = TreeAgeClass.NotSpecified,
@@ -523,11 +539,11 @@ namespace TMD.Model.Trips
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),
                 HeightMeasurementType = string.Empty,
-                LaserBrand = string.Empty,
-                ClinometerBrand = string.Empty,
+                LaserBrand = ssv.SiteVisit.Trip.DefaultLaserBrand,
+                ClinometerBrand = ssv.SiteVisit.Trip.DefaultClinometerBrand,
                 HeightComments = string.Empty,
                 GirthBreastHeight = Distance.Null(),
-                GirthMeasurementHeight = Distance.Null(),
+                GirthMeasurementHeight = Distance.Create(4.5f),
                 GirthRootCollarHeight = Distance.Null(),
                 GirthComments = string.Empty,
                 MaximumCrownSpread = Distance.Null(),
@@ -549,7 +565,8 @@ namespace TMD.Model.Trips
                 LandformIndex = null,
                 TerrainComments = string.Empty,
                 CoordinatesCalculated = true,
-                SubsiteVisit = ssv
+                SubsiteVisit = ssv,
+                MakeCoordinatesPublic = true
             };
         }
     }

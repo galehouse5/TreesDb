@@ -24,16 +24,20 @@ namespace TMD.UnitTests.Model
         public void FindStatesByCountryCode()
         {
             IList<State> states = LocationService.FindStatesByCountryCode("US");
-            Assert.IsTrue(states.Count == 48);
+            Assert.IsTrue(states.Count == 57);
+            states = LocationService.FindStatesByCountryCode("USA");
+            Assert.IsTrue(states.Count == 57);
+            states = LocationService.FindStatesByCountryCode("United States");
+            Assert.IsTrue(states.Count == 57);
             Assert.IsNotNull(states[0].CoordinateBounds);
         }
 
         [TestMethod]
         public void FindStateByCountryCodeAndCode()
         {
-            State oh = LocationService.FindStateByCountryCodeAndCode("US", "OH");
+            State oh = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             Assert.IsNotNull(oh);
-            State io = LocationService.FindStateByCountryCodeAndCode("US", "IO");
+            State io = LocationService.FindStateByCountryAndStateCodes("US", "IO");
             Assert.IsNull(io);
         }
 
