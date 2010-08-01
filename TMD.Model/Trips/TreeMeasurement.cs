@@ -119,6 +119,13 @@ namespace TMD.Model.Trips
 
         public virtual SubsiteVisit SubsiteVisit { get; private set; }
 
+        public virtual void SetTripDefaults()
+        {
+            SubsiteVisit.SiteVisit.Trip.SetPrivatePropertyValue<TreeHeightMeasurementMethod>("DefaultHeightMeasurementMethod", HeightMeasurementMethod);
+            SubsiteVisit.SiteVisit.Trip.SetPrivatePropertyValue<string>("DefaultLaserBrand", LaserBrand);
+            SubsiteVisit.SiteVisit.Trip.SetPrivatePropertyValue<string>("DefaultClinometerBrand", ClinometerBrand);
+        }
+
         /// <summary>
         /// Four digit number unique in the scope of the subsite.
         /// </summary>
@@ -270,20 +277,8 @@ namespace TMD.Model.Trips
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
         public virtual Distance Height { get; set; }
 
-        private TreeHeightMeasurementMethod m_HeightMeasurementMethod;
         [DisplayName("Measurement method:")]
-        public virtual TreeHeightMeasurementMethod HeightMeasurementMethod 
-        {
-            get { return m_HeightMeasurementMethod; }
-            set
-            {
-                m_HeightMeasurementMethod = value;
-                if (SubsiteVisit != null && SubsiteVisit.SiteVisit != null && SubsiteVisit.SiteVisit.Trip != null)
-                {
-                    SubsiteVisit.SiteVisit.Trip.DefaultHeightMeasurementMethod = m_HeightMeasurementMethod;
-                }
-            }
-        }
+        public virtual TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
 
         [DisplayName("Enter distance and angle measurements")]
         public virtual bool IncludeHeightDistanceAndAngleMeasurements { get; set; }
@@ -319,14 +314,7 @@ namespace TMD.Model.Trips
         public virtual string LaserBrand
         {
             get { return m_LaserBrand; }
-            set 
-            { 
-                m_LaserBrand = (value ?? string.Empty).Trim().ToTitleCase();
-                if (SubsiteVisit != null && SubsiteVisit.SiteVisit != null && SubsiteVisit.SiteVisit.Trip != null)
-                {
-                    SubsiteVisit.SiteVisit.Trip.DefaultLaserBrand = m_LaserBrand;
-                }
-            }
+            set { m_LaserBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
         private string m_ClinometerBrand;
@@ -335,14 +323,7 @@ namespace TMD.Model.Trips
         public virtual string ClinometerBrand
         {
             get { return m_ClinometerBrand; }
-            set 
-            { 
-                m_ClinometerBrand = (value ?? string.Empty).Trim().ToTitleCase();
-                if (SubsiteVisit != null && SubsiteVisit.SiteVisit != null && SubsiteVisit.SiteVisit.Trip != null)
-                {
-                    SubsiteVisit.SiteVisit.Trip.DefaultClinometerBrand = m_ClinometerBrand;
-                }
-            }
+            set { m_ClinometerBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
         private string m_HeightComments;

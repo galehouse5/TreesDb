@@ -22,6 +22,13 @@ namespace TMD.Model.Trips
 
         public virtual SiteVisit SiteVisit { get; private set; }
 
+        public virtual void SetTripDefaults()
+        {
+            SiteVisit.Trip.SetPrivatePropertyValue<Country>("DefaultCountry", Country);
+            SiteVisit.Trip.SetPrivatePropertyValue<State>("DefaultState", State);
+            SiteVisit.Trip.SetPrivatePropertyValue<string>("DefaultCounty", County);
+        }
+
         private string m_Name;
         [DisplayName("*Subsite name:")]
         [StringNotNullOrWhitespaceValidator(MessageTemplate = "Subsite name must be specified.", Ruleset = "Screening", Tag = "SubsiteVisit")]
@@ -122,37 +129,13 @@ namespace TMD.Model.Trips
             }
         }
 
-        private Country m_Country;
         [DisplayName("*Subsite country:")]
         [NotNullValidator(MessageTemplate = "Subsite country must be specified.", Ruleset = "Screening", Tag = "SubsiteVisit")]
-        public virtual Country Country 
-        {
-            get { return m_Country; }
-            set
-            {
-                m_Country = value;
-                if (SiteVisit != null && SiteVisit.Trip != null)
-                {
-                    SiteVisit.Trip.SetPrivatePropertyValue<Country>("DefaultCountry", value);
-                }
-            }
-        }
+        public virtual Country Country { get; set; }
 
-        private State m_State;
         [DisplayName("*Subsite state:")]
         [NotNullValidator(MessageTemplate = "Subsite state must be specified.", Ruleset = "Screening", Tag = "SubsiteVisit")]
-        public virtual State State 
-        {
-            get { return m_State; }
-            set
-            {
-                m_State = value;
-                if (SiteVisit != null && SiteVisit.Trip != null)
-                {
-                    SiteVisit.Trip.SetPrivatePropertyValue<State>("DefaultState", value);
-                }
-            }
-        }
+        public virtual State State { get; set; }
 
         private string m_County;
         [DisplayName("*Subsite county:")]
@@ -245,13 +228,13 @@ namespace TMD.Model.Trips
                 Name = string.Empty,
                 CoordinatesEntered = sv.CoordinatesEntered && sv.Coordinates.IsSpecified && sv.Coordinates.IsValid,
                 Coordinates = sv.CoordinatesEntered && sv.Coordinates.IsSpecified && sv.Coordinates.IsValid ? sv.Coordinates : Coordinates.Null(),
-                County = string.Empty,
                 OwnershipType = string.Empty,
                 OwnershipContactInfo = string.Empty,
                 Comments = string.Empty,
                 TreeMeasurements = new List<TreeMeasurement>(),
                 Country = sv.Trip.DefaultCountry,
                 State = sv.Trip.DefaultState,
+                County = sv.Trip.DefaultCounty,
                 SiteVisit = sv,
                 MakeOwnershipContactInfoPublic = true
             };

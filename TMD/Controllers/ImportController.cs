@@ -293,6 +293,7 @@ namespace TMD.Controllers
                 .CopyToModelState(ModelState, "SelectedSubsiteVisit");
             if (ModelState.IsValid)
             {
+                model.SelectedSubsiteVisit.SetTripDefaults();
                 model.SaveTrip();
             }
             return View("SubsiteVisit", model);
@@ -441,6 +442,7 @@ namespace TMD.Controllers
             results.CopyToModelState(ModelState, "SelectedTreeMeasurement");
             if (ModelState.IsValid)
             {
+                model.SelectedTreeMeasurement.SetTripDefaults();
                 model.SaveTrip();
             }
             return View("TreeMeasurement", model);

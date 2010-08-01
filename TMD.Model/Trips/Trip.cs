@@ -129,19 +129,26 @@ namespace TMD.Model.Trips
         public virtual string DefaultClinometerBrand
         {
             get { return m_DefaultClinometerBrand; }
-            set { m_DefaultClinometerBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
+            private set { m_DefaultClinometerBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
         private string m_DefaultLaserBrand;
         public virtual string DefaultLaserBrand
         {
             get { return m_DefaultLaserBrand; }
-            set { m_DefaultLaserBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
+            private set { m_DefaultLaserBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
-        public virtual TreeHeightMeasurementMethod DefaultHeightMeasurementMethod { get; set; }
+        public virtual TreeHeightMeasurementMethod DefaultHeightMeasurementMethod { get; private set; }
         public virtual Country DefaultCountry { get; private set; }
         public virtual State DefaultState { get; private set; }
+
+        private string m_DefaultCounty;
+        public virtual string DefaultCounty
+        {
+            get { return m_DefaultCounty; }
+            private set { m_DefaultCounty = (value ?? string.Empty).Trim().ToTitleCase(); }
+        }
 
         public virtual SiteVisit AddSiteVisit()
         {

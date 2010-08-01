@@ -126,7 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Mappings\Locations.hbm.xml" />
-    <EmbeddedResource Include="Mappings\Trips.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Trips.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Mappings\Users.hbm.xml" />
