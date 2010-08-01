@@ -7,10 +7,10 @@ using TMD.Extensions;
 
 namespace TMD.Controllers
 {
-    [SetDefaultControllerAndActionToCurrentControllerAndActionFilter]
     public class MainController : Controller
     {
         [HttpGet]
+        [SetDefaultControllerAndActionToCurrentControllerAndActionFilter]
         public ActionResult Index()
         {
             return View();

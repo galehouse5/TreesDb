@@ -201,7 +201,6 @@ namespace TMD.UnitTests.Model
             tm1.LaserBrand = "tree measurement 1 laser brand";
             tm1.MaximumCrownSpread = Distance.Create(90);
             tm1.MaximumLimbLength = Distance.Create(100);
-            Assert.IsTrue(tm1.Measured > DateTime.Now.Subtract(TimeSpan.FromDays(1)));
             tm1.NumberOfTrunks = 10;
             tm1.PositionMeasurementType = TreePositionMeasurementType.Map;
             tm1.ScientificName = "tree measurement 1 scientific name";
@@ -249,7 +248,6 @@ namespace TMD.UnitTests.Model
             tm2.LaserBrand = "tree measurement 2 laser brand";
             tm2.MaximumCrownSpread = Distance.Create(90);
             tm2.MaximumLimbLength = Distance.Create(100);
-            Assert.IsTrue(tm1.Measured > DateTime.Now.Subtract(TimeSpan.FromDays(1)));
             tm2.NumberOfTrunks = 10;
             tm2.PositionMeasurementType = TreePositionMeasurementType.Map;
             tm2.ScientificName = "tree measurement 2 scientific name";

@@ -18,7 +18,7 @@ namespace TMD.Model
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance DistanceTop { get; private set; }
 
-        [DisplayName("Angle to top:")]
+        [DisplayName("Angle top:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Angle AngleTop { get; private set; }
 
@@ -26,7 +26,7 @@ namespace TMD.Model
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Distance DistanceBottom { get; private set; }
 
-        [DisplayName("Angle to bottom:")]
+        [DisplayName("Angle bottom:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
         public Angle AngleBottom { get; private set; }
 

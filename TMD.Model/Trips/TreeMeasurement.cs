@@ -198,7 +198,7 @@ namespace TMD.Model.Trips
             set { MakeCoordinatesPublic = !value; }
         }
 
-        [DisplayName("Enter coordinates for this tree")]
+        [DisplayName("Enter coordinates")]
         public virtual bool CoordinatesEntered
         {
             get { return !CoordinatesCalculated; }
@@ -240,39 +240,35 @@ namespace TMD.Model.Trips
 
         #region Height information
 
-        private Distance m_Height;
         [DisplayName("Height:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Height")]
-        public virtual Distance Height
-        {
-            get
-            {
-                if (DetailedHeightMeasurements)
-                {
-                    m_Height = HeightMeasurements.Height;
-                }
-                return m_Height;
-            }
-            set { m_Height = value; }
-        }
+        public virtual Distance Height { get; set; }
 
-        public virtual bool DetailedHeightMeasurements { get; set; }
-
-        public virtual bool SimpleHeightMeasurements
-        {
-            get { return !DetailedHeightMeasurements; }
-            set { DetailedHeightMeasurements = !value; }
-        }
+        [DisplayName("Enter distance and angle measurements")]
+        public virtual bool IncludeHeightDistanceAndAngleMeasurements { get; set; }
 
         [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Height")]
         public virtual HeightMeasurements HeightMeasurements { get; set; }
+
+        [SelfValidation(Ruleset = "Screening")]
+        public virtual void CheckHeightDistanceAngeAngleMeasurementsAreIncluded(ValidationResults results)
+        {
+            if (IncludeHeightDistanceAndAngleMeasurements)
+            {
+                if (!HeightMeasurements.IsSpecified)
+                {
+                    results.AddResult(new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult(
+                        "You must specify enough distance and angle measurements to calculate a height.", Coordinates.Latitude, "HeightMeasurements.Height", "TreeMeasurement", null));
+                }
+            }
+        }
 
         [DisplayName("Base crown height:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Height")]
         public virtual Distance BaseCrownHeight { get; set; }
 
         private string m_HeightMeasurementType;
-        [DisplayName("Height measurement type:")]
+        [DisplayName("Measurement type:")]
         [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Height measurement type must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement Height")]
         public virtual string HeightMeasurementType
         {
@@ -325,15 +321,15 @@ namespace TMD.Model.Trips
 
         #region Girth information
 
-        [DisplayName("Girth breast height:")]
+        [DisplayName("Girth:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Girth")]
         public virtual Distance GirthBreastHeight { get; set; }
 
-        [DisplayName("Girth measurement height:")]
+        [DisplayName("Measurement height:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Girth")]
         public virtual Distance GirthMeasurementHeight { get; set; }
 
-        [DisplayName("Girth root collar height:")]
+        [DisplayName("Root collar height:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Girth")]
         public virtual Distance GirthRootCollarHeight { get; set; }
 
@@ -355,12 +351,12 @@ namespace TMD.Model.Trips
         [RangeValidator(0, RangeBoundaryType.Inclusive, int.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Number of trunks must be non-negative.", Ruleset = "Screening", Tag = "TreeMeasurement Trunk")]
         public virtual int? NumberOfTrunks { get; set; }
 
-        [DisplayName("Trunk volume:")]
+        [DisplayName("Volume:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Trunk")]
         public virtual Volume TrunkVolume { get; set; }
 
         private string m_TrunkVolumeCalculationMethod;
-        [DisplayName("Trunk volume calculation method:")]
+        [DisplayName("Volume calculation method:")]
         [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Trunk volume calculation method must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement Trunk")]
         public virtual string TrunkVolumeCalculationMethod
         {
@@ -381,7 +377,7 @@ namespace TMD.Model.Trips
 
         #region Crown information
 
-        [DisplayName("Max crown spread:")]
+        [DisplayName("Crown spread:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Crown")]
         public virtual Distance MaximumCrownSpread { get; set; }
 
@@ -390,7 +386,7 @@ namespace TMD.Model.Trips
         public virtual Distance AverageCrownSpread { get; set; }
 
         private string m_CrownSpreadMeasurementMethod;
-        [DisplayName("Spread measurement method:")]
+        [DisplayName("Measurement method:")]
         [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Crown spread measurement method must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement Crown")]
         public virtual string CrownSpreadMeasurementMethod
         {
@@ -402,7 +398,7 @@ namespace TMD.Model.Trips
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Crown")]
         public virtual Distance MaximumLimbLength { get; set; }
 
-        [DisplayName("Crown volume:")]
+        [DisplayName("Volume:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement Crown")]
         public virtual Volume CrownVolume { get; set; }
 
@@ -566,7 +562,8 @@ namespace TMD.Model.Trips
                 TerrainComments = string.Empty,
                 CoordinatesCalculated = true,
                 SubsiteVisit = ssv,
-                MakeCoordinatesPublic = true
+                MakeCoordinatesPublic = true,
+                IncludeHeightDistanceAndAngleMeasurements = false
             };
         }
     }

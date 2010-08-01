@@ -9,7 +9,7 @@
 <script type="text/javascript" src="/Scripts/Import/SubsiteVisitEditor.js"></script>
 <script type="text/javascript" src="/Scripts/Import/TreeMeasurementEditor.js"></script>
 <script type="text/javascript" src="/Scripts/Import/CoordinatePicker.js"></script>
-<%= Html.LoadGoogleMapsApiV3() %>
+<%= Html.GoogleMapsApiV3ScriptReference() %>
 <script type="text/javascript" src="/Scripts/GeocoderService.js"></script>
 <script type="text/javascript" src="/Scripts/MapMarkerService.js"></script>
 <asp:ContentPlaceHolder ID="HeadContent" runat="server" ></asp:ContentPlaceHolder>

@@ -38,13 +38,13 @@
                 </div>
                 <div class='ui-helper-clearfix'></div>
             </div>
-            <div class="ui-form-row entercoordinates">
+            <div class="ui-form-row EnterCoordinates entrybutton">
                 <%= Html.LabelFor(m => m.SelectedSubsiteVisit.CoordinatesEntered)%>
                 <%= Html.CheckBoxFor(m => m.SelectedSubsiteVisit.CoordinatesEntered)%>
-                <a href="javascript:SubsiteVisitEditor.OpenCoordinatePicker(<%= Model.Trip.HasEnteredCoordinates ? "true" : "false" %>)" class="coordinatepicker entercoordinates-visible">Pick coordinates</a>
+                <a href="javascript:SubsiteVisitEditor.OpenCoordinatePicker(<%= Model.Trip.HasEnteredCoordinates ? "true" : "false" %>)" class="CoordinatePicker CoordinatesEntered">Pick coordinates</a>
                 <div class='ui-helper-clearfix'></div>
             </div>
-            <div class="ui-form-row entercoordinates-visible latitude">
+            <div class="ui-form-row CoordinatesEntered latitude">
                 <%= Html.LabelFor(m => m.SelectedSubsiteVisit.Coordinates.Latitude)%>
                 <%= Html.TextBoxFor(m => m.SelectedSubsiteVisit.Coordinates.Latitude, new Dictionary<string, object> { { "data-degrees", Model.SelectedSiteVisit.Coordinates.Latitude.TotalDegrees } })%>
                 <div class="ui-validation-error ui-state-error-text">
@@ -53,7 +53,7 @@
                 </div>
                 <div class='ui-helper-clearfix'></div>
             </div>
-            <div class="ui-form-row entercoordinates-visible longitude">
+            <div class="ui-form-row CoordinatesEntered longitude">
                 <%= Html.LabelFor(m => m.SelectedSubsiteVisit.Coordinates.Longitude)%>
                 <%= Html.TextBoxFor(m => m.SelectedSubsiteVisit.Coordinates.Longitude, new Dictionary<string, object> { { "data-degrees", Model.SelectedSiteVisit.Coordinates.Longitude.TotalDegrees } })%>
                 <div class="ui-validation-error ui-state-error-text">
@@ -80,7 +80,7 @@
                 </div>
                 <div class="ui-helper-clearfix"></div>
             </div>
-            <div class="ui-form-row enterpublicaccess">
+            <div class="ui-form-row EnterPublicAccess entrybutton">
                 <label for="KeepOwnershipContactInfoPrivate">Keep private</label>
                 <%= Html.RadioButtonFor(m => m.SelectedSubsiteVisit.MakeOwnershipContactInfoPublic, false, new { Id = "KeepOwnershipContactInfoPrivate" })%>
                 <label for="MakeOwnershipContactInfoPublic">Make public</label>

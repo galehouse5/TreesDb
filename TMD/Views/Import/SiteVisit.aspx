@@ -13,13 +13,13 @@
                     </div>
                     <div class='ui-helper-clearfix'></div>
                 </div>
-                <div class="ui-form-row entercoordinates">
+                <div class="ui-form-row EnterCoordinates entrybutton">
                     <%= Html.LabelFor(m => m.SelectedSiteVisit.CoordinatesEntered)%>
                     <%= Html.CheckBoxFor(m => m.SelectedSiteVisit.CoordinatesEntered)%>
-                    <a href="javascript:SiteVisitEditor.OpenCoordinatePicker(<%= Model.Trip.HasEnteredCoordinates ? "true" : "false" %>)" class="coordinatepicker entercoordinates-visible">Pick coordinates</a>
+                    <a href="javascript:SiteVisitEditor.OpenCoordinatePicker(<%= Model.Trip.HasEnteredCoordinates ? "true" : "false" %>)" class="CoordinatePicker CoordinatesEntered">Pick coordinates</a>
                     <div class='ui-helper-clearfix'></div>
                 </div>
-                <div class="ui-form-row entercoordinates-visible latitude">
+                <div class="ui-form-row CoordinatesEntered latitude">
                     <%= Html.LabelFor(m => m.SelectedSiteVisit.Coordinates.Latitude)%>
                     <%= Html.TextBoxFor(m => m.SelectedSiteVisit.Coordinates.Latitude)%>
                     <div class="ui-validation-error ui-state-error-text">
@@ -28,7 +28,7 @@
                     </div>
                     <div class='ui-helper-clearfix'></div>
                 </div>
-                <div class="ui-form-row entercoordinates-visible longitude">
+                <div class="ui-form-row CoordinatesEntered longitude">
                     <%= Html.LabelFor(m => m.SelectedSiteVisit.Coordinates.Longitude)%>
                     <%= Html.TextBoxFor(m => m.SelectedSiteVisit.Coordinates.Longitude)%>
                     <div class="ui-validation-error ui-state-error-text">
@@ -63,25 +63,9 @@
                 <% } %>
             </div>
             <% for (int ssv = Model.SelectedSiteVisit.SubsiteVisits.Count - 1; ssv >= 0; ssv--) { %>
-                <div class="ui-content-import-subsitevisit ui-widget ui-widget-content ui-corner-all">
-                    <div class="ui-content-import-header ui-widget-header ui-corner-all">
-                        <span class="ui-icon-import-subsitevisit"></span>
-                        <a href='javascript:SubsiteVisitEditor.Edit(<%= ssv %>, {onClose: SiteVisitEditor.Refresh, onShow: SiteVisitEditor.Show, onHide: SiteVisitEditor.Hide})' class="import-button-edit">Edit</a>
-                        <a href='javascript:SubsiteVisitRemover.Open(<%= ssv %>, {onClose: SiteVisitEditor.Refresh, onShow: SiteVisitEditor.Show, onHide: SiteVisitEditor.Hide})' class="import-button-remove">Remove</a>
-                        <div class="ui-helper-clearfix"></div>
-                    </div>
-                    <div class="ui-validation-error ui-state-error-text">
-                        <%= Html.ValidationMessage(string.Format("SelectedSiteVisit.SubsiteVisits[{0}]", ssv), " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-                        <%= Html.ValidationMessage(string.Format("SelectedSiteVisit.SubsiteVisits[{0}]", ssv), "", new { @class = "ui-validation-error-message" })%>
-                    </div>
-                    <div class="ui-content-import-summary ui-widget-content ui-corner-all">
-                        Name: <%= Model.SelectedSiteVisit.SubsiteVisits[ssv].Name%>
-                        <br />
-                        Location: <%= Model.SelectedSiteVisit.SubsiteVisits[ssv].County%>, <%= Model.SelectedSiteVisit.SubsiteVisits[ssv].State %>
-                        <br />
-                        Coordinates: <%= Model.SelectedSiteVisit.SubsiteVisits[ssv].Coordinates%>
-                    </div>
-                </div>
+                <% Html.RenderPartial("SubsiteVisitSummary",
+                       Model.SelectedSiteVisit.SubsiteVisits[ssv],
+                       new ViewDataDictionary(ViewData) { { "EditForSelectedSiteVisit", true }, { "SubsiteVisitIndex", ssv } }); %>
             <% } %>
         </div>
     </div>

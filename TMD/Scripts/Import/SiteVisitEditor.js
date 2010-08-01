@@ -57,14 +57,14 @@
         if (step == 1) {
             dom.find('.import-sitevisit-step1').show();
             dom.find('.import-sitevisit-step2').hide();
-            dom.find('.coordinatepicker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
-            dom.find('.entercoordinates input')
+            dom.find('.CoordinatePicker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
+            dom.find('.EnterCoordinates input')
                 .bind('change', (function () {
-                    if (dom.find('.entercoordinates input').attr('checked')) {
-                        dom.find('.entercoordinates-visible').show();
-                        dom.find('.entercoordinates-visible input').first().focus();
+                    if (dom.find('.EnterCoordinates input').attr('checked')) {
+                        dom.find('.CoordinatesEntered').show();
+                        dom.find('.CoordinatesEntered input').first().focus();
                     } else {
-                        dom.find('.entercoordinates-visible').hide();
+                        dom.find('.CoordinatesEntered').hide();
                     }
                 }))
                 .trigger('change')
@@ -171,7 +171,7 @@
     };
 
     public.OpenCoordinatePicker = function (tripHasEnteredCoordinates) {
-        function coordinatePickerClosed(result) {
+        function CoordinatePickerClosed(result) {
             if (result.coordinatesPicked) {
                 if (coordinates.IsSpecified) {
                     var newCoordinates = ValueObjectService.CreateCoordinatesWithFormat(result.latitude, result.longitude, coordinates.InputFormat);
@@ -197,7 +197,7 @@
             options.latitude = coordinates.LatitudeDegrees;
             options.longitude = coordinates.LongitudeDegrees;
         }
-        CoordinatePicker.Open(options, coordinatePickerClosed);
+        CoordinatePicker.Open(options, CoordinatePickerClosed);
     };
 };
 

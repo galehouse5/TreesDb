@@ -19,46 +19,14 @@
     <% } %>
     <div class="ui-helper-clearfix"></div>
     <% for (int sv = Model.Trip.SiteVisits.Count - 1; sv >= 0; sv--) { %>
-        <div class="ui-content-import-sitevisit ui-widget ui-widget-content ui-corner-all">
-            <div class="ui-content-import-header ui-widget-header ui-corner-all">
-                <span class="ui-icon-import-sitevisit"></span>
-                <a href='javascript:SiteVisitEditor.Edit(<%= sv %>, {onClose: SiteVisitsEditor.Refresh})' class="import-button-edit">Edit</a>
-                <a href='javascript:SiteVisitRemover.Open(<%= sv %>, SiteVisitsEditor.Refresh)' class="import-button-remove">Remove</a>
-                <div class="ui-helper-clearfix"></div>
-            </div>
-            <div class="ui-validation-error ui-state-error-text">
-                <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}]", sv), " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-                <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}]", sv), "", new { @class = "ui-validation-error-message" })%>
-                <div class="ui-helper-clearfix"></div>
-            </div>
-            <div class="ui-content-import-summary ui-widget-content ui-corner-all">
-                Name: <%= Model.Trip.SiteVisits[sv].Name %>
-                <br />
-                Coordinates: <%= Model.Trip.SiteVisits[sv].Coordinates %>
-            </div>
-        </div>
+        <% Html.RenderPartial("SiteVisitSummary",
+               Model.Trip.SiteVisits[sv],
+               new ViewDataDictionary(ViewData) { { "Edit", true }, { "SiteVisitIndex", sv } }); %>
         <div class="import-subsitevisits">
             <% for (int ssv = Model.Trip.SiteVisits[sv].SubsiteVisits.Count - 1; ssv >= 0; ssv--) { %>
-                <div class="ui-content-import-subsitevisit ui-widget ui-widget-content ui-corner-all">
-                    <div class="ui-content-import-header ui-widget-header ui-corner-all">
-                        <span class="ui-icon-import-subsitevisit"></span>
-                        <a href='javascript:SubsiteVisitEditor.EditForSiteVisit(<%= sv %>, <%= ssv %>, {onClose: SiteVisitsEditor.Refresh})' class="import-button-edit">Edit</a>
-                        <a href='javascript:SubsiteVisitRemover.OpenForSiteVisit(<%= sv %>, <%= ssv %>, {onClose: SiteVisitsEditor.Refresh})' class="import-button-remove">Remove</a>
-                        <div class="ui-helper-clearfix"></div>
-                    </div>
-                    <div class="ui-validation-error ui-state-error-text">
-                        <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}]", sv, ssv), " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-                        <%= Html.ValidationMessage(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}]", sv, ssv), "", new { @class = "ui-validation-error-message" })%>
-                        <div class="ui-helper-clearfix"></div>
-                    </div>
-                    <div class="ui-content-import-summary ui-widget-content ui-corner-all">
-                        Name: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Name %>
-                        <br />
-                        Location: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].County %>, <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].State %>
-                        <br />
-                        Coordinates: <%= Model.Trip.SiteVisits[sv].SubsiteVisits[ssv].Coordinates%>
-                    </div>
-                </div>
+                <% Html.RenderPartial("SubsiteVisitSummary",
+                       Model.SelectedSiteVisit.SubsiteVisits[ssv],
+                       new ViewDataDictionary(ViewData) { { "Edit", true }, { "SiteVisitIndex", sv }, { "SubsiteVisitIndex", ssv } }); %>
                 <div class="ui-helper-clearfix"></div>
             <% } %>
         </div>

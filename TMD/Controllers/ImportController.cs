@@ -15,14 +15,17 @@ using TMD.Model.Users;
 namespace TMD.Controllers
 {
     [UserAuthorizationFilter(Roles = UserRoles.Import)]
-    [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
     public class ImportController : Controller
     {
+        [HttpGet]
+        [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
         public ActionResult Index()
         {
             return RedirectToAction("Start");
         }
 
+        [HttpGet]
+        [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
         public ActionResult Start()
         {
             ImportModel model = new ImportModel();
@@ -41,6 +44,7 @@ namespace TMD.Controllers
 
         [HttpGet]
         [ActionName("Trip")]
+        [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
         public ActionResult EditTrip()
         {
             ImportModel model = new ImportModel();
@@ -108,6 +112,7 @@ namespace TMD.Controllers
 
         [HttpGet]
         [ActionName("SiteVisits")]
+        [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
         public ActionResult EditSiteVisits()
         {
             ImportModel model = new ImportModel();
@@ -366,6 +371,7 @@ namespace TMD.Controllers
 
         [HttpGet]
         [ActionName("TreeMeasurements")]
+        [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
         public ActionResult EditTreeMeasurements()
         {
             ImportModel model = new ImportModel();
@@ -495,7 +501,7 @@ namespace TMD.Controllers
         }
 
         [HttpGet]
-        public ActionResult AutocompleteCommonName(string term)
+        public ActionResult FindSimilarCommonNames(string term)
         {
             IList<KnownTree> knownTrees = TreeService.FindTreesWithSimilarCommonName(term, 5);
             List<object> autocompleteResults = new List<object>();
@@ -516,6 +522,7 @@ namespace TMD.Controllers
         #region Review actions
 
         [HttpGet]
+        [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
         public ActionResult Review()
         {
             ImportModel model = new ImportModel();
@@ -534,6 +541,7 @@ namespace TMD.Controllers
         #region Finish actions
 
         [HttpGet]
+        [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
         public ActionResult Finish()
         {
             ImportModel model = new ImportModel();

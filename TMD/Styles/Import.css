@@ -49,8 +49,5 @@
 .import-trip { margin-top: 25px; font-size: 10px; width: 780px; }
 .import-trip label { font-size: 11px; }
 
-.ui-form-row.entercoordinates { float: left; margin-left: 15px; }
-.ui-form-row.entercoordinates label { width: auto; }
-
-.ui-form-row.enterpublicaccess { float: left; margin-left: 100px; }
-.ui-form-row.enterpublicaccess label { width: auto; }
+.ui-form-row.entrybutton { float: left; margin-left: 100px; }
+.ui-form-row.entrybutton label { width: auto; margin-right: 0.4em;  }

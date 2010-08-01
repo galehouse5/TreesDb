@@ -58,7 +58,7 @@
                 </div>
                 <div class="ui-helper-clearfix"></div>
             </div>
-            <div class="ui-form-row enterpublicaccess">
+            <div class="ui-form-row EnterPublicAccess entrybutton">
                 <label for="MakeMeasurerContactInfoPublic">Keep private</label>
                 <%= Html.RadioButtonFor(m => m.Trip.MakeMeasurerContactInfoPublic, false, new { Id = "MakeMeasurerContactInfoPublic" })%>
                 <label for="KeepMeasurerContactInfoPrivate">Make public</label>

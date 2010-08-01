@@ -76,7 +76,7 @@ namespace TMD.Model.Trips
 
         public virtual bool CoordinatesCalculated { get; set; }
 
-        [DisplayName("Enter coordinates to simplify later steps")]
+        [DisplayName("Enter coordinates")]
         public virtual bool CoordinatesEntered
         {
             get { return !CoordinatesCalculated; }

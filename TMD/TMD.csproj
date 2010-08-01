@@ -128,7 +128,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Extensions\ConditionalExtensions.cs" />
+    <Compile Include="Extensions\ControllerExtensions.cs" />
     <Compile Include="Models\LocationsModel.cs" />
     <Compile Include="WebUserSessionContextProvider.cs" />
     <Compile Include="Models\AccountModels.cs" />
@@ -222,6 +222,8 @@
     <Content Include="Views\Import\RemoveTreeMeasurement.aspx" />
     <Content Include="Views\Import\SiteVisit.aspx" />
     <Content Include="Views\Import\Finish.aspx" />
+    <Content Include="Views\Import\SiteVisitSummary.ascx" />
+    <Content Include="Views\Import\SubsiteVisitSummary.ascx" />
     <Content Include="Views\Import\TreeMeasurement.aspx" />
     <Content Include="Views\Import\TreeMeasurements.aspx" />
     <Content Include="Views\Import\Review.aspx" />
@@ -229,6 +231,7 @@
     <Content Include="Views\Import\Start.aspx" />
     <Content Include="Views\Import\Steps.ascx" />
     <Content Include="Views\Import\SubsiteVisit.aspx" />
+    <Content Include="Views\Import\TreeMeasurementSummary.ascx" />
     <Content Include="Views\Import\Trip.aspx" />
     <Content Include="Views\Main\Index.aspx" />
     <Content Include="Views\Main\NotFound.aspx" />

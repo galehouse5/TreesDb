@@ -23,7 +23,7 @@
         $('input[type=text].input-validation-error, textarea.input-validation-error').first().focus();
         $('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
         $('.measurer-remove').button({ icons: { primary: 'ui-icon-trash'} });
-        $('.enterpublicaccess').buttonset();
+        $('.EnterPublicAccess').buttonset();
     };
 
     public.Initialize = function () {

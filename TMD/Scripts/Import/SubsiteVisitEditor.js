@@ -25,14 +25,14 @@
 
     function render(data) {
         dom.find('.import-subsitevisit').replaceWith($(data));
-        dom.find('.coordinatepicker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
-        dom.find('.entercoordinates input')
+        dom.find('.CoordinatePicker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
+        dom.find('.EnterCoordinates input')
             .bind('change', (function () {
-                if (dom.find('.entercoordinates input').attr('checked')) {
-                    dom.find('.entercoordinates-visible').show();
-                    dom.find('.entercoordinates-visible input').first().focus();
+                if (dom.find('.EnterCoordinates input').attr('checked')) {
+                    dom.find('.CoordinatesEntered').show();
+                    dom.find('.CoordinatesEntered input').first().focus();
                 } else {
-                    dom.find('.entercoordinates-visible').hide();
+                    dom.find('.CoordinatesEntered').hide();
                 }
             }))
             .trigger('change')
@@ -44,7 +44,7 @@
             });
         dom.find('.state input')
             .autocomplete({ delay: 0, minLength: 2, source: LocationsService.FindStatesByCountryCode($('.country input').val()) });
-        dom.find('.enterpublicaccess').buttonset();
+        dom.find('.EnterPublicAccess').buttonset();
     }
 
     function validate() {
@@ -159,7 +159,7 @@
     };
 
     public.OpenCoordinatePicker = function (tripHasEnteredCoordinates) {
-        function coordinatePickerClosed(result) {
+        function CoordinatePickerClosed(result) {
             if (result.coordinatesPicked) {
                 if (coordinates.IsSpecified) {
                     var newCoordinates = ValueObjectService.CreateCoordinatesWithFormat(result.latitude, result.longitude, coordinates.InputFormat);
@@ -195,7 +195,7 @@
             options.county = dom.find('.county input').val();
             options.country = dom.find('.country input').val();
         }
-        CoordinatePicker.Open(options, coordinatePickerClosed);
+        CoordinatePicker.Open(options, CoordinatePickerClosed);
     };
 };
 

@@ -11,11 +11,8 @@ namespace TMD.Extensions
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (filterContext.HttpContext.Request.HttpMethod == "GET")
-            {
-                ApplicationSession.DefaultAction = filterContext.ActionDescriptor.ActionName;
-                ApplicationSession.DefaultController = filterContext.Controller.GetType().Name.Replace("Controller", string.Empty);
-            }
+            ApplicationSession.DefaultAction = filterContext.ActionDescriptor.ActionName;
+            ApplicationSession.DefaultController = filterContext.Controller.GetType().Name.Replace("Controller", string.Empty);
             base.OnActionExecuting(filterContext);
         }
     }

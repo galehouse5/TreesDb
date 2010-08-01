@@ -1,6 +1,6 @@
 ﻿var CoordinatePicker = new function () {
     var dom = $(
-        "<div id='coordinatepicker' style='font-size: 1.2em;'>\
+        "<div id='CoordinatePicker' style='font-size: 1.2em;'>\
             <div class='map' style='position: absolute; left: 0px; top: 0px;'></div>\
             <div class='coordinates' style='position: absolute; left: 45%; top: 10px; font-size: 1.4em;'></div>\
             <div class='address-search' style='position: absolute; left: 50px; bottom: 50px;'>\

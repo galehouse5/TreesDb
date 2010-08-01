@@ -48,6 +48,10 @@ namespace TMD.Infrastructure.Repositories
 
         public State FindStateByCountryAndStateCodes(string countryCode, string stateCode)
         {
+            if (string.IsNullOrWhiteSpace(stateCode))
+            {
+                return null;
+            }
             using (ISession session = InfrastructureRegistry.SessionFactory.OpenSession())
             {
                 return session.CreateQuery(@"

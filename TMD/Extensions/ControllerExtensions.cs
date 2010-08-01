@@ -7,7 +7,7 @@ using System.Web.Mvc.Html;
 
 namespace TMD.Extensions
 {
-    public static class ConditionalExtensions
+    public static class ControllerExtensions
     {
         public static bool IsCurrentController(this HtmlHelper helper, string controllerName)
         {
