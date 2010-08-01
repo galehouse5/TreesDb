@@ -24,6 +24,8 @@ namespace TMD.Model
         private Volume()
         { }
 
+        public string RawValue { get; private set; }
+
         [RangeValidator(0f, RangeBoundaryType.Inclusive, float.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Volume must be non-negative.", Ruleset = "Screening")]
         public float CubicFeet { get; private set; }
 
@@ -85,7 +87,7 @@ namespace TMD.Model
                     s = string.Format("{0:0} yd^3", CubicYards);
                     break;
                 default:
-                    s = string.Empty;
+                    s = RawValue;
                     break;
             }
             return s;
@@ -137,7 +139,8 @@ namespace TMD.Model
             return new Volume()
             {
                 CubicFeet = cubicFeet,
-                InputFormat = inputFormat
+                InputFormat = inputFormat,
+                RawValue = s
             };
         }
 
@@ -146,7 +149,8 @@ namespace TMD.Model
             return new Volume()
             {
                 CubicFeet = cubicFeet,
-                InputFormat = VolumeFormat.Default
+                InputFormat = VolumeFormat.Default,
+                RawValue = cubicFeet.ToString()
             };
         }
 
@@ -155,7 +159,8 @@ namespace TMD.Model
             return new Volume()
             {
                 CubicFeet = 0f,
-                InputFormat = VolumeFormat.Unspecified
+                InputFormat = VolumeFormat.Unspecified,
+                RawValue = string.Empty
             };
         }
     }

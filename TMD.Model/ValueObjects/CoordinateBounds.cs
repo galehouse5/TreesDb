@@ -72,7 +72,7 @@ namespace TMD.Model
 
         public CoordinateBounds Extend(Coordinates c)
         {
-            if (c.IsSpecified)
+            if (c.IsSpecified && c.IsValid)
             {
                 m_LastExtensionCoordinatesFormat = c.InputFormat;
                 m_MaxLatitude = Math.Max(c.Latitude.TotalDegrees, m_MaxLatitude);

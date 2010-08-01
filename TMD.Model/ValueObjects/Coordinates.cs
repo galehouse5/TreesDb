@@ -182,6 +182,8 @@ namespace TMD.Model
         private Latitude()
         { }
 
+        public string RawValue { get; private set; }
+
         [RangeValidator(-90f, RangeBoundaryType.Inclusive, 90f, RangeBoundaryType.Inclusive, MessageTemplate = "Latitude must be in the range of -90 to +90 degrees.", Ruleset = "Screening")]
         public float TotalDegrees { get; private set; }
 
@@ -239,7 +241,7 @@ namespace TMD.Model
                     s = string.Format("{0:00.00000}", AbsoluteTotalDegrees * Sign);
                     break;
                 default:
-                    s = string.Empty;
+                    s = RawValue;
                     break;
             }
             return s;
@@ -340,7 +342,8 @@ namespace TMD.Model
             return new Latitude() 
             {
                 InputFormat = inputFormat,
-                TotalDegrees = sign * (degrees + (minutes / 60f) + (seconds / 3600f))
+                TotalDegrees = sign * (degrees + (minutes / 60f) + (seconds / 3600f)),
+                RawValue = s
             };
         }
 
@@ -349,7 +352,8 @@ namespace TMD.Model
             return new Latitude()
             {
                 InputFormat = CoordinatesFormat.Default,
-                TotalDegrees = degrees
+                TotalDegrees = degrees,
+                RawValue = degrees.ToString()
             };
         }
 
@@ -358,7 +362,8 @@ namespace TMD.Model
             return new Latitude()
             {
                 InputFormat = format,
-                TotalDegrees = degrees
+                TotalDegrees = degrees,
+                RawValue = degrees.ToString()
             };
         }
 
@@ -367,7 +372,8 @@ namespace TMD.Model
             return new Latitude()
             {
                 InputFormat = CoordinatesFormat.Unspecified,
-                TotalDegrees = 0f
+                TotalDegrees = 0f,
+                RawValue = string.Empty
             };
         }
     }
@@ -377,6 +383,8 @@ namespace TMD.Model
     {
         private Longitude()
         { }
+
+        public string RawValue { get; private set; }
 
         [RangeValidator(-180f, RangeBoundaryType.Inclusive, 180f, RangeBoundaryType.Inclusive, MessageTemplate = "Longitude must be in the range of -180 to +180 degrees.", Ruleset = "Screening")]
         public float TotalDegrees { get; private set; }
@@ -435,7 +443,7 @@ namespace TMD.Model
                     s = string.Format("{0:000.00000}", AbsoluteTotalDegrees * Sign);
                     break;
                 default:
-                    s = string.Empty;
+                    s = RawValue;
                     break;
             }
             return s;
@@ -536,7 +544,8 @@ namespace TMD.Model
             return new Longitude()
             {
                 InputFormat = inputFormat,
-                TotalDegrees = sign * (degrees + (minutes / 60f) + (seconds / 3600f))
+                TotalDegrees = sign * (degrees + (minutes / 60f) + (seconds / 3600f)),
+                RawValue = s
             };
         }
 
@@ -545,7 +554,8 @@ namespace TMD.Model
             return new Longitude()
             {
                 InputFormat = CoordinatesFormat.Default,
-                TotalDegrees = degrees
+                TotalDegrees = degrees,
+                RawValue = degrees.ToString()
             };
         }
 
@@ -554,7 +564,8 @@ namespace TMD.Model
             return new Longitude()
             {
                 InputFormat = format,
-                TotalDegrees = degrees
+                TotalDegrees = degrees,
+                RawValue = degrees.ToString()
             };
         }
 
@@ -563,7 +574,8 @@ namespace TMD.Model
             return new Longitude()
             {
                 InputFormat = CoordinatesFormat.Unspecified,
-                TotalDegrees = 0f
+                TotalDegrees = 0f,
+                RawValue = string.Empty
             };
         }
     }

@@ -40,9 +40,13 @@ namespace TMD.Model.Trips
             {
                 if (CoordinatesCalculated)
                 {
-                    if (doesSomeContainedSubsiteVisitHaveEneteredCoordinates())
+                    if (SubsiteVisitCentralCoordinates.IsSpecified)
                     {
-                        m_Coordinates = calculateCentralSubsiteVisitCoordinates();
+                        m_Coordinates = SubsiteVisitCentralCoordinates;
+                    }
+                    else
+                    {
+                        m_Coordinates = Coordinates.Null();
                     }
                 }
                 return m_Coordinates;
@@ -53,6 +57,15 @@ namespace TMD.Model.Trips
             }
         }
 
+        public virtual bool CoordinatesCalculatedFromContainedSubsiteVisits
+        {
+            get
+            {
+                return CoordinatesCalculated
+                    && SubsiteVisitCentralCoordinates.IsSpecified;
+            }
+        }
+
         public virtual Coordinates SubsiteVisitCentralCoordinates
         {
             get
@@ -60,7 +73,7 @@ namespace TMD.Model.Trips
                 CoordinateBounds cb = CoordinateBounds.Null();
                 foreach (SubsiteVisit ssv in SubsiteVisits)
                 {
-                    if (ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified)
+                    if (ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified && ssv.Coordinates.IsValid)
                     {
                         cb.Extend(ssv.Coordinates);
                     }
@@ -101,31 +114,6 @@ namespace TMD.Model.Trips
         {
             get { return m_Comments; }
             set { m_Comments = (value ?? string.Empty).Trim(); }
-        }
-
-        private bool doesSomeContainedSubsiteVisitHaveEneteredCoordinates()
-        {
-            foreach (SubsiteVisit ssv in SubsiteVisits)
-            {
-                if (ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        private Coordinates calculateCentralSubsiteVisitCoordinates()
-        {
-            CoordinateBounds cb = CoordinateBounds.Null();
-            foreach (SubsiteVisit ssv in SubsiteVisits)
-            {
-                if (ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified)
-                {
-                    cb.Extend(ssv.Coordinates);
-                }
-            }
-            return cb.Center;
         }
 
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence")]
@@ -216,8 +204,8 @@ namespace TMD.Model.Trips
             return new SiteVisit()
             {
                 Name = string.Empty,
-                CoordinatesCalculated = true,
-                Coordinates = t.SiteVisitCentralCoordinates,
+                CoordinatesEntered = t.SiteVisitCentralCoordinates.IsSpecified && t.SiteVisitCentralCoordinates.IsValid,
+                Coordinates = t.SiteVisitCentralCoordinates.IsSpecified && t.SiteVisitCentralCoordinates.IsValid ? t.SiteVisitCentralCoordinates : Coordinates.Null(),
                 SubsiteVisits = new List<SubsiteVisit>(),
                 Comments = string.Empty,
                 Trip = t

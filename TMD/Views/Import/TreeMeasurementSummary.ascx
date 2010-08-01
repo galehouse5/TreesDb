@@ -47,8 +47,8 @@
             Tree number: <%= Model.TreeNumber %>
             <br />
         <% } %>
-        <% if (Model.TreeNameOrNumberSpecified) { %>
-           Name : <%= Model.TreeNameOrNumber %>
+        <% if (Model.TreeNameSpecified) { %>
+           Name : <%= Model.TreeName %>
            <br />
         <% } %>
         Common name: <%= Model.CommonName %>
@@ -56,5 +56,9 @@
         Scientific name: <%= Model.ScientificName %>
         <br />
         Coordinates: <%= Model.Coordinates %>
+        <% if (Model.CoordinatesCalculatedFromContainingSubsiteVisit) { %>
+            <br />
+            (calculated from containing subsite)
+        <% } %>
     </div>
 </div>

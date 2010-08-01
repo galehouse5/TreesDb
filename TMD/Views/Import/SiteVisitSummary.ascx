@@ -37,5 +37,9 @@
         Name: <%= Model.Name %>
         <br />
         Coordinates: <%= Model.Coordinates %>
+        <% if (Model.CoordinatesCalculatedFromContainedSubsiteVisits) { %>
+            <br />
+            (calculated from contained subsites)
+        <% } %>
     </div>
 </div>

@@ -21,6 +21,8 @@ namespace TMD.Model
         private Angle()
         { }
 
+        public string RawValue { get; private set; }
+
         [RangeValidator(0f, RangeBoundaryType.Inclusive, 90f, RangeBoundaryType.Inclusive, MessageTemplate = "Angle must be in the range of 0 to 90 degrees.", Ruleset = "Screening")]
         public float Degrees { get; private set; }
 
@@ -45,7 +47,7 @@ namespace TMD.Model
                     s = Degrees.ToString();
                     break;
                 default:
-                    s = string.Empty;
+                    s = RawValue;
                     break;
             }
             return s;
@@ -88,7 +90,8 @@ namespace TMD.Model
                 return new Angle()
                 {
                     Degrees = 0,
-                    InputFormat = AngleFormat.Unspecified
+                    InputFormat = AngleFormat.Unspecified,
+                    RawValue = s
                 };
             }
             if (float.TryParse(s.Trim(), out degrees))
@@ -96,13 +99,15 @@ namespace TMD.Model
                 return new Angle()
                 {
                     Degrees = degrees,
-                    InputFormat = AngleFormat.Decimal
+                    InputFormat = AngleFormat.Decimal,
+                    RawValue = s
                 };
             }
             return new Angle()
             {
                 Degrees = 0f,
-                InputFormat = AngleFormat.Invalid
+                InputFormat = AngleFormat.Invalid,
+                RawValue = s
             };
         }
 
@@ -111,7 +116,8 @@ namespace TMD.Model
             return new Angle()
             {
                 Degrees = degrees,
-                InputFormat = AngleFormat.Default
+                InputFormat = AngleFormat.Default,
+                RawValue = degrees.ToString()
             };
         }
 
@@ -120,7 +126,8 @@ namespace TMD.Model
             return new Angle()
             {
                 Degrees = 0f,
-                InputFormat = AngleFormat.Unspecified
+                InputFormat = AngleFormat.Unspecified,
+                RawValue = string.Empty
             };
         }
 

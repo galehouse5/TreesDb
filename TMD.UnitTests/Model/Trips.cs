@@ -209,7 +209,6 @@ namespace TMD.UnitTests.Model
             tm1.TerrainShapeIndex = .10f;
             tm1.TerrainType = TreeTerrainType.HillTop;
             tm1.TreeFormComments = "tree measurement 1 tree form comments";
-            tm1.TreeNameOrNumber = "tree measurement 1 tree name";
             tm1.TrunkComments = "tree measurement 1 trunk comments";
             tm1.TrunkVolume = Volume.Create(20);
             tm1.TrunkVolumeCalculationMethod = "tree measurement 1 trunk volume calculation method";
@@ -256,7 +255,6 @@ namespace TMD.UnitTests.Model
             tm2.TerrainShapeIndex = .10f;
             tm2.TerrainType = TreeTerrainType.HillTop;
             tm2.TreeFormComments = "tree measurement 2 tree form comments";
-            tm2.TreeNameOrNumber = "tree measurement 2 tree name";
             tm2.TrunkComments = "tree measurement 2 trunk comments";
             tm2.TrunkVolume = Volume.Create(20);
             tm2.TrunkVolumeCalculationMethod = "tree measurement 1 trunk volume calculation method";

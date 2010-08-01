@@ -25,9 +25,11 @@ namespace TMD.Model
         private DirectedDistance()
         { }
 
+        public string RawValue { get; private set; }
+
         public float Feet { get; private set; }
 
-        [ObjectEqualityValidator(DirectedDistanceFormat.Invalid, Negated = true, MessageTemplate = "Directed distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.", Ruleset = "Screening")]
+        [ObjectEqualityValidator(DirectedDistanceFormat.Invalid, Negated = true, MessageTemplate = "Directed distance must be in +/-fff.f', +/-fff' ii'', +/-mmm.mm m, or +/-yyy.yy yd format.", Ruleset = "Screening")]
         public DirectedDistanceFormat InputFormat { get; private set; }
 
         public int Sign
@@ -116,7 +118,7 @@ namespace TMD.Model
                     s = string.Format("{0}{1:0}' {2:0}''", (Sign < 0) ? "-" : "", AbsoluteFeet, AbsoluteRemainderInches);
                     break;
                 default:
-                    s = string.Empty;
+                    s = RawValue;
                     break;
             }
             return s;
@@ -188,7 +190,8 @@ namespace TMD.Model
             return new DirectedDistance()
             {
                 Feet = sign * feet,
-                InputFormat = inputFormat
+                InputFormat = inputFormat,
+                RawValue = s
             };
         }
 
@@ -198,7 +201,8 @@ namespace TMD.Model
             return new DirectedDistance()
             {
                 Feet = feet,
-                InputFormat = DirectedDistanceFormat.Default
+                InputFormat = DirectedDistanceFormat.Default,
+                RawValue = feet.ToString()
             };
         }
 
@@ -207,7 +211,8 @@ namespace TMD.Model
             return new DirectedDistance()
             {
                 Feet = 0f,
-                InputFormat = DirectedDistanceFormat.Unspecified
+                InputFormat = DirectedDistanceFormat.Unspecified,
+                RawValue = string.Empty
             };
         }
     }

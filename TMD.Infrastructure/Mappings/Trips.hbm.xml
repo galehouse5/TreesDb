@@ -21,8 +21,7 @@
     <property name="Created" />
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <many-to-one name="SubsiteVisit" column="SubsiteVisitId" />
-    <property name="TreeNameOrNumberSpecified"/>
-    <property name="TreeNameOrNumber" />
+    <property name="TreeName" />
     <property name="TreeNumber" />
     <property name="CommonName"/>
     <property name="ScientificName"/>
@@ -130,6 +129,7 @@
     <property name="TerrainComments"/>
     <property name="MakeCoordinatesPublic"/>
     <property name="IncludeHeightDistanceAndAngleMeasurements"/>
+    <property name="HeightMeasurementMethod" />
   </class>
 
   <class name="TMD.Model.Trips.SubsiteVisit" table="Trips.SubsiteVisits">

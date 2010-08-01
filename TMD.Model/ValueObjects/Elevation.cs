@@ -27,6 +27,8 @@ namespace TMD.Model
         private Elevation()
         { }
 
+        public string RawValue { get; private set; }
+
         [RangeValidator(MinTreeLineFeet, RangeBoundaryType.Inclusive, float.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Elevation must not fall below min global tree line of {3} feet.", Ruleset = "Screening")]
         [RangeValidator(float.MinValue, RangeBoundaryType.Inclusive, MaxTreeLineFeet, RangeBoundaryType.Inclusive, MessageTemplate = "Elevation must not exceed max global tree line of {5} feet.", Ruleset = "Screening")]
         public float Feet { get; private set; }
@@ -89,7 +91,7 @@ namespace TMD.Model
                     s = string.Format("{0:0.00} yd", Yards);
                     break;
                 default:
-                    s = string.Empty;
+                    s = RawValue;
                     break;
             }
             return s;
@@ -141,7 +143,8 @@ namespace TMD.Model
             return new Elevation()
             {
                 Feet = feet,
-                InputFormat = inputFormat
+                InputFormat = inputFormat,
+                RawValue = s
             };
         }
 
@@ -150,7 +153,8 @@ namespace TMD.Model
             return new Elevation()
             {
                 Feet = feet,
-                InputFormat = ElevationFormat.Default
+                InputFormat = ElevationFormat.Default,
+                RawValue = feet.ToString()
             };
         }
 
@@ -159,7 +163,8 @@ namespace TMD.Model
             return new Elevation()
             {
                 Feet = 0f,
-                InputFormat = ElevationFormat.Unspecified
+                InputFormat = ElevationFormat.Unspecified,
+                RawValue = string.Empty
             };
         }
     }

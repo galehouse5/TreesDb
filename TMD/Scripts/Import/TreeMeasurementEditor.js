@@ -40,7 +40,6 @@
             })
             .bind('tabsselect', function (event, ui) {
                 repositionHeightGirthAndCrownFields(ui.index);
-                return false;
             });
         $('#TreeMeasurementEditor')
             .bind('dialogclose', dispose);
@@ -59,6 +58,10 @@
                     $('#TreeMeasurementGeneralSection .Height')
                         .swap('#TreeMeasurementHeightSection .Height');
                 }
+                if ($('#TreeMeasurementGeneralSection .HeightMeasurementMethod').children().length == 0) {
+                    $('#TreeMeasurementGeneralSection .HeightMeasurementMethod')
+                        .swap('#TreeMeasurementHeightSection .HeightMeasurementMethod');
+                }
                 if ($('#TreeMeasurementGeneralSection .Girth').children().length == 0) {
                     $('#TreeMeasurementGeneralSection .Girth')
                         .swap('#TreeMeasurementGirthSection .Girth');
@@ -69,6 +72,10 @@
                 }
                 break;
             case Sections.Height:
+                if ($('#TreeMeasurementHeightSection .HeightMeasurementMethod').children().length == 0) {
+                    $('#TreeMeasurementHeightSection .HeightMeasurementMethod')
+                        .swap('#TreeMeasurementGeneralSection .HeightMeasurementMethod');
+                }
                 if ($('#TreeMeasurementHeightSection .Height').children().length == 0) {
                     $('#TreeMeasurementHeightSection .Height')
                         .swap('#TreeMeasurementGeneralSection .Height');
@@ -239,7 +246,7 @@
             while (tabsWithErrors.length > 0) {
                 tabWithError = tabsWithErrors.pop();
                 if (tabWithError == currentlySelectedTab) {
-                    focusFirstVisibleErrorOrInput();
+                    focusFirstVisibleErrorOrInput($('#TreeMeasurementSections').tabs('option', 'selected'));
                     return false;
                 }
             }

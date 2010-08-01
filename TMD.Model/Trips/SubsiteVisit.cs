@@ -45,9 +45,13 @@ namespace TMD.Model.Trips
                     {
                         m_Coordinates = TreeMeasurementCentralCoordinates;
                     }
-                    else if (SiteVisit.CoordinatesEntered && SiteVisit.Coordinates.IsSpecified)
+                    else if (SiteVisit.CoordinatesEntered && SiteVisit.Coordinates.IsSpecified && SiteVisit.Coordinates.IsValid)
                     {
                         m_Coordinates = SiteVisit.Coordinates;
+                    }
+                    else
+                    {
+                        m_Coordinates = Coordinates.Null();
                     }
                 }
                 return m_Coordinates;
@@ -58,6 +62,25 @@ namespace TMD.Model.Trips
             }
         }
 
+        public virtual bool CoordinatesCalculatedFromContainedTreeMeasurements
+        {
+            get 
+            { 
+                return CoordinatesCalculated 
+                    && TreeMeasurementCentralCoordinates.IsSpecified; 
+            }
+        }
+
+        public virtual bool CoordinatesCalculatedFromContainingSiteVisit
+        {
+            get 
+            {
+                return CoordinatesCalculated
+                    && !TreeMeasurementCentralCoordinates.IsSpecified
+                    && SiteVisit.CoordinatesEntered && SiteVisit.Coordinates.IsSpecified && SiteVisit.Coordinates.IsValid;
+            }
+        }
+
         public virtual Coordinates TreeMeasurementCentralCoordinates
         {
             get
@@ -65,7 +88,7 @@ namespace TMD.Model.Trips
                 CoordinateBounds cb = CoordinateBounds.Null();
                 foreach (TreeMeasurement tm in TreeMeasurements)
                 {
-                    if (tm.CoordinatesEntered && tm.Coordinates.IsSpecified)
+                    if (tm.CoordinatesEntered && tm.Coordinates.IsSpecified && tm.Coordinates.IsValid)
                     {
                         cb.Extend(tm.Coordinates);
                     }
@@ -220,8 +243,8 @@ namespace TMD.Model.Trips
             return new SubsiteVisit()
             {
                 Name = string.Empty,
-                Coordinates = sv.Coordinates,
-                CoordinatesCalculated = true,
+                CoordinatesEntered = sv.CoordinatesEntered && sv.Coordinates.IsSpecified && sv.Coordinates.IsValid,
+                Coordinates = sv.CoordinatesEntered && sv.Coordinates.IsSpecified && sv.Coordinates.IsValid ? sv.Coordinates : Coordinates.Null(),
                 County = string.Empty,
                 OwnershipType = string.Empty,
                 OwnershipContactInfo = string.Empty,

@@ -26,6 +26,8 @@ namespace TMD.Model
         private Distance()
         { }
 
+        public string RawValue { get; private set; }
+
         [RangeValidator(0f, RangeBoundaryType.Inclusive, float.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Distance must be non-negative.")]
         public float Feet { get; private set; }
 
@@ -108,7 +110,7 @@ namespace TMD.Model
                     s = string.Format("{0:0}' {1:0}''", WholeFeet, RemainderInches);
                     break;
                 default:
-                    s = string.Empty;
+                    s = RawValue;
                     break;
             }
             return s;
@@ -173,7 +175,8 @@ namespace TMD.Model
             return new Distance()
             {
                 Feet = feet,
-                InputFormat = inputFormat
+                InputFormat = inputFormat,
+                RawValue = s
             };
         }
 
@@ -182,7 +185,8 @@ namespace TMD.Model
             return new Distance()
             {
                 Feet = feet,
-                InputFormat = DistanceFormat.Default
+                InputFormat = DistanceFormat.Default,
+                RawValue = feet.ToString()
             };
         }
 
@@ -191,7 +195,8 @@ namespace TMD.Model
             return new Distance()
             {
                 Feet = 0f,
-                InputFormat = DistanceFormat.Unspecified
+                InputFormat = DistanceFormat.Unspecified,
+                RawValue = string.Empty
             };
         }
     }

@@ -67,5 +67,12 @@
         Location: <%= Model.County%>, <%= Model.State %>
         <br />
         Coordinates: <%= Model.Coordinates%>
+        <% if (Model.CoordinatesCalculatedFromContainingSiteVisit) { %>
+            <br />
+            (calculated from containing site)
+        <% } else if (Model.CoordinatesCalculatedFromContainedTreeMeasurements) { %>
+            <br />
+            (calculated from contained trees) 
+        <% } %>
     </div>
 </div>

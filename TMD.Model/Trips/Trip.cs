@@ -139,6 +139,7 @@ namespace TMD.Model.Trips
             set { m_DefaultLaserBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
+        public virtual TreeHeightMeasurementMethod DefaultHeightMeasurementMethod { get; set; }
         public virtual Country DefaultCountry { get; private set; }
         public virtual State DefaultState { get; private set; }
 
