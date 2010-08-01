@@ -212,6 +212,7 @@
     </bag>
     <property name="DefaultClinometerBrand" />
     <property name="DefaultLaserBrand" />
+    <property name="DefaultHeightMeasurementMethod" />
     <many-to-one name="DefaultCountry" column="DefaultCountryId" cascade="none" />
     <many-to-one name="DefaultState" column="DefaultStateId" cascade="none" />
     <property name="MakeMeasurerContactInfoPublic"/>

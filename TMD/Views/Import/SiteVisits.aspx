@@ -25,7 +25,7 @@
         <div class="import-subsitevisits">
             <% for (int ssv = Model.Trip.SiteVisits[sv].SubsiteVisits.Count - 1; ssv >= 0; ssv--) { %>
                 <% Html.RenderPartial("SubsiteVisitSummary",
-                       Model.SelectedSiteVisit.SubsiteVisits[ssv],
+                       Model.Trip.SiteVisits[sv].SubsiteVisits[ssv],
                        new ViewDataDictionary(ViewData) { { "Edit", true }, { "SiteVisitIndex", sv }, { "SubsiteVisitIndex", ssv } }); %>
                 <div class="ui-helper-clearfix"></div>
             <% } %>
