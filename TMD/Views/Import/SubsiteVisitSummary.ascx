@@ -69,10 +69,10 @@
         Coordinates: <%= Model.Coordinates%>
         <% if (Model.CoordinatesCalculatedFromContainingSiteVisit) { %>
             <br />
-            (calculated from containing site)
+            (approximated from containing site)
         <% } else if (Model.CoordinatesCalculatedFromContainedTreeMeasurements) { %>
             <br />
-            (calculated from contained trees) 
+            (approximated from contained trees) 
         <% } %>
     </div>
 </div>

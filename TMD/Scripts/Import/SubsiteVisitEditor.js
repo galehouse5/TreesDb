@@ -180,7 +180,6 @@
         function loadMapMarkers(callback) {
             $.get('MapMarkersIgnoringSelectedSubsiteVisit', {}, callback);
         };
-        public.Hide();
         var coordinates = ValueObjectService.CreateCoordinates(
             dom.find('.latitude input').val(),
             dom.find('.longitude input').val());
@@ -196,6 +195,7 @@
             options.country = dom.find('.country input').val();
         }
         CoordinatePicker.Open(options, CoordinatePickerClosed);
+        public.Hide();
     };
 };
 

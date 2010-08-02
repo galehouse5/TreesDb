@@ -39,7 +39,7 @@
         Coordinates: <%= Model.Coordinates %>
         <% if (Model.CoordinatesCalculatedFromContainedSubsiteVisits) { %>
             <br />
-            (calculated from contained subsites)
+            (approximated from contained subsites)
         <% } %>
     </div>
 </div>

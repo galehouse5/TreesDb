@@ -187,7 +187,6 @@
         function loadMapMarkers(callback) {
             $.get('MapMarkersIgnoringSelectedSiteVisit', {}, callback);
         };
-        public.Hide();
         var coordinates = ValueObjectService.CreateCoordinates(
             dom.find('.latitude input').val(),
             dom.find('.longitude input').val());
@@ -198,6 +197,7 @@
             options.longitude = coordinates.LongitudeDegrees;
         }
         CoordinatePicker.Open(options, CoordinatePickerClosed);
+        public.Hide();
     };
 };
 

@@ -80,17 +80,17 @@
     };
 
     function close() {
+        m_ResultCallback({ coordinatesPicked: false });
         disposeAddressSearch();
         disposeMap();
         dispose();
-        m_ResultCallback({ coordinatesPicked: false });
     };
 
     function save() {
+        m_ResultCallback({ coordinatesPicked: true, latitude: m_Latitude, longitude: m_Longitude });
         disposeAddressSearch();
         disposeMap();
         dispose();
-        m_ResultCallback({ coordinatesPicked: true, latitude: m_Latitude, longitude: m_Longitude });
     };
 
     // map

@@ -325,7 +325,6 @@
         function loadMapMarkers(callback) {
             $.get('MapMarkersIgnoringSelectedTreeMeasurement', {}, callback);
         };
-        public.Hide();
         var coordinates = ValueObjectService.CreateCoordinates(
             $('#TreeMeasurementEditor .latitude input').val(),
             $('#TreeMeasurementEditor .longitude input').val());
@@ -336,6 +335,7 @@
             options.longitude = coordinates.LongitudeDegrees;
         }
         CoordinatePicker.Open(options, CoordinatePickerClosed);
+        public.Hide();
     };
 };
 
