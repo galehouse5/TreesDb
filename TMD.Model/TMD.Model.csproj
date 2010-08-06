@@ -73,9 +73,12 @@
     <Compile Include="Locations\LocationService.cs" />
     <Compile Include="Sites\SiteService.cs" />
     <Compile Include="Trees\TreeService.cs" />
-    <Compile Include="Trips\TreeMeasurement.cs" />
+    <Compile Include="Trips\MultiTrunkTreeMeasurement.cs" />
+    <Compile Include="Trips\SingleTrunkTreeMeasurement.cs" />
+    <Compile Include="Trips\TreeMeasurementBase.cs" />
     <Compile Include="Trips\Measurer.cs" />
     <Compile Include="Trips\TripService.cs" />
+    <Compile Include="Trips\TrunkMeasurement.cs" />
     <Compile Include="UserSession.cs" />
     <Compile Include="ModelRegistry.cs" />
     <Compile Include="ModelSettings.cs" />

@@ -93,7 +93,7 @@ namespace TMD.Model.Trips
             get
             {
                 CoordinateBounds cb = CoordinateBounds.Null();
-                foreach (TreeMeasurement tm in TreeMeasurements)
+                foreach (TreeMeasurementBase tm in TreeMeasurements)
                 {
                     if (tm.CoordinatesEntered && tm.Coordinates.IsSpecified && tm.Coordinates.IsValid)
                     {
@@ -191,16 +191,23 @@ namespace TMD.Model.Trips
         [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Optional", Ruleset = "Optional")]
         [CollectionCountWhenNotNullValidator(1, int.MaxValue, MessageTemplate = "You must add tree measurements to this subsite.", Ruleset = "Screening", Tag = "TreeMeasurements")]
         [CollectionCountWhenNotNullValidator(0, 10000, MessageTemplate = "This subsite contains too many tree measurements.", Ruleset = "Screening", Tag = "TreeMeasurements")]
-        public virtual IList<TreeMeasurement> TreeMeasurements { get; private set; }
+        public virtual IList<TreeMeasurementBase> TreeMeasurements { get; private set; }
 
-        public virtual TreeMeasurement AddTreeMeasurement()
+        public virtual SingleTrunkTreeMeasurement AddSingleTrunkTreeMeasurement()
         {
-            TreeMeasurement tm = TreeMeasurement.Create(this);
-            TreeMeasurements.Add(tm);
-            return tm;
+            SingleTrunkTreeMeasurement sttm = SingleTrunkTreeMeasurement.Create(this);
+            TreeMeasurements.Add(sttm);
+            return sttm;
         }
 
-        public virtual bool RemoveTreeMeasurement(TreeMeasurement tm)
+        public virtual MultiTrunkTreeMeasurement AddMultiTrunkTreeMeasurement()
+        {
+            MultiTrunkTreeMeasurement mttm = MultiTrunkTreeMeasurement.Create(this);
+            TreeMeasurements.Add(mttm);
+            return mttm;
+        }
+
+        public virtual bool RemoveTreeMeasurement(TreeMeasurementBase tm)
         {
             return TreeMeasurements.Remove(tm);
         }
@@ -231,7 +238,7 @@ namespace TMD.Model.Trips
                 OwnershipType = string.Empty,
                 OwnershipContactInfo = string.Empty,
                 Comments = string.Empty,
-                TreeMeasurements = new List<TreeMeasurement>(),
+                TreeMeasurements = new List<TreeMeasurementBase>(),
                 Country = sv.Trip.DefaultCountry,
                 State = sv.Trip.DefaultState,
                 County = sv.Trip.DefaultCounty,

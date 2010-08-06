@@ -112,7 +112,7 @@ namespace TMD.Model.Trips
                         {
                             return true;
                         }
-                        foreach (TreeMeasurement tm in ssv.TreeMeasurements)
+                        foreach (TreeMeasurementBase tm in ssv.TreeMeasurements)
                         {
                             if (tm.CoordinatesEntered)
                             {

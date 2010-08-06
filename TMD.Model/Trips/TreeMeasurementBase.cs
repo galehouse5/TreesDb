@@ -48,26 +48,6 @@ namespace TMD.Model.Trips
         XD = 3
     }
 
-    public enum TreeFormType
-    {
-        [Description("")]
-        NotSpecified = 0,
-        Single = 1,
-        Multi = 2,
-        Fusion = 3,
-        Coppice = 4,
-        Colony = 5,
-        Vine = 6
-    }
-
-    public enum TreePositionMeasurementType
-    {
-        [Description("")]
-        NotSpecified = 0,
-        Map = 1,
-        GPS = 2
-    }
-
     public enum TreeStatus
     {
         [Description("")]
@@ -99,25 +79,27 @@ namespace TMD.Model.Trips
         Swampy = 5
     }
 
-    public enum TreeGpsDatum
+    public enum TreeFormType
     {
         [Description("")]
         NotSpecified = 0,
-        WGS84NAD83 = 1,
-        WGS60 = 2,
-        WGS66 = 3,
-        WGS72 = 4
+        Single = 1,
+        Multi = 2,
+        Fusion = 3,
+        Coppice = 4,
+        Colony = 5,
+        Vine = 6
     }
 
     [Serializable]
     [DebuggerDisplay("{ScientificName} ({CommonName})")]
     [HasSelfValidation]
-    public class TreeMeasurement : BaseUserCreatedEntity
+    public abstract class TreeMeasurementBase : BaseUserCreatedEntity
     {
-        protected TreeMeasurement()
+        protected TreeMeasurementBase()
         { }
 
-        public virtual SubsiteVisit SubsiteVisit { get; private set; }
+        public virtual SubsiteVisit SubsiteVisit { get; protected set; }
 
         public virtual void SetTripDefaults()
         {
@@ -262,12 +244,6 @@ namespace TMD.Model.Trips
             get { return m_GeneralComments; }
             set { m_GeneralComments = (value ?? string.Empty).Trim(); }
         }
-        
-        [DisplayName("Gps datum:")]
-        public virtual TreeGpsDatum GpsDatum { get; set; }
-
-        [DisplayName("Position measurement type:")]
-        public virtual TreePositionMeasurementType PositionMeasurementType { get; set; }
 
         #endregion
 
@@ -341,7 +317,7 @@ namespace TMD.Model.Trips
 
         [DisplayName("Girth:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
-        public virtual Distance GirthBreastHeight { get; set; }
+        public virtual Distance Girth { get; set; }
 
         [DisplayName("Measurement height:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
@@ -366,7 +342,7 @@ namespace TMD.Model.Trips
 
         [IgnoreNulls(Ruleset = "Screening")]
         [DisplayName("Number of trunks:")]
-        [RangeValidator(0, RangeBoundaryType.Inclusive, int.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Number of trunks must be non-negative.", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [RangeValidator(1, RangeBoundaryType.Inclusive, int.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Number of trunks must be positive.", Ruleset = "Screening", Tag = "TreeMeasurement")]
         public virtual int? NumberOfTrunks { get; set; }
 
         [DisplayName("Volume:")]
@@ -401,11 +377,7 @@ namespace TMD.Model.Trips
 
         [DisplayName("Crown spread:")]
         [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
-        public virtual Distance MaximumCrownSpread { get; set; }
-
-        [DisplayName("Avg crown spread:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
-        public virtual Distance AverageCrownSpread { get; set; }
+        public virtual Distance CrownSpread { get; set; }
 
         private string m_CrownSpreadMeasurementMethod;
         [DisplayName("Measurement method:")]
@@ -534,59 +506,6 @@ namespace TMD.Model.Trips
         public virtual ValidationResults ValidateRegardingPersistence()
         {
             return ModelValidator.Validate(this, "Persistence");
-        }
-
-        internal static TreeMeasurement Create(SubsiteVisit ssv)
-        {
-            return new TreeMeasurement()
-            {
-                TreeName = string.Empty,
-                TreeNumber = null,
-                CommonName = string.Empty,
-                ScientificName = string.Empty,
-                Status = TreeStatus.NotSpecified,
-                HealthStatus = string.Empty,
-                AgeClass = TreeAgeClass.NotSpecified,
-                AgeType = TreeAgeType.NotSpecified,
-                Age = null,
-                GeneralComments = string.Empty,
-                CoordinatesEntered = ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified && ssv.Coordinates.IsValid,
-                Coordinates = ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified && ssv.Coordinates.IsValid ? ssv.Coordinates : Coordinates.Null(),
-                Elevation = Elevation.Null(),
-                PositionMeasurementType = TreePositionMeasurementType.NotSpecified,
-                Height = Distance.Null(),
-                HeightMeasurements = HeightMeasurements.Null(),
-                HeightMeasurementMethod = ssv.SiteVisit.Trip.DefaultHeightMeasurementMethod,
-                HeightMeasurementType = string.Empty,
-                LaserBrand = ssv.SiteVisit.Trip.DefaultLaserBrand,
-                ClinometerBrand = ssv.SiteVisit.Trip.DefaultClinometerBrand,
-                HeightComments = string.Empty,
-                GirthBreastHeight = Distance.Null(),
-                GirthMeasurementHeight = Distance.Null(),
-                GirthRootCollarHeight = Distance.Null(),
-                GirthComments = string.Empty,
-                MaximumCrownSpread = Distance.Null(),
-                AverageCrownSpread = Distance.Null(),
-                MaximumLimbLength = Distance.Null(),
-                CrownSpreadMeasurementMethod = string.Empty,
-                BaseCrownHeight = Distance.Null(),
-                CrownVolume = Volume.Null(),
-                CrownVolumeCalculationMethod = string.Empty,
-                CrownComments = string.Empty,
-                TrunkVolume = Volume.Null(),
-                TrunkVolumeCalculationMethod = string.Empty,
-                TrunkComments = string.Empty,
-                FormType = TreeFormType.NotSpecified,
-                NumberOfTrunks = null,
-                TreeFormComments = string.Empty,
-                TerrainType = TreeTerrainType.NotSpecified,
-                TerrainShapeIndex = null,
-                LandformIndex = null,
-                TerrainComments = string.Empty,
-                SubsiteVisit = ssv,
-                MakeCoordinatesPublic = true,
-                IncludeHeightDistanceAndAngleMeasurements = false
-            };
         }
     }
 }

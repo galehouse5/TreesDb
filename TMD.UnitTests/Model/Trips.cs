@@ -166,11 +166,11 @@ namespace TMD.UnitTests.Model
             ssv2.OwnershipType = "subsite visit 2 ownership type";
             ssv2.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
 
-            TreeMeasurement tm1 = ssv2.AddTreeMeasurement();
+            TreeMeasurementBase tm1 = ssv2.AddSingleTrunkTreeMeasurement();
             tm1.Age = 10;
             tm1.AgeClass = TreeAgeClass.VeryOld;
             tm1.AgeType = TreeAgeType.RingCount;
-            tm1.AverageCrownSpread = Distance.Create(10);
+            tm1.CrownSpread = Distance.Create(10);
             tm1.BaseCrownHeight = Distance.Create(20);
             tm1.ClinometerBrand = "tree measurement 1 clinometer brand";
             tm1.CommonName = "tree measurement 1 common name";
@@ -182,11 +182,10 @@ namespace TMD.UnitTests.Model
             tm1.Elevation = Elevation.Create(10);
             tm1.FormType = TreeFormType.Vine;
             tm1.GeneralComments = "tree measurement 1 general comments";
-            tm1.GirthBreastHeight = Distance.Create(30);
+            tm1.Girth = Distance.Create(30);
             tm1.GirthComments = "tree measurement 1 girth comments";
             tm1.GirthMeasurementHeight = Distance.Create(40);
             tm1.GirthRootCollarHeight = Distance.Create(50);
-            tm1.GpsDatum = TreeGpsDatum.WGS72;
             tm1.HealthStatus = "tree measurement 1 health status";
             tm1.Height = Distance.Create(60);
             tm1.HeightComments = "tree measurement 1 height comments";
@@ -199,10 +198,9 @@ namespace TMD.UnitTests.Model
             tm1.HeightMeasurementType = "tree measurement 1 height measurement type";
             tm1.LandformIndex = .10f;
             tm1.LaserBrand = "tree measurement 1 laser brand";
-            tm1.MaximumCrownSpread = Distance.Create(90);
+            tm1.CrownSpread = Distance.Create(90);
             tm1.MaximumLimbLength = Distance.Create(100);
             tm1.NumberOfTrunks = 10;
-            tm1.PositionMeasurementType = TreePositionMeasurementType.Map;
             tm1.ScientificName = "tree measurement 1 scientific name";
             tm1.Status = TreeStatus.ExoticPlanted;
             tm1.TerrainComments = "tree measurement 1 terrain comments";
@@ -212,11 +210,34 @@ namespace TMD.UnitTests.Model
             tm1.TrunkComments = "tree measurement 1 trunk comments";
             tm1.TrunkVolume = Volume.Create(20);
             tm1.TrunkVolumeCalculationMethod = "tree measurement 1 trunk volume calculation method";
-            TreeMeasurement tm2 = ssv2.AddTreeMeasurement();
+
+            MultiTrunkTreeMeasurement tm2 = ssv2.AddMultiTrunkTreeMeasurement();
+            tm2.NumberOfTrunks = 10;
+            tm2.FormType = TreeFormType.Multi;
+            TrunkMeasurement trunk1 = tm2.AddTrunkMeasurement();
+            trunk1.Girth = Distance.Create(10);
+            trunk1.GirthMeasurementHeight = Distance.Create(20);
+            trunk1.Height = Distance.Create(30);
+            trunk1.HeightMeasurements = HeightMeasurements.Create(
+                Distance.Create(40),
+                Angle.Create(50),
+                Distance.Create(60),
+                Angle.Create(70),
+                DirectedDistance.Create(80));
+            TrunkMeasurement trunk2 = tm2.AddTrunkMeasurement();
+            trunk2.Girth = Distance.Create(10);
+            trunk2.GirthMeasurementHeight = Distance.Create(20);
+            trunk2.Height = Distance.Create(30);
+            trunk2.HeightMeasurements = HeightMeasurements.Create(
+                Distance.Create(40),
+                Angle.Create(50),
+                Distance.Create(60),
+                Angle.Create(70),
+                DirectedDistance.Create(80));
             tm2.Age = 10;
             tm2.AgeClass = TreeAgeClass.VeryOld;
             tm2.AgeType = TreeAgeType.RingCount;
-            tm2.AverageCrownSpread = Distance.Create(10);
+            tm2.CrownSpread = Distance.Create(10);
             tm2.BaseCrownHeight = Distance.Create(20);
             tm2.ClinometerBrand = "tree measurement 2 clinometer brand";
             tm2.CommonName = "tree measurement 2 common name";
@@ -226,13 +247,11 @@ namespace TMD.UnitTests.Model
             tm2.CrownVolume = Volume.Create(10);
             tm2.CrownVolumeCalculationMethod = "tree measurement 2 crown volume calculation method";
             tm2.Elevation = Elevation.Create(10);
-            tm2.FormType = TreeFormType.Vine;
             tm2.GeneralComments = "tree measurement 2 general comments";
-            tm2.GirthBreastHeight = Distance.Create(30);
+            tm2.Girth = Distance.Create(30);
             tm2.GirthComments = "tree measurement 2 girth comments";
             tm2.GirthMeasurementHeight = Distance.Create(40);
             tm2.GirthRootCollarHeight = Distance.Create(50);
-            tm2.GpsDatum = TreeGpsDatum.WGS72;
             tm2.HealthStatus = "tree measurement 2 health status";
             tm2.Height = Distance.Create(60);
             tm2.HeightComments = "tree measurement 2 height comments";
@@ -245,10 +264,8 @@ namespace TMD.UnitTests.Model
             tm2.HeightMeasurementType = "tree measurement 2 height measurement type";
             tm2.LandformIndex = .10f;
             tm2.LaserBrand = "tree measurement 2 laser brand";
-            tm2.MaximumCrownSpread = Distance.Create(90);
+            tm2.CrownSpread = Distance.Create(90);
             tm2.MaximumLimbLength = Distance.Create(100);
-            tm2.NumberOfTrunks = 10;
-            tm2.PositionMeasurementType = TreePositionMeasurementType.Map;
             tm2.ScientificName = "tree measurement 2 scientific name";
             tm2.Status = TreeStatus.ExoticPlanted;
             tm2.TerrainComments = "tree measurement 2 terrain comments";
@@ -319,7 +336,7 @@ namespace TMD.UnitTests.Model
             ssv.OwnershipType = "subsite visit ownership type";
             ssv.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             Assert.IsTrue(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
-            TreeMeasurement tm = ssv.AddTreeMeasurement();
+            TreeMeasurementBase tm = ssv.AddSingleTrunkTreeMeasurement();
             Assert.IsTrue(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
         }
 
@@ -349,7 +366,7 @@ namespace TMD.UnitTests.Model
             ssv.OwnershipType = "subsite visit ownership type";
             ssv.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-            TreeMeasurement tm = ssv.AddTreeMeasurement();
+            TreeMeasurementBase tm = ssv.AddSingleTrunkTreeMeasurement();
             Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
             tm.CommonName = "tree measurement common name";
             tm.ScientificName = "tree measurement scientific name";
@@ -387,7 +404,7 @@ namespace TMD.UnitTests.Model
             ssv.OwnershipType = "subsite visit ownership type";
             ssv.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-            TreeMeasurement tm = ssv.AddTreeMeasurement();
+            TreeMeasurementBase tm = ssv.AddSingleTrunkTreeMeasurement();
             Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
             tm.CommonName = "tree measurement common name";
             tm.ScientificName = "tree measurement scientific name";
@@ -420,7 +437,7 @@ namespace TMD.UnitTests.Model
             ssv.OwnershipType = "subsite visit ownership type";
             ssv.State = LocationService.FindStateByCountryAndStateCodes("US", "OH");
             Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-            TreeMeasurement tm = ssv.AddTreeMeasurement();
+            TreeMeasurementBase tm = ssv.AddSingleTrunkTreeMeasurement();
             Assert.IsFalse(t.ValidateRegardingImport().IsValid);
             tm.CommonName = "tree measurement common name";
             tm.ScientificName = "tree measurement scientific name";

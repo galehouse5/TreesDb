@@ -14,10 +14,67 @@
     <property name="LastName"/>
   </class>
 
-  <class name="TMD.Model.Trips.TreeMeasurement" table="Trips.TreeMeasurements">
+  <class name="TMD.Model.Trips.TrunkMeasurement" table="Trips.TrunkMeasurements">
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <many-to-one name="TreeMeasurement" column="TreeMeasurementId" />
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
+    <component name="Girth" class="Distance">
+      <property name="Feet" column="Girth"/>
+      <property name="InputFormat" column="GirthInputFormat"/>
+    </component>
+    <component name="GirthMeasurementHeight" class="Distance">
+      <property name="Feet" column="GirthMeasurementHeight"/>
+      <property name="InputFormat" column="GirthMeasurementHeightInputFormat"/>
+    </component>
+    <component name="Height" class="Distance">
+      <property name="Feet" column="Height"/>
+      <property name="InputFormat" column="HeightInputFormat"/>
+    </component>
+    <property name="IncludeHeightDistanceAndAngleMeasurements"/>
+    <component name="HeightMeasurements" class="HeightMeasurements">
+      <component name="DistanceTop" class="Distance">
+        <property name="Feet" column="HeightMeasurementsDistanceTop"/>
+        <property name="InputFormat" column="HeightMeasurementsDistanceTopInputFormat"/>
+      </component>
+      <component name="AngleTop" class="Angle">
+        <property name="Degrees" column="HeightMeasurementsAngleTop"/>
+        <property name="InputFormat" column="HeightMeasurementsAngleTopInputFormat"/>
+      </component>
+      <component name="DistanceBottom" class="Distance">
+        <property name="Feet" column="HeightMeasurementsDistanceBottom"/>
+        <property name="InputFormat" column="HeightMeasurementsDistanceBottomInputFormat"/>
+      </component>
+      <component name="AngleBottom" class="Angle">
+        <property name="Degrees" column="HeightMeasurementsAngleBottom"/>
+        <property name="InputFormat" column="HeightMeasurementsAngleBottomInputFormat"/>
+      </component>
+      <component name="VerticalOffset" class="DirectedDistance">
+        <property name="Feet" column="HeightMeasurementsVerticalOffset"/>
+        <property name="InputFormat" column="HeightMeasurementsVerticalOffsetInputFormat"/>
+      </component>
+    </component>
+    <property name="TrunkComments"/>
+  </class>
+
+  <subclass name="TMD.Model.Trips.SingleTrunkTreeMeasurement" extends="TMD.Model.Trips.TreeMeasurementBase" discriminator-value="1">
+  </subclass>
+
+  <subclass name="TMD.Model.Trips.MultiTrunkTreeMeasurement" extends="TMD.Model.Trips.TreeMeasurementBase" discriminator-value="2">
+    <property name="CombinedGirthNumberOfTrunks" />
+    <bag name="TrunkMeasurements" cascade="all-delete-orphan" inverse="true">
+      <key column="TreeMeasurementId" />
+      <one-to-many class="TMD.Model.Trips.TrunkMeasurement"/>
+    </bag>
+  </subclass>
+
+  <class name="TMD.Model.Trips.TreeMeasurementBase" table="Trips.TreeMeasurements" abstract="true">
     <id name="Id">
       <generator class="native"/>
     </id>
+    <discriminator column="Type"/>
     <property name="Created" />
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <many-to-one name="SubsiteVisit" column="SubsiteVisitId" />
@@ -46,8 +103,6 @@
       <property name="InputFormat" column="ElevationInputFormat"/>
     </component>
     <property name="CoordinatesCalculated" />
-    <property name="GpsDatum"/>
-    <property name="PositionMeasurementType"/>
     <component name="Height" class="Distance">
       <property name="Feet" column="Height"/>
       <property name="InputFormat" column="HeightInputFormat"/>
@@ -78,9 +133,9 @@
     <property name="LaserBrand"/>
     <property name="ClinometerBrand"/>
     <property name="HeightComments"/>
-    <component name="GirthBreastHeight" class="Distance">
-      <property name="Feet" column="GirthBreastHeight"/>
-      <property name="InputFormat" column="GirthBreastHeightInputFormat"/>
+    <component name="Girth" class="Distance">
+      <property name="Feet" column="Girth"/>
+      <property name="InputFormat" column="GirthInputFormat"/>
     </component>
     <component name="GirthMeasurementHeight" class="Distance">
       <property name="Feet" column="GirthMeasurementHeight"/>
@@ -91,13 +146,9 @@
       <property name="InputFormat" column="GirthRootCollarHeightInputFormat"/>
     </component>
     <property name="GirthComments"/>
-    <component name="MaximumCrownSpread" class="Distance">
-      <property name="Feet" column="MaximumCrownSpread"/>
-      <property name="InputFormat" column="MaximumCrownSpreadInputFormat"/>
-    </component>
-    <component name="AverageCrownSpread" class="Distance">
-      <property name="Feet" column="AverageCrownSpread"/>
-      <property name="InputFormat" column="AverageCrownSpreadInputFormat"/>
+    <component name="CrownSpread" class="Distance">
+      <property name="Feet" column="CrownSpread"/>
+      <property name="InputFormat" column="CrownSpreadInputFormat"/>
     </component>
     <component name="MaximumLimbLength" class="Distance">
       <property name="Feet" column="MaximumLimbLength"/>
@@ -159,7 +210,7 @@
     <property name="Comments" />
     <bag name="TreeMeasurements" cascade="all-delete-orphan" inverse="true">
       <key column="SubsiteVisitId" />
-      <one-to-many class="TMD.Model.Trips.TreeMeasurement"/>
+      <one-to-many class="TMD.Model.Trips.TreeMeasurementBase"/>
     </bag>
     <property name="MakeOwnershipContactInfoPublic" />
   </class>  

@@ -120,6 +120,16 @@ namespace TMD.Model
 
         #endregion
 
+        public bool IsValid
+        {
+            get { return Height.IsValid; }
+        }
+
+        public bool IsValidAndSpecified
+        {
+            get { return Height.IsValidAndSpecified; }
+        }
+
         public static HeightMeasurements Create(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
         {
             return new HeightMeasurements()

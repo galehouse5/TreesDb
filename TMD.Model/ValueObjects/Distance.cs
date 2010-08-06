@@ -28,7 +28,7 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [RangeValidator(0f, RangeBoundaryType.Inclusive, float.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Distance must be non-negative.")]
+        [RangeValidator(0f, RangeBoundaryType.Inclusive, float.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Distance must be non-negative.", Ruleset = "Screening")]
         public float Feet { get; private set; }
 
         [ObjectEqualityValidator(DistanceFormat.Invalid, Negated = true, MessageTemplate = "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.", Ruleset = "Screening")]
@@ -124,6 +124,16 @@ namespace TMD.Model
         }
 
         #endregion
+
+        public bool IsValid
+        {
+            get { return InputFormat != DistanceFormat.Invalid; }
+        }
+
+        public bool IsValidAndSpecified
+        {
+            get { return IsValid & IsSpecified; }
+        }
 
         private static Regex FeetDecimalInchesFormat = new Regex("^\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?|\\s)\\s*(?<inches>[0-9]+(\\.[0-9]+)?)\\s*(\"|''|``|ins?|inchs?|inches?)?\\s*$", RegexOptions.Compiled);
         private static Regex DecimalFeetFormat = new Regex("^\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?)?\\s*$", RegexOptions.Compiled);

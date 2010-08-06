@@ -15,6 +15,7 @@ namespace TMD.Application
             public const string ImportSelectedSiteVisitIndexKey = "importSelectedSiteVisitIndex";
             public const string ImportSelectedSubsiteVisitIndexKey = "importSelectedSubsiteVisitIndex";
             public const string ImportSelectedMeasurementIndexKey = "importSelectedMeasurementIndex";
+            public const string ImportSelectedTrunkMeasurementIndexKey = "importSelectedTrunkMeasurementIndex";
             public const string DefaultAction = "defaultAction";
             public const string DefaultController = "defaultController";
             public const string StatusMessage = "statusMessage";
@@ -42,6 +43,12 @@ namespace TMD.Application
         {
             get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(Keys.ImportSelectedMeasurementIndexKey, -1); }
             set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.ImportSelectedMeasurementIndexKey, value); }
+        }
+
+        public static int ImportSelectedTrunkMeasurementIndex
+        {
+            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(Keys.ImportSelectedTrunkMeasurementIndexKey, -1); }
+            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.ImportSelectedTrunkMeasurementIndexKey, value); }
         }
 
         public static string DefaultAction
