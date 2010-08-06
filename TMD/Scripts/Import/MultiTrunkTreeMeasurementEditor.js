@@ -1,6 +1,6 @@
 ﻿var MultiTrunkTreeMeasurementEditor = new function () {
     var public = this;
-    var isSaved, isAdding;
+    var isSaved, isAdding, areTrunkMeasurementsValidated;
     var closeCallback;
     var step;
 
@@ -63,6 +63,7 @@
 
     function initialize() {
         step = 1;
+        areTrunkMeasurementsValidated = false;
         editor.dialog('option', 'title', isAdding ? 'Adding multi trunk tree measurement' : 'Editing multi trunk tree measurement')
             .dialog('option', 'buttons', { 'Next >': advanceToStep2, 'Cancel': function () { editor.dialog('close'); } });
         sections.tabs('select', 0);
@@ -225,6 +226,9 @@
             editor.find('.ImportRemoveButton').button({ icons: { primary: 'ui-icon-trash'} });
             editor.find('.Step1').hide();
             editor.find('.Step2').show();
+            if (!areTrunkMeasurementsValidated) {
+                editor.find('.Step2 .field-validation-error').remove();
+            }
         }
     }
 
@@ -275,6 +279,7 @@
 
     function save() {
         $.put('TreeMeasurement', editor.find('form').serialize(), function (data) {
+            areTrunkMeasurementsValidated = true;
             render(data);
             if (validate()) {
                 isSaved = true;

@@ -64,7 +64,11 @@
            <%= Model.TreeName %>
            <br />
         <% } %>
-        <%= Model.ScientificName %> (<%= Model.CommonName %>)
+        <% if (string.IsNullOrWhiteSpace(Model.ScientificName)) { %>
+            (scientific name not entered)
+        <% } else { %>
+            <%= Model.ScientificName %> (<%= Model.CommonName %>)
+        <% } %>
         <% if (Model.Height.IsValidAndSpecified) { %>
             <br />
             <%= Model.Height %> height

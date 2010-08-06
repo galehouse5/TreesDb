@@ -134,7 +134,7 @@ namespace TMD.Controllers
                     .ValidateIgnoringCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
                 {
                     ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}]", sv),
-                        "This site visit contains invalid data.");
+                        "You must edit this site visit to correct invalid or missing data.");
                 }
                 for (int ssv = 0; ssv < model.Trip.SiteVisits[sv].SubsiteVisits.Count; ssv++)
                 {
@@ -142,7 +142,7 @@ namespace TMD.Controllers
                         .ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
                     {
                         ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}]", sv, ssv),
-                            "This subsite visit contains invalid data.");
+                            "You must edit this subsite visit to correct invalid or missing data.");
                     }
                 }
             }
@@ -196,7 +196,7 @@ namespace TMD.Controllers
                     .ValidateIgnoringCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid)
                 {
                     ModelState.AddModelError(string.Format("SelectedSiteVisit.SubsiteVisits[{0}]", ssv),
-                        "This subsite visit contains invalid data.");
+                        "You must edit this subsite visit to correct invalid or missing data..");
                 }
             }
             if (model.Trip.ValidateRegardingPersistence().IsValid)
@@ -399,7 +399,7 @@ namespace TMD.Controllers
                             .ValidateRegardingScreeningAndPersistence().IsValid)
                         {
                             ModelState.AddModelError(string.Format("Trip.SiteVisits[{0}].SubsiteVisits[{1}].TreeMeasurements[{2}]", sv, ssv, tm),
-                                "This tree measurement contains invalid data.");
+                                "You must edit this tree measurement to correct invalid or missing data.");
                         }
                     }
                 }
@@ -463,7 +463,7 @@ namespace TMD.Controllers
                     if (!tm.ValidateRegardingScreeningAndPersistence().IsValid)
                     {
                         ModelState.AddModelError(string.Format("SelectedTreeMeasurement.TrunkMeasurements[{0}]", i),
-                                "This trunk measurement contains invalid data.");
+                                "You must edit this trunk measurement to correct invalid or missing data.");
                     }
                     i++;
                 }

@@ -64,7 +64,11 @@
         </div>
     <% } %>
     <div class="ImportEntitySummary ui-widget-content ui-corner-all">
-        <%= Model.Name%>
+        <% if (string.IsNullOrWhiteSpace(Model.Name)) { %>
+            (name not entered)
+        <% } else {%>
+            <%= Model.Name %>
+        <% } %>
         <br />
         <%= Model.County%>, <%= Model.State %>
         <br />

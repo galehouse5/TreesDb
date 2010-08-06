@@ -34,7 +34,11 @@
         </div>
     <% } %>
     <div class="ImportEntitySummary ui-widget-content ui-corner-all">
-        <%= Model.Name %>
+        <% if (string.IsNullOrWhiteSpace(Model.Name)) { %>
+            (name not entered)
+        <% } else {%>
+            <%= Model.Name %>
+        <% } %>
         <br />
         <% if (Model.Coordinates.IsSpecified && Model.Coordinates.IsValid) { %>
             <% if (Model.CoordinatesCalculatedFromContainedSubsiteVisits) { %>
