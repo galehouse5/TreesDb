@@ -9,7 +9,7 @@
 </div>");
     $(document).ready(function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
-            width: 410, position: 'center',
+            width: 405, position: 'center',
             buttons: { 'Save': save, 'Cancel': function () { dom.dialog('close'); } }
         });
         dom.bind('dialogclose', dispose);

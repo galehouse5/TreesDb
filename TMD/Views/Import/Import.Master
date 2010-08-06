@@ -7,7 +7,9 @@
 <script type="text/javascript" src="/Scripts/Import/Initialize.js"></script>
 <script type="text/javascript" src="/Scripts/Import/SiteVisitEditor.js"></script>
 <script type="text/javascript" src="/Scripts/Import/SubsiteVisitEditor.js"></script>
-<script type="text/javascript" src="/Scripts/Import/TreeMeasurementEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/SingleTrunkTreeMeasurementEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/MultiTrunkTreeMeasurementEditor.js"></script>
+<script type="text/javascript" src="/Scripts/Import/TrunkMeasurementEditor.js"></script>
 <script type="text/javascript" src="/Scripts/Import/CoordinatePicker.js"></script>
 <%= Html.GoogleMapsApiV3ScriptReference() %>
 <script type="text/javascript" src="/Scripts/GeocoderService.js"></script>
@@ -16,18 +18,18 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
-<div class="ui-content-import-step ui-content-emphasize">
+<div class="ImportStep ui-content-emphasize">
     <asp:ContentPlaceHolder ID="StepContent" runat="server"></asp:ContentPlaceHolder>
 </div>
 <div class="ui-helper-clearfix"></div>
-<div class="ui-navigation-import">
-    <div class="ui-navigation-import-middle">
+<div class="ImportNavigation">
+    <div class="ImportNavigationMiddle">
         <% Html.RenderPartial("Steps"); %>
     </div>
-    <div class="ui-navigation-import-left">
+    <div class="ImportNavigationLeft">
         <asp:ContentPlaceHolder ID="LeftNavigationContent" runat="server"></asp:ContentPlaceHolder>
     </div>
-    <div class="ui-navigation-import-right">
+    <div class="ImportNavigationRight">
         <asp:ContentPlaceHolder ID="RightNavigationContent" runat="server"></asp:ContentPlaceHolder>
     </div>
     <div class="ui-helper-clearfix"></div>

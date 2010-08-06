@@ -98,7 +98,7 @@ namespace TMD.Models
             ApplicationSession.ImportTripId = Trip.Id;
         }
 
-        public TreeMeasurement SelectedTreeMeasurement
+        public TreeMeasurementBase SelectedTreeMeasurement
         {
             get { return ApplicationSession.ImportSelectedMeasurementIndex > -1 ? SelectedSubsiteVisit.TreeMeasurements[ApplicationSession.ImportSelectedMeasurementIndex] : null; }
             set { ApplicationSession.ImportSelectedMeasurementIndex = value == null ? -1 : SelectedSubsiteVisit.TreeMeasurements.IndexOf(value); }
@@ -114,6 +114,12 @@ namespace TMD.Models
         {
             get { return ApplicationSession.ImportSelectedSiteVisitIndex > -1 ? Trip.SiteVisits[ApplicationSession.ImportSelectedSiteVisitIndex] : null; }
             set { ApplicationSession.ImportSelectedSiteVisitIndex = value == null ? -1 : Trip.SiteVisits.IndexOf(value); }
+        }
+
+        public TrunkMeasurement SelectedTrunkMeasurement
+        {
+            get { return ApplicationSession.ImportSelectedTrunkMeasurementIndex > -1 && SelectedTreeMeasurement is MultiTrunkTreeMeasurement ? ((MultiTrunkTreeMeasurement)SelectedTreeMeasurement).TrunkMeasurements[ApplicationSession.ImportSelectedTrunkMeasurementIndex] : null; }
+            set { ApplicationSession.ImportSelectedTrunkMeasurementIndex = value == null ? -1 : ((MultiTrunkTreeMeasurement)SelectedTreeMeasurement).TrunkMeasurements.IndexOf(value); }
         }
     }
 }

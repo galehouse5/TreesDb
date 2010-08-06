@@ -5,26 +5,34 @@
 
     var initialize = function () {
         siteMarkerImage = new google.maps.MarkerImage(
-            '/Images/site32.png',
+            '/Images/Site32.png',
             new google.maps.Size(32, 32));
         siteMarkerShadowImage = new google.maps.MarkerImage(
-            '/Images/site32s.png',
+            '/Images/Site32s.png',
             new google.maps.Size(59, 32),
             new google.maps.Point(0, 0),
             new google.maps.Point(16, 32));
         subsiteMarkerImage = new google.maps.MarkerImage(
-            '/Images/subsite32.png',
+            '/Images/Subsite32.png',
             new google.maps.Size(32, 32));
         subsiteMarkerShadowImage = new google.maps.MarkerImage(
-            '/Images/subsite32s.png',
+            '/Images/Subsite32s.png',
             new google.maps.Size(59, 32),
             new google.maps.Point(0, 0),
             new google.maps.Point(16, 32));
-        treeMarkerImage = new google.maps.MarkerImage(
-            '/Images/tree32.png',
+        singleTrunkTreeMarkerImage = new google.maps.MarkerImage(
+            '/Images/SingleTrunkTree32.png',
             new google.maps.Size(32, 32));
-        treeMarkerShadowImage = new google.maps.MarkerImage(
-            '/Images/tree32s.png',
+        singleTrunkTreeMarkerShadowImage = new google.maps.MarkerImage(
+            '/Images/SingleTrunkTree32s.png',
+            new google.maps.Size(59, 32),
+            new google.maps.Point(0, 0),
+            new google.maps.Point(16, 32));
+        multiTrunkTreeMarkerImage = new google.maps.MarkerImage(
+            '/Images/MultiTrunkTree32.png',
+            new google.maps.Size(32, 32));
+        multiTrunkTreeMarkerShadowImage = new google.maps.MarkerImage(
+            '/Images/MultiTrunkTree32s.png',
             new google.maps.Size(59, 32),
             new google.maps.Point(0, 0),
             new google.maps.Point(16, 32));
@@ -50,10 +58,18 @@
                     position: new google.maps.LatLng(options.Latitude, options.Longitude)
                 });
                 break;
-            case 'Tree':
+            case 'SingleTrunkTree':
                 marker = new google.maps.Marker({
-                    icon: treeMarkerImage,
-                    shadow: treeMarkerShadowImage,
+                    icon: singleTrunkTreeMarkerImage,
+                    shadow: singleTrunkTreeMarkerShadowImage,
+                    title: options.Title,
+                    position: new google.maps.LatLng(options.Latitude, options.Longitude)
+                });
+                break;
+            case 'MultiTrunkTree':
+                marker = new google.maps.Marker({
+                    icon: multiTrunkTreeMarkerImage,
+                    shadow: multiTrunkTreeMarkerShadowImage,
                     title: options.Title,
                     position: new google.maps.LatLng(options.Latitude, options.Longitude)
                 });

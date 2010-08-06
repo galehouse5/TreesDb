@@ -8,10 +8,10 @@
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
 <h2>Add the sites and subsites you visited on your trip</h2>
 <div class="import-sitevisits">
-    <a class="import-button-add-sitevisit" href='javascript:SiteVisitEditor.Add(SiteVisitsEditor.Refresh)'>Add site visit</a>
-    <div class="ui-validation-error ui-state-error-text">
+    <a class="ImportAddSiteVisitButton" href='javascript:SiteVisitEditor.Add(SiteVisitsEditor.Refresh)'>Add site visit</a>
+    <div class="ValidationError ui-state-error-text">
         <%= Html.ValidationMessage("Trip.SiteVisits", " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-        <%= Html.ValidationMessage("Trip.SiteVisits", "", new { @class = "ui-validation-error-message" })%>
+        <%= Html.ValidationMessage("Trip.SiteVisits", "", new { @class = "ValidationErrorMessage" })%>
     </div>
     <div class="ui-helper-clearfix"></div>
     <% if (Model.Trip.SiteVisits.Count == 0) { %>
@@ -22,7 +22,7 @@
         <% Html.RenderPartial("SiteVisitSummary",
                Model.Trip.SiteVisits[sv],
                new ViewDataDictionary(ViewData) { { "Edit", true }, { "SiteVisitIndex", sv } }); %>
-        <div class="import-subsitevisits">
+        <div class="ImportSubsiteVisitSummaries">
             <% for (int ssv = Model.Trip.SiteVisits[sv].SubsiteVisits.Count - 1; ssv >= 0; ssv--) { %>
                 <% Html.RenderPartial("SubsiteVisitSummary",
                        Model.Trip.SiteVisits[sv].SubsiteVisits[ssv],

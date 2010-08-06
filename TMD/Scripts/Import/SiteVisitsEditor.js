@@ -14,9 +14,9 @@
     var render = function (data) {
         $('.import-sitevisits').replaceWith(
             $(data).find('.import-sitevisits'));
-        $('.import-button-add-sitevisit').button();
-        $('.import-button-edit').button({ icons: { primary: 'ui-icon-pencil'} });
-        $('.import-button-remove').button({ icons: { primary: 'ui-icon-trash'} });
+        $('.ImportAddSiteVisitButton').button();
+        $('.ImportEditButton').button({ icons: { primary: 'ui-icon-pencil'} });
+        $('.ImportRemoveButton').button({ icons: { primary: 'ui-icon-trash'} });
     };
 
     this.Refresh = function (refresh) {
@@ -40,7 +40,7 @@ $(document).ready(function () {
         SiteVisitsEditor.ValidateAndChangeLocation(clickedAnchor.attr('href'));
         return false;
     });
-    $('.import-button-add-sitevisit').button();
-    $('.import-button-edit').button({ icons: { primary: 'ui-icon-pencil'} });
-    $('.import-button-remove').button({ icons: { primary: 'ui-icon-trash'} });
+    $('.ImportAddSiteVisitButton').button();
+    $('.ImportEditButton').button({ icons: { primary: 'ui-icon-pencil'} });
+    $('.ImportRemoveButton').button({ icons: { primary: 'ui-icon-trash'} });
 });

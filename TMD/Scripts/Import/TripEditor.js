@@ -3,10 +3,10 @@
     var isValidated = false;
 
     public.SaveAndChangeLocation = function (href) {
-        $.put('Trip', $('.import-trip').find('form').serialize(), function (data) {
+        $.put('Trip', $('.ImportTrip').find('form').serialize(), function (data) {
             isValidated = true;
             render(data);
-            if ($('.import-trip').find('.field-validation-error').length == 0) {
+            if ($('.ImportTrip').find('.field-validation-error').length == 0) {
                 window.location.href = href;
             }
         });
@@ -15,7 +15,7 @@
     var render = function (data) {
         if (data) {
             var newDom = $(data);
-            $('.import-trip').replaceWith(newDom.find('.import-trip'));
+            $('.ImportTrip').replaceWith(newDom.find('.ImportTrip'));
         }
         $('#Trip_Date').datepicker({
             onClose: function () { $('#Trip_Date').focus(); }

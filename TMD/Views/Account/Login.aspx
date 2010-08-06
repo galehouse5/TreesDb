@@ -7,24 +7,24 @@
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
 <div class="ui-content-emphasize ui-centered">
-    <div class="ui-form-column account-form ui-widget-content ui-corner-all">
+    <div class="InputColumn account-form ui-widget-content ui-corner-all">
         <h2>Login</h2>
         <% using(Html.BeginForm()) { %>
-            <div class="ui-form-row">
+            <div class="InputRow">
                 <%= Html.LabelFor(m => m.Email)%>
                 <%= Html.TextBoxFor(m => m.Email)%>
-                <div class="ui-validation-error ui-state-error-text">
+                <div class="ValidationError ui-state-error-text">
                     <%= Html.ValidationMessageFor(m => m.Email, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-                    <%= Html.ValidationMessageFor(m => m.Email, "", new { @class = "ui-validation-error-message" })%>
+                    <%= Html.ValidationMessageFor(m => m.Email, "", new { @class = "ValidationErrorMessage" })%>
                 </div>
                 <div class="ui-helper-clearfix"></div>
             </div>
-            <div class="ui-form-row">
+            <div class="InputRow">
                 <%= Html.LabelFor(m => m.Password)%>
                 <%= Html.PasswordFor(m => m.Password)%>
-                <div class="ui-validation-error ui-state-error-text">
+                <div class="ValidationError ui-state-error-text">
                     <%= Html.ValidationMessageFor(m => m.Password, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-                    <%= Html.ValidationMessageFor(m => m.Password, "", new { @class = "ui-validation-error-message" })%>
+                    <%= Html.ValidationMessageFor(m => m.Password, "", new { @class = "ValidationErrorMessage" })%>
                 </div>
                 <div class="ui-helper-clearfix"></div>
             </div>

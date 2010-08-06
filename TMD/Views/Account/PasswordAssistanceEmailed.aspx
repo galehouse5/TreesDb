@@ -7,7 +7,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <div class="ui-content-emphasize ui-centered">
-    <div class="ui-form-column account-form ui-widget-content ui-corner-all">
+    <div class="InputColumn account-form ui-widget-content ui-corner-all">
         <h2>Password assistance</h2>
         <p>Instructions for creating a new password have been emailed to <strong><%= Model.Email %></strong>.</p>
     </div>

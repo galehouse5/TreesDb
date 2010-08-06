@@ -2,7 +2,7 @@
     this.ValidateAndChangeLocation = function (href) {
         $.get('Review', {}, function (data) {
             render(data);
-            if ($('.import-sitevisits').find('.ui-validation-error .field-validation-error').not('.warning').length == 0) {
+            if ($('.import-sitevisits').find('.ValidationError .field-validation-error').not('.warning').length == 0) {
                 window.location.href = href;
             }
         });
@@ -11,8 +11,8 @@
     var render = function (data) {
         $('.import-sitevisits').replaceWith(
             $(data).find('.import-sitevisits'));
-        $('.import-button-edit').button({ icons: { primary: 'ui-icon-pencil'} });
-        $('.import-button-remove').button({ icons: { primary: 'ui-icon-trash'} });
+        $('.ImportEditButton').button({ icons: { primary: 'ui-icon-pencil'} });
+        $('.ImportRemoveButton').button({ icons: { primary: 'ui-icon-trash'} });
     };
 
     this.Refresh = function (refresh) {
@@ -30,6 +30,6 @@ $(document).ready(function () {
         ReviewEditor.ValidateAndChangeLocation(clickedAnchor.attr('href'));
         return false;
     });
-    $('.import-button-edit').button({ icons: { primary: 'ui-icon-pencil'} });
-    $('.import-button-remove').button({ icons: { primary: 'ui-icon-trash'} });
+    $('.ImportEditButton').button({ icons: { primary: 'ui-icon-pencil'} });
+    $('.ImportRemoveButton').button({ icons: { primary: 'ui-icon-trash'} });
 });

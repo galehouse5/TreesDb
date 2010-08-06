@@ -7,7 +7,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <div class="ui-content-emphasize ui-centered">
-    <div class="ui-form-column account-form ui-widget-content ui-corner-all">        
+    <div class="InputColumn account-form ui-widget-content ui-corner-all">        
         <h2>Unauthorized</h2>
         <p>
             Sorry, you aren't authorized to use this feature.  

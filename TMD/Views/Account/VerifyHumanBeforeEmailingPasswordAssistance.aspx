@@ -9,10 +9,10 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <div class="ui-content-emphasize ui-centered">
-    <div class="ui-form-column account-form ui-widget-content ui-corner-all">
+    <div class="InputColumn account-form ui-widget-content ui-corner-all">
         <h2>Please verify that you're human</h2>
         <% using(Html.BeginForm()) { %>
-            <div class="ui-form-row">
+            <div class="InputRow">
                 <%= Html.HiddenFor(m => m.Email) %>
                 <%= Html.HiddenFor(m => m.ConfirmEmail) %>
                 <%= Html.GenerateCaptcha("", "blackglass") %>

@@ -14,9 +14,9 @@
     var render = function (data) {
         $('.import-sitevisits').replaceWith(
             $(data).find('.import-sitevisits'));
-        $('.import-button-add-treemeasurement').button();
-        $('.import-button-edit').button({ icons: { primary: 'ui-icon-pencil'} });
-        $('.import-button-remove').button({ icons: { primary: 'ui-icon-trash'} });
+        $('.ImportAddSingleTrunkTreeMeasurementButton, .ImportAddMultiTrunkTreeMeasurementButton').button();
+        $('.ImportEditButton').button({ icons: { primary: 'ui-icon-pencil'} });
+        $('.ImportRemoveButton').button({ icons: { primary: 'ui-icon-trash'} });
     };
 
     this.Refresh = function (refresh) {
@@ -40,7 +40,7 @@ $(document).ready(function () {
         TreeMeasurementsEditor.ValidateAndChangeLocation(clickedAnchor.attr('href'));
         return false;
     });
-    $('.import-button-add-treemeasurement').button();
-    $('.import-button-edit').button({ icons: { primary: 'ui-icon-pencil'} });
-    $('.import-button-remove').button({ icons: { primary: 'ui-icon-trash'} });
+    $('.ImportAddSingleTrunkTreeMeasurementButton, .ImportAddMultiTrunkTreeMeasurementButton').button();
+    $('.ImportEditButton').button({ icons: { primary: 'ui-icon-pencil'} });
+    $('.ImportRemoveButton').button({ icons: { primary: 'ui-icon-trash'} });
 });

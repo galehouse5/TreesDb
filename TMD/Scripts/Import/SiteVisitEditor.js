@@ -6,12 +6,12 @@
 
     var dom = $(
 "<div>\
-    <div class='import-sitevisit-step1'></div>\
-    <div class='import-sitevisit-step2'></div>\
+    <div class='Step1'></div>\
+    <div class='Step2'></div>\
 </div>");
     $(document).ready(function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
-            width: 410, position: 'center'
+            width: 405, position: 'center'
         });
         dom.bind('dialogclose', dispose);
     });
@@ -52,11 +52,11 @@
 
     function render(data) {
         var newDom = $(data);
-        dom.find('.import-sitevisit-step1').replaceWith(newDom.find('.import-sitevisit-step1'));
-        dom.find('.import-sitevisit-step2').replaceWith(newDom.find('.import-sitevisit-step2'));
+        dom.find('.Step1').replaceWith(newDom.find('.Step1'));
+        dom.find('.Step2').replaceWith(newDom.find('.Step2'));
         if (step == 1) {
-            dom.find('.import-sitevisit-step1').show();
-            dom.find('.import-sitevisit-step2').hide();
+            dom.find('.Step1').show();
+            dom.find('.Step2').hide();
             dom.find('.CoordinatePicker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
             dom.find('.EnterCoordinates input')
                 .bind('change', (function () {
@@ -70,20 +70,20 @@
                 .trigger('change')
                 .button();
         } else {
-            dom.find('.import-sitevisit-step1').hide();
-            dom.find('.import-sitevisit-step2').show();
-            dom.find('.import-button-add-subsitevisit').button();
-            dom.find('.import-button-edit').button({ icons: { primary: 'ui-icon-pencil'} });
-            dom.find('.import-button-remove').button({ icons: { primary: 'ui-icon-trash'} });
+            dom.find('.Step1').hide();
+            dom.find('.Step2').show();
+            dom.find('.ImportAddSubsiteVisitButton').button();
+            dom.find('.ImportEditButton').button({ icons: { primary: 'ui-icon-pencil'} });
+            dom.find('.ImportRemoveButton').button({ icons: { primary: 'ui-icon-trash'} });
             if (!areSiteVisitsValidated) {
-                dom.find('.import-sitevisit-step2 .field-validation-error').remove();
+                dom.find('.Step2 .field-validation-error').remove();
             }
         }
     }
 
     function dispose() {
-        dom.find('.import-sitevisit-step1').empty();
-        dom.find('.import-sitevisit-step2').empty();
+        dom.find('.Step1').empty();
+        dom.find('.Step2').empty();
         if (isAdding && !isSaved) {
             $.delete_('SiteVisit');
         }
@@ -94,12 +94,12 @@
         isValidating = true;
         var isValid = true;
         if (step == 1) {
-            if (dom.find('.import-sitevisit-step1 .field-validation-error').length > 0) {
-                dom.find('.import-sitevisit-step1 .input-validation-error').first().focus();
+            if (dom.find('.Step1 .field-validation-error').length > 0) {
+                dom.find('.Step1 .input-validation-error').first().focus();
                 isValid = false;
             }
         } else {
-            if (dom.find('.import-sitevisit-step2 .field-validation-error').length > 0) {
+            if (dom.find('.Step2 .field-validation-error').length > 0) {
                 isValid = false;
             }
         }

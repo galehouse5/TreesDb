@@ -246,7 +246,7 @@ namespace TMD.Controllers
                     {
                         markers.Add(ssv.ToMapMarker());
                     }
-                    foreach (TreeMeasurement tm in ssv.TreeMeasurements)
+                    foreach (TreeMeasurementBase tm in ssv.TreeMeasurements)
                     {
                         if (tm.Coordinates.IsSpecified && tm.CoordinatesEntered)
                         {
@@ -354,7 +354,7 @@ namespace TMD.Controllers
                     {
                         markers.Add(ssv.ToMapMarker());
                     }
-                    foreach (TreeMeasurement tm in ssv.TreeMeasurements)
+                    foreach (TreeMeasurementBase tm in ssv.TreeMeasurements)
                     {
                         if (tm.Coordinates.IsSpecified && tm.CoordinatesEntered)
                         {
@@ -412,14 +412,25 @@ namespace TMD.Controllers
         #region TreeMeasurement actions
 
         [HttpPost]
-        public ActionResult CreateTreeMeasurement(int siteVisitIndex, int subsiteVisitIndex)
+        public ActionResult CreateSingleTrunkTreeMeasurement(int siteVisitIndex, int subsiteVisitIndex)
         {
             ImportModel model = new ImportModel();
             model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
-            model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.AddTreeMeasurement();
+            model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.AddSingleTrunkTreeMeasurement();
             model.SaveTrip();
-            return View("TreeMeasurement", model);
+            return View("SingleTrunkTreeMeasurement", model);
+        }
+
+        [HttpPost]
+        public ActionResult CreateMultiTrunkTreeMeasurement(int siteVisitIndex, int subsiteVisitIndex)
+        {
+            ImportModel model = new ImportModel();
+            model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
+            model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
+            model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.AddMultiTrunkTreeMeasurement();
+            model.SaveTrip();
+            return View("MultiTrunkTreeMeasurement", model);
         }
 
         [HttpGet]
@@ -431,7 +442,11 @@ namespace TMD.Controllers
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
             model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.TreeMeasurements[treeMeasurementIndex];
             model.SaveTrip();
-            return View("TreeMeasurement", model);
+            if (model.SelectedTreeMeasurement is MultiTrunkTreeMeasurement)
+            {
+                return View("MultiTrunkTreeMeasurement", model);
+            }
+            return View("SingleTrunkTreeMeasurement", model);
         }
 
         [HttpPut]
@@ -440,12 +455,29 @@ namespace TMD.Controllers
         {
             ValidationResults results = model.SelectedTreeMeasurement.ValidateRegardingScreeningAndPersistence();
             results.CopyToModelState(ModelState, "SelectedTreeMeasurement");
+            if (model.SelectedTreeMeasurement is MultiTrunkTreeMeasurement)
+            {
+                int i = 0;
+                foreach (TrunkMeasurement tm in ((MultiTrunkTreeMeasurement)model.SelectedTreeMeasurement).TrunkMeasurements)
+                {
+                    if (!tm.ValidateRegardingScreeningAndPersistence().IsValid)
+                    {
+                        ModelState.AddModelError(string.Format("SelectedTreeMeasurement.TrunkMeasurements[{0}]", i),
+                                "This trunk measurement contains invalid data.");
+                    }
+                    i++;
+                }
+            }
             if (ModelState.IsValid)
             {
                 model.SelectedTreeMeasurement.SetTripDefaults();
                 model.SaveTrip();
             }
-            return View("TreeMeasurement", model);
+            if (model.SelectedTreeMeasurement is MultiTrunkTreeMeasurement)
+            {
+                return View("MultiTrunkTreeMeasurement", model);
+            }
+            return View("SingleTrunkTreeMeasurement", model);
         }
 
         [HttpGet]
@@ -490,7 +522,7 @@ namespace TMD.Controllers
                     {
                         markers.Add(ssv.ToMapMarker());
                     }
-                    foreach (TreeMeasurement tm in ssv.TreeMeasurements)
+                    foreach (TreeMeasurementBase tm in ssv.TreeMeasurements)
                     {
                         if (tm.Coordinates.IsSpecified && tm.CoordinatesEntered && tm != model.SelectedTreeMeasurement)
                         {
@@ -553,6 +585,63 @@ namespace TMD.Controllers
                 return RedirectToAction("Review");
             }
             return View("Finish", model);
+        }
+
+        #endregion
+
+        #region TrunkMeasurement actions
+
+        [HttpPost]
+        public ActionResult CreateTrunkMeasurement()
+        {
+            ImportModel model = new ImportModel();
+            model.SelectedTrunkMeasurement = ((MultiTrunkTreeMeasurement)model.SelectedTreeMeasurement).AddTrunkMeasurement();
+            model.SaveTrip();
+            return View("TrunkMeasurement", model);
+        }
+
+        [HttpGet]
+        [ActionName("TrunkMeasurement")]
+        public ActionResult EditTrunkMeasurement(int trunkMeasurementIndex)
+        {
+            ImportModel model = new ImportModel();
+            model.SelectedTrunkMeasurement = ((MultiTrunkTreeMeasurement)model.SelectedTreeMeasurement).TrunkMeasurements[trunkMeasurementIndex];
+            return View("TrunkMeasurement", model);
+        }
+
+        [HttpPut]
+        [ActionName("TrunkMeasurement")]
+        public ActionResult SaveTrunkMeasurement(ImportModel model)
+        {
+            ValidationResults results = model.SelectedTrunkMeasurement.ValidateRegardingScreeningAndPersistence();
+            results.CopyToModelState(ModelState, "SelectedTrunkMeasurement");
+            if (ModelState.IsValid)
+            {
+                model.SaveTrip();
+            }
+            return View("TrunkMeasurement", model);
+        }
+
+        [HttpGet]
+        public ActionResult RemoveTrunkMeasurement(int trunkMeasurementIndex)
+        {
+            ImportModel model = new ImportModel();
+            model.SelectedTrunkMeasurement = ((MultiTrunkTreeMeasurement)model.SelectedTreeMeasurement).TrunkMeasurements[trunkMeasurementIndex];
+            return View(model);
+        }
+
+        [HttpDelete]
+        [ActionName("TrunkMeasurement")]
+        public ActionResult ConfirmRemoveTrunkMeasurement()
+        {
+            ImportModel model = new ImportModel();
+            if (model.SelectedTrunkMeasurement != null)
+            {
+                ((MultiTrunkTreeMeasurement)model.SelectedTreeMeasurement).RemoveTrunkMeasurement(model.SelectedTrunkMeasurement);
+                model.SelectedTrunkMeasurement = null;
+                model.SaveTrip();
+            }
+            return new EmptyResult();
         }
 
         #endregion

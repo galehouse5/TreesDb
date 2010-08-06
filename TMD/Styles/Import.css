@@ -1,53 +1,59 @@
-﻿.ui-content-import-step { width: 820px; margin: 50px auto; }
+﻿.ImportStep { width: 820px; margin: 50px auto; }
 
-.ui-navigation-import { margin: 25px auto;  }
-.ui-navigation-import-left { float: left; width: 170px; margin: 0 15px; text-align: right; font-size: 12px; }
-.ui-navigation-import-middle { float: left; width: 570px; margin: 0 15px; text-align: center; padding-top: 3px; }
-.ui-navigation-import-middle ul { list-style: none; padding: 0; margin: 0; }
-.ui-navigation-import-middle ul li { display: inline; }
-.ui-navigation-import-right { float: right; width: 170px; margin: 0 15px; text-align: left; font-size: 12px; }
+.ImportNavigation { margin: 25px auto;  }
+.ImportNavigationLeft { float: left; width: 170px; margin: 0 15px; text-align: right; font-size: 12px; }
+.ImportNavigationMiddle { float: left; width: 570px; margin: 0 15px; text-align: center; padding-top: 3px; }
+.ImportNavigationMiddle ul { list-style: none; padding: 0; margin: 0; }
+.ImportNavigationMiddle ul li { display: inline; }
+.ImportNavigationRight { float: right; width: 170px; margin: 0 15px; text-align: left; font-size: 12px; }
 
-.ui-form-column { float: left; width: 380px; padding: 5px 0; }
-.ui-form-row { clear: both; padding: 5px 0; }
-.ui-form-row label { float: left; display: block; width: 100px; text-align: right; padding-right: 5px; }
-.ui-form-row input[type=text], .ui-form-row select { float: left; display: block; width: 260px; }
-.ui-form-row textarea { float: left; display: block; width: 260px; height: 60px; }
-.ui-form-row input[type=checkbox] { float: left; display: block; }
-.ui-form-row .ui-validation-error { float: left; clear: both; display: block; }
-.ui-form-row .ui-validation-error .field-validation-error.ui-icon { float: left; display: block; margin-left: 88px; }
-.ui-form-row .ui-validation-error .field-validation-error.ui-validation-error-message  { float: left; display: block; width: 260px; line-height: 15px; }
+.InputColumn { float: left; width: 380px; padding: 5px 0; }
+.InputRow { clear: both; padding: 5px 0; }
+.InputRow label { float: left; display: block; width: 100px; text-align: right; padding-right: 5px; }
+.InputRow input[type=text], .InputRow select { float: left; display: block; width: 260px; }
+.InputRow textarea { float: left; display: block; width: 260px; height: 60px; }
+.InputRow input[type=checkbox] { float: left; display: block; }
+.InputRow .ValidationError { float: left; clear: both; display: block; }
+.InputRow .ValidationError .field-validation-error.ui-icon { float: left; display: block; margin-left: 88px; }
+.InputRow .ValidationError .field-validation-error.ValidationErrorMessage  { float: left; display: block; width: 260px; line-height: 15px; }
 
-.ui-validation-error .field-validation-error.ui-icon { float: left; display: block;}
-.ui-validation-error .field-validation-error.ui-validation-error-message  { font-size: 12px; float: left; display: block; line-height: 15px; }
+.ValidationError .field-validation-error.ui-icon { float: left; display: block;}
+.ValidationError .field-validation-error.ValidationErrorMessage  { font-size: 12px; float: left; display: block; line-height: 15px; }
+.ValidationWarning .field-validation-error.ui-icon { float: left; display: block;}
+.ValidationWarning .field-validation-error.ValidationWarningMessage  { font-weight: normal; font-size: 12px; float: left; display: block; line-height: 15px; }
 
-.ui-validation-warning .field-validation-error.ui-icon { float: left; display: block;}
-.ui-validation-warning .field-validation-error.ui-validation-warning-message  { font-weight: normal; font-size: 12px; float: left; display: block; line-height: 15px; }
+.ImportEditButton { float: right; }
+.ImportRemoveButton { float: right; }
+.ImportEntitySummary { font-size: 12px; line-height: 20px; padding-left: 5px; }
 
-.import-button-edit { float: right; }
-.import-button-remove { float: right; }
-.ui-content-import-summary { font-size: 12px; line-height: 20px; padding-left: 5px; }
+.ImportAddSiteVisitButton { font-size: 12px; background-image: url('/Images/Site16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
+.ImportSiteVisitSummary { float: left; font-size: 10px; width: 250px; margin: 10px; }
+.ImportSiteVisitSummary .field-validation-error.ValidationErrorMessage { width: 225px; }
+.ImportSiteVisitIcon { float: left; height: 25px; width: 32px; background-image: url("/Images/Site32.png"); background-position: 0 -3px; }
 
-.import-button-add-sitevisit { font-size: 12px; background-image: url('/Images/site16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
-.ui-content-import-sitevisit { float: left; font-size: 10px; width: 250px; margin: 10px; }
-.ui-content-import-sitevisit .field-validation-error.ui-validation-error-message { width: 225px; }
-.ui-icon-import-sitevisit { float: left; height: 25px; width: 32px; background-image: url("/Images/site32.png"); background-position: 0 -3px; }
+.ImportSubsiteVisitSummaries { float: left; width: 545px; }
 
-.import-subsitevisits { float: left; width: 545px; }
+.Step2 .ImportAddSubsiteVisitButton { font-size: 12px; background-image: url('/Images/Subsite16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
+.ImportSubsiteVisitSummary { float: left; font-size: 10px; width: 250px; margin: 10px; }
+.ImportSubsiteVisitSummary .field-validation-error.ValidationErrorMessage { width: 225px; }
+.ImportSubsiteVisitIcon { float: left; height: 25px; width: 32px; background-image: url("/Images/Subsite32.png"); background-position: 0 -3px; }
 
-.import-sitevisit-step2 .import-button-add-subsitevisit { font-size: 12px; background-image: url('/Images/subsite16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
-.ui-content-import-subsitevisit { float: left; font-size: 10px; width: 250px; margin: 10px; }
-.ui-content-import-subsitevisit .field-validation-error.ui-validation-error-message { width: 225px; }
-.ui-icon-import-subsitevisit { float: left; height: 25px; width: 32px; background-image: url("/Images/subsite32.png"); background-position: 0 -3px; }
+.ImportTreeMeasurementSummaries { float: left; width: 270px; }
 
-.ui-content-import-treemeasurements { float: left; width: 270px; }
+.ImportEntitySummaryHeader .ImportAddSingleTrunkTreeMeasurementButton { float: right; background-image: url('/Images/SingleTrunkTree16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
+.ImportEntitySummaryHeader .ImportAddMultiTrunkTreeMeasurementButton { float: right; background-image: url('/Images/MultiTrunkTree16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 12px; }
+.ImportTreeMeasurementSummary { float: left; font-size: 10px; width: 250px; margin: 10px; }
+.ImportTreeMeasurementSummary .field-validation-error.ValidationErrorMessage, .ImportTreeMeasurementSummary .field-validation-error.ValidationWarningMessage { width: 225px; }
+.ImportSingleTrunkTreeMeasurementIcon { float: left; height: 25px; width: 32px; background-image: url("/Images/SingleTrunkTree32.png"); background-position: 0 -3px; }
+.ImportMultiTrunkTreeMeasurementIcon { float: left; height: 25px; width: 32px; background-image: url("/Images/MultiTrunkTree32.png"); background-position: 0 -3px; }
 
-.ui-content-import-header .import-button-add-treemeasurement { float: right; background-image: url('/Images/tree16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
-.ui-content-import-treemeasurement { float: left; font-size: 10px; width: 250px; margin: 10px; }
-.ui-content-import-treemeasurement .field-validation-error.ui-validation-error-message, .ui-content-import-treemeasurement .field-validation-error.ui-validation-warning-message { width: 225px; }
-.ui-icon-import-treemeasurement { float: left; height: 25px; width: 32px; background-image: url("/Images/tree32.png"); background-position: 0 -3px; }
+.Step2 .ImportAddTrunkMeasurementButton { font-size: 12px; background-image: url('/Images/Trunk16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 8px; }
+.ImportTrunkMeasurementSummary { float: left; font-size: 10px; width: 250px; margin: 10px; }
+.ImportTrunkMeasurementSummary .field-validation-error.ValidationErrorMessage, .ImportTreeMeasurementSummary .field-validation-error.ValidationWarningMessage { width: 225px; }
+.ImportTrunkMeasurementIcon { float: left; height: 25px; width: 32px; background-image: url("/Images/Trunk32.png"); background-position: 0 -3px; }
 
-.import-trip { margin-top: 25px; font-size: 10px; width: 780px; }
-.import-trip label { font-size: 11px; }
+.ImportTrip { margin-top: 25px; font-size: 10px; width: 780px; }
+.ImportTrip label { font-size: 11px; }
 
-.ui-form-row.entrybutton { float: left; margin-left: 100px; }
-.ui-form-row.entrybutton label { width: auto; margin-right: 0.4em;  }
+.InputRow.InputButton { float: left; margin-left: 100px; }
+.InputRow.InputButton label { width: auto; margin-right: 0.4em;  }

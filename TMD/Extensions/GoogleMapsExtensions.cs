@@ -48,11 +48,11 @@ namespace TMD.Extensions
             };
         }
 
-        public static MapMarker ToMapMarker(this TreeMeasurement tm)
+        public static MapMarker ToMapMarker(this TreeMeasurementBase tm)
         {
             return new MapMarker()
             {
-                Level = "Tree",
+                Level = tm is SingleTrunkTreeMeasurement ? "SingleTrunkTree" : "MultiTrunkTree",
                 Title = tm.ScientificName,
                 Latitude = tm.Coordinates.Latitude.TotalDegrees,
                 Longitude = tm.Coordinates.Longitude.TotalDegrees
