@@ -40,6 +40,19 @@ namespace TMD.Model.Trips
             }
         }
 
+        [SelfValidation(Ruleset = "Screening")]
+        public virtual void CheckHeightDistanceAngeAngleMeasurementsAreIncluded(ValidationResults results)
+        {
+            if (IncludeHeightDistanceAndAngleMeasurements)
+            {
+                if (!HeightMeasurements.IsSpecified)
+                {
+                    results.AddResult(new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult(
+                        "You must specify enough distance and angle measurements to calculate a height.", this, "HeightMeasurements.Height", "TrunkMeasurement", null));
+                }
+            }
+        }
+
         [DisplayName("Enter distance and angle measurements")]
         public virtual bool IncludeHeightDistanceAndAngleMeasurements { get; set; }
 

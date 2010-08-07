@@ -270,7 +270,7 @@ namespace TMD.Model.Trips
                 if (!HeightMeasurements.IsSpecified)
                 {
                     results.AddResult(new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult(
-                        "You must specify enough distance and angle measurements to calculate a height.", Coordinates.Latitude, "HeightMeasurements.Height", "TreeMeasurement", null));
+                        "You must specify enough distance and angle measurements to calculate a height.", this, "HeightMeasurements.Height", "TreeMeasurement", null));
                 }
             }
         }

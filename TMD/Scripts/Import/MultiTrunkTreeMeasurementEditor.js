@@ -166,6 +166,7 @@
     }
 
     function dispose() {
+        sections.tabs('select', 0);
         sections.find('.GeneralSection').empty();
         sections.find('.HeightSection').empty();
         sections.find('.GirthSection').empty();
