@@ -5,7 +5,7 @@
     var step;
 
     var dom = $(
-"<div>\
+"<div id='SiteVisitEditor'>\
     <div class='Step1'></div>\
     <div class='Step2'></div>\
 </div>");
@@ -206,9 +206,8 @@ var SiteVisitRemover = new function () {
     var closeCallback;
 
     var dom = $(
-"<div title='Removing site visit'>\
-    <div class='import-sitevisit'>\
-    </div>\
+"<div id='SiteVisitRemover' title='Removing site visit'>\
+    <div class='Placeholder'></div>\
 </div>");
     $(document).ready(function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, 
@@ -223,7 +222,7 @@ var SiteVisitRemover = new function () {
     }
 
     function render(data) {
-        dom.find('.import-sitevisit').replaceWith($(data));
+        dom.find('.Placeholder').replaceWith($(data).find('.Placeholder'));
     }
 
     function remove() {

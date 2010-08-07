@@ -372,8 +372,7 @@ var MultiTrunkTreeMeasurementRemover = new function () {
     var dialog;
     $(document).ready(function () {
         dialog = $("<div id='MultiTrunkTreeMeasurementRemover' title='Removing multi trunk tree measurement'>\
-            <div class='Placeholder'>\
-            </div>\
+            <div class='Placeholder'></div>\
         </div>")
         .dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
             width: 320,

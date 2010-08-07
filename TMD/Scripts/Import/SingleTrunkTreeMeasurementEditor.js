@@ -321,8 +321,7 @@ var SingleTrunkTreeMeasurementRemover = new function () {
     var dialog;
     $(document).ready(function () {
         dialog = $("<div id='SingleTrunkTreeMeasurementRemover' title='Removing single trunk tree measurement'>\
-            <div class='Placeholder'>\
-            </div>\
+            <div class='Placeholder'></div>\
         </div>")
         .dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
             width: 320,

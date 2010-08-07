@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
-<div class="import-subsitevisit">
-    <div class="InputColumn ui-widget-content ui-corner-all">
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<TMD.Models.ImportModel>" %>
+<div id='SubsiteVisitEditor'>
+    <div class="Placeholder InputColumn ui-widget-content ui-corner-all">
         <form>
             <div class="InputRow">
                 <%= Html.LabelFor(m => m.SelectedSubsiteVisit.Name)%>

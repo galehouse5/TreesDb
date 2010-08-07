@@ -24,7 +24,7 @@
 <div class="ui-helper-clearfix"></div>
 <div class="ImportNavigation">
     <div class="ImportNavigationMiddle">
-        <% Html.RenderPartial("Steps"); %>
+        <% Html.RenderPartial("ImportSteps"); %>
     </div>
     <div class="ImportNavigationLeft">
         <asp:ContentPlaceHolder ID="LeftNavigationContent" runat="server"></asp:ContentPlaceHolder>

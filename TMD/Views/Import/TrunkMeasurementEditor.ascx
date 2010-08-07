@@ -1,7 +1,7 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<TMD.Models.ImportModel>" %>
 <%@ Import Namespace="TMD.Model.Trips" %>
-<div class='Placeholder'>
-    <div class="InputColumn ui-widget-content ui-corner-all">
+<div id="TrunkMeasurementEditor">
+    <div class="Placeholder InputColumn ui-widget-content ui-corner-all">
         <form>
             <div class="InputRow Girth">
                 <%= Html.LabelFor(m => m.SelectedTrunkMeasurement.Girth)%>

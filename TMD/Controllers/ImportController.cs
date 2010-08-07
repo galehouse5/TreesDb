@@ -161,7 +161,7 @@ namespace TMD.Controllers
             ImportModel model = new ImportModel();
             model.SelectedSiteVisit = model.Trip.AddSiteVisit();
             model.SaveTrip();
-            return View("SiteVisit", model);
+            return PartialView("SiteVisitEditor", model);
         }
 
         [HttpGet]
@@ -170,7 +170,7 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
-            return View("SiteVisit", model);
+            return PartialView("SiteVisitEditor", model);
         }
 
         [HttpPut]
@@ -203,7 +203,7 @@ namespace TMD.Controllers
             {
                 model.SaveTrip();
             }
-            return View("SiteVisit", model);
+            return PartialView("SiteVisitEditor", model);
         }
 
         [HttpGet]
@@ -211,7 +211,7 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
-            return View(model);
+            return PartialView("SiteVisitRemover", model);
         }
 
         [HttpDelete]
@@ -268,7 +268,7 @@ namespace TMD.Controllers
             ImportModel model = new ImportModel();
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.AddSubsiteVisit();
             model.SaveTrip();
-            return View("SubsiteVisit", model);
+            return PartialView("SubsiteVisitEditor", model);
         }
 
         [HttpDelete]
@@ -296,7 +296,7 @@ namespace TMD.Controllers
                 model.SelectedSubsiteVisit.SetTripDefaults();
                 model.SaveTrip();
             }
-            return View("SubsiteVisit", model);
+            return PartialView("SubsiteVisitEditor", model);
         }
 
         [HttpGet]
@@ -305,7 +305,7 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
-            return View("SubsiteVisit", model);
+            return PartialView("SubsiteVisitEditor", model);
         }
 
         [HttpGet]
@@ -315,7 +315,7 @@ namespace TMD.Controllers
             ImportModel model = new ImportModel();
             model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
-            return View("SubsiteVisit", model);
+            return PartialView("SubsiteVisitEditor", model);
         }
 
         [HttpGet]
@@ -323,7 +323,7 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
-            return View(model);
+            return PartialView("SubsiteVisitRemover", model);
         }
 
         [HttpGet]
@@ -333,7 +333,7 @@ namespace TMD.Controllers
             ImportModel model = new ImportModel();
             model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
-            return View("RemoveSubsiteVisit", model);
+            return PartialView("SubsiteVisitRemover", model);
         }
 
         [HttpGet]
@@ -381,7 +381,7 @@ namespace TMD.Controllers
             {
                 return RedirectToAction("SiteVisits");
             }
-            return View("TreeMeasurements", model);
+            return PartialView("TreeMeasurements", model);
         }
 
         [HttpGet]
@@ -419,7 +419,7 @@ namespace TMD.Controllers
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
             model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.AddSingleTrunkTreeMeasurement();
             model.SaveTrip();
-            return View("SingleTrunkTreeMeasurement", model);
+            return PartialView("SingleTrunkTreeMeasurementEditor", model);
         }
 
         [HttpPost]
@@ -430,7 +430,7 @@ namespace TMD.Controllers
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
             model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.AddMultiTrunkTreeMeasurement();
             model.SaveTrip();
-            return View("MultiTrunkTreeMeasurement", model);
+            return PartialView("MultiTrunkTreeMeasurementEditor", model);
         }
 
         [HttpGet]
@@ -444,9 +444,9 @@ namespace TMD.Controllers
             model.SaveTrip();
             if (model.SelectedTreeMeasurement is MultiTrunkTreeMeasurement)
             {
-                return View("MultiTrunkTreeMeasurement", model);
+                return PartialView("MultiTrunkTreeMeasurementEditor", model);
             }
-            return View("SingleTrunkTreeMeasurement", model);
+            return PartialView("SingleTrunkTreeMeasurementEditor", model);
         }
 
         [HttpPut]
@@ -475,9 +475,9 @@ namespace TMD.Controllers
             }
             if (model.SelectedTreeMeasurement is MultiTrunkTreeMeasurement)
             {
-                return View("MultiTrunkTreeMeasurement", model);
+                return PartialView("MultiTrunkTreeMeasurementEditor", model);
             }
-            return View("SingleTrunkTreeMeasurement", model);
+            return PartialView("SingleTrunkTreeMeasurementEditor", model);
         }
 
         [HttpGet]
@@ -487,7 +487,7 @@ namespace TMD.Controllers
             model.SelectedSiteVisit = model.Trip.SiteVisits[siteVisitIndex];
             model.SelectedSubsiteVisit = model.SelectedSiteVisit.SubsiteVisits[subsiteVisitIndex];
             model.SelectedTreeMeasurement = model.SelectedSubsiteVisit.TreeMeasurements[treeMeasurementIndex];
-            return View(model);
+            return PartialView("TreeMeasurementRemover", model);
         }
 
         [HttpDelete]
@@ -597,7 +597,7 @@ namespace TMD.Controllers
             ImportModel model = new ImportModel();
             model.SelectedTrunkMeasurement = ((MultiTrunkTreeMeasurement)model.SelectedTreeMeasurement).AddTrunkMeasurement();
             model.SaveTrip();
-            return View("TrunkMeasurement", model);
+            return PartialView("TrunkMeasurementEditor", model);
         }
 
         [HttpGet]
@@ -606,7 +606,7 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.SelectedTrunkMeasurement = ((MultiTrunkTreeMeasurement)model.SelectedTreeMeasurement).TrunkMeasurements[trunkMeasurementIndex];
-            return View("TrunkMeasurement", model);
+            return PartialView("TrunkMeasurementEditor", model);
         }
 
         [HttpPut]
@@ -619,7 +619,7 @@ namespace TMD.Controllers
             {
                 model.SaveTrip();
             }
-            return View("TrunkMeasurement", model);
+            return PartialView("TrunkMeasurementEditor", model);
         }
 
         [HttpGet]
@@ -627,7 +627,7 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.SelectedTrunkMeasurement = ((MultiTrunkTreeMeasurement)model.SelectedTreeMeasurement).TrunkMeasurements[trunkMeasurementIndex];
-            return View(model);
+            return PartialView("TrunkMeasurementRemover", model);
         }
 
         [HttpDelete]

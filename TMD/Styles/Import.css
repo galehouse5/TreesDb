@@ -19,7 +19,7 @@
 
 .ValidationError .field-validation-error.ui-icon { float: left; display: block;}
 .ValidationError .field-validation-error.ValidationErrorMessage  { font-size: 12px; float: left; display: block; line-height: 15px; }
-.ValidationWarning .field-validation-error.ui-icon { float: left; display: block;}
+.ValidationWarning .field-validation-error.ui-icon { float: left; display: block; }
 .ValidationWarning .field-validation-error.ValidationWarningMessage  { font-weight: normal; font-size: 12px; float: left; display: block; line-height: 15px; }
 
 .ImportEditButton { float: right; }
@@ -39,6 +39,7 @@
 .ImportSubsiteVisitIcon { float: left; height: 25px; width: 32px; background-image: url("/Images/Subsite32.png"); background-position: 0 -3px; }
 
 .ImportTreeMeasurementSummaries { float: left; width: 270px; }
+.ImportTreeMeasurementSummaries .ValidationWarning { border: none; } 
 
 .ImportEntitySummaryHeader .ImportAddSingleTrunkTreeMeasurementButton { float: right; background-image: url('/Images/SingleTrunkTree16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 10px; }
 .ImportEntitySummaryHeader .ImportAddMultiTrunkTreeMeasurementButton { float: right; background-image: url('/Images/MultiTrunkTree16.png') !important; background-repeat: no-repeat; background-position: 3px 4px; padding-left: 12px; }

@@ -4,8 +4,8 @@
     var closeCallback, showCallback, hideCallback;
 
     var dom = $(
-"<div>\
-    <div class='import-subsitevisit'></div>\
+"<div id='SubsiteVisitEditor'>\
+    <div class='Placeholder'></div>\
 </div>");
     $(document).ready(function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
@@ -16,7 +16,7 @@
     });
 
     function dispose() {
-        dom.find('.import-subsitevisit').empty();
+        dom.find('.Placeholder').empty();
         if (isAdding && !isSaved) {
             $.delete_('SubsiteVisit');
         }
@@ -24,7 +24,7 @@
     }
 
     function render(data) {
-        dom.find('.import-subsitevisit').replaceWith($(data));
+        dom.find('.Placeholder').replaceWith($(data).find('.Placeholder'));
         dom.find('.CoordinatePicker').button({ icons: { primary: 'ui-icon-circle-zoomout'} });
         dom.find('.EnterCoordinates input')
             .bind('change', (function () {
@@ -204,8 +204,8 @@ var SubsiteVisitRemover = new function () {
     var closeCallback;
 
     var dom = $(
-"<div title='Removing subsite visit'>\
-    <div class='import-subsitevisit'></div>\
+"<div id='SubsiteVisitRemover' title='Removing subsite visit'>\
+    <div class='Placeholder'></div>\
 </div>");
     $(document).ready(function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, 
@@ -221,7 +221,7 @@ var SubsiteVisitRemover = new function () {
     }
 
     var render = function (data) {
-        dom.find('.import-subsitevisit').replaceWith($(data));
+        dom.find('.Placeholder').replaceWith($(data));
     }
 
     var remove = function () {
