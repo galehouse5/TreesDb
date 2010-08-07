@@ -9,9 +9,12 @@
     <script type="text/javascript" src="/Scripts/ThirdParty/jquery-ui-1.8.2.custom.min.js"></script>
     <script type="text/javascript" src="/Scripts/Common.js"></script>
     <script type="text/javascript" src="/Scripts/Initialize.js"></script>
+    <% if (!UserSession.IsAnonymous) { %>
+        <script type="text/javascript" src="/Scripts/SessionTimeoutMonitor.js"></script>
+    <% } %>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server" ></asp:ContentPlaceHolder>
 </head>
-<body>
+<body data-sessiontimeout="<%= Session.Timeout %>">
     <div class="ui-header">
         <div class="ui-header-logo">
             <a href="/">
@@ -56,9 +59,9 @@
         <h2>Javascript is disabled</h2>
         <p>
             The Tree Measurement Database requires Javascript. For instruction on enabling Javascript in your browser, follow
-            <% if (Request.Browser.Browser.Equals("firefox", StringComparison.CurrentCultureIgnoreCase)) { %>
+            <% if (Request.Browser.Browser.Equals("firefox", StringComparison.InvariantCultureIgnoreCase)) { %>
                 <a href="http://support.mozilla.com/en-US/kb/Javascript">this link</a>. 
-            <% } else if (Request.Browser.Browser.Equals("ie", StringComparison.CurrentCultureIgnoreCase)) { %>
+            <% } else if (Request.Browser.Browser.Equals("ie", StringComparison.InvariantCultureIgnoreCase)) { %>
                 <a href="http://support.microsoft.com/gp/howtoscript">this link</a>.
             <% } %>
         </p>

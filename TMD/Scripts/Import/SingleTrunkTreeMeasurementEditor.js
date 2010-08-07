@@ -5,7 +5,7 @@
 
     var Sections = { General: 0, Height: 1, Girth: 2, Crown: 3, Trunk: 4, Status: 5, Misc: 6 };
     var editor, sections;
-    $(document).ready(function () {
+    $(function () {
         editor =
         $("<div id='SingleTrunkTreeMeasurementEditor'>\
             <form>\
@@ -319,7 +319,7 @@ var SingleTrunkTreeMeasurementRemover = new function () {
     var closeCallback;
 
     var dialog;
-    $(document).ready(function () {
+    $(function () {
         dialog = $("<div id='SingleTrunkTreeMeasurementRemover' title='Removing single trunk tree measurement'>\
             <div class='Placeholder'></div>\
         </div>")

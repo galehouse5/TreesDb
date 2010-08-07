@@ -7,7 +7,7 @@
 "<div id='SubsiteVisitEditor'>\
     <div class='Placeholder'></div>\
 </div>");
-    $(document).ready(function () {
+    $(function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
             width: 405, position: 'center',
             buttons: { 'Save': save, 'Cancel': function () { dom.dialog('close'); } }
@@ -207,7 +207,7 @@ var SubsiteVisitRemover = new function () {
 "<div id='SubsiteVisitRemover' title='Removing subsite visit'>\
     <div class='Placeholder'></div>\
 </div>");
-    $(document).ready(function () {
+    $(function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, 
             position: 'center', width: 320,
             buttons: { 'Remove': remove, 'Cancel': function () { dom.dialog('close'); } },

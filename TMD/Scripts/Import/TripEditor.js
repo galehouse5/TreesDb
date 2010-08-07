@@ -61,7 +61,7 @@
     }
 };
 
-$(document).ready(function () {
+$(function () {
     TripEditor.Initialize();
     $('a.import-navigation-forward').click(function (eventObject) {
         var clickedAnchor = $(eventObject.target).closest('a');

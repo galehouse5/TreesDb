@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+﻿$(function () {
     $('input[type=submit]').button();
     $('a.button').button();
     if ($('input[type=text].input-validation-error, input[type=password].input-validation-error').length > 0) {

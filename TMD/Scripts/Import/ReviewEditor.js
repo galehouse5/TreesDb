@@ -24,7 +24,7 @@
     }
 };
 
-$(document).ready(function () {
+$(function () {
     $('a.import-navigation-forward').click(function (eventObject) {
         var clickedAnchor = $(eventObject.target).closest('a');
         ReviewEditor.ValidateAndChangeLocation(clickedAnchor.attr('href'));

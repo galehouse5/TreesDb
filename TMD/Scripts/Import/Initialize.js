@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+﻿$(function () {
     $('.ImportNavigationMiddle').buttonset();
     $('.ImportNavigationMiddle .ui-state-disable').addClass('ui-state-disabled');
     $('.ImportNavigationMiddle .ui-state-activate').bind('mouseout', function (event, ui) {

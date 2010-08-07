@@ -245,5 +245,20 @@ namespace TMD.Controllers
             }
             return View("PasswordAssistanceEmailed", model);
         }
+
+        [HttpGet]
+        public ActionResult RenewSessionTimeout()
+        {
+            return new EmptyResult();
+        }
+
+        [HttpPost]
+        public ActionResult TimeoutSession()
+        {
+            AccountLoginModel model = new AccountLoginModel();
+            model.Logout();
+            ApplicationSession.StatusMessage = "Your session has timed out due to inactivity.";
+            return new EmptyResult();
+        }
     }
 }

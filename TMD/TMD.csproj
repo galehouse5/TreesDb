@@ -170,6 +170,7 @@
     <Content Include="Scripts\Initialize.js" />
     <Content Include="Scripts\LocationsService.js" />
     <Content Include="Scripts\MapMarkerService.js" />
+    <Content Include="Scripts\SessionTimeoutMonitor.js" />
     <Content Include="Scripts\ThirdParty\grid.locale-en.js" />
     <Content Include="Scripts\ThirdParty\jquery-ui-1.8.2.custom.min.js" />
     <Content Include="Scripts\ThirdParty\jquery.jqGrid.min.js" />

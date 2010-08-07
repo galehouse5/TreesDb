@@ -9,7 +9,7 @@
     <div class='Step1'></div>\
     <div class='Step2'></div>\
 </div>");
-    $(document).ready(function () {
+    $(function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
             width: 405, position: 'center'
         });
@@ -209,7 +209,7 @@ var SiteVisitRemover = new function () {
 "<div id='SiteVisitRemover' title='Removing site visit'>\
     <div class='Placeholder'></div>\
 </div>");
-    $(document).ready(function () {
+    $(function () {
         dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false, 
             position: 'center', width: 320,
             buttons: { 'Remove': remove, 'Cancel': function () { dom.dialog('close'); } },

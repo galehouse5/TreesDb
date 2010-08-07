@@ -2,7 +2,7 @@
     top.location.href = document.location.href;
 }
 
-$(document).ready(function () {
+$(function () {
     $('.ui-script-hide').hide();
     $('.ui-script-show').show();
 

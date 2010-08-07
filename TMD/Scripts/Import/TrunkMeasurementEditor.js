@@ -4,7 +4,7 @@
     var closeCallback;
 
     var editor;
-    $(document).ready(function () {
+    $(function () {
         editor = $("<div id='TrunkMeasurementEditor'>\
             <div class='Placeholder'></div>\
         </div>")
@@ -89,7 +89,7 @@ var TrunkMeasurementRemover = new function () {
     var closeCallback;
 
     var dialog;
-    $(document).ready(function () {
+    $(function () {
         dialog = $("<div id='TrunkMeasurementRemover' title='Removing trunk measurement'>\
             <div class='Placeholder'></div>\
         </div>")
