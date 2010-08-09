@@ -59,5 +59,11 @@ namespace TMD.Infrastructure.Repositories
                 .SetMaxResults(1)
                 .UniqueResult<Trip>();
         }
+
+        // TODO: implement import logic
+        public void Import(Trip t)
+        {
+            InfrastructureRegistry.UnitOfWorkSession.SaveOrUpdate(t);
+        }
     }
 }

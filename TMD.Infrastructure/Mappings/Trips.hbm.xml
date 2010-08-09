@@ -249,6 +249,7 @@
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <property name="Name" />
     <property name="IsImported" />
+    <property name="Imported" />
     <property name="Date" type="date" />
     <property name="Website" />
     <property name="PhotosAvailable" />

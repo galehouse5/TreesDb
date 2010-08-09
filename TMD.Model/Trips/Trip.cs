@@ -80,6 +80,7 @@ namespace TMD.Model.Trips
         public virtual IList<Measurer> Measurers { get; private set; }
         
         public virtual bool IsImported { get; private set; }
+        public virtual DateTime? Imported { get; private set; }
 
         public virtual Coordinates SiteVisitCentralCoordinates
         {

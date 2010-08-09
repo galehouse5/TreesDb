@@ -110,13 +110,11 @@ namespace TMD.Models
             }
         }
 
-        // TODO: implement this method
         public void FinishImport()
         {
             using (UnitOfWork.BeginBusinessTransaction())
             {
-                Trip.SetPrivatePropertyValue("IsImported", true);
-                TripService.Save(Trip);
+                TripService.Import(Trip);
                 UnitOfWork.Persist();
             }
         }

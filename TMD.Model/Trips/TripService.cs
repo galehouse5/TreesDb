@@ -12,6 +12,8 @@ namespace TMD.Model.Trips
         Trip FindById(int id);
         void Remove(Trip t);
 
+        void Import(Trip t);
+
         IList<Trip> FindAlreadyImportedTripsByUserId(int userId);
         IList<Trip> FindNotYetImportedTripsByUserId(int userId);
         Trip FindLastSavedTripNotYetImportedByUserId(int userId);
@@ -20,6 +22,17 @@ namespace TMD.Model.Trips
     public static class TripService
     {
         private static ITripRepository m_Repository = ModelRegistry.RepositoryFactory.Resolve<ITripRepository>();
+
+        public static void Import(Trip t)
+        {
+            if (t.IsImported)
+            {
+                throw new ApplicationException("Trip has already been imported.");
+            }
+            t.SetPrivatePropertyValue("IsImported", true);
+            t.SetPrivatePropertyValue("Imported", DateTime.Now);
+            m_Repository.Import(t);
+        }
 
         public static void Save(Trip t)
         {
