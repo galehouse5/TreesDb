@@ -55,7 +55,7 @@
     <div class="ui-content ui-script-show">
         <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
     </div>
-    <div class="ui-content ui-script-hide ui-content-emphasize">
+    <div class="ui-content ui-script-hide EmphasizeContent">
         <h2>Javascript is disabled</h2>
         <p>
             The Tree Measurement Database requires Javascript. For instruction on enabling Javascript in your browser, follow

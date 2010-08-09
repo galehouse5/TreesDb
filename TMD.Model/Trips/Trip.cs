@@ -27,13 +27,14 @@ namespace TMD.Model.Trips
             set { m_Name = (value ?? string.Empty).Trim().ToTitleCase(); }
         }
 
+        public virtual DateTime LastSaved { get; private set; }
+
         [DisplayName("*Trip date:")]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         [NotNullValidator(MessageTemplate = "Trip date must be specified.", Ruleset = "Screening", Tag = "Trip")]
         public virtual DateTime? Date { get; set; }
 
         private string m_Website;
-        
         [DisplayName("Trip website:")]
         [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Trip website must not exceed 100 characters.", Ruleset = "Persistence", Tag = "Trip")]
         public virtual string Website

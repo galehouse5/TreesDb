@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="ui-content-column-one ui-content-emphasize">
+    <div class="ui-content-column-one EmphasizeContent">
         <h2>Welcome</h2>
         <p>
             The Tree Measurement Database is an experimental project by Steve and Mitch Galehouse, 
@@ -16,7 +16,7 @@
     <div class="ui-content-column-two" style="margin-top: 20px;">
         <img alt="white oak in fog" src="/Images/white oak in fog.jpg" width=340px; />
     </div>
-    <div class="ui-content-column-three ui-content-emphasize">
+    <div class="ui-content-column-three EmphasizeContent">
         <ul class="ui-content-list">
             <li>
                 <h2><a href="/Import">Import</a></h2>

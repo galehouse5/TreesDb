@@ -6,7 +6,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<div class="ui-content-emphasize ui-centered">
+<div class="EmphasizeContent Centered">
     <div class="InputColumn account-form ui-widget-content ui-corner-all">        
         <h2>Unauthorized</h2>
         <p>

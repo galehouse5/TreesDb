@@ -18,7 +18,7 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
-<div class="ImportStep ui-content-emphasize">
+<div class="ImportStep EmphasizeContent">
     <asp:ContentPlaceHolder ID="StepContent" runat="server"></asp:ContentPlaceHolder>
 </div>
 <div class="ui-helper-clearfix"></div>

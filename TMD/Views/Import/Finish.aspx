@@ -29,5 +29,5 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="RightNavigationContent" runat="server">
-<%= Html.ActionLink("New import", "Start", null, new { @class = "import-navigation-forward" })%>
+<%= Html.ActionLink("Done", "Index", null, new { @class = "ImportNavigateForwards" })%>
 </asp:Content>

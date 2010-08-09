@@ -35,7 +35,7 @@
 };
 
 $(function () {
-    $('a.import-navigation-forward').click(function (eventObject) {
+    $('a.ImportNavigateForwards').click(function (eventObject) {
         var clickedAnchor = $(eventObject.target).closest('a');
         SiteVisitsEditor.ValidateAndChangeLocation(clickedAnchor.attr('href'));
         return false;

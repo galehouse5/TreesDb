@@ -268,6 +268,7 @@
     <many-to-one name="DefaultState" column="DefaultStateId" cascade="none" />
     <property name="DefaultCounty" />
     <property name="MakeMeasurerContactInfoPublic"/>
+    <property name="LastSaved" />
   </class>
   
 </hibernate-mapping>

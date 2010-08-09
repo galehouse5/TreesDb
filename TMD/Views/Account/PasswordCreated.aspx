@@ -5,7 +5,7 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
-<div class="ui-content-emphasize ui-centered">
+<div class="EmphasizeContent Centered">
     <div class="InputColumn account-form ui-widget-content ui-corner-all">        
         <h2>Your password has been changed</h2>
         <p>You can now login to your account using your new password.</p>

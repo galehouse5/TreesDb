@@ -37,9 +37,9 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="LeftNavigationContent" runat="server">
-<%= Html.ActionLink("Back", "Trip", null, new { @class = "ui-direction-import-backward" })%>
+<%= Html.ActionLink("Back", "Trip", null, new { @class = "ImportNavigateBackwards" })%>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="RightNavigationContent" runat="server">
-<%= Html.ActionLink("Next", "TreeMeasurements", null, new { @class = "import-navigation-forward" })%>
+<%= Html.ActionLink("Next", "TreeMeasurements", null, new { @class = "ImportNavigateForwards" })%>
 </asp:Content>

@@ -6,7 +6,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<div class="ui-content-emphasize">
+<div class="EmphasizeContent">
     <div class="InputColumn account-form ui-widget-content ui-corner-all">
         <h2>Edit account</h2>
         <% using(Html.BeginForm("EditMyself", "Account")) { %>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="ui-helper-clearfix"></div>
             </div>
-            <div class="ui-form-button-row">
+            <div class="InputButtonRow">
                 <input type="submit" value="Save" />
                 <div class="ui-helper-clearfix"></div>
             </div>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="ui-helper-clearfix"></div>
             </div>
-            <div class="ui-form-button-row">
+            <div class="InputButtonRow">
                 <input type="submit" value="Change password" />
                 <div class="ui-helper-clearfix"></div>
             </div>

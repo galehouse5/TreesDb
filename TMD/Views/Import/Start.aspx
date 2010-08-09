@@ -13,10 +13,10 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="LeftNavigationContent" runat="server">
-&nbsp;
+<%= Html.ActionLink("Back", "Index", null, new { @class = "ImportNavigateBackwards" })%>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="RightNavigationContent" runat="server">
-<%= Html.ActionLink("Start", "Trip", null, new { @class = "import-navigation-forward" })%>
+<%= Html.ActionLink("Start", "Trip", null, new { @class = "ImportNavigateForwards" })%>
 </asp:Content>
 

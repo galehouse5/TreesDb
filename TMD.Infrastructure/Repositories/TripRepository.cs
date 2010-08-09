@@ -12,10 +12,6 @@ namespace TMD.Infrastructure.Repositories
     {
         public void Save(Trip t)
         {
-            if (!t.ValidateRegardingPersistence().IsValid)
-            {
-                throw new ApplicationException("Unable to save trip due to validation failure.");
-            }
             InfrastructureRegistry.UnitOfWorkSession.SaveOrUpdate(t);
         }
 
@@ -27,6 +23,41 @@ namespace TMD.Infrastructure.Repositories
         public void Remove(Trip t)
         {
             InfrastructureRegistry.UnitOfWorkSession.Delete(t);
+        }
+
+        public IList<Trip> FindAlreadyImportedTripsByUserId(int userId)
+        {
+            return InfrastructureRegistry.UnitOfWorkSession.CreateQuery(@"
+                select t from Trip as t
+                where t.IsImported = 1
+                    and t.Creator.Id = :userId
+                order by t.Id desc")
+                .SetParameter("userId", userId)
+                .List<Trip>();
+        }
+
+        public IList<Trip> FindNotYetImportedTripsByUserId(int userId)
+        {
+            return InfrastructureRegistry.UnitOfWorkSession.CreateQuery(@"
+                select t from Trip as t
+                where t.IsImported = 0
+                    and t.Creator.Id = :userId
+                order by t.Id desc")
+                .SetParameter("userId", userId)
+                .List<Trip>();
+        }
+
+
+        public Trip FindLastSavedTripNotYetImportedByUserId(int userId)
+        {
+            return InfrastructureRegistry.UnitOfWorkSession.CreateQuery(@"
+                select t from Trip as t
+                where t.IsImported = 0
+                    and t.Creator.Id = :userId
+                order by t.LastSaved desc, t.Id desc")
+                .SetParameter("userId", userId)
+                .SetMaxResults(1)
+                .UniqueResult<Trip>();
         }
     }
 }

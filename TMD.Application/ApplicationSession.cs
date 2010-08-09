@@ -11,7 +11,7 @@ namespace TMD.Application
     {
         private static class Keys
         {
-            public const string ImportTripIdKey = "importTripId";
+            public const string ImportSelectedTripIdKey = "importSelectedTripId";
             public const string ImportSelectedSiteVisitIndexKey = "importSelectedSiteVisitIndex";
             public const string ImportSelectedSubsiteVisitIndexKey = "importSelectedSubsiteVisitIndex";
             public const string ImportSelectedMeasurementIndexKey = "importSelectedMeasurementIndex";
@@ -21,10 +21,10 @@ namespace TMD.Application
             public const string StatusMessage = "statusMessage";
         }
 
-        public static int ImportTripId
+        public static int ImportSelectedTripId
         {
-            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(Keys.ImportTripIdKey, -1); }
-            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.ImportTripIdKey, value); }
+            get { return ApplicationRegistry.ApplicationSessionProvider.GetOrCreate<int>(Keys.ImportSelectedTripIdKey, -1); }
+            set { ApplicationRegistry.ApplicationSessionProvider.Set(Keys.ImportSelectedTripIdKey, value); }
         }
 
         public static int ImportSelectedSiteVisitIndex

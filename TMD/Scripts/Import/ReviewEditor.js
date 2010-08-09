@@ -1,9 +1,9 @@
 ﻿var ReviewEditor = new function () {
-    this.ValidateAndChangeLocation = function (href) {
+    this.ValidateAndFinishImport = function (submittedForm) {
         $.get('Review', {}, function (data) {
             render(data);
             if ($('.import-sitevisits').find('.ValidationError .field-validation-error').not('.warning').length == 0) {
-                window.location.href = href;
+                submittedForm.submit();
             }
         });
     };
@@ -25,9 +25,9 @@
 };
 
 $(function () {
-    $('a.import-navigation-forward').click(function (eventObject) {
-        var clickedAnchor = $(eventObject.target).closest('a');
-        ReviewEditor.ValidateAndChangeLocation(clickedAnchor.attr('href'));
+    $('button.ImportNavigateForwards').click(function (eventObject) {
+        var submittedForm = $(eventObject.target).closest('form');
+        ReviewEditor.ValidateAndFinishImport(submittedForm);
         return false;
     });
     $('.ImportEditButton').button({ icons: { primary: 'ui-icon-pencil'} });

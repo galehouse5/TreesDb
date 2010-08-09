@@ -63,9 +63,50 @@
 
 $(function () {
     TripEditor.Initialize();
-    $('a.import-navigation-forward').click(function (eventObject) {
+    $('a.ImportNavigateForwards').click(function (eventObject) {
         var clickedAnchor = $(eventObject.target).closest('a');
         TripEditor.SaveAndChangeLocation(clickedAnchor.attr('href'));
         return false;
     });
 });
+
+var TripRemover = new function () {
+    var isSaved;
+    var closeCallback;
+
+    var dom = $(
+"<div id='TripRemover' title='Removing trip'>\
+    <div class='Placeholder'></div>\
+</div>");
+    $(function () {
+        dom.dialog({ modal: true, resizable: false, autoOpen: false, closeOnEscape: false,
+            position: 'center', width: 320,
+            buttons: { 'Remove': remove, 'Cancel': function () { dom.dialog('close'); } },
+            close: dispose
+        });
+    });
+
+    function dispose() {
+        closeCallback(isSaved);
+    }
+
+    function render(data) {
+        dom.find('.Placeholder').replaceWith($(data).find('.Placeholder'));
+    }
+
+    function remove() {
+        $.delete_('/Import/Trip', {}, function (data) {
+            isSaved = true;
+            dom.dialog('close');
+        });
+    }
+
+    this.Open = function (index, callback) {
+        isSaved = false;
+        closeCallback = callback;
+        $.get('/Import/RemoveTrip', { tripIndex: index }, function (data) {
+            render(data);
+            dom.dialog('open');
+        });
+    };
+};

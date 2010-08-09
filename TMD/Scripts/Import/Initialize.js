@@ -6,6 +6,6 @@
     });
     $('.ImportNavigationMiddle .ui-state-activate').trigger('mouseout');
 
-    $('.ImportNavigationRight a').button({ icons: { primary: 'ui-icon ui-icon-carat-1-e', secondary: 'ui-icon ui-icon-carat-1-e'} });
-    $('.ImportNavigationLeft a').button({ icons: { primary: 'ui-icon ui-icon-carat-1-w', secondary: 'ui-icon ui-icon-carat-1-w'} });
+    $('.ImportNavigationRight a, .ImportNavigationRight button').button({ icons: { primary: 'ui-icon ui-icon-carat-1-e', secondary: 'ui-icon ui-icon-carat-1-e'} });
+    $('.ImportNavigationLeft a, .ImportNavigationLeft button').button({ icons: { primary: 'ui-icon ui-icon-carat-1-w', secondary: 'ui-icon ui-icon-carat-1-w'} });
 });

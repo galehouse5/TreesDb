@@ -13,7 +13,7 @@
             </a>
         </div>
     </div>
-    <div class="ui-content ui-content-emphasize" >
+    <div class="ui-content EmphasizeContent" >
         <h2>Your web browser is untested</h2>
         <p>
             Sorry but your web browser hasn't been tested with the Tree Measurement Database yet.  

@@ -14,7 +14,7 @@
             </a>
         </div>
     </div>
-    <div class="ui-content ui-content-emphasize" >
+    <div class="ui-content EmphasizeContent" >
         <h2>The server has encountered an error</h2>
         <p>
             Sorry but the server has encountered an error while processing your request.  

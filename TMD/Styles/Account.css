@@ -1,4 +1,4 @@
-﻿.ui-centered { margin: 0 auto; width: 490px; }
+﻿.Centered { margin: 0 auto; width: 490px; }
 
 .InputColumn { float: left; width: 480px; padding: 5px 0; margin: 0 5px; }
 .InputColumn h2 { margin: 25px; }
@@ -12,8 +12,8 @@
 .InputRow .ValidationError .field-validation-error.ui-icon { float: left; display: block; margin-left: 118px; }
 .InputRow .ValidationError .field-validation-error.ValidationErrorMessage  { float: left; display: block; width: 260px; line-height: 15px; }
 
-.ui-form-button-row { clear: both; padding: 25px; font-size: 12px; }
-.ui-form-button-row input[type=submit] { float: right; margin: 5px; }
-.ui-form-button-row a { float: right; margin: 5px; }
+.InputButtonRow { clear: both; padding: 25px; font-size: 12px; }
+.InputButtonRow input[type=submit] { float: right; margin: 5px; }
+.InputButtonRow a { float: right; margin: 5px; }
 
 #recaptcha_area { margin: 0 auto; }

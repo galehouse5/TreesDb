@@ -17,26 +17,89 @@ namespace TMD.Controllers
     [UserAuthorizationFilter(Roles = UserRoles.Import)]
     public class ImportController : Controller
     {
+        #region Trips
+
+        [HttpGet]
+        public ActionResult RemoveTrip(int tripIndex)
+        {
+            ImportsModel model = new ImportsModel();
+            model.SelectedTrip = model.UserTripsNotYetImported[tripIndex];
+            return PartialView("TripRemover", model);
+        }
+
+        [HttpDelete]
+        [ActionName("Trip")]
+        public ActionResult ConfirmRemoveTrip()
+        {
+            ImportsModel model = new ImportsModel();
+            if (model.SelectedTrip != null)
+            {
+                model.RemoveSelectedTrip();
+            }
+            return new EmptyResult();
+        }
+
         [HttpGet]
         [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
         public ActionResult Index()
         {
+            ImportsModel model = new ImportsModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult StartNewImport()
+        {
+            ImportsModel model = new ImportsModel();
+            model.SelectedTrip = model.CreateNewTrip();
             return RedirectToAction("Start");
         }
+
+        [HttpPost]
+        public ActionResult ContinueLastImport()
+        {
+            ImportsModel model = new ImportsModel();
+            model.SelectedTrip = model.LastSavedTripNotYetImported;
+            ImportModel importModel = new ImportModel();
+            return RedirectToAction(importModel.SuggestedStep.ToString());
+        }
+
+        [HttpPost]
+        public ActionResult ContinueNotYetFinishedImport(int tripIndex)
+        {
+            ImportsModel model = new ImportsModel();
+            model.SelectedTrip = model.UserTripsNotYetImported[tripIndex];
+            ImportModel importModel = new ImportModel();
+            return RedirectToAction(importModel.SuggestedStep.ToString());
+        }
+
+        [HttpPost]
+        public ActionResult DeleteNotYetFinishedImportImport(int tripIndex)
+        {
+            ImportsModel model = new ImportsModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult ViewFinishedImport(int tripIndex)
+        {
+            ImportsModel model = new ImportsModel();
+            model.SelectedTrip = model.UserTripsAlreadyImported[tripIndex];
+            return RedirectToAction("Finish");
+        }
+
+        #endregion
 
         [HttpGet]
         [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
         public ActionResult Start()
         {
             ImportModel model = new ImportModel();
-            // TODO: remove if statement and all contained code
-            if (model.Trip == null)
-            {
-                model.Trip = Trip.Create();
-                model.Trip.AddMeasurer();
-                model.SaveTrip();
-            }
             model.CurrentStep = ImportStep.Start;
+            if (model.IsImportFinished)
+            {
+                return RedirectToAction("Finish");
+            }
             return View(model);
         }
 
@@ -49,9 +112,13 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.CurrentStep = ImportStep.Trip;
-            if (model.IsCurrentStepPremature)
+            if (model.CanAdvanceToCurrentStep)
             {
                 return RedirectToAction("Start");
+            }
+            if (model.IsImportFinished)
+            {
+                return RedirectToAction("Finish");
             }
             return View("Trip", model);
         }
@@ -61,9 +128,13 @@ namespace TMD.Controllers
         public ActionResult SaveTrip(ImportModel model)
         {
             model.CurrentStep = ImportStep.Trip;
-            if (model.IsCurrentStepPremature)
+            if (model.CanAdvanceToCurrentStep)
             {
                 return RedirectToAction("Start");
+            }
+            if (model.IsImportFinished)
+            {
+                return RedirectToAction("Finish");
             }
             model.Trip.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
                 .CopyToModelState(ModelState, "Trip");
@@ -116,10 +187,14 @@ namespace TMD.Controllers
         public ActionResult EditSiteVisits()
         {
             ImportModel model = new ImportModel();
-            model.CurrentStep = ImportStep.Sites;
-            if (model.IsCurrentStepPremature)
+            model.CurrentStep = ImportStep.SiteVisits;
+            if (model.CanAdvanceToCurrentStep)
             {
                 return RedirectToAction("Trip");
+            }
+            if (model.IsImportFinished)
+            {
+                return RedirectToAction("Finish");
             }
             return View("SiteVisits", model);
         }
@@ -376,10 +451,14 @@ namespace TMD.Controllers
         public ActionResult EditTreeMeasurements()
         {
             ImportModel model = new ImportModel();
-            model.CurrentStep = ImportStep.Measurements;
-            if (model.IsCurrentStepPremature)
+            model.CurrentStep = ImportStep.TreeMeasurements;
+            if (model.CanAdvanceToCurrentStep)
             {
                 return RedirectToAction("SiteVisits");
+            }
+            if (model.IsImportFinished)
+            {
+                return RedirectToAction("Finish");
             }
             return PartialView("TreeMeasurements", model);
         }
@@ -561,9 +640,13 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.CurrentStep = ImportStep.Review;
-            if (model.IsCurrentStepPremature)
+            if (model.CanAdvanceToCurrentStep)
             {
                 return RedirectToAction("TreeMeasurements");
+            }
+            if (model.IsImportFinished)
+            {
+                return RedirectToAction("Finish");
             }
             model.Trip.ValidateRegardingImport().CopyToModelState(ModelState, "Trip");
             model.Trip.ValidateRegardingOptionalRules().CopyToModelState(ModelState, "Trip", "Warning");
@@ -574,13 +657,31 @@ namespace TMD.Controllers
 
         #region Finish actions
 
+        [HttpPost]
+        [ActionName("Finish")]
+        public ActionResult FinishImport()
+        {
+            ImportModel model = new ImportModel();
+            model.CurrentStep = ImportStep.Finish;
+            if (model.CanAdvanceToCurrentStep)
+            {
+                return RedirectToAction("Review");
+            }
+            if (model.IsImportFinished)
+            {
+                return RedirectToAction("Finish");
+            }
+            model.FinishImport();
+            return View("Finish", model);
+        }
+
         [HttpGet]
         [SetDefaultControllerAndActionToCurrentControllerAndActionFilterAttribute]
         public ActionResult Finish()
         {
             ImportModel model = new ImportModel();
             model.CurrentStep = ImportStep.Finish;
-            if (model.IsCurrentStepPremature)
+            if (model.CanAdvanceToCurrentStep || !model.IsImportFinished)
             {
                 return RedirectToAction("Review");
             }

@@ -13,7 +13,7 @@
             </a>
         </div>
     </div>
-    <div class="ui-content ui-content-emphasize" >
+    <div class="ui-content EmphasizeContent" >
         <h2>This page cannot be found</h2>
         <p>
             Sorry but this page is still under construction or does not exist. 

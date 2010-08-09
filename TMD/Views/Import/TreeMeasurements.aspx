@@ -33,10 +33,10 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="LeftNavigationContent" runat="server">
-<%= Html.ActionLink("Back", "SiteVisits", null, new { @class = "ui-direction-import-backward" })%>
+<%= Html.ActionLink("Back", "SiteVisits", null, new { @class = "ImportNavigateBackwards" })%>
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="RightNavigationContent" runat="server">
-<%= Html.ActionLink("Next", "Review", null, new { @class = "import-navigation-forward" })%>
+<%= Html.ActionLink("Next", "Review", null, new { @class = "ImportNavigateForwards" })%>
 </asp:Content>
 
