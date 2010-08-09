@@ -18,7 +18,7 @@
             $('.ImportTrip').replaceWith(newDom.find('.ImportTrip'));
         }
         $('#Trip_Date').datepicker({
-            onClose: function () { $('#Trip_Date').focus(); }
+            onClose: function () { $('#Trip_Website').focus(); }
         });
         $('input[type=text].input-validation-error, textarea.input-validation-error').first().focus();
         $('.measurer-add').button({ icons: { primary: 'ui-icon-circle-plus'} });
