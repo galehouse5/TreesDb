@@ -96,7 +96,7 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.CurrentStep = ImportStep.Start;
-            if (model.IsImportFinished)
+            if (model.Trip.IsImported)
             {
                 return RedirectToAction("Finish");
             }
@@ -116,7 +116,7 @@ namespace TMD.Controllers
             {
                 return RedirectToAction("Start");
             }
-            if (model.IsImportFinished)
+            if (model.Trip.IsImported)
             {
                 return RedirectToAction("Finish");
             }
@@ -132,7 +132,7 @@ namespace TMD.Controllers
             {
                 return RedirectToAction("Start");
             }
-            if (model.IsImportFinished)
+            if (model.Trip.IsImported)
             {
                 return RedirectToAction("Finish");
             }
@@ -192,7 +192,7 @@ namespace TMD.Controllers
             {
                 return RedirectToAction("Trip");
             }
-            if (model.IsImportFinished)
+            if (model.Trip.IsImported)
             {
                 return RedirectToAction("Finish");
             }
@@ -456,7 +456,7 @@ namespace TMD.Controllers
             {
                 return RedirectToAction("SiteVisits");
             }
-            if (model.IsImportFinished)
+            if (model.Trip.IsImported)
             {
                 return RedirectToAction("Finish");
             }
@@ -644,7 +644,7 @@ namespace TMD.Controllers
             {
                 return RedirectToAction("TreeMeasurements");
             }
-            if (model.IsImportFinished)
+            if (model.Trip.IsImported)
             {
                 return RedirectToAction("Finish");
             }
@@ -667,7 +667,7 @@ namespace TMD.Controllers
             {
                 return RedirectToAction("Review");
             }
-            if (model.IsImportFinished)
+            if (model.Trip.IsImported)
             {
                 return RedirectToAction("Finish");
             }
@@ -681,7 +681,7 @@ namespace TMD.Controllers
         {
             ImportModel model = new ImportModel();
             model.CurrentStep = ImportStep.Finish;
-            if (model.CanAdvanceToCurrentStep || !model.IsImportFinished)
+            if (model.CanAdvanceToCurrentStep || !model.Trip.IsImported)
             {
                 return RedirectToAction("Review");
             }

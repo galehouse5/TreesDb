@@ -119,11 +119,6 @@ namespace TMD.Models
             }
         }
 
-        public bool IsImportFinished
-        {
-            get { return Trip.IsImported; }
-        }
-
         private Trip m_Trip;
         public Trip Trip
         {
@@ -132,6 +127,21 @@ namespace TMD.Models
                 if (m_Trip == null || m_Trip.Id != ApplicationSession.ImportSelectedTripId)
                 {
                     m_Trip = TripService.FindById(ApplicationSession.ImportSelectedTripId);
+                    if (m_Trip == null)
+                    {
+                        Trip lastSavedTrip = TripService.FindLastSavedTripByUserId(UserSession.CurrentUser.Id);
+                        if (lastSavedTrip != null && !lastSavedTrip.IsImported)
+                        {
+                            ApplicationSession.ImportSelectedTripId = lastSavedTrip.Id;
+                            m_Trip = lastSavedTrip;
+                        }
+                        else
+                        {
+                            ApplicationSession.ImportSelectedTripId = 0;
+                            m_Trip = Trip.Create();
+                            m_Trip.AddMeasurer();
+                        }
+                    }                
                 }
                 return m_Trip;
             }
@@ -197,7 +207,11 @@ namespace TMD.Models
             {
                 if (m_UserTripsNotYetImported == null)
                 {
-                    m_LastSavedTripNotYetImported = TripService.FindLastSavedTripNotYetImportedByUserId(UserSession.CurrentUser.Id);
+                    m_LastSavedTripNotYetImported = TripService.FindLastSavedTripByUserId(UserSession.CurrentUser.Id);
+                }
+                if (m_LastSavedTripNotYetImported.IsImported)
+                {
+                    return null;
                 }
                 return m_LastSavedTripNotYetImported;
             }

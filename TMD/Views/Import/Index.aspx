@@ -14,7 +14,7 @@
             <% using(Html.BeginForm("StartNewImport", "Import", FormMethod.Post, new { style = "display: inline;" })) { %>
                 <input type="submit" value="Import a new trip" class="ImportAddTripButton" />
             <% } %>
-            <% if (Model.UserTripsNotYetImported.Count > 0) { %>
+            <% if (Model.LastSavedTripNotYetImported != null) { %>
                 or 
                 <% using(Html.BeginForm("ContinueLastImport", "Import", FormMethod.Post, new { style = "display: inline;" })) { %>
                     <button type="submit" class="ImportEditButton" style="float: none;">Continue where you left off</button>

@@ -48,12 +48,11 @@ namespace TMD.Infrastructure.Repositories
         }
 
 
-        public Trip FindLastSavedTripNotYetImportedByUserId(int userId)
+        public Trip FindLastSavedTripByUserId(int userId)
         {
             return InfrastructureRegistry.UnitOfWorkSession.CreateQuery(@"
                 select t from Trip as t
-                where t.IsImported = 0
-                    and t.Creator.Id = :userId
+                where t.Creator.Id = :userId
                 order by t.LastSaved desc, t.Id desc")
                 .SetParameter("userId", userId)
                 .SetMaxResults(1)

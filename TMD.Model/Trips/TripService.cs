@@ -16,7 +16,7 @@ namespace TMD.Model.Trips
 
         IList<Trip> FindAlreadyImportedTripsByUserId(int userId);
         IList<Trip> FindNotYetImportedTripsByUserId(int userId);
-        Trip FindLastSavedTripNotYetImportedByUserId(int userId);
+        Trip FindLastSavedTripByUserId(int userId);
     }
 
     public static class TripService
@@ -72,9 +72,9 @@ namespace TMD.Model.Trips
             return m_Repository.FindNotYetImportedTripsByUserId(userId);
         }
 
-        public static Trip FindLastSavedTripNotYetImportedByUserId(int userId)
+        public static Trip FindLastSavedTripByUserId(int userId)
         {
-            return m_Repository.FindLastSavedTripNotYetImportedByUserId(userId);
+            return m_Repository.FindLastSavedTripByUserId(userId);
         }
     }
 }
