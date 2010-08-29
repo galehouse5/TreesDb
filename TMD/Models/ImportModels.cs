@@ -209,7 +209,7 @@ namespace TMD.Models
                 {
                     m_LastSavedTripNotYetImported = TripService.FindLastSavedTripByUserId(UserSession.CurrentUser.Id);
                 }
-                if (m_LastSavedTripNotYetImported.IsImported)
+                if (m_LastSavedTripNotYetImported == null || m_LastSavedTripNotYetImported.IsImported)
                 {
                     return null;
                 }
