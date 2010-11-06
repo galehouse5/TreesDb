@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Tree Measurement Database - Import Start" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
+﻿<%@ Page Title="Import Finish" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
 <h2>Your data has been premanently saved to the tree measurement database!</h2>
@@ -29,5 +29,5 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="RightNavigationContent" runat="server">
-<%= Html.ActionLink("Done", "Index", null, new { @class = "ImportNavigateForwards" })%>
+<%= Html.ActionLink("Done", "Index", null, new { @class = "ImportAdvance" })%>
 </asp:Content>

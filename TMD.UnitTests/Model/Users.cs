@@ -99,29 +99,29 @@ namespace TMD.UnitTests.Model
             User u = User.Create("email", "password");
 
             Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogin("wrongpassword");
+            u.AttemptLogon("wrongpassword");
             Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogin("wrongpassword");
+            u.AttemptLogon("wrongpassword");
             Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogin("wrongpassword");
+            u.AttemptLogon("wrongpassword");
             Assert.IsTrue(u.PerformHumanVerification);
 
             Thread.Sleep(1000);
             Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogin("wrongpassword");
+            u.AttemptLogon("wrongpassword");
             Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogin("wrongpassword");
+            u.AttemptLogon("wrongpassword");
             Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogin("wrongpassword");
+            u.AttemptLogon("wrongpassword");
             Assert.IsTrue(u.PerformHumanVerification);
 
-            u.AttemptLogin("password");
+            u.AttemptLogon("password");
             Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogin("wrongpassword");
+            u.AttemptLogon("wrongpassword");
             Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogin("wrongpassword");
+            u.AttemptLogon("wrongpassword");
             Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogin("wrongpassword");
+            u.AttemptLogon("wrongpassword");
             Assert.IsTrue(u.PerformHumanVerification);
         }
     }

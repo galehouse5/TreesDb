@@ -9,6 +9,7 @@ using TMD.Extensions;
 using TMD.Model.Trips;
 using TMD.Model.Locations;
 using Recaptcha;
+using TMD.Controllers;
 
 namespace TMD
 {
@@ -20,12 +21,19 @@ namespace TMD
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-                "Default",                                              // Route name
-                "{controller}/{action}/{id}",                           // URL with parameters
-                new { controller = "Main", action = "Index", id = "" }  // Parameter defaults
-            );
+            routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}",
+                new { controller = "Main", action = "Index" },
+                new { id = @"\d+" });
+            routes.MapRoute("Default", "{controller}/{action}",
+                new { controller = "Main", action = "Index" });
+            routes.MapRoute("SiteVisits", "trip/{tripdId}/sitevisit/{siteVisitId}/{action}",
+                new { controller = "Trip", tripId = 0, siteVisitId = 0, action = "Index" });
+            routes.MapRoute("SubsiteVisits", "trip/{tripdId}/sitevisit/{siteVisitId}/subsitevisits/{subsiteVisitId}/{action}",
+                new { controller = "Trip", tripId = 0, siteVisitId = 0, subsiteVisitId = 0, action = "Index" });
+            routes.MapRoute("TreeMeasurements", "trip/{tripdId}/sitevisit/{siteVisitId}/subsitevisits/{subsiteVisitId}/treemeasurements/{treeMeasurementId}/{action}",
+                new { controller = "Trip", tripId = 0, siteVisitId = 0, subsiteVisitId = 0, treeMeasurementId = 0, action = "Index" });
+            routes.MapRoute("CatchAll", "{*pathInfo}",
+                new { controller = "Error", action = "NotFound" });
         }
 
         protected void Application_Start()
@@ -43,57 +51,10 @@ namespace TMD
             ModelBinders.Binders.Add(typeof(Volume), new VolumeModelBinder());
             ModelBinders.Binders.Add(typeof(HeightMeasurements), new HeightMeasurementModelBinder());
 
+            ControllerBuilder.Current.SetControllerFactory(typeof(ControllerFactory));
+
             RecaptchaControlMvc.PublicKey = WebApplicationRegistry.Settings.RecaptchaPublicKey;
-            RecaptchaControlMvc.PrivateKey = WebApplicationRegistry.Settings.RecaptchaPrivateKey;
-        }
-
-        public override void Init()
-        {
-            base.Init();
-            base.BeginRequest += new EventHandler(BeginRequest_EnforceBrowserCompatibility);
-            base.Error += new EventHandler(Error_EnforceUserAuthorization);
-        }
-
-        public override void Dispose()
-        {
-            base.Error -= Error_EnforceUserAuthorization;
-            base.BeginRequest -= BeginRequest_EnforceBrowserCompatibility;
-            base.Dispose();
-        }
-
-        void Error_EnforceUserAuthorization(object sender, EventArgs e)
-        {
-            if (HttpContext.Current.Error is UserAuthorizationException)
-            {
-                UserAuthorizationException uae = (UserAuthorizationException)HttpContext.Current.Error;
-                HttpContext.Current.ClearError();
-                if (uae.NeedsToAuthenticate)
-                {
-                    HttpContext.Current.Response.Redirect("/Account/Login?ReturnUrl=" + HttpContext.Current.Request.RawUrl, false);
-                }
-                else
-                {
-                    HttpContext.Current.RewritePath("/Account/Unauthorized", false);
-                    IHttpHandler handler = new MvcHttpHandler();
-                    handler.ProcessRequest(HttpContext.Current);
-                }
-            }
-        }
-
-        void BeginRequest_EnforceBrowserCompatibility(object sender, EventArgs e)
-        {
-            if (Request.Browser.Browser == "Firefox" && Request.Browser.MajorVersion == 3)
-            {
-                return;
-            }
-            if (Request.Browser.Browser == "IE" && Request.Browser.MajorVersion == 8)
-            {
-                return;
-            }
-            if (Request.Path != "/Main/UntestedBrowser" && string.IsNullOrWhiteSpace(Request.CurrentExecutionFilePathExtension))
-            {
-                HttpContext.Current.RewritePath("/Main/UntestedBrowser");
-            }            
+            RecaptchaControlMvc.PrivateKey = WebApplicationRegistry.Settings.RecaptchaPrivateKey;   
         }
     }
 }

@@ -103,9 +103,9 @@ namespace TMD.Model.Trips
 
         public virtual void SetTripDefaults()
         {
-            SubsiteVisit.SiteVisit.Trip.SetPrivatePropertyValue<TreeHeightMeasurementMethod>("DefaultHeightMeasurementMethod", HeightMeasurementMethod);
-            SubsiteVisit.SiteVisit.Trip.SetPrivatePropertyValue<string>("DefaultLaserBrand", LaserBrand);
-            SubsiteVisit.SiteVisit.Trip.SetPrivatePropertyValue<string>("DefaultClinometerBrand", ClinometerBrand);
+            SubsiteVisit.SiteVisit.Trip.SetPrivatePropertyValue("DefaultHeightMeasurementMethod", HeightMeasurementMethod);
+            SubsiteVisit.SiteVisit.Trip.SetPrivatePropertyValue("DefaultLaserBrand", LaserBrand);
+            SubsiteVisit.SiteVisit.Trip.SetPrivatePropertyValue("DefaultClinometerBrand", ClinometerBrand);
         }
 
         /// <summary>

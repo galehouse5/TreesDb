@@ -24,9 +24,9 @@ namespace TMD.Model.Trips
 
         public virtual void SetTripDefaults()
         {
-            SiteVisit.Trip.SetPrivatePropertyValue<Country>("DefaultCountry", Country);
-            SiteVisit.Trip.SetPrivatePropertyValue<State>("DefaultState", State);
-            SiteVisit.Trip.SetPrivatePropertyValue<string>("DefaultCounty", County);
+            SiteVisit.Trip.SetPrivatePropertyValue("DefaultCountry", Country);
+            SiteVisit.Trip.SetPrivatePropertyValue("DefaultState", State);
+            SiteVisit.Trip.SetPrivatePropertyValue("DefaultCounty", County);
         }
 
         private string m_Name;

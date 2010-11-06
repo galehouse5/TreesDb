@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Tree Measurement Database - Register" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.AccountRegistrationModel>" %>
+﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.AccountRegistrationModel>" %>
 <%@ Assembly Name="Recaptcha" %>
 <%@ Import Namespace="Recaptcha" %>
 

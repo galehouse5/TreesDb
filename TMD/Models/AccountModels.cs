@@ -12,6 +12,12 @@ using System.Text.RegularExpressions;
 
 namespace TMD.Models
 {
+    public class AccountWidgetModel
+    {
+        public bool IsLoggedOn { get; set; }
+        public string Email { get; set; }
+    }
+
     public class AccountLoginModel
     {
         [Required(ErrorMessage="You must enter an email.")]
@@ -22,46 +28,6 @@ namespace TMD.Models
         [Required(ErrorMessage="You must enter a password.")]
         [DisplayName("Password:")]
         public string Password { get; set; }
-
-        private bool m_UserSearched = false;
-        private User m_User;
-        public User User
-        {
-            get
-            {
-                if (!m_UserSearched)
-                {
-                    m_User = UserService.FindByEmail(Email);
-                    m_UserSearched = true;
-                }
-                return m_User;
-            }
-        }
-
-        public bool DoesUserExist
-        {
-            get { return User != null; }
-        }
-
-        public bool Authenticate()
-        {
-            bool authenticated = User.AttemptLogin(Password);
-            if (authenticated)
-            {
-                UserSession.CurrentUser = User;
-            }
-            using (UnitOfWork.BeginBusinessTransaction())
-            {
-                UserService.Save(User);
-                UnitOfWork.Persist();
-            }
-            return authenticated;
-        }
-
-        public void Logout()
-        {
-            UserSession.CurrentUser = null;
-        }
     }
 
     public class AccountRegistrationModel
@@ -85,80 +51,11 @@ namespace TMD.Models
         [Required(ErrorMessage = "You must confirm your password.")]
         [DisplayName("*Confirm password:")]
         public string ConfirmPassword { get; set; }
-
-        private User m_User;
-        public User User
-        {
-            get 
-            {
-                if (m_User == null)
-                {
-                    m_User = User.Create(Email, Password);
-                    m_User.Firstname = Firstname;
-                    m_User.Lastname = Lastname;
-                }
-                return m_User;
-            }
-        }
-
-        public bool SaveUnlessEmailIsAlreadyTaken()
-        {
-            try
-            {
-                using (UnitOfWork.BeginBusinessTransaction())
-                {
-                    UserService.Save(User);
-                    UnitOfWork.Persist();
-                }
-            }
-            catch (EntityAlreadyExistsException ex)
-            {
-                UnitOfWork.BeginNewUnitOfWorkToRecoverFromException();
-                User existingUser = (User)ex.ExistingEntity;
-                if (existingUser.IsEmailVerified)
-                {
-                    return false;
-                }
-                else
-                {
-                    using (UnitOfWork.BeginBusinessTransaction())
-                    {
-                        User.ReplaceExistingNonEmailVerifiedUser(existingUser);
-                        UserService.Save(User);
-                        UnitOfWork.Persist();
-                    }
-                }
-            }
-            return true;
-        }
-
-        public bool VerifyEmail(string token)
-        {
-            Model.Users.User user = UserService.FindByEmailVerificationToken(token);
-            if (user != null && !user.IsEmailVerified)
-            {
-                using (UnitOfWork.BeginBusinessTransaction())
-                {
-                    user.VerifyEmail(token);
-                    UserService.Save(user);
-                    UnitOfWork.Persist();
-                }
-                return true;
-            }
-            return false;
-        }
     }
 
 
     public class EditAccountModel
     {
-        public EditAccountModel()
-        {
-            this.Email = User.Email;
-            this.Firstname = User.Firstname;
-            this.Lastname = User.Lastname;
-        }
-
         [DisplayName("Email:")]
         public string Email { get; set; }
 
@@ -181,32 +78,6 @@ namespace TMD.Models
         [DisplayName("Confirm password:")]
         [StringNotNullOrWhitespaceValidator(MessageTemplate = "You must confirm your new password.", Ruleset = "Password")]
         public string ConfirmPassword { get; set; }
-
-        public User User
-        {
-            get { return UserSession.CurrentUser; }
-        }
-
-        public void SaveAccountModifications()
-        {
-            User.Firstname = Firstname;
-            User.Lastname = Lastname;
-            using (UnitOfWork.BeginBusinessTransaction())
-            {
-                UserService.Save(User);
-                UnitOfWork.Persist();
-            }
-        }
-
-        public void SavePasswordChange()
-        {
-            User.ChangePasswordUsingExistingPassword(ExistingPassword, NewPassword);
-            using (UnitOfWork.BeginBusinessTransaction())
-            {
-                UserService.Save(User);
-                UnitOfWork.Persist();
-            }
-        }
     }
 
     public class PasswordAssistanceModel
@@ -220,54 +91,6 @@ namespace TMD.Models
         [DisplayName("Confirm email:")]
         public string ConfirmEmail { get; set; }
 
-        private bool m_UserSearched = false;
-        private User m_User;
-        public User User
-        {
-            get
-            {
-                if (!m_UserSearched)
-                {
-                    if (!string.IsNullOrEmpty(Token))
-                    {
-                        m_User = UserService.FindByForgottenPasswordAssistanceToken(Token);
-                    }
-                    else
-                    {
-                        m_User = UserService.FindByEmail(Email);
-                    }
-                    m_UserSearched = true;
-                }
-                return m_User;
-            }
-        }
-
-        public bool DoesUserExist
-        {
-            get { return User != null; }
-        }
-
-        public void GeneratePasswordAssistanceToken()
-        {
-            User.GenerateForgottenPasswordAssistanceToken();
-            using (UnitOfWork.BeginBusinessTransaction())
-            {
-                UserService.Save(User);
-                UnitOfWork.Persist();
-            }
-        }
-
-        private string m_Token;
-        public string Token 
-        {
-            get { return m_Token; }
-            set 
-            { 
-                m_Token = value;
-                m_UserSearched = false;
-            }
-        }
-
         [DisplayName("New password:")]
         [StringNotNullOrWhitespaceValidator(MessageTemplate = "You must enter your new password.", Ruleset = "Password")]
         public string NewPassword { get; set; }
@@ -275,15 +98,5 @@ namespace TMD.Models
         [DisplayName("Confirm password:")]
         [StringNotNullOrWhitespaceValidator(MessageTemplate = "You must confirm your new password.", Ruleset = "Password")]
         public string ConfirmPassword { get; set; }
-
-        public void SaveNewPassword()
-        {
-            User.ChangePasswordUsingPasswordAssistanceToken(Token, NewPassword);
-            using (UnitOfWork.BeginBusinessTransaction())
-            {
-                UserService.Save(User);
-                UnitOfWork.Persist();
-            }
-        }
     }
 }

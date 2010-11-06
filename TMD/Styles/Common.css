@@ -2,6 +2,7 @@
 .ui-header-logo { margin: 0 auto; width: 100px; background-color: #ffffff; text-align: center; }
 
 .ui-account { position: absolute; right: 10px; top: 10px; }
+.ui-account form { display: inline; }
 .ui-account-info { float: right; margin: 5px; font-size: 12px; }
 .ui-account-info span { padding: 1px 5px; }
 

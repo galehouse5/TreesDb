@@ -12,7 +12,6 @@ namespace TMD.Model
         {
             public const string UnitOfWorkContextProvider = "unitOfWorkContextProvider";
             public const string UnitOfWorkProvider = "unitOfWorkProvider";
-            public const string UserSessionContextProvider = "userSessionContextProvider";
             public const string UserSessionProvider = "userSessionProvider";
         }
 
@@ -35,13 +34,6 @@ namespace TMD.Model
         {
             get { return (string)this[Keys.UserSessionProvider]; }
             set { this[Keys.UserSessionProvider] = value; }
-        }
-
-        [ConfigurationProperty(Keys.UserSessionContextProvider, IsRequired = true)]
-        public string UserSessionContextProvider
-        {
-            get { return (string)this[Keys.UserSessionContextProvider]; }
-            set { this[Keys.UserSessionContextProvider] = value; }
         }
     }
 }

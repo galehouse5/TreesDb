@@ -2,6 +2,18 @@
 
 <asp:Content ContentPlaceHolderID="HeadContent" runat="server">
 <link type="text/css" rel="stylesheet" href="/Styles/Import.css" />
+<link type="text/css" rel="stylesheet" href="/Styles/Trip.css" />
+<script type="text/javascript" src="/Scripts/Trip/Trip.js" />
+
+
+
+
+
+
+
+
+
+
 <script type="text/javascript" src="/Scripts/ValueObjectService.js"></script>
 <script type="text/javascript" src="/Scripts/LocationsService.js"></script>
 <script type="text/javascript" src="/Scripts/Import/Initialize.js"></script>
@@ -18,7 +30,7 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
-<div class="ImportStep EmphasizeContent">
+<div id="ImportStep" class="EmphasizeContent">
     <asp:ContentPlaceHolder ID="StepContent" runat="server"></asp:ContentPlaceHolder>
 </div>
 <div class="ui-helper-clearfix"></div>

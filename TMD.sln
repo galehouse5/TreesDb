@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD.Model", "TMD.Model\TMD.Model.csproj", "{82C94CBA-58DA-46EA-A3F6-9786EB32CC17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD.Application", "TMD.Application\TMD.Application.csproj", "{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD", "TMD\TMD.csproj", "{6DAC2137-FD54-49F4-B204-59784B46F05F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdPartyAssemblies", "ThirdPartyAssemblies", "{E408F1F3-6FFB-475E-A1AF-76A6500BD730}"
@@ -89,16 +87,6 @@ Global
 		{82C94CBA-58DA-46EA-A3F6-9786EB32CC17}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{82C94CBA-58DA-46EA-A3F6-9786EB32CC17}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{82C94CBA-58DA-46EA-A3F6-9786EB32CC17}.Release|x86.ActiveCfg = Release|Any CPU
-		{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}.Release|x86.ActiveCfg = Release|Any CPU
 		{6DAC2137-FD54-49F4-B204-59784B46F05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6DAC2137-FD54-49F4-B204-59784B46F05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DAC2137-FD54-49F4-B204-59784B46F05F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU

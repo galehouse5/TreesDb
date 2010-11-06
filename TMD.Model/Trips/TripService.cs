@@ -14,9 +14,7 @@ namespace TMD.Model.Trips
 
         void Import(Trip t);
 
-        IList<Trip> FindAlreadyImportedTripsByUserId(int userId);
-        IList<Trip> FindNotYetImportedTripsByUserId(int userId);
-        Trip FindLastSavedTripByUserId(int userId);
+        IList<Trip> FindTripsCreatedByUser(int userId);
     }
 
     public static class TripService
@@ -44,7 +42,7 @@ namespace TMD.Model.Trips
             {
                 throw new ApplicationException("Unable to save trip due to validation failure.");
             }
-            t.SetPrivatePropertyValue<DateTime>("LastSaved", DateTime.Now);
+            t.SetPrivatePropertyValue("LastSaved", DateTime.Now);
             m_Repository.Save(t);
         }
 
@@ -62,19 +60,9 @@ namespace TMD.Model.Trips
             m_Repository.Remove(t);
         }
 
-        public static IList<Trip> FindAlreadyImportedTripsByUserId(int userId)
+        public static IList<Trip> FindTripsCreatedByUser(int userId)
         {
-            return m_Repository.FindAlreadyImportedTripsByUserId(userId);
-        }
-
-        public static IList<Trip> FindNotYetImportedTripsByUserId(int userId)
-        {
-            return m_Repository.FindNotYetImportedTripsByUserId(userId);
-        }
-
-        public static Trip FindLastSavedTripByUserId(int userId)
-        {
-            return m_Repository.FindLastSavedTripByUserId(userId);
+            return m_Repository.FindTripsCreatedByUser(userId);
         }
     }
 }

@@ -20,13 +20,13 @@
     </component>
     <property name="Created" />
     <property name="LastActivity" />
-    <property name="LastLogin" />
+    <property name="LastLogon" column="LastLogin" />
     <component name="EmailVerificationToken" class="SecureToken">
       <property name="Value" column="EmailVerificationToken"/>
     </component>
     <property name="EmailVerified" />
-    <property name="RecentlyFailedLoginAttempts" />
-    <property name="LastFailedLoginAttempt" />
+    <property name="RecentlyFailedLogonAttempts" column="RecentlyFailedLoginAttempts" />
+    <property name="LastFailedLogonAttempt" column="LastFailedLoginAttempt" />
     <component name="ForgottenPasswordAssistanceToken" class="SecureToken" >
       <property name="Value" column="ForgottenPasswordAssistanceToken"/>
     </component>

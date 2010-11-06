@@ -8,83 +8,53 @@ namespace TMD.Model
 {
     public abstract class UserSessionProvider
     {
-        public abstract User ActiveUser { get; set; }
+        public abstract User User { get; }
 
-        public void Initialize()
+        public virtual void InitializeSession()
         {
-            if (ActiveUser != null)
+            if (User != null)
             {
-                ActiveUser.ReportActivity();
+                User.ReportActivity();
             }
         }
 
-        public void Dispose()
+        public virtual void DisposeSession()
         {
-            if (ActiveUser != null)
+            if (User != null)
             {
                 using (UnitOfWork.BeginBusinessTransaction())
                 {
-                    UserService.Save(ActiveUser);
+                    UserService.Save(User);
                     UnitOfWork.Persist();
                 }
-            }
-        }
-    }
-     
-    public abstract class UserSessionContextProvider
-    {
-        /// <summary>
-        /// This method must be called before the context can be consumed.
-        /// </summary>
-        protected void InitializeContext()
-        {
-            if (Context == null)
-            {
-                Type t = Type.GetType(ModelRegistry.Settings.UserSessionProvider);
-                Context = (UserSessionProvider)Activator.CreateInstance(t);
-            }
-            Context.Initialize();
-        }
-
-        public abstract UserSessionProvider Context { get; protected set; }
-
-        /// <summary>
-        /// This method must be called after the context has gone out of scope.
-        /// </summary>
-        protected void DisposeContext()
-        {
-            if (Context != null)
-            {
-                Context.Dispose();
             }
         }
     }
 
     public static class UserSession
     {
-        private static UserSessionContextProvider s_ContextProvider;
-        private static UserSessionContextProvider ContextProvider
+        private static UserSessionProvider s_ContextProvider;
+        private static UserSessionProvider ContextProvider
         {
             get
             {
                 if (s_ContextProvider == null)
                 {
-                    Type t = Type.GetType(ModelRegistry.Settings.UserSessionContextProvider);
-                    s_ContextProvider = (UserSessionContextProvider)Activator.CreateInstance(t);
+                    Type t = Type.GetType(ModelRegistry.Settings.UserSessionProvider);
+                    s_ContextProvider = (UserSessionProvider)Activator.CreateInstance(t);
                 }
                 return s_ContextProvider;
             }
         }
 
-        public static User CurrentUser
+        public static User User
         {
-            get { return ContextProvider.Context.ActiveUser; }
-            set { ContextProvider.Context.ActiveUser = value; }
+            get { return ContextProvider.User; }
         }
 
         public static bool IsAnonymous
         {
-            get { return CurrentUser == null; }
+            get { return User == null; }
         }
     }
 }

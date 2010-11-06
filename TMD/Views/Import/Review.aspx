@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Tree Measurement Database - Import Site Info" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
+﻿<%@ Page Title="Import Review" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
 <%@ Import Namespace="TMD.Model.Trips" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
@@ -34,11 +34,11 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="LeftNavigationContent" runat="server">
-<%= Html.ActionLink("Back", "TreeMeasurements", null, new { @class = "ImportNavigateBackwards" })%>
+<%= Html.ActionLink("Back", "TreeMeasurements", null, new { @class = "ImportRetreat" })%>
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="RightNavigationContent" runat="server">
 <% using (Html.BeginForm("Finish", "Import")) { %>
-    <button type="submit" class="ImportNavigateForwards">Finish</button>
+    <button type="submit" class="ImportAdvance">Finish</button>
 <% } %>
 </asp:Content>

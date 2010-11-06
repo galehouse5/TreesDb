@@ -25,7 +25,7 @@
 };
 
 $(function () {
-    $('button.ImportNavigateForwards').click(function (eventObject) {
+    $('button.ImportAdvance').click(function (eventObject) {
         var submittedForm = $(eventObject.target).closest('form');
         ReviewEditor.ValidateAndFinishImport(submittedForm);
         return false;

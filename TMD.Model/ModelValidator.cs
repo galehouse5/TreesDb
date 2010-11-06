@@ -38,5 +38,10 @@ namespace TMD.Model
             Type t = obj.GetType();
             return ValidatorFactory.CreateValidator(t).Validate(obj);
         }
+
+        public static ValidationResults ValidateRegardingScreeningAndPersistence(this object obj)
+        {
+            return obj.Validate("Screening", "Persistence");
+        }
     }
 }

@@ -112,31 +112,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="ControllerBase.cs" />
+    <Compile Include="ControllerFactory.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\ImportController.cs" />
     <Compile Include="Controllers\LocationsController.cs" />
     <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Controllers\TripController.cs" />
     <Compile Include="Controllers\ValueObjectsController.cs" />
     <Compile Include="EmailTemplates\PasswordAssistanceEmail.cs" />
     <Compile Include="EmailTemplates\EmailVerificationEmail.cs" />
     <Compile Include="Extensions\DefaultGraphModelBinder.cs" />
     <Compile Include="Extensions\GoogleMapsExtensions.cs" />
     <Compile Include="Extensions\ModelExtensions.cs" />
-    <Compile Include="Extensions\SetDefaultControllerAndActionToCurrentControllerAndActionFilter.cs" />
-    <Compile Include="Extensions\UserAuthenticationModule.cs" />
-    <Compile Include="Extensions\UserAuthorizationFilter.cs" />
     <Compile Include="Extensions\ValidationExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Extensions\ControllerExtensions.cs" />
-    <Compile Include="Models\LocationsModel.cs" />
-    <Compile Include="WebUserSessionContextProvider.cs" />
+    <Compile Include="ModelBase.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\ImportModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="TempData.cs" />
+    <Compile Include="ViewData.cs" />
+    <Compile Include="ViewPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUserControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="WebUnitOfWorkContextProvider.cs" />
     <Compile Include="WebApplicationRegistry.cs" />
-    <Compile Include="WebApplicationSessionProvider.cs" />
     <Compile Include="WebApplicationSettings.cs" />
     <Compile Include="WebUserSessionProvider.cs" />
   </ItemGroup>
@@ -144,6 +152,7 @@
     <Content Include="EmailTemplates\EmailVerification.htm" />
     <Content Include="EmailTemplates\PasswordAssistance.htm" />
     <Content Include="Global.asax" />
+    <Content Include="Images\favicon.ico" />
     <Content Include="Images\MultiTrunkTree16.png" />
     <Content Include="Images\MultiTrunkTree32.png" />
     <Content Include="Images\MultiTrunkTree32s.png" />
@@ -160,6 +169,7 @@
     <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\GeocoderService.js" />
     <Content Include="Scripts\Import\CoordinatePicker.js" />
+    <Content Include="Scripts\Import\Index.js" />
     <Content Include="Scripts\Import\MultiTrunkTreeMeasurementEditor.js" />
     <Content Include="Scripts\Import\Initialize.js" />
     <Content Include="Scripts\Import\ReviewEditor.js" />
@@ -167,6 +177,7 @@
     <Content Include="Scripts\Import\SiteVisitsEditor.js" />
     <Content Include="Scripts\Import\SingleTrunkTreeMeasurementEditor.js" />
     <Content Include="Scripts\Import\TreeMeasurementsEditor.js" />
+    <Content Include="Scripts\Import\Trip.js" />
     <Content Include="Scripts\Import\TripEditor.js" />
     <Content Include="Scripts\Import\SubsiteVisitEditor.js" />
     <Content Include="Scripts\Import\TripsEditor.js" />
@@ -176,13 +187,14 @@
     <Content Include="Scripts\MapMarkerService.js" />
     <Content Include="Scripts\SessionTimeoutMonitor.js" />
     <Content Include="Scripts\ThirdParty\grid.locale-en.js" />
-    <Content Include="Scripts\ThirdParty\jquery-ui-1.8.2.custom.min.js" />
+    <Content Include="Scripts\ThirdParty\jquery-ui-1.8.4.custom.min.js" />
     <Content Include="Scripts\ThirdParty\jquery.jqGrid.min.js" />
     <Content Include="Scripts\ThirdParty\jquery-1.4.2-vsdoc.js" />
     <Content Include="Scripts\ThirdParty\jquery-1.4.2.js" />
     <Content Include="Scripts\ThirdParty\jquery-1.4.2.min.js" />
     <Content Include="Scripts\ThirdParty\jquery.validate.js" />
     <Content Include="Scripts\ThirdParty\jquery.validate.min.js" />
+    <Content Include="Scripts\Trip\Trip.js" />
     <Content Include="Scripts\ValueObjectService.js" />
     <Content Include="Styles\Account.css" />
     <Content Include="Styles\Common.css" />
@@ -195,7 +207,6 @@
     <Content Include="Images\SingleTrunkTree32.png" />
     <Content Include="Images\SingleTrunkTree32s.png" />
     <Content Include="Styles\Import.css" />
-    <Content Include="Styles\ThirdParty\south-street\images\ui-anim_basic_16x16.gif" />
     <Content Include="Styles\ThirdParty\south-street\images\ui-bg_glass_55_fcf0ba_1x400.png" />
     <Content Include="Styles\ThirdParty\south-street\images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
     <Content Include="Styles\ThirdParty\south-street\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
@@ -211,9 +222,10 @@
     <Content Include="Styles\ThirdParty\south-street\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="Styles\ThirdParty\south-street\images\ui-icons_eeeeee_256x240.png" />
     <Content Include="Styles\ThirdParty\south-street\images\ui-icons_ffffff_256x240.png" />
-    <Content Include="Styles\ThirdParty\south-street\jquery-ui-1.8.2.custom.css" />
+    <Content Include="Styles\ThirdParty\south-street\jquery-ui-1.8.4.custom.css" />
     <Content Include="Styles\ThirdParty\ui.jqgrid.css" />
-    <Content Include="Views\Account\AccountInformation.aspx" />
+    <Content Include="Styles\Trip.css" />
+    <Content Include="Views\Account\Widget.ascx" />
     <Content Include="Views\Account\CreatePassword.aspx" />
     <Content Include="Views\Account\Edit.aspx" />
     <Content Include="Views\Account\EmailAlreadyVerified.aspx" />
@@ -222,9 +234,9 @@
     <Content Include="Views\Account\PasswordAssistanceEmailed.aspx" />
     <Content Include="Views\Account\PasswordAssistanceRequestExpired.aspx" />
     <Content Include="Views\Account\RegistrationComplete.aspx" />
-    <Content Include="Views\Account\Login.aspx" />
+    <Content Include="Views\Account\Logon.aspx" />
     <Content Include="Views\Account\Register.aspx" />
-    <Content Include="Views\Account\Unauthorized.aspx" />
+    <Content Include="Views\Error\Unauthorized.aspx" />
     <Content Include="Views\Account\VerifyEmailAfterRegistering.aspx" />
     <Content Include="Views\Account\VerifyHumanBeforeEmailingPasswordAssistance.aspx" />
     <Content Include="Views\Account\VerifyHumanBeforeLogin.aspx" />
@@ -234,8 +246,9 @@
     <Content Include="Views\Import\SiteVisitRemover.ascx" />
     <Content Include="Views\Import\SubsiteVisitRemover.ascx" />
     <Content Include="Views\Import\TreeMeasurementRemover.ascx" />
-    <Content Include="Views\Import\TripRemover.ascx" />
-    <Content Include="Views\Import\TripSummary.ascx" />
+    <Content Include="Views\Trip\Delete.ascx" />
+    <Content Include="Views\Trip\Edit.ascx" />
+    <Content Include="Views\Trip\Widget.ascx" />
     <Content Include="Views\Import\TrunkMeasurementRemover.ascx" />
     <Content Include="Views\Import\SiteVisitEditor.ascx" />
     <Content Include="Views\Import\Finish.aspx" />
@@ -253,9 +266,9 @@
     <Content Include="Views\Import\TrunkMeasurementEditor.ascx" />
     <Content Include="Views\Import\TrunkMeasurementSummary.ascx" />
     <Content Include="Views\Main\Index.aspx" />
-    <Content Include="Views\Main\NotFound.aspx" />
-    <Content Include="Views\Main\ServerError.aspx" />
-    <Content Include="Views\Main\UntestedBrowser.aspx" />
+    <Content Include="Views\Error\NotFound.aspx" />
+    <Content Include="Views\Error\InternalServerError.aspx" />
+    <Content Include="Views\Error\IncompatibleBrowser.aspx" />
     <Content Include="Views\Shared\FriendlyPastTimeSpanWithDaysPrecision.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -276,10 +289,6 @@
     <Content Include="Views\Import\Import.Master" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TMD.Application\TMD.Application.csproj">
-      <Project>{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}</Project>
-      <Name>TMD.Application</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TMD.Infrastructure\TMD.Infrastructure.csproj">
       <Project>{FB757EFB-7C14-48EC-A77A-4B2415FA6060}</Project>
       <Name>TMD.Infrastructure</Name>

@@ -16,7 +16,7 @@ namespace TMD.Model
             return (attributes.Length > 0) ? attributes[0].Description : value.ToString();
         }
 
-        public static void SetPrivatePropertyValue(this object obj, string propertyName, object value)
+        public static object SetPrivatePropertyValue(this object obj, string propertyName, object value)
         {
             Type objType = obj.GetType();
             PropertyInfo pi = objType.GetProperty(propertyName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
@@ -26,18 +26,7 @@ namespace TMD.Model
                 pi = objType.GetProperty(propertyName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
             }
             pi.SetValue(obj, value, null);
-        }
-
-        public static void SetPrivatePropertyValue<T>(this object obj, string propertyName, T value)
-        {
-            Type objType = obj.GetType();
-            PropertyInfo pi = objType.GetProperty(propertyName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-            if (pi.DeclaringType != objType)
-            {
-                objType = pi.DeclaringType;
-                pi = objType.GetProperty(propertyName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-            }
-            pi.SetValue(obj, value, null);
+            return obj;
         }
 
         public static object GetPrivatePropertyValue(this object obj, string propertyName)
@@ -47,14 +36,7 @@ namespace TMD.Model
             return pi.GetValue(objType, null);
         }
 
-        public static T GetPrivatePropertyValue<T>(this object obj, string propertyName)
-        {
-            Type objType = obj.GetType();
-            PropertyInfo pi = objType.GetProperty(propertyName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-            return (T)pi.GetValue(objType, null);
-        }
-
-        public static void SetPrivateFieldValue(this object obj, string memberName, object value)
+        public static object SetPrivateFieldValue(this object obj, string memberName, object value)
         {
             Type objType = obj.GetType();
             FieldInfo fi = objType.GetField(memberName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
@@ -64,18 +46,22 @@ namespace TMD.Model
                 fi = objType.GetField(memberName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
             }
             fi.SetValue(obj, value);
+            return obj;
         }
 
-        public static void SetPrivateFieldValue<T>(this object obj, string memberName, T value)
+        public static T CopyPublicPropertyValuesFrom<T>(this T destination, T source)
+            where T : IEntity
         {
-            Type objType = obj.GetType();
-            FieldInfo fi = objType.GetField(memberName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-            if (fi.DeclaringType != objType)
+            PropertyInfo[] properties = typeof(T).GetProperties();
+            foreach (PropertyInfo property in properties)
             {
-                objType = fi.DeclaringType;
-                fi = objType.GetField(memberName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+                if (property.CanWrite)
+                {
+                    object value = property.GetValue(source, null);
+                    property.SetValue(destination, value, null);
+                }
             }
-            fi.SetValue(obj, value);
+            return destination;
         }
     }
 }

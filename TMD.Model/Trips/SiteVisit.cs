@@ -133,7 +133,7 @@ namespace TMD.Model.Trips
 
         public virtual SubsiteVisit AddSubsiteVisit(SubsiteVisit ssv)
         {
-            ssv.SetPrivatePropertyValue<SiteVisit>("SiteVisit", this);
+            ssv.SetPrivatePropertyValue("SiteVisit", this);
             SubsiteVisits.Add(ssv);
             return ssv;
         }

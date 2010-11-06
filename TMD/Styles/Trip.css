@@ -1,0 +1,6 @@
+﻿.TripWidget { float: left; font-size: 10px; width: 250px; margin: 10px; }
+.TripWidget .field-validation-error.ValidationErrorMessage { width: 225px; }
+.TripWidget .Icon { float: left; height: 25px; width: 32px; background-image: url("/Images/Trip32.png"); background-position: 0 -3px; }
+.TripWidget .Content { font-size: 12px; line-height: 20px; padding-left: 5px; }
+.TripWidget .Edit, .TripWidget .Remove, .TripWidget .View { float: right; font-size: 10px; }
+#TripEditor { font-size: 11px; }

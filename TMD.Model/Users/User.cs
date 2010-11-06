@@ -8,6 +8,7 @@ using System.ComponentModel;
 using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
+using System.Security.Principal;
 
 namespace TMD.Model.Users
 {
@@ -22,7 +23,7 @@ namespace TMD.Model.Users
 
     [Serializable]
     [DebuggerDisplay("{Email}")]
-    public class User : IEntity
+    public class User : IEntity, IPrincipal, IIdentity
     {
         protected User()
         { }
@@ -64,7 +65,7 @@ namespace TMD.Model.Users
 
         public virtual DateTime Created { get; private set; }
         public virtual DateTime LastActivity { get; private set; }
-        public virtual DateTime LastLogin { get; private set; }
+        public virtual DateTime LastLogon { get; private set; }
 
         #region Email verification
 
@@ -142,16 +143,16 @@ namespace TMD.Model.Users
 
         #region Human verification
 
-        public virtual DateTime? LastFailedLoginAttempt { get; private set; }
-        public virtual int RecentlyFailedLoginAttempts { get; private set; }
+        public virtual DateTime? LastFailedLogonAttempt { get; private set; }
+        public virtual int RecentlyFailedLogonAttempts { get; private set; }
 
         public virtual bool PerformHumanVerification
         {
             get 
             {
-                if (LastFailedLoginAttempt >= DateTime.Now.Subtract(ModelRegistry.UserSettings.FailedLoginMemoryDuration))
+                if (LastFailedLogonAttempt >= DateTime.Now.Subtract(ModelRegistry.UserSettings.FailedLoginMemoryDuration))
                 {
-                    if (RecentlyFailedLoginAttempts >= ModelRegistry.UserSettings.FailedLoginsBeforeHumanVerification)
+                    if (RecentlyFailedLogonAttempts >= ModelRegistry.UserSettings.FailedLoginsBeforeHumanVerification)
                     {
                         return true;
                     }
@@ -190,23 +191,23 @@ namespace TMD.Model.Users
             return this.Validate("Screening", "Persistence");
         }
 
-        public virtual bool AttemptLogin(string password)
+        public virtual bool AttemptLogon(string password)
         {
             if (VerifyPassword(password))
             {
-                LastLogin = DateTime.Now;
+                LastLogon = DateTime.Now;
                 LastActivity = DateTime.Now;
-                RecentlyFailedLoginAttempts = 0;
+                RecentlyFailedLogonAttempts = 0;
                 return true;
             }
             else
             {
-                if (LastFailedLoginAttempt < DateTime.Now.Subtract(ModelRegistry.UserSettings.FailedLoginMemoryDuration))
+                if (LastFailedLogonAttempt < DateTime.Now.Subtract(ModelRegistry.UserSettings.FailedLoginMemoryDuration))
                 {
-                    RecentlyFailedLoginAttempts = 0;
+                    RecentlyFailedLogonAttempts = 0;
                 }
-                LastFailedLoginAttempt = DateTime.Now;
-                RecentlyFailedLoginAttempts += 1;
+                LastFailedLogonAttempt = DateTime.Now;
+                RecentlyFailedLogonAttempts += 1;
                 return false;
             }
         }
@@ -236,15 +237,41 @@ namespace TMD.Model.Users
                 Password = Password.Create(password ?? string.Empty, (email ?? string.Empty).Trim().ToLower()),
                 Created = DateTime.Now,
                 LastActivity = DateTime.Now,
-                LastLogin = DateTime.Now,
+                LastLogon = DateTime.Now,
                 EmailVerificationToken = SecureToken.Create(),
                 ForgottenPasswordAssistanceToken = null,
                 ForgottenPasswordAssistanceTokenIssued = null,
                 ForgottenPasswordAssistanceTokenUsed = null,
-                RecentlyFailedLoginAttempts = 0,
-                LastFailedLoginAttempt = null,
+                RecentlyFailedLogonAttempts = 0,
+                LastFailedLogonAttempt = null,
                 Roles = UserRoles.Import
             };
+        }
+
+        IIdentity IPrincipal.Identity
+        {
+            get { return this; }
+        }
+
+        bool IPrincipal.IsInRole(string role)
+        {
+            UserRoles userRole = (UserRoles)Enum.Parse(typeof(UserRoles), role);
+            return (Roles & userRole) == userRole;
+        }
+
+        string IIdentity.AuthenticationType
+        {
+            get { return "Custom"; }
+        }
+
+        bool IIdentity.IsAuthenticated
+        {
+            get { return true; }
+        }
+
+        string IIdentity.Name
+        {
+            get { return Email; }
         }
     }
 }

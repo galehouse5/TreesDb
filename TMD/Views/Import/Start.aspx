@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Tree Measurement Database - Import Start" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportModel>" %>
+﻿<%@ Page Title="Import Start" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.ImportStepModel>" %>
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
 <h2>Ready the listed information before you start</h2>
@@ -13,10 +13,10 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="LeftNavigationContent" runat="server">
-<%= Html.ActionLink("Back", "Index", null, new { @class = "ImportNavigateBackwards" })%>
+<%= Html.ActionLink("Back", "Index", new { id = "" }, new { @class = "ImportRetreat" })%>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="RightNavigationContent" runat="server">
-<%= Html.ActionLink("Start", "Trip", null, new { @class = "ImportNavigateForwards" })%>
+<%= Html.ActionLink("Start", "Trip", new { id = Model.Trip.Id }, new { @class = "ImportAdvance" })%>
 </asp:Content>
 

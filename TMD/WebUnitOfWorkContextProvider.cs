@@ -8,19 +8,19 @@ namespace TMD
 {
     public class WebUnitOfWorkContextProvider : UnitOfWorkContextProvider, IHttpModule
     {
-        private HttpApplication ApplicationContext { get; set; }
+        private HttpApplication m_ApplicationContext;
 
         public void Dispose()
         {
-            this.ApplicationContext.AcquireRequestState -= Context_AcquireRequestState;
-            this.ApplicationContext.PostRequestHandlerExecute -= Context_PostRequestHandlerExecute;
+            this.m_ApplicationContext.AcquireRequestState -= Context_AcquireRequestState;
+            this.m_ApplicationContext.ReleaseRequestState -= Context_PostRequestHandlerExecute;
         }
 
         public void Init(HttpApplication context)
         {
-            this.ApplicationContext = context;
-            this.ApplicationContext.AcquireRequestState += new EventHandler(Context_AcquireRequestState);
-            this.ApplicationContext.PostRequestHandlerExecute += new EventHandler(Context_PostRequestHandlerExecute);
+            this.m_ApplicationContext = context;
+            this.m_ApplicationContext.AcquireRequestState += new EventHandler(Context_AcquireRequestState);
+            this.m_ApplicationContext.ReleaseRequestState += new EventHandler(Context_PostRequestHandlerExecute);
         }
 
         void Context_AcquireRequestState(object sender, EventArgs e)

@@ -7,7 +7,6 @@ using System.ComponentModel.DataAnnotations;
 using TMD.Model.Trips;
 using System.Web.Mvc;
 using TMD.Model.Trees;
-using TMD.Application;
 using TMD.Model;
 using Microsoft.Practices.EnterpriseLibrary.Validation;
 using TMD.Model.Locations;
@@ -24,11 +23,12 @@ namespace TMD.Models
         Finish = 6
     }
 
-    public class ImportModel
+    public class ImportStepModel
     {
+        public Trip Trip { get; set; }
         public ImportStep CurrentStep { get; set; }
 
-        public bool CanAdvanceToCurrentStep
+        public bool IsCurrentStepPremature
         {
             get { return !CanAdvanceToStep(CurrentStep); }
         }
@@ -100,77 +100,9 @@ namespace TMD.Models
                 return ImportStep.Trip;
             }
         }
-
-        public void SaveTrip()
-        {
-            using (UnitOfWork.BeginBusinessTransaction())
-            {
-                TripService.Save(Trip);
-                UnitOfWork.Persist();
-            }
-        }
-
-        public void FinishImport()
-        {
-            using (UnitOfWork.BeginBusinessTransaction())
-            {
-                TripService.Import(Trip);
-                UnitOfWork.Persist();
-            }
-        }
-
-        private Trip m_Trip;
-        public Trip Trip
-        {
-            get
-            {
-                if (m_Trip == null || m_Trip.Id != ApplicationSession.ImportSelectedTripId)
-                {
-                    m_Trip = TripService.FindById(ApplicationSession.ImportSelectedTripId);
-                    if (m_Trip == null)
-                    {
-                        Trip lastSavedTrip = TripService.FindLastSavedTripByUserId(UserSession.CurrentUser.Id);
-                        if (lastSavedTrip != null && !lastSavedTrip.IsImported)
-                        {
-                            ApplicationSession.ImportSelectedTripId = lastSavedTrip.Id;
-                            m_Trip = lastSavedTrip;
-                        }
-                        else
-                        {
-                            ApplicationSession.ImportSelectedTripId = 0;
-                            m_Trip = Trip.Create();
-                            m_Trip.AddMeasurer();
-                        }
-                    }                
-                }
-                return m_Trip;
-            }
-        }
-
-        public TreeMeasurementBase SelectedTreeMeasurement
-        {
-            get { return ApplicationSession.ImportSelectedMeasurementIndex > -1 ? SelectedSubsiteVisit.TreeMeasurements[ApplicationSession.ImportSelectedMeasurementIndex] : null; }
-            set { ApplicationSession.ImportSelectedMeasurementIndex = value == null ? -1 : SelectedSubsiteVisit.TreeMeasurements.IndexOf(value); }
-        }
-
-        public SubsiteVisit SelectedSubsiteVisit
-        {
-            get { return ApplicationSession.ImportSelectedSubsiteVisitIndex > -1 ? SelectedSiteVisit.SubsiteVisits[ApplicationSession.ImportSelectedSubsiteVisitIndex] : null; }
-            set { ApplicationSession.ImportSelectedSubsiteVisitIndex = value == null ? -1 : SelectedSiteVisit.SubsiteVisits.IndexOf(value); }
-        }
-
-        public SiteVisit SelectedSiteVisit
-        {
-            get { return ApplicationSession.ImportSelectedSiteVisitIndex > -1 ? Trip.SiteVisits[ApplicationSession.ImportSelectedSiteVisitIndex] : null; }
-            set { ApplicationSession.ImportSelectedSiteVisitIndex = value == null ? -1 : Trip.SiteVisits.IndexOf(value); }
-        }
-
-        public TrunkMeasurement SelectedTrunkMeasurement
-        {
-            get { return ApplicationSession.ImportSelectedTrunkMeasurementIndex > -1 && SelectedTreeMeasurement is MultiTrunkTreeMeasurement ? ((MultiTrunkTreeMeasurement)SelectedTreeMeasurement).TrunkMeasurements[ApplicationSession.ImportSelectedTrunkMeasurementIndex] : null; }
-            set { ApplicationSession.ImportSelectedTrunkMeasurementIndex = value == null ? -1 : ((MultiTrunkTreeMeasurement)SelectedTreeMeasurement).TrunkMeasurements.IndexOf(value); }
-        }
     }
+<<<<<<< .mine
+=======
 
     public class ImportsModel
     {
@@ -256,4 +188,5 @@ namespace TMD.Models
             }
         }
     }
+>>>>>>> .r89
 }

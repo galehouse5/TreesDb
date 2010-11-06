@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.EditAccountModel>" %>
+﻿<%@ Page Title="Account" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.EditAccountModel>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <link type="text/css" rel="Stylesheet" href="/Styles/Account.css" />
@@ -9,7 +9,7 @@
 <div class="EmphasizeContent">
     <div class="InputColumn account-form ui-widget-content ui-corner-all">
         <h2>Edit account</h2>
-        <% using(Html.BeginForm("EditMyself", "Account")) { %>
+        <% using(Html.BeginForm("Edit", "Account")) { %>
             <div class="InputRow">
                 <%= Html.LabelFor(m => m.Email)%>
                 <%= Html.TextBoxFor(m => m.Email, new { @readonly = "readonly" })%>
@@ -45,7 +45,7 @@
     </div>
     <div class="InputColumn account-form ui-widget-content ui-corner-all">
         <h2>Change password</h2>
-        <% using(Html.BeginForm("ChangeMyPassword", "Account")) { %>
+        <% using(Html.BeginForm("Password", "Account")) { %>
             <%= Html.HiddenFor(m => m.Email) %>
             <%= Html.HiddenFor(m => m.Firstname) %>
             <%= Html.HiddenFor(m => m.Lastname) %>

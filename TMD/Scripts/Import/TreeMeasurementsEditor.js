@@ -35,7 +35,7 @@
 };
 
 $(function () {
-    $('a.ImportNavigateForwards').click(function (eventObject) {
+    $('a.ImportAdvance').click(function (eventObject) {
         var clickedAnchor = $(eventObject.target).closest('a');
         TreeMeasurementsEditor.ValidateAndChangeLocation(clickedAnchor.attr('href'));
         return false;

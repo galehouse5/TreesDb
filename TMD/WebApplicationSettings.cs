@@ -17,6 +17,7 @@ namespace TMD
             public const string WebmasterEmail = "webmasterEmail";
             public const string ExpiringTokensToRemember = "expiringTokensToRemember";
             public const string ExpiringTokenLifetime = "expiringTokenLifetime";
+            public const string HandleControllerExceptions = "handleControllerExceptions";
         }
 
         [ConfigurationProperty(PropertyNames.GoogleApiKey, IsRequired = true)]
@@ -66,6 +67,13 @@ namespace TMD
         {
             get { return (TimeSpan)this[PropertyNames.ExpiringTokenLifetime]; }
             set { this[PropertyNames.ExpiringTokenLifetime] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.HandleControllerExceptions, DefaultValue = true)]
+        public bool HandleControllerExceptions
+        {
+            get { return (bool)this[PropertyNames.HandleControllerExceptions]; }
+            set { this[PropertyNames.HandleControllerExceptions] = value; }
         }
     }
 }

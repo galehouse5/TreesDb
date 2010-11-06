@@ -11,20 +11,61 @@ using TMD.Model.Users;
 using TMD.Model;
 using System.Net.Mail;
 using TMD.EmailTemplates;
-using TMD.Application;
+using System.Web.Security;
 
 namespace TMD.Controllers
 {
-    public class AccountController : Controller
+    public class AuthorizeUserAttribute : AuthorizeAttribute
     {
-        [HttpGet]
+        protected override bool AuthorizeCore(HttpContextBase httpContext)
+        {
+            if (UserSession.IsAnonymous)
+            {
+                return false;
+            }
+            if ((UserSession.User.Roles & Roles) != Roles)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
+        {
+            if (UserSession.IsAnonymous)
+            {
+                ((ControllerBase)filterContext.Controller).Session.DefaultReturnUrl = ((ControllerBase)filterContext.Controller).Request.RawUrl;
+                filterContext.Result = new RedirectResult("/Account/Logon");
+            }
+            else
+            {
+                filterContext.Result = new UnauthorizedResult();
+            }
+        }
+
+        public new UserRoles Roles { get; set; }
+    }
+
+    [CheckBrowserCompatibilityFilter]
+    public class AccountController : ControllerBase
+    {
+        [ChildActionOnly]
+        public ActionResult Widget()
+        {
+            AccountWidgetModel model = new AccountWidgetModel()
+            {
+                IsLoggedOn = User != null,
+                Email = User != null ? UserSession.User.Email : string.Empty
+            };
+            return PartialView(model);
+        }
+
         public ActionResult Unauthorized()
         {
             return View();
         }
 
-        [HttpGet]
-        public ActionResult Login()
+        public ActionResult LogOn()
         {
             AccountLoginModel model = new AccountLoginModel();
             return View(model);
@@ -32,46 +73,53 @@ namespace TMD.Controllers
 
         [HttpPost]
         [RecaptchaControlMvc.CaptchaValidator]
-        public ActionResult Login(AccountLoginModel model, bool captchaValid, string ReturnUrl)
+        public ActionResult LogOn(AccountLoginModel model, bool captchaValid)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
-            if (!model.DoesUserExist || !model.User.IsEmailVerified)
+            User user = UserService.FindByEmail(model.Email);
+            if (user == null || !user.IsEmailVerified)
             {
                 ModelState.AddModelError("Email", "Invalid email or password.");
                 return View(model);
             }
-            if (model.User.PerformHumanVerification)
+            if (user.PerformHumanVerification)
             {
                 if (!captchaValid)
                 {
                     return View("VerifyHumanBeforeLogin"); 
                 }
-            } 
-            if (!model.Authenticate())
+            }
+            bool authenticated = user.AttemptLogon(model.Password);
+            using (UnitOfWork.BeginBusinessTransaction())
             {
+                UserService.Save(user);
+                UnitOfWork.Persist();
+            }
+            if (!authenticated)
+            {   
                 ModelState.AddModelError("Email", "Invalid email or password.");
                 return View(model);
             }
-            if (!string.IsNullOrWhiteSpace(ReturnUrl))
-            {
-                return Redirect(ReturnUrl);
-            }
-            return RedirectToAction(ApplicationSession.DefaultAction, ApplicationSession.DefaultController);
+            // TODO: decouple from FormsAuthentication class so this controller is unit testable
+            FormsAuthentication.SetAuthCookie(user.Email, false);
+            Session.ClearRegardingUserSpecificData();
+            return Redirect(Session.DefaultReturnUrl);
         }
 
         [HttpPost]
         public ActionResult Logout()
         {
             AccountLoginModel model = new AccountLoginModel();
-            model.Logout();
-            ApplicationSession.StatusMessage = "You have logged out.";
-            return RedirectToAction(ApplicationSession.DefaultAction, ApplicationSession.DefaultController);
+            // TODO: decouple from FormsAuthentication class so this controller is unit testable
+            FormsAuthentication.SignOut();
+            Session.ClearRegardingUserSpecificData();
+            TempData.StatusMessage = "You have logged out.";
+            return Redirect(Session.DefaultReturnUrl);
         }
 
-        [HttpGet]
         public ActionResult Register()
         {
             AccountRegistrationModel model = new AccountRegistrationModel();
@@ -82,7 +130,10 @@ namespace TMD.Controllers
         [RecaptchaControlMvc.CaptchaValidator]
         public ActionResult Register(AccountRegistrationModel model, bool captchaValid)
         {
-            model.User.ValidateRegardingPersistence().CopyToModelState(ModelState);
+            User user = User.Create(model.Email, model.Password);
+            user.Firstname = model.Firstname;
+            user.Lastname = model.Lastname;
+            user.ValidateRegardingPersistence().CopyToModelState(ModelState);
             if (!string.IsNullOrEmpty(model.ConfirmPassword) && !model.ConfirmPassword.Equals(model.Password))
             {
                 ModelState.AddModelError("ConfirmPassword", "Your passwords do not match.");
@@ -99,13 +150,36 @@ namespace TMD.Controllers
             {
                 return View("VerifyHumanBeforeRegistering", model);
             }
-            if (!model.SaveUnlessEmailIsAlreadyTaken())
+
+            try
             {
-                ModelState.AddModelError("Email", "You must choose a different email.");
-                return View(model);
+                using (UnitOfWork.BeginBusinessTransaction())
+                {
+                    UserService.Save(user);
+                    UnitOfWork.Persist();
+                }
+            }
+            catch (EntityAlreadyExistsException ex)
+            {
+                UnitOfWork.BeginNewUnitOfWorkToRecoverFromException();
+                User existingUser = (User)ex.ExistingEntity;
+                if (existingUser.IsEmailVerified)
+                {
+                    ModelState.AddModelError("Email", "You must choose a different email.");
+                    return View(model);
+                }
+                else
+                {
+                    using (UnitOfWork.BeginBusinessTransaction())
+                    {
+                        user.ReplaceExistingNonEmailVerifiedUser(existingUser);
+                        UserService.Save(user);
+                        UnitOfWork.Persist();
+                    }
+                }
             }
             using (SmtpClient mailClient = new SmtpClient())
-            using (MailMessage mail = EmailVerificationEmail.Create(model.User))
+            using (MailMessage mail = EmailVerificationEmail.Create(user))
             {
                 mailClient.EnableSsl = true;
                 mailClient.Send(mail);
@@ -114,41 +188,61 @@ namespace TMD.Controllers
         }
 
         [HttpGet]
-        public ActionResult VerifyEmail(string id)
+        public ActionResult Verify(string id)
         {
-            AccountRegistrationModel model = new AccountRegistrationModel();
-            if (model.VerifyEmail(id))
+            if (!string.IsNullOrEmpty(id))
             {
-                return View("RegistrationComplete");
+                User user = UserService.FindByEmailVerificationToken(id);
+                if (user != null && !user.IsEmailVerified)
+                {
+                    using (UnitOfWork.BeginBusinessTransaction())
+                    {
+                        user.VerifyEmail(id);
+                        UserService.Save(user);
+                        UnitOfWork.Persist();
+                    }
+                    return View("RegistrationComplete");
+                }
             }
             return View("EmailAlreadyVerified");
         }
 
         [HttpGet]
-        [UserAuthorizationFilter]
-        public ActionResult EditMyself()
+        [AuthorizeUser]
+        public ActionResult Edit()
         {
-            EditAccountModel model = new EditAccountModel();
+            EditAccountModel model = new EditAccountModel()
+            {
+                Email = User.Email,
+                Firstname = User.Firstname,
+                Lastname = User.Lastname
+            };
             return View("Edit", model);
         }
 
         [HttpPost]
-        [UserAuthorizationFilter]
-        public ActionResult EditMyself(EditAccountModel model)
+        [AuthorizeUser]
+        public ActionResult Edit(EditAccountModel model)
         {
             model.Validate("Account").CopyToModelState(ModelState);
             if (ModelState.IsValid)
             {
-                model.SaveAccountModifications();
-                ApplicationSession.StatusMessage = "Your account has been saved.";
-                return RedirectToAction(ApplicationSession.DefaultAction, ApplicationSession.DefaultController);
+                User.Firstname = model.Firstname;
+                User.Lastname = model.Lastname;
+                using (UnitOfWork.BeginBusinessTransaction())
+                {
+                    UserService.Save(User);
+                    UnitOfWork.Persist();
+                }
+                TempData.StatusMessage = "Your account has been saved.";
+                return Redirect(Session.DefaultReturnUrl);
             }
             return View("Edit", model);
         }
 
         [HttpPost]
-        [UserAuthorizationFilter]
-        public ActionResult ChangeMyPassword(EditAccountModel model)
+        [AuthorizeUser]
+        public ActionResult Password(EditAccountModel model)
         {
             model.Validate("Password").CopyToModelState(ModelState);
             if (!string.IsNullOrEmpty(model.ConfirmPassword) && !model.ConfirmPassword.Equals(model.NewPassword))
@@ -157,68 +251,35 @@ namespace TMD.Controllers
             }
             if (!string.IsNullOrEmpty(model.NewPassword))
             {
-                model.User.ValidateNewPassword(model.NewPassword).CopyToModelStateForKey(ModelState, "NewPassword");
+                User.ValidateNewPassword(model.NewPassword).CopyToModelStateForKey(ModelState, "NewPassword");
             }
-            if (!string.IsNullOrEmpty(model.ExistingPassword) && !model.User.VerifyPassword(model.ExistingPassword))
+            if (!string.IsNullOrEmpty(model.ExistingPassword) && !User.VerifyPassword(model.ExistingPassword))
             {
                 ModelState.AddModelError("ExistingPassword", "Invalid password.");
             }
             if (ModelState.IsValid)
             {
-                model.SavePasswordChange();
-                ApplicationSession.StatusMessage = "Your password has been changed.";
-                return RedirectToAction(ApplicationSession.DefaultAction, ApplicationSession.DefaultController);
+                User.ChangePasswordUsingExistingPassword(model.ExistingPassword, model.NewPassword);
+                using (UnitOfWork.BeginBusinessTransaction())
+                {
+                    UserService.Save(User);
+                    UnitOfWork.Persist();
+                }
+                TempData.StatusMessage = "Your password has been changed.";
+                return Redirect(Session.DefaultReturnUrl);
             }
             return View("Edit", model);
         }
 
-        [HttpGet]
-        public ActionResult PasswordAssistance()
+        public ActionResult RequestPasswordAssistance()
         {
             PasswordAssistanceModel model = new PasswordAssistanceModel();
-            return View(model);
-        }
-
-        [HttpGet]
-        public ActionResult CreatePassword(string id)
-        {
-            PasswordAssistanceModel model = new PasswordAssistanceModel();
-            model.Token = id;
-            if (!model.DoesUserExist || !model.User.IsForgottenPasswordAssistanceTokenValid)
-            {
-                return View("PasswordAssistanceRequestExpired");
-            }
-            return View("CreatePassword", model);
-        }
-
-        [HttpPost]
-        public ActionResult CreatePassword(PasswordAssistanceModel model, string id)
-        {
-            model.Token = id;
-            if (!model.DoesUserExist || !model.User.IsForgottenPasswordAssistanceTokenValid)
-            {
-                return View("PasswordAssistanceRequestExpired");
-            }
-            model.Validate("Password").CopyToModelState(ModelState);
-            if (!string.IsNullOrEmpty(model.ConfirmPassword) && !model.ConfirmPassword.Equals(model.NewPassword))
-            {
-                ModelState.AddModelError("ConfirmPassword", "Your passwords do not match.");
-            }
-            if (!string.IsNullOrEmpty(model.NewPassword))
-            {
-                model.User.ValidateNewPassword(model.NewPassword).CopyToModelStateForKey(ModelState, "NewPassword");
-            }
-            if (!ModelState.IsValid)
-            {
-                return View("CreatePassword", model);
-            }
-            model.SaveNewPassword();
-            return View("PasswordCreated");
+            return View("PasswordAssistance", model);
         }
 
         [HttpPost]
         [RecaptchaControlMvc.CaptchaValidator]
-        public ActionResult PasswordAssistance(PasswordAssistanceModel model, bool captchaValid)
+        public ActionResult RequestPasswordAssistance(PasswordAssistanceModel model, bool captchaValid)
         {
             model.Validate("Email").CopyToModelState(ModelState);
             if (!string.IsNullOrEmpty(model.ConfirmEmail) && !model.ConfirmEmail.Equals(model.Email))
@@ -227,17 +288,23 @@ namespace TMD.Controllers
             }
             if (!ModelState.IsValid)
             {
-                return View(model);
+                return View("PasswordAssistance", model);
             }
             if (!captchaValid)
             {
                 return View("VerifyHumanBeforeEmailingPasswordAssistance", model);
             }
-            if (model.DoesUserExist)
+            User user = UserService.FindByEmail(model.Email);
+            if (user != null)
             {
-                model.GeneratePasswordAssistanceToken();
+                user.GenerateForgottenPasswordAssistanceToken();
+                using (UnitOfWork.BeginBusinessTransaction())
+                {
+                    UserService.Save(user);
+                    UnitOfWork.Persist();
+                }
                 using (SmtpClient mailClient = new SmtpClient())
-                using (MailMessage mail = PasswordAssistanceEmail.Create(model.User))
+                using (MailMessage mail = PasswordAssistanceEmail.Create(user))
                 {
                     mailClient.EnableSsl = true;
                     mailClient.Send(mail);
@@ -246,7 +313,51 @@ namespace TMD.Controllers
             return View("PasswordAssistanceEmailed", model);
         }
 
-        [HttpGet]
+        public ActionResult ProvidePasswordAssistance(string id)
+        {
+            if (!string.IsNullOrEmpty(id))
+            {
+                User user = UserService.FindByForgottenPasswordAssistanceToken(id);
+                if (user != null && user.IsForgottenPasswordAssistanceTokenValid)
+                {
+                    PasswordAssistanceModel model = new PasswordAssistanceModel();
+                    return View("CreatePassword", model);
+                }
+            }
+            return View("PasswordAssistanceRequestExpired");
+        }
+
+        [HttpPost]
+        public ActionResult ProvidePasswordAssistance(PasswordAssistanceModel model, string id)
+        {
+            User user = UserService.FindByForgottenPasswordAssistanceToken(id);
+            if (user == null || !user.IsForgottenPasswordAssistanceTokenValid)
+            {
+                return View("PasswordAssistanceRequestExpired");
+            }
+            model.Validate("Password").CopyToModelState(ModelState);
+            if (!string.IsNullOrEmpty(model.ConfirmPassword) && !model.ConfirmPassword.Equals(model.NewPassword))
+            {
+                ModelState.AddModelError("ConfirmPassword", "Your passwords do not match.");
+            }
+            if (!string.IsNullOrEmpty(model.NewPassword))
+            {
+                user.ValidateNewPassword(model.NewPassword).CopyToModelStateForKey(ModelState, "NewPassword");
+            }
+            if (!ModelState.IsValid)
+            {
+                return View("CreatePassword", model);
+            }
+            user.ChangePasswordUsingPasswordAssistanceToken(id, model.NewPassword);
+            using (UnitOfWork.BeginBusinessTransaction())
+            {
+                UserService.Save(user);
+                UnitOfWork.Persist();
+            }
+            return View("PasswordCreated");
+        }
+
+        [HttpPost]
         public ActionResult RenewSessionTimeout()
         {
             return new EmptyResult();
@@ -256,8 +367,10 @@ namespace TMD.Controllers
         public ActionResult TimeoutSession()
         {
             AccountLoginModel model = new AccountLoginModel();
-            model.Logout();
-            ApplicationSession.StatusMessage = "Your session has timed out due to inactivity.";
+            // TODO: decouple from FormsAuthentication class so this controller is unit testable
+            FormsAuthentication.SignOut();
+            Session.ClearRegardingUserSpecificData();
+            TempData.StatusMessage = "Your session has timed out due to inactivity.";
             return new EmptyResult();
         }
     }

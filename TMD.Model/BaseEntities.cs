@@ -16,7 +16,7 @@ namespace TMD.Model
         protected BaseUserCreatedEntity()
         {
             Created = DateTime.Now;
-            Creator = UserSession.CurrentUser;
+            Creator = UserSession.User;
         }
 
         public virtual int Id { get; private set; }

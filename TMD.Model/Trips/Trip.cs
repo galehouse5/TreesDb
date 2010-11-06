@@ -161,7 +161,7 @@ namespace TMD.Model.Trips
 
         public virtual SiteVisit AddSiteVisit(SiteVisit sv)
         {
-            sv.SetPrivatePropertyValue<Trip>("Trip", this);
+            sv.SetPrivatePropertyValue("Trip", this);
             SiteVisits.Add(sv);
             return sv;
         }

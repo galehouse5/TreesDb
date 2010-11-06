@@ -7,7 +7,8 @@ using TMD.Model;
 
 namespace TMD.Controllers
 {
-    public class ValueObjectsController : Controller
+    [CheckBrowserCompatibilityFilter]
+    public class ValueObjectsController : ControllerBase
     {
         [HttpGet]
         public ActionResult CreateCoordinates(string latitude, string longitude)

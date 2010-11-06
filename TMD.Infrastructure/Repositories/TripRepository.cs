@@ -25,38 +25,14 @@ namespace TMD.Infrastructure.Repositories
             InfrastructureRegistry.UnitOfWorkSession.Delete(t);
         }
 
-        public IList<Trip> FindAlreadyImportedTripsByUserId(int userId)
-        {
-            return InfrastructureRegistry.UnitOfWorkSession.CreateQuery(@"
-                select t from Trip as t
-                where t.IsImported = 1
-                    and t.Creator.Id = :userId
-                order by t.Id desc")
-                .SetParameter("userId", userId)
-                .List<Trip>();
-        }
-
-        public IList<Trip> FindNotYetImportedTripsByUserId(int userId)
-        {
-            return InfrastructureRegistry.UnitOfWorkSession.CreateQuery(@"
-                select t from Trip as t
-                where t.IsImported = 0
-                    and t.Creator.Id = :userId
-                order by t.Id desc")
-                .SetParameter("userId", userId)
-                .List<Trip>();
-        }
-
-
-        public Trip FindLastSavedTripByUserId(int userId)
+        public IList<Trip> FindTripsCreatedByUser(int userId)
         {
             return InfrastructureRegistry.UnitOfWorkSession.CreateQuery(@"
                 select t from Trip as t
                 where t.Creator.Id = :userId
-                order by t.LastSaved desc, t.Id desc")
+                order by t.Id desc")
                 .SetParameter("userId", userId)
-                .SetMaxResults(1)
-                .UniqueResult<Trip>();
+                .List<Trip>();
         }
 
         // TODO: implement import logic

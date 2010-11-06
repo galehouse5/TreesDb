@@ -8,14 +8,14 @@ using TMD.Models;
 
 namespace TMD.Controllers
 {
-    public class LocationsController : Controller
+    [CheckBrowserCompatibilityFilter]
+    public class LocationsController : ControllerBase
     {
         [HttpGet]
         public ActionResult FindAllCountries()
         {
-            LocationsModel model = new LocationsModel();
             List<object> countries = new List<object>();
-            foreach (Country c in model.FindAllCountries())
+            foreach (Country c in LocationService.FindAllCountries())
             {
                 countries.Add(new
                 {
@@ -29,9 +29,8 @@ namespace TMD.Controllers
         [HttpGet]
         public ActionResult FindStatesByCountryCode(string code)
         {
-            LocationsModel model = new LocationsModel();
             List<object> states = new List<object>();
-            foreach (State s in model.FindStatesByCountryCode(code))
+            foreach (State s in LocationService.FindStatesByCountryCode(code))
             {
                 states.Add(new
                 {
