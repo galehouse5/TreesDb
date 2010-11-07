@@ -29,6 +29,7 @@ namespace TMD.Model.Users
         public void Save(User u)
         {
             u.AssertIsValidToPersist();
+            InternalSave(u);
         }
 
         protected abstract void InternalSave(User u);

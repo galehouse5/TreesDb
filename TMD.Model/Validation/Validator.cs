@@ -22,8 +22,8 @@ namespace TMD.Model.Validation
         public static IList<ValidationFailure> Validate(this object source, params Tag[] tags)
         {
             object[] normalizedTags = new object[tags.Length];
-            normalizedTags.CopyTo(tags, 0);
-            InvalidValue[] invalidValues = s_VE.Validate(source, tags);
+            tags.CopyTo(normalizedTags, 0);
+            InvalidValue[] invalidValues = s_VE.Validate(source, normalizedTags);
             List<ValidationFailure> validationFailures = new List<ValidationFailure>();
             invalidValues.ForEach(iv => validationFailures.Add(new ValidationFailure(iv)));
             return validationFailures;
@@ -31,7 +31,15 @@ namespace TMD.Model.Validation
 
         public static void AssertIsValid(this object source, params Tag[] tags)
         {
-            IList<ValidationFailure> validationFailures = source.Validate(tags);
+            IList<ValidationFailure> validationFailures = source as IList<ValidationFailure>;
+            if (validationFailures == null)
+            {
+                validationFailures = source.Validate(tags);
+            }
+            else
+            {
+                validationFailures.RemoveUnspecifiedTags(tags);
+            }
             if (validationFailures.Count > 0)
             {
                 throw new ValidationFailureException(source, validationFailures);
@@ -43,6 +51,7 @@ namespace TMD.Model.Validation
             IList<ValidationFailure> validationFailures = source as IList<ValidationFailure>;
             if (validationFailures != null)
             {
+                validationFailures = validationFailures.RemoveUnspecifiedTags(tags);
                 return validationFailures.Count == 0;
             }
             return source.Validate(tags).IsValid();
@@ -66,6 +75,11 @@ namespace TMD.Model.Validation
         public static void AssertIsValidToPersist(this object source)
         {
             source.AssertIsValid(Tag.Persistence);
+        }
+
+        public static IList<ValidationFailure> RemoveUnspecifiedTags(this IList<ValidationFailure> validationFailures, params Tag[] tags)
+        {
+            return validationFailures.RemoveAll(vf => !vf.ContainsTag(tags));
         }
     }
 }

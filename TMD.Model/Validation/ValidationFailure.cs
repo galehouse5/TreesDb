@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using TMD.Model.Extensions;
 using NHibernate.Validator.Engine;
+using System.Diagnostics;
 
 namespace TMD.Model.Validation
 {
+    [DebuggerDisplay("{Path} : {Message}")]
     public class ValidationFailure
     {
         private InvalidValue m_IV;
@@ -41,7 +43,7 @@ namespace TMD.Model.Validation
             get { return m_IV.Value; }
         }
 
-        public IList<Tag> Rulesets
+        public IList<Tag> Tags
         {
             get
             {
@@ -49,6 +51,11 @@ namespace TMD.Model.Validation
                 m_IV.MatchTags.ForEach(o => rulesets.Add((Tag)o));
                 return rulesets;
             }
+        }
+
+        public bool ContainsTag(params Tag[] tags)
+        {
+            return tags.Contains(t => Tags.Contains(t));
         }
     }
 }

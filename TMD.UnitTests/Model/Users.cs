@@ -6,6 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TMD.Model.Users;
 using System.Threading;
 using TMD.Model;
+using TMD.Model.Validation;
 
 namespace TMD.UnitTests.Model
 {
@@ -66,29 +67,29 @@ namespace TMD.UnitTests.Model
         [TestMethod]
         public void SaveFindAndRemove()
         {
-            Assert.IsTrue(Password.Validate("Aa!1Aa!1Aa!1").IsValid);
+            Assert.IsTrue(Password.Validate("Aa!1Aa!1Aa!1").IsValid());
             User u = User.Create("tmdtest@treesdb.org", "Aa!1Aa!1Aa!1");
-            using (UnitOfWork.BeginBusinessTransaction())
+            using (UnitOfWork.Begin())
             {
-                UserService.Save(u);
+                Repositories.Users.Save(u);
                 UnitOfWork.Persist();
             }
-            User u2 = UserService.FindByEmail("TMDtest@treesdb.org");
+            User u2 = Repositories.Users.FindByEmail("TMDtest@treesdb.org");
             Assert.AreEqual(u, u2);
-            User u3 = UserService.FindByEmailVerificationToken(u.EmailVerificationToken.UrlEncodedValue);
+            User u3 = Repositories.Users.FindByEmailVerificationToken(u.EmailVerificationToken.UrlEncodedValue);
             Assert.AreEqual(u, u3);
             u.GenerateForgottenPasswordAssistanceToken();
-            using (UnitOfWork.BeginBusinessTransaction())
+            using (UnitOfWork.Begin())
             {
-                UserService.Save(u);
+                Repositories.Users.Save(u);
                 UnitOfWork.Persist();
             }
             Assert.IsTrue(u.IsForgottenPasswordAssistanceTokenValid);
-            User u4 = UserService.FindByForgottenPasswordAssistanceToken(u.ForgottenPasswordAssistanceToken.UrlEncodedValue);
+            User u4 = Repositories.Users.FindByForgottenPasswordAssistanceToken(u.ForgottenPasswordAssistanceToken.UrlEncodedValue);
             Assert.AreEqual(u, u4);
-            using (UnitOfWork.BeginBusinessTransaction())
+            using (UnitOfWork.Begin())
             {
-                UserService.Remove(u);
+                Repositories.Users.Remove(u);
                 UnitOfWork.Persist();
             }
         }

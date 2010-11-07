@@ -15,7 +15,7 @@ namespace TMD.UnitTests.Model
         [TestMethod]
         public void FindAllCountries()
         {
-            IList<Country> countries = LocationService.FindAllCountries();
+            IList<Country> countries = Repositories.Locations.FindAllCountries();
             Assert.IsTrue(countries.Count >= 1);
             Assert.IsNotNull(countries[0].CoordinateBounds);
         }
@@ -23,11 +23,11 @@ namespace TMD.UnitTests.Model
         [TestMethod]
         public void FindStatesByCountryCode()
         {
-            IList<State> states = LocationService.FindStatesByCountryCode("US");
+            IList<State> states = Repositories.Locations.FindStatesByCountryCode("US");
             Assert.IsTrue(states.Count == 57);
-            states = LocationService.FindStatesByCountryCode("USA");
+            states = Repositories.Locations.FindStatesByCountryCode("USA");
             Assert.IsTrue(states.Count == 57);
-            states = LocationService.FindStatesByCountryCode("United States");
+            states = Repositories.Locations.FindStatesByCountryCode("United States");
             Assert.IsTrue(states.Count == 57);
             Assert.IsNotNull(states[0].CoordinateBounds);
         }
@@ -35,18 +35,18 @@ namespace TMD.UnitTests.Model
         [TestMethod]
         public void FindStateByCountryCodeAndCode()
         {
-            State oh = LocationService.FindStateByCountryAndStateCodes("US", "OH");
+            State oh = Repositories.Locations.FindStateByCountryAndStateCodes("US", "OH");
             Assert.IsNotNull(oh);
-            State io = LocationService.FindStateByCountryAndStateCodes("US", "IO");
+            State io = Repositories.Locations.FindStateByCountryAndStateCodes("US", "IO");
             Assert.IsNull(io);
         }
 
         [TestMethod]
         public void FindCountryByCode()
         {
-            Country us = LocationService.FindCountryByCode("US");
+            Country us = Repositories.Locations.FindCountryByCode("US");
             Assert.IsNotNull(us);
-            Country su = LocationService.FindCountryByCode("SU");
+            Country su = Repositories.Locations.FindCountryByCode("SU");
             Assert.IsNull(su);
         }
     }

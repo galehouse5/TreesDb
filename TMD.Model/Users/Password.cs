@@ -22,10 +22,10 @@ namespace TMD.Model.Users
         public virtual int Lowercase { get; private set; }
         public virtual int Specials { get; private set; }
 
-        [Min(1, Message = "You must enter a password.")]
+        [Min(1, Message = "You must enter a password.", Tags = Tag.Screening)]
         public virtual int Length { get; private set; }
 
-        [NotEquals(true, Message = "Your password can only contain the following special characters: ~`!@#$%^*()-_=+[{]}\\|;:,./?/*-+.")]
+        [NotEquals(true, Message = "Your password can only contain the following special characters: ~`!@#$%^*()-_=+[{]}\\|;:,./?/*-+.", Tags = Tag.Screening)]
         public virtual bool HasInvalidCharacters { get; private set; }
 
         public virtual void CheckPasswordMeetsGlobalRequirements(IConstraintValidatorContext context)
@@ -173,6 +173,11 @@ namespace TMD.Model.Users
                 Specials = countSpecialCharacters(password),
                 HasInvalidCharacters = hasInvalidCharacters(password)
             };
+        }
+
+        public static IList<ValidationFailure> Validate(string password)
+        {
+            return Password.Create(password, string.Empty).Validate();
         }
 
         private static RandomNumberGenerator s_RNG = RNGCryptoServiceProvider.Create();
