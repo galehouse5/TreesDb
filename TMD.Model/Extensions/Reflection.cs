@@ -5,17 +5,10 @@ using System.Text;
 using System.Reflection;
 using System.ComponentModel;
 
-namespace TMD.Model
+namespace TMD.Model.Extensions
 {
     public static class ReflectionExtensions
     {
-        public static string GetEnumDescription(this Enum value)
-        {
-            FieldInfo fi = value.GetType().GetField(value.ToString());
-            DescriptionAttribute[] attributes = (DescriptionAttribute[])fi.GetCustomAttributes(typeof(DescriptionAttribute), false);
-            return (attributes.Length > 0) ? attributes[0].Description : value.ToString();
-        }
-
         public static object SetPrivatePropertyValue(this object obj, string propertyName, object value)
         {
             Type objType = obj.GetType();
@@ -49,8 +42,7 @@ namespace TMD.Model
             return obj;
         }
 
-        public static T CopyPublicPropertyValuesFrom<T>(this T destination, T source)
-            where T : IEntity
+        public static T CopyPublicPropertyValuesFrom<T>(this T destination, T source) where T : IEntity
         {
             PropertyInfo[] properties = typeof(T).GetProperties();
             foreach (PropertyInfo property in properties)

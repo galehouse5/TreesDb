@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
-using System.ComponentModel;
 using System.Diagnostics;
-using System.ComponentModel.DataAnnotations;
+using NHibernate.Validator.Constraints;
+using System.ComponentModel;
+using TMD.Model.Extensions;
 
 namespace TMD.Model.Trips
 {
@@ -22,19 +21,16 @@ namespace TMD.Model.Trips
         Vine = TreeFormType.Vine
     }
 
-
     [Serializable]
     [DebuggerDisplay("{ScientificName} (multi trunk)")]
-    [HasSelfValidation]
     public class MultiTrunkTreeMeasurement : TreeMeasurementBase
     {
         protected MultiTrunkTreeMeasurement()
         { }
 
         private int? m_NumberOfTrunks;
-        [IgnoreNulls(Ruleset = "Screening")]
-        [DisplayName("Number of trunks:")]
-        [RangeValidator(2, RangeBoundaryType.Inclusive, int.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Number of trunks must be greater than one.", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        
+        [Range(2, int.MaxValue, Message = "Number of trunks must be greater than one.", Tags = Tag.Screening)]
         public override int? NumberOfTrunks 
         {
             get 
@@ -52,45 +48,36 @@ namespace TMD.Model.Trips
             set { m_NumberOfTrunks = value; }
         }
 
-        [DisplayName("Tree form type:")]
-        [ObjectEqualityValidator(TreeFormType.Single, Negated = true, MessageTemplate = "Form type must not be single.", Ruleset = "Screening")]
+        [NotEqualsAttribute(TreeFormType.Single, Message = "Form type must not be single.", Tags = Tag.Screening)]
         public override TreeFormType FormType { get; set; }
 
-        [DisplayName("Tree form type:")]
         public virtual MultiTrunkTreeFormType MultiTrunkFormType
         {
             get { return (MultiTrunkTreeFormType)FormType; }
             set { FormType = (TreeFormType)value; }
         }
 
-        [DisplayName("Combined girth:")]
         public override Distance Girth { get; set; }
 
-        [DisplayName("Combined girth:")]
         public virtual Distance CombinedGirth
         {
             get { return Girth; }
             set { Girth = value; }
         }
-
-        [IgnoreNulls(Ruleset = "Screening")]
-        [DisplayName("Number of trunks in combined girth:")]
-        [RangeValidator(1, RangeBoundaryType.Inclusive, int.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Number of trunks in combined girth must be positive.", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        
+        [Range(1, int.MaxValue, Message = "Number of trunks in combined girth must be positive.", Tags = Tag.Screening)]
         public virtual int? CombinedGirthNumberOfTrunks { get; set; }
 
-        [DisplayName("Combined crown spread:")]
         public override Distance CrownSpread { get; set; }
 
-        [DisplayName("Combined crown spread:")]
         public virtual Distance CombinedCrownSpread
         {
             get { return CrownSpread; }
             set { CrownSpread = value; }
         }
 
-        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Persistence", Ruleset = "Persistence")]
-        [ModelObjectCollectionValidator(CollectionNamespaceQualificationMode.PrependToKeyAndIndex, TargetRuleset = "Screening", Ruleset = "Screening")]
-        [CollectionCountWhenNotNullValidator(0, 100, MessageTemplate = " This tree contains too many trunk measurements.", Ruleset = "Screening", Tag = "TrunkMeasurements")]
+        [Valid]
+        [Size(0, 100, Message = "This tree contains too many trunk measurements.", Tags = new [] { Tag.Screening, Tag.Persistence })]
         public virtual IList<TrunkMeasurement> TrunkMeasurements { get; private set; }
 
         public virtual TrunkMeasurement AddTrunkMeasurement()
@@ -119,8 +106,8 @@ namespace TMD.Model.Trips
                 AgeType = TreeAgeType.NotSpecified,
                 Age = null,
                 GeneralComments = string.Empty,
-                CoordinatesEntered = ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified && ssv.Coordinates.IsValid,
-                Coordinates = ssv.CoordinatesEntered && ssv.Coordinates.IsSpecified && ssv.Coordinates.IsValid ? ssv.Coordinates : Coordinates.Null(),
+                CoordinatesEntered = ssv.CoordinatesEntered && ssv.Coordinates.IsValidAndSpecified(),
+                Coordinates = ssv.CoordinatesEntered && ssv.Coordinates.IsValidAndSpecified() ? ssv.Coordinates : Coordinates.Null(),
                 Elevation = Elevation.Null(),
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),

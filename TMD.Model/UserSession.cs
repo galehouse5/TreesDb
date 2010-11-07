@@ -3,58 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Users;
+using StructureMap;
 
 namespace TMD.Model
 {
-    public abstract class UserSessionProvider
+    public interface IUserSessionProvider
     {
-        public abstract User User { get; }
-
-        public virtual void InitializeSession()
-        {
-            if (User != null)
-            {
-                User.ReportActivity();
-            }
-        }
-
-        public virtual void DisposeSession()
-        {
-            if (User != null)
-            {
-                using (UnitOfWork.BeginBusinessTransaction())
-                {
-                    UserService.Save(User);
-                    UnitOfWork.Persist();
-                }
-            }
-        }
+        bool IsAnonymous { get; }
+        User User { get; }
     }
 
     public static class UserSession
     {
-        private static UserSessionProvider s_ContextProvider;
-        private static UserSessionProvider ContextProvider
+        private static IUserSessionProvider Provider
         {
-            get
-            {
-                if (s_ContextProvider == null)
-                {
-                    Type t = Type.GetType(ModelRegistry.Settings.UserSessionProvider);
-                    s_ContextProvider = (UserSessionProvider)Activator.CreateInstance(t);
-                }
-                return s_ContextProvider;
-            }
-        }
-
-        public static User User
-        {
-            get { return ContextProvider.User; }
+            get { return ObjectFactory.GetInstance<IUserSessionProvider>(); }
         }
 
         public static bool IsAnonymous
         {
-            get { return User == null; }
+            get { return Provider.IsAnonymous; }
+        }
+
+        public static User User
+        {
+            get { return Provider.User; }
         }
     }
 }

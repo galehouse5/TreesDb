@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.ComponentModel.DataAnnotations;
+using TMD.Model.Extensions;
+using NHibernate.Validator.Constraints;
+using NHibernate.Validator.Engine;
 
 namespace TMD.Model.Trips
 {
@@ -93,8 +93,9 @@ namespace TMD.Model.Trips
 
     [Serializable]
     [DebuggerDisplay("{ScientificName} ({CommonName})")]
-    [HasSelfValidation]
-    public abstract class TreeMeasurementBase : BaseUserCreatedEntity
+    [ContextMethod("CheckedCoordinatesAreWithinOneMinuteOfSubsiteCoordinates", Tags = Tag.Optional)]
+    [ContextMethod("CheckHeightDistanceAngeAngleMeasurementsAreIncluded", Tags = Tag.Screening)]
+    public abstract class TreeMeasurementBase : UserCreatedEntityBase
     {
         protected TreeMeasurementBase()
         { }
@@ -112,8 +113,7 @@ namespace TMD.Model.Trips
         /// Four digit number unique in the scope of the subsite.
         /// </summary>
         [DisplayName("Number this tree:")]
-        [IgnoreNulls(Ruleset = "Screening")]
-        [RangeValidator(0, RangeBoundaryType.Inclusive, 9999, RangeBoundaryType.Inclusive, MessageTemplate = "Tree number must be within the range of 0 to 9999.", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Range(1, 9999, Message = "Tree number must be within the range of 0 to 9999.", Tags = Tag.Screening)]
         public virtual int? TreeNumber { get; set; }
 
         public virtual bool TreeNumberSpecified
@@ -123,11 +123,11 @@ namespace TMD.Model.Trips
 
         private string m_TreeName;
         [DisplayName("Name this tree:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Tree name must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(100, Message = "Tree name must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string TreeName
         {
             get { return m_TreeName; }
-            set { m_TreeName = (value ?? string.Empty).Trim().ToTitleCase(); }
+            set { m_TreeName = value.OrEmptyAndTrimToTitleCase(); }
         }
 
         public virtual bool TreeNameSpecified
@@ -135,38 +135,36 @@ namespace TMD.Model.Trips
             get { return !string.IsNullOrWhiteSpace(TreeName); }
         }
 
-        #region General information
-
         private string m_CommonName;
         [DisplayName("*Common name:")]
-        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Common name must be specified.", Ruleset = "Screening", Tag = "TreeMeasurement")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Common name must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [NotEmptyOrWhitesapceAttribute(Message = "Common name must be specified.", Tags = Tag.Screening)]
+        [Length(100, Message = "Common name must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string CommonName
         {
             get { return m_CommonName; }
-            set { m_CommonName = (value ?? string.Empty).Trim().ToTitleCase(); }
+            set { m_CommonName = value.OrEmptyAndTrimToTitleCase(); }
         }
 
         private string m_ScientificName;
         [DisplayName("*Scientific name:")]
-        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Scientific name must be specified.", Ruleset = "Screening", Tag = "TreeMeasurement")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Scientific name must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [NotEmptyOrWhitesapceAttribute(Message = "Scientific name must be specified.", Tags = Tag.Screening)]
+        [Length(100, Message = "Scientific name must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string ScientificName
         {
             get { return m_ScientificName; }
-            set { m_ScientificName = (value ?? string.Empty).Trim().ToSentenceCase(); }
+            set { m_ScientificName = value.OrEmptyAndTrimToSentenceCase(); }
         }
 
         private Coordinates m_Coordinates;
-        [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
-        [SpecifiedValidator(MessageTemplate = "You must specify coordinates for this measurement or its containing subsite.", Ruleset = "Import", Tag = "TreeMeasurement")]
+        [Valid]
+        [Specified(Message = "You must specify coordinates for this measurement or its containing subsite.", Tags = Tag.Finalization)]
         public virtual Coordinates Coordinates
         {
             get
             {
                 if (CoordinatesCalculated)
                 {
-                    if (SubsiteVisit.CoordinatesEntered && SubsiteVisit.Coordinates.IsSpecified && SubsiteVisit.Coordinates.IsValid)
+                    if (SubsiteVisit.CoordinatesEntered && SubsiteVisit.Coordinates.IsValidAndSpecified())
                     {
                         m_Coordinates = SubsiteVisit.Coordinates;
                     }
@@ -185,327 +183,220 @@ namespace TMD.Model.Trips
             get
             {
                 return CoordinatesCalculated
-                    && SubsiteVisit.CoordinatesEntered && SubsiteVisit.Coordinates.IsSpecified && SubsiteVisit.Coordinates.IsValid;
+                    && SubsiteVisit.CoordinatesEntered && SubsiteVisit.Coordinates.IsValidAndSpecified();
             }
         }
 
-        [SelfValidation(Ruleset = "Optional")]
-        public virtual void CheckedCoordinatesAreWithinOneMinuteOfSubsiteCoordinates(ValidationResults results)
+        public virtual void CheckedCoordinatesAreWithinOneMinuteOfSubsiteCoordinates(IConstraintValidatorContext context)
         {
             if (Coordinates.IsSpecified && SubsiteVisit.Coordinates.IsSpecified)
             {
                 if (Coordinates.CalculateDistanceInMinutesTo(SubsiteVisit.Coordinates) > 1f)
                 {
-                    results.AddResult(new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult("Coordinates are not within one minute of containing subsite coordinates.", this, "Coordinates", "TreeMeasurement", null));
+                    context.AddInvalid<TreeMeasurementBase, Coordinates>("Coordinates are not within one minute of containing subsite coordinates.", tm => tm.Coordinates);
                 }
             }
         }
 
         public virtual bool CoordinatesCalculated { get; set; }
-    
-        [DisplayName("Make public")]
         public virtual bool MakeCoordinatesPublic { get; set; }
 
-        [DisplayName("Keep private")]
         public virtual bool KeepCoordinatesPrivate
         {
             get { return !MakeCoordinatesPublic; }
             set { MakeCoordinatesPublic = !value; }
         }
 
-        [DisplayName("Enter coordinates")]
         public virtual bool CoordinatesEntered
         {
             get { return !CoordinatesCalculated; }
             set { CoordinatesCalculated = !value; }
         }
 
-        [SelfValidation(Ruleset = "Import")]
-        public virtual void CheckCoordinatesAreSpecifiedIfCoordinatesAreEntered(ValidationResults results)
-        {
-            if (CoordinatesEntered)
-            {
-                if (!Coordinates.Latitude.IsSpecified)
-                {
-                    results.AddResult(new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult("Latitude must be specified.", Coordinates.Latitude, "Coordinates.Latitude", "TreeMeasurement", null));
-                }
-                if (!Coordinates.Longitude.IsSpecified)
-                {
-                    results.AddResult(new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult("Longitude must be specified.", Coordinates.Longitude, "Coordinates.Longitude", "TreeMeasurement", null));
-                }
-            }
-        }
-
         private string m_GeneralComments;
-        [DisplayName("General comments:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(300, MessageTemplate = "General comments must not exceed 300 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(300, Message = "General comments must not exceed 300 characters.", Tags = Tag.Persistence)] 
         public virtual string GeneralComments
         {
             get { return m_GeneralComments; }
-            set { m_GeneralComments = (value ?? string.Empty).Trim(); }
+            set { m_GeneralComments = value.OrEmptyAndTrim(); }
         }
 
-        #endregion
-
-        #region Height information
-
-        [DisplayName("Height:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual Distance Height { get; set; }
 
-        [DisplayName("Measurement method:")]
         public virtual TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
-
-        [DisplayName("Enter distance and angle measurements")]
         public virtual bool IncludeHeightDistanceAndAngleMeasurements { get; set; }
 
-        [ModelObjectValidator(NamespaceQualificationMode.PrependToKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual HeightMeasurements HeightMeasurements { get; set; }
 
-        [SelfValidation(Ruleset = "Screening")]
-        public virtual void CheckHeightDistanceAngeAngleMeasurementsAreIncluded(ValidationResults results)
+        public virtual void CheckHeightDistanceAngeAngleMeasurementsAreIncluded(IConstraintValidatorContext context)
         {
             if (IncludeHeightDistanceAndAngleMeasurements)
             {
                 if (!HeightMeasurements.IsSpecified)
                 {
-                    results.AddResult(new Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResult(
-                        "You must specify enough distance and angle measurements to calculate a height.", this, "HeightMeasurements.Height", "TreeMeasurement", null));
+                    context.AddInvalid<TreeMeasurementBase, HeightMeasurements>("You must specify enough distance and angle measurements to calculate a height.", tm => tm.HeightMeasurements);
                 }
             }
         }
 
         private string m_HeightMeasurementType;
-        [DisplayName("Measurement type:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Height measurement type must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(100, Message = "Height measurement type must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string HeightMeasurementType
         {
             get { return m_HeightMeasurementType; }
-            set { m_HeightMeasurementType = (value ?? string.Empty).Trim(); }
+            set { m_HeightMeasurementType = value.OrEmptyAndTrim(); }
         }
 
         private string m_LaserBrand;
-        [DisplayName("Laser brand:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Laser brand must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(100, Message = "Laser brand must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string LaserBrand
         {
             get { return m_LaserBrand; }
-            set { m_LaserBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
+            set { m_LaserBrand = value.OrEmptyAndTrimToTitleCase(); }
         }
 
         private string m_ClinometerBrand;
-        [DisplayName("Clinometer brand:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Clinometer brand must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(100, Message = "Clinometer brand must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string ClinometerBrand
         {
             get { return m_ClinometerBrand; }
-            set { m_ClinometerBrand = (value ?? string.Empty).Trim().ToTitleCase(); }
+            set { m_ClinometerBrand = value.OrEmptyAndTrimToTitleCase(); }
         }
 
         private string m_HeightComments;
-        [DisplayName("Height comments:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(300, MessageTemplate = "Height comments must not exceed 300 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(300, Message = "Height comments must not exceed 300 characters.", Tags = Tag.Persistence)]
         public virtual string HeightComments
         {
             get { return m_HeightComments; }
-            set { m_HeightComments = (value ?? string.Empty).Trim(); }
+            set { m_HeightComments = value.OrEmptyAndTrim(); }
         }
 
-        #endregion
-
-        #region Girth information
-
-        [DisplayName("Girth:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual Distance Girth { get; set; }
 
-        [DisplayName("Measurement height:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual Distance GirthMeasurementHeight { get; set; }
 
-        [DisplayName("Root collar height:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual Distance GirthRootCollarHeight { get; set; }
 
         private string m_GirthComments;
-        [DisplayName("Girth comments:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(300, MessageTemplate = "Girth comments must not exceed 300 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(300, Message = "Girth comments must not exceed 300 characters.", Tags = Tag.Persistence)]
         public virtual string GirthComments
         {
             get { return m_GirthComments; }
-            set { m_GirthComments = (value ?? string.Empty).Trim(); }
+            set { m_GirthComments = value.OrEmptyAndTrim(); }
         }
 
-        #endregion
-
-        #region Trunk information
-
-        [IgnoreNulls(Ruleset = "Screening")]
-        [DisplayName("Number of trunks:")]
-        [RangeValidator(1, RangeBoundaryType.Inclusive, int.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Number of trunks must be positive.", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Range(1, int.MaxValue, Message = "Number of trunks must be positive.", Tags = Tag.Screening)]
         public virtual int? NumberOfTrunks { get; set; }
 
-        [DisplayName("Volume:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual Volume TrunkVolume { get; set; }
 
         private string m_TrunkVolumeCalculationMethod;
-        [DisplayName("Volume calculation method:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Trunk volume calculation method must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(100, Message = "Trunk volume calculation method must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string TrunkVolumeCalculationMethod
         {
             get { return m_TrunkVolumeCalculationMethod; }
-            set { m_TrunkVolumeCalculationMethod = (value ?? string.Empty).Trim(); }
+            set { m_TrunkVolumeCalculationMethod = value.OrEmptyAndTrim(); }
         }
 
         private string m_TrunkComments;
-        [DisplayName("Trunk comments:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(300, MessageTemplate = "Trunk comments must not exceed 300 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(300, Message = "Trunk comments must not exceed 300 characters.", Tags = Tag.Persistence )]
         public virtual string TrunkComments
         {
             get { return m_TrunkComments; }
-            set { m_TrunkComments = (value ?? string.Empty).Trim(); }
+            set { m_TrunkComments = value.OrEmptyAndTrim(); }
         }
 
-        #endregion
-
-        #region Crown information
-
-        [DisplayName("Base crown height:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual Distance BaseCrownHeight { get; set; }
 
-        [DisplayName("Crown spread:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual Distance CrownSpread { get; set; }
 
         private string m_CrownSpreadMeasurementMethod;
-        [DisplayName("Measurement method:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Crown spread measurement method must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(100, Message = "Crown spread measurement method must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string CrownSpreadMeasurementMethod
         {
             get { return m_CrownSpreadMeasurementMethod; }
-            set { m_CrownSpreadMeasurementMethod = (value ?? string.Empty).Trim(); }
+            set { m_CrownSpreadMeasurementMethod = value.OrEmptyAndTrim(); }
         }
 
-        [DisplayName("Max limb length:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual Distance MaximumLimbLength { get; set; }
 
-        [DisplayName("Volume:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual Volume CrownVolume { get; set; }
 
         private string m_CrownVolumeCalculationMethod;
-        [DisplayName("Volume calculation method:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Crown volume calculation method must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(100, Message = "Crown volume calculation method must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string CrownVolumeCalculationMethod
         {
             get { return m_CrownVolumeCalculationMethod; }
-            set { m_CrownVolumeCalculationMethod = (value ?? string.Empty).Trim(); }
+            set { m_CrownVolumeCalculationMethod = value.OrEmptyAndTrim(); }
         }
 
         private string m_CrownComments;
-        [DisplayName("Crown comments:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(300, MessageTemplate = "Crown comments must not exceed 300 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(300, Message = "Crown comments must not exceed 300 characters.", Tags = Tag.Persistence)]
         public virtual string CrownComments
         {
             get { return m_CrownComments; }
-            set { m_CrownComments = (value ?? string.Empty).Trim(); }
+            set { m_CrownComments = value.OrEmptyAndTrim(); }
         }
-        
-        #endregion
 
-        #region Form type information
-
-        [DisplayName("Tree form type:")]
         public virtual TreeFormType FormType { get; set; }
 
         private string m_TreeFormComments;
-        [DisplayName("Tree form comments:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(300, MessageTemplate = "Tree form comments must not exceed 300 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(300, Message = "Tree form comments must not exceed 300 characters.", Tags = Tag.Persistence)]
         public virtual string TreeFormComments
         {
             get { return m_TreeFormComments; }
-            set { m_TreeFormComments = (value ?? string.Empty).Trim(); }
+            set { m_TreeFormComments = value.OrEmptyAndTrim(); }
         }
 
-        #endregion
-
-        #region Age information
-
-        [DisplayName("Age class:")]
         public virtual TreeAgeClass AgeClass { get; set; }
-
-        [DisplayName("Age type:")]
         public virtual TreeAgeType AgeType { get; set; }
 
-        [DisplayName("Age:")]
-        [IgnoreNulls(Ruleset = "Screening")]
-        [RangeValidator(0, RangeBoundaryType.Inclusive, int.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Age must be non-negative.", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Range(0, int.MaxValue, Message = "Age must be non-negative.", Tags = Tag.Screening)]
         public virtual int? Age { get; set; }
 
-        #endregion
-
-        #region Terrain information
-
-        [DisplayName("Terrain type:")]
         public virtual TreeTerrainType TerrainType { get; set; }
 
         [DisplayName("Terrain shape index:")]
-        [IgnoreNulls(Ruleset = "Screening")]
-        [RangeValidator(-1f, RangeBoundaryType.Inclusive, 1f, RangeBoundaryType.Inclusive, MessageTemplate = "TSI must be within the range of -1 to 1.", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Within(-1f, 1f, Message = "TSI must be within the range of -1 to 1.", Tags = Tag.Screening)]
         public virtual float? TerrainShapeIndex { get; set; }
 
         [DisplayName("Land form index:")]
-        [IgnoreNulls(Ruleset = "Screening")]
-        [RangeValidator(0f, RangeBoundaryType.Inclusive, 1f, RangeBoundaryType.Inclusive, MessageTemplate = "LFI must be within the range of 0 to 1.", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Within(0f, 1f, Message = "LFI must be within the range of 0 to 1.", Tags = Tag.Screening)]
         public virtual float? LandformIndex { get; set; }
 
         private string m_TerrainComments;
         [DisplayName("Terrain comments:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(300, MessageTemplate = "Terrain comments must not exceed 300 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(300, Message = "Terrain comments must not exceed 300 characters.", Tags = Tag.Persistence)]
         public virtual string TerrainComments
         {
             get { return m_TerrainComments; }
-            set { m_TerrainComments = (value ?? string.Empty).Trim(); }
+            set { m_TerrainComments = value.OrEmptyAndTrim(); }
         }
-
-        #endregion
-
-        #region Status information
 
         [DisplayName("Tree status:")]
         public virtual TreeStatus Status { get; set; }
 
         private string m_HealthStatus;
         [DisplayName("Health status:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Health status must not exceed 100 characters.", Ruleset = "Persistence", Tag = "TreeMeasurement")]
+        [Length(100, Message = "Health status must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string HealthStatus
         {
             get { return m_HealthStatus; }
-            set { m_HealthStatus = (value ?? string.Empty).Trim(); }
+            set { m_HealthStatus = value.OrEmptyAndTrim(); }
         }
-
-        #endregion
-
-        #region Other information
 
         [DisplayName("Elevation:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening", Tag = "TreeMeasurement")]
+        [Valid]
         public virtual Elevation Elevation { get; set; }
-
-        #endregion
-
-
-        public virtual ValidationResults ValidateRegardingScreeningAndPersistence()
-        {
-            return ModelValidator.Validate(this, "Screening", "Persistence");
-        }
-
-        public virtual ValidationResults ValidateRegardingPersistence()
-        {
-            return ModelValidator.Validate(this, "Persistence");
-        }
     }
 }

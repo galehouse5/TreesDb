@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
 using TMD.Model.Validation;
-using System.ComponentModel;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Security.Principal;
+using NHibernate.Validator.Constraints;
+using TMD.Model.Extensions;
 
 namespace TMD.Model.Users
 {
@@ -23,7 +22,7 @@ namespace TMD.Model.Users
 
     [Serializable]
     [DebuggerDisplay("{Email}")]
-    public class User : IEntity, IPrincipal, IIdentity
+    public class User : IEntity
     {
         protected User()
         { }
@@ -32,35 +31,32 @@ namespace TMD.Model.Users
         public virtual UserRoles Roles { get; private set; }
 
         private string m_Email;
-        [DisplayName("*Email:")]
-        [RegexValidator(@"^(?: *|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4})$", RegexOptions.Compiled, MessageTemplate = "You must enter a valid email.", Ruleset = "Screening")]
-        [StringNotNullOrWhitespaceValidator(MessageTemplate = "You must enter an email.", Ruleset = "Screening")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(100, MessageTemplate = "Email must not exceed 100 characters.", Ruleset = "Persistence", Tag = "User")]
+        [Pattern(@"^(?: *|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4})$", Flags = RegexOptions.Compiled, Message = "You must enter a valid email.", Tags = Tag.Screening)]
+        [NotEmptyOrWhitesapceAttribute(Message = "You must enter an email.", Tags = "Screening")]
+        [Length(100, Message = "Email must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string Email 
         {
             get { return m_Email; }
-            private set { m_Email = (value ?? string.Empty).Trim().ToLower(); }
+            private set { m_Email = value.OrEmptyAndTrimToLower(); }
         }
 
         private string m_Firstname;
-        [DisplayName("First name:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(50, MessageTemplate = "First name must not exceed 50 characters.", Ruleset = "Persistence", Tag = "User")]
+        [Length(50, Message = "First name must not exceed 50 characters.", Tags = Tag.Persistence)]
         public virtual string Firstname 
         {
             get { return m_Firstname; }
-            set { m_Firstname = (value ?? string.Empty).Trim().ToTitleCase(); }
+            set { m_Firstname = value.OrEmptyAndTrimToTitleCase(); }
         }
 
         private string m_Lastname;
-        [DisplayName("Last name:")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(50, MessageTemplate = "Last name must not exceed 50 characters.", Ruleset = "Persistence", Tag = "User")]
+        [Length(50, Message = "Last name must not exceed 50 characters.", Tags = Tag.Persistence)]
         public virtual string Lastname
         {
             get { return m_Lastname; }
-            set { m_Lastname = (value ?? string.Empty).Trim().ToTitleCase(); }
+            set { m_Lastname = value.OrEmptyAndTrimToTitleCase(); }
         }
 
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [Valid]
         public virtual Password Password { get; private set; }
 
         public virtual DateTime Created { get; private set; }
@@ -112,7 +108,7 @@ namespace TMD.Model.Users
             get 
             {
                 return ForgottenPasswordAssistanceToken != null
-                    && ForgottenPasswordAssistanceTokenIssued >= DateTime.Now.Subtract(ModelRegistry.UserSettings.ForgottenPasswordAssistanceTokenLifetime)
+                    && ForgottenPasswordAssistanceTokenIssued >= DateTime.Now.Subtract(Registry.Settings.ForgottenPasswordAssistanceTokenLifetime)
                     && ForgottenPasswordAssistanceTokenUsed == null;
             }
         }
@@ -129,12 +125,9 @@ namespace TMD.Model.Users
             if (!ForgottenPasswordAssistanceToken.UrlEncodedValue.Equals(urlEncodedForgottenPasswordAssistanceToken)
                 || !IsForgottenPasswordAssistanceTokenValid)
             {
-                throw new InvalidOperationException("Unable to change password because forgotten password assistance token is invalid.");
+                throw new InvalidEntityOperationException(this, "Unable to change password because forgotten password assistance token is invalid.");
             }
-            if (!ValidateNewPassword(newPassword).IsValid)
-            {
-                throw new InvalidOperationException("Unable to change password because new password is invalid.");
-            }
+            Password.Create(newPassword, Email).AssertIsValid();
             Password = Password.Create(newPassword, Email);
             ForgottenPasswordAssistanceTokenUsed = DateTime.Now;
         }
@@ -150,9 +143,9 @@ namespace TMD.Model.Users
         {
             get 
             {
-                if (LastFailedLogonAttempt >= DateTime.Now.Subtract(ModelRegistry.UserSettings.FailedLoginMemoryDuration))
+                if (LastFailedLogonAttempt >= DateTime.Now.Subtract(Registry.Settings.FailedLoginMemoryDuration))
                 {
-                    if (RecentlyFailedLogonAttempts >= ModelRegistry.UserSettings.FailedLoginsBeforeHumanVerification)
+                    if (RecentlyFailedLogonAttempts >= Registry.Settings.FailedLoginsBeforeHumanVerification)
                     {
                         return true;
                     }
@@ -165,13 +158,10 @@ namespace TMD.Model.Users
 
         public virtual void ChangePasswordUsingExistingPassword(string existingPassword, string newPassword)
         {
-            if (!ValidateNewPassword(newPassword).IsValid)
-            {
-                throw new InvalidOperationException("Unable to change password because new password is invalid.");
-            }
+            Password.Create(newPassword, Email).AssertIsValid();
             if (!VerifyPassword(existingPassword))
             {
-                throw new InvalidOperationException("Unable to change password because existing password failed verification.");
+                throw new InvalidEntityOperationException(this, "Unable to change password because existing password failed verification.");
             }
             Password = Password.Create(newPassword, Email);
         }
@@ -179,16 +169,6 @@ namespace TMD.Model.Users
         public virtual bool VerifyPassword(string password)
         {
             return Password.VerifyPassword(password, Email);
-        }
-
-        public virtual ValidationResults ValidateNewPassword(string password)
-        {
-            return Password.Validate(password);
-        }
-
-        public virtual ValidationResults ValidateRegardingPersistence()
-        {
-            return this.Validate("Screening", "Persistence");
         }
 
         public virtual bool AttemptLogon(string password)
@@ -202,7 +182,7 @@ namespace TMD.Model.Users
             }
             else
             {
-                if (LastFailedLogonAttempt < DateTime.Now.Subtract(ModelRegistry.UserSettings.FailedLoginMemoryDuration))
+                if (LastFailedLogonAttempt < DateTime.Now.Subtract(Registry.Settings.FailedLoginMemoryDuration))
                 {
                     RecentlyFailedLogonAttempts = 0;
                 }
@@ -221,8 +201,7 @@ namespace TMD.Model.Users
         {
             if (!existingUser.Email.Equals(Email))
             {
-                throw InvalidModelOperationException.Create(this, string.Format(
-                    "Unable to replace existing non email verified user because their email must be '{0}'.", Email));
+                throw new InvalidEntityOperationException(this, string.Format("Unable to replace existing non email verified user because their email must be '{0}'.", Email));
             }
             Id = existingUser.Id;
         }
@@ -246,32 +225,6 @@ namespace TMD.Model.Users
                 LastFailedLogonAttempt = null,
                 Roles = UserRoles.Import
             };
-        }
-
-        IIdentity IPrincipal.Identity
-        {
-            get { return this; }
-        }
-
-        bool IPrincipal.IsInRole(string role)
-        {
-            UserRoles userRole = (UserRoles)Enum.Parse(typeof(UserRoles), role);
-            return (Roles & userRole) == userRole;
-        }
-
-        string IIdentity.AuthenticationType
-        {
-            get { return "Custom"; }
-        }
-
-        bool IIdentity.IsAuthenticated
-        {
-            get { return true; }
-        }
-
-        string IIdentity.Name
-        {
-            get { return Email; }
         }
     }
 }

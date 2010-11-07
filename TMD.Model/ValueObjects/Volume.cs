@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
@@ -19,17 +19,17 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class Volume : IIsSpecified
+    public class Volume : ISpecified
     {
         private Volume()
         { }
 
         public string RawValue { get; private set; }
 
-        [RangeValidator(0f, RangeBoundaryType.Inclusive, float.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Volume must be non-negative.", Ruleset = "Screening")]
+        [Within(0f, double.MaxValue, Message = "Volume must be non-negative.", Tags = Tag.Screening)]
         public float CubicFeet { get; private set; }
 
-        [ObjectEqualityValidator(VolumeFormat.Invalid, Negated = true, MessageTemplate = "Volume must be in fffff ft^3 or mmmmm.mm m^3 format.", Ruleset = "Screening")]
+        [NotEquals(VolumeFormat.Invalid, Message = "Volume must be in fffff ft^3 or mmmmm.mm m^3 format.", Tags = Tag.Screening)]
         public VolumeFormat InputFormat { get; private set; }
 
         public float CubicMeters

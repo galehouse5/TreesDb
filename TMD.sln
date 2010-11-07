@@ -5,14 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD.Model", "TMD.Model\TMD.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD", "TMD\TMD.csproj", "{6DAC2137-FD54-49F4-B204-59784B46F05F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdPartyAssemblies", "ThirdPartyAssemblies", "{E408F1F3-6FFB-475E-A1AF-76A6500BD730}"
-	ProjectSection(SolutionItems) = preProject
-		ThirdPartyAssemblies\Recaptcha.dll = ThirdPartyAssemblies\Recaptcha.dll
-		ThirdPartyAssemblies\Recaptcha.pdb = ThirdPartyAssemblies\Recaptcha.pdb
-		ThirdPartyAssemblies\SimMetrics.dll = ThirdPartyAssemblies\SimMetrics.dll
-		ThirdPartyAssemblies\SimMetrics.XML = ThirdPartyAssemblies\SimMetrics.XML
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD.UnitTests", "TMD.UnitTests\TMD.UnitTests.csproj", "{D6AEC681-3CF5-4872-A15F-FC45AA16FFEC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{634E847D-0E7D-4BF7-A735-57FF8D9E585E}"
@@ -23,46 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD.Infrastructure", "TMD.Infrastructure\TMD.Infrastructure.csproj", "{FB757EFB-7C14-48EC-A77A-4B2415FA6060}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NHibernate", "NHibernate", "{58CAADFE-64BF-4BCE-BC9C-E5B665431CB9}"
-	ProjectSection(SolutionItems) = preProject
-		ThirdPartyAssemblies\NHibernate\Antlr3.Runtime.dll = ThirdPartyAssemblies\NHibernate\Antlr3.Runtime.dll
-		ThirdPartyAssemblies\NHibernate\Iesi.Collections.dll = ThirdPartyAssemblies\NHibernate\Iesi.Collections.dll
-		ThirdPartyAssemblies\NHibernate\Iesi.Collections.xml = ThirdPartyAssemblies\NHibernate\Iesi.Collections.xml
-		ThirdPartyAssemblies\NHibernate\log4net.dll = ThirdPartyAssemblies\NHibernate\log4net.dll
-		ThirdPartyAssemblies\NHibernate\log4net.license.txt = ThirdPartyAssemblies\NHibernate\log4net.license.txt
-		ThirdPartyAssemblies\NHibernate\log4net.xml = ThirdPartyAssemblies\NHibernate\log4net.xml
-		ThirdPartyAssemblies\NHibernate\nhibernate-configuration.xsd = ThirdPartyAssemblies\NHibernate\nhibernate-configuration.xsd
-		ThirdPartyAssemblies\NHibernate\nhibernate-mapping.xsd = ThirdPartyAssemblies\NHibernate\nhibernate-mapping.xsd
-		ThirdPartyAssemblies\NHibernate\NHibernate.dll = ThirdPartyAssemblies\NHibernate\NHibernate.dll
-		ThirdPartyAssemblies\NHibernate\NHibernate.xml = ThirdPartyAssemblies\NHibernate\NHibernate.xml
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnterpriseLibrary", "EnterpriseLibrary", "{ABA53C56-E7C7-40E9-8827-9D7D2F1652EC}"
-	ProjectSection(SolutionItems) = preProject
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Common.dll = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Common.dll
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Common.pdb = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Common.pdb
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Common.xml = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Common.xml
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Validation.dll = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Validation.dll
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Validation.pdb = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Validation.pdb
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Validation.xml = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.Validation.xml
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.ServiceLocation.dll = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.ServiceLocation.dll
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.ServiceLocation.pdb = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.ServiceLocation.pdb
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.Configuration.dll = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.Configuration.dll
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.Configuration.pdb = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.Configuration.pdb
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.dll = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.dll
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.Interception.dll = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.Interception.dll
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.Interception.pdb = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.Interception.pdb
-		ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.pdb = ThirdPartyAssemblies\EnterpriseLibrary\Microsoft.Practices.Unity.pdb
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LazyLoading", "LazyLoading", "{899BD359-7706-49FA-BA35-B1D483EB4C59}"
-	ProjectSection(SolutionItems) = preProject
-		ThirdPartyAssemblies\NHibernate\LazyLoading\LinFu.DynamicProxy.dll = ThirdPartyAssemblies\NHibernate\LazyLoading\LinFu.DynamicProxy.dll
-		ThirdPartyAssemblies\NHibernate\LazyLoading\LinFu.License.txt = ThirdPartyAssemblies\NHibernate\LazyLoading\LinFu.License.txt
-		ThirdPartyAssemblies\NHibernate\LazyLoading\NHibernate.ByteCode.LinFu.dll = ThirdPartyAssemblies\NHibernate\LazyLoading\NHibernate.ByteCode.LinFu.dll
-		ThirdPartyAssemblies\NHibernate\LazyLoading\NHibernate.ByteCode.LinFu.xml = ThirdPartyAssemblies\NHibernate\LazyLoading\NHibernate.ByteCode.LinFu.xml
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -120,10 +72,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{58CAADFE-64BF-4BCE-BC9C-E5B665431CB9} = {E408F1F3-6FFB-475E-A1AF-76A6500BD730}
-		{ABA53C56-E7C7-40E9-8827-9D7D2F1652EC} = {E408F1F3-6FFB-475E-A1AF-76A6500BD730}
-		{899BD359-7706-49FA-BA35-B1D483EB4C59} = {58CAADFE-64BF-4BCE-BC9C-E5B665431CB9}
 	EndGlobalSection
 EndGlobal

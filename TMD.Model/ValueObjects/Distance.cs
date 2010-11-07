@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
@@ -21,17 +21,17 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class Distance : IIsSpecified
+    public class Distance : ISpecified
     {
         private Distance()
         { }
 
         public string RawValue { get; private set; }
 
-        [RangeValidator(0f, RangeBoundaryType.Inclusive, float.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Distance must be non-negative.", Ruleset = "Screening")]
+        [Within(0f, float.MaxValue, Message = "Distance must be non-negative.", Tags = Tag.Screening)]
         public float Feet { get; private set; }
 
-        [ObjectEqualityValidator(DistanceFormat.Invalid, Negated = true, MessageTemplate = "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.", Ruleset = "Screening")]
+        [NotEqualsAttribute(DistanceFormat.Invalid, Message = "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.", Tags = Tag.Screening)]
         public DistanceFormat InputFormat { get; private set; }
 
         public int WholeFeet
@@ -124,16 +124,6 @@ namespace TMD.Model
         }
 
         #endregion
-
-        public bool IsValid
-        {
-            get { return InputFormat != DistanceFormat.Invalid; }
-        }
-
-        public bool IsValidAndSpecified
-        {
-            get { return IsValid & IsSpecified; }
-        }
 
         private static Regex FeetDecimalInchesFormat = new Regex("^\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?|\\s)\\s*(?<inches>[0-9]+(\\.[0-9]+)?)\\s*(\"|''|``|ins?|inchs?|inches?)?\\s*$", RegexOptions.Compiled);
         private static Regex DecimalFeetFormat = new Regex("^\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?)?\\s*$", RegexOptions.Compiled);

@@ -20,7 +20,7 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class DirectedDistance : IIsSpecified
+    public class DirectedDistance : ISpecified
     {
         private DirectedDistance()
         { }
@@ -29,7 +29,7 @@ namespace TMD.Model
 
         public float Feet { get; private set; }
 
-        [ObjectEqualityValidator(DirectedDistanceFormat.Invalid, Negated = true, MessageTemplate = "Directed distance must be in +/-fff.f', +/-fff' ii'', +/-mmm.mm m, or +/-yyy.yy yd format.", Ruleset = "Screening")]
+        [NotEqualsAttribute(DirectedDistanceFormat.Invalid, Message = "Directed distance must be in +/-fff.f', +/-fff' ii'', +/-mmm.mm m, or +/-yyy.yy yd format.", Tags = Tag.Screening)]
         public DirectedDistanceFormat InputFormat { get; private set; }
 
         public int Sign

@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using TMD.Model.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
+using NHibernate.Validator.Constraints;
+using TMD.Model.Extensions;
 
 namespace TMD.Model.Trips
 {
     [Serializable]
     [DebuggerDisplay("{LastName}, {FirstName}")]
-    public class Measurer : BaseUserCreatedEntity
+    public class Measurer : UserCreatedEntityBase
     {
         protected Measurer()
         { }
@@ -18,21 +19,21 @@ namespace TMD.Model.Trips
         public virtual Trip Trip { get; private set; }
 
         private string m_FirstName;
-        [StringNotNullOrWhitespaceValidator(MessageTemplate = "First name must be specified.", Ruleset = "Screening", Tag = "TreeMeasurer")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(50, MessageTemplate = "First name must not exceed 50 characters.", Ruleset = "Persistence", Tag = "Measurer")]
+        [NotEmptyOrWhitesapceAttribute(Message = "First name must be specified.", Tags = Tag.Screening)]
+        [Length(50, Message = "First name must not exceed 50 characters.", Tags = Tag.Persistence)]
         public virtual string FirstName
         {
             get { return m_FirstName; }
-            set { m_FirstName = (value ?? string.Empty).Trim().ToTitleCase(); }
+            set { m_FirstName = value.OrEmptyAndTrimToTitleCase(); }
         }
 
         private string m_LastName;
-        [StringNotNullOrWhitespaceValidator(MessageTemplate = "Last name must be specified.", Ruleset = "Screening", Tag = "TreeMeasurer")]
-        [StringLengthWhenNotNullOrWhitespaceValidator(50, MessageTemplate = "Last name must not exceed 50 characters.", Ruleset = "Persistence", Tag = "Measurer")]
+        [NotEmptyOrWhitesapceAttribute(Message = "Last name must be specified.", Tags = Tag.Screening)]
+        [Length(50, Message = "Last name must not exceed 50 characters.", Tags = Tag.Persistence)]
         public virtual string LastName
         {
             get { return m_LastName; }
-            set { m_LastName = (value ?? string.Empty).Trim().ToTitleCase(); }
+            set { m_LastName = value.OrEmptyAndTrimToTitleCase(); }
         }
 
         public virtual bool IsSpecified

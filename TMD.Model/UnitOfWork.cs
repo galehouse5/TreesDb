@@ -2,86 +2,48 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using StructureMap;
 
 namespace TMD.Model
 {
     public interface IUnitOfWorkProvider : IDisposable
     {
         void Initialize();
-        IDisposable BeginBusinessTransaction();
+        IDisposable Begin();
         void Persist();
         void Rollback();
     }
 
-    public abstract class UnitOfWorkContextProvider
-    {
-        /// <summary>
-        /// This method must be called before the context can be consumed.
-        /// </summary>
-        protected void InitializeContext()
-        {
-            if (Context == null)
-            {
-                Type t = Type.GetType(ModelRegistry.Settings.UnitOfWorkProvider);
-                Context = (IUnitOfWorkProvider)Activator.CreateInstance(t);
-            }
-            Context.Initialize();
-        }
-
-        public abstract IUnitOfWorkProvider Context { get; protected set; }
-
-        /// <summary>
-        /// This method must be called after the context has gone out of scope.
-        /// </summary>
-        protected void DisposeContext()
-        {
-            if (Context != null)
-            {
-                Context.Dispose();
-            }
-        }
-    }
-
     public static class UnitOfWork
     {
-        private static UnitOfWorkContextProvider s_ContextProvider;
-        private static UnitOfWorkContextProvider ContextProvider
+        private static IUnitOfWorkProvider Provider
         {
-            get
-            {
-                if (s_ContextProvider == null)
-                {
-                    Type t = Type.GetType(ModelRegistry.Settings.UnitOfWorkContextProvider);
-                    s_ContextProvider = (UnitOfWorkContextProvider)Activator.CreateInstance(t);
-                }
-                return s_ContextProvider;
-            }
+            get { return ObjectFactory.GetInstance<IUnitOfWorkProvider>(); }
         }
 
-        public static IUnitOfWorkProvider Context
+        public static void Initialize()
         {
-            get { return ContextProvider.Context; }
+            Provider.Initialize();
         }
 
-        public static IDisposable BeginBusinessTransaction()
+        public static IDisposable Begin()
         {
-            return Context.BeginBusinessTransaction();
+            return Provider.Begin();
         }
 
         public static void Persist()
         {
-            Context.Persist();
+            Provider.Persist();
         }
 
         public static void Rollback()
         {
-            Context.Rollback();
+            Provider.Rollback();
         }
 
-        public static void BeginNewUnitOfWorkToRecoverFromException()
+        public static void Dispose()
         {
-            Context.Dispose();
-            Context.Initialize();
+            Provider.Dispose();
         }
     }
 }

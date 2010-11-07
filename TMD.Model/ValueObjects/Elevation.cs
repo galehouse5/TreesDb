@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
@@ -19,7 +19,7 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class Elevation : IIsSpecified
+    public class Elevation : ISpecified
     {
         public const float MinTreeLineFeet = 0;
         public const float MaxTreeLineFeet = 17000;
@@ -29,11 +29,11 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [RangeValidator(MinTreeLineFeet, RangeBoundaryType.Inclusive, float.MaxValue, RangeBoundaryType.Inclusive, MessageTemplate = "Elevation must not fall below min global tree line of {3} feet.", Ruleset = "Screening")]
-        [RangeValidator(float.MinValue, RangeBoundaryType.Inclusive, MaxTreeLineFeet, RangeBoundaryType.Inclusive, MessageTemplate = "Elevation must not exceed max global tree line of {5} feet.", Ruleset = "Screening")]
+        [Within2(MinTreeLineFeet, float.MaxValue, Message = "Elevation must not fall below min global tree line of {3} feet.", Tags = Tag.Screening)]
+        [Within2(float.MinValue, MaxTreeLineFeet, Message = "Elevation must not exceed max global tree line of {5} feet.", Tags = Tag.Screening)]
         public float Feet { get; private set; }
 
-        [ObjectEqualityValidator(ElevationFormat.Invalid, Negated = true, MessageTemplate = "Elevation must be in fffff ft or mmmmm m format.", Ruleset = "Screening")]
+        [NotEqualsAttribute(ElevationFormat.Invalid, Message = "Elevation must be in fffff ft or mmmmm m format.", Tags = Tag.Screening)]
         public ElevationFormat InputFormat { get; private set; }
 
         public float Yards

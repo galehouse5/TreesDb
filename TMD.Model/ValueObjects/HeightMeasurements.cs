@@ -3,46 +3,46 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 using System.ComponentModel;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
     [Serializable]
-    public class HeightMeasurements : IIsSpecified
+    public class HeightMeasurements : ISpecified
     {
         private HeightMeasurements() 
         { }
 
         [DisplayName("Distance top:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [Valid]
         public Distance DistanceTop { get; private set; }
 
         [DisplayName("Angle top:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [Valid]
         public Angle AngleTop { get; private set; }
 
         [DisplayName("Distance bottom:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [Valid]
         public Distance DistanceBottom { get; private set; }
 
         [DisplayName("Angle bottom:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [Valid]
         public Angle AngleBottom { get; private set; }
 
         [DisplayName("Vertical offset:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [Valid]
         public DirectedDistance VerticalOffset { get; private set; }
 
         [DisplayName("Calculated height:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [Valid]
         public Distance Height 
         {
             get { return calculateHeight(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); }
         }
 
         [DisplayName("Calculated offset:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [Valid]
         public Distance Offset
         {
             get { return calculateOffset(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); }
@@ -119,16 +119,6 @@ namespace TMD.Model
         }
 
         #endregion
-
-        public bool IsValid
-        {
-            get { return Height.IsValid; }
-        }
-
-        public bool IsValidAndSpecified
-        {
-            get { return Height.IsValidAndSpecified; }
-        }
 
         public static HeightMeasurements Create(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
         {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
@@ -16,25 +16,22 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class Angle : IIsSpecified
+    public class Angle : ISpecified
     {
         private Angle()
         { }
 
         public string RawValue { get; private set; }
 
-        [RangeValidator(0f, RangeBoundaryType.Inclusive, 90f, RangeBoundaryType.Inclusive, MessageTemplate = "Angle must be in the range of 0 to 90 degrees.", Ruleset = "Screening")]
+        [Within(0f, 90f, Message = "Angle must be in the range of 0 to 90 degrees.", Tags = Tag.Screening)]
         public float Degrees { get; private set; }
 
-        [ObjectEqualityValidator(AngleFormat.Invalid, Negated = true, MessageTemplate = "Angle must be in decimal format.", Ruleset = "Screening")]
+        [NotEquals(AngleFormat.Invalid, Message = "Angle must be in decimal format.", Tags = Tag.Screening)]
         public AngleFormat InputFormat { get; private set; }
 
         public float Radians
         {
-            get
-            {
-                return (float)(((double)Degrees / 360d) * 2d * Math.PI);
-            }
+            get { return (float)(((double)Degrees / 360d) * 2d * Math.PI); }
         }
 
         public override string ToString()

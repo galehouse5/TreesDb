@@ -2,50 +2,62 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TMD.Model.Validation;
+using TMD.Model.Users;
 
 namespace TMD.Model
 {
-    public class ModelException : Exception
+    public class ModelException : ApplicationException
     {
-        protected ModelException(IEntity entity, string message)
+        public ModelException(string message) 
+            : base(message) 
+        {
+            this.SessionUser = UserSession.User;
+            this.SessionIsAnonymous = UserSession.IsAnonymous;
+        }
+
+        public bool SessionIsAnonymous { get; private set; }
+        public User SessionUser { get; private set; }
+    }
+
+    public class EntityAlreadyExistsException : ModelException
+    {
+        public EntityAlreadyExistsException(IEntity entity, IEntity existingEntity)
+            : base("Entity already exists.")
+        {
+            this.Entity = entity;
+            this.ExistingEntity = existingEntity;
+        }
+
+        public IEntity Entity { get; private set; }
+        public IEntity ExistingEntity { get; private set; }
+    }
+
+    public class InvalidEntityOperationException : ModelException
+    {
+        public InvalidEntityOperationException(IEntity entity)
+            : this(entity, "Invalid entity operation.")
+        { }
+
+        public InvalidEntityOperationException(IEntity entity, string message)
             : base(message)
         {
             this.Entity = entity;
         }
 
         public IEntity Entity { get; private set; }
-
-        public static ModelException Create(IEntity entity, string message)
-        {
-            return new ModelException(entity, message);
-        }
     }
 
-    public class EntityAlreadyExistsException : ModelException
+    public class ValidationFailureException : ModelException
     {
-        protected EntityAlreadyExistsException(IEntity entity, IEntity existingEntity, string message)
-            : base(entity, message)
+        public ValidationFailureException(object source, IList<ValidationFailure> validationFailures)
+            : base("Object failed validation.")
         {
-            this.ExistingEntity = existingEntity;
+            this.Source = source;
+            this.ValidationFailures = validationFailures;
         }
 
-        public IEntity ExistingEntity { get; private set; }
-
-        public static ModelException Create(IEntity entity, IEntity existingEntity, string message)
-        {
-            return new EntityAlreadyExistsException(entity, existingEntity, message);
-        }
-    }
-
-    public class InvalidModelOperationException : ModelException
-    {
-        protected InvalidModelOperationException(IEntity entity, string message)
-            : base(entity, message)
-        { }
-
-        public new static InvalidModelOperationException Create(IEntity entity, string message)
-        {
-            return new InvalidModelOperationException(entity, message);
-        }
+        public object Source { get; private set; }
+        public IList<ValidationFailure> ValidationFailures { get; private set; }
     }
 }

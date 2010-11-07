@@ -6,14 +6,19 @@ using TMD.Model.Users;
 
 namespace TMD.Model
 {
+    public interface ISpecified
+    {
+        bool IsSpecified { get; }
+    }
+
     public interface IEntity 
     {
         int Id { get; }
     }
 
-    public abstract class BaseUserCreatedEntity : IEntity
+    public abstract class UserCreatedEntityBase : IEntity
     {
-        protected BaseUserCreatedEntity()
+        protected UserCreatedEntityBase()
         {
             Created = DateTime.Now;
             Creator = UserSession.User;

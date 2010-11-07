@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using NHibernate.Validator.Constraints;
+using TMD.Model.Extensions;
 
 namespace TMD.Model
 {
     [Serializable]
-    public class CoordinateBounds : IIsSpecified
+    public class CoordinateBounds : ISpecified
     {
         private float m_MaxLatitude = float.MinValue,
             m_MaxLongitude = float.MinValue, 
@@ -20,7 +21,7 @@ namespace TMD.Model
         private CoordinateBounds() { }
 
         private Coordinates m_NE;
-        [ObjectValidator]
+        [Valid]
         public Coordinates NE 
         {
             get 
@@ -40,7 +41,7 @@ namespace TMD.Model
         }
 
         private Coordinates m_SW;
-        [ObjectValidator]
+        [Valid]
         public Coordinates SW 
         {
             get
@@ -72,7 +73,7 @@ namespace TMD.Model
 
         public CoordinateBounds Extend(Coordinates c)
         {
-            if (c.IsSpecified && c.IsValid)
+            if (c.IsValidAndSpecified())
             {
                 m_LastExtensionCoordinatesFormat = c.InputFormat;
                 m_MaxLatitude = Math.Max(c.Latitude.TotalDegrees, m_MaxLatitude);

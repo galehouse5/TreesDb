@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Security.Cryptography;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+using TMD.Model.Validation;
+using NHibernate.Validator.Engine;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model.Users
 {
-    [HasSelfValidation]
     [Serializable]
+    [ContextMethod("CheckPasswordMeetsGlobalRequirements", Tags = Tag.Screening)]
     public class Password
     {
         protected Password()
@@ -20,38 +21,28 @@ namespace TMD.Model.Users
         public virtual int Uppercase { get; private set; }
         public virtual int Lowercase { get; private set; }
         public virtual int Specials { get; private set; }
+
+        [Min(1, Message = "You must enter a password.")]
         public virtual int Length { get; private set; }
 
+        [NotEquals(true, Message = "Your password can only contain the following special characters: ~`!@#$%^*()-_=+[{]}\\|;:,./?/*-+.")]
         public virtual bool HasInvalidCharacters { get; private set; }
 
-        [SelfValidation(Ruleset = "Screening")]
-        public virtual void CheckPasswordMeetsGlobalRequirements(ValidationResults results)
+        public virtual void CheckPasswordMeetsGlobalRequirements(IConstraintValidatorContext context)
         {
-            if (Length == 0)
+            if (Length > 0)
             {
-                results.AddResult(new ValidationResult(
-                    "You must enter a password.",
-                    Length, "Length", "Password", null));
-            }
-            else
-            {
-                if (HasInvalidCharacters)
+                if (CharacterTypes < Registry.Settings.PasswordCharacterTypes)
                 {
-                    results.AddResult(new ValidationResult(
-                        "Your password can only contain the following special characters: ~`!@#$%^*()-_=+[{]}\\|;:,./?/*-+.",
-                        HasInvalidCharacters, "HasInvalidCharacters", "Password", null));
+                    context.AddInvalid<Password, int>(string.Format(
+                        "Your password must contain {0} of the following character types: numeric, lowercase, uppercase, or special", Registry.Settings.PasswordCharacterTypes),
+                        p => p.CharacterTypes);
                 }
-                if (CharacterTypes < ModelRegistry.UserSettings.PasswordCharacterTypes)
+                if (Length < Registry.Settings.PasswordLength)
                 {
-                    results.AddResult(new ValidationResult(string.Format(
-                        "Your password must contain {0} of the following character types: numeric, lowercase, uppercase, or special", ModelRegistry.UserSettings.PasswordCharacterTypes),
-                        CharacterTypes, "CharacterTypes", "Password", null));
-                }
-                if (Length < ModelRegistry.UserSettings.PasswordLength)
-                {
-                    results.AddResult(new ValidationResult(string.Format(
-                        "Your password must be {0} characters long.", ModelRegistry.UserSettings.PasswordLength),
-                        Length, "Length", "Password", null));
+                    context.AddInvalid<Password, int>(string.Format(
+                        "Your password must be {0} characters long.", Registry.Settings.PasswordLength),
+                        p => p.Length);
                 }
             }
         }
@@ -182,12 +173,6 @@ namespace TMD.Model.Users
                 Specials = countSpecialCharacters(password),
                 HasInvalidCharacters = hasInvalidCharacters(password)
             };
-        }
-
-        public static ValidationResults Validate(string password)
-        {
-            Password p = Password.Create(password, string.Empty);
-            return ModelValidator.Validate(p, "Screening");
         }
 
         private static RandomNumberGenerator s_RNG = RNGCryptoServiceProvider.Create();

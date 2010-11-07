@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
-using System.ComponentModel;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
@@ -20,23 +19,16 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class Coordinates : IIsSpecified 
+    public class Coordinates : ISpecified 
     {
         private Coordinates()
         { }
 
-        [DisplayName("Latitude:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [Valid]
         public Latitude Latitude { get; private set; }
 
-        [DisplayName("Longitude:")]
-        [ModelObjectValidator(NamespaceQualificationMode.ReplaceKey, "Screening", Ruleset = "Screening")]
+        [Valid]
         public Longitude Longitude { get; private set; }
-
-        public bool IsValid
-        {
-            get { return ModelValidator.Validate(this, "Screening").IsValid; }
-        }
 
         public CoordinatesFormat InputFormat
         {
@@ -177,23 +169,18 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class Latitude : IIsSpecified
+    public class Latitude : ISpecified
     {
         private Latitude()
         { }
 
         public string RawValue { get; private set; }
 
-        [RangeValidator(-90f, RangeBoundaryType.Inclusive, 90f, RangeBoundaryType.Inclusive, MessageTemplate = "Latitude must be in the range of -90 to +90 degrees.", Ruleset = "Screening")]
+        [Within(-90f, 90f, Message = "Latitude must be in the range of -90 to +90 degrees.", Tags = Tag.Screening)]
         public float TotalDegrees { get; private set; }
 
-        [ObjectEqualityValidator(CoordinatesFormat.Invalid, Negated = true, MessageTemplate = "Latitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format.", Ruleset = "Screening")]
+        [NotEqualsAttribute(CoordinatesFormat.Invalid, Message = "Latitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format.", Tags = Tag.Screening)]
         public CoordinatesFormat InputFormat { get; private set; }
-
-        public bool IsValid
-        {
-            get { return ModelValidator.Validate(this, "Screening").IsValid; }
-        }
 
         public int Sign
         {
@@ -379,23 +366,18 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class Longitude : IIsSpecified
+    public class Longitude : ISpecified
     {
         private Longitude()
         { }
 
         public string RawValue { get; private set; }
 
-        [RangeValidator(-180f, RangeBoundaryType.Inclusive, 180f, RangeBoundaryType.Inclusive, MessageTemplate = "Longitude must be in the range of -180 to +180 degrees.", Ruleset = "Screening")]
+        [Within(-180f, 180f, Message = "Longitude must be in the range of -180 to +180 degrees.", Tags = Tag.Screening)]
         public float TotalDegrees { get; private set; }
 
-        [ObjectEqualityValidator(CoordinatesFormat.Invalid, Negated = true, MessageTemplate = "Longitude must be in ddd_mm_ss.s, ddd_mm.mmm, or ddd.ddddd format.", Ruleset = "Screening")]
+        [NotEqualsAttribute(CoordinatesFormat.Invalid, Message = "Longitude must be in ddd_mm_ss.s, ddd_mm.mmm, or ddd.ddddd format.", Tags = Tag.Screening)]
         public CoordinatesFormat InputFormat { get; private set; }
-
-        public bool IsValid
-        {
-            get { return ModelValidator.Validate(this, "Screening").IsValid; }
-        }
 
         public int Sign
         {
