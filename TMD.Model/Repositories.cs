@@ -27,9 +27,9 @@ namespace TMD.Model
             get { return ObjectFactory.GetInstance<TripRepository>(); }
         }
 
-        public static IUserRepository Users
+        public static UserRepository Users
         {
-            get { return ObjectFactory.GetInstance<IUserRepository>(); }
+            get { return ObjectFactory.GetInstance<UserRepository>(); }
         }
     }
 }

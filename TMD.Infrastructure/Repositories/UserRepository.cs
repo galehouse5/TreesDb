@@ -8,41 +8,34 @@ using TMD.Model;
 
 namespace TMD.Infrastructure.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : TMD.Model.Users.UserRepository
     {
-        public User FindByEmail(string email)
+        public override User FindByEmail(string email)
         {
-            return InfrastructureRegistry.UnitOfWorkSession
-                .CreateQuery(@"select u from User u where u.Email = :email")
+            return Registry.Session.CreateQuery(@"select u from User u where u.Email = :email")
                 .SetParameter("email", email)
                 .UniqueResult<User>();
         }
 
-        public User FindByEmailVerificationToken(byte[] token)
+        protected override User InternalFindByEmailVerificationToken(byte[] token)
         {
-            return InfrastructureRegistry.UnitOfWorkSession
-                .CreateQuery(@"select u from User u where u.EmailVerificationToken.Value = :token")
+            return Registry.Session.CreateQuery(@"select u from User u where u.EmailVerificationToken.Value = :token")
                 .SetParameter("token", token)
                 .UniqueResult<User>();
         }
 
-        public User FindByForgottenPasswordAssistanceToken(byte[] token)
+        protected override User InternalFindByForgottenPasswordAssistanceToken(byte[] token)
         {
-            return InfrastructureRegistry.UnitOfWorkSession
-                .CreateQuery(@"select u from User u where u.ForgottenPasswordAssistanceToken.Value = :token")
+            return Registry.Session.CreateQuery(@"select u from User u where u.ForgottenPasswordAssistanceToken.Value = :token")
                 .SetParameter("token", token)
                 .UniqueResult<User>();
         }
 
-        public void Save(User u)
+        protected override void InternalSave(User u)
         {
-            if (!u.ValidateRegardingPersistence().IsValid)
-            {
-                throw new ApplicationException("Unable to save user due to validation failure.");
-            }
             try
             {
-                InfrastructureRegistry.UnitOfWorkSession.SaveOrUpdate(u);
+                Registry.Session.SaveOrUpdate(u);
             }
             catch (GenericADOException ex)
             {
@@ -51,17 +44,17 @@ namespace TMD.Infrastructure.Repositories
                     User existingUser = FindByEmail(u.Email);
                     if (existingUser != null)
                     {
-                        throw EntityAlreadyExistsException.Create(u, existingUser, string.Format(
-                            "A user already exists with the mail '{0}'.", u.Email));
+                        throw new EntityAlreadyExistsException(u, existingUser, string.Format(
+                            "A user already exists with the email '{0}'.", u.Email));
                     }
                 }
                 throw;
             }
         }
 
-        public void Remove(User u)
+        public override void Remove(User u)
         {
-            InfrastructureRegistry.UnitOfWorkSession.Delete(u);
+            Registry.Session.Delete(u);
         }
     }
 }

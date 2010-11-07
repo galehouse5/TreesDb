@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Users
 {
-    public abstract class IUserRepository
+    public abstract class UserRepository
     {
         public abstract User FindByEmail(string email);
 
@@ -25,7 +26,13 @@ namespace TMD.Model.Users
 
         protected abstract User InternalFindByForgottenPasswordAssistanceToken(byte[] token);
 
-        public abstract void Save(User u);
+        public void Save(User u)
+        {
+            u.AssertIsValidToPersist();
+        }
+
+        protected abstract void InternalSave(User u);
+
         public abstract void Remove(User u);
     }
 }

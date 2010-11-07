@@ -3,31 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Trips;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
 using TMD.Model;
 
 namespace TMD.Infrastructure.Repositories
 {
-    public class TripRepository : ITripRepository
+    public class TripRepository : TMD.Model.Trips.TripRepository
     {
-        public void Save(Trip t)
+        public override Trip FindById(int id)
         {
-            InfrastructureRegistry.UnitOfWorkSession.SaveOrUpdate(t);
+            return Registry.Session.Get<Trip>(id);
         }
 
-        public Trip FindById(int id)
+        public override IList<Trip> FindTripsCreatedByUser(int userId)
         {
-            return InfrastructureRegistry.UnitOfWorkSession.Get<Trip>(id);
-        }
-
-        public void Remove(Trip t)
-        {
-            InfrastructureRegistry.UnitOfWorkSession.Delete(t);
-        }
-
-        public IList<Trip> FindTripsCreatedByUser(int userId)
-        {
-            return InfrastructureRegistry.UnitOfWorkSession.CreateQuery(@"
+            return Registry.Session.CreateQuery(@"
                 select t from Trip as t
                 where t.Creator.Id = :userId
                 order by t.Id desc")
@@ -35,10 +24,20 @@ namespace TMD.Infrastructure.Repositories
                 .List<Trip>();
         }
 
-        // TODO: implement import logic
-        public void Import(Trip t)
+        protected override void InternalSave(Trip t)
         {
-            InfrastructureRegistry.UnitOfWorkSession.SaveOrUpdate(t);
+            Registry.Session.SaveOrUpdate(t);
+        }
+
+        protected override void InternalRemove(Trip t)
+        {
+            Registry.Session.Delete(t);
+        }
+
+        // TODO: implement import logic
+        protected override void InternalImport(Trip t)
+        {
+            Registry.Session.SaveOrUpdate(t);
         }
     }
 }

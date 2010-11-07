@@ -22,12 +22,16 @@ namespace TMD.Model
 
     public class EntityAlreadyExistsException : ModelException
     {
-        public EntityAlreadyExistsException(IEntity entity, IEntity existingEntity)
-            : base("Entity already exists.")
+        public EntityAlreadyExistsException(IEntity entity, IEntity existingEntity, string message)
+            : base(message)
         {
             this.Entity = entity;
             this.ExistingEntity = existingEntity;
         }
+
+        public EntityAlreadyExistsException(IEntity entity, IEntity existingEntity)
+            : this(entity, existingEntity, "Entity already exists.")
+        { }
 
         public IEntity Entity { get; private set; }
         public IEntity ExistingEntity { get; private set; }

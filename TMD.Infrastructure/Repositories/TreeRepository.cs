@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Trees;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
 using TMD.Model;
 using NHibernate;
 using TMD.Infrastructure.StringComparison;
@@ -17,7 +16,7 @@ namespace TMD.Infrastructure.Repositories
         {
             if (m_AllKnownTrees == null)
             {
-                using (ISession session = InfrastructureRegistry.SessionFactory.OpenSession())
+                using (ISession session = Registry.SessionFactory.OpenSession())
                 {
                     m_AllKnownTrees = session.CreateQuery("from KnownTree kt").List<KnownTree>();
                 }
@@ -25,21 +24,18 @@ namespace TMD.Infrastructure.Repositories
             return m_AllKnownTrees;
         }
 
-        private StringComparisonExpression m_AcceptedSymbolComparisonExpression = StringComparisonExpression.Create(
-            InfrastructureRegistry.RepositorySettings.KnownTreeAcceptedSymbolComparisonExpression);
-        private StringComparisonExpression m_CommonNameComparisonExpression = StringComparisonExpression.Create(
-            InfrastructureRegistry.RepositorySettings.KnownTreeCommonNameComparisonExpression);
-        private StringComparisonExpression m_ScientificNameComparisonExpression = StringComparisonExpression.Create(
-            InfrastructureRegistry.RepositorySettings.KnownTreeScientificNameComparisonExpression);
+        private StringComparisonExpression m_ASCE = StringComparisonExpression.Create("equality * 100");
+        private StringComparisonExpression m_CNCE = StringComparisonExpression.Create("jaro * firstlength * 2");
+        private StringComparisonExpression m_SNCE = StringComparisonExpression.Create("jarowinkler * firstlength");
         public IList<KnownTree> FindTreesWithSimilarCommonName(string commonName, int results)
         {
             IList<KnownTree> allKnownTrees = FindAllKnownTrees();
             List<Tuple<double, KnownTree>> rankedKnownTrees = new List<Tuple<double, KnownTree>>(allKnownTrees.Count);
             foreach (KnownTree kt in allKnownTrees)
             {
-                double rank = m_AcceptedSymbolComparisonExpression.RateWordSimilarity(commonName, kt.AcceptedSymbol)
-                    + m_CommonNameComparisonExpression.RateSentenceSimilarity(commonName, kt.CommonName)
-                    + m_CommonNameComparisonExpression.RateSentenceSimilarity(commonName, kt.ScientificName);
+                double rank = m_ASCE.RateWordSimilarity(commonName, kt.AcceptedSymbol)
+                    + m_CNCE.RateSentenceSimilarity(commonName, kt.CommonName)
+                    + m_SNCE.RateSentenceSimilarity(commonName, kt.ScientificName);
                 rankedKnownTrees.Add(new Tuple<double,KnownTree>(rank, kt));
             }
             rankedKnownTrees.Sort((rkt1, rkt2) => -rkt1.Item1.CompareTo(rkt2.Item1));

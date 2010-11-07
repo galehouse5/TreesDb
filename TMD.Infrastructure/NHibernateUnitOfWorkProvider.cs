@@ -14,11 +14,11 @@ namespace TMD.Infrastructure
 
         public void Initialize()
         {
-            Session = InfrastructureRegistry.SessionFactory.OpenSession();
+            Session = Registry.SessionFactory.OpenSession();
             Session.FlushMode = FlushMode.Commit;
         }
 
-        public IDisposable BeginBusinessTransaction()
+        public IDisposable Begin()
         {
             Transaction = Session.BeginTransaction();
             return Transaction;
@@ -57,6 +57,6 @@ namespace TMD.Infrastructure
         {
             Session.Close();
             Session.Dispose();
-        }       
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace TMD.Infrastructure.Repositories
     {
         public Country FindCountryByCode(string code)
         {
-            using (ISession session = InfrastructureRegistry.SessionFactory.OpenSession())
+            using (ISession session = Registry.SessionFactory.OpenSession())
             {
                 return session.CreateQuery(@"
                     from Country c 
@@ -24,7 +24,7 @@ namespace TMD.Infrastructure.Repositories
 
         public IList<State> FindStatesByCountryCode(string code)
         {
-            using (ISession session = InfrastructureRegistry.SessionFactory.OpenSession())
+            using (ISession session = Registry.SessionFactory.OpenSession())
             {
                 return session.CreateQuery(@"
                     from State s 
@@ -38,7 +38,7 @@ namespace TMD.Infrastructure.Repositories
 
         public IList<Country> FindAllCountries()
         {
-            using (ISession session = InfrastructureRegistry.SessionFactory.OpenSession())
+            using (ISession session = Registry.SessionFactory.OpenSession())
             {
                 return session.CreateQuery("from Country c")
                     .SetCacheable(true)
@@ -52,7 +52,7 @@ namespace TMD.Infrastructure.Repositories
             {
                 return null;
             }
-            using (ISession session = InfrastructureRegistry.SessionFactory.OpenSession())
+            using (ISession session = Registry.SessionFactory.OpenSession())
             {
                 return session.CreateQuery(@"
                     from State s 

@@ -8,29 +8,12 @@ using System.Reflection;
 using TMD.Model;
 using TMD.Infrastructure.Repositories;
 using System.Configuration;
+using StructureMap;
 
 namespace TMD.Infrastructure
 {
-    internal static class InfrastructureRegistry
+    internal static class Registry
     {
-        private class SectionNames
-        {
-            public const string RepositorySettings = "repositorySettings";
-        }
-
-        private static RepositorySettings m_RepositorySettings;
-        public static RepositorySettings RepositorySettings
-        {
-            get
-            {
-                if (m_RepositorySettings == null)
-                {
-                    m_RepositorySettings = (RepositorySettings)ConfigurationManager.GetSection(SectionNames.RepositorySettings);
-                }
-                return m_RepositorySettings;
-            }
-        }
-
         private static ISessionFactory s_SessionFactory;
         public static ISessionFactory SessionFactory
         {
@@ -47,9 +30,9 @@ namespace TMD.Infrastructure
             }
         }
 
-        public static ISession UnitOfWorkSession
+        public static ISession Session
         {
-            get { return (UnitOfWork.Context as NHibernateUnitOfWorkProvider).Session; }
+            get { return (ObjectFactory.GetInstance<IUnitOfWorkProvider>() as NHibernateUnitOfWorkProvider).Session; }
         }
     }
 }
