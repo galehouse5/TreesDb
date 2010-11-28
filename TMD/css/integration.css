@@ -1,0 +1,17 @@
+﻿.stn-form .field input.input-validation-error,
+.stn-form .field textarea.input-validation-error,
+.stn-form .field select.input-validation-error { border-color: #c00 !important; -moz-box-shadow: 0px 0px 5px #F00 !important; -webkit-box-shadow: 0px 0px 5px #F00 !important; }
+
+.field-validation-error { float: left; font-size: 11px; color: #C00; margin-left: 5px; line-height: 16px; }
+
+.captcha { margin-bottom: 15px; }
+.captcha .recaptcha_input_area input { left: 0; }
+
+.requiresjavascript { display: none; }
+
+.portlet-header.entity-header { padding: 10px 0; background-repeat: no-repeat; background-position: 8px; }
+.portlet-header.entity-header h4 { float: left;  margin-left: 35px; margin-top: 4px; }
+.portlet-header.entity-header .actions { float: right; margin-right: 15px;  }
+
+.portlet-header.trip-header {  background-image: url(/images/icons/Trip32.png); }
+
