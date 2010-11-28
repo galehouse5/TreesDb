@@ -12,7 +12,7 @@ using TMD.Model.Extensions;
 namespace TMD.Model.Users
 {
     [Flags]
-    public enum UserRoles
+    public enum UserRole
     {
         None = 0x0,
         Import = 0x1,
@@ -28,11 +28,16 @@ namespace TMD.Model.Users
         { }
 
         public virtual int Id { get; private set; }
-        public virtual UserRoles Roles { get; private set; }
+        public virtual UserRole Roles { get; private set; }
+
+        public virtual bool IsInRole(UserRole role)
+        {
+            return (Roles & role) == role;
+        }
 
         private string m_Email;
-        [Pattern(@"^(?: *|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4})$", Flags = RegexOptions.Compiled, Message = "You must enter a valid email.", Tags = Tag.Screening)]
-        [NotEmptyOrWhitesapceAttribute(Message = "You must enter an email.", Tags = "Screening")]
+        [Email(Message = "You must enter a valid email.", Tags = Tag.Screening)]
+        [NotEmptyOrWhitesapceAttribute(Message = "You must enter an email.", Tags = Tag.Screening)]
         [Length(100, Message = "Email must not exceed 100 characters.", Tags = Tag.Persistence)]
         public virtual string Email 
         {
@@ -223,7 +228,7 @@ namespace TMD.Model.Users
                 ForgottenPasswordAssistanceTokenUsed = null,
                 RecentlyFailedLogonAttempts = 0,
                 LastFailedLogonAttempt = null,
-                Roles = UserRoles.Import
+                Roles = UserRole.Import
             };
         }
     }

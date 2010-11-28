@@ -1,21 +1,15 @@
-﻿<%@ Page Title="Unauthorized" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+﻿<%@ Page Title="Unauthorized" Language="C#" MasterPageFile="~/Views/Shared/Login.Master" Inherits="System.Web.Mvc.ViewPage" %>
 <%@ Import Namespace="TMD" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <link type="text/css" rel="Stylesheet" href="/Styles/Account.css" />
-</asp:Content>
-
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<div class="EmphasizeContent Centered">
-    <div class="InputColumn account-form ui-widget-content ui-corner-all">        
-        <h2>Unauthorized</h2>
-        <p>
-            Sorry, you aren't authorized to use this feature.  
-            Please contact an administrator or email 
-            <a href="mailto:<%= WebApplicationRegistry.Settings.WebmasterEmail %>">
-                <%= WebApplicationRegistry.Settings.WebmasterEmail %>.
-            </a>
-        </p>
+<asp:Content ContentPlaceHolderID="Content" runat="server">
+    <div class="content_front">
+        <div class="pad">
+            <h2>This page requires authorization</h2>
+            <p>
+                Sorry, you aren't authorized to view this page.
+                Please contact an administrator or email <a href="mailto:<%= WebApplicationRegistry.Settings.WebmasterEmail %>"><%= WebApplicationRegistry.Settings.WebmasterEmail %></a> to request access.
+                <a href="/">Click here</a> to get back to the homepage.
+            </p>
+        </div>
     </div>
-</div>
 </asp:Content>

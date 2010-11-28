@@ -27,5 +27,10 @@ namespace TMD.Model
         public virtual int Id { get; private set; }
         public virtual DateTime Created { get; private set; }
         public virtual User Creator { get; private set; }
+
+        public virtual TimeSpan Age
+        {
+            get { return DateTime.Now.Subtract(Created); }
+        }
     }
 }

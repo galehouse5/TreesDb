@@ -56,6 +56,10 @@
     <Reference Include="NHibernate.ByteCode.LinFu">
       <HintPath>..\ThirdPartyAssemblies\NHibernate\LazyLoading\NHibernate.ByteCode.LinFu.dll</HintPath>
     </Reference>
+    <Reference Include="NHibernate.Validator, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=70154e18752585bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\NHibernate.Validator\NHibernate.Validator.dll</HintPath>
+    </Reference>
     <Reference Include="StructureMap">
       <HintPath>..\ThirdPartyAssemblies\StructureMap\StructureMap.dll</HintPath>
     </Reference>

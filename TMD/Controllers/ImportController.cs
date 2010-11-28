@@ -7,72 +7,83 @@ using TMD.Model.Trips;
 using TMD.Models;
 using TMD.Extensions;
 using TMD.Model;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
 using TMD.Model.Trees;
 using TMD.Model.Users;
 
 namespace TMD.Controllers
 {
-    [AuthorizeUser(Roles = UserRoles.Import)]
+    [AuthorizeUser(Roles = UserRole.Import)]
     [CheckBrowserCompatibilityFilter]
     public class ImportController : ControllerBase
     {
         [DefaultReturnUrl]
-        public ActionResult Index()
+        public ActionResult History()
         {
-            IList<Trip> model = TripService.FindTripsCreatedByUser(User.Id);
-            return View(model);
+            IList<Trip> trips = Repositories.Trips.FindTripsCreatedByUser(User.Id);
+            return View(new ImportTripsModel { 
+                ImportedTrips = trips.Where(t => t.IsImported).ToList(),
+                PendingTrips = trips.Where(t => !t.IsImported).ToList(),
+                IsImporting = true }.InitializeFor(User));
         }
 
-        [HttpPost]
-        public ActionResult Create()
-        {
-            Trip model = Model.Trips.Trip.Create();
-            using (UnitOfWork.BeginBusinessTransaction())
-            {
-                TripService.Save(model);
-                UnitOfWork.Persist();
-            }
-            return RedirectToAction("Start", new { id = model.Id });
-        }
 
-        public ActionResult Start(int id)
-        {
-            ImportStepModel model = new ImportStepModel()
-            {
-                Trip = TripService.FindById(id),
-                CurrentStep = ImportStep.Start
-            };
-            if (model.Trip.Creator != User)
-            {
-                return new UnauthorizedResult();
-            }
-            return View(model);
-        }
 
-        public ActionResult Continue(int id)
-        {
-            ImportStepModel model = new ImportStepModel()
-            {
-                Trip = TripService.FindById(id)
-            };
-            model.CurrentStep = model.SuggestedStep;
-            return RedirectToAction(model.SuggestedStep.ToString(), new { id = model.Trip.Id });
-        }
+        //[DefaultReturnUrl]
+        //public ActionResult Index()
+        //{
+        //    IList<Trip> model = TripRepository.FindTripsCreatedByUser(User.Id);
+        //    return View(model);
+        //}
 
-        public ActionResult Trip(int id)
-        {
-            ImportStepModel model = new ImportStepModel()
-            {
-                Trip = TripService.FindById(id),
-                CurrentStep = ImportStep.Start
-            };
-            if (model.Trip.Creator != User)
-            {
-                return new UnauthorizedResult();
-            }
-            return View(model);
-        }
+        //[HttpPost]
+        //public ActionResult Create()
+        //{
+        //    Trip model = Model.Trips.Trip.Create();
+        //    using (UnitOfWork.BeginBusinessTransaction())
+        //    {
+        //        TripRepository.Save(model);
+        //        UnitOfWork.Persist();
+        //    }
+        //    return RedirectToAction("Start", new { id = model.Id });
+        //}
+
+        //public ActionResult Start(int id)
+        //{
+        //    ImportStepModel model = new ImportStepModel()
+        //    {
+        //        Trip = TripRepository.FindById(id),
+        //        CurrentStep = ImportStep.Start
+        //    };
+        //    if (model.Trip.Creator != User)
+        //    {
+        //        return new UnauthorizedResult();
+        //    }
+        //    return View(model);
+        //}
+
+        //public ActionResult Continue(int id)
+        //{
+        //    ImportStepModel model = new ImportStepModel()
+        //    {
+        //        Trip = TripRepository.FindById(id)
+        //    };
+        //    model.CurrentStep = model.SuggestedStep;
+        //    return RedirectToAction(model.SuggestedStep.ToString(), new { id = model.Trip.Id });
+        //}
+
+        //public ActionResult Trip(int id)
+        //{
+        //    ImportStepModel model = new ImportStepModel()
+        //    {
+        //        Trip = TripRepository.FindById(id),
+        //        CurrentStep = ImportStep.Start
+        //    };
+        //    if (model.Trip.Creator != User)
+        //    {
+        //        return new UnauthorizedResult();
+        //    }
+        //    return View(model);
+        //}
 
         //[HttpGet]
         //public ActionResult DeleteTrip(int id)
@@ -119,7 +130,7 @@ namespace TMD.Controllers
         //    return new EmptyResult();
         //}
 
-        
+
 
         //[HttpPost]
         //public ActionResult StartNewImport()

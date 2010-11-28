@@ -68,6 +68,11 @@ namespace TMD.Model.Trips
         public virtual bool IsImported { get; private set; }
         public virtual DateTime? Imported { get; private set; }
 
+        public virtual TimeSpan ImportAge
+        {
+            get { return IsImported ? DateTime.Now.Subtract(Imported.Value) : TimeSpan.Zero; }
+        }
+
         public virtual Coordinates SiteVisitCentralCoordinates
         {
             get

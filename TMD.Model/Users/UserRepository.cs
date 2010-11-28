@@ -8,6 +8,7 @@ namespace TMD.Model.Users
 {
     public abstract class UserRepository
     {
+        public abstract User FindById(int id);
         public abstract User FindByEmail(string email);
 
         public User FindByEmailVerificationToken(string urlEncodedToken)

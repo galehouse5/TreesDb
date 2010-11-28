@@ -19,67 +19,80 @@ namespace TMD.Model.Validation
     {
         private static ValidatorEngine s_VE = new ValidatorEngine();
 
-        public static IList<ValidationFailure> Validate(this object source, params Tag[] tags)
+        public static IClassValidator GetClassValidator(this object source)
         {
+            if (source is Type)
+            {
+                return s_VE.GetClassValidator((Type)source);
+            }
+            return s_VE.GetClassValidator(source.GetType());
+        }
+
+        public static InvalidValue[] Validate(this object source, params Tag[] tags)
+        {
+            if (source is InvalidValue[])
+            {
+                List<InvalidValue> ivs = new List<InvalidValue>();
+                foreach (InvalidValue iv in ((InvalidValue[])source))
+                {
+                    foreach (Tag tag in iv.MatchTags)
+                    {
+                        if (tags.Contains(tag))
+                        {
+                            ivs.Add(iv);
+                            break;
+                        }
+                    }
+                }
+                return ivs.ToArray();
+            }
             object[] normalizedTags = new object[tags.Length];
             tags.CopyTo(normalizedTags, 0);
-            InvalidValue[] invalidValues = s_VE.Validate(source, normalizedTags);
-            List<ValidationFailure> validationFailures = new List<ValidationFailure>();
-            invalidValues.ForEach(iv => validationFailures.Add(new ValidationFailure(iv)));
-            return validationFailures;
+            return s_VE.Validate(source, normalizedTags);
+        }
+
+        public static InvalidValue[] Validate(this object source)
+        {
+            if (source is InvalidValue[])
+            {
+                return (InvalidValue[])source;
+            }
+            return s_VE.Validate(source);
         }
 
         public static void AssertIsValid(this object source, params Tag[] tags)
         {
-            IList<ValidationFailure> validationFailures = source as IList<ValidationFailure>;
-            if (validationFailures == null)
+            InvalidValue[] ivs = source.Validate(tags);
+            if (ivs.Length > 0)
             {
-                validationFailures = source.Validate(tags);
+                throw new ValidationFailureException(source, ivs); 
             }
-            else
+        }
+
+        public static void AssertIsValid(this object source)
+        {
+            InvalidValue[] ivs = source.Validate();
+            if (ivs.Length > 0)
             {
-                validationFailures.RemoveUnspecifiedTags(tags);
-            }
-            if (validationFailures.Count > 0)
-            {
-                throw new ValidationFailureException(source, validationFailures);
+                throw new ValidationFailureException(source, ivs);
             }
         }
 
         public static bool IsValid(this object source, params Tag[] tags)
         {
-            IList<ValidationFailure> validationFailures = source as IList<ValidationFailure>;
-            if (validationFailures != null)
-            {
-                validationFailures = validationFailures.RemoveUnspecifiedTags(tags);
-                return validationFailures.Count == 0;
-            }
-            return source.Validate(tags).IsValid();
-        }
-
-        public static IList<ValidationFailure> Validate(this object source)
-        {
-            return source.Validate(Tag.Screening, Tag.Persistence, Tag.Finalization, Tag.Optional);
+            InvalidValue[] ivs = source.Validate(tags);
+            return ivs.Length == 0;
         }
 
         public static bool IsValid(this object source)
         {
-            return source.IsValid(Tag.Screening, Tag.Persistence, Tag.Finalization, Tag.Optional);
-        }
-
-        public static void AssertIsValid(this object source)
-        {
-            source.AssertIsValid(Tag.Screening, Tag.Persistence, Tag.Finalization, Tag.Optional);
+            InvalidValue[] ivs = source.Validate();
+            return ivs.Length == 0;
         }
 
         public static void AssertIsValidToPersist(this object source)
         {
             source.AssertIsValid(Tag.Persistence);
-        }
-
-        public static IList<ValidationFailure> RemoveUnspecifiedTags(this IList<ValidationFailure> validationFailures, params Tag[] tags)
-        {
-            return validationFailures.RemoveAll(vf => !vf.ContainsTag(tags));
         }
     }
 }

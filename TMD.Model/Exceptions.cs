@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
 using TMD.Model.Users;
+using NHibernate.Validator.Engine;
 
 namespace TMD.Model
 {
@@ -54,14 +55,14 @@ namespace TMD.Model
 
     public class ValidationFailureException : ModelException
     {
-        public ValidationFailureException(object source, IList<ValidationFailure> validationFailures)
+        public ValidationFailureException(object source, InvalidValue[] invalidValues)
             : base("Object failed validation.")
         {
             this.Source = source;
-            this.ValidationFailures = validationFailures;
+            this.InvalidValues = invalidValues;
         }
 
         public object Source { get; private set; }
-        public IList<ValidationFailure> ValidationFailures { get; private set; }
+        public InvalidValue[] InvalidValues { get; private set; }
     }
 }

@@ -175,7 +175,7 @@ namespace TMD.Model.Users
             };
         }
 
-        public static IList<ValidationFailure> Validate(string password)
+        public static InvalidValue[] Validate(string password)
         {
             return Password.Create(password, string.Empty).Validate();
         }

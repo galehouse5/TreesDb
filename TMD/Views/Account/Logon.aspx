@@ -1,40 +1,67 @@
-﻿<%@ Page Title="Logon" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<TMD.Models.AccountLoginModel>" %>
+﻿<%@ Page Title="Logon" Language="C#" MasterPageFile="~/Views/Shared/Login.Master"  Inherits="System.Web.Mvc.ViewPage<TMD.Models.AccountLogonModel>" %>
 
-<asp:Content ContentPlaceHolderID="HeadContent" runat="server">
-    <link type="text/css" rel="Stylesheet" href="/Styles/Account.css" />
-    <script type="text/javascript" src="/Scripts/Account.js"></script>
+<asp:Content ContentPlaceHolderID="Scripts" runat="server">
+    <script type="text/javascript" src="/js/jquery/jquery.1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#login_email').focus();
+        });
+    </script>
 </asp:Content>
 
-<asp:Content ContentPlaceHolderID="MainContent" runat="server">
-<div class="EmphasizeContent Centered">
-    <div class="InputColumn account-form ui-widget-content ui-corner-all">
-        <h2>Logon</h2>
-        <% using(Html.BeginForm()) { %>
-            <div class="InputRow">
-                <%= Html.LabelFor(m => m.Email)%>
-                <%= Html.TextBoxFor(m => m.Email)%>
-                <div class="ValidationError ui-state-error-text">
-                    <%= Html.ValidationMessageFor(m => m.Email, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-                    <%= Html.ValidationMessageFor(m => m.Email, "", new { @class = "ValidationErrorMessage" })%>
-                </div>
-                <div class="ui-helper-clearfix"></div>
-            </div>
-            <div class="InputRow">
-                <%= Html.LabelFor(m => m.Password)%>
-                <%= Html.PasswordFor(m => m.Password)%>
-                <div class="ValidationError ui-state-error-text">
-                    <%= Html.ValidationMessageFor(m => m.Password, " ", new { @class = "ui-icon ui-icon-circle-close" })%>
-                    <%= Html.ValidationMessageFor(m => m.Password, "", new { @class = "ValidationErrorMessage" })%>
-                </div>
-                <div class="ui-helper-clearfix"></div>
-            </div>
-            <div class="InputButtonRow">
-                <input type="submit" value="Login" />
-                <%= Html.ActionLink("Register a new account", "Register", null, new { @class = "button" })%>
-                <div class="ui-helper-clearfix"></div>
-                <%= Html.ActionLink("Forget your password?", "RequestPasswordAssistance")%>
-            </div>
+<asp:Content ContentPlaceHolderID="Content" runat="server">
+    <% using(Html.BeginForm("Logon", "Account", FormMethod.Post, new { id = "login_form", name = "login", @class = "stn-form" })) { %>
+        <% if (Model.PerformHumanVerification) { %>
+            <div class="content_front">
+                <div class="pad">
+
+                    <%= Html.HiddenFor(m => m.Email) %>
+                    <%= Html.HiddenFor(m => m.Password) %>
+                    <%= Html.HiddenFor(m => m.RememberMe) %>
+
+                    <div class="field captcha">
+                        <%= Html.LabelFor(m => m.PerformHumanVerification) %>
+                        <div><span class="input">
+                            <%= Html.GenerateCaptcha("", "blackglass") %>
+                        </span></div>
+                    </div> <!-- .field -->
+
+                    <div class="field">
+			            <span class="label">&nbsp;</span>
+			            <div>
+                            <button type="submit" class="btn">Continue</button>
+                        </div>
+		            </div> <!-- .field -->
+
+	            </div>
+	        </div>
+        <% } else { %>
+            <div class="content_front">
+                <div class="pad">
+
+                    <%= Html.EditorFor(m => m.Email, new { id = "login_email" })%>
+
+				    <div class="field">
+                        <%= Html.LabelFor(m => m.Password) %>
+					    <div><span class="input">
+                            <%= Html.PasswordFor(m => m.Password, new { id = "login_password", @class = "text" }) %>
+                            <a href="javascript:;" id="forgot_my_password">Forgot password?</a>
+                            <%= Html.ValidationMessageFor(m => m.Password, string.Empty, new { style = "margin-top: 34px;" })%>
+                        </span></div>
+				    </div> <!-- .field -->
+
+                    <%= Html.EditorFor(m => m.RememberMe, new { id = "remember" })%>
+
+				    <div class="field">
+					    <span class="label">&nbsp;</span>
+					    <div>
+                            <button type="submit" class="btn">Logon</button>
+                            &nbsp;&nbsp;<a href="javascript:;" id="register_account">Register</a>
+                        </div>
+				    </div> <!-- .field -->
+
+	            </div>
+	        </div>
         <% } %>
-    </div>
-</div>
+    <% } %>
 </asp:Content>

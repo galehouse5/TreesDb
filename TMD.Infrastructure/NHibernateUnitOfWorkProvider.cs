@@ -55,7 +55,10 @@ namespace TMD.Infrastructure
 
         public void Dispose()
         {
-            Session.Close();
+            if (Session.IsOpen)
+            {
+                Session.Close();
+            }
             Session.Dispose();
         }
     }

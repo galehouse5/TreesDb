@@ -56,5 +56,10 @@ namespace TMD.Infrastructure.Repositories
         {
             Registry.Session.Delete(u);
         }
+
+        public override User FindById(int id)
+        {
+            return Registry.Session.Get<User>(id);
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TMD.Extensions;
+using TMD.Models;
 
 namespace TMD.Controllers
 {
@@ -14,7 +15,7 @@ namespace TMD.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            return View(new ModelBase { IsHome = true }.InitializeFor(User));
         }
     }
 }

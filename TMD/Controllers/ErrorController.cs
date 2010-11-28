@@ -20,13 +20,13 @@ namespace TMD.Controllers
         }
     }
 
-    public class InternalServerErrorResult : ActionResult
+    public class ServerErrorResult : ActionResult
     {
         public override void ExecuteResult(ControllerContext context)
         {
             RouteData rd = new RouteData();
             rd.Values.Add("controller", "Error");
-            rd.Values.Add("action", "InternalServerError");
+            rd.Values.Add("action", "ServerError");
             IController c = new ErrorController();
             c.Execute(new RequestContext(context.HttpContext, rd));
         }
@@ -116,7 +116,7 @@ namespace TMD.Controllers
             return View();
         }
 
-        public ActionResult InternalServerError()
+        public ActionResult ServerError()
         {
             Response.StatusCode = (int)HttpStatusCode.InternalServerError;
             return View();

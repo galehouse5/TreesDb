@@ -41,6 +41,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\ISpecified.cs" />
+    <Compile Include="Photos\Photo.cs" />
+    <Compile Include="Photos\SizeNormalizer.cs" />
     <Compile Include="Validation\BooleanMethodAttribute.cs" />
     <Compile Include="Validation\ContextMethodAttribute.cs" />
     <Compile Include="Validation\Size2Attribute.cs" />
@@ -85,7 +88,6 @@
     <Compile Include="Validation\NotEqualsAttribute.cs" />
     <Compile Include="Validation\SpecifiedAttribute.cs" />
     <Compile Include="Validation\NotEmptyOrWhitesapceAttribute.cs" />
-    <Compile Include="Validation\ValidationFailure.cs" />
     <Compile Include="Validation\Within2Attribute.cs" />
     <Compile Include="ValueObjects\Angle.cs" />
     <Compile Include="ValueObjects\CoordinateBounds.cs" />

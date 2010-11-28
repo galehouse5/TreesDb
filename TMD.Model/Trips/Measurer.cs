@@ -19,7 +19,7 @@ namespace TMD.Model.Trips
         public virtual Trip Trip { get; private set; }
 
         private string m_FirstName;
-        [NotEmptyOrWhitesapceAttribute(Message = "First name must be specified.", Tags = Tag.Screening)]
+        [NotEmptyOrWhitesapce(Message = "First name must be specified.", Tags = Tag.Screening)]
         [Length(50, Message = "First name must not exceed 50 characters.", Tags = Tag.Persistence)]
         public virtual string FirstName
         {
@@ -28,7 +28,7 @@ namespace TMD.Model.Trips
         }
 
         private string m_LastName;
-        [NotEmptyOrWhitesapceAttribute(Message = "Last name must be specified.", Tags = Tag.Screening)]
+        [NotEmptyOrWhitesapce(Message = "Last name must be specified.", Tags = Tag.Screening)]
         [Length(50, Message = "Last name must not exceed 50 characters.", Tags = Tag.Persistence)]
         public virtual string LastName
         {

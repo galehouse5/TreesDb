@@ -10,6 +10,9 @@ using TMD.Model.Trips;
 using TMD.Model.Locations;
 using Recaptcha;
 using TMD.Controllers;
+using StructureMap;
+using TMD.Infrastructure.Repositories;
+using TMD.Infrastructure;
 
 namespace TMD
 {
@@ -52,9 +55,22 @@ namespace TMD
             ModelBinders.Binders.Add(typeof(HeightMeasurements), new HeightMeasurementModelBinder());
 
             ControllerBuilder.Current.SetControllerFactory(typeof(ControllerFactory));
+            
+            ModelValidatorProviders.Providers.Clear();
+            ModelValidatorProviders.Providers.Add(new NHibernateValidatorModelValidatorProvider());
 
-            RecaptchaControlMvc.PublicKey = WebApplicationRegistry.Settings.RecaptchaPublicKey;
-            RecaptchaControlMvc.PrivateKey = WebApplicationRegistry.Settings.RecaptchaPrivateKey;   
+            log4net.Config.XmlConfigurator.Configure();
+            ObjectFactory.Initialize(x =>
+            {
+                x.AddRegistry(new RepositoryRegistry());
+                x.For<IUnitOfWorkProvider>().HttpContextScoped().Use<NHibernateUnitOfWorkProvider>().OnCreation(uow => uow.Initialize());
+                x.For<IUserSessionProvider>().Singleton().Use<WebUserSessionProvider>();
+            });
+        }
+
+        protected void Application_EndRequest()
+        {
+            UnitOfWork.Dispose();
         }
     }
 }
