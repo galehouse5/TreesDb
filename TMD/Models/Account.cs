@@ -11,7 +11,7 @@ using NHibernate.Validator.Constraints;
 
 namespace TMD.Models
 {
-    public class AccountWidgetModel : ModelBase
+    public class AccountWidgetModel
     {
         public bool IsLoggedOn { get; set; }
         public string Email { get; set; }
@@ -19,7 +19,7 @@ namespace TMD.Models
         public UserRole Roles { get; set; }
     }
 
-    public class AccountLogonModel : ModelBase
+    public class AccountLogonModel
     {
         [NotEmptyOrWhitesapce(Message = "You must enter an email.")]
         [Pattern(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$", Message = "You must enter a valid email.")]

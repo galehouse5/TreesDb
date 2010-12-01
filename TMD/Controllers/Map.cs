@@ -16,10 +16,19 @@ namespace TMD.Controllers
             return PartialView((object)WebApplicationRegistry.Settings.GoogleApiKey);
         }
 
+        [ChildActionOnly]
+        public ActionResult MenuWidget(bool isSelected)
+        {
+            return PartialView(new MapMenuWidgetModel
+            {
+                IsSelected = isSelected
+            });
+        }
+
         [DefaultReturnUrl]
         public ActionResult Index()
         {
-            return View(new ModelBase { IsMapping = true, RequiresJavascript = true }.InitializeFor(User));
+            return View();
         }
     }
 }

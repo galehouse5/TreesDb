@@ -166,7 +166,7 @@ namespace TMD.Model.Trips
 
         internal static SiteVisit Create(Trip t)
         {
-            return new SiteVisit()
+            return new SiteVisit
             {
                 Name = string.Empty,
                 CoordinatesEntered = t.SiteVisitCentralCoordinates.IsValidAndSpecified(),
@@ -174,7 +174,7 @@ namespace TMD.Model.Trips
                 SubsiteVisits = new List<SubsiteVisit>(),
                 Comments = string.Empty,
                 Trip = t
-            };
+            }.RecordCreation() as SiteVisit;
         }
     }
 }

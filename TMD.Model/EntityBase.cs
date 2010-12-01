@@ -19,9 +19,22 @@ namespace TMD.Model
     public abstract class UserCreatedEntityBase : IEntity
     {
         protected UserCreatedEntityBase()
+            : this(false)
+        { }
+
+        protected UserCreatedEntityBase(bool recordCreationNow)
+        {
+            if (recordCreationNow)
+            {
+                this.RecordCreation();
+            }
+        }
+
+        protected UserCreatedEntityBase RecordCreation()
         {
             Created = DateTime.Now;
             Creator = UserSession.User;
+            return this;
         }
 
         public virtual int Id { get; private set; }

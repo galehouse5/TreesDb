@@ -18,11 +18,11 @@ namespace TMD.Controllers
     {
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
-            if (UserSession.IsAnonymous)
+            if (!httpContext.User.Identity.IsAuthenticated)
             {
                 return false;
             }
-            if ((UserSession.User.Roles & Roles) != Roles)
+            if (!((User)((WebUser)httpContext.User)).IsInRole(Roles))
             {
                 return false;
             }
@@ -31,14 +31,14 @@ namespace TMD.Controllers
 
         protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
         {
-            if (UserSession.IsAnonymous)
+            if (filterContext.HttpContext.User.Identity.IsAuthenticated)
             {
-                ((ControllerBase)filterContext.Controller).Session.DefaultReturnUrl = ((ControllerBase)filterContext.Controller).Request.RawUrl;
-                filterContext.Result = new RedirectResult("/Account/Logon");
+                filterContext.Result = new UnauthorizedResult();   
             }
             else
             {
-                filterContext.Result = new UnauthorizedResult();
+                ((ControllerBase)filterContext.Controller).Session.DefaultReturnUrl = ((ControllerBase)filterContext.Controller).Request.RawUrl;
+                filterContext.Result = new RedirectResult("/Account/Logon");
             }
         }
 
@@ -49,21 +49,18 @@ namespace TMD.Controllers
     public class AccountController : ControllerBase
     {
         [ChildActionOnly]
-        public ActionResult Widget()
+        public ActionResult AccountWidget()
         {
-            AccountWidgetModel model = new AccountWidgetModel()
+            return PartialView(new AccountWidgetModel
             {
-                IsLoggedOn = IsAuthenticated,
-                Email = IsAuthenticated ? User.Email : string.Empty,
-                Firstname = IsAuthenticated ? User.Firstname : string.Empty,
-                Roles = IsAuthenticated ? User.Roles : UserRole.None
-            };
-            return PartialView(model);
+                IsLoggedOn = !(User is AnonymousUser),
+                Email = User.Email,
+            });
         }
 
         public ActionResult LogOn()
         {
-            return View(new AccountLogonModel { RememberMe = true });
+            return View(new AccountLogonModel {});
         }
 
         [HttpPost]

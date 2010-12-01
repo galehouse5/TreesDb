@@ -238,7 +238,7 @@ namespace TMD.Model.Trips
                 DefaultCountry = Repositories.Locations.FindCountryByCode("US"),
                 DefaultState = null,
                 MakeMeasurerContactInfoPublic = true
-            };
+            }.RecordCreation() as Trip;
         }
     }
 }

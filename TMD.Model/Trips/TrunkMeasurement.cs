@@ -71,7 +71,7 @@ namespace TMD.Model.Trips
                 HeightMeasurements = HeightMeasurements.Null(),
                 IncludeHeightDistanceAndAngleMeasurements = false,
                 TrunkComments = string.Empty
-            };
+            }.RecordCreation() as TrunkMeasurement;
         }
     }
 }

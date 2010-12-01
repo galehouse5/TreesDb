@@ -31,7 +31,7 @@ namespace TMD.Model.Trips
 
         internal static SingleTrunkTreeMeasurement Create(SubsiteVisit ssv)
         {
-            return new SingleTrunkTreeMeasurement()
+            return new SingleTrunkTreeMeasurement
             {
                 TreeName = string.Empty,
                 TreeNumber = null,
@@ -76,7 +76,7 @@ namespace TMD.Model.Trips
                 SubsiteVisit = ssv,
                 MakeCoordinatesPublic = true,
                 IncludeHeightDistanceAndAngleMeasurements = false,
-            };
+            }.RecordCreation() as SingleTrunkTreeMeasurement;
         }
     }
 }

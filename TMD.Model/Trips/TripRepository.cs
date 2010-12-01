@@ -47,6 +47,7 @@ namespace TMD.Model.Trips
 
         protected abstract void InternalImport(Trip t);
 
-        public abstract IList<Trip> FindTripsCreatedByUser(int userId);
+        public abstract IList<Trip> ListCreatedByUser(int userId);
+        public abstract Trip FindLastCreatedByUser(int userId);
     }
 }

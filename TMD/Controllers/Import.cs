@@ -9,23 +9,35 @@ using TMD.Extensions;
 using TMD.Model;
 using TMD.Model.Trees;
 using TMD.Model.Users;
+using TMD.Model.Extensions;
 
 namespace TMD.Controllers
 {
-    [AuthorizeUser(Roles = UserRole.Import)]
     [CheckBrowserCompatibilityFilter]
     public class ImportController : ControllerBase
     {
-        [DefaultReturnUrl]
-        public ActionResult History()
+        [ChildActionOnly]
+        public ActionResult MenuWidget(bool isSelected)
         {
-            IList<Trip> trips = Repositories.Trips.FindTripsCreatedByUser(User.Id);
-            return View(new ImportTripsModel { 
-                ImportedTrips = trips.Where(t => t.IsImported).ToList(),
-                PendingTrips = trips.Where(t => !t.IsImported).ToList(),
-                IsImporting = true }.InitializeFor(User));
+            return PartialView(new ImportMenuWidgetModel
+            {
+                IsSelected = isSelected,
+                CanImport = User.IsInRole(UserRole.Import),
+                LatestTrip = Repositories.Trips.FindLastCreatedByUser(User.Id)
+            });
         }
 
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRole.Import)]
+        public ActionResult History()
+        {
+            return View(Repositories.Trips.ListCreatedByUser(User.Id));
+        }
+
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRole.Import)]
+        public ActionResult Start()
+        {
+            return View();
+        }
 
 
         //[DefaultReturnUrl]

@@ -22,7 +22,8 @@ namespace TMD.Model.Photos
 
     public class Photo : UserCreatedEntityBase
     {
-        protected Photo() { }
+        protected Photo() 
+        { }
 
         public Size Size { get; private set; }
         public int Bytes { get; private set; }

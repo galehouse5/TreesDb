@@ -11,6 +11,83 @@ using System.Diagnostics;
 
 namespace TMD
 {
+    public class AnonymousUser : User
+    {
+        public override bool AttemptLogon(string password)
+        {
+            throw new InvalidEntityOperationException(this);
+        }
+
+        public override void ChangePasswordUsingExistingPassword(string existingPassword, string newPassword)
+        {
+            throw new InvalidEntityOperationException(this);
+        }
+
+        public override void ChangePasswordUsingPasswordAssistanceToken(string urlEncodedForgottenPasswordAssistanceToken, string newPassword)
+        {
+            throw new InvalidEntityOperationException(this);
+        }
+
+        public override DateTime Created { get { return DateTime.MinValue; } }
+        public override string Email { get { return "Anonymous"; } }
+        public override SecureToken EmailVerificationToken { get { return null; } }
+        public override DateTime? EmailVerified { get { return null; } }
+        public override string Firstname { get { return "Anonymous"; } }
+        public override SecureToken ForgottenPasswordAssistanceToken { get { return null; } }
+        public override DateTime? ForgottenPasswordAssistanceTokenIssued { get { return null; } }
+        public override DateTime? ForgottenPasswordAssistanceTokenUsed { get { return null; } }
+
+        public override void GenerateForgottenPasswordAssistanceToken()
+        {
+            throw new InvalidEntityOperationException(this);
+        }
+
+        public override int Id { get { return -1; } }
+        public override bool IsEmailVerified { get { return false; } }
+        public override bool IsForgottenPasswordAssistanceTokenValid { get { return false; } }
+
+        public override bool IsInRole(UserRole role)
+        {
+            return false;
+        }
+
+        public override DateTime LastActivity { get { return DateTime.MinValue; } }
+        public override DateTime? LastFailedLogonAttempt { get { return null; } }
+        public override DateTime LastLogon { get { return DateTime.MinValue; } }
+        public override string Lastname { get { return "Anonymous"; } }
+        public override Password Password { get { return null; } }
+        public override bool PerformHumanVerification { get { return false; } }
+        public override int RecentlyFailedLogonAttempts { get { return 0; } }
+
+        public override void RegenerateEmailVerificationToken()
+        {
+            throw new InvalidEntityOperationException(this);
+        }
+
+        public override void ReplaceExistingNonEmailVerifiedUser(User existingUser)
+        {
+            throw new InvalidEntityOperationException(this);
+        }
+
+        public override void ReportActivity()
+        {
+            throw new InvalidEntityOperationException(this);
+        }
+
+        public override UserRole Roles { get { return UserRole.None; } }
+
+
+        public override void VerifyEmail(string urlEncodedEmailVerificationToken)
+        {
+            throw new InvalidEntityOperationException(this);
+        }
+
+        public override bool VerifyPassword(string password)
+        {
+            throw new InvalidEntityOperationException(this);
+        }
+    }
+
     public class WebUserSessionProvider : IUserSessionProvider, IHttpModule
     {
         private HttpApplication ApplicationContext { get; set; }
@@ -28,24 +105,19 @@ namespace TMD
 
         void Context_AcquireRequestState(object sender, EventArgs e)
         {
-            if (ApplicationContext.Context.User == null)
-            {
-                ApplicationContext.Context.User = new WebUser(null);
-            }
-            if (ApplicationContext.Context.User.Identity.IsAuthenticated)
-            {
-                ApplicationContext.Context.User = new WebUser(Repositories.Users.FindByEmail(ApplicationContext.Context.User.Identity.Name));
-            }
+            ApplicationContext.Context.User = ApplicationContext.Context.User.Identity.IsAuthenticated ?
+                new WebUser(Repositories.Users.FindByEmail(ApplicationContext.Context.User.Identity.Name)) :
+                new WebUser(new AnonymousUser());
         }
 
         public bool IsAnonymous
         {
-            get { return User == null; }
+            get { return !HttpContext.Current.User.Identity.IsAuthenticated; }
         }
 
         public User User
         {
-            get { return HttpContext.Current.User is WebUser ? ((WebUser)HttpContext.Current.User).User : null; }
+            get { return HttpContext.Current.User is GenericPrincipal ? null : (WebUser)HttpContext.Current.User; }
         }
     }
 
@@ -54,10 +126,10 @@ namespace TMD
     {
         internal WebUser(User user)
         {
-            this.User = user;
+            InternalUser = user;
         }
 
-        public User User { get; private set; }
+        public User InternalUser { get; private set; }
 
         public IIdentity Identity
         {
@@ -69,7 +141,7 @@ namespace TMD
             UserRole userRole = role.ParseEnum<UserRole>(UserRole.None);
             if (IsAuthenticated)
             {
-                return User.IsInRole(userRole);
+                return InternalUser.IsInRole(userRole);
             }
             return userRole == UserRole.None;
         }
@@ -81,19 +153,17 @@ namespace TMD
 
         public bool IsAuthenticated
         {
-            get { return User != null; }
+            get { return !(InternalUser is AnonymousUser); }
         }
 
         public string Name
         {
-            get 
-            { 
-                if (!IsAuthenticated)
-                {
-                    return "Anonymous";
-                }
-                return User.Email;
-            }
+            get { return InternalUser.Email; }
+        }
+
+        public static implicit operator User(WebUser wu)
+        {
+            return wu.InternalUser;
         }
     }
 }

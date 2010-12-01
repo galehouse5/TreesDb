@@ -90,16 +90,15 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Account.cs" />
+    <Compile Include="Controllers\Browse.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\ControllerFactory.cs" />
-    <Compile Include="Controllers\ErrorController.cs" />
-    <Compile Include="Controllers\ImportController.cs" />
-    <Compile Include="Controllers\LocationsController.cs" />
-    <Compile Include="Controllers\MainController.cs" />
-    <Compile Include="Controllers\MapController.cs" />
-    <Compile Include="Controllers\TripController.cs" />
-    <Compile Include="Controllers\ValueObjectsController.cs" />
+    <Compile Include="Controllers\Error.cs" />
+    <Compile Include="Controllers\Export.cs" />
+    <Compile Include="Controllers\Import.cs" />
+    <Compile Include="Controllers\Main.cs" />
+    <Compile Include="Controllers\Map.cs" />
     <Compile Include="EmailTemplates\PasswordAssistanceEmail.cs" />
     <Compile Include="EmailTemplates\EmailVerificationEmail.cs" />
     <Compile Include="Extensions\DefaultGraphModelBinder.cs" />
@@ -109,9 +108,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\ImportModels.cs" />
-    <Compile Include="Models\ModelBase.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Browse.cs" />
+    <Compile Include="Models\Export.cs" />
+    <Compile Include="Models\Map.cs" />
+    <Compile Include="Models\Import.cs" />
+    <Compile Include="Models\Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="TempData.cs" />
@@ -260,7 +262,7 @@
     <Content Include="Styles\ThirdParty\south-street\jquery-ui-1.8.4.custom.css" />
     <Content Include="Styles\ThirdParty\ui.jqgrid.css" />
     <Content Include="Styles\Trip.css" />
-    <Content Include="Views\Account\Widget.ascx" />
+    <Content Include="Views\Account\AccountWidget.ascx" />
     <Content Include="Views\Account\CreatePassword.aspx" />
     <Content Include="Views\Account\Edit.aspx" />
     <Content Include="Views\Account\EmailAlreadyVerified.aspx" />
@@ -271,18 +273,23 @@
     <Content Include="Views\Account\RegistrationComplete.aspx" />
     <Content Include="Views\Account\Logon.aspx" />
     <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Browse\MenuWidget.ascx" />
     <Content Include="Views\Error\Unauthorized.aspx" />
     <Content Include="Views\Account\VerifyEmailAfterRegistering.aspx" />
     <Content Include="Views\Account\VerifyHumanBeforeEmailingPasswordAssistance.aspx" />
     <Content Include="Views\Account\VerifyHumanBeforeRegistering.aspx" />
+    <Content Include="Views\Export\MenuWidget.ascx" />
     <Content Include="Views\Import\History.aspx" />
     <Content Include="Views\Import\Index.aspx" />
+    <Content Include="Views\Import\MenuWidget.ascx" />
     <Content Include="Views\Import\MultiTrunkTreeMeasurementEditor.ascx" />
     <Content Include="Views\Import\SiteVisitRemover.ascx" />
     <Content Include="Views\Import\SubsiteVisitRemover.ascx" />
     <Content Include="Views\Import\TreeMeasurementRemover.ascx" />
+    <Content Include="Views\Main\MenuWidget.ascx" />
     <Content Include="Views\Map\GoogleMapsScript.ascx" />
     <Content Include="Views\Map\Index.aspx" />
+    <Content Include="Views\Map\MenuWidget.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Boolean.ascx" />
     <Content Include="Views\Shared\EditorTemplates\String.ascx" />
     <Content Include="Views\Trip\Delete.ascx" />

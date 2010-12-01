@@ -11,11 +11,20 @@ namespace TMD.Controllers
     [CheckBrowserCompatibilityFilter]
     public class MainController : ControllerBase
     {
+        [ChildActionOnly]
+        public ActionResult MenuWidget(bool isSelected)
+        {
+            return PartialView(new MainMenuWidgetModel
+            {
+                IsSelected = isSelected
+            });
+        }
+
         [DefaultReturnUrl]
         [HttpGet]
         public ActionResult Index()
         {
-            return View(new ModelBase { IsHome = true }.InitializeFor(User));
+            return View();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Map" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<ModelBase>" %>
+﻿<%@ Page Title="Map" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
 <asp:Content ContentPlaceHolderID="Styles" runat="server">
     <style type="text/css">

@@ -54,7 +54,7 @@ namespace TMD
 
         public new User User
         {
-            get { return IsAuthenticated ? ((WebUser)base.User).User : null; }
+            get { return (WebUser)base.User; }
         }
 
         private Session m_Session;

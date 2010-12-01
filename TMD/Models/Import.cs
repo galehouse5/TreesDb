@@ -12,10 +12,17 @@ using TMD.Model.Locations;
 
 namespace TMD.Models
 {
-    public class ImportTripsModel : ModelBase
+    public class ImportTripsModel
     {
         public IList<Trip> PendingTrips { get; set; }
         public IList<Trip> ImportedTrips { get; set; }
+    }
+
+    public class ImportMenuWidgetModel
+    {
+        public bool IsSelected { get; set; }
+        public bool CanImport { get; set; }
+        public Trip LatestTrip { get; set; }
     }
 
     //public enum ImportStep

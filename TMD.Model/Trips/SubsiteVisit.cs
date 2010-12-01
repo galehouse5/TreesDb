@@ -187,7 +187,7 @@ namespace TMD.Model.Trips
 
         internal static SubsiteVisit Create(SiteVisit sv)
         {
-            return new SubsiteVisit()
+            return new SubsiteVisit
             {
                 Name = string.Empty,
                 CoordinatesEntered = sv.CoordinatesEntered && sv.Coordinates.IsValidAndSpecified(),
@@ -201,7 +201,7 @@ namespace TMD.Model.Trips
                 County = sv.Trip.DefaultCounty,
                 SiteVisit = sv,
                 MakeOwnershipContactInfoPublic = true
-            };
+            }.RecordCreation() as SubsiteVisit;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" Inherits="TMD.ViewMasterPageBase<ModelBase>" %>
+﻿<%@ Master Language="C#" Inherits="TMD.ViewMasterPageBase" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head runat="server">
@@ -17,63 +17,28 @@
 
 		        <div id="header">
 			        <h1><%= Html.ActionLink("Trees Database", "Index", "Main") %></h1>
-                    <% Html.RenderAction("Widget", "Account"); %>
+                    <% Html.RenderAction("AccountWidget", "Account"); %>
 		        </div> <!-- #header -->		
                 	
 		        <div id="nav">
 			        <ul class="mega-container mega-grey">
-
-				        <li class="mega <%= Model.IsHome ? "mega-current" : string.Empty %>">
-                            <%= Html.ActionLink("Home", "Index", "Main", null ,new { @class = "mega-link" }) %>
-				        </li>
-		
-                        <% if (Model.CanImport) {  %>
-                            <li class="mega <%= Model.IsImporting ? "mega-current" : string.Empty %>">
-                                <%= Html.ActionLink("Import", "Index", "Import", null, new { @class = "mega-tab hasSub" })%>
-                                <div class="mega-content mega-menu ">						
-						            <ul>
-							            <li><%= Html.ActionLink("Start", "Start", "Import") %></li>	
-                                        <li><%= Html.ActionLink("View history", "History", "Import") %></li>	
-						            </ul>
-					            </div>
-				            </li>
-                        <% } %>
-
-                        <li class="mega <%= Model.IsBrowsing ? "mega-current" : string.Empty %>">
-                            <%= Html.ActionLink("Browse", "Index", "Browse", null, new { @class = "mega-tab hasSub" })%>
-                            <div class="mega-content mega-menu ">						
-						        <ul>
-							        <li><%= Html.ActionLink("By trees", "Index", "Browse", new { by = "trees" }, null) %></li>	
-                                    <li><%= Html.ActionLink("By sites", "Index", "Browse", new { by = "sites" }, null) %></li>	
-                                    <li><%= Html.ActionLink("By trips", "Index", "Browse", new { by = "trips" }, null) %></li>				
-						        </ul>
-					        </div>	
-				        </li>
-
-                        <li class="mega <%= Model.IsMapping ? "mega-current" : string.Empty %>">
-                            <%= Html.ActionLink("Map", "Index", "Map", null, new { @class = "mega-link" })%>
-				        </li>
-
-                        <% if (Model.CanExport) { %>
-                            <li class="mega <%= Model.IsExporting ? "mega-current" : string.Empty %>">
-                                <%= Html.ActionLink("Export", "Index", "Export", null, new { @class = "mega-link" })%>
-				            </li>
-                        <% } %>
-
+                        <% Html.RenderAction("MenuWidget", "Main", new { isSelected = ViewContext.Controller is MainController }); %>
+                        <% Html.RenderAction("MenuWidget", "Import", new { isSelected = ViewContext.Controller is ImportController }); %>
+                        <% Html.RenderAction("MenuWidget", "Browse", new { isSelected = ViewContext.Controller is BrowseController }); %>
+                        <% Html.RenderAction("MenuWidget", "Map", new { isSelected = ViewContext.Controller is MapController }); %>
+                        <% Html.RenderAction("MenuWidget", "Export", new { isSelected = ViewContext.Controller is ExportController }); %>
 			        </ul>
 		        </div> <!-- #nav -->
 	        </div> <!-- #top -->
 
 	        <div id="content" class="xfluid">
 
-                <% if (Model.RequiresJavascript) { %>
-                    <div id="javascript-warning" class="portlet x12">
-			            <div class="portlet-header"><h4>This page requires javascript.</h4></div>
-			            <div class="portlet-content">
-			                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			            </div>
-		            </div>
-                <% } %>
+                <div id="javascript-warning" class="portlet x12">
+			        <div class="portlet-header"><h4>This page requires javascript.</h4></div>
+			        <div class="portlet-content">
+			            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			        </div>
+		        </div>
 
                 <asp:ContentPlaceHolder ID="Content" runat="server"></asp:ContentPlaceHolder>
 
@@ -94,10 +59,8 @@
             $(function () {
                 slate.init();
                 slate.portlet.init();    
-                <% if (Model.RequiresJavascript) { %>
-                    $('#javascript-warning').hide();
-                    $('.requiresjavascript').show();
-                <% } %>
+                $('#javascript-warning').hide();
+                $('.requiresjavascript').show();
             });
         </script>
         <asp:ContentPlaceHolder ID="Scripts" runat="server"></asp:ContentPlaceHolder>

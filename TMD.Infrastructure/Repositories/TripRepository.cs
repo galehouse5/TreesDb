@@ -14,7 +14,7 @@ namespace TMD.Infrastructure.Repositories
             return Registry.Session.Get<Trip>(id);
         }
 
-        public override IList<Trip> FindTripsCreatedByUser(int userId)
+        public override IList<Trip> ListCreatedByUser(int userId)
         {
             return Registry.Session.CreateQuery(@"
                 select t from Trip as t
@@ -38,6 +38,16 @@ namespace TMD.Infrastructure.Repositories
         protected override void InternalImport(Trip t)
         {
             Registry.Session.SaveOrUpdate(t);
+        }
+
+        public override Trip FindLastCreatedByUser(int userId)
+        {
+            return Registry.Session.CreateQuery(@"
+                select t from Trip as t
+                where t.Creator.Id = :userId
+                order by t.Id desc")
+                .SetParameter("userId", userId)
+                .SetMaxResults(1).List<Trip>().FirstOrDefault();
         }
     }
 }

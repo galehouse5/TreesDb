@@ -43,12 +43,12 @@ namespace TMD.Model.Trips
 
         internal static Measurer Create(Trip t)
         {
-            return new Measurer()
+            return new Measurer
             {
                 FirstName = string.Empty,
                 LastName = string.Empty,
                 Trip = t
-            };
+            }.RecordCreation() as Measurer;
         }
     }
 }

@@ -94,7 +94,7 @@ namespace TMD.Model.Trips
 
         internal static MultiTrunkTreeMeasurement Create(SubsiteVisit ssv)
         {
-            return new MultiTrunkTreeMeasurement()
+            return new MultiTrunkTreeMeasurement
             {
                 TreeName = string.Empty,
                 TreeNumber = null,
@@ -142,7 +142,7 @@ namespace TMD.Model.Trips
                 IncludeHeightDistanceAndAngleMeasurements = false,
                 CombinedGirthNumberOfTrunks = null,
                 TrunkMeasurements = new List<TrunkMeasurement>()
-            };
+            }.RecordCreation() as MultiTrunkTreeMeasurement;
         }
     }
 }
