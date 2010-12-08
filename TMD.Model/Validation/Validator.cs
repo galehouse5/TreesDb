@@ -90,6 +90,11 @@ namespace TMD.Model.Validation
             return ivs.Length == 0;
         }
 
+        public static bool IsValidToPersist(this object source)
+        {
+            return source.IsValidToPersist();
+        }
+
         public static void AssertIsValidToPersist(this object source)
         {
             source.AssertIsValid(Tag.Persistence);

@@ -15,7 +15,6 @@
             </ul>
             <p>
                 Please contact an administrator or email <a href="mailto:<%= WebApplicationRegistry.Settings.WebmasterEmail %>"><%= WebApplicationRegistry.Settings.WebmasterEmail %></a> to request support for your browser.
-                <a href="/">Click here</a> to get back to the homepage or ignore this waring and continue anyway.
             </p>
             <% using(Html.BeginForm("BypassBrowserCheck", "Error")) { %>      
                 <%= Html.Hidden("ReturnUrl", Url.RequestContext.HttpContext.Request.RawUrl) %> 

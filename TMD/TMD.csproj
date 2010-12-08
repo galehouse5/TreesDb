@@ -36,6 +36,9 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\ThirdPartyAssemblies\NHibernate\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\ThirdPartyAssemblies\AutoMapper\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Iesi.Collections">
       <HintPath>..\ThirdPartyAssemblies\NHibernate\Iesi.Collections.dll</HintPath>
     </Reference>
@@ -108,6 +111,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mappings\Import.cs" />
+    <Compile Include="Mappings\ValidationMapping\PathMapper.cs" />
+    <Compile Include="Mappings\ValidationMapping\PathMatcher.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Browse.cs" />
     <Compile Include="Models\Export.cs" />
@@ -291,6 +297,7 @@
     <Content Include="Views\Map\Index.aspx" />
     <Content Include="Views\Map\MenuWidget.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Boolean.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Measurer.ascx" />
     <Content Include="Views\Shared\EditorTemplates\String.ascx" />
     <Content Include="Views\Trip\Delete.ascx" />
     <Content Include="Views\Trip\Edit.ascx" />

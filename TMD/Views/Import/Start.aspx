@@ -1,4 +1,5 @@
-﻿<%@ Page Title="Import Start" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
+﻿<%@ Page Title="Import Start" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="ViewPageBase<Trip>" %>
+<%@ Import Namespace="TMD.Model.Trips" %>
 
 <asp:Content ContentPlaceHolderID="Content" runat="server">
     <div class="portlet x2">
@@ -6,9 +7,12 @@
             <h4>Steps</h4>
         </div>
         <div class="portlet-content">
-            <ol>
-
-                <li><strong>> <%= Html.ActionLink("Start", "Start") %> <</strong></li>
+            <ol>                
+                <% if (Model.Id == 0) { %>
+                    <li><strong>> <%= Html.ActionLink("Start", "Start") %> <</strong></li>
+                <% } else { %>
+                    <li><strong>> <%= Html.ActionLink("Start", "Start", new { id = Model.Id })%> <</strong></li>
+                <% } %>
                 <li>Enter trip</li>
                 <li>Enter sites</li>
                 <li>Enter trees</li>
@@ -21,7 +25,12 @@
             <h4>Start</h4>
         </div>
         <div class="portlet-content">
-            <% using (Html.BeginForm("Start", "Account", FormMethod.Post, new { @class = "form" })) { %>
+            <% if(Model.Id == 0) { %>
+                <% Html.BeginForm("Start", "Import", FormMethod.Post, new { @class = "form" }); %>
+            <% } else { %>
+                <% Html.BeginForm("Trip", "Import", new { id = Model.Id }, FormMethod.Get, new { @class = "form" }); %>
+            <% } %>
+
                 <p>Prepare the following information before you start:</p>
                 <ul>
                     <li>Contact info for the primary measurer on your trip</li>
@@ -31,10 +40,10 @@
                     <li>First and last name of all participating measurers</li>
                     <li>GPS coordinates either on a site or subsite level or for individual trees</li>
                 </ul>
-                <div class="buttonrow but">
+                <div class="buttonrow">
                     <button type="submit" class="btn">Continue</button>
                 </div>
-            <% } %>
+            <% Html.EndForm(); %>
         </div>
     </div>
 </asp:Content>

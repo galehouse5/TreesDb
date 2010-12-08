@@ -20,6 +20,19 @@ namespace TMD
                 return m_TempData;
             }
         }
+
+        private ViewData m_ViewData;
+        public new ViewData ViewData
+        {
+            get
+            {
+                if (m_ViewData == null)
+                {
+                    m_ViewData = new ViewData(base.ViewData);
+                }
+                return m_ViewData;
+            }
+        }
     }
 
     public class ViewPageBase<TModel> : ViewPage<TModel>
@@ -34,6 +47,19 @@ namespace TMD
                     m_TempData = new TempData(base.TempData);
                 }
                 return m_TempData;
+            }
+        }
+
+        private ViewData m_ViewData;
+        public new ViewData ViewData
+        {
+            get
+            {
+                if (m_ViewData == null)
+                {
+                    m_ViewData = new ViewData(base.ViewData);
+                }
+                return m_ViewData;
             }
         }
     }
@@ -52,6 +78,19 @@ namespace TMD
                 return m_TempData;
             }
         }
+
+        private ViewData m_ViewData;
+        public new ViewData ViewData
+        {
+            get
+            {
+                if (m_ViewData == null)
+                {
+                    m_ViewData = new ViewData(base.ViewData);
+                }
+                return m_ViewData;
+            }
+        }
     }
 
     public class ViewMasterPageBase : ViewMasterPage
@@ -66,6 +105,19 @@ namespace TMD
                     m_TempData = new TempData(base.TempData);
                 }
                 return m_TempData; 
+            }
+        }
+
+        private ViewData m_ViewData;
+        public new ViewData ViewData
+        {
+            get
+            {
+                if (m_ViewData == null)
+                {
+                    m_ViewData = new ViewData(base.ViewData);
+                }
+                return m_ViewData;
             }
         }
     }

@@ -31,9 +31,9 @@
                                 <% } %>
                                 </ul></li>
                             <%} %>
-                            <% if (t.Measurers.Count > 0) { %>
+                            <% if (t.Measurers.Count(m => m.IsSpecified) > 0) { %>
                                 <li><strong>Measurers:</strong><ul>
-                                <% foreach (Measurer m in t.Measurers) { %>
+                                <% foreach (Measurer m in t.Measurers.Where(m => m.IsSpecified)) { %>
                                     <li><%: m.FirstName %> <%: m.LastName %></li>
                                 <% } %>
                                 </ul></li>

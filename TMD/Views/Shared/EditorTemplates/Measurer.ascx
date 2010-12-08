@@ -1,4 +1,7 @@
-﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<String>" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Measurer>" %>
+<%@ Import Namespace="TMD.Model.Trips" %>
+
+
 <div class="field">
     <% if (!ViewData.ContainsKey("label")) { %>
         <%= Html.LabelFor(m => m)%>

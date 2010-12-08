@@ -13,6 +13,8 @@ using TMD.Controllers;
 using StructureMap;
 using TMD.Infrastructure.Repositories;
 using TMD.Infrastructure;
+using AutoMapper;
+using TMD.Mappings;
 
 namespace TMD
 {
@@ -29,12 +31,12 @@ namespace TMD
                 new { id = @"\d+" });
             routes.MapRoute("Default", "{controller}/{action}",
                 new { controller = "Main", action = "Index" });
-            routes.MapRoute("SiteVisits", "trip/{tripdId}/sitevisit/{siteVisitId}/{action}",
-                new { controller = "Trip", tripId = 0, siteVisitId = 0, action = "Index" });
-            routes.MapRoute("SubsiteVisits", "trip/{tripdId}/sitevisit/{siteVisitId}/subsitevisits/{subsiteVisitId}/{action}",
-                new { controller = "Trip", tripId = 0, siteVisitId = 0, subsiteVisitId = 0, action = "Index" });
-            routes.MapRoute("TreeMeasurements", "trip/{tripdId}/sitevisit/{siteVisitId}/subsitevisits/{subsiteVisitId}/treemeasurements/{treeMeasurementId}/{action}",
-                new { controller = "Trip", tripId = 0, siteVisitId = 0, subsiteVisitId = 0, treeMeasurementId = 0, action = "Index" });
+            //routes.MapRoute("SiteVisits", "trip/{tripdId}/sitevisit/{siteVisitId}/{action}",
+            //    new { controller = "Trip", tripId = 0, siteVisitId = 0, action = "Index" });
+            //routes.MapRoute("SubsiteVisits", "trip/{tripdId}/sitevisit/{siteVisitId}/subsitevisits/{subsiteVisitId}/{action}",
+            //    new { controller = "Trip", tripId = 0, siteVisitId = 0, subsiteVisitId = 0, action = "Index" });
+            //routes.MapRoute("TreeMeasurements", "trip/{tripdId}/sitevisit/{siteVisitId}/subsitevisits/{subsiteVisitId}/treemeasurements/{treeMeasurementId}/{action}",
+            //    new { controller = "Trip", tripId = 0, siteVisitId = 0, subsiteVisitId = 0, treeMeasurementId = 0, action = "Index" });
             routes.MapRoute("CatchAll", "{*pathInfo}",
                 new { controller = "Error", action = "NotFound" });
         }
@@ -58,6 +60,8 @@ namespace TMD
             
             ModelValidatorProviders.Providers.Clear();
             ModelValidatorProviders.Providers.Add(new NHibernateValidatorModelValidatorProvider());
+
+            Mapper.AddProfile<ImportMappingProfile>();
 
             log4net.Config.XmlConfigurator.Configure();
             ObjectFactory.Initialize(x =>

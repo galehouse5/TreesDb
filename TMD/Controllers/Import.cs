@@ -10,6 +10,8 @@ using TMD.Model;
 using TMD.Model.Trees;
 using TMD.Model.Users;
 using TMD.Model.Extensions;
+using TMD.Model.Validation;
+using AutoMapper;
 
 namespace TMD.Controllers
 {
@@ -34,10 +36,58 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRole.Import)]
+        public ActionResult Start(int id = 0)
+        {
+            if (id == 0)
+            {
+                return View(Model.Trips.Trip.Create());
+            }
+            return View(Repositories.Trips.FindById(id));
+        }
+
+        [HttpPost, AuthorizeUser(Roles = UserRole.Import)]
         public ActionResult Start()
         {
-            return View();
+            Trip t = Model.Trips.Trip.Create();
+            using (UnitOfWork.Begin()) { Repositories.Trips.Save(t); UnitOfWork.Persist(); }
+            return RedirectToAction("Trip", new { id = t.Id });
         }
+
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRole.Import)]
+        public ActionResult Trip(int id)
+        {
+            Model.Trips.Trip t = Repositories.Trips.FindById(id);
+            ImportEditTripModel m = Mapper.Map<Model.Trips.Trip, ImportEditTripModel>(t);
+
+            foreach (var pm in Mapper.FindTypeMapFor<Measurer, ImportEditMeasurerModel>().GetPropertyMaps())
+            {
+                var svr = pm.GetSourceValueResolvers();
+
+
+
+            }
+
+
+            return View(m);
+        }
+
+        //[HttpPost, AuthorizeUser(Roles = UserRole.Import)]
+        //public ActionResult Trip(Trip t)
+        //{
+        //    Trip t = Repositories.Trips.FindById(id);
+        //    if (t.IsValidToPersist())
+        //    {
+
+        //    }
+
+
+        //    t.Validate(
+        //    if (ModelState.IsValid)
+        //    {
+
+        //    }
+        //    return View(t);
+        //}
 
 
         //[DefaultReturnUrl]

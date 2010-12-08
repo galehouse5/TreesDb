@@ -2,7 +2,6 @@
 //using System.Collections.Generic;
 //using System.Linq;
 //using System.Web;
-//using Microsoft.Practices.EnterpriseLibrary.Validation;
 //using System.Web.Mvc;
 //using TMD.Model;
 
@@ -10,6 +9,9 @@
 //{
 //    public static class ValidationExtensions
 //    {
+
+
+
 //        public static void CopyToModelState(this ValidationResults results, ModelStateDictionary modelState)
 //        {
 //            foreach (ValidationResult result in results)

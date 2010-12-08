@@ -9,10 +9,7 @@ namespace TMD
 {
     public static partial class ViewDataKeys
     {
-        public const string RedirectToAction = "redirectToAction";
-        public const string RedirectToController = "redirectToController";
-        public const string RedirectToId = "redirectToId";
-        public const string WidgetOptions = "widgetOptions";
+        public const string JavascriptRequired = "javascriptRequired";
     }
 
     public class ViewData : ViewDataDictionary
@@ -55,33 +52,10 @@ namespace TMD
 
         #endregion
 
-        public string RedirectToAction
+        public bool JavascriptRequired
         {
-            get { return (string)(m_ViewData[ViewDataKeys.RedirectToAction] ?? "Index"); }
-            set { m_ViewData[ViewDataKeys.RedirectToAction] = value; }
-        }
-
-        public string RedirectToController
-        {
-            get { return (string)(m_ViewData[ViewDataKeys.RedirectToController] ?? "Main"); }
-            set { m_ViewData[ViewDataKeys.RedirectToController] = value; }
-        }
-
-        public int RedirectToId
-        {
-            get { return (int)(m_ViewData[ViewDataKeys.RedirectToId] ?? 0); }
-            set { m_ViewData[ViewDataKeys.RedirectToId] = value; }
-        }
-
-        public object WidgetOptions
-        {
-            get { return m_ViewData[ViewDataKeys.WidgetOptions]; }
-            set { m_ViewData[ViewDataKeys.WidgetOptions] = value; }
-        }
-
-        public T GetWidgetOptions<T>()
-        {
-            return (T)WidgetOptions;
+            get { return (bool)(m_ViewData[ViewDataKeys.JavascriptRequired] ?? true); }
+            set { m_ViewData[ViewDataKeys.JavascriptRequired] = value; }
         }
     }
 }

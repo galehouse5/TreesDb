@@ -74,6 +74,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\ValidationMapping.cs" />
     <Compile Include="Model\Locations.cs" />
     <Compile Include="Model\Trees.cs" />
     <Compile Include="Model\Trips.cs" />
@@ -91,6 +92,10 @@
     <ProjectReference Include="..\TMD.Model\TMD.Model.csproj">
       <Project>{82C94CBA-58DA-46EA-A3F6-9786EB32CC17}</Project>
       <Name>TMD.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TMD\TMD.csproj">
+      <Project>{6DAC2137-FD54-49F4-B204-59784B46F05F}</Project>
+      <Name>TMD</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

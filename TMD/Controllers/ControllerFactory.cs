@@ -20,5 +20,10 @@ namespace TMD
             }
             return t;
         }
+
+        protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)
+        {
+            return base.GetControllerInstance(requestContext, controllerType);
+        }
     }
 }
