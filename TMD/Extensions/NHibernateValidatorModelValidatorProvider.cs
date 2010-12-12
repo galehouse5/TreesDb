@@ -15,7 +15,7 @@ namespace TMD.Extensions
         {
             if (metadata.ContainerType != null)
             {
-                var cv = Validator.GetClassValidator(metadata.ContainerType);
+                var cv = Validator.ClassValidator(metadata.ContainerType);
                 if (cv != null)
                 {
                     yield return new NHibernateValidatorModelValidator(metadata, context, cv);
@@ -26,34 +26,35 @@ namespace TMD.Extensions
 
     public class NHibernateValidatorModelValidator : ModelValidator
     {
-        public NHibernateValidatorModelValidator(ModelMetadata metadata, ControllerContext context, IClassValidator cv)
+        public NHibernateValidatorModelValidator(ModelMetadata metadata, ControllerContext context, ValidatorBase validator)
             : base(metadata, context)
         {
-            ClassValidator = cv;
+            this.Validator = validator;
             PropertyName = metadata.PropertyName;
         }
 
         public string PropertyName { get; private set; }
-        public IClassValidator ClassValidator { get; private set; }
+        public ValidatorBase Validator { get; private set; }
 
         public override IEnumerable<ModelValidationResult> Validate(object container)
         {
-            var ivs = ClassValidator.GetInvalidValues(container, PropertyName);
-            foreach (var iv in ivs)
+            foreach (var error in Validator.Validate(container).Where(ve => ve.PropertyPath == PropertyName))
             {
-                yield return new NHibernateValidatorValidationResult(iv);
+                yield return new ValidationErrorResult(error);
             }
         }
     }
 
-    public class NHibernateValidatorValidationResult : ModelValidationResult
+    public class ValidationErrorResult : ModelValidationResult
     {
-        public NHibernateValidatorValidationResult(InvalidValue iv)
+        public ValidationErrorResult(IValidationError error)
         {
-            InvalidValue = iv;
+            this.Error = error;
             MemberName = string.Empty;
-            Message = iv.Message;
+            Message = error.Message;
         }
+
+        public IValidationError Error { get; private set; }
 
         public InvalidValue InvalidValue { get; private set; }
     }

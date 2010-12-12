@@ -20,6 +20,7 @@ namespace TMD.UnitTests.Application
             Assert.IsFalse(new WildcardPathMatcher("this.*").Matches("thisis.a.property.path"));
             Assert.IsTrue(new WildcardPathMatcher("this.*.a.*.path").Matches("this.is.a.property.path"));
             Assert.IsFalse(new WildcardPathMatcher("this.*.a.*.path").Matches("this.is.a.property.path.too"));
+            Assert.IsTrue(new WildcardPathMatcher("Measurers[0].*").Matches("Measurers[0].LastName"));
         }
 
         [TestMethod]

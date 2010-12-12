@@ -6,7 +6,9 @@
         <title>Trees Database</title>
 	    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" title="no title" charset="utf-8" />	
 	    <link rel="stylesheet" href="/css/plugin.css" type="text/css" media="screen" title="no title" charset="utf-8" />	
-	    <link rel="stylesheet" href="/css/custom.css" type="text/css" media="screen" title="no title" charset="utf-8" />		
+	    <link rel="stylesheet" href="/css/custom.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="/css/custom.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+        <link rel="stylesheet" href="/css/jquery/jquery-ui-1.8.7.custom.css" type="text/css" media="screen" title="no title" charset="utf-8" />		
         <link rel="stylesheet" href="/css/integration.css" type="text/css" media="screen" title="no title" charset="utf-8" />		
 	    <style type="text/css" media="screen"></style>
         <asp:ContentPlaceHolder ID="Styles" runat="server"></asp:ContentPlaceHolder>
@@ -58,10 +60,12 @@
             </div> <!-- #footer -->
 	
         </div> <!-- #wrapper -->
-        <script type="text/javascript" src="/js/jquery/jquery.1.4.2.min.js"></script>
+        <script type="text/javascript" src="/js/jquery/jquery-1.4.4.min.js"></script>
         <script type="text/javascript" src="/js/slate/slate.js"></script>
         <script type="text/javascript" src="/js/slate/slate.portlet.js"></script>
         <script type="text/javascript" src="/js/plugin.js"></script>
+        <script type="text/javascript" src="/js/jquery/jquery-ui-1.8.7.custom.min.js"></script>
+        <script type="text/javascript" src="/js/integration.js"></script>
         <script type="text/javascript" charset="utf-8">
             $(function () {
                 slate.init();

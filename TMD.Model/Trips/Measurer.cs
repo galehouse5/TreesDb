@@ -41,6 +41,27 @@ namespace TMD.Model.Trips
             get { return !string.IsNullOrWhiteSpace(FirstName) || !string.IsNullOrWhiteSpace(LastName); }
         }
 
+        public virtual string ToFormalName()
+        {
+            return !string.IsNullOrWhiteSpace(FirstName) && !string.IsNullOrWhiteSpace(LastName) ?
+                string.Format("{1}, {0}", FirstName, LastName) :
+                string.Empty;
+        }
+
+        public virtual Measurer FromFormalName(string name)
+        {
+            if (!string.IsNullOrWhiteSpace(name))
+            {
+                string[] parts = name.Split(',');
+                if (parts.Length > 1)
+                {
+                    FirstName = parts[1];
+                    LastName = parts[0];
+                }
+            }
+            return this;
+        }
+
         internal static Measurer Create(Trip t)
         {
             return new Measurer

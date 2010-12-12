@@ -19,21 +19,16 @@ namespace TMD.Models
         public Trip LatestTrip { get; set; }
     }
 
-    public class ImportEditMeasurerModel
-    {
-        public int Id { get; private set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-    }
-
     public class ImportEditTripModel
     {
-        public int Id { get; private set; }
+        public int Id { get; set; }
         [DisplayName("Trip name")] public string Name { get; set; }
         [DisplayName("Trip date")] public DateTime? Date { get; set; }
         [DisplayName("Trip website")] public string Website { get; set; }
         [DisplayName("Measurer contact")] public string MeasurerContactInfo { get; set; }
-        [DisplayName("Make contact public")] public string MakeMeasurerContactInfoPublic { get; set; }
-        public IList<ImportEditMeasurerModel> Measurers { get; set; }
+        [DisplayName("Make contact public")] public bool MakeMeasurerContactInfoPublic { get; set; }
+        [DisplayName("First measurer")] public string FirstMeasurer { get; set; }
+        [DisplayName("Second measurer")] public string SecondMeasurer { get; set; }
+        [DisplayName("Third measurer")] public string ThirdMeasurer { get; set; }
     }
 }

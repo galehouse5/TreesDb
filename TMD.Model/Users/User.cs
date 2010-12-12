@@ -11,29 +11,14 @@ using TMD.Model.Extensions;
 
 namespace TMD.Model.Users
 {
-    [Flags]
-    public enum UserRole
-    {
-        None = 0x0,
-        Import = 0x1,
-        Export = 0x2,
-        Admin = 0x4
-    }
-
     [Serializable]
     [DebuggerDisplay("{Email}")]
-    public class User : IEntity
+    public partial class User : IEntity
     {
         protected User()
         { }
 
         public virtual int Id { get; private set; }
-        public virtual UserRole Roles { get; private set; }
-
-        public virtual bool IsInRole(UserRole role)
-        {
-            return (Roles & role) == role;
-        }
 
         private string m_Email;
         [Email(Message = "You must enter a valid email.", Tags = Tag.Screening)]
@@ -228,7 +213,7 @@ namespace TMD.Model.Users
                 ForgottenPasswordAssistanceTokenUsed = null,
                 RecentlyFailedLogonAttempts = 0,
                 LastFailedLogonAttempt = null,
-                Roles = UserRole.Import
+                Roles = UserRoles.Import
             };
         }
     }

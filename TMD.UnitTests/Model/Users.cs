@@ -24,10 +24,10 @@ namespace TMD.UnitTests.Model
         [TestMethod]
         public void ValidatePassword()
         {
-            Assert.AreEqual(3, Password.Validate("<").Length);
-            Assert.AreEqual(2, Password.Validate("a").Length);
-            Assert.AreEqual(1, Password.Validate("aaaaaaaaaa").Length);
-            Assert.AreEqual(0, Password.Validate("aaaaaaaaaaA1!").Length);
+            Assert.AreEqual(3, Password.Validate("<").Count());
+            Assert.AreEqual(2, Password.Validate("a").Count());
+            Assert.AreEqual(1, Password.Validate("aaaaaaaaaa").Count());
+            Assert.AreEqual(0, Password.Validate("aaaaaaaaaaA1!").Count());
         }
 
         [TestMethod]

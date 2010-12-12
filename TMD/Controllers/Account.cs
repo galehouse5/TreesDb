@@ -42,7 +42,7 @@ namespace TMD.Controllers
             }
         }
 
-        public new UserRole Roles { get; set; }
+        public new UserRoles Roles { get; set; }
     }
 
     [CheckBrowserCompatibilityFilter]

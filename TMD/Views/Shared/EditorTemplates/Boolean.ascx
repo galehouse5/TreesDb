@@ -1,12 +1,26 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Boolean>" %>
-<div class="checkbox">
-    <span class="label">&nbsp;</span>
-    <div>
+<div class="field">
+    <% if (!ViewData.ContainsKey("label")) { %>
+        <%= Html.LabelFor(m => m)%>
+    <% } else { %>
+        <label for="<%= Html.GetFullHtmlFieldId<bool, bool>(m => m) %>">
+            <%: ViewData["label"] %>
+            <% if ((bool)(ViewData["required"] ?? false)) { %>
+                <em class="required">*</em>
+            <% } %>
+        </label>
+    <% } %>
+    <div><span class="input">
         <% if (ViewData.ContainsKey("id")) { %>
-            <%= Html.CheckBoxFor(m => m, new { @class = "checkbox", id = ViewData["id"] })%>
+            <%= Html.CheckBoxFor(m => m, new { @class = "text", id = ViewData["id"] })%>
         <% } else { %>
-            <%= Html.CheckBoxFor(m => m, new { @class = "checkbox" }) %>
-        <% } %>
-        &nbsp;&nbsp;<%= MvcHtmlString.Create(Html.LabelFor(m => m).ToString().Replace("<label", "<label style='display: inline;'")) %>
-    </div>
+            <%= Html.CheckBoxFor(m => m, new { @class = "text" })%>
+        <% } %>   
+        <%= Html.ValidationMessageFor(m => m)%>
+    </span></div>
+    <% if (ViewData.ContainsKey("helpText")) { %>
+        <p class="field_help">
+            <%: ViewData["helpText"] %>
+        </p>
+    <% } %>
 </div> <!-- .field -->

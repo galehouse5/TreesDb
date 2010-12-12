@@ -16,7 +16,7 @@ namespace TMD.Models
         public bool IsLoggedOn { get; set; }
         public string Email { get; set; }
         public string Firstname { get; set; }
-        public UserRole Roles { get; set; }
+        public UserRoles Roles { get; set; }
     }
 
     public class AccountLogonModel

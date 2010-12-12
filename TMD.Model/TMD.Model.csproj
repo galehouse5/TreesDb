@@ -52,9 +52,11 @@
     <Compile Include="Extensions\ISpecified.cs" />
     <Compile Include="Photos\Photo.cs" />
     <Compile Include="Photos\SizeNormalizer.cs" />
+    <Compile Include="Users\UserRole.cs" />
     <Compile Include="Validation\BooleanMethodAttribute.cs" />
     <Compile Include="Validation\ContextMethodAttribute.cs" />
     <Compile Include="Validation\Size2Attribute.cs" />
+    <Compile Include="Validation\ValidationError.cs" />
     <Compile Include="Validation\Validator.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="Extensions\Enum.cs" />

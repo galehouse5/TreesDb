@@ -17,11 +17,11 @@ namespace TMD.Controllers
             return PartialView(new ExportMenuWidgetModel
             {
                 IsSelected = isSelected,
-                CanExport = User.IsInRole(Model.Users.UserRole.Export)
+                CanExport = User.IsInRole(Model.Users.UserRoles.Export)
             });
         }
 
-        [DefaultReturnUrl, AuthorizeUser(Roles = UserRole.Export)]
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Export)]
         public ActionResult Index()
         {
             return View();

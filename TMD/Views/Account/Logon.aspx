@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Logon" Language="C#" MasterPageFile="~/Views/Shared/Login.Master"  Inherits="System.Web.Mvc.ViewPage<TMD.Models.AccountLogonModel>" %>
 
 <asp:Content ContentPlaceHolderID="Scripts" runat="server">
-    <script type="text/javascript" src="/js/jquery/jquery.1.4.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery-1.4.4.min.js"></script>
     <script type="text/javascript">
         $(function () {
             $('#login_email').focus();
@@ -50,7 +50,13 @@
                         </span></div>
 				    </div> <!-- .field -->
 
-                    <%= Html.EditorFor(m => m.RememberMe, new { id = "remember" })%>
+                    <div class="checkbox">
+					    <span class="label">&nbsp;</span>
+					    <div class="">
+                            <%= Html.CheckBoxFor(m => m.RememberMe, new { id = "remember" })%>
+                            <label for="remember" style="margin-left: 6px; display: inline;">Remember me on this computer</label>
+                        </div>
+				    </div> <!-- .checkbox -->
 
 				    <div class="field">
 					    <span class="label">&nbsp;</span>

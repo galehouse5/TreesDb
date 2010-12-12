@@ -65,7 +65,7 @@ namespace TMD.Mappings.ValidationMapping
         private string regexEncode(string propertyPath)
         {
             return new StringBuilder(propertyPath)
-                .Replace(".", "\\.").Replace("*", ".+")
+                .Replace(".", "\\.").Replace("[", "\\[").Replace("]", "\\]").Replace("*", ".+")
                 .Insert(0, '^').Append('$')
                 .ToString();
         }

@@ -69,7 +69,7 @@ namespace TMD.Mappings.ValidationMapping
         private string regexEncode(string propertyPath)
         {
             return new StringBuilder(propertyPath)
-                .Replace(".", "\\.").Replace("*", "(.+)")
+                .Replace(".", "\\.").Replace("[", "\\[").Replace("]", "\\]").Replace("*", "(.+)")
                 .Insert(0, '^').Append('$')
                 .ToString();
         }
@@ -106,6 +106,10 @@ namespace TMD.Mappings.ValidationMapping
             if (sourcePropertyPath.Contains("*") && destinationPropertyPath.Contains("*"))
             {
                 return new WildcardPathMapper(sourcePropertyPath, destinationPropertyPath);
+            }
+            if (!string.IsNullOrEmpty(sourcePropertyPath))
+            {
+                return new ConstantPathMapper(destinationPropertyPath);
             }
             return new EmptyPathMapper();       
         }

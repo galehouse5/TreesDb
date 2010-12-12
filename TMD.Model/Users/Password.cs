@@ -175,7 +175,7 @@ namespace TMD.Model.Users
             };
         }
 
-        public static InvalidValue[] Validate(string password)
+        public static IEnumerable<IValidationError> Validate(string password)
         {
             return Password.Create(password, string.Empty).Validate();
         }

@@ -24,51 +24,54 @@ namespace TMD.Controllers
             return PartialView(new ImportMenuWidgetModel
             {
                 IsSelected = isSelected,
-                CanImport = User.IsInRole(UserRole.Import),
+                CanImport = User.IsInRole(UserRoles.Import),
                 LatestTrip = Repositories.Trips.FindLastCreatedByUser(User.Id)
             });
         }
 
-        [DefaultReturnUrl, AuthorizeUser(Roles = UserRole.Import)]
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult History()
         {
             return View(Repositories.Trips.ListCreatedByUser(User.Id));
         }
 
-        [DefaultReturnUrl, AuthorizeUser(Roles = UserRole.Import)]
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult Start(int id = 0)
         {
-            if (id == 0)
-            {
-                return View(Model.Trips.Trip.Create());
-            }
-            return View(Repositories.Trips.FindById(id));
+            Model.Trips.Trip trip = id == 0 ? Model.Trips.Trip.Create() : Repositories.Trips.FindById(id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            return View(trip);
         }
 
-        [HttpPost, AuthorizeUser(Roles = UserRole.Import)]
+        [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult Start()
         {
-            Trip t = Model.Trips.Trip.Create();
-            using (UnitOfWork.Begin()) { Repositories.Trips.Save(t); UnitOfWork.Persist(); }
-            return RedirectToAction("Trip", new { id = t.Id });
+            Trip trip = Model.Trips.Trip.Create();
+            using (UnitOfWork.Begin()) { Repositories.Trips.Save(trip); UnitOfWork.Persist(); }
+            return RedirectToAction("Trip", new { id = trip.Id });
         }
 
-        [DefaultReturnUrl, AuthorizeUser(Roles = UserRole.Import)]
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult Trip(int id)
         {
-            Model.Trips.Trip t = Repositories.Trips.FindById(id);
-            ImportEditTripModel m = Mapper.Map<Model.Trips.Trip, ImportEditTripModel>(t);
+            Model.Trips.Trip trip = Repositories.Trips.FindById(id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            return View(Mapper.Map<Model.Trips.Trip, ImportEditTripModel>(trip));
+        }
 
-            foreach (var pm in Mapper.FindTypeMapFor<Measurer, ImportEditMeasurerModel>().GetPropertyMaps())
+        [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult Trip(ImportEditTripModel model)
+        {
+            Model.Trips.Trip trip = Repositories.Trips.FindById(model.Id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            Mapper.Map<ImportEditTripModel, Model.Trips.Trip>(model, trip);
+            this.ValidateMappedModel<Model.Trips.Trip, ImportEditTripModel>(trip, Tag.Screening, Tag.Persistence);
+            if (!ModelState.IsValid)
             {
-                var svr = pm.GetSourceValueResolvers();
-
-
-
+                return View(model);
             }
-
-
-            return View(m);
+            using (UnitOfWork.Begin()) { Repositories.Trips.Save(trip); UnitOfWork.Persist(); }
+            return RedirectToAction("Sites", new { id = trip.Id });
         }
 
         //[HttpPost, AuthorizeUser(Roles = UserRole.Import)]

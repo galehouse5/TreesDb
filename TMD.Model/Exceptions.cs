@@ -55,14 +55,14 @@ namespace TMD.Model
 
     public class ValidationFailureException : ModelException
     {
-        public ValidationFailureException(object source, InvalidValue[] invalidValues)
+        public ValidationFailureException(object source, IEnumerable<IValidationError> errors)
             : base("Object failed validation.")
         {
             this.Source = source;
-            this.InvalidValues = invalidValues;
+            this.Errors = errors;
         }
 
         public object Source { get; private set; }
-        public InvalidValue[] InvalidValues { get; private set; }
+        public IEnumerable<IValidationError> Errors { get; private set; }
     }
 }

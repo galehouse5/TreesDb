@@ -1,15 +1,15 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<String>" %>
 <div class="field">
-    <% if (!ViewData.ContainsKey("label")) { %>
-        <%= Html.LabelFor(m => m)%>
-    <% } else { %>
-        <label for="<%= ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldName(ExpressionHelper.GetExpressionText(Model)) %>">
+    <label for="<%= Html.GetFullHtmlFieldId<string, string>(m => m) %>">
+        <% if (ViewData.ContainsKey("label")) { %>
             <%: ViewData["label"] %>
-            <% if ((bool)(ViewData["required"] ?? false)) { %>
-                <em class="required">*</em>
-            <% } %>
-        </label>
-    <% } %>
+        <% } else { %>
+            <%= Html.GetLabelInnerText<string, string>(m => m) %>
+        <% } %>
+        <% if ((bool)(ViewData["required"] ?? false)) { %>
+            <em class="required">*</em>
+        <% } %>
+    </label>
     <div><span class="input">
         <% if (ViewData.ContainsKey("rows")) { %>
             <% if (ViewData.ContainsKey("id")) { %>

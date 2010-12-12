@@ -46,11 +46,6 @@ namespace TMD
         public override bool IsEmailVerified { get { return false; } }
         public override bool IsForgottenPasswordAssistanceTokenValid { get { return false; } }
 
-        public override bool IsInRole(UserRole role)
-        {
-            return false;
-        }
-
         public override DateTime LastActivity { get { return DateTime.MinValue; } }
         public override DateTime? LastFailedLogonAttempt { get { return null; } }
         public override DateTime LastLogon { get { return DateTime.MinValue; } }
@@ -74,8 +69,11 @@ namespace TMD
             throw new InvalidEntityOperationException(this);
         }
 
-        public override UserRole Roles { get { return UserRole.None; } }
-
+        protected override UserRoles Roles
+        {
+            get { return base.Roles; }
+            set { base.Roles = UserRoles.None; }
+        }
 
         public override void VerifyEmail(string urlEncodedEmailVerificationToken)
         {
@@ -138,12 +136,12 @@ namespace TMD
 
         public bool IsInRole(string role)
         {
-            UserRole userRole = role.ParseEnum<UserRole>(UserRole.None);
+            UserRoles userRole = role.ParseEnum<UserRoles>(UserRoles.None);
             if (IsAuthenticated)
             {
                 return InternalUser.IsInRole(userRole);
             }
-            return userRole == UserRole.None;
+            return userRole == UserRoles.None;
         }
 
         public string AuthenticationType
