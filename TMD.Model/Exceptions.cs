@@ -55,14 +55,25 @@ namespace TMD.Model
 
     public class ValidationFailureException : ModelException
     {
-        public ValidationFailureException(object source, IEnumerable<IValidationError> errors)
+        public ValidationFailureException(object obj, IEnumerable<IValidationError> errors)
             : base("Object failed validation.")
         {
-            this.Source = source;
+            Object = obj;
             this.Errors = errors;
         }
 
-        public object Source { get; private set; }
+        public object Object { get; private set; }
         public IEnumerable<IValidationError> Errors { get; private set; }
+    }
+
+    public class InvalidFormatException : ModelException
+    {
+        public InvalidFormatException(object obj)
+            : base("Object is improperly formatted.")
+        {
+            Object = obj;
+        }
+
+        public object Object { get; private set; }
     }
 }

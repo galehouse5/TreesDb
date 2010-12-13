@@ -67,6 +67,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
@@ -75,7 +76,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\ValidationMapping.cs" />
+    <Compile Include="Extensions\ImageComparison.cs" />
+    <Compile Include="Extensions\Photo.cs" />
+    <Compile Include="Infrastructure\PhotosRepository.cs" />
     <Compile Include="Model\Locations.cs" />
+    <Compile Include="Model\Photos.cs" />
     <Compile Include="Model\Trees.cs" />
     <Compile Include="Model\Trips.cs" />
     <Compile Include="Model\Users.cs" />
@@ -102,6 +107,20 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Photos\Original.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Photos\MapSquare.jpg" />
+    <EmbeddedResource Include="Photos\Medium.jpg" />
+    <EmbeddedResource Include="Photos\MiniMapSquare.jpg" />
+    <EmbeddedResource Include="Photos\MiniSquare.jpg" />
+    <EmbeddedResource Include="Photos\Small.jpg" />
+    <EmbeddedResource Include="Photos\Square.jpg" />
+    <EmbeddedResource Include="Photos\Thumbnail.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

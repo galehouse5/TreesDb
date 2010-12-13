@@ -19,7 +19,7 @@ namespace TMD.Model
     public abstract class UserCreatedEntityBase : IEntity
     {
         protected UserCreatedEntityBase()
-            : this(false)
+            : this(true)
         { }
 
         protected UserCreatedEntityBase(bool recordCreationNow)
@@ -41,7 +41,7 @@ namespace TMD.Model
         public virtual DateTime Created { get; private set; }
         public virtual User Creator { get; private set; }
 
-        public virtual TimeSpan Age
+        public virtual TimeSpan EntityAge
         {
             get { return DateTime.Now.Subtract(Created); }
         }

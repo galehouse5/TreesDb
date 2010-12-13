@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="Registry.cs" />
     <Compile Include="Repositories\LocationRepository.cs" />
+    <Compile Include="Repositories\PhotoRepository.cs" />
     <Compile Include="Repositories\RepositoryRegistry.cs" />
     <Compile Include="Repositories\RepositorySettings.cs" />
     <Compile Include="Repositories\TreeRepository.cs" />
@@ -90,11 +91,6 @@
     <Compile Include="StringComparison\StringComparisonService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Mappings\Trees.hbm.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\TMD.Model\TMD.Model.csproj">
       <Project>{82C94CBA-58DA-46EA-A3F6-9786EB32CC17}</Project>
       <Name>TMD.Model</Name>
@@ -111,6 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Create.sql" />
+    <EmbeddedResource Include="Mappings\Trees.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Photos.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

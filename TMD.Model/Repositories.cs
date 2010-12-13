@@ -7,6 +7,7 @@ using StructureMap;
 using TMD.Model.Trips;
 using TMD.Model.Locations;
 using TMD.Model.Trees;
+using TMD.Model.Photos;
 
 namespace TMD.Model
 {
@@ -30,6 +31,11 @@ namespace TMD.Model
         public static UserRepository Users
         {
             get { return ObjectFactory.GetInstance<UserRepository>(); }
+        }
+
+        public static IPhotoRepository Photos
+        {
+            get { return ObjectFactory.GetInstance<IPhotoRepository>(); }
         }
     }
 }

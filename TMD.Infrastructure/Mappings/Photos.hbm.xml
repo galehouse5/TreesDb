@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="TMD.Model"
+                   namespace="TMD.Model.Photos" 
+                   schema="Photos">
+  
+  <class name="PhotoStoreBase" table="Stores" abstract="true" >
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <discriminator column="Type"/>
+    <property name="IsActive" />
+    <subclass name="MemoryPhotoStore" discriminator-value="1"></subclass>
+    <subclass name="DiskPhotoStore" discriminator-value="2">
+      <property name="RootPath" />
+    </subclass>
+  </class>
+
+  <class name="Photo" table="Photos">
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
+    <component name="Size">
+      <property name="Height" />
+      <property name="Width" />
+    </component>
+    <property name="Bytes" />
+    <property name="Format" />
+    <many-to-one name="Store" column="StoreId" />    
+  </class>
+  
+</hibernate-mapping>
