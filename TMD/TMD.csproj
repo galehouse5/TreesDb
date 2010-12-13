@@ -102,6 +102,7 @@
     <Compile Include="Controllers\Import.cs" />
     <Compile Include="Controllers\Main.cs" />
     <Compile Include="Controllers\Map.cs" />
+    <Compile Include="Controllers\Photo.cs" />
     <Compile Include="EmailTemplates\PasswordAssistanceEmail.cs" />
     <Compile Include="EmailTemplates\EmailVerificationEmail.cs" />
     <Compile Include="Extensions\DefaultGraphModelBinder.cs" />

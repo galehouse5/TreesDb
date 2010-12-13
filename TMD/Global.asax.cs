@@ -26,6 +26,10 @@ namespace TMD
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute("Photo", "Photos/{id}/{size}",
+                new { controller = "Photo", action = "Index" });
+
             routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}",
                 new { controller = "Main", action = "Index" },
                 new { id = @"\d+" });

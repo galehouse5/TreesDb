@@ -28,7 +28,19 @@
     </component>
     <property name="Bytes" />
     <property name="Format" />
-    <many-to-one name="Store" column="StoreId" />    
+    <many-to-one name="Store" column="StoreId" />
+    <many-to-one name="Link" column="LinkId" cascade="all" />
+  </class>
+
+  <class name="PhotoLinkBase" abstract="true" table="Links">
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <discriminator column="Type"/>
+    <subclass name="PublicPhotoLink" discriminator-value="1"></subclass>
+    <subclass name="TripPhotoLink" discriminator-value="2">
+      <many-to-one name="Trip" column="TripId"></many-to-one>
+    </subclass>
   </class>
   
 </hibernate-mapping>

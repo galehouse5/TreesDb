@@ -55,7 +55,7 @@
     <Compile Include="Photos\Photo.cs" />
     <Compile Include="Photos\PhotoSize.cs" />
     <Compile Include="Photos\PhotoStoreBase.cs" />
-    <Compile Include="Users\UserRole.cs" />
+    <Compile Include="Users\UserRoles.cs" />
     <Compile Include="Validation\BooleanMethodAttribute.cs" />
     <Compile Include="Validation\ContextMethodAttribute.cs" />
     <Compile Include="Validation\Size2Attribute.cs" />

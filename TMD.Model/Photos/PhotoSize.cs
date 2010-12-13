@@ -17,6 +17,7 @@ namespace TMD.Model.Photos
                 case EPhotoSize.Medium: return new MediumPhotoSize();
                 case EPhotoSize.Small: return new SmallPhotoSize();
                 case EPhotoSize.Thumbnail: return new ThumbnailPhotoSize();
+                case EPhotoSize.SquareThumbnail: return new SquareThumbnailPhotoSize();
                 case EPhotoSize.Square: return new SquarePhotoSize();
                 case EPhotoSize.MiniSquare: return new MiniSquarePhotoSize();
                 case EPhotoSize.MapSquare: return new MapSquarePhotoSize();
@@ -34,7 +35,7 @@ namespace TMD.Model.Photos
         public override int MaxWidthOrHeight { get { return int.MaxValue; } }
         public override int BorderWidth { get { return 0; } }
         public override Color BorderColor { get { return Color.White; } }
-        public override Bitmap Normalize(Bitmap photo) { return photo; }
+        public override Bitmap Normalize(Bitmap photo) { return new Bitmap(photo); }
     }
 
     public class MediumPhotoSize : PhotoSizeBase

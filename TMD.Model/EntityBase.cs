@@ -19,7 +19,7 @@ namespace TMD.Model
     public abstract class UserCreatedEntityBase : IEntity
     {
         protected UserCreatedEntityBase()
-            : this(true)
+            : this(false)
         { }
 
         protected UserCreatedEntityBase(bool recordCreationNow)

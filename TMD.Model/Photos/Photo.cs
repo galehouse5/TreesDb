@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 using System.IO;
+using System.Drawing.Imaging;
+using TMD.Model.Users;
 
 namespace TMD.Model.Photos
 {
@@ -26,6 +28,39 @@ namespace TMD.Model.Photos
         public virtual int Bytes { get; private set; }
         public virtual PhotoFormat Format { get; private set; }
 
+        public virtual string ContentType
+        {
+            get
+            {
+                switch (Format)
+                {
+                    case PhotoFormat.Jpeg: return "image/jpeg";
+                    case PhotoFormat.Gif: return "image/gif";
+                    case PhotoFormat.Png: return "image/png";
+                    default: throw new NotImplementedException();
+                }
+            }
+        }
+
+        public virtual ImageFormat ImageFormat
+        {
+            get
+            {
+                switch (Format)
+                {
+                    case PhotoFormat.Jpeg: return ImageFormat.Jpeg;
+                    case PhotoFormat.Gif: return ImageFormat.Gif;
+                    case PhotoFormat.Png: return ImageFormat.Png;
+                    default: throw new NotImplementedException();
+                }
+            }
+        }
+
+        public virtual bool IsAuthorizedToView(User user)
+        {
+            return Link.IsAuthorizedToView(user);
+        }
+
         public virtual Bitmap Get()
         {
             return Store.Retrieve(this);
@@ -33,9 +68,11 @@ namespace TMD.Model.Photos
 
         public virtual Bitmap Get(EPhotoSize size)
         {
-            return new PhotoSizeFactory()
-                .Create(size)
-                .Normalize(Get());
+            using (Bitmap image = Get())
+            {
+                return new PhotoSizeFactory()
+                    .Create(size).Normalize(image);
+            }
         }
 
         public virtual void MigrateStoreTo(PhotoStoreBase store)
@@ -49,7 +86,11 @@ namespace TMD.Model.Photos
 
         public static Photo Create(Bitmap image)
         {
-            var photo = new Photo { Store = Repositories.Photos.FindMemoryPhotoStore() };
+            var photo = (Photo)new Photo 
+            { 
+                Store = Repositories.Photos.FindMemoryPhotoStore(),
+                Link = PublicPhotoLink.Create()
+            }.RecordCreation();
             var info = photo.Store.Store(photo, image);
             photo.Size = info.Size;
             photo.Bytes = info.Bytes;
