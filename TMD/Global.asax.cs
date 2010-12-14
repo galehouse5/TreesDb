@@ -27,8 +27,8 @@ namespace TMD
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("Photo", "Photos/{id}/{size}",
-                new { controller = "Photo", action = "Index" });
+            routes.MapRoute("UploadPhoto", "Photos/{action}", new { controller = "Photo" }, new { action = "UploadFor.+" });
+            routes.MapRoute("ViewPhoto", "Photos/{id}/{size}", new { controller = "Photo", action = "View", size = "Original" });
 
             routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}",
                 new { controller = "Main", action = "Index" },

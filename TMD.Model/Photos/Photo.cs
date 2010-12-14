@@ -61,6 +61,11 @@ namespace TMD.Model.Photos
             return Link.IsAuthorizedToView(user);
         }
 
+        public virtual bool IsAuthorizedToUpload(User user)
+        {
+            return Link.IsAuthorizedToUpload(user);
+        }
+
         public virtual Bitmap Get()
         {
             return Store.Retrieve(this);
@@ -84,7 +89,7 @@ namespace TMD.Model.Photos
             }
         }
 
-        public static Photo Create(Bitmap image)
+        internal static Photo Create(Bitmap image)
         {
             var photo = (Photo)new Photo 
             { 

@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Extensions\ISpecified.cs" />
     <Compile Include="Photos\IPhotoRepository.cs" />
+    <Compile Include="Photos\PhotoFactory.cs" />
     <Compile Include="Photos\PhotoLinkBase.cs" />
     <Compile Include="Photos\Photo.cs" />
     <Compile Include="Photos\PhotoSize.cs" />

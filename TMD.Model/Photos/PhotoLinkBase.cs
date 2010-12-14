@@ -10,7 +10,8 @@ namespace TMD.Model.Photos
     public abstract class PhotoLinkBase : IEntity
     {
         public virtual int Id { get; private set; }
-        public virtual bool IsAuthorizedToView(User user) { return false; } 
+        public virtual bool IsAuthorizedToView(User user) { return false; }
+        public virtual bool IsAuthorizedToUpload(User user) { return false; } 
     }
 
     public class PublicPhotoLink : PhotoLinkBase
@@ -18,7 +19,8 @@ namespace TMD.Model.Photos
         protected PublicPhotoLink()
         { }
 
-        public override bool IsAuthorizedToView(User user) { return true; } 
+        public override bool IsAuthorizedToView(User user) { return true; }
+        public override bool IsAuthorizedToUpload(User user) { return false; }
 
         internal static PublicPhotoLink Create()
         {
@@ -33,6 +35,7 @@ namespace TMD.Model.Photos
 
         public virtual Trip Trip { get; private set; }
         public override bool IsAuthorizedToView(User user) { return user.IsAuthorizedToEdit(Trip); }
+        public override bool IsAuthorizedToUpload(User user) { return user.IsAuthorizedToEdit(Trip); }
 
         internal static TripPhotoLink Create(Trip trip)
         {
