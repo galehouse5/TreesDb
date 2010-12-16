@@ -23,9 +23,13 @@ namespace TMD.Infrastructure.Repositories
             return Registry.Session.Get<Photo>(id);
         }
 
-        public Photo FindByTrip(Trip trip)
+        public IList<Photo> FindByTripId(int tripId)
         {
-            throw new NotImplementedException();
+            return Registry.Session.CreateQuery(@"
+                from Photo p
+                where p.Link.Trip.Id = :tripId")
+                .SetParameter("tripId", tripId)
+                .List<Photo>();
         }
 
         public PhotoStoreBase FindActivePhotoStore()
@@ -39,6 +43,7 @@ namespace TMD.Infrastructure.Repositories
         public void Remove(Photo photo)
         {
             Registry.Session.Delete(photo);
+            Registry.Session.Flush();
             photo.Store.Remove(photo);
         }
 

@@ -13,7 +13,7 @@ namespace TMD.Model.Photos
         void Save(Photo photo);
         void Remove(Photo photo);
         Photo FindById(int id);
-        Photo FindByTrip(Trip trip);
+        IList<Photo> FindByTripId(int tripId);
         PhotoStoreBase FindActivePhotoStore();
         PhotoStoreBase FindMemoryPhotoStore();
     }

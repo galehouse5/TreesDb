@@ -27,7 +27,8 @@ namespace TMD
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("UploadPhoto", "Photos/{action}", new { controller = "Photo" }, new { action = "UploadFor.+" });
+            routes.MapRoute("AddPhoto", "Photos/{action}", new { controller = "Photo" }, new { action = "AddTo.+" });
+            routes.MapRoute("RemovePhoto", "Photos/{id}/Remove", new { controller = "Photo" }, new { action = "Remove" });
             routes.MapRoute("ViewPhoto", "Photos/{id}/{size}", new { controller = "Photo", action = "View", size = "Original" });
 
             routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}",
@@ -65,7 +66,8 @@ namespace TMD
             ModelValidatorProviders.Providers.Clear();
             ModelValidatorProviders.Providers.Add(new NHibernateValidatorModelValidatorProvider());
 
-            Mapper.AddProfile<ImportMappingProfile>();
+            Mapper.AddProfile<ImportMapping>();
+            Mapper.AddProfile<PhotoMapping>();
 
             log4net.Config.XmlConfigurator.Configure();
             ObjectFactory.Initialize(x =>

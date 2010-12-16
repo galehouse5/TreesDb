@@ -113,7 +113,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Mappings\Import.cs" />
+    <Compile Include="Mappings\PhotoMapping.cs" />
+    <Compile Include="Mappings\ImportMapping.cs" />
     <Compile Include="Mappings\ValidationMapper.cs" />
     <Compile Include="Mappings\ValidationMapping\MessageMapper.cs" />
     <Compile Include="Mappings\ValidationMapping\PathMapper.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="Models\Map.cs" />
     <Compile Include="Models\Import.cs" />
     <Compile Include="Models\Main.cs" />
+    <Compile Include="Models\Photo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="TempData.cs" />
@@ -316,12 +318,11 @@
     <Content Include="Views\Map\GoogleMapsScript.ascx" />
     <Content Include="Views\Map\Index.aspx" />
     <Content Include="Views\Map\MenuWidget.ascx" />
+    <Content Include="Views\Photo\ThumbnailGalleryWidget.ascx" />
+    <Content Include="Views\Photo\ThumbnailWidget.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Boolean.ascx" />
     <Content Include="Views\Shared\EditorTemplates\DateTime.ascx" />
     <Content Include="Views\Shared\EditorTemplates\String.ascx" />
-    <Content Include="Views\Trip\Delete.ascx" />
-    <Content Include="Views\Trip\Edit.ascx" />
-    <Content Include="Views\Trip\Widget.ascx" />
     <Content Include="Views\Import\TrunkMeasurementRemover.ascx" />
     <Content Include="Views\Import\SiteVisitEditor.ascx" />
     <Content Include="Views\Import\Finish.aspx" />

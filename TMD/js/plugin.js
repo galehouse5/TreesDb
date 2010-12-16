@@ -85,9 +85,9 @@
     settings: {
       opacity      : .35,
       overlay      : true,
-      loadingImage : './images/loading.gif',
-      closeImage   : './images/closelabel.gif',
-      imageTypes   : [ 'png', 'jpg', 'jpeg', 'gif' ],
+      loadingImage : '/images/loading.gif',
+      closeImage   : '/images/closelabel.gif',
+      imageTypes   : [ 'png', 'jpg', 'jpeg', 'gif', '' ],
       faceboxHtml  : '\
     <div id="facebox" style="display:none;"> \
       <div class="popup"> \
@@ -103,7 +103,7 @@
                 </div> \
                 <div class="footer"> \
                   <a href="#" class="close"> \
-                    <img src="./images/closelabel.gif" title="close" class="close_image" /> \
+                    <img src="/images/closelabel.gif" title="close" class="close_image" /> \
                   </a> \
                 </div> \
               </td> \

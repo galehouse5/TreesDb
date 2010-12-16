@@ -10,8 +10,9 @@ namespace TMD.Model.Photos
     public abstract class PhotoLinkBase : IEntity
     {
         public virtual int Id { get; private set; }
-        public virtual bool IsAuthorizedToView(User user) { return false; }
-        public virtual bool IsAuthorizedToUpload(User user) { return false; } 
+        public virtual bool IsAuthorizedToView(Photo photo, User user) { return false; }
+        public virtual bool IsAuthorizedToAdd(Photo photo, User user) { return false; }
+        public virtual bool IsAuthorizedToRemove(Photo photo, User user) { return false; }
     }
 
     public class PublicPhotoLink : PhotoLinkBase
@@ -19,8 +20,9 @@ namespace TMD.Model.Photos
         protected PublicPhotoLink()
         { }
 
-        public override bool IsAuthorizedToView(User user) { return true; }
-        public override bool IsAuthorizedToUpload(User user) { return false; }
+        public override bool IsAuthorizedToView(Photo photo, User user) { return true; }
+        public override bool IsAuthorizedToAdd(Photo photo, User user) { return false; }
+        public override bool IsAuthorizedToRemove(Photo photo, User user) { return user == photo.Creator; }
 
         internal static PublicPhotoLink Create()
         {
@@ -34,8 +36,9 @@ namespace TMD.Model.Photos
         { }
 
         public virtual Trip Trip { get; private set; }
-        public override bool IsAuthorizedToView(User user) { return user.IsAuthorizedToEdit(Trip); }
-        public override bool IsAuthorizedToUpload(User user) { return user.IsAuthorizedToEdit(Trip); }
+        public override bool IsAuthorizedToView(Photo photo, User user) { return user.IsAuthorizedToEdit(Trip); }
+        public override bool IsAuthorizedToAdd(Photo photo, User user) { return user.IsAuthorizedToEdit(Trip); }
+        public override bool IsAuthorizedToRemove(Photo photo, User user) { return user.IsAuthorizedToEdit(Trip); }
 
         internal static TripPhotoLink Create(Trip trip)
         {

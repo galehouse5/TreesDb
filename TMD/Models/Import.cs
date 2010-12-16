@@ -30,5 +30,6 @@ namespace TMD.Models
         [DisplayName("First measurer")] public string FirstMeasurer { get; set; }
         [DisplayName("Second measurer")] public string SecondMeasurer { get; set; }
         [DisplayName("Third measurer")] public string ThirdMeasurer { get; set; }
+        public IList<PhotoEditModel> Photos { get; set; }
     }
 }

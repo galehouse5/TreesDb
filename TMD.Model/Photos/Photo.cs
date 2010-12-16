@@ -58,12 +58,17 @@ namespace TMD.Model.Photos
 
         public virtual bool IsAuthorizedToView(User user)
         {
-            return Link.IsAuthorizedToView(user);
+            return Link.IsAuthorizedToView(this, user);
         }
 
-        public virtual bool IsAuthorizedToUpload(User user)
+        public virtual bool IsAuthorizedToAdd(User user)
         {
-            return Link.IsAuthorizedToUpload(user);
+            return Link.IsAuthorizedToAdd(this, user);
+        }
+
+        public virtual bool IsAuthorizedToRemove(User user)
+        {
+            return Link.IsAuthorizedToRemove(this, user);
         }
 
         public virtual Bitmap Get()

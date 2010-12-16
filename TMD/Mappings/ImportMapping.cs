@@ -5,10 +5,11 @@ using System.Web;
 using AutoMapper;
 using TMD.Model.Trips;
 using TMD.Models;
+using TMD.Model.Photos;
 
 namespace TMD.Mappings
 {
-    public class ImportMappingProfile : Profile
+    public class ImportMapping : Profile
     {
         protected override void Configure()
         {
@@ -19,6 +20,8 @@ namespace TMD.Mappings
                         m.SecondMeasurer = t.Measurers.Count > 1 ? t.Measurers[1].ToFormalName() : string.Empty;
                         m.ThirdMeasurer = t.Measurers.Count > 2 ? t.Measurers[2].ToFormalName() : string.Empty;
                     });
+            CreateMap<IList<Photo>, ImportEditTripModel>()
+                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => src));
             ValidationMapper.CreateMap<Trip, ImportEditTripModel>()
                 .ForPath("Measurers[0].FirstName", "FirstMeasurer")
                 .ForPath("Measurers[0].LastName", "FirstMeasurer")

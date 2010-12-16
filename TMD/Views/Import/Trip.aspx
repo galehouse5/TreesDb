@@ -30,6 +30,10 @@
                 <%= Html.EditorFor(m => m.SecondMeasurer, new { helpText = "Lastname, Firstname" })%>
                 <%= Html.EditorFor(m => m.ThirdMeasurer, new { helpText = "Lastname, Firstname" })%>
                 <%= Html.EditorFor(m => m.Website)%>
+                <div class="field">
+                    <label>Photos</label>
+                    <div><% Html.RenderAction("ThumbnailGalleryWidget", "Photo", new { model = Model.Photos }); %></div>
+                </div>
                 <div class="buttonrow">
                     <button type="submit" class="btn">Continue</button>
                     <%= Html.ActionLink("Back", "Start", new { Id = Model.Id }, new { @class = "btn btn-orange" }) %>

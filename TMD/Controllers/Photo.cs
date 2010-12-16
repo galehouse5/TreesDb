@@ -10,11 +10,24 @@ using TMD.Model;
 using TMD.Model.Extensions;
 using System.Drawing.Imaging;
 using TMD.Model.Trips;
+using TMD.Models;
 
 namespace TMD.Controllers
 {
     public class PhotoController : ControllerBase
     {
+        [ChildActionOnly]
+        public ActionResult ThumbnailWidget(PhotoEditModel model)
+        {
+            return PartialView(model);
+        }
+
+        [ChildActionOnly]
+        public ActionResult ThumbnailGalleryWidget(IList<PhotoEditModel> model)
+        {
+            return PartialView(model);
+        }
+
         [HttpGet]
         public ActionResult View(int id, string size = "Original")
         {
@@ -30,16 +43,35 @@ namespace TMD.Controllers
         }
 
         [HttpPost]
-        public ActionResult UploadForTrip(int id, HttpPostedFileBase data)
+        public ActionResult Remove(int id)
+        {
+            Photo photo = Repositories.Photos.FindById(id);
+            if (!photo.IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
+            using (UnitOfWork.Begin()) { Repositories.Photos.Remove(photo); UnitOfWork.Persist(); };
+            return PhotoRemove(photo);
+        }
+
+        protected ActionResult PhotoRemove(Photo photo)
+        {
+            return Json(new { Success = true });
+        }
+
+        [HttpPost]
+        public ActionResult AddToTrip(int id, HttpPostedFileBase data)
         {
             Trip trip = Repositories.Trips.FindById(id);
             using (Bitmap image = new Bitmap(data.InputStream))
             {
                 var photo = new PhotoFactory().CreateForTrip(trip, image);
-                if (!photo.IsAuthorizedToUpload(User)) { return new UnauthorizedResult(); }
+                if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                 using (UnitOfWork.Begin()) { Repositories.Photos.Save(photo); UnitOfWork.Persist(); }
-                return Json(new { id = photo.Id });
+                return PhotoAdded(photo);
             }
+        }
+
+        protected ActionResult PhotoAdded(Photo photo)
+        {
+            return Json(new { Success = true, Id = photo.Id });
         }
     }
 }

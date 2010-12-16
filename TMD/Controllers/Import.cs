@@ -12,6 +12,7 @@ using TMD.Model.Users;
 using TMD.Model.Extensions;
 using TMD.Model.Validation;
 using AutoMapper;
+using TMD.Model.Photos;
 
 namespace TMD.Controllers
 {
@@ -56,7 +57,10 @@ namespace TMD.Controllers
         {
             Model.Trips.Trip trip = Repositories.Trips.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            return View(Mapper.Map<Model.Trips.Trip, ImportEditTripModel>(trip));
+            var model = new ImportEditTripModel(); 
+            Mapper.Map<Model.Trips.Trip, ImportEditTripModel>(trip, model);
+            Mapper.Map<IList<Photo>, ImportEditTripModel>(Repositories.Photos.FindByTripId(trip.Id), model);
+            return View(model);
         }
 
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
