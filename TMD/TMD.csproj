@@ -220,6 +220,7 @@
     <Content Include="images\tipsy.gif" />
     <Content Include="images\title.png" />
     <Content Include="images\white oak in fog.jpg" />
+    <Content Include="js\gallery.js" />
     <Content Include="js\integration.js" />
     <Content Include="js\jquery\facebox.js" />
     <Content Include="js\jquery\jquery-1.4.4.min.js" />
@@ -318,7 +319,6 @@
     <Content Include="Views\Map\GoogleMapsScript.ascx" />
     <Content Include="Views\Map\Index.aspx" />
     <Content Include="Views\Map\MenuWidget.ascx" />
-    <Content Include="Views\Photo\ThumbnailGalleryWidget.ascx" />
     <Content Include="Views\Photo\ThumbnailWidget.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Boolean.ascx" />
     <Content Include="Views\Shared\EditorTemplates\DateTime.ascx" />

@@ -22,12 +22,6 @@ namespace TMD.Controllers
             return PartialView(model);
         }
 
-        [ChildActionOnly]
-        public ActionResult ThumbnailGalleryWidget(IList<PhotoEditModel> model)
-        {
-            return PartialView(model);
-        }
-
         [HttpGet]
         public ActionResult View(int id, string size = "Original")
         {

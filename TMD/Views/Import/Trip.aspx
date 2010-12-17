@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="Import Trip" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="ViewPageBase<ImportEditTripModel>" %>
 <%@ Import Namespace="TMD.Model.Trips" %>
 
+<asp:Content ContentPlaceHolderID="Scripts" runat="server">
+    
+
+</asp:Content>
+
 <asp:Content ContentPlaceHolderID="Content" runat="server">
     <div class="portlet x2">
         <div class="portlet-header">
@@ -32,7 +37,20 @@
                 <%= Html.EditorFor(m => m.Website)%>
                 <div class="field">
                     <label>Photos</label>
-                    <div><% Html.RenderAction("ThumbnailGalleryWidget", "Photo", new { model = Model.Photos }); %></div>
+                    <div>
+                        <ul class="gallery">
+                            <% foreach(var photo in Model.Photos) { %>
+                                <li>
+                                    <% Html.RenderAction("ThumbnailWidget", "Photo", new { model = photo }); %>
+                                </li>
+                            <% } %>
+                            <li>
+                                <div class="actions" style="display: block;">
+                                    <%= Html.ActionLink("Add", "AddToTrip", "Photo", new { Id = Model.Id }, new { @class = "btn btn-small add" })%>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="buttonrow">
                     <button type="submit" class="btn">Continue</button>
