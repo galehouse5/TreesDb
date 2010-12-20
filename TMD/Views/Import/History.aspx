@@ -38,7 +38,7 @@
                                 <% } %>
                                 </ul></li>
                             <%  } %>
-                            <li><strong>Import started:</strong> <%= Html.DisplayFor(m => m[Model.IndexOf(t)].Age, "FriendlyPastTimeSpan") %></li>
+                            <li><strong>Import started:</strong> <%= Html.DisplayFor(m => m[Model.IndexOf(t)].EntityAge, "FriendlyPastTimeSpan") %></li>
                         </ul>
 			        </div>
 		        </div>

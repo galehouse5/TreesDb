@@ -96,7 +96,7 @@ namespace TMD.UnitTests.Model
             ssv1.Name = "subsite visit 1 name";
             ssv1.OwnershipContactInfo = "subsite visit 1 ownership contact info";
             ssv1.OwnershipType = "subsite visit 1 ownership type";
-            ssv1.State = Repositories.Locations.FindStateByCountryAndStateCodes("US", "OH");
+            ssv1.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
             SubsiteVisit ssv2 = sv2.AddSubsiteVisit();
             ssv2.Comments = "subsite visit 2 comments";
             ssv2.Country = Repositories.Locations.FindCountryByCode("US");
@@ -104,7 +104,7 @@ namespace TMD.UnitTests.Model
             ssv2.Name = "subsite visit 2 name";
             ssv2.OwnershipContactInfo = "subsite visit 2 ownership contact info";
             ssv2.OwnershipType = "subsite visit 2 ownership type";
-            ssv2.State = Repositories.Locations.FindStateByCountryAndStateCodes("US", "OH");
+            ssv2.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
             
             using (UnitOfWork.Begin())
             {
@@ -154,7 +154,7 @@ namespace TMD.UnitTests.Model
             ssv1.Name = "subsite visit 1 name";
             ssv1.OwnershipContactInfo = "subsite visit 1 ownership contact info";
             ssv1.OwnershipType = "subsite visit 1 ownership type";
-            ssv1.State = Repositories.Locations.FindStateByCountryAndStateCodes("US", "OH");
+            ssv1.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
             SubsiteVisit ssv2 = sv2.AddSubsiteVisit();
             ssv2.Comments = "subsite visit 2 comments";
             ssv2.Country = Repositories.Locations.FindCountryByCode("US");
@@ -162,7 +162,7 @@ namespace TMD.UnitTests.Model
             ssv2.Name = "subsite visit 2 name";
             ssv2.OwnershipContactInfo = "subsite visit 2 ownership contact info";
             ssv2.OwnershipType = "subsite visit 2 ownership type";
-            ssv2.State = Repositories.Locations.FindStateByCountryAndStateCodes("US", "OH");
+            ssv2.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
 
             TreeMeasurementBase tm1 = ssv2.AddSingleTrunkTreeMeasurement();
             tm1.Age = 10;

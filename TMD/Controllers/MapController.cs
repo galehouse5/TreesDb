@@ -28,6 +28,7 @@ namespace TMD.Controllers
         [DefaultReturnUrl]
         public ActionResult Index()
         {
+            ViewData.JavascriptRequired = true;
             return View();
         }
     }

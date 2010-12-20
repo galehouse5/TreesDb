@@ -1,15 +1,15 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Boolean>" %>
 <div class="field">
-    <% if (!ViewData.ContainsKey("label")) { %>
-        <%= Html.LabelFor(m => m)%>
-    <% } else { %>
-        <label for="<%= Html.GetFullHtmlFieldId<bool, bool>(m => m) %>">
+    <label for="<%= Html.GetFullHtmlFieldId<bool, bool>(m => m) %>">
+        <% if (ViewData.ContainsKey("label")) { %>
             <%: ViewData["label"] %>
-            <% if ((bool)(ViewData["required"] ?? false)) { %>
-                <em class="required">*</em>
-            <% } %>
-        </label>
-    <% } %>
+        <% } else { %>
+            <%= Html.GetLabelInnerText<bool, bool>(m => m)%>
+        <% } %>
+        <% if ((bool)(ViewData["required"] ?? false)) { %>
+            <em class="required">*</em>
+        <% } %>
+    </label>
     <div><span class="input">
         <% if (ViewData.ContainsKey("id")) { %>
             <%= Html.CheckBoxFor(m => m, new { @class = "text", id = ViewData["id"] })%>

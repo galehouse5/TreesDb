@@ -7,9 +7,11 @@ namespace TMD.Model.Locations
 {
     public interface ILocationRepository
     {
-        State FindStateByCountryAndStateCodes(string countryCode, string stateCode);
         Country FindCountryByCode(string code);
-        IList<State> FindStatesByCountryCode(string code);
         IList<Country> FindAllCountries();
+        IList<State> FindAllStates();
+        State FindStateById(int id);
+        State FindStateByCountryAndStateCode(string countryCode, string stateCode);
+        IList<State> FindStatesByCountryCode(string code);
     }
 }

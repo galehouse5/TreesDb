@@ -36,8 +36,7 @@ namespace TMD.Model.Trips
         }
 
         private Coordinates m_Coordinates;
-        [Valid]
-        [Specified(Message = "You must specify coordinates for this subsite, its containing site, or any contained measurement.", Tags = Tag.Finalization)]
+        [Valid, Specified(Message = "You must specify coordinates for this subsite, its containing site, or any contained measurement.", Tags = Tag.Finalization)]
         public virtual Coordinates Coordinates
         {
             get

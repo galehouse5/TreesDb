@@ -54,7 +54,7 @@ namespace TMD
 
         public bool JavascriptRequired
         {
-            get { return (bool)(m_ViewData[ViewDataKeys.JavascriptRequired] ?? true); }
+            get { return (bool)(m_ViewData[ViewDataKeys.JavascriptRequired] ?? false); }
             set { m_ViewData[ViewDataKeys.JavascriptRequired] = value; }
         }
     }

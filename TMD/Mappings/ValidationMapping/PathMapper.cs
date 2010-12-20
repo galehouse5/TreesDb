@@ -80,6 +80,10 @@ namespace TMD.Mappings.ValidationMapping
             int partIndex = 1;
             foreach (Group group in m_SourcePropertyPathMatcher.Match(sourcePropertyPath).Groups)
             {
+                if (partIndex >= m_DestinationPropertyPathParts.Length)
+                {
+                    break;
+                }
                 if (group.Value != sourcePropertyPath)
                 {
                     destinationPath.Append(group.Value);

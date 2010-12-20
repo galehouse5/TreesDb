@@ -1,49 +1,29 @@
 ﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" MasterPageFile="~/Views/Shared/Site.Master" %>
 
-<asp:Content ContentPlaceHolderID="HeadContent" runat="server">
-<link type="text/css" rel="stylesheet" href="/Styles/Import.css" />
-<link type="text/css" rel="stylesheet" href="/Styles/Trip.css" />
-<script type="text/javascript" src="/Scripts/Trip/Trip.js" />
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="/Scripts/ValueObjectService.js"></script>
-<script type="text/javascript" src="/Scripts/LocationsService.js"></script>
-<script type="text/javascript" src="/Scripts/Import/Initialize.js"></script>
-<script type="text/javascript" src="/Scripts/Import/SiteVisitEditor.js"></script>
-<script type="text/javascript" src="/Scripts/Import/SubsiteVisitEditor.js"></script>
-<script type="text/javascript" src="/Scripts/Import/SingleTrunkTreeMeasurementEditor.js"></script>
-<script type="text/javascript" src="/Scripts/Import/MultiTrunkTreeMeasurementEditor.js"></script>
-<script type="text/javascript" src="/Scripts/Import/TrunkMeasurementEditor.js"></script>
-<script type="text/javascript" src="/Scripts/Import/CoordinatePicker.js"></script>
-<%= Html.GoogleMapsApiV3ScriptReference() %>
-<script type="text/javascript" src="/Scripts/GeocoderService.js"></script>
-<script type="text/javascript" src="/Scripts/MapMarkerService.js"></script>
-<asp:ContentPlaceHolder ID="HeadContent" runat="server" ></asp:ContentPlaceHolder>
+<asp:Content ContentPlaceHolderID="Content" runat="server">
+    <div class="portlet x2">
+        <div class="portlet-header">
+            <h4>Steps</h4>
+        </div>
+        <div class="portlet-content">
+            <asp:ContentPlaceHolder ID="Steps" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="portlet x10">
+        <div class="portlet-header">
+            <asp:ContentPlaceHolder ID="StepHeader" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="portlet-content">
+            <asp:ContentPlaceHolder ID="StepContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
 </asp:Content>
 
-<asp:Content ContentPlaceHolderID="MainContent" runat="server">
-<div id="ImportStep" class="EmphasizeContent">
-    <asp:ContentPlaceHolder ID="StepContent" runat="server"></asp:ContentPlaceHolder>
-</div>
-<div class="ui-helper-clearfix"></div>
-<div class="ImportNavigation">
-    <div class="ImportNavigationMiddle">
-        <% Html.RenderPartial("ImportSteps"); %>
-    </div>
-    <div class="ImportNavigationLeft">
-        <asp:ContentPlaceHolder ID="LeftNavigationContent" runat="server"></asp:ContentPlaceHolder>
-    </div>
-    <div class="ImportNavigationRight">
-        <asp:ContentPlaceHolder ID="RightNavigationContent" runat="server"></asp:ContentPlaceHolder>
-    </div>
-    <div class="ui-helper-clearfix"></div>
-</div>
+<asp:Content ContentPlaceHolderID="Scripts" runat="server">
+    <script type="text/javascript" src="/js/Import.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            Import.init();
+        });
+    </script>
 </asp:Content>

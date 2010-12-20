@@ -5,6 +5,7 @@ using System.Web;
 using System.Reflection;
 using TMD.Mappings.ValidationMapping;
 using TMD.Model.Validation;
+using System.Diagnostics;
 
 namespace TMD.Mappings
 {
@@ -54,7 +55,7 @@ namespace TMD.Mappings
         public ValidationMappingExpression IgnorePath(string sourcePath)
         {
             Paths.Add(new Tuple<IPathMatcher, IPathMapper>(
-                new NeverPathMatcher(), 
+                new PathMatcherFactory().Create(sourcePath), 
                 new EmptyPathMapper()));
             return this;
         }
@@ -78,6 +79,7 @@ namespace TMD.Mappings
         }
     }
 
+    [DebuggerDisplay("{PropertyPath}[{Message}]")]
     public class MappedValidationError : IValidationError
     {
         internal MappedValidationError(IValidationError error)

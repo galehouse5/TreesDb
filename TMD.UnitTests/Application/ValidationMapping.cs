@@ -47,6 +47,8 @@ namespace TMD.UnitTests.Application
             Assert.AreNotEqual("this.is.a.property.path", new WildcardPathMapper("*.path", "*.path.too").Map("this.is.a.property.path"));
             Assert.AreEqual("that.is.a.property.path", new WildcardPathMapper("this.*", "that.*").Map("this.is.a.property.path"));
             Assert.AreNotEqual("this.is.a.property.path", new WildcardPathMapper("this.*", "that.*").Map("this.is.a.property.path"));
+            Assert.AreEqual("that.is.a.property", new WildcardPathMapper("this.*.property.*", "that.*.property").Map("this.is.a.property.path"));
+            Assert.AreNotEqual("this.is.a.property", new WildcardPathMapper("this.*.property.*", "that.*.property").Map("this.is.a.property.path"));
         }
 
         [TestMethod]

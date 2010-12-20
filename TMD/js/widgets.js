@@ -71,3 +71,38 @@
 	};
 
 })(jQuery);
+
+
+(function($) {
+    $.fn.gallery = function(options) {
+        var defaults = {};
+        var options = $.extend(defaults, options);
+        return this.each(function() {
+            var gallery = $(this);
+
+            gallery.find('a.delete').live('click', function (event) {
+                var anchor = $(this);
+                $.ajax({ type: "POST", url: anchor.attr('href'),
+                    success: function (response) {
+                        if (response.Success) {
+                            anchor.closest('li').remove();
+                        }
+                    }
+                });
+                event.preventDefault();
+            });
+
+            gallery.find('a.add').each(function () {
+                var anchor = $(this);
+                upclick({
+                    element: anchor[0],
+                    action: anchor.attr('href'),
+                    dataname: 'data',
+                    oncomplete: function(response_data) { alert('complete'); alert(response_data); },
+                    onstart: function(filename) { alert('start'); alert('Start upload: ' + filename); }
+                });
+            });
+
+        });
+    };
+})(jQuery);

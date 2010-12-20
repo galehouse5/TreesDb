@@ -15,5 +15,7 @@
 .portlet-header.entity-header .actions { float: right; margin-right: 15px;  }
 
 .portlet-header.trip-header {  background-image: url(/images/icons/Trip32.png); }
+.portlet-header.site-header {  background-image: url(/images/icons/Site32.png); }
+.portlet-header.subsite-header {  background-image: url(/images/icons/Subsite32.png); }
 
 table.ui-datepicker-calendar thead tr th { background-color: #FFFFFF !important; color: #000000 !important;  }

@@ -35,9 +35,9 @@ namespace TMD.UnitTests.Model
         [TestMethod]
         public void FindStateByCountryCodeAndCode()
         {
-            State oh = Repositories.Locations.FindStateByCountryAndStateCodes("US", "OH");
+            State oh = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
             Assert.IsNotNull(oh);
-            State io = Repositories.Locations.FindStateByCountryAndStateCodes("US", "IO");
+            State io = Repositories.Locations.FindStateByCountryAndStateCode("US", "IO");
             Assert.IsNull(io);
         }
 

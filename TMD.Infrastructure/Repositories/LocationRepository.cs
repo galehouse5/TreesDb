@@ -11,59 +11,53 @@ namespace TMD.Infrastructure.Repositories
     {
         public Country FindCountryByCode(string code)
         {
-            using (ISession session = Registry.SessionFactory.OpenSession())
-            {
-                return session.CreateQuery(@"
-                    from Country c 
-                    where c.DoubleLetterCode = :code or c.TripleLetterCode = :code or c.Name = :code")
-                    .SetParameter("code", code)
-                    .SetCacheable(true)
-                    .UniqueResult<Country>();
-            }
-        }
-
-        public IList<State> FindStatesByCountryCode(string code)
-        {
-            using (ISession session = Registry.SessionFactory.OpenSession())
-            {
-                return session.CreateQuery(@"
-                    from State s 
-                    inner join fetch s.Country c
-                    where c.DoubleLetterCode = :code or c.TripleLetterCode = :code or c.Name = :code")
-                    .SetParameter("code", code)
-                    .SetCacheable(true)
-                    .List<State>();
-            }
+            return Registry.Session.CreateQuery(@"
+                from Country c 
+                where c.DoubleLetterCode = :code or c.TripleLetterCode = :code or c.Name = :code")
+                .SetParameter("code", code)
+                .UniqueResult<Country>();
         }
 
         public IList<Country> FindAllCountries()
         {
-            using (ISession session = Registry.SessionFactory.OpenSession())
-            {
-                return session.CreateQuery("from Country c")
-                    .SetCacheable(true)
-                    .List<Country>();
-            }
+            return Registry.Session.CreateCriteria<Country>().List<Country>();
         }
 
-        public State FindStateByCountryAndStateCodes(string countryCode, string stateCode)
+        public IList<State> FindAllStates()
+        {
+            return Registry.Session.CreateCriteria<State>().List<State>();
+        }
+
+        public State FindStateById(int id)
+        {
+            return Registry.Session.Get<State>(id);
+        }
+
+        public State FindStateByCountryAndStateCode(string countryCode, string stateCode)
         {
             if (string.IsNullOrWhiteSpace(stateCode))
             {
                 return null;
             }
-            using (ISession session = Registry.SessionFactory.OpenSession())
-            {
-                return session.CreateQuery(@"
-                    from State s 
-                    inner join fetch s.Country c
-                    where (s.DoubleLetterCode = :stateCode or s.TripleLetterCode = :stateCode or s.Name = :stateCode)
-                        and (c.DoubleLetterCode = :countryCode or c.TripleLetterCode = :countryCode or c.Name = :countryCode)")
-                    .SetParameter("stateCode", stateCode)
-                    .SetParameter("countryCode", countryCode)
-                    .SetCacheable(true)
-                    .UniqueResult<State>();
-            }
+            return Registry.Session.CreateQuery(@"
+                from State s 
+                inner join fetch s.Country c
+                where (s.DoubleLetterCode = :stateCode or s.TripleLetterCode = :stateCode or s.Name = :stateCode)
+                    and (c.DoubleLetterCode = :countryCode or c.TripleLetterCode = :countryCode or c.Name = :countryCode)")
+                .SetParameter("stateCode", stateCode)
+                .SetParameter("countryCode", countryCode)
+                .UniqueResult<State>();
+        }
+
+        public IList<State> FindStatesByCountryCode(string code)
+        {
+            return Registry.Session.CreateQuery(@"
+                from State s 
+                inner join fetch s.Country c
+                where c.DoubleLetterCode = :code or c.TripleLetterCode = :code or c.Name = :code")
+                .SetParameter("code", code)
+                .SetCacheable(true)
+                .List<State>();
         }
     }
 }

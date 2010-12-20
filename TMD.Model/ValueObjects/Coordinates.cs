@@ -19,7 +19,7 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class Coordinates : ISpecified 
+    public class Coordinates : ISpecified, ICloneable
     {
         private Coordinates()
         { }
@@ -49,7 +49,7 @@ namespace TMD.Model
             {
                 return string.Format("{0}, {1}", Latitude, Longitude);
             }
-            return "not specified";
+            return string.Empty;
         }
 
         public string ToString(CoordinatesFormat format)
@@ -58,7 +58,7 @@ namespace TMD.Model
             {
                 return string.Format("{0}, {1}", Latitude.ToString(format), Longitude.ToString(format));
             }
-            return "not specified";
+            return string.Empty;
         }
 
         public static bool operator ==(Coordinates c1, Coordinates c2)
@@ -131,12 +131,16 @@ namespace TMD.Model
 
         public static Coordinates Create(string s)
         {
-            string[] latLng = s.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-            Latitude latitude = Latitude.Create(latLng[0]);
-            Longitude longitude;
-            if (latLng.Length > 1)
+            if (string.IsNullOrWhiteSpace(s))
             {
-                longitude = Longitude.Create(latLng[1]);
+                return Null();
+            }
+            string[] parts = s.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+            Latitude latitude = Latitude.Create(parts[0]);
+            Longitude longitude;
+            if (parts.Length > 1)
+            {
+                longitude = Longitude.Create(parts[1]);
             }
             else
             {
@@ -166,10 +170,19 @@ namespace TMD.Model
         }
 
         #endregion
+
+        public object Clone()
+        {
+            return new Coordinates
+            {
+                Latitude = Latitude.Clone() as Latitude,
+                Longitude = Longitude.Clone() as Longitude
+            };
+        }
     }
 
     [Serializable]
-    public class Latitude : ISpecified
+    public class Latitude : ISpecified, ICloneable
     {
         private Latitude()
         { }
@@ -363,10 +376,20 @@ namespace TMD.Model
                 RawValue = string.Empty
             };
         }
+
+        public object Clone()
+        {
+            return new Latitude
+            {
+                InputFormat = this.InputFormat,
+                TotalDegrees = this.TotalDegrees,
+                RawValue = this.RawValue
+            };
+        }
     }
 
     [Serializable]
-    public class Longitude : ISpecified
+    public class Longitude : ISpecified, ICloneable
     {
         private Longitude()
         { }
@@ -558,6 +581,16 @@ namespace TMD.Model
                 InputFormat = CoordinatesFormat.Unspecified,
                 TotalDegrees = 0f,
                 RawValue = string.Empty
+            };
+        }
+
+        public object Clone()
+        {
+            return new Longitude
+            {
+                InputFormat = this.InputFormat,
+                TotalDegrees = this.TotalDegrees,
+                RawValue = this.RawValue
             };
         }
     }

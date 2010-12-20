@@ -13,6 +13,7 @@ using TMD.Model.Extensions;
 using TMD.Model.Validation;
 using AutoMapper;
 using TMD.Model.Photos;
+using System.Diagnostics;
 
 namespace TMD.Controllers
 {
@@ -57,25 +58,179 @@ namespace TMD.Controllers
         {
             Model.Trips.Trip trip = Repositories.Trips.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            var model = new ImportEditTripModel(); 
-            Mapper.Map<Model.Trips.Trip, ImportEditTripModel>(trip, model);
-            Mapper.Map<IList<Photo>, ImportEditTripModel>(Repositories.Photos.FindByTripId(trip.Id), model);
+            var model = new ImportTripModel(); 
+            Mapper.Map<Model.Trips.Trip, ImportTripModel>(trip, model);
             return View(model);
         }
 
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
-        public ActionResult Trip(ImportEditTripModel model)
+        public ActionResult Trip(ImportTripModel model)
         {
             Model.Trips.Trip trip = Repositories.Trips.FindById(model.Id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            Mapper.Map<ImportEditTripModel, Model.Trips.Trip>(model, trip);
-            this.ValidateMappedModel<Model.Trips.Trip, ImportEditTripModel>(trip, Tag.Screening, Tag.Persistence);
+            Mapper.Map<ImportTripModel, Model.Trips.Trip>(model, trip);
+            this.ValidateMappedModel<Model.Trips.Trip, ImportTripModel>(trip, Tag.Screening, Tag.Persistence);
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
             using (UnitOfWork.Begin()) { Repositories.Trips.Save(trip); UnitOfWork.Persist(); }
             return RedirectToAction("Sites", new { id = trip.Id });
+        }
+
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult Sites(int id)
+        {
+            Model.Trips.Trip trip = Repositories.Trips.FindById(id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            using (UnitOfWork.Begin())
+            {
+                ensureTripHasASite(trip);
+                ensureTripSitesHaveASubsite(trip);
+                UnitOfWork.Persist();
+            }
+            var model = new ImportSitesModel();
+            Mapper.Map<Model.Trips.Trip, ImportSitesModel>(trip, model);
+            return View(model);
+        }
+
+        [DebuggerDisplay("{Action} {Level} with Id {Id}")]
+        public class InnerAction : IModelBinder
+        {
+            public enum EntityLevel { Unknown, Trip, Site, Subsite, Tree }
+            public enum EntityAction { Unknown, Add, Save, Edit, Remove }
+
+            public int Id { get; private set; }
+            public EntityAction Action { get; private set; }
+            public EntityLevel Level { get; private set; }
+
+            public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+            {
+                string expression = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).AttemptedValue;
+                string[] parts = expression.Split('.');
+                return new InnerAction
+                {
+                    Level = parts[0].ParseEnum(EntityLevel.Unknown),
+                    Id = Convert.ToInt32(parts[1]),
+                    Action = parts[2].ParseEnum(EntityAction.Unknown)
+                };
+            }
+
+            public bool Equals(EntityLevel level, EntityAction action) 
+            { 
+                return this.Level == level && this.Action == action; 
+            }
+        }
+
+        private void ensureTripHasASite(Trip trip)
+        {
+            if (trip.SiteVisits.Count == 0)
+            {
+                trip.AddSiteVisit();
+                Repositories.Trips.Save(trip);
+            }
+        }
+
+        private void ensureTripSitesHaveASubsite(Trip trip)
+        {
+            trip.SiteVisits.ForEach(s =>
+                {
+                    if (s.SubsiteVisits.Count < 1)
+                    {
+                        s.AddSubsiteVisit();
+                        Repositories.Trips.Save(trip);
+                    }
+                });
+        }
+
+        private void ensureSitesAreSaveableAndRemovable(ImportSitesModel model)
+        {
+            if (model.Sites.Count == 1)
+            {
+                model.Sites[0].IsSaveableAndRemovable = false;
+            }
+            else
+            {
+                model.Sites.ForEach(s => s.IsSaveableAndRemovable = true);
+            }
+        }
+
+        private class SitesModelBinder : DefaultModelBinder
+        {
+            public override object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+            {
+                var model = (ImportSitesModel)base.BindModel(controllerContext, bindingContext);
+                Model.Trips.Trip trip = Repositories.Trips.FindById(model.Id);
+                model.Sites.Where(s => !s.IsEditing).ForEach(s =>
+                    {
+                        Mapper.Map<Model.Trips.SiteVisit, ImportSiteModel>(trip.SiteVisits.First(sv => sv.Id == s.Id), s);
+                    });
+                return model;
+            }
+        }
+
+        [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult Sites(
+            [ModelBinder(typeof(SitesModelBinder))] ImportSitesModel model, 
+            [ModelBinder(typeof(InnerAction))] InnerAction innerAction)
+        {
+            Model.Trips.Trip trip = Repositories.Trips.FindById(model.Id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            using (UnitOfWork.Begin())
+            {
+                ensureTripHasASite(trip);
+                ensureTripSitesHaveASubsite(trip);
+                if (innerAction.Equals(InnerAction.EntityLevel.Trip, InnerAction.EntityAction.Save))
+                {
+                    Mapper.Map<ImportSitesModel, Model.Trips.Trip>(model, trip);
+                    this.ValidateMappedModel<Model.Trips.Trip, ImportSitesModel>(trip, Tag.Screening, Tag.Persistence);
+                    if (!ModelState.IsValid) { UnitOfWork.Persist(); return View(model); } 
+                    Repositories.Trips.Save(trip); UnitOfWork.Persist();
+                    return RedirectToAction("Trees", new { id = trip.Id });
+                }
+                if (innerAction.Equals(InnerAction.EntityLevel.Trip, InnerAction.EntityAction.Add))
+                {
+                    var site = trip.AddSiteVisit();
+                    ensureTripSitesHaveASubsite(trip);
+                    Repositories.Trips.Save(trip); UnitOfWork.Persist();
+                    model.Sites.Add(Mapper.Map<Model.Trips.SiteVisit, ImportSiteModel>(site));
+                    ensureSitesAreSaveableAndRemovable(model);
+                    return View(model);
+                }
+                if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Save))
+                {
+                    var siteModel = model.Sites.First(s => s.Id == innerAction.Id);
+                    var site = trip.SiteVisits.First(s => s.Id == innerAction.Id);
+                    Mapper.Map<ImportSiteModel, Model.Trips.SiteVisit>(siteModel, site);
+                    this.ValidateMappedModel<Model.Trips.SiteVisit, ImportSiteModel>(site, string.Format("Sites[{0}].", model.Sites.IndexOf(siteModel)), Tag.Screening, Tag.Persistence);
+                    if (!ModelState.IsValid) { UnitOfWork.Persist(); return View(model); }
+                    Repositories.Trips.Save(trip); UnitOfWork.Persist();
+                    siteModel.IsEditing = false;
+                    return View(model);
+                }
+                if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Remove))
+                {
+                    model.Sites.RemoveAll(s => s.Id == innerAction.Id);
+                    trip.SiteVisits.RemoveAll(s => s.Id == innerAction.Id);
+                    ensureSitesAreSaveableAndRemovable(model);
+                    UnitOfWork.Persist(); return View(model);
+                }
+                if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Edit))
+                {
+                    model.Sites.First(s => s.Id == innerAction.Id).IsEditing = true;
+                    return View(model);
+                }
+                if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Add))
+                {
+                    var siteModel = model.Sites.First(s => s.Id == innerAction.Id);
+                    var site = trip.SiteVisits.First(s => s.Id == innerAction.Id);
+                    var subsite = site.AddSubsiteVisit();
+                    Repositories.Trips.Save(trip); UnitOfWork.Persist();
+                    siteModel.Subsites.Add(Mapper.Map<Model.Trips.SubsiteVisit, ImportSubsiteModel>(subsite));
+                    return View(model);
+                }
+            }
+            throw new NotImplementedException();
         }
 
         //[HttpPost, AuthorizeUser(Roles = UserRole.Import)]

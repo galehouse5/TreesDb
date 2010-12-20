@@ -15,7 +15,7 @@ namespace TMD.Extensions
         {
             foreach (var error in ValidationMapper.Map<TSource, TDestination>(source.Validate()))
             {
-                c.ModelState.AddModelError(error.PropertyPath ?? "_FORM", error.Message);
+                c.ModelState.AddModelError(error.PropertyPath, error.Message);
             }
         }
 
@@ -23,7 +23,23 @@ namespace TMD.Extensions
         {
             foreach (var error in ValidationMapper.Map<TSource, TDestination>(source.Validate(tags)))
             {
-                c.ModelState.AddModelError(error.PropertyPath ?? "_FORM", error.Message);
+                c.ModelState.AddModelError(error.PropertyPath, error.Message);
+            }
+        }
+
+        public static void ValidateMappedModel<TSource, TDestination>(this Controller c, TSource source, string prefix)
+        {
+            foreach (var error in ValidationMapper.Map<TSource, TDestination>(source.Validate()))
+            {
+                c.ModelState.AddModelError(prefix + error.PropertyPath, error.Message);
+            }
+        }
+
+        public static void ValidateMappedModel<TSource, TDestination>(this Controller c, TSource source, string prefix, params Tag[] tags)
+        {
+            foreach (var error in ValidationMapper.Map<TSource, TDestination>(source.Validate(tags)))
+            {
+                c.ModelState.AddModelError(prefix + error.PropertyPath, error.Message);
             }
         }
     }

@@ -50,7 +50,12 @@ namespace TMD.Model.Trips
 
         public virtual Measurer FromFormalName(string name)
         {
-            if (!string.IsNullOrWhiteSpace(name))
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                FirstName = string.Empty;
+                LastName = string.Empty;
+            }
+            else
             {
                 string[] parts = name.Split(',');
                 if (parts.Length > 1)

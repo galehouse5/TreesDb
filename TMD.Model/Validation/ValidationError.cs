@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NHibernate.Validator.Engine;
+using System.Diagnostics;
 
 namespace TMD.Model.Validation
 {
@@ -14,6 +15,7 @@ namespace TMD.Model.Validation
         string Message { get; }
     }
 
+    [DebuggerDisplay("{PropertyPath}[{Message}]")]
     internal class InvalidValueValidationError : IValidationError
     {
         private InvalidValue m_InvalidValue;
