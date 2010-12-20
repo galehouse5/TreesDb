@@ -19,11 +19,4 @@
     </div>
 </asp:Content>
 
-<asp:Content ContentPlaceHolderID="Scripts" runat="server">
-    <script type="text/javascript" src="/js/Import.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            Import.init();
-        });
-    </script>
-</asp:Content>
+<asp:Content ContentPlaceHolderID="Scripts" runat="server"><asp:ContentPlaceHolder ID="Scripts" runat="server"></asp:ContentPlaceHolder></asp:Content>

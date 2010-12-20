@@ -162,9 +162,7 @@ namespace TMD.Controllers
                 var model = (ImportSitesModel)base.BindModel(controllerContext, bindingContext);
                 Model.Trips.Trip trip = Repositories.Trips.FindById(model.Id);
                 model.Sites.Where(s => !s.IsEditing).ForEach(s =>
-                    {
-                        Mapper.Map<Model.Trips.SiteVisit, ImportSiteModel>(trip.SiteVisits.First(sv => sv.Id == s.Id), s);
-                    });
+                    Mapper.Map<Model.Trips.SiteVisit, ImportSiteModel>(trip.SiteVisits.First(sv => sv.Id == s.Id), s));
                 return model;
             }
         }
@@ -195,7 +193,7 @@ namespace TMD.Controllers
                     Repositories.Trips.Save(trip); UnitOfWork.Persist();
                     model.Sites.Add(Mapper.Map<Model.Trips.SiteVisit, ImportSiteModel>(site));
                     ensureSitesAreSaveableAndRemovable(model);
-                    return View(model);
+                    return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", site.Id) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Save))
                 {
@@ -203,22 +201,22 @@ namespace TMD.Controllers
                     var site = trip.SiteVisits.First(s => s.Id == innerAction.Id);
                     Mapper.Map<ImportSiteModel, Model.Trips.SiteVisit>(siteModel, site);
                     this.ValidateMappedModel<Model.Trips.SiteVisit, ImportSiteModel>(site, string.Format("Sites[{0}].", model.Sites.IndexOf(siteModel)), Tag.Screening, Tag.Persistence);
-                    if (!ModelState.IsValid) { UnitOfWork.Persist(); return View(model); }
+                    if (!ModelState.IsValid) { UnitOfWork.Persist(); return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", innerAction.Id) : View(model); }
                     Repositories.Trips.Save(trip); UnitOfWork.Persist();
                     siteModel.IsEditing = false;
-                    return View(model);
+                    return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", innerAction.Id) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Remove))
                 {
                     model.Sites.RemoveAll(s => s.Id == innerAction.Id);
                     trip.SiteVisits.RemoveAll(s => s.Id == innerAction.Id);
                     ensureSitesAreSaveableAndRemovable(model);
-                    UnitOfWork.Persist(); return View(model);
+                    UnitOfWork.Persist(); return Request.IsAjaxRequest() ? (ActionResult)Json(new { Success = true, RemainingSitesSaveableAndRemovable = model.Sites.Count > 1 }) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Edit))
                 {
                     model.Sites.First(s => s.Id == innerAction.Id).IsEditing = true;
-                    return View(model);
+                    return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", innerAction.Id) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Add))
                 {
@@ -228,6 +226,10 @@ namespace TMD.Controllers
                     Repositories.Trips.Save(trip); UnitOfWork.Persist();
                     siteModel.Subsites.Add(Mapper.Map<Model.Trips.SubsiteVisit, ImportSubsiteModel>(subsite));
                     return View(model);
+                }
+                if (innerAction.Equals(InnerAction.EntityLevel.Subsite, InnerAction.EntityAction.Remove))
+                {
+                    //TODO
                 }
             }
             throw new NotImplementedException();

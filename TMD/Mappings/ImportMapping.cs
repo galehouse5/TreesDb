@@ -81,24 +81,22 @@ namespace TMD.Mappings
 
             CreateMap<ImportSitesModel, Trip>()
                 .AfterMap((src, dest) =>
-                    {
-                        src.Sites.ForEach(s => Mapper.Map<ImportSiteModel, Model.Trips.SiteVisit>(s, dest.SiteVisits.First(sv => sv.Id == s.Id)));
-                    });
+                    src.Sites.ForEach(s => Mapper.Map<ImportSiteModel, Model.Trips.SiteVisit>(s, dest.SiteVisits.First(sv => sv.Id == s.Id))));
 
             CreateMap<ImportSiteModel, SiteVisit>()
+                .BeforeMap((src, dest) =>
+                    {
+                        if (src.Subsites.Count == 1)
+                        {
+                            src.Name = src.Subsites[0].Name;
+                            src.Coordinates = src.Subsites[0].Coordinates;
+                            src.Comments = src.Subsites[0].Comments;
+                        }
+                    })
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Coordinates.Create(src.Coordinates)))
                 .ForMember(dest => dest.CoordinatesEntered, opt => opt.MapFrom(src => !string.IsNullOrWhiteSpace(src.Coordinates)))
                 .AfterMap((src, dest) =>
-                {
-                    src.Subsites.ForEach(ss => Mapper.Map<ImportSubsiteModel, Model.Trips.SubsiteVisit>(ss, dest.SubsiteVisits.First(ssv => ssv.Id == ss.Id)));
-                    if (src.Subsites.Count == 1)
-                    {
-                        dest.Name = dest.SubsiteVisits[0].Name;
-                        dest.Coordinates = dest.SubsiteVisits[0].Coordinates.Clone() as Coordinates;
-                        dest.CoordinatesEntered = dest.SubsiteVisits[0].CoordinatesEntered;
-                        dest.Comments = dest.SubsiteVisits[0].Comments;
-                    }
-                });
+                    src.Subsites.ForEach(ss => Mapper.Map<ImportSubsiteModel, Model.Trips.SubsiteVisit>(ss, dest.SubsiteVisits.First(ssv => ssv.Id == ss.Id))));
 
             CreateMap<ImportSubsiteModel, SubsiteVisit>()
                 .ForMember(dest => dest.Country, opt => opt.MapFrom(src => src.State == null ? null : src.State.Country))

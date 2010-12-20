@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ImportSiteModel>" %>
-<div class="portlet x12">        
+<div class="portlet x12 Site">        
     <div class="portlet-header">
         <h4>Enter site</h4>
     </div>
@@ -30,10 +30,10 @@
         <div class="buttonrow">
             <%  %>
             <% if (Model.IsSaveableAndRemovable) { %>
-                <button type="submit" class="btn" name="innerAction" value="Site.<%= Model.Id %>.Save">Save</button>
-                <button type="submit" class="btn btn-grey" name="innerAction" value="Site.<%= Model.Id %>.Remove">Remove</button>
+                <button type="submit" class="btn Save" name="innerAction" value="Site.<%= Model.Id %>.Save">Save</button>
+                <button type="submit" class="btn btn-grey Remove" name="innerAction" value="Site.<%= Model.Id %>.Remove">Remove</button>
             <% } %>
-            <button type="submit" class="btn btn-orange" name="innerAction" value="Site.<%= Model.Id %>.Add">Add subsite</button>
+            <button type="submit" class="btn btn-orange Add" name="innerAction" value="Site.<%= Model.Id %>.Add">Add subsite</button>
         </div>
     </div>
 </div>

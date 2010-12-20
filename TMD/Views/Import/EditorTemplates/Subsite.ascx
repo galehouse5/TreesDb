@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ImportSubsiteModel>" %>
-<div class="portlet x12">        
+<div class="portlet x12 Subsite">        
     <div class="portlet-header">
         <h4>Enter subsite</h4>
     </div>
@@ -14,7 +14,7 @@
         <%= Html.EditorFor(m => m.MakeOwnershipContactInfoPublic)%>
         <%= Html.EditorFor(m => m.Comments, new { rows = 5 })%>
         <div class="buttonrow">
-            <button type="submit" class="btn btn-grey" name="innerAction" value="Subsite.<%= Model.Id %>.Remove">Remove</button>
+            <button type="submit" class="btn btn-grey Remove" name="innerAction" value="Subsite.<%= Model.Id %>.Remove">Remove</button>
         </div>
     </div>
 </div>

@@ -71,7 +71,7 @@
             $(function () {
                 slate.init();
                 slate.portlet.init();
-                integration.init();
+                Integration.Init();
                 <% if (ViewData.JavascriptRequired) { %>
                     $('#javascript-warning').hide();
                     $('.requiresjavascript').show();

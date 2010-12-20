@@ -1,7 +1,7 @@
-var integration = new function () {
+var Integration = new function () {
     var public = {};
 
-    public.init = function () {
+    public.Init = function () {
 
         $('.datepicker').datepicker({
             showOn: 'button',

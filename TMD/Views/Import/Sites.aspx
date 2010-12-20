@@ -16,7 +16,7 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
-    <% using (Html.BeginForm("Sites", "Import", FormMethod.Post, new { @class = "form stn-form " })) { %>
+    <% using (Html.BeginForm("Sites", "Import", FormMethod.Post, new { @class = "form stn-form Sites" })) { %>
         <% for (int i = 0; i < Model.Sites.Count; i++) { %>
             <% if (Model.Sites[i].IsEditing) { %>
                 <%= Html.EditorFor(m => m.Sites[i], "Site") %>
@@ -30,4 +30,11 @@
             <button type="submit" class="btn btn-orange" name="innerAction" value="Trip.<%= Model.Id %>.Add">Add site</button>
         </div>
     <% } %>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="Scripts" runat="server">
+    <script type="text/javascript" src="/js/Import/Sites.js"></script>
+    <script type="text/javascript">
+        $(function () { Import.Init(); });
+    </script>
 </asp:Content>

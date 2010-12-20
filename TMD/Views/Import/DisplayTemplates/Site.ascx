@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ImportSiteModel>" %>
-<div class="portlet x12">        
-    <div class="portlet-header entity-header site-header">
+<div class="portlet x12 Site">        
+    <div class="portlet-header Entity-Header Site-Header">
         <h4><%: Model.Name %></h4>
         <div class="actions">
             <button type="submit" class="btn btn-orange btn-small" name="innerAction" value="Site.<%= Model.Id %>.Edit">Edit</button>

@@ -19,7 +19,7 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class Coordinates : ISpecified, ICloneable
+    public class Coordinates : ISpecified
     {
         private Coordinates()
         { }
@@ -170,19 +170,10 @@ namespace TMD.Model
         }
 
         #endregion
-
-        public object Clone()
-        {
-            return new Coordinates
-            {
-                Latitude = Latitude.Clone() as Latitude,
-                Longitude = Longitude.Clone() as Longitude
-            };
-        }
     }
 
     [Serializable]
-    public class Latitude : ISpecified, ICloneable
+    public class Latitude : ISpecified
     {
         private Latitude()
         { }
@@ -376,20 +367,10 @@ namespace TMD.Model
                 RawValue = string.Empty
             };
         }
-
-        public object Clone()
-        {
-            return new Latitude
-            {
-                InputFormat = this.InputFormat,
-                TotalDegrees = this.TotalDegrees,
-                RawValue = this.RawValue
-            };
-        }
     }
 
     [Serializable]
-    public class Longitude : ISpecified, ICloneable
+    public class Longitude : ISpecified
     {
         private Longitude()
         { }
@@ -581,16 +562,6 @@ namespace TMD.Model
                 InputFormat = CoordinatesFormat.Unspecified,
                 TotalDegrees = 0f,
                 RawValue = string.Empty
-            };
-        }
-
-        public object Clone()
-        {
-            return new Longitude
-            {
-                InputFormat = this.InputFormat,
-                TotalDegrees = this.TotalDegrees,
-                RawValue = this.RawValue
             };
         }
     }

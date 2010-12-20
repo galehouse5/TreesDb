@@ -105,11 +105,12 @@
     <Compile Include="Controllers\PhotoController.cs" />
     <Compile Include="EmailTemplates\PasswordAssistanceEmail.cs" />
     <Compile Include="EmailTemplates\EmailVerificationEmail.cs" />
+    <Compile Include="Extensions\ControllerExtensions.cs" />
     <Compile Include="Extensions\DefaultGraphModelBinder.cs" />
-    <Compile Include="Extensions\HtmlHelper.cs" />
-    <Compile Include="Extensions\Model.cs" />
+    <Compile Include="Extensions\HtmlHelperExtensions.cs" />
+    <Compile Include="Extensions\ModelExtensions.cs" />
     <Compile Include="Extensions\NHibernateValidatorModelValidatorProvider.cs" />
-    <Compile Include="Extensions\Validation.cs" />
+    <Compile Include="Extensions\ValidationExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -223,7 +224,7 @@
     <Content Include="images\tipsy.gif" />
     <Content Include="images\title.png" />
     <Content Include="images\white oak in fog.jpg" />
-    <Content Include="js\Import.js" />
+    <Content Include="js\Import\Sites.js" />
     <Content Include="js\Integration.js" />
     <Content Include="js\jquery\facebox.js" />
     <Content Include="js\jquery\jquery-1.4.4.min.js" />
@@ -311,6 +312,7 @@
     <Content Include="Views\Account\VerifyHumanBeforeEmailingPasswordAssistance.aspx" />
     <Content Include="Views\Account\VerifyHumanBeforeRegistering.aspx" />
     <Content Include="Views\Export\MenuWidget.ascx" />
+    <Content Include="Views\Import\SitePartialById.ascx" />
     <Content Include="Views\Import\DisplayTemplates\Subsite.ascx" />
     <Content Include="Views\Import\DisplayTemplates\Site.ascx" />
     <Content Include="Views\Import\EditorTemplates\Subsite.ascx" />

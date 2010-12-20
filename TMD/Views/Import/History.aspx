@@ -12,7 +12,7 @@
                 <% for(int i = 0; i < tripsPendingImport.Count; i++) { %>
                 <% Trip t = tripsPendingImport[i]; %>
                 <div class="portlet x6">
-			        <div class="portlet-header trip-header entity-header">
+			        <div class="portlet-header Trip-Header Entity-Header">
                         <h4><%: t.Name %>&nbsp;</h4>
                         <div class="actions">
                             <%= Html.ActionLink("Continue", "Trip", "Import", new { id = t.Id }, new { @class = "btn btn-orange btn-small"  }) %>
@@ -51,7 +51,7 @@
     <% for(int i = 0; i < importedTrips.Count; i++) { %>
         <% Trip t = importedTrips[i]; %>
         <div class="portlet x6">
-			<div class="portlet-header trip-header entity-header">
+			<div class="portlet-header Trip-Header Entity-Header">
                 <h4><%: t.Name %>&nbsp;</h4>
                 <div class="actions">
                     <%= Html.ActionLink("View", "View", "Import", new { id = t.Id }, new { @class = "btn btn-orange btn-small"  }) %>
