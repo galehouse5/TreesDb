@@ -312,6 +312,7 @@
     <Content Include="Views\Account\VerifyHumanBeforeEmailingPasswordAssistance.aspx" />
     <Content Include="Views\Account\VerifyHumanBeforeRegistering.aspx" />
     <Content Include="Views\Export\MenuWidget.ascx" />
+    <Content Include="Views\Import\SitesPartial.ascx" />
     <Content Include="Views\Import\SitePartialById.ascx" />
     <Content Include="Views\Import\DisplayTemplates\Subsite.ascx" />
     <Content Include="Views\Import\DisplayTemplates\Site.ascx" />

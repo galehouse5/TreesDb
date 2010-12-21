@@ -20,15 +20,10 @@
             var button = $(this);
             var form = button.closest('form');
             var innerAction = new InnerAction(button.attr('value'));
-            if (innerAction.Equals('Site', 'Edit')) {
-                $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
-                    function (response) {
-                        var siteContainer = button.closest('.Site');
-                        siteContainer.replaceWith(response);
-                    });
-                return false;
-            }
-            if (innerAction.Equals('Site', 'Save')) {
+            if (innerAction.Equals('Site', 'Save')
+                || innerAction.Equals('Site', 'Edit')
+                || innerAction.Equals('Site', 'Add')
+                || innerAction.Equals('Subsite', 'Remove')) {
                 $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
                     function (response) {
                         var siteContainer = button.closest('.Site');
@@ -39,14 +34,8 @@
             if (innerAction.Equals('Site', 'Remove')) {
                 $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
                     function (response) {
-                        if (response.Success) {
-                            var siteContainer = button.closest('.Site');
-                            siteContainer.remove();
-                            if (!response.RemainingSitesSaveableAndRemovable) {
-                                $('.Site button[type=submit].Save').remove();
-                                $('.Site button[type=submit].Remove').remove();
-                            }
-                        }
+                        var sitesContainer = button.closest('.Sites');
+                        sitesContainer.replaceWith(response);
                     });
                 return false;
             }
@@ -54,13 +43,14 @@
                 $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
                     function (response) {
                         var sitesContainer = button.closest('.Sites');
-                        var lastSite = sitesContainer.find('.Site').last();
-                        lastSite.after(response);
+                        if (sitesContainer.find('.Site').length > 1) {
+                            var lastSite = sitesContainer.find('.Site').last();
+                            lastSite.after(response);
+                        } else {
+                            sitesContainer.replaceWith(response);
+                        }
                     });
                 return false;
-            }
-            if (innerAction.Equals('Subsite', 'Remove')) {
-                //TODO
             }
         });
     }

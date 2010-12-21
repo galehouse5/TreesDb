@@ -172,6 +172,7 @@ namespace TMD.Controllers
             [ModelBinder(typeof(SitesModelBinder))] ImportSitesModel model, 
             [ModelBinder(typeof(InnerAction))] InnerAction innerAction)
         {
+            ModelState.Clear();
             Model.Trips.Trip trip = Repositories.Trips.FindById(model.Id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             using (UnitOfWork.Begin())
@@ -193,7 +194,7 @@ namespace TMD.Controllers
                     Repositories.Trips.Save(trip); UnitOfWork.Persist();
                     model.Sites.Add(Mapper.Map<Model.Trips.SiteVisit, ImportSiteModel>(site));
                     ensureSitesAreSaveableAndRemovable(model);
-                    return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", site.Id) : View(model);
+                    return Request.IsAjaxRequest() ? (model.Sites.Count > 2 ? PartialView("SitePartialById", model).AddViewData("siteId", site.Id) : PartialView("SitesPartial", model)) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Save))
                 {
@@ -204,14 +205,14 @@ namespace TMD.Controllers
                     if (!ModelState.IsValid) { UnitOfWork.Persist(); return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", innerAction.Id) : View(model); }
                     Repositories.Trips.Save(trip); UnitOfWork.Persist();
                     siteModel.IsEditing = false;
-                    return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", innerAction.Id) : View(model);
+                    return Request.IsAjaxRequest() ?  PartialView("SitePartialById", model).AddViewData("siteId", innerAction.Id) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Remove))
                 {
                     model.Sites.RemoveAll(s => s.Id == innerAction.Id);
                     trip.SiteVisits.RemoveAll(s => s.Id == innerAction.Id);
-                    ensureSitesAreSaveableAndRemovable(model);
-                    UnitOfWork.Persist(); return Request.IsAjaxRequest() ? (ActionResult)Json(new { Success = true, RemainingSitesSaveableAndRemovable = model.Sites.Count > 1 }) : View(model);
+                    ensureSitesAreSaveableAndRemovable(model); UnitOfWork.Persist(); 
+                    return Request.IsAjaxRequest() ? (ActionResult)PartialView("SitesPartial", model) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Edit))
                 {
@@ -225,11 +226,15 @@ namespace TMD.Controllers
                     var subsite = site.AddSubsiteVisit();
                     Repositories.Trips.Save(trip); UnitOfWork.Persist();
                     siteModel.Subsites.Add(Mapper.Map<Model.Trips.SubsiteVisit, ImportSubsiteModel>(subsite));
-                    return View(model);
+                    return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", siteModel.Id) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Subsite, InnerAction.EntityAction.Remove))
                 {
-                    //TODO
+                    var siteModel = model.Sites.First(s => s.Subsites.Contains(ss => ss.Id == innerAction.Id));
+                    model.Sites.ForEach(s => s.Subsites.RemoveAll(ss => ss.Id == innerAction.Id));
+                    trip.SiteVisits.ForEach(s => s.SubsiteVisits.RemoveAll(ss => ss.Id == innerAction.Id));
+                    Repositories.Trips.Save(trip); UnitOfWork.Persist();
+                    return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", siteModel.Id) : View(model);
                 }
             }
             throw new NotImplementedException();
