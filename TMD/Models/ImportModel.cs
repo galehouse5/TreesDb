@@ -40,18 +40,38 @@ namespace TMD.Models
     public class ImportSiteModel
     {
         public int Id { get; set; }
-        [DisplayName("Site name")] public string Name { get; set; }
-        public string Coordinates { get; set; }
-        public string Comments { get; set; }
+
+        private string m_Name;
+        public string Name 
+        {
+            get { return HasSingleSubsite ? Subsites[0].Name : m_Name; }
+            set { m_Name = value; }
+        }
+
+        private string m_Coordinates;
+        public string Coordinates 
+        {
+            get { return HasSingleSubsite ? Subsites[0].Coordinates : m_Coordinates; }
+            set { m_Coordinates = value; }
+        }
+
+        private string m_Comments;
+        public string Comments 
+        {
+            get { return HasSingleSubsite ? Subsites[0].Comments : m_Comments; }
+            set { m_Comments = value; }
+        }
+
         public bool IsEditing { get; set; }
         public bool IsSaveableAndRemovable { get; set; }
         public IList<ImportSubsiteModel> Subsites { get; set; }
+        public bool HasSingleSubsite { get { return Subsites != null && Subsites.Count == 1; } }
     }
 
     public class ImportSubsiteModel
     {
         public int Id { get; set; }
-        [DisplayName("Subsite name")] public string Name { get; set; }
+        public string Name { get; set; }
         public string Coordinates { get; set; }
         public State State { get; set; }
         public string County { get; set; }

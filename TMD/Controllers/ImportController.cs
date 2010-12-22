@@ -225,7 +225,8 @@ namespace TMD.Controllers
                     var site = trip.SiteVisits.First(s => s.Id == innerAction.Id);
                     var subsite = site.AddSubsiteVisit();
                     Repositories.Trips.Save(trip); UnitOfWork.Persist();
-                    siteModel.Subsites.Add(Mapper.Map<Model.Trips.SubsiteVisit, ImportSubsiteModel>(subsite));
+                    Mapper.Map<ImportSiteModel, Model.Trips.SiteVisit>(siteModel, site);
+                    Mapper.Map<Model.Trips.SiteVisit, ImportSiteModel>(site, siteModel);
                     return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", siteModel.Id) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Subsite, InnerAction.EntityAction.Remove))

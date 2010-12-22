@@ -84,15 +84,6 @@ namespace TMD.Mappings
                     src.Sites.ForEach(s => Mapper.Map<ImportSiteModel, Model.Trips.SiteVisit>(s, dest.SiteVisits.First(sv => sv.Id == s.Id))));
 
             CreateMap<ImportSiteModel, SiteVisit>()
-                .BeforeMap((src, dest) =>
-                    {
-                        if (src.Subsites.Count == 1)
-                        {
-                            src.Name = src.Subsites[0].Name;
-                            src.Coordinates = src.Subsites[0].Coordinates;
-                            src.Comments = src.Subsites[0].Comments;
-                        }
-                    })
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Coordinates.Create(src.Coordinates)))
                 .ForMember(dest => dest.CoordinatesEntered, opt => opt.MapFrom(src => !string.IsNullOrWhiteSpace(src.Coordinates)))
                 .AfterMap((src, dest) =>
@@ -102,7 +93,6 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Country, opt => opt.MapFrom(src => src.State == null ? null : src.State.Country))
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Coordinates.Create(src.Coordinates)))
                 .ForMember(dest => dest.CoordinatesEntered, opt => opt.MapFrom(src => !string.IsNullOrWhiteSpace(src.Coordinates)));
-                
         }
     }
 }

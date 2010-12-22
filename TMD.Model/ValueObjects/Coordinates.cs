@@ -144,7 +144,7 @@ namespace TMD.Model
             }
             else
             {
-                longitude = Longitude.Create(0f);
+                longitude = Longitude.Create(string.Empty);
             }
             return new Coordinates()
             {
