@@ -34,53 +34,17 @@ namespace TMD.Model
         [NotEqualsAttribute(DistanceFormat.Invalid, Message = "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.", Tags = Tag.Screening)]
         public DistanceFormat InputFormat { get; private set; }
 
-        public int WholeFeet
-        {
-            get { return (int)Math.Floor(Feet); }
-        }
-
-        public float RemainderInches
-        {
-            get { return 12f * (Feet - WholeFeet); }
-        }
-
-        public float Inches
-        {
-            get { return 12f * Feet; }
-        }
-
-        public float Yards
-        {
-            get { return Feet / 3f; }
-        }
-
-        public float Meters
-        {
-            get { return Feet / 3.2808399f; }
-        }
-
-        public static bool operator ==(Distance d1, Distance d2)
-        {
-            if ((object)d1 == null || (object)d2 == null)
-            {
-                return (object)d1 == null && (object)d2 == null;
-            }
-            return d1.Feet == d2.Feet;
-        }
-
-        public static bool operator !=(Distance d1, Distance d2)
-        {
-            if ((object)d1 == null || (object)d2 == null)
-            {
-                return !((object)d1 == null && (object)d2 == null);
-            }
-            return d1.Feet != d2.Feet;
-        }
+        public int WholeFeet { get { return (int)Math.Floor(Feet); } }
+        public float RemainderInches { get { return 12f * (Feet - WholeFeet); } }
+        public float Inches { get { return 12f * Feet; } }
+        public float Yards { get { return Feet / 3f; } }
+        public float Meters { get { return Feet / 3.2808399f; } }
+        public bool IsSpecified { get { return InputFormat != DistanceFormat.Unspecified; } }
 
         public override bool Equals(object obj)
         {
-            Distance d = obj as Distance;
-            return d != null && d == this;
+            var other = obj as Distance;
+            return other != null && Feet.Equals(other.Feet);
         }
 
         public override int GetHashCode()
@@ -90,47 +54,29 @@ namespace TMD.Model
 
         public override string ToString()
         {
-            string s;
             switch (InputFormat)
             {
                 case DistanceFormat.Default:
                 case DistanceFormat.DecimalFeet:
-                    s = string.Format("{0:0.0}'", Feet);
-                    break;
+                    return string.Format("{0:0.0}'", Feet);
                 case DistanceFormat.DecimalInches:
-                    s = string.Format("{0:0}''", Inches);
-                    break;
+                    return string.Format("{0:0}''", Inches);
                 case DistanceFormat.DecimalMeters:
-                    s = string.Format("{0:0.00} m", Meters);
-                    break;
+                    return string.Format("{0:0.00} m", Meters);
                 case DistanceFormat.DecimalYards:
-                    s = string.Format("{0:0.00} yd", Yards);
-                    break;
+                    return string.Format("{0:0.00} yd", Yards);
                 case DistanceFormat.FeetDecimalInches:
-                    s = string.Format("{0:0}' {1:0}''", WholeFeet, RemainderInches);
-                    break;
+                    return string.Format("{0:0}' {1:0}''", WholeFeet, RemainderInches);
                 default:
-                    s = RawValue;
-                    break;
+                    return RawValue;
             }
-            return s;
         }
-
-        #region IIsSpecified Members
-
-        public bool IsSpecified
-        {
-            get { return InputFormat != DistanceFormat.Unspecified; }
-        }
-
-        #endregion
 
         private static Regex FeetDecimalInchesFormat = new Regex("^\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?|\\s)\\s*(?<inches>[0-9]+(\\.[0-9]+)?)\\s*(\"|''|``|ins?|inchs?|inches?)?\\s*$", RegexOptions.Compiled);
         private static Regex DecimalFeetFormat = new Regex("^\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?)?\\s*$", RegexOptions.Compiled);
         private static Regex DecimalInchesFormat = new Regex("^\\s*(?<inches>[0-9]+(\\.[0-9]+)?)\\s*(\"|''|``|ins?|inchs?|inches?)\\s*$", RegexOptions.Compiled);
         private static Regex DecimalMetersFormat = new Regex("^\\s*(?<meters>[0-9]+(\\.[0-9]+)?)\\s*(ms?|meters?|metres?)\\s*$", RegexOptions.Compiled);
         private static Regex DecimalYardsFormat = new Regex("^\\s*(?<yards>[0-9]+(\\.[0-9]+)?)\\s*(ys?|yds?|yards?)\\s*$", RegexOptions.Compiled);
-
         public static Distance Create(string s)
         {
             Match match;

@@ -21,9 +21,9 @@ namespace TMD.Model.Trips
 
         public virtual void SetTripDefaults()
         {
-            SiteVisit.Trip.SetPrivatePropertyValue("DefaultCountry", Country);
-            SiteVisit.Trip.SetPrivatePropertyValue("DefaultState", State);
-            SiteVisit.Trip.SetPrivatePropertyValue("DefaultCounty", County);
+            SiteVisit.Trip.DefaultCountry = Country;
+            SiteVisit.Trip.DefaultState = State;
+            SiteVisit.Trip.DefaultCounty = County;
         }
 
         private string m_Name;
@@ -35,76 +35,43 @@ namespace TMD.Model.Trips
             set { m_Name = value.OrEmptyAndTrimToTitleCase(); }
         }
 
-        private Coordinates m_Coordinates;
         [Valid, Specified(Message = "You must specify coordinates for this subsite, its containing site, or any contained measurement.", Tags = Tag.Finalization)]
-        public virtual Coordinates Coordinates
+        public virtual Coordinates Coordinates { get; set; }
+
+        public virtual bool CanCalculateCoordinates(bool ignoreContainingSite = false)
         {
-            get
+            if (Coordinates.IsValidAndSpecified())
             {
-                if (CoordinatesCalculated)
-                {
-                    if (TreeMeasurementCentralCoordinates.IsSpecified)
-                    {
-                        m_Coordinates = TreeMeasurementCentralCoordinates;
-                    }
-                    else if (SiteVisit.CoordinatesEntered && SiteVisit.Coordinates.IsValidAndSpecified())
-                    {
-                        m_Coordinates = SiteVisit.Coordinates;
-                    }
-                    else
-                    {
-                        m_Coordinates = Coordinates.Null();
-                    }
-                }
-                return m_Coordinates;
+                return true;
             }
-            set
+            if (TreeMeasurements.Where(tm => tm.CanCalculateCoordinates(true)).Count() > 0)
             {
-                m_Coordinates = value;
+                return true;
             }
+            if (!ignoreContainingSite)
+            {
+                return SiteVisit.CanCalculateCoordinates();
+            }
+            return false;
         }
 
-        public virtual bool CoordinatesCalculatedFromContainedTreeMeasurements
+        public virtual Coordinates CalculateCoordinates(bool ignoreContainingSite = false)
         {
-            get 
-            { 
-                return CoordinatesCalculated 
-                    && TreeMeasurementCentralCoordinates.IsSpecified; 
-            }
-        }
-
-        public virtual bool CoordinatesCalculatedFromContainingSiteVisit
-        {
-            get 
+            if (Coordinates.IsValidAndSpecified())
             {
-                return CoordinatesCalculated
-                    && !TreeMeasurementCentralCoordinates.IsSpecified
-                    && SiteVisit.CoordinatesEntered && SiteVisit.Coordinates.IsValidAndSpecified();
+                return Coordinates;
             }
-        }
-
-        public virtual Coordinates TreeMeasurementCentralCoordinates
-        {
-            get
+            var bounds = CoordinateBounds.Create(TreeMeasurements
+                .Where(tm => tm.CanCalculateCoordinates(true)).Select(tm => tm.CalculateCoordinates(true)));
+            if (bounds.IsSpecified)
             {
-                CoordinateBounds cb = CoordinateBounds.Null();
-                foreach (TreeMeasurementBase tm in TreeMeasurements)
-                {
-                    if (tm.CoordinatesEntered && tm.Coordinates.IsValidAndSpecified())
-                    {
-                        cb.Extend(tm.Coordinates);
-                    }
-                }
-                return cb.Center;
+                return bounds.Center;
             }
-        }
-
-        public virtual bool CoordinatesCalculated { get; set; }
-
-        public virtual bool CoordinatesEntered
-        {
-            get { return !CoordinatesCalculated; }
-            set { CoordinatesCalculated = !value; }
+            if (!ignoreContainingSite && SiteVisit.CanCalculateCoordinates())
+            {
+                return SiteVisit.CalculateCoordinates();
+            }
+            return Coordinates.Null();
         }
 
         [NotNull(Message = "Subsite country must be specified.", Tags = Tag.Screening)]
@@ -162,16 +129,16 @@ namespace TMD.Model.Trips
 
         public virtual SingleTrunkTreeMeasurement AddSingleTrunkTreeMeasurement()
         {
-            SingleTrunkTreeMeasurement sttm = SingleTrunkTreeMeasurement.Create(this);
-            TreeMeasurements.Add(sttm);
-            return sttm;
+            var tree = SingleTrunkTreeMeasurement.Create(this);
+            TreeMeasurements.Add(tree);
+            return tree;
         }
 
         public virtual MultiTrunkTreeMeasurement AddMultiTrunkTreeMeasurement()
         {
-            MultiTrunkTreeMeasurement mttm = MultiTrunkTreeMeasurement.Create(this);
-            TreeMeasurements.Add(mttm);
-            return mttm;
+            var tree = MultiTrunkTreeMeasurement.Create(this);
+            TreeMeasurements.Add(tree);
+            return tree;
         }
 
         public virtual bool RemoveTreeMeasurement(TreeMeasurementBase tm)
@@ -179,18 +146,12 @@ namespace TMD.Model.Trips
             return TreeMeasurements.Remove(tm);
         }
 
-        public virtual bool HasTreeMeasurements
-        {
-            get { return TreeMeasurements.Count > 0; }
-        }
-
         internal static SubsiteVisit Create(SiteVisit sv)
         {
             return new SubsiteVisit
             {
                 Name = string.Empty,
-                CoordinatesEntered = sv.CoordinatesEntered && sv.Coordinates.IsValidAndSpecified(),
-                Coordinates = sv.CoordinatesEntered && sv.Coordinates.IsValidAndSpecified() ? sv.Coordinates : Coordinates.Null(),
+                Coordinates = sv.CalculateCoordinates(),
                 OwnershipType = string.Empty,
                 OwnershipContactInfo = string.Empty,
                 Comments = string.Empty,

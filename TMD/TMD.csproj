@@ -93,6 +93,8 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Binders\ImportBinders.cs" />
+    <Compile Include="Binders\ValueObjectBinders.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BrowseController.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
@@ -106,9 +108,8 @@
     <Compile Include="EmailTemplates\PasswordAssistanceEmail.cs" />
     <Compile Include="EmailTemplates\EmailVerificationEmail.cs" />
     <Compile Include="Extensions\ControllerExtensions.cs" />
-    <Compile Include="Extensions\DefaultGraphModelBinder.cs" />
+    <Compile Include="Binders\DefaultGraphModelBinder.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
-    <Compile Include="Extensions\ModelExtensions.cs" />
     <Compile Include="Extensions\NHibernateValidatorModelValidatorProvider.cs" />
     <Compile Include="Extensions\ValidationExtensions.cs" />
     <Compile Include="Global.asax.cs">
@@ -317,8 +318,8 @@
     <Content Include="Views\Import\EditorTemplates\SiteTrees.ascx" />
     <Content Include="Views\Import\EditorTemplates\SubsiteTrees.ascx" />
     <Content Include="Views\Import\EditorTemplates\Tree.ascx" />
-    <Content Include="Views\Import\Trees.aspx" />
     <Content Include="Views\Import\SitesPartial.ascx" />
+    <Content Include="Views\Import\Trees.aspx" />
     <Content Include="Views\Import\SitePartialById.ascx" />
     <Content Include="Views\Import\DisplayTemplates\Subsite.ascx" />
     <Content Include="Views\Import\DisplayTemplates\Site.ascx" />
@@ -326,12 +327,7 @@
     <Content Include="Views\Import\EditorTemplates\Site.ascx" />
     <Content Include="Views\Import\Sites.aspx" />
     <Content Include="Views\Import\History.aspx" />
-    <Content Include="Views\Import\Index.aspx" />
     <Content Include="Views\Import\MenuWidget.ascx" />
-    <Content Include="Views\Import\MultiTrunkTreeMeasurementEditor.ascx" />
-    <Content Include="Views\Import\SiteVisitRemover.ascx" />
-    <Content Include="Views\Import\SubsiteVisitRemover.ascx" />
-    <Content Include="Views\Import\TreeMeasurementRemover.ascx" />
     <Content Include="Views\Main\MenuWidget.ascx" />
     <Content Include="Views\Map\GoogleMapsScript.ascx" />
     <Content Include="Views\Map\Index.aspx" />
@@ -340,25 +336,16 @@
     <Content Include="Views\Shared\DisplayTemplates\State.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\String.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Boolean.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Coordinates.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Enum.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Elevation.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Distance.ascx" />
     <Content Include="Views\Shared\EditorTemplates\State.ascx" />
     <Content Include="Views\Shared\EditorTemplates\DateTime.ascx" />
     <Content Include="Views\Shared\EditorTemplates\String.ascx" />
-    <Content Include="Views\Import\TrunkMeasurementRemover.ascx" />
-    <Content Include="Views\Import\SiteVisitEditor.ascx" />
     <Content Include="Views\Import\Finish.aspx" />
-    <Content Include="Views\Import\SiteVisitSummary.ascx" />
-    <Content Include="Views\Import\SubsiteVisitSummary.ascx" />
-    <Content Include="Views\Import\SingleTrunkTreeMeasurementEditor.ascx" />
-    <Content Include="Views\Import\TreeMeasurements.aspx" />
-    <Content Include="Views\Import\Review.aspx" />
-    <Content Include="Views\Import\SiteVisits.aspx" />
     <Content Include="Views\Import\Start.aspx" />
-    <Content Include="Views\Import\ImportSteps.ascx" />
-    <Content Include="Views\Import\SubsiteVisitEditor.ascx" />
-    <Content Include="Views\Import\TreeMeasurementSummary.ascx" />
     <Content Include="Views\Import\Trip.aspx" />
-    <Content Include="Views\Import\TrunkMeasurementEditor.ascx" />
-    <Content Include="Views\Import\TrunkMeasurementSummary.ascx" />
     <Content Include="Views\Main\Index.aspx" />
     <Content Include="Views\Error\NotFound.aspx" />
     <Content Include="Views\Error\ServerError.aspx" />

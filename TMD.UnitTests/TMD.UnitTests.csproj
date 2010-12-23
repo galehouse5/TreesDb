@@ -75,7 +75,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\ValidationMapping.cs" />
+    <Compile Include="Extensions\Application\ValidationMapping.cs" />
     <Compile Include="Extensions\ImageComparison.cs" />
     <Compile Include="Extensions\Photo.cs" />
     <Compile Include="Infrastructure\PhotosRepository.cs" />

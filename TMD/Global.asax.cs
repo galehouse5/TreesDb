@@ -15,6 +15,7 @@ using TMD.Infrastructure.Repositories;
 using TMD.Infrastructure;
 using AutoMapper;
 using TMD.Mappings;
+using TMD.Binders;
 
 namespace TMD
 {

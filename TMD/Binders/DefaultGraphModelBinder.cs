@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace TMD.Extensions
+namespace TMD.Binders
 {
     /// <summary>
     /// A DefaultModelBinder that can update complex model graphs.

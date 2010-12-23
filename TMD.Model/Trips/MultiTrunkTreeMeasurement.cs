@@ -12,8 +12,7 @@ namespace TMD.Model.Trips
 {
     public enum MultiTrunkTreeFormType
     {
-        [Description("")]
-        NotSpecified = TreeFormType.NotSpecified,
+        [Description("")] NotSpecified = TreeFormType.NotSpecified,
         Multi = TreeFormType.Multi,
         Fusion = TreeFormType.Fusion,
         Coppice = TreeFormType.Coppice,
@@ -106,8 +105,7 @@ namespace TMD.Model.Trips
                 AgeType = TreeAgeType.NotSpecified,
                 Age = null,
                 GeneralComments = string.Empty,
-                CoordinatesEntered = ssv.CoordinatesEntered && ssv.Coordinates.IsValidAndSpecified(),
-                Coordinates = ssv.CoordinatesEntered && ssv.Coordinates.IsValidAndSpecified() ? ssv.Coordinates : Coordinates.Null(),
+                Coordinates = ssv.CalculateCoordinates(),
                 Elevation = Elevation.Null(),
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),
@@ -139,7 +137,6 @@ namespace TMD.Model.Trips
                 TerrainComments = string.Empty,
                 SubsiteVisit = ssv,
                 MakeCoordinatesPublic = true,
-                IncludeHeightDistanceAndAngleMeasurements = false,
                 CombinedGirthNumberOfTrunks = null,
                 TrunkMeasurements = new List<TrunkMeasurement>()
             }.RecordCreation() as MultiTrunkTreeMeasurement;

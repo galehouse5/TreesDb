@@ -19,20 +19,29 @@ namespace TMD.Model
     }
 
     [Serializable]
-    public class Coordinates : ISpecified
+    public class Coordinates : ISpecified, ICloneable
     {
         private Coordinates()
         { }
 
-        [Valid]
-        public Latitude Latitude { get; private set; }
-
-        [Valid]
-        public Longitude Longitude { get; private set; }
+        [Valid] public Latitude Latitude { get; private set; }
+        [Valid] public Longitude Longitude { get; private set; }
+        public bool IsSpecified { get { return Latitude.IsSpecified || Longitude.IsSpecified; } }
 
         public CoordinatesFormat InputFormat
         {
-            get { return Latitude.InputFormat; }
+            get 
+            {
+                if (Latitude.InputFormat == CoordinatesFormat.Invalid || Longitude.InputFormat == CoordinatesFormat.Invalid)
+                {
+                    return CoordinatesFormat.Invalid;
+                }
+                if (Latitude.InputFormat == CoordinatesFormat.Unspecified || Longitude.InputFormat == CoordinatesFormat.Unspecified)
+                {
+                    return CoordinatesFormat.Invalid;
+                }
+                return Latitude.InputFormat; 
+            }
         }
 
         public float CalculateDistanceInMinutesTo(Coordinates otherCoordinates)
@@ -47,6 +56,10 @@ namespace TMD.Model
         {
             if (IsSpecified)
             {
+                if (InputFormat == CoordinatesFormat.Invalid)
+                {
+                    return string.Format("{0}{1}", Latitude, Longitude);
+                }
                 return string.Format("{0}, {1}", Latitude, Longitude);
             }
             return string.Empty;
@@ -56,41 +69,24 @@ namespace TMD.Model
         {
             if (IsSpecified)
             {
+                if (InputFormat == CoordinatesFormat.Invalid)
+                {
+                    return string.Format("{0}{1}", Latitude.ToString(format), Longitude.ToString(format));
+                }
                 return string.Format("{0}, {1}", Latitude.ToString(format), Longitude.ToString(format));
             }
             return string.Empty;
         }
 
-        public static bool operator ==(Coordinates c1, Coordinates c2)
-        {
-            if ((object)c1 == null || (object)c2 == null)
-            {
-                return (object)c1 == null && (object)c2 == null;
-            }
-            return c1.Latitude == c2.Latitude
-                && c1.Longitude == c2.Longitude;
-        }
-
-        public static bool operator !=(Coordinates c1, Coordinates c2)
-        {
-            if ((object)c1 == null || (object)c2 == null)
-            {
-                return !((object)c1 == null && (object)c2 == null);
-            }
-            return c1.Latitude != c2.Latitude
-                || c1.Longitude != c2.Longitude;
-        }
-
         public override bool Equals(object obj)
         {
-            Coordinates c = obj as Coordinates;
-            return c != null && c == this;
+            var other = obj as Coordinates;
+            return other != null && this.Latitude.Equals(other.Latitude) && this.Longitude.Equals(other.Longitude);
         }
 
         public override int GetHashCode()
         {
-            return Latitude.GetHashCode()
-                ^ Longitude.GetHashCode();
+            return Latitude.GetHashCode() ^ Longitude.GetHashCode();
         }
 
         public static Coordinates Create(Latitude latitude, Longitude longitude)
@@ -162,18 +158,18 @@ namespace TMD.Model
             };
         }
 
-        #region IIsSpecified Members
-
-        public bool IsSpecified
+        public object Clone()
         {
-            get { return Latitude.IsSpecified && Longitude.IsSpecified; }
+            return new Coordinates
+            {
+                Latitude = Latitude.Clone() as Latitude,
+                Longitude = Longitude.Clone() as Longitude
+            };
         }
-
-        #endregion
     }
 
     [Serializable]
-    public class Latitude : ISpecified
+    public class Latitude : ISpecified, ICloneable
     {
         private Latitude()
         { }
@@ -186,56 +182,28 @@ namespace TMD.Model
         [NotEqualsAttribute(CoordinatesFormat.Invalid, Message = "Latitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format.", Tags = Tag.Screening)]
         public CoordinatesFormat InputFormat { get; private set; }
 
-        public int Sign
-        {
-            get { return Math.Sign(TotalDegrees); }
-        }
-
-        public float AbsoluteTotalDegrees
-        {
-            get { return Math.Abs(TotalDegrees); }
-        }
-
-        public int AbsoluteWholeDegrees
-        {
-            get { return (int)Math.Floor(AbsoluteTotalDegrees); }
-        }
-
-        public float AbsoluteMinutes
-        {
-            get { return 60f * (AbsoluteTotalDegrees - AbsoluteWholeDegrees); }
-        }
-
-        public int AbsoluteWholeMinutes
-        {
-            get { return (int)Math.Floor(AbsoluteMinutes); }
-        }
-
-        public float AbsoluteSeconds
-        {
-            get { return 60f * (AbsoluteMinutes - AbsoluteWholeMinutes); }
-        }
+        public int Sign { get { return Math.Sign(TotalDegrees); } }
+        public float AbsoluteTotalDegrees { get { return Math.Abs(TotalDegrees); } }
+        public int AbsoluteWholeDegrees { get { return (int)Math.Floor(AbsoluteTotalDegrees); } }
+        public float AbsoluteMinutes { get { return 60f * (AbsoluteTotalDegrees - AbsoluteWholeDegrees); } }
+        public int AbsoluteWholeMinutes { get { return (int)Math.Floor(AbsoluteMinutes); } }
+        public float AbsoluteSeconds { get { return 60f * (AbsoluteMinutes - AbsoluteWholeMinutes); } }
+        public bool IsSpecified { get { return InputFormat != CoordinatesFormat.Unspecified; } }
 
         public string ToString(CoordinatesFormat format)
         {
-            string s;
             switch (InputFormat)
             {
                 case CoordinatesFormat.DegreesMinutesDecimalSeconds:
-                    s = string.Format("{0:00} {1:00} {2:00.0}", AbsoluteWholeDegrees * Sign, AbsoluteWholeMinutes, AbsoluteSeconds);
-                    break;
+                    return string.Format("{0:00} {1:00} {2:00.0}", AbsoluteWholeDegrees * Sign, AbsoluteWholeMinutes, AbsoluteSeconds);
                 case CoordinatesFormat.Default:
                 case CoordinatesFormat.DegreesDecimalMinutes:
-                    s = string.Format("{0:00} {1:00.000}", AbsoluteWholeDegrees * Sign, AbsoluteMinutes);
-                    break;
+                    return string.Format("{0:00} {1:00.000}", AbsoluteWholeDegrees * Sign, AbsoluteMinutes);
                 case CoordinatesFormat.DecimalDegrees:
-                    s = string.Format("{0:00.00000}", AbsoluteTotalDegrees * Sign);
-                    break;
+                    return string.Format("{0:00.00000}", AbsoluteTotalDegrees * Sign);
                 default:
-                    s = RawValue;
-                    break;
+                    return RawValue;
             }
-            return s;
         }
 
         public override string ToString()
@@ -243,28 +211,10 @@ namespace TMD.Model
             return ToString(InputFormat);
         }
 
-        public static bool operator ==(Latitude l1, Latitude l2)
-        {
-            if ((object)l1 == null || (object)l2 == null)
-            {
-                return (object)l1 == null && (object)l2 == null;
-            }
-            return l1.TotalDegrees == l2.TotalDegrees;
-        }
-
-        public static bool operator !=(Latitude l1, Latitude l2)
-        {
-            if ((object)l1 == null || (object)l2 == null)
-            {
-                return !((object)l1 == null && (object)l2 == null);
-            }
-            return l1.TotalDegrees != l2.TotalDegrees;
-        }
-
         public override bool Equals(object obj)
         {
-            Latitude l = obj as Latitude;
-            return l != null && l == this;
+            var other = obj as Latitude;
+            return other != null && this.TotalDegrees.Equals(other.TotalDegrees);
         }
 
         public override int GetHashCode()
@@ -272,19 +222,9 @@ namespace TMD.Model
             return TotalDegrees.GetHashCode();
         }
 
-        #region IIsSpecified Members
-
-        public bool IsSpecified
-        {
-            get { return InputFormat != CoordinatesFormat.Unspecified; }
-        }
-
-        #endregion
-
-        public static Regex DegreesMinutesSecondsFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,2})\\s+(?<minutes>[0-9]{1,2})\\s+(?<seconds>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
-        public static Regex DegreesDecimalMinutesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,2})\\s+(?<minutes>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
-        public static Regex DecimalDegreesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
-
+        private static Regex DegreesMinutesSecondsFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,2})\\s+(?<minutes>[0-9]{1,2})\\s+(?<seconds>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
+        private static Regex DegreesDecimalMinutesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,2})\\s+(?<minutes>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalDegreesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
         public static Latitude Create(string s)
         {
             Match match;
@@ -367,10 +307,20 @@ namespace TMD.Model
                 RawValue = string.Empty
             };
         }
+
+        public object Clone()
+        {
+            return new Latitude
+            {
+                InputFormat = InputFormat,
+                TotalDegrees = TotalDegrees,
+                RawValue = RawValue
+            };
+        }
     }
 
     [Serializable]
-    public class Longitude : ISpecified
+    public class Longitude : ISpecified, ICloneable
     {
         private Longitude()
         { }
@@ -383,56 +333,28 @@ namespace TMD.Model
         [NotEqualsAttribute(CoordinatesFormat.Invalid, Message = "Longitude must be in ddd_mm_ss.s, ddd_mm.mmm, or ddd.ddddd format.", Tags = Tag.Screening)]
         public CoordinatesFormat InputFormat { get; private set; }
 
-        public int Sign
-        {
-            get { return Math.Sign(TotalDegrees); }
-        }
-
-        public float AbsoluteTotalDegrees
-        {
-            get { return Math.Abs(TotalDegrees); }
-        }
-
-        public int AbsoluteWholeDegrees
-        {
-            get { return (int)Math.Floor(AbsoluteTotalDegrees); }
-        }
-
-        public float AbsoluteMinutes
-        {
-            get { return 60f * (AbsoluteTotalDegrees - AbsoluteWholeDegrees); }
-        }
-
-        public int AbsoluteWholeMinutes
-        {
-            get { return (int)Math.Floor(AbsoluteMinutes); }
-        }
-
-        public float AbsoluteSeconds
-        {
-            get { return 60f * (AbsoluteMinutes - AbsoluteWholeMinutes); }
-        }
+        public int Sign { get { return Math.Sign(TotalDegrees); } }
+        public float AbsoluteTotalDegrees { get { return Math.Abs(TotalDegrees); } }
+        public int AbsoluteWholeDegrees { get { return (int)Math.Floor(AbsoluteTotalDegrees); } }
+        public float AbsoluteMinutes { get { return 60f * (AbsoluteTotalDegrees - AbsoluteWholeDegrees); } }
+        public int AbsoluteWholeMinutes { get { return (int)Math.Floor(AbsoluteMinutes); } }
+        public float AbsoluteSeconds { get { return 60f * (AbsoluteMinutes - AbsoluteWholeMinutes); } }
+        public bool IsSpecified { get { return InputFormat != CoordinatesFormat.Unspecified; } }
 
         public string ToString(CoordinatesFormat format)
         {
-            string s;
             switch (format)
             {
                 case CoordinatesFormat.DegreesMinutesDecimalSeconds:
-                    s = string.Format("{0:000} {1:00} {2:00.0}", AbsoluteWholeDegrees * Sign, AbsoluteWholeMinutes, AbsoluteSeconds);
-                    break;
+                    return string.Format("{0:000} {1:00} {2:00.0}", AbsoluteWholeDegrees * Sign, AbsoluteWholeMinutes, AbsoluteSeconds);
                 case CoordinatesFormat.Default:
                 case CoordinatesFormat.DegreesDecimalMinutes:
-                    s = string.Format("{0:000} {1:00.000}", AbsoluteWholeDegrees * Sign, AbsoluteMinutes);
-                    break;
+                    return string.Format("{0:000} {1:00.000}", AbsoluteWholeDegrees * Sign, AbsoluteMinutes);
                 case CoordinatesFormat.DecimalDegrees:
-                    s = string.Format("{0:000.00000}", AbsoluteTotalDegrees * Sign);
-                    break;
+                    return string.Format("{0:000.00000}", AbsoluteTotalDegrees * Sign);
                 default:
-                    s = RawValue;
-                    break;
+                    return RawValue;
             }
-            return s;
         }
 
         public override string ToString()
@@ -440,28 +362,10 @@ namespace TMD.Model
             return ToString(InputFormat);
         }
 
-        public static bool operator ==(Longitude l1, Longitude l2)
-        {
-            if ((object)l1 == null || (object)l2 == null)
-            {
-                return (object)l1 == null && (object)l2 == null;
-            }
-            return l1.TotalDegrees == l2.TotalDegrees;
-        }
-
-        public static bool operator !=(Longitude l1, Longitude l2)
-        {
-            if ((object)l1 == null || (object)l2 == null)
-            {
-                return !((object)l1 == null && (object)l2 == null);
-            }
-            return l1.TotalDegrees != l2.TotalDegrees;
-        }
-
         public override bool Equals(object obj)
         {
-            Longitude l = obj as Longitude;
-            return l != null && l == this;
+            var other = obj as Longitude;
+            return other != null && this.TotalDegrees.Equals(other.TotalDegrees);
         }
 
         public override int GetHashCode()
@@ -469,19 +373,9 @@ namespace TMD.Model
             return TotalDegrees.GetHashCode();
         }
 
-        #region IIsSpecified Members
-
-        public bool IsSpecified
-        {
-            get { return InputFormat != CoordinatesFormat.Unspecified; }
-        }
-
-        #endregion
-
-        public static Regex DegreesMinutesSecondsFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3})\\s+(?<minutes>[0-9]{1,2})\\s+(?<seconds>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
-        public static Regex DegreesDecimalMinutesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3})\\s+(?<minutes>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
-        public static Regex DecimalDegreesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
-
+        private static Regex DegreesMinutesSecondsFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3})\\s+(?<minutes>[0-9]{1,2})\\s+(?<seconds>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
+        private static Regex DegreesDecimalMinutesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3})\\s+(?<minutes>[0-9]{1,2}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalDegreesFormat = new Regex("^\\s*(?<sign>[-+])?(?<degrees>[0-9]{1,3}(\\.[0-9]+)?)\\s*$", RegexOptions.Compiled);
         public static Longitude Create(string s)
         {
             Match match;
@@ -562,6 +456,16 @@ namespace TMD.Model
                 InputFormat = CoordinatesFormat.Unspecified,
                 TotalDegrees = 0f,
                 RawValue = string.Empty
+            };
+        }
+
+        public object Clone()
+        {
+            return new Longitude
+            {
+                InputFormat = InputFormat,
+                TotalDegrees = TotalDegrees,
+                RawValue = RawValue
             };
         }
     }

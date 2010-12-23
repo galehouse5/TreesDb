@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ImportTreeModel>" %>
-<div class="portlet x12 Site">        
+<div class="portlet x12 Tree">        
     <div class="portlet-header Entity-Header Tree-Header">
         <h4><%: Model.CommonName %></h4>
         <div class="actions">

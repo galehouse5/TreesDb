@@ -68,7 +68,6 @@ namespace TMD.Model
                 recomputeIfNeeded();
                 return m_Center;
             }
-            private set { }
         }
 
         public CoordinateBounds Extend(Coordinates c)
@@ -161,10 +160,11 @@ namespace TMD.Model
 
         public static CoordinateBounds Create(Coordinates ne, Coordinates sw)
         {
-            CoordinateBounds cb = new CoordinateBounds();
-            cb.NE = ne;
-            cb.SW = sw;
-            return cb;
+            return new CoordinateBounds
+            {
+                NE = ne,
+                SW = sw
+            };
         }
 
         public static CoordinateBounds Create(IEnumerable<Coordinates> coordsEnumeration)

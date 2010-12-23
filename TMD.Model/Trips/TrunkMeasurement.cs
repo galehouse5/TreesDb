@@ -10,8 +10,7 @@ using TMD.Model.Extensions;
 namespace TMD.Model.Trips
 {
     [Serializable]
-    [ContextMethod("CheckHeightOrGirthIsSpecified", Tags = Tag.Screening)]
-    [ContextMethod("CheckHeightDistanceAngeAngleMeasurementsAreIncluded", Tags = Tag.Screening)]
+    [ContextMethod("ValidateHeightOrGirthIsSpecified", Tags = Tag.Screening)]
     public class TrunkMeasurement : UserCreatedEntityBase
     {
         protected TrunkMeasurement()
@@ -19,38 +18,20 @@ namespace TMD.Model.Trips
 
         public virtual MultiTrunkTreeMeasurement TreeMeasurement { get; protected set; }
 
-        [Valid]
-        public virtual Distance Girth { get; set; }
+        [Valid] public virtual Distance Girth { get; set; }
+        [Valid] public virtual Distance GirthMeasurementHeight { get; set; }
+        [Valid] public virtual Distance Height { get; set; }
 
-        [Valid]
-        public virtual Distance GirthMeasurementHeight { get; set; }
-
-        [Valid]
-        public virtual Distance Height { get; set; }
-
-        public virtual void CheckHeightOrGirthIsSpecified(IConstraintValidatorContext context)
+        public virtual void ValidateHeightOrGirthIsSpecified(IConstraintValidatorContext context)
         {
             if (!Height.IsSpecified && !Girth.IsSpecified && !HeightMeasurements.IsSpecified)
             {
-                context.AddInvalid<TrunkMeasurement, Distance>("You must enter either a height or a girth.", tm => tm.Girth);
+                context.AddInvalid<TrunkMeasurement, Distance>("You must specify a height or girth.", tm => tm.Girth);
+                context.AddInvalid<TrunkMeasurement, Distance>("You must specify a height or girth.", tm => tm.Height);
             }
         }
 
-        public virtual void CheckHeightDistanceAngeAngleMeasurementsAreIncluded(IConstraintValidatorContext context)
-        {
-            if (IncludeHeightDistanceAndAngleMeasurements)
-            {
-                if (!HeightMeasurements.IsSpecified)
-                {
-                    context.AddInvalid<TrunkMeasurement, HeightMeasurements>("You must specify enough distance and angle measurements to calculate a height.", tm => tm.HeightMeasurements);
-                }
-            }
-        }
-
-        public virtual bool IncludeHeightDistanceAndAngleMeasurements { get; set; }
-
-        [Valid]
-        public virtual HeightMeasurements HeightMeasurements { get; set; }
+        [Valid] public virtual HeightMeasurements HeightMeasurements { get; set; }
 
         private string m_TrunkComments;
         [Length(300, Message = "Trunk comments must not exceed 300 characters.", Tags = Tag.Persistence)]
@@ -69,7 +50,6 @@ namespace TMD.Model.Trips
                 GirthMeasurementHeight = Distance.Null(),
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),
-                IncludeHeightDistanceAndAngleMeasurements = false,
                 TrunkComments = string.Empty
             }.RecordCreation() as TrunkMeasurement;
         }

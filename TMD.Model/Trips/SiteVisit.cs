@@ -29,62 +29,43 @@ namespace TMD.Model.Trips
             set { m_Name = value.OrEmptyAndTrimToTitleCase(); }
         }
 
-        private Coordinates m_Coordinates;
         [Valid, Specified(Message = "You must specify coordinates for this site or any contained subsite.", Tags = Tag.Finalization)]
-        public virtual Coordinates Coordinates
+        public virtual Coordinates Coordinates { get; set; }
+
+        public virtual bool CanCalculateCoordinates(bool ignoreContainingTrip = false)
         {
-            get
+            if (Coordinates.IsValidAndSpecified())
             {
-                if (CoordinatesCalculated)
-                {
-                    if (SubsiteVisitCentralCoordinates.IsSpecified)
-                    {
-                        m_Coordinates = SubsiteVisitCentralCoordinates;
-                    }
-                    else
-                    {
-                        m_Coordinates = Coordinates.Null();
-                    }
-                }
-                return m_Coordinates;
+                return true;
             }
-            set
+            if (SubsiteVisits.Where(ss => ss.CanCalculateCoordinates(true)).Count() > 0)
             {
-                m_Coordinates = value;
+                return true;
             }
+            if (!ignoreContainingTrip)
+            {
+                return Trip.CanCalculateCoordinates();
+            }
+            return false;
         }
 
-        public virtual bool CoordinatesCalculatedFromContainedSubsiteVisits
+        public virtual Coordinates CalculateCoordinates(bool ignoreContainingTrip = false)
         {
-            get
+            if (Coordinates.IsValidAndSpecified())
             {
-                return CoordinatesCalculated
-                    && SubsiteVisitCentralCoordinates.IsSpecified;
+                return Coordinates;
             }
-        }
-
-        public virtual Coordinates SubsiteVisitCentralCoordinates
-        {
-            get
+            var bounds = CoordinateBounds.Create(SubsiteVisits
+                .Where(ss => ss.CanCalculateCoordinates(true)).Select(ss => ss.CalculateCoordinates(true)));
+            if (bounds.IsSpecified)
             {
-                CoordinateBounds cb = CoordinateBounds.Null();
-                foreach (SubsiteVisit ssv in SubsiteVisits)
-                {
-                    if (ssv.CoordinatesEntered && ssv.Coordinates.IsValidAndSpecified())
-                    {
-                        cb.Extend(ssv.Coordinates);
-                    }
-                }
-                return cb.Center;
+                return bounds.Center;
             }
-        }
-
-        public virtual bool CoordinatesCalculated { get; set; }
-
-        public virtual bool CoordinatesEntered
-        {
-            get { return !CoordinatesCalculated; }
-            set { CoordinatesCalculated = !value; }
+            if (!ignoreContainingTrip && Trip.CanCalculateCoordinates())
+            {
+                return Trip.CalculateCoordinates();
+            }
+            return Coordinates.Null();
         }
 
         private string m_Comments;
@@ -102,65 +83,14 @@ namespace TMD.Model.Trips
 
         public virtual SubsiteVisit AddSubsiteVisit()
         {
-            SubsiteVisit subsite = SubsiteVisit.Create(this);
+            var subsite = SubsiteVisit.Create(this);
             SubsiteVisits.Add(subsite);
             return subsite;
         }
 
-        public virtual SubsiteVisit AddSubsiteVisit(SubsiteVisit ssv)
+        public virtual bool RemoveSubsiteVisit(SubsiteVisit sv)
         {
-            ssv.SetPrivatePropertyValue("SiteVisit", this);
-            SubsiteVisits.Add(ssv);
-            return ssv;
-        }
-
-        public virtual bool RemoveSubsiteVisit(SubsiteVisit subsite)
-        {
-            return SubsiteVisits.Remove(subsite);
-        }
-
-        public virtual bool HasSubsiteVisits
-        {
-            get { return SubsiteVisits.Count > 0; }
-        }
-
-        public virtual bool AllSubsiteVisitsHaveTreeMeasurements
-        {
-            get
-            {
-                foreach (SubsiteVisit ssv in SubsiteVisits)
-                {
-                    if (!ssv.HasTreeMeasurements)
-                    {
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
-
-        public virtual SubsiteVisit GetSubsiteVisit(int id)
-        {
-            foreach (SubsiteVisit ssv in SubsiteVisits)
-            {
-                if (ssv.Id == id)
-                {
-                    return ssv;
-                }
-            }
-            return null;
-        }
-
-        public virtual bool HasBeenModifiedSinceCreation
-        {
-            get
-            {
-                return !Name.Equals(string.Empty)
-                    || !CoordinatesCalculated
-                    || Coordinates != Coordinates.Null()
-                    || SubsiteVisits.Count != 0
-                    || !Comments.Equals(string.Empty);
-            }
+            return SubsiteVisits.Remove(sv);
         }
 
         internal static SiteVisit Create(Trip t)
@@ -168,8 +98,7 @@ namespace TMD.Model.Trips
             return new SiteVisit
             {
                 Name = string.Empty,
-                CoordinatesEntered = t.SiteVisitCentralCoordinates.IsValidAndSpecified(),
-                Coordinates = t.SiteVisitCentralCoordinates.IsValidAndSpecified() ? t.SiteVisitCentralCoordinates : Coordinates.Null(),
+                Coordinates = t.CalculateCoordinates(),
                 SubsiteVisits = new List<SubsiteVisit>(),
                 Comments = string.Empty,
                 Trip = t

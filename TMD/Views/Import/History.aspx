@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="Import History" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IList<Trip>>" %>
 <%@ Import Namespace="TMD.Model.Trips" %>
 
+<asp:Content ContentPlaceHolderID="Styles" runat="server">
+    <link rel="stylesheet" href="/css/Import.css" type="text/css" />
+</asp:Content>
+
 <asp:Content ContentPlaceHolderID="Content" runat="server">
     <% var tripsPendingImport = Model.Where(m => !m.IsImported).ToList(); %>
     <% if (tripsPendingImport.Count > 0) { %>

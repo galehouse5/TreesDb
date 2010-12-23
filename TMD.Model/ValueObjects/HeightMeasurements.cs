@@ -5,47 +5,43 @@ using System.Text;
 using TMD.Model.Validation;
 using System.ComponentModel;
 using NHibernate.Validator.Constraints;
+using NHibernate.Validator.Engine;
 
 namespace TMD.Model
 {
     [Serializable]
+    [ContextMethod("ValidateCanCalculateHeightIfSpecified", Tags = Tag.Screening)]
+    [ContextMethod("ValidateCanCalculateOffsetIfSpecified", Tags = Tag.Screening)]
     public class HeightMeasurements : ISpecified
     {
         private HeightMeasurements() 
         { }
 
-        [DisplayName("Distance top:")]
-        [Valid]
-        public Distance DistanceTop { get; private set; }
+        [Valid] public Distance DistanceTop { get; private set; }
+        [Valid] public Angle AngleTop { get; private set; }
+        [Valid] public Distance DistanceBottom { get; private set; }
+        [Valid] public Angle AngleBottom { get; private set; }
+        [Valid] public DirectedDistance VerticalOffset { get; private set; }
 
-        [DisplayName("Angle top:")]
-        [Valid]
-        public Angle AngleTop { get; private set; }
+        public bool IsSpecified { get { return DistanceTop.IsSpecified || AngleTop.IsSpecified || AngleTop.IsSpecified || AngleBottom.IsSpecified || VerticalOffset.IsSpecified; } }
 
-        [DisplayName("Distance bottom:")]
-        [Valid]
-        public Distance DistanceBottom { get; private set; }
+        [Valid] public Distance Height { get { return calculateHeight(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); } }
+        [Valid] public Distance Offset { get { return calculateOffset(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); } }
 
-        [DisplayName("Angle bottom:")]
-        [Valid]
-        public Angle AngleBottom { get; private set; }
-
-        [DisplayName("Vertical offset:")]
-        [Valid]
-        public DirectedDistance VerticalOffset { get; private set; }
-
-        [DisplayName("Calculated height:")]
-        [Valid]
-        public Distance Height 
+        protected internal virtual void ValidateCanCalculateHeightIfSpecified(IConstraintValidatorContext context)
         {
-            get { return calculateHeight(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); }
+            if (IsSpecified && !Height.IsSpecified)
+            {
+                context.AddInvalid<HeightMeasurements, Distance>("You must specify proper distance and angle measurements to calculate a height.", hm => hm.Height);
+            }
         }
 
-        [DisplayName("Calculated offset:")]
-        [Valid]
-        public Distance Offset
+        protected internal virtual void ValidateCanCalculateOffsetIfSpecified(IConstraintValidatorContext context)
         {
-            get { return calculateOffset(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); }
+            if (IsSpecified && !Height.IsSpecified)
+            {
+                context.AddInvalid<HeightMeasurements, Distance>("You must specify proper distance and angle measurements to calculate an offset.", hm => hm.Offset);
+            }
         }
 
         private static Distance calculateHeight(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
@@ -71,36 +67,15 @@ namespace TMD.Model
             return Distance.Create(Math.Abs(offset));
         }
 
-        public static bool operator ==(HeightMeasurements hm1, HeightMeasurements hm2)
-        {
-            if ((object)hm1 == null || (object)hm2 == null)
-            {
-                return (object)hm1 == null && (object)hm2 == null;
-            }
-            return hm1.DistanceTop == hm2.DistanceTop
-                && hm1.AngleTop == hm2.AngleTop
-                && hm1.DistanceBottom == hm2.DistanceBottom
-                && hm1.AngleBottom == hm2.AngleBottom
-                && hm1.VerticalOffset == hm2.VerticalOffset;
-        }
-
-        public static bool operator !=(HeightMeasurements hm1, HeightMeasurements hm2)
-        {
-            if ((object)hm1 == null || (object)hm2 == null)
-            {
-                return !((object)hm1 == null && (object)hm2 == null);
-            }
-            return hm1.DistanceTop != hm2.DistanceTop
-                || hm1.AngleTop != hm2.AngleTop
-                || hm1.DistanceBottom != hm2.DistanceBottom
-                || hm1.AngleBottom != hm2.AngleBottom
-                || hm1.VerticalOffset != hm2.VerticalOffset;
-        }
-
         public override bool Equals(object obj)
         {
-            HeightMeasurements hm = obj as HeightMeasurements;
-            return hm != null && hm == this;
+            var other = obj as HeightMeasurements;
+            return other != null
+                && DistanceTop.Equals(other.DistanceTop)
+                && AngleTop.Equals(other.AngleTop)
+                && DistanceBottom.Equals(other.DistanceBottom)
+                && AngleBottom.Equals(other.AngleBottom)
+                && VerticalOffset.Equals(other.VerticalOffset);
         }
 
         public override int GetHashCode()
@@ -110,15 +85,6 @@ namespace TMD.Model
                 ^ DistanceBottom.GetHashCode()
                 ^ AngleBottom.GetHashCode();
         }
-
-        #region IIsSpecified Members
-
-        public bool IsSpecified
-        {
-            get { return Height.IsSpecified; }
-        }
-
-        #endregion
 
         public static HeightMeasurements Create(Distance distanceTop, Angle angleTop, Distance distanceBottom, Angle angleBottom, DirectedDistance verticalOffset)
         {

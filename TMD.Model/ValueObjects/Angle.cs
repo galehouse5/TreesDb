@@ -29,49 +29,25 @@ namespace TMD.Model
         [NotEquals(AngleFormat.Invalid, Message = "Angle must be in decimal format.", Tags = Tag.Screening)]
         public AngleFormat InputFormat { get; private set; }
 
-        public float Radians
-        {
-            get { return (float)(((double)Degrees / 360d) * 2d * Math.PI); }
-        }
+        public float Radians { get { return (float)(((double)Degrees / 360d) * 2d * Math.PI); } }
+        public bool IsSpecified { get { return InputFormat != AngleFormat.Unspecified; } }
 
         public override string ToString()
         {
-            string s;
             switch (InputFormat)
             {
                 case AngleFormat.Default:
                 case AngleFormat.Decimal:
-                    s = Degrees.ToString();
-                    break;
+                    return Degrees.ToString();
                 default:
-                    s = RawValue;
-                    break;
+                    return RawValue;
             }
-            return s;
-        }
-
-        public static bool operator ==(Angle a1, Angle a2)
-        {
-            if ((object)a1 == null || (object)a2 == null)
-            {
-                return (object)a1 == null && (object)a2 == null;
-            }
-            return a1.Degrees == a2.Degrees;
-        }
-
-        public static bool operator !=(Angle a1, Angle a2)
-        {
-            if ((object)a1 == null || (object)a2 == null)
-            {
-                return !((object)a1 == null && (object)a2 == null);
-            }
-            return a1.Degrees != a2.Degrees;
         }
 
         public override bool Equals(object obj)
         {
-            Angle a = obj as Angle;
-            return a != null && a == this;
+            var other = obj as Angle;
+            return other != null && Degrees.Equals(other.Degrees);
         }
 
         public override int GetHashCode()
@@ -127,14 +103,5 @@ namespace TMD.Model
                 RawValue = string.Empty
             };
         }
-
-        #region IIsSpecified Members
-
-        public bool IsSpecified
-        {
-            get { return InputFormat != AngleFormat.Unspecified; }
-        }
-
-        #endregion
     }
 }

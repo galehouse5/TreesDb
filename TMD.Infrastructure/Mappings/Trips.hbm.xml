@@ -33,7 +33,6 @@
       <property name="Feet" column="Height"/>
       <property name="InputFormat" column="HeightInputFormat"/>
     </component>
-    <property name="IncludeHeightDistanceAndAngleMeasurements"/>
     <component name="HeightMeasurements" class="HeightMeasurements">
       <component name="DistanceTop" class="Distance">
         <property name="Feet" column="HeightMeasurementsDistanceTop"/>
@@ -102,7 +101,6 @@
       <property name="Feet" column="Elevation"/>
       <property name="InputFormat" column="ElevationInputFormat"/>
     </component>
-    <property name="CoordinatesCalculated" />
     <component name="Height" class="Distance">
       <property name="Feet" column="Height"/>
       <property name="InputFormat" column="HeightInputFormat"/>
@@ -179,7 +177,6 @@
     <property name="LandformIndex"/>
     <property name="TerrainComments"/>
     <property name="MakeCoordinatesPublic"/>
-    <property name="IncludeHeightDistanceAndAngleMeasurements"/>
     <property name="HeightMeasurementMethod" />
   </class>
 
@@ -201,7 +198,6 @@
         <property name="InputFormat" column="LongitudeInputFormat"/>
       </component>
     </component>
-    <property name="CoordinatesCalculated" />    
     <many-to-one name="Country" column="CountryId" cascade="none" />
     <many-to-one name="State" column="StateId" cascade="none" />
     <property name="County" />
@@ -233,7 +229,6 @@
         <property name="InputFormat" column="LongitudeInputFormat"/>
       </component>
     </component>
-    <property name="CoordinatesCalculated" />
     <property name="Comments" />
     <bag name="SubsiteVisits" cascade="all-delete-orphan" inverse="true">
       <key column="SiteVisitId" />

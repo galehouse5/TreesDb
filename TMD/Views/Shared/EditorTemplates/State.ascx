@@ -11,10 +11,17 @@
             <em class="required">*</em>
         <% } %>
     </label>
-    <%= Html.DropDownListFor(m => m, 
-        Repositories.Locations.FindAllStates()
-            .Select(s => new SelectListItem { Text = string.Format("{0}, {1}", s.Name, s.Country.Name), Value = s.Id.ToString(), Selected = Model == s})
-            .Union(new List<SelectListItem> { new SelectListItem { Text = "No state selected", Value = 0.ToString(), Selected = Model == null } })) %>        
+    <%= Html.DropDownListFor(m => m, new List<SelectListItem> { new SelectListItem { 
+                Text = "None selected", 
+                Value = 0.ToString(), 
+                Selected = Model == null
+            } }
+            .Union(Repositories.Locations.FindAllStates()
+            .Select(s => new SelectListItem { 
+                Text = string.Format("{0}, {1}", s.Name, s.Country.Name), 
+                Value = s.Id.ToString(), 
+                Selected = s.Equals(Model) 
+            }))) %>        
     <%= Html.ValidationMessageFor(m => m)%>
     <% if (ViewData.ContainsKey("helpText")) { %>
         <p class="field_help">

@@ -31,6 +31,15 @@ namespace TMD.Model
             return Provider.Begin();
         }
 
+        public static IDisposable BeginAndPersist()
+        {
+            return new PersistUnitOfWorkDecorator
+            {
+                Next = Provider.Begin(),
+                Provider = Provider
+            };
+        }
+
         public static void Persist()
         {
             Provider.Persist();
@@ -44,6 +53,18 @@ namespace TMD.Model
         public static void Dispose()
         {
             Provider.Dispose();
+        }
+    }
+
+    internal class PersistUnitOfWorkDecorator : IDisposable
+    {
+        public IDisposable Next { get; set; }
+        public IUnitOfWorkProvider Provider { get; set; }
+
+        public void Dispose()
+        {
+            Provider.Persist();
+            Next.Dispose();
         }
     }
 }

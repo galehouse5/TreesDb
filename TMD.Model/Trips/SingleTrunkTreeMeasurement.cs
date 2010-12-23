@@ -43,8 +43,7 @@ namespace TMD.Model.Trips
                 AgeType = TreeAgeType.NotSpecified,
                 Age = null,
                 GeneralComments = string.Empty,
-                CoordinatesEntered = ssv.CoordinatesEntered && ssv.Coordinates.IsValidAndSpecified(),
-                Coordinates = ssv.CoordinatesEntered && ssv.Coordinates.IsValidAndSpecified() ? ssv.Coordinates : Coordinates.Null(),
+                Coordinates = ssv.CalculateCoordinates(),
                 Elevation = Elevation.Null(),
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),
@@ -74,8 +73,7 @@ namespace TMD.Model.Trips
                 LandformIndex = null,
                 TerrainComments = string.Empty,
                 SubsiteVisit = ssv,
-                MakeCoordinatesPublic = true,
-                IncludeHeightDistanceAndAngleMeasurements = false,
+                MakeCoordinatesPublic = true
             }.RecordCreation() as SingleTrunkTreeMeasurement;
         }
     }
