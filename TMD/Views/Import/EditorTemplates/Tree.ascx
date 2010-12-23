@@ -17,7 +17,7 @@
             <%= Html.EditorFor(m => m.CrownSpread) %>
             <%= Html.EditorFor(m => m.Coordinates) %>
             <%= Html.EditorFor(m => m.Elevation) %>
-            <%= Html.EditorFor(m => m.GeneralComments) %>
+            <%= Html.EditorFor(m => m.GeneralComments, new { rows = 5 })%>
         <% } else { %>
             <div class="portlet x12 TreeSection">
                 <div class="portlet-header">
@@ -32,7 +32,7 @@
                     <%= Html.EditorFor(m => m.CrownSpread) %>
                     <%= Html.EditorFor(m => m.Coordinates) %>
                     <%= Html.EditorFor(m => m.Elevation) %>
-                    <%= Html.EditorFor(m => m.GeneralComments) %>
+                    <%= Html.EditorFor(m => m.GeneralComments, new { rows = 5 })%>
                 </div>
             </div>
         <%} %>

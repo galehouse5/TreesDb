@@ -35,6 +35,17 @@ namespace TMD.Models
     {
         public int Id { get; set; }
         public IList<ImportSiteModel> Sites { get; set; }
+
+        public ImportSiteModel FindSiteById(int id)
+        {
+            return Sites.First(s => id.Equals(s.Id));
+        }
+
+        public ImportSubsiteModel FindSubsiteById(int id)
+        {
+            var site = Sites.FirstOrDefault(s => s.FindSubsiteById(id) != null);
+            return site == null ? null : site.FindSubsiteById(id);
+        }
     }
 
     public class ImportSiteModel
@@ -66,6 +77,11 @@ namespace TMD.Models
 
         public IList<ImportSubsiteModel> Subsites { get; set; }
         public bool HasSingleSubsite { get { return Subsites != null && Subsites.Count == 1; } }
+
+        public ImportSubsiteModel FindSubsiteById(int id)
+        {
+            return Subsites.FirstOrDefault(ss => id.Equals(ss.Id));
+        }
     }
 
     public class ImportSubsiteModel
@@ -85,6 +101,12 @@ namespace TMD.Models
     {
         public int Id { get; set; }
         public IList<ImportSiteTreesModel> Sites { get; set; }
+
+        public ImportTreeModel FindTreeById(int id)
+        {
+            var site = Sites.FirstOrDefault(s => id.Equals(s.Id));
+            return site == null ? null : site.FindTreeById(id);
+        }
     }
 
     public class ImportSiteTreesModel
@@ -100,6 +122,12 @@ namespace TMD.Models
 
         public IList<ImportSubsiteTreesModel> Subsites { get; set; }
         public bool HasSingleSubsite { get { return Subsites != null && Subsites.Count == 1; } }
+
+        public ImportTreeModel FindTreeById(int id)
+        {
+            var subsite = Subsites.FirstOrDefault(ss => id.Equals(ss.Id));
+            return subsite == null ? null : subsite.FindTreeById(id);
+        }
     }
 
     public class ImportSubsiteTreesModel
@@ -107,6 +135,11 @@ namespace TMD.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public IList<ImportTreeModel> Trees { get; set; }
+
+        public ImportTreeModel FindTreeById(int id)
+        {
+            return Trees.FirstOrDefault(t => id.Equals(t.Id));
+        }
     }
 
     public class ImportTreeModel

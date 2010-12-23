@@ -43,7 +43,7 @@ namespace TMD.Model.Trips
                 AgeType = TreeAgeType.NotSpecified,
                 Age = null,
                 GeneralComments = string.Empty,
-                Coordinates = ssv.CalculateCoordinates(),
+                Coordinates = Coordinates.Null(),
                 Elevation = Elevation.Null(),
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),

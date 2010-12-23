@@ -35,7 +35,7 @@ namespace TMD.Model.Validation
 
         public bool IsValid(object value, IConstraintValidatorContext constraintValidatorContext)
         {
-            MethodInfo mi = value.GetType().GetMethod(MethodName);
+            MethodInfo mi = value.GetType().GetMethod(MethodName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
             constraintValidatorContext.DisableDefaultError();
             mi.Invoke(value, new object[] { constraintValidatorContext });
             return false;

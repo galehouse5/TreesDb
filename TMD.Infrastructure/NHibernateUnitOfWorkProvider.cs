@@ -61,5 +61,10 @@ namespace TMD.Infrastructure
             }
             Session.Dispose();
         }
+
+        public void Flush()
+        {
+            Session.Flush();
+        }
     }
 }

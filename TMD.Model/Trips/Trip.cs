@@ -104,6 +104,23 @@ namespace TMD.Model.Trips
             return Measurers.Remove(m);
         }
 
+        public virtual SiteVisit FindSiteVisitById(int id)
+        {
+            return SiteVisits.FirstOrDefault(s => id.Equals(s.Id));
+        }
+
+        public virtual SubsiteVisit FindSubsiteVisitById(int id)
+        {
+            var site = SiteVisits.FirstOrDefault(s => s.FindSubsiteVisitById(id) != null);
+            return site == null ? null : site.FindSubsiteVisitById(id);
+        }
+
+        public virtual TreeMeasurementBase FindTreeMeasurementById(int id)
+        {
+            var site = SiteVisits.FirstOrDefault(s => s.FindTreeMeasurementById(id) != null);
+            return site == null ? null : site.FindTreeMeasurementById(id);
+        }
+
         public static Trip Create()
         {
             return new Trip()

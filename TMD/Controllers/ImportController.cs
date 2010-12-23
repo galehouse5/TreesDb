@@ -179,15 +179,15 @@ namespace TMD.Controllers
                 {
                     var site = trip.AddSiteVisit();
                     ensureTripSitesHaveASubsite(trip);
-                    Repositories.Trips.Save(trip);
+                    Repositories.Trips.Save(trip); UnitOfWork.Flush();
                     model.Sites.Add(Mapper.Map<Model.Trips.SiteVisit, ImportSiteModel>(site));
                     ensureSitesAreSaveableAndRemovable(model);
                     return Request.IsAjaxRequest() ? (model.Sites.Count > 2 ? PartialView("SitePartialById", model).AddViewData("siteId", site.Id) : PartialView("SitesPartial", model)) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Save))
                 {
-                    var siteModel = model.Sites.First(s => s.Id == innerAction.Id);
-                    var site = trip.SiteVisits.First(s => s.Id == innerAction.Id);
+                    var siteModel = model.FindSiteById(innerAction.Id);
+                    var site = trip.FindSiteVisitById(innerAction.Id);
                     Mapper.Map<ImportSiteModel, Model.Trips.SiteVisit>(siteModel, site);
                     this.ValidateMappedModel<Model.Trips.SiteVisit, ImportSiteModel>(site, string.Format("Sites[{0}].", model.Sites.IndexOf(siteModel)), Tag.Screening, Tag.Persistence);
                     if (!ModelState.IsValid) { return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", innerAction.Id) : View(model); }
@@ -197,31 +197,31 @@ namespace TMD.Controllers
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Remove))
                 {
-                    model.Sites.RemoveAll(s => s.Id == innerAction.Id);
-                    trip.SiteVisits.RemoveAll(s => s.Id == innerAction.Id);
+                    model.Sites.Remove(model.FindSiteById(innerAction.Id));
+                    trip.RemoveSiteVisit(trip.FindSiteVisitById(innerAction.Id));
                     ensureSitesAreSaveableAndRemovable(model);
                     return Request.IsAjaxRequest() ? (ActionResult)PartialView("SitesPartial", model) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Edit))
                 {
-                    model.Sites.First(s => s.Id == innerAction.Id).IsEditing = true;
+                    model.FindSiteById(innerAction.Id).IsEditing = true;
                     return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", innerAction.Id) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Add))
                 {
-                    var siteModel = model.Sites.First(s => s.Id == innerAction.Id);
-                    var site = trip.SiteVisits.First(s => s.Id == innerAction.Id);
+                    var siteModel = model.FindSiteById(innerAction.Id);
+                    var site = trip.FindSiteVisitById(innerAction.Id);
                     var subsite = site.AddSubsiteVisit();
-                    Repositories.Trips.Save(trip);
+                    Repositories.Trips.Save(trip); UnitOfWork.Flush();
                     Mapper.Map<ImportSiteModel, Model.Trips.SiteVisit>(siteModel, site);
                     Mapper.Map<Model.Trips.SiteVisit, ImportSiteModel>(site, siteModel);
                     return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", siteModel.Id) : View(model);
                 }
                 if (innerAction.Equals(InnerAction.EntityLevel.Subsite, InnerAction.EntityAction.Remove))
                 {
-                    var siteModel = model.Sites.First(s => s.Subsites.Contains(ss => ss.Id == innerAction.Id));
-                    model.Sites.ForEach(s => s.Subsites.RemoveAll(ss => ss.Id == innerAction.Id));
-                    trip.SiteVisits.ForEach(s => s.SubsiteVisits.RemoveAll(ss => ss.Id == innerAction.Id));
+                    var subsite = trip.FindSubsiteVisitById(innerAction.Id);
+                    var siteModel = model.FindSiteById(subsite.SiteVisit.Id);
+                    siteModel.Subsites.Remove(siteModel.FindSubsiteById(innerAction.Id));
                     Repositories.Trips.Save(trip);
                     return Request.IsAjaxRequest() ? PartialView("SitePartialById", model).AddViewData("siteId", siteModel.Id) : View(model);
                 }
@@ -267,7 +267,19 @@ namespace TMD.Controllers
             using (UnitOfWork.BeginAndPersist())
             {
                 ensureTripSubsitesHaveATree(trip);
+                if (innerAction.Equals(InnerAction.EntityLevel.Tree, InnerAction.EntityAction.Save))
+                {
+                    //var tree = 
 
+
+                    //Mapper.Map<ImportTreeModel, Model.Trips.TreeMeasurementBase>(model, 
+
+                    //Mapper.Map<ImportSitesModel, Model.Trips.Trip>(model, trip);
+                    //this.ValidateMappedModel<Model.Trips.Trip, ImportSitesModel>(trip, Tag.Screening, Tag.Persistence);
+                    //if (!ModelState.IsValid) { return View(model); }
+                    //Repositories.Trips.Save(trip);
+                    //return RedirectToAction("Trees", new { id = trip.Id });
+                }
 
 
 

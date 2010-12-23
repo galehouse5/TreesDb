@@ -146,12 +146,17 @@ namespace TMD.Model.Trips
             return TreeMeasurements.Remove(tm);
         }
 
+        public virtual TreeMeasurementBase FindTreeMeasurementById(int id)
+        {
+            return TreeMeasurements.FirstOrDefault(tm => id.Equals(tm.Id));
+        }
+
         internal static SubsiteVisit Create(SiteVisit sv)
         {
             return new SubsiteVisit
             {
                 Name = string.Empty,
-                Coordinates = sv.CalculateCoordinates(),
+                Coordinates = Coordinates.Null(),
                 OwnershipType = string.Empty,
                 OwnershipContactInfo = string.Empty,
                 Comments = string.Empty,

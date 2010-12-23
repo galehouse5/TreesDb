@@ -93,12 +93,23 @@ namespace TMD.Model.Trips
             return SubsiteVisits.Remove(sv);
         }
 
+        public virtual SubsiteVisit FindSubsiteVisitById(int id)
+        {
+            return SubsiteVisits.FirstOrDefault(ss => id.Equals(ss.Id));
+        }
+
+        public virtual TreeMeasurementBase FindTreeMeasurementById(int id)
+        {
+            var subsite = SubsiteVisits.FirstOrDefault(ss => ss.FindTreeMeasurementById(id) != null);
+            return subsite == null ? null : subsite.FindTreeMeasurementById(id);
+        }
+
         internal static SiteVisit Create(Trip t)
         {
             return new SiteVisit
             {
                 Name = string.Empty,
-                Coordinates = t.CalculateCoordinates(),
+                Coordinates = Coordinates.Null(),
                 SubsiteVisits = new List<SubsiteVisit>(),
                 Comments = string.Empty,
                 Trip = t

@@ -12,6 +12,7 @@ namespace TMD.Model
         IDisposable Begin();
         void Persist();
         void Rollback();
+        void Flush();
     }
 
     public static class UnitOfWork
@@ -53,6 +54,11 @@ namespace TMD.Model
         public static void Dispose()
         {
             Provider.Dispose();
+        }
+
+        public static void Flush()
+        {
+            Provider.Flush();
         }
     }
 
