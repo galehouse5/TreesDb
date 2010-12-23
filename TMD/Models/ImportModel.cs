@@ -80,4 +80,40 @@ namespace TMD.Models
         [DisplayName("Make contact public")] public bool MakeOwnershipContactInfoPublic { get; set; }
         public string Comments { get; set; }
     }
+
+    public class ImportTreesModel
+    {
+        public int Id { get; set; }
+        public IList<ImportSiteTreesModel> Sites { get; set; }
+    }
+
+    public class ImportSiteTreesModel
+    {
+        public int Id { get; set; }
+
+        private string m_Name;
+        public string Name
+        {
+            get { return HasSingleSubsite ? Subsites[0].Name : m_Name; }
+            set { m_Name = value; }
+        }
+
+        public IList<ImportSubsiteTreesModel> Subsites { get; set; }
+        public bool HasSingleSubsite { get { return Subsites != null && Subsites.Count == 1; } }
+    }
+
+    public class ImportSubsiteTreesModel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public IList<ImportTreeModel> Trees { get; set; }
+    }
+
+    public class ImportTreeModel
+    {
+        public int Id { get; set; }
+        [DisplayName("Common name")] public string CommonName { get; set; }
+        public bool IsEditing { get; set; }
+        public bool IsRemovable { get; set; }
+    }
 }

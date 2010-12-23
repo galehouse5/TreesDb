@@ -144,6 +144,7 @@
   <ItemGroup>
     <Content Include="css\custom.css" />
     <Content Include="css\forms.css" />
+    <Content Include="css\Import.css" />
     <Content Include="css\jquery\images\ui-bg_flat_0_000000_40x100.png" />
     <Content Include="css\jquery\images\ui-bg_flat_70_ffffff_40x100.png" />
     <Content Include="css\jquery\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -312,6 +313,11 @@
     <Content Include="Views\Account\VerifyHumanBeforeEmailingPasswordAssistance.aspx" />
     <Content Include="Views\Account\VerifyHumanBeforeRegistering.aspx" />
     <Content Include="Views\Export\MenuWidget.ascx" />
+    <Content Include="Views\Import\DisplayTemplates\Tree.ascx" />
+    <Content Include="Views\Import\EditorTemplates\SiteTrees.ascx" />
+    <Content Include="Views\Import\EditorTemplates\SubsiteTrees.ascx" />
+    <Content Include="Views\Import\EditorTemplates\Tree.ascx" />
+    <Content Include="Views\Import\Trees.aspx" />
     <Content Include="Views\Import\SitesPartial.ascx" />
     <Content Include="Views\Import\SitePartialById.ascx" />
     <Content Include="Views\Import\DisplayTemplates\Subsite.ascx" />

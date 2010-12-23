@@ -18,6 +18,7 @@ namespace TMD.Mappings
         {
             configureForTrip();
             configureForSites();
+            configureForTrees();
         }
 
         private void configureForTrip()
@@ -62,7 +63,7 @@ namespace TMD.Mappings
                 .ForPath("SiteVisits[*].Coordinates*", "Sites[*].Coordinates")
                 .ForPath("SiteVisits[*].SubsiteVisits*", "Sites[*].Subsites*")
                 .ForPath("SiteVisits[*].SubsiteVisits[*].Coordinates*", "Sites[*].Subsites[*].Coordinates")
-                .IgnorePath("SiteVisits[*].SubsiteVisits[*].TreeMeasurements");
+                .IgnorePath("SiteVisits[*].SubsiteVisits[*].TreeMeasurements*");
 
             CreateMap<SiteVisit, ImportSiteModel>()
                 .ForMember(dest => dest.IsEditing, opt => opt.MapFrom(src => 
@@ -75,7 +76,7 @@ namespace TMD.Mappings
             ValidationMapper.CreateMap<SiteVisit, ImportSiteModel>()
                 .ForPath("SubsiteVisits*", "Subsites*")
                 .ForPath("SubsiteVisits[*].Coordinates*", "Subsites[*].Coordinates")
-                .IgnorePath("SubsiteVisits[*].TreeMeasurements");
+                .IgnorePath("SubsiteVisits[*].TreeMeasurements*");
 
             CreateMap<SubsiteVisit, ImportSubsiteModel>();
 
@@ -93,6 +94,22 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Country, opt => opt.MapFrom(src => src.State == null ? null : src.State.Country))
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Coordinates.Create(src.Coordinates)))
                 .ForMember(dest => dest.CoordinatesEntered, opt => opt.MapFrom(src => !string.IsNullOrWhiteSpace(src.Coordinates)));
+        }
+
+        private void configureForTrees()
+        {
+            CreateMap<Trip, ImportTreesModel>()
+                .ForMember(dest => dest.Sites, opt => opt.MapFrom(src => src.SiteVisits));
+
+            CreateMap<SiteVisit, ImportSiteTreesModel>()
+                .ForMember(dest => dest.Subsites, opt => opt.MapFrom(src => src.SubsiteVisits));
+
+            CreateMap<SubsiteVisit, ImportSubsiteTreesModel>()
+                .ForMember(dest => dest.Trees, opt => opt.MapFrom(src => src.TreeMeasurements));
+
+            CreateMap<TreeMeasurementBase, ImportTreeModel>();
+
+            //CreateMap<MultiTrunkTreeMeasurement, ImportTreeModel>();
         }
     }
 }

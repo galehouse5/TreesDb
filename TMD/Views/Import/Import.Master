@@ -1,5 +1,9 @@
 ﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" MasterPageFile="~/Views/Shared/Site.Master" %>
 
+<asp:Content ContentPlaceHolderID="Styles" runat="server">
+    <link rel="stylesheet" href="/css/Import.css" type="text/css" />	
+</asp:Content>
+
 <asp:Content ContentPlaceHolderID="Content" runat="server">
     <div class="portlet x2">
         <div class="portlet-header">

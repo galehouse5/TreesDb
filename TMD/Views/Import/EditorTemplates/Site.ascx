@@ -6,10 +6,8 @@
     <div class="portlet-content">
         <%= Html.HiddenFor(m => m.Id) %>
         <%= Html.HiddenFor(m => m.IsEditing) %>
-        <% if (Model.IsSaveableAndRemovable) { %>
-            <%= Html.HiddenFor(m => m.IsSaveableAndRemovable) %>
-        <% } %>
-        <% if (Model.Subsites.Count == 1) { %>
+        <%= Html.HiddenFor(m => m.IsSaveableAndRemovable) %>
+        <% if (Model.HasSingleSubsite) { %>
             <%= Html.HiddenFor(m => m.Subsites[0].Id) %>
             <%= Html.EditorFor(m => m.Subsites[0].Name, new { required = true })%>
             <%= Html.EditorFor(m => m.Subsites[0].State, new { required = true })%>

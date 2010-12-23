@@ -8,7 +8,7 @@
     </div>
     <div class="portlet-content">
         <%= Html.HiddenFor(m => m.Id) %>
-        <% if (Model.Subsites.Count == 1) { %>
+        <% if (Model.HasSingleSubsite) { %>
             <ul>
                 <li><%= Html.DisplayFor(m => m.Subsites[0].State) %></li>
                 <li><%= Html.DisplayFor(m => m.Subsites[0].County) %></li>

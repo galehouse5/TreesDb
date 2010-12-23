@@ -1,0 +1,8 @@
+﻿.portlet-header.Entity-Header { padding: 10px 0; background-repeat: no-repeat; background-position: 8px; }
+.portlet-header.Entity-Header h4 { float: left;  margin-left: 35px; margin-top: 4px; }
+.portlet-header.Entity-Header .actions { float: right; margin-right: 15px;  }
+
+.portlet-header.Trip-Header { background-image: url(/images/icons/Trip32.png); }
+.portlet-header.Site-Header { background-image: url(/images/icons/Site32.png); }
+.portlet-header.Subsite-Header { background-image: url(/images/icons/Subsite32.png); }
+.portlet-header.Tree-Header { background-image: url(/images/icons/SingleTrunkTree32.png); }
