@@ -4,6 +4,7 @@
         <h4><%: Model.Name %></h4>
     </div>
     <div class="portlet-content">
+        <%= Html.HiddenFor(m => m.Id) %>
         <% for (int i = 0; i < Model.Trees.Count; i++) { %>
             <% if (Model.Trees[i].IsEditing) { %>
                 <%= Html.EditorFor(m => m.Trees[i], "Tree") %>

@@ -21,16 +21,12 @@ namespace TMD.Model
     [Serializable]
     public class Elevation : ISpecified
     {
-        public const float MinTreeLineFeet = 0;
-        public const float MaxTreeLineFeet = 17000;
-
         private Elevation()
         { }
 
         public string RawValue { get; private set; }
 
-        [Within2(MinTreeLineFeet, float.MaxValue, Message = "Elevation must not fall below min global tree line of {3} feet.", Tags = Tag.Screening)]
-        [Within2(float.MinValue, MaxTreeLineFeet, Message = "Elevation must not exceed max global tree line of {5} feet.", Tags = Tag.Screening)]
+        [Within2(0, 17000, Inclusive = true, Message = "Elevation must fall within sea level to 17000 feet.", Tags = Tag.Screening)]
         public float Feet { get; private set; }
 
         [NotEqualsAttribute(ElevationFormat.Invalid, Message = "Elevation must be in fffff ft or mmmmm m format.", Tags = Tag.Screening)]

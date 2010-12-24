@@ -15,7 +15,6 @@ namespace TMD.Infrastructure
         public void Initialize()
         {
             Session = Registry.SessionFactory.OpenSession();
-            Session.FlushMode = FlushMode.Commit;
         }
 
         public IDisposable Begin()
@@ -26,40 +25,30 @@ namespace TMD.Infrastructure
 
         public void Persist()
         {
-            try
-            {
-                Transaction.Commit();
-            }
-            catch
-            {
-                Transaction.Rollback();
-                throw;
-            }
-            finally
-            {
-                Transaction.Dispose();
-            }
+            Transaction.Commit();
         }
 
         public void Rollback()
         {
-            try
-            {
-                Transaction.Rollback();
-            }
-            finally
-            {
-                Transaction.Dispose();
-            }
+            Transaction.Rollback();
         }
 
         public void Dispose()
         {
-            if (Session.IsOpen)
+            if (Transaction != null) { Transaction.Dispose(); }
+            if (Session != null) { Session.Dispose(); }
+        }
+
+        public bool IsActive
+        {
+            get
             {
-                Session.Close();
+                if (Transaction != null)
+                {
+                    return Transaction.IsActive;
+                }
+                return false;
             }
-            Session.Dispose();
         }
 
         public void Flush()

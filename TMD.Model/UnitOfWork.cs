@@ -12,6 +12,7 @@ namespace TMD.Model
         IDisposable Begin();
         void Persist();
         void Rollback();
+        bool IsActive { get; }
         void Flush();
     }
 
@@ -69,7 +70,10 @@ namespace TMD.Model
 
         public void Dispose()
         {
-            Provider.Persist();
+            if (Provider.IsActive)
+            {
+                Provider.Persist();
+            }
             Next.Dispose();
         }
     }

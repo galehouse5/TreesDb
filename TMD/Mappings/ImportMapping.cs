@@ -106,9 +106,15 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.IsEditing, opt => opt.MapFrom(src =>
                     !ValidationMapper.Map<TreeMeasurementBase, ImportTreeModel>(src.Validate(Tag.Screening, Tag.Persistence)).IsValid()))
                 .ForMember(dest => dest.IsRemovable, opt => opt.MapFrom(src => src.SubsiteVisit.TreeMeasurements.Count > 1));
-            ValidationMapper.CreateMap<TreeMeasurementBase, ImportTreeModel>();
+            ValidationMapper.CreateMap<TreeMeasurementBase, ImportTreeModel>()
+                .ForPath("*.InputFormat", "*")
+                .ForPath("*.Feet", "*")
+                .ForPath("*.Latitude.*", "*")
+                .ForPath("*.Longitude.*", "*");
 
-            //CreateMap<MultiTrunkTreeMeasurement, ImportTreeModel>();
+
+
+            CreateMap<ImportTreeModel, TreeMeasurementBase>();
         }
     }
 }

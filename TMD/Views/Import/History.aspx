@@ -28,7 +28,7 @@
                             <% if (t.Date.HasValue) { %>
                                 <li><strong>Visited:</strong> <%= t.Date.Value.ToString("MM/dd/yyyy") %></li>
                             <% } %>
-                            <% if (t.HasSiteVisits) { %>
+                            <% if (t.SiteVisits.Count > 0) { %>
                                 <li><strong>Sites:</strong><ul>
                                 <% foreach (SiteVisit sv in t.SiteVisits) { %>
                                     <li><%: sv.Name %></li>
@@ -68,7 +68,7 @@
                     <% if (t.Date.HasValue) { %>
                         <li><strong>Visited:</strong> <%= t.Date.Value.ToString("MM/dd/yyyy") %></li>
                     <% } %>
-                    <% if (t.HasSiteVisits) { %>
+                    <% if (t.SiteVisits.Count > 0) { %>
                         <li><strong>Sites:</strong><ul>
                         <% foreach (SiteVisit sv in t.SiteVisits) { %>
                             <li><%: sv.Name %></li>

@@ -104,8 +104,19 @@ namespace TMD.Models
 
         public ImportTreeModel FindTreeById(int id)
         {
-            var site = Sites.FirstOrDefault(s => id.Equals(s.Id));
+            var site = FindSiteContainingTreeWithId(id);
             return site == null ? null : site.FindTreeById(id);
+        }
+
+        public ImportSiteTreesModel FindSiteContainingTreeWithId(int id)
+        {
+            return Sites.FirstOrDefault(s => s.FindTreeById(id) != null);
+        }
+
+        public ImportSubsiteTreesModel FindSubsiteContainingTreeWithId(int id)
+        {
+            var site = Sites.FirstOrDefault(s => s.FindSubsiteContainingTreeWithId(id) != null);
+            return site == null ? null : site.FindSubsiteContainingTreeWithId(id);
         }
     }
 
@@ -125,8 +136,13 @@ namespace TMD.Models
 
         public ImportTreeModel FindTreeById(int id)
         {
-            var subsite = Subsites.FirstOrDefault(ss => id.Equals(ss.Id));
+            var subsite = FindSubsiteContainingTreeWithId(id);
             return subsite == null ? null : subsite.FindTreeById(id);
+        }
+
+        public ImportSubsiteTreesModel FindSubsiteContainingTreeWithId(int id)
+        {
+            return Subsites.FirstOrDefault(ss => ss.FindTreeById(id) != null);
         }
     }
 
@@ -142,11 +158,13 @@ namespace TMD.Models
         }
     }
 
+    public enum EImportTreeModelEditMode { Simple, Advanced }
+
     public class ImportTreeModel
     {
         public int Id { get; set; }
         public bool IsEditing { get; set; }
-        public bool IsAdvancedEditing { get; set; }
+        public EImportTreeModelEditMode EditMode { get; set; }
         public bool IsRemovable { get; set; }
         [DisplayName("Common name")] public string CommonName { get; set; }
         [DisplayName("Scientific name")] public string ScientificName { get; set; }

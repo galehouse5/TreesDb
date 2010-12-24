@@ -6,9 +6,9 @@
     <div class="portlet-content">
         <%= Html.HiddenFor(m => m.Id) %>
         <%= Html.HiddenFor(m => m.IsEditing) %>
-        <%= Html.HiddenFor(m => m.IsAdvancedEditing) %>
+        <%= Html.HiddenFor(m => m.EditMode) %>
         <%= Html.HiddenFor(m => m.IsRemovable) %>
-        <% if (!Model.IsAdvancedEditing) { %>
+        <% if (Model.EditMode == EImportTreeModelEditMode.Simple) { %>
             <%= Html.EditorFor(m => m.CommonName, new { required = true }) %>
             <%= Html.EditorFor(m => m.ScientificName, new { required = true }) %>
             <%= Html.EditorFor(m => m.Height) %>
@@ -41,7 +41,7 @@
             <% if (Model.IsRemovable) { %>
                 <button type="submit" class="btn btn-grey Remove" name="innerAction" value="Tree.<%= Model.Id %>.Remove">Remove</button>
             <% } %>
-            <% if (!Model.IsAdvancedEditing) { %>
+            <% if (Model.EditMode == EImportTreeModelEditMode.Simple) { %>
                 <button type="submit" class="btn btn-orange" name="innerAction" value="Tree.<%= Model.Id %>.AdvancedEdit">Advanced edit</button>
             <% } %>
         </div>
