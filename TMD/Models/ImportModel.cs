@@ -223,4 +223,41 @@ namespace TMD.Models
         [DisplayName("Comments")] public string GeneralComments { get; set; }
         public Elevation Elevation { get; set; }
     }
+
+    public class ImportFinishedTripModel
+    {
+        public int Id { get; set; }
+        [DisplayName("Trip name")] public string Name { get; set; }
+        [DisplayName("Trip date")] public DateTime? Date { get; set; }
+        [DisplayName("Measurer contact")] public string MeasurerContactInfo { get; set; }
+        [DisplayName("First measurer")] public string FirstMeasurer { get; set; }
+        [DisplayName("Second measurer")] public string SecondMeasurer { get; set; }
+        [DisplayName("Third measurer")] public string ThirdMeasurer { get; set; }
+        public IList<ImportFinishedSiteModel> Sites { get; set; }
+    }
+
+    public class ImportFinishedSiteModel
+    {
+        public string Name { get; set; }
+        public IList<ImportFinishedSubsiteModel> Subsites { get; set; }
+        public bool HasSingleSubsite { get { return Subsites != null && Subsites.Count == 1; } }
+    }
+
+    public class ImportFinishedSubsiteModel
+    {
+        public string Name { get; set; }
+        public State State { get; set; }
+        public string County { get; set; }
+        [DisplayName("Ownership type")] public string OwnershipType { get; set; }
+        public IList<ImportFinishedTreeModel> Trees { get; set; }
+    }
+
+    public class ImportFinishedTreeModel
+    {
+        [DisplayName("Common name")] public string CommonName { get; set; }
+        [DisplayName("Scientific name")] public string ScientificName { get; set; }
+        public Distance Height { get; set; }        
+        public Distance Girth { get; set; }
+        [DisplayName("Crown spread")] public Distance CrownSpread { get; set; }
+    }
 }

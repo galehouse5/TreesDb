@@ -19,17 +19,15 @@ namespace TMD.Mappings
             configureForTrip();
             configureForSites();
             configureForTrees();
+            configureForFinish();
         }
 
         private void configureForTrip()
         {
             CreateMap<Trip, ImportTripModel>()
-                .AfterMap((t, m) =>
-                    {
-                        m.FirstMeasurer = t.Measurers.Count > 0 ? t.Measurers[0].ToFormalName() : string.Empty;
-                        m.SecondMeasurer = t.Measurers.Count > 1 ? t.Measurers[1].ToFormalName() : string.Empty;
-                        m.ThirdMeasurer = t.Measurers.Count > 2 ? t.Measurers[2].ToFormalName() : string.Empty;
-                    });
+                .ForMember(dest => dest.FirstMeasurer, opt => opt.MapFrom(src => src.Measurers.Count > 0 ? src.Measurers[0].ToFormalName() : string.Empty))
+                .ForMember(dest => dest.SecondMeasurer, opt => opt.MapFrom(src => src.Measurers.Count > 1 ? src.Measurers[1].ToFormalName() : string.Empty))
+                .ForMember(dest => dest.ThirdMeasurer, opt => opt.MapFrom(src => src.Measurers.Count > 2 ? src.Measurers[2].ToFormalName() : string.Empty));
             ValidationMapper.CreateMap<Trip, ImportTripModel>()
                 .ForPath("Measurers[0].FirstName", "FirstMeasurer").ForPath("Measurers[0].LastName", "FirstMeasurer").UseMessage("Measurers[0].*", "Name must be specified.")
                 .ForPath("Measurers[1].FirstName", "SecondMeasurer").ForPath("Measurers[1].LastName", "SecondMeasurer").UseMessage("Measurers[1].*", "Name must be specified.")
@@ -126,6 +124,23 @@ namespace TMD.Mappings
                 .AfterMap((src, dest) => src.Trees.ForEach(t => Mapper.Map(t, dest.FindTreeMeasurementById(t.Id))));
 
             CreateMap<ImportTreeModel, TreeMeasurementBase>();
+        }
+
+        public void configureForFinish()
+        {
+            CreateMap<Trip, ImportFinishedTripModel>()
+                .ForMember(dest => dest.FirstMeasurer, opt => opt.MapFrom(src => src.Measurers.Count > 0 ? src.Measurers[0].ToFormalName() : string.Empty))
+                .ForMember(dest => dest.SecondMeasurer, opt => opt.MapFrom(src => src.Measurers.Count > 1 ? src.Measurers[1].ToFormalName() : string.Empty))
+                .ForMember(dest => dest.ThirdMeasurer, opt => opt.MapFrom(src => src.Measurers.Count > 2 ? src.Measurers[2].ToFormalName() : string.Empty))
+                .ForMember(dest => dest.Sites, opt => opt.MapFrom(src => src.SiteVisits));
+
+            CreateMap<SiteVisit, ImportFinishedSiteModel>()
+                .ForMember(dest => dest.Subsites, opt => opt.MapFrom(src => src.SubsiteVisits));
+
+            CreateMap<SubsiteVisit, ImportFinishedSubsiteModel>()
+                .ForMember(dest => dest.Trees, opt => opt.MapFrom(src => src.TreeMeasurements));
+
+            CreateMap<TreeMeasurementBase, ImportFinishedTreeModel>();
         }
     }
 }

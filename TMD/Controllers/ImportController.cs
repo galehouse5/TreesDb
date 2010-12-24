@@ -259,6 +259,20 @@ namespace TMD.Controllers
             }));
         }
 
+        private void ensureTreesAreRemovable(ImportTreesModel model)
+        {
+            foreach (var site in model.Sites)
+            {
+                foreach (var subsite in site.Subsites)
+                {
+                    foreach (var tree in subsite.Trees)
+                    {
+                        tree.IsRemovable = subsite.Trees.Count > 1;
+                    }
+                }
+            }
+        }
+
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult Trees(int id)
         {
@@ -318,6 +332,7 @@ namespace TMD.Controllers
                     var subsiteModel = model.FindSubsiteById(subsite.Id);
                     var treeModel = subsiteModel.AddTree();
                     Mapper.Map(tree, treeModel);
+                    ensureTreesAreRemovable(model);
                     return Request.IsAjaxRequest() ? (subsite.TreeMeasurements.Count > 2 ? 
                         PartialView("TreePartial", model).AddViewData("treeId", tree.Id) 
                         : PartialView("SubsiteTreesPartial", model).AddViewData("subsiteId", subsite.Id)) 
@@ -332,6 +347,7 @@ namespace TMD.Controllers
                     var treeModel = model.FindTreeById(tree.Id);
                     var subsiteModel = model.FindSubsiteById(subsite.Id);
                     subsiteModel.RemoveTree(treeModel);
+                    ensureTreesAreRemovable(model);
                     return Request.IsAjaxRequest() ?
                         PartialView("SubsiteTreesPartial", model).AddViewData("subsiteId", subsite.Id)
                         : View(model);
@@ -350,6 +366,16 @@ namespace TMD.Controllers
                 }
             }
             throw new NotImplementedException();
+        }
+
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult Finish(int id)
+        {
+            var trip = Repositories.Trips.FindById(id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            var model = new ImportFinishedTripModel();
+            Mapper.Map(trip, model);
+            return View(model);
         }
     }
 }

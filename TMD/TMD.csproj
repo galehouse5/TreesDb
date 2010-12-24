@@ -315,6 +315,10 @@
     <Content Include="Views\Account\VerifyHumanBeforeEmailingPasswordAssistance.aspx" />
     <Content Include="Views\Account\VerifyHumanBeforeRegistering.aspx" />
     <Content Include="Views\Export\MenuWidget.ascx" />
+    <Content Include="Views\Import\DisplayTemplates\FinishedTrip.ascx" />
+    <Content Include="Views\Import\DisplayTemplates\FinishedSite.ascx" />
+    <Content Include="Views\Import\DisplayTemplates\FinishedSubsite.ascx" />
+    <Content Include="Views\Import\DisplayTemplates\FinishedTree.ascx" />
     <Content Include="Views\Import\SubsiteTreesPartial.ascx" />
     <Content Include="Views\Import\TreePartial.ascx" />
     <Content Include="Views\Import\DisplayTemplates\Tree.ascx" />
@@ -336,6 +340,7 @@
     <Content Include="Views\Map\Index.aspx" />
     <Content Include="Views\Map\MenuWidget.ascx" />
     <Content Include="Views\Photo\ThumbnailWidget.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTime.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Distance.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\State.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\String.ascx" />
