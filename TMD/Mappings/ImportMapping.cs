@@ -78,13 +78,11 @@ namespace TMD.Mappings
             CreateMap<SubsiteVisit, ImportSubsiteModel>();
 
             CreateMap<ImportSitesModel, Trip>()
-                .AfterMap((src, dest) =>
-                    src.Sites.ForEach(s => Mapper.Map<ImportSiteModel, Model.Trips.SiteVisit>(s, dest.SiteVisits.First(sv => sv.Id == s.Id))));
+                .AfterMap((src, dest) => src.Sites.ForEach(s => Mapper.Map(s, dest.FindSiteVisitById(s.Id))));
 
             CreateMap<ImportSiteModel, SiteVisit>()
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => src.Coordinates.Clone() as Coordinates))
-                .AfterMap((src, dest) =>
-                    src.Subsites.ForEach(ss => Mapper.Map<ImportSubsiteModel, Model.Trips.SubsiteVisit>(ss, dest.SubsiteVisits.First(ssv => ssv.Id == ss.Id))));
+                .AfterMap((src, dest) => src.Subsites.ForEach(ss => Mapper.Map(ss, dest.FindSubsiteVisitById(ss.Id))));
 
             CreateMap<ImportSubsiteModel, SubsiteVisit>()
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => src.Coordinates.Clone() as Coordinates))
@@ -95,6 +93,12 @@ namespace TMD.Mappings
         {
             CreateMap<Trip, ImportTreesModel>()
                 .ForMember(dest => dest.Sites, opt => opt.MapFrom(src => src.SiteVisits));
+            ValidationMapper.CreateMap<Trip, ImportTreesModel>()
+                .ForPath("SiteVisits[*].SubsiteVisits[*].TreeMeasurements[*].*", "Sites[*].Subsites[*].Trees[*].*")
+                .ForPath("SiteVisits[*].SubsiteVisits[*].TreeMeasurements[*].*.InputFormat", "Sites[*].Subsites[*].Trees[*].*")
+                .ForPath("SiteVisits[*].SubsiteVisits[*].TreeMeasurements[*].*.Feet", "Sites[*].Subsites[*].Trees[*].*")
+                .ForPath("SiteVisits[*].SubsiteVisits[*].TreeMeasurements[*].*.Latitude.*", "Sites[*].Subsites[*].Trees[*].*")
+                .ForPath("SiteVisits[*].SubsiteVisits[*].TreeMeasurements[*].*.Longitude.*", "Sites[*].Subsites[*].Trees[*].*");
 
             CreateMap<SiteVisit, ImportSiteTreesModel>()
                 .ForMember(dest => dest.Subsites, opt => opt.MapFrom(src => src.SubsiteVisits));
@@ -112,7 +116,14 @@ namespace TMD.Mappings
                 .ForPath("*.Latitude.*", "*")
                 .ForPath("*.Longitude.*", "*");
 
+            CreateMap<ImportTreesModel, Trip>()
+                .AfterMap((src, dest) => src.Sites.ForEach(s => Mapper.Map(s, dest.FindSiteVisitById(s.Id))));
 
+            CreateMap<ImportSiteTreesModel, SiteVisit>()
+                .AfterMap((src, dest) => src.Subsites.ForEach(ss => Mapper.Map(ss, dest.FindSubsiteVisitById(ss.Id))));
+
+            CreateMap<ImportSubsiteTreesModel, SubsiteVisit>()
+                .AfterMap((src, dest) => src.Trees.ForEach(t => Mapper.Map(t, dest.FindTreeMeasurementById(t.Id))));
 
             CreateMap<ImportTreeModel, TreeMeasurementBase>();
         }

@@ -1,5 +1,11 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ImportSiteTreesModel>" %>
-<div class="portlet x12 Site">        
+<div class="portlet x12
+    <% if (Model.HasSingleSubsite) { %>
+        Site Subsite
+    <% } else { %>
+        Site
+    <% } %>
+">        
     <div class="portlet-header Entity-Header Site-Header">
         <h4><%: Model.Name %></h4>
     </div>

@@ -41,6 +41,18 @@ namespace TMD.Models
             return Sites.First(s => id.Equals(s.Id));
         }
 
+        public ImportSiteModel AddSite()
+        {
+            var site = new ImportSiteModel();
+            Sites.Add(site);
+            return site;
+        }
+
+        public bool RemoveSite(ImportSiteModel site)
+        {
+            return Sites.Remove(site);
+        }
+
         public ImportSubsiteModel FindSubsiteById(int id)
         {
             var site = Sites.FirstOrDefault(s => s.FindSubsiteById(id) != null);
@@ -77,6 +89,18 @@ namespace TMD.Models
 
         public IList<ImportSubsiteModel> Subsites { get; set; }
         public bool HasSingleSubsite { get { return Subsites != null && Subsites.Count == 1; } }
+
+        public ImportSubsiteModel AddSubsite()
+        {
+            var subsite = new ImportSubsiteModel();
+            Subsites.Add(subsite);
+            return subsite;
+        }
+
+        public bool RemoveSubsite(ImportSubsiteModel subsite)
+        {
+            return Subsites.Remove(subsite);
+        }
 
         public ImportSubsiteModel FindSubsiteById(int id)
         {
@@ -118,6 +142,12 @@ namespace TMD.Models
             var site = Sites.FirstOrDefault(s => s.FindSubsiteContainingTreeWithId(id) != null);
             return site == null ? null : site.FindSubsiteContainingTreeWithId(id);
         }
+
+        public ImportSubsiteTreesModel FindSubsiteById(int id)
+        {
+            var site = Sites.FirstOrDefault(s => s.FindSubsiteById(id) != null);
+            return site == null ? null : site.FindSubsiteById(id);
+        }
     }
 
     public class ImportSiteTreesModel
@@ -144,6 +174,11 @@ namespace TMD.Models
         {
             return Subsites.FirstOrDefault(ss => ss.FindTreeById(id) != null);
         }
+
+        public ImportSubsiteTreesModel FindSubsiteById(int id)
+        {
+            return Subsites.FirstOrDefault(ss => id.Equals(ss.Id));
+        }
     }
 
     public class ImportSubsiteTreesModel
@@ -155,6 +190,18 @@ namespace TMD.Models
         public ImportTreeModel FindTreeById(int id)
         {
             return Trees.FirstOrDefault(t => id.Equals(t.Id));
+        }
+
+        public ImportTreeModel AddTree()
+        {
+            var tree = new ImportTreeModel();
+            Trees.Add(tree);
+            return tree;
+        }
+
+        public bool RemoveTree(ImportTreeModel tree)
+        {
+            return Trees.Remove(tree);
         }
     }
 

@@ -7,7 +7,6 @@
         <%= Html.HiddenFor(m => m.Id) %>
         <%= Html.HiddenFor(m => m.IsEditing) %>
         <%= Html.HiddenFor(m => m.EditMode) %>
-        <%= Html.HiddenFor(m => m.IsRemovable) %>
         <% if (Model.EditMode == EImportTreeModelEditMode.Simple) { %>
             <%= Html.EditorFor(m => m.CommonName, new { required = true }) %>
             <%= Html.EditorFor(m => m.ScientificName, new { required = true }) %>

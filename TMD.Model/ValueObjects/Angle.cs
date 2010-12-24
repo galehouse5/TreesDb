@@ -23,7 +23,7 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within(0f, 90f, Message = "Angle must be in the range of 0 to 90 degrees.", Tags = Tag.Screening)]
+        [Within2(0f, 90f, Inclusive = true, Message = "Angle must be in the range of 0 to 90 degrees.", Tags = Tag.Screening)]
         public float Degrees { get; private set; }
 
         [NotEquals(AngleFormat.Invalid, Message = "Angle must be in decimal format.", Tags = Tag.Screening)]
