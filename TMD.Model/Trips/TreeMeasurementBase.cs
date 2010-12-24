@@ -8,6 +8,8 @@ using System.Diagnostics;
 using TMD.Model.Extensions;
 using NHibernate.Validator.Constraints;
 using NHibernate.Validator.Engine;
+using System.Drawing;
+using TMD.Model.Photos;
 
 namespace TMD.Model.Trips
 {
@@ -320,5 +322,19 @@ namespace TMD.Model.Trips
         }
 
         [Valid] public virtual Elevation Elevation { get; set; }
+
+        public virtual IList<Photo> Photos { get; protected set; }
+
+        public virtual Photo AddPhoto(Bitmap image)
+        {
+            var photo = new PhotoFactory().CreateForTrip(SubsiteVisit.SiteVisit.Trip, image);
+            Photos.Add(photo);
+            return photo;
+        }
+
+        public virtual bool RemovePhoto(Photo photo)
+        {
+            return Photos.Remove(photo);
+        }
     }
 }

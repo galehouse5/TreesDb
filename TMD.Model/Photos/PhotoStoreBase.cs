@@ -23,6 +23,8 @@ namespace TMD.Model.Photos
         public virtual int Id { get; private set; }
         public virtual bool IsActive { get; private set; }
 
+        public abstract bool Contains(Photo photo);
+
         public virtual StoredPhotoInfo Store(Photo photo, Bitmap image)
         {
             using (Stream s = GetWriteStream(photo))
@@ -78,7 +80,7 @@ namespace TMD.Model.Photos
     public class MemoryPhotoStore : PhotoStoreBase
     {
         private byte[] m_PhotoBytes;
-        protected MemoryPhotoStore()
+        protected internal MemoryPhotoStore()
         { }
 
         private class MemoryPhotoStream : MemoryStream
@@ -117,6 +119,11 @@ namespace TMD.Model.Photos
         {
             return new MemoryPhotoStore();
         }
+
+        public override bool Contains(Photo photo)
+        {
+            return m_PhotoBytes != null;
+        }
     }
 
     [DebuggerDisplay("{RootPath}")]
@@ -148,6 +155,11 @@ namespace TMD.Model.Photos
             {
                 File.Delete(getPath(photo));
             }
+        }
+
+        public override bool Contains(Photo photo)
+        {
+            return !0.Equals(photo.Id) && File.Exists(getPath(photo));
         }
     }
 }

@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.ComponentModel.DataAnnotations;
 using TMD.Model.Extensions;
+using TMD.Model.Photos;
 
 namespace TMD.Model.Trips
 {
@@ -73,7 +74,8 @@ namespace TMD.Model.Trips
                 LandformIndex = null,
                 TerrainComments = string.Empty,
                 SubsiteVisit = ssv,
-                MakeCoordinatesPublic = true
+                MakeCoordinatesPublic = true,
+                Photos = new List<Photo>()
             }.RecordCreation() as SingleTrunkTreeMeasurement;
         }
     }

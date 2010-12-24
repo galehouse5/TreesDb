@@ -30,6 +30,7 @@ namespace TMD.Model.Trips
             {
                 throw new InvalidEntityOperationException(t, "Unable to remove trip because it has already been imported.");
             }
+            InternalRemove(t);
         }
 
         protected abstract void InternalRemove(Trip t);

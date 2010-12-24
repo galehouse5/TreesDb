@@ -14,9 +14,9 @@ namespace TMD.UnitTests.Infrastructure
     public class PhotosRepository
     {
         [TestMethod]
-        public void FindsActivePhotoStore()
+        public void FindsPermanenetPhotoStore()
         {
-            PhotoStoreBase store = Repositories.Photos.FindActivePhotoStore();
+            PhotoStoreBase store = Repositories.Photos.FindPermanentPhotoStore();
             Assert.IsNotNull(store);
         }
 

@@ -20,13 +20,21 @@ namespace TMD.Model.Photos
     public class Photo : UserCreatedEntityBase
     {
         protected Photo()
-        { }
+        {
+            TemporaryStore = new MemoryPhotoStore();
+        }
 
-        public virtual PhotoStoreBase Store { get; private set; }
+        public virtual PhotoStoreBase TemporaryStore { get; private set; }
+        public virtual PhotoStoreBase PermanentStore { get; private set; }
         public virtual PhotoLinkBase Link { get; set; }
         public virtual Size Size { get; private set; }
         public virtual int Bytes { get; private set; }
         public virtual PhotoFormat Format { get; private set; }
+
+        public virtual bool IsStoredPermanently
+        {
+            get { return PermanentStore.Contains(this); }
+        }
 
         public virtual string ContentType
         {
@@ -73,7 +81,15 @@ namespace TMD.Model.Photos
 
         public virtual Bitmap Get()
         {
-            return Store.Retrieve(this);
+            if (TemporaryStore.Contains(this))
+            {
+                return TemporaryStore.Retrieve(this);
+            }
+            if (PermanentStore.Contains(this))
+            {
+                return PermanentStore.Retrieve(this);
+            }
+            throw new InvalidEntityStateException(this);
         }
 
         public virtual Bitmap Get(EPhotoSize size)
@@ -85,23 +101,14 @@ namespace TMD.Model.Photos
             }
         }
 
-        public virtual void MigrateStoreTo(PhotoStoreBase store)
-        {
-            if (this.Store != store)
-            {
-                this.Store.MigrateTo(store, this);
-                this.Store = store;
-            }
-        }
-
         internal static Photo Create(Bitmap image)
         {
             var photo = (Photo)new Photo 
             { 
-                Store = Repositories.Photos.FindMemoryPhotoStore(),
+                PermanentStore = Repositories.Photos.FindPermanentPhotoStore(),
                 Link = PublicPhotoLink.Create()
             }.RecordCreation();
-            var info = photo.Store.Store(photo, image);
+            var info = photo.TemporaryStore.Store(photo, image);
             photo.Size = info.Size;
             photo.Bytes = info.Bytes;
             photo.Format = info.Format;

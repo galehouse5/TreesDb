@@ -14,7 +14,6 @@ namespace TMD.Model.Photos
         void Remove(Photo photo);
         Photo FindById(int id);
         IList<Photo> FindByTripId(int tripId);
-        PhotoStoreBase FindActivePhotoStore();
-        PhotoStoreBase FindMemoryPhotoStore();
+        PhotoStoreBase FindPermanentPhotoStore();
     }
 }

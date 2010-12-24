@@ -6,14 +6,15 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TMD.Model.Trips;
 using TMD.Model;
 using TMD.Model.Locations;
+using TMD.UnitTests.Extensions;
 
-namespace TMD.UnitTests.Model
+namespace TMD.UnitTests.Infrastructure
 {
     [TestClass]
-    public class Trips
+    public class TripsRepository
     {
         [TestMethod]
-        public void AddAndRemoveTrip()
+        public void PersistsTrip()
         {            
             Trip t = Trip.Create();
             t.MeasurerContactInfo = "measurer contact info";
@@ -39,7 +40,7 @@ namespace TMD.UnitTests.Model
         }
 
         [TestMethod]
-        public void AddAndRemoveTripWithSiteVisits()
+        public void PersistsSiteVisits()
         {
             Trip t = Trip.Create();
             t.MeasurerContactInfo = "measurer contact info";
@@ -73,7 +74,7 @@ namespace TMD.UnitTests.Model
         }
 
         [TestMethod]
-        public void AddAndRemoveTripWithSiteVisitsAndSubsiteVisits()
+        public void PersistsSubsiteVisits()
         {
             Trip t = Trip.Create();
             t.MeasurerContactInfo = "measurer contact info";
@@ -125,7 +126,7 @@ namespace TMD.UnitTests.Model
         }
 
         [TestMethod]
-        public void AddAndRemoveTripWithSiteVisitsAndSubsiteVisitsAndMeasurementsAndMeasurers()
+        public void PersistsTreeMeasurements()
         {
             Trip t = Trip.Create();
             t.MeasurerContactInfo = "measurer contact info";
@@ -293,160 +294,65 @@ namespace TMD.UnitTests.Model
             }
         }
 
-        //[TestMethod]
-        //public void ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers()
-        //{
-        //    Trip t = Trip.Create();
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers().IsValid);
-        //    t.MeasurerContactInfo = "measurer contact info";
-        //    t.Name = "name";
-        //    t.PhotosAvailable = true;
-        //    t.Website = "website";
-        //    t.Date = DateTime.Now;
-        //    Assert.IsTrue(t.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers().IsValid);
-        //    SiteVisit sv1 = t.AddSiteVisit();
-        //    Assert.IsTrue(t.ValidateIgnoringSiteVisitsSubsiteVisitsTreeMeasurementsAndTreeMeasurers().IsValid);
-        //}
+        [TestMethod]
+        public void PersistsTreeMeasurementsWithPhotos()
+        {
+            Trip t = Trip.Create();
+            t.MeasurerContactInfo = "measurer contact info";
+            t.Name = "name";
+            Measurer tmeasurer1 = t.AddMeasurer();
+            tmeasurer1.FirstName = "tree measurer 1 first name";
+            tmeasurer1.LastName = "tree measurer 1 last name";
 
-        //[TestMethod]
-        //public void ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers()
-        //{
-        //    Trip t = Trip.Create();
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
-        //    t.MeasurerContactInfo = "measurer contact info";
-        //    t.Name = "name";
-        //    t.PhotosAvailable = true;
-        //    t.Website = "website";
-        //    t.Date = DateTime.Now;
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
-        //    SiteVisit sv1 = t.AddSiteVisit();
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
-        //    sv1.Name = "site visit name";
-        //    sv1.Comments = "site visit 1 comments";
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
-        //    SubsiteVisit ssv = sv1.AddSubsiteVisit();
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
-        //    ssv.Comments = "subsite visit comments";
-        //    ssv.Country = Repositories.Locations.FindCountryByCode("US");
-        //    ssv.County = "subsite visit county";
-        //    ssv.Name = "subsite visit name";
-        //    ssv.OwnershipContactInfo = "subsite visit ownership contact info";
-        //    ssv.OwnershipType = "subsite visit ownership type";
-        //    ssv.State = Repositories.Locations.FindStateByCountryAndStateCodes("US", "OH");
-        //    Assert.IsTrue(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
-        //    TreeMeasurementBase tm = ssv.AddSingleTrunkTreeMeasurement();
-        //    Assert.IsTrue(t.ValidateIgnoringSiteVisitCoordinatesSubsiteVisitCoordinatesTreeMeasurementsAndTreeMeasurers().IsValid);
-        //}
+            SiteVisit sv1 = t.AddSiteVisit();
+            sv1.Name = "site visit 1 name";
+            SiteVisit sv2 = t.AddSiteVisit();
+            sv2.Name = "site visit 2 name";
 
-        //[TestMethod]
-        //public void ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates()
-        //{
-        //    Trip t = Trip.Create();
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-        //    t.MeasurerContactInfo = "measurer contact info";
-        //    t.Name = "name";
-        //    t.PhotosAvailable = true;
-        //    t.Website = "website";
-        //    t.Date = DateTime.Now;
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-        //    SiteVisit sv1 = t.AddSiteVisit();
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-        //    sv1.Name = "site visit name";
-        //    sv1.Comments = "site visit 1 comments";
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-        //    SubsiteVisit ssv = sv1.AddSubsiteVisit();
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-        //    ssv.Comments = "subsite visit comments";
-        //    ssv.Country = Repositories.Locations.FindCountryByCode("US");
-        //    ssv.County = "subsite visit county";
-        //    ssv.Name = "subsite visit name";
-        //    ssv.OwnershipContactInfo = "subsite visit ownership contact info";
-        //    ssv.OwnershipType = "subsite visit ownership type";
-        //    ssv.State = Repositories.Locations.FindStateByCountryAndStateCodes("US", "OH");
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-        //    TreeMeasurementBase tm = ssv.AddSingleTrunkTreeMeasurement();
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-        //    tm.CommonName = "tree measurement common name";
-        //    tm.ScientificName = "tree measurement scientific name";
-        //    tm.Coordinates = Coordinates.Create(10, 20);
-        //    Assert.IsFalse(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-        //    Measurer tmeasurer1 = t.AddMeasurer();
-        //    tmeasurer1.FirstName = "tree measurer 1 first name";
-        //    tmeasurer1.LastName = "tree measurer 1 last name";
-        //    Assert.IsTrue(t.ValidateIgnoringSiteVisitCoordinatesAndSubsiteVisitCoordinates().IsValid);
-        //}
+            SubsiteVisit ssv1 = sv2.AddSubsiteVisit();
+            ssv1.Country = Repositories.Locations.FindCountryByCode("US");
+            ssv1.County = "subsite visit 1 county";
+            ssv1.Name = "subsite visit 1 name";
+            ssv1.OwnershipType = "subsite visit 1 ownership type";
+            ssv1.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
+            SubsiteVisit ssv2 = sv2.AddSubsiteVisit();
+            ssv2.Country = Repositories.Locations.FindCountryByCode("US");
+            ssv2.County = "subsite visit 2 county";
+            ssv2.Name = "subsite visit 2 name";
+            ssv2.OwnershipType = "subsite visit 2 ownership type";
+            ssv2.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
 
-        //[TestMethod]
-        //public void ValidateRegardingPersistence()
-        //{
-        //    Trip t = Trip.Create();
-        //    Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-        //    t.MeasurerContactInfo = "measurer contact info";
-        //    t.Name = "name";
-        //    t.PhotosAvailable = true;
-        //    t.Website = "website";
-        //    t.Date = DateTime.Now;
-        //    Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-        //    SiteVisit sv1 = t.AddSiteVisit();
-        //    Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-        //    sv1.Name = "site visit name";
-        //    sv1.Comments = "site visit 1 comments";
-        //    Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-        //    SubsiteVisit ssv = sv1.AddSubsiteVisit();
-        //    Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-        //    ssv.Comments = "subsite visit comments";
-        //    ssv.Country = Repositories.Locations.FindCountryByCode("US");
-        //    ssv.County = "subsite visit county";
-        //    ssv.Name = "subsite visit name";
-        //    ssv.OwnershipContactInfo = "subsite visit ownership contact info";
-        //    ssv.OwnershipType = "subsite visit ownership type";
-        //    ssv.State = Repositories.Locations.FindStateByCountryAndStateCodes("US", "OH");
-        //    Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-        //    TreeMeasurementBase tm = ssv.AddSingleTrunkTreeMeasurement();
-        //    Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-        //    tm.CommonName = "tree measurement common name";
-        //    tm.ScientificName = "tree measurement scientific name";
-        //    Assert.IsTrue(t.ValidateRegardingPersistence().IsValid);
-        //}
+            TreeMeasurementBase tm1 = ssv2.AddSingleTrunkTreeMeasurement();
+            tm1.CommonName = "tree measurement 1 common name";
+            tm1.ScientificName = "tree measurement 1 scientific name";
 
-        //[TestMethod]
-        //public void ValidateRegardingImport()
-        //{
-        //    Trip t = Trip.Create();
-        //    Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-        //    t.MeasurerContactInfo = "measurer contact info";
-        //    t.Name = "name";
-        //    t.PhotosAvailable = true;
-        //    t.Website = "website";
-        //    t.Date = DateTime.Now;
-        //    Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-        //    SiteVisit sv1 = t.AddSiteVisit();
-        //    Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-        //    sv1.Name = "site visit name";
-        //    sv1.Comments = "site visit 1 comments";
-        //    Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-        //    SubsiteVisit ssv = sv1.AddSubsiteVisit();
-        //    Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-        //    ssv.Comments = "subsite visit comments";
-        //    ssv.Country = Repositories.Locations.FindCountryByCode("US");
-        //    ssv.County = "subsite visit county";
-        //    ssv.Name = "subsite visit name";
-        //    ssv.OwnershipContactInfo = "subsite visit ownership contact info";
-        //    ssv.OwnershipType = "subsite visit ownership type";
-        //    ssv.State = Repositories.Locations.FindStateByCountryAndStateCodes("US", "OH");
-        //    Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-        //    TreeMeasurementBase tm = ssv.AddSingleTrunkTreeMeasurement();
-        //    Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-        //    tm.CommonName = "tree measurement common name";
-        //    tm.ScientificName = "tree measurement scientific name";
-        //    tm.Coordinates = Coordinates.Create(10, 20);
-        //    ssv.CoordinatesEntered = true;
-        //    ssv.Coordinates = Coordinates.Create(1, 2);
-        //    Assert.IsFalse(t.ValidateRegardingImport().IsValid);
-        //    Measurer tmeasurer1 = t.AddMeasurer();
-        //    tmeasurer1.FirstName = "tree measurer 1 first name";
-        //    tmeasurer1.LastName = "tree measurer 1 last name";
-        //    Assert.IsTrue(t.ValidateRegardingImport().IsValid);
-        //}
+            MultiTrunkTreeMeasurement tm2 = ssv2.AddMultiTrunkTreeMeasurement();
+            tm2.CommonName = "tree measurement 2 common name";
+            tm2.ScientificName = "tree measurement 2 scientific name";
+            
+            tm2.AddPhoto("Square.jpg".GetPhoto());
+            tm2.AddPhoto("Thumbnail.jpg".GetPhoto());
+
+            using (UnitOfWork.Begin())
+            {
+                Repositories.Trips.Save(t);
+                UnitOfWork.Persist();
+            }
+
+            Trip found = Repositories.Trips.FindById(t.Id);
+            Assert.IsNotNull(found);
+            Assert.AreEqual(2, found.SiteVisits.Count);
+            Assert.AreEqual(2, found.SiteVisits[1].SubsiteVisits.Count);
+            Assert.AreEqual(2, found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements.Count);
+            Assert.AreEqual(2, found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements[1].Photos.Count);
+            Assert.IsTrue("Square.jpg".GetPhoto().CompareByContent(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements[1].Photos[0].Get()));
+            Assert.IsTrue("Thumbnail.jpg".GetPhoto().CompareByContent(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements[1].Photos[1].Get()));
+
+            using (UnitOfWork.Begin())
+            {
+                Repositories.Trips.Remove(found);
+                UnitOfWork.Persist();
+            }
+        }
     }
 }

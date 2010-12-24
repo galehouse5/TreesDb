@@ -9,6 +9,7 @@ using TMD.Model;
 using TMD.Infrastructure.Repositories;
 using System.Configuration;
 using StructureMap;
+using NHibernate.Event;
 
 namespace TMD.Infrastructure
 {
@@ -21,10 +22,9 @@ namespace TMD.Infrastructure
             {
                 if (s_SessionFactory == null)
                 {
-                    s_SessionFactory = new NHibernate.Cfg.Configuration()
-                        .Configure()
-                        .AddAssembly(Assembly.GetExecutingAssembly())
-                        .BuildSessionFactory();
+                    var config = new NHibernate.Cfg.Configuration().Configure().AddAssembly(Assembly.GetExecutingAssembly());
+                    RepositoryRegistry.Configure(config);
+                    s_SessionFactory = config.BuildSessionFactory();
                 }
                 return s_SessionFactory;
             }

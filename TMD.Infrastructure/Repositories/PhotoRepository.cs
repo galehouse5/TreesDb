@@ -4,17 +4,50 @@ using System.Linq;
 using System.Text;
 using TMD.Model.Photos;
 using TMD.Model.Trips;
+using NHibernate;
+using NHibernate.Type;
+using NHibernate.Event;
+using NHibernate.Criterion;
 
 namespace TMD.Infrastructure.Repositories
 {
     public class PhotoRepository : IPhotoRepository
     {
+        internal static void Configure(NHibernate.Cfg.Configuration config)
+        {
+            config.SetListener(ListenerType.PostInsert, new PhotoPostInsertEventListener());
+            config.SetListener(ListenerType.PostDelete, new PhotoPostDeleteEventListener());
+        }
+
+        private class PhotoPostInsertEventListener : IPostInsertEventListener
+        {
+            public void OnPostInsert(PostInsertEvent @event)
+            {
+                var photo = @event.Entity as Photo;
+                if (photo != null)
+                {
+                    if (!photo.IsStoredPermanently)
+                    {
+                        photo.TemporaryStore.MigrateTo(photo.PermanentStore, photo);
+                    }
+                }
+            }
+        }
+
+        private class PhotoPostDeleteEventListener : IPostDeleteEventListener
+        {
+            public void OnPostDelete(PostDeleteEvent @event)
+            {
+                var photo = @event.Entity as Photo;
+                if (photo != null)
+                {
+                    photo.PermanentStore.Remove(photo);
+                }
+            }
+        }
+
         public void Save(Photo photo)
         {
-            Registry.Session.Save(photo);
-            Registry.Session.Flush();
-            PhotoStoreBase activeStore = FindActivePhotoStore();
-            photo.MigrateStoreTo(activeStore);
             Registry.Session.Save(photo);
         }
 
@@ -32,26 +65,16 @@ namespace TMD.Infrastructure.Repositories
                 .List<Photo>();
         }
 
-        public PhotoStoreBase FindActivePhotoStore()
+        public PhotoStoreBase FindPermanentPhotoStore()
         {
-            return Registry.Session
-                .CreateQuery("from PhotoStoreBase where IsActive = :isActive")
-                .SetParameter("isActive", true)
+            return Registry.Session.CreateCriteria<PhotoStoreBase>()
+                .Add(Restrictions.Eq("IsActive", true))
                 .UniqueResult<PhotoStoreBase>();
         }
 
         public void Remove(Photo photo)
         {
             Registry.Session.Delete(photo);
-            Registry.Session.Flush();
-            photo.Store.Remove(photo);
-        }
-
-        public PhotoStoreBase FindMemoryPhotoStore()
-        {
-            return Registry.Session
-                .CreateQuery("from MemoryPhotoStore")
-                .UniqueResult<MemoryPhotoStore>();
         }
     }
 }

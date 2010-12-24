@@ -38,6 +38,21 @@ namespace TMD.Model
         public IEntity ExistingEntity { get; private set; }
     }
 
+    public class InvalidEntityStateException : ModelException
+    {
+        public InvalidEntityStateException(IEntity entity)
+            : this(entity, "Invalid entity state.")
+        { }
+
+        public InvalidEntityStateException(IEntity entity, string message)
+            : base(message)
+        {
+            this.Entity = entity;
+        }
+
+        public IEntity Entity { get; private set; }
+    }
+
     public class InvalidEntityOperationException : ModelException
     {
         public InvalidEntityOperationException(IEntity entity)

@@ -16,5 +16,10 @@ namespace TMD.Infrastructure.Repositories
             For<TMD.Model.Users.UserRepository>().Singleton().Use<UserRepository>();
             For<TMD.Model.Photos.IPhotoRepository>().Singleton().Use<PhotoRepository>();
         }
+
+        internal static void Configure(NHibernate.Cfg.Configuration config)
+        {
+            PhotoRepository.Configure(config);
+        }
     }
 }

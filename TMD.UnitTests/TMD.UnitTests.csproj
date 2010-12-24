@@ -82,7 +82,7 @@
     <Compile Include="Model\Locations.cs" />
     <Compile Include="Model\Photos.cs" />
     <Compile Include="Model\Trees.cs" />
-    <Compile Include="Model\Trips.cs" />
+    <Compile Include="Infrastructure\TripsRepository.cs" />
     <Compile Include="Model\Users.cs" />
     <Compile Include="Model\ValueObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

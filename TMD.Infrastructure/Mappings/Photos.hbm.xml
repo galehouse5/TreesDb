@@ -10,7 +10,6 @@
     </id>
     <discriminator column="Type"/>
     <property name="IsActive" />
-    <subclass name="MemoryPhotoStore" discriminator-value="1"></subclass>
     <subclass name="DiskPhotoStore" discriminator-value="2">
       <property name="RootPath" />
     </subclass>
@@ -28,7 +27,7 @@
     </component>
     <property name="Bytes" />
     <property name="Format" />
-    <many-to-one name="Store" column="StoreId" />
+    <many-to-one name="PermanentStore" column="StoreId" />
     <many-to-one name="Link" column="LinkId" cascade="all" />
   </class>
 

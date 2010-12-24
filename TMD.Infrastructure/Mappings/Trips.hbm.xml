@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
                    assembly="TMD.Model"
-                   namespace="TMD.Model">
+                   namespace="TMD.Model"
+                   schema="Trips">
 
-  <class name="TMD.Model.Trips.Measurer" table="Trips.Measurers">
+  <class name="TMD.Model.Trips.Measurer" table="Measurers">
     <id name="Id">
       <generator class="native"/>
     </id>
@@ -14,7 +15,7 @@
     <property name="LastName"/>
   </class>
 
-  <class name="TMD.Model.Trips.TrunkMeasurement" table="Trips.TrunkMeasurements">
+  <class name="TMD.Model.Trips.TrunkMeasurement" table="TrunkMeasurements">
     <id name="Id">
       <generator class="native" />
     </id>
@@ -69,7 +70,7 @@
     </bag>
   </subclass>
 
-  <class name="TMD.Model.Trips.TreeMeasurementBase" table="Trips.TreeMeasurements" abstract="true">
+  <class name="TMD.Model.Trips.TreeMeasurementBase" table="TreeMeasurements" abstract="true">
     <id name="Id">
       <generator class="native"/>
     </id>
@@ -178,9 +179,13 @@
     <property name="TerrainComments"/>
     <property name="MakeCoordinatesPublic"/>
     <property name="HeightMeasurementMethod" />
+    <bag name="Photos" table="TreeMeasurementPhotos" cascade="all-delete-orphan" >
+      <key column="TreeMeasurementId"></key>
+      <many-to-many column="PhotoId" class="TMD.Model.Photos.Photo"></many-to-many>
+    </bag>
   </class>
 
-  <class name="TMD.Model.Trips.SubsiteVisit" table="Trips.SubsiteVisits">
+  <class name="TMD.Model.Trips.SubsiteVisit" table="SubsiteVisits">
     <id name="Id">
       <generator class="native"/>
     </id>
@@ -211,7 +216,7 @@
     <property name="MakeOwnershipContactInfoPublic" />
   </class>  
   
-  <class name="TMD.Model.Trips.SiteVisit" table="Trips.SiteVisits">
+  <class name="TMD.Model.Trips.SiteVisit" table="SiteVisits">
     <id name="Id">
       <generator class="native"/>
     </id>
@@ -236,7 +241,7 @@
     </bag>
   </class>
 
-  <class name="TMD.Model.Trips.Trip" table="Trips.Trips">
+  <class name="TMD.Model.Trips.Trip" table="Trips">
     <id name="Id">
       <generator class="native"/>
     </id>

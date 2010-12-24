@@ -7,6 +7,7 @@ using System.Diagnostics;
 using NHibernate.Validator.Constraints;
 using System.ComponentModel;
 using TMD.Model.Extensions;
+using TMD.Model.Photos;
 
 namespace TMD.Model.Trips
 {
@@ -138,7 +139,8 @@ namespace TMD.Model.Trips
                 SubsiteVisit = ssv,
                 MakeCoordinatesPublic = true,
                 CombinedGirthNumberOfTrunks = null,
-                TrunkMeasurements = new List<TrunkMeasurement>()
+                TrunkMeasurements = new List<TrunkMeasurement>(),
+                Photos = new List<Photo>()
             }.RecordCreation() as MultiTrunkTreeMeasurement;
         }
     }
