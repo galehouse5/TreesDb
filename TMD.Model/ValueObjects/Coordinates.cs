@@ -38,7 +38,7 @@ namespace TMD.Model
                 }
                 if (Latitude.InputFormat == CoordinatesFormat.Unspecified || Longitude.InputFormat == CoordinatesFormat.Unspecified)
                 {
-                    return CoordinatesFormat.Invalid;
+                    return CoordinatesFormat.Unspecified;
                 }
                 return Latitude.InputFormat; 
             }
@@ -148,7 +148,7 @@ namespace TMD.Model
                 Longitude = longitude
             };
         }
-
+            
         public static Coordinates Null()
         {
             return new Coordinates()
@@ -176,7 +176,7 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within(-90f, 90f, Message = "Latitude must be in the range of -90 to +90 degrees.", Tags = Tag.Screening)]
+        [Within2(-90f, 90f, Inclusive = true, Message = "Latitude must be in the range of -90 to +90 degrees.", Tags = Tag.Screening)]
         public float TotalDegrees { get; private set; }
 
         [NotEqualsAttribute(CoordinatesFormat.Invalid, Message = "Latitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format.", Tags = Tag.Screening)]
@@ -327,7 +327,7 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within(-180f, 180f, Message = "Longitude must be in the range of -180 to +180 degrees.", Tags = Tag.Screening)]
+        [Within2(-180f, 180f, Inclusive = true, Message = "Longitude must be in the range of -180 to +180 degrees.", Tags = Tag.Screening)]
         public float TotalDegrees { get; private set; }
 
         [NotEqualsAttribute(CoordinatesFormat.Invalid, Message = "Longitude must be in ddd_mm_ss.s, ddd_mm.mmm, or ddd.ddddd format.", Tags = Tag.Screening)]
