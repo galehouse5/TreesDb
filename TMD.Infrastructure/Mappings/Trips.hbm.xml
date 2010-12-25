@@ -214,6 +214,10 @@
       <one-to-many class="TMD.Model.Trips.TreeMeasurementBase"/>
     </bag>
     <property name="MakeOwnershipContactInfoPublic" />
+    <bag name="Photos" table="SubsiteVisitPhotos" cascade="all-delete-orphan" >
+      <key column="SubsiteVisitId"></key>
+      <many-to-many column="PhotoId" class="TMD.Model.Photos.Photo"></many-to-many>
+    </bag>
   </class>  
   
   <class name="TMD.Model.Trips.SiteVisit" table="SiteVisits">

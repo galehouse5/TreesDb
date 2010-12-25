@@ -73,7 +73,8 @@ namespace TMD.Mappings
                 .ForPath("SubsiteVisits[*].Coordinates*", "Subsites[*].Coordinates")
                 .IgnorePath("SubsiteVisits[*].TreeMeasurements*");
 
-            CreateMap<SubsiteVisit, ImportSubsiteModel>();
+            CreateMap<SubsiteVisit, ImportSubsiteModel>()
+                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<SubsiteVisit, PhotoGalleryModel>(src)));
 
             CreateMap<ImportSitesModel, Trip>()
                 .AfterMap((src, dest) => src.Sites.ForEach(s => Mapper.Map(s, dest.FindSiteVisitById(s.Id))));
@@ -84,7 +85,8 @@ namespace TMD.Mappings
 
             CreateMap<ImportSubsiteModel, SubsiteVisit>()
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => src.Coordinates.Clone() as Coordinates))
-                .ForMember(dest => dest.Country, opt => opt.MapFrom(src => src.State == null ? null : src.State.Country));
+                .ForMember(dest => dest.Country, opt => opt.MapFrom(src => src.State == null ? null : src.State.Country))
+                .ForMember(dest => dest.Photos, opt => opt.Ignore());
         }
 
         private void configureForTrees()
@@ -140,9 +142,11 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Subsites, opt => opt.MapFrom(src => src.SubsiteVisits));
 
             CreateMap<SubsiteVisit, ImportFinishedSubsiteModel>()
-                .ForMember(dest => dest.Trees, opt => opt.MapFrom(src => src.TreeMeasurements));
+                .ForMember(dest => dest.Trees, opt => opt.MapFrom(src => src.TreeMeasurements))
+                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<SubsiteVisit, PhotoGalleryModel>(src)));
 
-            CreateMap<TreeMeasurementBase, ImportFinishedTreeModel>();
+            CreateMap<TreeMeasurementBase, ImportFinishedTreeModel>()
+                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(src)));
         }
     }
 }

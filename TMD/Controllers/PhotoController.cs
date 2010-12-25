@@ -60,5 +60,20 @@ namespace TMD.Controllers
                 return PartialView("EditPhotoGalleryPartial", photoGallery);
             }
         }
+
+        [HttpPost]
+        public ActionResult AddToTripSubsite(int id, int subsiteId, HttpPostedFileBase imageData)
+        {
+            var trip = Repositories.Trips.FindById(id);
+            var subsite = trip.FindSubsiteVisitById(subsiteId);
+            using (var image = new Bitmap(imageData.InputStream))
+            {
+                var photo = subsite.AddPhoto(image);
+                if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Save(trip); }
+                var photoGallery = Mapper.Map<SubsiteVisit, PhotoGalleryModel>(subsite);
+                return PartialView("EditPhotoGalleryPartial", photoGallery);
+            }
+        }
     }
 }

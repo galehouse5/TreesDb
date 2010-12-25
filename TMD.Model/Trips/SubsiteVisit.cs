@@ -7,6 +7,8 @@ using System.Diagnostics;
 using TMD.Model.Locations;
 using TMD.Model.Extensions;
 using NHibernate.Validator.Constraints;
+using TMD.Model.Photos;
+using System.Drawing;
 
 namespace TMD.Model.Trips
 {
@@ -149,6 +151,21 @@ namespace TMD.Model.Trips
         public virtual TreeMeasurementBase FindTreeMeasurementById(int id)
         {
             return TreeMeasurements.FirstOrDefault(tm => id.Equals(tm.Id));
+        }
+
+        [Size2(0, 100, Message = "This subsite contains too many photos.", Tags = Tag.Screening)]
+        [Valid] public virtual IList<Photo> Photos { get; protected set; }
+
+        public virtual Photo AddPhoto(Bitmap image)
+        {
+            var photo = new PhotoFactory().CreateForTrip(SiteVisit.Trip, image);
+            Photos.Add(photo);
+            return photo;
+        }
+
+        public virtual bool RemovePhoto(Photo photo)
+        {
+            return Photos.Remove(photo);
         }
 
         internal static SubsiteVisit Create(SiteVisit sv)

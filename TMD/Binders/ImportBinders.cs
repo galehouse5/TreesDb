@@ -18,7 +18,19 @@ namespace TMD.Binders
             var model = (ImportSitesModel)base.BindModel(controllerContext, bindingContext);
             var trip = Repositories.Trips.FindById(model.Id);
             model.Sites.Where(s => !s.IsEditing).ForEach(s =>
-                Mapper.Map<SiteVisit, ImportSiteModel>(trip.SiteVisits.First(sv => sv.Id == s.Id), s));
+                {
+                    var site = trip.FindSiteVisitById(s.Id);
+                    Mapper.Map(site, s);
+                });
+            model.Sites.Where(s => s.IsEditing).ForEach(s =>
+                {
+                    var site = trip.FindSiteVisitById(s.Id);
+                    s.Subsites.ForEach(ss =>
+                        {
+                            var subsite = site.FindSubsiteVisitById(ss.Id);
+                            ss.Photos = Mapper.Map<SubsiteVisit, PhotoGalleryModel>(subsite);
+                        });
+                });
             return model;
         }
     }
@@ -40,12 +52,12 @@ namespace TMD.Binders
                             ss.Trees.Where(t => !t.IsEditing).ForEach(t =>
                                 {
                                     var tree = subsite.FindTreeMeasurementById(t.Id);
-                                    Mapper.Map<TreeMeasurementBase, ImportTreeModel>(tree, t);
+                                    Mapper.Map(tree, t);
                                 });
                             ss.Trees.Where(t => t.IsEditing).ForEach(t =>
                                 {
                                     var tree = subsite.FindTreeMeasurementById(t.Id);
-                                    Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(tree, t.Photos);
+                                    t.Photos = Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(tree);
                                 });
                         });
                 });

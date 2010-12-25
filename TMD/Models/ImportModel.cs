@@ -119,6 +119,7 @@ namespace TMD.Models
         [DisplayName("Ownership contact")] public string OwnershipContactInfo { get; set; }
         [DisplayName("Make contact public")] public bool MakeOwnershipContactInfoPublic { get; set; }
         public string Comments { get; set; }
+        public PhotoGalleryModel Photos { get; set; }
     }
 
     public class ImportTreesModel
@@ -256,6 +257,7 @@ namespace TMD.Models
         public string County { get; set; }
         [DisplayName("Ownership type")] public string OwnershipType { get; set; }
         public IList<ImportFinishedTreeModel> Trees { get; set; }
+        public PhotoGalleryModel Photos { get; set; }
     }
 
     public class ImportFinishedTreeModel
@@ -265,5 +267,6 @@ namespace TMD.Models
         public Distance Height { get; set; }        
         public Distance Girth { get; set; }
         [DisplayName("Crown spread")] public Distance CrownSpread { get; set; }
+        public PhotoGalleryModel Photos { get; set; }
     }
 }

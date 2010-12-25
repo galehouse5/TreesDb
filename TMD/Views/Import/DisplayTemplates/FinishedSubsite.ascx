@@ -9,6 +9,9 @@
             <li><%= Html.DisplayFor(m => m.County) %></li>
             <li><%= Html.DisplayFor(m => m.OwnershipType) %></li>
         </ul>
+        <% if (Model.Photos.HasPhotos) {  %>
+            <%= Html.DisplayFor(m => m.Photos) %>
+        <% } %>
         <% for (int i = 0; i < Model.Trees.Count; i++) { %>
             <%= Html.DisplayFor(m => m.Trees[i], "FinishedTree") %>
         <% } %>

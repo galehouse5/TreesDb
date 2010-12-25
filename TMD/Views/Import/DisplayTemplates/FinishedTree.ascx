@@ -16,5 +16,8 @@
                 <li><%= Html.DisplayFor(m => m.CrownSpread) %></li>
             <% } %>
         </ul>
+        <% if (Model.Photos.HasPhotos) {  %>
+            <%= Html.DisplayFor(m => m.Photos) %>
+        <% } %>
     </div>
 </div>

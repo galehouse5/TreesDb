@@ -14,6 +14,9 @@
                 <li><%= Html.DisplayFor(m => m.Subsites[0].County) %></li>
                 <li><%= Html.DisplayFor(m => m.Subsites[0].OwnershipType) %></li>
             </ul>
+            <% if (Model.Subsites[0].Photos.HasPhotos) { %>
+                <%= Html.DisplayFor(m => m.Subsites[0].Photos) %>
+            <% } %>
         <% } else { %>
             <% for (int i = 0; i < Model.Subsites.Count; i++) { %>
                 <%= Html.DisplayFor(m => m.Subsites[i], "Subsite") %>

@@ -13,6 +13,7 @@
         <%= Html.EditorFor(m => m.OwnershipContactInfo, new { rows = 5 })%>
         <%= Html.EditorFor(m => m.MakeOwnershipContactInfoPublic)%>
         <%= Html.EditorFor(m => m.Comments, new { rows = 5 })%>
+        <%= Html.EditorFor(m => m.Photos) %>
         <div class="buttonrow">
             <button type="submit" class="btn btn-grey Remove" name="innerAction" value="Subsite.<%= Model.Id %>.Remove">Remove</button>
         </div>

@@ -10,9 +10,16 @@ namespace TMD.Models
     {
         public int TripId { get; set; }
         public int TreeId { get; set; }
-
         public override string ActionName { get { return "AddToTripTree"; } }
         public override object RouteValues { get { return new { controller = "Photo", id = TripId, treeId = TreeId }; } }
+    }
+
+    public class ImportSubsitePhotoAdderModel : PhotoAdderModel
+    {
+        public int TripId { get; set; }
+        public int SubsiteId { get; set; }
+        public override string ActionName { get { return "AddToTripSubsite"; } }
+        public override object RouteValues { get { return new { controller = "Photo", id = TripId, subsiteId = SubsiteId }; } }
     }
 
     public abstract class PhotoAdderModel

@@ -27,7 +27,9 @@
                 $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
                     function (response) {
                         var siteContainer = button.closest('.Site');
-                        siteContainer.replaceWith(response);
+                        var siteContent = $(response);
+                        siteContainer.replaceWith(siteContent);
+                        siteContent.trigger('ContentAdded');
                     });
                 return false;
             }
@@ -35,7 +37,9 @@
                 $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
                     function (response) {
                         var sitesContainer = button.closest('.Sites');
-                        sitesContainer.replaceWith(response);
+                        var sitesContent = $(response);
+                        sitesContainer.replaceWith(sitesContent);
+                        sites.trigger('ContentAdded');
                     });
                 return false;
             }
@@ -45,9 +49,13 @@
                         var sitesContainer = button.closest('.Sites');
                         if (sitesContainer.find('.Site').length > 1) {
                             var lastSite = sitesContainer.find('.Site').last();
-                            lastSite.after(response);
+                            var siteContent = $(response);
+                            lastSite.after(siteContent);
+                            siteContent.trigger('ContentAdded');
                         } else {
-                            sitesContainer.replaceWith(response);
+                            var sitesContent = $(response);
+                            sitesContainer.replaceWith(sitesContent);
+                            sitesContent.trigger('ContentAdded');
                         }
                     });
                 return false;

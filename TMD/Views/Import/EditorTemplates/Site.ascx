@@ -17,6 +17,7 @@
             <%= Html.EditorFor(m => m.Subsites[0].OwnershipContactInfo, new { rows = 5 })%>
             <%= Html.EditorFor(m => m.Subsites[0].MakeOwnershipContactInfoPublic)%>
             <%= Html.EditorFor(m => m.Subsites[0].Comments, new { rows = 5 })%>
+            <%= Html.EditorFor(m => m.Subsites[0].Photos) %>
         <% } else { %>
             <%= Html.EditorFor(m => m.Name, new { required = true })%>
             <%= Html.EditorFor(m => m.Coordinates, new { helpText = "Latitude, Longitude" })%>
