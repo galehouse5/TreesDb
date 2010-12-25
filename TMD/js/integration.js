@@ -15,7 +15,7 @@ var Integration = new function () {
                 duration: 0
             });
 
-            $('.PhotoGallery').PhotoGallery();
+            $('.gallery').PhotoGallery();
 
         }).trigger('ContentAdded');
 

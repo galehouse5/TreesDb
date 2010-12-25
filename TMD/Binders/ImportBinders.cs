@@ -42,6 +42,11 @@ namespace TMD.Binders
                                     var tree = subsite.FindTreeMeasurementById(t.Id);
                                     Mapper.Map<TreeMeasurementBase, ImportTreeModel>(tree, t);
                                 });
+                            ss.Trees.Where(t => t.IsEditing).ForEach(t =>
+                                {
+                                    var tree = subsite.FindTreeMeasurementById(t.Id);
+                                    Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(tree, t.Photos);
+                                });
                         });
                 });
             return model;

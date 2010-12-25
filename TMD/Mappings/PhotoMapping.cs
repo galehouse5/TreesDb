@@ -17,7 +17,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Adder, opt => opt.MapFrom(src =>
                     new ImportTreePhotoAdderModel { TripId = src.SubsiteVisit.SiteVisit.Trip.Id, TreeId = src.Id }))
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src =>
-                    src.Photos.Select(photo => new PhotoModel { Id = src.Id })));
+                    src.Photos.Select(photo => new PhotoModel { Id = photo.Id })));
         }
     }
 }

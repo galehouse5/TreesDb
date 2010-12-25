@@ -2,7 +2,7 @@
 <ul class="gallery">
     <% foreach(var photo in Model.Photos) { %>
         <li>
-            <img src="/Photos/<%= photo.Id %>/SquareThumbnail" alt="" />
+            <img src="/Photos/<%= photo.Id %>/<%= photo.Size %>" alt="" />
             <div class="actions">	
                 <a class="btn btn-orange btn-small" rel="facebox" href="/Photos/<%= photo.Id %>">View</a>
             </div>

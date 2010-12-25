@@ -80,7 +80,7 @@
         return this.each(function() {
             var galleryContainer = $(this);
 
-            galleryContainer.find('a.delete').live('click', function() {
+            galleryContainer.find('a.delete').bind('click', function() {
                 var deleteAnchor = $(this);
                 $.ajax({ type: "POST", url: deleteAnchor.attr('href'),
                     success: function (response) {
@@ -98,11 +98,17 @@
                     element: addAnchor[0],
                     action: addAnchor.attr('href'),
                     dataname: 'imageData',
-                    oncomplete: function(response_data) { 
-                        alert(response_data); 
+                    oncomplete: function(response) {
+                        galleryContainer.find('.LoadingPhoto').hide();
+                        galleryContainer.find('.ReadyToLoadPhoto').show();
+                        var galleryContent = $(response).find('.gallery');
+                        galleryContainer.replaceWith(galleryContent);
+                        galleryContent.PhotoGallery();
+                        galleryContent.trigger('ContentAdded');
                     },
-                    onstart: function(filename) { 
-                        alert('Start upload: ' + filename); 
+                    onstart: function() { 
+                        galleryContainer.find('.ReadyToLoadPhoto').hide();
+                        galleryContainer.find('.LoadingPhoto').show();
                     }
                 });
                 return false;

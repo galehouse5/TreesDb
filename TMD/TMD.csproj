@@ -339,6 +339,7 @@
     <Content Include="Views\Map\GoogleMapsScript.ascx" />
     <Content Include="Views\Map\Index.aspx" />
     <Content Include="Views\Map\MenuWidget.ascx" />
+    <Content Include="Views\Photo\EditPhotoGalleryPartial.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\PhotoGalleryModel.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Distance.ascx" />

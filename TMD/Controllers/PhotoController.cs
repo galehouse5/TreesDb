@@ -11,6 +11,8 @@ using TMD.Model.Extensions;
 using System.Drawing.Imaging;
 using TMD.Model.Trips;
 using TMD.Models;
+using TMD.Model.Validation;
+using AutoMapper;
 
 namespace TMD.Controllers
 {
@@ -47,9 +49,16 @@ namespace TMD.Controllers
         [HttpPost]
         public ActionResult AddToTripTree(int id, int treeId, HttpPostedFileBase imageData)
         {
-
-
-            throw new NotImplementedException();
+            var trip = Repositories.Trips.FindById(id);
+            var tree = trip.FindTreeMeasurementById(treeId);
+            using (var image = new Bitmap(imageData.InputStream))
+            {
+                var photo = tree.AddPhoto(image);
+                if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Save(trip); }
+                var photoGallery = Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(tree);
+                return PartialView("EditPhotoGalleryPartial", photoGallery);
+            }
         }
     }
 }

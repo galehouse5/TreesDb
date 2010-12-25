@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<PhotoGalleryModel>" %>
-<div class="field RequiresJavascript PhotoGallery">
+<div class="field RequiresJavascript">
     <label>
         <% if (ViewData.ContainsKey("label")) { %>
             <%: ViewData["label"] %>
@@ -25,7 +25,8 @@
         <% } %>
         <% if (Model.HasAdder) { %>
             <li style="border-color: #888;">
-                <div class="actions" style="display: block;">
+                <img src="/images/loading.gif" alt="" style="display: none; margin: 34px;" class="LoadingPhoto" />
+                <div class="actions ReadyToLoadPhoto" style="display: block;">
                     <%= Html.ActionLink("Add", Model.Adder.ActionName, Model.Adder.RouteValues, new { @class = "btn btn-orange btn-small add" })%>
                 </div>
             </li>
