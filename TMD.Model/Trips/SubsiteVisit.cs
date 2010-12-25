@@ -156,11 +156,10 @@ namespace TMD.Model.Trips
         [Size2(0, 100, Message = "This subsite contains too many photos.", Tags = Tag.Screening)]
         [Valid] public virtual IList<Photo> Photos { get; protected set; }
 
-        public virtual Photo AddPhoto(Bitmap image)
+        public virtual void AddPhoto(Photo photo)
         {
-            var photo = new PhotoFactory().CreateForTrip(SiteVisit.Trip, image);
+            photo.Link = TripPhotoLink.Create(SiteVisit.Trip);
             Photos.Add(photo);
-            return photo;
         }
 
         public virtual bool RemovePhoto(Photo photo)

@@ -30,7 +30,7 @@ namespace TMD.Model
             }
         }
 
-        protected UserCreatedEntityBase RecordCreation()
+        protected internal virtual UserCreatedEntityBase RecordCreation()
         {
             Created = DateTime.Now;
             Creator = UserSession.User;

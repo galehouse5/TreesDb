@@ -23,21 +23,21 @@ namespace TMD.Model.Photos
     {
         public const int MaxBytes = 1024 * 1024;
 
-        protected Photo()
+        protected internal Photo()
         {
             TemporaryStore = new MemoryPhotoStore();
         }
 
         public virtual PhotoStoreBase TemporaryStore { get; private set; }
-        public virtual PhotoStoreBase PermanentStore { get; private set; }
+        public virtual PhotoStoreBase PermanentStore { get; protected internal set; }
         [Valid] public virtual PhotoLinkBase Link { get; set; }
-        public virtual Size Size { get; private set; }
+        public virtual Size Size { get; protected internal set; }
 
         [Within2(0, MaxBytes, Inclusive = true, Message = "Photo must not be too large.", Tags = Tag.Screening)]
-        public virtual int Bytes { get; private set; }
+        public virtual int Bytes { get; protected internal set; }
 
         [NotEquals(PhotoFormat.NotSpecified, Message = "Photo must be in a proper format.", Tags = Tag.Screening)]
-        public virtual PhotoFormat Format { get; private set; }
+        public virtual PhotoFormat Format { get; protected internal set; }
 
         public virtual bool IsStoredPermanently
         {
@@ -107,20 +107,6 @@ namespace TMD.Model.Photos
                 return new PhotoSizeFactory()
                     .Create(size).Normalize(image);
             }
-        }
-
-        internal static Photo Create(Bitmap image)
-        {
-            var photo = (Photo)new Photo 
-            { 
-                PermanentStore = Repositories.Photos.FindPermanentPhotoStore(),
-                Link = PublicPhotoLink.Create()
-            }.RecordCreation();
-            var info = photo.TemporaryStore.Store(photo, image);
-            photo.Size = info.Size;
-            photo.Bytes = info.Bytes;
-            photo.Format = info.Format;
-            return photo;
         }
     }
 }

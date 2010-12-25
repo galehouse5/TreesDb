@@ -34,6 +34,11 @@ namespace TMD.Models
         public bool HasAdder { get { return Adder != null; } }
         public IList<PhotoModel> Photos { get; set; }
         public bool HasPhotos { get { return Photos != null && Photos.Count() > 0; } }
+
+        public void RemoveLastPhoto()
+        {
+            Photos.RemoveAt(Photos.Count - 1);
+        }
     }
 
     public class PhotoModel

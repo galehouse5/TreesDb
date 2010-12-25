@@ -10,7 +10,6 @@
             <em class="required">*</em>
         <% } %>
     </label>
-    <%= Html.ValidationMessageFor(m => m)%>
     <ul class="gallery">
         <% if (Model.HasPhotos) { %>
             <% foreach(var photo in Model.Photos) { %>
@@ -24,10 +23,13 @@
             <% } %>
         <% } %>
         <% if (Model.HasAdder) { %>
-            <li style="border-color: #888;">
+            <li>
                 <img src="/images/loading.gif" alt="" style="display: none; margin: 34px;" class="LoadingPhoto" />
                 <div class="actions ReadyToLoadPhoto" style="display: block;">
-                    <%= Html.ActionLink("Add", Model.Adder.ActionName, Model.Adder.RouteValues, new { @class = "btn btn-orange btn-small add" })%>
+                    <div style="height: 30px">
+                        <%= (Html.ValidationMessageFor(m => m.Adder) ?? MvcHtmlString.Empty).ToString().Replace(">", " style='margin: 0;'>") %>
+                    </div>
+                    <%= Html.ActionLink("Add", Model.Adder.ActionName, Model.Adder.RouteValues, new { @class = "btn btn-orange btn-small add", style = "margin: 5px;" })%>
                 </div>
             </li>
         <% } %>

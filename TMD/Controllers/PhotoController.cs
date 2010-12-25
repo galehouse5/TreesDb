@@ -13,6 +13,7 @@ using TMD.Model.Trips;
 using TMD.Models;
 using TMD.Model.Validation;
 using AutoMapper;
+using TMD.Extensions;
 
 namespace TMD.Controllers
 {
@@ -46,18 +47,32 @@ namespace TMD.Controllers
             return Json(new { Success = true });
         }
 
+        public ActionResult PhotoAdded(PhotoGalleryModel gallery)
+        {
+            return PartialView("EditPhotoGalleryPartial", gallery);
+        }
+
         [HttpPost]
         public ActionResult AddToTripTree(int id, int treeId, HttpPostedFileBase imageData)
         {
             var trip = Repositories.Trips.FindById(id);
             var tree = trip.FindTreeMeasurementById(treeId);
-            using (var image = new Bitmap(imageData.InputStream))
+            using (imageData.InputStream)
             {
-                var photo = tree.AddPhoto(image);
+                var photo = new PhotoFactory().Create(imageData.InputStream);
+                tree.AddPhoto(photo);
                 if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
-                using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Save(trip); }
+                this.ValidateMappedModel<TreeMeasurementBase, PhotoGalleryModel>(tree);
+                if (ModelState.IsValid)
+                {
+                    using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Save(trip); }
+                }
+                else
+                {
+                    tree.RemovePhoto(photo);
+                }
                 var photoGallery = Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(tree);
-                return PartialView("EditPhotoGalleryPartial", photoGallery);
+                return PhotoAdded(photoGallery);
             }
         }
 
@@ -66,13 +81,22 @@ namespace TMD.Controllers
         {
             var trip = Repositories.Trips.FindById(id);
             var subsite = trip.FindSubsiteVisitById(subsiteId);
-            using (var image = new Bitmap(imageData.InputStream))
+            using (imageData.InputStream)
             {
-                var photo = subsite.AddPhoto(image);
+                var photo = new PhotoFactory().Create(imageData.InputStream);
+                subsite.AddPhoto(photo);
                 if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
-                using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Save(trip); }
+                this.ValidateMappedModel<SubsiteVisit, PhotoGalleryModel>(subsite);
+                if (ModelState.IsValid)
+                {
+                    using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Save(trip); }
+                }
+                else
+                {
+                    subsite.RemovePhoto(photo);
+                }
                 var photoGallery = Mapper.Map<SubsiteVisit, PhotoGalleryModel>(subsite);
-                return PartialView("EditPhotoGalleryPartial", photoGallery);
+                return PhotoAdded(photoGallery);
             }
         }
     }
