@@ -6,6 +6,8 @@ using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
 using TMD.Model.Users;
+using TMD.Model.Validation;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model.Photos
 {
@@ -19,6 +21,8 @@ namespace TMD.Model.Photos
 
     public class Photo : UserCreatedEntityBase
     {
+        public const int MaxBytes = 1024 * 1024;
+
         protected Photo()
         {
             TemporaryStore = new MemoryPhotoStore();
@@ -26,9 +30,13 @@ namespace TMD.Model.Photos
 
         public virtual PhotoStoreBase TemporaryStore { get; private set; }
         public virtual PhotoStoreBase PermanentStore { get; private set; }
-        public virtual PhotoLinkBase Link { get; set; }
+        [Valid] public virtual PhotoLinkBase Link { get; set; }
         public virtual Size Size { get; private set; }
+
+        [Within2(0, MaxBytes, Inclusive = true, Message = "Photo must not be too large.", Tags = Tag.Screening)]
         public virtual int Bytes { get; private set; }
+
+        [NotEquals(PhotoFormat.NotSpecified, Message = "Photo must be in a proper format.", Tags = Tag.Screening)]
         public virtual PhotoFormat Format { get; private set; }
 
         public virtual bool IsStoredPermanently

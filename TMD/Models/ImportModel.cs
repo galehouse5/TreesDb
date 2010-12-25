@@ -209,6 +209,11 @@ namespace TMD.Models
 
     public class ImportTreeModel
     {
+        public ImportTreeModel()
+        {
+            Photos = new PhotoGalleryModel();
+        }
+
         public int Id { get; set; }
         public bool IsEditing { get; set; }
         public EImportTreeModelEditMode EditMode { get; set; }
@@ -222,6 +227,7 @@ namespace TMD.Models
         [DisplayName("Crown spread")] public Distance CrownSpread { get; set; }
         [DisplayName("Comments")] public string GeneralComments { get; set; }
         public Elevation Elevation { get; set; }
+        public PhotoGalleryModel Photos { get; set; }
     }
 
     public class ImportFinishedTripModel

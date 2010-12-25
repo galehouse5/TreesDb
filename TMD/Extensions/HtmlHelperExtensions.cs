@@ -11,14 +11,20 @@ namespace TMD.Extensions
     {
         public static string GetFullHtmlFieldId<TModel, TValue>(this HtmlHelper<TModel> html, Expression<Func<TModel, TValue>> expression)
         {
-            string et = ExpressionHelper.GetExpressionText((LambdaExpression)expression);
+            var et = ExpressionHelper.GetExpressionText((LambdaExpression)expression);
             return html.ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldId(et);
+        }
+
+        public static string GetFullHtmlFieldName<TModel, TValue>(this HtmlHelper<TModel> html, Expression<Func<TModel, TValue>> expression)
+        {
+            var et = ExpressionHelper.GetExpressionText((LambdaExpression)expression);
+            return html.ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldName(et);
         }
 
         public static string GetLabelInnerText<TModel, TValue>(this HtmlHelper<TModel> html, Expression<Func<TModel, TValue>> expression)
         {
-            ModelMetadata md = ModelMetadata.FromLambdaExpression<TModel, TValue>(expression, html.ViewData);
-            string et = ExpressionHelper.GetExpressionText((LambdaExpression)expression);
+            var md = ModelMetadata.FromLambdaExpression<TModel, TValue>(expression, html.ViewData);
+            var et = ExpressionHelper.GetExpressionText((LambdaExpression)expression);
             return md.DisplayName ?? (md.PropertyName ?? et.Split(new char[] { '.' }).Last<string>());
         }
     }

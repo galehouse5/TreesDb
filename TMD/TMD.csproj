@@ -115,8 +115,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Mappings\PhotoMapping.cs" />
     <Compile Include="Mappings\ImportMapping.cs" />
+    <Compile Include="Mappings\PhotoMapping.cs" />
     <Compile Include="Mappings\ValidationMapper.cs" />
     <Compile Include="Mappings\ValidationMapping\MessageMapper.cs" />
     <Compile Include="Mappings\ValidationMapping\PathMapper.cs" />
@@ -239,13 +239,13 @@
     <Content Include="js\jquery\jquery.tipsy.js" />
     <Content Include="js\jquery\jquery.uniform.min.js" />
     <Content Include="js\jquery\jquery.visualize.js" />
+    <Content Include="js\misc\upclick.js" />
     <Content Include="js\misc\excanvas.min.js" />
     <Content Include="js\plugin.js" />
     <Content Include="js\slate\slate.js" />
     <Content Include="js\slate\slate.message.js" />
     <Content Include="js\slate\slate.portlet.js" />
     <Content Include="js\widgets.js" />
-    <Content Include="PhotoUploadTester.htm" />
     <Content Include="Scripts\Account.js" />
     <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\GeocoderService.js" />
@@ -339,13 +339,14 @@
     <Content Include="Views\Map\GoogleMapsScript.ascx" />
     <Content Include="Views\Map\Index.aspx" />
     <Content Include="Views\Map\MenuWidget.ascx" />
-    <Content Include="Views\Photo\ThumbnailWidget.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\PhotoGalleryModel.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Distance.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\State.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\String.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Boolean.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Coordinates.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\PhotoGalleryModel.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Enum.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Elevation.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Distance.ascx" />

@@ -4,7 +4,7 @@
         <h4>Enter tree</h4>
     </div>
     <div class="portlet-content">
-        <%= Html.HiddenFor(m => m.Id) %>
+        <%= Html.HiddenFor(m => m.Id).ToString().Replace(">", "class=\"Id\"") %>
         <%= Html.HiddenFor(m => m.IsEditing) %>
         <%= Html.HiddenFor(m => m.EditMode) %>
         <% if (Model.EditMode == EImportTreeModelEditMode.Simple) { %>
@@ -17,6 +17,7 @@
             <%= Html.EditorFor(m => m.Coordinates) %>
             <%= Html.EditorFor(m => m.Elevation) %>
             <%= Html.EditorFor(m => m.GeneralComments, new { rows = 5 })%>
+            <%= Html.EditorFor(m => m.Photos) %>
         <% } else { %>
             <div class="portlet x12 TreeSection">
                 <div class="portlet-header">
@@ -32,6 +33,7 @@
                     <%= Html.EditorFor(m => m.Coordinates) %>
                     <%= Html.EditorFor(m => m.Elevation) %>
                     <%= Html.EditorFor(m => m.GeneralComments, new { rows = 5 })%>
+                    <%= Html.EditorFor(m => m.Photos) %>
                 </div>
             </div>
         <%} %>

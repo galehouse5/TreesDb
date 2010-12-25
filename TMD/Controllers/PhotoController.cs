@@ -16,12 +16,6 @@ namespace TMD.Controllers
 {
     public class PhotoController : ControllerBase
     {
-        [ChildActionOnly]
-        public ActionResult ThumbnailWidget(PhotoEditModel model)
-        {
-            return PartialView(model);
-        }
-
         [HttpGet]
         public ActionResult View(int id, string size = "Original")
         {
@@ -42,30 +36,20 @@ namespace TMD.Controllers
             Photo photo = Repositories.Photos.FindById(id);
             if (!photo.IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
             using (UnitOfWork.Begin()) { Repositories.Photos.Remove(photo); UnitOfWork.Persist(); };
-            return PhotoRemove(photo);
+            return PhotoRemoval(photo);
         }
 
-        protected ActionResult PhotoRemove(Photo photo)
+        protected ActionResult PhotoRemoval(Photo photo)
         {
             return Json(new { Success = true });
         }
 
         [HttpPost]
-        public ActionResult AddToTrip(int id, HttpPostedFileBase data)
+        public ActionResult AddToTripTree(int id, int treeId, HttpPostedFileBase imageData)
         {
-            Trip trip = Repositories.Trips.FindById(id);
-            using (Bitmap image = new Bitmap(data.InputStream))
-            {
-                var photo = new PhotoFactory().CreateForTrip(trip, image);
-                if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
-                using (UnitOfWork.Begin()) { Repositories.Photos.Save(photo); UnitOfWork.Persist(); }
-                return PhotoAdded(photo);
-            }
-        }
 
-        protected ActionResult PhotoAdded(Photo photo)
-        {
-            return Json(new { Success = true, Id = photo.Id });
+
+            throw new NotImplementedException();
         }
     }
 }

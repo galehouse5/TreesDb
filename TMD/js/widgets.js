@@ -74,33 +74,38 @@
 
 
 (function($) {
-    $.fn.gallery = function(options) {
+    $.fn.PhotoGallery = function(options) {
         var defaults = {};
         var options = $.extend(defaults, options);
         return this.each(function() {
-            var gallery = $(this);
+            var galleryContainer = $(this);
 
-            gallery.find('a.delete').live('click', function (event) {
-                var anchor = $(this);
-                $.ajax({ type: "POST", url: anchor.attr('href'),
+            galleryContainer.find('a.delete').live('click', function() {
+                var deleteAnchor = $(this);
+                $.ajax({ type: "POST", url: deleteAnchor.attr('href'),
                     success: function (response) {
                         if (response.Success) {
-                            anchor.closest('li').remove();
+                            deleteAnchor.closest('li').remove();
                         }
                     }
                 });
-                event.preventDefault();
+                return false;
             });
 
-            gallery.find('a.add').each(function () {
-                var anchor = $(this);
+            galleryContainer.find('a.add').each(function () {
+                var addAnchor = $(this);
                 upclick({
-                    element: anchor[0],
-                    action: anchor.attr('href'),
-                    dataname: 'data',
-                    oncomplete: function(response_data) { alert('complete'); alert(response_data); },
-                    onstart: function(filename) { alert('start'); alert('Start upload: ' + filename); }
+                    element: addAnchor[0],
+                    action: addAnchor.attr('href'),
+                    dataname: 'imageData',
+                    oncomplete: function(response_data) { 
+                        alert(response_data); 
+                    },
+                    onstart: function(filename) { 
+                        alert('Start upload: ' + filename); 
+                    }
                 });
+                return false;
             });
 
         });

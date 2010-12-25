@@ -8,6 +8,6 @@
 .captcha { margin-bottom: 15px; }
 .captcha .recaptcha_input_area input { left: 0; }
 
-.requiresjavascript { display: none; }
+.RequiresJavascript { display: none; }
 
 table.ui-datepicker-calendar thead tr th { background-color: #FFFFFF !important; color: #000000 !important;  }

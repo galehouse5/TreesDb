@@ -16,6 +16,7 @@
     var public = {};
 
     public.Init = function () {
+
         $('button[type=submit][name=innerAction]').live('click', function (event) {
             var button = $(this);
             var form = button.closest('form');
@@ -25,7 +26,9 @@
                 $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
                     function (response) {
                         var treeContainer = button.closest('.Tree');
-                        treeContainer.replaceWith(response);
+                        var treeContent = $(response);
+                        treeContainer.replaceWith(treeContent);
+                        treeContent.trigger('ContentAdded');
                     });
                 return false;
             }
@@ -35,9 +38,13 @@
                         var subsiteContainer = button.closest('.Subsite');
                         if (subsiteContainer.find('.Tree').length > 1) {
                             var lastTree = subsiteContainer.find('.Tree').last();
-                            lastTree.after(response);
+                            var treeContent = $(response);
+                            lastTree.after(treeContent);
+                            treeContent.trigger('ContentAdded');
                         } else {
-                            subsiteContainer.replaceWith(response);
+                            var subsiteContent = $(response);
+                            subsiteContainer.replaceWith(subsiteContent);
+                            subsiteContent.trigger('ContentAdded');
                         }
                     });
                 return false;
@@ -46,11 +53,14 @@
                 $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
                     function (response) {
                         var subsiteContainer = button.closest('.Subsite');
-                        subsiteContainer.replaceWith(response);
+                        var subsiteContent = $(response);
+                        subsiteContainer.replaceWith(subsiteContent);
+                        subsiteContent.trigger('ContentAdded');
                     });
                 return false;
             }
         });
+
     }
 
     return public;

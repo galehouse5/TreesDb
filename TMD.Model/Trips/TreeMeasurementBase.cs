@@ -323,7 +323,8 @@ namespace TMD.Model.Trips
 
         [Valid] public virtual Elevation Elevation { get; set; }
 
-        public virtual IList<Photo> Photos { get; protected set; }
+        [Size2(0, 100, Message = "This tree contains too many photos.", Tags = Tag.Screening)]
+        [Valid] public virtual IList<Photo> Photos { get; protected set; }
 
         public virtual Photo AddPhoto(Bitmap image)
         {

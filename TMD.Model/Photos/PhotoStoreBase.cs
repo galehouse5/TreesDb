@@ -9,9 +9,9 @@ using System.Diagnostics;
 
 namespace TMD.Model.Photos
 {
-    public class StoredPhotoInfo
+    public class StorageReceipt
     {
-        internal StoredPhotoInfo() { }
+        internal StorageReceipt() { }
         public Photo Photo { get; internal set; }
         public Size Size { get; internal set; }
         public int Bytes { get; internal set; }
@@ -25,15 +25,25 @@ namespace TMD.Model.Photos
 
         public abstract bool Contains(Photo photo);
 
-        public virtual StoredPhotoInfo Store(Photo photo, Bitmap image)
+        public virtual StorageReceipt Store(Photo photo, Bitmap image)
         {
+            if (image == null)
+            {
+                return new StorageReceipt
+                {
+                    Photo = photo,
+                    Size = Size.Empty,
+                    Bytes = 0,
+                    Format = PhotoFormat.NotSpecified
+                };
+            }
             using (Stream s = GetWriteStream(photo))
             {
                 image.Save(s,
                     image.RawFormat.Equals(ImageFormat.Jpeg) ? ImageFormat.Jpeg
                     : image.RawFormat.Equals(ImageFormat.Gif) ? ImageFormat.Gif
                     : ImageFormat.Png);
-                return new StoredPhotoInfo 
+                return new StorageReceipt 
                 { 
                     Photo = photo, 
                     Size = image.Size, 

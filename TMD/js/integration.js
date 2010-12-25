@@ -3,11 +3,21 @@ var Integration = new function () {
 
     public.Init = function () {
 
-        $('.datepicker').datepicker({
-            showOn: 'button',
-            buttonImage: '/images/icons/calendar.gif',
-            duration: 0
-        });
+        $('body').live('ContentAdded', function () {
+
+            $('.RequiresJavascript').show();
+
+            slate.init();
+
+            $('.datepicker').datepicker({
+                showOn: 'button',
+                buttonImage: '/images/icons/calendar.gif',
+                duration: 0
+            });
+
+            $('.PhotoGallery').PhotoGallery();
+
+        }).trigger('ContentAdded');
 
     }
 

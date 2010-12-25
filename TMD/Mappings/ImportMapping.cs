@@ -107,7 +107,8 @@ namespace TMD.Mappings
             CreateMap<TreeMeasurementBase, ImportTreeModel>()
                 .ForMember(dest => dest.IsEditing, opt => opt.MapFrom(src =>
                     !ValidationMapper.Map<TreeMeasurementBase, ImportTreeModel>(src.Validate(Tag.Screening, Tag.Persistence)).IsValid()))
-                .ForMember(dest => dest.IsRemovable, opt => opt.MapFrom(src => src.SubsiteVisit.TreeMeasurements.Count > 1));
+                .ForMember(dest => dest.IsRemovable, opt => opt.MapFrom(src => src.SubsiteVisit.TreeMeasurements.Count > 1))
+                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(src)));
             ValidationMapper.CreateMap<TreeMeasurementBase, ImportTreeModel>()
                 .ForPath("*.InputFormat", "*")
                 .ForPath("*.Feet", "*")
@@ -123,7 +124,8 @@ namespace TMD.Mappings
             CreateMap<ImportSubsiteTreesModel, SubsiteVisit>()
                 .AfterMap((src, dest) => src.Trees.ForEach(t => Mapper.Map(t, dest.FindTreeMeasurementById(t.Id))));
 
-            CreateMap<ImportTreeModel, TreeMeasurementBase>();
+            CreateMap<ImportTreeModel, TreeMeasurementBase>()
+                .ForMember(dest => dest.Photos, opt => opt.Ignore());
         }
 
         public void configureForFinish()

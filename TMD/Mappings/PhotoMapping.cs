@@ -13,9 +13,11 @@ namespace TMD.Mappings
     {
         protected override void Configure()
         {
-            CreateMap<Photo, PhotoEditModel>()
-                .ForMember(dest => dest.CanView, opt => opt.UseValue(true))
-                .ForMember(dest => dest.CanRemove, opt => opt.UseValue(true));
+            CreateMap<TreeMeasurementBase, PhotoGalleryModel>()
+                .ForMember(dest => dest.Adder, opt => opt.MapFrom(src =>
+                    new ImportTreePhotoAdderModel { TripId = src.SubsiteVisit.SiteVisit.Trip.Id, TreeId = src.Id }))
+                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src =>
+                    src.Photos.Select(photo => new PhotoModel { Id = src.Id })));
         }
     }
 }

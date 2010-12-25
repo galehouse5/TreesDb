@@ -34,23 +34,19 @@
 	        </div> <!-- #top -->
 
 	        <div id="content" class="xfluid">
-
                 <% if (ViewData.JavascriptRequired) { %>
-                    <div id="javascript-warning" class="portlet x12">
+                    <div id="JavascriptDisabledWarning" class="portlet x12">
 			            <div class="portlet-header"><h4>This page requires javascript.</h4></div>
 			            <div class="portlet-content">
 			                <p>Please enable javascript in your browser's settings and then refresh this page.</p>
 			            </div>
 		            </div>
-                    <div class="requiresjavascript">
+                    <div class="RequiresJavascript">
                 <% } %>
-
                     <asp:ContentPlaceHolder ID="Content" runat="server"></asp:ContentPlaceHolder>
-
                 <% if (ViewData.JavascriptRequired) { %>
                     </div>
                 <% } %>
-
 	        </div> <!-- #content -->
 	
             <div id="footer">
@@ -72,9 +68,9 @@
                 slate.init();
                 slate.portlet.init();
                 Integration.Init();
+                $('.RequiresJavascript').show();
                 <% if (ViewData.JavascriptRequired) { %>
-                    $('#javascript-warning').hide();
-                    $('.requiresjavascript').show();
+                    $('#JavascriptDisabledWarning').hide();
                 <% } %>
             });
         </script>
