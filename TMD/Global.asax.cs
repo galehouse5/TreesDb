@@ -69,6 +69,7 @@ namespace TMD
 
             Mapper.AddProfile<ImportMapping>();
             Mapper.AddProfile<PhotoMapping>();
+            Mapper.AddProfile<MapMapping>();
 
             log4net.Config.XmlConfigurator.Configure();
             ObjectFactory.Initialize(x =>

@@ -53,7 +53,7 @@ namespace TMD.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddToTripTree(int id, int treeId, HttpPostedFileBase imageData)
+        public ActionResult AddToImportTree(int id, int treeId, HttpPostedFileBase imageData)
         {
             var trip = Repositories.Trips.FindById(id);
             var tree = trip.FindTreeMeasurementById(treeId);
@@ -77,7 +77,7 @@ namespace TMD.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddToTripSubsite(int id, int subsiteId, HttpPostedFileBase imageData)
+        public ActionResult AddToImportSubsite(int id, int subsiteId, HttpPostedFileBase imageData)
         {
             var trip = Repositories.Trips.FindById(id);
             var subsite = trip.FindSubsiteVisitById(subsiteId);

@@ -67,24 +67,24 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.IsEditing, opt => opt.MapFrom(src => 
                     !ValidationMapper.Map<SiteVisit, ImportSiteModel>(src.Validate(Tag.Screening, Tag.Persistence)).IsValid()))
                 .ForMember(dest => dest.Subsites, opt => opt.MapFrom(src => src.SubsiteVisits))
-                .ForMember(dest => dest.IsSaveableAndRemovable, opt => opt.MapFrom(src => src.Trip.SiteVisits.Count > 1));
+                .ForMember(dest => dest.IsSaveableAndRemovable, opt => opt.MapFrom(src => src.Trip.SiteVisits.Count > 1))
+                .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Mapper.Map<SiteVisit, CoordinatePickerModel>(src)));
             ValidationMapper.CreateMap<SiteVisit, ImportSiteModel>()
                 .ForPath("SubsiteVisits*", "Subsites*")
                 .ForPath("SubsiteVisits[*].Coordinates*", "Subsites[*].Coordinates")
                 .IgnorePath("SubsiteVisits[*].TreeMeasurements*");
 
             CreateMap<SubsiteVisit, ImportSubsiteModel>()
-                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<SubsiteVisit, PhotoGalleryModel>(src)));
+                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<SubsiteVisit, PhotoGalleryModel>(src)))
+                .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Mapper.Map<SubsiteVisit, CoordinatePickerModel>(src)));
 
             CreateMap<ImportSitesModel, Trip>()
                 .AfterMap((src, dest) => src.Sites.ForEach(s => Mapper.Map(s, dest.FindSiteVisitById(s.Id))));
 
             CreateMap<ImportSiteModel, SiteVisit>()
-                .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => src.Coordinates.Clone() as Coordinates))
                 .AfterMap((src, dest) => src.Subsites.ForEach(ss => Mapper.Map(ss, dest.FindSubsiteVisitById(ss.Id))));
 
             CreateMap<ImportSubsiteModel, SubsiteVisit>()
-                .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => src.Coordinates.Clone() as Coordinates))
                 .ForMember(dest => dest.Country, opt => opt.MapFrom(src => src.State == null ? null : src.State.Country))
                 .ForMember(dest => dest.Photos, opt => opt.Ignore());
         }
@@ -110,7 +110,8 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.IsEditing, opt => opt.MapFrom(src =>
                     !ValidationMapper.Map<TreeMeasurementBase, ImportTreeModel>(src.Validate(Tag.Screening, Tag.Persistence)).IsValid()))
                 .ForMember(dest => dest.IsRemovable, opt => opt.MapFrom(src => src.SubsiteVisit.TreeMeasurements.Count > 1))
-                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(src)));
+                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(src)))
+                .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Mapper.Map<TreeMeasurementBase, CoordinatePickerModel>(src)));
             ValidationMapper.CreateMap<TreeMeasurementBase, ImportTreeModel>()
                 .ForPath("*.InputFormat", "*")
                 .ForPath("*.Feet", "*")

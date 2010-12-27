@@ -2,9 +2,9 @@
 
 <asp:Content ContentPlaceHolderID="Styles" runat="server">
     <style type="text/css">
-        #map { position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 299; }
-        #header { z-index: 300; }
-        #nav { z-index: 300; }
+        #map { position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
+        #header { z-index: 100; }
+        #nav { z-index: 100; }
     </style>
 </asp:Content>
 

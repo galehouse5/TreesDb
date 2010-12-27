@@ -1,6 +1,7 @@
 ﻿String.prototype.Trim = function () { return this.replace(/^\s*/, '').replace(/\s*$/, ''); }
 String.prototype.IsNullOrWhitespace = function () { return this == null || this.Trim() == ''; }
 String.prototype.Contains = function (substring) { return this.indexOf(substring) > -1; }
+Number.prototype.RoundToDecimals = function (decimals) { return Math.round(this * Math.pow(10, decimals)) / Math.pow(10, decimals); }
 
 var CoordinatesFormat = {
     Invalid: 0,
@@ -75,16 +76,16 @@ var Longitude = {
                     case CoordinatesFormat.Invalid:
                         return '';
                     case CoordinatesFormat.DegreesMinutesDecimalSeconds:
-                        return (this.AbsoluteWholeDegrees() * this.Sign()).toFixed(2)
-                                    + ' ' + this.AbsoluteWholeMinutes().toFixed(2)
+                        return (this.AbsoluteWholeDegrees() * this.Sign())
+                                    + ' ' + this.AbsoluteWholeMinutes()
                                     + ' ' + this.AbsoluteSeconds().toFixed(1);
                     case CoordinatesFormat.DecimalDegrees:
-                        return (this.AbsoluteWholeDegrees() * this.Sign()).toFixed(5);
+                        return (this.AbsoluteTotalDegrees() * this.Sign()).toFixed(5);
                     case CoordinatesFormat.Default:
                     case CoordinatesFormat.DegreesDecimalMinutes:
                     default:
-                        return (this.AbsoluteWholeDegrees() * this.Sign()).toFixed(2)
-                                    + ' ' + this.AbsoluteWholeMinutes().toFixed(3);
+                        return (this.AbsoluteWholeDegrees() * this.Sign())
+                                    + ' ' + this.AbsoluteMinutes().toFixed(3);
                 }
             }
         };
@@ -121,7 +122,7 @@ var Longitude = {
             sign = 1.0; degrees = 0.0; minutes = 0.0; seconds = 0.0; inputFormat = CoordinatesFormat.Invalid;
         }
         return this.Create(
-                    sign * (degrees + (minutes / 60.0) + (seconds / 3600.0)),
+                    (sign * (degrees + (minutes / 60.0) + (seconds / 3600.0))).RoundToDecimals(5),
                     inputFormat);
     },
     Null: function () { return this.Create(0.0, CoordinatesFormat.Unspecified); }
@@ -150,16 +151,16 @@ var Latitude = {
                     case CoordinatesFormat.Invalid:
                         return '';
                     case CoordinatesFormat.DegreesMinutesDecimalSeconds:
-                        return (this.AbsoluteWholeDegrees() * this.Sign()).toFixed(2)
-                                    + ' ' + this.AbsoluteWholeMinutes().toFixed(2)
+                        return (this.AbsoluteWholeDegrees() * this.Sign())
+                                    + ' ' + this.AbsoluteMinutes()
                                     + ' ' + this.AbsoluteSeconds().toFixed(1);
                     case CoordinatesFormat.DecimalDegrees:
-                        return (this.AbsoluteWholeDegrees() * this.Sign()).toFixed(5);
+                        return (this.AbsoluteTotalDegrees() * this.Sign()).toFixed(5);
                     case CoordinatesFormat.Default:
                     case CoordinatesFormat.DegreesDecimalMinutes:
                     default:
-                        return (this.AbsoluteWholeDegrees() * this.Sign()).toFixed(2)
-                                    + ' ' + this.AbsoluteWholeMinutes().toFixed(3);
+                        return (this.AbsoluteWholeDegrees() * this.Sign())
+                                    + ' ' + this.AbsoluteMinutes().toFixed(3);
                 }
             }
         };
@@ -196,7 +197,7 @@ var Latitude = {
             sign = 1.0; degrees = 0.0; minutes = 0.0; seconds = 0.0; inputFormat = CoordinatesFormat.Invalid;
         }
         return this.Create(
-                    sign * (degrees + (minutes / 60.0) + (seconds / 3600.0)),
+                    (sign * (degrees + (minutes / 60.0) + (seconds / 3600.0))).RoundToDecimals(5),
                     inputFormat);
     },
     Null: function () { return this.Create(0.0, CoordinatesFormat.Unspecified); }

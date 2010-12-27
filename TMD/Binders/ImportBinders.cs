@@ -25,10 +25,12 @@ namespace TMD.Binders
             model.Sites.Where(s => s.IsEditing).ForEach(s =>
                 {
                     var site = trip.FindSiteVisitById(s.Id);
+                    s.Coordinates = Mapper.Map<SiteVisit, CoordinatePickerModel>(site);
                     s.Subsites.ForEach(ss =>
                         {
                             var subsite = site.FindSubsiteVisitById(ss.Id);
                             ss.Photos = Mapper.Map<SubsiteVisit, PhotoGalleryModel>(subsite);
+                            ss.Coordinates = Mapper.Map<SubsiteVisit, CoordinatePickerModel>(subsite);
                         });
                 });
             return model;
@@ -58,6 +60,7 @@ namespace TMD.Binders
                                 {
                                     var tree = subsite.FindTreeMeasurementById(t.Id);
                                     t.Photos = Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(tree);
+                                    t.Coordinates = Mapper.Map<TreeMeasurementBase, CoordinatePickerModel>(tree);
                                 });
                         });
                 });

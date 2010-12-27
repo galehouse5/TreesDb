@@ -115,6 +115,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mappings\MapMapping.cs" />
     <Compile Include="Mappings\ImportMapping.cs" />
     <Compile Include="Mappings\PhotoMapping.cs" />
     <Compile Include="Mappings\ValidationMapper.cs" />
@@ -198,7 +199,8 @@
     <Content Include="images\forward_enabled.png" />
     <Content Include="images\header_bg.png" />
     <Content Include="favicon.ico" />
-    <Content Include="images\icons\calendar.gif" />
+    <Content Include="images\icons\Calendar.gif" />
+    <Content Include="images\icons\Map.png" />
     <Content Include="images\icons\MultiTrunkTree32.png" />
     <Content Include="images\icons\SingleTrunkTree32.png" />
     <Content Include="images\icons\Site32.png" />
@@ -226,7 +228,7 @@
     <Content Include="images\tipsy.gif" />
     <Content Include="images\title.png" />
     <Content Include="images\white oak in fog.jpg" />
-    <Content Include="js\Common.js" />
+    <Content Include="js\Map\Common.js" />
     <Content Include="js\Import\Trees.js" />
     <Content Include="js\Import\Sites.js" />
     <Content Include="js\jquery\facebox.js" />
@@ -239,6 +241,7 @@
     <Content Include="js\jquery\jquery.tipsy.js" />
     <Content Include="js\jquery\jquery.uniform.min.js" />
     <Content Include="js\jquery\jquery.visualize.js" />
+    <Content Include="js\Map\CoordinatePicker.js" />
     <Content Include="js\misc\upclick.js" />
     <Content Include="js\misc\excanvas.min.js" />
     <Content Include="js\plugin.js" />
@@ -347,6 +350,7 @@
     <Content Include="Views\Shared\DisplayTemplates\String.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Boolean.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Coordinates.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\CoordinatePickerModel.ascx" />
     <Content Include="Views\Shared\EditorTemplates\PhotoGalleryModel.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Enum.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Elevation.ascx" />

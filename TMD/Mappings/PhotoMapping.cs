@@ -15,7 +15,7 @@ namespace TMD.Mappings
         {
             CreateMap<TreeMeasurementBase, PhotoGalleryModel>()
                 .ForMember(dest => dest.Adder, opt => opt.MapFrom(src =>
-                    new ImportTreePhotoAdderModel { TripId = src.SubsiteVisit.SiteVisit.Trip.Id, TreeId = src.Id }))
+                    new ImportTreePhotoGalleryAdderModel { TripId = src.SubsiteVisit.SiteVisit.Trip.Id, TreeId = src.Id }))
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src =>
                     src.Photos.Select(photo => new PhotoModel { Id = photo.Id })));
             ValidationMapper.CreateMap<TreeMeasurementBase, PhotoGalleryModel>()
@@ -23,7 +23,7 @@ namespace TMD.Mappings
 
             CreateMap<SubsiteVisit, PhotoGalleryModel>()
                 .ForMember(dest => dest.Adder, opt => opt.MapFrom(src =>
-                    new ImportSubsitePhotoAdderModel { TripId = src.SiteVisit.Trip.Id, SubsiteId = src.Id }))
+                    new ImportSubsitePhotoGalleryAdderModel { TripId = src.SiteVisit.Trip.Id, SubsiteId = src.Id }))
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src =>
                     src.Photos.Select(photo => new PhotoModel { Id = photo.Id })));
             ValidationMapper.CreateMap<SubsiteVisit, PhotoGalleryModel>()

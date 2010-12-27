@@ -117,3 +117,22 @@
         });
     };
 })(jQuery);
+
+
+(function ($) {
+    $.fn.CoordinatePicker = function(options) {
+        var defaults = {};
+        var options = $.extend(defaults, options);
+        return this.each(function () {
+            var pickerContainer = $(this);
+            pickerContainer.find('button').show();
+            var coordinateContainer = pickerContainer.find('input[type=text]');
+
+            pickerContainer.bind('PickCoordinates', function (event, mapLoader) {
+                var coordinates = Coordinates.Parse(coordinateContainer.val());
+                CoordinatePicker.Open({}, function() { alert('callback'); });
+                return false;
+            });
+        });
+    };
+})(jQuery);

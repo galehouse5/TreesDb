@@ -6,23 +6,23 @@ using TMD.Model.Photos;
 
 namespace TMD.Models
 {
-    public class ImportTreePhotoAdderModel : PhotoAdderModel
+    public class ImportTreePhotoGalleryAdderModel : PhotoGalleryAdderModel
     {
         public int TripId { get; set; }
         public int TreeId { get; set; }
-        public override string ActionName { get { return "AddToTripTree"; } }
+        public override string ActionName { get { return "AddToImportTree"; } }
         public override object RouteValues { get { return new { controller = "Photo", id = TripId, treeId = TreeId }; } }
     }
 
-    public class ImportSubsitePhotoAdderModel : PhotoAdderModel
+    public class ImportSubsitePhotoGalleryAdderModel : PhotoGalleryAdderModel
     {
         public int TripId { get; set; }
         public int SubsiteId { get; set; }
-        public override string ActionName { get { return "AddToTripSubsite"; } }
+        public override string ActionName { get { return "AddToImportSubsite"; } }
         public override object RouteValues { get { return new { controller = "Photo", id = TripId, subsiteId = SubsiteId }; } }
     }
 
-    public abstract class PhotoAdderModel
+    public abstract class PhotoGalleryAdderModel
     {
         public abstract string ActionName { get; }
         public abstract object RouteValues { get; }
@@ -30,7 +30,7 @@ namespace TMD.Models
 
     public class PhotoGalleryModel
     {
-        public PhotoAdderModel Adder { get; set; }
+        public PhotoGalleryAdderModel Adder { get; set; }
         public bool HasAdder { get { return Adder != null; } }
         public IList<PhotoModel> Photos { get; set; }
         public bool HasPhotos { get { return Photos != null && Photos.Count() > 0; } }

@@ -73,8 +73,8 @@ namespace TMD.Models
             set { m_Name = value; }
         }
 
-        private Coordinates m_Coordinates;
-        public Coordinates Coordinates 
+        private CoordinatePickerModel m_Coordinates;
+        public CoordinatePickerModel Coordinates 
         {
             get { return HasSingleSubsite ? Subsites[0].Coordinates : m_Coordinates; }
             set { m_Coordinates = value; }
@@ -112,7 +112,7 @@ namespace TMD.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Coordinates Coordinates { get; set; }
+        public CoordinatePickerModel Coordinates { get; set; }
         public State State { get; set; }
         public string County { get; set; }
         [DisplayName("Ownership type")] public string OwnershipType { get; set; }
@@ -221,7 +221,7 @@ namespace TMD.Models
         public bool IsRemovable { get; set; }
         [DisplayName("Common name")] public string CommonName { get; set; }
         [DisplayName("Scientific name")] public string ScientificName { get; set; }
-        public Coordinates Coordinates { get; set; }
+        public CoordinatePickerModel Coordinates { get; set; }
         public Distance Height { get; set; }
         [DisplayName("Measurement method")] public TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; } 
         public Distance Girth { get; set; }

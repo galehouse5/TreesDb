@@ -36,7 +36,7 @@
         $(function () {
             $('.datepicker').datepicker({
                 showOn: 'button',
-                buttonImage: '/images/icons/calendar.gif',
+                buttonImage: '/images/icons/Calendar.gif',
                 duration: 0
             });
         });
