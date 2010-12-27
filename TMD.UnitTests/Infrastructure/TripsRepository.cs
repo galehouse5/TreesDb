@@ -7,6 +7,7 @@ using TMD.Model.Trips;
 using TMD.Model;
 using TMD.Model.Locations;
 using TMD.UnitTests.Extensions;
+using TMD.Model.Photos;
 
 namespace TMD.UnitTests.Infrastructure
 {
@@ -330,8 +331,8 @@ namespace TMD.UnitTests.Infrastructure
             tm2.CommonName = "tree measurement 2 common name";
             tm2.ScientificName = "tree measurement 2 scientific name";
             
-            tm2.AddPhoto("Square.jpg".GetPhoto());
-            tm2.AddPhoto("Thumbnail.jpg".GetPhoto());
+            tm2.AddPhoto(new PhotoFactory().Create("Square.jpg".GetPhoto()));
+            tm2.AddPhoto(new PhotoFactory().Create("Thumbnail.jpg".GetPhoto()));
 
             using (UnitOfWork.Begin())
             {

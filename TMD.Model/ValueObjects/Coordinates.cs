@@ -273,7 +273,7 @@ namespace TMD.Model
             return new Latitude() 
             {
                 InputFormat = inputFormat,
-                TotalDegrees = sign * (degrees + (minutes / 60f) + (seconds / 3600f)),
+                TotalDegrees = (float)Math.Round(sign * (degrees + (minutes / 60f) + (seconds / 3600f)), 5),
                 RawValue = s
             };
         }
@@ -424,7 +424,7 @@ namespace TMD.Model
             return new Longitude()
             {
                 InputFormat = inputFormat,
-                TotalDegrees = sign * (degrees + (minutes / 60f) + (seconds / 3600f)),
+                TotalDegrees = (float)Math.Round(sign * (degrees + (minutes / 60f) + (seconds / 3600f)), 5),
                 RawValue = s
             };
         }

@@ -181,7 +181,8 @@ namespace TMD.Model.Trips
                 State = sv.Trip.DefaultState,
                 County = sv.Trip.DefaultCounty,
                 SiteVisit = sv,
-                MakeOwnershipContactInfoPublic = true
+                MakeOwnershipContactInfoPublic = true,
+                Photos = new List<Photo>()
             }.RecordCreation() as SubsiteVisit;
         }
     }
