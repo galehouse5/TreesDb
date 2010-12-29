@@ -6,15 +6,15 @@ slate = function () {
     var chartColors = ['#255648', '#FFB100', '#555', '#777', '#999', '#bbb', '#ccc', '#eee'];
 
     pub.init = function () {
-        $('#search').find('input').live('click', function () { $(this).val('') });
-        $("form.form select, form.form input:checkbox, form.form input:radio, form.form input:file").uniform();
+        $('#search').not('.Initialized').addClass('Initialized').find('input').live('click', function () { $(this).val('') });
+        $("form.form select, form.form input:checkbox, form.form input:radio, form.form input:file").not('.Initialized').addClass('Initialized').uniform();
 
-        $('*[rel=datatable]').dataTable();
+        $('*[rel=datatable]').not('.Initialized').addClass('Initialized').dataTable();
 
-        $("*[rel=tooltip]").tipsy({ gravity: 's' });
-        $("*[rel=facebox]").attr('rel', 'InitializedFacebox').facebox();
+        $("*[rel=tooltip]").not('.Initialized').addClass('Initialized').tipsy({ gravity: 's' });
+        $("*[rel=facebox]").not('.Initialized').addClass('Initialized').facebox();
 
-        $('table.stats').each(function () {
+        $('table.stats').not('.Initialized').addClass('Initialized').each(function () {
             var chartType = '';
 
             if ($(this).attr('title')) {

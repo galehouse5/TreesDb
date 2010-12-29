@@ -79,6 +79,7 @@
         var options = $.extend(defaults, options);
         return this.each(function() {
             var galleryContainer = $(this);
+            galleryContainer.find('*[rel=facebox]').facebox();
 
             galleryContainer.find('a.delete').bind('click', function() {
                 var deleteAnchor = $(this);
@@ -104,7 +105,6 @@
                         var galleryContent = $(response).find('.gallery');
                         galleryContainer.replaceWith(galleryContent);
                         galleryContent.PhotoGallery();
-                        galleryContent.trigger('ContentAdded');
                     },
                     onstart: function() { 
                         galleryContainer.find('.ReadyToLoadPhoto').hide();

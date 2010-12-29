@@ -17,20 +17,20 @@ namespace TMD.Binders
         {
             var model = (ImportSitesModel)base.BindModel(controllerContext, bindingContext);
             var trip = Repositories.Trips.FindById(model.Id);
-            model.Sites.Where(s => !s.IsEditing).ForEach(s =>
+            model.Sites.Where(siteModel => !siteModel.IsEditing).ForEach(siteModel =>
                 {
-                    var site = trip.FindSiteVisitById(s.Id);
-                    Mapper.Map(site, s);
+                    var site = trip.FindSiteVisitById(siteModel.Id);
+                    Mapper.Map(site, siteModel);
                 });
-            model.Sites.Where(s => s.IsEditing).ForEach(s =>
+            model.Sites.Where(siteModel => siteModel.IsEditing).ForEach(siteModel =>
                 {
-                    var site = trip.FindSiteVisitById(s.Id);
-                    s.Coordinates = Mapper.Map<SiteVisit, CoordinatePickerModel>(site);
-                    s.Subsites.ForEach(ss =>
+                    var site = trip.FindSiteVisitById(siteModel.Id);
+                    siteModel.Coordinates.MapLoader = new ImportSiteCoordinatePickerMapLoaderModel { SiteId = site.Id, TripId = trip.Id };
+                    siteModel.Subsites.ForEach(subsiteModel =>
                         {
-                            var subsite = site.FindSubsiteVisitById(ss.Id);
-                            ss.Photos = Mapper.Map<SubsiteVisit, PhotoGalleryModel>(subsite);
-                            ss.Coordinates = Mapper.Map<SubsiteVisit, CoordinatePickerModel>(subsite);
+                            var subsite = site.FindSubsiteVisitById(subsiteModel.Id);
+                            subsiteModel.Photos = Mapper.Map<SubsiteVisit, PhotoGalleryModel>(subsite);
+                            subsiteModel.Coordinates.MapLoader = new ImportSubsiteCoordinatePickerMapLoaderModel { SubsiteId = subsite.Id, TripId = trip.Id };
                         });
                 });
             return model;
@@ -43,24 +43,24 @@ namespace TMD.Binders
         {
             var model = (ImportTreesModel)base.BindModel(controllerContext, bindingContext);
             var trip = Repositories.Trips.FindById(model.Id);
-            model.Sites.ForEach(s =>
+            model.Sites.ForEach(siteModel =>
                 {
-                    var site = trip.FindSiteVisitById(s.Id);
-                    s.Name = site.Name;
-                    s.Subsites.ForEach(ss =>
+                    var site = trip.FindSiteVisitById(siteModel.Id);
+                    siteModel.Name = site.Name;
+                    siteModel.Subsites.ForEach(subsiteModel =>
                         {
-                            var subsite = site.FindSubsiteVisitById(ss.Id);
-                            ss.Name = subsite.Name;
-                            ss.Trees.Where(t => !t.IsEditing).ForEach(t =>
+                            var subsite = site.FindSubsiteVisitById(subsiteModel.Id);
+                            subsiteModel.Name = subsite.Name;
+                            subsiteModel.Trees.Where(treeModel => !treeModel.IsEditing).ForEach(treeModel =>
                                 {
-                                    var tree = subsite.FindTreeMeasurementById(t.Id);
-                                    Mapper.Map(tree, t);
+                                    var tree = subsite.FindTreeMeasurementById(treeModel.Id);
+                                    Mapper.Map(tree, treeModel);
                                 });
-                            ss.Trees.Where(t => t.IsEditing).ForEach(t =>
+                            subsiteModel.Trees.Where(treeModel => treeModel.IsEditing).ForEach(treeModel =>
                                 {
-                                    var tree = subsite.FindTreeMeasurementById(t.Id);
-                                    t.Photos = Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(tree);
-                                    t.Coordinates = Mapper.Map<TreeMeasurementBase, CoordinatePickerModel>(tree);
+                                    var tree = subsite.FindTreeMeasurementById(treeModel.Id);
+                                    treeModel.Photos = Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(tree);
+                                    treeModel.Coordinates.MapLoader = new ImportTreeCoordinatePickerMapLoaderModel { TreeId = tree.Id, TripId = trip.Id };
                                 });
                         });
                 });

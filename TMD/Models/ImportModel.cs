@@ -93,6 +93,12 @@ namespace TMD.Models
         public ImportSubsiteModel AddSubsite()
         {
             var subsite = new ImportSubsiteModel();
+            if (Subsites.Count == 1)
+            {
+                m_Name = Name;
+                m_Coordinates = Coordinates;
+                m_Comments = Comments;
+            }
             Subsites.Add(subsite);
             return subsite;
         }
