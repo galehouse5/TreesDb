@@ -62,6 +62,7 @@
         <script type="text/javascript" src="/js/plugin.js"></script>
         <script type="text/javascript" src="/js/widgets.js"></script>
         <script type="text/javascript" src="/js/jquery/jquery-ui-1.8.7.custom.min.js"></script>
+        <script type="text/javascript" src="/js/Prototypes.js"></script>
         <script type="text/javascript">
             $(function () {
                 slate.init();

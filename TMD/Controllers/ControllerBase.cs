@@ -7,6 +7,7 @@ using System.Net;
 using System.Web.Routing;
 using TMD.Model.Users;
 using TMD.Controllers;
+using System.IO;
 
 namespace TMD
 {
@@ -96,14 +97,31 @@ namespace TMD
             }
         }
 
-        protected override ViewResult View(IView view, object model)
+        protected string RenderPartialViewToString()
         {
-            return base.View(view, model);
+            return RenderPartialViewToString(ControllerContext.RouteData.GetRequiredString("action"), null);
         }
 
-        protected override ViewResult View(string viewName, string masterName, object model)
+        protected string RenderPartialViewToString(string viewName)
         {
-            return base.View(viewName, masterName, model);
+            return RenderPartialViewToString(viewName, null);
+        }
+
+        protected string RenderPartialViewToString(object model)
+        {
+            return RenderPartialViewToString(ControllerContext.RouteData.GetRequiredString("action"), model);
+        }
+
+        protected string RenderPartialViewToString(string viewName, object model)
+        {
+            ViewData.Model = model;
+            using (StringWriter sw = new StringWriter())
+            {
+                ViewEngineResult viewResult = ViewEngines.Engines.FindPartialView(ControllerContext, viewName);
+                ViewContext viewContext = new ViewContext(ControllerContext, viewResult.View, ViewData, TempData, sw);
+                viewResult.View.Render(viewContext, sw);
+                return sw.GetStringBuilder().ToString();
+            }
         }
     }
 }

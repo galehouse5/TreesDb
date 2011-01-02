@@ -29,7 +29,6 @@
 
 <asp:Content ContentPlaceHolderID="Scripts" runat="server">
     <script type="text/javascript" src="/js/Import/Trees.js"></script>
-    <script type="text/javascript" src="/js/Map/Common.js"></script>
     <script type="text/javascript">
         $(function () {
             Import.Init();
@@ -43,5 +42,6 @@
         });
     </script>
     <%= Html.Action("GoogleMapsScript", "Map") %>
+    <script type="text/javascript" src="/js/Map/Coordinates.js"></script>
     <script type="text/javascript" src="/js/Map/CoordinatePicker.js"></script>
 </asp:Content>

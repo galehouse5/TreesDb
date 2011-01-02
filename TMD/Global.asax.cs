@@ -32,6 +32,10 @@ namespace TMD
             routes.MapRoute("RemovePhoto", "Photos/{id}/Remove", new { controller = "Photo", action = "Remove" });
             routes.MapRoute("ViewPhoto", "Photos/{id}/{size}", new { controller = "Photo", action = "View", size = "Original" });
 
+            routes.MapRoute("ViewMapMarkesForImportTree", "Map/ViewMarkersForImport/{id}/Tree/{treeId}", new { controller = "Map", action = "ViewMarkersForImportTree" });
+            routes.MapRoute("ViewMapMarkesForImportSubsite", "Map/ViewMarkersForImport/{id}/Subsite/{subsiteId}", new { controller = "Map", action = "ViewMarkersForImportSubsite" });
+            routes.MapRoute("ViewMapMarkesForImportSite", "Map/ViewMarkersForImport/{id}/Site/{siteId}", new { controller = "Map", action = "ViewMarkersForImportSite" });
+
             routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}",
                 new { controller = "Main", action = "Index" },
                 new { id = @"\d+" });

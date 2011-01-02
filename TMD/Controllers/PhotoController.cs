@@ -20,7 +20,7 @@ namespace TMD.Controllers
     public class PhotoController : ControllerBase
     {
         [HttpGet]
-        public ActionResult View(int id, string size = "Original")
+        public ActionResult View(int id, string size)
         {
             Photo photo = Repositories.Photos.FindById(id);
             if (!photo.IsAuthorizedToView(User)) { return new UnauthorizedResult(); }

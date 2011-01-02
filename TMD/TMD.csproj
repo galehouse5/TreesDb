@@ -228,7 +228,7 @@
     <Content Include="images\tipsy.gif" />
     <Content Include="images\title.png" />
     <Content Include="images\white oak in fog.jpg" />
-    <Content Include="js\Map\Common.js" />
+    <Content Include="js\Map\Coordinates.js" />
     <Content Include="js\Import\Trees.js" />
     <Content Include="js\Import\Sites.js" />
     <Content Include="js\jquery\facebox.js" />
@@ -242,9 +242,11 @@
     <Content Include="js\jquery\jquery.uniform.min.js" />
     <Content Include="js\jquery\jquery.visualize.js" />
     <Content Include="js\Map\CoordinatePicker.js" />
+    <Content Include="js\Map\Markers.js" />
     <Content Include="js\misc\upclick.js" />
     <Content Include="js\misc\excanvas.min.js" />
     <Content Include="js\plugin.js" />
+    <Content Include="js\Prototypes.js" />
     <Content Include="js\slate\slate.js" />
     <Content Include="js\slate\slate.message.js" />
     <Content Include="js\slate\slate.portlet.js" />
@@ -339,6 +341,9 @@
     <Content Include="Views\Import\History.aspx" />
     <Content Include="Views\Import\MenuWidget.ascx" />
     <Content Include="Views\Main\MenuWidget.ascx" />
+    <Content Include="Views\Map\ImportSiteMarkerInfoPartial.ascx" />
+    <Content Include="Views\Map\ImportSubsiteMarkerInfoPartial.ascx" />
+    <Content Include="Views\Map\ImportTreeMarkerInfoPartial.ascx" />
     <Content Include="Views\Map\GoogleMapsScript.ascx" />
     <Content Include="Views\Map\Index.aspx" />
     <Content Include="Views\Map\MenuWidget.ascx" />

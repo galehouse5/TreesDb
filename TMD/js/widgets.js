@@ -78,37 +78,37 @@
         var defaults = {};
         var options = $.extend(defaults, options);
         return this.each(function() {
-            var galleryContainer = $(this);
-            galleryContainer.find('*[rel=facebox]').facebox();
+            var $galleryContainer = $(this);
+            $galleryContainer.find("*[rel=facebox]").not('.Initialized').addClass('Initialized').facebox();
 
-            galleryContainer.find('a.delete').bind('click', function() {
-                var deleteAnchor = $(this);
-                $.ajax({ type: "POST", url: deleteAnchor.attr('href'),
+            $galleryContainer.find('a.delete').bind('click', function() {
+                var $deleteAnchor = $(this);
+                $.ajax({ type: "POST", url: $deleteAnchor.attr('href'),
                     success: function (response) {
                         if (response.Success) {
-                            deleteAnchor.closest('li').remove();
+                            $deleteAnchor.closest('li').remove();
                         }
                     }
                 });
                 return false;
             });
 
-            galleryContainer.find('a.add').each(function () {
-                var addAnchor = $(this);
+            $galleryContainer.find('a.add').each(function () {
+                var $addAnchor = $(this);
                 upclick({
-                    element: addAnchor[0],
-                    action: addAnchor.attr('href'),
+                    element: $addAnchor[0],
+                    action: $addAnchor.attr('href'),
                     dataname: 'imageData',
                     oncomplete: function(response) {
-                        galleryContainer.find('.LoadingPhoto').hide();
-                        galleryContainer.find('.ReadyToLoadPhoto').show();
-                        var galleryContent = $(response).find('.gallery');
-                        galleryContainer.replaceWith(galleryContent);
-                        galleryContent.PhotoGallery();
+                        $galleryContainer.find('.LoadingPhoto').hide();
+                        $galleryContainer.find('.ReadyToLoadPhoto').show();
+                        var $galleryContent = $(response).find('.gallery');
+                        $galleryContainer.replaceWith($galleryContent);
+                        $galleryContent.addClass('Initialized').PhotoGallery();
                     },
                     onstart: function() { 
-                        galleryContainer.find('.ReadyToLoadPhoto').hide();
-                        galleryContainer.find('.LoadingPhoto').show();
+                        $galleryContainer.find('.ReadyToLoadPhoto').hide();
+                        $galleryContainer.find('.LoadingPhoto').show();
                     }
                 });
                 return false;
@@ -124,13 +124,30 @@
         var defaults = {};
         var options = $.extend(defaults, options);
         return this.each(function () {
-            var pickerContainer = $(this);
-            pickerContainer.find('button').show();
-            var coordinateContainer = pickerContainer.find('input[type=text]');
+            var $pickerContainer = $(this);
+            $pickerContainer.find('button').show();
+            var $coordinateContainer = $pickerContainer.find('input[type=text]');
 
-            pickerContainer.bind('PickCoordinates', function (event, mapLoader) {
-                var coordinates = Coordinates.Parse(coordinateContainer.val());
-                CoordinatePicker.Open({}, function() { alert('callback'); });
+            $pickerContainer.bind('PickCoordinates', function (event, mapLoader) {
+                $.get(mapLoader, function (response) {
+                    var coordinates = Coordinates.Parse($coordinateContainer.val());
+                    if (coordinates.IsValid() && coordinates.IsSpecified()) {
+                        CoordinatePicker.Open({ Coordinates: coordinates, Zoom: 15, Markers: response.Markers,
+                            Callback: function(result) { if (result.Success) { $coordinateContainer.val(result.Coordinates.ToString()); } }
+                        });
+                    } else {
+                        if (response.CalculatedCoordinates != null) {
+                            CoordinatePicker.Open({  Zoom: 15, Markers: response.Markers,
+                                Coordinates: Coordinates.Create(Latitude.Create(response.CalculatedCoordinates.Latitude), Longitude.Create(response.CalculatedCoordinates.Longitude)),
+                                Callback: function(result) { if (result.Success) { $coordinateContainer.val(result.Coordinates.ToString()); } }
+                            });
+                        } else {
+                            CoordinatePicker.Open({ Markers: response.Markers,
+                                Callback: function(result) { if (result.Success) { $coordinateContainer.val(result.Coordinates.ToString()); } }
+                            });
+                        }
+                    }
+                });
                 return false;
             });
         });

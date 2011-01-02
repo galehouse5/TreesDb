@@ -28,23 +28,25 @@ namespace TMD.Models
     {
         public int TripId { get; set; }
         public int TreeId { get; set; }
-        public override string ActionName { get { return "MarkersForImportTree"; } }
-        public override object RouteValues { get { return new { controller = "Map", tripId = TripId, treeId = TreeId }; } }
+        public override string ActionName { get { return "ViewMarkersForImportTree"; } }
+        public override object RouteValues { get { return new { controller = "Map", id = TripId, treeId = TreeId }; } }
     }
 
     public class ImportSubsiteCoordinatePickerMapLoaderModel : CoordinatePickerMapLoaderModel
     {
         public int TripId { get; set; }
         public int SubsiteId { get; set; }
-        public override string ActionName { get { return "MarkersForImportSubsite"; } }
-        public override object RouteValues { get { return new { controller = "Map", tripId = TripId, subsiteId = SubsiteId }; } }
+        public override string ActionName { get { return "ViewMarkersForImportSubsite"; } }
+        public override object RouteValues { get { return new { controller = "Map", id = TripId, subsiteId = SubsiteId }; } }
     }
 
     public class ImportSiteCoordinatePickerMapLoaderModel : CoordinatePickerMapLoaderModel
     {
         public int TripId { get; set; }
         public int SiteId { get; set; }
-        public override string ActionName { get { return "MarkersForImportSite"; } }
-        public override object RouteValues { get { return new { controller = "Map", tripId = TripId, siteId = SiteId }; } }
+        public override string ActionName { get { return "ViewMarkersForImportSite"; } }
+        public override object RouteValues { get { return new { controller = "Map", id = TripId, siteId = SiteId }; } }
     }
+
+
 }

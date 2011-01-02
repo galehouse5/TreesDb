@@ -34,7 +34,6 @@
 
 <asp:Content ContentPlaceHolderID="Scripts" runat="server">
     <script type="text/javascript" src="/js/Import/Sites.js"></script>
-    <script type="text/javascript" src="/js/Map/Common.js"></script>
     <script type="text/javascript">
         $(function () {
             Import.Init();
@@ -42,11 +41,12 @@
                 $('.RequiresJavascript').show();
                 slate.init();
                 slate.portlet.init();
-                $('.gallery').PhotoGallery();
-                $('.CoordinatePicker').CoordinatePicker();
+                $('.gallery').not('.Initialized').addClass('Initialized').PhotoGallery();
+                $('.CoordinatePicker').not('.Initialized').addClass('Initialized').CoordinatePicker();
             }).trigger('ContentAdded');
         });
     </script>
     <%= Html.Action("GoogleMapsScript", "Map") %>
+    <script type="text/javascript" src="/js/Map/Coordinates.js"></script>
     <script type="text/javascript" src="/js/Map/CoordinatePicker.js"></script>
 </asp:Content>
