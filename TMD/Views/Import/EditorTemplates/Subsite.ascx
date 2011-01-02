@@ -6,10 +6,10 @@
     <div class="portlet-content">
         <%= Html.HiddenFor(m => m.Id) %>
         <%= Html.EditorFor(m => m.Name, new { required = true })%>
-        <%= Html.EditorFor(m => m.State, new { required = true })%>
-        <%= Html.EditorFor(m => m.County, new { required = true })%>
+        <%= Html.EditorFor(m => m.State, new { required = true, @class = "State" })%>
+        <%= Html.EditorFor(m => m.County, new { required = true, @class = "County" })%>
         <%= Html.EditorFor(m => m.OwnershipType, new { required = true })%>
-        <%= Html.EditorFor(m => m.Coordinates, new { helpText = "Latitude, Longitude" })%>
+        <%= Html.EditorFor(m => m.Coordinates, new { helpText = "Latitude, Longitude", @class="Coordinates" })%>
         <%= Html.EditorFor(m => m.OwnershipContactInfo, new { rows = 5 })%>
         <%= Html.EditorFor(m => m.MakeOwnershipContactInfoPublic)%>
         <%= Html.EditorFor(m => m.Comments, new { rows = 5 })%>

@@ -61,6 +61,41 @@
                 return false;
             }
         });
+
+        $('.Site .Coordinates input[type=text], .Subsite .Coordinates input[type=text]').live('change', function () {
+            var $coordinateContainer = $(this);
+            var coordinates = Coordinates.Parse($coordinateContainer.val());
+            if (coordinates.IsSpecified() && coordinates.IsValid()) {
+                new google.maps.Geocoder().geocode(
+                    { latLng: new google.maps.LatLng(coordinates.Latitude().TotalDegrees(), coordinates.Longitude().TotalDegrees()) },
+                    function (results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            var county, state, country;
+                            for (i in results[0].address_components) {
+                                for (j in results[0].address_components[i].types) {
+                                    if (results[0].address_components[i].types[j] == 'administrative_area_level_2') { county = results[0].address_components[i].long_name; }
+                                    if (results[0].address_components[i].types[j] == 'administrative_area_level_1') { state = results[0].address_components[i].long_name; }
+                                    if (results[0].address_components[i].types[j] == 'country') { country = results[0].address_components[i].long_name; }
+                                }
+                            }
+                            if (county != null) {
+                                var $countyContainer = $coordinateContainer.closest('.Site, .Subsite').find('.County input[type=text]');
+                                $countyContainer.val(county);
+                            }
+                            if (state != null && country != null) {
+                                var stateText = state + ', ' + country;
+                                var $stateContainer = $coordinateContainer.closest('.Site, .Subsite').find('.State select');
+                                var $stateOption = $stateContainer.find('option').filter(function () { return $(this).text() == stateText });
+                                if ($stateOption != null) {
+                                    $stateContainer.find('option').removeAttr('selected');
+                                    $stateOption.attr('selected', 'selected');
+                                    $.uniform.update($stateContainer);
+                                }
+                            }
+                        }
+                    });
+            }
+        });
     }
 
     return public;

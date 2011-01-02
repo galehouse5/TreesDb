@@ -10,10 +10,10 @@
         <% if (Model.HasSingleSubsite) { %>
             <%= Html.HiddenFor(m => m.Subsites[0].Id) %>
             <%= Html.EditorFor(m => m.Subsites[0].Name, new { required = true })%>
-            <%= Html.EditorFor(m => m.Subsites[0].State, new { required = true })%>
-            <%= Html.EditorFor(m => m.Subsites[0].County, new { required = true })%>
+            <%= Html.EditorFor(m => m.Subsites[0].State, new { required = true, @class = "State" })%>
+            <%= Html.EditorFor(m => m.Subsites[0].County, new { required = true, @class = "County" })%>
             <%= Html.EditorFor(m => m.Subsites[0].OwnershipType, new { required = true })%>
-            <%= Html.EditorFor(m => m.Subsites[0].Coordinates, new { helpText = "Latitude, Longitude" })%>
+            <%= Html.EditorFor(m => m.Subsites[0].Coordinates, new { helpText = "Latitude, Longitude", @class = "Coordinates" })%>
             <%= Html.EditorFor(m => m.Subsites[0].OwnershipContactInfo, new { rows = 5 })%>
             <%= Html.EditorFor(m => m.Subsites[0].MakeOwnershipContactInfoPublic)%>
             <%= Html.EditorFor(m => m.Subsites[0].Comments, new { rows = 5 })%>

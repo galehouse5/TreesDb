@@ -1,5 +1,11 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<String>" %>
-<div class="field">
+<div
+    <% if (ViewData.ContainsKey("class")) { %>
+        class="field <%= ViewData["class"] %>"
+    <% } else { %>
+        class="field"
+    <% } %>
+>
     <label for="<%= Html.GetFullHtmlFieldId<string, string>(m => m) %>">
         <% if (ViewData.ContainsKey("label")) { %>
             <%: ViewData["label"] %>

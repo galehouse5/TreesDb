@@ -1,6 +1,12 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<State>" %>
 <%@ Import Namespace="TMD.Model.Locations" %>
-<div class="field">
+<div
+    <% if (ViewData.ContainsKey("class")) { %>
+        class="field <%= ViewData["class"] %>"
+    <% } else { %>
+        class="field"
+    <% } %>
+>
     <label for="<%= Html.GetFullHtmlFieldId<State, State>(m => m) %>">
         <% if (ViewData.ContainsKey("label")) { %>
             <%: ViewData["label"] %>
@@ -17,7 +23,7 @@
                 Selected = Model == null
             } }
             .Union(Repositories.Locations.FindAllStates()
-            .Select(s => new SelectListItem { 
+            .Select(s => new SelectListItem {
                 Text = string.Format("{0}, {1}", s.Name, s.Country.Name), 
                 Value = s.Id.ToString(), 
                 Selected = s.Equals(Model) 

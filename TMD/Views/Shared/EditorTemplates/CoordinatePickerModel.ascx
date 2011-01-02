@@ -1,5 +1,11 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<CoordinatePickerModel>" %>
-<div class="field CoordinatePicker">
+<div
+    <% if (ViewData.ContainsKey("class")) { %>
+        class="field CoordinatePicker <%= ViewData["class"] %>"
+    <% } else { %>
+        class="field CoordinatePicker"
+    <% } %>
+>
     <label for="<%= Html.GetFullHtmlFieldId(m => m) %>">
         <% if (ViewData.ContainsKey("label")) { %>
             <%: ViewData["label"] %>

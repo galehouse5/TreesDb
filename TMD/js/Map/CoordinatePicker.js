@@ -80,6 +80,12 @@
             if ($(this).val() == 'Save') { public.Close(true); }
             else if ($(this).val() == 'Back') { public.Close(false); }
         });
+        $container.find('form.CoordinatePickerCoordinates input[name=Coordinates]').change(function () {
+            var coordinates = Coordinates.Parse($(this).val());
+            if (coordinates.IsSpecified() && coordinates.IsValid()) {
+                m_PickerMarker.setPosition(new google.maps.LatLng(coordinates.Latitude().TotalDegrees(), coordinates.Longitude().TotalDegrees()));
+            }
+        });
         $container.find('form.CoordinatePickerAddress').submit(function () {
             var $addressInput = $(this).find('input[name=Address]');
             $addressInput.removeClass('input-validation-error').parent().find('.field-validation-error').remove();
@@ -171,12 +177,16 @@
     };
 
     function fitMarkerBounds() {
-        var bounds = new google.maps.LatLngBounds();
-        bounds.extend(m_PickerMarker.getPosition());
-        for (var i in m_Markers) {
-            bounds.extend(m_Markers[i].getPosition());
+        if (m_Markers.length == 0) {
+            m_Map.panTo(m_PickerMarker.getPosition());
+        } else {
+            var bounds = new google.maps.LatLngBounds();
+            bounds.extend(m_PickerMarker.getPosition());
+            for (var i in m_Markers) {
+                bounds.extend(m_Markers[i].getPosition());
+            }
+            m_Map.fitBounds(bounds);
         }
-        m_Map.fitBounds(bounds);
     }
 
     function dispose() {
@@ -189,6 +199,7 @@
         }
         $(window).unbind('resize').unbind('keyup');
         $container.find('form.CoordinatePickerCoordinates input[name=Action]').unbind('click');
+        $container.find('form.CoordinatePickerCoordinates input[name=Coordinates]').unbind('change');
         $container.find('form.CoordinatePickerAddress').unbind('submit');
         $container.remove();
         $('body').css('overflow', 'visible');

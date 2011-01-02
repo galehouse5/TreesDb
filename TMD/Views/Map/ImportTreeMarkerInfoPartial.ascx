@@ -2,7 +2,7 @@
 <%@ Import Namespace="TMD.Model.Photos" %>
 <ul>
     <li><strong><%: Model.ScientificName %></strong></li>
-    <li><%= Html.DisplayFor(m => m.CommonName) %></li>
+    <li><%= Html.DisplayFor(m => m.CommonName, new { label = "Common name" })%></li>
     <% if (Model.Height.IsSpecified) { %>
         <li><%= Html.DisplayFor(m => m.Height) %></li>
     <% } %>
@@ -10,7 +10,7 @@
         <li><%= Html.DisplayFor(m => m.Girth) %></li>
     <% } %>
     <% if (Model.CrownSpread.IsSpecified) { %>
-        <li><%= Html.DisplayFor(m => m.CrownSpread) %></li>
+        <li><%= Html.DisplayFor(m => m.CrownSpread, new { label = "Crown spread" })%></li>
     <% } %>
 </ul>
 <% foreach (var photo in Model.Photos) { %>

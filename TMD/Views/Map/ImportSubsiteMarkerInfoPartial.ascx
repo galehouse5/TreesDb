@@ -4,7 +4,7 @@
     <li><strong><%: Model.Name %></strong></li>
     <li><%= Html.DisplayFor(m => m.State) %></li>
     <li><%= Html.DisplayFor(m => m.County) %></li>
-    <li><%= Html.DisplayFor(m => m.OwnershipType) %></li>
+    <li><%= Html.DisplayFor(m => m.OwnershipType, new { label = "Ownership type" })%></li>
 </ul>
 <% foreach (var photo in Model.Photos) { %>
     <img src="<%= Url.Action("View", "Photo", new { id = photo.Id, size = EPhotoSize.Square }) %>" alt="" />
