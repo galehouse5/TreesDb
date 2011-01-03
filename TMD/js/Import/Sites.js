@@ -16,6 +16,7 @@
     var public = {};
 
     public.Init = function () {
+
         $('button[type=submit][name=innerAction]').live('click', function (event) {
             var $button = $(this);
             var $form = $button.closest('form');
@@ -98,6 +99,9 @@
         });
 
         $('.Site, .Subsite').live('ContentAdded', function () {
+
+            $(this).find('.gallery').not('.Initialized').addClass('Initialized').PhotoGallery();
+           
             $(this).find('.CoordinatePicker').not('.Initialized').addClass('Initialized').CoordinatePicker({
                 AddressCalculator: function () {
                     var $countyContainer = $(this).closest('.Site, .Subsite').find('.County input[type=text]');
@@ -111,6 +115,7 @@
                     return null;
                 }
             });
+
         }).trigger('ContentAdded');
     }
 

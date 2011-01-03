@@ -36,8 +36,6 @@
                 $('.RequiresJavascript').show();
                 slate.init();
                 slate.portlet.init();
-                $('.gallery').PhotoGallery();
-                $('.CoordinatePicker').CoordinatePicker();
             }).trigger('ContentAdded');
         });
     </script>

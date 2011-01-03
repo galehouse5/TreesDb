@@ -62,6 +62,11 @@
         });
 
         $('.Tree').live('ContentAdded', function () {
+
+            $(this).find('.gallery').not('.Initialized').addClass('Initialized').PhotoGallery();
+
+            $(this).find('.CoordinatePicker').not('.Initialized').addClass('Initialized').CoordinatePicker();
+
             $(this).find('.CommonName input[type=text]').not('.Initialized').addClass('Initialized')
                 .autocomplete({ source: "/Trees/FindKnownTreesWithSimilarCommonName", minLength: 2,
                     select: function (event, ui) {
@@ -69,6 +74,7 @@
                         $scientificNameContainer.val(ui.item.ScientificName);
                     }
                 });
+
             $(this).find('.ScientificName input[type=text]').not('.Initialized').addClass('Initialized')
                 .autocomplete({ source: "/Trees/FindKnownTreesWithSimilarScientificName", minLength: 2,
                     select: function (event, ui) {
@@ -76,7 +82,9 @@
                         $commonNameContainer.val(ui.item.CommonName);
                     }
                 });
+
         }).trigger('ContentAdded');
+
     }
 
     return public;

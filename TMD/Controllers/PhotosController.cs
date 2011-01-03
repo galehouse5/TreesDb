@@ -19,7 +19,7 @@ namespace TMD.Controllers
 {
     public class PhotosController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet, OutputCache(CacheProfile = "Photos")]
         public ActionResult View(int id, string size)
         {
             Photo photo = Repositories.Photos.FindById(id);

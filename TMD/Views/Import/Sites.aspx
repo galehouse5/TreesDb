@@ -41,7 +41,6 @@
                 $('.RequiresJavascript').show();
                 slate.init();
                 slate.portlet.init();
-                $('.gallery').not('.Initialized').addClass('Initialized').PhotoGallery();
             }).trigger('ContentAdded');
         });
     </script>
