@@ -10,4 +10,6 @@
 
 .RequiresJavascript { display: none; }
 
-table.ui-datepicker-calendar thead tr th { background-color: #FFFFFF !important; color: #000000 !important;  }
+table.ui-datepicker-calendar thead tr th { background-color: #FFFFFF !important; color: #000000 !important; }
+
+ul.ui-autocomplete li { list-style-type: none; }

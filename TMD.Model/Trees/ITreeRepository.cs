@@ -8,5 +8,6 @@ namespace TMD.Model.Trees
     public interface ITreeRepository
     {
         IList<KnownTree> FindTreesWithSimilarCommonName(string commonName, int results);
+        IList<KnownTree> FindTreesWithSimilarScientificName(string scientificName, int results);
     }
 }

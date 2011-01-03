@@ -48,7 +48,7 @@ namespace TMD.Controllers
                         Longitude = site.SubsiteVisits[0].Coordinates.Longitude.TotalDegrees
                     },
                     Icon = site.SubsiteVisits[0].Photos.Count > 0 ?
-                        Url.Action("View", "Photo", new { id = site.SubsiteVisits[0].Photos[0].Id, size = EPhotoSize.MiniSquare })
+                        Url.Action("View", "Photos", new { id = site.SubsiteVisits[0].Photos[0].Id, size = EPhotoSize.MiniSquare })
                         : "/images/icons/Subsite32.png",
                     Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", site.SubsiteVisits[0])
                 };
@@ -75,7 +75,7 @@ namespace TMD.Controllers
                     Longitude = subsite.Coordinates.Longitude.TotalDegrees
                 },
                 Icon = subsite.Photos.Count > 0 ?
-                    Url.Action("View", "Photo", new { id = subsite.Photos[0].Id, size = EPhotoSize.MiniSquare }) 
+                    Url.Action("View", "Photos", new { id = subsite.Photos[0].Id, size = EPhotoSize.MiniSquare }) 
                     : "/images/icons/Subsite32.png",
                 Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", subsite)
             };
@@ -91,7 +91,7 @@ namespace TMD.Controllers
                     Longitude = tree.Coordinates.Longitude.TotalDegrees
                 },
                 Icon = tree.Photos.Count > 0 ? 
-                    Url.Action("View", "Photo", new { id = tree.Photos[0].Id, size = EPhotoSize.MiniSquare }) 
+                    Url.Action("View", "Photos", new { id = tree.Photos[0].Id, size = EPhotoSize.MiniSquare }) 
                     : "/images/icons/SingleTrunkTree32.png",
                 Info = RenderPartialViewToString("ImportTreeMarkerInfoPartial", tree)
             };

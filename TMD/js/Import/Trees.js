@@ -61,6 +61,22 @@
             }
         });
 
+        $('.Tree').live('ContentAdded', function () {
+            $(this).find('.CommonName input[type=text]').not('.Initialized').addClass('Initialized')
+                .autocomplete({ source: "/Trees/FindKnownTreesWithSimilarCommonName", minLength: 2,
+                    select: function (event, ui) {
+                        var $scientificNameContainer = $(this).closest('.Tree').find('.ScientificName input[type=text]');
+                        $scientificNameContainer.val(ui.item.ScientificName);
+                    }
+                });
+            $(this).find('.ScientificName input[type=text]').not('.Initialized').addClass('Initialized')
+                .autocomplete({ source: "/Trees/FindKnownTreesWithSimilarScientificName", minLength: 2,
+                    select: function (event, ui) {
+                        var $commonNameContainer = $(this).closest('.Tree').find('.CommonName input[type=text]');
+                        $commonNameContainer.val(ui.item.CommonName);
+                    }
+                });
+        }).trigger('ContentAdded');
     }
 
     return public;

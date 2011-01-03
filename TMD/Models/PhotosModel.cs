@@ -11,7 +11,7 @@ namespace TMD.Models
         public int TripId { get; set; }
         public int TreeId { get; set; }
         public override string ActionName { get { return "AddToImportTree"; } }
-        public override object RouteValues { get { return new { controller = "Photo", id = TripId, treeId = TreeId }; } }
+        public override object RouteValues { get { return new { controller = "Photos", id = TripId, treeId = TreeId }; } }
     }
 
     public class ImportSubsitePhotoGalleryAdderModel : PhotoGalleryAdderModel
@@ -19,7 +19,7 @@ namespace TMD.Models
         public int TripId { get; set; }
         public int SubsiteId { get; set; }
         public override string ActionName { get { return "AddToImportSubsite"; } }
-        public override object RouteValues { get { return new { controller = "Photo", id = TripId, subsiteId = SubsiteId }; } }
+        public override object RouteValues { get { return new { controller = "Photos", id = TripId, subsiteId = SubsiteId }; } }
     }
 
     public abstract class PhotoGalleryAdderModel

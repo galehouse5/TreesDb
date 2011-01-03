@@ -14,10 +14,10 @@
         <% if (Model.HasPhotos) { %>
             <% foreach(var photo in Model.Photos) { %>
                 <li>
-                    <img src="/Photos/<%= photo.Id %>/<%= photo.Size %>" alt="" />
+                    <img src="<%= Url.Action("View", "Photos", new { id = photo.Id, size = photo.Size }) %>" alt="" />
                     <div class="actions">	
-                        <%= Html.ActionLink("View", "View", new { controller = "Photo", id = photo.Id }, new { @class = "btn btn-orange btn-small", rel = "facebox" })%>
-                        <%= Html.ActionLink("Remove", "Remove", new { controller = "Photo", id = photo.Id }, new { @class = "btn btn-grey btn-small delete" })%>
+                        <%= Html.ActionLink("View", "View", new { controller = "Photos", id = photo.Id }, new { @class = "btn btn-orange btn-small", rel = "facebox" })%>
+                        <%= Html.ActionLink("Remove", "Remove", new { controller = "Photos", id = photo.Id }, new { @class = "btn btn-grey btn-small delete" })%>
                     </div>
                 </li>
             <% } %>

@@ -17,7 +17,7 @@ using TMD.Extensions;
 
 namespace TMD.Controllers
 {
-    public class PhotoController : ControllerBase
+    public class PhotosController : ControllerBase
     {
         [HttpGet]
         public ActionResult View(int id, string size)

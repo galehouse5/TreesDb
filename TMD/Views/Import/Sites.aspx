@@ -42,19 +42,6 @@
                 slate.init();
                 slate.portlet.init();
                 $('.gallery').not('.Initialized').addClass('Initialized').PhotoGallery();
-                $('.CoordinatePicker').not('.Initialized').addClass('Initialized').CoordinatePicker({
-                    AddressCalculator: function () {
-                        var $countyContainer = $(this).closest('.Site, .Subsite').find('.County input[type=text]');
-                        var $stateContainer = $(this).closest('.Site, .Subsite').find('.State select');
-                        if (!$countyContainer.val().IsNullOrWhitespace() && $stateContainer.find('option:selected').length > 0) {
-                            return $countyContainer.val() + ' County, ' + $stateContainer.find('option:selected').text();
-                        }
-                        if ($stateContainer.find('option:selected').length > 0) {
-                            return $stateContainer.find('option:selected').text();
-                        }
-                        return null;
-                    }
-                });
             }).trigger('ContentAdded');
         });
     </script>

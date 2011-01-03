@@ -8,8 +8,8 @@
         <%= Html.HiddenFor(m => m.IsEditing) %>
         <%= Html.HiddenFor(m => m.EditMode) %>
         <% if (Model.EditMode == EImportTreeModelEditMode.Simple) { %>
-            <%= Html.EditorFor(m => m.CommonName, new { required = true }) %>
-            <%= Html.EditorFor(m => m.ScientificName, new { required = true }) %>
+            <%= Html.EditorFor(m => m.CommonName, new { required = true, @class = "CommonName" }) %>
+            <%= Html.EditorFor(m => m.ScientificName, new { required = true, @class = "ScientificName" }) %>
             <%= Html.EditorFor(m => m.Height) %>
             <%= Html.EditorFor(m => m.HeightMeasurementMethod, "Enum") %>
             <%= Html.EditorFor(m => m.Girth) %>

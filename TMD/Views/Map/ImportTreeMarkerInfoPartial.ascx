@@ -14,6 +14,6 @@
     <% } %>
 </ul>
 <% foreach (var photo in Model.Photos) { %>
-    <img src="<%= Url.Action("View", "Photo", new { id = photo.Id, size = EPhotoSize.Square }) %>" alt="" />
+    <img src="<%= Url.Action("View", "Photos", new { id = photo.Id, size = EPhotoSize.Square }) %>" alt="" />
 <% } %>
 

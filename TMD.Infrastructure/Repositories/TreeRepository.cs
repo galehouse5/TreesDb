@@ -11,44 +11,49 @@ namespace TMD.Infrastructure.Repositories
 {
     public class TreeRepository : ITreeRepository
     {
-        private IList<KnownTree> m_AllKnownTrees;
         public IList<KnownTree> FindAllKnownTrees()
         {
-            if (m_AllKnownTrees == null)
-            {
-                using (ISession session = Registry.SessionFactory.OpenSession())
-                {
-                    m_AllKnownTrees = session.CreateQuery("from KnownTree kt").List<KnownTree>();
-                }
-            }
-            return m_AllKnownTrees;
+            return Registry.Session.CreateCriteria<KnownTree>().List<KnownTree>();
         }
 
-        private StringComparisonExpression m_ASCE = StringComparisonExpression.Create("equality * 100");
-        private StringComparisonExpression m_CNCE = StringComparisonExpression.Create("jaro * firstlength * 2");
-        private StringComparisonExpression m_SNCE = StringComparisonExpression.Create("jarowinkler * firstlength");
+        private StringComparisonExpression m_AcceptedSymbolRanker = StringComparisonExpression.Create("equality * 100");
+        private StringComparisonExpression m_CommonNameRanker = StringComparisonExpression.Create("jaro * firstlength");
+        private StringComparisonExpression m_ScientificNameRanker = StringComparisonExpression.Create("jarowinkler * firstlength");
+
         public IList<KnownTree> FindTreesWithSimilarCommonName(string commonName, int results)
         {
-            IList<KnownTree> allKnownTrees = FindAllKnownTrees();
-            List<Tuple<double, KnownTree>> rankedKnownTrees = new List<Tuple<double, KnownTree>>(allKnownTrees.Count);
-            foreach (KnownTree kt in allKnownTrees)
-            {
-                double rank = m_ASCE.RateWordSimilarity(commonName, kt.AcceptedSymbol)
-                    + m_CNCE.RateSentenceSimilarity(commonName, kt.CommonName)
-                    + m_SNCE.RateSentenceSimilarity(commonName, kt.ScientificName);
-                rankedKnownTrees.Add(new Tuple<double,KnownTree>(rank, kt));
-            }
-            rankedKnownTrees.Sort((rkt1, rkt2) => -rkt1.Item1.CompareTo(rkt2.Item1));
-            List<KnownTree> similarKnownTrees = new List<KnownTree>(results);
-            for (int i = 0; i < results && i < rankedKnownTrees.Count; i++)
-            {
-                if ( rankedKnownTrees[i].Item1 < commonName.Length)
-                {
-                    break;
-                }
-                similarKnownTrees.Add(rankedKnownTrees[i].Item2);
-            }
-            return similarKnownTrees;
+            var all = FindAllKnownTrees();
+            var ranked = from tree in all
+                         select new {
+                             Rank = m_AcceptedSymbolRanker.RateWordSimilarity(commonName, tree.AcceptedSymbol)
+                                + m_CommonNameRanker.RateSentenceSimilarity(commonName, tree.CommonName) * 4
+                                + m_ScientificNameRanker.RateSentenceSimilarity(commonName, tree.ScientificName),    
+                            Tree = tree
+                         };
+            var sorted = from tree in ranked
+                         orderby tree.Rank descending
+                         where tree.Rank >= tree.Tree.CommonName.Length
+                         select tree.Tree;
+            return sorted.Take(results).ToList();
+        }
+
+
+        public IList<KnownTree> FindTreesWithSimilarScientificName(string scientificName, int results)
+        {
+            var all = FindAllKnownTrees();
+            var ranked = from tree in all
+                         select new
+                         {
+                             Rank = m_AcceptedSymbolRanker.RateWordSimilarity(scientificName, tree.AcceptedSymbol)
+                                + m_CommonNameRanker.RateSentenceSimilarity(scientificName, tree.CommonName)
+                                + m_ScientificNameRanker.RateSentenceSimilarity(scientificName, tree.ScientificName) * 4,
+                             Tree = tree
+                         };
+            var sorted = from tree in ranked
+                         orderby tree.Rank descending
+                         where tree.Rank >= tree.Tree.CommonName.Length
+                         select tree.Tree;
+            return sorted.Take(results).ToList();
         }
     }
 }
