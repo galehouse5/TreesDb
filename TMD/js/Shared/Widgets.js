@@ -28,7 +28,8 @@
         var options = $.extend(defaults, options);
         return this.each(function () {
             var $galleryContainer = $(this);
-            $galleryContainer.find("*[rel=facebox]").not('.Initialized').addClass('Initialized').facebox();
+            $galleryContainer.find("*[rel=facebox]")
+                .not('.UiInitialized').addClass('UiInitialized').facebox();
 
             $galleryContainer.find('a.delete').bind('click', function () {
                 var $deleteAnchor = $(this);
