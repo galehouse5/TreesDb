@@ -16,7 +16,7 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
-    <% using (Html.BeginForm("Sites", "Import", FormMethod.Post, new { @class = "form stn-form Sites" })) { %>
+    <% using (Html.BeginForm("Sites", "Import", FormMethod.Post, new { @class = "form Sites" })) { %>
         <% for (int i = 0; i < Model.Sites.Count; i++) { %>
             <% if (Model.Sites[i].IsEditing) { %>
                 <%= Html.EditorFor(m => m.Sites[i], "Site") %>

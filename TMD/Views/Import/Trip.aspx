@@ -16,7 +16,7 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
-    <% using (Html.BeginForm("Trip", "Import", FormMethod.Post, new { @class = "form stn-form " })) { %>
+    <% using (Html.BeginForm("Trip", "Import", FormMethod.Post, new { @class = "form" })) { %>
         <%= Html.EditorFor(m => m.Name, new { required = true }) %>
         <%= Html.EditorFor(m => m.Date, new { required = true }) %>
         <%= Html.EditorFor(m => m.MeasurerContactInfo, new { required = true, rows = 5 })%>

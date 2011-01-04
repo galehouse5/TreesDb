@@ -10,7 +10,7 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <% using(Html.BeginForm("Logon", "Account", FormMethod.Post, new { id = "login_form", name = "login", @class = "stn-form" })) { %>
+    <% using(Html.BeginForm("Logon", "Account", FormMethod.Post, new { id = "login_form", name = "login" })) { %>
         <% if (Model.PerformHumanVerification) { %>
             <div class="content_front">
                 <div class="pad">

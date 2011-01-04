@@ -4,13 +4,14 @@
     <head runat="server">
 	    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <title>Trees Database</title>
-	    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" title="no title" charset="utf-8" />	
-	    <link rel="stylesheet" href="/css/plugin.css" type="text/css" media="screen" title="no title" charset="utf-8" />	
-	    <link rel="stylesheet" href="/css/custom.css" type="text/css" media="screen" title="no title" charset="utf-8" />
-        <link rel="stylesheet" href="/css/custom.css" type="text/css" media="screen" title="no title" charset="utf-8" />
-        <link rel="stylesheet" href="/css/jquery/jquery-ui-1.8.7.custom.css" type="text/css" media="screen" title="no title" charset="utf-8" />		
-        <link rel="stylesheet" href="/css/Integration.css" type="text/css" media="screen" title="no title" charset="utf-8" />	
-	    <style type="text/css" media="screen"></style>
+        <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon" />
+	    <link rel="stylesheet" href="/css/screen.css" type="text/css" />	
+	    <link rel="stylesheet" href="/css/plugin.css" type="text/css" />	
+	    <link rel="stylesheet" href="/css/custom.css" type="text/css" />
+        <link rel="Stylesheet" href="/css/jquery/jquery-ui-1.8.7.custom.css" type="text/css" />		
+        <link rel="Stylesheet" href="/css/Theme/Screen.css" type="text/css" />
+        <link rel="Stylesheet" href="/css/Theme/Plugin.css" type="text/css" />
+        <link rel="Stylesheet" href="/css/Common.css" type="text/css" />	
         <asp:ContentPlaceHolder ID="Styles" runat="server"></asp:ContentPlaceHolder>
     </head>
     <body>

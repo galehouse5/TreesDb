@@ -134,7 +134,7 @@
 			background-color: #F9F9F9;  
 			display: block;
 			padding: 5px 10px 5px 10px;
-			color: #327487;
+			color: #358;
 			text-decoration: none;
 			font-weight: bold;
 			-moz-border-radius: 4px; 
@@ -177,8 +177,8 @@
 .mega-container .mega:hover .mega-tab,
 .mega-container .mega:hover .mega-link,
 .mega-container .mega-current .mega-tab,
-.mega-container .mega-current .mega-link  { background-color: #255648; color: #fff !important; border-color: #1B4736;   }
+.mega-container .mega-current .mega-link  { background-color: #263849; color: #fff !important; border-color: #1C2B37;   }
 
-.mega-container .mega:hover .mega-content { border-color: #255648; }
-.mega-container .mega-menu { background: #255648 !important; }
-.mega-container li > ul { background-color: #255648 !important; }
+.mega-container .mega:hover .mega-content { border-color: #263849; }
+.mega-container .mega-menu { background: #263849 !important; }
+.mega-container li > ul { background-color: #263849 !important; }

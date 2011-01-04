@@ -6,7 +6,7 @@
             <div class='CoordinatePickerMap' style='position: absolute; top: 0; left: 0; bottom: 0; right: 0;'></div>\
             <div class='portlet x6' style='position: absolute; left: 50%; margin-left: -230px; top: -10px;'>\
                 <div class='portlet-content'>\
-                    <form class='form stn-form CoordinatePickerCoordinates'>\
+                    <form class='form CoordinatePickerCoordinates'>\
                         <div class='field'>\
                             <label for='CoordinatePickerCoordinates' style='width: 100px;'>Coordinates</label>\
                             <div><span class='input'>\
@@ -23,7 +23,7 @@
             </div>\
             <div class='portlet x6' style='position: absolute; left: 50%; margin-left: -230px; bottom: -25px;'>\
                 <div class='portlet-content'>\
-                    <form class='form stn-form CoordinatePickerAddress'>\
+                    <form class='form CoordinatePickerAddress'>\
                         <div class='field'>\
                             <label for='CoordinatePickerAddress' style='width: 100px;'>Address</label>\
                             <div><span class='input'>\

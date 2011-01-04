@@ -7,7 +7,7 @@ body
 
 #wrapper { width: 100%; min-width: 960px; margin: 0 auto 50px; }
 
-#header { background: #255648 url(../images/header_bg.png) repeat-x 0 0; width: 93%; height: 96px; margin: 0 auto; position: relative; }
+#header { background: #263849 url(../images/header_bg.png) repeat-x 0 0; width: 93%; height: 96px; margin: 0 auto; position: relative; }
 
 	#header h1
 	{
@@ -57,7 +57,7 @@ body
 
 #nav 
 { 
-	background: #255648;
+	background: #263849;
 	width: 93%; 
 	height: 47px; 
 	
@@ -105,7 +105,7 @@ body
 
 .layout-sidebar #top
 {
-	background: #255648;
+	background: #263849;
 	width: 180px;
 	height: 1200px;
 	font-size: 11px;
@@ -122,7 +122,7 @@ body
 
 .layout-sidebar #header 
 {
-	background:url(../images/header_bg.png) repeat-x scroll 0 0 #255648;
+	background:url(../images/header_bg.png) repeat-x scroll 0 0 #263849;
 	margin:0;
 	position:relative;
 	width:200px;
@@ -152,7 +152,7 @@ body
 	box-shadow: none;
 }
 
-.layout-sidebar #nav a { color: #255648;}
+.layout-sidebar #nav a { color: #263849;}
 
 .layout-sidebar #nav li { width: 90%; display: block; float: right; text-align: right; padding-right: 10px; }	
 
@@ -253,7 +253,7 @@ body.layout-fixed { background: #D9E2EC; }
 			font-size: 14px;			
 			font-style: normal;
 			font-weight: bold;
-			color: #255648;
+			color: #263849;
 			padding: 0 0 0 10px;
 			margin: 0;
 		}
@@ -322,7 +322,7 @@ body.layout-fixed { background: #D9E2EC; }
 		
 		.portlet-tab-nav .portlet-tab-nav-active
 		{
-			background-color: #255648 !important;
+			background-color: #263849 !important;
 			border: 1px solid transparent;
 		}
 		

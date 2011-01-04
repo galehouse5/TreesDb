@@ -16,7 +16,7 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="StepContent" runat="server">
-    <% using (Html.BeginForm("Trees", "Import", FormMethod.Post, new { @class = "form stn-form Trees" })) { %>
+    <% using (Html.BeginForm("Trees", "Import", FormMethod.Post, new { @class = "form Trees" })) { %>
         <% for (int i = 0; i < Model.Sites.Count; i++) { %> 
             <%= Html.EditorFor(m => m.Sites[i], "SiteTrees") %>
         <% } %>

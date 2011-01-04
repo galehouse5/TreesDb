@@ -19,7 +19,7 @@
 
 .ticket.open { background-color: #F90; }
 .ticket.closed { background-color: #666; }
-.ticket.responded { background-color: #255648; }
+.ticket.responded { background-color: #263849; }
 
 
 /* -------------------------------------------------------------- 
@@ -28,7 +28,7 @@
 .support_table .full { width: 70%; font-size: 11px; }
 .support_table .who { width: 30%; text-align: right; font-size: 10px; color: #999; }
 
-.info_table .value { width: 25%; font-size: 18px; font-weight: bold; color: #255648; }
+.info_table .value { width: 25%; font-size: 18px; font-weight: bold; color: #263849; }
 
 .inbox_table .avatar { width: 60px; }
 .inbox_table .full { width: 80%; font-size: 11px; }
@@ -216,7 +216,7 @@ img.avatar_img
 {
 	font-size: 56px;
 	font-weight: bold;
-	color: #255648;
+	color: #263849;
 	line-height: 1em;
 }
 
@@ -402,7 +402,7 @@ table.calendar th
 {
 	width: 250px;
 	height: 10px;
-	background: #255648  !important;
+	background: #263849  !important;
 	
 	color: #FFF;
 	text-shadow: 0 0 1px rgba(0,0,0,.3);

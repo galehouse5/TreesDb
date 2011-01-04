@@ -1,4 +1,4 @@
-body { background: #255648; font: 12px/1.7em arial, sans-serif; }
+body { background: #263849; font: 12px/1.7em arial, sans-serif; }
 
 /* -------------------------------------------------------------- 
    Login
@@ -8,9 +8,9 @@ body { background: #255648; font: 12px/1.7em arial, sans-serif; }
 
 #login h1#title
 {
-	background: url(/images/title.png) no-repeat 0 0;
-	width: 250px;
-	height: 71px;
+	background: url(../images/title.png) no-repeat 0 0;
+	width: 160px;
+	height: 26px;
 	line-height: 800px;
 	margin: 0 auto .90em;
 	overflow: hidden;	
@@ -86,7 +86,7 @@ body { background: #255648; font: 12px/1.7em arial, sans-serif; }
 {
 	margin: 0;
 	padding: 5px;
-	/*border: solid 1px #CCC;*/
+	border: solid 1px #CCC;
 	color: #444;
 	background: #fff;
 	-moz-border-radius: 4px;

@@ -28,7 +28,7 @@ address     	{ margin-top: 1.5em; font-style: italic }
 del         	{ color:#666 }
 sup				{ font-size: 9px; vertical-align:top; }
 
-a				{ color: #327487; text-decoration: underline }
+a				{ color: #358; text-decoration: underline }
 a:visited		{ color: #667 }
 a:focus, 
 a:hover     	{ color: #933 }
@@ -53,7 +53,7 @@ table { width: 100%; border: 0; margin-bottom: 2em;  }
 		text-align: left;
 		padding: 10px;
 		
-		background-color: #255648 !important;
+		background-color: #263849 !important;
 		
 		color: #FFF;
 		

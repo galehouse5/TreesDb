@@ -150,7 +150,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\custom.css" />
-    <Content Include="css\forms.css" />
     <Content Include="css\Import.css" />
     <Content Include="css\jquery\images\ui-bg_flat_0_000000_40x100.png" />
     <Content Include="css\jquery\images\ui-bg_flat_70_ffffff_40x100.png" />
@@ -165,7 +164,7 @@
     <Content Include="css\jquery\images\ui-icons_ffffff_256x240.png" />
     <Content Include="css\jquery\jquery-ui-1.8.7.custom.css" />
     <Content Include="css\login.css" />
-    <Content Include="css\Integration.css" />
+    <Content Include="css\Common.css" />
     <Content Include="css\plugin.css" />
     <Content Include="css\plugin\dataTables.css" />
     <Content Include="css\plugin\facebox.css" />
@@ -180,6 +179,9 @@
     <Content Include="css\screen\reset.css" />
     <Content Include="css\screen\text.css" />
     <Content Include="css\screen\xGrid.css" />
+    <Content Include="css\Theme\Plugin.css" />
+    <Content Include="css\Theme\Login.css" />
+    <Content Include="css\Theme\Screen.css" />
     <Content Include="EmailTemplates\EmailVerification.htm" />
     <Content Include="EmailTemplates\PasswordAssistance.htm" />
     <Content Include="Global.asax" />
@@ -227,12 +229,19 @@
     <Content Include="images\sort_desc.png" />
     <Content Include="images\sort_desc_disabled.png" />
     <Content Include="images\sprite.png" />
+    <Content Include="images\Theme\accordion_header.png" />
+    <Content Include="images\Theme\back_enabled.png" />
+    <Content Include="images\Theme\button_sprite.png" />
+    <Content Include="images\Theme\forward_enabled.png" />
+    <Content Include="images\Theme\header_bg.png" />
+    <Content Include="images\Theme\title.png" />
     <Content Include="images\thumb1.jpg" />
     <Content Include="images\thumb2.jpg" />
     <Content Include="images\thumb3.jpg" />
     <Content Include="images\tipsy.gif" />
     <Content Include="images\title.png" />
     <Content Include="images\white oak in fog.jpg" />
+    <Content Include="images\white oak in fog_small.jpg" />
     <Content Include="js\Map\Coordinates.js" />
     <Content Include="js\Import\Trees.js" />
     <Content Include="js\Import\Sites.js" />

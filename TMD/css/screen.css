@@ -58,7 +58,7 @@ address     	{ margin-top: 1.5em; font-style: italic }
 del         	{ color:#666 }
 sup				{ font-size: 9px; vertical-align:top; }
 
-a				{ color: #327487; text-decoration: underline }
+a				{ color: #358; text-decoration: underline }
 a:visited		{ color: #667 }
 a:focus, 
 a:hover     	{ color: #933 }
@@ -83,7 +83,7 @@ table { width: 100%; border: 0; margin-bottom: 2em;  }
 		text-align: left;
 		padding: 10px;
 		
-		background-color: #255648 !important;
+		background-color: #263849 !important;
 		
 		color: #FFF;
 		
@@ -149,18 +149,18 @@ body
 
 #wrapper { width: 100%; min-width: 960px; margin: 0 auto 150px; }
 
-#header { background: #255648 url(../images/header_bg.png) repeat-x 0 0; width: 93%; height: 96px; margin: 0 auto; position: relative; }
+#header { background: #263849 url(../images/header_bg.png) repeat-x 0 0; width: 93%; height: 96px; margin: 0 auto; position: relative; }
 
 	#header h1
 	{
 		background: url(../images/title.png) no-repeat 0 0;
-		width: 250px;
-		height: 71px;
+		width: 159px;
+		height: 27px;
 		line-height: 500px;
 		overflow: hidden;
 		color: #FFF;		font-size: 32px;
 		position: absolute;
-		top: 10px;
+		top: 40px;
 		left: 10px;
 	}
 	
@@ -168,8 +168,7 @@ body
 
 #info
 {
-	/* width: 215px; */
-	width: 300px;
+	width: 215px;
 	font-size: 11px;
 	font-weight: bold;
 	
@@ -178,7 +177,7 @@ body
 	position: absolute;
 	right: 20px;
 	top: 12px;
-	/* padding-right: 85px; */
+	padding-right: 85px;
 }
 
 	#info h4 { font-size: 16px; color: #DDD; margin-bottom: .6em; }
@@ -200,7 +199,7 @@ body
 
 #nav 
 { 
-	background: #255648;
+	background: #263849;
 	width: 93%; 
 	height: 47px; 
 	
@@ -280,7 +279,7 @@ body
 			font-size: 14px;			
 			font-style: normal;
 			font-weight: bold;
-			color: #255648;
+			color: #263849;
 			padding: 0 0 0 10px;
 			margin: 0;
 		}
@@ -349,7 +348,7 @@ body
 		
 		.portlet-tab-nav .portlet-tab-nav-active
 		{
-			background-color: #255648 !important;
+			background-color: #263849 !important;
 			border: 1px solid transparent;
 		}
 		
@@ -681,7 +680,7 @@ height: 0;
 			background-color: #F9F9F9;  
 			display: block;
 			padding: 5px 10px 5px 10px;
-			color: #327487;
+			color: #358;
 			text-decoration: none;
 			font-weight: bold;
 			-moz-border-radius: 4px; 
@@ -724,11 +723,11 @@ height: 0;
 .mega-container .mega:hover .mega-tab,
 .mega-container .mega:hover .mega-link,
 .mega-container .mega-current .mega-tab,
-.mega-container .mega-current .mega-link  { background-color: #255648; color: #fff !important; border-color: #1B4736;   }
+.mega-container .mega-current .mega-link  { background-color: #263849; color: #fff !important; border-color: #1C2B37;   }
 
-.mega-container .mega:hover .mega-content { border-color: #255648; }
-.mega-container .mega-menu { background: #255648 !important; }
-.mega-container li > ul { background-color: #255648 !important; }
+.mega-container .mega:hover .mega-content { border-color: #263849; }
+.mega-container .mega-menu { background: #263849 !important; }
+.mega-container li > ul { background-color: #263849 !important; }
 
 
 
@@ -783,7 +782,7 @@ height: 0;
 
 /* Set default button colors */
 .btn, .btn-icon, .btn-mini,
-.btn:visited, .btn-icon:visited, .btn-mini:visited {  background-image: url(../images/bg-lite.png); background-color: #255648; border-color: #16222C; color: #FFF; }
+.btn:visited, .btn-icon:visited, .btn-mini:visited {  background-image: url(../images/bg-lite.png); background-color: #263849; border-color: #16222C; color: #FFF; }
 
 .btn:hover, .btn-icon:hover, .btn-mini:hover { background-color: #16222C; color: #FFF; }
 
@@ -964,7 +963,7 @@ ul.tabs {
 		ul.tabs li a 
 		{
 			text-decoration: none;
-			color: #255648;
+			color: #263849;
 			display: block;
 			font-size: 1.2em;
 			padding: 0 20px;
@@ -1019,7 +1018,7 @@ h2.accordion_panel
 
 	h2.accordion_panel a 
 	{
-		color: #255648;
+		color: #263849;
 		text-decoration: none;
 		padding: 0 0 0 50px;
 	}
