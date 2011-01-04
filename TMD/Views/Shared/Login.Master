@@ -13,7 +13,7 @@
         <link rel="Stylesheet" href="/css/Theme/Screen.css" type="text/css" />
         <link rel="Stylesheet" href="/css/Theme/Plugin.css" type="text/css" />
         <link rel="Stylesheet" href="/css/Theme/Login.css" type="text/css" />
-        <link rel="Stylesheet" href="/css/Common.css" type="text/css" />
+        <link rel="Stylesheet" href="/css/Shared.css" type="text/css" />
         <asp:ContentPlaceHolder ID="Styles" runat="server"></asp:ContentPlaceHolder>
     </head>
     <body >

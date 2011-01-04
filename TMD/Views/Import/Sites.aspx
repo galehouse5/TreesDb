@@ -36,12 +36,8 @@
     <script type="text/javascript" src="/js/Import/Sites.js"></script>
     <script type="text/javascript">
         $(function () {
+            $('body').InitializeSitesUi();
             Import.Init();
-            $('body').live('ContentAdded', function () {
-                $('.RequiresJavascript').show();
-                slate.init();
-                slate.portlet.init();
-            }).trigger('ContentAdded');
         });
     </script>
     <%= Html.Action("GoogleMapsScript", "Map") %>

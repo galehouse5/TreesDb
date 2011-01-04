@@ -14,11 +14,11 @@
         <% if (ViewData.ContainsKey("id")) { %>
             <%= Html.TextBox(string.Empty,
                 Model.HasValue ? Model.Value.ToShortDateString() : string.Empty,
-                new { @size = ViewData["size"] ?? 40, @class = "text datepicker", id = ViewData["id"] }) %>
+                new { @size = ViewData["size"] ?? 40, @class = "text DatePicker", id = ViewData["id"] }) %>
         <% } else { %>
             <%= Html.TextBox(string.Empty,
                 Model.HasValue ? Model.Value.ToShortDateString() : string.Empty,
-                new { @size = ViewData["size"] ?? 40, @class = "text datepicker" }) %>
+                new { @size = ViewData["size"] ?? 40, @class = "text DatePicker" }) %>
         <% } %>  
         <%= Html.ValidationMessageFor(m => m)%>
     </span></div>

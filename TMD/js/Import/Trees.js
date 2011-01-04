@@ -1,4 +1,36 @@
-﻿var Import = new function () {
+﻿(function ($) {
+    $.fn.InitializeTreesUi = function (options) {
+        return this.each(function () {
+
+            $(this).find('.gallery')
+                .not('.UiTreesInitialized').addClass('UiTreesInitialized').PhotoGallery();
+
+            $(this).find('.CoordinatePicker')
+                .not('.UiTreesInitialized').addClass('UiTreesInitialized').CoordinatePicker();
+
+            $(this).find('.CommonName input[type=text]')
+                .not('.UiTreesInitialized').addClass('UiTreesInitialized')
+                .autocomplete({ source: "/Trees/FindKnownTreesWithSimilarCommonName", minLength: 2,
+                    select: function (event, ui) {
+                        var $scientificNameContainer = $(this).closest('.Tree').find('.ScientificName input[type=text]');
+                        $scientificNameContainer.val(ui.item.ScientificName);
+                    }
+                });
+
+            $(this).find('.ScientificName input[type=text]')
+                .not('.UiTreesInitialized').addClass('UiTreesInitialized')
+                .autocomplete({ source: "/Trees/FindKnownTreesWithSimilarScientificName", minLength: 2,
+                    select: function (event, ui) {
+                        var $commonNameContainer = $(this).closest('.Tree').find('.CommonName input[type=text]');
+                        $commonNameContainer.val(ui.item.CommonName);
+                    }
+                });
+
+        });
+    }
+})(jQuery);
+
+var Import = new function () {
 
     function InnerAction(expression) {
         var parts = expression.split('.');
@@ -18,73 +50,48 @@
     public.Init = function () {
 
         $('button[type=submit][name=innerAction]').live('click', function (event) {
-            var button = $(this);
-            var form = button.closest('form');
-            var innerAction = new InnerAction(button.attr('value'));
+            var $button = $(this);
+            var $form = $button.closest('form');
+            var innerAction = new InnerAction($button.attr('value'));
             if (innerAction.Equals('Tree', 'Save')
                 || innerAction.Equals('Tree', 'Edit')) {
-                $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
+                $.post($form.attr('action'), $form.serialize() + '&' + innerAction.Serialize(),
                     function (response) {
-                        var treeContainer = button.closest('.Tree');
-                        var treeContent = $(response);
-                        treeContainer.replaceWith(treeContent);
-                        treeContent.trigger('ContentAdded');
+                        var $treeContainer = $button.closest('.Tree');
+                        var $treeContent = $(response);
+                        $treeContainer.replaceWith($treeContent);
+                        $treeContent.InitializeUi().InitializeTreesUi();
                     });
                 return false;
             }
             if (innerAction.Equals('Subsite', 'Add')) {
-                $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
+                $.post($form.attr('action'), $form.serialize() + '&' + innerAction.Serialize(),
                     function (response) {
-                        var subsiteContainer = button.closest('.Subsite');
-                        if (subsiteContainer.find('.Tree').length > 1) {
-                            var lastTree = subsiteContainer.find('.Tree').last();
-                            var treeContent = $(response);
-                            lastTree.after(treeContent);
-                            treeContent.trigger('ContentAdded');
+                        var $subsiteContainer = $button.closest('.Subsite');
+                        if ($subsiteContainer.find('.Tree').length > 1) {
+                            var $lastTree = $subsiteContainer.find('.Tree').last();
+                            var $treeContent = $(response);
+                            $lastTree.after($treeContent);
+                            $treeContent.InitializeUi().InitializeTreesUi();
                         } else {
-                            var subsiteContent = $(response);
-                            subsiteContainer.replaceWith(subsiteContent);
-                            subsiteContent.trigger('ContentAdded');
+                            var $subsiteContent = $(response);
+                            $subsiteContainer.replaceWith($subsiteContent);
+                            $subsiteContent.InitializeUi().InitializeTreesUi();
                         }
                     });
                 return false;
             }
             if (innerAction.Equals('Tree', 'Remove')) {
-                $.post(form.attr('action'), form.serialize() + '&' + innerAction.Serialize(),
+                $.post($form.attr('action'), $form.serialize() + '&' + innerAction.Serialize(),
                     function (response) {
-                        var subsiteContainer = button.closest('.Subsite');
-                        var subsiteContent = $(response);
-                        subsiteContainer.replaceWith(subsiteContent);
-                        subsiteContent.trigger('ContentAdded');
+                        var $subsiteContainer = $button.closest('.Subsite');
+                        var $subsiteContent = $(response);
+                        $subsiteContainer.replaceWith($subsiteContent);
+                        $subsiteContent.InitializeUi().InitializeTreesUi();
                     });
                 return false;
             }
         });
-
-        $('.Tree').live('ContentAdded', function () {
-
-            $(this).find('.gallery').not('.Initialized').addClass('Initialized').PhotoGallery();
-
-            $(this).find('.CoordinatePicker').not('.Initialized').addClass('Initialized').CoordinatePicker();
-
-            $(this).find('.CommonName input[type=text]').not('.Initialized').addClass('Initialized')
-                .autocomplete({ source: "/Trees/FindKnownTreesWithSimilarCommonName", minLength: 2,
-                    select: function (event, ui) {
-                        var $scientificNameContainer = $(this).closest('.Tree').find('.ScientificName input[type=text]');
-                        $scientificNameContainer.val(ui.item.ScientificName);
-                    }
-                });
-
-            $(this).find('.ScientificName input[type=text]').not('.Initialized').addClass('Initialized')
-                .autocomplete({ source: "/Trees/FindKnownTreesWithSimilarScientificName", minLength: 2,
-                    select: function (event, ui) {
-                        var $commonNameContainer = $(this).closest('.Tree').find('.CommonName input[type=text]');
-                        $commonNameContainer.val(ui.item.CommonName);
-                    }
-                });
-
-        }).trigger('ContentAdded');
-
     }
 
     return public;

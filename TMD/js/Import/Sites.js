@@ -1,4 +1,66 @@
-﻿var Import = new function () {
+﻿(function ($) {
+    $.fn.InitializeSitesUi = function (options) {
+        return this.each(function () {
+
+            $(this).find('.gallery')
+                .not('.UiSitesInitialized').addClass('UiSitesInitialized').PhotoGallery();
+
+            $(this).find('.CoordinatePicker')
+                .not('.UiSitesInitialized').addClass('UiSitesInitialized').CoordinatePicker({
+                AddressCalculator: function () {
+                    var $countyContainer = $(this).closest('.Site, .Subsite').find('.County input[type=text]');
+                    var $stateContainer = $(this).closest('.Site, .Subsite').find('.State select');
+                    if (!$countyContainer.val().IsNullOrWhitespace() && $stateContainer.find('option:selected').length > 0) {
+                        return $countyContainer.val() + ' County, ' + $stateContainer.find('option:selected').text();
+                    }
+                    if ($stateContainer.find('option:selected').length > 0) {
+                        return $stateContainer.find('option:selected').text();
+                    }
+                    return null;
+                }
+            });
+
+            $(this).find('.Coordinates input[type=text]')
+                .not('.UiSitesInitialized').addClass('UiSitesInitialized').change(function () {
+                var $coordinateContainer = $(this);
+                var coordinates = Coordinates.Parse($coordinateContainer.val());
+                if (coordinates.IsSpecified() && coordinates.IsValid()) {
+                    new google.maps.Geocoder().geocode(
+                    { latLng: new google.maps.LatLng(coordinates.Latitude().TotalDegrees(), coordinates.Longitude().TotalDegrees()) },
+                    function (results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            var county, state, country;
+                            for (i in results[0].address_components) {
+                                for (j in results[0].address_components[i].types) {
+                                    if (results[0].address_components[i].types[j] == 'administrative_area_level_2') { county = results[0].address_components[i].long_name; }
+                                    if (results[0].address_components[i].types[j] == 'administrative_area_level_1') { state = results[0].address_components[i].long_name; }
+                                    if (results[0].address_components[i].types[j] == 'country') { country = results[0].address_components[i].long_name; }
+                                }
+                            }
+                            if (county != null) {
+                                var $countyContainer = $coordinateContainer.closest('.Site, .Subsite').find('.County input[type=text]');
+                                $countyContainer.val(county);
+                            }
+                            if (state != null && country != null) {
+                                var stateText = state + ', ' + country;
+                                var $stateContainer = $coordinateContainer.closest('.Site, .Subsite').find('.State select');
+                                var $stateOption = $stateContainer.find('option').filter(function () { return $(this).text() == stateText });
+                                if ($stateOption != null) {
+                                    $stateContainer.find('option').removeAttr('selected');
+                                    $stateOption.attr('selected', 'selected');
+                                    $.uniform.update($stateContainer);
+                                }
+                            }
+                        }
+                    });
+                }
+            });
+
+        });
+    }
+})(jQuery);
+
+var Import = new function () {
 
     function InnerAction(expression) {
         var parts = expression.split('.');
@@ -30,7 +92,7 @@
                         var $siteContainer = $button.closest('.Site');
                         var $siteContent = $(response);
                         $siteContainer.replaceWith($siteContent);
-                        $siteContent.trigger('ContentAdded');
+                        $siteContent.InitializeUi().InitializeSitesUi();
                     });
                 return false;
             }
@@ -40,7 +102,7 @@
                         var $sitesContainer = $button.closest('.Sites');
                         var $sitesContent = $(response);
                         $sitesContainer.replaceWith($sitesContent);
-                        $sitesContent.trigger('ContentAdded');
+                        $sitesContent.InitializeUi().InitializeSitesUi();
                     });
                 return false;
             }
@@ -52,71 +114,16 @@
                             var $lastSite = $sitesContainer.find('.Site').last();
                             var $siteContent = $(response);
                             $lastSite.after($siteContent);
-                            $siteContent.trigger('ContentAdded');
+                            $siteContent.InitializeUi().InitializeSitesUi();
                         } else {
                             var $sitesContent = $(response);
                             $sitesContainer.replaceWith($sitesContent);
-                            $sitesContent.trigger('ContentAdded');
+                            $sitesContent.InitializeUi().InitializeSitesUi();
                         }
                     });
                 return false;
             }
         });
-
-        $('.Site .Coordinates input[type=text], .Subsite .Coordinates input[type=text]').live('change', function () {
-            var $coordinateContainer = $(this);
-            var coordinates = Coordinates.Parse($coordinateContainer.val());
-            if (coordinates.IsSpecified() && coordinates.IsValid()) {
-                new google.maps.Geocoder().geocode(
-                    { latLng: new google.maps.LatLng(coordinates.Latitude().TotalDegrees(), coordinates.Longitude().TotalDegrees()) },
-                    function (results, status) {
-                        if (status == google.maps.GeocoderStatus.OK) {
-                            var county, state, country;
-                            for (i in results[0].address_components) {
-                                for (j in results[0].address_components[i].types) {
-                                    if (results[0].address_components[i].types[j] == 'administrative_area_level_2') { county = results[0].address_components[i].long_name; }
-                                    if (results[0].address_components[i].types[j] == 'administrative_area_level_1') { state = results[0].address_components[i].long_name; }
-                                    if (results[0].address_components[i].types[j] == 'country') { country = results[0].address_components[i].long_name; }
-                                }
-                            }
-                            if (county != null) {
-                                var $countyContainer = $coordinateContainer.closest('.Site, .Subsite').find('.County input[type=text]');
-                                $countyContainer.val(county);
-                            }
-                            if (state != null && country != null) {
-                                var stateText = state + ', ' + country;
-                                var $stateContainer = $coordinateContainer.closest('.Site, .Subsite').find('.State select');
-                                var $stateOption = $stateContainer.find('option').filter(function () { return $(this).text() == stateText });
-                                if ($stateOption != null) {
-                                    $stateContainer.find('option').removeAttr('selected');
-                                    $stateOption.attr('selected', 'selected');
-                                    $.uniform.update($stateContainer);
-                                }
-                            }
-                        }
-                    });
-            }
-        });
-
-        $('.Site, .Subsite').live('ContentAdded', function () {
-
-            $(this).find('.gallery').not('.Initialized').addClass('Initialized').PhotoGallery();
-           
-            $(this).find('.CoordinatePicker').not('.Initialized').addClass('Initialized').CoordinatePicker({
-                AddressCalculator: function () {
-                    var $countyContainer = $(this).closest('.Site, .Subsite').find('.County input[type=text]');
-                    var $stateContainer = $(this).closest('.Site, .Subsite').find('.State select');
-                    if (!$countyContainer.val().IsNullOrWhitespace() && $stateContainer.find('option:selected').length > 0) {
-                        return $countyContainer.val() + ' County, ' + $stateContainer.find('option:selected').text();
-                    }
-                    if ($stateContainer.find('option:selected').length > 0) {
-                        return $stateContainer.find('option:selected').text();
-                    }
-                    return null;
-                }
-            });
-
-        }).trigger('ContentAdded');
     }
 
     return public;

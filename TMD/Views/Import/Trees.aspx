@@ -31,12 +31,8 @@
     <script type="text/javascript" src="/js/Import/Trees.js"></script>
     <script type="text/javascript">
         $(function () {
+            $('body').InitializeTreesUi();
             Import.Init();
-            $('body').live('ContentAdded', function () {
-                $('.RequiresJavascript').show();
-                slate.init();
-                slate.portlet.init();
-            }).trigger('ContentAdded');
         });
     </script>
     <%= Html.Action("GoogleMapsScript", "Map") %>

@@ -31,14 +31,3 @@
     <% } %>
 </asp:Content>
 
-<asp:Content ContentPlaceHolderID="Scripts" runat="server">
-    <script type="text/javascript">
-        $(function () {
-            $('.datepicker').datepicker({
-                showOn: 'button',
-                buttonImage: '/images/icons/Calendar.gif',
-                duration: 0
-            });
-        });
-    </script>
-</asp:Content>

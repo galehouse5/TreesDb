@@ -11,7 +11,7 @@
         <link rel="Stylesheet" href="/css/jquery/jquery-ui-1.8.7.custom.css" type="text/css" />		
         <link rel="Stylesheet" href="/css/Theme/Screen.css" type="text/css" />
         <link rel="Stylesheet" href="/css/Theme/Plugin.css" type="text/css" />
-        <link rel="Stylesheet" href="/css/Common.css" type="text/css" />	
+        <link rel="Stylesheet" href="/css/Shared.css" type="text/css" />	
         <asp:ContentPlaceHolder ID="Styles" runat="server"></asp:ContentPlaceHolder>
     </head>
     <body>
@@ -36,7 +36,7 @@
 
 	        <div id="content" class="xfluid">
                 <% if (ViewData.JavascriptRequired) { %>
-                    <div id="JavascriptDisabledWarning" class="portlet x12">
+                    <div class="portlet x12 LacksJavascript">
 			            <div class="portlet-header"><h4>This page requires javascript.</h4></div>
 			            <div class="portlet-content">
 			                <p>Please enable javascript in your browser's settings and then refresh this page.</p>
@@ -58,21 +58,14 @@
 	
         </div> <!-- #wrapper -->
         <script type="text/javascript" src="/js/jquery/jquery-1.4.4.min.js"></script>
-        <script type="text/javascript" src="/js/slate/slate.js"></script>
-        <script type="text/javascript" src="/js/slate/slate.portlet.js"></script>
+        <script type="text/javascript" src="/js/jquery/jquery-ui-1.8.7.custom.min.js"></script>
         <script type="text/javascript" src="/js/plugin.js"></script>
         <script type="text/javascript" src="/js/widgets.js"></script>
-        <script type="text/javascript" src="/js/jquery/jquery-ui-1.8.7.custom.min.js"></script>
-        <script type="text/javascript" src="/js/Prototypes.js"></script>
+        <script type="text/javascript" src="/js/Shared.js"></script>
+        <script type="text/javascript" src="/js/Shared/Plugin.js"></script>
+        <script type="text/javascript" src="/js/Shared/Widgets.js"></script>
         <script type="text/javascript">
-            $(function () {
-                slate.init();
-                slate.portlet.init();
-                <% if (ViewData.JavascriptRequired) { %>
-                    $('.RequiresJavascript').show();
-                    $('#JavascriptDisabledWarning').hide();
-                <% } %>
-            });
+            $(function () { $('body').InitializeUi(); });
         </script>
         <asp:ContentPlaceHolder ID="Scripts" runat="server"></asp:ContentPlaceHolder>
     </body>

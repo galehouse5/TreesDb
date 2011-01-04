@@ -164,7 +164,7 @@
     <Content Include="css\jquery\images\ui-icons_ffffff_256x240.png" />
     <Content Include="css\jquery\jquery-ui-1.8.7.custom.css" />
     <Content Include="css\login.css" />
-    <Content Include="css\Common.css" />
+    <Content Include="css\Shared.css" />
     <Content Include="css\plugin.css" />
     <Content Include="css\plugin\dataTables.css" />
     <Content Include="css\plugin\facebox.css" />
@@ -233,6 +233,10 @@
     <Content Include="images\title.png" />
     <Content Include="images\white oak in fog.jpg" />
     <Content Include="images\white oak in fog_small.jpg" />
+    <Content Include="js\Shared\CoordinatePicker.js" />
+    <Content Include="js\Shared\PhotoGallery.js" />
+    <Content Include="js\Shared\Widgets.js" />
+    <Content Include="js\Shared\Plugin.js" />
     <Content Include="js\Map\Coordinates.js" />
     <Content Include="js\Import\Trees.js" />
     <Content Include="js\Import\Sites.js" />
@@ -247,10 +251,10 @@
     <Content Include="js\jquery\jquery.uniform.min.js" />
     <Content Include="js\jquery\jquery.visualize.js" />
     <Content Include="js\Map\CoordinatePicker.js" />
-    <Content Include="js\misc\upclick.js" />
+    <Content Include="js\Shared\upclick.js" />
     <Content Include="js\misc\excanvas.min.js" />
     <Content Include="js\plugin.js" />
-    <Content Include="js\Prototypes.js" />
+    <Content Include="js\Shared.js" />
     <Content Include="js\slate\slate.js" />
     <Content Include="js\slate\slate.message.js" />
     <Content Include="js\slate\slate.portlet.js" />

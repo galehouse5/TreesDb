@@ -23,6 +23,7 @@ namespace TMD.Controllers
             return Json(from tree in trees
                         select new 
                         {
+                            label = string.Format("{0} ({1})", tree.CommonName, tree.ScientificName),
                             value = tree.CommonName,
                             ScientificName = tree.ScientificName 
                         },
