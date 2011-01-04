@@ -79,6 +79,7 @@
         $container.find('form.CoordinatePickerCoordinates button[name=Action]').click(function () {
             if ($(this).val() == 'Save') { public.Close(true); }
             else if ($(this).val() == 'Back') { public.Close(false); }
+            return false;
         });
         $container.find('form.CoordinatePickerCoordinates input[name=Coordinates]').change(function () {
             var coordinates = Coordinates.Parse($(this).val());

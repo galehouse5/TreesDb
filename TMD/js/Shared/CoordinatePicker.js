@@ -1,5 +1,4 @@
-﻿
-(function ($) {
+﻿(function ($) {
     $.fn.CoordinatePicker = function (options) {
         var defaults = { AddressCalculator: null };
         var options = $.extend(defaults, options);
