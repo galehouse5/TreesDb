@@ -301,6 +301,7 @@ namespace TMD.Controllers
                 if (innerAction.Equals(InnerAction.EntityLevel.Tree, InnerAction.EntityAction.Save))
                 {
                     var tree = trip.FindTreeMeasurementById(innerAction.Id);
+                    ensureTreesAreRemovable(model);
                     var treeModel = model.FindTreeById(tree.Id);
                     Mapper.Map(treeModel, tree);
                     var subsiteModel = model.FindSubsiteContainingTreeWithId(tree.Id);

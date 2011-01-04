@@ -5,7 +5,7 @@
                 .not('.UiInitialized').addClass('UiInitialized').show();
             $(this).find('.LacksJavascript')
                 .not('.UiInitialized').addClass('UiInitialized').hide();
-            $(this).find("form.form select, form.form input:checkbox, form.form input:radio, form.form input:file")
+            $(this).find("select, input:checkbox, input:radio, input:file")
                 .not('.UiInitialized').addClass('UiInitialized').uniform();
             $(this).find("*[rel=facebox]")
                 .not('.UiInitialized').addClass('UiInitialized').facebox();
