@@ -36,19 +36,10 @@ namespace TMD
             routes.MapRoute("ViewMapMarkesForImportSubsite", "Map/ViewMarkersForImport/{id}/Subsite/{subsiteId}", new { controller = "Map", action = "ViewMarkersForImportSubsite" });
             routes.MapRoute("ViewMapMarkesForImportSite", "Map/ViewMarkersForImport/{id}/Site/{siteId}", new { controller = "Map", action = "ViewMarkersForImportSite" });
 
-            routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}",
-                new { controller = "Main", action = "Index" },
-                new { id = @"\d+" });
-            routes.MapRoute("Default", "{controller}/{action}",
-                new { controller = "Main", action = "Index" });
-            //routes.MapRoute("SiteVisits", "trip/{tripdId}/sitevisit/{siteVisitId}/{action}",
-            //    new { controller = "Trip", tripId = 0, siteVisitId = 0, action = "Index" });
-            //routes.MapRoute("SubsiteVisits", "trip/{tripdId}/sitevisit/{siteVisitId}/subsitevisits/{subsiteVisitId}/{action}",
-            //    new { controller = "Trip", tripId = 0, siteVisitId = 0, subsiteVisitId = 0, action = "Index" });
-            //routes.MapRoute("TreeMeasurements", "trip/{tripdId}/sitevisit/{siteVisitId}/subsitevisits/{subsiteVisitId}/treemeasurements/{treeMeasurementId}/{action}",
-            //    new { controller = "Trip", tripId = 0, siteVisitId = 0, subsiteVisitId = 0, treeMeasurementId = 0, action = "Index" });
-            routes.MapRoute("CatchAll", "{*pathInfo}",
-                new { controller = "Error", action = "NotFound" });
+            routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}", new { controller = "Main", action = "Index" }, new { id = @"\d+" });
+            routes.MapRoute("Default", "{controller}/{action}", new { controller = "Main", action = "Index" });
+
+            routes.MapRoute("CatchAll", "{*pathInfo}", new { controller = "Error", action = "NotFound" });
         }
 
         protected void Application_Start()
@@ -74,6 +65,7 @@ namespace TMD
             Mapper.AddProfile<ImportMapping>();
             Mapper.AddProfile<PhotoMapping>();
             Mapper.AddProfile<MapMapping>();
+            Mapper.AddProfile<AccountMapping>();
 
             log4net.Config.XmlConfigurator.Configure();
             ObjectFactory.Initialize(x =>

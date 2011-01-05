@@ -3,9 +3,7 @@
 <asp:Content ContentPlaceHolderID="Scripts" runat="server">
     <script type="text/javascript" src="/js/jquery/jquery-1.4.4.min.js"></script>
     <script type="text/javascript">
-        $(function () {
-            $('#login_email').focus();
-        });
+        $(function () { $('#login_email').focus(); });
     </script>
 </asp:Content>
 
@@ -45,7 +43,7 @@
                         <%= Html.LabelFor(m => m.Password) %>
 					    <div><span class="input">
                             <%= Html.PasswordFor(m => m.Password, new { id = "login_password", @class = "text" }) %>
-                            <a href="javascript:;" id="forgot_my_password">Forgot password?</a>
+                            <%= Html.ActionLink("Forgot password?", "PasswordAssistance") %>
                             <%= Html.ValidationMessageFor(m => m.Password, string.Empty, new { style = "margin-top: 34px;" })%>
                         </span></div>
 				    </div> <!-- .field -->
@@ -62,7 +60,8 @@
 					    <span class="label">&nbsp;</span>
 					    <div>
                             <button type="submit" class="btn">Logon</button>
-                            &nbsp;&nbsp;<a href="javascript:;" id="register_account">Register</a>
+                            &nbsp;&nbsp;
+                            <%= Html.ActionLink("Need account?", "Register") %>
                         </div>
 				    </div> <!-- .field -->
 

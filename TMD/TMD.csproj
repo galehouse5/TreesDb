@@ -120,6 +120,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mappings\AccountMapping.cs" />
     <Compile Include="Mappings\MapMapping.cs" />
     <Compile Include="Mappings\ImportMapping.cs" />
     <Compile Include="Mappings\PhotoMapping.cs" />
@@ -267,14 +268,12 @@
     <Content Include="Views\Account\PasswordCreated.aspx" />
     <Content Include="Views\Account\PasswordAssistanceEmailed.aspx" />
     <Content Include="Views\Account\PasswordAssistanceRequestExpired.aspx" />
-    <Content Include="Views\Account\RegistrationComplete.aspx" />
+    <Content Include="Views\Account\VerifyEmail.aspx" />
     <Content Include="Views\Account\Logon.aspx" />
     <Content Include="Views\Account\Register.aspx" />
     <Content Include="Views\Browse\MenuWidget.ascx" />
     <Content Include="Views\Error\Unauthorized.aspx" />
-    <Content Include="Views\Account\VerifyEmailAfterRegistering.aspx" />
     <Content Include="Views\Account\VerifyHumanBeforeEmailingPasswordAssistance.aspx" />
-    <Content Include="Views\Account\VerifyHumanBeforeRegistering.aspx" />
     <Content Include="Views\Export\MenuWidget.ascx" />
     <Content Include="Views\Import\DisplayTemplates\FinishedTrip.ascx" />
     <Content Include="Views\Import\DisplayTemplates\FinishedSite.ascx" />
@@ -312,6 +311,7 @@
     <Content Include="Views\Shared\EditorTemplates\Boolean.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Coordinates.ascx" />
     <Content Include="Views\Shared\EditorTemplates\CoordinatePickerModel.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Password.ascx" />
     <Content Include="Views\Shared\EditorTemplates\PhotoGalleryModel.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Enum.ascx" />
     <Content Include="Views\Shared\EditorTemplates\Elevation.ascx" />

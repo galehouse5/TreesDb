@@ -5,6 +5,7 @@ using System.Text;
 using TMD.Model.Users;
 using NHibernate.Exceptions;
 using TMD.Model;
+using NHibernate.Criterion;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -12,8 +13,8 @@ namespace TMD.Infrastructure.Repositories
     {
         public override User FindByEmail(string email)
         {
-            return Registry.Session.CreateQuery(@"select u from User u where u.Email = :email")
-                .SetParameter("email", email)
+            return Registry.Session.CreateCriteria<User>()
+                .Add(Restrictions.Eq("Email", email))
                 .UniqueResult<User>();
         }
 
@@ -41,6 +42,7 @@ namespace TMD.Infrastructure.Repositories
             {
                 if (ex.InnerException != null && ex.InnerException.Message.Contains("duplicate"))
                 {
+                    UnitOfWork.Dispose(); UnitOfWork.Initialize();
                     User existingUser = FindByEmail(u.Email);
                     if (existingUser != null)
                     {

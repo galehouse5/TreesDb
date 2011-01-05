@@ -10,7 +10,7 @@ using NHibernate.Validator.Constraints;
 namespace TMD.Model.Users
 {
     [Serializable]
-    [ContextMethod("CheckPasswordMeetsGlobalRequirements", Tags = Tag.Screening)]
+    [ContextMethod("ValidateGlobalRequirements", Tags = Tag.Screening)]
     public class Password
     {
         protected Password()
@@ -25,24 +25,23 @@ namespace TMD.Model.Users
         [Min(1, Message = "You must enter a password.", Tags = Tag.Screening)]
         public virtual int Length { get; private set; }
 
-        [NotEquals(true, Message = "Your password can only contain the following special characters: ~`!@#$%^*()-_=+[{]}\\|;:,./?/*-+.", Tags = Tag.Screening)]
+        [NotEquals(true, Message = "Your password must not contain invalid characters.", Tags = Tag.Screening)]
         public virtual bool HasInvalidCharacters { get; private set; }
 
-        public virtual void CheckPasswordMeetsGlobalRequirements(IConstraintValidatorContext context)
+        public virtual void ValidateGlobalRequirements(IConstraintValidatorContext context)
         {
             if (Length > 0)
             {
                 if (CharacterTypes < Registry.Settings.PasswordCharacterTypes)
                 {
                     context.AddInvalid<Password, int>(string.Format(
-                        "Your password must contain {0} of the following character types: numeric, lowercase, uppercase, or special", Registry.Settings.PasswordCharacterTypes),
+                        "Your password must contain {0} character types.",
+                        Registry.Settings.PasswordCharacterTypes == 4 ? "four" : Registry.Settings.PasswordCharacterTypes == 3 ? "three" : Registry.Settings.PasswordCharacterTypes == 2 ? "two" : "one"),
                         p => p.CharacterTypes);
                 }
                 if (Length < Registry.Settings.PasswordLength)
                 {
-                    context.AddInvalid<Password, int>(string.Format(
-                        "Your password must be {0} characters long.", Registry.Settings.PasswordLength),
-                        p => p.Length);
+                    context.AddInvalid<Password, int>("Your password is too short.", p => p.Length);
                 }
             }
         }

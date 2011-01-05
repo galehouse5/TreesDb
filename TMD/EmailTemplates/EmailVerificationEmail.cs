@@ -6,6 +6,7 @@ using System.Net.Mail;
 using TMD.Model.Users;
 using System.Text;
 using System.IO;
+using System.Web.Mvc;
 
 namespace TMD.EmailTemplates
 {
@@ -17,7 +18,7 @@ namespace TMD.EmailTemplates
             base.IsBodyHtml = true;
         }
 
-        public static EmailVerificationEmail Create(User u)
+        public static EmailVerificationEmail Create(User u, UrlHelper url)
         {
             StringBuilder body = new StringBuilder();
             string path = HttpContext.Current.Server.MapPath("~/EmailTemplates/EmailVerification.htm");
@@ -26,7 +27,7 @@ namespace TMD.EmailTemplates
                 body.Append(sr.ReadToEnd());
             }
             body.Replace("<%HostName%>", WebApplicationRegistry.Settings.HostName);
-            body.Replace("<%EmailVerificationToken%>", u.EmailVerificationToken.UrlEncodedValue);
+            body.Replace("<%VerifyEmailRelativePath%>", url.Action("VerifyEmail", new { token = u.EmailVerificationToken.UrlEncodedValue }));
             body.Replace("<%WebmasterEmail%>", WebApplicationRegistry.Settings.WebmasterEmail);
             return new EmailVerificationEmail(
                 WebApplicationRegistry.Settings.WebmasterEmail,

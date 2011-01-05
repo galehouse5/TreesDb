@@ -8,6 +8,7 @@ using TMD.Model.Validation;
 using TMD.Model;
 using System.Text.RegularExpressions;
 using NHibernate.Validator.Constraints;
+using NHibernate.Validator.Engine;
 
 namespace TMD.Models
 {
@@ -21,44 +22,72 @@ namespace TMD.Models
 
     public class AccountLogonModel
     {
-        [NotEmptyOrWhitesapce(Message = "You must enter an email.")]
-        [Pattern(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$", Message = "You must enter a valid email.")]
-        [DisplayName("Email")]
+        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email.")]
         public string Email { get; set; }
 
-        [NotEmptyOrWhitesapce(Message = "You must enter a password.")]
-        [DisplayName("Password")]
+        [NotEmptyOrWhitesapce(Message = "You must enter a password.")] 
         public string Password { get; set; }
 
-        [DisplayName("Remember me on this computer")]
+        [DisplayName("Remember me on this computer")] 
         public bool RememberMe { get; set; }
 
-        [DisplayName("Prove you're human")]
+        [DisplayName("Prove you're human")] 
         public bool PerformHumanVerification { get; set; }
     }
 
-    //public class AccountRegistrationModel
-    //{
-    //    [DisplayName("*Email:")]
-    //    public string Email { get; set; }
+    [ContextMethod("ValidateEmailsAreSame"), ContextMethod("ValidatePasswordsAreSame")]
+    public class AccountRegistrationModel
+    {
+        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email.")]
+        public string Email { get; set; }
 
-    //    [Required(ErrorMessage = "You must confirm your email.")]
-    //    [DisplayName("*Confirm email:")]
-    //    public string ConfirmEmail { get; set; }
+        [DisplayName("Confirm"), NotEmptyOrWhitesapce(Message = "You must confirm your email.")]
+        public string ConfirmEmail { get; set; }
 
-    //    [DisplayName("Firstname:")]
-    //    public string Firstname { get; set; }
+        protected void ValidateEmailsAreSame(IConstraintValidatorContext context)
+        {
+            if (!string.Equals(Email, ConfirmEmail, StringComparison.OrdinalIgnoreCase))
+            {
+                context.AddInvalid<AccountRegistrationModel, string>("Your emails do not match.", m => m.ConfirmEmail);
+            }
+        }
 
-    //    [DisplayName("Lastname:")]
-    //    public string Lastname { get; set; }
+        [NotEmptyOrWhitesapce(Message = "You must enter a password.")]
+        public string Password { get; set; }
 
-    //    [DisplayName("*Password:")]
-    //    public string Password { get; set; }
+        [DisplayName("Confirm"), NotEmptyOrWhitesapce(Message = "You must confirm your password.")]
+        public string ConfirmPassword { get; set; }
 
-    //    [Required(ErrorMessage = "You must confirm your password.")]
-    //    [DisplayName("*Confirm password:")]
-    //    public string ConfirmPassword { get; set; }
-    //}
+        protected void ValidatePasswordsAreSame(IConstraintValidatorContext context)
+        {
+            if (!string.Equals(Password, ConfirmPassword, StringComparison.OrdinalIgnoreCase))
+            {
+                context.AddInvalid<AccountRegistrationModel, string>("Your passwords do not match.", m => m.ConfirmPassword);
+            }
+        }
+
+        [DisplayName("Prove you're human")] 
+        public bool PerformHumanVerification { get; set; }
+
+        public bool RegistrationComplete { get; set; }
+    }
+
+    public class PasswordAssistanceModel
+    {
+        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email.")]
+        public string Email { get; set; }
+
+        [DisplayName("Confirm"), NotEmptyOrWhitesapce(Message = "You must confirm your email.")]
+        public string ConfirmEmail { get; set; }
+
+        //[DisplayName("New password:")]
+        //[NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must enter your new password.", Ruleset = "Password")]
+        //public string NewPassword { get; set; }
+
+        //[DisplayName("Confirm password:")]
+        //[NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must confirm your new password.", Ruleset = "Password")]
+        //public string ConfirmPassword { get; set; }
+    }
 
 
     //public class EditAccountModel
@@ -87,23 +116,5 @@ namespace TMD.Models
     //    public string ConfirmPassword { get; set; }
     //}
 
-    //public class PasswordAssistanceModel
-    //{
-    //    [NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must enter an email.", Ruleset = "Email")]
-    //    [RegexValidator(@"^(?: *|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4})$", RegexOptions.Compiled, MessageTemplate = "You must enter a valid email.", Ruleset = "Email")]
-    //    [DisplayName("Email:")]
-    //    public string Email { get; set; }
-
-    //    [NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must confirm your email.", Ruleset = "Email")]
-    //    [DisplayName("Confirm email:")]
-    //    public string ConfirmEmail { get; set; }
-
-    //    [DisplayName("New password:")]
-    //    [NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must enter your new password.", Ruleset = "Password")]
-    //    public string NewPassword { get; set; }
-
-    //    [DisplayName("Confirm password:")]
-    //    [NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must confirm your new password.", Ruleset = "Password")]
-    //    public string ConfirmPassword { get; set; }
-    //}
+    
 }

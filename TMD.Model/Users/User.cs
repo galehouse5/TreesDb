@@ -191,7 +191,7 @@ namespace TMD.Model.Users
         {
             if (!existingUser.Email.Equals(Email))
             {
-                throw new InvalidEntityOperationException(this, string.Format("Unable to replace existing non email verified user because their email must be '{0}'.", Email));
+                throw new InvalidEntityOperationException(this, string.Format("Unable to replace existing user because their email is not the same as '{0}'.", Email));
             }
             Id = existingUser.Id;
         }
