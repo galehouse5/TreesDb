@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Scripts" runat="server">
     <script type="text/javascript" src="/js/jquery/jquery-1.4.4.min.js"></script>
     <script type="text/javascript">
-        $(function () { $('input[type=text]:first').focus(); });
+        $(function () { $('input[type=password]:first').focus(); });
     </script>
 </asp:Content>
 
