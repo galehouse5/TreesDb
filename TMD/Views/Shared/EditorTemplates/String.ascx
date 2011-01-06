@@ -17,19 +17,21 @@
         <% } %>
     </label>
     <div><span class="input">
-        <% if (ViewData.ContainsKey("rows")) { %>
-            <% if (ViewData.ContainsKey("id")) { %>
-                <%= Html.TextAreaFor(m => m, new { @rows = ViewData["rows"], @cols = ViewData["cols"] ?? 50, @class = "text", id = ViewData["id"] })%>
-            <% } else { %>
-                <%= Html.TextAreaFor(m => m, new { @rows = ViewData["rows"], @cols = ViewData["cols"] ?? 50, @class = "text" })%>
-            <% } %>
+        <%  var htmlAttributes = new Dictionary<string, object>();
+            htmlAttributes.Add("class", "text");
+            htmlAttributes.Add("size", ViewData["size"] ?? 50);
+            if (ViewData.ContainsKey("rows")) 
+            {
+                htmlAttributes.Add("rows", ViewData["rows"]);
+                htmlAttributes.Add("cols", ViewData["cols"] ?? 50);
+            }
+            if (ViewData.ContainsKey("id")) { htmlAttributes.Add("id", ViewData["id"]); }
+            if (ViewData.ContainsKey("disabled")) { htmlAttributes.Add("disabled", ViewData["disabled"]); } %>
+        <% if (htmlAttributes.ContainsKey("rows")) { %>
+            <%= Html.TextAreaFor(m => m, htmlAttributes) %>
         <% } else { %>
-            <% if (ViewData.ContainsKey("id")) { %>
-                <%= Html.TextBoxFor(m => m, new { @size = ViewData["size"] ?? 50, @class = "text", id = ViewData["id"] })%>
-            <% } else { %>
-                <%= Html.TextBoxFor(m => m, new { @size = ViewData["size"] ?? 50, @class = "text" })%>
-            <% } %>
-        <% } %>        
+            <%= Html.TextBoxFor(m => m, htmlAttributes) %>
+        <% } %>
         <%= Html.ValidationMessageFor(m => m)%>
     </span></div>
     <% if (ViewData.ContainsKey("helpText")) { %>

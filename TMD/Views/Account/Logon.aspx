@@ -3,7 +3,7 @@
 <asp:Content ContentPlaceHolderID="Scripts" runat="server">
     <script type="text/javascript" src="/js/jquery/jquery-1.4.4.min.js"></script>
     <script type="text/javascript">
-        $(function () { $('#login_email').focus(); });
+        $(function () { $('input[type=text]:first').focus(); });
     </script>
 </asp:Content>
 
@@ -37,7 +37,7 @@
             <div class="content_front">
                 <div class="pad">
 
-                    <%= Html.EditorFor(m => m.Email, new { id = "login_email" })%>
+                    <%= Html.EditorFor(m => m.Email)%>
 
 				    <div class="field">
                         <%= Html.LabelFor(m => m.Password) %>
@@ -61,7 +61,7 @@
 					    <div>
                             <button type="submit" class="btn">Logon</button>
                             &nbsp;&nbsp;
-                            <%= Html.ActionLink("Need account?", "Register") %>
+                            <%= Html.ActionLink("Need an account?", "Register") %>
                         </div>
 				    </div> <!-- .field -->
 

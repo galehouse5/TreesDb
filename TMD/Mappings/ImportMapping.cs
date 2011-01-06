@@ -29,9 +29,9 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.SecondMeasurer, opt => opt.MapFrom(src => src.Measurers.Count > 1 ? src.Measurers[1].ToFormalName() : string.Empty))
                 .ForMember(dest => dest.ThirdMeasurer, opt => opt.MapFrom(src => src.Measurers.Count > 2 ? src.Measurers[2].ToFormalName() : string.Empty));
             ValidationMapper.CreateMap<Trip, ImportTripModel>()
-                .ForPath("Measurers[0].FirstName", "FirstMeasurer").ForPath("Measurers[0].LastName", "FirstMeasurer").UseMessage("Measurers[0].*", "Name must be specified.")
-                .ForPath("Measurers[1].FirstName", "SecondMeasurer").ForPath("Measurers[1].LastName", "SecondMeasurer").UseMessage("Measurers[1].*", "Name must be specified.")
-                .ForPath("Measurers[2].FirstName", "ThirdMeasurer").ForPath("Measurers[2].LastName", "ThirdMeasurer").UseMessage("Measurers[2].*", "Name must be specified.")
+                .ForPath("Measurers[0].FirstName", "FirstMeasurer").ForPath("Measurers[0].LastName", "FirstMeasurer").UseMessage("Measurers[0].*", "Name must be in Lastname, Firstname format.")
+                .ForPath("Measurers[1].FirstName", "SecondMeasurer").ForPath("Measurers[1].LastName", "SecondMeasurer").UseMessage("Measurers[1].*", "Name must be in Lastname, Firstname format.")
+                .ForPath("Measurers[2].FirstName", "ThirdMeasurer").ForPath("Measurers[2].LastName", "ThirdMeasurer").UseMessage("Measurers[2].*", "Name must be in Lastname, Firstname format.")
                 .ForPath("Measurers", "FirstMeasurer").UseMessage("Measurers", "Name must be specified.");
 
             CreateMap<ImportTripModel, Trip>()

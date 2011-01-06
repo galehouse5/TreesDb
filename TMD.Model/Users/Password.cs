@@ -174,11 +174,6 @@ namespace TMD.Model.Users
             };
         }
 
-        public static IEnumerable<IValidationError> Validate(string password)
-        {
-            return Password.Create(password, string.Empty).Validate();
-        }
-
         private static RandomNumberGenerator s_RNG = RNGCryptoServiceProvider.Create();
         private static string s_PossibleRandomPasswordCharacters = "1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM~`!@#$%^*()-_=+[{]}\\|;:,./?/*-+.";
         public static string GenerateRandomPassword(int length)

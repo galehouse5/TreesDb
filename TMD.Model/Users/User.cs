@@ -117,7 +117,6 @@ namespace TMD.Model.Users
             {
                 throw new InvalidEntityOperationException(this, "Unable to change password because forgotten password assistance token is invalid.");
             }
-            Password.Validate(newPassword).AssertIsValid();
             Password = Password.Create(newPassword, Email);
             ForgottenPasswordAssistanceTokenUsed = DateTime.Now;
         }
@@ -148,7 +147,6 @@ namespace TMD.Model.Users
 
         public virtual void ChangePasswordUsingExistingPassword(string existingPassword, string newPassword)
         {
-            Password.Validate(newPassword).AssertIsValid();
             if (!VerifyPassword(existingPassword))
             {
                 throw new InvalidEntityOperationException(this, "Unable to change password because existing password failed verification.");

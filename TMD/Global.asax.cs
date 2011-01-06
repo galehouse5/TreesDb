@@ -36,6 +36,12 @@ namespace TMD
             routes.MapRoute("ViewMapMarkesForImportSubsite", "Map/ViewMarkersForImport/{id}/Subsite/{subsiteId}", new { controller = "Map", action = "ViewMarkersForImportSubsite" });
             routes.MapRoute("ViewMapMarkesForImportSite", "Map/ViewMarkersForImport/{id}/Site/{siteId}", new { controller = "Map", action = "ViewMarkersForImportSite" });
 
+            routes.MapRoute("CompleteAccountPasswordAssistance", "Account/{token}/CompletePasswordAssistance", new { controller = "Account", action = "CompletePasswordAssistance" });
+            routes.MapRoute("CompleteAccountRegistration", "Account/{token}/CompleteRegistration", new { controller = "Account", action = "CompleteRegistration" });
+            routes.MapRoute("Account", "Account/{action}", new { controller = "Account", action = "Index" });
+
+            routes.MapRoute("Main", "Main/{action}", new { controller = "Main", action = "Index" });
+
             routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}", new { controller = "Main", action = "Index" }, new { id = @"\d+" });
             routes.MapRoute("Default", "{controller}/{action}", new { controller = "Main", action = "Index" });
 

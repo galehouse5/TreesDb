@@ -8,7 +8,7 @@ namespace TMD
 {
     public static partial class TempDataKeys
     {
-        public const string StatusMessage = "statusMessage";
+        public const string AccountMessage = "accountMessage";
     }
 
     public class TempData : TempDataDictionary
@@ -35,10 +35,10 @@ namespace TMD
             return base.ToString();
         }
 
-        public string StatusMessage
+        public string AccountMessage
         {
-            get { return m_TempData[TempDataKeys.StatusMessage] as string; }
-            set { m_TempData[TempDataKeys.StatusMessage] = value; }
+            get { return m_TempData[TempDataKeys.AccountMessage] as string; }
+            set { m_TempData[TempDataKeys.AccountMessage] = value; }
         }
     }
 }

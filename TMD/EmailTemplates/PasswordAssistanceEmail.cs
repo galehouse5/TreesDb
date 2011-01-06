@@ -17,7 +17,7 @@ namespace TMD.EmailTemplates
             base.IsBodyHtml = true;
         }
 
-        public static PasswordAssistanceEmail Create(User u)
+        public static PasswordAssistanceEmail Create(User u, string completePasswordAssistancePath)
         {
             StringBuilder body = new StringBuilder();
             string path = HttpContext.Current.Server.MapPath("~/EmailTemplates/PasswordAssistance.htm");
@@ -26,12 +26,12 @@ namespace TMD.EmailTemplates
                 body.Append(sr.ReadToEnd());
             }
             body.Replace("<%HostName%>", WebApplicationRegistry.Settings.HostName);
-            body.Replace("<%PasswordAssistanceToken%>", u.ForgottenPasswordAssistanceToken.UrlEncodedValue);
+            body.Replace("<%CompletePasswordAssistancePath%>", completePasswordAssistancePath);
             body.Replace("<%WebmasterEmail%>", WebApplicationRegistry.Settings.WebmasterEmail);
             return new PasswordAssistanceEmail(
                 WebApplicationRegistry.Settings.WebmasterEmail,
                 u.Email,
-                "Tree Measurement Database - Password Assistance",
+                "[Tree Measurement Database] Password Assistance",
                 body.ToString());
         }
     }

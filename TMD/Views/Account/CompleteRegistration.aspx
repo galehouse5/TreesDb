@@ -1,6 +1,6 @@
-﻿<%@ Page Title="Verify Email" Language="C#" MasterPageFile="~/Views/Shared/Login.Master"  Inherits="System.Web.Mvc.ViewPage<bool>" %>
+﻿<%@ Page Title="Complete Registration" Language="C#" MasterPageFile="~/Views/Shared/Login.Master"  Inherits="System.Web.Mvc.ViewPage<bool>" %>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="Content" runat="server">
+<asp:Content ContentPlaceHolderID="Content" runat="server">
     <div class="content_front">
         <div class="pad">
     <% if (Model) { %>

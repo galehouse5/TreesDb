@@ -22,10 +22,10 @@ namespace TMD.Models
 
     public class AccountLogonModel
     {
-        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email.")]
+        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email."), Length(100, Message = "Email must not exceed 100 characters.")]
         public string Email { get; set; }
 
-        [NotEmptyOrWhitesapce(Message = "You must enter a password.")] 
+        [NotEmptyOrWhitesapce(Message = "You must enter a password."), Length(100, Message = "Password must not exceed 100 characters.")]
         public string Password { get; set; }
 
         [DisplayName("Remember me on this computer")] 
@@ -38,15 +38,15 @@ namespace TMD.Models
     [ContextMethod("ValidateEmailsAreSame"), ContextMethod("ValidatePasswordsAreSame")]
     public class AccountRegistrationModel
     {
-        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email.")]
+        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email."), Length(100, Message = "Email must not exceed 100 characters.")]
         public string Email { get; set; }
 
-        [DisplayName("Confirm"), NotEmptyOrWhitesapce(Message = "You must confirm your email.")]
+        [DisplayName("Confirm")]
         public string ConfirmEmail { get; set; }
 
         protected void ValidateEmailsAreSame(IConstraintValidatorContext context)
         {
-            if (!string.Equals(Email, ConfirmEmail, StringComparison.OrdinalIgnoreCase))
+            if (!string.IsNullOrWhiteSpace(Email) && !string.Equals(Email, ConfirmEmail, StringComparison.OrdinalIgnoreCase))
             {
                 context.AddInvalid<AccountRegistrationModel, string>("Your emails do not match.", m => m.ConfirmEmail);
             }
@@ -55,12 +55,12 @@ namespace TMD.Models
         [NotEmptyOrWhitesapce(Message = "You must enter a password.")]
         public string Password { get; set; }
 
-        [DisplayName("Confirm"), NotEmptyOrWhitesapce(Message = "You must confirm your password.")]
+        [DisplayName("Confirm")]
         public string ConfirmPassword { get; set; }
 
         protected void ValidatePasswordsAreSame(IConstraintValidatorContext context)
         {
-            if (!string.Equals(Password, ConfirmPassword, StringComparison.OrdinalIgnoreCase))
+            if (!string.IsNullOrWhiteSpace(Password) && !string.Equals(Password, ConfirmPassword, StringComparison.OrdinalIgnoreCase))
             {
                 context.AddInvalid<AccountRegistrationModel, string>("Your passwords do not match.", m => m.ConfirmPassword);
             }
@@ -72,49 +72,85 @@ namespace TMD.Models
         public bool RegistrationComplete { get; set; }
     }
 
-    public class PasswordAssistanceModel
+    [ContextMethod("ValidateEmailsAreSame")]
+    public class AccountPasswordAssistanceModel
     {
-        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email.")]
+        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email."), Length(100, Message = "Email must not exceed 100 characters.")]
         public string Email { get; set; }
 
-        [DisplayName("Confirm"), NotEmptyOrWhitesapce(Message = "You must confirm your email.")]
+        [DisplayName("Confirm")]
         public string ConfirmEmail { get; set; }
 
-        //[DisplayName("New password:")]
-        //[NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must enter your new password.", Ruleset = "Password")]
-        //public string NewPassword { get; set; }
+        protected void ValidateEmailsAreSame(IConstraintValidatorContext context)
+        {
+            if (!string.IsNullOrWhiteSpace(Email) && !string.Equals(Email, ConfirmEmail, StringComparison.OrdinalIgnoreCase))
+            {
+                context.AddInvalid<AccountRegistrationModel, string>("Your emails do not match.", m => m.ConfirmEmail);
+            }
+        }
 
-        //[DisplayName("Confirm password:")]
-        //[NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must confirm your new password.", Ruleset = "Password")]
-        //public string ConfirmPassword { get; set; }
+        [DisplayName("Prove you're human")]
+        public bool PerformHumanVerification { get; set; }
+
+        public bool AssistanceComplete { get; set; }
     }
 
+    [ContextMethod("ValidatePasswordsAreSame")]
+    public class CompleteAccountPasswordAssistanceModel
+    {
+        public bool CanCompletePasswordAssistance { get; set; }
+        public bool AssistanceComplete { get; set; }
 
-    //public class EditAccountModel
-    //{
-    //    [DisplayName("Email:")]
-    //    public string Email { get; set; }
+        [NotEmptyOrWhitesapce(Message = "You must enter a password."), Length(100, Message = "Password must not exceed 100 characters.")]
+        public string Password { get; set; }
 
-    //    [DisplayName("Firstname:")]
-    //    [StringLengthWhenNotNullOrWhitespaceValidator(50, MessageTemplate = "First name must not exceed 50 characters.", Ruleset = "Account")]
-    //    public string Firstname { get; set; }
+        [DisplayName("Confirm")]
+        public string ConfirmPassword { get; set; }
 
-    //    [DisplayName("Lastname:")]
-    //    [StringLengthWhenNotNullOrWhitespaceValidator(50, MessageTemplate = "Last name must not exceed 50 characters.", Ruleset = "Account")]
-    //    public string Lastname { get; set; }
+        protected void ValidatePasswordsAreSame(IConstraintValidatorContext context)
+        {
+            if (!string.IsNullOrWhiteSpace(Password) && !string.Equals(Password, ConfirmPassword, StringComparison.OrdinalIgnoreCase))
+            {
+                context.AddInvalid<AccountRegistrationModel, string>("Your passwords do not match.", m => m.ConfirmPassword);
+            }
+        }
+    }
 
-    //    [DisplayName("Existing password:")]
-    //    [NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must enter your existing password.", Ruleset = "Password")]
-    //    public string ExistingPassword { get; set; }
+    public class AccountEditModel
+    {
+        public string Email { get; set; }
+        public AccountEditDetailsModel Details { get; set; }
+        public AccountEditPasswordModel Password { get; set; }
+        public bool EditingDetails { get { return Details != null; } }
+        public bool EditingPassword { get { return Password != null; } }
+    }
 
-    //    [DisplayName("New password:")]
-    //    [NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must enter your new password.", Ruleset = "Password")]
-    //    public string NewPassword { get; set; }
+    public class AccountEditDetailsModel
+    {
+        [Length(100, Message = "Name must not exceed 100 characters."), Pattern(".+,.+", Message="Name must be in Lastname, Firstname format.")]
+        public string Name { get; set; }
+    }
 
-    //    [DisplayName("Confirm password:")]
-    //    [NotEmptyOrWhitesapceAttribute(MessageTemplate = "You must confirm your new password.", Ruleset = "Password")]
-    //    public string ConfirmPassword { get; set; }
-    //}
+    [ContextMethod("ValidatePasswordsAreSame")]
+    public class AccountEditPasswordModel
+    {
+        [DisplayName("Existing password")]
+        [NotEmptyOrWhitesapce(Message = "You must enter a password."), Length(100, Message = "Password must not exceed 100 characters.")]
+        public string ExistingPassword { get; set; }
 
-    
+        [DisplayName("New password")]
+        [NotEmptyOrWhitesapce(Message = "You must enter a password."), Length(100, Message = "Password must not exceed 100 characters.")]
+        public string NewPassword { get; set; }
+
+        [DisplayName("Confirm")]
+        public string ConfirmPassword { get; set; }
+
+        protected void ValidatePasswordsAreSame(IConstraintValidatorContext context)
+        {
+            if (!string.IsNullOrWhiteSpace(NewPassword) && !string.Equals(NewPassword, ConfirmPassword, StringComparison.OrdinalIgnoreCase))
+            {
+                context.AddInvalid<AccountRegistrationModel, string>("Your new passwords do not match.", m => m.ConfirmPassword);
+            }
+        }
+    }
 }

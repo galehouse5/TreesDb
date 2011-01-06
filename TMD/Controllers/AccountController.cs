@@ -12,6 +12,7 @@ using System.Net.Mail;
 using TMD.EmailTemplates;
 using System.Web.Security;
 using TMD.Model.Validation;
+using AutoMapper;
 
 namespace TMD.Controllers
 {
@@ -83,11 +84,7 @@ namespace TMD.Controllers
                 return View(model);
             }
             bool authenticated = user.AttemptLogon(model.Password);
-            using (UnitOfWork.Begin())
-            {
-                Repositories.Users.Save(user);
-                UnitOfWork.Persist();
-            }
+            using (UnitOfWork.BeginAndPersist()) { Repositories.Users.Save(user); }
             if (!authenticated)
             {
                 ModelState.AddModelError("Email", "Invalid email or password.");
@@ -105,7 +102,7 @@ namespace TMD.Controllers
             // TODO: decouple from FormsAuthentication class so this controller is unit testable
             FormsAuthentication.SignOut();
             Session.ClearRegardingUserSpecificData();
-            TempData.StatusMessage = "You have logged out.";
+            TempData.AccountMessage = "You have logged out.";
             return Redirect(Session.DefaultReturnUrl);
         }
 
@@ -153,17 +150,17 @@ namespace TMD.Controllers
                     }
                 }
             }
-            using (SmtpClient mailClient = new SmtpClient())
-            using (MailMessage mail = EmailVerificationEmail.Create(user, Url))
+            using (SmtpClient mailClient = new SmtpClient { EnableSsl = true })
+            using (MailMessage mail = EmailVerificationEmail.Create(user, 
+                Url.Action("CompleteRegistration", new { token = user.EmailVerificationToken.UrlEncodedValue })))
             {
-                mailClient.EnableSsl = true;
                 mailClient.Send(mail);
             }
             model.RegistrationComplete = true;
             return View(model);
         }
 
-        public ActionResult VerifyEmail(string token)
+        public ActionResult CompleteRegistration(string token)
         {
             if (!string.IsNullOrEmpty(token))
             {
@@ -181,158 +178,138 @@ namespace TMD.Controllers
             return View(false);
         }
 
-
         public ActionResult PasswordAssistance()
         {
-            return View(new PasswordAssistanceModel { });
+            return View(new AccountPasswordAssistanceModel { });
         }
 
-        //[HttpPost]
-        //[RecaptchaControlMvc.CaptchaValidator]
-        //public ActionResult RequestPasswordAssistance(PasswordAssistanceModel model, bool captchaValid)
-        //{
-        //    model.Validate("Email").CopyToModelState(ModelState);
-        //    if (!string.IsNullOrEmpty(model.ConfirmEmail) && !model.ConfirmEmail.Equals(model.Email))
-        //    {
-        //        ModelState.AddModelError("ConfirmEmail", "Your emails do not match.");
-        //    }
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return View("PasswordAssistance", model);
-        //    }
-        //    if (!captchaValid)
-        //    {
-        //        return View("VerifyHumanBeforeEmailingPasswordAssistance", model);
-        //    }
-        //    User user = UserRepository.FindByEmail(model.Email);
-        //    if (user != null)
-        //    {
-        //        user.GenerateForgottenPasswordAssistanceToken();
-        //        using (UnitOfWork.BeginBusinessTransaction())
-        //        {
-        //            UserRepository.Save(user);
-        //            UnitOfWork.Persist();
-        //        }
-        //        using (SmtpClient mailClient = new SmtpClient())
-        //        using (MailMessage mail = PasswordAssistanceEmail.Create(user))
-        //        {
-        //            mailClient.EnableSsl = true;
-        //            mailClient.Send(mail);
-        //        }
-        //    }
-        //    return View("PasswordAssistanceEmailed", model);
-        //}
+        [HttpPost, RecaptchaControlMvc.CaptchaValidator]
+        public ActionResult PasswordAssistance(AccountPasswordAssistanceModel model, bool captchaValid)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            if (!captchaValid)
+            {
+                model.PerformHumanVerification = true;
+                return View(model);
+            }
+            var user = Repositories.Users.FindByEmail(model.Email);
+            if (user != null)
+            {
+                user.GenerateForgottenPasswordAssistanceToken();
+                using (UnitOfWork.BeginAndPersist()) { Repositories.Users.Save(user); }
+                using (SmtpClient mailClient = new SmtpClient { EnableSsl = true })
+                using (MailMessage mail = PasswordAssistanceEmail.Create(user,
+                    Url.Action("CompletePasswordAssistance", new { token = user.ForgottenPasswordAssistanceToken.UrlEncodedValue })))
+                {
+                    mailClient.Send(mail);
+                }
+            }
+            model.AssistanceComplete = true;
+            return View(model);
+        }
 
-        //public ActionResult ProvidePasswordAssistance(string id)
-        //{
-        //    if (!string.IsNullOrEmpty(id))
-        //    {
-        //        User user = UserRepository.FindByForgottenPasswordAssistanceToken(id);
-        //        if (user != null && user.IsForgottenPasswordAssistanceTokenValid)
-        //        {
-        //            PasswordAssistanceModel model = new PasswordAssistanceModel();
-        //            return View("CreatePassword", model);
-        //        }
-        //    }
-        //    return View("PasswordAssistanceRequestExpired");
-        //}
+        public ActionResult CompletePasswordAssistance(string token)
+        {
+            if (!string.IsNullOrEmpty(token))
+            {
+                var user = Repositories.Users.FindByForgottenPasswordAssistanceToken(token);
+                if (user != null && user.IsForgottenPasswordAssistanceTokenValid)
+                {
+                    return View(new CompleteAccountPasswordAssistanceModel { CanCompletePasswordAssistance = true });
+                }
+            }
+            return View(new CompleteAccountPasswordAssistanceModel { CanCompletePasswordAssistance = false });
+        }
 
-        //[HttpPost]
-        //public ActionResult ProvidePasswordAssistance(PasswordAssistanceModel model, string id)
-        //{
-        //    User user = UserRepository.FindByForgottenPasswordAssistanceToken(id);
-        //    if (user == null || !user.IsForgottenPasswordAssistanceTokenValid)
-        //    {
-        //        return View("PasswordAssistanceRequestExpired");
-        //    }
-        //    model.Validate("Password").CopyToModelState(ModelState);
-        //    if (!string.IsNullOrEmpty(model.ConfirmPassword) && !model.ConfirmPassword.Equals(model.NewPassword))
-        //    {
-        //        ModelState.AddModelError("ConfirmPassword", "Your passwords do not match.");
-        //    }
-        //    if (!string.IsNullOrEmpty(model.NewPassword))
-        //    {
-        //        user.ValidateNewPassword(model.NewPassword).CopyToModelStateForKey(ModelState, "NewPassword");
-        //    }
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return View("CreatePassword", model);
-        //    }
-        //    user.ChangePasswordUsingPasswordAssistanceToken(id, model.NewPassword);
-        //    using (UnitOfWork.BeginBusinessTransaction())
-        //    {
-        //        UserRepository.Save(user);
-        //        UnitOfWork.Persist();
-        //    }
-        //    return View("PasswordCreated");
-        //}
+        [HttpPost]
+        public ActionResult CompletePasswordAssistance(CompleteAccountPasswordAssistanceModel model, string token)
+        {
+            if (!string.IsNullOrEmpty(token))
+            {
+                var user = Repositories.Users.FindByForgottenPasswordAssistanceToken(token);
+                if (user != null && user.IsForgottenPasswordAssistanceTokenValid)
+                {
+                    model.CanCompletePasswordAssistance = true;
+                    if (!ModelState.IsValid)
+                    {
+                        return View(model);
+                    }
+                    using (UnitOfWork.Begin())
+                    {
+                        user.ChangePasswordUsingPasswordAssistanceToken(token, model.Password);
+                        this.ValidateMappedModel<Model.Users.User, AccountRegistrationModel>(user, Tag.Screening, Tag.Persistence);
+                        if (!ModelState.IsValid)
+                        {
+                            UnitOfWork.Rollback();
+                            return View(model);
+                        }
+                        UnitOfWork.Persist();
+                        model.AssistanceComplete = true;
+                    }
+                }
+            }
+            return View(model);
+        }
 
+        [AuthorizeUser]
+        public ActionResult Edit()
+        {
+            return View(Mapper.Map<User, AccountEditModel>(User));
+        }
 
-
-
-
-        //[HttpGet]
-        //[AuthorizeUser]
-        //public ActionResult Edit()
-        //{
-        //    EditAccountModel model = new EditAccountModel()
-        //    {
-        //        Email = User.Email,
-        //        Firstname = User.Firstname,
-        //        Lastname = User.Lastname
-        //    };
-        //    return View("Edit", model);
-        //}
-
-        //[HttpPost]
-        //[AuthorizeUser]
-        //public ActionResult Edit(EditAccountModel model)
-        //{
-        //    model.Validate("Account").CopyToModelState(ModelState);
-        //    if (ModelState.IsValid)
-        //    {
-        //        User.Firstname = model.Firstname;
-        //        User.Lastname = model.Lastname;
-        //        using (UnitOfWork.BeginBusinessTransaction())
-        //        {
-        //            UserRepository.Save(User);
-        //            UnitOfWork.Persist();
-        //        }
-        //        TempData.StatusMessage = "Your account has been saved.";
-        //        return Redirect(Session.DefaultReturnUrl);
-        //    }
-        //    return View("Edit", model);
-        //}
-
-        //[HttpPost]
-        //[AuthorizeUser]
-        //public ActionResult Password(EditAccountModel model)
-        //{
-        //    model.Validate("Password").CopyToModelState(ModelState);
-        //    if (!string.IsNullOrEmpty(model.ConfirmPassword) && !model.ConfirmPassword.Equals(model.NewPassword))
-        //    {
-        //        ModelState.AddModelError("ConfirmPassword", "Your passwords do not match.");
-        //    }
-        //    if (!string.IsNullOrEmpty(model.NewPassword))
-        //    {
-        //        User.ValidateNewPassword(model.NewPassword).CopyToModelStateForKey(ModelState, "NewPassword");
-        //    }
-        //    if (!string.IsNullOrEmpty(model.ExistingPassword) && !User.VerifyPassword(model.ExistingPassword))
-        //    {
-        //        ModelState.AddModelError("ExistingPassword", "Invalid password.");
-        //    }
-        //    if (ModelState.IsValid)
-        //    {
-        //        User.ChangePasswordUsingExistingPassword(model.ExistingPassword, model.NewPassword);
-        //        using (UnitOfWork.BeginBusinessTransaction())
-        //        {
-        //            UserRepository.Save(User);
-        //            UnitOfWork.Persist();
-        //        }
-        //        TempData.StatusMessage = "Your password has been changed.";
-        //        return Redirect(Session.DefaultReturnUrl);
-        //    }
-        //    return View("Edit", model);
-        //}
+        [HttpPost, AuthorizeUser]
+        public ActionResult Edit(AccountEditModel model)
+        {
+            if (model.EditingPassword)
+            {
+                if (!ModelState.IsValid)
+                {
+                    model.Details = Mapper.Map<User, AccountEditDetailsModel>(User);
+                    return View(model);
+                }
+                if (!User.VerifyPassword(model.Password.ExistingPassword))
+                {
+                    ModelState.AddModelError("Password.ExistingPassword", "Invalid password."); 
+                    model.Details = Mapper.Map<User, AccountEditDetailsModel>(User);
+                    return View(model);
+                }
+                using (UnitOfWork.Begin())
+                {
+                    User.ChangePasswordUsingExistingPassword(model.Password.ExistingPassword, model.Password.NewPassword);
+                    this.ValidateMappedModel<User, AccountEditModel>(User, Tag.Screening, Tag.Persistence);
+                    if (!ModelState.IsValid)
+                    {
+                        model.Details = Mapper.Map<User, AccountEditDetailsModel>(User);
+                        return View(model);
+                    }
+                    UnitOfWork.Persist();
+                    TempData.AccountMessage = "Your password has been changed.";
+                    return Redirect(Session.DefaultReturnUrl);
+                }
+            }
+            if (model.EditingDetails)
+            {
+                if (!ModelState.IsValid)
+                {
+                    return View(model);
+                }
+                using (UnitOfWork.Begin())
+                {
+                    Mapper.Map<AccountEditDetailsModel, User>(model.Details, User);
+                    this.ValidateMappedModel<User, AccountEditModel>(User, Tag.Screening, Tag.Persistence);
+                    if (!ModelState.IsValid)
+                    {
+                        return View(model);
+                    }
+                    UnitOfWork.Persist();
+                    TempData.AccountMessage = "Your account has been saved.";
+                    return Redirect(Session.DefaultReturnUrl);
+                }
+            }
+            throw new NotImplementedException();
+        }
     }
 }
