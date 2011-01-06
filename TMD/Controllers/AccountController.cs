@@ -93,6 +93,7 @@ namespace TMD.Controllers
             // TODO: decouple from FormsAuthentication class so this controller is unit testable
             FormsAuthentication.SetAuthCookie(user.Email, model.RememberMe);
             Session.ClearRegardingUserSpecificData();
+            TempData.AccountMessage = string.Empty;
             return Redirect(Session.DefaultReturnUrl);
         }
 
@@ -267,14 +268,12 @@ namespace TMD.Controllers
             {
                 if (!ModelState.IsValid)
                 {
-                    model.Details = Mapper.Map<User, AccountEditDetailsModel>(User);
-                    return View(model);
+                    return View(Mapper.Map<User, AccountEditModel>(User));
                 }
                 if (!User.VerifyPassword(model.Password.ExistingPassword))
                 {
                     ModelState.AddModelError("Password.ExistingPassword", "Invalid password."); 
-                    model.Details = Mapper.Map<User, AccountEditDetailsModel>(User);
-                    return View(model);
+                    return View(Mapper.Map<User, AccountEditModel>(User));
                 }
                 using (UnitOfWork.Begin())
                 {
@@ -282,8 +281,7 @@ namespace TMD.Controllers
                     this.ValidateMappedModel<User, AccountEditModel>(User, Tag.Screening, Tag.Persistence);
                     if (!ModelState.IsValid)
                     {
-                        model.Details = Mapper.Map<User, AccountEditDetailsModel>(User);
-                        return View(model);
+                        return View(Mapper.Map<User, AccountEditModel>(User));
                     }
                     UnitOfWork.Persist();
                     TempData.AccountMessage = "Your password has been changed.";
