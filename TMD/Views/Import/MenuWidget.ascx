@@ -8,7 +8,9 @@
                 <% if (Model.LatestTrip != null && !Model.LatestTrip.IsImported) { %>
                     <li><%= Html.ActionLink("Continue", "Trip", new { id = Model.LatestTrip.Id }) %> </li>
                 <% } %>
-                <li><%= Html.ActionLink("History", "History") %></li>	
+                <% if (Model.LatestTrip != null) { %>
+                    <li><%= Html.ActionLink("History", "History") %></li>	
+                <% } %>
             </ul>
         </div>
     </li>
