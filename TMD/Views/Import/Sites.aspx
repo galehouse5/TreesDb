@@ -37,7 +37,13 @@
     <script type="text/javascript">
         $(function () {
             $('body').InitializeSitesUi();
-            Import.Init();
+            if ($('form.Sites .input-validation-error').length > 0) {
+                $('form.Sites .input-validation-error:first').focus()
+                    .closest('.Subsite, .Site').each(function () { $(this).SmoothScrollInFocus(); });
+            } else {
+                $('form.Sites input[type=text]:first').focus()
+                    .closest('.Subsite, .Site').each(function () { $(this).SmoothScrollInFocus(); });
+            }
         });
     </script>
     <%= Html.Action("GoogleMapsScript", "Map") %>

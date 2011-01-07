@@ -32,7 +32,13 @@
     <script type="text/javascript">
         $(function () {
             $('body').InitializeTreesUi();
-            Import.Init();
+            if ($('form.Trees .input-validation-error').length > 0) {
+                $('form.Trees .input-validation-error:first').focus()
+                    .closest('.Tree').each(function () { $(this).SmoothScrollInFocus(); });
+            } else {
+                $('form.Trees input[type=text]:first').focus()
+                    .closest('.Tree').each(function () { $(this).SmoothScrollInFocus(); });
+            }
         });
     </script>
     <%= Html.Action("GoogleMapsScript", "Map") %>

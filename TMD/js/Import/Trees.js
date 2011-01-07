@@ -26,73 +26,64 @@
                     }
                 });
 
+            function InnerAction(expression) {
+                var parts = expression.split('.');
+                this.Level = parts[0];
+                this.Id = parts[1];
+                this.Action = parts[2];
+                this.Equals = function (level, action) {
+                    return level == this.Level & action == this.Action;
+                }
+                this.Serialize = function () {
+                    return 'innerAction=' + this.Level + '.' + this.Id + '.' + this.Action;
+                }
+            }
+
+            $(this).find('button[type=submit][name=innerAction]')
+                .not('.UiTreesInitialized').addClass('UiTreesInitialized').click(function (event) {
+                    var $button = $(this);
+                    var $form = $button.closest('form');
+                    var innerAction = new InnerAction($button.attr('value'));
+                    if (innerAction.Equals('Tree', 'Save')
+                        || innerAction.Equals('Tree', 'Edit')) {
+                        $.post($form.attr('action'), $form.serialize() + '&' + innerAction.Serialize(),
+                        function (response) {
+                            var $treeContainer = $button.closest('.Tree');
+                            var $treeContent = $(response);
+                            $treeContainer.replaceWith($treeContent);
+                            $treeContent.InitializeUi().InitializeTreesUi().SmoothScrollInFocus();
+                        });
+                        return false;
+                    }
+                    if (innerAction.Equals('Subsite', 'Add')) {
+                        $.post($form.attr('action'), $form.serialize() + '&' + innerAction.Serialize(),
+                        function (response) {
+                            var $subsiteContainer = $button.closest('.Subsite');
+                            if ($subsiteContainer.find('.Tree').length > 1) {
+                                var $lastTree = $subsiteContainer.find('.Tree').last();
+                                var $treeContent = $(response);
+                                $lastTree.after($treeContent);
+                                $treeContent.InitializeUi().InitializeTreesUi().SmoothScrollInFocus();
+                            } else {
+                                var $subsiteContent = $(response);
+                                $subsiteContainer.replaceWith($subsiteContent);
+                                $subsiteContent.InitializeUi().InitializeTreesUi().find('.Tree:last').SmoothScrollInFocus();
+                            }
+                        });
+                        return false;
+                    }
+                    if (innerAction.Equals('Tree', 'Remove')) {
+                        $.post($form.attr('action'), $form.serialize() + '&' + innerAction.Serialize(),
+                        function (response) {
+                            var $subsiteContainer = $button.closest('.Subsite');
+                            var $subsiteContent = $(response);
+                            $subsiteContainer.replaceWith($subsiteContent);
+                            $subsiteContent.InitializeUi().InitializeTreesUi().find('.Tree:last').SmoothScrollInFocus();
+                        });
+                        return false;
+                    }
+                });
+
         });
     }
 })(jQuery);
-
-var Import = new function () {
-
-    function InnerAction(expression) {
-        var parts = expression.split('.');
-        this.Level = parts[0];
-        this.Id = parts[1];
-        this.Action = parts[2];
-        this.Equals = function (level, action) {
-            return level == this.Level & action == this.Action;
-        }
-        this.Serialize = function () {
-            return 'innerAction=' + this.Level + '.' + this.Id + '.' + this.Action;
-        }
-    }
-
-    var public = {};
-
-    public.Init = function () {
-
-        $('button[type=submit][name=innerAction]').live('click', function (event) {
-            var $button = $(this);
-            var $form = $button.closest('form');
-            var innerAction = new InnerAction($button.attr('value'));
-            if (innerAction.Equals('Tree', 'Save')
-                || innerAction.Equals('Tree', 'Edit')) {
-                $.post($form.attr('action'), $form.serialize() + '&' + innerAction.Serialize(),
-                    function (response) {
-                        var $treeContainer = $button.closest('.Tree');
-                        var $treeContent = $(response);
-                        $treeContainer.replaceWith($treeContent);
-                        $treeContent.InitializeUi().InitializeTreesUi();
-                    });
-                return false;
-            }
-            if (innerAction.Equals('Subsite', 'Add')) {
-                $.post($form.attr('action'), $form.serialize() + '&' + innerAction.Serialize(),
-                    function (response) {
-                        var $subsiteContainer = $button.closest('.Subsite');
-                        if ($subsiteContainer.find('.Tree').length > 1) {
-                            var $lastTree = $subsiteContainer.find('.Tree').last();
-                            var $treeContent = $(response);
-                            $lastTree.after($treeContent);
-                            $treeContent.InitializeUi().InitializeTreesUi();
-                        } else {
-                            var $subsiteContent = $(response);
-                            $subsiteContainer.replaceWith($subsiteContent);
-                            $subsiteContent.InitializeUi().InitializeTreesUi();
-                        }
-                    });
-                return false;
-            }
-            if (innerAction.Equals('Tree', 'Remove')) {
-                $.post($form.attr('action'), $form.serialize() + '&' + innerAction.Serialize(),
-                    function (response) {
-                        var $subsiteContainer = $button.closest('.Subsite');
-                        var $subsiteContent = $(response);
-                        $subsiteContainer.replaceWith($subsiteContent);
-                        $subsiteContent.InitializeUi().InitializeTreesUi();
-                    });
-                return false;
-            }
-        });
-    }
-
-    return public;
-};

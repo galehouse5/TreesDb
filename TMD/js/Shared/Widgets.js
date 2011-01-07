@@ -1,4 +1,17 @@
 ﻿(function ($) {
+    $.fn.SmoothScrollInFocus = function (options) {
+        var defaults = { duration: 400 };
+        var options = $.extend(defaults, options);
+        return this.each(function () {
+            $('html, body').animate({
+                scrollTop: $(this).offset().top 
+                }, 
+                options.duration);
+        });
+    }
+})(jQuery);
+
+(function ($) {
     $.fn.InitializeUi = function (options) {
         return this.each(function () {
             $(this).find('.RequiresJavascript')
