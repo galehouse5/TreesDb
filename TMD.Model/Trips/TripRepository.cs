@@ -11,10 +11,6 @@ namespace TMD.Model.Trips
     {
         public void Save(Trip t)
         {
-            if (t.IsImported)
-            {
-                throw new InvalidEntityOperationException(t, "Unable to save trip because it has already been imported.");
-            }
             t.AssertIsValidToPersist();
             t.LastSaved = DateTime.Now;
             InternalSave(t);
@@ -37,10 +33,7 @@ namespace TMD.Model.Trips
 
         public void Import(Trip t)
         {
-            if (t.IsImported)
-            {
-                throw new ApplicationException("Trip has already been imported.");
-            }
+            t.AssertIsValid(Tag.Screening, Tag.Finalization, Tag.Persistence);
             t.IsImported = true;
             t.Imported = DateTime.Now;
             InternalImport(t);

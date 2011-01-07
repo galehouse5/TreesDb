@@ -270,6 +270,10 @@
     <Content Include="Views\Browse\MenuWidget.ascx" />
     <Content Include="Views\Error\Unauthorized.aspx" />
     <Content Include="Views\Export\MenuWidget.ascx" />
+    <Content Include="Views\Import\View.aspx" />
+    <Content Include="Views\Import\StartPartial.ascx" />
+    <Content Include="Views\Import\Index.aspx" />
+    <Content Include="Views\Import\EditorTemplates\Trip.ascx" />
     <Content Include="Views\Import\DisplayTemplates\FinishedTrip.ascx" />
     <Content Include="Views\Import\DisplayTemplates\FinishedSite.ascx" />
     <Content Include="Views\Import\DisplayTemplates\FinishedSubsite.ascx" />

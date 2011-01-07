@@ -16,7 +16,7 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="StepContent" runat="server">
-    <% using (Html.BeginForm("Finish", "Import", FormMethod.Post, new { @class = "form" })) { %>
+    <% using (Html.BeginForm("Finalize", "Import", FormMethod.Post, new { @class = "form" })) { %>
         <%= Html.DisplayFor(m => m, "FinishedTrip") %>
         <div class="buttonrow">
             <button type="submit" class="btn">Finish</button>

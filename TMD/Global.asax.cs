@@ -43,6 +43,10 @@ namespace TMD
 
             routes.MapRoute("Main", "Main/{action}", new { controller = "Main", action = "Index" });
 
+            routes.MapRoute("ImportIndex", "Import", new { controller = "Import", action = "Index" });
+            routes.MapRoute("ImportNew", "Import/New", new { controller = "Import", action = "New" });
+            routes.MapRoute("ImportHistory", "Import/History", new { controller = "Import", action = "History" });
+
             routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}", new { controller = "Main", action = "Index" }, new { id = @"\d+" });
             routes.MapRoute("Default", "{controller}/{action}", new { controller = "Main", action = "Index" });
 

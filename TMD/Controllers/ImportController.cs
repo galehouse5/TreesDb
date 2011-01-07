@@ -17,6 +17,34 @@ using TMD.Binders;
 
 namespace TMD.Controllers
 {
+    [DebuggerDisplay("{Action} {Level} with Id {Id}")]
+    public class ImportInnerAction : IModelBinder
+    {
+        public enum EntityLevel { Unknown, Trip, Site, Subsite, Tree }
+        public enum EntityAction { Unknown, Add, Save, Edit, Remove, AdvancedEdit }
+
+        public int Id { get; private set; }
+        public EntityAction Action { get; private set; }
+        public EntityLevel Level { get; private set; }
+
+        public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+        {
+            string expression = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).AttemptedValue;
+            string[] parts = expression.Split('.');
+            return new ImportInnerAction
+            {
+                Level = parts[0].ParseEnum(EntityLevel.Unknown),
+                Id = Convert.ToInt32(parts[1]),
+                Action = parts[2].ParseEnum(EntityAction.Unknown)
+            };
+        }
+
+        public bool Equals(EntityLevel level, EntityAction action)
+        {
+            return this.Level == level && this.Action == action;
+        }
+    }
+
     [CheckBrowserCompatibilityFilter]
     public class ImportController : ControllerBase
     {
@@ -32,25 +60,63 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult Index()
+        {
+            return View(Repositories.Trips.ListCreatedByUser(User.Id));
+        }
+
+        [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult Index([ModelBinder(typeof(ImportInnerAction))] ImportInnerAction innerAction)
+        {
+            if (innerAction.Equals(ImportInnerAction.EntityLevel.Trip, ImportInnerAction.EntityAction.Remove))
+            {
+                var trip = Repositories.Trips.FindById(innerAction.Id);
+                if (!User.IsAuthorizedToEdit(trip) || trip.IsImported) { return new UnauthorizedResult(); }
+                using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Remove(trip); }
+                return View(Repositories.Trips.ListCreatedByUser(User.Id));
+            }
+            throw new NotImplementedException();
+        }
+
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult History()
         {
             return View(Repositories.Trips.ListCreatedByUser(User.Id));
         }
 
-        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
-        public ActionResult Start(int id = 0)
+        [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult History([ModelBinder(typeof(ImportInnerAction))] ImportInnerAction innerAction)
         {
-            var trip = id == 0 ? Model.Trips.Trip.Create() : Repositories.Trips.FindById(id);
-            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            return View(trip);
+            if (innerAction.Equals(ImportInnerAction.EntityLevel.Trip, ImportInnerAction.EntityAction.Remove))
+            {
+                var trip = Repositories.Trips.FindById(innerAction.Id);
+                if (!User.IsAuthorizedToEdit(trip) || trip.IsImported) { return new UnauthorizedResult(); }
+                using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Remove(trip); }
+                return View(Repositories.Trips.ListCreatedByUser(User.Id));
+            }
+            throw new NotImplementedException();
         }
 
-        [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
-        public ActionResult Start()
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult New()
+        {
+            return View("Start", Model.Trips.Trip.Create());
+        }
+
+        [HttpPost, ActionName("New"), AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult StartNew()
         {
             var trip = Model.Trips.Trip.Create();
             using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Save(trip); }
             return RedirectToAction("Trip", new { id = trip.Id });
+        }
+
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult Start(int id)
+        {
+            var trip = Repositories.Trips.FindById(id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            return View(trip);
         }
 
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
@@ -93,34 +159,6 @@ namespace TMD.Controllers
             return View(model);
         }
 
-        [DebuggerDisplay("{Action} {Level} with Id {Id}")]
-        public class InnerAction : IModelBinder
-        {
-            public enum EntityLevel { Unknown, Trip, Site, Subsite, Tree }
-            public enum EntityAction { Unknown, Add, Save, Edit, Remove, AdvancedEdit }
-
-            public int Id { get; private set; }
-            public EntityAction Action { get; private set; }
-            public EntityLevel Level { get; private set; }
-
-            public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
-            {
-                string expression = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).AttemptedValue;
-                string[] parts = expression.Split('.');
-                return new InnerAction
-                {
-                    Level = parts[0].ParseEnum(EntityLevel.Unknown),
-                    Id = Convert.ToInt32(parts[1]),
-                    Action = parts[2].ParseEnum(EntityAction.Unknown)
-                };
-            }
-
-            public bool Equals(EntityLevel level, EntityAction action) 
-            { 
-                return this.Level == level && this.Action == action; 
-            }
-        }
-
         private void ensureTripHasASite(Trip trip)
         {
             if (trip.SiteVisits.Count == 0)
@@ -157,7 +195,7 @@ namespace TMD.Controllers
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult Sites(
             [ModelBinder(typeof(ImportSitesModelBinder))] ImportSitesModel model, 
-            [ModelBinder(typeof(InnerAction))] InnerAction innerAction)
+            [ModelBinder(typeof(ImportInnerAction))] ImportInnerAction innerAction)
         {
             ModelState.Clear();
             var trip = Repositories.Trips.FindById(model.Id);
@@ -166,7 +204,7 @@ namespace TMD.Controllers
             {
                 ensureTripHasASite(trip);
                 ensureTripSitesHaveASubsite(trip);
-                if (innerAction.Equals(InnerAction.EntityLevel.Trip, InnerAction.EntityAction.Save))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Trip, ImportInnerAction.EntityAction.Save))
                 {
                     Mapper.Map(model, trip);
                     this.ValidateMappedModel<Trip, ImportSitesModel>(trip, Tag.Screening, Tag.Persistence);
@@ -178,7 +216,7 @@ namespace TMD.Controllers
                     Repositories.Trips.Save(trip);
                     return RedirectToAction("Trees", new { id = trip.Id });
                 }
-                if (innerAction.Equals(InnerAction.EntityLevel.Trip, InnerAction.EntityAction.Add))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Trip, ImportInnerAction.EntityAction.Add))
                 {
                     var site = trip.AddSiteVisit();
                     ensureTripSitesHaveASubsite(trip);
@@ -188,7 +226,7 @@ namespace TMD.Controllers
                     ensureSitesAreSaveableAndRemovable(model);
                     return Request.IsAjaxRequest() ? (model.Sites.Count > 2 ? PartialView("SitePartial", model).AddViewData("siteId", site.Id) : PartialView("SitesPartial", model)) : View(model);
                 }
-                if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Save))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Site, ImportInnerAction.EntityAction.Save))
                 {
                     var siteModel = model.FindSiteById(innerAction.Id);
                     var site = trip.FindSiteVisitById(innerAction.Id);
@@ -205,7 +243,7 @@ namespace TMD.Controllers
                     siteModel.IsEditing = false;
                     return Request.IsAjaxRequest() ? PartialView("SitePartial", model).AddViewData("siteId", site.Id) : View(model);
                 }
-                if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Remove))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Site, ImportInnerAction.EntityAction.Remove))
                 {
                     var site = trip.FindSiteVisitById(innerAction.Id);
                     trip.RemoveSiteVisit(site);
@@ -215,13 +253,13 @@ namespace TMD.Controllers
                     ensureSitesAreSaveableAndRemovable(model);
                     return Request.IsAjaxRequest() ? (ActionResult)PartialView("SitesPartial", model) : View(model);
                 }
-                if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Edit))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Site, ImportInnerAction.EntityAction.Edit))
                 {
                     var site = model.FindSiteById(innerAction.Id);
                     site.IsEditing = true;
                     return Request.IsAjaxRequest() ? PartialView("SitePartial", model).AddViewData("siteId", site.Id) : View(model);
                 }
-                if (innerAction.Equals(InnerAction.EntityLevel.Site, InnerAction.EntityAction.Add))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Site, ImportInnerAction.EntityAction.Add))
                 {
                     var site = trip.FindSiteVisitById(innerAction.Id);
                     var subsite = site.AddSubsiteVisit();
@@ -231,7 +269,7 @@ namespace TMD.Controllers
                     Mapper.Map(subsite, subsiteModel);
                     return Request.IsAjaxRequest() ? PartialView("SitePartial", model).AddViewData("siteId", site.Id) : View(model);
                 }
-                if (innerAction.Equals(InnerAction.EntityLevel.Subsite, InnerAction.EntityAction.Remove))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Subsite, ImportInnerAction.EntityAction.Remove))
                 {
                     var subsite = trip.FindSubsiteVisitById(innerAction.Id);
                     var site = subsite.SiteVisit;
@@ -290,7 +328,7 @@ namespace TMD.Controllers
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult Trees(
             [ModelBinder(typeof(ImportTreesModelBinder))] ImportTreesModel model, 
-            [ModelBinder(typeof(InnerAction))] InnerAction innerAction)
+            [ModelBinder(typeof(ImportInnerAction))] ImportInnerAction innerAction)
         {
             ModelState.Clear();
             var trip = Repositories.Trips.FindById(model.Id);
@@ -299,7 +337,7 @@ namespace TMD.Controllers
             {
                 ensureTripSubsitesHaveATree(trip);
                 ensureTreesAreRemovable(model);
-                if (innerAction.Equals(InnerAction.EntityLevel.Tree, InnerAction.EntityAction.Save))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Tree, ImportInnerAction.EntityAction.Save))
                 {
                     var tree = trip.FindTreeMeasurementById(innerAction.Id);
                     var treeModel = model.FindTreeById(tree.Id);
@@ -318,13 +356,13 @@ namespace TMD.Controllers
                     treeModel.IsEditing = false;
                     return Request.IsAjaxRequest() ? PartialView("TreePartial", model).AddViewData("treeId", tree.Id) : View(model);
                 }
-                if (innerAction.Equals(InnerAction.EntityLevel.Tree, InnerAction.EntityAction.Edit))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Tree, ImportInnerAction.EntityAction.Edit))
                 {
                     var tree = model.FindTreeById(innerAction.Id);
                     tree.IsEditing = true;
                     return Request.IsAjaxRequest() ? PartialView("TreePartial", model).AddViewData("treeId", tree.Id) : View(model);
                 }
-                if (innerAction.Equals(InnerAction.EntityLevel.Subsite, InnerAction.EntityAction.Add))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Subsite, ImportInnerAction.EntityAction.Add))
                 {
                     var subsite = trip.FindSubsiteVisitById(innerAction.Id);
                     var tree = subsite.AddSingleTrunkTreeMeasurement();
@@ -338,7 +376,7 @@ namespace TMD.Controllers
                         : PartialView("SubsiteTreesPartial", model).AddViewData("subsiteId", subsite.Id)) 
                         : View(model);
                 }
-                if (innerAction.Equals(InnerAction.EntityLevel.Tree, InnerAction.EntityAction.Remove))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Tree, ImportInnerAction.EntityAction.Remove))
                 {
                     var tree = trip.FindTreeMeasurementById(innerAction.Id);
                     var subsite = tree.SubsiteVisit;
@@ -352,7 +390,7 @@ namespace TMD.Controllers
                         PartialView("SubsiteTreesPartial", model).AddViewData("subsiteId", subsite.Id)
                         : View(model);
                 }
-                if (innerAction.Equals(InnerAction.EntityLevel.Trip, InnerAction.EntityAction.Save))
+                if (innerAction.Equals(ImportInnerAction.EntityLevel.Trip, ImportInnerAction.EntityAction.Save))
                 {
                     Mapper.Map(model, trip);
                     this.ValidateMappedModel<Trip, ImportTreesModel>(trip, Tag.Screening, Tag.Persistence);
@@ -373,9 +411,24 @@ namespace TMD.Controllers
         {
             var trip = Repositories.Trips.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            var model = new ImportFinishedTripModel();
-            Mapper.Map(trip, model);
-            return View(model);
+            return View(Mapper.Map<Trip, ImportFinishedTripModel>(trip));
+        }
+
+        [HttpPost, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult Finalize(int id)
+        {
+            var trip = Repositories.Trips.FindById(id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Import(trip); }
+            return RedirectToAction("Index");
+        }
+
+        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
+        public ActionResult View(int id)
+        {
+            var trip = Repositories.Trips.FindById(id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            return View(Mapper.Map<Trip, ImportFinishedTripModel>(trip));
         }
     }
 }

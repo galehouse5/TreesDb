@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Import History" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IList<Trip>>" %>
+﻿<%@ Page Title="Import" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IList<Trip>>" %>
 <%@ Import Namespace="TMD.Model.Trips" %>
 
 <asp:Content ContentPlaceHolderID="Styles" runat="server">
@@ -6,6 +6,19 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="Content" runat="server">
+    <div class="portlet x12">
+        <div class="portlet-header">
+            <h4>New import</h4>
+        </div>
+        <div class="portlet-content">
+            <% using (Html.BeginForm("New", "Import", FormMethod.Post, new { @class = "form" })) { %>
+                <%= Html.Partial("StartPartial") %>
+                <div class="buttonrow">
+                    <button type="submit" class="btn">Start</button>
+                </div>
+            <% } %>
+        </div>
+    </div>
     <% var tripsPendingImport = Model.Where(m => !m.IsImported).ToList(); %>
     <% if (tripsPendingImport.Count > 0) { %>
         <div class="portlet x12 Trips">
