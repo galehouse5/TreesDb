@@ -14,6 +14,8 @@ namespace TMD
             public const string HostName = "hostName";
             public const string WebmasterEmail = "webmasterEmail";
             public const string HandleControllerExceptions = "handleControllerExceptions";
+            public const string StaticResourceVersion = "staticResourceVersion";
+            public const string StaticResourceHostname = "staticResourceHostname";
         }
 
         [ConfigurationProperty(PropertyNames.GoogleApiKey, IsRequired = true)]
@@ -42,6 +44,20 @@ namespace TMD
         {
             get { return (bool)this[PropertyNames.HandleControllerExceptions]; }
             set { this[PropertyNames.HandleControllerExceptions] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.StaticResourceVersion, DefaultValue = "")]
+        public string StaticResourceVersion
+        {
+            get { return (string)this[PropertyNames.StaticResourceVersion]; }
+            set { this[PropertyNames.StaticResourceVersion] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.StaticResourceHostname, DefaultValue = "")]
+        public string StaticResourceHostname
+        {
+            get { return (string)this[PropertyNames.StaticResourceHostname]; }
+            set { this[PropertyNames.StaticResourceHostname] = value; }
         }
     }
 }

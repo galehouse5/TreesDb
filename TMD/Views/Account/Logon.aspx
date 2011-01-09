@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Logon" Language="C#" MasterPageFile="~/Views/Shared/Login.Master"  Inherits="System.Web.Mvc.ViewPage<TMD.Models.AccountLogonModel>" %>
 
 <asp:Content ContentPlaceHolderID="Scripts" runat="server">
-    <script type="text/javascript" src="/js/jquery/jquery-1.4.4.min.js"></script>
+    <%= Html.VersionedScript("/js/jquery/jquery-1.4.4.min.js", new { type = "text/javascript" })%>
     <script type="text/javascript">
         $(function () { $('input[type=text]:first').focus(); });
     </script>

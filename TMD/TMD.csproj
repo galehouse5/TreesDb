@@ -114,6 +114,8 @@
     <Compile Include="EmailTemplates\PasswordAssistanceEmail.cs" />
     <Compile Include="EmailTemplates\EmailVerificationEmail.cs" />
     <Compile Include="Extensions\ControllerExtensions.cs" />
+    <Compile Include="Extensions\AttributesExtensions.cs" />
+    <Compile Include="Extensions\StaticResourceExtensions.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Extensions\NHibernateValidatorModelValidatorProvider.cs" />
     <Compile Include="Extensions\ValidationExtensions.cs" />

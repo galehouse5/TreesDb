@@ -2,7 +2,7 @@
 <%@ Import Namespace="TMD.Model.Imports" %>
 
 <asp:Content ContentPlaceHolderID="Styles" runat="server">
-    <link rel="stylesheet" href="/css/Import.css" type="text/css" />
+    <%= Html.VersionedLink("/css/Import.css", new { rel = "stylesheet", type = "text/css" })%>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="Content" runat="server">

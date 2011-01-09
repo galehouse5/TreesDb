@@ -4,16 +4,16 @@
     <head runat="server">
 	    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	    <title>Trees Database</title>
-        <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="/css/screen.css" type="text/css" />	
-	    <link rel="stylesheet" href="/css/plugin.css" type="text/css" />	
-	    <link rel="stylesheet" href="/css/custom.css" type="text/css" />
-        <link rel="stylesheet" href="/css/login.css" type="text/css" />
-        <link rel="Stylesheet" href="/css/jquery/jquery-ui-1.8.7.custom.css" type="text/css" />	
-        <link rel="Stylesheet" href="/css/Theme/Screen.css" type="text/css" />
-        <link rel="Stylesheet" href="/css/Theme/Plugin.css" type="text/css" />
-        <link rel="Stylesheet" href="/css/Theme/Login.css" type="text/css" />
-        <link rel="Stylesheet" href="/css/Shared.css" type="text/css" />
+        <%= Html.VersionedLink("/css/screen.css", new { rel = "shortcut icon", type = "image/x-icon" })%>
+        <%= Html.VersionedLink("/css/screen.css", new { rel = "stylesheet", type = "text/css" })%>	
+	    <%= Html.VersionedLink("/css/plugin.css", new { rel = "stylesheet", type = "text/css" })%>	
+	    <%= Html.VersionedLink("/css/custom.css", new { rel = "stylesheet", type = "text/css" })%>
+        <%= Html.VersionedLink("/css/login.css", new { rel = "stylesheet", type = "text/css" })%>
+        <%= Html.VersionedLink("/css/jquery/jquery-ui-1.8.7.custom.css", new { rel = "stylesheet", type = "text/css" })%>
+        <%= Html.VersionedLink("/css/Theme/Screen.css", new { rel = "stylesheet", type = "text/css" })%>
+        <%= Html.VersionedLink("/css/Theme/Plugin.css", new { rel = "stylesheet", type = "text/css" })%>
+        <%= Html.VersionedLink("/css/Theme/Login.css", new { rel = "stylesheet", type = "text/css" })%>
+        <%= Html.VersionedLink("/css/Shared.css", new { rel = "stylesheet", type = "text/css" })%>
         <asp:ContentPlaceHolder ID="Styles" runat="server"></asp:ContentPlaceHolder>
     </head>
     <body >

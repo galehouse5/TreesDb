@@ -33,7 +33,7 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="Scripts" runat="server">
-    <script type="text/javascript" src="/js/Import/Sites.js"></script>
+    <%= Html.VersionedScript("/js/Import/Sites.js", new { type = "text/javascript" })%>
     <script type="text/javascript">
         $(function () {
             $('body').InitializeSitesUi();
@@ -47,6 +47,6 @@
         });
     </script>
     <%= Html.Action("GoogleMapsScript", "Map") %>
-    <script type="text/javascript" src="/js/Map/Coordinates.js"></script>
-    <script type="text/javascript" src="/js/Map/CoordinatePicker.js"></script>
+    <%= Html.VersionedScript("/js/Map/Coordinates.js", new { type = "text/javascript" })%>
+    <%= Html.VersionedScript("/js/Map/CoordinatePicker.js", new { type = "text/javascript" })%>
 </asp:Content>

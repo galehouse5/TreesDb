@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Complete Password Assistance" Language="C#" MasterPageFile="~/Views/Shared/Login.Master"  Inherits="System.Web.Mvc.ViewPage<CompleteAccountPasswordAssistanceModel>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Scripts" runat="server">
-    <script type="text/javascript" src="/js/jquery/jquery-1.4.4.min.js"></script>
+    <%= Html.VersionedScript("/js/jquery/jquery-1.4.4.min.js", new { type = "text/javascript" })%>
     <script type="text/javascript">
         $(function () { $('input[type=password]:first').focus(); });
     </script>
