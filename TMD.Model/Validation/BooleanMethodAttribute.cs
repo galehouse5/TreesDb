@@ -11,7 +11,6 @@ namespace TMD.Model.Validation
     /// <summary>
     /// Calls a parameterless method by name, expecting a boolean return value for validation.
     /// </summary>
-    [Serializable]
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class BooleanMethodAttribute : EmbeddedRuleArgsAttribute, IValidatorInstanceProvider, IRuleArgs, IValidator
     {

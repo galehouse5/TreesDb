@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 using System.Web.Mvc;
 using TMD.Model.Trees;
 using TMD.Model;
 using TMD.Model.Locations;
+using System.Diagnostics;
+using TMD.Model.Extensions;
 
 namespace TMD.Models
 {
@@ -29,6 +31,34 @@ namespace TMD.Models
         [DisplayName("First measurer")] public string FirstMeasurer { get; set; }
         [DisplayName("Second measurer")] public string SecondMeasurer { get; set; }
         [DisplayName("Third measurer")] public string ThirdMeasurer { get; set; }
+    }
+
+    [DebuggerDisplay("{Action} {Level} with Id {Id}")]
+    public class ImportInnerActionModel : IModelBinder
+    {
+        public enum EntityLevel { Unknown, Trip, Site, Subsite, Tree }
+        public enum EntityAction { Unknown, Add, Save, Edit, Remove, AdvancedEdit }
+
+        public int Id { get; private set; }
+        public EntityAction Action { get; private set; }
+        public EntityLevel Level { get; private set; }
+
+        public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+        {
+            string expression = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).AttemptedValue;
+            string[] parts = expression.Split('.');
+            return new ImportInnerActionModel
+            {
+                Level = parts[0].ParseEnum(EntityLevel.Unknown),
+                Id = Convert.ToInt32(parts[1]),
+                Action = parts[2].ParseEnum(EntityAction.Unknown)
+            };
+        }
+
+        public bool Equals(EntityLevel level, EntityAction action)
+        {
+            return this.Level == level && this.Action == action;
+        }
     }
 
     public class ImportSitesModel

@@ -18,7 +18,6 @@ namespace TMD.Model
         DecimalDegrees = 5
     }
 
-    [Serializable]
     public class Coordinates : ISpecified, ICloneable
     {
         private Coordinates()
@@ -168,7 +167,6 @@ namespace TMD.Model
         }
     }
 
-    [Serializable]
     public class Latitude : ISpecified, ICloneable
     {
         private Latitude()
@@ -319,7 +317,6 @@ namespace TMD.Model
         }
     }
 
-    [Serializable]
     public class Longitude : ISpecified, ICloneable
     {
         private Longitude()

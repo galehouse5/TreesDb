@@ -7,16 +7,15 @@ using NHibernate.Validator.Constraints;
 using NHibernate.Validator.Engine;
 using TMD.Model.Extensions;
 
-namespace TMD.Model.Trips
+namespace TMD.Model.Imports
 {
-    [Serializable]
     [ContextMethod("ValidateHeightOrGirthIsSpecified", Tags = Tag.Screening)]
-    public class TrunkMeasurement : UserCreatedEntityBase
+    public class Trunk : UserCreatedEntityBase
     {
-        protected TrunkMeasurement()
+        protected Trunk()
         { }
 
-        public virtual MultiTrunkTreeMeasurement TreeMeasurement { get; protected set; }
+        public virtual MultiTrunkTree Tree { get; protected set; }
 
         [Valid] public virtual Distance Girth { get; set; }
         [Valid] public virtual Distance GirthMeasurementHeight { get; set; }
@@ -26,8 +25,8 @@ namespace TMD.Model.Trips
         {
             if (!Height.IsSpecified && !Girth.IsSpecified && !HeightMeasurements.IsSpecified)
             {
-                context.AddInvalid<TrunkMeasurement, Distance>("You must specify a height or girth.", tm => tm.Girth);
-                context.AddInvalid<TrunkMeasurement, Distance>("You must specify a height or girth.", tm => tm.Height);
+                context.AddInvalid<Trunk, Distance>("You must specify a height or girth.", tm => tm.Girth);
+                context.AddInvalid<Trunk, Distance>("You must specify a height or girth.", tm => tm.Height);
             }
         }
 
@@ -41,17 +40,17 @@ namespace TMD.Model.Trips
             set { m_TrunkComments = value.OrEmptyAndTrim(); }
         }
 
-        public static TrunkMeasurement Create(MultiTrunkTreeMeasurement mttm)
+        public static Trunk Create(MultiTrunkTree mttm)
         {
-            return new TrunkMeasurement()
+            return new Trunk()
             {
-                TreeMeasurement = mttm,
+                Tree = mttm,
                 Girth = Distance.Null(),
                 GirthMeasurementHeight = Distance.Null(),
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),
                 TrunkComments = string.Empty
-            }.RecordCreation() as TrunkMeasurement;
+            }.RecordCreation() as Trunk;
         }
     }
 }

@@ -18,7 +18,6 @@ namespace TMD.Model
         DecimalCubicYards = 5
     }
 
-    [Serializable]
     public class Volume : ISpecified
     {
         private Volume()

@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Import Trip" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="ViewPageBase<ImportTripModel>" %>
-<%@ Import Namespace="TMD.Model.Trips" %>
+<%@ Import Namespace="TMD.Model.Imports" %>
 
 <asp:Content ContentPlaceHolderID="Steps" runat="server">
     <ol>
@@ -36,9 +36,11 @@
     <script type="text/javascript">
         $(function () {
             if ($('form.Trip .input-validation-error').length > 0) {
-                $('form.Trip .input-validation-error:first').focus();
+                $('form.Trip .input-validation-error:first').focus()
+                    .closest('.Trip').each(function () { $(this).SmoothScrollInFocus(); });
             } else {
-                $('form.Trip input[type=text]:first').focus();
+                $('form.Trip input[type=text]:first').focus()
+                    .closest('.Trip').each(function () { $(this).SmoothScrollInFocus(); });
             }
         });
     </script>

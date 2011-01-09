@@ -7,9 +7,8 @@ using TMD.Model.Validation;
 using TMD.Model.Extensions;
 using NHibernate.Validator.Constraints;
 
-namespace TMD.Model.Trips
+namespace TMD.Model.Imports
 {
-    [Serializable]
     public class Trip : UserCreatedEntityBase
     {
         protected Trip()
@@ -51,23 +50,23 @@ namespace TMD.Model.Trips
         public virtual bool MakeMeasurerContactInfoPublic { get; set; }
 
         [Valid, Size(1, 100, Message = "You must add site visits to your trip.", Tags = Tag.Screening)]
-        public virtual IList<SiteVisit> SiteVisits { get; private set; }
+        public virtual IList<Site> Sites { get; private set; }
 
         [Valid, Size2(1, int.MaxValue, Message = "You must record at least one measurer.", Tags = Tag.Screening)]
         [Size2(0, 3, Message = "You have recorded too many measurers.", Tags = new [] { Tag.Screening, Tag.Persistence })]
         public virtual IList<Measurer> Measurers { get; private set; }
-        
-        public virtual bool IsImported { get; protected internal set; }
-        public virtual DateTime? Imported { get; protected internal set; }
+
+        public virtual bool IsMerged { get { return Merged != null; } }
+        public virtual DateTime? Merged { get; protected internal set; }
 
         public virtual bool CanCalculateCoordinates()
         {
-            return SiteVisits.Where(s => s.CanCalculateCoordinates(true)).Count() > 0;
+            return Sites.Where(s => s.CanCalculateCoordinates(true)).Count() > 0;
         }
 
         public virtual Coordinates CalculateCoordinates()
         {
-            return CoordinateBounds.Create(SiteVisits
+            return CoordinateBounds.Create(Sites
                 .Where(s => s.CanCalculateCoordinates(true)).Select(s => s.CalculateCoordinates(true)))
                 .Center;
         }
@@ -79,16 +78,16 @@ namespace TMD.Model.Trips
         public virtual State DefaultState { get; protected internal set; }
         public virtual string DefaultCounty { get; protected internal set; }
 
-        public virtual SiteVisit AddSiteVisit()
+        public virtual Site AddSite()
         {
-            SiteVisit sv = SiteVisit.Create(this);
-            SiteVisits.Add(sv);
+            Site sv = Site.Create(this);
+            Sites.Add(sv);
             return sv;
         }
 
-        public virtual bool RemoveSiteVisit(SiteVisit sv)
+        public virtual bool RemoveSite(Site sv)
         {
-            return SiteVisits.Remove(sv);
+            return Sites.Remove(sv);
         }
 
         public virtual Measurer AddMeasurer()
@@ -103,21 +102,21 @@ namespace TMD.Model.Trips
             return Measurers.Remove(m);
         }
 
-        public virtual SiteVisit FindSiteVisitById(int id)
+        public virtual Site FindSiteById(int id)
         {
-            return SiteVisits.FirstOrDefault(s => id.Equals(s.Id));
+            return Sites.FirstOrDefault(s => id.Equals(s.Id));
         }
 
-        public virtual SubsiteVisit FindSubsiteVisitById(int id)
+        public virtual Subsite FindSubsiteById(int id)
         {
-            var site = SiteVisits.FirstOrDefault(s => s.FindSubsiteVisitById(id) != null);
-            return site == null ? null : site.FindSubsiteVisitById(id);
+            var site = Sites.FirstOrDefault(s => s.FindSubsiteById(id) != null);
+            return site == null ? null : site.FindSubsiteById(id);
         }
 
-        public virtual TreeMeasurementBase FindTreeMeasurementById(int id)
+        public virtual TreeBase FindTreeById(int id)
         {
-            var site = SiteVisits.FirstOrDefault(s => s.FindTreeMeasurementById(id) != null);
-            return site == null ? null : site.FindTreeMeasurementById(id);
+            var site = Sites.FirstOrDefault(s => s.FindTreeById(id) != null);
+            return site == null ? null : site.FindTreeById(id);
         }
 
         public static Trip Create()
@@ -129,8 +128,7 @@ namespace TMD.Model.Trips
                 Website = string.Empty,
                 PhotosAvailable = false,
                 MeasurerContactInfo = string.Empty,
-                SiteVisits = new List<SiteVisit>(),
-                IsImported = false,
+                Sites = new List<Site>(),
                 Measurers = new List<Measurer>(),
                 DefaultClinometerBrand = string.Empty,
                 DefaultLaserBrand = string.Empty,

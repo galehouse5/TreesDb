@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 using System.IO;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 
 namespace TMD.Model.Photos
 {

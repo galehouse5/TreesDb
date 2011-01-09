@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<TMD.Model.Trips.TreeMeasurementBase>" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<TMD.Model.Imports.TreeBase>" %>
 <%@ Import Namespace="TMD.Model.Photos" %>
 <ul>
     <li><strong><%: Model.ScientificName %></strong></li>

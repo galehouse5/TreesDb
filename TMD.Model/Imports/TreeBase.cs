@@ -11,7 +11,7 @@ using NHibernate.Validator.Engine;
 using System.Drawing;
 using TMD.Model.Photos;
 
-namespace TMD.Model.Trips
+namespace TMD.Model.Imports
 {
     public enum TreeHeightMeasurementMethod
     {
@@ -72,22 +72,21 @@ namespace TMD.Model.Trips
         Vine = 6
     }
 
-    [Serializable]
     [DebuggerDisplay("{ScientificName} ({CommonName})")]
     [ContextMethod("ValidateCanCalculateCoordinates", Tags = Tag.Screening)]
     [ContextMethod("ValidateCoordinatesAreCloseToSubsite", Tags = Tag.Optional)]
-    public abstract class TreeMeasurementBase : UserCreatedEntityBase
+    public abstract class TreeBase : UserCreatedEntityBase
     {
-        protected TreeMeasurementBase()
+        protected TreeBase()
         { }
 
-        public virtual SubsiteVisit SubsiteVisit { get; protected set; }
+        public virtual Subsite Subsite { get; protected set; }
 
         public virtual void SetTripDefaults()
         {
-            SubsiteVisit.SiteVisit.Trip.DefaultHeightMeasurementMethod = HeightMeasurementMethod;
-            SubsiteVisit.SiteVisit.Trip.DefaultLaserBrand = LaserBrand;
-            SubsiteVisit.SiteVisit.Trip.DefaultClinometerBrand = ClinometerBrand;
+            Subsite.Site.Trip.DefaultHeightMeasurementMethod = HeightMeasurementMethod;
+            Subsite.Site.Trip.DefaultLaserBrand = LaserBrand;
+            Subsite.Site.Trip.DefaultClinometerBrand = ClinometerBrand;
         }
 
         /// <summary>
@@ -133,7 +132,7 @@ namespace TMD.Model.Trips
             }
             if (!ignoreContaingSubsite)
             {
-                return SubsiteVisit.CanCalculateCoordinates();
+                return Subsite.CanCalculateCoordinates();
             }
             return false;
         }
@@ -144,9 +143,9 @@ namespace TMD.Model.Trips
             {
                 return Coordinates;
             }
-            if (!ignoreContainingSubsite && SubsiteVisit.CanCalculateCoordinates())
+            if (!ignoreContainingSubsite && Subsite.CanCalculateCoordinates())
             {
-                return SubsiteVisit.CalculateCoordinates();
+                return Subsite.CalculateCoordinates();
             }
             return Coordinates.Null();
         }
@@ -155,17 +154,17 @@ namespace TMD.Model.Trips
         {
             if (!CanCalculateCoordinates())
             {
-                context.AddInvalid<TreeMeasurementBase, Coordinates>("Coordinates must be specified.", tm => tm.Coordinates);
+                context.AddInvalid<TreeBase, Coordinates>("Coordinates must be specified.", tm => tm.Coordinates);
             }
         }
 
         protected internal virtual void ValidateCoordinatesAreCloseToSubsite(IConstraintValidatorContext context)
         {
-            if (CanCalculateCoordinates() && SubsiteVisit.CanCalculateCoordinates())
+            if (CanCalculateCoordinates() && Subsite.CanCalculateCoordinates())
             {
-                if (CalculateCoordinates().CalculateDistanceInMinutesTo(SubsiteVisit.CalculateCoordinates()) > 1f)
+                if (CalculateCoordinates().CalculateDistanceInMinutesTo(Subsite.CalculateCoordinates()) > 1f)
                 {
-                    context.AddInvalid<TreeMeasurementBase, Coordinates>("Coordinates are more than a mile from subsite.", tm => tm.Coordinates);
+                    context.AddInvalid<TreeBase, Coordinates>("Coordinates are more than a mile from subsite.", tm => tm.Coordinates);
                 }
             }
         }
@@ -328,7 +327,7 @@ namespace TMD.Model.Trips
 
         public virtual void AddPhoto(Photo photo)
         {
-            photo.Link = TripPhotoLink.Create(SubsiteVisit.SiteVisit.Trip);
+            photo.Link = ImportPhotoLink.Create(Subsite.Site.Trip);
             Photos.Add(photo);
         }
 

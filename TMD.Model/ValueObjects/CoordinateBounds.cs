@@ -8,7 +8,6 @@ using TMD.Model.Extensions;
 
 namespace TMD.Model
 {
-    [Serializable]
     public class CoordinateBounds : ISpecified
     {
         private float m_MaxLatitude = float.MinValue,

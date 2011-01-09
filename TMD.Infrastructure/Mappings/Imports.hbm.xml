@@ -2,9 +2,9 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
                    assembly="TMD.Model"
                    namespace="TMD.Model"
-                   schema="Trips">
+                   schema="Imports">
 
-  <class name="TMD.Model.Trips.Measurer" table="Measurers">
+  <class name="TMD.Model.Imports.Measurer" table="Measurers">
     <id name="Id">
       <generator class="native"/>
     </id>
@@ -15,11 +15,11 @@
     <property name="LastName"/>
   </class>
 
-  <class name="TMD.Model.Trips.TrunkMeasurement" table="TrunkMeasurements">
+  <class name="TMD.Model.Imports.Trunk" table="Trunks">
     <id name="Id">
       <generator class="native" />
     </id>
-    <many-to-one name="TreeMeasurement" column="TreeMeasurementId" />
+    <many-to-one name="Tree" column="TreeId" />
     <property name="Created" />
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <component name="Girth" class="Distance">
@@ -59,25 +59,25 @@
     <property name="TrunkComments"/>
   </class>
 
-  <subclass name="TMD.Model.Trips.SingleTrunkTreeMeasurement" extends="TMD.Model.Trips.TreeMeasurementBase" discriminator-value="1">
+  <subclass name="TMD.Model.Imports.SingleTrunkTree" extends="TMD.Model.Imports.TreeBase" discriminator-value="1">
   </subclass>
 
-  <subclass name="TMD.Model.Trips.MultiTrunkTreeMeasurement" extends="TMD.Model.Trips.TreeMeasurementBase" discriminator-value="2">
+  <subclass name="TMD.Model.Imports.MultiTrunkTree" extends="TMD.Model.Imports.TreeBase" discriminator-value="2">
     <property name="CombinedGirthNumberOfTrunks" />
-    <bag name="TrunkMeasurements" cascade="all-delete-orphan" inverse="true">
-      <key column="TreeMeasurementId" />
-      <one-to-many class="TMD.Model.Trips.TrunkMeasurement"/>
+    <bag name="Trunks" cascade="all-delete-orphan" inverse="true">
+      <key column="TreeId" />
+      <one-to-many class="TMD.Model.Imports.Trunk"/>
     </bag>
   </subclass>
 
-  <class name="TMD.Model.Trips.TreeMeasurementBase" table="TreeMeasurements" abstract="true">
+  <class name="TMD.Model.Imports.TreeBase" table="Trees" abstract="true">
     <id name="Id">
       <generator class="native"/>
     </id>
     <discriminator column="Type"/>
     <property name="Created" />
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
-    <many-to-one name="SubsiteVisit" column="SubsiteVisitId" />
+    <many-to-one name="Subsite" column="SubsiteId" />
     <property name="TreeName" />
     <property name="TreeNumber" />
     <property name="CommonName"/>
@@ -179,19 +179,19 @@
     <property name="TerrainComments"/>
     <property name="MakeCoordinatesPublic"/>
     <property name="HeightMeasurementMethod" />
-    <bag name="Photos" table="TreeMeasurementPhotos" cascade="all-delete-orphan" >
-      <key column="TreeMeasurementId"></key>
+    <bag name="Photos" table="TreePhotos" cascade="all-delete-orphan" >
+      <key column="TreeId"></key>
       <many-to-many column="PhotoId" class="TMD.Model.Photos.Photo"></many-to-many>
     </bag>
   </class>
 
-  <class name="TMD.Model.Trips.SubsiteVisit" table="SubsiteVisits">
+  <class name="TMD.Model.Imports.Subsite" table="Subsites">
     <id name="Id">
       <generator class="native"/>
     </id>
     <property name="Created" />
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
-    <many-to-one name="SiteVisit" column="SiteVisitId" />
+    <many-to-one name="Site" column="SiteId" />
     <property name="Name" />
     <component name="Coordinates" class="Coordinates">
       <component name="Latitude" class="Latitude">
@@ -209,18 +209,18 @@
     <property name="OwnershipType" />
     <property name="OwnershipContactInfo" />
     <property name="Comments" />
-    <bag name="TreeMeasurements" cascade="all-delete-orphan" inverse="true">
-      <key column="SubsiteVisitId" />
-      <one-to-many class="TMD.Model.Trips.TreeMeasurementBase"/>
+    <bag name="Trees" cascade="all-delete-orphan" inverse="true">
+      <key column="SubsiteId" />
+      <one-to-many class="TMD.Model.Imports.TreeBase"/>
     </bag>
     <property name="MakeOwnershipContactInfoPublic" />
-    <bag name="Photos" table="SubsiteVisitPhotos" cascade="all-delete-orphan" >
-      <key column="SubsiteVisitId"></key>
+    <bag name="Photos" table="SubsitePhotos" cascade="all-delete-orphan" >
+      <key column="SubsiteId"></key>
       <many-to-many column="PhotoId" class="TMD.Model.Photos.Photo"></many-to-many>
     </bag>
   </class>  
   
-  <class name="TMD.Model.Trips.SiteVisit" table="SiteVisits">
+  <class name="TMD.Model.Imports.Site" table="Sites">
     <id name="Id">
       <generator class="native"/>
     </id>
@@ -239,32 +239,31 @@
       </component>
     </component>
     <property name="Comments" />
-    <bag name="SubsiteVisits" cascade="all-delete-orphan" inverse="true">
-      <key column="SiteVisitId" />
-      <one-to-many class="TMD.Model.Trips.SubsiteVisit"/>
+    <bag name="Subsites" cascade="all-delete-orphan" inverse="true">
+      <key column="SiteId" />
+      <one-to-many class="TMD.Model.Imports.Subsite"/>
     </bag>
   </class>
 
-  <class name="TMD.Model.Trips.Trip" table="Trips">
+  <class name="TMD.Model.Imports.Trip" table="Trips">
     <id name="Id">
       <generator class="native"/>
     </id>
     <property name="Created" />
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <property name="Name" />
-    <property name="IsImported" />
-    <property name="Imported" />
+    <property name="Merged" />
     <property name="Date" type="date" />
     <property name="Website" />
     <property name="PhotosAvailable" />
     <property name="MeasurerContactInfo" />
-    <bag name="SiteVisits" cascade="all-delete-orphan" inverse="true">
+    <bag name="Sites" cascade="all-delete-orphan" inverse="true">
       <key column="TripId" />
-      <one-to-many class="TMD.Model.Trips.SiteVisit"/>
+      <one-to-many class="TMD.Model.Imports.Site"/>
     </bag>
     <bag name="Measurers" cascade="all-delete-orphan" inverse="true">
       <key column="TripId" />
-      <one-to-many class="TMD.Model.Trips.Measurer"/>
+      <one-to-many class="TMD.Model.Imports.Measurer"/>
     </bag>
     <property name="DefaultClinometerBrand" />
     <property name="DefaultLaserBrand" />

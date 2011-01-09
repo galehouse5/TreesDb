@@ -97,6 +97,7 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Binders\BinderBase.cs" />
     <Compile Include="Binders\ImportBinders.cs" />
     <Compile Include="Binders\ValueObjectBinders.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -113,7 +114,6 @@
     <Compile Include="EmailTemplates\PasswordAssistanceEmail.cs" />
     <Compile Include="EmailTemplates\EmailVerificationEmail.cs" />
     <Compile Include="Extensions\ControllerExtensions.cs" />
-    <Compile Include="Binders\DefaultGraphModelBinder.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Extensions\NHibernateValidatorModelValidatorProvider.cs" />
     <Compile Include="Extensions\ValidationExtensions.cs" />

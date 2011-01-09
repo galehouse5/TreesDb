@@ -6,6 +6,14 @@ using System.Web.Mvc;
 
 namespace TMD.Binders
 {
+    public class NullModelBinder : IModelBinder
+    {
+        public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+        {
+            return null;
+        }
+    }
+
     /// <summary>
     /// A DefaultModelBinder that can update complex model graphs.
     /// </summary>

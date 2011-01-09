@@ -72,29 +72,33 @@ namespace TMD.Controllers
             {
                 return View(model);
             }
-            User user = Repositories.Users.FindByEmail(model.Email);
-            if (user == null || !user.IsEmailVerified)
+            using (var uow = UnitOfWork.Begin())
             {
-                ModelState.AddModelError("Email", "Invalid email or password.");
-                return View(model);
+                var user = Repositories.Users.FindByEmail(model.Email);
+                if (user == null || !user.IsEmailVerified)
+                {
+                    ModelState.AddModelError("Email", "Invalid email or password.");
+                    return View(model);
+                }
+                if (user.PerformHumanVerification && !captchaValid)
+                {
+                    model.PerformHumanVerification = true;
+                    return View(model);
+                }
+                bool authenticated = user.AttemptLogon(model.Password);
+                Repositories.Users.Save(user);
+                uow.Persist();
+                if (!authenticated)
+                {
+                    ModelState.AddModelError("Email", "Invalid email or password.");
+                    return View(model);
+                }
+                // TODO: decouple from FormsAuthentication class so this controller is unit testable
+                FormsAuthentication.SetAuthCookie(user.Email, model.RememberMe);
+                Session.ClearRegardingUserSpecificData();
+                TempData.AccountMessage = string.Empty;
+                return Redirect(Session.DefaultReturnUrl);
             }
-            if (user.PerformHumanVerification && !captchaValid)
-            {
-                model.PerformHumanVerification = true;
-                return View(model);
-            }
-            bool authenticated = user.AttemptLogon(model.Password);
-            using (UnitOfWork.BeginAndPersist()) { Repositories.Users.Save(user); }
-            if (!authenticated)
-            {
-                ModelState.AddModelError("Email", "Invalid email or password.");
-                return View(model);
-            }
-            // TODO: decouple from FormsAuthentication class so this controller is unit testable
-            FormsAuthentication.SetAuthCookie(user.Email, model.RememberMe);
-            Session.ClearRegardingUserSpecificData();
-            TempData.AccountMessage = string.Empty;
-            return Redirect(Session.DefaultReturnUrl);
         }
 
         public ActionResult Logout()
@@ -112,8 +116,8 @@ namespace TMD.Controllers
             return View(new AccountRegistrationModel { });
         }
 
-        [HttpPost, RecaptchaControlMvc.CaptchaValidator]
-        public ActionResult Register(AccountRegistrationModel model, bool captchaValid)
+        [HttpPost, RecaptchaControlMvc.CaptchaValidator, UnitOfWork]
+        public ActionResult Register(IUnitOfWork uow, AccountRegistrationModel model, bool captchaValid)
         {
             if (!ModelState.IsValid)
             {
@@ -130,29 +134,20 @@ namespace TMD.Controllers
                 model.PerformHumanVerification = true;
                 return View(model);
             }
-            try
+            var existingUser = Repositories.Users.FindByEmail(model.Email);
+            if (existingUser != null)
             {
-                using (UnitOfWork.BeginAndPersist()) { Repositories.Users.Save(user); }
-            }
-            catch (EntityAlreadyExistsException ex)
-            {
-                var existingUser = (Model.Users.User)ex.ExistingEntity;
                 if (existingUser.IsEmailVerified)
                 {
                     ModelState.AddModelError("Email", "You must choose a different email.");
                     return View(model);
                 }
-                else
-                {
-                    using (UnitOfWork.BeginAndPersist()) 
-                    {
-                        user.ReplaceExistingNonEmailVerifiedUser(existingUser);
-                        Repositories.Users.Save(user);
-                    }
-                }
+                user.ReplaceExistingNonEmailVerifiedUser(existingUser);
             }
+            Repositories.Users.Save(user);
+            uow.Persist();
             using (SmtpClient mailClient = new SmtpClient { EnableSsl = true })
-            using (MailMessage mail = EmailVerificationEmail.Create(user, 
+            using (MailMessage mail = EmailVerificationEmail.Create(user,
                 Url.Action("CompleteRegistration", new { token = user.EmailVerificationToken.UrlEncodedValue })))
             {
                 mailClient.Send(mail);
@@ -161,18 +156,17 @@ namespace TMD.Controllers
             return View(model);
         }
 
-        public ActionResult CompleteRegistration(string token)
+        [UnitOfWork]
+        public ActionResult CompleteRegistration(IUnitOfWork uow, string token)
         {
             if (!string.IsNullOrEmpty(token))
             {
-                User user = Repositories.Users.FindByEmailVerificationToken(token);
+                var user = Repositories.Users.FindByEmailVerificationToken(token);
                 if (user != null && !user.IsEmailVerified)
                 {
-                    using (UnitOfWork.BeginAndPersist())
-                    {
-                        user.VerifyEmail(token);
-                        Repositories.Users.Save(user);
-                    }
+                    user.VerifyEmail(token);
+                    Repositories.Users.Save(user);
+                    uow.Persist();
                     return View(true);
                 }
             }
@@ -184,8 +178,8 @@ namespace TMD.Controllers
             return View(new AccountPasswordAssistanceModel { });
         }
 
-        [HttpPost, RecaptchaControlMvc.CaptchaValidator]
-        public ActionResult PasswordAssistance(AccountPasswordAssistanceModel model, bool captchaValid)
+        [HttpPost, RecaptchaControlMvc.CaptchaValidator, UnitOfWork]
+        public ActionResult PasswordAssistance(IUnitOfWork uow, AccountPasswordAssistanceModel model, bool captchaValid)
         {
             if (!ModelState.IsValid)
             {
@@ -200,7 +194,8 @@ namespace TMD.Controllers
             if (user != null)
             {
                 user.GenerateForgottenPasswordAssistanceToken();
-                using (UnitOfWork.BeginAndPersist()) { Repositories.Users.Save(user); }
+                Repositories.Users.Save(user);
+                uow.Persist();
                 using (SmtpClient mailClient = new SmtpClient { EnableSsl = true })
                 using (MailMessage mail = PasswordAssistanceEmail.Create(user,
                     Url.Action("CompletePasswordAssistance", new { token = user.ForgottenPasswordAssistanceToken.UrlEncodedValue })))
@@ -225,8 +220,8 @@ namespace TMD.Controllers
             return View(new CompleteAccountPasswordAssistanceModel { CanCompletePasswordAssistance = false });
         }
 
-        [HttpPost]
-        public ActionResult CompletePasswordAssistance(CompleteAccountPasswordAssistanceModel model, string token)
+        [HttpPost, UnitOfWork]
+        public ActionResult CompletePasswordAssistance(IUnitOfWork uow, CompleteAccountPasswordAssistanceModel model, string token)
         {
             if (!string.IsNullOrEmpty(token))
             {
@@ -238,18 +233,14 @@ namespace TMD.Controllers
                     {
                         return View(model);
                     }
-                    using (UnitOfWork.Begin())
+                    user.ChangePasswordUsingPasswordAssistanceToken(token, model.Password);
+                    this.ValidateMappedModel<Model.Users.User, AccountRegistrationModel>(user, Tag.Screening, Tag.Persistence);
+                    if (!ModelState.IsValid)
                     {
-                        user.ChangePasswordUsingPasswordAssistanceToken(token, model.Password);
-                        this.ValidateMappedModel<Model.Users.User, AccountRegistrationModel>(user, Tag.Screening, Tag.Persistence);
-                        if (!ModelState.IsValid)
-                        {
-                            UnitOfWork.Rollback();
-                            return View(model);
-                        }
-                        UnitOfWork.Persist();
-                        model.AssistanceComplete = true;
+                        return View(model);
                     }
+                    uow.Persist();
+                    model.AssistanceComplete = true;
                 }
             }
             return View(model);
@@ -261,8 +252,8 @@ namespace TMD.Controllers
             return View(Mapper.Map<User, AccountEditModel>(User));
         }
 
-        [HttpPost, AuthorizeUser]
-        public ActionResult Edit(AccountEditModel model)
+        [HttpPost, AuthorizeUser, UnitOfWork]
+        public ActionResult Edit(IUnitOfWork uow, AccountEditModel model)
         {
             if (model.EditingPassword)
             {
@@ -275,18 +266,15 @@ namespace TMD.Controllers
                     ModelState.AddModelError("Password.ExistingPassword", "Invalid password."); 
                     return View(Mapper.Map<User, AccountEditModel>(User));
                 }
-                using (UnitOfWork.Begin())
+                User.ChangePasswordUsingExistingPassword(model.Password.ExistingPassword, model.Password.NewPassword);
+                this.ValidateMappedModel<User, AccountEditModel>(User, Tag.Screening, Tag.Persistence);
+                if (!ModelState.IsValid)
                 {
-                    User.ChangePasswordUsingExistingPassword(model.Password.ExistingPassword, model.Password.NewPassword);
-                    this.ValidateMappedModel<User, AccountEditModel>(User, Tag.Screening, Tag.Persistence);
-                    if (!ModelState.IsValid)
-                    {
-                        return View(Mapper.Map<User, AccountEditModel>(User));
-                    }
-                    UnitOfWork.Persist();
-                    TempData.AccountMessage = "Your password has been changed.";
-                    return Redirect(Session.DefaultReturnUrl);
+                    return View(Mapper.Map<User, AccountEditModel>(User));
                 }
+                uow.Persist();
+                TempData.AccountMessage = "Your password has been changed.";
+                return Redirect(Session.DefaultReturnUrl);
             }
             if (model.EditingDetails)
             {
@@ -302,7 +290,7 @@ namespace TMD.Controllers
                     {
                         return View(model);
                     }
-                    UnitOfWork.Persist();
+                    uow.Persist();
                     TempData.AccountMessage = "Your account has been saved.";
                     return Redirect(Session.DefaultReturnUrl);
                 }

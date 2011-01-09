@@ -7,7 +7,6 @@ using TMD.Model.Extensions;
 
 namespace TMD.Model.Locations
 {
-    [Serializable]
     [DebuggerDisplay("{Code}")]
     public class Country : IEntity
     {

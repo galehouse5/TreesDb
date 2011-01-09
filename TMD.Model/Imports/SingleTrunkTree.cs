@@ -9,13 +9,12 @@ using System.ComponentModel.DataAnnotations;
 using TMD.Model.Extensions;
 using TMD.Model.Photos;
 
-namespace TMD.Model.Trips
+namespace TMD.Model.Imports
 {
-    [Serializable]
     [DebuggerDisplay("{ScientificName} (single trunk)")]
-    public class SingleTrunkTreeMeasurement : TreeMeasurementBase
+    public class SingleTrunkTree : TreeBase
     {
-        protected SingleTrunkTreeMeasurement()
+        protected SingleTrunkTree()
         { }
 
         public override TreeFormType FormType
@@ -30,9 +29,9 @@ namespace TMD.Model.Trips
             set {}
         }
 
-        internal static SingleTrunkTreeMeasurement Create(SubsiteVisit ssv)
+        internal static SingleTrunkTree Create(Subsite ssv)
         {
-            return new SingleTrunkTreeMeasurement
+            return new SingleTrunkTree
             {
                 TreeName = string.Empty,
                 TreeNumber = null,
@@ -48,10 +47,10 @@ namespace TMD.Model.Trips
                 Elevation = Elevation.Null(),
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),
-                HeightMeasurementMethod = ssv.SiteVisit.Trip.DefaultHeightMeasurementMethod,
+                HeightMeasurementMethod = ssv.Site.Trip.DefaultHeightMeasurementMethod,
                 HeightMeasurementType = string.Empty,
-                LaserBrand = ssv.SiteVisit.Trip.DefaultLaserBrand,
-                ClinometerBrand = ssv.SiteVisit.Trip.DefaultClinometerBrand,
+                LaserBrand = ssv.Site.Trip.DefaultLaserBrand,
+                ClinometerBrand = ssv.Site.Trip.DefaultClinometerBrand,
                 HeightComments = string.Empty,
                 Girth = Distance.Null(),
                 GirthMeasurementHeight = Distance.Null(),
@@ -73,10 +72,10 @@ namespace TMD.Model.Trips
                 TerrainShapeIndex = null,
                 LandformIndex = null,
                 TerrainComments = string.Empty,
-                SubsiteVisit = ssv,
+                Subsite = ssv,
                 MakeCoordinatesPublic = true,
                 Photos = new List<Photo>()
-            }.RecordCreation() as SingleTrunkTreeMeasurement;
+            }.RecordCreation() as SingleTrunkTree;
         }
     }
 }

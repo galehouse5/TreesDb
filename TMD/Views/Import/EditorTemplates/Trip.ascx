@@ -1,8 +1,8 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Trip>" %>
-<%@ Import Namespace="TMD.Model.Trips" %>
+<%@ Import Namespace="TMD.Model.Imports" %>
 <div class="portlet x12 Trip">
     <div class="portlet-header Trip-Header Entity-Header">
-        <% if (Model.IsImported) { %>
+        <% if (Model.IsMerged) { %>
             <h4><%: Model.Name %>&nbsp;</h4>
             <div class="actions">
                 <%= Html.ActionLink("View", "View", "Import", new { id = Model.Id }, new { @class = "btn btn-orange btn-small" })%>
@@ -21,9 +21,9 @@
             <% if (Model.Date.HasValue) { %>
                 <li><strong>Visited:</strong><%= Model.Date.Value.ToString("MM/dd/yyyy")%></li>
             <% } %>
-            <% if (Model.SiteVisits.Count > 0) { %>
+            <% if (Model.Sites.Count > 0) { %>
                 <li><strong>Sites:</strong><ul>
-                <% foreach (SiteVisit sv in Model.SiteVisits) { %>
+                <% foreach (var sv in Model.Sites) { %>
                     <li><%: sv.Name %></li>
                 <% } %>
                 </ul></li>

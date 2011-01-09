@@ -18,7 +18,6 @@ namespace TMD.Model
         DecimalYards = 5
     }
 
-    [Serializable]
     public class Elevation : ISpecified
     {
         private Elevation()

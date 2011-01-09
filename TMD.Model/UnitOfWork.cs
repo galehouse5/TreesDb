@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using StructureMap;
+using System.Data;
 
 namespace TMD.Model
 {
     public interface IUnitOfWorkProvider : IDisposable
     {
-        void Initialize();
-        IDisposable Begin();
+        IUnitOfWork Begin();
+        IUnitOfWork Begin(IsolationLevel isolationLevel);
+    }
+
+    public interface IUnitOfWork : IDisposable
+    {
         void Persist();
         void Rollback();
-        bool IsActive { get; }
-        void Flush();
     }
 
     public static class UnitOfWork
@@ -23,58 +26,19 @@ namespace TMD.Model
             get { return ObjectFactory.GetInstance<IUnitOfWorkProvider>(); }
         }
 
-        public static void Initialize()
-        {
-            Provider.Initialize();
-        }
-
-        public static IDisposable Begin()
+        public static IUnitOfWork Begin()
         {
             return Provider.Begin();
         }
 
-        public static IDisposable BeginAndPersist()
+        public static IUnitOfWork Begin(IsolationLevel isolationLevel)
         {
-            return new PersistUnitOfWorkDecorator
-            {
-                Next = Provider.Begin(),
-                Provider = Provider
-            };
-        }
-
-        public static void Persist()
-        {
-            Provider.Persist();
-        }
-
-        public static void Rollback()
-        {
-            Provider.Rollback();
+            return Provider.Begin(isolationLevel);
         }
 
         public static void Dispose()
         {
             Provider.Dispose();
-        }
-
-        public static void Flush()
-        {
-            Provider.Flush();
-        }
-    }
-
-    internal class PersistUnitOfWorkDecorator : IDisposable
-    {
-        public IDisposable Next { get; set; }
-        public IUnitOfWorkProvider Provider { get; set; }
-
-        public void Dispose()
-        {
-            if (Provider.IsActive)
-            {
-                Provider.Persist();
-            }
-            Next.Dispose();
         }
     }
 }

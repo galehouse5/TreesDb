@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="Import History" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IList<Trip>>" %>
-<%@ Import Namespace="TMD.Model.Trips" %>
+<%@ Import Namespace="TMD.Model.Imports" %>
 
 <asp:Content ContentPlaceHolderID="Styles" runat="server">
     <link rel="stylesheet" href="/css/Import.css" type="text/css" />
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <% var tripsPendingImport = Model.Where(m => !m.IsImported).ToList(); %>
+    <% var tripsPendingImport = Model.Where(m => !m.IsMerged).ToList(); %>
     <% if (tripsPendingImport.Count > 0) { %>
         <div class="portlet x12 Trips">
             <div class="portlet-header">
@@ -21,7 +21,7 @@
             </div>
         </div>
     <% } %>
-    <% var importedTrips = Model.Where(m => m.IsImported).ToList(); %>
+    <% var importedTrips = Model.Where(m => m.IsMerged).ToList(); %>
     <% if (importedTrips.Count > 0) { %>
         <div class="portlet x12 Trips">
             <div class="portlet-header">

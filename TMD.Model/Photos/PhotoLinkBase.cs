@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 using TMD.Model.Users;
 
 namespace TMD.Model.Photos
@@ -30,9 +30,9 @@ namespace TMD.Model.Photos
         }
     }
 
-    public class TripPhotoLink : PhotoLinkBase
+    public class ImportPhotoLink : PhotoLinkBase
     {
-        protected TripPhotoLink()
+        protected ImportPhotoLink()
         { }
 
         public virtual Trip Trip { get; private set; }
@@ -40,9 +40,9 @@ namespace TMD.Model.Photos
         public override bool IsAuthorizedToAdd(Photo photo, User user) { return user.IsAuthorizedToEdit(Trip); }
         public override bool IsAuthorizedToRemove(Photo photo, User user) { return user.IsAuthorizedToEdit(Trip); }
 
-        internal static TripPhotoLink Create(Trip trip)
+        internal static ImportPhotoLink Create(Trip trip)
         {
-            return new TripPhotoLink
+            return new ImportPhotoLink
             {
                 Trip = trip
             };

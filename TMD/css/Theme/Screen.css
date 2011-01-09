@@ -45,6 +45,7 @@ h2.accordion_panel a { color: #255648; }
 .layout-sidebar #nav a { color: #255648;}
 .portlet-header h4 { color: #255648; }
 .portlet-tab-nav .portlet-tab-nav-active { background-color: #255648 !important; }
+.portlet-header { cursor: inherit; }
 
 /* /css/screen/mega.css */
 .mega-menu li a { color: #327487; }

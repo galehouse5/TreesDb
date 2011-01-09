@@ -20,7 +20,7 @@ namespace TMD.UnitTests
             ObjectFactory.Initialize(x =>
             {
                 x.AddRegistry(new RepositoryRegistry());
-                x.For<IUnitOfWorkProvider>().Singleton().Use<NHibernateUnitOfWorkProvider>().OnCreation(uow => uow.Initialize());
+                x.For<IUnitOfWorkProvider>().Singleton().Use<NHibernateUnitOfWorkProvider>();
                 x.For<IUserSessionProvider>().Singleton().Use<FakeUserSessionProvider>();
             });
         }

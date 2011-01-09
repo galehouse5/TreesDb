@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Photos;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 using NHibernate;
 using NHibernate.Type;
 using NHibernate.Event;

@@ -10,22 +10,21 @@ using NHibernate.Validator.Constraints;
 using TMD.Model.Photos;
 using System.Drawing;
 
-namespace TMD.Model.Trips
+namespace TMD.Model.Imports
 {
-    [Serializable]
     [DebuggerDisplay("{Name}")]
-    public class SubsiteVisit : UserCreatedEntityBase
+    public class Subsite : UserCreatedEntityBase
     {
-        protected SubsiteVisit()
+        protected Subsite()
         { }
 
-        public virtual SiteVisit SiteVisit { get; private set; }
+        public virtual Site Site { get; private set; }
 
         public virtual void SetTripDefaults()
         {
-            SiteVisit.Trip.DefaultCountry = Country;
-            SiteVisit.Trip.DefaultState = State;
-            SiteVisit.Trip.DefaultCounty = County;
+            Site.Trip.DefaultCountry = Country;
+            Site.Trip.DefaultState = State;
+            Site.Trip.DefaultCounty = County;
         }
 
         private string m_Name;
@@ -46,13 +45,13 @@ namespace TMD.Model.Trips
             {
                 return true;
             }
-            if (TreeMeasurements.Where(tm => tm.CanCalculateCoordinates(true)).Count() > 0)
+            if (Trees.Where(tm => tm.CanCalculateCoordinates(true)).Count() > 0)
             {
                 return true;
             }
             if (!ignoreContainingSite)
             {
-                return SiteVisit.CanCalculateCoordinates();
+                return Site.CanCalculateCoordinates();
             }
             return false;
         }
@@ -63,15 +62,15 @@ namespace TMD.Model.Trips
             {
                 return Coordinates;
             }
-            var bounds = CoordinateBounds.Create(TreeMeasurements
+            var bounds = CoordinateBounds.Create(Trees
                 .Where(tm => tm.CanCalculateCoordinates(true)).Select(tm => tm.CalculateCoordinates(true)));
             if (bounds.IsSpecified)
             {
                 return bounds.Center;
             }
-            if (!ignoreContainingSite && SiteVisit.CanCalculateCoordinates())
+            if (!ignoreContainingSite && Site.CanCalculateCoordinates())
             {
-                return SiteVisit.CalculateCoordinates();
+                return Site.CalculateCoordinates();
             }
             return Coordinates.Null();
         }
@@ -127,30 +126,30 @@ namespace TMD.Model.Trips
         [Valid]
         [Size2(1, int.MaxValue, Message = "You must add tree measurements to this subsite.", Tags = Tag.Screening)]
         [Size2(0, 10000, Message = "This subsite contains too many tree measurements.", Tags = Tag.Screening)]
-        public virtual IList<TreeMeasurementBase> TreeMeasurements { get; private set; }
+        public virtual IList<TreeBase> Trees { get; private set; }
 
-        public virtual SingleTrunkTreeMeasurement AddSingleTrunkTreeMeasurement()
+        public virtual SingleTrunkTree AddSingleTrunkTree()
         {
-            var tree = SingleTrunkTreeMeasurement.Create(this);
-            TreeMeasurements.Add(tree);
+            var tree = SingleTrunkTree.Create(this);
+            Trees.Add(tree);
             return tree;
         }
 
-        public virtual MultiTrunkTreeMeasurement AddMultiTrunkTreeMeasurement()
+        public virtual MultiTrunkTree AddMultiTrunkTree()
         {
-            var tree = MultiTrunkTreeMeasurement.Create(this);
-            TreeMeasurements.Add(tree);
+            var tree = MultiTrunkTree.Create(this);
+            Trees.Add(tree);
             return tree;
         }
 
-        public virtual bool RemoveTreeMeasurement(TreeMeasurementBase tm)
+        public virtual bool RemoveTree(TreeBase tm)
         {
-            return TreeMeasurements.Remove(tm);
+            return Trees.Remove(tm);
         }
 
-        public virtual TreeMeasurementBase FindTreeMeasurementById(int id)
+        public virtual TreeBase FindTreeById(int id)
         {
-            return TreeMeasurements.FirstOrDefault(tm => id.Equals(tm.Id));
+            return Trees.FirstOrDefault(tm => id.Equals(tm.Id));
         }
 
         [Size2(0, 100, Message = "This subsite contains too many photos.", Tags = Tag.Screening)]
@@ -158,7 +157,7 @@ namespace TMD.Model.Trips
 
         public virtual void AddPhoto(Photo photo)
         {
-            photo.Link = TripPhotoLink.Create(SiteVisit.Trip);
+            photo.Link = ImportPhotoLink.Create(Site.Trip);
             Photos.Add(photo);
         }
 
@@ -167,23 +166,23 @@ namespace TMD.Model.Trips
             return Photos.Remove(photo);
         }
 
-        internal static SubsiteVisit Create(SiteVisit sv)
+        internal static Subsite Create(Site sv)
         {
-            return new SubsiteVisit
+            return new Subsite
             {
                 Name = string.Empty,
                 Coordinates = Coordinates.Null(),
                 OwnershipType = string.Empty,
                 OwnershipContactInfo = string.Empty,
                 Comments = string.Empty,
-                TreeMeasurements = new List<TreeMeasurementBase>(),
+                Trees = new List<TreeBase>(),
                 Country = sv.Trip.DefaultCountry,
                 State = sv.Trip.DefaultState,
                 County = sv.Trip.DefaultCounty,
-                SiteVisit = sv,
+                Site = sv,
                 MakeOwnershipContactInfoPublic = true,
                 Photos = new List<Photo>()
-            }.RecordCreation() as SubsiteVisit;
+            }.RecordCreation() as Subsite;
         }
     }
 }

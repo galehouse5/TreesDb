@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using TMD.Model;
 using TMD.Extensions;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 using TMD.Model.Locations;
 using Recaptcha;
 using TMD.Controllers;
@@ -60,13 +60,8 @@ namespace TMD
             RegisterRoutes(RouteTable.Routes);
 
             ModelBinders.Binders.DefaultBinder = new DefaultGraphModelBinder();
-            ModelBinders.Binders.Add(typeof(Coordinates), new CoordinatesModelBinder());
-            ModelBinders.Binders.Add(typeof(State), new StateModelBinder());
-            ModelBinders.Binders.Add(typeof(Country), new CountryModelBinder());
-            ModelBinders.Binders.Add(typeof(Elevation), new ElevationModelBinder());
-            ModelBinders.Binders.Add(typeof(Distance), new DistanceModelBinder());
-            ModelBinders.Binders.Add(typeof(Volume), new VolumeModelBinder());
-            ModelBinders.Binders.Add(typeof(HeightMeasurements), new HeightMeasurementModelBinder());
+            ModelBinders.Binders.Add(typeof(IUnitOfWork), new NullModelBinder());
+            new ValueObjectBinders().Bind(ModelBinders.Binders);
 
             ControllerBuilder.Current.SetControllerFactory(typeof(ControllerFactory));
             
@@ -82,7 +77,7 @@ namespace TMD
             ObjectFactory.Initialize(x =>
             {
                 x.AddRegistry(new RepositoryRegistry());
-                x.For<IUnitOfWorkProvider>().HttpContextScoped().Use<NHibernateUnitOfWorkProvider>().OnCreation(uow => uow.Initialize());
+                x.For<IUnitOfWorkProvider>().HttpContextScoped().Use<NHibernateUnitOfWorkProvider>();
                 x.For<IUserSessionProvider>().Singleton().Use<WebUserSessionProvider>();
             });
         }

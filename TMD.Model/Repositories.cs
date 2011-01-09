@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using TMD.Model.Users;
 using StructureMap;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 using TMD.Model.Locations;
 using TMD.Model.Trees;
 using TMD.Model.Photos;
@@ -23,9 +23,9 @@ namespace TMD.Model
             get { return ObjectFactory.GetInstance<ITreeRepository>(); }
         }
 
-        public static TripRepository Trips
+        public static ImportRepository Trips
         {
-            get { return ObjectFactory.GetInstance<TripRepository>(); }
+            get { return ObjectFactory.GetInstance<ImportRepository>(); }
         }
 
         public static UserRepository Users

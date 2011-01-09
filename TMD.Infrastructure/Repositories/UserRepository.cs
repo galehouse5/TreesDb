@@ -34,24 +34,7 @@ namespace TMD.Infrastructure.Repositories
 
         protected override void InternalSave(User u)
         {
-            try
-            {
-                Registry.Session.SaveOrUpdate(u);
-            }
-            catch (GenericADOException ex)
-            {
-                if (ex.InnerException != null && ex.InnerException.Message.Contains("duplicate"))
-                {
-                    UnitOfWork.Dispose(); UnitOfWork.Initialize();
-                    User existingUser = FindByEmail(u.Email);
-                    if (existingUser != null)
-                    {
-                        throw new EntityAlreadyExistsException(u, existingUser, string.Format(
-                            "A user already exists with the email '{0}'.", u.Email));
-                    }
-                }
-                throw;
-            }
+            Registry.Session.SaveOrUpdate(u);
         }
 
         public override void Remove(User u)

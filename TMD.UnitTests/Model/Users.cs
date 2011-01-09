@@ -14,7 +14,7 @@ namespace TMD.UnitTests.Model
     public class Users
     {
         [TestMethod]
-        public void VerifyPassword()
+        public void VerifysPassword()
         {
             Password p = Password.Create("Galehouse5!", "abc123");
             Assert.IsFalse(p.VerifyPassword("dfjkgjkl;dfgh", "abc123"));
@@ -22,16 +22,7 @@ namespace TMD.UnitTests.Model
         }
 
         [TestMethod]
-        public void ValidatePassword()
-        {
-            Assert.AreEqual(3, Password.Validate("<").Count());
-            Assert.AreEqual(2, Password.Validate("a").Count());
-            Assert.AreEqual(1, Password.Validate("aaaaaaaaaa").Count());
-            Assert.AreEqual(0, Password.Validate("aaaaaaaaaaA1!").Count());
-        }
-
-        [TestMethod]
-        public void GenerateRandomPassword()
+        public void GeneratesRandomPassword()
         {
             string randomPassword = Password.GenerateRandomPassword(10);
             Assert.IsTrue(randomPassword.Length == 10);
@@ -40,7 +31,7 @@ namespace TMD.UnitTests.Model
         }
 
         [TestMethod]
-        public void CreatePassword()
+        public void CreatesPassword()
         {
             Password p = Password.Create("Galehouse5!", "abc123");
             Assert.IsTrue(p.Length == 11);
@@ -53,7 +44,7 @@ namespace TMD.UnitTests.Model
         }
 
         [TestMethod]
-        public void EncodeAndDecodeSecureToken()
+        public void EncodesAndDecodeSecureToken()
         {
             SecureToken fpt = SecureToken.Create();
             string urlEncodedToken = fpt.UrlEncodedValue;
@@ -65,37 +56,36 @@ namespace TMD.UnitTests.Model
         }
 
         [TestMethod]
-        public void SaveFindAndRemove()
+        public void SavesFindsAndRemoves()
         {
-            Assert.IsTrue(Password.Validate("Aa!1Aa!1Aa!1").IsValid());
-            User u = User.Create("tmdtest@treesdb.org", "Aa!1Aa!1Aa!1");
-            using (UnitOfWork.Begin())
+            var u = User.Create("tmdtest@treesdb.org", "Aa!1Aa!1Aa!1");
+            using (var uow = UnitOfWork.Begin())
             {
                 Repositories.Users.Save(u);
-                UnitOfWork.Persist();
+                uow.Persist();
             }
-            User u2 = Repositories.Users.FindByEmail("TMDtest@treesdb.org");
-            Assert.AreEqual(u, u2);
-            User u3 = Repositories.Users.FindByEmailVerificationToken(u.EmailVerificationToken.UrlEncodedValue);
-            Assert.AreEqual(u, u3);
-            u.GenerateForgottenPasswordAssistanceToken();
-            using (UnitOfWork.Begin())
+            using (var uow = UnitOfWork.Begin())
             {
+                var u2 = Repositories.Users.FindByEmail("TMDtest@treesdb.org");
+                Assert.AreEqual(u, u2);
+                var u3 = Repositories.Users.FindByEmailVerificationToken(u.EmailVerificationToken.UrlEncodedValue);
+                Assert.AreEqual(u, u3);
+                u.GenerateForgottenPasswordAssistanceToken();
                 Repositories.Users.Save(u);
-                UnitOfWork.Persist();
+                uow.Persist();
             }
-            Assert.IsTrue(u.IsForgottenPasswordAssistanceTokenValid);
-            User u4 = Repositories.Users.FindByForgottenPasswordAssistanceToken(u.ForgottenPasswordAssistanceToken.UrlEncodedValue);
-            Assert.AreEqual(u, u4);
-            using (UnitOfWork.Begin())
+            using (var uow = UnitOfWork.Begin())
             {
+                Assert.IsTrue(u.IsForgottenPasswordAssistanceTokenValid);
+                var u4 = Repositories.Users.FindByForgottenPasswordAssistanceToken(u.ForgottenPasswordAssistanceToken.UrlEncodedValue);
+                Assert.AreEqual(u, u4);
                 Repositories.Users.Remove(u);
-                UnitOfWork.Persist();
+                uow.Persist();
             }
         }
 
         [TestMethod]
-        public void PerformHumanVerification()
+        public void PerformsHumanVerification()
         {
             User u = User.Create("email", "password");
 

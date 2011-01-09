@@ -37,7 +37,7 @@
     </id>
     <discriminator column="Type"/>
     <subclass name="PublicPhotoLink" discriminator-value="1"></subclass>
-    <subclass name="TripPhotoLink" discriminator-value="2">
+    <subclass name="ImportPhotoLink" discriminator-value="2">
       <many-to-one name="Trip" column="TripId"></many-to-one>
     </subclass>
   </class>

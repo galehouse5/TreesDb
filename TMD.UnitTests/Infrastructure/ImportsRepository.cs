@@ -3,7 +3,7 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 using TMD.Model;
 using TMD.Model.Locations;
 using TMD.UnitTests.Extensions;
@@ -12,36 +12,67 @@ using TMD.Model.Photos;
 namespace TMD.UnitTests.Infrastructure
 {
     [TestClass]
-    public class TripsRepository
+    public class ImportsRepository
     {
         [TestMethod]
         public void PersistsTrip()
-        {            
-            Trip t = Trip.Create();
-            t.MeasurerContactInfo = "measurer contact info";
-            t.Name = "name";
-            t.PhotosAvailable = true;
-            t.Website = "website";
-            t.Date = DateTime.Now;
-
-            using (UnitOfWork.Begin())
+        {
+            Trip trip = Trip.Create();
+            trip.MeasurerContactInfo = "measurer contact info";
+            trip.Name = "name";
+            trip.PhotosAvailable = true;
+            trip.Website = "website";
+            trip.Date = DateTime.Now;
+            using (var uow = UnitOfWork.Begin())
             {
-                Repositories.Trips.Save(t);
-                UnitOfWork.Persist();
+                Repositories.Trips.Save(trip);
+                uow.Persist();
             }
-            
-            Trip found = Repositories.Trips.FindById(t.Id);
-            Assert.IsNotNull(found);
-            
-            using (UnitOfWork.Begin())
+            UnitOfWork.Dispose();
+            using (var uow = UnitOfWork.Begin())
             {
-                Repositories.Trips.Remove(t);
-                UnitOfWork.Persist();
+                var found = Repositories.Trips.FindById(trip.Id);
+                Assert.IsNotNull(found);
+                Repositories.Trips.Remove(found);
+                uow.Persist();
             }
         }
 
         [TestMethod]
-        public void PersistsSiteVisits()
+        public void PersistsSites()
+        {
+            Trip trip = Trip.Create();
+            trip.MeasurerContactInfo = "measurer contact info";
+            trip.Name = "name";
+            trip.PhotosAvailable = true;
+            trip.Website = "website";
+            trip.Date = DateTime.Now;
+
+            Site sv1 = trip.AddSite();
+            sv1.Name = "site visit 1 name";
+            sv1.Comments = "site visit 1 comments";
+            Site sv2 = trip.AddSite();
+            sv2.Name = "site visit 2 name";
+            sv2.Comments = "site visit 2 comments";
+
+            using (var uow = UnitOfWork.Begin())
+            {
+                Repositories.Trips.Save(trip);
+                uow.Persist();
+            }
+            UnitOfWork.Dispose();
+            using (var uow = UnitOfWork.Begin())
+            {
+                var found = Repositories.Trips.FindById(trip.Id);
+                Assert.IsNotNull(found);
+                Assert.IsTrue(found.Sites.Count == 2);
+                Repositories.Trips.Remove(found);
+                uow.Persist();
+            }
+        }
+
+        [TestMethod]
+        public void PersistsSubsites()
         {
             Trip t = Trip.Create();
             t.MeasurerContactInfo = "measurer contact info";
@@ -50,48 +81,14 @@ namespace TMD.UnitTests.Infrastructure
             t.Website = "website";
             t.Date = DateTime.Now;
 
-            SiteVisit sv1 = t.AddSiteVisit();
+            Site sv1 = t.AddSite();
             sv1.Name = "site visit 1 name";
             sv1.Comments = "site visit 1 comments";
-            SiteVisit sv2 = t.AddSiteVisit();
+            Site sv2 = t.AddSite();
             sv2.Name = "site visit 2 name";
             sv2.Comments = "site visit 2 comments";
 
-            using (UnitOfWork.Begin())
-            {
-                Repositories.Trips.Save(t);
-                UnitOfWork.Persist();
-            }
-
-            Trip found = Repositories.Trips.FindById(t.Id);
-            Assert.IsNotNull(found);
-            Assert.IsTrue(found.SiteVisits.Count == 2);
-
-            using (UnitOfWork.Begin())
-            {
-                Repositories.Trips.Remove(t);
-                UnitOfWork.Persist();
-            }
-        }
-
-        [TestMethod]
-        public void PersistsSubsiteVisits()
-        {
-            Trip t = Trip.Create();
-            t.MeasurerContactInfo = "measurer contact info";
-            t.Name = "name";
-            t.PhotosAvailable = true;
-            t.Website = "website";
-            t.Date = DateTime.Now;
-
-            SiteVisit sv1 = t.AddSiteVisit();
-            sv1.Name = "site visit 1 name";
-            sv1.Comments = "site visit 1 comments";
-            SiteVisit sv2 = t.AddSiteVisit();
-            sv2.Name = "site visit 2 name";
-            sv2.Comments = "site visit 2 comments";
-
-            SubsiteVisit ssv1 = sv2.AddSubsiteVisit();
+            Subsite ssv1 = sv2.AddSubsite();
             ssv1.Comments = "subsite visit 1 comments";
             ssv1.Country = Repositories.Locations.FindCountryByCode("US");
             ssv1.County = "subsite visit 1 county";
@@ -99,7 +96,7 @@ namespace TMD.UnitTests.Infrastructure
             ssv1.OwnershipContactInfo = "subsite visit 1 ownership contact info";
             ssv1.OwnershipType = "subsite visit 1 ownership type";
             ssv1.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
-            SubsiteVisit ssv2 = sv2.AddSubsiteVisit();
+            Subsite ssv2 = sv2.AddSubsite();
             ssv2.Comments = "subsite visit 2 comments";
             ssv2.Country = Repositories.Locations.FindCountryByCode("US");
             ssv2.County = "subsite visit 2 county";
@@ -108,26 +105,25 @@ namespace TMD.UnitTests.Infrastructure
             ssv2.OwnershipType = "subsite visit 2 ownership type";
             ssv2.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
             
-            using (UnitOfWork.Begin())
+            using (var uow = UnitOfWork.Begin())
             {
                 Repositories.Trips.Save(t);
-                UnitOfWork.Persist();
+                uow.Persist();
             }
-
-            Trip found = Repositories.Trips.FindById(t.Id);
-            Assert.IsNotNull(found);
-            Assert.IsTrue(found.SiteVisits.Count == 2);
-            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits.Count == 2);
-
-            using (UnitOfWork.Begin())
+            UnitOfWork.Dispose();
+            using (var uow = UnitOfWork.Begin())
             {
-                Repositories.Trips.Remove(t);
-                UnitOfWork.Persist();
+                Trip found = Repositories.Trips.FindById(t.Id);
+                Assert.IsNotNull(found);
+                Assert.IsTrue(found.Sites.Count == 2);
+                Assert.IsTrue(found.Sites[1].Subsites.Count == 2);
+                Repositories.Trips.Remove(found);
+                uow.Persist();
             }
         }
 
         [TestMethod]
-        public void PersistsTreeMeasurements()
+        public void PersistsTrees()
         {
             Trip t = Trip.Create();
             t.MeasurerContactInfo = "measurer contact info";
@@ -142,14 +138,14 @@ namespace TMD.UnitTests.Infrastructure
             tmeasurer2.FirstName = "tree measurer 2 first name";
             tmeasurer2.LastName = "tree measurer 2 last name";
 
-            SiteVisit sv1 = t.AddSiteVisit();
+            Site sv1 = t.AddSite();
             sv1.Name = "site visit 1 name";
             sv1.Comments = "site visit 1 comments";
-            SiteVisit sv2 = t.AddSiteVisit();
+            Site sv2 = t.AddSite();
             sv2.Name = "site visit 2 name";
             sv2.Comments = "site visit 2 comments";
 
-            SubsiteVisit ssv1 = sv2.AddSubsiteVisit();
+            Subsite ssv1 = sv2.AddSubsite();
             ssv1.Comments = "subsite visit 1 comments";
             ssv1.Country = Repositories.Locations.FindCountryByCode("US");
             ssv1.County = "subsite visit 1 county";
@@ -157,7 +153,7 @@ namespace TMD.UnitTests.Infrastructure
             ssv1.OwnershipContactInfo = "subsite visit 1 ownership contact info";
             ssv1.OwnershipType = "subsite visit 1 ownership type";
             ssv1.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
-            SubsiteVisit ssv2 = sv2.AddSubsiteVisit();
+            Subsite ssv2 = sv2.AddSubsite();
             ssv2.Comments = "subsite visit 2 comments";
             ssv2.Country = Repositories.Locations.FindCountryByCode("US");
             ssv2.County = "subsite visit 2 county";
@@ -166,7 +162,7 @@ namespace TMD.UnitTests.Infrastructure
             ssv2.OwnershipType = "subsite visit 2 ownership type";
             ssv2.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
 
-            TreeMeasurementBase tm1 = ssv2.AddSingleTrunkTreeMeasurement();
+            TreeBase tm1 = ssv2.AddSingleTrunkTree();
             tm1.Age = 10;
             tm1.AgeClass = TreeAgeClass.VeryOld;
             tm1.AgeType = TreeAgeType.RingCount;
@@ -211,10 +207,10 @@ namespace TMD.UnitTests.Infrastructure
             tm1.TrunkVolume = Volume.Create(20);
             tm1.TrunkVolumeCalculationMethod = "tree measurement 1 trunk volume calculation method";
 
-            MultiTrunkTreeMeasurement tm2 = ssv2.AddMultiTrunkTreeMeasurement();
+            MultiTrunkTree tm2 = ssv2.AddMultiTrunkTree();
             tm2.NumberOfTrunks = 10;
             tm2.FormType = TreeFormType.Multi;
-            TrunkMeasurement trunk1 = tm2.AddTrunkMeasurement();
+            Trunk trunk1 = tm2.AddTrunkMeasurement();
             trunk1.Girth = Distance.Create(10);
             trunk1.GirthMeasurementHeight = Distance.Create(20);
             trunk1.Height = Distance.Create(30);
@@ -224,7 +220,7 @@ namespace TMD.UnitTests.Infrastructure
                 Distance.Create(60),
                 Angle.Create(70),
                 DirectedDistance.Create(80));
-            TrunkMeasurement trunk2 = tm2.AddTrunkMeasurement();
+            Trunk trunk2 = tm2.AddTrunkMeasurement();
             trunk2.Girth = Distance.Create(10);
             trunk2.GirthMeasurementHeight = Distance.Create(20);
             trunk2.Height = Distance.Create(30);
@@ -276,27 +272,26 @@ namespace TMD.UnitTests.Infrastructure
             tm2.TrunkVolume = Volume.Create(20);
             tm2.TrunkVolumeCalculationMethod = "tree measurement 1 trunk volume calculation method";
 
-            using (UnitOfWork.Begin())
+            using (var uow = UnitOfWork.Begin())
             {
                 Repositories.Trips.Save(t);
-                UnitOfWork.Persist();
+                uow.Persist();
             }
-
-            Trip found = Repositories.Trips.FindById(t.Id);
-            Assert.IsNotNull(found);
-            Assert.IsTrue(found.SiteVisits.Count == 2);
-            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits.Count == 2);
-            Assert.IsTrue(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements.Count == 2);
-
-            using (UnitOfWork.Begin())
+            UnitOfWork.Dispose();
+            using (var uow = UnitOfWork.Begin())
             {
-                Repositories.Trips.Remove(t);
-                UnitOfWork.Persist();
+                Trip found = Repositories.Trips.FindById(t.Id);
+                Assert.IsNotNull(found);
+                Assert.IsTrue(found.Sites.Count == 2);
+                Assert.IsTrue(found.Sites[1].Subsites.Count == 2);
+                Assert.IsTrue(found.Sites[1].Subsites[1].Trees.Count == 2);
+                Repositories.Trips.Remove(found);
+                uow.Persist();
             }
         }
 
         [TestMethod]
-        public void PersistsTreeMeasurementsWithPhotos()
+        public void PersistsTreeWithPhotos()
         {
             Trip t = Trip.Create();
             t.MeasurerContactInfo = "measurer contact info";
@@ -305,54 +300,53 @@ namespace TMD.UnitTests.Infrastructure
             tmeasurer1.FirstName = "tree measurer 1 first name";
             tmeasurer1.LastName = "tree measurer 1 last name";
 
-            SiteVisit sv1 = t.AddSiteVisit();
+            Site sv1 = t.AddSite();
             sv1.Name = "site visit 1 name";
-            SiteVisit sv2 = t.AddSiteVisit();
+            Site sv2 = t.AddSite();
             sv2.Name = "site visit 2 name";
 
-            SubsiteVisit ssv1 = sv2.AddSubsiteVisit();
+            Subsite ssv1 = sv2.AddSubsite();
             ssv1.Country = Repositories.Locations.FindCountryByCode("US");
             ssv1.County = "subsite visit 1 county";
             ssv1.Name = "subsite visit 1 name";
             ssv1.OwnershipType = "subsite visit 1 ownership type";
             ssv1.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
-            SubsiteVisit ssv2 = sv2.AddSubsiteVisit();
+            Subsite ssv2 = sv2.AddSubsite();
             ssv2.Country = Repositories.Locations.FindCountryByCode("US");
             ssv2.County = "subsite visit 2 county";
             ssv2.Name = "subsite visit 2 name";
             ssv2.OwnershipType = "subsite visit 2 ownership type";
             ssv2.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
 
-            TreeMeasurementBase tm1 = ssv2.AddSingleTrunkTreeMeasurement();
+            TreeBase tm1 = ssv2.AddSingleTrunkTree();
             tm1.CommonName = "tree measurement 1 common name";
             tm1.ScientificName = "tree measurement 1 scientific name";
 
-            MultiTrunkTreeMeasurement tm2 = ssv2.AddMultiTrunkTreeMeasurement();
+            MultiTrunkTree tm2 = ssv2.AddMultiTrunkTree();
             tm2.CommonName = "tree measurement 2 common name";
             tm2.ScientificName = "tree measurement 2 scientific name";
             
             tm2.AddPhoto(new PhotoFactory().Create("Square.jpg".GetPhoto()));
             tm2.AddPhoto(new PhotoFactory().Create("Thumbnail.jpg".GetPhoto()));
 
-            using (UnitOfWork.Begin())
+            using (var uow = UnitOfWork.Begin())
             {
                 Repositories.Trips.Save(t);
-                UnitOfWork.Persist();
+                uow.Persist();
             }
-
-            Trip found = Repositories.Trips.FindById(t.Id);
-            Assert.IsNotNull(found);
-            Assert.AreEqual(2, found.SiteVisits.Count);
-            Assert.AreEqual(2, found.SiteVisits[1].SubsiteVisits.Count);
-            Assert.AreEqual(2, found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements.Count);
-            Assert.AreEqual(2, found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements[1].Photos.Count);
-            Assert.IsTrue("Square.jpg".GetPhoto().CompareByContent(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements[1].Photos[0].Get()));
-            Assert.IsTrue("Thumbnail.jpg".GetPhoto().CompareByContent(found.SiteVisits[1].SubsiteVisits[1].TreeMeasurements[1].Photos[1].Get()));
-
-            using (UnitOfWork.Begin())
+            UnitOfWork.Dispose();
+            using (var uow = UnitOfWork.Begin())
             {
+                Trip found = Repositories.Trips.FindById(t.Id);
+                Assert.IsNotNull(found);
+                Assert.AreEqual(2, found.Sites.Count);
+                Assert.AreEqual(2, found.Sites[1].Subsites.Count);
+                Assert.AreEqual(2, found.Sites[1].Subsites[1].Trees.Count);
+                Assert.AreEqual(2, found.Sites[1].Subsites[1].Trees[1].Photos.Count);
+                Assert.IsTrue("Square.jpg".GetPhoto().CompareByContent(found.Sites[1].Subsites[1].Trees[1].Photos[0].Get()));
+                Assert.IsTrue("Thumbnail.jpg".GetPhoto().CompareByContent(found.Sites[1].Subsites[1].Trees[1].Photos[1].Get()));
                 Repositories.Trips.Remove(found);
-                UnitOfWork.Persist();
+                uow.Persist();
             }
         }
     }

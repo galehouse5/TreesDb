@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TMD.Models;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 using TMD.Model.Photos;
 using TMD.Model;
 using TMD.Model.Extensions;
@@ -36,21 +36,21 @@ namespace TMD.Controllers
             return View();
         }
 
-        private object renderImportSiteMarker(SiteVisit site)
+        private object renderImportSiteMarker(Site site)
         {
-            if (site.SubsiteVisits.Count == 1)
+            if (site.Subsites.Count == 1)
             {
                 return new
                 {
-                    Title = site.SubsiteVisits[0].Name,
+                    Title = site.Subsites[0].Name,
                     Coordinates = new {
-                        Latitude = site.SubsiteVisits[0].Coordinates.Latitude.TotalDegrees,
-                        Longitude = site.SubsiteVisits[0].Coordinates.Longitude.TotalDegrees
+                        Latitude = site.Subsites[0].Coordinates.Latitude.TotalDegrees,
+                        Longitude = site.Subsites[0].Coordinates.Longitude.TotalDegrees
                     },
-                    Icon = site.SubsiteVisits[0].Photos.Count > 0 ?
-                        Url.Action("View", "Photos", new { id = site.SubsiteVisits[0].Photos[0].Id, size = EPhotoSize.MiniSquare })
+                    Icon = site.Subsites[0].Photos.Count > 0 ?
+                        Url.Action("View", "Photos", new { id = site.Subsites[0].Photos[0].Id, size = EPhotoSize.MiniSquare })
                         : "/images/icons/Subsite32.png",
-                    Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", site.SubsiteVisits[0])
+                    Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", site.Subsites[0])
                 };
             }
             return new
@@ -65,7 +65,7 @@ namespace TMD.Controllers
             };
         }
 
-        private object renderImportSubsiteMarker(SubsiteVisit subsite)
+        private object renderImportSubsiteMarker(Subsite subsite)
         {
             return new
             {
@@ -81,7 +81,7 @@ namespace TMD.Controllers
             };
         }
 
-        private object renderImportTreeMarker(TreeMeasurementBase tree)
+        private object renderImportTreeMarker(TreeBase tree)
         {
             return new
             {
@@ -102,20 +102,20 @@ namespace TMD.Controllers
             var trip = Repositories.Trips.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             var renderedMarkers = new List<object>();
-            renderedMarkers.AddRange(from sv in trip.SiteVisits
+            renderedMarkers.AddRange(from sv in trip.Sites
                 where sv.Coordinates.IsValidAndSpecified() && sv.Id != siteId
                 select renderImportSiteMarker(sv));
-            renderedMarkers.AddRange(from sv in trip.SiteVisits
-                where sv.SubsiteVisits.Count != 1
-                from ssv in sv.SubsiteVisits
+            renderedMarkers.AddRange(from sv in trip.Sites
+                where sv.Subsites.Count != 1
+                from ssv in sv.Subsites
                 where ssv.Coordinates.IsValidAndSpecified()
                 select renderImportSubsiteMarker(ssv));
-            renderedMarkers.AddRange(from sv in trip.SiteVisits
-                from ssv in sv.SubsiteVisits
-                from tm in ssv.TreeMeasurements
+            renderedMarkers.AddRange(from sv in trip.Sites
+                from ssv in sv.Subsites
+                from tm in ssv.Trees
                 where tm.Coordinates.IsValidAndSpecified()
                 select renderImportTreeMarker(tm));
-            var calculatedCoordinates = trip.FindSiteVisitById(siteId).CalculateCoordinates();
+            var calculatedCoordinates = trip.FindSiteById(siteId).CalculateCoordinates();
             if (calculatedCoordinates.IsValidAndSpecified())
             {
                 return Json(new
@@ -132,20 +132,20 @@ namespace TMD.Controllers
             var trip = Repositories.Trips.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             var renderedMarkers = new List<object>();
-            renderedMarkers.AddRange(from sv in trip.SiteVisits
-                where sv.Coordinates.IsValidAndSpecified() && (sv.SubsiteVisits.Count != 1 || sv.SubsiteVisits[0].Id != subsiteId)
+            renderedMarkers.AddRange(from sv in trip.Sites
+                where sv.Coordinates.IsValidAndSpecified() && (sv.Subsites.Count != 1 || sv.Subsites[0].Id != subsiteId)
                 select renderImportSiteMarker(sv));
-            renderedMarkers.AddRange(from sv in trip.SiteVisits
-                where sv.SubsiteVisits.Count != 1
-                from ssv in sv.SubsiteVisits
+            renderedMarkers.AddRange(from sv in trip.Sites
+                where sv.Subsites.Count != 1
+                from ssv in sv.Subsites
                 where ssv.Coordinates.IsValidAndSpecified() && ssv.Id != subsiteId
                 select renderImportSubsiteMarker(ssv));
-            renderedMarkers.AddRange(from sv in trip.SiteVisits
-                from ssv in sv.SubsiteVisits
-                from tm in ssv.TreeMeasurements
+            renderedMarkers.AddRange(from sv in trip.Sites
+                from ssv in sv.Subsites
+                from tm in ssv.Trees
                 where tm.Coordinates.IsValidAndSpecified()
                 select renderImportTreeMarker(tm));
-            var calculatedCoordinates = trip.FindSubsiteVisitById(subsiteId).CalculateCoordinates();
+            var calculatedCoordinates = trip.FindSubsiteById(subsiteId).CalculateCoordinates();
             if (calculatedCoordinates.IsValidAndSpecified())
             {
                 return Json(new
@@ -162,20 +162,20 @@ namespace TMD.Controllers
             var trip = Repositories.Trips.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             var renderedMarkers = new List<object>();
-            renderedMarkers.AddRange(from sv in trip.SiteVisits
+            renderedMarkers.AddRange(from sv in trip.Sites
                 where sv.Coordinates.IsValidAndSpecified()
                 select renderImportSiteMarker(sv));
-            renderedMarkers.AddRange(from sv in trip.SiteVisits
-                where sv.SubsiteVisits.Count != 1
-                from ssv in sv.SubsiteVisits
+            renderedMarkers.AddRange(from sv in trip.Sites
+                where sv.Subsites.Count != 1
+                from ssv in sv.Subsites
                 where ssv.Coordinates.IsValidAndSpecified()
                 select renderImportSubsiteMarker(ssv));
-            renderedMarkers.AddRange(from sv in trip.SiteVisits
-                from ssv in sv.SubsiteVisits
-                from tm in ssv.TreeMeasurements
+            renderedMarkers.AddRange(from sv in trip.Sites
+                from ssv in sv.Subsites
+                from tm in ssv.Trees
                 where tm.Coordinates.IsValidAndSpecified() && tm.Id != treeId
                 select renderImportTreeMarker(tm));
-            var calculatedCoordinates = trip.FindTreeMeasurementById(treeId).CalculateCoordinates();
+            var calculatedCoordinates = trip.FindTreeById(treeId).CalculateCoordinates();
             if (calculatedCoordinates.IsValidAndSpecified()) 
             {
                 return Json(new

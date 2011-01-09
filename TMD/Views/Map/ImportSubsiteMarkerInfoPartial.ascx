@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<TMD.Model.Trips.SubsiteVisit>" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<TMD.Model.Imports.Subsite>" %>
 <%@ Import Namespace="TMD.Model.Photos" %>
 <ul>
     <li><strong><%: Model.Name %></strong></li>

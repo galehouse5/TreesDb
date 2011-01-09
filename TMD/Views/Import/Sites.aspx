@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Import Sites" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="ViewPageBase<ImportSitesModel>" %>
-<%@ Import Namespace="TMD.Model.Trips" %>
+<%@ Import Namespace="TMD.Model.Imports" %>
 
 <asp:Content ContentPlaceHolderID="Steps" runat="server">
     <ol>

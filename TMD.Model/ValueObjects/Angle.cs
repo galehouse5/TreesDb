@@ -15,7 +15,6 @@ namespace TMD.Model
         Decimal = 3
     }
 
-    [Serializable]
     public class Angle : ISpecified
     {
         private Angle()

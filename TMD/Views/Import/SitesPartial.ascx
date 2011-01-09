@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<ImportSitesModel>" %>
-<%@ Import Namespace="TMD.Model.Trips" %>
+<%@ Import Namespace="TMD.Model.Imports" %>
 <% using (Html.BeginForm("Sites", "Import", FormMethod.Post, new { @class = "form Sites" })) { %>
     <% for (int i = 0; i < Model.Sites.Count; i++) { %>
         <% if (Model.Sites[i].IsEditing) { %>

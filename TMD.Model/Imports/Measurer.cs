@@ -7,9 +7,8 @@ using TMD.Model.Validation;
 using NHibernate.Validator.Constraints;
 using TMD.Model.Extensions;
 
-namespace TMD.Model.Trips
+namespace TMD.Model.Imports
 {
-    [Serializable]
     [DebuggerDisplay("{LastName}, {FirstName}")]
     public class Measurer : UserCreatedEntityBase
     {

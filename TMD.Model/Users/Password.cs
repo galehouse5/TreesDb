@@ -9,7 +9,6 @@ using NHibernate.Validator.Constraints;
 
 namespace TMD.Model.Users
 {
-    [Serializable]
     [ContextMethod("ValidateGlobalRequirements", Tags = Tag.Screening)]
     public class Password
     {

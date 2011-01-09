@@ -9,13 +9,12 @@ using System.ComponentModel;
 using TMD.Model.Users;
 using NHibernate.Validator.Constraints;
 
-namespace TMD.Model.Trips
+namespace TMD.Model.Imports
 {
-    [Serializable]
     [DebuggerDisplay("{Name}")]
-    public class SiteVisit : UserCreatedEntityBase
+    public class Site : UserCreatedEntityBase
     {
-        protected SiteVisit()
+        protected Site()
         { }
 
         public virtual Trip Trip { get; private set; }
@@ -38,7 +37,7 @@ namespace TMD.Model.Trips
             {
                 return true;
             }
-            if (SubsiteVisits.Where(ss => ss.CanCalculateCoordinates(true)).Count() > 0)
+            if (Subsites.Where(ss => ss.CanCalculateCoordinates(true)).Count() > 0)
             {
                 return true;
             }
@@ -55,7 +54,7 @@ namespace TMD.Model.Trips
             {
                 return Coordinates;
             }
-            var bounds = CoordinateBounds.Create(SubsiteVisits
+            var bounds = CoordinateBounds.Create(Subsites
                 .Where(ss => ss.CanCalculateCoordinates(true)).Select(ss => ss.CalculateCoordinates(true)));
             if (bounds.IsSpecified)
             {
@@ -79,41 +78,41 @@ namespace TMD.Model.Trips
         [Valid]
         [Size2(1, int.MaxValue, Message = "Site must contain at least one subsite.", Tags = Tag.Screening)]
         [Size2(int.MinValue, 100, Message = "Site contains too many subsites.", Tags = new [] { Tag.Screening, Tag.Persistence })]
-        public virtual IList<SubsiteVisit> SubsiteVisits { get; private set; }
+        public virtual IList<Subsite> Subsites { get; private set; }
 
-        public virtual SubsiteVisit AddSubsiteVisit()
+        public virtual Subsite AddSubsite()
         {
-            var subsite = SubsiteVisit.Create(this);
-            SubsiteVisits.Add(subsite);
+            var subsite = Subsite.Create(this);
+            Subsites.Add(subsite);
             return subsite;
         }
 
-        public virtual bool RemoveSubsiteVisit(SubsiteVisit sv)
+        public virtual bool RemoveSubsite(Subsite sv)
         {
-            return SubsiteVisits.Remove(sv);
+            return Subsites.Remove(sv);
         }
 
-        public virtual SubsiteVisit FindSubsiteVisitById(int id)
+        public virtual Subsite FindSubsiteById(int id)
         {
-            return SubsiteVisits.FirstOrDefault(ss => id.Equals(ss.Id));
+            return Subsites.FirstOrDefault(ss => id.Equals(ss.Id));
         }
 
-        public virtual TreeMeasurementBase FindTreeMeasurementById(int id)
+        public virtual TreeBase FindTreeById(int id)
         {
-            var subsite = SubsiteVisits.FirstOrDefault(ss => ss.FindTreeMeasurementById(id) != null);
-            return subsite == null ? null : subsite.FindTreeMeasurementById(id);
+            var subsite = Subsites.FirstOrDefault(ss => ss.FindTreeById(id) != null);
+            return subsite == null ? null : subsite.FindTreeById(id);
         }
 
-        internal static SiteVisit Create(Trip t)
+        internal static Site Create(Trip t)
         {
-            return new SiteVisit
+            return new Site
             {
                 Name = string.Empty,
                 Coordinates = Coordinates.Null(),
-                SubsiteVisits = new List<SubsiteVisit>(),
+                Subsites = new List<Subsite>(),
                 Comments = string.Empty,
                 Trip = t
-            }.RecordCreation() as SiteVisit;
+            }.RecordCreation() as Site;
         }
     }
 }

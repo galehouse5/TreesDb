@@ -19,7 +19,6 @@ namespace TMD.Model
         DecimalYards = 7
     }
 
-    [Serializable]
     public class DirectedDistance : ISpecified
     {
         private DirectedDistance()

@@ -24,12 +24,20 @@ namespace TMD.UnitTests.Infrastructure
         public void SavesAndFindsPhoto()
         {
             Photo photo = new PhotoFactory().CreateForPublic("Original.jpg".GetPhoto());
-            using (UnitOfWork.Begin()) { Repositories.Photos.Save(photo); UnitOfWork.Persist(); }
-            UnitOfWork.Initialize();
-            Photo found = Repositories.Photos.FindById(photo.Id);
-            Assert.IsNotNull(found);
-            Assert.IsTrue("Original.jpg".GetPhoto().CompareByContent(found.Get()));
-            using (UnitOfWork.Begin()) { Repositories.Photos.Remove(found); UnitOfWork.Persist(); }
+            using (var uow = UnitOfWork.Begin())
+            {
+                Repositories.Photos.Save(photo);
+                uow.Persist();
+            }
+            UnitOfWork.Dispose();
+            using (var uow = UnitOfWork.Begin())
+            {
+                Photo found = Repositories.Photos.FindById(photo.Id);
+                Assert.IsNotNull(found);
+                Assert.IsTrue("Original.jpg".GetPhoto().CompareByContent(found.Get()));
+                Repositories.Photos.Remove(found);
+                uow.Persist();
+            }
         }
     }
 }

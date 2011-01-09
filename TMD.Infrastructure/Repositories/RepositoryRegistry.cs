@@ -12,7 +12,7 @@ namespace TMD.Infrastructure.Repositories
         {
             For<TMD.Model.Locations.ILocationRepository>().Singleton().Use<LocationRepository>();
             For<TMD.Model.Trees.ITreeRepository>().Singleton().Use<TreeRepository>();
-            For<TMD.Model.Trips.TripRepository>().Singleton().Use<TripRepository>();
+            For<TMD.Model.Imports.ImportRepository>().Singleton().Use<ImportRepository>();
             For<TMD.Model.Users.UserRepository>().Singleton().Use<UserRepository>();
             For<TMD.Model.Photos.IPhotoRepository>().Singleton().Use<PhotoRepository>();
         }

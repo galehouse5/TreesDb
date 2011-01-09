@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Import View" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="ViewPageBase<ImportFinishedTripModel>" %>
-<%@ Import Namespace="TMD.Model.Trips" %>
+<%@ Import Namespace="TMD.Model.Imports" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Styles" runat="server">
     <link rel="stylesheet" href="/css/Import.css" type="text/css" />	

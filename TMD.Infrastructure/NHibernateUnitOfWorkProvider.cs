@@ -7,21 +7,9 @@ using NHibernate;
 
 namespace TMD.Infrastructure
 {
-    public class NHibernateUnitOfWorkProvider : IUnitOfWorkProvider
+    public class NHibernateUnitOfWork : IUnitOfWork
     {
-        public ISession Session { get; private set; }
-        public ITransaction Transaction { get; private set; }
-
-        public void Initialize()
-        {
-            Session = Registry.SessionFactory.OpenSession();
-        }
-
-        public IDisposable Begin()
-        {
-            Transaction = Session.BeginTransaction();
-            return Transaction;
-        }
+        protected internal ITransaction Transaction { get; set; }
 
         public void Persist()
         {
@@ -35,25 +23,48 @@ namespace TMD.Infrastructure
 
         public void Dispose()
         {
-            if (Transaction != null) { Transaction.Dispose(); }
-            if (Session != null) { Session.Dispose(); }
+            Transaction.Dispose();
         }
+    }
 
-        public bool IsActive
+    public class NHibernateUnitOfWorkProvider : IUnitOfWorkProvider
+    {
+        private ISession m_Session;
+        protected internal ISession Session
         {
             get
             {
-                if (Transaction != null)
+                if (m_Session == null)
                 {
-                    return Transaction.IsActive;
+                    m_Session = Registry.SessionFactory.OpenSession();
                 }
-                return false;
+                return m_Session;
             }
         }
 
-        public void Flush()
+        public IUnitOfWork Begin()
         {
-            Session.Flush();
+            return new NHibernateUnitOfWork
+            {
+                Transaction = Session.BeginTransaction()
+            };
         }
+
+        public IUnitOfWork Begin(System.Data.IsolationLevel isolationLevel)
+        {
+            return new NHibernateUnitOfWork
+            {
+                Transaction = Session.BeginTransaction(isolationLevel)
+            };
+        }
+
+        public void Dispose()
+        {
+            if (m_Session != null)
+            {
+                m_Session.Dispose();
+            }
+            m_Session = null;
+        }        
     }
 }

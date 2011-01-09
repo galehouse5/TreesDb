@@ -9,7 +9,6 @@ using NHibernate.Validator.Engine;
 
 namespace TMD.Model
 {
-    [Serializable]
     [ContextMethod("ValidateCanCalculateHeightIfSpecified", Tags = Tag.Screening)]
     [ContextMethod("ValidateCanCalculateOffsetIfSpecified", Tags = Tag.Screening)]
     public class HeightMeasurements : ISpecified

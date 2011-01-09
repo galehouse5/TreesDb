@@ -11,7 +11,6 @@ namespace TMD.Model.Validation
     /// <summary>
     /// Calls a method by name, passing a single parameter of type IConstraintValidatorContext for validation.
     /// </summary>
-    [Serializable]
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class ContextMethodAttribute : EmbeddedRuleArgsAttribute, IValidatorInstanceProvider, IRuleArgs, IValidator
     {

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 using TMD.Model;
 
 namespace TMD.Infrastructure.Repositories
 {
-    public class TripRepository : TMD.Model.Trips.TripRepository
+    public class ImportRepository : TMD.Model.Imports.ImportRepository
     {
         public override Trip FindById(int id)
         {

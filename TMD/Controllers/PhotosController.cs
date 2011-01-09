@@ -9,7 +9,7 @@ using TMD.Model.Photos;
 using TMD.Model;
 using TMD.Model.Extensions;
 using System.Drawing.Imaging;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 using TMD.Models;
 using TMD.Model.Validation;
 using AutoMapper;
@@ -33,12 +33,13 @@ namespace TMD.Controllers
             }
         }
 
-        [HttpPost]
-        public ActionResult Remove(int id)
+        [HttpPost, UnitOfWork]
+        public ActionResult Remove(IUnitOfWork uow, int id)
         {
             Photo photo = Repositories.Photos.FindById(id);
             if (!photo.IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
-            using (UnitOfWork.Begin()) { Repositories.Photos.Remove(photo); UnitOfWork.Persist(); };
+            Repositories.Photos.Remove(photo);
+            uow.Persist();
             return PhotoRemoval(photo);
         }
 
@@ -55,48 +56,56 @@ namespace TMD.Controllers
         [HttpPost]
         public ActionResult AddToImportTree(int id, int treeId, HttpPostedFileBase imageData)
         {
-            var trip = Repositories.Trips.FindById(id);
-            var tree = trip.FindTreeMeasurementById(treeId);
-            using (imageData.InputStream)
+            using (var uow = UnitOfWork.Begin())
             {
-                var photo = new PhotoFactory().Create(imageData.InputStream);
-                tree.AddPhoto(photo);
-                if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
-                this.ValidateMappedModel<TreeMeasurementBase, PhotoGalleryModel>(tree);
-                if (ModelState.IsValid)
+                var trip = Repositories.Trips.FindById(id);
+                var tree = trip.FindTreeById(treeId);
+                using (imageData.InputStream)
                 {
-                    using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Save(trip); }
+                    var photo = new PhotoFactory().Create(imageData.InputStream);
+                    tree.AddPhoto(photo);
+                    if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                    this.ValidateMappedModel<TreeBase, PhotoGalleryModel>(tree);
+                    if (ModelState.IsValid)
+                    {
+                        Repositories.Trips.Save(trip);
+                        uow.Persist();
+                    }
+                    else
+                    {
+                        tree.RemovePhoto(photo);
+                    }
+                    var photoGallery = Mapper.Map<TreeBase, PhotoGalleryModel>(tree);
+                    return PhotoAdded(photoGallery);
                 }
-                else
-                {
-                    tree.RemovePhoto(photo);
-                }
-                var photoGallery = Mapper.Map<TreeMeasurementBase, PhotoGalleryModel>(tree);
-                return PhotoAdded(photoGallery);
             }
         }
 
         [HttpPost]
         public ActionResult AddToImportSubsite(int id, int subsiteId, HttpPostedFileBase imageData)
         {
-            var trip = Repositories.Trips.FindById(id);
-            var subsite = trip.FindSubsiteVisitById(subsiteId);
-            using (imageData.InputStream)
+            using (var uow = UnitOfWork.Begin())
             {
-                var photo = new PhotoFactory().Create(imageData.InputStream);
-                subsite.AddPhoto(photo);
-                if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
-                this.ValidateMappedModel<SubsiteVisit, PhotoGalleryModel>(subsite);
-                if (ModelState.IsValid)
+                var trip = Repositories.Trips.FindById(id);
+                var subsite = trip.FindSubsiteById(subsiteId);
+                using (imageData.InputStream)
                 {
-                    using (UnitOfWork.BeginAndPersist()) { Repositories.Trips.Save(trip); }
+                    var photo = new PhotoFactory().Create(imageData.InputStream);
+                    subsite.AddPhoto(photo);
+                    if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                    this.ValidateMappedModel<Subsite, PhotoGalleryModel>(subsite);
+                    if (ModelState.IsValid)
+                    {
+                        Repositories.Trips.Save(trip);
+                        uow.Persist();
+                    }
+                    else
+                    {
+                        subsite.RemovePhoto(photo);
+                    }
+                    var photoGallery = Mapper.Map<Subsite, PhotoGalleryModel>(subsite);
+                    return PhotoAdded(photoGallery);
                 }
-                else
-                {
-                    subsite.RemovePhoto(photo);
-                }
-                var photoGallery = Mapper.Map<SubsiteVisit, PhotoGalleryModel>(subsite);
-                return PhotoAdded(photoGallery);
             }
         }
     }

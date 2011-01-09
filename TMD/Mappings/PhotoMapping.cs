@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using AutoMapper;
-using TMD.Model.Trips;
+using TMD.Model.Imports;
 using TMD.Models;
 using TMD.Model.Photos;
 
@@ -13,20 +13,20 @@ namespace TMD.Mappings
     {
         protected override void Configure()
         {
-            CreateMap<TreeMeasurementBase, PhotoGalleryModel>()
+            CreateMap<TreeBase, PhotoGalleryModel>()
                 .ForMember(dest => dest.Adder, opt => opt.MapFrom(src =>
-                    new ImportTreePhotoGalleryAdderModel { TripId = src.SubsiteVisit.SiteVisit.Trip.Id, TreeId = src.Id }))
+                    new ImportTreePhotoGalleryAdderModel { TripId = src.Subsite.Site.Trip.Id, TreeId = src.Id }))
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src =>
                     src.Photos.Select(photo => new PhotoModel { Id = photo.Id })));
-            ValidationMapper.CreateMap<TreeMeasurementBase, PhotoGalleryModel>()
+            ValidationMapper.CreateMap<TreeBase, PhotoGalleryModel>()
                 .IgnorePath("*").ForPath("Photo*", "Adder");
 
-            CreateMap<SubsiteVisit, PhotoGalleryModel>()
+            CreateMap<Subsite, PhotoGalleryModel>()
                 .ForMember(dest => dest.Adder, opt => opt.MapFrom(src =>
-                    new ImportSubsitePhotoGalleryAdderModel { TripId = src.SiteVisit.Trip.Id, SubsiteId = src.Id }))
+                    new ImportSubsitePhotoGalleryAdderModel { TripId = src.Site.Trip.Id, SubsiteId = src.Id }))
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src =>
                     src.Photos.Select(photo => new PhotoModel { Id = photo.Id })));
-            ValidationMapper.CreateMap<SubsiteVisit, PhotoGalleryModel>()
+            ValidationMapper.CreateMap<Subsite, PhotoGalleryModel>()
                 .IgnorePath("*").ForPath("Photo*", "Adder");
         }
     }

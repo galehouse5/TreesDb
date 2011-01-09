@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Import Finish" Language="C#" MasterPageFile="~/Views/Import/Import.Master" Inherits="ViewPageBase<ImportFinishedTripModel>" %>
-<%@ Import Namespace="TMD.Model.Trips" %>
+<%@ Import Namespace="TMD.Model.Imports" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Steps" runat="server">
     <ol>

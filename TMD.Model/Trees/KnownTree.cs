@@ -6,7 +6,6 @@ using TMD.Model.Extensions;
 
 namespace TMD.Model.Trees
 {
-    [Serializable]
     public class KnownTree : IEntity
     {
         protected KnownTree()

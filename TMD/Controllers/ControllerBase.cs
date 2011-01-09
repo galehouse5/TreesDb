@@ -8,15 +8,43 @@ using System.Web.Routing;
 using TMD.Model.Users;
 using TMD.Controllers;
 using System.IO;
+using System.Data;
+using TMD.Model;
 
 namespace TMD
 {
     public class DefaultReturnUrlAttribute : ActionFilterAttribute
     {
-        public override void  OnResultExecuted(ResultExecutedContext filterContext)
+        public override void OnResultExecuted(ResultExecutedContext filterContext)
         {
             base.OnResultExecuted(filterContext);
             ((ControllerBase)filterContext.Controller).Session.DefaultReturnUrl = ((ControllerBase)filterContext.Controller).Request.RawUrl;
+        }
+    }
+
+    public class UnitOfWorkAttribute : ActionFilterAttribute
+    {
+        private IUnitOfWork m_UnitOfWork;
+
+        public UnitOfWorkAttribute()
+        {
+            IsolationLevel = IsolationLevel.Unspecified;
+        }
+
+        public IsolationLevel IsolationLevel { get; set; }
+
+        public override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            m_UnitOfWork = IsolationLevel == IsolationLevel.Unspecified ?
+                UnitOfWork.Begin() : UnitOfWork.Begin(IsolationLevel);
+            filterContext.ActionParameters["uow"] = m_UnitOfWork;
+            base.OnActionExecuting(filterContext);
+        }
+
+        public override void OnResultExecuting(ResultExecutingContext filterContext)
+        {
+            base.OnResultExecuting(filterContext);
+            m_UnitOfWork.Dispose();
         }
     }
 

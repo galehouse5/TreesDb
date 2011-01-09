@@ -5,9 +5,9 @@ using System.Text;
 using TMD.Model.Extensions;
 using TMD.Model.Validation;
 
-namespace TMD.Model.Trips
+namespace TMD.Model.Imports
 {
-    public abstract class TripRepository
+    public abstract class ImportRepository
     {
         public void Save(Trip t)
         {
@@ -22,7 +22,7 @@ namespace TMD.Model.Trips
 
         public void Remove(Trip t)
         {
-            if (t.IsImported)
+            if (t.IsMerged)
             {
                 throw new InvalidEntityOperationException(t, "Unable to remove trip because it has already been imported.");
             }
@@ -31,11 +31,10 @@ namespace TMD.Model.Trips
 
         protected abstract void InternalRemove(Trip t);
 
-        public void Import(Trip t)
+        public void Merge(Trip t)
         {
             t.AssertIsValid(Tag.Screening, Tag.Finalization, Tag.Persistence);
-            t.IsImported = true;
-            t.Imported = DateTime.Now;
+            t.Merged = DateTime.Now;
             InternalImport(t);
         }
 

@@ -9,7 +9,7 @@ using System.ComponentModel;
 using TMD.Model.Extensions;
 using TMD.Model.Photos;
 
-namespace TMD.Model.Trips
+namespace TMD.Model.Imports
 {
     public enum MultiTrunkTreeFormType
     {
@@ -21,11 +21,10 @@ namespace TMD.Model.Trips
         Vine = TreeFormType.Vine
     }
 
-    [Serializable]
     [DebuggerDisplay("{ScientificName} (multi trunk)")]
-    public class MultiTrunkTreeMeasurement : TreeMeasurementBase
+    public class MultiTrunkTree : TreeBase
     {
-        protected MultiTrunkTreeMeasurement()
+        protected MultiTrunkTree()
         { }
 
         private int? m_NumberOfTrunks;
@@ -35,13 +34,13 @@ namespace TMD.Model.Trips
         {
             get 
             {
-                if (m_NumberOfTrunks == null && TrunkMeasurements.Count > 1)
+                if (m_NumberOfTrunks == null && Trunks.Count > 1)
                 {
-                    m_NumberOfTrunks = TrunkMeasurements.Count;
+                    m_NumberOfTrunks = Trunks.Count;
                 }
                 else if (m_NumberOfTrunks != null)
                 {
-                    m_NumberOfTrunks = Math.Max((int)m_NumberOfTrunks, TrunkMeasurements.Count);
+                    m_NumberOfTrunks = Math.Max((int)m_NumberOfTrunks, Trunks.Count);
                 }
                 return m_NumberOfTrunks; 
             }
@@ -78,23 +77,23 @@ namespace TMD.Model.Trips
 
         [Valid]
         [Size(0, 100, Message = "This tree contains too many trunk measurements.", Tags = new [] { Tag.Screening, Tag.Persistence })]
-        public virtual IList<TrunkMeasurement> TrunkMeasurements { get; private set; }
+        public virtual IList<Trunk> Trunks { get; private set; }
 
-        public virtual TrunkMeasurement AddTrunkMeasurement()
+        public virtual Trunk AddTrunkMeasurement()
         {
-            TrunkMeasurement tm = TrunkMeasurement.Create(this);
-            TrunkMeasurements.Add(tm);
+            Trunk tm = Trunk.Create(this);
+            Trunks.Add(tm);
             return tm;
         }
 
-        public virtual bool RemoveTrunkMeasurement(TrunkMeasurement tm)
+        public virtual bool RemoveTrunkMeasurement(Trunk tm)
         {
-            return TrunkMeasurements.Remove(tm);
+            return Trunks.Remove(tm);
         }
 
-        internal static MultiTrunkTreeMeasurement Create(SubsiteVisit ssv)
+        internal static MultiTrunkTree Create(Subsite ssv)
         {
-            return new MultiTrunkTreeMeasurement
+            return new MultiTrunkTree
             {
                 TreeName = string.Empty,
                 TreeNumber = null,
@@ -110,10 +109,10 @@ namespace TMD.Model.Trips
                 Elevation = Elevation.Null(),
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),
-                HeightMeasurementMethod = ssv.SiteVisit.Trip.DefaultHeightMeasurementMethod,
+                HeightMeasurementMethod = ssv.Site.Trip.DefaultHeightMeasurementMethod,
                 HeightMeasurementType = string.Empty,
-                LaserBrand = ssv.SiteVisit.Trip.DefaultLaserBrand,
-                ClinometerBrand = ssv.SiteVisit.Trip.DefaultClinometerBrand,
+                LaserBrand = ssv.Site.Trip.DefaultLaserBrand,
+                ClinometerBrand = ssv.Site.Trip.DefaultClinometerBrand,
                 HeightComments = string.Empty,
                 Girth = Distance.Null(),
                 GirthMeasurementHeight = Distance.Null(),
@@ -136,12 +135,12 @@ namespace TMD.Model.Trips
                 TerrainShapeIndex = null,
                 LandformIndex = null,
                 TerrainComments = string.Empty,
-                SubsiteVisit = ssv,
+                Subsite = ssv,
                 MakeCoordinatesPublic = true,
                 CombinedGirthNumberOfTrunks = null,
-                TrunkMeasurements = new List<TrunkMeasurement>(),
+                Trunks = new List<Trunk>(),
                 Photos = new List<Photo>()
-            }.RecordCreation() as MultiTrunkTreeMeasurement;
+            }.RecordCreation() as MultiTrunkTree;
         }
     }
 }

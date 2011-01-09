@@ -71,7 +71,7 @@
     <Compile Include="Repositories\RepositoryRegistry.cs" />
     <Compile Include="Repositories\RepositorySettings.cs" />
     <Compile Include="Repositories\TreeRepository.cs" />
-    <Compile Include="Repositories\TripRepository.cs" />
+    <Compile Include="Repositories\ImportRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NHibernateUnitOfWorkProvider.cs" />
@@ -98,7 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Mappings\Locations.hbm.xml" />
-    <EmbeddedResource Include="Mappings\Trips.hbm.xml">
+    <EmbeddedResource Include="Mappings\Imports.hbm.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

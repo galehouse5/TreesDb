@@ -6,7 +6,6 @@ using System.Security.Cryptography;
 
 namespace TMD.Model.Users
 {
-    [Serializable]
     public class SecureToken
     {
         protected SecureToken()

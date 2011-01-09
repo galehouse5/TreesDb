@@ -11,7 +11,6 @@ using TMD.Model.Extensions;
 
 namespace TMD.Model.Users
 {
-    [Serializable]
     [DebuggerDisplay("{Email}")]
     public partial class User : IEntity
     {

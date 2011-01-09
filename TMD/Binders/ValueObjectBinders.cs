@@ -4,9 +4,24 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TMD.Model;
+using TMD.Model.Locations;
 
 namespace TMD.Binders
 {
+    public class ValueObjectBinders
+    {
+        public void Bind(ModelBinderDictionary binders)
+        {
+            binders.Add(typeof(Coordinates), new CoordinatesModelBinder());
+            binders.Add(typeof(State), new StateModelBinder());
+            binders.Add(typeof(Country), new CountryModelBinder());
+            binders.Add(typeof(Elevation), new ElevationModelBinder());
+            binders.Add(typeof(Distance), new DistanceModelBinder());
+            binders.Add(typeof(Volume), new VolumeModelBinder());
+            binders.Add(typeof(HeightMeasurements), new HeightMeasurementModelBinder());
+        }
+    }
+
     public class CoordinatesModelBinder : IModelBinder
     {
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
