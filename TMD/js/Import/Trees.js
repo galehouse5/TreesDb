@@ -60,7 +60,7 @@
                         function (response) {
                             var $subsiteContainer = $button.closest('.Subsite');
                             if ($subsiteContainer.find('.Tree').length > 1) {
-                                var $lastTree = $subsiteContainer.find('.Tree').last();
+                                var $lastTree = $subsiteContainer.find('.Tree:last');
                                 var $treeContent = $(response);
                                 $lastTree.after($treeContent);
                                 $treeContent.InitializeUi().InitializeTreesUi().SmoothScrollInFocus();

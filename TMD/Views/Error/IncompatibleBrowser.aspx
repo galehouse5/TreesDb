@@ -11,6 +11,7 @@
             </p>
             <ul>
                 <li><b><a href="http://www.mozilla.com/en-US/products/download.html">Firefox 3 (recommended)</a></b></li>
+                <li><a href="http://www.apple.com/safari/download/">Safari 5</a></li>
                 <li><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Internet Explorer 8</a></li>
             </ul>
             <p>

@@ -82,7 +82,8 @@ namespace TMD.Controllers
 
         private static readonly CompatibleBrowser[] s_CompatibleBrowsers = new[] { 
             new CompatibleBrowser("Firefox", 3),
-            new CompatibleBrowser("IE", 8) 
+            new CompatibleBrowser("IE", 8),
+            new CompatibleBrowser("Safari", 5)
         };
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)

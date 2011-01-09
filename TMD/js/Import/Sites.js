@@ -104,7 +104,7 @@
                         function (response) {
                             var $sitesContainer = $button.closest('.Sites');
                             if ($sitesContainer.find('.Site').length > 1) {
-                                var $lastSite = $sitesContainer.find('.Site').last();
+                                var $lastSite = $sitesContainer.find('.Site:last');
                                 var $siteContent = $(response);
                                 $lastSite.after($siteContent);
                                 $siteContent.InitializeUi().InitializeSitesUi().SmoothScrollInFocus();
