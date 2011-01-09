@@ -24,7 +24,7 @@
         <% } %>
         <% if (Model.HasAdder) { %>
             <li>
-                <img src="/images/loading.gif" alt="" style="display: none; margin: 34px;" class="LoadingPhoto" />
+                <%= Html.VersionedImage("/images/loading.gif", new { alt = "", style = "display: none; margin: 34px;", @class = "LoadingPhoto" })%>
                 <div class="actions ReadyToLoadPhoto" style="display: block;">
                     <div style="height: 30px">
                         <%= (Html.ValidationMessageFor(m => m.Adder) ?? MvcHtmlString.Empty).ToString().Replace(">", " style='margin: 0;'>") %>

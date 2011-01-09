@@ -20,7 +20,7 @@
 		<div class="portlet-content">
             <ul class="gallery">
                 <li>
-                    <img alt="White oak in fog" src="/images/white oak in fog_small.jpg"/>    
+                    <%= Html.VersionedImage("/images/white oak in fog_small.jpg", new { alt = "White oak in fog" })%>
                     <div class="actions">
                         <a  class="btn btn-orange btn-small" rel="facebox" href="/images/white oak in fog.jpg">View</a>
                     </div>

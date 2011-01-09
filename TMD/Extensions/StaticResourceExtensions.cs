@@ -40,5 +40,13 @@ namespace TMD.Extensions
             tb.MergeAttributes(htmlAttributes.ToPropertyHash(), false);
             return tb.ToString();
         }
+
+        public static string VersionedImage(this HtmlHelper html, string src, object htmlAttributes, bool isSecure = false)
+        {
+            TagBuilder tb = new TagBuilder("img");
+            tb.MergeAttribute("src", src.QualifyStaticResourceRelativeUrl(isSecure));
+            tb.MergeAttributes(htmlAttributes.ToPropertyHash(), false);
+            return tb.ToString(TagRenderMode.SelfClosing);
+        }
     }
 }

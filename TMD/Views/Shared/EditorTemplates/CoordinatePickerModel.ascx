@@ -23,7 +23,7 @@
             <%= Html.TextBoxFor(m => m.Coordinates, new { @size = ViewData["size"] ?? 40, @class = "text" })%>
         <% } %>
         <button type="button" style="display: none;" onclick="$(this).trigger('PickCoordinates', [ '<%= Url.Action(Model.MapLoader.ActionName, Model.MapLoader.RouteValues) %>' ]);">
-            <img src="/images/icons/Map.png" alt="..." title="..." />
+            <%= Html.VersionedImage("/images/icons/Map.png", new { alt = "" }) %>
         </button>
         <%= Html.ValidationMessageFor(m => m)%>
     </span></div>
