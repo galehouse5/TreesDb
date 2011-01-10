@@ -125,6 +125,11 @@ namespace TMD.Model
             };
         }
 
+        public static implicit operator Distance(float feet)
+        {
+            return Distance.Create(feet);
+        }
+
         public static Distance Create(float feet)
         {
             return new Distance()

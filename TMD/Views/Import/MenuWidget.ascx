@@ -5,7 +5,7 @@
         <div class="mega-content mega-menu ">						
             <ul>
 	            <li><%= Html.ActionLink("New", "New") %></li>	
-                <% if (Model.LatestTrip != null && !Model.LatestTrip.IsMerged) { %>
+                <% if (Model.LatestTrip != null && !Model.LatestTrip.IsImported) { %>
                     <li><%= Html.ActionLink("Continue", "Trip", new { id = Model.LatestTrip.Id }) %> </li>
                 <% } %>
                 <% if (Model.LatestTrip != null) { %>

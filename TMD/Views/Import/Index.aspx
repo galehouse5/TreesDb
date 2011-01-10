@@ -19,7 +19,7 @@
             <% } %>
         </div>
     </div>
-    <% var tripsPendingImport = Model.Where(m => !m.IsMerged).ToList(); %>
+    <% var tripsPendingImport = Model.Where(m => !m.IsImported).ToList(); %>
     <% if (tripsPendingImport.Count > 0) { %>
         <div class="portlet x12 Trips">
             <div class="portlet-header">
@@ -34,7 +34,7 @@
             </div>
         </div>
     <% } %>
-    <% var importedTrips = Model.Where(m => m.IsMerged).ToList(); %>
+    <% var importedTrips = Model.Where(m => m.IsImported).ToList(); %>
     <% if (importedTrips.Count > 0) { %>
         <div class="portlet x12 Trips">
             <div class="portlet-header">

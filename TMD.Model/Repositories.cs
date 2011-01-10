@@ -8,6 +8,7 @@ using TMD.Model.Imports;
 using TMD.Model.Locations;
 using TMD.Model.Trees;
 using TMD.Model.Photos;
+using TMD.Model.Sites;
 
 namespace TMD.Model
 {
@@ -23,7 +24,7 @@ namespace TMD.Model
             get { return ObjectFactory.GetInstance<ITreeRepository>(); }
         }
 
-        public static ImportRepository Trips
+        public static ImportRepository Imports
         {
             get { return ObjectFactory.GetInstance<ImportRepository>(); }
         }
@@ -36,6 +37,11 @@ namespace TMD.Model
         public static IPhotoRepository Photos
         {
             get { return ObjectFactory.GetInstance<IPhotoRepository>(); }
+        }
+
+        public static ISiteRepository Sites
+        {
+            get { return ObjectFactory.GetInstance<ISiteRepository>(); }
         }
     }
 }

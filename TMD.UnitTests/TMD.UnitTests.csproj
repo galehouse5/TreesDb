@@ -81,8 +81,9 @@
     <Compile Include="Infrastructure\PhotosRepository.cs" />
     <Compile Include="Model\Locations.cs" />
     <Compile Include="Model\Photos.cs" />
-    <Compile Include="Model\Trees.cs" />
+    <Compile Include="Infrastructure\TreesRepository.cs" />
     <Compile Include="Infrastructure\ImportsRepository.cs" />
+    <Compile Include="Model\Trees.cs" />
     <Compile Include="Model\Users.cs" />
     <Compile Include="Model\ValueObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -18,11 +18,10 @@ namespace TMD.Model.Imports
         protected Subsite()
         { }
 
-        public virtual Site Site { get; private set; }
+        public virtual Site Site { get; protected set; }
 
         public virtual void SetTripDefaults()
         {
-            Site.Trip.DefaultCountry = Country;
             Site.Trip.DefaultState = State;
             Site.Trip.DefaultCounty = County;
         }
@@ -75,9 +74,6 @@ namespace TMD.Model.Imports
             return Coordinates.Null();
         }
 
-        [NotNull(Message = "Subsite country must be specified.", Tags = Tag.Screening)]
-        public virtual Country Country { get; set; }
-
         [NotNull(Message = "Subsite state must be specified.", Tags = Tag.Screening)]
         public virtual State State { get; set; }
 
@@ -126,7 +122,7 @@ namespace TMD.Model.Imports
         [Valid]
         [Size2(1, int.MaxValue, Message = "You must add tree measurements to this subsite.", Tags = Tag.Screening)]
         [Size2(0, 10000, Message = "This subsite contains too many tree measurements.", Tags = Tag.Screening)]
-        public virtual IList<TreeBase> Trees { get; private set; }
+        public virtual IList<TreeBase> Trees { get; protected set; }
 
         public virtual SingleTrunkTree AddSingleTrunkTree()
         {
@@ -176,7 +172,6 @@ namespace TMD.Model.Imports
                 OwnershipContactInfo = string.Empty,
                 Comments = string.Empty,
                 Trees = new List<TreeBase>(),
-                Country = sv.Trip.DefaultCountry,
                 State = sv.Trip.DefaultState,
                 County = sv.Trip.DefaultCounty,
                 Site = sv,

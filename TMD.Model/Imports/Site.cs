@@ -17,7 +17,7 @@ namespace TMD.Model.Imports
         protected Site()
         { }
 
-        public virtual Trip Trip { get; private set; }
+        public virtual Trip Trip { get; protected set; }
 
         private string m_Name;
         [NotEmptyOrWhitesapce(Message = "Site name must be specified.", Tags = Tag.Screening)]
@@ -78,7 +78,7 @@ namespace TMD.Model.Imports
         [Valid]
         [Size2(1, int.MaxValue, Message = "Site must contain at least one subsite.", Tags = Tag.Screening)]
         [Size2(int.MinValue, 100, Message = "Site contains too many subsites.", Tags = new [] { Tag.Screening, Tag.Persistence })]
-        public virtual IList<Subsite> Subsites { get; private set; }
+        public virtual IList<Subsite> Subsites { get; protected set; }
 
         public virtual Subsite AddSubsite()
         {

@@ -22,7 +22,7 @@ namespace TMD.Model.Imports
 
         public void Remove(Trip t)
         {
-            if (t.IsMerged)
+            if (t.IsImported)
             {
                 throw new InvalidEntityOperationException(t, "Unable to remove trip because it has already been imported.");
             }
@@ -34,7 +34,7 @@ namespace TMD.Model.Imports
         public void Merge(Trip t)
         {
             t.AssertIsValid(Tag.Screening, Tag.Finalization, Tag.Persistence);
-            t.Merged = DateTime.Now;
+            t.Imported = DateTime.Now;
             InternalImport(t);
         }
 

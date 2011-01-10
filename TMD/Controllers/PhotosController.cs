@@ -58,7 +58,7 @@ namespace TMD.Controllers
         {
             using (var uow = UnitOfWork.Begin())
             {
-                var trip = Repositories.Trips.FindById(id);
+                var trip = Repositories.Imports.FindById(id);
                 var tree = trip.FindTreeById(treeId);
                 using (imageData.InputStream)
                 {
@@ -68,7 +68,7 @@ namespace TMD.Controllers
                     this.ValidateMappedModel<TreeBase, PhotoGalleryModel>(tree);
                     if (ModelState.IsValid)
                     {
-                        Repositories.Trips.Save(trip);
+                        Repositories.Imports.Save(trip);
                         uow.Persist();
                     }
                     else
@@ -86,7 +86,7 @@ namespace TMD.Controllers
         {
             using (var uow = UnitOfWork.Begin())
             {
-                var trip = Repositories.Trips.FindById(id);
+                var trip = Repositories.Imports.FindById(id);
                 var subsite = trip.FindSubsiteById(subsiteId);
                 using (imageData.InputStream)
                 {
@@ -96,7 +96,7 @@ namespace TMD.Controllers
                     this.ValidateMappedModel<Subsite, PhotoGalleryModel>(subsite);
                     if (ModelState.IsValid)
                     {
-                        Repositories.Trips.Save(trip);
+                        Repositories.Imports.Save(trip);
                         uow.Persist();
                     }
                     else

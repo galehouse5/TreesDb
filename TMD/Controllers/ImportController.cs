@@ -26,14 +26,14 @@ namespace TMD.Controllers
             {
                 IsSelected = isSelected,
                 CanImport = User.IsInRole(UserRoles.Import),
-                LatestTrip = Repositories.Trips.FindLastCreatedByUser(User.Id)
+                LatestTrip = Repositories.Imports.FindLastCreatedByUser(User.Id)
             });
         }
 
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult Index()
         {
-            return View(Repositories.Trips.ListCreatedByUser(User.Id));
+            return View(Repositories.Imports.ListCreatedByUser(User.Id));
         }
 
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import), UnitOfWork]
@@ -41,11 +41,11 @@ namespace TMD.Controllers
         {
            if (innerAction.Equals(ImportInnerActionModel.EntityLevel.Trip, ImportInnerActionModel.EntityAction.Remove))
            {
-               var trip = Repositories.Trips.FindById(innerAction.Id);
-               if (!User.IsAuthorizedToEdit(trip) || trip.IsMerged) { return new UnauthorizedResult(); }
-               Repositories.Trips.Remove(trip); 
+               var trip = Repositories.Imports.FindById(innerAction.Id);
+               if (!User.IsAuthorizedToEdit(trip) || trip.IsImported) { return new UnauthorizedResult(); }
+               Repositories.Imports.Remove(trip); 
                uow.Persist();
-               return View(Repositories.Trips.ListCreatedByUser(User.Id));
+               return View(Repositories.Imports.ListCreatedByUser(User.Id));
            }
             throw new NotImplementedException();
         }
@@ -53,7 +53,7 @@ namespace TMD.Controllers
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult History()
         {
-            return View(Repositories.Trips.ListCreatedByUser(User.Id));
+            return View(Repositories.Imports.ListCreatedByUser(User.Id));
         }
 
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import), UnitOfWork]
@@ -61,11 +61,11 @@ namespace TMD.Controllers
         {
             if (innerAction.Equals(ImportInnerActionModel.EntityLevel.Trip, ImportInnerActionModel.EntityAction.Remove))
             {
-                var trip = Repositories.Trips.FindById(innerAction.Id);
-                if (!User.IsAuthorizedToEdit(trip) || trip.IsMerged) { return new UnauthorizedResult(); }
-                Repositories.Trips.Remove(trip); 
+                var trip = Repositories.Imports.FindById(innerAction.Id);
+                if (!User.IsAuthorizedToEdit(trip) || trip.IsImported) { return new UnauthorizedResult(); }
+                Repositories.Imports.Remove(trip); 
                 uow.Persist();
-                return View(Repositories.Trips.ListCreatedByUser(User.Id));
+                return View(Repositories.Imports.ListCreatedByUser(User.Id));
             }
             throw new NotImplementedException();
         }
@@ -80,7 +80,7 @@ namespace TMD.Controllers
         public ActionResult StartNew(IUnitOfWork uow)
         {
             var trip = Model.Imports.Trip.Create();
-            Repositories.Trips.Save(trip); 
+            Repositories.Imports.Save(trip); 
             uow.Persist();
             return RedirectToAction("Trip", new { id = trip.Id });
         }
@@ -88,7 +88,7 @@ namespace TMD.Controllers
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult Start(int id)
         {
-            var trip = Repositories.Trips.FindById(id);
+            var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             return View(trip);
         }
@@ -96,7 +96,7 @@ namespace TMD.Controllers
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult Trip(int id)
         {
-            Trip trip = Repositories.Trips.FindById(id);
+            Trip trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             var model = new ImportTripModel(); 
             Mapper.Map(trip, model);
@@ -106,7 +106,7 @@ namespace TMD.Controllers
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import), UnitOfWork]
         public ActionResult Trip(IUnitOfWork uow, ImportTripModel model)
         {
-            var trip = Repositories.Trips.FindById(model.Id);
+            var trip = Repositories.Imports.FindById(model.Id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             Mapper.Map(model, trip);
             this.ValidateMappedModel<Trip, ImportTripModel>(trip, Tag.Screening, Tag.Persistence);
@@ -114,7 +114,7 @@ namespace TMD.Controllers
             {
                 return View(model);
             }
-            Repositories.Trips.Save(trip); 
+            Repositories.Imports.Save(trip); 
             uow.Persist();
             return RedirectToAction("Sites", new { id = trip.Id });
         }
@@ -122,7 +122,7 @@ namespace TMD.Controllers
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import), UnitOfWork]
         public ActionResult Sites(IUnitOfWork uow, int id)
         {
-            var trip = Repositories.Trips.FindById(id);
+            var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             ensureTripHasASite(trip);
             ensureTripSitesHaveASubsite(trip);
@@ -165,7 +165,7 @@ namespace TMD.Controllers
             [ModelBinder(typeof(ImportInnerActionModel))] ImportInnerActionModel innerAction)
         {
             ModelState.Clear();
-            var trip = Repositories.Trips.FindById(model.Id);
+            var trip = Repositories.Imports.FindById(model.Id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             ensureTripHasASite(trip);
             ensureTripSitesHaveASubsite(trip);
@@ -178,7 +178,7 @@ namespace TMD.Controllers
                     return View(model); 
                 }
                 (from site in trip.Sites from subsite in site.Subsites select subsite).Last().SetTripDefaults();
-                Repositories.Trips.Save(trip);  
+                Repositories.Imports.Save(trip);  
                 uow.Persist();
                 return RedirectToAction("Trees", new { id = trip.Id });
             }
@@ -186,7 +186,7 @@ namespace TMD.Controllers
             {
                 var site = trip.AddSite();
                 ensureTripSitesHaveASubsite(trip);
-                Repositories.Trips.Save(trip); 
+                Repositories.Imports.Save(trip); 
                 uow.Persist();
                 var siteModel = model.AddSite();
                 Mapper.Map(site, siteModel);
@@ -211,7 +211,7 @@ namespace TMD.Controllers
                         : View(model); 
                 }
                 site.Subsites.Last().SetTripDefaults();
-                Repositories.Trips.Save(trip); 
+                Repositories.Imports.Save(trip); 
                 uow.Persist();
                 siteModel.IsEditing = false;
                 return Request.IsAjaxRequest() ? 
@@ -222,7 +222,7 @@ namespace TMD.Controllers
             {
                 var site = trip.FindSiteById(innerAction.Id);
                 trip.RemoveSite(site);
-                Repositories.Trips.Save(trip); 
+                Repositories.Imports.Save(trip); 
                 uow.Persist();
                 var siteModel = model.FindSiteById(site.Id);
                 model.RemoveSite(siteModel);
@@ -243,7 +243,7 @@ namespace TMD.Controllers
             {
                 var site = trip.FindSiteById(innerAction.Id);
                 var subsite = site.AddSubsite();
-                Repositories.Trips.Save(trip); 
+                Repositories.Imports.Save(trip); 
                 uow.Persist();
                 var siteModel = model.FindSiteById(innerAction.Id);
                 var subsiteModel = siteModel.AddSubsite();                    
@@ -257,7 +257,7 @@ namespace TMD.Controllers
                 var subsite = trip.FindSubsiteById(innerAction.Id);
                 var site = subsite.Site;
                 site.RemoveSubsite(subsite);
-                Repositories.Trips.Save(trip); 
+                Repositories.Imports.Save(trip); 
                 uow.Persist();
                 var subsiteModel = model.FindSubsiteById(subsite.Id);
                 var siteModel = model.FindSiteById(site.Id);
@@ -289,7 +289,7 @@ namespace TMD.Controllers
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import), UnitOfWork]
         public ActionResult Trees(IUnitOfWork uow, int id)
         {
-            var trip = Repositories.Trips.FindById(id);
+            var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             ensureTripSubsitesHaveATree(trip); 
             uow.Persist();
@@ -304,7 +304,7 @@ namespace TMD.Controllers
             [ModelBinder(typeof(ImportInnerActionModel))] ImportInnerActionModel innerAction)
         {
             ModelState.Clear();
-            var trip = Repositories.Trips.FindById(model.Id);
+            var trip = Repositories.Imports.FindById(model.Id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             ensureTripSubsitesHaveATree(trip);
             ensureTreesAreRemovable(model);
@@ -325,7 +325,7 @@ namespace TMD.Controllers
                         : View(model);
                 }
                 tree.SetTripDefaults();
-                Repositories.Trips.Save(trip); 
+                Repositories.Imports.Save(trip); 
                 uow.Persist();
                 treeModel.IsEditing = false;
                 return Request.IsAjaxRequest() ? 
@@ -342,7 +342,7 @@ namespace TMD.Controllers
             {
                 var subsite = trip.FindSubsiteById(innerAction.Id);
                 var tree = subsite.AddSingleTrunkTree();
-                Repositories.Trips.Save(trip); 
+                Repositories.Imports.Save(trip); 
                 uow.Persist();
                 var subsiteModel = model.FindSubsiteById(subsite.Id);
                 var treeModel = subsiteModel.AddTree();
@@ -358,7 +358,7 @@ namespace TMD.Controllers
                 var tree = trip.FindTreeById(innerAction.Id);
                 var subsite = tree.Subsite;
                 tree.Subsite.RemoveTree(tree);
-                Repositories.Trips.Save(trip); 
+                Repositories.Imports.Save(trip); 
                 uow.Persist();
                 var treeModel = model.FindTreeById(tree.Id);
                 var subsiteModel = model.FindSubsiteById(subsite.Id);
@@ -377,7 +377,7 @@ namespace TMD.Controllers
                     return View(model);
                 }
                 (from site in trip.Sites from subsite in site.Subsites from tree in subsite.Trees select tree).Last().SetTripDefaults();
-                Repositories.Trips.Save(trip); 
+                Repositories.Imports.Save(trip); 
                 uow.Persist();
                 return RedirectToAction("Finish", new { id = trip.Id });
             }
@@ -387,7 +387,7 @@ namespace TMD.Controllers
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult Finish(int id)
         {
-            var trip = Repositories.Trips.FindById(id);
+            var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             return View(Mapper.Map<Trip, ImportFinishedTripModel>(trip));
         }
@@ -395,9 +395,9 @@ namespace TMD.Controllers
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import), UnitOfWork]
         public ActionResult Finalize(IUnitOfWork uow, int id)
         {
-            var trip = Repositories.Trips.FindById(id);
+            var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            Repositories.Trips.Merge(trip); 
+            Repositories.Imports.Merge(trip); 
             uow.Persist();
             return RedirectToAction("Index");
         }
@@ -405,7 +405,7 @@ namespace TMD.Controllers
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
         public ActionResult View(int id)
         {
-            var trip = Repositories.Trips.FindById(id);
+            var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             return View(Mapper.Map<Trip, ImportFinishedTripModel>(trip));
         }

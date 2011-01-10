@@ -11,16 +11,16 @@ namespace TMD.Infrastructure.Repositories
 {
     public class TreeRepository : ITreeRepository
     {
-        public IList<KnownTree> FindAllKnownTrees()
+        public IList<KnownSpecies> FindAllKnownTrees()
         {
-            return Registry.Session.CreateCriteria<KnownTree>().List<KnownTree>();
+            return Registry.Session.CreateCriteria<KnownSpecies>().List<KnownSpecies>();
         }
 
         private StringComparisonExpression m_AcceptedSymbolRanker = StringComparisonExpression.Create("equality * 100");
         private StringComparisonExpression m_CommonNameRanker = StringComparisonExpression.Create("jaro * firstlength");
         private StringComparisonExpression m_ScientificNameRanker = StringComparisonExpression.Create("jarowinkler * firstlength");
 
-        public IList<KnownTree> FindTreesWithSimilarCommonName(string commonName, int results)
+        public IList<KnownSpecies> FindKnownSpeciesBySimilarCommonName(string commonName, int results)
         {
             var all = FindAllKnownTrees();
             var ranked = from tree in all
@@ -38,7 +38,7 @@ namespace TMD.Infrastructure.Repositories
         }
 
 
-        public IList<KnownTree> FindTreesWithSimilarScientificName(string scientificName, int results)
+        public IList<KnownSpecies> FindKnownSpeciesBySimilarScientificName(string scientificName, int results)
         {
             var all = FindAllKnownTrees();
             var ranked = from tree in all
@@ -54,6 +54,17 @@ namespace TMD.Infrastructure.Repositories
                          where tree.Rank >= tree.Tree.CommonName.Length
                          select tree.Tree;
             return sorted.Take(results).ToList();
+        }
+
+
+        public Species FindSpeciesByScientificName(string scientificName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Tree FindById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

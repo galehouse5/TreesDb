@@ -315,6 +315,26 @@ namespace TMD.Model
                 RawValue = RawValue
             };
         }
+
+        public Latitude AddMinutes(float minutes)
+        {
+            return new Latitude
+            {
+                InputFormat = InputFormat,
+                TotalDegrees = TotalDegrees + (float)Math.Round(minutes / 60f, 5),
+                RawValue = RawValue
+            };
+        }
+
+        public Latitude SubtractMinutes(float minutes)
+        {
+            return new Latitude
+            {
+                InputFormat = InputFormat,
+                TotalDegrees = TotalDegrees - (float)Math.Round(minutes / 60f, 5),
+                RawValue = RawValue
+            };
+        }
     }
 
     public class Longitude : ISpecified, ICloneable
@@ -462,6 +482,26 @@ namespace TMD.Model
             {
                 InputFormat = InputFormat,
                 TotalDegrees = TotalDegrees,
+                RawValue = RawValue
+            };
+        }
+
+        public Longitude AddMinutes(float minutes)
+        {
+            return new Longitude
+            {
+                InputFormat = InputFormat,
+                TotalDegrees = TotalDegrees + (float)Math.Round(minutes / 60f, 5),
+                RawValue = RawValue
+            };
+        }
+
+        public Longitude SubtractMinutes(float minutes)
+        {
+            return new Longitude
+            {
+                InputFormat = InputFormat,
+                TotalDegrees = TotalDegrees - (float)Math.Round(minutes / 60f, 5),
                 RawValue = RawValue
             };
         }

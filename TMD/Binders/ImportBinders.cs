@@ -16,7 +16,7 @@ namespace TMD.Binders
         public override object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
             var model = (ImportSitesModel)base.BindModel(controllerContext, bindingContext);
-            var trip = Repositories.Trips.FindById(model.Id);
+            var trip = Repositories.Imports.FindById(model.Id);
             model.Sites.Where(siteModel => !siteModel.IsEditing).ForEach(siteModel =>
                 {
                     var site = trip.FindSiteById(siteModel.Id);
@@ -42,7 +42,7 @@ namespace TMD.Binders
         public override object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
             var model = (ImportTreesModel)base.BindModel(controllerContext, bindingContext);
-            var trip = Repositories.Trips.FindById(model.Id);
+            var trip = Repositories.Imports.FindById(model.Id);
             model.Sites.ForEach(siteModel =>
                 {
                     var site = trip.FindSiteById(siteModel.Id);

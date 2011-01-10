@@ -70,6 +70,7 @@
     <Compile Include="Repositories\PhotoRepository.cs" />
     <Compile Include="Repositories\RepositoryRegistry.cs" />
     <Compile Include="Repositories\RepositorySettings.cs" />
+    <Compile Include="Repositories\SiteRepository.cs" />
     <Compile Include="Repositories\TreeRepository.cs" />
     <Compile Include="Repositories\ImportRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />

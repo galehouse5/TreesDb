@@ -78,7 +78,6 @@ namespace TMD.Mappings
                 .AfterMap((src, dest) => src.Subsites.ForEach(ss => Mapper.Map(ss, dest.FindSubsiteById(ss.Id))));
 
             CreateMap<ImportSubsiteModel, Subsite>()
-                .ForMember(dest => dest.Country, opt => opt.MapFrom(src => src.State == null ? null : src.State.Country))
                 .ForMember(dest => dest.Photos, opt => opt.Ignore());
         }
 

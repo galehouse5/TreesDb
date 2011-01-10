@@ -99,7 +99,7 @@ namespace TMD.Controllers
 
         public ActionResult ViewMarkersForImportSite(int id, int siteId)
         {
-            var trip = Repositories.Trips.FindById(id);
+            var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             var renderedMarkers = new List<object>();
             renderedMarkers.AddRange(from sv in trip.Sites
@@ -129,7 +129,7 @@ namespace TMD.Controllers
 
         public ActionResult ViewMarkersForImportSubsite(int id, int subsiteId)
         {
-            var trip = Repositories.Trips.FindById(id);
+            var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             var renderedMarkers = new List<object>();
             renderedMarkers.AddRange(from sv in trip.Sites
@@ -159,7 +159,7 @@ namespace TMD.Controllers
 
         public ActionResult ViewMarkersForImportTree(int id, int treeId)
         {
-            var trip = Repositories.Trips.FindById(id);
+            var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             var renderedMarkers = new List<object>();
             renderedMarkers.AddRange(from sv in trip.Sites

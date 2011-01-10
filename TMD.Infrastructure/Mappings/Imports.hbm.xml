@@ -203,7 +203,6 @@
         <property name="InputFormat" column="LongitudeInputFormat"/>
       </component>
     </component>
-    <many-to-one name="Country" column="CountryId" cascade="none" />
     <many-to-one name="State" column="StateId" cascade="none" />
     <property name="County" />
     <property name="OwnershipType" />
@@ -252,7 +251,7 @@
     <property name="Created" />
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <property name="Name" />
-    <property name="Merged" />
+    <property name="Imported" />
     <property name="Date" type="date" />
     <property name="Website" />
     <property name="PhotosAvailable" />
@@ -268,7 +267,6 @@
     <property name="DefaultClinometerBrand" />
     <property name="DefaultLaserBrand" />
     <property name="DefaultHeightMeasurementMethod" />
-    <many-to-one name="DefaultCountry" column="DefaultCountryId" cascade="none" />
     <many-to-one name="DefaultState" column="DefaultStateId" cascade="none" />
     <property name="DefaultCounty" />
     <property name="MakeMeasurerContactInfoPublic"/>

@@ -7,7 +7,9 @@ namespace TMD.Model.Trees
 {
     public interface ITreeRepository
     {
-        IList<KnownTree> FindTreesWithSimilarCommonName(string commonName, int results);
-        IList<KnownTree> FindTreesWithSimilarScientificName(string scientificName, int results);
+        Tree FindById(int id);
+        IList<KnownSpecies> FindKnownSpeciesBySimilarCommonName(string commonName, int results);
+        IList<KnownSpecies> FindKnownSpeciesBySimilarScientificName(string scientificName, int results);
+        Species FindSpeciesByScientificName(string scientificName);
     }
 }

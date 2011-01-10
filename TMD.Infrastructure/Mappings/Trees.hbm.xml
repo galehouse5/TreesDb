@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
                    assembly="TMD.Model"
-                   namespace="TMD.Model">
+                   namespace="TMD.Model.Trees">
   
-  <class name="TMD.Model.Trees.KnownTree" table="Trees.KnownTrees" mutable="false">
+  <class name="KnownSpecies" table="Trees.KnownSpecies" mutable="false">
     <id name="Id">
       <generator class="native" />
     </id>

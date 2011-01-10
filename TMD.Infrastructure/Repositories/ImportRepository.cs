@@ -34,9 +34,13 @@ namespace TMD.Infrastructure.Repositories
             Registry.Session.Delete(t);
         }
 
-        // TODO: implement import logic
         protected override void InternalImport(Trip t)
         {
+            foreach(var site in t.Sites)
+            {
+                var siteForMerging = Model.Sites.Site.Create(site);
+                Model.Repositories.Sites.Merge(siteForMerging);
+            }
             Registry.Session.SaveOrUpdate(t);
         }
 

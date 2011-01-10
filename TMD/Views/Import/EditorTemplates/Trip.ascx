@@ -2,7 +2,7 @@
 <%@ Import Namespace="TMD.Model.Imports" %>
 <div class="portlet x12 Trip">
     <div class="portlet-header Trip-Header Entity-Header">
-        <% if (Model.IsMerged) { %>
+        <% if (Model.IsImported) { %>
             <h4><%: Model.Name %>&nbsp;</h4>
             <div class="actions">
                 <%= Html.ActionLink("View", "View", "Import", new { id = Model.Id }, new { @class = "btn btn-orange btn-small" })%>

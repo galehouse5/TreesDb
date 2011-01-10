@@ -66,9 +66,14 @@
     <Compile Include="Photos\Photo.cs" />
     <Compile Include="Photos\PhotoSize.cs" />
     <Compile Include="Photos\PhotoStoreBase.cs" />
+    <Compile Include="Sites\SiteVisit.cs" />
+    <Compile Include="Sites\SubsiteVisit.cs" />
     <Compile Include="Sites\ISiteRepository.cs" />
     <Compile Include="Sites\Subsite.cs" />
     <Compile Include="Sites\Site.cs" />
+    <Compile Include="Trees\Species.cs" />
+    <Compile Include="Trees\TreeMeasurement.cs" />
+    <Compile Include="Trees\Tree.cs" />
     <Compile Include="Users\UserRoles.cs" />
     <Compile Include="Validation\BooleanMethodAttribute.cs" />
     <Compile Include="Validation\ContextMethodAttribute.cs" />
@@ -82,7 +87,6 @@
     <Compile Include="Extensions\Reflection.cs" />
     <Compile Include="Extensions\String.cs" />
     <Compile Include="Repositories.cs" />
-    <Compile Include="Trees\KnownTree.cs" />
     <Compile Include="Locations\ILocationRepository.cs" />
     <Compile Include="Trees\ITreeRepository.cs" />
     <Compile Include="UserSession.cs" />

@@ -50,14 +50,23 @@ namespace TMD.Model.Imports
         public virtual bool MakeMeasurerContactInfoPublic { get; set; }
 
         [Valid, Size(1, 100, Message = "You must add site visits to your trip.", Tags = Tag.Screening)]
-        public virtual IList<Site> Sites { get; private set; }
+        public virtual IList<Site> Sites { get; protected set; }
 
         [Valid, Size2(1, int.MaxValue, Message = "You must record at least one measurer.", Tags = Tag.Screening)]
         [Size2(0, 3, Message = "You have recorded too many measurers.", Tags = new [] { Tag.Screening, Tag.Persistence })]
         public virtual IList<Measurer> Measurers { get; private set; }
 
-        public virtual bool IsMerged { get { return Merged != null; } }
-        public virtual DateTime? Merged { get; protected internal set; }
+        public virtual bool IsImported { get { return Imported != null; } }
+        public virtual DateTime? Imported { get; protected internal set; }
+
+        public virtual Trip AssertIsImported()
+        {
+            if (!IsImported)
+            {
+                throw new InvalidEntityOperationException(this, "Trip must first be imported.");
+            }
+            return this;
+        }
 
         public virtual bool CanCalculateCoordinates()
         {
@@ -74,7 +83,6 @@ namespace TMD.Model.Imports
         public virtual string DefaultClinometerBrand { get; protected internal set; }
         public virtual string DefaultLaserBrand { get; protected internal set; }
         public virtual TreeHeightMeasurementMethod DefaultHeightMeasurementMethod { get; protected internal set; }
-        public virtual Country DefaultCountry { get; protected internal set; }
         public virtual State DefaultState { get; protected internal set; }
         public virtual string DefaultCounty { get; protected internal set; }
 
@@ -132,7 +140,6 @@ namespace TMD.Model.Imports
                 Measurers = new List<Measurer>(),
                 DefaultClinometerBrand = string.Empty,
                 DefaultLaserBrand = string.Empty,
-                DefaultCountry = Repositories.Locations.FindCountryByCode("US"),
                 DefaultState = null,
                 MakeMeasurerContactInfoPublic = true
             }.RecordCreation() as Trip;

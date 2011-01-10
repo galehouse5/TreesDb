@@ -25,15 +25,15 @@ namespace TMD.UnitTests.Infrastructure
             trip.Date = DateTime.Now;
             using (var uow = UnitOfWork.Begin())
             {
-                Repositories.Trips.Save(trip);
+                Repositories.Imports.Save(trip);
                 uow.Persist();
             }
             UnitOfWork.Dispose();
             using (var uow = UnitOfWork.Begin())
             {
-                var found = Repositories.Trips.FindById(trip.Id);
+                var found = Repositories.Imports.FindById(trip.Id);
                 Assert.IsNotNull(found);
-                Repositories.Trips.Remove(found);
+                Repositories.Imports.Remove(found);
                 uow.Persist();
             }
         }
@@ -57,16 +57,16 @@ namespace TMD.UnitTests.Infrastructure
 
             using (var uow = UnitOfWork.Begin())
             {
-                Repositories.Trips.Save(trip);
+                Repositories.Imports.Save(trip);
                 uow.Persist();
             }
             UnitOfWork.Dispose();
             using (var uow = UnitOfWork.Begin())
             {
-                var found = Repositories.Trips.FindById(trip.Id);
+                var found = Repositories.Imports.FindById(trip.Id);
                 Assert.IsNotNull(found);
                 Assert.IsTrue(found.Sites.Count == 2);
-                Repositories.Trips.Remove(found);
+                Repositories.Imports.Remove(found);
                 uow.Persist();
             }
         }
@@ -90,7 +90,6 @@ namespace TMD.UnitTests.Infrastructure
 
             Subsite ssv1 = sv2.AddSubsite();
             ssv1.Comments = "subsite visit 1 comments";
-            ssv1.Country = Repositories.Locations.FindCountryByCode("US");
             ssv1.County = "subsite visit 1 county";
             ssv1.Name = "subsite visit 1 name";
             ssv1.OwnershipContactInfo = "subsite visit 1 ownership contact info";
@@ -98,7 +97,6 @@ namespace TMD.UnitTests.Infrastructure
             ssv1.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
             Subsite ssv2 = sv2.AddSubsite();
             ssv2.Comments = "subsite visit 2 comments";
-            ssv2.Country = Repositories.Locations.FindCountryByCode("US");
             ssv2.County = "subsite visit 2 county";
             ssv2.Name = "subsite visit 2 name";
             ssv2.OwnershipContactInfo = "subsite visit 2 ownership contact info";
@@ -107,17 +105,17 @@ namespace TMD.UnitTests.Infrastructure
             
             using (var uow = UnitOfWork.Begin())
             {
-                Repositories.Trips.Save(t);
+                Repositories.Imports.Save(t);
                 uow.Persist();
             }
             UnitOfWork.Dispose();
             using (var uow = UnitOfWork.Begin())
             {
-                Trip found = Repositories.Trips.FindById(t.Id);
+                Trip found = Repositories.Imports.FindById(t.Id);
                 Assert.IsNotNull(found);
                 Assert.IsTrue(found.Sites.Count == 2);
                 Assert.IsTrue(found.Sites[1].Subsites.Count == 2);
-                Repositories.Trips.Remove(found);
+                Repositories.Imports.Remove(found);
                 uow.Persist();
             }
         }
@@ -147,7 +145,6 @@ namespace TMD.UnitTests.Infrastructure
 
             Subsite ssv1 = sv2.AddSubsite();
             ssv1.Comments = "subsite visit 1 comments";
-            ssv1.Country = Repositories.Locations.FindCountryByCode("US");
             ssv1.County = "subsite visit 1 county";
             ssv1.Name = "subsite visit 1 name";
             ssv1.OwnershipContactInfo = "subsite visit 1 ownership contact info";
@@ -155,7 +152,6 @@ namespace TMD.UnitTests.Infrastructure
             ssv1.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
             Subsite ssv2 = sv2.AddSubsite();
             ssv2.Comments = "subsite visit 2 comments";
-            ssv2.Country = Repositories.Locations.FindCountryByCode("US");
             ssv2.County = "subsite visit 2 county";
             ssv2.Name = "subsite visit 2 name";
             ssv2.OwnershipContactInfo = "subsite visit 2 ownership contact info";
@@ -274,18 +270,18 @@ namespace TMD.UnitTests.Infrastructure
 
             using (var uow = UnitOfWork.Begin())
             {
-                Repositories.Trips.Save(t);
+                Repositories.Imports.Save(t);
                 uow.Persist();
             }
             UnitOfWork.Dispose();
             using (var uow = UnitOfWork.Begin())
             {
-                Trip found = Repositories.Trips.FindById(t.Id);
+                Trip found = Repositories.Imports.FindById(t.Id);
                 Assert.IsNotNull(found);
                 Assert.IsTrue(found.Sites.Count == 2);
                 Assert.IsTrue(found.Sites[1].Subsites.Count == 2);
                 Assert.IsTrue(found.Sites[1].Subsites[1].Trees.Count == 2);
-                Repositories.Trips.Remove(found);
+                Repositories.Imports.Remove(found);
                 uow.Persist();
             }
         }
@@ -306,13 +302,11 @@ namespace TMD.UnitTests.Infrastructure
             sv2.Name = "site visit 2 name";
 
             Subsite ssv1 = sv2.AddSubsite();
-            ssv1.Country = Repositories.Locations.FindCountryByCode("US");
             ssv1.County = "subsite visit 1 county";
             ssv1.Name = "subsite visit 1 name";
             ssv1.OwnershipType = "subsite visit 1 ownership type";
             ssv1.State = Repositories.Locations.FindStateByCountryAndStateCode("US", "OH");
             Subsite ssv2 = sv2.AddSubsite();
-            ssv2.Country = Repositories.Locations.FindCountryByCode("US");
             ssv2.County = "subsite visit 2 county";
             ssv2.Name = "subsite visit 2 name";
             ssv2.OwnershipType = "subsite visit 2 ownership type";
@@ -331,13 +325,13 @@ namespace TMD.UnitTests.Infrastructure
 
             using (var uow = UnitOfWork.Begin())
             {
-                Repositories.Trips.Save(t);
+                Repositories.Imports.Save(t);
                 uow.Persist();
             }
             UnitOfWork.Dispose();
             using (var uow = UnitOfWork.Begin())
             {
-                Trip found = Repositories.Trips.FindById(t.Id);
+                Trip found = Repositories.Imports.FindById(t.Id);
                 Assert.IsNotNull(found);
                 Assert.AreEqual(2, found.Sites.Count);
                 Assert.AreEqual(2, found.Sites[1].Subsites.Count);
@@ -345,7 +339,7 @@ namespace TMD.UnitTests.Infrastructure
                 Assert.AreEqual(2, found.Sites[1].Subsites[1].Trees[1].Photos.Count);
                 Assert.IsTrue("Square.jpg".GetPhoto().CompareByContent(found.Sites[1].Subsites[1].Trees[1].Photos[0].Get()));
                 Assert.IsTrue("Thumbnail.jpg".GetPhoto().CompareByContent(found.Sites[1].Subsites[1].Trees[1].Photos[1].Get()));
-                Repositories.Trips.Remove(found);
+                Repositories.Imports.Remove(found);
                 uow.Persist();
             }
         }

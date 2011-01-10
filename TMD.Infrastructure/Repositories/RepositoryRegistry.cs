@@ -15,6 +15,7 @@ namespace TMD.Infrastructure.Repositories
             For<TMD.Model.Imports.ImportRepository>().Singleton().Use<ImportRepository>();
             For<TMD.Model.Users.UserRepository>().Singleton().Use<UserRepository>();
             For<TMD.Model.Photos.IPhotoRepository>().Singleton().Use<PhotoRepository>();
+            For<TMD.Model.Sites.ISiteRepository>().Singleton().Use<SiteRepository>();
         }
 
         internal static void Configure(NHibernate.Cfg.Configuration config)

@@ -17,9 +17,9 @@ namespace TMD.Controllers
 {
     public class TreesController : ControllerBase
     {
-        public ActionResult FindKnownTreesWithSimilarCommonName(string term, int results = 5)
+        public ActionResult FindKnownSpeciesWithSimilarCommonName(string term, int results = 5)
         {
-            var trees = Repositories.Trees.FindTreesWithSimilarCommonName(term, results);
+            var trees = Repositories.Trees.FindKnownSpeciesBySimilarCommonName(term, results);
             return Json(from tree in trees
                         select new 
                         {
@@ -30,9 +30,9 @@ namespace TMD.Controllers
                         JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult FindKnownTreesWithSimilarScientificName(string term, int results = 5)
+        public ActionResult FindKnownSpeciesWithSimilarScientificName(string term, int results = 5)
         {
-            var trees = Repositories.Trees.FindTreesWithSimilarScientificName(term, results);
+            var trees = Repositories.Trees.FindKnownSpeciesBySimilarScientificName(term, results);
             return Json(from tree in trees
                         select new
                         {
