@@ -58,6 +58,16 @@ namespace TMD.Infrastructure
             };
         }
 
+        public void Refresh(object obj)
+        {
+            Session.Refresh(obj);
+        }
+
+        public void Flush()
+        {
+            Session.Flush();
+        }
+
         public void Dispose()
         {
             if (m_Session != null)

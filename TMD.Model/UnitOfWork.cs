@@ -11,6 +11,8 @@ namespace TMD.Model
     {
         IUnitOfWork Begin();
         IUnitOfWork Begin(IsolationLevel isolationLevel);
+        void Refresh(object obj);
+        void Flush();
     }
 
     public interface IUnitOfWork : IDisposable
@@ -39,6 +41,16 @@ namespace TMD.Model
         public static void Dispose()
         {
             Provider.Dispose();
+        }
+
+        public static void Refresh(object obj)
+        {
+            Provider.Refresh(obj);
+        }
+
+        public static void Flush()
+        {
+            Provider.Flush();
         }
     }
 }

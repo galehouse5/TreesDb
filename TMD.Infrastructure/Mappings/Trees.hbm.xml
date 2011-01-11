@@ -1,15 +1,138 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
                    assembly="TMD.Model"
-                   namespace="TMD.Model.Trees">
+                   namespace="TMD.Model"
+                   schema="Trees">
   
-  <class name="KnownSpecies" table="Trees.KnownSpecies" mutable="false">
+  <class name="TMD.Model.Trees.KnownSpecies" table="KnownSpecies" mutable="false">
     <id name="Id">
       <generator class="native" />
     </id>
     <property name="AcceptedSymbol" />
     <property name="ScientificName" />
     <property name="CommonName" />
+  </class>
+
+  <class name="TMD.Model.Trees.MeasuredSpecies" table="MeasuredSpecies">
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <component name="MaxHeight" class="Distance">
+      <property name="Feet" column="MaxHeight"/>
+      <property name="InputFormat" column="MaxHeightInputFormat"/>
+    </component>
+    <property name="ScientificName" />
+    <component name="MaxGirth" class="Distance">
+      <property name="Feet" column="MaxGirth"/>
+      <property name="InputFormat" column="MaxGirthInputFormat"/>
+    </component>
+    <component name="MaxCrownSpread" class="Distance">
+      <property name="Feet" column="MaxCrownSpread"/>
+      <property name="InputFormat" column="MaxCrownSpreadInputFormat"/>
+    </component>    
+  </class>
+
+  <class name="TMD.Model.Trees.TreeMeasurement" table="TreeMeasurements">
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <property name="Measured" />
+    <many-to-one name="ImportingTrip" column="ImportingTripId" cascade="none" />
+    <property name="CommonName"/>
+    <property name="ScientificName"/>
+    <component name="Height" class="Distance">
+      <property name="Feet" column="Height"/>
+      <property name="InputFormat" column="HeightInputFormat"/>
+    </component>
+    <property name="HeightMeasurementMethod" />
+    <component name="Girth" class="Distance">
+      <property name="Feet" column="Girth"/>
+      <property name="InputFormat" column="GirthInputFormat"/>
+    </component>
+    <component name="CrownSpread" class="Distance">
+      <property name="Feet" column="CrownSpread"/>
+      <property name="InputFormat" column="CrownSpreadInputFormat"/>
+    </component>
+    <component name="Coordinates" class="Coordinates">
+      <component name="Latitude" class="Latitude">
+        <property name="TotalDegrees" column="Latitude" />
+        <property name="InputFormat" column="LatitudeInputFormat"/>
+      </component>
+      <component name="Longitude" class="Longitude">
+        <property name="TotalDegrees" column="Longitude" />
+        <property name="InputFormat" column="LongitudeInputFormat"/>
+      </component>
+    </component>
+    <component name="CalculatedCoordinates" class="Coordinates">
+      <component name="Latitude" class="Latitude">
+        <property name="TotalDegrees" column="CalculatedLatitude" />
+        <property name="InputFormat" formula="(select 2)" />
+      </component>
+      <component name="Longitude" class="Longitude">
+        <property name="TotalDegrees" column="CalculatedLongitude" />
+        <property name="InputFormat" formula="(select 2)" />
+      </component>
+    </component>
+    <component name="Elevation" class="Elevation">
+      <property name="Feet" column="Elevation"/>
+      <property name="InputFormat" column="ElevationInputFormat"/>
+    </component>
+    <property name="GeneralComments"/>
+    <property name="ENTSPTS"/>
+    <property name="ENTSPTS2"/>
+  </class>
+
+  <class name="TMD.Model.Trees.Tree" table="Trees">
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <many-to-one name="Species" column="ComputedMeasuredSpeciesId" insert="false" update="false" cascade="none" />
+    <bag name="Measurements" table="TreeMeasurements" inverse="false" cascade="all-delete-orphan">
+      <key column="TreeId"></key>
+      <one-to-many class="TMD.Model.Trees.TreeMeasurement"/>
+    </bag>
+    <property name="LastMeasured" />
+    <property name="CommonName"/>
+    <property name="ScientificName"/>
+    <component name="Height" class="Distance">
+      <property name="Feet" column="Height"/>
+      <property name="InputFormat" column="HeightInputFormat"/>
+    </component>
+    <property name="HeightMeasurementMethod" />
+    <component name="Girth" class="Distance">
+      <property name="Feet" column="Girth"/>
+      <property name="InputFormat" column="GirthInputFormat"/>
+    </component>
+    <component name="CrownSpread" class="Distance">
+      <property name="Feet" column="CrownSpread"/>
+      <property name="InputFormat" column="CrownSpreadInputFormat"/>
+    </component>
+    <component name="Coordinates" class="Coordinates">
+      <component name="Latitude" class="Latitude">
+        <property name="TotalDegrees" column="Latitude" />
+        <property name="InputFormat" column="LatitudeInputFormat"/>
+      </component>
+      <component name="Longitude" class="Longitude">
+        <property name="TotalDegrees" column="Longitude" />
+        <property name="InputFormat" column="LongitudeInputFormat"/>
+      </component>
+    </component>
+    <component name="CalculatedCoordinates" class="Coordinates">
+      <component name="Latitude" class="Latitude">
+        <property name="TotalDegrees" column="CalculatedLatitude" />
+        <property name="InputFormat" formula="(select 2)" />
+      </component>
+      <component name="Longitude" class="Longitude">
+        <property name="TotalDegrees" column="CalculatedLongitude" />
+        <property name="InputFormat" formula="(select 2)" />
+      </component>
+    </component>
+    <component name="Elevation" class="Elevation">
+      <property name="Feet" column="Elevation"/>
+      <property name="InputFormat" column="ElevationInputFormat"/>
+    </component>
+    <property name="ENTSPTS"/>
+    <property name="ENTSPTS2"/>
   </class>
   
 </hibernate-mapping>

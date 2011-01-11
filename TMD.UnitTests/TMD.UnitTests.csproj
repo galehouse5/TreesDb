@@ -78,7 +78,9 @@
     <Compile Include="Extensions\Application\ValidationMapping.cs" />
     <Compile Include="Extensions\ImageComparison.cs" />
     <Compile Include="Extensions\Photo.cs" />
+    <Compile Include="Infrastructure\SitesRepository.cs" />
     <Compile Include="Infrastructure\PhotosRepository.cs" />
+    <Compile Include="Model\Sites.cs" />
     <Compile Include="Model\Locations.cs" />
     <Compile Include="Model\Photos.cs" />
     <Compile Include="Infrastructure\TreesRepository.cs" />
@@ -89,6 +91,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Infrastructure\StringComparison.cs" />
     <Compile Include="Registry.cs" />
+    <Compile Include="Stubs\Trees.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TMD.Infrastructure\TMD.Infrastructure.csproj">

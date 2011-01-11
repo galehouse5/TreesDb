@@ -6,14 +6,20 @@ using TMD.Model.Trees;
 using TMD.Model;
 using NHibernate;
 using TMD.Infrastructure.StringComparison;
+using NHibernate.Criterion;
 
 namespace TMD.Infrastructure.Repositories
 {
     public class TreeRepository : ITreeRepository
     {
-        public IList<KnownSpecies> FindAllKnownTrees()
+        public Tree FindById(int id)
         {
-            return Registry.Session.CreateCriteria<KnownSpecies>().List<KnownSpecies>();
+            return Registry.Session.Get<Tree>(id);
+        }
+
+        public void Save(Tree tree)
+        {
+            Registry.Session.Save(tree);
         }
 
         private StringComparisonExpression m_AcceptedSymbolRanker = StringComparisonExpression.Create("equality * 100");
@@ -22,7 +28,7 @@ namespace TMD.Infrastructure.Repositories
 
         public IList<KnownSpecies> FindKnownSpeciesBySimilarCommonName(string commonName, int results)
         {
-            var all = FindAllKnownTrees();
+            var all = Registry.Session.CreateCriteria<KnownSpecies>().List<KnownSpecies>();
             var ranked = from tree in all
                          select new {
                              Rank = m_AcceptedSymbolRanker.RateWordSimilarity(commonName, tree.AcceptedSymbol)
@@ -40,7 +46,7 @@ namespace TMD.Infrastructure.Repositories
 
         public IList<KnownSpecies> FindKnownSpeciesBySimilarScientificName(string scientificName, int results)
         {
-            var all = FindAllKnownTrees();
+            var all = Registry.Session.CreateCriteria<KnownSpecies>().List<KnownSpecies>();
             var ranked = from tree in all
                          select new
                          {
@@ -54,17 +60,6 @@ namespace TMD.Infrastructure.Repositories
                          where tree.Rank >= tree.Tree.CommonName.Length
                          select tree.Tree;
             return sorted.Take(results).ToList();
-        }
-
-
-        public Species FindSpeciesByScientificName(string scientificName)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Tree FindById(int id)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -15,6 +15,7 @@ namespace TMD.Model.Trees
         { }
 
         public virtual int Id { get; private set; }
+        public virtual MeasuredSpecies Species { get; private set; }
         public virtual DateTime LastMeasured { get; private set; }
         public virtual string CommonName { get; private set; }
         public virtual string ScientificName { get; private set; }
@@ -28,18 +29,18 @@ namespace TMD.Model.Trees
         public virtual float? ENTSPTS { get; private set; }
         public virtual float? ENTSPTS2 { get; private set; }
 
-        public virtual DateTime CalculateLastMeasured() { return (from measurement in Measurements orderby measurement.Measured select measurement).Last().Measured; }
-        public virtual string CalculateCommonName() { return (from measurement in Measurements orderby measurement.Measured select measurement).Last().CommonName; }
-        public virtual string CalculateScientificName() { return (from measurement in Measurements orderby measurement.Measured select measurement).Last().ScientificName; }
-        public virtual Distance CalculateHeight() { return (from measurement in Measurements orderby measurement.Measured where measurement.Height.IsSpecified select measurement.Height).LastOrDefault() ?? Distance.Null(); }
-        public virtual TreeHeightMeasurementMethod CalculateHeightMeasurementMethod() { return (from measurement in Measurements orderby measurement.Measured where measurement.Height.IsSpecified select measurement.HeightMeasurementMethod).LastOrDefault(); }
-        public virtual Distance CalculateGirth() { return (from measurement in Measurements orderby measurement.Measured where measurement.Girth.IsSpecified select measurement.Girth).LastOrDefault() ?? Distance.Null(); }
-        public virtual Distance CalculateCrownSpread() { return (from measurement in Measurements orderby measurement.Measured where measurement.CrownSpread.IsSpecified select measurement.CrownSpread).LastOrDefault() ?? Distance.Null(); }
-        public virtual Coordinates CalculateCoordinates() { return (from measurement in Measurements orderby measurement.Measured where measurement.Coordinates.IsSpecified select measurement.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual Coordinates CalculateCalculatedCoordinates() { return (from measurement in Measurements orderby measurement.Measured where measurement.CalculatedCoordinates.IsSpecified select measurement.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual Elevation CalculateElevation() { return (from measurement in Measurements orderby measurement.Measured where measurement.Elevation.IsSpecified select measurement.Elevation).LastOrDefault() ?? Elevation.Null(); }
-        public virtual float? CalculateENTSPTS() { return (from measurement in Measurements orderby measurement.Measured where measurement.ENTSPTS.HasValue select measurement.ENTSPTS).FirstOrDefault(); }
-        public virtual float? CalculateENTSPTS2() { return (from measurement in Measurements orderby measurement.Measured where measurement.ENTSPTS2.HasValue select measurement.ENTSPTS2).FirstOrDefault(); }
+        public virtual DateTime CalculateLastMeasured() { return (from m in Measurements orderby m.Measured select m).Last().Measured; }
+        public virtual string CalculateCommonName() { return (from m in Measurements orderby m.Measured select m).Last().CommonName; }
+        public virtual string CalculateScientificName() { return (from m in Measurements orderby m.Measured select m).Last().ScientificName; }
+        public virtual Distance CalculateHeight() { return (from m in Measurements orderby m.Measured where m.Height.IsSpecified select m.Height).LastOrDefault() ?? Distance.Null(); }
+        public virtual TreeHeightMeasurementMethod CalculateHeightMeasurementMethod() { return (from m in Measurements orderby m.Measured where m.Height.IsSpecified select m.HeightMeasurementMethod).LastOrDefault(); }
+        public virtual Distance CalculateGirth() { return (from m in Measurements orderby m.Measured where m.Girth.IsSpecified select m.Girth).LastOrDefault() ?? Distance.Null(); }
+        public virtual Distance CalculateCrownSpread() { return (from m in Measurements orderby m.Measured where m.CrownSpread.IsSpecified select m.CrownSpread).LastOrDefault() ?? Distance.Null(); }
+        public virtual Coordinates CalculateCoordinates() { return (from m in Measurements orderby m.Measured where m.Coordinates.IsSpecified select m.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
+        public virtual Coordinates CalculateCalculatedCoordinates() { return (from m in Measurements orderby m.Measured where m.CalculatedCoordinates.IsSpecified select m.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
+        public virtual Elevation CalculateElevation() { return (from m in Measurements orderby m.Measured where m.Elevation.IsSpecified select m.Elevation).LastOrDefault() ?? Elevation.Null(); }
+        public virtual float? CalculateENTSPTS() { return (from m in Measurements orderby m.Measured where m.ENTSPTS.HasValue select m.ENTSPTS).LastOrDefault(); }
+        public virtual float? CalculateENTSPTS2() { return (from m in Measurements orderby m.Measured where m.ENTSPTS2.HasValue select m.ENTSPTS2).LastOrDefault(); }
 
         public virtual Tree RecalculateProperties()
         {
@@ -55,38 +56,11 @@ namespace TMD.Model.Trees
             Elevation = CalculateElevation();
             ENTSPTS = CalculateENTSPTS();
             ENTSPTS2 = CalculateENTSPTS2();
-            TDICalculation = null;
             return this;
         }
 
-        protected TDICalculation TDICalculation { get; private set; }
-
-        private void ensureTDIIsCalculated()
-        {
-            if (TDICalculation == null)
-            {
-                var species = Repositories.Trees.FindSpeciesByScientificName(ScientificName);
-                TDICalculation = species.CalculateTDI(Height, Girth, CrownSpread);
-            }
-        }
-
-        public float? TDI2
-        {
-            get
-            {
-                ensureTDIIsCalculated();
-                return TDICalculation.TDI2;
-            }
-        }
-
-        public float? TDI3
-        {
-            get
-            {
-                ensureTDIIsCalculated();
-                return TDICalculation.TDI3;
-            }
-        }
+        public virtual float? TDI2 { get { return Species.CalculateTDI2(Height, Girth); } }
+        public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
 
         public virtual IList<TreeMeasurement> Measurements { get; private set; }
 
@@ -96,7 +70,6 @@ namespace TMD.Model.Trees
             return RecalculateProperties();
         }
 
-        public const float CoordinateMinutesEquivalenceProximity = .02f;
         public virtual bool ShouldMerge(Tree treeToMerge)
         {
             if (!CommonName.Equals(treeToMerge.CommonName, StringComparison.OrdinalIgnoreCase)
@@ -104,7 +77,8 @@ namespace TMD.Model.Trees
             {
                 return false;
             }
-            if (CalculatedCoordinates.CalculateDistanceInMinutesTo(treeToMerge.CalculatedCoordinates) > CoordinateMinutesEquivalenceProximity)
+            if (!Coordinates.IsSpecified || !treeToMerge.Coordinates.IsSpecified
+                || !Coordinates.Equals(treeToMerge.Coordinates))
             {
                 return false;
             }

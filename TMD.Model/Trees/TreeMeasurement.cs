@@ -14,23 +14,24 @@ namespace TMD.Model.Trees
         { }
 
         public virtual int Id { get; private set; }
+        public virtual MeasuredSpecies Species { get; private set; }
         public virtual Trip ImportingTrip { get; private set; }
         public virtual DateTime Measured { get; private set; }
-        public string CommonName { get; private set; }
-        public string ScientificName { get; private set; }
-        public Distance Height { get; private set; }
-        public TreeHeightMeasurementMethod HeightMeasurementMethod { get; private set; }
-        public Distance Girth { get; private set; }
-        public Distance CrownSpread { get; private set; }
-        public Coordinates Coordinates { get; private set; }
-        public Coordinates CalculatedCoordinates { get; private set; }
-        public Elevation Elevation { get; private set; }
-        public string GeneralComments { get; private set; }
+        public virtual string CommonName { get; private set; }
+        public virtual string ScientificName { get; private set; }
+        public virtual Distance Height { get; private set; }
+        public virtual TreeHeightMeasurementMethod HeightMeasurementMethod { get; private set; }
+        public virtual Distance Girth { get; private set; }
+        public virtual Distance CrownSpread { get; private set; }
+        public virtual Coordinates Coordinates { get; private set; }
+        public virtual Coordinates CalculatedCoordinates { get; private set; }
+        public virtual Elevation Elevation { get; private set; }
+        public virtual string GeneralComments { get; private set; }
 
-        public float? ENTSPTS { get; private set; }
-        public float? ENTSPTS2 { get; private set; }
+        public virtual float? ENTSPTS { get; private set; }
+        public virtual float? ENTSPTS2 { get; private set; }
 
-        public float? CalculateENTSPTS()
+        public virtual float? CalculateENTSPTS()
         {
             if (!Height.IsSpecified || !CrownSpread.IsSpecified)
             {
@@ -40,7 +41,7 @@ namespace TMD.Model.Trees
             return (float)((double)Height.Feet * circumference);
         }
 
-        public float? CalculateENTSPTS2()
+        public virtual float? CalculateENTSPTS2()
         {
             if (!Height.IsSpecified || !CrownSpread.IsSpecified)
             {
@@ -54,38 +55,11 @@ namespace TMD.Model.Trees
         {
             ENTSPTS = CalculateENTSPTS();
             ENTSPTS2 = CalculateENTSPTS2();
-            TDICalculation = null;
             return this;
         }
 
-        protected TDICalculation TDICalculation { get; private set; }
-
-        private void ensureTDIIsCalculated()
-        {
-            if (TDICalculation == null)
-            {
-                var species = Repositories.Trees.FindSpeciesByScientificName(ScientificName);
-                TDICalculation = species.CalculateTDI(Height, Girth, CrownSpread);
-            }
-        }
-        
-        public float? TDI2 
-        {
-            get 
-            {
-                ensureTDIIsCalculated();
-                return TDICalculation.TDI2; 
-            } 
-        }
-
-        public float? TDI3
-        {
-            get
-            {
-                ensureTDIIsCalculated();
-                return TDICalculation.TDI3;
-            }
-        }
+        public virtual float? TDI2 { get { return Species.CalculateTDI2(Height, Girth); } }
+        public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
 
         public static TreeMeasurement Create(Imports.TreeBase importedTree)
         {
