@@ -9,7 +9,7 @@ using TMD.Model.Locations;
 
 namespace TMD.Model.Sites
 {
-    [DebuggerDisplay("{Name}")]
+    [DebuggerDisplay("{Name} ({Visited})")]
     public class SubsiteVisit : IEntity
     {
         protected SubsiteVisit()
@@ -25,7 +25,7 @@ namespace TMD.Model.Sites
         public virtual Coordinates Coordinates { get; private set; }
         public virtual Coordinates CalculatedCoordinates { get; private set; }
         public virtual string OwnershipContactInfo { get; private set; }
-        public virtual bool MakeContactInfoPublic { get; private set; }
+        public virtual bool MakeOwnershipContactInfoPublic { get; private set; }
         public virtual string Comments { get; private set; }
 
         public static SubsiteVisit Create(Imports.Subsite importedSubsite)
@@ -42,7 +42,7 @@ namespace TMD.Model.Sites
                 Coordinates = importedSubsite.Coordinates,
                 CalculatedCoordinates = importedSubsite.CalculateCoordinates(),
                 OwnershipContactInfo = importedSubsite.OwnershipContactInfo,
-                MakeContactInfoPublic = importedSubsite.MakeOwnershipContactInfoPublic,
+                MakeOwnershipContactInfoPublic = importedSubsite.MakeOwnershipContactInfoPublic,
                 Comments = importedSubsite.Comments
             };
         }

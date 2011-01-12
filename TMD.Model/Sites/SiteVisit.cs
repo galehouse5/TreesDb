@@ -7,19 +7,19 @@ using TMD.Model.Imports;
 
 namespace TMD.Model.Sites
 {
-    [DebuggerDisplay("{Name}")]
+    [DebuggerDisplay("{Name} ({Visited})")]
     public class SiteVisit : IEntity
     {
         protected SiteVisit()
         { }
         
         public virtual int Id { get; private set; }
-        public Trip ImportingTrip { get; private set; }
-        public DateTime Visited { get; private set; }
-        public string Name { get; private set; }
-        public Coordinates Coordinates { get; private set; }
-        public Coordinates CalculatedCoordinates { get; private set; }
-        public string Comments { get; private set; }
+        public virtual Trip ImportingTrip { get; private set; }
+        public virtual DateTime Visited { get; private set; }
+        public virtual string Name { get; private set; }
+        public virtual Coordinates Coordinates { get; private set; }
+        public virtual Coordinates CalculatedCoordinates { get; private set; }
+        public virtual string Comments { get; private set; }
 
         public static SiteVisit Create(Imports.Site importedSite)
         {

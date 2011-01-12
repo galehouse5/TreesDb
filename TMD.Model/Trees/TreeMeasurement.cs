@@ -33,21 +33,21 @@ namespace TMD.Model.Trees
 
         public virtual float? CalculateENTSPTS()
         {
-            if (!Height.IsSpecified || !CrownSpread.IsSpecified)
+            if (!Height.IsSpecified || !Girth.IsSpecified)
             {
                 return null;
             }
-            double circumference = (double)CrownSpread.Feet * Math.PI;
+            double circumference = (double)Girth.Feet * Math.PI;
             return (float)((double)Height.Feet * circumference);
         }
 
         public virtual float? CalculateENTSPTS2()
         {
-            if (!Height.IsSpecified || !CrownSpread.IsSpecified)
+            if (!Height.IsSpecified || !Girth.IsSpecified)
             {
                 return null;
             }
-            double circumference = (double)CrownSpread.Feet * Math.PI;
+            double circumference = (double)Girth.Feet * Math.PI;
             return (float)((double)Height.Feet * Math.Pow(circumference, 2) / 100.0);
         }
 

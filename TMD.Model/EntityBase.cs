@@ -16,7 +16,36 @@ namespace TMD.Model
         int Id { get; }
     }
 
-    public abstract class UserCreatedEntityBase : IEntity
+    public abstract class EntityBase : IEntity
+    {
+        public virtual int Id { get; private set; }
+
+        public override bool Equals(object obj)
+        {
+            EntityBase other = obj as EntityBase;
+            if (other == null)
+            {
+                return false;
+            }
+            if (!GetType().Equals(other.GetType()))
+            {
+                return false;
+            }
+            if (Id == 0)
+            {
+                return this == other;
+            }
+            return this.Id == other.Id;
+        }
+
+        public override int GetHashCode()
+        {
+            return GetType().GetHashCode()
+                ^ Id.GetHashCode();
+        }
+    }
+
+    public abstract class UserCreatedEntityBase : EntityBase
     {
         protected UserCreatedEntityBase()
             : this(false)
@@ -37,7 +66,6 @@ namespace TMD.Model
             return this;
         }
 
-        public virtual int Id { get; private set; }
         public virtual DateTime Created { get; private set; }
         public virtual User Creator { get; private set; }
 

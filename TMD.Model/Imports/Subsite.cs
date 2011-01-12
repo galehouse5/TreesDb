@@ -105,12 +105,6 @@ namespace TMD.Model.Imports
 
         public virtual bool MakeOwnershipContactInfoPublic { get; set; }
 
-        public virtual bool KeepOwnershipContactInfoPrivate
-        {
-            get { return !MakeOwnershipContactInfoPublic; }
-            set { MakeOwnershipContactInfoPublic = !value; }
-        }
-
         private string m_Comments;
         [Length(300, Message = "Subsite comments must not exceed 300 characters.", Tags =  Tag.Persistence)]
         public virtual string Comments

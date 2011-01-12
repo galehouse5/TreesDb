@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Create.sql" />
+    <EmbeddedResource Include="Mappings\Sites.hbm.xml" />
     <EmbeddedResource Include="Mappings\Trees.hbm.xml" />
     <EmbeddedResource Include="Mappings\Photos.hbm.xml">
       <SubType>Designer</SubType>

@@ -282,18 +282,15 @@ namespace TMD.Controllers
                 {
                     return View(model);
                 }
-                using (UnitOfWork.Begin())
+                Mapper.Map<AccountEditDetailsModel, User>(model.Details, User);
+                this.ValidateMappedModel<User, AccountEditModel>(User, Tag.Screening, Tag.Persistence);
+                if (!ModelState.IsValid)
                 {
-                    Mapper.Map<AccountEditDetailsModel, User>(model.Details, User);
-                    this.ValidateMappedModel<User, AccountEditModel>(User, Tag.Screening, Tag.Persistence);
-                    if (!ModelState.IsValid)
-                    {
-                        return View(model);
-                    }
-                    uow.Persist();
-                    TempData.AccountMessage = "Your account has been saved.";
-                    return Redirect(Session.DefaultReturnUrl);
+                    return View(model);
                 }
+                uow.Persist();
+                TempData.AccountMessage = "Your account has been saved.";
+                return Redirect(Session.DefaultReturnUrl);
             }
             throw new NotImplementedException();
         }

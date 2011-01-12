@@ -9,26 +9,25 @@ using TMD.Model.Extensions;
 namespace TMD.Model.Locations
 {
     [DebuggerDisplay("{Code}")]
-    public class State : IEntity
+    public class State : EntityBase
     {
         protected State()
         { }
 
-        public virtual int Id { get; private set; }
-        public virtual Country Country { get; private set; }
+        public virtual Country Country { get; protected set; }
 
         private string m_DoubleLetterCode;
         public virtual string DoubleLetterCode
         {
             get { return m_DoubleLetterCode; }
-            private set { m_DoubleLetterCode = value.OrEmptyAndTrimToUpper();}
+            protected set { m_DoubleLetterCode = value.OrEmptyAndTrimToUpper();}
         }
 
         private string m_TripleLetterCode;
         public virtual string TripleLetterCode
         {
             get { return m_TripleLetterCode; }
-            private set { m_TripleLetterCode = value.OrEmptyAndTrimToUpper(); }
+            protected set { m_TripleLetterCode = value.OrEmptyAndTrimToUpper(); }
         }
 
         public virtual string Code
@@ -47,7 +46,7 @@ namespace TMD.Model.Locations
         public virtual string Name
         {
             get { return m_Name; }
-            private set { m_Name = value.OrEmptyAndTrimToTitleCase(); }
+            protected set { m_Name = value.OrEmptyAndTrimToTitleCase(); }
         }
 
         public virtual CoordinateBounds CoordinateBounds { get; private set; }

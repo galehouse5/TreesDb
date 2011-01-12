@@ -16,9 +16,9 @@ namespace TMD.Model.Sites
 
         public virtual int Id { get; private set; }
         public virtual DateTime LastVisited { get; private set; }
-        public string Name { get; private set; }
-        public Coordinates Coordinates { get; private set; }
-        public Coordinates CalculatedCoordinates { get; private set; }
+        public virtual string Name { get; private set; }
+        public virtual Coordinates Coordinates { get; private set; }
+        public virtual Coordinates CalculatedCoordinates { get; private set; }
         public virtual float? RHI5 { get; private set; }
         public virtual float? RHI10 { get; private set; }
         public virtual float? RHI20 { get; private set; }
@@ -76,10 +76,10 @@ namespace TMD.Model.Sites
             return this;
         }
 
-        public IList<Subsite> Subsites { get; private set; }
-        public IList<SiteVisit> Visits { get; private set; }
+        public virtual IList<Subsite> Subsites { get; private set; }
+        public virtual IList<SiteVisit> Visits { get; private set; }
 
-        public const float CoordinateMinutesEquivalenceProximity = 20f;
+        public const float CoordinateMinutesEquivalenceProximity = 25f;
         public virtual bool ShouldMerge(Site siteToMerge)
         {
             if (!Name.Equals(siteToMerge.Name, StringComparison.OrdinalIgnoreCase))
@@ -127,7 +127,8 @@ namespace TMD.Model.Sites
             return new Site
             {
                 Subsites = (from importedSubsite in importedSite.Subsites select Subsite.Create(importedSubsite)).ToList(),
-                Visits = new List<SiteVisit> { SiteVisit.Create(importedSite) }
+                Visits = new List<SiteVisit> { SiteVisit.Create(importedSite) },
+                Name = importedSite.Name
             }.RecalculateProperties();
         }
     }

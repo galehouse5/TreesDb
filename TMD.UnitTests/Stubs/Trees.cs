@@ -41,5 +41,4 @@ namespace TMD.UnitTests.Stubs
             Elevation = Elevation.Null();
         }
     }
-
 }

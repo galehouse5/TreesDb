@@ -25,7 +25,7 @@ namespace TMD.Model.Sites
         public virtual Coordinates Coordinates { get; private set; }
         public virtual Coordinates CalculatedCoordinates { get; private set; }
         public virtual string OwnershipContactInfo { get; private set; }
-        public virtual bool MakeContactInfoPublic { get; private set; }
+        public virtual bool MakeOwnershipContactInfoPublic { get; private set; }
         public virtual float? RHI5 { get; private set; }
         public virtual float? RHI10 { get; private set; }
         public virtual float? RHI20 { get; private set; }
@@ -33,12 +33,12 @@ namespace TMD.Model.Sites
         public virtual float? RGI10 { get; private set; }
         public virtual float? RGI20 { get; private set; }
 
-        public virtual DateTime CalculateLastVisited() { return (from visit in Visits orderby visit.Visited select visit).Last().Visited; }
-        public virtual string CalculateOwnershipType() { return (from visit in Visits orderby visit.Visited select visit).Last().OwnershipType; }
-        public virtual string CalculateOwnershipContactInfo() { return (from visit in Visits orderby visit.Visited select visit).Last().OwnershipContactInfo; }
-        public virtual bool CalculateMakeContactInfoPublic() { return (from visit in Visits orderby visit.Visited select visit).Last().MakeContactInfoPublic; }
-        public virtual Coordinates CalculateCoordinates() { return (from visit in Visits orderby visit.Visited where visit.Coordinates.IsSpecified select visit.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual Coordinates CalculateCalculatedCoordinates() { return (from visit in Visits orderby visit.Visited where visit.CalculatedCoordinates.IsSpecified select visit.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
+        public virtual DateTime CalculateLastVisited() { return (from v in Visits orderby v.Visited select v).Last().Visited; }
+        public virtual string CalculateOwnershipType() { return (from v in Visits orderby v.Visited select v).Last().OwnershipType; }
+        public virtual string CalculateOwnershipContactInfo() { return (from v in Visits orderby v.Visited select v).Last().OwnershipContactInfo; }
+        public virtual bool CalculateMakeContactInfoPublic() { return (from v in Visits orderby v.Visited select v).Last().MakeOwnershipContactInfoPublic; }
+        public virtual Coordinates CalculateCoordinates() { return (from v in Visits orderby v.Visited where v.Coordinates.IsSpecified select v.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
+        public virtual Coordinates CalculateCalculatedCoordinates() { return (from v in Visits orderby v.Visited where v.CalculatedCoordinates.IsSpecified select v.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
 
         public virtual float? CalculateRHI(int number)
         {
@@ -77,7 +77,7 @@ namespace TMD.Model.Sites
             LastVisited = CalculateLastVisited();
             OwnershipType = CalculateOwnershipType();
             OwnershipContactInfo = CalculateOwnershipContactInfo();
-            MakeContactInfoPublic = CalculateMakeContactInfoPublic();
+            MakeOwnershipContactInfoPublic = CalculateMakeContactInfoPublic();
             Coordinates = CalculateCoordinates();
             CalculatedCoordinates = CalculateCalculatedCoordinates();
             RHI5 = CalculateRHI(5);
@@ -92,7 +92,7 @@ namespace TMD.Model.Sites
         public virtual IList<SubsiteVisit> Visits { get; private set; }
         public virtual IList<Tree> Trees { get; private set; }
 
-        public const float CoordinateMinutesEquivalenceProximity = 2f;
+        public const float CoordinateMinutesEquivalenceProximity = 5f;
         public virtual bool ShouldMerge(Subsite subsiteToMerge)
         {
             if (!Name.Equals(subsiteToMerge.Name, StringComparison.OrdinalIgnoreCase))
@@ -144,7 +144,10 @@ namespace TMD.Model.Sites
             return new Subsite
             {
                 Trees = (from importedTree in importedSubsite.Trees select Tree.Create(importedTree)).ToList(),
-                Visits = new List<SubsiteVisit> { SubsiteVisit.Create(importedSubsite) }
+                Visits = new List<SubsiteVisit> { SubsiteVisit.Create(importedSubsite) },
+                Name = importedSubsite.Name,
+                State = importedSubsite.State,
+                County = importedSubsite.County
             }.RecalculateProperties();
         }
     }

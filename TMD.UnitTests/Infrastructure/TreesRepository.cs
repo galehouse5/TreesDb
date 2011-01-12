@@ -32,10 +32,10 @@ namespace TMD.UnitTests.Infrastructure
         [TestMethod]
         public void SavesTree()
         {
-            var importedTrip1 = new ImportedTripStub { Date = DateTime.Now.AddDays(1) };
-            var importedSite1 = new ImportedSiteStub(importedTrip1);
-            var importedSubsite1 = new ImportedSubsiteStub(importedSite1);
-            var tree1 = Tree.Create(new ImportedTreeStub(importedSubsite1)
+            var importedTrip = new ImportedTripStub { Date = DateTime.Now.AddDays(1) };
+            var importedSite = new ImportedSiteStub(importedTrip);
+            var importedSubsite = new ImportedSubsiteStub(importedSite);
+            var tree = Tree.Create(new ImportedTreeStub(importedSubsite)
             {
                 CommonName = "CommonName",
                 ScientificName = "ScientificName",
@@ -47,16 +47,16 @@ namespace TMD.UnitTests.Infrastructure
                 Elevation = Elevation.Create(6),
                 GeneralComments = "GeneralComments"
             });
-            tree1.Measurements[0].SetPrivatePropertyValue("ImportingTrip", null);
+            tree.Measurements[0].SetPrivatePropertyValue("ImportingTrip", null);
             using (var uow = UnitOfWork.Begin())
             {
-                Repositories.Trees.Save(tree1);
+                Repositories.Trees.Save(tree);
                 UnitOfWork.Flush();
-                UnitOfWork.Refresh(tree1);
-                Assert.IsNotNull(tree1);
-                Assert.IsNotNull(tree1.Measurements);
-                Assert.AreEqual(1, tree1.Measurements.Count);
-                Assert.IsNotNull(tree1.Species);
+                UnitOfWork.Refresh(tree);
+                Assert.IsNotNull(tree);
+                Assert.IsNotNull(tree.Measurements);
+                Assert.AreEqual(1, tree.Measurements.Count);
+                Assert.IsNotNull(tree.Species);
                 uow.Rollback();
             }
         }
