@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using TMD.Model.Imports;
 using TMD.Model;
+using NHibernate.Criterion;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -16,11 +17,10 @@ namespace TMD.Infrastructure.Repositories
 
         public override IList<Trip> ListCreatedByUser(int userId)
         {
-            return Registry.Session.CreateQuery(@"
-                select t from Trip as t
-                where t.Creator.Id = :userId
-                order by t.Id desc")
-                .SetParameter("userId", userId)
+            return Registry.Session.CreateCriteria<Trip>()
+                .CreateAlias("Creator", "Creator")
+                .Add(Restrictions.Eq("Creator.Id", userId))
+                .AddOrder(Order.Desc("Id"))
                 .List<Trip>();
         }
 
@@ -46,12 +46,16 @@ namespace TMD.Infrastructure.Repositories
 
         public override Trip FindLastCreatedByUser(int userId)
         {
-            return Registry.Session.CreateQuery(@"
-                select t from Trip as t
-                where t.Creator.Id = :userId
-                order by t.Id desc")
-                .SetParameter("userId", userId)
+            return Registry.Session.CreateCriteria<Trip>()
+                .CreateAlias("Creator", "Creator")
+                .Add(Restrictions.Eq("Creator.Id", userId))
+                .AddOrder(Order.Desc("Id"))
                 .SetMaxResults(1).List<Trip>().FirstOrDefault();
+        }
+
+        public override IList<Trip> ListAll()
+        {
+            return Registry.Session.CreateCriteria<Trip>().List<Trip>();
         }
     }
 }

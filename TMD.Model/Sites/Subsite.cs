@@ -92,6 +92,11 @@ namespace TMD.Model.Sites
         public virtual IList<SubsiteVisit> Visits { get; private set; }
         public virtual IList<Tree> Trees { get; private set; }
 
+        public virtual bool ContainsTreesWithSpecifiedCoordinates
+        {
+            get { return (from tree in Trees where tree.Coordinates.IsSpecified select tree).Count() > 1; }
+        }
+
         public const float CoordinateMinutesEquivalenceProximity = 5f;
         public virtual bool ShouldMerge(Subsite subsiteToMerge)
         {

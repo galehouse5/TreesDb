@@ -53,7 +53,12 @@ namespace TMD.Model
 
         public override string ToString()
         {
-            switch (InputFormat)
+            return ToString(InputFormat);
+        }
+
+        public string ToString(DistanceFormat format)
+        {
+            switch (format)
             {
                 case DistanceFormat.Default:
                 case DistanceFormat.DecimalFeet:

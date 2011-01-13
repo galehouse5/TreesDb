@@ -97,7 +97,7 @@ namespace TMD.UnitTests.Infrastructure
                 Repositories.Sites.Save(site3);
                 Repositories.Sites.Save(site4);
                 UnitOfWork.Flush();
-                IList<Site> sites = Repositories.Sites.FindByProximity(Coordinates.Create(1, 2), Site.CoordinateMinutesEquivalenceProximity);
+                IList<Site> sites = Repositories.Sites.ListByProximity(Coordinates.Create(1, 2), Site.CoordinateMinutesEquivalenceProximity);
                 Assert.IsNotNull(sites);
                 Assert.AreEqual(3, sites.Count);
                 Assert.IsTrue(sites.Contains(site1));
@@ -113,14 +113,15 @@ namespace TMD.UnitTests.Infrastructure
         //{
         //    using (var uow = UnitOfWork.Begin())
         //    {
-        //        var trip = Repositories.Imports.FindById(560);
-        //        foreach (var importedSite in trip.Sites)
+        //        var trips = Repositories.Imports.ListAll();
+        //        foreach (var importedSite in from trip in trips where trip.IsImported from site in trip.Sites select site)
         //        {
         //            var site = Site.Create(importedSite);
         //            UnitOfWork.Refresh(site);
         //            Repositories.Sites.Merge(site);
         //        }
-        //        uow.Rollback();
+        //        //uow.Rollback();
+        //        uow.Persist();
         //    }
         //}
     }

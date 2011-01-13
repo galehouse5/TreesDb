@@ -10,6 +10,7 @@ namespace TMD.Model.Sites
         void Save(Site site);
         Site FindById(int id);
         void Merge(Site site);
-        IList<Site> FindByProximity(Coordinates coordinates, float minutesDistance);
+        IList<Site> ListByProximity(Coordinates coordinates, float minutesDistance);
+        IList<Site> ListAll();
     }
 }

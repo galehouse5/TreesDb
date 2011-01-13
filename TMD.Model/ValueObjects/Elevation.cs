@@ -72,24 +72,23 @@ namespace TMD.Model
 
         public override string ToString()
         {
-            string s;
-            switch (InputFormat)
+            return ToString(InputFormat);
+        }
+
+        public string ToString(ElevationFormat format)
+        {
+            switch (format)
             {
                 case ElevationFormat.Default:
                 case ElevationFormat.DecimalFeet:
-                    s = string.Format("{0:0.0} ft", Feet);
-                    break;
+                    return string.Format("{0:0.0} ft", Feet);
                 case ElevationFormat.DecimalMeters:
-                    s = string.Format("{0:0.00} m", Meters);
-                    break;
+                    return string.Format("{0:0.00} m", Meters);
                 case ElevationFormat.DecimalYards:
-                    s = string.Format("{0:0.00} yd", Yards);
-                    break;
+                    return string.Format("{0:0.00} yd", Yards);
                 default:
-                    s = RawValue;
-                    break;
+                    return RawValue;
             }
-            return s;
         }
 
         #region IIsSpecified Members

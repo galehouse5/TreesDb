@@ -2,7 +2,8 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
                    assembly="TMD.Model"
                    namespace="TMD.Model"
-                   schema="Imports">
+                   schema="Imports"
+                   auto-import="false">
 
   <class name="TMD.Model.Imports.Measurer" table="Measurers">
     <id name="Id">

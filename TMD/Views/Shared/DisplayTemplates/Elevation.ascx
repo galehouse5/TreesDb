@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Distance>" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Elevation>" %>
 <strong>
     <% if (ViewData.ContainsKey("label")) { %>
         <%: ViewData["label"] %>:
@@ -7,7 +7,7 @@
     <% } %>
 </strong>
 <% if (ViewData.ContainsKey("format")) { %>
-    <%: Model.ToString((DistanceFormat)ViewData["format"]) %>
+    <%: Model.ToString((ElevationFormat)ViewData["format"]) %>
 <% } else { %>
     <%: Model %>
 <% } %>

@@ -42,5 +42,6 @@ namespace TMD.Model.Imports
 
         public abstract IList<Trip> ListCreatedByUser(int userId);
         public abstract Trip FindLastCreatedByUser(int userId);
+        public abstract IList<Trip> ListAll();
     }
 }

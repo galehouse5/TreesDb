@@ -22,7 +22,7 @@ namespace TMD.Infrastructure.Repositories
 
         public void Merge(Site site)
         {
-            var candidateSites = FindByProximity(site.CalculatedCoordinates, Site.CoordinateMinutesEquivalenceProximity);
+            var candidateSites = ListByProximity(site.CalculatedCoordinates, Site.CoordinateMinutesEquivalenceProximity);
             foreach (var candidateSite in candidateSites)
             {
                 if (candidateSite.ShouldMerge(site))
@@ -35,7 +35,7 @@ namespace TMD.Infrastructure.Repositories
             Registry.Session.Save(site);
         }
 
-        public IList<Site> FindByProximity(Coordinates coordinates, float minutesDistance)
+        public IList<Site> ListByProximity(Coordinates coordinates, float minutesDistance)
         {
             return Registry.Session.CreateCriteria<Site>()
                 .Add(Expression.Conjunction()
@@ -44,6 +44,13 @@ namespace TMD.Infrastructure.Repositories
                     .Add(Expression.Le("CalculatedCoordinates.Longitude.TotalDegrees", coordinates.Longitude.AddMinutes(minutesDistance).TotalDegrees))
                     .Add(Expression.Ge("CalculatedCoordinates.Longitude.TotalDegrees", coordinates.Longitude.SubtractMinutes(minutesDistance).TotalDegrees))
                 ).List<Site>();
+        }
+
+
+        public IList<Site> ListAll()
+        {
+            return Registry.Session.CreateCriteria<Site>()
+                .List<Site>();
         }
     }
 }

@@ -19,7 +19,7 @@
     <div class="portlet-content">
         <ul>
             <% if (Model.Date.HasValue) { %>
-                <li><strong>Visited:</strong><%= Model.Date.Value.ToString("MM/dd/yyyy")%></li>
+                <li><%= Html.DisplayFor(m => m.Date.Value, new { label = "Visited" })%></li>
             <% } %>
             <% if (Model.Sites.Count > 0) { %>
                 <li><strong>Sites:</strong><ul>

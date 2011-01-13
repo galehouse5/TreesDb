@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<String>" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Single>" %>
 <strong>
     <% if (ViewData.ContainsKey("label")) { %>
         <%: ViewData["label"] %>:

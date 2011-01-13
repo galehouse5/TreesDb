@@ -297,6 +297,9 @@
     <Content Include="Views\Import\History.aspx" />
     <Content Include="Views\Import\MenuWidget.ascx" />
     <Content Include="Views\Main\MenuWidget.ascx" />
+    <Content Include="Views\Map\SiteMarkerInfoPartial.ascx" />
+    <Content Include="Views\Map\SubsiteMarkerInfoPartial.ascx" />
+    <Content Include="Views\Map\TreeMarkerInfoPartial.ascx" />
     <Content Include="Views\Map\ImportSiteMarkerInfoPartial.ascx" />
     <Content Include="Views\Map\ImportSubsiteMarkerInfoPartial.ascx" />
     <Content Include="Views\Map\ImportTreeMarkerInfoPartial.ascx" />
@@ -304,6 +307,9 @@
     <Content Include="Views\Map\Index.aspx" />
     <Content Include="Views\Map\MenuWidget.ascx" />
     <Content Include="Views\Photos\EditPhotoGalleryPartial.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Int32.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Elevation.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Single.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\PhotoGalleryModel.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Distance.ascx" />

@@ -36,6 +36,99 @@ namespace TMD.Controllers
             return View();
         }
 
+        public ActionResult ViewMarkers()
+        {
+            var sites = Repositories.Sites.ListAll();
+            var renderedMarkers = new List<object>();
+            renderedMarkers.AddRange(from site in sites
+                                     where site.ContainsTreesWithSpecifiedCoordinates
+                                     select renderSiteMarker(site));
+            renderedMarkers.AddRange(from site in sites
+                                     where !site.ContainsSingleSubsite
+                                     from subsite in site.Subsites
+                                     where subsite.ContainsTreesWithSpecifiedCoordinates
+                                     select renderSubsiteMarker(subsite));
+            renderedMarkers.AddRange(from site in sites
+                                     from subsite in site.Subsites
+                                     where subsite.ContainsTreesWithSpecifiedCoordinates
+                                     from tree in subsite.Trees
+                                     where tree.Coordinates.IsSpecified
+                                     select renderTreeMarker(tree));
+            return Json(new
+            {
+                CoordinateBounds = new
+                {
+                    NECoordinates = new
+                    {
+                        Latitude = (from site in sites 
+                                   where site.ContainsTreesWithSpecifiedCoordinates
+                                   select site.CalculatedCoordinates.Latitude.TotalDegrees).Max(),
+                        Longitude = (from site in sites 
+                                   where site.ContainsTreesWithSpecifiedCoordinates
+                                   select site.CalculatedCoordinates.Longitude.TotalDegrees).Max()
+                    },
+                    SWCoordinates = new 
+                    {
+                        Latitude = (from site in sites
+                                    where site.ContainsTreesWithSpecifiedCoordinates
+                                    select site.CalculatedCoordinates.Latitude.TotalDegrees).Min(),
+                        Longitude = (from site in sites
+                                     where site.ContainsTreesWithSpecifiedCoordinates
+                                     select site.CalculatedCoordinates.Longitude.TotalDegrees).Min()
+                    }
+                },
+                Markers = renderedMarkers.ToArray()
+            }, JsonRequestBehavior.AllowGet);
+        }
+
+        public object renderSiteMarker(Model.Sites.Site site)
+        {
+            return new
+            {
+                Title = site.Name,
+                Coordinates = new
+                {
+                    Latitude = site.CalculatedCoordinates.Latitude.TotalDegrees,
+                    Longitude = site.CalculatedCoordinates.Longitude.TotalDegrees
+                },
+                Icon = "/images/icons/Site32.png",
+                Info = RenderPartialViewToString("SiteMarkerInfoPartial", site),
+                MinZoom = 0, MaxZoom = site.ContainsSingleSubsite ? 13 : 9
+            };
+        }
+
+        public object renderSubsiteMarker(Model.Sites.Subsite subsite)
+        {
+            return new
+            {
+                Title = subsite.Name,
+                Coordinates = new
+                {
+                    Latitude = subsite.CalculatedCoordinates.Latitude.TotalDegrees,
+                    Longitude = subsite.CalculatedCoordinates.Longitude.TotalDegrees
+                },
+                Icon = "/images/icons/Subsite32.png",
+                Info = RenderPartialViewToString("SubsiteMarkerInfoPartial", subsite),
+                MinZoom = 10, MaxZoom = 13
+            };
+        }
+
+        public object renderTreeMarker(Model.Trees.Tree tree)
+        {
+            return new
+            {
+                Title = tree.ScientificName,
+                Coordinates = new
+                {
+                    Latitude = tree.CalculatedCoordinates.Latitude.TotalDegrees,
+                    Longitude = tree.CalculatedCoordinates.Longitude.TotalDegrees
+                },
+                Icon = "/images/icons/SingleTrunkTree32.png",
+                Info = RenderPartialViewToString("TreeMarkerInfoPartial", tree),
+                MinZoom = 14, MaxZoom = 30
+            };
+        }
+
         private object renderImportSiteMarker(Site site)
         {
             if (site.Subsites.Count == 1)

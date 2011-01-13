@@ -22,7 +22,8 @@
     <script type="text/javascript">
         google.setOnLoadCallback(function () {
             $('#wrapper').append('<div id="map"></div>');
-            var options = {
+
+            var map = new google.maps.Map($('#map')[0], {
                 center: new google.maps.LatLng(36.94167, -95.825),
                 zoom: 5,
                 mapTypeId: google.maps.MapTypeId.TERRAIN,
@@ -36,8 +37,35 @@
                     position: google.maps.ControlPosition.LEFT_BOTTOM,
                     style: google.maps.NavigationControlStyle.SMALL
                 }
+            });
+            var info = new google.maps.InfoWindow();
+            google.maps.event.addListener(map, 'zoom_changed', function () { info.close(); });
+            function addMarker(options) {
+                var marker = new google.maps.Marker({
+                    icon: options.Icon, map: map, title: options.Title,
+                    position: new google.maps.LatLng(options.Coordinates.Latitude, options.Coordinates.Longitude)
+                });
+                marker.setVisible(map.getZoom() <= options.MaxZoom && map.getZoom() >= options.MinZoom);
+                google.maps.event.addListener(map, 'zoom_changed', function () {
+                    marker.setVisible(map.getZoom() <= options.MaxZoom && map.getZoom() >= options.MinZoom);
+                });
+                google.maps.event.addListener(marker, 'click', function () {
+                    info.setContent(options.Info);
+                    info.open(map, marker);
+                });
+                google.maps.event.addListener(marker, 'dblclick', function () {
+                    map.setZoom(options.MaxZoom + 1);
+                    map.panTo(marker.getPosition());
+                });
             };
-            var map = new google.maps.Map($('#map')[0], options);
+            $.get('/Map/ViewMarkers', function (response) {
+                map.fitBounds(new google.maps.LatLngBounds(
+                    new google.maps.LatLng(response.CoordinateBounds.SWCoordinates.Latitude, response.CoordinateBounds.SWCoordinates.Longitude),
+                    new google.maps.LatLng(response.CoordinateBounds.NECoordinates.Latitude, response.CoordinateBounds.NECoordinates.Longitude)));
+                for (i in response.Markers) {
+                    addMarker(response.Markers[i]);
+                }
+            });
         });
     </script>
 </asp:Content>

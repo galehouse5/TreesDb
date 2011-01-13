@@ -76,8 +76,23 @@ namespace TMD.Model.Sites
             return this;
         }
 
-        public virtual IList<Subsite> Subsites { get; private set; }
         public virtual IList<SiteVisit> Visits { get; private set; }
+        public virtual IList<Subsite> Subsites { get; private set; }
+
+        public virtual bool ContainsTreesWithSpecifiedCoordinates
+        {
+            get { return (from subsite in Subsites where subsite.ContainsTreesWithSpecifiedCoordinates select subsite).Count() > 0; }
+        }
+
+        public virtual bool ContainsSingleSubsite
+        {
+            get { return Subsites.Count == 1; }
+        }
+
+        public virtual int TreesMeasured
+        {
+            get { return (from subsite in Subsites select subsite.Trees.Count).Sum(); }
+        }
 
         public const float CoordinateMinutesEquivalenceProximity = 25f;
         public virtual bool ShouldMerge(Site siteToMerge)
