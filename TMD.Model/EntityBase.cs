@@ -45,7 +45,7 @@ namespace TMD.Model
 
         public override int GetHashCode()
         {
-            return GetType().GetHashCode()
+            return GetUnproxiedType().GetHashCode()
                 ^ Id.GetHashCode();
         }
     }
