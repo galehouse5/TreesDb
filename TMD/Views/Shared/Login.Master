@@ -4,7 +4,7 @@
     <head runat="server">
 	    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	    <title>Trees Database</title>
-        <%= Html.VersionedLink("/css/screen.css", new { rel = "shortcut icon", type = "image/x-icon" })%>
+        <%= Html.VersionedLink("/images/icon.ico", new { rel = "shortcut icon", type = "image/x-icon" })%>
         <%= Html.VersionedLink("/css/screen.css", new { rel = "stylesheet", type = "text/css" })%>	
 	    <%= Html.VersionedLink("/css/plugin.css", new { rel = "stylesheet", type = "text/css" })%>	
 	    <%= Html.VersionedLink("/css/custom.css", new { rel = "stylesheet", type = "text/css" })%>
