@@ -14,14 +14,14 @@
     <% if (Model.Elevation.IsSpecified) { %>
         <li><%= Html.DisplayFor(m => m.Elevation, new { format = ElevationFormat.Default }) %></li>
     <% } %>
-    <% if (Model.ENTSPTS2.HasValue) { %>
-        <li><%= Html.DisplayFor(m => m.ENTSPTS2.Value, new { label = "ENTSPTS2" }) %></li>
+    <% if (Model.TDI2.HasValue) { %>
+        <li><%= Html.DisplayFor(m => m.TDI2.Value, new { label = "TDI2" })%></li>
     <% } %>
     <% if (Model.TDI3.HasValue) { %>
         <li><%= Html.DisplayFor(m => m.TDI3.Value, new { label = "TDI3" })%></li>
     <% } %>
-    <% if (Model.TDI2.HasValue) { %>
-        <li><%= Html.DisplayFor(m => m.TDI2.Value, new { label = "TDI2" })%></li>
+    <% if (Model.ENTSPTS2.HasValue) { %>
+        <li><%= Html.DisplayFor(m => m.ENTSPTS2.Value, new { label = "ENTSPTS2" }) %></li>
     <% } %>
-    <li><%= Html.DisplayFor(m => m.LastMeasured, new { label = "Last measured" })%></li>
+    <li><%= Html.DisplayFor(m => m.LastMeasured, new { label = "Last measured" })%><% if (Model.Measurements.Count > 1) { %> (<%= Model.Measurements.Count %>)<% } %></li>
 </ul>

@@ -7,6 +7,7 @@ using TMD.Model;
 using NHibernate;
 using TMD.Infrastructure.StringComparison;
 using NHibernate.Criterion;
+using TMD.Model.Extensions;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -20,6 +21,23 @@ namespace TMD.Infrastructure.Repositories
         public void Save(Tree tree)
         {
             Registry.Session.Save(tree);
+        }
+
+        public void RemoveMeasurementsByTrip(Model.Imports.Trip trip)
+        {
+            var trees = Registry.Session.CreateCriteria<Tree>()
+                .CreateAlias("Measurements", "measurement")
+                .CreateAlias("measurement.ImportingTrip", "importingTrip")
+                .Add(Restrictions.Eq("importingTrip.Id", trip.Id))
+                .List<Tree>();
+            foreach (var tree in trees)
+            {
+                tree.Measurements.RemoveAll(measurement => measurement.ImportingTrip.Equals(trip));
+                if (tree.Measurements.Count < 1)
+                {
+                    Registry.Session.Delete(tree);
+                }
+            }
         }
 
         private StringComparisonExpression m_AcceptedSymbolRanker = StringComparisonExpression.Create("equality * 100");

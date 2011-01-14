@@ -27,7 +27,7 @@ namespace TMD.Model
             {
                 return false;
             }
-            if (!GetType().Equals(other.GetType()))
+            if (!GetUnproxiedType().Equals(other.GetUnproxiedType()))
             {
                 return false;
             }
@@ -36,6 +36,11 @@ namespace TMD.Model
                 return this == other;
             }
             return this.Id == other.Id;
+        }
+
+        public virtual Type GetUnproxiedType()
+        {
+            return this.GetType();
         }
 
         public override int GetHashCode()

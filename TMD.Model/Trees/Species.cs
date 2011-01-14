@@ -58,7 +58,7 @@ namespace TMD.Model.Trees
                 return null;
             }
             return (float)(
-                ((double)height.Feet / (double)MaxCrownSpread.Feet)
+                ((double)height.Feet / (double)MaxHeight.Feet)
                 + ((double)girth.Feet / (double)MaxGirth.Feet)
                 + ((double)crownSpread.Feet / (double)MaxCrownSpread.Feet)
             );

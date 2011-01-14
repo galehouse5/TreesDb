@@ -12,5 +12,6 @@ namespace TMD.Model.Sites
         void Merge(Site site);
         IList<Site> ListByProximity(Coordinates coordinates, float minutesDistance);
         IList<Site> ListAll();
+        void RemoveVisitsByTrip(Imports.Trip trip);
     }
 }

@@ -11,5 +11,6 @@ namespace TMD.Model.Trees
         Tree FindById(int id);
         IList<KnownSpecies> FindKnownSpeciesBySimilarCommonName(string commonName, int results);
         IList<KnownSpecies> FindKnownSpeciesBySimilarScientificName(string scientificName, int results);
+        void RemoveMeasurementsByTrip(Imports.Trip trip);
     }
 }

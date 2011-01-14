@@ -4,7 +4,6 @@
     <li><%= Html.DisplayFor(m => m.State) %></li>
     <li><%= Html.DisplayFor(m => m.County) %></li>
     <li><%= Html.DisplayFor(m => m.OwnershipType, new { label = "Ownership type" })%></li>
-    <li><%= Html.DisplayFor(m => m.Trees.Count, new { label = "Trees measured" })%></li>
     <% if (Model.RHI5.HasValue) { %>
         <li><%= Html.DisplayFor(m => m.RHI5.Value, new { label = "RHI5" }) %></li>
     <% } %>
@@ -23,5 +22,6 @@
     <% if (Model.RGI20.HasValue) { %>
         <li><%= Html.DisplayFor(m => m.RGI20.Value, new { label = "RGI20" }) %></li>
     <% } %>
-    <li><%= Html.DisplayFor(m => m.LastVisited, new { label = "Last visited" })%></li>
+    <li><%= Html.DisplayFor(m => m.Trees.Count, new { label = "Trees measured" })%></li>
+    <li><%= Html.DisplayFor(m => m.LastVisited, new { label = "Last visited" })%><% if (Model.Visits.Count > 1) { %> (<%= Model.Visits.Count %>)<% } %></li>
 </ul>

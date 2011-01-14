@@ -93,7 +93,7 @@ namespace TMD.Controllers
                 },
                 Icon = "/images/icons/Site32.png",
                 Info = RenderPartialViewToString("SiteMarkerInfoPartial", site),
-                MinZoom = 0, MaxZoom = site.ContainsSingleSubsite ? 13 : 9
+                MinZoom = 0, MaxZoom = site.ContainsSingleSubsite ? 13 : 11
             };
         }
 
@@ -109,7 +109,7 @@ namespace TMD.Controllers
                 },
                 Icon = "/images/icons/Subsite32.png",
                 Info = RenderPartialViewToString("SubsiteMarkerInfoPartial", subsite),
-                MinZoom = 10, MaxZoom = 13
+                MinZoom = 12, MaxZoom = 13
             };
         }
 
@@ -142,7 +142,7 @@ namespace TMD.Controllers
                     },
                     Icon = site.Subsites[0].Photos.Count > 0 ?
                         Url.Action("View", "Photos", new { id = site.Subsites[0].Photos[0].Id, size = EPhotoSize.MiniSquare })
-                        : "/images/icons/Subsite32.png",
+                        : "/images/icons/Site32.png",
                     Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", site.Subsites[0])
                 };
             }

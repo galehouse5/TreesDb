@@ -5,6 +5,7 @@ using System.Text;
 using TMD.Model.Sites;
 using TMD.Model;
 using NHibernate.Criterion;
+using TMD.Model.Extensions;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -46,11 +47,40 @@ namespace TMD.Infrastructure.Repositories
                 ).List<Site>();
         }
 
-
         public IList<Site> ListAll()
         {
             return Registry.Session.CreateCriteria<Site>()
                 .List<Site>();
+        }
+
+        public void RemoveVisitsByTrip(Model.Imports.Trip trip)
+        {
+            var subsites = Registry.Session.CreateCriteria<Subsite>()
+                .CreateAlias("Visits", "visit")
+                .CreateAlias("visit.ImportingTrip", "importingTrip")
+                .Add(Restrictions.Eq("importingTrip.Id", trip.Id))
+                .List<Subsite>();
+            foreach (var subsite in subsites)
+            {
+                subsite.Visits.RemoveAll(visit => visit.ImportingTrip.Equals(trip));
+                if (subsite.Visits.Count < 1)
+                {
+                    Registry.Session.Delete(subsite);
+                }
+            }
+            var sites = Registry.Session.CreateCriteria<Site>()
+                .CreateAlias("Visits", "visit")
+                .CreateAlias("visit.ImportingTrip", "importingTrip")
+                .Add(Restrictions.Eq("importingTrip.Id", trip.Id))
+                .List<Site>();
+            foreach (var site in sites)
+            {
+                site.Visits.RemoveAll(visit => visit.ImportingTrip.Equals(trip));
+                if (site.Visits.Count < 1)
+                {
+                    Registry.Session.Delete(site);
+                }
+            }
         }
     }
 }

@@ -397,6 +397,11 @@ namespace TMD.Controllers
         {
             var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            if (trip.IsImported)
+            {
+                Repositories.Trees.RemoveMeasurementsByTrip(trip);
+                Repositories.Sites.RemoveVisitsByTrip(trip);
+            }
             Repositories.Imports.Merge(trip); 
             uow.Persist();
             return RedirectToAction("Index");
