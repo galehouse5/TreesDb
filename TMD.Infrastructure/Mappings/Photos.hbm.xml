@@ -2,7 +2,8 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
                    assembly="TMD.Model"
                    namespace="TMD.Model.Photos" 
-                   schema="Photos">
+                   schema="Photos"
+                   auto-import="false">
   
   <class name="PhotoStoreBase" table="Stores" abstract="true" >
     <id name="Id">
@@ -28,7 +29,10 @@
     <property name="Bytes" />
     <property name="Format" />
     <many-to-one name="PermanentStore" column="StoreId" />
-    <many-to-one name="Link" column="LinkId" cascade="all" />
+    <bag name="Links" table="Links" cascade="all-delete-orphan" inverse="true">
+      <key column="PhotoId"></key>
+      <one-to-many class="PhotoLinkBase"/>
+    </bag>
   </class>
 
   <class name="PhotoLinkBase" abstract="true" table="Links">
@@ -36,9 +40,16 @@
       <generator class="native" />
     </id>
     <discriminator column="Type"/>
+    <many-to-one name="Photo" column="PhotoId" cascade="all" ></many-to-one>
     <subclass name="PublicPhotoLink" discriminator-value="1"></subclass>
     <subclass name="ImportPhotoLink" discriminator-value="2">
       <many-to-one name="Trip" column="TripId"></many-to-one>
+    </subclass>
+    <subclass name="SitePhotoLink" discriminator-value="3">
+      <many-to-one name="Site" column="SiteId"></many-to-one>
+    </subclass>
+    <subclass name="TreePhotoLink" discriminator-value="4">
+      <many-to-one name="Tree" column="TreeId"></many-to-one>
     </subclass>
   </class>
   

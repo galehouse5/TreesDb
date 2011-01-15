@@ -21,7 +21,7 @@ namespace TMD.Model.Photos
 
     public class Photo : UserCreatedEntityBase
     {
-        public const int MaxBytes = 1024 * 1024;
+        public const int MaxBytes = 5 * 1024 * 1024;
 
         protected internal Photo()
         {
@@ -30,7 +30,7 @@ namespace TMD.Model.Photos
 
         public virtual PhotoStoreBase TemporaryStore { get; private set; }
         public virtual PhotoStoreBase PermanentStore { get; protected internal set; }
-        [Valid] public virtual PhotoLinkBase Link { get; set; }
+        [Valid] public virtual IList<PhotoLinkBase> Links { get; protected internal set; }
         public virtual Size Size { get; protected internal set; }
 
         [Within2(0, MaxBytes, Inclusive = true, Message = "Photo must not be too large.", Tags = Tag.Screening)]
@@ -74,17 +74,23 @@ namespace TMD.Model.Photos
 
         public virtual bool IsAuthorizedToView(User user)
         {
-            return Link.IsAuthorizedToView(this, user);
+            return (from link in Links
+                    where link.IsAuthorizedToView(this, user)
+                    select link).Count() > 0;
         }
 
         public virtual bool IsAuthorizedToAdd(User user)
         {
-            return Link.IsAuthorizedToAdd(this, user);
+            return (from link in Links
+                    where link.IsAuthorizedToAdd(this, user)
+                    select link).Count() > 0;
         }
 
         public virtual bool IsAuthorizedToRemove(User user)
         {
-            return Link.IsAuthorizedToRemove(this, user);
+            return (from link in Links
+                    where link.IsAuthorizedToRemove(this, user)
+                    select link).Count() > 0;
         }
 
         public virtual Bitmap Get()
@@ -107,6 +113,20 @@ namespace TMD.Model.Photos
                 return new PhotoSizeFactory()
                     .Create(size).Normalize(image);
             }
+        }
+
+        public virtual Photo AddLink(PhotoLinkBase link)
+        {
+            link.Photo = this;
+            Links.Add(link);
+            return this;
+        }
+
+        public virtual Photo RemoveLink(PhotoLinkBase link)
+        {
+            link.Photo = null;
+            Links.Remove(link);
+            return this;
         }
     }
 }

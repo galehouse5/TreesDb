@@ -17,6 +17,25 @@ namespace TMD.Infrastructure.Repositories
         {
             config.SetListener(ListenerType.PostInsert, new PhotoPostInsertEventListener());
             config.SetListener(ListenerType.PostDelete, new PhotoPostDeleteEventListener());
+            config.SetListener(ListenerType.PreDelete, new PhotoLinkPreDeleteEventListener());
+        }
+
+        private class PhotoLinkPreDeleteEventListener : IPreDeleteEventListener
+        {
+            public bool OnPreDelete(PreDeleteEvent @event)
+            {
+                var link = @event.Entity as PhotoLinkBase;
+                if (link != null)
+                {
+                    var photo = link.Photo;
+                    link.Photo.RemoveLink(link);
+                    if (photo.Links.Count == 0)
+                    {
+                        Registry.Session.Delete(photo);
+                    }
+                }
+                return false;
+            }
         }
 
         private class PhotoPostInsertEventListener : IPostInsertEventListener
@@ -54,15 +73,6 @@ namespace TMD.Infrastructure.Repositories
         public Photo FindById(int id)
         {
             return Registry.Session.Get<Photo>(id);
-        }
-
-        public IList<Photo> FindByTripId(int tripId)
-        {
-            return Registry.Session.CreateQuery(@"
-                from Photo p
-                where p.Link.Trip.Id = :tripId")
-                .SetParameter("tripId", tripId)
-                .List<Photo>();
         }
 
         public PhotoStoreBase FindPermanentPhotoStore()

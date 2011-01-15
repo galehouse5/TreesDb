@@ -180,9 +180,9 @@
     <property name="TerrainComments"/>
     <property name="MakeCoordinatesPublic"/>
     <property name="HeightMeasurementMethod" />
-    <bag name="Photos" table="TreePhotos" cascade="all-delete-orphan" >
+    <bag name="PhotoLinks" table="TreePhotoLinks" cascade="all-delete-orphan" >
       <key column="TreeId"></key>
-      <many-to-many column="PhotoId" class="TMD.Model.Photos.Photo"></many-to-many>
+      <many-to-many column="PhotoLinkId" class="TMD.Model.Photos.PhotoLinkBase"></many-to-many>
     </bag>
   </class>
 
@@ -214,9 +214,9 @@
       <one-to-many class="TMD.Model.Imports.TreeBase"/>
     </bag>
     <property name="MakeOwnershipContactInfoPublic" />
-    <bag name="Photos" table="SubsitePhotos" cascade="all-delete-orphan" >
+    <bag name="PhotoLinks" table="SubsitePhotoLinks" cascade="all-delete-orphan" >
       <key column="SubsiteId"></key>
-      <many-to-many column="PhotoId" class="TMD.Model.Photos.Photo"></many-to-many>
+      <many-to-many column="PhotoLinkId" class="TMD.Model.Photos.PhotoLinkBase"></many-to-many>
     </bag>
   </class>  
   

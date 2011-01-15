@@ -12,16 +12,12 @@ namespace TMD.Model.Photos
     {
         public Photo CreateForPublic(Bitmap image)
         {
-            Photo p = Create(image);
-            p.Link = PublicPhotoLink.Create();
-            return p;
+            return Create(image).AddLink(PublicPhotoLink.Create());
         }
 
         public Photo CreateForTrip(Trip trip, Bitmap image)
         {
-            Photo p = Create(image);
-            p.Link = ImportPhotoLink.Create(trip);
-            return p;
+            return Create(image).AddLink(ImportPhotoLink.Create(trip));
         }
 
         public Photo Create(Bitmap image)
@@ -29,7 +25,7 @@ namespace TMD.Model.Photos
             var photo = (Photo)new Photo
             {
                 PermanentStore = Repositories.Photos.FindPermanentPhotoStore(),
-                Link = PublicPhotoLink.Create()
+                Links = new List<PhotoLinkBase>()
             }.RecordCreation();
             var info = photo.TemporaryStore.Store(photo, image);
             photo.Size = info.Size;

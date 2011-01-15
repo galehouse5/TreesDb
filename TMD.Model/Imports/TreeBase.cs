@@ -323,17 +323,25 @@ namespace TMD.Model.Imports
         [Valid] public virtual Elevation Elevation { get; set; }
 
         [Size2(0, 100, Message = "This tree contains too many photos.", Tags = Tag.Screening)]
-        [Valid] public virtual IList<Photo> Photos { get; protected set; }
+        [Valid] public virtual IList<PhotoLinkBase> PhotoLinks { get; protected set; }
 
         public virtual void AddPhoto(Photo photo)
         {
-            photo.Link = ImportPhotoLink.Create(Subsite.Site.Trip);
-            Photos.Add(photo);
+            var link = ImportPhotoLink.Create(Subsite.Site.Trip);
+            PhotoLinks.Add(link);
+            photo.AddLink(link);
         }
 
         public virtual bool RemovePhoto(Photo photo)
         {
-            return Photos.Remove(photo);
+            var link = (from photoLink in PhotoLinks where photoLink.Photo.Equals(photo) select photoLink).FirstOrDefault();
+            if (link != null)
+            {
+                PhotoLinks.Remove(link);
+                photo.RemoveLink(link);
+                return true;
+            }
+            return false;
         }
     }
 }
