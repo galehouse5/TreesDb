@@ -7,6 +7,13 @@ using log4net;
 
 namespace TMD.Infrastructure
 {
+    public class Log4NetContextPropertyValueProvider
+    {
+        public Log4NetContextPropertyValueProvider(Func<string> evaluator) { this.Evaluator = evaluator; }
+        public Func<string> Evaluator { get; private set; }
+        public override string ToString() { return Evaluator(); }
+    }
+
     public class Log4NetLogProvider : ILogProvider
     {
         private ILog getLog(Type type) { return LogManager.GetLogger(type); }
@@ -40,5 +47,22 @@ namespace TMD.Infrastructure
         public void Fatal(Type type, object message, Exception exception) { getLog(type).Fatal(message, exception); }
         public void FatalFormat(Type type, string format, params object[] args) { getLog(type).FatalFormat(format, args); }
         public void FatalFormat(Type type, IFormatProvider provider, string format, params object[] args) { getLog(type).FatalFormat(provider, format, args); }
+
+        public void AddContextProperty(string property, Func<string> evaluator)
+        {
+            GlobalContext.Properties[property] = new Log4NetContextPropertyValueProvider(evaluator);
+        }
+
+        public bool RemoveContextProperty(string property) 
+        {
+            if (GlobalContext.Properties[property] != null)
+            {
+                GlobalContext.Properties.Remove(property);
+                return true;
+            }
+            GlobalContext.Properties.Remove(property);
+            return false;
+        }
+        public void ClearContextProperties() { GlobalContext.Properties.Clear(); }
     }
 }

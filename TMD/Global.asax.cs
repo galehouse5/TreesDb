@@ -80,7 +80,17 @@ namespace TMD
                 x.AddRegistry(new RepositoryRegistry());
                 x.For<IUnitOfWorkProvider>().HttpContextScoped().Use<NHibernateUnitOfWorkProvider>();
                 x.For<IUserSessionProvider>().Singleton().Use<WebUserSessionProvider>();
-                x.For<ILogProvider>().Singleton().Use<Log4NetLogProvider>();
+                x.For<ILogProvider>().Singleton().Use<Log4NetLogProvider>()
+                    .OnCreation(lp =>
+                        {
+                            lp.AddContextProperty("Request.Url", () => HttpContext.Current.Request.Url.ToString());
+                            lp.AddContextProperty("Request.Path", () => HttpContext.Current.Request.Path);
+                            lp.AddContextProperty("Request.UserHostAddress", () => HttpContext.Current.Request.UserHostAddress);
+                            lp.AddContextProperty("Request.User", () => HttpContext.Current.User.Identity.Name);
+                            lp.AddContextProperty("Request.IsAuthenticated", () => HttpContext.Current.User.Identity.IsAuthenticated.ToString());
+                            lp.AddContextProperty("Application.Path", () => HttpContext.Current.Request.PhysicalApplicationPath);
+                            lp.AddContextProperty("Application.Machine", () => Environment.MachineName);
+                        });
             });
         }
 

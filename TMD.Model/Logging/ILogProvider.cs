@@ -37,5 +37,9 @@ namespace TMD.Model.Logging
         void Fatal(Type type, object message, Exception exception);
         void FatalFormat(Type type, string format, params object[] args);
         void FatalFormat(Type type, IFormatProvider provider, string format, params object[] args);
+
+        void AddContextProperty(string property, Func<string> evaluator);
+        bool RemoveContextProperty(string property);
+        void ClearContextProperties();
     }
 }

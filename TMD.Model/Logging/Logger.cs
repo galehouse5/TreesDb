@@ -40,5 +40,9 @@ namespace TMD.Model.Logging
         public static void Fatal(this object source, object message, Exception exception) { Provider.Fatal(getType(source), message, exception); }
         public static void FatalFormat(this object source, string format, params object[] args) { Provider.FatalFormat(getType(source), format, args); }
         public static void FatalFormat(this object source, IFormatProvider provider, string format, params object[] args) { Provider.FatalFormat(getType(source), provider, format, args); }
+
+        public static void AddContextProperty(string property, Func<string> evaluator) { Provider.AddContextProperty(property, evaluator); }
+        public static bool RemoveContextProperty(string property) { return Provider.RemoveContextProperty(property); }
+        public static void ClearContextProperties() { Provider.ClearContextProperties(); }
     }
 }
