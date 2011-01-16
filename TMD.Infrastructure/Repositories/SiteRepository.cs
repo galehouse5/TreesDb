@@ -89,15 +89,19 @@ namespace TMD.Infrastructure.Repositories
             Registry.Session.CreateCriteria<Model.Trees.Tree>()
                 .SetFetchMode("Species", NHibernate.FetchMode.Eager)
                 .SetFetchMode("Photos", NHibernate.FetchMode.Eager)
+                .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Model.Trees.Tree>();
             Registry.Session.CreateCriteria<Subsite>()
                 .SetFetchMode("Trees", NHibernate.FetchMode.Eager)
+                .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Subsite>();
             Registry.Session.CreateCriteria<Subsite>()
                 .SetFetchMode("Photos", NHibernate.FetchMode.Eager)
+                .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Subsite>();
             return Registry.Session.CreateCriteria<Site>()
                 .SetFetchMode("Subsites", NHibernate.FetchMode.Eager)
+                .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Site>().ToList();
         }
 
