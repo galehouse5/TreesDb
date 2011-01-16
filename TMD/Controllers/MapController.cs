@@ -33,7 +33,10 @@ namespace TMD.Controllers
         public ActionResult Index()
         {
             ViewData.JavascriptRequired = true;
-            return View();
+            var sites = Repositories.Sites.ListAll();
+            return View(CoordinateBounds.Create(from site in sites 
+                                                where site.TreesWithSpecifiedCoordinatesCount > 0 
+                                                select site.Coordinates));
         }
 
         public ActionResult ViewMarkers()
@@ -54,31 +57,7 @@ namespace TMD.Controllers
                                      from tree in subsite.Trees
                                      where tree.Coordinates.IsSpecified
                                      select renderTreeMarker(tree));
-            return Json(new
-            {
-                CoordinateBounds = new
-                {
-                    NECoordinates = new
-                    {
-                        Latitude = (from site in sites
-                                    where site.TreesWithSpecifiedCoordinatesCount > 0
-                                   select site.CalculatedCoordinates.Latitude.TotalDegrees).Max(),
-                        Longitude = (from site in sites
-                                     where site.TreesWithSpecifiedCoordinatesCount > 0
-                                     select site.CalculatedCoordinates.Longitude.TotalDegrees).Max()
-                    },
-                    SWCoordinates = new 
-                    {
-                        Latitude = (from site in sites
-                                    where site.TreesWithSpecifiedCoordinatesCount > 0
-                                    select site.CalculatedCoordinates.Latitude.TotalDegrees).Min(),
-                        Longitude = (from site in sites
-                                     where site.TreesWithSpecifiedCoordinatesCount > 0
-                                     select site.CalculatedCoordinates.Longitude.TotalDegrees).Min()
-                    }
-                },
-                Markers = renderedMarkers.ToArray()
-            }, JsonRequestBehavior.AllowGet);
+            return Json(new { Markers = renderedMarkers.ToArray() }, JsonRequestBehavior.AllowGet);
         }
 
         public object renderSiteMarker(Model.Sites.Site site)

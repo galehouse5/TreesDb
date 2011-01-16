@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Map" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
+﻿<%@ Page Title="Map" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<CoordinateBounds>" %>
 
 <asp:Content ContentPlaceHolderID="Styles" runat="server">
     <style type="text/css">
@@ -6,6 +6,7 @@
         #header { z-index: 100; }
         #nav { z-index: 100; }
     </style>
+    
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="Scripts" runat="server">
@@ -20,11 +21,28 @@
     </script>
     <% Html.RenderAction("GoogleMapsScript"); %>
     <script type="text/javascript">
+        var timeout = setTimeout(function() {
+            timeout = null;
+            $('#header').slideUp();
+        }, 4000);
+        $('#top').hover(
+            function() {
+                if (timeout) { clearTimeout(timeout); timeout = null; }
+                $('#header').slideDown();
+            },
+            function() {
+                timeout = setTimeout(function() {
+                    timeout = null;
+                    $('#header').slideUp();
+                }, 2000);
+            }
+        );
+
         google.setOnLoadCallback(function () {
             $('#wrapper').append('<div id="map"></div>');
 
             var map = new google.maps.Map($('#map')[0], {
-                center: new google.maps.LatLng(36.94167, -95.825),
+                center: new google.maps.LatLng(<%= Model.Center.Latitude.TotalDegrees %>, <%= Model.Center.Longitude.TotalDegrees %>),
                 zoom: 5,
                 mapTypeId: google.maps.MapTypeId.TERRAIN,
                 scaleControl: true,
@@ -38,6 +56,9 @@
                     style: google.maps.NavigationControlStyle.SMALL
                 }
             });
+            map.fitBounds(new google.maps.LatLngBounds(
+                new google.maps.LatLng(<%= Model.SW.Latitude.TotalDegrees %>, <%= Model.SW.Longitude.TotalDegrees %>),
+                new google.maps.LatLng(<%= Model.NE.Latitude.TotalDegrees %>, <%= Model.NE.Longitude.TotalDegrees %>)));
             var info = new google.maps.InfoWindow();
             google.maps.event.addListener(map, 'zoom_changed', function () { info.close(); });
             function addMarker(options) {
@@ -59,9 +80,6 @@
                 });
             };
             $.get('/Map/ViewMarkers', function (response) {
-                map.fitBounds(new google.maps.LatLngBounds(
-                    new google.maps.LatLng(response.CoordinateBounds.SWCoordinates.Latitude, response.CoordinateBounds.SWCoordinates.Longitude),
-                    new google.maps.LatLng(response.CoordinateBounds.NECoordinates.Latitude, response.CoordinateBounds.NECoordinates.Longitude)));
                 for (i in response.Markers) {
                     addMarker(response.Markers[i]);
                 }
