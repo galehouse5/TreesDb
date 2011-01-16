@@ -7,6 +7,7 @@ using StructureMap;
 using TMD.Infrastructure.Repositories;
 using TMD.Model;
 using TMD.Infrastructure;
+using TMD.Model.Logging;
 
 namespace TMD.UnitTests
 {
@@ -22,6 +23,7 @@ namespace TMD.UnitTests
                 x.AddRegistry(new RepositoryRegistry());
                 x.For<IUnitOfWorkProvider>().Singleton().Use<NHibernateUnitOfWorkProvider>();
                 x.For<IUserSessionProvider>().Singleton().Use<FakeUserSessionProvider>();
+                x.For<ILogProvider>().Singleton().Use<Log4NetLogProvider>();
             });
         }
     }

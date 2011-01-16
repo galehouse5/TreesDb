@@ -16,6 +16,7 @@ using TMD.Infrastructure;
 using AutoMapper;
 using TMD.Mappings;
 using TMD.Binders;
+using TMD.Model.Logging;
 
 namespace TMD
 {
@@ -79,6 +80,7 @@ namespace TMD
                 x.AddRegistry(new RepositoryRegistry());
                 x.For<IUnitOfWorkProvider>().HttpContextScoped().Use<NHibernateUnitOfWorkProvider>();
                 x.For<IUserSessionProvider>().Singleton().Use<WebUserSessionProvider>();
+                x.For<ILogProvider>().Singleton().Use<Log4NetLogProvider>();
             });
         }
 

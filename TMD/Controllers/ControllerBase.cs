@@ -10,6 +10,7 @@ using TMD.Controllers;
 using System.IO;
 using System.Data;
 using TMD.Model;
+using TMD.Model.Logging;
 
 namespace TMD
 {
@@ -64,8 +65,9 @@ namespace TMD
                 {
                     base.ExecuteCore();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    this.Error("Unhandled exception executing controller action.", ex);
                     ActionResult ar = new ServerErrorResult();
                     ar.ExecuteResult(ControllerContext);
                 }

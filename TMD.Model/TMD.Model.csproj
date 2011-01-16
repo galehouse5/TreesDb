@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\ISpecified.cs" />
+    <Compile Include="Logging\ILogProvider.cs" />
+    <Compile Include="Logging\Logger.cs" />
     <Compile Include="Imports\Measurer.cs" />
     <Compile Include="Imports\MultiTrunkTree.cs" />
     <Compile Include="Imports\SingleTrunkTree.cs" />
