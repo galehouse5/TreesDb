@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<TMD.Model.Sites.Site>" %>
+<%@ Import Namespace="TMD.Model.Photos" %>
 <ul>
     <li><strong><%: Model.Name %></strong></li>
     <% if (Model.Subsites.Count == 1) { %>
@@ -30,3 +31,8 @@
     <% } %>
     <li><%= Html.DisplayFor(m => m.LastVisited, new { label = "Last visited" })%><% if (Model.Visits.Count > 1) { %> (<%= Model.Visits.Count %>)<% } %></li>
 </ul>
+<% if (Model.Subsites.Count == 1) { %>
+    <% foreach (var photo in Model.Subsites[0].Photos) { %>
+        <img src="<%= Url.Action("View", "Photos", new { id = photo.GlobalId, size = EPhotoSize.Square }) %>" alt="" />
+    <% } %>
+<% } %>

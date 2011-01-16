@@ -17,7 +17,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Adder, opt => opt.MapFrom(src =>
                     new ImportTreePhotoGalleryAdderModel { TripId = src.Subsite.Site.Trip.Id, TreeId = src.Id }))
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src =>
-                    src.PhotoLinks.Select(link => new PhotoModel { Id = link.Photo.Id })));
+                    src.Photos.Select(photo => new PhotoModel { Id = photo.Id, GlobalId = photo.GlobalId })));
             ValidationMapper.CreateMap<TreeBase, PhotoGalleryModel>()
                 .IgnorePath("*").ForPath("Photo*", "Adder");
 
@@ -25,7 +25,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Adder, opt => opt.MapFrom(src =>
                     new ImportSubsitePhotoGalleryAdderModel { TripId = src.Site.Trip.Id, SubsiteId = src.Id }))
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src =>
-                    src.PhotoLinks.Select(link => new PhotoModel { Id = link.Photo.Id })));
+                    src.Photos.Select(photo => new PhotoModel { Id = photo.Id, GlobalId = photo.GlobalId })));
             ValidationMapper.CreateMap<Subsite, PhotoGalleryModel>()
                 .IgnorePath("*").ForPath("Photo*", "Adder");
         }

@@ -23,7 +23,8 @@ namespace TMD.UnitTests.Infrastructure
         [TestMethod]
         public void SavesAndFindsPhoto()
         {
-            Photo photo = new PhotoFactory().CreateForPublic("Original.jpg".GetPhoto());
+            Photo photo = new PhotoFactory().Create("Original.jpg".GetPhoto());
+            photo.AddReference(new PublicPhotoReference());
             using (var uow = UnitOfWork.Begin())
             {
                 Repositories.Photos.Save(photo);

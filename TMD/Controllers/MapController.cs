@@ -91,7 +91,9 @@ namespace TMD.Controllers
                     Latitude = site.CalculatedCoordinates.Latitude.TotalDegrees,
                     Longitude = site.CalculatedCoordinates.Longitude.TotalDegrees
                 },
-                Icon = "/images/icons/Site32.png",
+                Icon = site.Subsites.Count == 1 && site.Subsites[0].Photos.Count > 0 ?
+                    Url.Action("View", "Photos", new { id = site.Subsites[0].Photos[0].GlobalId, size = EPhotoSize.MiniSquare })
+                    : "/images/icons/Site32.png",
                 Info = RenderPartialViewToString("SiteMarkerInfoPartial", site),
                 MinZoom = 0, MaxZoom = site.ContainsSingleSubsite ? 13 : 11
             };
@@ -107,7 +109,9 @@ namespace TMD.Controllers
                     Latitude = subsite.CalculatedCoordinates.Latitude.TotalDegrees,
                     Longitude = subsite.CalculatedCoordinates.Longitude.TotalDegrees
                 },
-                Icon = "/images/icons/Subsite32.png",
+                Icon = subsite.Photos.Count > 0 ?
+                    Url.Action("View", "Photos", new { id = subsite.Photos[0].GlobalId, size = EPhotoSize.MiniSquare })
+                    : "/images/icons/Subsite32.png",
                 Info = RenderPartialViewToString("SubsiteMarkerInfoPartial", subsite),
                 MinZoom = 12, MaxZoom = 13
             };
@@ -123,7 +127,9 @@ namespace TMD.Controllers
                     Latitude = tree.CalculatedCoordinates.Latitude.TotalDegrees,
                     Longitude = tree.CalculatedCoordinates.Longitude.TotalDegrees
                 },
-                Icon = "/images/icons/SingleTrunkTree32.png",
+                Icon = tree.Photos.Count > 0 ?
+                    Url.Action("View", "Photos", new { id = tree.Photos[0].GlobalId, size = EPhotoSize.MiniSquare })
+                    : "/images/icons/SingleTrunkTree32.png",
                 Info = RenderPartialViewToString("TreeMarkerInfoPartial", tree),
                 MinZoom = 14, MaxZoom = 30
             };
@@ -140,8 +146,8 @@ namespace TMD.Controllers
                         Latitude = site.Subsites[0].Coordinates.Latitude.TotalDegrees,
                         Longitude = site.Subsites[0].Coordinates.Longitude.TotalDegrees
                     },
-                    Icon = site.Subsites[0].PhotoLinks.Count > 0 ?
-                        Url.Action("View", "Photos", new { id = site.Subsites[0].PhotoLinks[0].Photo.Id, size = EPhotoSize.MiniSquare })
+                    Icon = site.Subsites[0].Photos.Count > 0 ?
+                        Url.Action("View", "Photos", new { id = site.Subsites[0].Photos[0].GlobalId, size = EPhotoSize.MiniSquare })
                         : "/images/icons/Site32.png",
                     Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", site.Subsites[0])
                 };
@@ -167,8 +173,8 @@ namespace TMD.Controllers
                     Latitude = subsite.Coordinates.Latitude.TotalDegrees,
                     Longitude = subsite.Coordinates.Longitude.TotalDegrees
                 },
-                Icon = subsite.PhotoLinks.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = subsite.PhotoLinks[0].Photo.Id, size = EPhotoSize.MiniSquare }) 
+                Icon = subsite.Photos.Count > 0 ?
+                    Url.Action("View", "Photos", new { id = subsite.Photos[0].GlobalId, size = EPhotoSize.MiniSquare }) 
                     : "/images/icons/Subsite32.png",
                 Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", subsite)
             };
@@ -183,8 +189,8 @@ namespace TMD.Controllers
                     Latitude = tree.Coordinates.Latitude.TotalDegrees,
                     Longitude = tree.Coordinates.Longitude.TotalDegrees
                 },
-                Icon = tree.PhotoLinks.Count > 0 ? 
-                    Url.Action("View", "Photos", new { id = tree.PhotoLinks[0].Photo.Id, size = EPhotoSize.MiniSquare }) 
+                Icon = tree.Photos.Count > 0 ?
+                    Url.Action("View", "Photos", new { id = tree.Photos[0].GlobalId, size = EPhotoSize.MiniSquare }) 
                     : "/images/icons/SingleTrunkTree32.png",
                 Info = RenderPartialViewToString("ImportTreeMarkerInfoPartial", tree)
             };

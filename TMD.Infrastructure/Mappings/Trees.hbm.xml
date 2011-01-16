@@ -80,6 +80,10 @@
     <property name="GeneralComments"/>
     <property name="ENTSPTS"/>
     <property name="ENTSPTS2"/>
+    <bag name="Photos" cascade="all-delete-orphan" inverse="true">
+      <key column="TreeMeasurementId"></key>
+      <one-to-many class="TMD.Model.Trees.TreeMeasurementPhotoReference"/>
+    </bag>
   </class>
 
   <class name="TMD.Model.Trees.Tree" table="Trees">
@@ -133,6 +137,10 @@
     </component>
     <property name="ENTSPTS"/>
     <property name="ENTSPTS2"/>
+    <bag name="Photos" cascade="all-delete-orphan" inverse="true">
+      <key column="TreeId"></key>
+      <one-to-many class="TMD.Model.Trees.TreePhotoReference"/>
+    </bag>
   </class>
   
 </hibernate-mapping>

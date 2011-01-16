@@ -68,6 +68,21 @@ namespace TMD.Model
         public IEntity Entity { get; private set; }
     }
 
+    public class EntityArgumentException : ModelException
+    {
+        public EntityArgumentException(IEntity entity)
+            : this(entity, "Invalid entity argument.")
+        { }
+
+        public EntityArgumentException(IEntity entity, string message)
+            : base(message)
+        {
+            this.Entity = entity;
+        }
+
+        public IEntity Entity { get; private set; }
+    }
+
     public class ValidationFailureException : ModelException
     {
         public ValidationFailureException(object obj, IEnumerable<IValidationError> errors)

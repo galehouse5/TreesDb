@@ -5,6 +5,8 @@ using System.Text;
 using System.Diagnostics;
 using TMD.Model.Imports;
 using TMD.Model.Extensions;
+using TMD.Model.Photos;
+using TMD.Model.Users;
 
 namespace TMD.Model.Trees
 {
@@ -28,19 +30,21 @@ namespace TMD.Model.Trees
         public virtual Elevation Elevation { get; private set; }
         public virtual float? ENTSPTS { get; private set; }
         public virtual float? ENTSPTS2 { get; private set; }
+        public virtual IList<TreePhotoReference> Photos { get; private set; }
 
-        public virtual DateTime CalculateLastMeasured() { return (from m in Measurements orderby m.Measured select m).Last().Measured; }
-        public virtual string CalculateCommonName() { return (from m in Measurements orderby m.Measured select m).Last().CommonName; }
-        public virtual string CalculateScientificName() { return (from m in Measurements orderby m.Measured select m).Last().ScientificName; }
-        public virtual Distance CalculateHeight() { return (from m in Measurements orderby m.Measured where m.Height.IsSpecified select m.Height).LastOrDefault() ?? Distance.Null(); }
-        public virtual TreeHeightMeasurementMethod CalculateHeightMeasurementMethod() { return (from m in Measurements orderby m.Measured where m.Height.IsSpecified select m.HeightMeasurementMethod).LastOrDefault(); }
-        public virtual Distance CalculateGirth() { return (from m in Measurements orderby m.Measured where m.Girth.IsSpecified select m.Girth).LastOrDefault() ?? Distance.Null(); }
-        public virtual Distance CalculateCrownSpread() { return (from m in Measurements orderby m.Measured where m.CrownSpread.IsSpecified select m.CrownSpread).LastOrDefault() ?? Distance.Null(); }
+        public virtual TreeMeasurement GetLastMeasurement() { return (from m in Measurements orderby m.Measured select m).Last(); }
+        public virtual DateTime CalculateLastMeasured() { return GetLastMeasurement().Measured; }
+        public virtual string CalculateCommonName() { return GetLastMeasurement().CommonName; }
+        public virtual string CalculateScientificName() { return GetLastMeasurement().ScientificName; }
+        public virtual Distance CalculateHeight() { return GetLastMeasurement().Height; }
+        public virtual TreeHeightMeasurementMethod CalculateHeightMeasurementMethod() { return GetLastMeasurement().HeightMeasurementMethod; }
+        public virtual Distance CalculateGirth() { return GetLastMeasurement().Girth; }
+        public virtual Distance CalculateCrownSpread() { return GetLastMeasurement().CrownSpread; }
         public virtual Coordinates CalculateCoordinates() { return (from m in Measurements orderby m.Measured where m.Coordinates.IsSpecified select m.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
         public virtual Coordinates CalculateCalculatedCoordinates() { return (from m in Measurements orderby m.Measured where m.CalculatedCoordinates.IsSpecified select m.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual Elevation CalculateElevation() { return (from m in Measurements orderby m.Measured where m.Elevation.IsSpecified select m.Elevation).LastOrDefault() ?? Elevation.Null(); }
-        public virtual float? CalculateENTSPTS() { return (from m in Measurements orderby m.Measured where m.ENTSPTS.HasValue select m.ENTSPTS).LastOrDefault(); }
-        public virtual float? CalculateENTSPTS2() { return (from m in Measurements orderby m.Measured where m.ENTSPTS2.HasValue select m.ENTSPTS2).LastOrDefault(); }
+        public virtual Elevation CalculateElevation() { return GetLastMeasurement().Elevation; }
+        public virtual float? CalculateENTSPTS() { return GetLastMeasurement().ENTSPTS; }
+        public virtual float? CalculateENTSPTS2() { return GetLastMeasurement().ENTSPTS2; }
 
         public virtual Tree RecalculateProperties()
         {
@@ -56,6 +60,12 @@ namespace TMD.Model.Trees
             Elevation = CalculateElevation();
             ENTSPTS = CalculateENTSPTS();
             ENTSPTS2 = CalculateENTSPTS2();
+            GetLastMeasurement().Photos.ForEach(p =>
+            {
+                var reference = new TreePhotoReference(this);
+                p.AddReference(reference);
+                Photos.Add(reference);
+            });
             return this;
         }
 
@@ -90,8 +100,17 @@ namespace TMD.Model.Trees
             importedTree.Subsite.Site.Trip.AssertIsImported();
             return new Tree
             {
-                Measurements = new List<TreeMeasurement> { TreeMeasurement.Create(importedTree) }
+                Measurements = new List<TreeMeasurement> { TreeMeasurement.Create(importedTree) },
+                Photos = new List<TreePhotoReference>()
             }.RecalculateProperties();
         }
+    }
+
+    public class TreePhotoReference : PhotoReferenceBase
+    {
+        protected TreePhotoReference() { }
+        protected internal TreePhotoReference(Tree tree) { this.Tree = tree; }
+        public virtual Tree Tree { get; private set; }
+        public override bool IsAuthorizedToView(User user) { return true; }
     }
 }

@@ -336,9 +336,9 @@ namespace TMD.UnitTests.Infrastructure
                 Assert.AreEqual(2, found.Sites.Count);
                 Assert.AreEqual(2, found.Sites[1].Subsites.Count);
                 Assert.AreEqual(2, found.Sites[1].Subsites[1].Trees.Count);
-                Assert.AreEqual(2, found.Sites[1].Subsites[1].Trees[1].PhotoLinks.Count);
-                Assert.IsTrue("Square.jpg".GetPhoto().CompareByContent(found.Sites[1].Subsites[1].Trees[1].PhotoLinks[0].Photo.Get()));
-                Assert.IsTrue("Thumbnail.jpg".GetPhoto().CompareByContent(found.Sites[1].Subsites[1].Trees[1].PhotoLinks[1].Photo.Get()));
+                Assert.AreEqual(2, found.Sites[1].Subsites[1].Trees[1].Photos.Count);
+                Assert.IsTrue("Square.jpg".GetPhoto().CompareByContent(found.Sites[1].Subsites[1].Trees[1].Photos[0].Get()));
+                Assert.IsTrue("Thumbnail.jpg".GetPhoto().CompareByContent(found.Sites[1].Subsites[1].Trees[1].Photos[1].Get()));
                 Repositories.Imports.Remove(found);
                 uow.Persist();
             }

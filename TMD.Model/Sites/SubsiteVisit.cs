@@ -6,6 +6,8 @@ using System.Diagnostics;
 using TMD.Model.Imports;
 using TMD.Model.Trees;
 using TMD.Model.Locations;
+using TMD.Model.Photos;
+using TMD.Model.Users;
 
 namespace TMD.Model.Sites
 {
@@ -27,11 +29,12 @@ namespace TMD.Model.Sites
         public virtual string OwnershipContactInfo { get; private set; }
         public virtual bool MakeOwnershipContactInfoPublic { get; private set; }
         public virtual string Comments { get; private set; }
+        public virtual IList<SubsiteVisitPhotoReference> Photos { get; private set; }
 
         public static SubsiteVisit Create(Imports.Subsite importedSubsite)
         {
             importedSubsite.Site.Trip.AssertIsImported();
-            return new SubsiteVisit
+            var visit = new SubsiteVisit
             {
                 ImportingTrip = importedSubsite.Site.Trip,
                 Visited = importedSubsite.Site.Trip.Date.Value,
@@ -43,8 +46,24 @@ namespace TMD.Model.Sites
                 CalculatedCoordinates = importedSubsite.CalculateCoordinates(),
                 OwnershipContactInfo = importedSubsite.OwnershipContactInfo,
                 MakeOwnershipContactInfoPublic = importedSubsite.MakeOwnershipContactInfoPublic,
-                Comments = importedSubsite.Comments
+                Comments = importedSubsite.Comments,
+                Photos = new List<SubsiteVisitPhotoReference>()
             };
+            foreach (var photo in importedSubsite.Photos)
+            {
+                var reference = new SubsiteVisitPhotoReference(visit);
+                photo.AddReference(reference);
+                visit.Photos.Add(reference);
+            }
+            return visit;
         }
+    }
+
+    public class SubsiteVisitPhotoReference : PhotoReferenceBase
+    {
+        protected SubsiteVisitPhotoReference() { }
+        protected internal SubsiteVisitPhotoReference(SubsiteVisit subsiteVisit) { this.SubsiteVisit = subsiteVisit; }
+        public virtual SubsiteVisit SubsiteVisit { get; private set; }
+        public override bool IsAuthorizedToView(User user) { return true; }
     }
 }

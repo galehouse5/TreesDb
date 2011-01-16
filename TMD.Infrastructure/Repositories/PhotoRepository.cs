@@ -8,37 +8,20 @@ using NHibernate;
 using NHibernate.Type;
 using NHibernate.Event;
 using NHibernate.Criterion;
+using TMD.Model.Extensions;
+using System.Collections;
 
 namespace TMD.Infrastructure.Repositories
 {
-    public class PhotoRepository : IPhotoRepository
+    public class PhotoRepository : Model.Photos.IPhotoRepository
     {
         internal static void Configure(NHibernate.Cfg.Configuration config)
         {
-            config.SetListener(ListenerType.PostInsert, new PhotoPostInsertEventListener());
-            config.SetListener(ListenerType.PostDelete, new PhotoPostDeleteEventListener());
-            config.SetListener(ListenerType.PreDelete, new PhotoLinkPreDeleteEventListener());
+            config.SetListener(ListenerType.PostInsert, new PhotoEventListener());
+            config.SetListener(ListenerType.PostDelete, new PhotoEventListener());
         }
 
-        private class PhotoLinkPreDeleteEventListener : IPreDeleteEventListener
-        {
-            public bool OnPreDelete(PreDeleteEvent @event)
-            {
-                var link = @event.Entity as PhotoLinkBase;
-                if (link != null)
-                {
-                    var photo = link.Photo;
-                    link.Photo.RemoveLink(link);
-                    if (photo.Links.Count == 0)
-                    {
-                        Registry.Session.Delete(photo);
-                    }
-                }
-                return false;
-            }
-        }
-
-        private class PhotoPostInsertEventListener : IPostInsertEventListener
+        private class PhotoEventListener : IPostInsertEventListener, IPostDeleteEventListener
         {
             public void OnPostInsert(PostInsertEvent @event)
             {
@@ -51,10 +34,7 @@ namespace TMD.Infrastructure.Repositories
                     }
                 }
             }
-        }
 
-        private class PhotoPostDeleteEventListener : IPostDeleteEventListener
-        {
             public void OnPostDelete(PostDeleteEvent @event)
             {
                 var photo = @event.Entity as Photo;
@@ -85,6 +65,13 @@ namespace TMD.Infrastructure.Repositories
         public void Remove(Photo photo)
         {
             Registry.Session.Delete(photo);
+        }
+
+        public PhotoReferenceBase FindReferenceById(int id)
+        {
+            return Registry.Session.CreateCriteria<PhotoReferenceBase>()
+                .Add(Restrictions.Eq("Id", id))
+                .UniqueResult<PhotoReferenceBase>();
         }
     }
 }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using TMD.Model.Imports;
+using TMD.Model.Photos;
+using TMD.Model.Users;
 
 namespace TMD.Model.Trees
 {
@@ -60,11 +62,12 @@ namespace TMD.Model.Trees
 
         public virtual float? TDI2 { get { return Species.CalculateTDI2(Height, Girth); } }
         public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
+        public virtual IList<TreeMeasurementPhotoReference> Photos { get; private set; }
 
         public static TreeMeasurement Create(Imports.TreeBase importedTree)
         {
             importedTree.Subsite.Site.Trip.AssertIsImported();
-            return new TreeMeasurement
+            var measurement = new TreeMeasurement
             {
                 ImportingTrip = importedTree.Subsite.Site.Trip,
                 Measured = importedTree.Subsite.Site.Trip.Date.Value,
@@ -77,8 +80,24 @@ namespace TMD.Model.Trees
                 Coordinates = importedTree.Coordinates,
                 CalculatedCoordinates = importedTree.CalculateCoordinates(),
                 Elevation = importedTree.Elevation,
-                GeneralComments = importedTree.GeneralComments
+                GeneralComments = importedTree.GeneralComments,
+                Photos = new List<TreeMeasurementPhotoReference>()
             }.RecalculateProperties();
+            foreach (var photo in importedTree.Photos)
+            {
+                var reference = new TreeMeasurementPhotoReference(measurement);
+                photo.AddReference(reference);
+                measurement.Photos.Add(reference);
+            }
+            return measurement;
         }
+    }
+
+    public class TreeMeasurementPhotoReference : PhotoReferenceBase
+    {
+        protected TreeMeasurementPhotoReference() { }
+        protected internal TreeMeasurementPhotoReference(TreeMeasurement measurement) { this.TreeMeasurement = measurement; }
+        public virtual TreeMeasurement TreeMeasurement { get; private set; }
+        public override bool IsAuthorizedToView(User user) { return true; }
     }
 }

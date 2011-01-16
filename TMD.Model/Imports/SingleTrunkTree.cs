@@ -74,7 +74,7 @@ namespace TMD.Model.Imports
                 TerrainComments = string.Empty,
                 Subsite = ssv,
                 MakeCoordinatesPublic = true,
-                PhotoLinks = new List<PhotoLinkBase>()
+                Photos = new List<TreePhotoReference>()
             }.RecordCreation() as SingleTrunkTree;
         }
     }

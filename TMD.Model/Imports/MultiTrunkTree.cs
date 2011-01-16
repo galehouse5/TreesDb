@@ -139,7 +139,7 @@ namespace TMD.Model.Imports
                 MakeCoordinatesPublic = true,
                 CombinedGirthNumberOfTrunks = null,
                 Trunks = new List<Trunk>(),
-                PhotoLinks = new List<PhotoLinkBase>()
+                Photos = new List<TreePhotoReference>()
             }.RecordCreation() as MultiTrunkTree;
         }
     }

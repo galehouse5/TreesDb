@@ -29,27 +29,37 @@
     <property name="Bytes" />
     <property name="Format" />
     <many-to-one name="PermanentStore" column="StoreId" />
-    <bag name="Links" table="Links" cascade="all-delete-orphan" inverse="true">
+    <bag name="References" cascade="delete-orphan" inverse="true">
       <key column="PhotoId"></key>
-      <one-to-many class="PhotoLinkBase"/>
+      <one-to-many class="PhotoReferenceBase"/>
     </bag>
   </class>
 
-  <class name="PhotoLinkBase" abstract="true" table="Links">
+  <class name="PhotoReferenceBase" abstract="true" table="[References]">
     <id name="Id">
       <generator class="native" />
     </id>
     <discriminator column="Type"/>
-    <many-to-one name="Photo" column="PhotoId" cascade="all" ></many-to-one>
-    <subclass name="PublicPhotoLink" discriminator-value="1"></subclass>
-    <subclass name="ImportPhotoLink" discriminator-value="2">
-      <many-to-one name="Trip" column="TripId"></many-to-one>
+    <many-to-one name="Photo" column="PhotoId" cascade="save-update"></many-to-one>
+    <subclass name="PublicPhotoReference" discriminator-value="1">
     </subclass>
-    <subclass name="SitePhotoLink" discriminator-value="3">
-      <many-to-one name="Site" column="SiteId"></many-to-one>
+    <subclass name="TMD.Model.Imports.SubsitePhotoReference" discriminator-value="2">
+      <many-to-one name="Subsite" column="ImportSubsiteId"></many-to-one>
     </subclass>
-    <subclass name="TreePhotoLink" discriminator-value="4">
+    <subclass name="TMD.Model.Imports.TreePhotoReference" discriminator-value="3">
+      <many-to-one name="Tree" column="ImportTreeId"></many-to-one>
+    </subclass>
+    <subclass name="TMD.Model.Sites.SubsitePhotoReference" discriminator-value="4">
+      <many-to-one name="Subsite" column="SubsiteId"></many-to-one>
+    </subclass>
+    <subclass name="TMD.Model.Sites.SubsiteVisitPhotoReference" discriminator-value="5">
+      <many-to-one name="SubsiteVisit" column="SubsiteVisitId"></many-to-one>
+    </subclass>
+    <subclass name="TMD.Model.Trees.TreePhotoReference" discriminator-value="6">
       <many-to-one name="Tree" column="TreeId"></many-to-one>
+    </subclass>
+    <subclass name="TMD.Model.Trees.TreeMeasurementPhotoReference" discriminator-value="7">
+      <many-to-one name="TreeMeasurement" column="TreeMeasurementId"></many-to-one>
     </subclass>
   </class>
   

@@ -77,7 +77,8 @@ namespace TMD.Mappings
             CreateMap<ImportSiteModel, Site>().ForMember(dest => dest.Subsites, opt => opt.Ignore())
                 .AfterMap((src, dest) => src.Subsites.ForEach(ss => Mapper.Map(ss, dest.FindSubsiteById(ss.Id))));
 
-            CreateMap<ImportSubsiteModel, Subsite>();
+            CreateMap<ImportSubsiteModel, Subsite>()
+                .ForMember(dest => dest.Photos, opt => opt.Ignore());
         }
 
         private void configureForTrees()
@@ -108,7 +109,8 @@ namespace TMD.Mappings
             CreateMap<ImportSubsiteTreesModel, Subsite>().ForMember(dest => dest.Trees, opt => opt.Ignore())
                 .AfterMap((src, dest) => src.Trees.ForEach(t => Mapper.Map(t, dest.FindTreeById(t.Id))));
 
-            CreateMap<ImportTreeModel, TreeBase>();
+            CreateMap<ImportTreeModel, TreeBase>()
+                .ForMember(dest => dest.Photos, opt => opt.Ignore());
         }
 
         public void configureForFinish()

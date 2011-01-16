@@ -122,6 +122,10 @@
       <key column="SubsiteId"></key>
       <one-to-many class="TMD.Model.Trees.Tree"/>
     </bag>
+    <bag name="Photos" cascade="all-delete-orphan" inverse="true">
+      <key column="SubsiteId"></key>
+      <one-to-many class="TMD.Model.Sites.SubsitePhotoReference"/>
+    </bag>
   </class>
 
   <class name="TMD.Model.Sites.SubsiteVisit" table="SubsiteVisits">
@@ -157,6 +161,10 @@
     <property name="OwnershipContactInfo" />
     <property name="MakeOwnershipContactInfoPublic" />
     <property name="Comments" />
+    <bag name="Photos" cascade="all-delete-orphan" inverse="true">
+      <key column="SubsiteVisitId"></key>
+      <one-to-many class="TMD.Model.Sites.SubsiteVisitPhotoReference"/>
+    </bag>
   </class>
   
 </hibernate-mapping>

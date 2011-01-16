@@ -10,6 +10,7 @@ using NHibernate.Validator.Constraints;
 using NHibernate.Validator.Engine;
 using System.Drawing;
 using TMD.Model.Photos;
+using TMD.Model.Users;
 
 namespace TMD.Model.Imports
 {
@@ -323,25 +324,32 @@ namespace TMD.Model.Imports
         [Valid] public virtual Elevation Elevation { get; set; }
 
         [Size2(0, 100, Message = "This tree contains too many photos.", Tags = Tag.Screening)]
-        [Valid] public virtual IList<PhotoLinkBase> PhotoLinks { get; protected set; }
+        [Valid] public virtual IList<TreePhotoReference> Photos { get; protected set; }
 
         public virtual void AddPhoto(Photo photo)
         {
-            var link = ImportPhotoLink.Create(Subsite.Site.Trip);
-            PhotoLinks.Add(link);
-            photo.AddLink(link);
+            var reference = new TreePhotoReference(this);
+            photo.AddReference(reference);
+            Photos.Add(reference);
         }
 
         public virtual bool RemovePhoto(Photo photo)
         {
-            var link = (from photoLink in PhotoLinks where photoLink.Photo.Equals(photo) select photoLink).FirstOrDefault();
-            if (link != null)
-            {
-                PhotoLinks.Remove(link);
-                photo.RemoveLink(link);
-                return true;
-            }
-            return false;
+            var reference = (from r in Photos where r.Tree.Equals(this) select r).FirstOrDefault();
+            if (reference == null) { return false; }
+            reference.Photo.RemoveReference(reference);
+            Photos.Remove(reference);
+            return true;
         }
+    }
+
+    public class TreePhotoReference : PhotoReferenceBase
+    {
+        protected TreePhotoReference() { }
+        protected internal TreePhotoReference(TreeBase subsite) { this.Tree = subsite; }
+        public virtual TreeBase Tree { get; private set; }
+        public override bool IsAuthorizedToAdd(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
+        public override bool IsAuthorizedToView(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
+        public override bool IsAuthorizedToRemove(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
     }
 }

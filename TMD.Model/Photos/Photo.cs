@@ -19,7 +19,27 @@ namespace TMD.Model.Photos
         Png = 3
     }
 
-    public class Photo : UserCreatedEntityBase
+    public interface IPhoto
+    {
+        int GlobalId { get; }
+        Size Size { get; }
+        int Bytes { get; }
+        PhotoFormat Format { get; }
+        string ContentType { get; }
+        ImageFormat ImageFormat { get; }
+        Bitmap Get();
+        Bitmap Get(EPhotoSize size);
+        
+        bool IsAuthorizedToView(User user);
+        bool IsAuthorizedToAdd(User user);
+        bool IsAuthorizedToRemove(User user);
+        
+        void AddReference(PhotoReferenceBase reference);
+        bool RemoveReference(PhotoReferenceBase reference);
+        int ReferenceCount { get; }
+    }
+
+    public class Photo : UserCreatedEntityBase, IPhoto
     {
         public const int MaxBytes = 5 * 1024 * 1024;
 
@@ -28,9 +48,10 @@ namespace TMD.Model.Photos
             TemporaryStore = new MemoryPhotoStore();
         }
 
+        public virtual int GlobalId { get { return Id; } }
         public virtual PhotoStoreBase TemporaryStore { get; private set; }
         public virtual PhotoStoreBase PermanentStore { get; protected internal set; }
-        [Valid] public virtual IList<PhotoLinkBase> Links { get; protected internal set; }
+        public virtual IList<PhotoReferenceBase> References { get; protected internal set; }
         public virtual Size Size { get; protected internal set; }
 
         [Within2(0, MaxBytes, Inclusive = true, Message = "Photo must not be too large.", Tags = Tag.Screening)]
@@ -74,23 +95,23 @@ namespace TMD.Model.Photos
 
         public virtual bool IsAuthorizedToView(User user)
         {
-            return (from link in Links
-                    where link.IsAuthorizedToView(this, user)
-                    select link).Count() > 0;
+            return (from reference in References
+                    where reference.IsAuthorizedToView(user)
+                    select reference).Count() > 0;
         }
 
         public virtual bool IsAuthorizedToAdd(User user)
         {
-            return (from link in Links
-                    where link.IsAuthorizedToAdd(this, user)
-                    select link).Count() > 0;
+            return (from reference in References
+                    where reference.IsAuthorizedToAdd(user)
+                    select reference).Count() > 0;
         }
 
         public virtual bool IsAuthorizedToRemove(User user)
         {
-            return (from link in Links
-                    where link.IsAuthorizedToRemove(this, user)
-                    select link).Count() > 0;
+            return (from reference in References
+                    where reference.IsAuthorizedToRemove(user)
+                    select reference).Count() > 0;
         }
 
         public virtual Bitmap Get()
@@ -115,18 +136,18 @@ namespace TMD.Model.Photos
             }
         }
 
-        public virtual Photo AddLink(PhotoLinkBase link)
+        public virtual void AddReference(PhotoReferenceBase reference)
         {
-            link.Photo = this;
-            Links.Add(link);
-            return this;
+            reference.Photo = this;
+            References.Add(reference);
         }
 
-        public virtual Photo RemoveLink(PhotoLinkBase link)
+        public virtual bool RemoveReference(PhotoReferenceBase reference)
         {
-            link.Photo = null;
-            Links.Remove(link);
-            return this;
+            reference.Photo = null;
+            return References.Remove(reference);
         }
+
+        public virtual int ReferenceCount { get { return References.Count; } }
     }
 }

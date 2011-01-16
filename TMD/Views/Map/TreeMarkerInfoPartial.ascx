@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<TMD.Model.Trees.Tree>" %>
+<%@ Import Namespace="TMD.Model.Photos" %>
 <ul>
     <li><strong><%: Model.ScientificName %></strong></li>
     <li><%= Html.DisplayFor(m => m.CommonName, new { label = "Common name" })%></li>
@@ -25,3 +26,6 @@
     <% } %>
     <li><%= Html.DisplayFor(m => m.LastMeasured, new { label = "Last measured" })%><% if (Model.Measurements.Count > 1) { %> (<%= Model.Measurements.Count %>)<% } %></li>
 </ul>
+<% foreach (var photo in Model.Photos) { %>
+    <img src="<%= Url.Action("View", "Photos", new { id = photo.GlobalId, size = EPhotoSize.Square }) %>" alt="" />
+<% } %>

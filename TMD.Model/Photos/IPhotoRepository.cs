@@ -12,6 +12,7 @@ namespace TMD.Model.Photos
     {
         void Save(Photo photo);
         void Remove(Photo photo);
+        PhotoReferenceBase FindReferenceById(int id);
         Photo FindById(int id);
         PhotoStoreBase FindPermanentPhotoStore();
     }

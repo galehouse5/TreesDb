@@ -10,22 +10,12 @@ namespace TMD.Model.Photos
 {
     public class PhotoFactory
     {
-        public Photo CreateForPublic(Bitmap image)
-        {
-            return Create(image).AddLink(PublicPhotoLink.Create());
-        }
-
-        public Photo CreateForTrip(Trip trip, Bitmap image)
-        {
-            return Create(image).AddLink(ImportPhotoLink.Create(trip));
-        }
-
         public Photo Create(Bitmap image)
         {
             var photo = (Photo)new Photo
             {
                 PermanentStore = Repositories.Photos.FindPermanentPhotoStore(),
-                Links = new List<PhotoLinkBase>()
+                References = new List<PhotoReferenceBase>()
             }.RecordCreation();
             var info = photo.TemporaryStore.Store(photo, image);
             photo.Size = info.Size;

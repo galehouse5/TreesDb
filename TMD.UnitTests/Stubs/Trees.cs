@@ -27,6 +27,7 @@ namespace TMD.UnitTests.Stubs
         {
             this.Site = site;
             Trees = new List<TMD.Model.Imports.TreeBase>();
+            Photos = new List<TMD.Model.Imports.SubsitePhotoReference>();
         }
     }
 
@@ -39,6 +40,7 @@ namespace TMD.UnitTests.Stubs
             Girth = Distance.Null();
             CrownSpread = Distance.Null();
             Elevation = Elevation.Null();
+            Photos = new List<TMD.Model.Imports.TreePhotoReference>();
         }
     }
 }

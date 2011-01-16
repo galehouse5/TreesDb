@@ -36,9 +36,11 @@ namespace TMD.Controllers
         [HttpPost, UnitOfWork]
         public ActionResult Remove(IUnitOfWork uow, int id)
         {
-            Photo photo = Repositories.Photos.FindById(id);
-            if (!photo.IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
-            Repositories.Photos.Remove(photo);
+            var reference = Repositories.Photos.FindReferenceById(id);
+            if (!reference.IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
+            var photo = reference.Photo;
+            photo.RemoveReference(reference);
+            Repositories.Photos.Save(photo);
             uow.Persist();
             return PhotoRemoval(photo);
         }

@@ -7,6 +7,8 @@ using TMD.Model.Imports;
 using TMD.Model.Trees;
 using TMD.Model.Locations;
 using TMD.Model.Extensions;
+using TMD.Model.Photos;
+using TMD.Model.Users;
 
 namespace TMD.Model.Sites
 {
@@ -32,13 +34,15 @@ namespace TMD.Model.Sites
         public virtual float? RGI5 { get; private set; }
         public virtual float? RGI10 { get; private set; }
         public virtual float? RGI20 { get; private set; }
+        public virtual IList<SubsitePhotoReference> Photos { get; private set; }
 
-        public virtual DateTime CalculateLastVisited() { return (from v in Visits orderby v.Visited select v).Last().Visited; }
-        public virtual string CalculateOwnershipType() { return (from v in Visits orderby v.Visited select v).Last().OwnershipType; }
-        public virtual string CalculateOwnershipContactInfo() { return (from v in Visits orderby v.Visited select v).Last().OwnershipContactInfo; }
-        public virtual bool CalculateMakeContactInfoPublic() { return (from v in Visits orderby v.Visited select v).Last().MakeOwnershipContactInfoPublic; }
+        public virtual SubsiteVisit GetLastVisit() { return (from v in Visits orderby v.Visited select v).Last(); }
+        public virtual DateTime CalculateLastVisited() { return GetLastVisit().Visited; }
+        public virtual string CalculateOwnershipType() { return GetLastVisit().OwnershipType; }
+        public virtual string CalculateOwnershipContactInfo() { return GetLastVisit().OwnershipContactInfo; }
+        public virtual bool CalculateMakeContactInfoPublic() { return GetLastVisit().MakeOwnershipContactInfoPublic; }
         public virtual Coordinates CalculateCoordinates() { return (from v in Visits orderby v.Visited where v.Coordinates.IsSpecified select v.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual Coordinates CalculateCalculatedCoordinates() { return (from v in Visits orderby v.Visited where v.CalculatedCoordinates.IsSpecified select v.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
+        public virtual Coordinates CalculateCalculatedCoordinates() { return (from v in Visits orderby v.Visited where v.CalculatedCoordinates.IsSpecified select v.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }       
 
         public virtual float? CalculateRHI(int number)
         {
@@ -86,6 +90,14 @@ namespace TMD.Model.Sites
             RGI5 = CalculateRGI(5);
             RGI10 = CalculateRGI(10);
             RGI20 = CalculateRGI(20);
+            Photos.ForEach(p => p.RemoveReference(p));
+            Photos.Clear();
+            GetLastVisit().Photos.ForEach(p =>
+            {
+                var reference = new SubsitePhotoReference(this);
+                p.AddReference(reference);
+                Photos.Add(reference);
+            });
             return this;
         }
 
@@ -152,8 +164,17 @@ namespace TMD.Model.Sites
                 Visits = new List<SubsiteVisit> { SubsiteVisit.Create(importedSubsite) },
                 Name = importedSubsite.Name,
                 State = importedSubsite.State,
-                County = importedSubsite.County
+                County = importedSubsite.County,
+                Photos = new List<SubsitePhotoReference>()
             }.RecalculateProperties();
         }
+    }
+
+    public class SubsitePhotoReference : PhotoReferenceBase
+    {
+        protected SubsitePhotoReference() { }
+        protected internal SubsitePhotoReference(Subsite subsite) { this.Subsite = subsite; }
+        public virtual Subsite Subsite { get; private set; }
+        public override bool IsAuthorizedToView(User user) { return true; }
     }
 }
