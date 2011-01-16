@@ -35,6 +35,8 @@ namespace TMD.Model.Sites
         public virtual float? RGI10 { get; private set; }
         public virtual float? RGI20 { get; private set; }
         public virtual IList<SubsitePhotoReference> Photos { get; private set; }
+        public virtual int TreesWithSpecifiedCoordinatesCount { get; private set; }
+        public virtual int VisitCount { get; private set; }
 
         public virtual SubsiteVisit GetLastVisit() { return (from v in Visits orderby v.Visited select v).Last(); }
         public virtual DateTime CalculateLastVisited() { return GetLastVisit().Visited; }
@@ -42,7 +44,9 @@ namespace TMD.Model.Sites
         public virtual string CalculateOwnershipContactInfo() { return GetLastVisit().OwnershipContactInfo; }
         public virtual bool CalculateMakeContactInfoPublic() { return GetLastVisit().MakeOwnershipContactInfoPublic; }
         public virtual Coordinates CalculateCoordinates() { return (from v in Visits orderby v.Visited where v.Coordinates.IsSpecified select v.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual Coordinates CalculateCalculatedCoordinates() { return (from v in Visits orderby v.Visited where v.CalculatedCoordinates.IsSpecified select v.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }       
+        public virtual Coordinates CalculateCalculatedCoordinates() { return (from v in Visits orderby v.Visited where v.CalculatedCoordinates.IsSpecified select v.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
+        public virtual int CalculateTreesWithSpecifiedCoordinatesCount() { return (from t in Trees where t.Coordinates.IsSpecified select t).Count(); }
+        public virtual int CalculateVisitCount() { return Visits.Count; }
 
         public virtual float? CalculateRHI(int number)
         {
@@ -98,16 +102,13 @@ namespace TMD.Model.Sites
                 p.AddReference(reference);
                 Photos.Add(reference);
             });
+            VisitCount = CalculateVisitCount();
+            TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
             return this;
         }
 
         public virtual IList<SubsiteVisit> Visits { get; private set; }
         public virtual IList<Tree> Trees { get; private set; }
-
-        public virtual bool ContainsTreesWithSpecifiedCoordinates
-        {
-            get { return (from tree in Trees where tree.Coordinates.IsSpecified select tree).Count() > 1; }
-        }
 
         public const float CoordinateMinutesEquivalenceProximity = 5f;
         public virtual bool ShouldMerge(Subsite subsiteToMerge)

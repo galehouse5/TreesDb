@@ -6,6 +6,7 @@ using TMD.Model.Sites;
 using TMD.Model;
 using NHibernate.Criterion;
 using TMD.Model.Extensions;
+using NHibernate.Transform;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -81,6 +82,28 @@ namespace TMD.Infrastructure.Repositories
                     Registry.Session.Delete(site);
                 }
             }
+        }
+
+        public IList<Site> ListAllForMap()
+        {
+            Registry.Session.CreateCriteria<Model.Trees.Tree>()
+                .SetFetchMode("Species", NHibernate.FetchMode.Eager)
+                .SetFetchMode("Photos", NHibernate.FetchMode.Eager)
+                .Future<Model.Trees.Tree>();
+            Registry.Session.CreateCriteria<Subsite>()
+                .SetFetchMode("Trees", NHibernate.FetchMode.Eager)
+                .Future<Subsite>();
+            Registry.Session.CreateCriteria<Subsite>()
+                .SetFetchMode("Photos", NHibernate.FetchMode.Eager)
+                .Future<Subsite>();
+            return Registry.Session.CreateCriteria<Site>()
+                .SetFetchMode("Subsites", NHibernate.FetchMode.Eager)
+                .Future<Site>().ToList();
+        }
+
+        public void Remove(Site site)
+        {
+            Registry.Session.Delete(site);
         }
     }
 }

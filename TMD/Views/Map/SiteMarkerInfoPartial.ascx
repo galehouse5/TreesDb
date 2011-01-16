@@ -29,7 +29,7 @@
      <% if (Model.Subsites.Count > 1) { %>
         <li><%= Html.DisplayFor(m => m.Subsites.Count, new { label = "Subsites visited" }) %></li>
     <% } %>
-    <li><%= Html.DisplayFor(m => m.LastVisited, new { label = "Last visited" })%><% if (Model.Visits.Count > 1) { %> (<%= Model.Visits.Count %>)<% } %></li>
+    <li><%= Html.DisplayFor(m => m.LastVisited, new { label = "Last visited" })%><% if (Model.VisitCount > 1) { %> (<%= Model.VisitCount %>)<% } %></li>
 </ul>
 <% if (Model.Subsites.Count == 1) { %>
     <% foreach (var photo in Model.Subsites[0].Photos) { %>

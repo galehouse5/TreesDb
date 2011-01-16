@@ -24,7 +24,7 @@
     <% if (Model.ENTSPTS2.HasValue) { %>
         <li><%= Html.DisplayFor(m => m.ENTSPTS2.Value, new { label = "ENTSPTS2" }) %></li>
     <% } %>
-    <li><%= Html.DisplayFor(m => m.LastMeasured, new { label = "Last measured" })%><% if (Model.Measurements.Count > 1) { %> (<%= Model.Measurements.Count %>)<% } %></li>
+    <li><%= Html.DisplayFor(m => m.LastMeasured, new { label = "Last measured" })%><% if (Model.MeasurementCount > 1) { %> (<%= Model.MeasurementCount%>)<% } %></li>
 </ul>
 <% foreach (var photo in Model.Photos) { %>
     <img src="<%= Url.Action("View", "Photos", new { id = photo.GlobalId, size = EPhotoSize.Square }) %>" alt="" />

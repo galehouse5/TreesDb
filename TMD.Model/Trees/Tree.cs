@@ -66,6 +66,7 @@ namespace TMD.Model.Trees
                 p.AddReference(reference);
                 Photos.Add(reference);
             });
+            MeasurementCount = Measurements.Count;
             return this;
         }
 
@@ -73,6 +74,7 @@ namespace TMD.Model.Trees
         public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
 
         public virtual IList<TreeMeasurement> Measurements { get; private set; }
+        public virtual int MeasurementCount { get; private set; }
 
         public virtual Tree Merge(Tree treeToMerge)
         {

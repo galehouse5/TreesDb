@@ -141,6 +141,7 @@
       <key column="TreeId"></key>
       <one-to-many class="TMD.Model.Trees.TreePhotoReference"/>
     </bag>
+    <property name="MeasurementCount" formula="(select count(*) from Trees.TreeMeasurements t where t.TreeId = Id)" />
   </class>
   
 </hibernate-mapping>

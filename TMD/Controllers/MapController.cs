@@ -38,19 +38,19 @@ namespace TMD.Controllers
 
         public ActionResult ViewMarkers()
         {
-            var sites = Repositories.Sites.ListAll();
+            var sites = Repositories.Sites.ListAllForMap();
             var renderedMarkers = new List<object>();
             renderedMarkers.AddRange(from site in sites
-                                     where site.ContainsTreesWithSpecifiedCoordinates
+                                     where site.TreesWithSpecifiedCoordinatesCount > 0
                                      select renderSiteMarker(site));
             renderedMarkers.AddRange(from site in sites
                                      where !site.ContainsSingleSubsite
                                      from subsite in site.Subsites
-                                     where subsite.ContainsTreesWithSpecifiedCoordinates
+                                     where subsite.TreesWithSpecifiedCoordinatesCount > 0
                                      select renderSubsiteMarker(subsite));
             renderedMarkers.AddRange(from site in sites
                                      from subsite in site.Subsites
-                                     where subsite.ContainsTreesWithSpecifiedCoordinates
+                                     where subsite.TreesWithSpecifiedCoordinatesCount > 0
                                      from tree in subsite.Trees
                                      where tree.Coordinates.IsSpecified
                                      select renderTreeMarker(tree));
@@ -60,20 +60,20 @@ namespace TMD.Controllers
                 {
                     NECoordinates = new
                     {
-                        Latitude = (from site in sites 
-                                   where site.ContainsTreesWithSpecifiedCoordinates
+                        Latitude = (from site in sites
+                                    where site.TreesWithSpecifiedCoordinatesCount > 0
                                    select site.CalculatedCoordinates.Latitude.TotalDegrees).Max(),
-                        Longitude = (from site in sites 
-                                   where site.ContainsTreesWithSpecifiedCoordinates
-                                   select site.CalculatedCoordinates.Longitude.TotalDegrees).Max()
+                        Longitude = (from site in sites
+                                     where site.TreesWithSpecifiedCoordinatesCount > 0
+                                     select site.CalculatedCoordinates.Longitude.TotalDegrees).Max()
                     },
                     SWCoordinates = new 
                     {
                         Latitude = (from site in sites
-                                    where site.ContainsTreesWithSpecifiedCoordinates
+                                    where site.TreesWithSpecifiedCoordinatesCount > 0
                                     select site.CalculatedCoordinates.Latitude.TotalDegrees).Min(),
                         Longitude = (from site in sites
-                                     where site.ContainsTreesWithSpecifiedCoordinates
+                                     where site.TreesWithSpecifiedCoordinatesCount > 0
                                      select site.CalculatedCoordinates.Longitude.TotalDegrees).Min()
                     }
                 },

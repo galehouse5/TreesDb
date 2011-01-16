@@ -24,7 +24,7 @@
         <li><%= Html.DisplayFor(m => m.RGI20.Value, new { label = "RGI20" }) %></li>
     <% } %>
     <li><%= Html.DisplayFor(m => m.Trees.Count, new { label = "Trees measured" })%></li>
-    <li><%= Html.DisplayFor(m => m.LastVisited, new { label = "Last visited" })%><% if (Model.Visits.Count > 1) { %> (<%= Model.Visits.Count %>)<% } %></li>
+    <li><%= Html.DisplayFor(m => m.LastVisited, new { label = "Last visited" })%><% if (Model.VisitCount > 1) { %> (<%= Model.VisitCount%>)<% } %></li>
 </ul>
 <% foreach (var photo in Model.Photos) { %>
     <img src="<%= Url.Action("View", "Photos", new { id = photo.GlobalId, size = EPhotoSize.Square }) %>" alt="" />

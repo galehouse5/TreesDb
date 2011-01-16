@@ -45,6 +45,8 @@
       <key column="SiteId"></key>
       <one-to-many class="TMD.Model.Sites.Subsite"/>
     </bag>
+    <property name="VisitCount" />
+    <property name="TreesWithSpecifiedCoordinatesCount" />
   </class>
 
   <class name="TMD.Model.Sites.SiteVisit" table="SiteVisits">
@@ -126,6 +128,8 @@
       <key column="SubsiteId"></key>
       <one-to-many class="TMD.Model.Sites.SubsitePhotoReference"/>
     </bag>
+    <property name="VisitCount" />
+    <property name="TreesWithSpecifiedCoordinatesCount" />
   </class>
 
   <class name="TMD.Model.Sites.SubsiteVisit" table="SubsiteVisits">

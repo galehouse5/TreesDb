@@ -108,21 +108,33 @@ namespace TMD.UnitTests.Infrastructure
             }
         }
 
-        [TestMethod]
-        public void Merges()
-        {
-            using (var uow = UnitOfWork.Begin())
-            {
-                var trips = Repositories.Imports.ListAll();
-                foreach (var importedSite in from trip in trips where trip.IsImported from site in trip.Sites select site)
-                {
-                    var site = Site.Create(importedSite);
-                    UnitOfWork.Refresh(site);
-                    Repositories.Sites.Merge(site);
-                }
-                //uow.Rollback();
-                uow.Persist();
-            }
-        }
+        //[TestMethod]
+        //public void Merges()
+        //{
+        //    using (var uow = UnitOfWork.Begin())
+        //    {
+        //        var trips = Repositories.Imports.ListAll();
+        //        foreach (var importedSite in from trip in trips where trip.IsImported from site in trip.Sites select site)
+        //        {
+        //            var site = Site.Create(importedSite);
+        //            UnitOfWork.Refresh(site);
+        //            Repositories.Sites.Merge(site);
+        //        }
+        //        //uow.Rollback();
+        //        uow.Persist();
+        //    }
+        //}
+
+        //[TestMethod]
+        //public void Removes()
+        //{
+        //    using (var uow = UnitOfWork.Begin())
+        //    {
+        //        Repositories.Sites.Remove(Repositories.Sites.FindById(9));
+        //        Repositories.Sites.Remove(Repositories.Sites.FindById(10));
+        //        //uow.Rollback();
+        //        uow.Persist();
+        //    }
+        //}
     }
 }
