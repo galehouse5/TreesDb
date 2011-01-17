@@ -142,7 +142,8 @@ namespace TMD.Controllers
                     ModelState.AddModelError("Email", "You must choose a different email.");
                     return View(model);
                 }
-                user.ReplaceExistingNonEmailVerifiedUser(existingUser);
+                user = existingUser;
+                user.ChangePasswordIfNonEmailVerified(model.Password);
             }
             Repositories.Users.Save(user);
             uow.Persist();

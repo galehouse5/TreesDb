@@ -59,7 +59,7 @@ namespace TMD
             throw new InvalidEntityOperationException(this);
         }
 
-        public override void ReplaceExistingNonEmailVerifiedUser(User existingUser)
+        public override void ChangePasswordIfNonEmailVerified(string newPassword)
         {
             throw new InvalidEntityOperationException(this);
         }

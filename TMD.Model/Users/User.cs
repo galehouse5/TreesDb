@@ -144,6 +144,14 @@ namespace TMD.Model.Users
 
         #endregion
 
+        public virtual void ChangePasswordIfNonEmailVerified(string newPassword)
+        {
+            if (!IsEmailVerified)
+            {
+                Password = Password.Create(newPassword, Email);
+            }
+        }
+
         public virtual void ChangePasswordUsingExistingPassword(string existingPassword, string newPassword)
         {
             if (!VerifyPassword(existingPassword))
@@ -182,15 +190,6 @@ namespace TMD.Model.Users
         public virtual void ReportActivity()
         {
             LastActivity = DateTime.Now;
-        }
-
-        public virtual void ReplaceExistingNonEmailVerifiedUser(User existingUser)
-        {
-            if (!existingUser.Email.Equals(Email))
-            {
-                throw new InvalidEntityOperationException(this, string.Format("Unable to replace existing user because their email is not the same as '{0}'.", Email));
-            }
-            Id = existingUser.Id;
         }
 
         public static User Create(string email, string password)
