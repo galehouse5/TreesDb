@@ -50,10 +50,13 @@ namespace TMD.Infrastructure.Repositories
             Registry.Session.Save(photo);
         }
 
-        public IPhoto FindById(int id)
+        public Photo FindById(int id)
         {
-            var photo = Registry.Session.Get<Photo>(id);
-            if (photo != null) { return photo; }
+            return Registry.Session.Get<Photo>(id);
+        }
+
+        public PhotoReferenceBase FindReferenceById(int id)
+        {
             return Registry.Session.Get<PhotoReferenceBase>(id);
         }
 
@@ -69,11 +72,11 @@ namespace TMD.Infrastructure.Repositories
                 .UniqueResult<PhotoStoreBase>();
         }
 
-        public IList<PhotoReferenceBase> FindReferencesByPhoto(IPhoto photo)
+        public IList<PhotoReferenceBase> FindReferencesById(int photoId)
         {
             return Registry.Session.CreateCriteria<PhotoReferenceBase>()
                 .CreateAlias("Photo", "p")
-                .Add(Restrictions.Eq("p.Id", photo.PhotoId))
+                .Add(Restrictions.Eq("p.Id", photoId))
                 .List<PhotoReferenceBase>();
         }
     }

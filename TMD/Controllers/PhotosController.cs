@@ -23,7 +23,7 @@ namespace TMD.Controllers
         public ActionResult View(int id, string size)
         {
             var photo = Repositories.Photos.FindById(id);
-            if (!Repositories.Photos.FindReferencesByPhoto(photo).IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
+            if (!Repositories.Photos.FindReferencesById(photo.PhotoId).IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
             using (Bitmap image = photo.Get(size.ParseEnum(EPhotoSize.Original)))
             {
                 Stream data = new MemoryStream();
@@ -36,11 +36,11 @@ namespace TMD.Controllers
         [HttpPost, UnitOfWork]
         public ActionResult Remove(IUnitOfWork uow, int id)
         {
-            var photo = Repositories.Photos.FindById(id);
-            if (!Repositories.Photos.FindReferencesByPhoto(photo).IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
-            Repositories.Photos.Remove(photo);
+            var reference = Repositories.Photos.FindReferenceById(id);
+            if (!reference.IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
+            Repositories.Photos.Remove(reference);
             uow.Persist();
-            return PhotoRemoval(photo);
+            return PhotoRemoval(reference);
         }
 
         protected ActionResult PhotoRemoval(IPhoto photo)
@@ -64,7 +64,7 @@ namespace TMD.Controllers
                 {
                     var photo = new PhotoFactory().Create(imageData.InputStream);
                     tree.AddPhoto(photo); UnitOfWork.Flush();
-                    if (!Repositories.Photos.FindReferencesByPhoto(photo).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                    if (!Repositories.Photos.FindReferencesById(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                     this.ValidateMappedModel<TreeBase, PhotoGalleryModel>(tree);
                     if (ModelState.IsValid)
                     {
@@ -88,7 +88,7 @@ namespace TMD.Controllers
                 {
                     var photo = new PhotoFactory().Create(imageData.InputStream);
                     subsite.AddPhoto(photo); UnitOfWork.Flush();
-                    if (!Repositories.Photos.FindReferencesByPhoto(photo).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                    if (!Repositories.Photos.FindReferencesById(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                     this.ValidateMappedModel<Subsite, PhotoGalleryModel>(subsite);
                     if (ModelState.IsValid)
                     {

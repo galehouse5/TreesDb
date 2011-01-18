@@ -12,8 +12,9 @@ namespace TMD.Model.Photos
     {
         void Save(IPhoto photo);
         void Remove(IPhoto photo);
-        IPhoto FindById(int id);
-        IList<PhotoReferenceBase> FindReferencesByPhoto(IPhoto photo);
+        Photo FindById(int id);
+        PhotoReferenceBase FindReferenceById(int id);
+        IList<PhotoReferenceBase> FindReferencesById(int photoId);
         PhotoStoreBase FindPermanentPhotoStore();
     }
 }
