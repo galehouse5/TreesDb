@@ -32,7 +32,6 @@ namespace TMD.Model.Sites
         public virtual Coordinates CalculateCalculatedCoordinates() { return (from visit in Visits orderby visit.Visited where visit.CalculatedCoordinates.IsSpecified select visit.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
         public virtual Coordinates CalculateCoordinates() { return (from visit in Visits orderby visit.Visited where visit.Coordinates.IsSpecified select visit.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
         public virtual int CalculateTreesWithSpecifiedCoordinatesCount() { return (from ss in Subsites select ss.TreesWithSpecifiedCoordinatesCount).Sum(); }
-        public virtual int CalculateVisitCount() { return Visits.Count; }
 
         public virtual float? CalculateRHI(int number)
         {
@@ -77,7 +76,7 @@ namespace TMD.Model.Sites
             RGI5 = CalculateRGI(5);
             RGI10 = CalculateRGI(10);
             RGI20 = CalculateRGI(20);
-            VisitCount = CalculateVisitCount();
+            VisitCount = Visits.Count;
             TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
             return this;
         }

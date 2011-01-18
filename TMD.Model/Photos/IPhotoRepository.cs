@@ -10,10 +10,10 @@ namespace TMD.Model.Photos
 {
     public interface IPhotoRepository
     {
-        void Save(Photo photo);
-        void Remove(Photo photo);
-        PhotoReferenceBase FindReferenceById(int id);
-        Photo FindById(int id);
+        void Save(IPhoto photo);
+        void Remove(IPhoto photo);
+        IPhoto FindById(int id);
+        IList<PhotoReferenceBase> FindReferencesByPhoto(IPhoto photo);
         PhotoStoreBase FindPermanentPhotoStore();
     }
 }

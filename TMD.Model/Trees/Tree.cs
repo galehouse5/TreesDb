@@ -32,40 +32,36 @@ namespace TMD.Model.Trees
         public virtual float? ENTSPTS2 { get; private set; }
         public virtual IList<TreePhotoReference> Photos { get; private set; }
 
-        public virtual TreeMeasurement GetLastMeasurement() { return (from m in Measurements orderby m.Measured select m).Last(); }
-        public virtual DateTime CalculateLastMeasured() { return GetLastMeasurement().Measured; }
-        public virtual string CalculateCommonName() { return GetLastMeasurement().CommonName; }
-        public virtual string CalculateScientificName() { return GetLastMeasurement().ScientificName; }
-        public virtual Distance CalculateHeight() { return GetLastMeasurement().Height; }
-        public virtual TreeHeightMeasurementMethod CalculateHeightMeasurementMethod() { return GetLastMeasurement().HeightMeasurementMethod; }
-        public virtual Distance CalculateGirth() { return GetLastMeasurement().Girth; }
-        public virtual Distance CalculateCrownSpread() { return GetLastMeasurement().CrownSpread; }
-        public virtual Coordinates CalculateCoordinates() { return (from m in Measurements orderby m.Measured where m.Coordinates.IsSpecified select m.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual Coordinates CalculateCalculatedCoordinates() { return (from m in Measurements orderby m.Measured where m.CalculatedCoordinates.IsSpecified select m.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual Elevation CalculateElevation() { return GetLastMeasurement().Elevation; }
-        public virtual float? CalculateENTSPTS() { return GetLastMeasurement().ENTSPTS; }
-        public virtual float? CalculateENTSPTS2() { return GetLastMeasurement().ENTSPTS2; }
+        public virtual TreeMeasurement GetLastMeasurement() 
+        { 
+            return (from m in Measurements orderby m.Measured select m).Last(); 
+        }
+
+        public virtual Coordinates CalculateCoordinates() 
+        { 
+            return (from m in Measurements orderby m.Measured where m.Coordinates.IsSpecified select m.Coordinates).LastOrDefault() ?? Coordinates.Null(); 
+        }
+
+        public virtual Coordinates CalculateCalculatedCoordinates() 
+        { 
+            return (from m in Measurements orderby m.Measured where m.CalculatedCoordinates.IsSpecified select m.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); 
+        }
 
         public virtual Tree RecalculateProperties()
         {
-            LastMeasured = CalculateLastMeasured();
-            CommonName = CalculateCommonName();
-            ScientificName = CalculateScientificName();
-            Height = CalculateHeight();
-            HeightMeasurementMethod = CalculateHeightMeasurementMethod();
-            Girth = CalculateGirth();
-            CrownSpread = CalculateCrownSpread();
+            LastMeasured = GetLastMeasurement().Measured;
+            CommonName = GetLastMeasurement().CommonName;
+            ScientificName = GetLastMeasurement().ScientificName;
+            Height = GetLastMeasurement().Height;
+            HeightMeasurementMethod = GetLastMeasurement().HeightMeasurementMethod;
+            Girth = GetLastMeasurement().Girth;
+            CrownSpread = GetLastMeasurement().CrownSpread;
             Coordinates = CalculateCoordinates();
             CalculatedCoordinates = CalculateCalculatedCoordinates();
-            Elevation = CalculateElevation();
-            ENTSPTS = CalculateENTSPTS();
-            ENTSPTS2 = CalculateENTSPTS2();
-            GetLastMeasurement().Photos.ForEach(p =>
-            {
-                var reference = new TreePhotoReference(this);
-                p.AddReference(reference);
-                Photos.Add(reference);
-            });
+            Elevation = GetLastMeasurement().Elevation;
+            ENTSPTS = GetLastMeasurement().ENTSPTS;
+            ENTSPTS2 = GetLastMeasurement().ENTSPTS2;
+            Photos.RemoveAll().AddRange(from photo in GetLastMeasurement().Photos select new TreePhotoReference(photo.Photo, this));
             MeasurementCount = Measurements.Count;
             return this;
         }
@@ -111,7 +107,7 @@ namespace TMD.Model.Trees
     public class TreePhotoReference : PhotoReferenceBase
     {
         protected TreePhotoReference() { }
-        protected internal TreePhotoReference(Tree tree) { this.Tree = tree; }
+        protected internal TreePhotoReference(Photo photo, Tree tree) : base(photo) { this.Tree = tree; }
         public virtual Tree Tree { get; private set; }
         public override bool IsAuthorizedToView(User user) { return true; }
     }

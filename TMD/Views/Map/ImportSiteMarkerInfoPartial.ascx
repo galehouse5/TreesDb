@@ -5,6 +5,6 @@
 </ul>
 <% if (Model.Subsites.Count == 1) { %>
     <% foreach (var photo in Model.Subsites[0].Photos) { %>
-        <img src="<%= Url.Action("View", "Photos", new { id = photo.GlobalId, size = EPhotoSize.Square }) %>" alt="" />
+        <img src="<%= Url.Action("View", "Photos", new { id = photo.PhotoId, size = EPhotoSize.Square }) %>" alt="" />
     <% } %>
 <% } %>

@@ -38,15 +38,25 @@ namespace TMD.Model.Sites
         public virtual int TreesWithSpecifiedCoordinatesCount { get; private set; }
         public virtual int VisitCount { get; private set; }
 
-        public virtual SubsiteVisit GetLastVisit() { return (from v in Visits orderby v.Visited select v).Last(); }
-        public virtual DateTime CalculateLastVisited() { return GetLastVisit().Visited; }
-        public virtual string CalculateOwnershipType() { return GetLastVisit().OwnershipType; }
-        public virtual string CalculateOwnershipContactInfo() { return GetLastVisit().OwnershipContactInfo; }
-        public virtual bool CalculateMakeContactInfoPublic() { return GetLastVisit().MakeOwnershipContactInfoPublic; }
-        public virtual Coordinates CalculateCoordinates() { return (from v in Visits orderby v.Visited where v.Coordinates.IsSpecified select v.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual Coordinates CalculateCalculatedCoordinates() { return (from v in Visits orderby v.Visited where v.CalculatedCoordinates.IsSpecified select v.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual int CalculateTreesWithSpecifiedCoordinatesCount() { return (from t in Trees where t.Coordinates.IsSpecified select t).Count(); }
-        public virtual int CalculateVisitCount() { return Visits.Count; }
+        public virtual SubsiteVisit GetLastVisit() 
+        { 
+            return (from v in Visits orderby v.Visited select v).Last();
+        }
+        
+        public virtual Coordinates CalculateCoordinates() 
+        { 
+            return (from v in Visits orderby v.Visited where v.Coordinates.IsSpecified select v.Coordinates).LastOrDefault() ?? Coordinates.Null(); 
+        }
+        
+        public virtual Coordinates CalculateCalculatedCoordinates() 
+        { 
+            return (from v in Visits orderby v.Visited where v.CalculatedCoordinates.IsSpecified select v.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); 
+        }
+
+        public virtual int CalculateTreesWithSpecifiedCoordinatesCount() 
+        { 
+            return (from t in Trees where t.Coordinates.IsSpecified select t).Count(); 
+        }
 
         public virtual float? CalculateRHI(int number)
         {
@@ -82,10 +92,10 @@ namespace TMD.Model.Sites
 
         public virtual Subsite RecalculateProperties()
         {
-            LastVisited = CalculateLastVisited();
-            OwnershipType = CalculateOwnershipType();
-            OwnershipContactInfo = CalculateOwnershipContactInfo();
-            MakeOwnershipContactInfoPublic = CalculateMakeContactInfoPublic();
+            LastVisited = GetLastVisit().Visited;
+            OwnershipType = GetLastVisit().OwnershipType;
+            OwnershipContactInfo = GetLastVisit().OwnershipContactInfo;
+            MakeOwnershipContactInfoPublic = GetLastVisit().MakeOwnershipContactInfoPublic;
             Coordinates = CalculateCoordinates();
             CalculatedCoordinates = CalculateCalculatedCoordinates();
             RHI5 = CalculateRHI(5);
@@ -94,15 +104,8 @@ namespace TMD.Model.Sites
             RGI5 = CalculateRGI(5);
             RGI10 = CalculateRGI(10);
             RGI20 = CalculateRGI(20);
-            Photos.ForEach(p => p.RemoveReference(p));
-            Photos.Clear();
-            GetLastVisit().Photos.ForEach(p =>
-            {
-                var reference = new SubsitePhotoReference(this);
-                p.AddReference(reference);
-                Photos.Add(reference);
-            });
-            VisitCount = CalculateVisitCount();
+            Photos.RemoveAll().AddRange(from photo in GetLastVisit().Photos select new SubsitePhotoReference(photo.Photo, this));
+            VisitCount = Visits.Count;
             TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
             return this;
         }
@@ -174,7 +177,7 @@ namespace TMD.Model.Sites
     public class SubsitePhotoReference : PhotoReferenceBase
     {
         protected SubsitePhotoReference() { }
-        protected internal SubsitePhotoReference(Subsite subsite) { this.Subsite = subsite; }
+        protected internal SubsitePhotoReference(Photo photo, Subsite subsite) : base(photo) { this.Subsite = subsite; }
         public virtual Subsite Subsite { get; private set; }
         public override bool IsAuthorizedToView(User user) { return true; }
     }

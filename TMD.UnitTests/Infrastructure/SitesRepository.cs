@@ -125,16 +125,16 @@ namespace TMD.UnitTests.Infrastructure
         //    }
         //}
 
-        //[TestMethod]
-        //public void Removes()
-        //{
-        //    using (var uow = UnitOfWork.Begin())
-        //    {
-        //        Repositories.Sites.Remove(Repositories.Sites.FindById(9));
-        //        Repositories.Sites.Remove(Repositories.Sites.FindById(10));
-        //        //uow.Rollback();
-        //        uow.Persist();
-        //    }
-        //}
+        [TestMethod]
+        public void Removes()
+        {
+            using (var uow = UnitOfWork.Begin())
+            {
+                Repositories.Sites.Remove(Repositories.Sites.FindById(21));
+                Repositories.Sites.Remove(Repositories.Sites.FindById(22));
+                //uow.Rollback();
+                uow.Persist();
+            }
+        }
     }
 }

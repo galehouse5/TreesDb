@@ -29,10 +29,6 @@
     <property name="Bytes" />
     <property name="Format" />
     <many-to-one name="PermanentStore" column="StoreId" />
-    <bag name="References" cascade="delete-orphan" inverse="true">
-      <key column="PhotoId"></key>
-      <one-to-many class="PhotoReferenceBase"/>
-    </bag>
   </class>
 
   <class name="PhotoReferenceBase" abstract="true" table="[References]">

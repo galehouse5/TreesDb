@@ -328,25 +328,21 @@ namespace TMD.Model.Imports
 
         public virtual void AddPhoto(Photo photo)
         {
-            var reference = new TreePhotoReference(this);
-            photo.AddReference(reference);
-            Photos.Add(reference);
+            Photos.Add(new TreePhotoReference(photo, this));
         }
 
         public virtual bool RemovePhoto(Photo photo)
         {
             var reference = (from r in Photos where r.Tree.Equals(this) select r).FirstOrDefault();
             if (reference == null) { return false; }
-            reference.Photo.RemoveReference(reference);
-            Photos.Remove(reference);
-            return true;
+            return Photos.Remove(reference);
         }
     }
 
     public class TreePhotoReference : PhotoReferenceBase
     {
         protected TreePhotoReference() { }
-        protected internal TreePhotoReference(TreeBase subsite) { this.Tree = subsite; }
+        protected internal TreePhotoReference(Photo photo, TreeBase subsite) : base(photo) { this.Tree = subsite; }
         public virtual TreeBase Tree { get; private set; }
         public override bool IsAuthorizedToAdd(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
         public override bool IsAuthorizedToView(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }

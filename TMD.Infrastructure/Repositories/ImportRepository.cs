@@ -26,7 +26,7 @@ namespace TMD.Infrastructure.Repositories
 
         protected override void InternalSave(Trip t)
         {
-            Registry.Session.SaveOrUpdate(t);
+            Registry.Session.Save(t);
         }
 
         protected override void InternalRemove(Trip t)
@@ -41,7 +41,7 @@ namespace TMD.Infrastructure.Repositories
                 var siteForMerging = Model.Sites.Site.Create(site);
                 Model.Repositories.Sites.Merge(siteForMerging);
             }
-            Registry.Session.SaveOrUpdate(t);
+            Registry.Session.Save(t);
         }
 
         public override Trip FindLastCreatedByUser(int userId)

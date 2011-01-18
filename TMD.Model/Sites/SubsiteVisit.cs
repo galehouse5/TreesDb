@@ -8,6 +8,7 @@ using TMD.Model.Trees;
 using TMD.Model.Locations;
 using TMD.Model.Photos;
 using TMD.Model.Users;
+using TMD.Model.Extensions;
 
 namespace TMD.Model.Sites
 {
@@ -49,12 +50,7 @@ namespace TMD.Model.Sites
                 Comments = importedSubsite.Comments,
                 Photos = new List<SubsiteVisitPhotoReference>()
             };
-            foreach (var photo in importedSubsite.Photos)
-            {
-                var reference = new SubsiteVisitPhotoReference(visit);
-                photo.AddReference(reference);
-                visit.Photos.Add(reference);
-            }
+            visit.Photos.AddRange(from photo in importedSubsite.Photos select new SubsiteVisitPhotoReference(photo.Photo, visit));
             return visit;
         }
     }
@@ -62,7 +58,7 @@ namespace TMD.Model.Sites
     public class SubsiteVisitPhotoReference : PhotoReferenceBase
     {
         protected SubsiteVisitPhotoReference() { }
-        protected internal SubsiteVisitPhotoReference(SubsiteVisit subsiteVisit) { this.SubsiteVisit = subsiteVisit; }
+        protected internal SubsiteVisitPhotoReference(Photo photo, SubsiteVisit subsiteVisit) : base(photo) { this.SubsiteVisit = subsiteVisit; }
         public virtual SubsiteVisit SubsiteVisit { get; private set; }
         public override bool IsAuthorizedToView(User user) { return true; }
     }

@@ -21,7 +21,7 @@ namespace TMD.Model.Photos
 
     public interface IPhoto
     {
-        int GlobalId { get; }
+        int PhotoId { get; }
         Size Size { get; }
         int Bytes { get; }
         PhotoFormat Format { get; }
@@ -29,14 +29,6 @@ namespace TMD.Model.Photos
         ImageFormat ImageFormat { get; }
         Bitmap Get();
         Bitmap Get(EPhotoSize size);
-        
-        bool IsAuthorizedToView(User user);
-        bool IsAuthorizedToAdd(User user);
-        bool IsAuthorizedToRemove(User user);
-        
-        void AddReference(PhotoReferenceBase reference);
-        bool RemoveReference(PhotoReferenceBase reference);
-        int ReferenceCount { get; }
     }
 
     public class Photo : UserCreatedEntityBase, IPhoto
@@ -48,7 +40,7 @@ namespace TMD.Model.Photos
             TemporaryStore = new MemoryPhotoStore();
         }
 
-        public virtual int GlobalId { get { return Id; } }
+        public virtual int PhotoId { get { return Id; } }
         public virtual PhotoStoreBase TemporaryStore { get; private set; }
         public virtual PhotoStoreBase PermanentStore { get; protected internal set; }
         public virtual IList<PhotoReferenceBase> References { get; protected internal set; }
@@ -93,27 +85,6 @@ namespace TMD.Model.Photos
             }
         }
 
-        public virtual bool IsAuthorizedToView(User user)
-        {
-            return (from reference in References
-                    where reference.IsAuthorizedToView(user)
-                    select reference).Count() > 0;
-        }
-
-        public virtual bool IsAuthorizedToAdd(User user)
-        {
-            return (from reference in References
-                    where reference.IsAuthorizedToAdd(user)
-                    select reference).Count() > 0;
-        }
-
-        public virtual bool IsAuthorizedToRemove(User user)
-        {
-            return (from reference in References
-                    where reference.IsAuthorizedToRemove(user)
-                    select reference).Count() > 0;
-        }
-
         public virtual Bitmap Get()
         {
             if (TemporaryStore.Contains(this))
@@ -135,19 +106,5 @@ namespace TMD.Model.Photos
                     .Create(size).Normalize(image);
             }
         }
-
-        public virtual void AddReference(PhotoReferenceBase reference)
-        {
-            reference.Photo = this;
-            References.Add(reference);
-        }
-
-        public virtual bool RemoveReference(PhotoReferenceBase reference)
-        {
-            reference.Photo = null;
-            return References.Remove(reference);
-        }
-
-        public virtual int ReferenceCount { get { return References.Count; } }
     }
 }

@@ -22,8 +22,8 @@ namespace TMD.Controllers
         [HttpGet, OutputCache(CacheProfile = "Photos")]
         public ActionResult View(int id, string size)
         {
-            Photo photo = Repositories.Photos.FindById(id);
-            if (!photo.IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
+            var photo = Repositories.Photos.FindById(id);
+            if (!Repositories.Photos.FindReferencesByPhoto(photo).IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
             using (Bitmap image = photo.Get(size.ParseEnum(EPhotoSize.Original)))
             {
                 Stream data = new MemoryStream();
@@ -36,16 +36,14 @@ namespace TMD.Controllers
         [HttpPost, UnitOfWork]
         public ActionResult Remove(IUnitOfWork uow, int id)
         {
-            var reference = Repositories.Photos.FindReferenceById(id);
-            if (!reference.IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
-            var photo = reference.Photo;
-            photo.RemoveReference(reference);
-            Repositories.Photos.Save(photo);
+            var photo = Repositories.Photos.FindById(id);
+            if (!Repositories.Photos.FindReferencesByPhoto(photo).IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
+            Repositories.Photos.Remove(photo);
             uow.Persist();
             return PhotoRemoval(photo);
         }
 
-        protected ActionResult PhotoRemoval(Photo photo)
+        protected ActionResult PhotoRemoval(IPhoto photo)
         {
             return Json(new { Success = true });
         }
@@ -65,17 +63,13 @@ namespace TMD.Controllers
                 using (imageData.InputStream)
                 {
                     var photo = new PhotoFactory().Create(imageData.InputStream);
-                    tree.AddPhoto(photo);
-                    if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                    tree.AddPhoto(photo); UnitOfWork.Flush();
+                    if (!Repositories.Photos.FindReferencesByPhoto(photo).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                     this.ValidateMappedModel<TreeBase, PhotoGalleryModel>(tree);
                     if (ModelState.IsValid)
                     {
                         Repositories.Imports.Save(trip);
                         uow.Persist();
-                    }
-                    else
-                    {
-                        tree.RemovePhoto(photo);
                     }
                     var photoGallery = Mapper.Map<TreeBase, PhotoGalleryModel>(tree);
                     return PhotoAdded(photoGallery);
@@ -93,17 +87,13 @@ namespace TMD.Controllers
                 using (imageData.InputStream)
                 {
                     var photo = new PhotoFactory().Create(imageData.InputStream);
-                    subsite.AddPhoto(photo);
-                    if (!photo.IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                    subsite.AddPhoto(photo); UnitOfWork.Flush();
+                    if (!Repositories.Photos.FindReferencesByPhoto(photo).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                     this.ValidateMappedModel<Subsite, PhotoGalleryModel>(subsite);
                     if (ModelState.IsValid)
                     {
                         Repositories.Imports.Save(trip);
                         uow.Persist();
-                    }
-                    else
-                    {
-                        subsite.RemovePhoto(photo);
                     }
                     var photoGallery = Mapper.Map<Subsite, PhotoGalleryModel>(subsite);
                     return PhotoAdded(photoGallery);

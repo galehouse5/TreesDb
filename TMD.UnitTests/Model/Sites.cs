@@ -122,7 +122,7 @@ namespace TMD.UnitTests.Model
         }
 
         [TestMethod]
-        public void MergresSubsites()
+        public void MergesSubsites()
         {
             var state = new StateStub("State");
             var importedTrip1 = new ImportedTripStub { Date = DateTime.Now.AddDays(1) };
@@ -160,7 +160,7 @@ namespace TMD.UnitTests.Model
         }
 
         [TestMethod]
-        public void MergresSites()
+        public void MergesSites()
         {
             var importedTrip1 = new ImportedTripStub { Date = DateTime.Now.AddDays(1) };
             var site1 = Site.Create(new ImportedSiteStub(importedTrip1)

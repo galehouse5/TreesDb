@@ -34,7 +34,7 @@ namespace TMD.Infrastructure.Repositories
 
         protected override void InternalSave(User u)
         {
-            Registry.Session.SaveOrUpdate(u);
+            Registry.Session.Save(u);
         }
 
         public override void Remove(User u)

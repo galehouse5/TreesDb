@@ -6,6 +6,7 @@ using System.Diagnostics;
 using TMD.Model.Imports;
 using TMD.Model.Photos;
 using TMD.Model.Users;
+using TMD.Model.Extensions;
 
 namespace TMD.Model.Trees
 {
@@ -83,12 +84,7 @@ namespace TMD.Model.Trees
                 GeneralComments = importedTree.GeneralComments,
                 Photos = new List<TreeMeasurementPhotoReference>()
             }.RecalculateProperties();
-            foreach (var photo in importedTree.Photos)
-            {
-                var reference = new TreeMeasurementPhotoReference(measurement);
-                photo.AddReference(reference);
-                measurement.Photos.Add(reference);
-            }
+            measurement.Photos.AddRange(from photo in importedTree.Photos select new TreeMeasurementPhotoReference(photo.Photo, measurement));
             return measurement;
         }
     }
@@ -96,7 +92,7 @@ namespace TMD.Model.Trees
     public class TreeMeasurementPhotoReference : PhotoReferenceBase
     {
         protected TreeMeasurementPhotoReference() { }
-        protected internal TreeMeasurementPhotoReference(TreeMeasurement measurement) { this.TreeMeasurement = measurement; }
+        protected internal TreeMeasurementPhotoReference(Photo photo, TreeMeasurement measurement) : base(photo) { this.TreeMeasurement = measurement; }
         public virtual TreeMeasurement TreeMeasurement { get; private set; }
         public override bool IsAuthorizedToView(User user) { return true; }
     }

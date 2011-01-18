@@ -8,14 +8,37 @@ using TMD.Model.Users;
 
 namespace TMD.Model.Photos
 {
+    public static class PhotoReferenceBaseExtensions
+    {
+        public static bool IsAuthorizedToView(this IEnumerable<PhotoReferenceBase> references, User user)
+        {
+            return (from reference in references select reference.IsAuthorizedToView(user)).Count() > 0;
+        }
+
+        public static bool IsAuthorizedToAdd(this IEnumerable<PhotoReferenceBase> references, User user)
+        {
+            return (from reference in references select reference.IsAuthorizedToAdd(user)).Count() > 0;
+        }
+
+        public static bool IsAuthorizedToRemove(this IEnumerable<PhotoReferenceBase> references, User user)
+        {
+            return (from reference in references select reference.IsAuthorizedToRemove(user)).Count() > 0;
+        }
+    }
+
     public abstract class PhotoReferenceBase : IEntity, IPhoto
     {
-        protected PhotoReferenceBase()
+        protected PhotoReferenceBase() 
         { }
 
+        protected PhotoReferenceBase(Photo photo)
+        {
+            this.Photo = photo;
+        }
+
         public virtual int Id { get; private set; }
-        public virtual Photo Photo { get; protected internal set; }
-        public virtual int GlobalId { get { return Photo.Id; } }
+        public virtual Photo Photo { get; protected set; }
+        public virtual int PhotoId { get { return Photo.Id; } }
         public virtual Size Size { get { return Photo.Size; } }
         public virtual int Bytes { get { return Photo.Bytes; } }
         public virtual PhotoFormat Format { get { return Photo.Format; } }
@@ -28,16 +51,12 @@ namespace TMD.Model.Photos
         public virtual bool IsAuthorizedToAdd(User user) { return false; }
         public virtual bool IsAuthorizedToRemove(User user) { return false; }
 
-        public virtual void AddReference(PhotoReferenceBase reference) { Photo.AddReference(reference); }
-        public virtual bool RemoveReference(PhotoReferenceBase reference) { return Photo.RemoveReference(reference); }
-        public virtual int ReferenceCount { get { return Photo.ReferenceCount; } }
-
         public static implicit operator Photo(PhotoReferenceBase reference) { return reference.Photo; }
     }
 
     public class PublicPhotoReference : PhotoReferenceBase
     {
-        public PublicPhotoReference()
-        { }
+        protected PublicPhotoReference() { }
+        public PublicPhotoReference(Photo photo) : base(photo) { }
     }
 }

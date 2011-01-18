@@ -23,8 +23,7 @@ namespace TMD.UnitTests.Infrastructure
         [TestMethod]
         public void SavesAndFindsPhoto()
         {
-            Photo photo = new PhotoFactory().Create("Original.jpg".GetPhoto());
-            photo.AddReference(new PublicPhotoReference());
+            IPhoto photo = new PublicPhotoReference(new PhotoFactory().Create("Original.jpg".GetPhoto()));
             using (var uow = UnitOfWork.Begin())
             {
                 Repositories.Photos.Save(photo);
@@ -33,7 +32,7 @@ namespace TMD.UnitTests.Infrastructure
             UnitOfWork.Dispose();
             using (var uow = UnitOfWork.Begin())
             {
-                Photo found = Repositories.Photos.FindById(photo.Id);
+                IPhoto found = Repositories.Photos.FindById(photo.PhotoId);
                 Assert.IsNotNull(found);
                 Assert.IsTrue("Original.jpg".GetPhoto().CompareByContent(found.Get()));
                 Repositories.Photos.Remove(found);

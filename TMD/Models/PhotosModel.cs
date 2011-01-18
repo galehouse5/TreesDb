@@ -49,7 +49,7 @@ namespace TMD.Models
         }
 
         public int Id { get; set; }
-        public int GlobalId { get; set; }
+        public int PhotoId { get; set; }
         public EPhotoSize Size { get; set; }
     }
 }
