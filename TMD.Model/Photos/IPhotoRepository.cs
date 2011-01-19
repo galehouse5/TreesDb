@@ -14,7 +14,7 @@ namespace TMD.Model.Photos
         void Remove(IPhoto photo);
         Photo FindById(int id);
         PhotoReferenceBase FindReferenceById(int id);
-        IList<PhotoReferenceBase> FindReferencesById(int photoId);
+        PhotoReferences FindAllReferencesByPhotoId(int photoId);
         PhotoStoreBase FindPermanentPhotoStore();
         IList<Photo> FindOrphaned();
         IList<Photo> FindAll();

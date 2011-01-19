@@ -9,25 +9,14 @@ using NHibernate.Validator.Constraints;
 
 namespace TMD.Model.Photos
 {
-    public static class PhotoReferenceBaseExtensions
+    public interface IPhotoPermissions
     {
-        public static bool IsAuthorizedToView(this IEnumerable<PhotoReferenceBase> references, User user)
-        {
-            return (from reference in references select reference.IsAuthorizedToView(user)).Count() > 0;
-        }
-
-        public static bool IsAuthorizedToAdd(this IEnumerable<PhotoReferenceBase> references, User user)
-        {
-            return (from reference in references select reference.IsAuthorizedToAdd(user)).Count() > 0;
-        }
-
-        public static bool IsAuthorizedToRemove(this IEnumerable<PhotoReferenceBase> references, User user)
-        {
-            return (from reference in references select reference.IsAuthorizedToRemove(user)).Count() > 0;
-        }
+        bool IsAuthorizedToView(User user);
+        bool IsAuthorizedToAdd(User user);
+        bool IsAuthorizedToRemove(User user);
     }
 
-    public abstract class PhotoReferenceBase : IEntity, IPhoto
+    public abstract class PhotoReferenceBase : IEntity, IPhoto, IPhotoPermissions
     {
         protected PhotoReferenceBase() 
         { }
@@ -36,6 +25,10 @@ namespace TMD.Model.Photos
         {
             this.Photo = photo;
         }
+
+        public virtual bool IsAuthorizedToView(User user) { return false; }
+        public virtual bool IsAuthorizedToAdd(User user) { return false; }
+        public virtual bool IsAuthorizedToRemove(User user) { return false; }
 
         public virtual int Id { get; private set; }
         [Valid] public virtual Photo Photo { get; protected set; }
@@ -48,11 +41,19 @@ namespace TMD.Model.Photos
         public virtual Bitmap Get() { return Photo.Get(); }
         public virtual Bitmap Get(EPhotoSize size) { return Photo.Get(size); }
 
-        public virtual bool IsAuthorizedToView(User user) { return false; }
-        public virtual bool IsAuthorizedToAdd(User user) { return false; }
-        public virtual bool IsAuthorizedToRemove(User user) { return false; }
+        public virtual bool EqualsPhoto(IPhoto photo)
+        {
+            if (photo is PhotoReferenceBase)
+            {
+                return Photo.EqualsPhoto((photo as PhotoReferenceBase).Photo);
+            }
+            return Photo.EqualsPhoto(photo);
+        }
 
-        public static implicit operator Photo(PhotoReferenceBase reference) { return reference.Photo; }
+        public virtual Photo ToPhoto()
+        {
+            return Photo;
+        }
     }
 
     public class PublicPhotoReference : PhotoReferenceBase
@@ -60,4 +61,26 @@ namespace TMD.Model.Photos
         protected PublicPhotoReference() { }
         public PublicPhotoReference(Photo photo) : base(photo) { }
     }
+
+    public class PhotoReferences : List<PhotoReferenceBase>, IPhotoPermissions
+    {
+        public bool IsAuthorizedToView(User user)
+        {
+            return (from reference in this
+                    select reference.IsAuthorizedToView(user)).Count() > 0;
+        }
+
+        public bool IsAuthorizedToAdd(User user)
+        {
+            return (from reference in this
+                    select reference.IsAuthorizedToAdd(user)).Count() > 0;
+        }
+
+        public bool IsAuthorizedToRemove(User user)
+        {
+            return (from reference in this
+                    select reference.IsAuthorizedToRemove(user)).Count() > 0;
+        }
+    }
+
 }

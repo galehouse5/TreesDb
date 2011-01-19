@@ -23,7 +23,7 @@ namespace TMD.Controllers
         public ActionResult View(int id, string size)
         {
             var photo = Repositories.Photos.FindById(id);
-            if (!Repositories.Photos.FindReferencesById(photo.PhotoId).IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
+            if (!Repositories.Photos.FindAllReferencesByPhotoId(id).IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
             using (Bitmap image = photo.Get(size.ParseEnum(EPhotoSize.Original)))
             {
                 Stream data = new MemoryStream();
@@ -68,7 +68,7 @@ namespace TMD.Controllers
                     if (ModelState.IsValid)
                     {
                         UnitOfWork.Flush();
-                        if (!Repositories.Photos.FindReferencesById(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                        if (!Repositories.Photos.FindAllReferencesByPhotoId(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                         uow.Persist();
                     }
                     else { tree.RemovePhoto(photo); }
@@ -93,7 +93,7 @@ namespace TMD.Controllers
                     if (ModelState.IsValid)
                     {
                         UnitOfWork.Flush();
-                        if (!Repositories.Photos.FindReferencesById(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                        if (!Repositories.Photos.FindAllReferencesByPhotoId(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                         uow.Persist();
                     }
                     else { subsite.RemovePhoto(photo); }

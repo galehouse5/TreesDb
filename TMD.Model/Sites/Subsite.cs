@@ -34,7 +34,7 @@ namespace TMD.Model.Sites
         public virtual float? RGI5 { get; private set; }
         public virtual float? RGI10 { get; private set; }
         public virtual float? RGI20 { get; private set; }
-        public virtual IList<SubsitePhotoReference> Photos { get; private set; }
+        public virtual IList<IPhoto> Photos { get; private set; }
         public virtual int TreesWithSpecifiedCoordinatesCount { get; private set; }
         public virtual int VisitCount { get; private set; }
 
@@ -104,7 +104,7 @@ namespace TMD.Model.Sites
             RGI5 = CalculateRGI(5);
             RGI10 = CalculateRGI(10);
             RGI20 = CalculateRGI(20);
-            Photos.RemoveAll().AddRange(from photo in GetLastVisit().Photos select new SubsitePhotoReference(photo.Photo, this));
+            Photos.RemoveAll().AddRange(from photo in GetLastVisit().Photos select new SubsitePhotoReference(photo.ToPhoto(), this));
             VisitCount = Visits.Count;
             TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
             return this;
@@ -169,7 +169,7 @@ namespace TMD.Model.Sites
                 Name = importedSubsite.Name,
                 State = importedSubsite.State,
                 County = importedSubsite.County,
-                Photos = new List<SubsitePhotoReference>()
+                Photos = new List<IPhoto>()
             }.RecalculateProperties();
         }
     }

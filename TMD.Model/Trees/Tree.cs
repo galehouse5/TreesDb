@@ -30,7 +30,7 @@ namespace TMD.Model.Trees
         public virtual Elevation Elevation { get; private set; }
         public virtual float? ENTSPTS { get; private set; }
         public virtual float? ENTSPTS2 { get; private set; }
-        public virtual IList<TreePhotoReference> Photos { get; private set; }
+        public virtual IList<IPhoto> Photos { get; private set; }
 
         public virtual TreeMeasurement GetLastMeasurement() 
         { 
@@ -61,7 +61,7 @@ namespace TMD.Model.Trees
             Elevation = GetLastMeasurement().Elevation;
             ENTSPTS = GetLastMeasurement().ENTSPTS;
             ENTSPTS2 = GetLastMeasurement().ENTSPTS2;
-            Photos.RemoveAll().AddRange(from photo in GetLastMeasurement().Photos select new TreePhotoReference(photo.Photo, this));
+            Photos.RemoveAll().AddRange(from photo in GetLastMeasurement().Photos select new TreePhotoReference(photo.ToPhoto(), this));
             MeasurementCount = Measurements.Count;
             return this;
         }
@@ -99,7 +99,7 @@ namespace TMD.Model.Trees
             return new Tree
             {
                 Measurements = new List<TreeMeasurement> { TreeMeasurement.Create(importedTree) },
-                Photos = new List<TreePhotoReference>()
+                Photos = new List<IPhoto>()
             }.RecalculateProperties();
         }
     }

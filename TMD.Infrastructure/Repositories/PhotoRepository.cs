@@ -72,15 +72,6 @@ namespace TMD.Infrastructure.Repositories
                 .UniqueResult<PhotoStoreBase>();
         }
 
-        public IList<PhotoReferenceBase> FindReferencesById(int photoId)
-        {
-            return Registry.Session.CreateCriteria<PhotoReferenceBase>()
-                .CreateAlias("Photo", "p")
-                .Add(Restrictions.Eq("p.Id", photoId))
-                .List<PhotoReferenceBase>();
-        }
-
-
         public IList<Photo> FindOrphaned()
         {
             return Registry.Session.CreateCriteria<Photo>("photo")
@@ -94,6 +85,16 @@ namespace TMD.Infrastructure.Repositories
         public IList<Photo> FindAll()
         {
             return Registry.Session.CreateCriteria<Photo>().List<Photo>();
+        }
+
+        public PhotoReferences FindAllReferencesByPhotoId(int photoId)
+        {
+            var references = new PhotoReferences();
+            references.AddRange(Registry.Session.CreateCriteria<PhotoReferenceBase>()
+                .CreateAlias("Photo", "p")
+                .Add(Restrictions.Eq("p.Id", photoId))
+                .List<PhotoReferenceBase>());
+            return references;
         }
     }
 }

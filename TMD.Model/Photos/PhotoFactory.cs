@@ -12,11 +12,8 @@ namespace TMD.Model.Photos
     {
         public Photo Create(Bitmap image)
         {
-            var photo = (Photo)new Photo
-            {
-                PermanentStore = Repositories.Photos.FindPermanentPhotoStore(),
-                References = new List<PhotoReferenceBase>()
-            }.RecordCreation();
+            var photo = (Photo)new Photo { PermanentStore = Repositories.Photos.FindPermanentPhotoStore() }
+                .RecordCreation();
             var info = photo.TemporaryStore.Store(photo, image);
             photo.Size = info.Size;
             photo.Bytes = info.Bytes;

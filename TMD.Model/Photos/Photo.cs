@@ -21,6 +21,7 @@ namespace TMD.Model.Photos
 
     public interface IPhoto
     {
+        int Id { get; }
         int PhotoId { get; }
         Size Size { get; }
         int Bytes { get; }
@@ -29,6 +30,8 @@ namespace TMD.Model.Photos
         ImageFormat ImageFormat { get; }
         Bitmap Get();
         Bitmap Get(EPhotoSize size);
+        bool EqualsPhoto(IPhoto photo);
+        Photo ToPhoto();
     }
 
     public class Photo : UserCreatedEntityBase, IPhoto
@@ -43,7 +46,6 @@ namespace TMD.Model.Photos
         public virtual int PhotoId { get { return Id; } }
         public virtual PhotoStoreBase TemporaryStore { get; private set; }
         public virtual PhotoStoreBase PermanentStore { get; protected internal set; }
-        public virtual IList<PhotoReferenceBase> References { get; protected internal set; }
         public virtual Size Size { get; protected internal set; }
 
         [Within2(0, MaxBytes, Inclusive = true, Message = "Photo must not be too large.", Tags = Tag.Screening)]
@@ -105,6 +107,16 @@ namespace TMD.Model.Photos
                 return new PhotoSizeFactory()
                     .Create(size).Normalize(image);
             }
+        }
+
+        public virtual bool EqualsPhoto(IPhoto photo)
+        {
+            return base.Equals(photo);
+        }
+
+        public virtual Photo ToPhoto()
+        {
+            return this;
         }
     }
 }

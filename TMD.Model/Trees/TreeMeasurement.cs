@@ -63,7 +63,7 @@ namespace TMD.Model.Trees
 
         public virtual float? TDI2 { get { return Species.CalculateTDI2(Height, Girth); } }
         public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
-        public virtual IList<TreeMeasurementPhotoReference> Photos { get; private set; }
+        public virtual IList<IPhoto> Photos { get; private set; }
 
         public static TreeMeasurement Create(Imports.TreeBase importedTree)
         {
@@ -82,9 +82,9 @@ namespace TMD.Model.Trees
                 CalculatedCoordinates = importedTree.CalculateCoordinates(),
                 Elevation = importedTree.Elevation,
                 GeneralComments = importedTree.GeneralComments,
-                Photos = new List<TreeMeasurementPhotoReference>()
+                Photos = new List<IPhoto>()
             }.RecalculateProperties();
-            measurement.Photos.AddRange(from photo in importedTree.Photos select new TreeMeasurementPhotoReference(photo.Photo, measurement));
+            measurement.Photos.AddRange(from photo in importedTree.Photos select new TreeMeasurementPhotoReference(photo.ToPhoto(), measurement));
             return measurement;
         }
     }

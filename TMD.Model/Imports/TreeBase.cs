@@ -324,7 +324,7 @@ namespace TMD.Model.Imports
         [Valid] public virtual Elevation Elevation { get; set; }
 
         [Size2(0, 100, Message = "This tree contains too many photos.", Tags = Tag.Screening)]
-        [Valid] public virtual IList<TreePhotoReference> Photos { get; protected set; }
+        [Valid] public virtual IList<IPhoto> Photos { get; protected set; }
 
         public virtual void AddPhoto(Photo photo)
         {
@@ -333,7 +333,7 @@ namespace TMD.Model.Imports
 
         public virtual bool RemovePhoto(Photo photo)
         {
-            var reference = (from p in Photos where p.Photo.Equals(photo) select p).FirstOrDefault();
+            var reference = (from p in Photos where p.EqualsPhoto(photo) select p).FirstOrDefault();
             if (reference == null) { return false; }
             return Photos.Remove(reference);
         }

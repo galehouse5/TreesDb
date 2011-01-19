@@ -30,7 +30,7 @@ namespace TMD.Model.Sites
         public virtual string OwnershipContactInfo { get; private set; }
         public virtual bool MakeOwnershipContactInfoPublic { get; private set; }
         public virtual string Comments { get; private set; }
-        public virtual IList<SubsiteVisitPhotoReference> Photos { get; private set; }
+        public virtual IList<IPhoto> Photos { get; private set; }
 
         public static SubsiteVisit Create(Imports.Subsite importedSubsite)
         {
@@ -48,9 +48,9 @@ namespace TMD.Model.Sites
                 OwnershipContactInfo = importedSubsite.OwnershipContactInfo,
                 MakeOwnershipContactInfoPublic = importedSubsite.MakeOwnershipContactInfoPublic,
                 Comments = importedSubsite.Comments,
-                Photos = new List<SubsiteVisitPhotoReference>()
+                Photos = new List<IPhoto>()
             };
-            visit.Photos.AddRange(from photo in importedSubsite.Photos select new SubsiteVisitPhotoReference(photo.Photo, visit));
+            visit.Photos.AddRange(from photo in importedSubsite.Photos select new SubsiteVisitPhotoReference(photo.ToPhoto(), visit));
             return visit;
         }
     }

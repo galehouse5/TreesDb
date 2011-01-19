@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model;
+using TMD.Model.Photos;
 
 namespace TMD.UnitTests.Stubs
 {
@@ -27,7 +28,7 @@ namespace TMD.UnitTests.Stubs
         {
             this.Site = site;
             Trees = new List<TMD.Model.Imports.TreeBase>();
-            Photos = new List<TMD.Model.Imports.SubsitePhotoReference>();
+            Photos = new List<IPhoto>();
         }
     }
 
@@ -40,7 +41,7 @@ namespace TMD.UnitTests.Stubs
             Girth = Distance.Null();
             CrownSpread = Distance.Null();
             Elevation = Elevation.Null();
-            Photos = new List<TMD.Model.Imports.TreePhotoReference>();
+            Photos = new List<IPhoto>();
         }
     }
 }
