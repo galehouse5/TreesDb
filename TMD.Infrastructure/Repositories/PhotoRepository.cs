@@ -86,7 +86,8 @@ namespace TMD.Infrastructure.Repositories
             return Registry.Session.CreateCriteria<Photo>("photo")
                 .Add(Subqueries.NotExists(
                     DetachedCriteria.For<PhotoReferenceBase>("reference")
-                        .Add(Property.ForName("reference.PhotoId").EqProperty("photo.Id"))
+                        .SetProjection(Projections.Id())
+                        .Add(Property.ForName("reference.Photo.Id").EqProperty("photo.Id"))
                 )).List<Photo>();
         }
 

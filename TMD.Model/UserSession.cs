@@ -13,6 +13,12 @@ namespace TMD.Model
         User User { get; }
     }
 
+    public class NullUserSessionProvider : IUserSessionProvider
+    {
+        public bool IsAnonymous { get { return true; } }
+        public User User { get { return null; } }
+    }
+
     public static class UserSession
     {
         private static IUserSessionProvider Provider

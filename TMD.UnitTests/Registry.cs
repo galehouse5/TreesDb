@@ -22,22 +22,9 @@ namespace TMD.UnitTests
             {
                 x.AddRegistry(new RepositoryRegistry());
                 x.For<IUnitOfWorkProvider>().Singleton().Use<NHibernateUnitOfWorkProvider>();
-                x.For<IUserSessionProvider>().Singleton().Use<FakeUserSessionProvider>();
+                x.For<IUserSessionProvider>().Singleton().Use<NullUserSessionProvider>();
                 x.For<ILogProvider>().Singleton().Use<Log4NetLogProvider>();
             });
-        }
-    }
-
-    public class FakeUserSessionProvider : IUserSessionProvider
-    {
-        public bool IsAnonymous
-        {
-            get { return true; }
-        }
-
-        public TMD.Model.Users.User User
-        {
-            get { return null; }
         }
     }
 }

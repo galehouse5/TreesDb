@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
 using System.Diagnostics;
+using TMD.Model.Extensions;
 
 namespace TMD.Model.Photos
 {
@@ -84,6 +85,8 @@ namespace TMD.Model.Photos
                 Remove(photo);
             }
         }
+
+        public abstract int RemovePhotosCreatedBefore(DateTime threshold, IList<Photo> excludedPhotos);
     }
 
     [DebuggerDisplay("Memory")]
@@ -134,6 +137,11 @@ namespace TMD.Model.Photos
         {
             return m_PhotoBytes != null;
         }
+
+        public override int RemovePhotosCreatedBefore(DateTime threshold, IList<Photo> excludedPhotos)
+        {
+            return 0;
+        }
     }
 
     [DebuggerDisplay("{RootPath}")]
@@ -170,6 +178,23 @@ namespace TMD.Model.Photos
         public override bool Contains(Photo photo)
         {
             return !0.Equals(photo.Id) && File.Exists(getPath(photo));
+        }
+
+        public override int RemovePhotosCreatedBefore(DateTime threshold, IList<Photo> excludedPhotos)
+        {
+            var consideredFiles = from file in new DirectoryInfo(RootPath).GetFiles()
+                                  where file.CreationTime < threshold
+                                  select file;
+            var filenamesToRemove = (from consideredFile in consideredFiles
+                                     select consideredFile.Name)
+                                     .Except(from excludedPhoto in excludedPhotos
+                                             select excludedPhoto.Id.ToString());
+            var filesToRemove = from consideredFile in consideredFiles
+                                join filenameToRemove in filenamesToRemove
+                                    on consideredFile.Name equals filenameToRemove
+                                select consideredFile;
+            filesToRemove.ForEach(fileToRemove => fileToRemove.Delete());
+            return filesToRemove.Count();
         }
     }
 }
