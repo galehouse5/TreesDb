@@ -121,7 +121,7 @@
             }
         };
         m_Map = new google.maps.Map($container.find('.CoordinatePickerMap')[0], options);
-        m_PickerMarker = new google.maps.Marker({ position: center, map: m_Map, draggable: true });
+        m_PickerMarker = new google.maps.Marker({ position: center, map: m_Map, draggable: true, zIndex: 1000 });
         m_Info = new google.maps.InfoWindow({ content: "Drag this marker into position to pick a coordinate." });
 
         m_EventListeners.push(google.maps.event.addListener(m_PickerMarker, 'position_changed', markerPositionChanged));

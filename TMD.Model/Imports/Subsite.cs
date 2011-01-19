@@ -153,7 +153,7 @@ namespace TMD.Model.Imports
 
         public virtual bool RemovePhoto(Photo photo)
         {
-            var reference = (from r in Photos where r.Subsite.Equals(this) select r).FirstOrDefault();
+            var reference = (from p in Photos where p.Photo.Equals(photo) select p).FirstOrDefault();
             if (reference == null) { return false; }
             return Photos.Remove(reference);
         }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
 using TMD.Model.Users;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model.Photos
 {
@@ -37,7 +38,7 @@ namespace TMD.Model.Photos
         }
 
         public virtual int Id { get; private set; }
-        public virtual Photo Photo { get; protected set; }
+        [Valid] public virtual Photo Photo { get; protected set; }
         public virtual int PhotoId { get { return Photo.Id; } }
         public virtual Size Size { get { return Photo.Size; } }
         public virtual int Bytes { get { return Photo.Bytes; } }

@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD.Infrastructure", "TMD.Infrastructure\TMD.Infrastructure.csproj", "{FB757EFB-7C14-48EC-A77A-4B2415FA6060}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD.Utilities", "TMD.Utilities\TMD.Utilities.csproj", "{CD2327E6-4949-48F1-9B77-A8C3CABE4070}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = TMD.vsmdi
@@ -69,6 +71,16 @@ Global
 		{FB757EFB-7C14-48EC-A77A-4B2415FA6060}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{FB757EFB-7C14-48EC-A77A-4B2415FA6060}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{FB757EFB-7C14-48EC-A77A-4B2415FA6060}.Release|x86.ActiveCfg = Release|Any CPU
+		{CD2327E6-4949-48F1-9B77-A8C3CABE4070}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CD2327E6-4949-48F1-9B77-A8C3CABE4070}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{CD2327E6-4949-48F1-9B77-A8C3CABE4070}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{CD2327E6-4949-48F1-9B77-A8C3CABE4070}.Debug|x86.ActiveCfg = Debug|x86
+		{CD2327E6-4949-48F1-9B77-A8C3CABE4070}.Debug|x86.Build.0 = Debug|x86
+		{CD2327E6-4949-48F1-9B77-A8C3CABE4070}.Release|Any CPU.ActiveCfg = Release|x86
+		{CD2327E6-4949-48F1-9B77-A8C3CABE4070}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{CD2327E6-4949-48F1-9B77-A8C3CABE4070}.Release|Mixed Platforms.Build.0 = Release|x86
+		{CD2327E6-4949-48F1-9B77-A8C3CABE4070}.Release|x86.ActiveCfg = Release|x86
+		{CD2327E6-4949-48F1-9B77-A8C3CABE4070}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

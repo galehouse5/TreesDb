@@ -16,5 +16,7 @@ namespace TMD.Model.Photos
         PhotoReferenceBase FindReferenceById(int id);
         IList<PhotoReferenceBase> FindReferencesById(int photoId);
         PhotoStoreBase FindPermanentPhotoStore();
+        IList<Photo> FindOrphaned();
+        IList<Photo> FindAll();
     }
 }

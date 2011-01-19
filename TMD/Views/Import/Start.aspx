@@ -4,7 +4,7 @@
 <asp:Content ContentPlaceHolderID="Steps" runat="server">
     <ol>    
         <% if (Model.Id == 0) { %>
-            <li><strong>> <%= Html.ActionLink("Start", "Start") %> <</strong></li>
+            <li><strong>> <%= Html.ActionLink("Start", "New") %> <</strong></li>
         <% } else { %>
             <li><strong>> <%= Html.ActionLink("Start", "Start", new { id = Model.Id })%> <</strong></li>
         <% } %>

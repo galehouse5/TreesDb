@@ -79,5 +79,20 @@ namespace TMD.Infrastructure.Repositories
                 .Add(Restrictions.Eq("p.Id", photoId))
                 .List<PhotoReferenceBase>();
         }
+
+
+        public IList<Photo> FindOrphaned()
+        {
+            return Registry.Session.CreateCriteria<Photo>("photo")
+                .Add(Subqueries.NotExists(
+                    DetachedCriteria.For<PhotoReferenceBase>("reference")
+                        .Add(Property.ForName("reference.PhotoId").EqProperty("photo.Id"))
+                )).List<Photo>();
+        }
+
+        public IList<Photo> FindAll()
+        {
+            return Registry.Session.CreateCriteria<Photo>().List<Photo>();
+        }
     }
 }

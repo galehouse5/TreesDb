@@ -63,14 +63,15 @@ namespace TMD.Controllers
                 using (imageData.InputStream)
                 {
                     var photo = new PhotoFactory().Create(imageData.InputStream);
-                    tree.AddPhoto(photo); UnitOfWork.Flush();
-                    if (!Repositories.Photos.FindReferencesById(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                    tree.AddPhoto(photo);
                     this.ValidateMappedModel<TreeBase, PhotoGalleryModel>(tree);
                     if (ModelState.IsValid)
                     {
-                        Repositories.Imports.Save(trip);
+                        UnitOfWork.Flush();
+                        if (!Repositories.Photos.FindReferencesById(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                         uow.Persist();
                     }
+                    else { tree.RemovePhoto(photo); }
                     var photoGallery = Mapper.Map<TreeBase, PhotoGalleryModel>(tree);
                     return PhotoAdded(photoGallery);
                 }
@@ -87,14 +88,15 @@ namespace TMD.Controllers
                 using (imageData.InputStream)
                 {
                     var photo = new PhotoFactory().Create(imageData.InputStream);
-                    subsite.AddPhoto(photo); UnitOfWork.Flush();
-                    if (!Repositories.Photos.FindReferencesById(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                    subsite.AddPhoto(photo);
                     this.ValidateMappedModel<Subsite, PhotoGalleryModel>(subsite);
                     if (ModelState.IsValid)
                     {
-                        Repositories.Imports.Save(trip);
+                        UnitOfWork.Flush();
+                        if (!Repositories.Photos.FindReferencesById(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                         uow.Persist();
                     }
+                    else { subsite.RemovePhoto(photo); }
                     var photoGallery = Mapper.Map<Subsite, PhotoGalleryModel>(subsite);
                     return PhotoAdded(photoGallery);
                 }
