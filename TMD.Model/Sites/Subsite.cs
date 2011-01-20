@@ -37,11 +37,8 @@ namespace TMD.Model.Sites
         public virtual IList<IPhoto> Photos { get; private set; }
         public virtual int TreesWithSpecifiedCoordinatesCount { get; private set; }
         public virtual int VisitCount { get; private set; }
-
-        public virtual SubsiteVisit GetLastVisit() 
-        { 
-            return (from v in Visits orderby v.Visited select v).Last();
-        }
+        public virtual SubsiteVisit LastVisit { get { return (from v in Visits orderby v.Visited select v).Last(); } }
+        public virtual IList<Name> Visitors { get; private set; }
         
         public virtual Coordinates CalculateCoordinates() 
         { 
@@ -92,10 +89,10 @@ namespace TMD.Model.Sites
 
         public virtual Subsite RecalculateProperties()
         {
-            LastVisited = GetLastVisit().Visited;
-            OwnershipType = GetLastVisit().OwnershipType;
-            OwnershipContactInfo = GetLastVisit().OwnershipContactInfo;
-            MakeOwnershipContactInfoPublic = GetLastVisit().MakeOwnershipContactInfoPublic;
+            LastVisited = LastVisit.Visited;
+            OwnershipType = LastVisit.OwnershipType;
+            OwnershipContactInfo = LastVisit.OwnershipContactInfo;
+            MakeOwnershipContactInfoPublic = LastVisit.MakeOwnershipContactInfoPublic;
             Coordinates = CalculateCoordinates();
             CalculatedCoordinates = CalculateCalculatedCoordinates();
             RHI5 = CalculateRHI(5);
@@ -104,13 +101,17 @@ namespace TMD.Model.Sites
             RGI5 = CalculateRGI(5);
             RGI10 = CalculateRGI(10);
             RGI20 = CalculateRGI(20);
-            Photos.RemoveAll().AddRange(from photo in GetLastVisit().Photos select new SubsitePhotoReference(photo.ToPhoto(), this));
+            Photos.RemoveAll().AddRange(from photo in LastVisit.Photos select new SubsitePhotoReference(photo.ToPhoto(), this));
+            Visitors.RemoveAll().AddRange(from visit in Visits
+                                          from visitor in visit.Visitors
+                                          select visitor).Distinct();
             VisitCount = Visits.Count;
             TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
             return this;
         }
 
         public virtual IList<SubsiteVisit> Visits { get; private set; }
+        public virtual IEnumerable<SubsiteVisit> ChronologicalVisits { get { return from visit in Visits orderby visit.Visited descending select visit; } }
         public virtual IList<Tree> Trees { get; private set; }
 
         public const float CoordinateMinutesEquivalenceProximity = 5f;
@@ -169,7 +170,8 @@ namespace TMD.Model.Sites
                 Name = importedSubsite.Name,
                 State = importedSubsite.State,
                 County = importedSubsite.County,
-                Photos = new List<IPhoto>()
+                Photos = new List<IPhoto>(),
+                Visitors = new List<Name>()
             }.RecalculateProperties();
         }
     }

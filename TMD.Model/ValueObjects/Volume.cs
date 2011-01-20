@@ -70,26 +70,25 @@ namespace TMD.Model
             return CubicFeet.GetHashCode();
         }
 
-        public override string ToString()
+        public string ToString(VolumeFormat format)
         {
-            string s;
             switch (InputFormat)
             {
                 case VolumeFormat.Default:
                 case VolumeFormat.DecimalCubicFeet:
-                    s = string.Format("{0:0} ft^3", CubicFeet);
-                    break;
+                    return string.Format("{0:0} ft³", CubicFeet);
                 case VolumeFormat.DecimalCubicMeters:
-                    s = string.Format("{0:0} m^3", CubicMeters);
-                    break;
+                    return string.Format("{0:0} m³", CubicMeters);
                 case VolumeFormat.DecimalCubicYards:
-                    s = string.Format("{0:0} yd^3", CubicYards);
-                    break;
+                    return string.Format("{0:0} yd³", CubicYards);
                 default:
-                    s = RawValue;
-                    break;
+                    return RawValue;
             }
-            return s;
+        }
+
+        public override string ToString()
+        {
+            return ToString(InputFormat);
         }
 
         #region IIsSpecified Members
@@ -161,6 +160,13 @@ namespace TMD.Model
                 InputFormat = VolumeFormat.Unspecified,
                 RawValue = string.Empty
             };
+        }
+
+        public static Volume CalculateConical(double radiusFeet, double heightFeet)
+        {
+            double area = Math.Pow(radiusFeet, 2) * Math.PI;
+            double volume = area * heightFeet / 3.0;
+            return Create((float)volume);
         }
     }
 }

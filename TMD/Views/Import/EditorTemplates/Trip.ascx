@@ -7,6 +7,7 @@
             <div class="actions">
                 <%= Html.ActionLink("View", "View", "Import", new { id = Model.Id }, new { @class = "btn btn-orange btn-small" })%>
                 <%= Html.ActionLink("Revise", "Trip", "Import", new { id = Model.Id }, new { @class = "btn btn-orange btn-small" })%>
+                <button type="submit" class="btn btn-orange btn-small" name="innerAction" value="Trip.<%= Model.Id %>.Remove">Remove</button>
             </div>
         <% } else { %>
             <h4><%: Model.Name %> (started <%= Html.DisplayFor(m => m.EntityAge, "FriendlyPastTimeSpan") %>) &nbsp;</h4>
@@ -30,8 +31,8 @@
             <%} %>
             <% if (Model.Measurers.Count(m => m.IsSpecified) > 0) { %>
                 <li><strong>Measurers:</strong><ul>
-                <% foreach (Measurer m in Model.Measurers.Where(m => m.IsSpecified)) { %>
-                    <li><%: m.ToFormalName() %></li>
+                <% foreach (var measurer in Model.Measurers.Where(m => m.IsSpecified)) { %>
+                    <li><%: measurer.ToFormalName()%></li>
                 <% } %>
                 </ul></li>
             <%  } %>

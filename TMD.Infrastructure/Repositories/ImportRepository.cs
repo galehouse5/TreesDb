@@ -29,8 +29,10 @@ namespace TMD.Infrastructure.Repositories
             Registry.Session.Save(t);
         }
 
-        protected override void InternalRemove(Trip t)
+        public override void Remove(Trip t)
         {
+            Model.Repositories.Trees.RemoveMeasurementsByTrip(t);
+            Model.Repositories.Sites.RemoveVisitsByTrip(t);
             Registry.Session.Delete(t);
         }
 
@@ -41,7 +43,6 @@ namespace TMD.Infrastructure.Repositories
                 var siteForMerging = Model.Sites.Site.Create(site);
                 Model.Repositories.Sites.Merge(siteForMerging);
             }
-            Registry.Session.Save(t);
         }
 
         public override Trip FindLastCreatedByUser(int userId)
@@ -56,6 +57,13 @@ namespace TMD.Infrastructure.Repositories
         public override IList<Trip> ListAll()
         {
             return Registry.Session.CreateCriteria<Trip>().List<Trip>();
+        }
+
+        protected override void InternalReimport(Trip t)
+        {
+            Model.Repositories.Trees.RemoveMeasurementsByTrip(t);
+            Model.Repositories.Sites.RemoveVisitsByTrip(t);
+            InternalImport(t);
         }
     }
 }

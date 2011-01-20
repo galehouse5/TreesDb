@@ -27,8 +27,7 @@ namespace TMD.Model.Sites
         public virtual float? RGI20 { get; private set; }
         public virtual int TreesWithSpecifiedCoordinatesCount { get; private set; }
         public virtual int VisitCount { get; private set; }
-
-        public virtual DateTime CalculateLastVisited() { return (from visit in Visits orderby visit.Visited select visit).Last().Visited; }
+        public virtual SiteVisit LastVisit { get { return (from visit in Visits orderby visit.Visited select visit).Last(); } }
         public virtual Coordinates CalculateCalculatedCoordinates() { return (from visit in Visits orderby visit.Visited where visit.CalculatedCoordinates.IsSpecified select visit.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
         public virtual Coordinates CalculateCoordinates() { return (from visit in Visits orderby visit.Visited where visit.Coordinates.IsSpecified select visit.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
         public virtual int CalculateTreesWithSpecifiedCoordinatesCount() { return (from ss in Subsites select ss.TreesWithSpecifiedCoordinatesCount).Sum(); }
@@ -67,7 +66,7 @@ namespace TMD.Model.Sites
 
         public virtual Site RecalculateProperties()
         {
-            LastVisited = CalculateLastVisited();
+            LastVisited = LastVisit.Visited;
             Coordinates = CalculateCoordinates();
             CalculatedCoordinates = CalculateCalculatedCoordinates();
             RHI5 = CalculateRHI(5);
@@ -78,11 +77,16 @@ namespace TMD.Model.Sites
             RGI20 = CalculateRGI(20);
             VisitCount = Visits.Count;
             TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
+            Visitors.RemoveAll().AddRange(from visit in Visits
+                                          from visitor in visit.Visitors
+                                          select visitor).Distinct();
             return this;
         }
 
         public virtual IList<SiteVisit> Visits { get; private set; }
+        public virtual IEnumerable<SiteVisit> ChronologicalVisits { get { return from visit in Visits orderby visit.Visited descending select visit; } }
         public virtual IList<Subsite> Subsites { get; private set; }
+        public virtual IList<Name> Visitors { get; private set; }
 
         public virtual bool ContainsSingleSubsite
         {
@@ -143,7 +147,8 @@ namespace TMD.Model.Sites
             {
                 Subsites = (from importedSubsite in importedSite.Subsites select Subsite.Create(importedSubsite)).ToList(),
                 Visits = new List<SiteVisit> { SiteVisit.Create(importedSite) },
-                Name = importedSite.Name
+                Name = importedSite.Name,
+                Visitors = new List<Name>()
             }.RecalculateProperties();
         }
     }

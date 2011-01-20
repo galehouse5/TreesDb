@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Nullable<Single>>" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Name>" %>
 <strong>
     <% if (ViewData.ContainsKey("label")) { %>
         <% if (!string.IsNullOrWhiteSpace(ViewData["label"].ToString())) { %>
@@ -8,8 +8,4 @@
         <%= Html.GetLabelInnerText(m => m)%>:
     <% } %>
 </strong>
-<% if (ViewData.ContainsKey("empty") && !Model.HasValue) { %>
-    <%: ViewData["empty"] %>
-<% } else { %>
-    <%: Model %>
-<% } %>
+<%: Model.ToFormalName() %>

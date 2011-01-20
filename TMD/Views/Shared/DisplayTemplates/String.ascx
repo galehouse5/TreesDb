@@ -6,4 +6,8 @@
         <%= Html.GetLabelInnerText(m => m) %>:
     <% } %>
 </strong>
-<%: Model %>
+<% if (ViewData.ContainsKey("empty") && string.IsNullOrEmpty(Model)) { %>
+    <%: ViewData["empty"] %>
+<% } else { %>
+    <%: Model %>
+<% } %>

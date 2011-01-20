@@ -42,6 +42,8 @@ namespace TMD
             routes.MapRoute("CompleteAccountRegistration", "Account/{token}/CompleteRegistration", new { controller = "Account", action = "CompleteRegistration" });
             routes.MapRoute("Account", "Account/{action}", new { controller = "Account", action = "Index" });
 
+            routes.MapRoute("ViewTreeDetails", "Browse/Trees/{id}/Details", new { controller = "Browse", action = "TreeDetails" });
+
             routes.MapRoute("Main", "Main/{action}", new { controller = "Main", action = "Index" });
 
             routes.MapRoute("ImportIndex", "Import", new { controller = "Import", action = "Index" });

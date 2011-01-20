@@ -4,36 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using TMD.Model.Validation;
-using NHibernate.Validator.Constraints;
 using TMD.Model.Extensions;
+using NHibernate.Validator.Constraints;
 
-namespace TMD.Model.Imports
+namespace TMD.Model
 {
     [DebuggerDisplay("{LastName}, {FirstName}")]
-    public class Measurer : UserCreatedEntityBase
+    public class Name : ISpecified
     {
-        protected Measurer()
+        protected Name()
         { }
 
-        public virtual Trip Trip { get; private set; }
-
-        private string m_FirstName;
         [NotEmptyOrWhitesapce(Message = "First name must be specified.", Tags = Tag.Screening)]
         [Length(50, Message = "First name must not exceed 50 characters.", Tags = Tag.Persistence)]
-        public virtual string FirstName
-        {
-            get { return m_FirstName; }
-            set { m_FirstName = value.OrEmptyAndTrimToTitleCase(); }
-        }
+        public virtual string FirstName { get; private set; }
 
-        private string m_LastName;
         [NotEmptyOrWhitesapce(Message = "Last name must be specified.", Tags = Tag.Screening)]
         [Length(50, Message = "Last name must not exceed 50 characters.", Tags = Tag.Persistence)]
-        public virtual string LastName
-        {
-            get { return m_LastName; }
-            set { m_LastName = value.OrEmptyAndTrimToTitleCase(); }
-        }
+        public virtual string LastName { get; private set; }
 
         public virtual bool IsSpecified
         {
@@ -47,33 +35,48 @@ namespace TMD.Model.Imports
                 string.Empty;
         }
 
-        public virtual Measurer FromFormalName(string name)
+        public static Name CreateFromFormalName(string name)
         {
-            if (string.IsNullOrWhiteSpace(name))
-            {
-                FirstName = string.Empty;
-                LastName = string.Empty;
-            }
-            else
+            if (!string.IsNullOrWhiteSpace(name))
             {
                 string[] parts = name.Split(',');
                 if (parts.Length > 1)
                 {
-                    FirstName = parts[1];
-                    LastName = parts[0];
+                    return Name.Create(parts[1], parts[0]);
                 }
             }
-            return this;
+            return Null();
         }
 
-        internal static Measurer Create(Trip t)
+        public static Name Create(string first, string last)
         {
-            return new Measurer
+            return new Name
             {
-                FirstName = string.Empty,
-                LastName = string.Empty,
-                Trip = t
-            }.RecordCreation() as Measurer;
+                FirstName = first.OrEmptyAndTrimToTitleCase(),
+                LastName = last.OrEmptyAndTrimToTitleCase()
+            };
+        }
+
+        public static Name Null()
+        {
+            return new Name { FirstName = string.Empty, LastName = string.Empty };
+        }
+
+        public override bool Equals(object obj)
+        {
+            Name other = obj as Name;
+            if (other != null)
+            {
+                return other.FirstName.Equals(FirstName)
+                    && other.LastName.Equals(LastName);
+            }
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return FirstName.GetHashCode()
+                ^ LastName.GetHashCode();
         }
     }
 }

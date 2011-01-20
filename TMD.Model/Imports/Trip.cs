@@ -54,7 +54,7 @@ namespace TMD.Model.Imports
 
         [Valid, Size2(1, int.MaxValue, Message = "You must record at least one measurer.", Tags = Tag.Screening)]
         [Size2(0, 3, Message = "You have recorded too many measurers.", Tags = new [] { Tag.Screening, Tag.Persistence })]
-        public virtual IList<Measurer> Measurers { get; private set; }
+        public virtual IList<Name> Measurers { get; private set; }
 
         public virtual bool IsImported { get { return Imported != null; } }
         public virtual DateTime? Imported { get; protected internal set; }
@@ -98,18 +98,6 @@ namespace TMD.Model.Imports
             return Sites.Remove(sv);
         }
 
-        public virtual Measurer AddMeasurer()
-        {
-            Measurer m = Measurer.Create(this);
-            Measurers.Add(m);
-            return m;
-        }
-
-        public virtual bool RemoveMeasurer(Measurer m)
-        {
-            return Measurers.Remove(m);
-        }
-
         public virtual Site FindSiteById(int id)
         {
             return Sites.FirstOrDefault(s => id.Equals(s.Id));
@@ -137,7 +125,7 @@ namespace TMD.Model.Imports
                 PhotosAvailable = false,
                 MeasurerContactInfo = string.Empty,
                 Sites = new List<Site>(),
-                Measurers = new List<Measurer>(),
+                Measurers = new List<Name>(),
                 DefaultClinometerBrand = string.Empty,
                 DefaultLaserBrand = string.Empty,
                 DefaultState = null,

@@ -41,8 +41,8 @@ namespace TMD.UnitTests.Model
             Assert.AreEqual(3, tree.CrownSpread);
             Assert.AreEqual(Coordinates.Create(4, 5), tree.Coordinates);
             Assert.AreEqual(Elevation.Create(6), tree.Elevation);
-            Assert.AreEqual(6.28318548f, tree.ENTSPTS);
-            Assert.AreEqual(0.394784182f, tree.ENTSPTS2);
+            Assert.AreEqual(2f, tree.ENTSPTS);
+            Assert.AreEqual(0.04f, tree.ENTSPTS2);
             Assert.AreEqual("GeneralComments", tree.Measurements[0].GeneralComments);
         }
 
@@ -119,8 +119,8 @@ namespace TMD.UnitTests.Model
             Assert.AreEqual(2, tree2.Girth);
             Assert.AreEqual(3, tree2.CrownSpread);
             Assert.AreEqual(Elevation.Create(6), tree2.Elevation);
-            Assert.AreEqual(6.28318548f, tree2.ENTSPTS);
-            Assert.AreEqual(0.394784182f, tree2.ENTSPTS2);
+            Assert.AreEqual(2f, tree2.ENTSPTS);
+            Assert.AreEqual(0.04f, tree2.ENTSPTS2);
         }
     }
 }

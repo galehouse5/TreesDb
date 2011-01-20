@@ -42,7 +42,7 @@ namespace TMD.Controllers
            if (innerAction.Equals(ImportInnerActionModel.EntityLevel.Trip, ImportInnerActionModel.EntityAction.Remove))
            {
                var trip = Repositories.Imports.FindById(innerAction.Id);
-               if (!User.IsAuthorizedToEdit(trip) || trip.IsImported) { return new UnauthorizedResult(); }
+               if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
                Repositories.Imports.Remove(trip); 
                uow.Persist();
                return View(Repositories.Imports.ListCreatedByUser(User.Id));
@@ -62,7 +62,7 @@ namespace TMD.Controllers
             if (innerAction.Equals(ImportInnerActionModel.EntityLevel.Trip, ImportInnerActionModel.EntityAction.Remove))
             {
                 var trip = Repositories.Imports.FindById(innerAction.Id);
-                if (!User.IsAuthorizedToEdit(trip) || trip.IsImported) { return new UnauthorizedResult(); }
+                if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
                 Repositories.Imports.Remove(trip); 
                 uow.Persist();
                 return View(Repositories.Imports.ListCreatedByUser(User.Id));
@@ -126,6 +126,7 @@ namespace TMD.Controllers
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             ensureTripHasASite(trip);
             ensureTripSitesHaveASubsite(trip);
+            Repositories.Imports.Save(trip);
             uow.Persist();
             var model = new ImportSitesModel();
             Mapper.Map(trip, model);
@@ -402,7 +403,7 @@ namespace TMD.Controllers
                 Repositories.Trees.RemoveMeasurementsByTrip(trip);
                 Repositories.Sites.RemoveVisitsByTrip(trip);
             }
-            Repositories.Imports.Merge(trip);
+            Repositories.Imports.Import(trip);
             uow.Persist();
             return RedirectToAction("Index");
         }

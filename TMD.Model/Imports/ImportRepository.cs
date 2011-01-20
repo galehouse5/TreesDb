@@ -15,30 +15,29 @@ namespace TMD.Model.Imports
             t.LastSaved = DateTime.Now;
             InternalSave(t);
         }
-
         protected abstract void InternalSave(Trip t);
         
         public abstract Trip FindById(int id);
+        public abstract void Remove(Trip t);
 
-        public void Remove(Trip t)
-        {
-            if (t.IsImported)
-            {
-                throw new InvalidEntityOperationException(t, "Unable to remove trip because it has already been imported.");
-            }
-            InternalRemove(t);
-        }
-
-        protected abstract void InternalRemove(Trip t);
-
-        public void Merge(Trip t)
+        public void Import(Trip t)
         {
             t.AssertIsValid(Tag.Screening, Tag.Finalization, Tag.Persistence);
             t.Imported = DateTime.Now;
             InternalImport(t);
         }
-
         protected abstract void InternalImport(Trip t);
+
+        public void Reimport(Trip t)
+        {
+            t.AssertIsValid(Tag.Screening, Tag.Finalization, Tag.Persistence);
+            if (!t.IsImported)
+            {
+                throw new InvalidEntityOperationException(t, "Unable to reimport trip because it has not yet been imported.");
+            }
+            InternalReimport(t);
+        }
+        protected abstract void InternalReimport(Trip t);
 
         public abstract IList<Trip> ListCreatedByUser(int userId);
         public abstract Trip FindLastCreatedByUser(int userId);

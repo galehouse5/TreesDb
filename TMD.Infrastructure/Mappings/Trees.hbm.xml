@@ -32,7 +32,7 @@
     </component>    
   </class>
 
-  <class name="TMD.Model.Trees.TreeMeasurement" table="TreeMeasurements">
+  <class name="TMD.Model.Trees.Measurement" table="Measurements">
     <id name="Id">
       <generator class="native"/>
     </id>
@@ -78,11 +78,28 @@
       <property name="InputFormat" column="ElevationInputFormat"/>
     </component>
     <property name="GeneralComments"/>
+    <component name="Diameter" class="Distance">
+      <property name="Feet" column="Diameter"/>
+      <property name="InputFormat" column="DiameterInputFormat"/>
+    </component>
     <property name="ENTSPTS"/>
+    <component name="ConicalVolume" class="Volume">
+      <property name="CubicFeet" column="ConicalVolume"/>
+      <property name="InputFormat" column="ConicalVolumeInputFormat"/>
+    </component>
     <property name="ENTSPTS2"/>
+    <property name="ChampionPoints" />
+    <property name="AbbreviatedChampionPoints" />
     <bag name="Photos" cascade="all-delete-orphan" inverse="true">
       <key column="TreeMeasurementId"></key>
       <one-to-many class="TMD.Model.Trees.TreeMeasurementPhotoReference"/>
+    </bag>
+    <bag name="Measurers" cascade="all-delete-orphan">
+      <key column="MeasurementId" />
+      <composite-element class="Name">
+        <property name="FirstName" />
+        <property name="LastName" />
+      </composite-element>
     </bag>
   </class>
 
@@ -91,9 +108,9 @@
       <generator class="native"/>
     </id>
     <many-to-one name="Species" column="ComputedMeasuredSpeciesId" insert="false" update="false" cascade="none" />
-    <bag name="Measurements" table="TreeMeasurements" inverse="false" cascade="all-delete-orphan">
+    <bag name="Measurements" table="Measurements" inverse="false" cascade="all-delete-orphan">
       <key column="TreeId"></key>
-      <one-to-many class="TMD.Model.Trees.TreeMeasurement"/>
+      <one-to-many class="TMD.Model.Trees.Measurement"/>
     </bag>
     <property name="LastMeasured" />
     <property name="CommonName"/>
@@ -135,13 +152,30 @@
       <property name="Feet" column="Elevation"/>
       <property name="InputFormat" column="ElevationInputFormat"/>
     </component>
+    <component name="Diameter" class="Distance">
+      <property name="Feet" column="Diameter"/>
+      <property name="InputFormat" column="DiameterInputFormat"/>
+    </component>
     <property name="ENTSPTS"/>
+    <component name="ConicalVolume" class="Volume">
+      <property name="CubicFeet" column="ConicalVolume"/>
+      <property name="InputFormat" column="ConicalVolumeInputFormat"/>
+    </component>
     <property name="ENTSPTS2"/>
+    <property name="ChampionPoints" />
+    <property name="AbbreviatedChampionPoints" />
     <bag name="Photos" cascade="all-delete-orphan" inverse="true">
       <key column="TreeId"></key>
       <one-to-many class="TMD.Model.Trees.TreePhotoReference"/>
     </bag>
-    <property name="MeasurementCount" formula="(select count(*) from Trees.TreeMeasurements t where t.TreeId = Id)" />
+    <property name="MeasurementCount" formula="(select count(*) from Trees.Measurements t where t.TreeId = Id)" />
+    <bag name="Measurers" cascade="all-delete-orphan">
+      <key column="TreeId" />
+      <composite-element class="Name">
+        <property name="FirstName" />
+        <property name="LastName" />
+      </composite-element>
+    </bag>
   </class>
   
 </hibernate-mapping>

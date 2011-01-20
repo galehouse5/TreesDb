@@ -28,14 +28,17 @@ namespace TMD.Model.Trees
         public virtual Coordinates Coordinates { get; private set; }
         public virtual Coordinates CalculatedCoordinates { get; private set; }
         public virtual Elevation Elevation { get; private set; }
-        public virtual float? ENTSPTS { get; private set; }
-        public virtual float? ENTSPTS2 { get; private set; }
-        public virtual IList<IPhoto> Photos { get; private set; }
 
-        public virtual TreeMeasurement GetLastMeasurement() 
-        { 
-            return (from m in Measurements orderby m.Measured select m).Last(); 
-        }
+        public virtual Distance Diameter { get; private set; }
+        public virtual float? ENTSPTS { get; private set; }
+        public virtual Volume ConicalVolume { get; private set; }
+        public virtual float? ENTSPTS2 { get; private set; }
+        public virtual float? ChampionPoints { get; private set; }
+        public virtual float? AbbreviatedChampionPoints { get; private set; }
+
+        public virtual IList<IPhoto> Photos { get; private set; }
+        public virtual Measurement LastMeasurement { get { return (from m in Measurements orderby m.Measured select m).Last(); } }
+        public virtual IList<Name> Measurers { get; private set; }
 
         public virtual Coordinates CalculateCoordinates() 
         { 
@@ -49,19 +52,27 @@ namespace TMD.Model.Trees
 
         public virtual Tree RecalculateProperties()
         {
-            LastMeasured = GetLastMeasurement().Measured;
-            CommonName = GetLastMeasurement().CommonName;
-            ScientificName = GetLastMeasurement().ScientificName;
-            Height = GetLastMeasurement().Height;
-            HeightMeasurementMethod = GetLastMeasurement().HeightMeasurementMethod;
-            Girth = GetLastMeasurement().Girth;
-            CrownSpread = GetLastMeasurement().CrownSpread;
+            LastMeasured = LastMeasurement.Measured;
+            CommonName = LastMeasurement.CommonName;
+            ScientificName = LastMeasurement.ScientificName;
+            Height = LastMeasurement.Height;
+            HeightMeasurementMethod = LastMeasurement.HeightMeasurementMethod;
+            Girth = LastMeasurement.Girth;
+            CrownSpread = LastMeasurement.CrownSpread;
             Coordinates = CalculateCoordinates();
             CalculatedCoordinates = CalculateCalculatedCoordinates();
-            Elevation = GetLastMeasurement().Elevation;
-            ENTSPTS = GetLastMeasurement().ENTSPTS;
-            ENTSPTS2 = GetLastMeasurement().ENTSPTS2;
-            Photos.RemoveAll().AddRange(from photo in GetLastMeasurement().Photos select new TreePhotoReference(photo.ToPhoto(), this));
+            Elevation = LastMeasurement.Elevation;
+            Diameter = LastMeasurement.Diameter;
+            ENTSPTS = LastMeasurement.ENTSPTS;
+            ConicalVolume = LastMeasurement.ConicalVolume;
+            ENTSPTS2 = LastMeasurement.ENTSPTS2;
+            ChampionPoints = LastMeasurement.ChampionPoints;
+            AbbreviatedChampionPoints = LastMeasurement.AbbreviatedChampionPoints;
+            Photos.RemoveAll().AddRange(from photo in LastMeasurement.Photos 
+                                        select new TreePhotoReference(photo.ToPhoto(), this));
+            Measurers.RemoveAll().AddRange(from measurement in Measurements
+                                           from measurer in measurement.Measurers
+                                           select measurer).Distinct();
             MeasurementCount = Measurements.Count;
             return this;
         }
@@ -69,7 +80,8 @@ namespace TMD.Model.Trees
         public virtual float? TDI2 { get { return Species.CalculateTDI2(Height, Girth); } }
         public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
 
-        public virtual IList<TreeMeasurement> Measurements { get; private set; }
+        public virtual IList<Measurement> Measurements { get; private set; }
+        public virtual IEnumerable<Measurement> ChronologicalMeasurements { get { return from measurement in Measurements orderby measurement.Measured descending select measurement; } }
         public virtual int MeasurementCount { get; private set; }
 
         public virtual Tree Merge(Tree treeToMerge)
@@ -98,8 +110,9 @@ namespace TMD.Model.Trees
             importedTree.Subsite.Site.Trip.AssertIsImported();
             return new Tree
             {
-                Measurements = new List<TreeMeasurement> { TreeMeasurement.Create(importedTree) },
-                Photos = new List<IPhoto>()
+                Measurements = new List<Measurement> { Measurement.Create(importedTree) },
+                Photos = new List<IPhoto>(),
+                Measurers = new List<Name>()
             }.RecalculateProperties();
         }
     }

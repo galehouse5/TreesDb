@@ -129,12 +129,8 @@ namespace TMD.UnitTests.Infrastructure
             t.PhotosAvailable = true;
             t.Website = "website";
             t.Date = DateTime.Now;
-            Measurer tmeasurer1 = t.AddMeasurer();
-            tmeasurer1.FirstName = "tree measurer 1 first name";
-            tmeasurer1.LastName = "tree measurer 1 last name";
-            Measurer tmeasurer2 = t.AddMeasurer();
-            tmeasurer2.FirstName = "tree measurer 2 first name";
-            tmeasurer2.LastName = "tree measurer 2 last name";
+            t.Measurers.Add(Name.Create("tree measurer 1 first name", "tree measurer 1 last name"));
+            t.Measurers.Add(Name.Create("tree measurer 2 first name", "tree measurer 2 last name"));
 
             Site sv1 = t.AddSite();
             sv1.Name = "site visit 1 name";
@@ -292,9 +288,7 @@ namespace TMD.UnitTests.Infrastructure
             Trip t = Trip.Create();
             t.MeasurerContactInfo = "measurer contact info";
             t.Name = "name";
-            Measurer tmeasurer1 = t.AddMeasurer();
-            tmeasurer1.FirstName = "tree measurer 1 first name";
-            tmeasurer1.LastName = "tree measurer 1 last name";
+            t.Measurers.Add(Name.Create("tree measurer 1 first name", "tree measurer 1 last name"));
 
             Site sv1 = t.AddSite();
             sv1.Name = "site visit 1 name";

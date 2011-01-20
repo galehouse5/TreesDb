@@ -53,7 +53,6 @@
     <Compile Include="Extensions\ISpecified.cs" />
     <Compile Include="Logging\ILogProvider.cs" />
     <Compile Include="Logging\Logger.cs" />
-    <Compile Include="Imports\Measurer.cs" />
     <Compile Include="Imports\MultiTrunkTree.cs" />
     <Compile Include="Imports\SingleTrunkTree.cs" />
     <Compile Include="Imports\Site.cs" />
@@ -74,7 +73,7 @@
     <Compile Include="Sites\Subsite.cs" />
     <Compile Include="Sites\Site.cs" />
     <Compile Include="Trees\Species.cs" />
-    <Compile Include="Trees\TreeMeasurement.cs" />
+    <Compile Include="Trees\Measurement.cs" />
     <Compile Include="Trees\Tree.cs" />
     <Compile Include="Users\UserRoles.cs" />
     <Compile Include="Validation\BooleanMethodAttribute.cs" />
@@ -114,6 +113,7 @@
     <Compile Include="ValueObjects\Elevation.cs" />
     <Compile Include="ValueObjects\HeightMeasurements.cs" />
     <Compile Include="Locations\State.cs" />
+    <Compile Include="ValueObjects\Name.cs" />
     <Compile Include="ValueObjects\Volume.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TMD.Models;
+using TMD.Model;
 
 namespace TMD.Controllers
 {
@@ -21,6 +22,12 @@ namespace TMD.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        [DefaultReturnUrl]
+        public ActionResult TreeDetails(int id)
+        {
+            return View(Repositories.Trees.FindById(id));
         }
     }
 }

@@ -7,6 +7,7 @@ using TMD.Infrastructure.Repositories;
 using TMD.Infrastructure;
 using TMD.Model.Logging;
 using StructureMap;
+using TMD.Model.Validation;
 
 namespace TMD.Utilities
 {
@@ -32,6 +33,10 @@ namespace TMD.Utilities
                             : Console.ReadLine();
                         new Program().Info(message);
                         return;
+                    case "-rivt":
+                        initializeForPersistence();
+                        Console.WriteLine(string.Format("Reimported {0} valid trips.", reimportValidTrips()));
+                        return;
                 }
             }
             Console.WriteLine(string.Empty);
@@ -40,6 +45,7 @@ namespace TMD.Utilities
             Console.WriteLine("   -rpo      Remove photos without any photo references.");
             Console.WriteLine("   -rpso     Remove photo store files without any associated photo.");
             Console.WriteLine("   -logi     Logs an info message.");
+            Console.WriteLine("   -rivt     Reimport valid trips.");
             Console.WriteLine(string.Empty);
         }
 
@@ -60,6 +66,27 @@ namespace TMD.Utilities
                 x.For<IUnitOfWorkProvider>().Singleton().Use<NHibernateUnitOfWorkProvider>();
                 x.For<IUserSessionProvider>().Singleton().Use<NullUserSessionProvider>();
             });
+        }
+
+        static int reimportValidTrips()
+        {
+            using (var uow = UnitOfWork.Begin())
+            {
+                var validTrips = from trip in Repositories.Imports.ListAll()
+                                 where trip.IsValid(Tag.Screening, Tag.Finalization, Tag.Persistence) && trip.IsImported
+                                 select trip;
+                foreach (var trip in validTrips)
+                {
+                    Repositories.Trees.RemoveMeasurementsByTrip(trip);
+                    Repositories.Sites.RemoveVisitsByTrip(trip);
+                }
+                foreach (var trip in validTrips)
+                {
+                    Repositories.Imports.Reimport(trip);
+                }
+                uow.Persist();
+                return validTrips.Count();
+            }
         }
 
         static int removePhotoOrphans()

@@ -41,8 +41,10 @@
                 <h4>Finished imports</h4>
             </div>
             <div class="portlet-content">
-                <% for(int i = 0; i < importedTrips.Count; i++) { %>
-                    <%= Html.EditorFor(m => m[Model.IndexOf(importedTrips[i])], "Trip")%>
+                <% using(Html.BeginForm()) { %>
+                    <% for(int i = 0; i < importedTrips.Count; i++) { %>
+                        <%= Html.EditorFor(m => m[Model.IndexOf(importedTrips[i])], "Trip")%>
+                    <% } %>
                 <% } %>
             </div>
         </div>

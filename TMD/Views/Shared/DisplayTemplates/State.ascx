@@ -2,9 +2,11 @@
 <%@ Import Namespace="TMD.Model.Locations" %>
 <strong>
     <% if (ViewData.ContainsKey("label")) { %>
-        <%: ViewData["label"] %>:
+        <% if (!string.IsNullOrWhiteSpace(ViewData["label"].ToString())) { %>
+            <%: ViewData["label"] %>:
+        <% } %>
     <% } else { %>
-        <%= Html.GetLabelInnerText<State, State>(m => m)%>:
+        <%= Html.GetLabelInnerText(m => m)%>:
     <% } %>
 </strong>
 <%: Model.Name %>, <%: Model.Country.Name %>

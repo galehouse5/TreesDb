@@ -5,17 +5,6 @@
                    schema="Imports"
                    auto-import="false">
 
-  <class name="TMD.Model.Imports.Measurer" table="Measurers">
-    <id name="Id">
-      <generator class="native"/>
-    </id>
-    <property name="Created" />
-    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
-    <many-to-one name="Trip" column="TripId" />
-    <property name="FirstName"/>
-    <property name="LastName"/>
-  </class>
-
   <class name="TMD.Model.Imports.Trunk" table="Trunks">
     <id name="Id">
       <generator class="native" />
@@ -261,9 +250,12 @@
       <key column="TripId" />
       <one-to-many class="TMD.Model.Imports.Site"/>
     </bag>
-    <bag name="Measurers" cascade="all-delete-orphan" inverse="true">
+    <bag name="Measurers" cascade="all-delete-orphan">
       <key column="TripId" />
-      <one-to-many class="TMD.Model.Imports.Measurer"/>
+      <composite-element class="Name">
+        <property name="FirstName" />
+        <property name="LastName" />
+      </composite-element>
     </bag>
     <property name="DefaultClinometerBrand" />
     <property name="DefaultLaserBrand" />

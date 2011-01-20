@@ -40,13 +40,13 @@ namespace TMD.Mappings
                         int lastSpecifiedMeasurer = !string.IsNullOrWhiteSpace(m.ThirdMeasurer) ? 3
                             : !string.IsNullOrWhiteSpace(m.SecondMeasurer) ? 2
                             : !string.IsNullOrWhiteSpace(m.FirstMeasurer) ? 1 : 0;
-                        while (t.Measurers.Count < lastSpecifiedMeasurer) { t.AddMeasurer(); }
-                        while (t.Measurers.Count > lastSpecifiedMeasurer) { t.RemoveMeasurer(t.Measurers[t.Measurers.Count - 1]); }
+                        while (t.Measurers.Count < lastSpecifiedMeasurer) { t.Measurers.Add(Name.Null()); }
+                        while (t.Measurers.Count > lastSpecifiedMeasurer) { t.Measurers.RemoveAt(t.Measurers.Count -1); }
                         switch (lastSpecifiedMeasurer)
                         {
-                            case 3 : t.Measurers[2].FromFormalName(m.ThirdMeasurer); goto case 2;
-                            case 2 : t.Measurers[1].FromFormalName(m.SecondMeasurer); goto case 1;
-                            case 1 : t.Measurers[0].FromFormalName(m.FirstMeasurer); goto default;
+                            case 3 : t.Measurers[2] = Name.CreateFromFormalName(m.ThirdMeasurer); goto case 2;
+                            case 2 : t.Measurers[1] = Name.CreateFromFormalName(m.SecondMeasurer); goto case 1;
+                            case 1 : t.Measurers[0] = Name.CreateFromFormalName(m.FirstMeasurer); goto default;
                             default : break;
                         }
                     });

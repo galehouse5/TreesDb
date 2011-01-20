@@ -270,6 +270,7 @@
     <Content Include="Views\Account\Logon.aspx" />
     <Content Include="Views\Account\Register.aspx" />
     <Content Include="Views\Browse\MenuWidget.ascx" />
+    <Content Include="Views\Browse\TreeDetails.aspx" />
     <Content Include="Views\Error\Unauthorized.aspx" />
     <Content Include="Views\Export\MenuWidget.ascx" />
     <Content Include="Views\Import\View.aspx" />
@@ -307,6 +308,11 @@
     <Content Include="Views\Map\Index.aspx" />
     <Content Include="Views\Map\MenuWidget.ascx" />
     <Content Include="Views\Photos\EditPhotoGalleryPartial.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\NullableSingle.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\IPhoto.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Name.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Volume.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Enum.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Int32.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Elevation.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Single.ascx" />

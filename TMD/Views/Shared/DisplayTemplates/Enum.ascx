@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Distance>" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
 <strong>
     <% if (ViewData.ContainsKey("label")) { %>
         <% if (!string.IsNullOrWhiteSpace(ViewData["label"].ToString())) { %>
@@ -8,10 +8,10 @@
         <%= Html.GetLabelInnerText(m => m)%>:
     <% } %>
 </strong>
-<% if (ViewData.ContainsKey("empty") && !Model.IsSpecified) { %>
+<% if (ViewData.ContainsKey("empty") && string.IsNullOrEmpty((Model as Enum).Describe())) { %>
     <%: ViewData["empty"] %>
-<% } else if (ViewData.ContainsKey("format")) { %>
-    <%: Model.ToString((DistanceFormat)ViewData["format"]) %>
 <% } else { %>
-    <%: Model %>
+    <%: (Model as Enum).Describe() %>
 <% } %>
+
+
