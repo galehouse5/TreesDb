@@ -1,0 +1,24 @@
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<IList<Name>>" %>
+<% 
+    if (Model.Count == 0)
+    { }
+    else if (Model.Count == 1)
+    {
+        %><%: Model[0].ToString() %><%
+    }
+    else if (Model.Count == 2)
+    {
+        %><%: Model[0].ToString() %> and <%: Model[1].ToString() %><%
+    }
+    else 
+    {
+        for (int i = 0; i < Model.Count - 1; i++)
+        {
+            %><%: Model[i].ToString() %>, <%
+        }
+        %>and <%: Model[Model.Count - 1].ToString()%><%
+    }
+%>
+
+
+

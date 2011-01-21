@@ -84,7 +84,6 @@ namespace TMD.Model.Sites
         }
 
         public virtual IList<SiteVisit> Visits { get; private set; }
-        public virtual IEnumerable<SiteVisit> ChronologicalVisits { get { return from visit in Visits orderby visit.Visited descending select visit; } }
         public virtual IList<Subsite> Subsites { get; private set; }
         public virtual IList<Name> Visitors { get; private set; }
 

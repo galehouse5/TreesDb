@@ -1,13 +1,19 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<String>" %>
-<strong>
+<td class="description">
     <% if (ViewData.ContainsKey("label")) { %>
-        <%: ViewData["label"] %>:
+        <%: ViewData["label"] %>
     <% } else { %>
-        <%= Html.GetLabelInnerText(m => m) %>:
+        <%= Html.GetLabelInnerText(m => m) %>
     <% } %>
-</strong>
-<% if (ViewData.ContainsKey("empty") && string.IsNullOrEmpty(Model)) { %>
-    <%: ViewData["empty"] %>
-<% } else { %>
-    <%: Model %>
-<% } %>
+</td>
+<td class="value">
+    <% if (ViewData.ContainsKey("empty") && string.IsNullOrEmpty(Model)) { %>
+        <%: ViewData["empty"] %>
+    <% } else if (ViewData.ContainsKey("highlight") && !(bool)ViewData["highlight"]) { %>
+        <%: Model %>
+    <% } else { %>
+        <span>
+            <%: Model %>
+        </span>
+    <% } %>
+</td>

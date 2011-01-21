@@ -269,6 +269,7 @@
     <Content Include="Views\Account\CompleteRegistration.aspx" />
     <Content Include="Views\Account\Logon.aspx" />
     <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Browse\DisplayTemplates\PhotosHistory.ascx" />
     <Content Include="Views\Browse\MenuWidget.ascx" />
     <Content Include="Views\Browse\TreeDetails.aspx" />
     <Content Include="Views\Error\Unauthorized.aspx" />
@@ -308,9 +309,9 @@
     <Content Include="Views\Map\Index.aspx" />
     <Content Include="Views\Map\MenuWidget.ascx" />
     <Content Include="Views\Photos\EditPhotoGalleryPartial.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\NullableSingle.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\IPhoto.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Name.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\NameSeries.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Volume.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Enum.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Int32.ascx" />
@@ -364,9 +365,7 @@
   <ItemGroup>
     <Content Include="Views\Shared\Login.Master" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Browse\DisplayTemplates\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

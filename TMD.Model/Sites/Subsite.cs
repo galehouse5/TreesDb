@@ -111,7 +111,6 @@ namespace TMD.Model.Sites
         }
 
         public virtual IList<SubsiteVisit> Visits { get; private set; }
-        public virtual IEnumerable<SubsiteVisit> ChronologicalVisits { get { return from visit in Visits orderby visit.Visited descending select visit; } }
         public virtual IList<Tree> Trees { get; private set; }
 
         public const float CoordinateMinutesEquivalenceProximity = 5f;

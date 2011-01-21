@@ -35,6 +35,13 @@ namespace TMD.Model
                 string.Empty;
         }
 
+        public override string ToString()
+        {
+            return !string.IsNullOrWhiteSpace(FirstName) && !string.IsNullOrWhiteSpace(LastName) ?
+                string.Format("{0} {1}", FirstName, LastName) :
+                string.Empty;
+        }
+
         public static Name CreateFromFormalName(string name)
         {
             if (!string.IsNullOrWhiteSpace(name))

@@ -1,15 +1,30 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Elevation>" %>
-<strong>
+<td class="description">
     <% if (ViewData.ContainsKey("label")) { %>
         <% if (!string.IsNullOrWhiteSpace(ViewData["label"].ToString())) { %>
-            <%: ViewData["label"] %>:
+            <%: ViewData["label"] %>
         <% } %>
     <% } else { %>
-        <%= Html.GetLabelInnerText(m => m)%>:
+        <%= Html.GetLabelInnerText(m => m)%>
     <% } %>
-</strong>
-<% if (ViewData.ContainsKey("format")) { %>
-    <%: Model.ToString((ElevationFormat)ViewData["format"]) %>
-<% } else { %>
-    <%: Model %>
-<% } %>
+</td>
+<td class="value">
+    <% if (ViewData.ContainsKey("empty") && !Model.IsSpecified) { %>
+        <%: ViewData["empty"] %>
+    <% } else if (ViewData.ContainsKey("highlight") && !(bool)ViewData["highlight"]) { %>
+        <% if (ViewData.ContainsKey("format")) { %>
+            <%: Model.ToString((ElevationFormat)ViewData["format"]) %>
+        <% } else { %>
+            <%: Model %>
+        <% } %>
+    <% } else { %>
+        <span>
+           <% if (ViewData.ContainsKey("format")) { %>
+                <%: Model.ToString((ElevationFormat)ViewData["format"]) %>
+            <% } else { %>
+                <%: Model %>
+            <% } %>
+        </span>
+    <% } %>
+</td>
+ 

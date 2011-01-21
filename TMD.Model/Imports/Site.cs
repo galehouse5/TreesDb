@@ -80,6 +80,8 @@ namespace TMD.Model.Imports
         [Size2(int.MinValue, 100, Message = "Site contains too many subsites.", Tags = new [] { Tag.Screening, Tag.Persistence })]
         public virtual IList<Subsite> Subsites { get; protected set; }
 
+        public virtual bool HasSingleSubsite { get { return Subsites.Count == 1; } }
+
         public virtual Subsite AddSubsite()
         {
             var subsite = Subsite.Create(this);

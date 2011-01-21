@@ -64,3 +64,4 @@ table thead th { background-color: #255648 !important; }
 .info_table .value { color: #255648; }
 .stat .value { color: #255648; }
 table.calendar th { background: #255648  !important; }
+.reports_table .value { width: 50%; }

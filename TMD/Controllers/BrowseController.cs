@@ -27,7 +27,19 @@ namespace TMD.Controllers
         [DefaultReturnUrl]
         public ActionResult TreeDetails(int id)
         {
-            return View(Repositories.Trees.FindById(id));
+            var tree = Repositories.Trees.FindById(id);
+            var site = Repositories.Sites.FindSiteContainingTree(id);
+            return View(new TreeDetailsModel
+            {
+                Site = site,
+                Subsite = (from subsite in site.Subsites where subsite.Trees.Contains(tree) select subsite).First(),
+                Tree = tree,
+                Measurements = (from measurement in tree.Measurements orderby measurement.Measured descending select measurement).ToList(),
+                DatedPhotos = (from measurement in tree.Measurements 
+                               orderby measurement.Measured descending 
+                               select new DatedPhotosModel { Date = measurement.Measured, Photographers = measurement.Measurers, Photos = measurement.Photos })
+                               .ToList()
+            });
         }
     }
 }

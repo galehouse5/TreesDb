@@ -109,5 +109,14 @@ namespace TMD.Infrastructure.Repositories
         {
             Registry.Session.Delete(site);
         }
+
+        public Site FindSiteContainingTree(int treeId)
+        {
+            return Registry.Session.CreateCriteria<Site>()
+                .CreateAlias("Subsites", "subsite")
+                .CreateAlias("subsite.Trees", "tree")
+                .Add(Restrictions.Eq("tree.Id", treeId))
+                .UniqueResult<Site>();
+        }
     }
 }

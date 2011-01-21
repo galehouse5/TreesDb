@@ -81,7 +81,6 @@ namespace TMD.Model.Trees
         public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
 
         public virtual IList<Measurement> Measurements { get; private set; }
-        public virtual IEnumerable<Measurement> ChronologicalMeasurements { get { return from measurement in Measurements orderby measurement.Measured descending select measurement; } }
         public virtual int MeasurementCount { get; private set; }
 
         public virtual Tree Merge(Tree treeToMerge)

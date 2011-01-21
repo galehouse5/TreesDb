@@ -15,5 +15,6 @@ namespace TMD.Model.Sites
         IList<Site> ListAllForMap();
         void RemoveVisitsByTrip(Imports.Trip trip);
         void Remove(Site site);
+        Site FindSiteContainingTree(int treeId);
     }
 }
