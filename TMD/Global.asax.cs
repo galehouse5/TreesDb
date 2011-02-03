@@ -5,18 +5,14 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using TMD.Model;
-using TMD.Extensions;
-using TMD.Model.Imports;
-using TMD.Model.Locations;
-using Recaptcha;
-using TMD.Controllers;
-using StructureMap;
-using TMD.Infrastructure.Repositories;
-using TMD.Infrastructure;
-using AutoMapper;
-using TMD.Mappings;
-using TMD.Binders;
 using TMD.Model.Logging;
+using TMD.Infrastructure.Repositories;
+using TMD.Mappings;
+using AutoMapper;
+using TMD.Extensions;
+using TMD.Binders;
+using TMD.Infrastructure;
+using StructureMap;
 
 namespace TMD
 {
@@ -25,9 +21,20 @@ namespace TMD
 
     public class MvcApplication : System.Web.HttpApplication
     {
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        {
+            filters.Add(new HandleErrorAttribute());
+        }
+
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            //routes.MapRoute(
+            //    "Default", // Route name
+            //    "{controller}/{action}/{id}", // URL with parameters
+            //    new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+            //);
 
             routes.MapRoute("AddPhoto", "Photos/{action}/{id}", new { controller = "Photos" }, new { action = "AddTo.+" });
             routes.MapRoute("RemovePhoto", "Photos/{id}/Remove", new { controller = "Photos", action = "Remove" });
@@ -60,21 +67,20 @@ namespace TMD
         {
             AreaRegistration.RegisterAllAreas();
 
+            RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
-            ModelBinders.Binders.DefaultBinder = new DefaultGraphModelBinder();
+            //ModelBinders.Binders.DefaultBinder = new DefaultGraphModelBinder();
             ModelBinders.Binders.Add(typeof(IUnitOfWork), new NullModelBinder());
             new ValueObjectBinders().Bind(ModelBinders.Binders);
 
             ControllerBuilder.Current.SetControllerFactory(typeof(ControllerFactory));
-            
-            ModelValidatorProviders.Providers.Clear();
-            ModelValidatorProviders.Providers.Add(new NHibernateValidatorModelValidatorProvider());
 
             Mapper.AddProfile<ImportMapping>();
             Mapper.AddProfile<PhotoMapping>();
             Mapper.AddProfile<MapMapping>();
             Mapper.AddProfile<AccountMapping>();
+            Mapper.AddProfile<BrowseMapping>();
 
             log4net.Config.XmlConfigurator.Configure();
             ObjectFactory.Initialize(x =>
@@ -84,15 +90,15 @@ namespace TMD
                 x.For<IUserSessionProvider>().Singleton().Use<WebUserSessionProvider>();
                 x.For<ILogProvider>().Singleton().Use<Log4NetLogProvider>()
                     .OnCreation(lp =>
-                        {
-                            lp.AddContextProperty("Request.Url", () => HttpContext.Current.Request.Url.ToString());
-                            lp.AddContextProperty("Request.Path", () => HttpContext.Current.Request.Path);
-                            lp.AddContextProperty("Request.UserHostAddress", () => HttpContext.Current.Request.UserHostAddress);
-                            lp.AddContextProperty("Request.User", () => HttpContext.Current.User.Identity.Name);
-                            lp.AddContextProperty("Request.IsAuthenticated", () => HttpContext.Current.User.Identity.IsAuthenticated.ToString());
-                            lp.AddContextProperty("Application.Path", () => HttpContext.Current.Request.PhysicalApplicationPath);
-                            lp.AddContextProperty("Application.Machine", () => Environment.MachineName);
-                        });
+                    {
+                        lp.AddContextProperty("Request.Url", () => HttpContext.Current.Request.Url.ToString());
+                        lp.AddContextProperty("Request.Path", () => HttpContext.Current.Request.Path);
+                        lp.AddContextProperty("Request.UserHostAddress", () => HttpContext.Current.Request.UserHostAddress);
+                        lp.AddContextProperty("Request.User", () => HttpContext.Current.User.Identity.Name);
+                        lp.AddContextProperty("Request.IsAuthenticated", () => HttpContext.Current.User.Identity.IsAuthenticated.ToString());
+                        lp.AddContextProperty("Application.Path", () => HttpContext.Current.Request.PhysicalApplicationPath);
+                        lp.AddContextProperty("Application.Machine", () => Environment.MachineName);
+                    });
             });
         }
 
