@@ -46,6 +46,7 @@ h2.accordion_panel a { color: #255648; }
 .portlet-header h4 { color: #255648; }
 .portlet-tab-nav .portlet-tab-nav-active { background-color: #255648 !important; }
 .portlet-header { cursor: inherit; }
+#wrapper > .content { width: 95%; margin: 0 auto; position: relative; z-index: 10; }
 
 /* /css/screen/mega.css */
 .mega-menu li a { color: #327487; }
@@ -65,3 +66,12 @@ table thead th { background-color: #255648 !important; }
 .stat .value { color: #255648; }
 table.calendar th { background: #255648  !important; }
 .reports_table .value { width: 50%; }
+.reports_table img 
+{ 
+	padding: 1px; 
+	margin: 0 2px; 
+	border: 1px solid #AAA; 
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;	
+}
