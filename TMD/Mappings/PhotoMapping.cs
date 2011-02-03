@@ -13,21 +13,17 @@ namespace TMD.Mappings
     {
         protected override void Configure()
         {
-            CreateMap<TreeBase, PhotoGalleryModel>()
-                .ForMember(dest => dest.Adder, opt => opt.MapFrom(src =>
-                    new ImportTreePhotoGalleryAdderModel { TripId = src.Subsite.Site.Trip.Id, TreeId = src.Id }))
-                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src =>
-                    src.Photos.Select(photo => new PhotoModel { Id = photo.Id, PhotoId = photo.PhotoId })));
+            CreateMap<TreeBase, ImportTreePhotoGalleryModel>()
+                .ForMember(dest => dest.TreeId, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.TripId, opt => opt.MapFrom(src => src.Subsite.Site.Trip.Id));
             ValidationMapper.CreateMap<TreeBase, PhotoGalleryModel>()
-                .IgnorePath("*").ForPath("Photo*", "Adder");
+                .IgnorePath("*").ForPath("Photo*", "AddPhotoActionName");
 
-            CreateMap<Subsite, PhotoGalleryModel>()
-                .ForMember(dest => dest.Adder, opt => opt.MapFrom(src =>
-                    new ImportSubsitePhotoGalleryAdderModel { TripId = src.Site.Trip.Id, SubsiteId = src.Id }))
-                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src =>
-                    src.Photos.Select(photo => new PhotoModel { Id = photo.Id, PhotoId = photo.PhotoId })));
+            CreateMap<Subsite, ImportSubsitePhotoGalleryModel>()
+                .ForMember(dest => dest.SubsiteId, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.TripId, opt => opt.MapFrom(src => src.Site.Trip.Id));
             ValidationMapper.CreateMap<Subsite, PhotoGalleryModel>()
-                .IgnorePath("*").ForPath("Photo*", "Adder");
+                .IgnorePath("*").ForPath("Photo*", "AddPhotoActionName");
         }
     }
 }
