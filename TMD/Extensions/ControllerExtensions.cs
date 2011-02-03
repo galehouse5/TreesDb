@@ -10,7 +10,7 @@ using TMD.Model.Extensions;
 
 namespace TMD.Extensions
 {
-    public static class ControllerExtensions
+    public static class ControllerEtensions
     {
         private class ViewDataDecorator : ActionResult
         {
