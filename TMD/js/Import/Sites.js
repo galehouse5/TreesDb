@@ -34,7 +34,7 @@
                                 for (j in results[0].address_components[i].types) {
                                     if (results[0].address_components[i].types[j] == 'administrative_area_level_2') { county = results[0].address_components[i].long_name; }
                                     if (results[0].address_components[i].types[j] == 'administrative_area_level_1') { state = results[0].address_components[i].long_name; }
-                                    if (results[0].address_components[i].types[j] == 'country') { country = results[0].address_components[i].long_name; }
+                                    if (results[0].address_components[i].types[j] == 'country') { country = results[0].address_components[i].short_name; }
                                 }
                             }
                             if (county != null) {
@@ -42,7 +42,7 @@
                                 $countyContainer.val(county);
                             }
                             if (state != null && country != null) {
-                                var stateText = state + ', ' + country;
+                                var stateText = state + ' (' + country + ')';
                                 var $stateContainer = $coordinateContainer.closest('.Site, .Subsite').find('.State select');
                                 var $stateOption = $stateContainer.find('option').filter(function () { return $(this).text() == stateText });
                                 if ($stateOption != null) {

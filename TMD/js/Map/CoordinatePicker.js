@@ -147,7 +147,8 @@
         });
         m_Markers.push(marker);
         m_EventListeners.push(google.maps.event.addListener(marker, 'click', function () {
-            m_Info.setContent(options.Info);
+            var initializedInfo = $(options.Info).InitializeUi();
+            m_Info.setContent(initializedInfo[0]);
             m_Info.open(m_Map, marker);
         }));
     };

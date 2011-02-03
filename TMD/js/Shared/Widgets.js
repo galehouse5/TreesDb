@@ -44,7 +44,7 @@
             $galleryContainer.find("*[rel=facebox]")
                 .not('.UiInitialized').addClass('UiInitialized').facebox();
 
-            $galleryContainer.find('a.delete').bind('click', function () {
+            $galleryContainer.find('a.Remove').bind('click', function () {
                 var $deleteAnchor = $(this);
                 $.ajax({ type: "POST", url: $deleteAnchor.attr('href'),
                     success: function (response) {
@@ -56,7 +56,7 @@
                 return false;
             });
 
-            $galleryContainer.find('a.add').each(function () {
+            $galleryContainer.find('a.Add').each(function () {
                 var $addAnchor = $(this);
                 upclick({
                     element: $addAnchor[0],
@@ -65,7 +65,7 @@
                     oncomplete: function (response) {
                         $galleryContainer.find('.LoadingPhoto').hide();
                         $galleryContainer.find('.ReadyToLoadPhoto').show();
-                        var $galleryContent = $(response).find('.gallery');
+                        var $galleryContent = $(response);
                         $galleryContainer.replaceWith($galleryContent);
                         $galleryContent.addClass('Initialized').PhotoGallery();
                     },
