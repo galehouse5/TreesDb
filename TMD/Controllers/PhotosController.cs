@@ -17,14 +17,14 @@ using TMD.Extensions;
 
 namespace TMD.Controllers
 {
-    public class PhotosController : ControllerBase
+    public partial class PhotosController : ControllerBase
     {
-        [HttpGet, OutputCache(CacheProfile = "Photos")]
-        public ActionResult View(int id, string size)
+        [ActionName("View"), HttpGet, OutputCache(CacheProfile = "Photos")]
+        public virtual ActionResult ViewPhoto(int id, PhotoSize size)
         {
             var photo = Repositories.Photos.FindById(id);
             if (!Repositories.Photos.FindAllReferencesByPhotoId(id).IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
-            using (Bitmap image = photo.Get(size.ParseEnum(EPhotoSize.Original)))
+            using (Bitmap image = photo.Get(size))
             {
                 Stream data = new MemoryStream();
                 image.Save(data, photo.ImageFormat);
@@ -34,7 +34,7 @@ namespace TMD.Controllers
         }
 
         [HttpPost, UnitOfWork]
-        public ActionResult Remove(IUnitOfWork uow, int id)
+        public virtual ActionResult Remove(IUnitOfWork uow, int id)
         {
             var reference = Repositories.Photos.FindReferenceById(id);
             if (!reference.IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
@@ -48,13 +48,13 @@ namespace TMD.Controllers
             return Json(new { Success = true });
         }
 
-        public ActionResult PhotoAdded(PhotoGalleryModel gallery)
+        public virtual ActionResult PhotoAdded(PhotoGalleryModel gallery)
         {
             return PartialView("EditPhotoGalleryPartial", gallery);
         }
 
         [HttpPost]
-        public ActionResult AddToImportTree(int id, int treeId, HttpPostedFileBase imageData)
+        public virtual ActionResult AddToImportTree(int id, int treeId, HttpPostedFileBase imageData)
         {
             using (var uow = UnitOfWork.Begin())
             {
@@ -72,14 +72,14 @@ namespace TMD.Controllers
                         uow.Persist();
                     }
                     else { tree.RemovePhoto(photo); }
-                    var photoGallery = Mapper.Map<TreeBase, PhotoGalleryModel>(tree);
+                    var photoGallery = Mapper.Map<TreeBase, ImportTreePhotoGalleryModel>(tree);
                     return PhotoAdded(photoGallery);
                 }
             }
         }
 
         [HttpPost]
-        public ActionResult AddToImportSubsite(int id, int subsiteId, HttpPostedFileBase imageData)
+        public virtual ActionResult AddToImportSubsite(int id, int subsiteId, HttpPostedFileBase imageData)
         {
             using (var uow = UnitOfWork.Begin())
             {
@@ -97,7 +97,7 @@ namespace TMD.Controllers
                         uow.Persist();
                     }
                     else { subsite.RemovePhoto(photo); }
-                    var photoGallery = Mapper.Map<Subsite, PhotoGalleryModel>(subsite);
+                    var photoGallery = Mapper.Map<Subsite, ImportSubsitePhotoGalleryModel>(subsite);
                     return PhotoAdded(photoGallery);
                 }
             }

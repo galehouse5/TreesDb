@@ -39,7 +39,7 @@ namespace TMD.Controllers
             }
             else
             {
-                ((ControllerBase)filterContext.Controller).Session.DefaultReturnUrl = ((ControllerBase)filterContext.Controller).Request.RawUrl;
+                ((ControllerBase)filterContext.Controller).Session.SetDefaultReturnUrl(((ControllerBase)filterContext.Controller).Request.RawUrl);
                 filterContext.Result = new RedirectResult("/Account/Logon");
             }
         }
@@ -48,10 +48,10 @@ namespace TMD.Controllers
     }
 
     [CheckBrowserCompatibilityFilter]
-    public class AccountController : ControllerBase
+    public partial class AccountController : ControllerBase
     {
         [ChildActionOnly]
-        public ActionResult AccountWidget()
+        public virtual ActionResult AccountWidget()
         {
             return PartialView(new AccountWidgetModel
             {
@@ -60,13 +60,13 @@ namespace TMD.Controllers
             });
         }
 
-        public ActionResult LogOn()
+        public virtual ActionResult LogOn()
         {
             return View(new AccountLogonModel { });
         }
 
         [HttpPost, RecaptchaControlMvc.CaptchaValidator]
-        public ActionResult Logon(AccountLogonModel model, bool captchaValid)
+        public virtual ActionResult Logon(AccountLogonModel model, bool captchaValid)
         {
             if (!ModelState.IsValid)
             {
@@ -96,35 +96,35 @@ namespace TMD.Controllers
                 // TODO: decouple from FormsAuthentication class so this controller is unit testable
                 FormsAuthentication.SetAuthCookie(user.Email, model.RememberMe);
                 Session.ClearRegardingUserSpecificData();
-                TempData.AccountMessage = string.Empty;
-                return Redirect(Session.DefaultReturnUrl);
+                TempData.SetAccountMessage(string.Empty);
+                return Redirect(Session.GetDefaultReturnUrl());
             }
         }
 
-        public ActionResult Logout()
+        public virtual ActionResult Logout()
         {
             AccountLogonModel model = new AccountLogonModel();
             // TODO: decouple from FormsAuthentication class so this controller is unit testable
             FormsAuthentication.SignOut();
             Session.ClearRegardingUserSpecificData();
-            TempData.AccountMessage = "You have logged out.";
-            return Redirect(Session.DefaultReturnUrl);
+            TempData.SetAccountMessage("You have logged out.");
+            return Redirect(Session.GetDefaultReturnUrl());
         }
 
-        public ActionResult Register()
+        public virtual ActionResult Register()
         {
             return View(new AccountRegistrationModel { });
         }
 
         [HttpPost, RecaptchaControlMvc.CaptchaValidator, UnitOfWork]
-        public ActionResult Register(IUnitOfWork uow, AccountRegistrationModel model, bool captchaValid)
+        public virtual ActionResult Register(IUnitOfWork uow, AccountRegistrationModel model, bool captchaValid)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
             var user = Model.Users.User.Create(model.Email, model.Password);
-            this.ValidateMappedModel<Model.Users.User, AccountRegistrationModel>(user, Tag.Screening, Tag.Persistence);
+            this.ValidateMappedModel<Model.Users.User, AccountRegistrationModel>(user, ValidationTag.Screening, ValidationTag.Persistence);
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -158,7 +158,7 @@ namespace TMD.Controllers
         }
 
         [UnitOfWork]
-        public ActionResult CompleteRegistration(IUnitOfWork uow, string token)
+        public virtual ActionResult CompleteRegistration(IUnitOfWork uow, string token)
         {
             if (!string.IsNullOrEmpty(token))
             {
@@ -174,13 +174,13 @@ namespace TMD.Controllers
             return View(false);
         }
 
-        public ActionResult PasswordAssistance()
+        public virtual ActionResult PasswordAssistance()
         {
             return View(new AccountPasswordAssistanceModel { });
         }
 
         [HttpPost, RecaptchaControlMvc.CaptchaValidator, UnitOfWork]
-        public ActionResult PasswordAssistance(IUnitOfWork uow, AccountPasswordAssistanceModel model, bool captchaValid)
+        public virtual ActionResult PasswordAssistance(IUnitOfWork uow, AccountPasswordAssistanceModel model, bool captchaValid)
         {
             if (!ModelState.IsValid)
             {
@@ -208,7 +208,7 @@ namespace TMD.Controllers
             return View(model);
         }
 
-        public ActionResult CompletePasswordAssistance(string token)
+        public virtual ActionResult CompletePasswordAssistance(string token)
         {
             if (!string.IsNullOrEmpty(token))
             {
@@ -222,7 +222,7 @@ namespace TMD.Controllers
         }
 
         [HttpPost, UnitOfWork]
-        public ActionResult CompletePasswordAssistance(IUnitOfWork uow, CompleteAccountPasswordAssistanceModel model, string token)
+        public virtual ActionResult CompletePasswordAssistance(IUnitOfWork uow, CompleteAccountPasswordAssistanceModel model, string token)
         {
             if (!string.IsNullOrEmpty(token))
             {
@@ -235,7 +235,7 @@ namespace TMD.Controllers
                         return View(model);
                     }
                     user.ChangePasswordUsingPasswordAssistanceToken(token, model.Password);
-                    this.ValidateMappedModel<Model.Users.User, AccountRegistrationModel>(user, Tag.Screening, Tag.Persistence);
+                    this.ValidateMappedModel<Model.Users.User, AccountRegistrationModel>(user, ValidationTag.Screening, ValidationTag.Persistence);
                     if (!ModelState.IsValid)
                     {
                         return View(model);
@@ -248,13 +248,13 @@ namespace TMD.Controllers
         }
 
         [AuthorizeUser]
-        public ActionResult Edit()
+        public virtual ActionResult Edit()
         {
             return View(Mapper.Map<User, AccountEditModel>(User));
         }
 
         [HttpPost, AuthorizeUser, UnitOfWork]
-        public ActionResult Edit(IUnitOfWork uow, AccountEditModel model)
+        public virtual ActionResult Edit(IUnitOfWork uow, AccountEditModel model)
         {
             if (model.EditingPassword)
             {
@@ -268,14 +268,14 @@ namespace TMD.Controllers
                     return View(Mapper.Map<User, AccountEditModel>(User));
                 }
                 User.ChangePasswordUsingExistingPassword(model.Password.ExistingPassword, model.Password.NewPassword);
-                this.ValidateMappedModel<User, AccountEditModel>(User, Tag.Screening, Tag.Persistence);
+                this.ValidateMappedModel<User, AccountEditModel>(User, ValidationTag.Screening, ValidationTag.Persistence);
                 if (!ModelState.IsValid)
                 {
                     return View(Mapper.Map<User, AccountEditModel>(User));
                 }
                 uow.Persist();
-                TempData.AccountMessage = "Your password has been changed.";
-                return Redirect(Session.DefaultReturnUrl);
+                TempData.SetAccountMessage("Your password has been changed.");
+                return Redirect(Session.GetDefaultReturnUrl());
             }
             if (model.EditingDetails)
             {
@@ -284,14 +284,14 @@ namespace TMD.Controllers
                     return View(model);
                 }
                 Mapper.Map<AccountEditDetailsModel, User>(model.Details, User);
-                this.ValidateMappedModel<User, AccountEditModel>(User, Tag.Screening, Tag.Persistence);
+                this.ValidateMappedModel<User, AccountEditModel>(User, ValidationTag.Screening, ValidationTag.Persistence);
                 if (!ModelState.IsValid)
                 {
                     return View(model);
                 }
                 uow.Persist();
-                TempData.AccountMessage = "Your account has been saved.";
-                return Redirect(Session.DefaultReturnUrl);
+                TempData.SetAccountMessage("Your account has been saved.");
+                return Redirect(Session.GetDefaultReturnUrl());
             }
             throw new NotImplementedException();
         }

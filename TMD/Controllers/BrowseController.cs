@@ -5,13 +5,15 @@ using System.Web;
 using System.Web.Mvc;
 using TMD.Models;
 using TMD.Model;
+using AutoMapper;
+using TMD.Model.Trees;
 
 namespace TMD.Controllers
 {
-    public class BrowseController : ControllerBase
+    public partial class BrowseController : ControllerBase
     {
         [ChildActionOnly]
-        public ActionResult MenuWidget(bool isSelected)
+        public virtual ActionResult MenuWidget(bool isSelected)
         {
             return PartialView(new BrowseMenuWidgetModel
             {
@@ -19,27 +21,29 @@ namespace TMD.Controllers
             });
         }
 
-        public ActionResult Index()
+        public virtual ActionResult Index()
         {
             return View();
         }
 
         [DefaultReturnUrl]
-        public ActionResult TreeDetails(int id)
+        public virtual ActionResult TreeDetails(int id)
         {
             var tree = Repositories.Trees.FindById(id);
             var site = Repositories.Sites.FindSiteContainingTree(id);
-            return View(new TreeDetailsModel
-            {
-                Site = site,
-                Subsite = (from subsite in site.Subsites where subsite.Trees.Contains(tree) select subsite).First(),
-                Tree = tree,
-                Measurements = (from measurement in tree.Measurements orderby measurement.Measured descending select measurement).ToList(),
-                DatedPhotos = (from measurement in tree.Measurements 
-                               orderby measurement.Measured descending 
-                               select new DatedPhotosModel { Date = measurement.Measured, Photographers = measurement.Measurers, Photos = measurement.Photos })
-                               .ToList()
-            });
+            return View(Mapper.Map<Tree, BrowseTreeModel>(tree));
+        }
+
+        [DefaultReturnUrl]
+        public virtual ActionResult SubsiteDetails(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        [DefaultReturnUrl]
+        public virtual ActionResult SiteDetails(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

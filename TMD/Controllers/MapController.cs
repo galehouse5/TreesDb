@@ -8,20 +8,22 @@ using TMD.Model.Imports;
 using TMD.Model.Photos;
 using TMD.Model;
 using TMD.Model.Extensions;
+using TMD.Extensions;
+using AutoMapper;
 
 namespace TMD.Controllers
 {
     [CheckBrowserCompatibilityFilter]
-    public class MapController : ControllerBase
+    public partial class MapController : ControllerBase
     {
         [ChildActionOnly]
-        public ActionResult GoogleMapsScript()
+        public virtual ActionResult InitializeGoogleMaps()
         {
             return PartialView((object)WebApplicationRegistry.Settings.GoogleApiKey);
         }
 
         [ChildActionOnly]
-        public ActionResult MenuWidget(bool isSelected)
+        public virtual ActionResult MenuWidget(bool isSelected)
         {
             return PartialView(new MapMenuWidgetModel
             {
@@ -30,16 +32,16 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl]
-        public ActionResult Index()
+        public virtual ActionResult Index()
         {
-            ViewData.JavascriptRequired = true;
+            ViewData.SetJavascriptRequired(true);
             var sites = Repositories.Sites.ListAll();
             return View(CoordinateBounds.Create(from site in sites 
                                                 where site.TreesWithSpecifiedCoordinatesCount > 0 
                                                 select site.Coordinates));
         }
 
-        public ActionResult ViewMarkers()
+        public virtual ActionResult ViewMarkers()
         {
             var sites = Repositories.Sites.ListAllForMap();
             var renderedMarkers = new List<object>();
@@ -71,9 +73,9 @@ namespace TMD.Controllers
                     Longitude = site.CalculatedCoordinates.Longitude.TotalDegrees
                 },
                 Icon = site.Subsites.Count == 1 && site.Subsites[0].Photos.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = site.Subsites[0].Photos[0].PhotoId, size = EPhotoSize.MiniSquare })
+                    Url.Action("View", "Photos", new { id = site.Subsites[0].Photos[0].PhotoId, size = PhotoSize.MiniSquare })
                     : "/images/icons/Site32.png",
-                Info = RenderPartialViewToString("SiteMarkerInfoPartial", site),
+                Info = RenderPartialViewToString("SiteMarkerInfoPartial", Mapper.Map<Model.Sites.Site, MapSiteMarkerModel>(site)),
                 MinZoom = 0, MaxZoom = site.ContainsSingleSubsite ? 13 : 11
             };
         }
@@ -89,9 +91,9 @@ namespace TMD.Controllers
                     Longitude = subsite.CalculatedCoordinates.Longitude.TotalDegrees
                 },
                 Icon = subsite.Photos.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = subsite.Photos[0].PhotoId, size = EPhotoSize.MiniSquare })
+                    Url.Action("View", "Photos", new { id = subsite.Photos[0].PhotoId, size = PhotoSize.MiniSquare })
                     : "/images/icons/Subsite32.png",
-                Info = RenderPartialViewToString("SubsiteMarkerInfoPartial", subsite),
+                Info = RenderPartialViewToString("SubsiteMarkerInfoPartial", Mapper.Map<Model.Sites.Subsite, MapSubsiteMarkerModel>(subsite)),
                 MinZoom = 12, MaxZoom = 13
             };
         }
@@ -107,9 +109,9 @@ namespace TMD.Controllers
                     Longitude = tree.CalculatedCoordinates.Longitude.TotalDegrees
                 },
                 Icon = tree.Photos.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = tree.Photos[0].PhotoId, size = EPhotoSize.MiniSquare })
+                    Url.Action("View", "Photos", new { id = tree.Photos[0].PhotoId, size = PhotoSize.MiniSquare })
                     : "/images/icons/SingleTrunkTree32.png",
-                Info = RenderPartialViewToString("TreeMarkerInfoPartial", tree),
+                Info = RenderPartialViewToString("TreeMarkerInfoPartial", Mapper.Map<Model.Trees.Tree, MapTreeMarkerModel>(tree)),
                 MinZoom = 14, MaxZoom = 30
             };
         }
@@ -126,9 +128,9 @@ namespace TMD.Controllers
                         Longitude = site.Subsites[0].Coordinates.Longitude.TotalDegrees
                     },
                     Icon = site.Subsites[0].Photos.Count > 0 ?
-                        Url.Action("View", "Photos", new { id = site.Subsites[0].Photos[0].PhotoId, size = EPhotoSize.MiniSquare })
+                        Url.Action("View", "Photos", new { id = site.Subsites[0].Photos[0].PhotoId, size = PhotoSize.MiniSquare })
                         : "/images/icons/Site32.png",
-                    Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", site.Subsites[0])
+                    Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", Mapper.Map<Subsite, MapImportSubsiteMarkerModel>(site.Subsites[0]))
                 };
             }
             return new
@@ -139,7 +141,7 @@ namespace TMD.Controllers
                     Longitude = site.Coordinates.Longitude.TotalDegrees
                 },
                 Icon = "/images/icons/Site32.png",
-                Info = RenderPartialViewToString("ImportSiteMarkerInfoPartial", site)
+                Info = RenderPartialViewToString("ImportSiteMarkerInfoPartial", Mapper.Map<Site, MapImportSiteMarkerModel>(site))
             };
         }
 
@@ -153,9 +155,9 @@ namespace TMD.Controllers
                     Longitude = subsite.Coordinates.Longitude.TotalDegrees
                 },
                 Icon = subsite.Photos.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = subsite.Photos[0].PhotoId, size = EPhotoSize.MiniSquare }) 
+                    Url.Action("View", "Photos", new { id = subsite.Photos[0].PhotoId, size = PhotoSize.MiniSquare }) 
                     : "/images/icons/Subsite32.png",
-                Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", subsite)
+                Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", Mapper.Map<Subsite, MapImportSubsiteMarkerModel>(subsite))
             };
         }
 
@@ -169,13 +171,13 @@ namespace TMD.Controllers
                     Longitude = tree.Coordinates.Longitude.TotalDegrees
                 },
                 Icon = tree.Photos.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = tree.Photos[0].PhotoId, size = EPhotoSize.MiniSquare }) 
+                    Url.Action("View", "Photos", new { id = tree.Photos[0].PhotoId, size = PhotoSize.MiniSquare }) 
                     : "/images/icons/SingleTrunkTree32.png",
-                Info = RenderPartialViewToString("ImportTreeMarkerInfoPartial", tree)
+                Info = RenderPartialViewToString("ImportTreeMarkerInfoPartial", Mapper.Map<TreeBase, MapImportTreeMarkerModel>(tree))
             };
         }
 
-        public ActionResult ViewMarkersForImportSite(int id, int siteId)
+        public virtual ActionResult ViewMarkersForImportSite(int id, int siteId)
         {
             var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
@@ -205,7 +207,7 @@ namespace TMD.Controllers
             return Json(new { Markers = renderedMarkers.ToArray() }, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult ViewMarkersForImportSubsite(int id, int subsiteId)
+        public virtual ActionResult ViewMarkersForImportSubsite(int id, int subsiteId)
         {
             var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
@@ -235,7 +237,7 @@ namespace TMD.Controllers
             return Json(new { Markers = renderedMarkers.ToArray() }, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult ViewMarkersForImportTree(int id, int treeId)
+        public virtual ActionResult ViewMarkersForImportTree(int id, int treeId)
         {
             var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }

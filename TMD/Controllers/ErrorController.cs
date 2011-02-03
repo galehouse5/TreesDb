@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Net;
 using System.Web.Routing;
+using TMD.Extensions;
 
 namespace TMD.Controllers
 {
@@ -88,7 +89,7 @@ namespace TMD.Controllers
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (!false.Equals(((ControllerBase)filterContext.Controller).Session.PerformBrowserCheck))
+            if (!false.Equals(((ControllerBase)filterContext.Controller).Session.GetPerformBrowserCheck()))
             {
                 HttpBrowserCapabilitiesBase browser = ((Controller)filterContext.Controller).Request.Browser;
                 bool isCompatible = false;
@@ -109,34 +110,34 @@ namespace TMD.Controllers
         }
     }
 
-    public class ErrorController : ControllerBase
+    public partial class ErrorController : ControllerBase
     {
-        public ActionResult NotFound()
+        public virtual ActionResult NotFound()
         {
             Response.StatusCode = (int)HttpStatusCode.NotFound;
             return View();
         }
 
-        public ActionResult ServerError()
+        public virtual ActionResult ServerError()
         {
             Response.StatusCode = (int)HttpStatusCode.InternalServerError;
             return View();
         }
 
-        public ActionResult IncompatibleBrowser()
+        public virtual ActionResult IncompatibleBrowser()
         {
             Response.StatusCode = (int)HttpStatusCode.BadRequest;
             return View();
         }
 
         [HttpPost]
-        public ActionResult BypassBrowserCheck(string ReturnUrl)
+        public virtual ActionResult BypassBrowserCheck(string ReturnUrl)
         {
-            Session.PerformBrowserCheck = false;
+            Session.SetPerformBrowserCheck(false);
             return Redirect(ReturnUrl);
         }
 
-        public ActionResult Unauthorized()
+        public virtual ActionResult Unauthorized()
         {
             Response.StatusCode = (int)HttpStatusCode.Forbidden;
             return View();

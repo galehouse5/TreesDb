@@ -11,6 +11,7 @@ using System.IO;
 using System.Data;
 using TMD.Model;
 using TMD.Model.Logging;
+using TMD.Extensions;
 
 namespace TMD
 {
@@ -19,7 +20,7 @@ namespace TMD
         public override void OnResultExecuted(ResultExecutedContext filterContext)
         {
             base.OnResultExecuted(filterContext);
-            ((ControllerBase)filterContext.Controller).Session.DefaultReturnUrl = ((ControllerBase)filterContext.Controller).Request.RawUrl;
+            ((ControllerBase)filterContext.Controller).Session.SetDefaultReturnUrl(((ControllerBase)filterContext.Controller).Request.RawUrl);
         }
     }
 
@@ -86,45 +87,6 @@ namespace TMD
         public new User User
         {
             get { return (WebUser)base.User; }
-        }
-
-        private Session m_Session;
-        public new Session Session
-        {
-            get 
-            { 
-                if (m_Session == null)
-                {
-                    m_Session = new Session(base.Session);
-                }
-                return m_Session; 
-            }
-        }
-
-        private TempData m_TempData;
-        public new TempData TempData
-        {
-            get 
-            {
-                if (m_TempData == null)
-                {
-                    m_TempData = new TempData(base.TempData);
-                }
-                return m_TempData; 
-            }
-        }
-
-        private ViewData m_ViewData;
-        public new ViewData ViewData
-        {
-            get
-            {
-                if (m_ViewData == null)
-                {
-                    m_ViewData = new ViewData(base.ViewData);
-                }
-                return m_ViewData;
-            }
         }
 
         protected string RenderPartialViewToString()

@@ -9,10 +9,10 @@ using TMD.Model.Users;
 namespace TMD.Controllers
 {
     [CheckBrowserCompatibilityFilter]
-    public class ExportController : ControllerBase
+    public partial class ExportController : ControllerBase
     {
         [ChildActionOnly]
-        public ActionResult MenuWidget(bool isSelected)
+        public virtual ActionResult MenuWidget(bool isSelected)
         {
             return PartialView(new ExportMenuWidgetModel
             {
@@ -22,7 +22,7 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Export)]
-        public ActionResult Index()
+        public virtual ActionResult Index()
         {
             return View();
         }

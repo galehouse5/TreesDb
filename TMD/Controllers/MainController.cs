@@ -9,10 +9,10 @@ using TMD.Models;
 namespace TMD.Controllers
 {
     [CheckBrowserCompatibilityFilter]
-    public class MainController : ControllerBase
+    public partial class MainController : ControllerBase
     {
         [ChildActionOnly]
-        public ActionResult MenuWidget(bool isSelected)
+        public virtual ActionResult MenuWidget(bool isSelected)
         {
             return PartialView(new MainMenuWidgetModel
             {
@@ -22,7 +22,7 @@ namespace TMD.Controllers
 
         [DefaultReturnUrl]
         [HttpGet]
-        public ActionResult Index()
+        public virtual ActionResult Index()
         {
             return View();
         }

@@ -15,9 +15,9 @@ using TMD.Binders;
 
 namespace TMD.Controllers
 {
-    public class TreesController : ControllerBase
+    public partial class TreesController : ControllerBase
     {
-        public ActionResult FindKnownSpeciesWithSimilarCommonName(string term, int results = 5)
+        public virtual ActionResult FindKnownSpeciesWithSimilarCommonName(string term, int results = 5)
         {
             var trees = Repositories.Trees.FindKnownSpeciesBySimilarCommonName(term, results);
             return Json(from tree in trees
@@ -30,7 +30,7 @@ namespace TMD.Controllers
                         JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult FindKnownSpeciesWithSimilarScientificName(string term, int results = 5)
+        public virtual ActionResult FindKnownSpeciesWithSimilarScientificName(string term, int results = 5)
         {
             var trees = Repositories.Trees.FindKnownSpeciesBySimilarScientificName(term, results);
             return Json(from tree in trees
