@@ -1,0 +1,26 @@
+﻿@model Object
+@if (ViewData.TemplateInfo.TemplateDepth > 1) {
+    @ViewData.ModelMetadata.SimpleDisplayText
+} else {
+    foreach (var property in ViewData.ModelMetadata.Properties.Where(pm => pm.ShowForEdit && !ViewData.TemplateInfo.Visited(pm))) {
+        if (property.HideSurroundingHtml) {
+           @Html.Editor(property.PropertyName)
+        } else {
+           <div class="field">
+               <label for="@ViewData.TemplateInfo.GetFullHtmlFieldId(property.PropertyName)">
+                   @(property.DisplayName ?? property.PropertyName)
+                   @if (property.IsRequired) {
+                       <em class="required">*</em>
+                   }
+               </label>
+               <div><span class="input">
+                   @Html.Editor(property.PropertyName)
+                   @Html.ValidationMessage(property.PropertyName)
+               </span></div>
+               @if (!string.IsNullOrEmpty(property.Description)) {
+                   <p class="field_help">@property.Description</p>
+               }
+           </div>
+        }
+    }
+}

@@ -1,0 +1,6 @@
+﻿@model TMD.Model.Elevation
+@if (!string.IsNullOrEmpty(ViewData.ModelMetadata.DisplayFormatString)) {
+    @Model.ToString(ViewData.ModelMetadata.DisplayFormatString.ParseEnum(ElevationFormat.Default))
+} else {
+    @Model.ToString()
+}

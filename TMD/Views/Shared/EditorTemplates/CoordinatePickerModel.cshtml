@@ -1,0 +1,5 @@
+﻿@model TMD.Models.CoordinatePickerModel
+@Html.EditorFor(m => m.Coordinates)
+<button type="button" onclick="$(this).trigger('PickCoordinates', [ '@Url.Action(Model.MapLoaderActionName, Model.MapLoaderRouteValues)' ]);">
+    <img src="@Url.VersionedContent(Links.images.icons.Map_png)" alt="Coordinate picker" />
+</button>
