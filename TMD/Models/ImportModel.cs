@@ -11,6 +11,7 @@ using TMD.Model;
 using TMD.Model.Locations;
 using System.Diagnostics;
 using TMD.Model.Extensions;
+using TMD.Extensions;
 
 namespace TMD.Models
 {
@@ -21,27 +22,56 @@ namespace TMD.Models
         public Trip LatestTrip { get; set; }
     }
 
+    public class ImportTripSummaryModel
+    {
+        [ScaffoldColumn(false)]
+        public int Id { get; set; }
+        public string Name { get; set; }
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+        public virtual DateTime? Date { get; set; }
+        [DisplayName("Sites")]
+        public IList<string> Sites { get; set; }
+        public DateTime Created { get; set; }
+        public bool IsImported { get; set; }
+    }
+
     public class ImportTripModel
     {
         public int Id { get; set; }
-        [DisplayName("Trip name")] public string Name { get; set; }
-        [DisplayName("Trip date")] public DateTime? Date { get; set; }
-        [DisplayName("Measurer contact")] public string MeasurerContactInfo { get; set; }
-        [DisplayName("Make contact public")] public bool MakeMeasurerContactInfoPublic { get; set; }
-        [DisplayName("First measurer")] public string FirstMeasurer { get; set; }
-        [DisplayName("Second measurer")] public string SecondMeasurer { get; set; }
-        [DisplayName("Third measurer")] public string ThirdMeasurer { get; set; }
+        [DisplayName("Trip name"), Required]
+        public string Name { get; set; }
+        [DisplayName("Trip date"), Required, DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime? Date { get; set; }
+        [DisplayName("Measurer contact"), Required, DataType(DataType.MultilineText)]
+        public string MeasurerContactInfo { get; set; }
+        [DisplayName("Make contact public")]
+        public bool MakeMeasurerContactInfoPublic { get; set; }
+        [DisplayName("First measurer"), Display(Description = "Lastname, Firstname"), Required]
+        public string FirstMeasurer { get; set; }
+        [DisplayName("Second measurer"), Display(Description = "Lastname, Firstname")]
+        public string SecondMeasurer { get; set; }
+        [DisplayName("Third measurer"), Display(Description = "Lastname, Firstname")]
+        public string ThirdMeasurer { get; set; }
     }
+
+    public static class ImportInnerActionModelExtensions
+    {
+        public static MvcHtmlString ImportInnerActionButton(this HtmlHelper html, string text, ImportModelLevel level, int id, ImportModelAction action,
+            ButtonColor color = ButtonColor.Default, ButtonSize size = ButtonSize.Default)
+        {
+            return html.SubmitButton(text, "innerAction", string.Format("{0}.{1}.{2}", level, id, action), color, size);
+        }
+    }
+
+    public enum ImportModelLevel { Unknown, Trip, Site, Subsite, Tree }
+    public enum ImportModelAction { Unknown, Add, Save, Edit, Remove, AdvancedEdit }
 
     [DebuggerDisplay("{Action} {Level} with Id {Id}")]
     public class ImportInnerActionModel : IModelBinder
     {
-        public enum EntityLevel { Unknown, Trip, Site, Subsite, Tree }
-        public enum EntityAction { Unknown, Add, Save, Edit, Remove, AdvancedEdit }
-
         public int Id { get; private set; }
-        public EntityAction Action { get; private set; }
-        public EntityLevel Level { get; private set; }
+        public ImportModelAction Action { get; private set; }
+        public ImportModelLevel Level { get; private set; }
 
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
@@ -49,13 +79,13 @@ namespace TMD.Models
             string[] parts = expression.Split('.');
             return new ImportInnerActionModel
             {
-                Level = parts[0].ParseEnum(EntityLevel.Unknown),
+                Level = parts[0].ParseEnum(ImportModelLevel.Unknown),
                 Id = Convert.ToInt32(parts[1]),
-                Action = parts[2].ParseEnum(EntityAction.Unknown)
+                Action = parts[2].ParseEnum(ImportModelAction.Unknown)
             };
         }
 
-        public bool Equals(EntityLevel level, EntityAction action)
+        public bool Equals(ImportModelLevel level, ImportModelAction action)
         {
             return this.Level == level && this.Action == action;
         }
@@ -96,38 +126,22 @@ namespace TMD.Models
         public bool IsEditing { get; set; }
         public bool IsSaveableAndRemovable { get; set; }
 
-        private string m_Name;
-        public string Name 
-        {
-            get { return HasSingleSubsite ? Subsites[0].Name : m_Name; }
-            set { m_Name = value; }
-        }
-
-        private CoordinatePickerModel m_Coordinates;
-        public CoordinatePickerModel Coordinates 
-        {
-            get { return HasSingleSubsite ? Subsites[0].Coordinates : m_Coordinates; }
-            set { m_Coordinates = value; }
-        }
-
-        private string m_Comments;
-        public string Comments 
-        {
-            get { return HasSingleSubsite ? Subsites[0].Comments : m_Comments; }
-            set { m_Comments = value; }
-        }
+        [Required]
+        public string Name { get; set; }
+        [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates")]
+        public ImportSiteCoordinatePickerModel Coordinates { get; set; }
+        public string Comments { get; set; }
 
         public IList<ImportSubsiteModel> Subsites { get; set; }
-        public bool HasSingleSubsite { get { return Subsites != null && Subsites.Count == 1; } }
 
         public ImportSubsiteModel AddSubsite()
         {
             var subsite = new ImportSubsiteModel();
             if (Subsites.Count == 1)
             {
-                m_Name = Name;
-                m_Coordinates = Coordinates;
-                m_Comments = Comments;
+                this.Name = Subsites[0].Name;
+                this.Coordinates.Coordinates = Subsites[0].Coordinates.Coordinates;
+                this.Comments = Subsites[0].Comments;
             }
             Subsites.Add(subsite);
             return subsite;
@@ -147,14 +161,23 @@ namespace TMD.Models
     public class ImportSubsiteModel
     {
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
-        public CoordinatePickerModel Coordinates { get; set; }
+        [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates")]
+        public ImportSubsiteCoordinatePickerModel Coordinates { get; set; }
+        [Required, Classification("State")]
         public State State { get; set; }
+        [Required, Classification("County")]
         public string County { get; set; }
-        [DisplayName("Ownership type")] public string OwnershipType { get; set; }
-        [DisplayName("Ownership contact")] public string OwnershipContactInfo { get; set; }
-        [DisplayName("Make contact public")] public bool MakeOwnershipContactInfoPublic { get; set; }
+        [DisplayName("Ownership type"), Required]
+        public string OwnershipType { get; set; }
+        [DisplayName("Ownership contact"), DataType(DataType.MultilineText)]
+        public string OwnershipContactInfo { get; set; }
+        [DisplayName("Make contact public")]
+        public bool MakeOwnershipContactInfoPublic { get; set; }
+        [DataType(DataType.MultilineText)]
         public string Comments { get; set; }
+        [Classification("RequiresJavascript")]
         public PhotoGalleryModel Photos { get; set; }
     }
 
@@ -190,16 +213,8 @@ namespace TMD.Models
     public class ImportSiteTreesModel
     {
         public int Id { get; set; }
-
-        private string m_Name;
-        public string Name
-        {
-            get { return HasSingleSubsite ? Subsites[0].Name : m_Name; }
-            set { m_Name = value; }
-        }
-
+        public string Name { get; set; }
         public IList<ImportSubsiteTreesModel> Subsites { get; set; }
-        public bool HasSingleSubsite { get { return Subsites != null && Subsites.Count == 1; } }
 
         public ImportTreeModel FindTreeById(int id)
         {
@@ -246,23 +261,24 @@ namespace TMD.Models
 
     public class ImportTreeModel
     {
-        public ImportTreeModel()
-        {
-            Photos = new PhotoGalleryModel();
-        }
-
         public int Id { get; set; }
         public bool IsEditing { get; set; }
         public EImportTreeModelEditMode EditMode { get; set; }
         public bool IsRemovable { get; set; }
-        [DisplayName("Common name")] public string CommonName { get; set; }
-        [DisplayName("Scientific name")] public string ScientificName { get; set; }
-        public CoordinatePickerModel Coordinates { get; set; }
+        [DisplayName("Common name"), Required, Classification("CommonName")]
+        public string CommonName { get; set; }
+        [DisplayName("Scientific name"), Required, Classification("ScientificName")]
+        public string ScientificName { get; set; }
+        [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates")]
+        public ImportTreeCoordinatePickerModel Coordinates { get; set; }
         public Distance Height { get; set; }
-        [DisplayName("Measurement method")] public TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; } 
+        [DisplayName("Measurement method"), UIHint("Enum")]
+        public TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
         public Distance Girth { get; set; }
-        [DisplayName("Crown spread")] public Distance CrownSpread { get; set; }
-        [DisplayName("Comments")] public string GeneralComments { get; set; }
+        [DisplayName("Crown spread")]
+        public Distance CrownSpread { get; set; }
+        [DisplayName("Comments"), DataType(DataType.MultilineText)]
+        public string GeneralComments { get; set; }
         public Elevation Elevation { get; set; }
         public PhotoGalleryModel Photos { get; set; }
     }
@@ -270,12 +286,18 @@ namespace TMD.Models
     public class ImportFinishedTripModel
     {
         public int Id { get; set; }
-        [DisplayName("Trip name")] public string Name { get; set; }
-        [DisplayName("Trip date")] public DateTime? Date { get; set; }
-        [DisplayName("Measurer contact")] public string MeasurerContactInfo { get; set; }
-        [DisplayName("First measurer")] public string FirstMeasurer { get; set; }
-        [DisplayName("Second measurer")] public string SecondMeasurer { get; set; }
-        [DisplayName("Third measurer")] public string ThirdMeasurer { get; set; }
+        [DisplayName("Trip name")]
+        public string Name { get; set; }
+        [DisplayName("Date"), DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+        public DateTime? Date { get; set; }
+        [DisplayName("Measurer contact")]
+        public string MeasurerContactInfo { get; set; }
+        [DisplayName("First measurer")]
+        public string FirstMeasurer { get; set; }
+        [DisplayName("Second measurer")]
+        public string SecondMeasurer { get; set; }
+        [DisplayName("Third measurer")]
+        public string ThirdMeasurer { get; set; }
         public IList<ImportFinishedSiteModel> Sites { get; set; }
     }
 
@@ -283,7 +305,6 @@ namespace TMD.Models
     {
         public string Name { get; set; }
         public IList<ImportFinishedSubsiteModel> Subsites { get; set; }
-        public bool HasSingleSubsite { get { return Subsites != null && Subsites.Count == 1; } }
     }
 
     public class ImportFinishedSubsiteModel

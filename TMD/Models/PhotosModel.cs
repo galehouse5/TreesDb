@@ -6,50 +6,27 @@ using TMD.Model.Photos;
 
 namespace TMD.Models
 {
-    public class ImportTreePhotoGalleryAdderModel : PhotoGalleryAdderModel
+    public class ImportTreePhotoGalleryModel : PhotoGalleryModel
     {
         public int TripId { get; set; }
         public int TreeId { get; set; }
-        public override string ActionName { get { return "AddToImportTree"; } }
-        public override object RouteValues { get { return new { controller = "Photos", id = TripId, treeId = TreeId }; } }
+        public override string AddPhotoActionName { get { return "AddToImportTree"; } }
+        public override object AddPhotoRouteValues { get { return new { controller = "Photos", id = TripId, treeId = TreeId }; } }
     }
 
-    public class ImportSubsitePhotoGalleryAdderModel : PhotoGalleryAdderModel
+    public class ImportSubsitePhotoGalleryModel : PhotoGalleryModel
     {
         public int TripId { get; set; }
         public int SubsiteId { get; set; }
-        public override string ActionName { get { return "AddToImportSubsite"; } }
-        public override object RouteValues { get { return new { controller = "Photos", id = TripId, subsiteId = SubsiteId }; } }
+        public override string AddPhotoActionName { get { return "AddToImportSubsite"; } }
+        public override object AddPhotoRouteValues { get { return new { controller = "Photos", id = TripId, subsiteId = SubsiteId }; } }
     }
 
-    public abstract class PhotoGalleryAdderModel
+    public abstract class PhotoGalleryModel
     {
-        public abstract string ActionName { get; }
-        public abstract object RouteValues { get; }
-    }
-
-    public class PhotoGalleryModel
-    {
-        public PhotoGalleryAdderModel Adder { get; set; }
-        public bool HasAdder { get { return Adder != null; } }
-        public IList<PhotoModel> Photos { get; set; }
-        public bool HasPhotos { get { return Photos != null && Photos.Count() > 0; } }
-
-        public void RemoveLastPhoto()
-        {
-            Photos.RemoveAt(Photos.Count - 1);
-        }
-    }
-
-    public class PhotoModel
-    {
-        public PhotoModel()
-        {
-            Size = EPhotoSize.SquareThumbnail;
-        }
-
-        public int Id { get; set; }
-        public int PhotoId { get; set; }
-        public EPhotoSize Size { get; set; }
+        public int Count { get { return Photos.Count; } }
+        public IList<IPhoto> Photos { get; set; }
+        public abstract string AddPhotoActionName { get; }
+        public abstract object AddPhotoRouteValues { get; }
     }
 }

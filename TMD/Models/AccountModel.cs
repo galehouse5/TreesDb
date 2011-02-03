@@ -6,9 +6,9 @@ using System.ComponentModel;
 using TMD.Model.Users;
 using TMD.Model.Validation;
 using TMD.Model;
-using System.Text.RegularExpressions;
-using NHibernate.Validator.Constraints;
-using NHibernate.Validator.Engine;
+using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
+using TMD.Extensions;
 
 namespace TMD.Models
 {
@@ -22,49 +22,41 @@ namespace TMD.Models
 
     public class AccountLogonModel
     {
-        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email."), Length(100, Message = "Email must not exceed 100 characters.")]
+        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "You must enter an email."), StringLength(100, ErrorMessage = "Email must not exceed 100 characters."), Email]
+        [AdditionalMetadata("size", "50")]
         public string Email { get; set; }
 
-        [NotEmptyOrWhitesapce(Message = "You must enter a password."), Length(100, Message = "Password must not exceed 100 characters.")]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "You must enter a password."), StringLength(100, ErrorMessage = "Password must not exceed 100 characters.")]
         public string Password { get; set; }
 
-        [DisplayName("Remember me on this computer")] 
+        [DisplayName("Remember me on this computer")]
         public bool RememberMe { get; set; }
 
         [DisplayName("Prove you're human")] 
         public bool PerformHumanVerification { get; set; }
     }
 
-    [ContextMethod("ValidateEmailsAreSame"), ContextMethod("ValidatePasswordsAreSame")]
     public class AccountRegistrationModel
     {
-        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email."), Length(100, Message = "Email must not exceed 100 characters.")]
+        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "You must enter an email."), StringLength(100, ErrorMessage = "Email must not exceed 100 characters."), Email]
+        [Compare("ConfirmEmail", ErrorMessage = "Your emails do not match.")]
         public string Email { get; set; }
 
-        [DisplayName("Confirm")]
+        [DataType(DataType.EmailAddress), DisplayName("Confirm")]
+        [Required(ErrorMessage = "You must confirm your email.")]
         public string ConfirmEmail { get; set; }
 
-        protected void ValidateEmailsAreSame(IConstraintValidatorContext context)
-        {
-            if (!string.IsNullOrWhiteSpace(Email) && !string.Equals(Email, ConfirmEmail, StringComparison.OrdinalIgnoreCase))
-            {
-                context.AddInvalid<AccountRegistrationModel, string>("Your emails do not match.", m => m.ConfirmEmail);
-            }
-        }
-
-        [NotEmptyOrWhitesapce(Message = "You must enter a password.")]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "You must enter a password."), StringLength(100, ErrorMessage = "Password must not exceed 100 characters.")]
+        [Compare("ConfirmPassword", ErrorMessage = "Your passwords do not match.")]
         public string Password { get; set; }
 
-        [DisplayName("Confirm")]
+        [DataType(DataType.Password), DisplayName("Confirm")]
+        [Required(ErrorMessage = "You must confirm your password.")]
         public string ConfirmPassword { get; set; }
-
-        protected void ValidatePasswordsAreSame(IConstraintValidatorContext context)
-        {
-            if (!string.IsNullOrWhiteSpace(Password) && !string.Equals(Password, ConfirmPassword, StringComparison.OrdinalIgnoreCase))
-            {
-                context.AddInvalid<AccountRegistrationModel, string>("Your passwords do not match.", m => m.ConfirmPassword);
-            }
-        }
 
         [DisplayName("Prove you're human")] 
         public bool PerformHumanVerification { get; set; }
@@ -72,22 +64,16 @@ namespace TMD.Models
         public bool RegistrationComplete { get; set; }
     }
 
-    [ContextMethod("ValidateEmailsAreSame")]
     public class AccountPasswordAssistanceModel
     {
-        [NotEmptyOrWhitesapce(Message = "You must enter an email."), Email(Message = "You must enter a valid email."), Length(100, Message = "Email must not exceed 100 characters.")]
+        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "You must enter an email."), StringLength(100, ErrorMessage = "Email must not exceed 100 characters."), Email]
+        [Compare("ConfirmEmail", ErrorMessage = "Your emails do not match.")]
         public string Email { get; set; }
 
-        [DisplayName("Confirm")]
+        [DataType(DataType.EmailAddress), DisplayName("Confirm")]
+        [Required(ErrorMessage = "You must confirm your email.")]
         public string ConfirmEmail { get; set; }
-
-        protected void ValidateEmailsAreSame(IConstraintValidatorContext context)
-        {
-            if (!string.IsNullOrWhiteSpace(Email) && !string.Equals(Email, ConfirmEmail, StringComparison.OrdinalIgnoreCase))
-            {
-                context.AddInvalid<AccountRegistrationModel, string>("Your emails do not match.", m => m.ConfirmEmail);
-            }
-        }
 
         [DisplayName("Prove you're human")]
         public bool PerformHumanVerification { get; set; }
@@ -95,29 +81,24 @@ namespace TMD.Models
         public bool AssistanceComplete { get; set; }
     }
 
-    [ContextMethod("ValidatePasswordsAreSame")]
     public class CompleteAccountPasswordAssistanceModel
     {
         public bool CanCompletePasswordAssistance { get; set; }
         public bool AssistanceComplete { get; set; }
 
-        [NotEmptyOrWhitesapce(Message = "You must enter a password."), Length(100, Message = "Password must not exceed 100 characters.")]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "You must enter a password."), StringLength(100, ErrorMessage = "Password must not exceed 100 characters.")]
+        [Compare("ConfirmPassword", ErrorMessage = "Your passwords do not match.")]
         public string Password { get; set; }
 
-        [DisplayName("Confirm")]
+        [DataType(DataType.Password), DisplayName("Confirm")]
+        [Required(ErrorMessage = "You must confirm your password.")]
         public string ConfirmPassword { get; set; }
-
-        protected void ValidatePasswordsAreSame(IConstraintValidatorContext context)
-        {
-            if (!string.IsNullOrWhiteSpace(Password) && !string.Equals(Password, ConfirmPassword, StringComparison.OrdinalIgnoreCase))
-            {
-                context.AddInvalid<AccountRegistrationModel, string>("Your passwords do not match.", m => m.ConfirmPassword);
-            }
-        }
     }
 
     public class AccountEditModel
     {
+        [DataType(DataType.EmailAddress), ReadOnly(true)]
         public string Email { get; set; }
         public AccountEditDetailsModel Details { get; set; }
         public AccountEditPasswordModel Password { get; set; }
@@ -127,30 +108,24 @@ namespace TMD.Models
 
     public class AccountEditDetailsModel
     {
-        [Length(100, Message = "Name must not exceed 100 characters."), Pattern(".+,.+", Message="Name must be in Lastname, Firstname format.")]
+        [Display(Description = "Lastname, Firstname")]
+        [StringLength(100, ErrorMessage = "Name must not exceed 100 characters."), RegularExpression(".+,.+", ErrorMessage = "Name must be in Lastname, Firstname format.")]
         public string Name { get; set; }
     }
 
-    [ContextMethod("ValidatePasswordsAreSame")]
     public class AccountEditPasswordModel
     {
-        [DisplayName("Existing password")]
-        [NotEmptyOrWhitesapce(Message = "You must enter a password."), Length(100, Message = "Password must not exceed 100 characters.")]
+        [DataType(DataType.Password), DisplayName("Existing password")]
+        [Required(ErrorMessage = "You must enter a password."), StringLength(100, ErrorMessage = "Password must not exceed 100 characters.")]
         public string ExistingPassword { get; set; }
 
-        [DisplayName("New password")]
-        [NotEmptyOrWhitesapce(Message = "You must enter a password."), Length(100, Message = "Password must not exceed 100 characters.")]
+        [DataType(DataType.Password), DisplayName("New password")]
+        [Required(ErrorMessage = "You must enter a password."), StringLength(100, ErrorMessage = "Password must not exceed 100 characters.")]
+        [Compare("ConfirmPassword", ErrorMessage = "Your passwords do not match.")]
         public string NewPassword { get; set; }
 
-        [DisplayName("Confirm")]
+        [DataType(DataType.Password), DisplayName("Confirm")]
+        [Required(ErrorMessage = "You must confirm your new password.")]
         public string ConfirmPassword { get; set; }
-
-        protected void ValidatePasswordsAreSame(IConstraintValidatorContext context)
-        {
-            if (!string.IsNullOrWhiteSpace(NewPassword) && !string.Equals(NewPassword, ConfirmPassword, StringComparison.OrdinalIgnoreCase))
-            {
-                context.AddInvalid<AccountRegistrationModel, string>("Your new passwords do not match.", m => m.ConfirmPassword);
-            }
-        }
     }
 }
