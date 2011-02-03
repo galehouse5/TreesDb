@@ -25,13 +25,35 @@ namespace TMD.Binders
             model.Sites.Where(siteModel => siteModel.IsEditing).ForEach(siteModel =>
                 {
                     var site = trip.FindSiteById(siteModel.Id);
-                    siteModel.Coordinates.MapLoader = new ImportSiteCoordinatePickerMapLoaderModel { SiteId = site.Id, TripId = trip.Id };
+                    if (siteModel.Coordinates == null) 
+                    {
+                        siteModel.Coordinates = Mapper.Map<Site, ImportSiteCoordinatePickerModel>(site);
+                    } 
+                    else 
+                    {
+                        siteModel.Coordinates.SiteId = site.Id;
+                        siteModel.Coordinates.TripId = trip.Id;
+                    }
                     siteModel.Subsites.ForEach(subsiteModel =>
                         {
                             var subsite = site.FindSubsiteById(subsiteModel.Id);
-                            subsiteModel.Photos = Mapper.Map<Subsite, PhotoGalleryModel>(subsite);
-                            subsiteModel.Coordinates.MapLoader = new ImportSubsiteCoordinatePickerMapLoaderModel { SubsiteId = subsite.Id, TripId = trip.Id };
+                            subsiteModel.Photos = Mapper.Map<Subsite, ImportSubsitePhotoGalleryModel>(subsite);
+                            if (subsiteModel.Coordinates == null) 
+                            {
+                                subsiteModel.Coordinates = Mapper.Map<Subsite, ImportSubsiteCoordinatePickerModel>(subsite);
+                            } 
+                            else 
+                            {
+                                subsiteModel.Coordinates.SubsiteId = subsite.Id;
+                                subsiteModel.Coordinates.TripId = trip.Id;
+                            }
                         });
+                    if (siteModel.Subsites.Count == 1)
+                    {
+                        siteModel.Name = siteModel.Subsites[0].Name;
+                        siteModel.Comments = siteModel.Subsites[0].Comments;
+                        siteModel.Coordinates.Coordinates = siteModel.Subsites[0].Coordinates.Coordinates;
+                    }
                 });
             return model;
         }
@@ -59,8 +81,16 @@ namespace TMD.Binders
                             subsiteModel.Trees.Where(treeModel => treeModel.IsEditing).ForEach(treeModel =>
                                 {
                                     var tree = subsite.FindTreeById(treeModel.Id);
-                                    treeModel.Photos = Mapper.Map<TreeBase, PhotoGalleryModel>(tree);
-                                    treeModel.Coordinates.MapLoader = new ImportTreeCoordinatePickerMapLoaderModel { TreeId = tree.Id, TripId = trip.Id };
+                                    treeModel.Photos = Mapper.Map<TreeBase, ImportTreePhotoGalleryModel>(tree);
+                                    if (treeModel.Coordinates == null)
+                                    {
+                                        treeModel.Coordinates = Mapper.Map<TreeBase, ImportTreeCoordinatePickerModel>(tree);
+                                    }
+                                    else
+                                    {
+                                        treeModel.Coordinates.TreeId = tree.Id;
+                                        treeModel.Coordinates.TripId = trip.Id;
+                                    }
                                 });
                         });
                 });
