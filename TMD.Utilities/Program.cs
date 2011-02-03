@@ -73,7 +73,7 @@ namespace TMD.Utilities
             using (var uow = UnitOfWork.Begin())
             {
                 var validTrips = from trip in Repositories.Imports.ListAll()
-                                 where trip.IsValid(Tag.Screening, Tag.Finalization, Tag.Persistence) && trip.IsImported
+                                 where trip.IsValid(ValidationTag.Screening, ValidationTag.Finalization, ValidationTag.Persistence) && trip.IsImported
                                  select trip;
                 foreach (var trip in validTrips)
                 {

@@ -71,56 +71,56 @@ namespace TMD.UnitTests.Model
         [TestMethod]
         public void NormalizesOriginalSize()
         {
-            PhotoSizeBase size = new PhotoSizeFactory().Create(EPhotoSize.Original);
+            PhotoSizeBase size = new PhotoSizeFactory().Create(PhotoSize.Original);
             Assert.IsTrue("Original.jpg".GetPhoto().CompareByContent(size.Normalize("Original.jpg".GetPhoto())));
         }
 
         [TestMethod]
         public void NormalizesMediumSize()
         {
-            PhotoSizeBase size = new PhotoSizeFactory().Create(EPhotoSize.Medium);
+            PhotoSizeBase size = new PhotoSizeFactory().Create(PhotoSize.Medium);
             Assert.IsTrue("Medium.jpg".GetPhoto().CompareByContent(size.Normalize("Original.jpg".GetPhoto())));
         }
 
         [TestMethod]
         public void NormalizesSmallSize()
         {
-            PhotoSizeBase size = new PhotoSizeFactory().Create(EPhotoSize.Small);
+            PhotoSizeBase size = new PhotoSizeFactory().Create(PhotoSize.Small);
             Assert.IsTrue("Small.jpg".GetPhoto().CompareByContent(size.Normalize("Original.jpg".GetPhoto())));
         }
 
         [TestMethod]
         public void NormalizesThumbnailSize()
         {
-            PhotoSizeBase size = new PhotoSizeFactory().Create(EPhotoSize.Thumbnail);
+            PhotoSizeBase size = new PhotoSizeFactory().Create(PhotoSize.Thumbnail);
             Assert.IsTrue("Thumbnail.jpg".GetPhoto().CompareByContent(size.Normalize("Original.jpg".GetPhoto())));
         }
 
         [TestMethod]
         public void NormalizesSquareSize()
         {
-            PhotoSizeBase size = new PhotoSizeFactory().Create(EPhotoSize.Square);
+            PhotoSizeBase size = new PhotoSizeFactory().Create(PhotoSize.Square);
             Assert.IsTrue("Square.jpg".GetPhoto().CompareByContent(size.Normalize("Original.jpg".GetPhoto())));
         }
 
         [TestMethod]
         public void NormalizesMiniSquareSize()
         {
-            PhotoSizeBase size = new PhotoSizeFactory().Create(EPhotoSize.MiniSquare);
+            PhotoSizeBase size = new PhotoSizeFactory().Create(PhotoSize.MiniSquare);
             Assert.IsTrue("MiniSquare.jpg".GetPhoto().CompareByContent(size.Normalize("Original.jpg".GetPhoto())));
         }
 
         [TestMethod]
         public void NormalizesMapSquareSize()
         {
-            PhotoSizeBase size = new PhotoSizeFactory().Create(EPhotoSize.MapSquare);
+            PhotoSizeBase size = new PhotoSizeFactory().Create(PhotoSize.MapSquare);
             Assert.IsTrue("MapSquare.jpg".GetPhoto().CompareByContent(size.Normalize("Original.jpg".GetPhoto())));
         }
 
         [TestMethod]
         public void NormalizesMiniMapSquareSize()
         {
-            PhotoSizeBase size = new PhotoSizeFactory().Create(EPhotoSize.MiniMapSquare);
+            PhotoSizeBase size = new PhotoSizeFactory().Create(PhotoSize.MiniMapSquare);
             Assert.IsTrue("MiniMapSquare.jpg".GetPhoto().CompareByContent(size.Normalize("Original.jpg".GetPhoto())));
         }
     }
