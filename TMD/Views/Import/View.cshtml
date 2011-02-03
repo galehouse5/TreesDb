@@ -1,0 +1,15 @@
+﻿@model TMD.Models.ImportFinishedTripModel
+@{ ViewBag.Title = "Import View"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+
+@section Styles {
+    <link href="@Url.VersionedContent(Links.css.Import_css)" rel="Stylesheet" type="text/css" />
+}
+
+<div class="portlet x12">
+    <div class="portlet-header">
+        <h4>Viewing trip</h4>
+    </div>
+    <div class="portlet-content">
+        @Html.DisplayFor(m => m)
+    </div>
+</div>

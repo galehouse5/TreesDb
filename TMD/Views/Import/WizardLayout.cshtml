@@ -1,0 +1,24 @@
+﻿@{ Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+
+@section Styles {
+    <link href="@Url.VersionedContent(Links.css.Import_css)" rel="Stylesheet" type="text/css" />
+}
+
+@section Scripts { @RenderSection("Scripts", false) }
+
+<div class="portlet x2">
+    <div class="portlet-header">
+        <h4>Steps</h4>
+    </div>
+    <div class="portlet-content">
+        @RenderSection("Steps")
+    </div>
+</div>
+<div class="portlet x10">
+    <div class="portlet-header">
+        @RenderSection("StepHeader")
+    </div>
+    <div class="portlet-content">
+        @RenderBody()
+    </div>
+</div>

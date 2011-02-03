@@ -1,0 +1,20 @@
+﻿@model TMD.Models.MapImportSubsiteMarkerModel
+@using TMD.Model.Photos
+<table class="reports_table" style="width: 350px;">
+    <tr>
+        <td class="description" colspan="2"><strong>@Model.Name</strong></td>
+    </tr>
+    @Html.ReportDisplayFor(m => m.State)
+    @Html.ReportDisplayFor(m => m.County)
+    @Html.ReportDisplayFor(m => m.OwnershipType)
+    @if (Model.Photos.Count > 0) {
+        <tr>
+            <td class="description">Photos</td>
+            <td class="value">
+                @foreach (var photo in Model.Photos) {
+                    @Html.Photo(photo, PhotoSize.Square, PhotoSize.Medium);
+                }
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,55 @@
+﻿@model TMD.Models.AccountLogonModel
+@{ ViewBag.Title = "Logon"; Layout = "~/Views/Shared/LoginLayout.cshtml"; }
+
+@section Scripts {
+    <script src="@Url.VersionedContent(Links.js.jquery.jquery_1_4_4_min_js)" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () { $('input[type=text]:first').focus(); });
+    </script>
+}
+
+@using(Html.BeginForm(Mvc.Account.Logon(), FormMethod.Post, new { id = "login_form", name = "login" })) {
+    if (Model.PerformHumanVerification) {
+        <div class="content_front">
+            <div class="pad">
+                @Html.HiddenFor(m => m.Email)
+                @Html.HiddenFor(m => m.Password)
+                @Html.HiddenFor(m => m.RememberMe)
+                @Html.CaptchaFor(m => m.PerformHumanVerification)
+                <div class="field">
+                    <span class="label">&nbsp;</span>
+                    <div>@Html.SubmitButton("Continue")</div>
+                </div> <!-- .field -->        
+            </div>
+        </div>
+    } else {
+        <div class="content_front">
+            <div class="pad">
+                @Html.FieldEditorFor(m => m.Email)
+    	        <div class="field">
+                    @Html.FieldLabelFor(m => m.Password, new { @for = "login_password" })
+    		        <div><span class="input">
+                        @Html.EditorFor(m => m.Password, new { id = "login_password" })
+                        @Html.ActionLink("Forgot password?", Mvc.Account.PasswordAssistance())
+                        @Html.ValidationMessageFor(m => m.Password, string.Empty, new { style = "margin-top: 34px;" })
+                    </span></div>
+    	        </div> <!-- .field -->
+                <div class="checkbox">
+    		        <span class="label">&nbsp;</span>
+    		        <div class="">
+                        @Html.CheckBoxFor(m => m.RememberMe, new { id = "remember" })
+                        <label for="remember" style="margin-left: 6px; display: inline;">Remember me on this computer</label>
+                    </div>
+    	        </div> <!-- .checkbox -->
+    	        <div class="field">
+    		        <span class="label">&nbsp;</span>
+    		        <div>
+                        @Html.SubmitButton("Logon")&nbsp;&nbsp;
+                        @Html.ActionLink("Need an account?", Mvc.Account.Register())
+                    </div>
+    	        </div> <!-- .field -->
+            </div>
+        </div>
+    }
+}
+

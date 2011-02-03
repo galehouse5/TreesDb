@@ -1,0 +1,10 @@
+﻿@model TMD.Models.ImportSitesModel
+@for (int siteIndex = 0; siteIndex < Model.Sites.Count; siteIndex++) {
+    if (Model.Sites[siteIndex].Id.Equals(ViewBag.siteId)) {
+        if (Model.Sites[siteIndex].IsEditing) {
+            @Html.EditorFor(m => m.Sites[siteIndex])
+        } else {
+            @Html.DisplayFor(m => m.Sites[siteIndex])
+        }
+    }
+}

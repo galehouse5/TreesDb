@@ -1,0 +1,84 @@
+﻿@model TMD.Models.BrowseTreeModel
+@{ ViewBag.Title = "Tree Details"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+
+<div class="x6">
+
+	<div class="portlet x12">
+		<div class="portlet-header"><h4>Tree</h4></div>
+		<div class="portlet-content">
+			<table class="reports_table">
+				@Html.ReportDisplayFor(m => m.Details.ScientificName)
+				@Html.ReportDisplayFor(m => m.Details.CommonName)
+				@Html.ReportDisplayFor(m => m.Details.GeneralComments)
+				@Html.ReportDisplayFor(m => m.Details.Height)
+				@Html.ReportDisplayFor(m => m.Details.HeightMeasurementMethod)
+				@Html.ReportDisplayFor(m => m.Details.Girth)
+				@Html.ReportDisplayFor(m => m.Details.CrownSpread)
+				@Html.ReportDisplayFor(m => m.Details.ENTSPTS2)
+				@Html.ReportDisplayFor(m => m.Details.ENTSPTS)
+				@Html.ReportDisplayFor(m => m.Details.TDI3)
+				@Html.ReportDisplayFor(m => m.Details.TDI2)
+				@if (Model.Details.ChampionPoints.HasValue) {
+					@Html.ReportDisplayFor(m => m.Details.ChampionPoints)
+				} else if (Model.Details.AbbreviatedChampionPoints.HasValue) {
+					@Html.ReportDisplayFor(m => m.Details.AbbreviatedChampionPoints)
+				} else {
+					<tr><td class="description">Champion points</td><td class="value">(not enough data)</td></tr>
+				}
+				@Html.ReportDisplayFor(m => m.Details.Diameter)
+				@Html.ReportDisplayFor(m => m.Details.ConicalVolume)
+			</table>
+		</div>
+	</div>
+
+	<div class="portlet x12">
+		<div class="portlet-header"><h4>Measurements</h4></div>
+		<div class="portlet-content">
+			<table class="support_table">
+				@for (int summaryIndex = 0; summaryIndex < Model.MeasurementSummaries.Count; summaryIndex++) { 
+					<tr>
+						<td>
+							<span class="ticket open">@Html.DisplayFor(m => m.MeasurementSummaries[summaryIndex].Measured)</span>
+						</td>
+						<td class="full">
+							@Html.DisplayFor(m => m.MeasurementSummaries[summaryIndex].GeneralComments)
+							<br />
+							<a href="@Url.Action("TreeMeasurementDetails", new { id = Model.MeasurementSummaries[summaryIndex].Id })">View more details</a>
+						</td>
+						<td class="who">
+							Measured by @Html.DisplayFor(m => m.MeasurementSummaries[summaryIndex].Measurers)
+						</td>
+					</tr>
+				}
+			</table>
+		</div>
+	</div>
+
+</div>
+<div class="x6">
+
+	<div class="portlet x12">
+		<div class="portlet-header"><h4>Location</h4></div>
+		<div class="portlet-content">
+			<table class="reports_table">
+				hello world
+			</table>
+		</div>
+	</div>
+
+	<div class="portlet x12">
+		<div class="portlet-header"><h4>Photos</h4></div>
+		<div class="portlet-content">
+			@if (Model.PhotoSummaries.Count == 0) { 
+				@:(no photos)
+			} else {
+				<table class="support_table">
+					@for (int summaryIndex = 0; summaryIndex < Model.PhotoSummaries.Count; summaryIndex++) {
+						@Html.DisplayFor(m => m.PhotoSummaries[summaryIndex])
+					}
+				</table>
+			}
+		</div>
+	</div>
+
+</div>

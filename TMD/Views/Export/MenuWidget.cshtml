@@ -1,0 +1,6 @@
+﻿@model TMD.Models.ExportMenuWidgetModel
+@if (Model.CanExport) {
+    <li class="@(Model.IsSelected ? "mega mega-current" : "mega")">
+        @Html.ActionLink("Export", "Index", "Export", null, new { @class = "mega-link" })
+    </li>
+}

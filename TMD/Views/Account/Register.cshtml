@@ -1,0 +1,49 @@
+﻿@model TMD.Models.AccountRegistrationModel
+@{ ViewBag.Title = "Register"; Layout = "~/Views/Shared/LoginLayout.cshtml"; }
+
+@section Scripts {
+	<script src="@Url.VersionedContent(Links.js.jquery.jquery_1_4_4_min_js)" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function () { $('input[type=text]:first').focus(); });
+	</script>
+}
+
+@if (Model.RegistrationComplete) {
+	<div class="content_front">
+		<div class="pad">
+			<h2>Please verify your email</h2>
+			<p>An email was sent to <strong>@Model.Email</strong> with a link to complete your registration.</p>
+		</div>
+	</div>
+} else {
+	using (Html.BeginForm(Mvc.Account.Register(), FormMethod.Post, new { id = "login_form", name = "login" })) {
+		<div class="content_front">
+			<div class="pad">
+				@if (Model.PerformHumanVerification) {
+					@Html.HiddenFor(m => m.Email)
+					@Html.HiddenFor(m => m.ConfirmEmail)
+					@Html.HiddenFor(m => m.Password)
+					@Html.HiddenFor(m => m.ConfirmPassword)
+					@Html.CaptchaFor(m => m.PerformHumanVerification)
+					<div class="field">
+						<span class="label">&nbsp;</span>
+						<div>@Html.SubmitButton("Continue")</div>
+					</div> <!-- .field -->
+				} else {
+					@Html.FieldEditorFor(m => m.Email)
+					@Html.FieldEditorFor(m => m.ConfirmEmail)
+					@Html.FieldEditorFor(m => m.Password)
+					@Html.FieldEditorFor(m => m.ConfirmPassword)
+					<div class="field">
+						<span class="label">&nbsp;</span>
+						<div>
+							@Html.SubmitButton("Register")
+							&nbsp;&nbsp;
+							@Html.ActionLink("Already have an account?", Mvc.Account.Logon())
+						</div>
+					</div> <!-- .field -->
+				}
+			</div>
+		</div>
+	}
+}

@@ -1,0 +1,16 @@
+﻿@model TMD.Models.BrowsePhotoSumaryModel
+<tr>
+    <td>
+        <span class="ticket open">@Html.DisplayFor(m => m.Date)</span>
+    </td>
+    <td class="full">
+        <ul class="gallery">
+            @foreach (var photo in Model.Photos) { 
+                <li>@Html.Photo(photo)</li>
+            }
+        </ul>
+    </td>
+    <td class="who">
+        Taken by @Html.DisplayFor(m => m.Photographers)
+    </td>
+</tr>

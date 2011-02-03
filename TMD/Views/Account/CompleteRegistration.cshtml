@@ -1,0 +1,17 @@
+﻿@model bool
+@{ ViewBag.Title = "Register"; Layout = "~/Views/Shared/LoginLayout.cshtml"; }
+
+<div class="content_front">
+    <div class="pad">
+        @if (Model) {
+            <h2>Account registration complete</h2>
+            <p>You can now @Html.ActionLink("logon", Mvc.Account.Logon()) and start using your account.</p>
+        } else {
+            <h2>Email already verified</h2>
+            <p>
+                If you've already verified your email you can now @Html.ActionLink("logon", Mvc.Account.Logon()). 
+                If you haven't, you should try @Html.ActionLink("re-registering", Mvc.Account.Register()).
+            </p>
+        }
+    </div>
+</div>
