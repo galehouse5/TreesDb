@@ -28,15 +28,15 @@ namespace TMD.Model.Imports
         }
 
         private string m_Name;
-        [NotEmptyOrWhitesapce(Message = "Subsite name must be specified.", Tags = Tag.Screening)]
-        [Length(100, Message = "Subsite name must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Subsite name must be specified.", Tags = ValidationTag.Screening)]
+        [Length(100, Message = "Subsite name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string Name
         {
             get { return m_Name; }
             set { m_Name = value.OrEmptyAndTrimToTitleCase(); }
         }
 
-        [Valid, Specified(Message = "You must specify coordinates for this subsite, its containing site, or any contained measurement.", Tags = Tag.Finalization)]
+        [Valid, Specified(Message = "You must specify coordinates for this subsite, its containing site, or any contained measurement.", Tags = ValidationTag.Finalization)]
         public virtual Coordinates Coordinates { get; set; }
 
         public virtual bool CanCalculateCoordinates(bool ignoreContainingSite = false)
@@ -75,12 +75,12 @@ namespace TMD.Model.Imports
             return Coordinates.Null();
         }
 
-        [NotNull(Message = "Subsite state must be specified.", Tags = Tag.Screening)]
+        [NotNull(Message = "Subsite state must be specified.", Tags = ValidationTag.Screening)]
         public virtual State State { get; set; }
 
         private string m_County;
-        [NotEmptyOrWhitesapce(Message = "Subsite county must be specified.", Tags = Tag.Screening)]
-        [Length(100, Message = "Site county must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Subsite county must be specified.", Tags = ValidationTag.Screening)]
+        [Length(100, Message = "Site county must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string County
         {
             get { return m_County; }
@@ -88,8 +88,8 @@ namespace TMD.Model.Imports
         }
 
         private string m_OwnershipType;
-        [NotEmptyOrWhitesapceAttribute(Message = "Subsite ownership type name must be specified.", Tags = Tag.Screening)]
-        [Length(100, Message = "Subsite ownership type must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [NotEmptyOrWhitesapceAttribute(Message = "Subsite ownership type name must be specified.", Tags = ValidationTag.Screening)]
+        [Length(100, Message = "Subsite ownership type must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string OwnershipType
         {
             get { return m_OwnershipType; }
@@ -97,7 +97,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_OwnershipContactInfo;
-        [Length(200, Message = "Subsite ownership contact info must not exceed 200 characters.", Tags = Tag.Persistence)]
+        [Length(200, Message = "Subsite ownership contact info must not exceed 200 characters.", Tags = ValidationTag.Persistence)]
         public virtual string OwnershipContactInfo
         {
             get { return m_OwnershipContactInfo; }
@@ -107,7 +107,7 @@ namespace TMD.Model.Imports
         public virtual bool MakeOwnershipContactInfoPublic { get; set; }
 
         private string m_Comments;
-        [Length(300, Message = "Subsite comments must not exceed 300 characters.", Tags =  Tag.Persistence)]
+        [Length(300, Message = "Subsite comments must not exceed 300 characters.", Tags =  ValidationTag.Persistence)]
         public virtual string Comments
         {
             get { return m_Comments; }
@@ -115,8 +115,8 @@ namespace TMD.Model.Imports
         }
 
         [Valid]
-        [Size2(1, int.MaxValue, Message = "You must add tree measurements to this subsite.", Tags = Tag.Screening)]
-        [Size2(0, 10000, Message = "This subsite contains too many tree measurements.", Tags = Tag.Screening)]
+        [Size2(1, int.MaxValue, Message = "You must add tree measurements to this subsite.", Tags = ValidationTag.Screening)]
+        [Size2(0, 10000, Message = "This subsite contains too many tree measurements.", Tags = ValidationTag.Screening)]
         public virtual IList<TreeBase> Trees { get; protected set; }
 
         public virtual SingleTrunkTree AddSingleTrunkTree()
@@ -143,7 +143,7 @@ namespace TMD.Model.Imports
             return Trees.FirstOrDefault(tm => id.Equals(tm.Id));
         }
 
-        [Size2(0, 100, Message = "This subsite contains too many photos.", Tags = Tag.Screening)]
+        [Size2(0, 100, Message = "This subsite contains too many photos.", Tags = ValidationTag.Screening)]
         [Valid] public virtual IList<IPhoto> Photos { get; protected set; }
 
         public virtual void AddPhoto(Photo photo)

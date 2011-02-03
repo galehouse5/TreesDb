@@ -9,7 +9,7 @@ using NHibernate.Validator.Constraints;
 
 namespace TMD.Model.Users
 {
-    [ContextMethod("ValidateGlobalRequirements", Tags = Tag.Screening)]
+    [ContextMethod("ValidateGlobalRequirements", Tags = ValidationTag.Screening)]
     public class Password
     {
         protected Password()
@@ -21,10 +21,10 @@ namespace TMD.Model.Users
         public virtual int Lowercase { get; private set; }
         public virtual int Specials { get; private set; }
 
-        [Min(1, Message = "You must enter a password.", Tags = Tag.Screening)]
+        [Min(1, Message = "You must enter a password.", Tags = ValidationTag.Screening)]
         public virtual int Length { get; private set; }
 
-        [NotEquals(true, Message = "Your password must not contain invalid characters.", Tags = Tag.Screening)]
+        [NotEquals(true, Message = "Your password must not contain invalid characters.", Tags = ValidationTag.Screening)]
         public virtual bool HasInvalidCharacters { get; private set; }
 
         public virtual void ValidateGlobalRequirements(IConstraintValidatorContext context)

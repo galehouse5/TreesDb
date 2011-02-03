@@ -74,8 +74,8 @@ namespace TMD.Model.Imports
     }
 
     [DebuggerDisplay("{ScientificName} ({CommonName})")]
-    [ContextMethod("ValidateCanCalculateCoordinates", Tags = Tag.Screening)]
-    [ContextMethod("ValidateCoordinatesAreCloseToSubsite", Tags = Tag.Optional)]
+    [ContextMethod("ValidateCanCalculateCoordinates", Tags = ValidationTag.Screening)]
+    [ContextMethod("ValidateCoordinatesAreCloseToSubsite", Tags = ValidationTag.Optional)]
     public abstract class TreeBase : UserCreatedEntityBase
     {
         protected TreeBase()
@@ -93,11 +93,11 @@ namespace TMD.Model.Imports
         /// <summary>
         /// Four digit number unique in the scope of the subsite.
         /// </summary>
-        [Range(1, 9999, Message = "Tree number must be within the range of 0 to 9999.", Tags = Tag.Screening)]
+        [Range(1, 9999, Message = "Tree number must be within the range of 0 to 9999.", Tags = ValidationTag.Screening)]
         public virtual int? TreeNumber { get; set; }
 
         private string m_TreeName;
-        [Length(100, Message = "Tree name must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [Length(100, Message = "Tree name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string TreeName
         {
             get { return m_TreeName; }
@@ -105,8 +105,8 @@ namespace TMD.Model.Imports
         }
 
         private string m_CommonName;
-        [NotEmptyOrWhitesapceAttribute(Message = "Common name must be specified.", Tags = Tag.Screening)]
-        [Length(100, Message = "Common name must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [NotEmptyOrWhitesapceAttribute(Message = "Common name must be specified.", Tags = ValidationTag.Screening)]
+        [Length(100, Message = "Common name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string CommonName
         {
             get { return m_CommonName; }
@@ -114,15 +114,15 @@ namespace TMD.Model.Imports
         }
 
         private string m_ScientificName;
-        [NotEmptyOrWhitesapceAttribute(Message = "Scientific name must be specified.", Tags = Tag.Screening)]
-        [Length(100, Message = "Scientific name must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [NotEmptyOrWhitesapceAttribute(Message = "Scientific name must be specified.", Tags = ValidationTag.Screening)]
+        [Length(100, Message = "Scientific name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string ScientificName
         {
             get { return m_ScientificName; }
             set { m_ScientificName = value.OrEmptyAndTrimToSentenceCase(); }
         }
 
-        [Valid, Specified(Message = "You must specify coordinates for this measurement or its containing subsite.", Tags = Tag.Finalization)]
+        [Valid, Specified(Message = "You must specify coordinates for this measurement or its containing subsite.", Tags = ValidationTag.Finalization)]
         public virtual Coordinates Coordinates { get; set; }
 
         public virtual bool CanCalculateCoordinates(bool ignoreContaingSubsite = false)
@@ -173,7 +173,7 @@ namespace TMD.Model.Imports
         public virtual bool MakeCoordinatesPublic { get; set; }
 
         private string m_GeneralComments;
-        [Length(300, Message = "General comments must not exceed 300 characters.", Tags = Tag.Persistence)] 
+        [Length(300, Message = "General comments must not exceed 300 characters.", Tags = ValidationTag.Persistence)] 
         public virtual string GeneralComments
         {
             get { return m_GeneralComments; }
@@ -185,7 +185,7 @@ namespace TMD.Model.Imports
         [Valid] public virtual HeightMeasurements HeightMeasurements { get; set; }
 
         private string m_HeightMeasurementType;
-        [Length(100, Message = "Height measurement type must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [Length(100, Message = "Height measurement type must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string HeightMeasurementType
         {
             get { return m_HeightMeasurementType; }
@@ -193,7 +193,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_LaserBrand;
-        [Length(100, Message = "Laser brand must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [Length(100, Message = "Laser brand must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string LaserBrand
         {
             get { return m_LaserBrand; }
@@ -201,7 +201,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_ClinometerBrand;
-        [Length(100, Message = "Clinometer brand must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [Length(100, Message = "Clinometer brand must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string ClinometerBrand
         {
             get { return m_ClinometerBrand; }
@@ -209,7 +209,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_HeightComments;
-        [Length(300, Message = "Height comments must not exceed 300 characters.", Tags = Tag.Persistence)]
+        [Length(300, Message = "Height comments must not exceed 300 characters.", Tags = ValidationTag.Persistence)]
         public virtual string HeightComments
         {
             get { return m_HeightComments; }
@@ -221,20 +221,20 @@ namespace TMD.Model.Imports
         [Valid] public virtual Distance GirthRootCollarHeight { get; set; }
 
         private string m_GirthComments;
-        [Length(300, Message = "Girth comments must not exceed 300 characters.", Tags = Tag.Persistence)]
+        [Length(300, Message = "Girth comments must not exceed 300 characters.", Tags = ValidationTag.Persistence)]
         public virtual string GirthComments
         {
             get { return m_GirthComments; }
             set { m_GirthComments = value.OrEmptyAndTrim(); }
         }
 
-        [Range(1, int.MaxValue, Message = "Number of trunks must be positive.", Tags = Tag.Screening)]
+        [Range(1, int.MaxValue, Message = "Number of trunks must be positive.", Tags = ValidationTag.Screening)]
         public virtual int? NumberOfTrunks { get; set; }
 
         [Valid] public virtual Volume TrunkVolume { get; set; }
 
         private string m_TrunkVolumeCalculationMethod;
-        [Length(100, Message = "Trunk volume calculation method must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [Length(100, Message = "Trunk volume calculation method must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string TrunkVolumeCalculationMethod
         {
             get { return m_TrunkVolumeCalculationMethod; }
@@ -242,7 +242,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_TrunkComments;
-        [Length(300, Message = "Trunk comments must not exceed 300 characters.", Tags = Tag.Persistence )]
+        [Length(300, Message = "Trunk comments must not exceed 300 characters.", Tags = ValidationTag.Persistence )]
         public virtual string TrunkComments
         {
             get { return m_TrunkComments; }
@@ -253,7 +253,7 @@ namespace TMD.Model.Imports
         [Valid] public virtual Distance CrownSpread { get; set; }
 
         private string m_CrownSpreadMeasurementMethod;
-        [Length(100, Message = "Crown spread measurement method must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [Length(100, Message = "Crown spread measurement method must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string CrownSpreadMeasurementMethod
         {
             get { return m_CrownSpreadMeasurementMethod; }
@@ -264,7 +264,7 @@ namespace TMD.Model.Imports
         [Valid] public virtual Volume CrownVolume { get; set; }
 
         private string m_CrownVolumeCalculationMethod;
-        [Length(100, Message = "Crown volume calculation method must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [Length(100, Message = "Crown volume calculation method must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string CrownVolumeCalculationMethod
         {
             get { return m_CrownVolumeCalculationMethod; }
@@ -272,7 +272,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_CrownComments;
-        [Length(300, Message = "Crown comments must not exceed 300 characters.", Tags = Tag.Persistence)]
+        [Length(300, Message = "Crown comments must not exceed 300 characters.", Tags = ValidationTag.Persistence)]
         public virtual string CrownComments
         {
             get { return m_CrownComments; }
@@ -282,7 +282,7 @@ namespace TMD.Model.Imports
         public virtual TreeFormType FormType { get; set; }
 
         private string m_TreeFormComments;
-        [Length(300, Message = "Tree form comments must not exceed 300 characters.", Tags = Tag.Persistence)]
+        [Length(300, Message = "Tree form comments must not exceed 300 characters.", Tags = ValidationTag.Persistence)]
         public virtual string TreeFormComments
         {
             get { return m_TreeFormComments; }
@@ -292,19 +292,19 @@ namespace TMD.Model.Imports
         public virtual TreeAgeClass AgeClass { get; set; }
         public virtual TreeAgeType AgeType { get; set; }
 
-        [Range(0, int.MaxValue, Message = "Age must be non-negative.", Tags = Tag.Screening)]
+        [Range(0, int.MaxValue, Message = "Age must be non-negative.", Tags = ValidationTag.Screening)]
         public virtual int? Age { get; set; }
 
         public virtual TreeTerrainType TerrainType { get; set; }
 
-        [Within(-1f, 1f, Message = "TSI must be within the range of -1 to 1.", Tags = Tag.Screening)]
+        [Within(-1f, 1f, Message = "TSI must be within the range of -1 to 1.", Tags = ValidationTag.Screening)]
         public virtual float? TerrainShapeIndex { get; set; }
 
-        [Within(0f, 1f, Message = "LFI must be within the range of 0 to 1.", Tags = Tag.Screening)]
+        [Within(0f, 1f, Message = "LFI must be within the range of 0 to 1.", Tags = ValidationTag.Screening)]
         public virtual float? LandformIndex { get; set; }
 
         private string m_TerrainComments;
-        [Length(300, Message = "Terrain comments must not exceed 300 characters.", Tags = Tag.Persistence)]
+        [Length(300, Message = "Terrain comments must not exceed 300 characters.", Tags = ValidationTag.Persistence)]
         public virtual string TerrainComments
         {
             get { return m_TerrainComments; }
@@ -314,7 +314,7 @@ namespace TMD.Model.Imports
         public virtual TreeStatus Status { get; set; }
 
         private string m_HealthStatus;
-        [Length(100, Message = "Health status must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [Length(100, Message = "Health status must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string HealthStatus
         {
             get { return m_HealthStatus; }
@@ -323,7 +323,7 @@ namespace TMD.Model.Imports
 
         [Valid] public virtual Elevation Elevation { get; set; }
 
-        [Size2(0, 100, Message = "This tree contains too many photos.", Tags = Tag.Screening)]
+        [Size2(0, 100, Message = "This tree contains too many photos.", Tags = ValidationTag.Screening)]
         [Valid] public virtual IList<IPhoto> Photos { get; protected set; }
 
         public virtual void AddPhoto(Photo photo)

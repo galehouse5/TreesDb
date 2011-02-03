@@ -25,10 +25,10 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within2(0f, double.MaxValue, Inclusive = true, Message = "Volume must be non-negative.", Tags = Tag.Screening)]
+        [Within2(0f, double.MaxValue, Inclusive = true, Message = "Volume must be non-negative.", Tags = ValidationTag.Screening)]
         public float CubicFeet { get; private set; }
 
-        [NotEquals(VolumeFormat.Invalid, Message = "Volume must be in fffff ft^3 or mmmmm.mm m^3 format.", Tags = Tag.Screening)]
+        [NotEquals(VolumeFormat.Invalid, Message = "Volume must be in fffff ft^3 or mmmmm.mm m^3 format.", Tags = ValidationTag.Screening)]
         public VolumeFormat InputFormat { get; private set; }
 
         public float CubicMeters

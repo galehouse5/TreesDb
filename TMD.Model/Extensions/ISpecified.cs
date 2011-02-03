@@ -8,7 +8,7 @@ namespace TMD.Model.Extensions
 {
     public static class ISpecifiedExtensions
     {
-        public static bool IsValidAndSpecified(this object source, params Tag[] tags)
+        public static bool IsValidAndSpecified(this object source, params ValidationTag[] tags)
         {
             if (source.IsValid(tags))
             {
@@ -24,7 +24,7 @@ namespace TMD.Model.Extensions
 
         public static bool IsValidAndSpecified(this object source)
         {
-            return source.IsValidAndSpecified(Tag.Screening, Tag.Persistence, Tag.Finalization, Tag.Optional);
+            return source.IsValidAndSpecified(ValidationTag.Screening, ValidationTag.Persistence, ValidationTag.Finalization, ValidationTag.Optional);
         }
     }
 }

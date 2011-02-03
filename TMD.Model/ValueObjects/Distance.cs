@@ -27,10 +27,10 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within2(0, float.MaxValue, Inclusive = true, Message = "Distance must be non-negative.", Tags = Tag.Screening)]
+        [Within2(0, float.MaxValue, Inclusive = true, Message = "Distance must be non-negative.", Tags = ValidationTag.Screening)]
         public float Feet { get; private set; }
 
-        [NotEqualsAttribute(DistanceFormat.Invalid, Message = "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.", Tags = Tag.Screening)]
+        [NotEqualsAttribute(DistanceFormat.Invalid, Message = "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.", Tags = ValidationTag.Screening)]
         public DistanceFormat InputFormat { get; private set; }
 
         public int WholeFeet { get { return (int)Math.Floor(Feet); } }
@@ -70,6 +70,10 @@ namespace TMD.Model
                 case DistanceFormat.DecimalYards:
                     return string.Format("{0:0.00} yd", Yards);
                 case DistanceFormat.FeetDecimalInches:
+                    if (RemainderInches == 0f)
+                    {
+                        return string.Format("{0:0}'", WholeFeet, RemainderInches);
+                    }
                     return string.Format("{0:0}' {1:0}''", WholeFeet, RemainderInches);
                 default:
                     return RawValue;

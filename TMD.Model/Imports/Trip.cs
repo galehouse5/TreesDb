@@ -15,8 +15,8 @@ namespace TMD.Model.Imports
         { }
 
         private string m_Name;
-        [NotEmptyOrWhitesapce(Message = "Trip name must be specified.", Tags =  Tag.Screening)]
-        [Length(100, Message = "Trip name must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Trip name must be specified.", Tags =  ValidationTag.Screening)]
+        [Length(100, Message = "Trip name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string Name
         {
             get { return m_Name; }
@@ -25,11 +25,11 @@ namespace TMD.Model.Imports
 
         public virtual DateTime LastSaved { get; protected internal set; }
 
-        [NotNull(Message = "Trip date must be specified.", Tags = Tag.Screening)]
+        [NotNull(Message = "Trip date must be specified.", Tags = ValidationTag.Screening)]
         public virtual DateTime? Date { get; set; }
 
         private string m_Website;
-        [Length(100, Message = "Trip website must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [Length(100, Message = "Trip website must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string Website
         {
             get { return m_Website; }
@@ -39,8 +39,8 @@ namespace TMD.Model.Imports
         public virtual bool PhotosAvailable { get; set; }
 
         private string m_MeasurerContactInfo;
-        [NotEmptyOrWhitesapce(Message = "Measurer contact must be specified for this trip.", Tags = Tag.Screening)]
-        [Length(200, Message = "Trip measurer contact info must not exceed 200 characters.", Tags = Tag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Measurer contact must be specified for this trip.", Tags = ValidationTag.Screening)]
+        [Length(200, Message = "Trip measurer contact info must not exceed 200 characters.", Tags = ValidationTag.Persistence)]
         public virtual string MeasurerContactInfo
         {
             get { return m_MeasurerContactInfo; }
@@ -49,11 +49,11 @@ namespace TMD.Model.Imports
 
         public virtual bool MakeMeasurerContactInfoPublic { get; set; }
 
-        [Valid, Size(1, 100, Message = "You must add site visits to your trip.", Tags = Tag.Screening)]
+        [Valid, Size(1, 100, Message = "You must add site visits to your trip.", Tags = ValidationTag.Screening)]
         public virtual IList<Site> Sites { get; protected set; }
 
-        [Valid, Size2(1, int.MaxValue, Message = "You must record at least one measurer.", Tags = Tag.Screening)]
-        [Size2(0, 3, Message = "You have recorded too many measurers.", Tags = new [] { Tag.Screening, Tag.Persistence })]
+        [Valid, Size2(1, int.MaxValue, Message = "You must record at least one measurer.", Tags = ValidationTag.Screening)]
+        [Size2(0, 3, Message = "You have recorded too many measurers.", Tags = new [] { ValidationTag.Screening, ValidationTag.Persistence })]
         public virtual IList<Name> Measurers { get; private set; }
 
         public virtual bool IsImported { get { return Imported != null; } }

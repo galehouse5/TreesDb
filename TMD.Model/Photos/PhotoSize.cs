@@ -9,19 +9,19 @@ namespace TMD.Model.Photos
 {
     public class PhotoSizeFactory
     {
-        public PhotoSizeBase Create(EPhotoSize photoSize)
+        public PhotoSizeBase Create(PhotoSize photoSize)
         {
             switch (photoSize)
             {
-                case EPhotoSize.Original: return new OriginalPhotoSize();
-                case EPhotoSize.Medium: return new MediumPhotoSize();
-                case EPhotoSize.Small: return new SmallPhotoSize();
-                case EPhotoSize.Thumbnail: return new ThumbnailPhotoSize();
-                case EPhotoSize.SquareThumbnail: return new SquareThumbnailPhotoSize();
-                case EPhotoSize.Square: return new SquarePhotoSize();
-                case EPhotoSize.MiniSquare: return new MiniSquarePhotoSize();
-                case EPhotoSize.MapSquare: return new MapSquarePhotoSize();
-                case EPhotoSize.MiniMapSquare: return new MiniMapSquarePhotoSize();
+                case PhotoSize.Original: return new OriginalPhotoSize();
+                case PhotoSize.Medium: return new MediumPhotoSize();
+                case PhotoSize.Small: return new SmallPhotoSize();
+                case PhotoSize.Thumbnail: return new ThumbnailPhotoSize();
+                case PhotoSize.SquareThumbnail: return new SquareThumbnailPhotoSize();
+                case PhotoSize.Square: return new SquarePhotoSize();
+                case PhotoSize.MiniSquare: return new MiniSquarePhotoSize();
+                case PhotoSize.MapSquare: return new MapSquarePhotoSize();
+                case PhotoSize.MiniMapSquare: return new MiniMapSquarePhotoSize();
                 default: throw new NotImplementedException();
             }
         }
@@ -30,7 +30,7 @@ namespace TMD.Model.Photos
     public class OriginalPhotoSize : PhotoSizeBase
     {
         internal OriginalPhotoSize() { }
-        public override EPhotoSize Size { get { return EPhotoSize.Original; } }
+        public override PhotoSize Size { get { return PhotoSize.Original; } }
         public override bool Square { get { return false; } }
         public override int MaxWidthOrHeight { get { return int.MaxValue; } }
         public override int BorderWidth { get { return 0; } }
@@ -41,7 +41,7 @@ namespace TMD.Model.Photos
     public class MediumPhotoSize : PhotoSizeBase
     {
         internal MediumPhotoSize() { }
-        public override EPhotoSize Size { get { return EPhotoSize.Medium; } }
+        public override PhotoSize Size { get { return PhotoSize.Medium; } }
         public override bool Square { get { return false; } }
         public override int MaxWidthOrHeight { get { return 500; } }
         public override int BorderWidth { get { return 0; } }
@@ -51,7 +51,7 @@ namespace TMD.Model.Photos
     public class SmallPhotoSize : PhotoSizeBase
     {
         internal SmallPhotoSize() { }
-        public override EPhotoSize Size { get { return EPhotoSize.Small; } }
+        public override PhotoSize Size { get { return PhotoSize.Small; } }
         public override bool Square { get { return false; } }
         public override int MaxWidthOrHeight { get { return 240; } }
         public override int BorderWidth { get { return 0; } }
@@ -61,7 +61,7 @@ namespace TMD.Model.Photos
     public class ThumbnailPhotoSize : PhotoSizeBase
     {
         internal ThumbnailPhotoSize() { }
-        public override EPhotoSize Size { get { return EPhotoSize.Thumbnail; } }
+        public override PhotoSize Size { get { return PhotoSize.Thumbnail; } }
         public override bool Square { get { return false; } }
         public override int MaxWidthOrHeight { get { return 100; } }
         public override int BorderWidth { get { return 0; } }
@@ -71,7 +71,7 @@ namespace TMD.Model.Photos
     public class SquareThumbnailPhotoSize : PhotoSizeBase
     {
         internal SquareThumbnailPhotoSize() { }
-        public override EPhotoSize Size { get { return EPhotoSize.SquareThumbnail; } }
+        public override PhotoSize Size { get { return PhotoSize.SquareThumbnail; } }
         public override bool Square { get { return true; } }
         public override int MaxWidthOrHeight { get { return 100; } }
         public override int BorderWidth { get { return 0; } }
@@ -81,7 +81,7 @@ namespace TMD.Model.Photos
     public class SquarePhotoSize : PhotoSizeBase
     {
         internal SquarePhotoSize() { }
-        public override EPhotoSize Size { get { return EPhotoSize.Square; } }
+        public override PhotoSize Size { get { return PhotoSize.Square; } }
         public override bool Square { get { return true; } }
         public override int MaxWidthOrHeight { get { return 60; } }
         public override int BorderWidth { get { return 0; } }
@@ -91,7 +91,7 @@ namespace TMD.Model.Photos
     public class MiniSquarePhotoSize : PhotoSizeBase
     {
         internal MiniSquarePhotoSize() { }
-        public override EPhotoSize Size { get { return EPhotoSize.MiniSquare; } }
+        public override PhotoSize Size { get { return PhotoSize.MiniSquare; } }
         public override bool Square { get { return true; } }
         public override int MaxWidthOrHeight { get { return 32; } }
         public override int BorderWidth { get { return 0; } }
@@ -101,7 +101,7 @@ namespace TMD.Model.Photos
     public class MapSquarePhotoSize : PhotoSizeBase
     {
         internal MapSquarePhotoSize() { }
-        public override EPhotoSize Size { get { return EPhotoSize.MapSquare; } }
+        public override PhotoSize Size { get { return PhotoSize.MapSquare; } }
         public override bool Square { get { return true; } }
         public override int MaxWidthOrHeight { get { return 50; } }
         public override int BorderWidth { get { return 2; } }
@@ -111,14 +111,14 @@ namespace TMD.Model.Photos
     public class MiniMapSquarePhotoSize : PhotoSizeBase
     {
         internal MiniMapSquarePhotoSize() { }
-        public override EPhotoSize Size { get { return EPhotoSize.MiniMapSquare; } }
+        public override PhotoSize Size { get { return PhotoSize.MiniMapSquare; } }
         public override bool Square { get { return true; } }
         public override int MaxWidthOrHeight { get { return 10; } }
         public override int BorderWidth { get { return 1; } }
         public override Color BorderColor { get { return Color.White; } }
     }
 
-    public enum EPhotoSize
+    public enum PhotoSize
     {
         Original,
         Medium,
@@ -133,7 +133,7 @@ namespace TMD.Model.Photos
 
     public abstract class PhotoSizeBase
     {
-        public abstract EPhotoSize Size { get; }
+        public abstract PhotoSize Size { get; }
         public abstract bool Square { get; }
         public abstract int MaxWidthOrHeight { get; }
         public abstract int BorderWidth { get; }

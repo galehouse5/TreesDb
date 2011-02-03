@@ -29,7 +29,7 @@ namespace TMD.Model.Imports
 
         private int? m_NumberOfTrunks;
         
-        [Range(2, int.MaxValue, Message = "Number of trunks must be greater than one.", Tags = Tag.Screening)]
+        [Range(2, int.MaxValue, Message = "Number of trunks must be greater than one.", Tags = ValidationTag.Screening)]
         public override int? NumberOfTrunks 
         {
             get 
@@ -47,7 +47,7 @@ namespace TMD.Model.Imports
             set { m_NumberOfTrunks = value; }
         }
 
-        [NotEqualsAttribute(TreeFormType.Single, Message = "Form type must not be single.", Tags = Tag.Screening)]
+        [NotEqualsAttribute(TreeFormType.Single, Message = "Form type must not be single.", Tags = ValidationTag.Screening)]
         public override TreeFormType FormType { get; set; }
 
         public virtual MultiTrunkTreeFormType MultiTrunkFormType
@@ -64,7 +64,7 @@ namespace TMD.Model.Imports
             set { Girth = value; }
         }
         
-        [Range(1, int.MaxValue, Message = "Number of trunks in combined girth must be positive.", Tags = Tag.Screening)]
+        [Range(1, int.MaxValue, Message = "Number of trunks in combined girth must be positive.", Tags = ValidationTag.Screening)]
         public virtual int? CombinedGirthNumberOfTrunks { get; set; }
 
         public override Distance CrownSpread { get; set; }
@@ -76,7 +76,7 @@ namespace TMD.Model.Imports
         }
 
         [Valid]
-        [Size(0, 100, Message = "This tree contains too many trunk measurements.", Tags = new [] { Tag.Screening, Tag.Persistence })]
+        [Size(0, 100, Message = "This tree contains too many trunk measurements.", Tags = new [] { ValidationTag.Screening, ValidationTag.Persistence })]
         public virtual IList<Trunk> Trunks { get; private set; }
 
         public virtual Trunk AddTrunkMeasurement()

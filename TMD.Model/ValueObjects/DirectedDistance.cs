@@ -27,7 +27,7 @@ namespace TMD.Model
         public string RawValue { get; private set; }
         public float Feet { get; private set; }
 
-        [NotEqualsAttribute(DirectedDistanceFormat.Invalid, Message = "Directed distance must be in +/-fff.f', +/-fff' ii'', +/-mmm.mm m, or +/-yyy.yy yd format.", Tags = Tag.Screening)]
+        [NotEqualsAttribute(DirectedDistanceFormat.Invalid, Message = "Directed distance must be in +/-fff.f', +/-fff' ii'', +/-mmm.mm m, or +/-yyy.yy yd format.", Tags = ValidationTag.Screening)]
         public DirectedDistanceFormat InputFormat { get; private set; }
 
         public int Sign { get { return Math.Sign(Feet); } }
@@ -64,6 +64,10 @@ namespace TMD.Model
                 case DirectedDistanceFormat.DecimalYards:
                     return string.Format("{0}{1:0.00} yd", (Sign < 0) ? "-" : "", AbsoluteYards);
                 case DirectedDistanceFormat.FeetDecimalInches:
+                    if (AbsoluteRemainderInches == 0f)
+                    {
+                        return string.Format("{0}{1:0}'", (Sign < 0) ? "-" : "", AbsoluteFeet, AbsoluteRemainderInches);
+                    }
                     return string.Format("{0}{1:0}' {2:0}''", (Sign < 0) ? "-" : "", AbsoluteFeet, AbsoluteRemainderInches);
                 default:
                     return RawValue;

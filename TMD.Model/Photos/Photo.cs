@@ -29,7 +29,7 @@ namespace TMD.Model.Photos
         string ContentType { get; }
         ImageFormat ImageFormat { get; }
         Bitmap Get();
-        Bitmap Get(EPhotoSize size);
+        Bitmap Get(PhotoSize size);
         bool EqualsPhoto(IPhoto photo);
         Photo ToPhoto();
     }
@@ -48,10 +48,10 @@ namespace TMD.Model.Photos
         public virtual PhotoStoreBase PermanentStore { get; protected internal set; }
         public virtual Size Size { get; protected internal set; }
 
-        [Within2(0, MaxBytes, Inclusive = true, Message = "Photo must not be too large.", Tags = Tag.Screening)]
+        [Within2(0, MaxBytes, Inclusive = true, Message = "Photo must not be too large.", Tags = ValidationTag.Screening)]
         public virtual int Bytes { get; protected internal set; }
 
-        [NotEquals(PhotoFormat.NotSpecified, Message = "Photo must be in a proper format.", Tags = Tag.Screening)]
+        [NotEquals(PhotoFormat.NotSpecified, Message = "Photo must be in a proper format.", Tags = ValidationTag.Screening)]
         public virtual PhotoFormat Format { get; protected internal set; }
 
         public virtual bool IsStoredPermanently
@@ -100,7 +100,7 @@ namespace TMD.Model.Photos
             throw new InvalidEntityStateException(this);
         }
 
-        public virtual Bitmap Get(EPhotoSize size)
+        public virtual Bitmap Get(PhotoSize size)
         {
             using (Bitmap image = Get())
             {

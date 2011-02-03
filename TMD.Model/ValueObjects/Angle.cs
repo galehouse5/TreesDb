@@ -22,10 +22,10 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within2(0f, 90f, Inclusive = true, Message = "Angle must be in the range of 0 to 90 degrees.", Tags = Tag.Screening)]
+        [Within2(0f, 90f, Inclusive = true, Message = "Angle must be in the range of 0 to 90 degrees.", Tags = ValidationTag.Screening)]
         public float Degrees { get; private set; }
 
-        [NotEquals(AngleFormat.Invalid, Message = "Angle must be in decimal format.", Tags = Tag.Screening)]
+        [NotEquals(AngleFormat.Invalid, Message = "Angle must be in decimal format.", Tags = ValidationTag.Screening)]
         public AngleFormat InputFormat { get; private set; }
 
         public float Radians { get { return (float)(((double)Degrees / 360d) * 2d * Math.PI); } }

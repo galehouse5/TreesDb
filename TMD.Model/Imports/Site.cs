@@ -20,15 +20,15 @@ namespace TMD.Model.Imports
         public virtual Trip Trip { get; protected set; }
 
         private string m_Name;
-        [NotEmptyOrWhitesapce(Message = "Site name must be specified.", Tags = Tag.Screening)]
-        [Length(100, Message = "Site name must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Site name must be specified.", Tags = ValidationTag.Screening)]
+        [Length(100, Message = "Site name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string Name
         {
             get { return m_Name; }
             set { m_Name = value.OrEmptyAndTrimToTitleCase(); }
         }
 
-        [Valid, Specified(Message = "You must specify coordinates for this site or any contained subsite.", Tags = Tag.Finalization)]
+        [Valid, Specified(Message = "You must specify coordinates for this site or any contained subsite.", Tags = ValidationTag.Finalization)]
         public virtual Coordinates Coordinates { get; set; }
 
         public virtual bool CanCalculateCoordinates(bool ignoreContainingTrip = false)
@@ -68,7 +68,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_Comments;
-        [Length(300, Message = "Site comments must not exceed 300 characters.", Tags = Tag.Persistence)]
+        [Length(300, Message = "Site comments must not exceed 300 characters.", Tags = ValidationTag.Persistence)]
         public virtual string Comments
         {
             get { return m_Comments; }
@@ -76,11 +76,9 @@ namespace TMD.Model.Imports
         }
 
         [Valid]
-        [Size2(1, int.MaxValue, Message = "Site must contain at least one subsite.", Tags = Tag.Screening)]
-        [Size2(int.MinValue, 100, Message = "Site contains too many subsites.", Tags = new [] { Tag.Screening, Tag.Persistence })]
+        [Size2(1, int.MaxValue, Message = "Site must contain at least one subsite.", Tags = ValidationTag.Screening)]
+        [Size2(int.MinValue, 100, Message = "Site contains too many subsites.", Tags = new [] { ValidationTag.Screening, ValidationTag.Persistence })]
         public virtual IList<Subsite> Subsites { get; protected set; }
-
-        public virtual bool HasSingleSubsite { get { return Subsites.Count == 1; } }
 
         public virtual Subsite AddSubsite()
         {

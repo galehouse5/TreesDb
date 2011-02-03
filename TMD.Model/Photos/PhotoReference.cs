@@ -39,7 +39,7 @@ namespace TMD.Model.Photos
         public virtual string ContentType { get { return Photo.ContentType; } }
         public virtual ImageFormat ImageFormat { get { return Photo.ImageFormat; } }
         public virtual Bitmap Get() { return Photo.Get(); }
-        public virtual Bitmap Get(EPhotoSize size) { return Photo.Get(size); }
+        public virtual Bitmap Get(PhotoSize size) { return Photo.Get(size); }
 
         public virtual bool EqualsPhoto(IPhoto photo)
         {

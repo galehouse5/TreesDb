@@ -20,9 +20,9 @@ namespace TMD.Model.Users
         public virtual int Id { get; private set; }
 
         private string m_Email;
-        [Email(Message = "You must enter a valid email.", Tags = Tag.Screening)]
-        [NotEmptyOrWhitesapceAttribute(Message = "You must enter an email.", Tags = Tag.Screening)]
-        [Length(100, Message = "Email must not exceed 100 characters.", Tags = Tag.Persistence)]
+        [Email(Message = "You must enter a valid email.", Tags = ValidationTag.Screening)]
+        [NotEmptyOrWhitesapceAttribute(Message = "You must enter an email.", Tags = ValidationTag.Screening)]
+        [Length(100, Message = "Email must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string Email 
         {
             get { return m_Email; }
@@ -30,7 +30,7 @@ namespace TMD.Model.Users
         }
 
         private string m_Firstname;
-        [Length(50, Message = "First name must not exceed 50 characters.", Tags = Tag.Persistence)]
+        [Length(50, Message = "First name must not exceed 50 characters.", Tags = ValidationTag.Persistence)]
         public virtual string Firstname 
         {
             get { return m_Firstname; }
@@ -38,7 +38,7 @@ namespace TMD.Model.Users
         }
 
         private string m_Lastname;
-        [Length(50, Message = "Last name must not exceed 50 characters.", Tags = Tag.Persistence)]
+        [Length(50, Message = "Last name must not exceed 50 characters.", Tags = ValidationTag.Persistence)]
         public virtual string Lastname
         {
             get { return m_Lastname; }

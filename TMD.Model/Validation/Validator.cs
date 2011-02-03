@@ -7,7 +7,7 @@ using NHibernate.Validator.Engine;
 
 namespace TMD.Model.Validation
 {
-    public enum Tag
+    public enum ValidationTag
     {
         Screening,
         Persistence,
@@ -28,7 +28,7 @@ namespace TMD.Model.Validation
 
         protected abstract IEnumerable<IValidationError> InternalValidate(object source);
 
-        public virtual IEnumerable<IValidationError> Validate(object source, params Tag[] tags)
+        public virtual IEnumerable<IValidationError> Validate(object source, params ValidationTag[] tags)
         {
             if (source is IEnumerable<IValidationError>)
             {
@@ -125,12 +125,12 @@ namespace TMD.Model.Validation
             return GlobalValidator.Validate(source);
         }
 
-        public static IEnumerable<IValidationError> Validate(this object source, params Tag[] tags)
+        public static IEnumerable<IValidationError> Validate(this object source, params ValidationTag[] tags)
         {
             return GlobalValidator.Validate(source, tags);
         }
 
-        public static void AssertIsValid(this object source, params Tag[] tags)
+        public static void AssertIsValid(this object source, params ValidationTag[] tags)
         {
             if (source.Validate(tags).Count() > 0)
             {
@@ -146,7 +146,7 @@ namespace TMD.Model.Validation
             }
         }
 
-        public static bool IsValid(this object source, params Tag[] tags)
+        public static bool IsValid(this object source, params ValidationTag[] tags)
         {
             return source.Validate(tags).Count() == 0;
         }
@@ -163,7 +163,7 @@ namespace TMD.Model.Validation
 
         public static void AssertIsValidToPersist(this object source)
         {
-            source.AssertIsValid(Tag.Persistence);
+            source.AssertIsValid(ValidationTag.Persistence);
         }
     }
 }

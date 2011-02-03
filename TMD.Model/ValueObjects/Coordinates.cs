@@ -174,10 +174,10 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within2(-90f, 90f, Inclusive = true, Message = "Latitude must be in the range of -90 to +90 degrees.", Tags = Tag.Screening)]
+        [Within2(-90f, 90f, Inclusive = true, Message = "Latitude must be in the range of -90 to +90 degrees.", Tags = ValidationTag.Screening)]
         public float TotalDegrees { get; private set; }
 
-        [NotEqualsAttribute(CoordinatesFormat.Invalid, Message = "Latitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format.", Tags = Tag.Screening)]
+        [NotEqualsAttribute(CoordinatesFormat.Invalid, Message = "Latitude must be in dd_mm_ss.s, dd_mm.mmm, or dd.ddddd format.", Tags = ValidationTag.Screening)]
         public CoordinatesFormat InputFormat { get; private set; }
 
         public int Sign { get { return Math.Sign(TotalDegrees); } }
@@ -344,10 +344,10 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within2(-180f, 180f, Inclusive = true, Message = "Longitude must be in the range of -180 to +180 degrees.", Tags = Tag.Screening)]
+        [Within2(-180f, 180f, Inclusive = true, Message = "Longitude must be in the range of -180 to +180 degrees.", Tags = ValidationTag.Screening)]
         public float TotalDegrees { get; private set; }
 
-        [NotEqualsAttribute(CoordinatesFormat.Invalid, Message = "Longitude must be in ddd_mm_ss.s, ddd_mm.mmm, or ddd.ddddd format.", Tags = Tag.Screening)]
+        [NotEqualsAttribute(CoordinatesFormat.Invalid, Message = "Longitude must be in ddd_mm_ss.s, ddd_mm.mmm, or ddd.ddddd format.", Tags = ValidationTag.Screening)]
         public CoordinatesFormat InputFormat { get; private set; }
 
         public int Sign { get { return Math.Sign(TotalDegrees); } }

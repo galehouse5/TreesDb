@@ -22,7 +22,7 @@ namespace TMD.Model.Imports
 
         public void Import(Trip t)
         {
-            t.AssertIsValid(Tag.Screening, Tag.Finalization, Tag.Persistence);
+            t.AssertIsValid(ValidationTag.Screening, ValidationTag.Finalization, ValidationTag.Persistence);
             t.Imported = DateTime.Now;
             InternalImport(t);
         }
@@ -30,7 +30,7 @@ namespace TMD.Model.Imports
 
         public void Reimport(Trip t)
         {
-            t.AssertIsValid(Tag.Screening, Tag.Finalization, Tag.Persistence);
+            t.AssertIsValid(ValidationTag.Screening, ValidationTag.Finalization, ValidationTag.Persistence);
             if (!t.IsImported)
             {
                 throw new InvalidEntityOperationException(t, "Unable to reimport trip because it has not yet been imported.");

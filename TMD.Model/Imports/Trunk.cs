@@ -9,7 +9,7 @@ using TMD.Model.Extensions;
 
 namespace TMD.Model.Imports
 {
-    [ContextMethod("ValidateHeightOrGirthIsSpecified", Tags = Tag.Screening)]
+    [ContextMethod("ValidateHeightOrGirthIsSpecified", Tags = ValidationTag.Screening)]
     public class Trunk : UserCreatedEntityBase
     {
         protected Trunk()
@@ -33,7 +33,7 @@ namespace TMD.Model.Imports
         [Valid] public virtual HeightMeasurements HeightMeasurements { get; set; }
 
         private string m_TrunkComments;
-        [Length(300, Message = "Trunk comments must not exceed 300 characters.", Tags = Tag.Persistence)]
+        [Length(300, Message = "Trunk comments must not exceed 300 characters.", Tags = ValidationTag.Persistence)]
         public virtual string TrunkComments
         {
             get { return m_TrunkComments; }

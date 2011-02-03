@@ -25,10 +25,10 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within2(0, 17000, Inclusive = true, Message = "Elevation must fall within sea level to 17000 feet.", Tags = Tag.Screening)]
+        [Within2(0, 17000, Inclusive = true, Message = "Elevation must fall within sea level to 17000 feet.", Tags = ValidationTag.Screening)]
         public float Feet { get; private set; }
 
-        [NotEqualsAttribute(ElevationFormat.Invalid, Message = "Elevation must be in fffff ft or mmmmm m format.", Tags = Tag.Screening)]
+        [NotEqualsAttribute(ElevationFormat.Invalid, Message = "Elevation must be in fffff ft or mmmmm m format.", Tags = ValidationTag.Screening)]
         public ElevationFormat InputFormat { get; private set; }
 
         public float Yards

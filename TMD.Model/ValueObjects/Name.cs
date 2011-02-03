@@ -15,12 +15,12 @@ namespace TMD.Model
         protected Name()
         { }
 
-        [NotEmptyOrWhitesapce(Message = "First name must be specified.", Tags = Tag.Screening)]
-        [Length(50, Message = "First name must not exceed 50 characters.", Tags = Tag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "First name must be specified.", Tags = ValidationTag.Screening)]
+        [Length(50, Message = "First name must not exceed 50 characters.", Tags = ValidationTag.Persistence)]
         public virtual string FirstName { get; private set; }
 
-        [NotEmptyOrWhitesapce(Message = "Last name must be specified.", Tags = Tag.Screening)]
-        [Length(50, Message = "Last name must not exceed 50 characters.", Tags = Tag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Last name must be specified.", Tags = ValidationTag.Screening)]
+        [Length(50, Message = "Last name must not exceed 50 characters.", Tags = ValidationTag.Persistence)]
         public virtual string LastName { get; private set; }
 
         public virtual bool IsSpecified
