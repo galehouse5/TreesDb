@@ -112,19 +112,18 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
-            public readonly string Finish = "~/Views/Import/Finish.aspx";
+            public readonly string Finish = "~/Views/Import/Finish.cshtml";
             public readonly string History = "~/Views/Import/History.cshtml";
             public readonly string Index = "~/Views/Import/Index.cshtml";
-            public readonly string MenuWidget = "~/Views/Import/MenuWidget.ascx";
-            public readonly string SitePartial = "~/Views/Import/SitePartial.ascx";
-            public readonly string Sites = "~/Views/Import/Sites.aspx";
-            public readonly string Sites_cshtml = "~/Views/Import/Sites.cshtml";
-            public readonly string SitesPartial = "~/Views/Import/SitesPartial.ascx";
+            public readonly string MenuWidget = "~/Views/Import/MenuWidget.cshtml";
+            public readonly string SitePartial = "~/Views/Import/SitePartial.cshtml";
+            public readonly string Sites = "~/Views/Import/Sites.cshtml";
+            public readonly string SitesPartial = "~/Views/Import/SitesPartial.cshtml";
             public readonly string Start = "~/Views/Import/Start.cshtml";
             public readonly string StartSteps = "~/Views/Import/StartSteps.cshtml";
-            public readonly string SubsiteTreesPartial = "~/Views/Import/SubsiteTreesPartial.ascx";
-            public readonly string TreePartial = "~/Views/Import/TreePartial.ascx";
-            public readonly string Trees = "~/Views/Import/Trees.aspx";
+            public readonly string SubsiteTreesPartial = "~/Views/Import/SubsiteTreesPartial.cshtml";
+            public readonly string TreePartial = "~/Views/Import/TreePartial.cshtml";
+            public readonly string Trees = "~/Views/Import/Trees.cshtml";
             public readonly string Trip = "~/Views/Import/Trip.cshtml";
             public readonly string View = "~/Views/Import/View.cshtml";
             public readonly string WizardLayout = "~/Views/Import/WizardLayout.cshtml";
@@ -135,20 +134,19 @@ namespace TMD.Controllers {
                 public readonly string ImportFinishedSubsiteModel = "ImportFinishedSubsiteModel";
                 public readonly string ImportFinishedTreeModel = "ImportFinishedTreeModel";
                 public readonly string ImportFinishedTripModel = "ImportFinishedTripModel";
-                public readonly string Site = "Site";
-                public readonly string Subsite = "Subsite";
-                public readonly string Tree = "Tree";
+                public readonly string ImportSiteModel = "ImportSiteModel";
+                public readonly string ImportSubsiteModel = "ImportSubsiteModel";
+                public readonly string ImportTreeModel = "ImportTreeModel";
             }
             static readonly _EditorTemplates s_EditorTemplates = new _EditorTemplates();
             public _EditorTemplates EditorTemplates { get { return s_EditorTemplates; } }
             public partial class _EditorTemplates{
+                public readonly string ImportSiteModel = "ImportSiteModel";
+                public readonly string ImportSiteTreesModel = "ImportSiteTreesModel";
+                public readonly string ImportSubsiteModel = "ImportSubsiteModel";
+                public readonly string ImportSubsiteTreesModel = "ImportSubsiteTreesModel";
+                public readonly string ImportTreeModel = "ImportTreeModel";
                 public readonly string ImportTripSummaryModel = "ImportTripSummaryModel";
-                public readonly string Site = "Site";
-                public readonly string SiteTrees = "SiteTrees";
-                public readonly string Subsite = "Subsite";
-                public readonly string SubsiteTrees = "SubsiteTrees";
-                public readonly string Tree = "Tree";
-                public readonly string Trip = "Trip";
             }
         }
     }

@@ -329,6 +329,7 @@
     <None Include="Views\Import\MenuWidget.cshtml" />
     <None Include="Views\Main\Index.cshtml" />
     <None Include="Views\Main\MenuWidget.cshtml" />
+    <Content Include="Views\Map\Mini.cshtml" />
     <None Include="Views\Map\Index.cshtml" />
     <None Include="Views\Map\SiteMarkerInfoPartial.cshtml" />
     <None Include="Views\Map\SubsiteMarkerInfoPartial.cshtml" />

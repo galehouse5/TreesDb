@@ -9,6 +9,8 @@ using TMD.Model.Sites;
 using TMD.Model.Photos;
 using System.ComponentModel.DataAnnotations;
 using TMD.Model.Imports;
+using TMD.Extensions;
+using TMD.Model.Locations;
 
 namespace TMD.Models
 {
@@ -22,6 +24,7 @@ namespace TMD.Models
         public BrowseTreeDetailsModel Details { get; set; }
         public IList<BrowseMeasurementSummaryModel> MeasurementSummaries { get; set; }
         public IList<BrowsePhotoSumaryModel> PhotoSummaries { get; set; }
+        public BrowseTreeLocationModel Location { get; set; }
     }
 
     public class BrowsePhotoSumaryModel
@@ -53,7 +56,7 @@ namespace TMD.Models
         public string ScientificName { get; set; }
         [DisplayName("Common name")]
         public string CommonName { get; set; }
-        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)")]
+        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
         public string GeneralComments { get; set; } 
         [DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
         public Distance Height { get; set; }
@@ -81,5 +84,27 @@ namespace TMD.Models
         public virtual Distance Diameter { get; private set; }
         [DisplayName("Conical volume"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
         public virtual Volume ConicalVolume { get; private set; }
+    }
+
+    public class BrowseTreeLocationModel
+    {
+        [ScaffoldColumn(false)]
+        public int SiteId { get; set; }
+        [DisplayName("Site name")]
+        public string SiteName { get; set; }
+        [DisplayName("Site comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
+        public string SiteComments { get; set; }
+        public int SiteSubsitesCount { get; set; }
+        [ScaffoldColumn(false)]
+        public int SubsiteId { get; set; }
+        [DisplayName("Subsite name")]
+        public string SubsiteName { get; set; }
+        [DisplayName("Subsite comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
+        public string SubsiteComments { get; set; }
+        [DisplayName("Ownership type")]
+        public string OwnershipType { get; set; }
+        public State State { get; set; }
+        public string County { get; set; }
+        public Coordinates Coordinates { get; set; }
     }
 }

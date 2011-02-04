@@ -41,6 +41,11 @@ namespace TMD.Controllers {
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult Mini() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.Mini);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public System.Web.Mvc.ActionResult ViewMarkersForImportSite() {
             return new T4MVC_ActionResult(Area, Name, ActionNames.ViewMarkersForImportSite);
         }
@@ -69,6 +74,7 @@ namespace TMD.Controllers {
         public class ActionNamesClass {
             public readonly string InitializeGoogleMaps = "InitializeGoogleMaps";
             public readonly string MenuWidget = "MenuWidget";
+            public readonly string Mini = "Mini";
             public readonly string Index = "Index";
             public readonly string ViewMarkers = "ViewMarkers";
             public readonly string ViewMarkersForImportSite = "ViewMarkersForImportSite";
@@ -82,12 +88,13 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
-            public readonly string ImportSiteMarkerInfoPartial = "~/Views/Map/ImportSiteMarkerInfoPartial.ascx";
-            public readonly string ImportSubsiteMarkerInfoPartial = "~/Views/Map/ImportSubsiteMarkerInfoPartial.ascx";
-            public readonly string ImportTreeMarkerInfoPartial = "~/Views/Map/ImportTreeMarkerInfoPartial.ascx";
+            public readonly string ImportSiteMarkerInfoPartial = "~/Views/Map/ImportSiteMarkerInfoPartial.cshtml";
+            public readonly string ImportSubsiteMarkerInfoPartial = "~/Views/Map/ImportSubsiteMarkerInfoPartial.cshtml";
+            public readonly string ImportTreeMarkerInfoPartial = "~/Views/Map/ImportTreeMarkerInfoPartial.cshtml";
             public readonly string Index = "~/Views/Map/Index.cshtml";
             public readonly string InitializeGoogleMaps = "~/Views/Map/InitializeGoogleMaps.cshtml";
             public readonly string MenuWidget = "~/Views/Map/MenuWidget.cshtml";
+            public readonly string Mini = "~/Views/Map/Mini.cshtml";
             public readonly string SiteMarkerInfoPartial = "~/Views/Map/SiteMarkerInfoPartial.cshtml";
             public readonly string SubsiteMarkerInfoPartial = "~/Views/Map/SubsiteMarkerInfoPartial.cshtml";
             public readonly string TreeMarkerInfoPartial = "~/Views/Map/TreeMarkerInfoPartial.cshtml";
@@ -106,6 +113,12 @@ namespace TMD.Controllers {
         public override System.Web.Mvc.ActionResult MenuWidget(bool isSelected) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);
             callInfo.RouteValueDictionary.Add("isSelected", isSelected);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult Mini(TMD.Model.Coordinates coordinates) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Mini);
+            callInfo.RouteValueDictionary.Add("coordinates", coordinates);
             return callInfo;
         }
 

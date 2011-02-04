@@ -31,6 +31,12 @@ namespace TMD.Controllers
             });
         }
 
+        [ChildActionOnly]
+        public virtual ActionResult Mini(Coordinates coordinates)
+        {
+            return PartialView(coordinates);
+        }
+
         [DefaultReturnUrl]
         public virtual ActionResult Index()
         {

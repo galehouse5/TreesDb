@@ -61,7 +61,16 @@
 		<div class="portlet-header"><h4>Location</h4></div>
 		<div class="portlet-content">
 			<table class="reports_table">
-				hello world
+                @{ Html.RenderAction(Mvc.Map.Mini(Model.Location.Coordinates)); }
+				@Html.ReportDisplayFor(m => m.Location.SiteName)
+				@Html.ReportDisplayFor(m => m.Location.SiteComments)
+				@if (Model.Location.SiteSubsitesCount > 1) { 
+					@Html.ReportDisplayFor(m => m.Location.SubsiteName)
+					@Html.ReportDisplayFor(m => m.Location.SubsiteComments)
+				}
+				@Html.ReportDisplayFor(m => m.Location.OwnershipType)
+				@Html.ReportDisplayFor(m => m.Location.County)
+				@Html.ReportDisplayFor(m => m.Location.State)
 			</table>
 		</div>
 	</div>

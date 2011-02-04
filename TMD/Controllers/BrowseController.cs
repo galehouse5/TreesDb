@@ -31,7 +31,11 @@ namespace TMD.Controllers
         {
             var tree = Repositories.Trees.FindById(id);
             var site = Repositories.Sites.FindSiteContainingTree(id);
-            return View(Mapper.Map<Tree, BrowseTreeModel>(tree));
+            var subsite = site.Subsites.Where(ss => ss.Trees.Contains(tree)).First();
+            var model = Mapper.Map<Tree, BrowseTreeModel>(tree);
+            Mapper.Map(site, model.Location);
+            Mapper.Map(subsite, model.Location);
+            return View(model);
         }
 
         [DefaultReturnUrl]

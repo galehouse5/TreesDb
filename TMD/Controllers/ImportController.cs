@@ -253,6 +253,11 @@ namespace TMD.Controllers
                 var siteModel = model.FindSiteById(innerAction.Id);
                 var subsiteModel = siteModel.AddSubsite();                    
                 Mapper.Map(subsite, subsiteModel);
+                if (siteModel.Subsites.Count == 2)
+                {
+                    siteModel.Subsites[1].State = siteModel.Subsites[0].State;
+                    siteModel.Subsites[1].County = siteModel.Subsites[0].County;
+                }
                 return Request.IsAjaxRequest() ? 
                     PartialView("SitePartial", model).AddViewData("siteId", site.Id) 
                     : View(model);

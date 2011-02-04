@@ -8,17 +8,17 @@ using TMD.Model;
 namespace TMD.Extensions
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property | AttributeTargets.Interface, AllowMultiple = true)]
-    public sealed class EmphasizedAttribute : Attribute, IMetadataAware
+    public sealed class EmphasizeAttribute : Attribute, IMetadataAware
     {
         public const string Key = "isEmphasized";
 
         private bool m_IsEmphasized;
-        public EmphasizedAttribute(bool isEmphasized)
+        public EmphasizeAttribute(bool isEmphasized)
         {
             m_IsEmphasized = isEmphasized;
         }
 
-        public EmphasizedAttribute()
+        public EmphasizeAttribute()
             : this(true)
         { }
 
@@ -49,11 +49,11 @@ namespace TMD.Extensions
     {
         public static bool? IsEmphasized(this ModelMetadata metadata)
         {
-            if (!metadata.AdditionalValues.ContainsKey(EmphasizedAttribute.Key))
+            if (!metadata.AdditionalValues.ContainsKey(EmphasizeAttribute.Key))
             {
                 return null;
             }
-            return (bool)metadata.AdditionalValues[EmphasizedAttribute.Key];
+            return (bool)metadata.AdditionalValues[EmphasizeAttribute.Key];
         }
 
         public static string Classification(this ModelMetadata metadata)

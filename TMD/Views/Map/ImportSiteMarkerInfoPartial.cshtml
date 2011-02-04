@@ -8,7 +8,7 @@
         @Html.ReportDisplayFor(m => m.Subsites[0].State)
         @Html.ReportDisplayFor(m => m.Subsites[0].County)
         @Html.ReportDisplayFor(m => m.Subsites[0].OwnershipType)
-        @if (Model.Subsites[0].Photos.Count > 0) {
+        if (Model.Subsites[0].Photos.Count > 0) {
             <tr>
                 <td class="description">Photos</td>
                 <td class="value">
