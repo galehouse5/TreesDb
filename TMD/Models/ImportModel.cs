@@ -45,7 +45,7 @@ namespace TMD.Models
         [DisplayName("Measurer contact"), Required, DataType(DataType.MultilineText)]
         public string MeasurerContactInfo { get; set; }
         [DisplayName("Make contact public")]
-        public bool MakeMeasurerContactInfoPublic { get; set; }
+        public bool? MakeMeasurerContactInfoPublic { get; set; }
         [DisplayName("First measurer"), Display(Description = "Lastname, Firstname"), Required]
         public string FirstMeasurer { get; set; }
         [DisplayName("Second measurer"), Display(Description = "Lastname, Firstname")]
@@ -273,7 +273,7 @@ namespace TMD.Models
         public ImportTreeCoordinatePickerModel Coordinates { get; set; }
         public Distance Height { get; set; }
         [DisplayName("Measurement method"), UIHint("Enum")]
-        public TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
+        public TreeHeightMeasurementMethod? HeightMeasurementMethod { get; set; }
         public Distance Girth { get; set; }
         [DisplayName("Crown spread")]
         public Distance CrownSpread { get; set; }
