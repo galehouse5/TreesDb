@@ -27,12 +27,11 @@ namespace TMD.Binders
                     var site = trip.FindSiteById(siteModel.Id);
                     if (siteModel.Coordinates == null) 
                     {
-                        siteModel.Coordinates = Mapper.Map<Site, ImportSiteCoordinatePickerModel>(site);
+                        siteModel.Coordinates = Mapper.Map<Site, CoordinatePickerModel>(site);
                     } 
                     else 
                     {
-                        siteModel.Coordinates.SiteId = site.Id;
-                        siteModel.Coordinates.TripId = trip.Id;
+                        siteModel.Coordinates.MarkerLoaderAction = Mvc.Map.ImportSiteMarkers(trip.Id, site.Id);
                     }
                     siteModel.Subsites.ForEach(subsiteModel =>
                         {
@@ -40,12 +39,11 @@ namespace TMD.Binders
                             subsiteModel.Photos = Mapper.Map<Subsite, ImportSubsitePhotoGalleryModel>(subsite);
                             if (subsiteModel.Coordinates == null) 
                             {
-                                subsiteModel.Coordinates = Mapper.Map<Subsite, ImportSubsiteCoordinatePickerModel>(subsite);
+                                subsiteModel.Coordinates = Mapper.Map<Subsite, CoordinatePickerModel>(subsite);
                             } 
                             else 
                             {
-                                subsiteModel.Coordinates.SubsiteId = subsite.Id;
-                                subsiteModel.Coordinates.TripId = trip.Id;
+                                subsiteModel.Coordinates.MarkerLoaderAction = Mvc.Map.ImportSubsiteMarkers(trip.Id, subsite.Id);
                             }
                         });
                     if (siteModel.Subsites.Count == 1)
@@ -84,12 +82,11 @@ namespace TMD.Binders
                                     treeModel.Photos = Mapper.Map<TreeBase, ImportTreePhotoGalleryModel>(tree);
                                     if (treeModel.Coordinates == null)
                                     {
-                                        treeModel.Coordinates = Mapper.Map<TreeBase, ImportTreeCoordinatePickerModel>(tree);
+                                        treeModel.Coordinates = Mapper.Map<TreeBase, CoordinatePickerModel>(tree);
                                     }
                                     else
                                     {
-                                        treeModel.Coordinates.TreeId = tree.Id;
-                                        treeModel.Coordinates.TripId = trip.Id;
+                                        treeModel.Coordinates.MarkerLoaderAction = Mvc.Map.ImportTreeMarkers(trip.Id, tree.Id);
                                     }
                                 });
                         });

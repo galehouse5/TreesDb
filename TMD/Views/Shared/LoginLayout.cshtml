@@ -1,27 +1,28 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-	    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	    <title>@ViewBag.Title</title>
-        <link href="@Url.VersionedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
-        <link href="@Url.VersionedContent(Links.css.screen_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.plugin_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.custom_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.login_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.Theme.Screen_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.Theme.Plugin_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.Theme.Login_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.Shared_css)" rel="Stylesheet" type="text/css" />
-        @RenderSection("Styles", false)
-    </head>
-    <body >
-        <div id="login">
-	        <h1 id="title">@Html.ActionLink("Trees Database", "Index", "Main")</h1>
-            <div id="login-body" class="clearfix"> 
-                @RenderBody()
-            </div>
-        </div> <!-- #login -->
-        @RenderSection("Scripts", false)
-    </body>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.VersionedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="@Url.VersionedContent(Links.css.screen_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.plugin_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.custom_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.login_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.Theme.Screen_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.Theme.Plugin_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.Theme.Login_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.Shared_css)" rel="Stylesheet" type="text/css" />
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <div id="login">
+        <h1 id="title">@Html.ActionLink("Trees Database", "Index", "Main")</h1>
+        <div id="login-body" class="clearfix">
+            @RenderBody()
+        </div>
+    </div>
+    <!-- #login -->
+    @RenderSection("Scripts", false)
+</body>
 </html>

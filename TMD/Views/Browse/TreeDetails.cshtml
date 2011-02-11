@@ -61,7 +61,7 @@
 		<div class="portlet-header"><h4>Location</h4></div>
 		<div class="portlet-content">
 			<table class="reports_table">
-                @{ Html.RenderAction(Mvc.Map.Mini(Model.Location.Coordinates)); }
+                
 				@Html.ReportDisplayFor(m => m.Location.SiteName)
 				@Html.ReportDisplayFor(m => m.Location.SiteComments)
 				@if (Model.Location.SiteSubsitesCount > 1) { 

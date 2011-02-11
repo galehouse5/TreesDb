@@ -1,68 +1,75 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-	    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	    <title>@ViewBag.Title</title>
-        <link href="@Url.VersionedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
-        <link href="@Url.VersionedContent(Links.css.screen_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.plugin_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.custom_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.Theme.Screen_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.Theme.Plugin_css)" rel="Stylesheet" type="text/css" />
-        <link href="@Url.VersionedContent(Links.css.Shared_css)" rel="Stylesheet" type="text/css" />
-        @RenderSection("Styles", false)
-    </head>
-    <body>
-        <div id="wrapper" class="clearfix">
-	        <div id="top">
-
-		        <div id="header">
-			        <h1>@Html.ActionLink("Trees Database", Mvc.Main.Index())</h1>
-                    @{ Html.RenderAction(Mvc.Account.AccountWidget()); }
-		        </div> <!-- #header -->		
-                	
-		        <div id="nav">
-			        <ul class="mega-container mega-grey">
-                        @{ Html.RenderAction(Mvc.Main.MenuWidget(ViewContext.Controller is TMD.Controllers.MainController));
-                           Html.RenderAction(Mvc.Import.MenuWidget(ViewContext.Controller is TMD.Controllers.ImportController));
-                           Html.RenderAction(Mvc.Browse.MenuWidget(ViewContext.Controller is TMD.Controllers.BrowseController));
-                           Html.RenderAction(Mvc.Map.MenuWidget(ViewContext.Controller is TMD.Controllers.MapController));
-                           Html.RenderAction(Mvc.Export.MenuWidget(ViewContext.Controller is TMD.Controllers.ExportController)); }
-			        </ul>
-		        </div> <!-- #nav -->
-	        </div> <!-- #top -->
-
-            @if (ViewData.GetJavascriptRequired()) { 
-                <div class="content xfluid LacksJavascript">
-                    <div class="portlet x12 ">
-			            <div class="portlet-header"><h4>This page requires javascript.</h4></div>
-			            <div class="portlet-content">
-			                <p>Please enable javascript in your browser's settings and then refresh this page.</p>
-			            </div>
-		            </div>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.VersionedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="@Url.VersionedContent(Links.css.screen_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.plugin_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.custom_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.Theme.Screen_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.Theme.Plugin_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.VersionedContent(Links.css.Shared_css)" rel="Stylesheet" type="text/css" />
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <div id="wrapper" class="clearfix">
+        <div id="top">
+            <div id="header">
+                <h1>@Html.ActionLink("Trees Database", Mvc.Main.Index())</h1>
+                @{ Html.RenderAction(Mvc.Account.AccountWidget()); }
+            </div>
+            <!-- #header -->
+            <div id="nav">
+                <ul class="mega-container mega-grey">
+                    @{ Html.RenderAction(Mvc.Main.MenuWidget(ViewContext.Controller is TMD.Controllers.MainController));
+                       Html.RenderAction(Mvc.Import.MenuWidget(ViewContext.Controller is TMD.Controllers.ImportController));
+                       Html.RenderAction(Mvc.Browse.MenuWidget(ViewContext.Controller is TMD.Controllers.BrowseController));
+                       Html.RenderAction(Mvc.Map.MenuWidget(ViewContext.Controller is TMD.Controllers.MapController));
+                       Html.RenderAction(Mvc.Export.MenuWidget(ViewContext.Controller is TMD.Controllers.ExportController)); }
+                </ul>
+            </div>
+            <!-- #nav -->
+        </div>
+        <!-- #top -->
+        @if (ViewData.GetJavascriptRequired())
+        { 
+            <div class="content xfluid LacksJavascript">
+                <div class="portlet x12 ">
+                    <div class="portlet-header">
+                        <h4>
+                            This page requires javascript.</h4>
+                    </div>
+                    <div class="portlet-content">
+                        <p>
+                            Please enable javascript in your browser's settings and then refresh this page.</p>
+                    </div>
                 </div>
-            }
-
-	        <div id="content" class="@(ViewData.GetJavascriptRequired() ? "content xfluid RequiresJavascript" : "content xfluid")">
-                @RenderBody()
-	        </div> <!-- #content -->
-	
-            <div id="footer">
-		        <p>Copyright &copy; @DateTime.Now.Year @Html.ActionLink("Trees Database", Mvc.Main.Index()), all rights reserved.</p>
-            </div> <!-- #footer -->
-	
-        </div> <!-- #wrapper -->
-        <script src="@Url.VersionedContent(Links.js.jquery.jquery_1_4_4_min_js)" type="text/javascript"></script>
-        <script src="@Url.VersionedContent(Links.js.jquery.jquery_ui_1_8_7_custom_min_js)" type="text/javascript"></script>
-        <script src="@Url.VersionedContent(Links.js.plugin_js)" type="text/javascript"></script>
-        <script src="@Url.VersionedContent(Links.js.widgets_js)" type="text/javascript"></script>
-        <script src="@Url.VersionedContent(Links.js.Shared_js)" type="text/javascript"></script>
-        <script src="@Url.VersionedContent(Links.js.Shared.Plugin_js)" type="text/javascript"></script>
-        <script src="@Url.VersionedContent(Links.js.Shared.Widgets_js)" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(function () { $('body').InitializeUi(); });
-        </script>
-        @RenderSection("Scripts", false)
-    </body>
+            </div>
+        }
+        <div id="content" class="@(ViewData.GetJavascriptRequired() ? "content xfluid RequiresJavascript" : "content xfluid")">
+            @RenderBody()
+        </div>
+        <!-- #content -->
+        <div id="footer">
+            <p>
+                Copyright &copy; @DateTime.Now.Year @Html.ActionLink("Trees Database", Mvc.Main.Index()),
+                all rights reserved.</p>
+        </div>
+        <!-- #footer -->
+    </div>
+    <!-- #wrapper -->
+    <script src="@Url.VersionedContent(Links.js.jquery.jquery_1_4_4_min_js)" type="text/javascript"></script>
+    <script src="@Url.VersionedContent(Links.js.jquery.jquery_ui_1_8_7_custom_min_js)" type="text/javascript"></script>
+    <script src="@Url.VersionedContent(Links.js.plugin_js)" type="text/javascript"></script>
+    <script src="@Url.VersionedContent(Links.js.widgets_js)" type="text/javascript"></script>
+    <script src="@Url.VersionedContent(Links.js.Shared_js)" type="text/javascript"></script>
+    <script src="@Url.VersionedContent(Links.js.Shared.Plugin_js)" type="text/javascript"></script>
+    <script src="@Url.VersionedContent(Links.js.Shared.Widgets_js)" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () { $('body').InitializeUi(); });
+    </script>
+    @RenderSection("Scripts", false)
+</body>
 </html>

@@ -87,6 +87,22 @@ namespace TMD.Model.Sites
         public virtual IList<Subsite> Subsites { get; private set; }
         public virtual IList<Name> Visitors { get; private set; }
 
+        public virtual void AddSubsite(Subsite subsite)
+        {
+            Subsites.Add(subsite);
+            subsite.Site = this;
+        }
+
+        public virtual bool RemoveSubsite(Subsite subsite)
+        {
+            if (Subsites.Remove(subsite))
+            {
+                subsite.Site = null;
+                return true;
+            }
+            return false;
+        }
+
         public virtual bool ContainsSingleSubsite
         {
             get { return Subsites.Count == 1; }
@@ -121,7 +137,7 @@ namespace TMD.Model.Sites
             var subsitesToAdd = from subsiteToAdd in siteToMerge.Subsites
                                 where !ShouldMerge(subsiteToAdd)
                                 select subsiteToAdd;
-            subsitesToAdd.ForEach(subsite => Subsites.Add(subsite));
+            subsitesToAdd.ForEach(subsite => AddSubsite(subsite));
             return RecalculateProperties();
         }
 

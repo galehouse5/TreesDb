@@ -41,23 +41,78 @@ namespace TMD.Controllers {
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Mini() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Mini);
+        public System.Web.Mvc.ActionResult SiteViewport() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.SiteViewport);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult ViewMarkersForImportSite() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.ViewMarkersForImportSite);
+        public System.Web.Mvc.ActionResult SubsiteViewport() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.SubsiteViewport);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult ViewMarkersForImportSubsite() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.ViewMarkersForImportSubsite);
+        public System.Web.Mvc.ActionResult TreeViewport() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.TreeViewport);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult ViewMarkersForImportTree() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.ViewMarkersForImportTree);
+        public System.Web.Mvc.ActionResult SiteMarkerInfo() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.SiteMarkerInfo);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult SubsiteMarkerInfo() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.SubsiteMarkerInfo);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult TreeMarkerInfo() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.TreeMarkerInfo);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult SiteMarker() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.SiteMarker);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult SubsiteMarker() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.SubsiteMarker);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult TreeMarker() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.TreeMarker);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult ImportSiteMarkers() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.ImportSiteMarkers);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult ImportSubsiteMarkers() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.ImportSubsiteMarkers);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult ImportTreeMarkers() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.ImportTreeMarkers);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult ImportTreeMarkerInfo() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.ImportTreeMarkerInfo);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult ImportSiteMarkerInfo() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.ImportSiteMarkerInfo);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult ImportSubsiteMarkerInfo() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.ImportSubsiteMarkerInfo);
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -74,12 +129,23 @@ namespace TMD.Controllers {
         public class ActionNamesClass {
             public readonly string InitializeGoogleMaps = "InitializeGoogleMaps";
             public readonly string MenuWidget = "MenuWidget";
-            public readonly string Mini = "Mini";
             public readonly string Index = "Index";
-            public readonly string ViewMarkers = "ViewMarkers";
-            public readonly string ViewMarkersForImportSite = "ViewMarkersForImportSite";
-            public readonly string ViewMarkersForImportSubsite = "ViewMarkersForImportSubsite";
-            public readonly string ViewMarkersForImportTree = "ViewMarkersForImportTree";
+            public readonly string SiteViewport = "SiteViewport";
+            public readonly string SubsiteViewport = "SubsiteViewport";
+            public readonly string TreeViewport = "TreeViewport";
+            public readonly string SiteMarkerInfo = "SiteMarkerInfo";
+            public readonly string SubsiteMarkerInfo = "SubsiteMarkerInfo";
+            public readonly string TreeMarkerInfo = "TreeMarkerInfo";
+            public readonly string SiteMarker = "SiteMarker";
+            public readonly string SubsiteMarker = "SubsiteMarker";
+            public readonly string TreeMarker = "TreeMarker";
+            public readonly string AllMarkers = "AllMarkers";
+            public readonly string ImportSiteMarkers = "ImportSiteMarkers";
+            public readonly string ImportSubsiteMarkers = "ImportSubsiteMarkers";
+            public readonly string ImportTreeMarkers = "ImportTreeMarkers";
+            public readonly string ImportTreeMarkerInfo = "ImportTreeMarkerInfo";
+            public readonly string ImportSiteMarkerInfo = "ImportSiteMarkerInfo";
+            public readonly string ImportSubsiteMarkerInfo = "ImportSubsiteMarkerInfo";
         }
 
 
@@ -94,7 +160,6 @@ namespace TMD.Controllers {
             public readonly string Index = "~/Views/Map/Index.cshtml";
             public readonly string InitializeGoogleMaps = "~/Views/Map/InitializeGoogleMaps.cshtml";
             public readonly string MenuWidget = "~/Views/Map/MenuWidget.cshtml";
-            public readonly string Mini = "~/Views/Map/Mini.cshtml";
             public readonly string SiteMarkerInfoPartial = "~/Views/Map/SiteMarkerInfoPartial.cshtml";
             public readonly string SubsiteMarkerInfoPartial = "~/Views/Map/SubsiteMarkerInfoPartial.cshtml";
             public readonly string TreeMarkerInfoPartial = "~/Views/Map/TreeMarkerInfoPartial.cshtml";
@@ -116,40 +181,112 @@ namespace TMD.Controllers {
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Mini(TMD.Model.Coordinates coordinates) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Mini);
-            callInfo.RouteValueDictionary.Add("coordinates", coordinates);
-            return callInfo;
-        }
-
         public override System.Web.Mvc.ActionResult Index() {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Index);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult ViewMarkers() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ViewMarkers);
-            return callInfo;
-        }
-
-        public override System.Web.Mvc.ActionResult ViewMarkersForImportSite(int id, int siteId) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ViewMarkersForImportSite);
+        public override System.Web.Mvc.ActionResult SiteViewport(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SiteViewport);
             callInfo.RouteValueDictionary.Add("id", id);
-            callInfo.RouteValueDictionary.Add("siteId", siteId);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult ViewMarkersForImportSubsite(int id, int subsiteId) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ViewMarkersForImportSubsite);
+        public override System.Web.Mvc.ActionResult SubsiteViewport(int id, int subsiteId) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SubsiteViewport);
             callInfo.RouteValueDictionary.Add("id", id);
             callInfo.RouteValueDictionary.Add("subsiteId", subsiteId);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult ViewMarkersForImportTree(int id, int treeId) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ViewMarkersForImportTree);
+        public override System.Web.Mvc.ActionResult TreeViewport(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.TreeViewport);
+            callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult SiteMarkerInfo(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SiteMarkerInfo);
+            callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult SubsiteMarkerInfo(int id, int subsiteId) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SubsiteMarkerInfo);
+            callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("subsiteId", subsiteId);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult TreeMarkerInfo(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.TreeMarkerInfo);
+            callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult SiteMarker(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SiteMarker);
+            callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult SubsiteMarker(int id, int subsiteId) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SubsiteMarker);
+            callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("subsiteId", subsiteId);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult TreeMarker(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.TreeMarker);
+            callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult AllMarkers() {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.AllMarkers);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult ImportSiteMarkers(int id, int siteId) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ImportSiteMarkers);
+            callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("siteId", siteId);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult ImportSubsiteMarkers(int id, int subsiteId) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ImportSubsiteMarkers);
+            callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("subsiteId", subsiteId);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult ImportTreeMarkers(int id, int treeId) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ImportTreeMarkers);
             callInfo.RouteValueDictionary.Add("id", id);
             callInfo.RouteValueDictionary.Add("treeId", treeId);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult ImportTreeMarkerInfo(int id, int treeId) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ImportTreeMarkerInfo);
+            callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("treeId", treeId);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult ImportSiteMarkerInfo(int id, int siteId) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ImportSiteMarkerInfo);
+            callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("siteId", siteId);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult ImportSubsiteMarkerInfo(int id, int subsiteId) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ImportSubsiteMarkerInfo);
+            callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("subsiteId", subsiteId);
             return callInfo;
         }
 

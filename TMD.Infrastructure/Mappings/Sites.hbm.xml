@@ -41,7 +41,7 @@
       <key column="SiteId"></key>
       <one-to-many class="TMD.Model.Sites.SiteVisit"/>
     </bag>
-    <bag name="Subsites" table="Subsites" inverse="false" cascade="all-delete-orphan">
+    <bag name="Subsites" table="Subsites" cascade="all-delete-orphan">
       <key column="SiteId"></key>
       <one-to-many class="TMD.Model.Sites.Subsite"/>
     </bag>
@@ -97,6 +97,7 @@
     <id name="Id">
       <generator class="native"/>
     </id>
+    <many-to-one name="Site" column="SiteId" />
     <property name="LastVisited" />
     <property name="Name" />
     <many-to-one name="State" column="StateId" cascade="none" />

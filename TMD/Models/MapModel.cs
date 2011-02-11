@@ -20,42 +20,65 @@ namespace TMD.Models
     public abstract class CoordinatePickerModel
     {
         public Coordinates Coordinates { get; set; }
-        public abstract string MapLoaderActionName { get; }
-        public abstract object MapLoaderRouteValues { get; }
+        public ActionResult MarkerLoaderAction { get; set; }
     }
 
-    public class ImportTreeCoordinatePickerModel : CoordinatePickerModel
+    public abstract class MapViewportModel
     {
-        public int TripId { get; set; }
-        public int TreeId { get; set; }
-        public override string MapLoaderActionName { get { return "ViewMarkersForImportTree"; } }
-        public override object MapLoaderRouteValues { get { return new { controller = "Map", id = TripId, treeId = TreeId }; } }
+        public int Zoom { get; set; }
+        public Coordinates Center { get; set; }
+        public CoordinateBounds Bounds { get; set; }
+        public ActionResult MarkerLoaderAction { get; set; }
     }
 
-    public class ImportSubsiteCoordinatePickerModel : CoordinatePickerModel
+    public class MapMarkerModel
     {
-        public int TripId { get; set; }
-        public int SubsiteId { get; set; }
-        public override string MapLoaderActionName { get { return "ViewMarkersForImportSubsite"; } }
-        public override object MapLoaderRouteValues { get { return new { controller = "Map", id = TripId, subsiteId = SubsiteId }; } }
+        public string Title { get; set; }
+        public Coordinates Position { get; set; }
+        public ActionResult InfoLoaderAction { get; set; }
+        public int? MinZoom { get; set; }
+        public int? MaxZoom { get; set; }
+        public string DefaultIconUrl { get; set; }
+        public IEnumerable<MapMarkerIconModel> DynamicIcons { get; set; }
+
+        public object ToJson(UrlHelper url)
+        {
+            return new
+            {
+                Title, MinZoom, MaxZoom,
+                Latitude = Position.Latitude.TotalDegrees, Longitude = Position.Longitude.TotalDegrees,
+                InfoLoaderUrl = url.Action(InfoLoaderAction),
+                DefaultIconUrl,
+                DynamicIcons = DynamicIcons == null ? new object [0]
+                    : DynamicIcons.Select(di => di.ToJson(url)).ToArray()
+            };
+        }
     }
 
-    public class ImportSiteCoordinatePickerModel : CoordinatePickerModel
+    public class MapMarkerIconModel
     {
-        public int TripId { get; set; }
-        public int SiteId { get; set; }
-        public override string MapLoaderActionName { get { return "ViewMarkersForImportSite"; } }
-        public override object MapLoaderRouteValues { get { return new { controller = "Map", id = TripId, siteId = SiteId }; } }
+        public int MinZoom { get; set; }
+        public int MaxZoom { get; set; }
+        public ActionResult IconLoaderAction { get; set; }
+
+        public object ToJson(UrlHelper url)
+        {
+            return new 
+            { 
+                MinZoom, MaxZoom, 
+                IconLoaderUrl = url.Action(IconLoaderAction) 
+            };
+        }
     }
 
-    public class MapImportSiteMarkerModel
+    public class MapImportSiteMarkerInfoModel
     {
         public string Name { get; set; }
         public int SubsitesCount { get; set; }
-        public IList<MapImportSubsiteMarkerModel> Subsites { get; set; }
+        public IList<MapImportSubsiteMarkerInfoModel> Subsites { get; set; }
     }
 
-    public class MapImportSubsiteMarkerModel
+    public class MapImportSubsiteMarkerInfoModel
     {
         public string Name { get; set; }
         public State State { get; set; }
@@ -65,7 +88,7 @@ namespace TMD.Models
         public IList<IPhoto> Photos { get; set; }
     }
 
-    public class MapImportTreeMarkerModel
+    public class MapImportTreeMarkerInfoModel
     {
         [DisplayName("Scientific name")]
         public string ScientificName { get; set; }
@@ -78,7 +101,7 @@ namespace TMD.Models
         public IList<IPhoto> Photos { get; set; }
     }
 
-    public class MapSiteMarkerModel
+    public class MapSiteMarkerInfoModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -107,7 +130,7 @@ namespace TMD.Models
         public DateTime LastVisited { get; set; }
     }
 
-    public class MapSubsiteMarkerModel
+    public class MapSubsiteMarkerInfoModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -134,7 +157,7 @@ namespace TMD.Models
         public DateTime LastVisited { get; set; }
     }
 
-    public class MapTreeMarkerModel
+    public class MapTreeMarkerInfoModel
     {
         public int Id { get; set; }
         [DisplayName("Common name")] public string CommonName { get; set; }

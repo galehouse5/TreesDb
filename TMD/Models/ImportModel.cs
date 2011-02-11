@@ -129,7 +129,7 @@ namespace TMD.Models
         [Required]
         public string Name { get; set; }
         [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates")]
-        public ImportSiteCoordinatePickerModel Coordinates { get; set; }
+        public CoordinatePickerModel Coordinates { get; set; }
         public string Comments { get; set; }
 
         public IList<ImportSubsiteModel> Subsites { get; set; }
@@ -164,7 +164,7 @@ namespace TMD.Models
         [Required]
         public string Name { get; set; }
         [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates")]
-        public ImportSubsiteCoordinatePickerModel Coordinates { get; set; }
+        public CoordinatePickerModel Coordinates { get; set; }
         [Required, Classification("State")]
         public State State { get; set; }
         [Required, Classification("County")]
@@ -270,7 +270,7 @@ namespace TMD.Models
         [DisplayName("Scientific name"), Required, Classification("ScientificName")]
         public string ScientificName { get; set; }
         [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates")]
-        public ImportTreeCoordinatePickerModel Coordinates { get; set; }
+        public CoordinatePickerModel Coordinates { get; set; }
         public Distance Height { get; set; }
         [DisplayName("Measurement method"), UIHint("Enum")]
         public TreeHeightMeasurementMethod? HeightMeasurementMethod { get; set; }

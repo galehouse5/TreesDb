@@ -19,6 +19,7 @@ namespace TMD.Model.Sites
         { }
 
         public virtual int Id { get; private set; }
+        public virtual Site Site { get; protected internal set; }
         public virtual DateTime LastVisited { get; private set; }
         public virtual string Name { get; private set; }
         public virtual State State { get; private set; }

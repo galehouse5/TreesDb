@@ -4,8 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TMD.Models;
-using TMD.Model.Imports;
-using TMD.Model.Photos;
 using TMD.Model;
 using TMD.Model.Extensions;
 using TMD.Extensions;
@@ -31,246 +29,214 @@ namespace TMD.Controllers
             });
         }
 
-        [ChildActionOnly]
-        public virtual ActionResult Mini(Coordinates coordinates)
-        {
-            return PartialView(coordinates);
-        }
-
         [DefaultReturnUrl]
         public virtual ActionResult Index()
         {
             ViewData.SetJavascriptRequired(true);
             var sites = Repositories.Sites.ListAll();
-            return View(CoordinateBounds.Create(from site in sites 
-                                                where site.TreesWithSpecifiedCoordinatesCount > 0 
-                                                select site.Coordinates));
+            var model = Mapper.Map<IList<Model.Sites.Site>, MapViewportModel>(sites);
+            return View(model);
         }
 
-        public virtual ActionResult ViewMarkers()
+        [ChildActionOnly]
+        public virtual ActionResult SiteViewport(int id)
+        {
+            var site = Repositories.Sites.FindById(id);
+            var model = Mapper.Map<Model.Sites.Site, MapViewportModel>(site);
+            return PartialView(model);
+        }
+
+        [ChildActionOnly]
+        public virtual ActionResult SubsiteViewport(int id, int subsiteId)
+        {
+            var site = Repositories.Sites.FindById(id);
+            var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
+            var model = Mapper.Map<Model.Sites.Subsite, MapViewportModel>(subsite);
+            return PartialView(model);
+        }
+
+        [ChildActionOnly]
+        public virtual ActionResult TreeViewport(int id)
+        {
+            var tree = Repositories.Trees.FindById(id);
+            var model = Mapper.Map<Model.Trees.Tree, MapViewportModel>(tree);
+            return PartialView(model);
+        }
+
+        public virtual ActionResult SiteMarkerInfo(int id)
+        {
+            var site = Repositories.Sites.FindById(id);
+            var model = Mapper.Map<Model.Sites.Site, MapSiteMarkerInfoModel>(site);
+            return PartialView(model);
+        }
+
+        public virtual ActionResult SubsiteMarkerInfo(int id, int subsiteId)
+        {
+            var site = Repositories.Sites.FindById(id);
+            var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
+            var model = Mapper.Map<Model.Sites.Subsite, MapSubsiteMarkerInfoModel>(subsite);
+            return PartialView(model);
+        }
+
+        public virtual ActionResult TreeMarkerInfo(int id)
+        {
+            var tree = Repositories.Trees.FindById(id);
+            var model = Mapper.Map<Model.Trees.Tree, MapTreeMarkerInfoModel>(tree);
+            return PartialView(model);
+        }
+
+        public virtual ActionResult SiteMarker(int id)
+        {
+            var site = Repositories.Sites.FindById(id);
+            var model = Mapper.Map<Model.Sites.Site, MapMarkerModel>(site);
+            return Json(model.ToJson(Url), JsonRequestBehavior.AllowGet);
+        }
+
+        public virtual ActionResult SubsiteMarker(int id, int subsiteId)
+        {
+            var site = Repositories.Sites.FindById(id);
+            var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
+            var model = Mapper.Map<Model.Sites.Subsite, MapMarkerModel>(subsite);
+            return Json(model.ToJson(Url), JsonRequestBehavior.AllowGet);
+        }
+
+        public virtual ActionResult TreeMarker(int id)
+        {
+            var tree = Repositories.Trees.FindById(id);
+            var model = Mapper.Map<Model.Trees.Tree, MapMarkerModel>(tree);
+            return Json(model.ToJson(Url), JsonRequestBehavior.AllowGet);
+        }
+
+        public virtual ActionResult AllMarkers()
         {
             var sites = Repositories.Sites.ListAllForMap();
-            var renderedMarkers = new List<object>();
-            renderedMarkers.AddRange(from site in sites
-                                     where site.TreesWithSpecifiedCoordinatesCount > 0
-                                     select renderSiteMarker(site));
-            renderedMarkers.AddRange(from site in sites
-                                     where !site.ContainsSingleSubsite
-                                     from subsite in site.Subsites
-                                     where subsite.TreesWithSpecifiedCoordinatesCount > 0
-                                     select renderSubsiteMarker(subsite));
-            renderedMarkers.AddRange(from site in sites
-                                     from subsite in site.Subsites
-                                     where subsite.TreesWithSpecifiedCoordinatesCount > 0
-                                     from tree in subsite.Trees
-                                     where tree.Coordinates.IsSpecified
-                                     select renderTreeMarker(tree));
-            return Json(new { Markers = renderedMarkers.ToArray() }, JsonRequestBehavior.AllowGet);
+            List<MapMarkerModel> markers = new List<MapMarkerModel>();
+            markers.AddRange(from site in sites
+                             where site.TreesWithSpecifiedCoordinatesCount > 0
+                             select Mapper.Map<Model.Sites.Site, MapMarkerModel>(site));
+            markers.AddRange(from site in sites
+                             where !site.ContainsSingleSubsite
+                             from subsite in site.Subsites
+                             where subsite.TreesWithSpecifiedCoordinatesCount > 0
+                             select Mapper.Map<Model.Sites.Subsite, MapMarkerModel>(subsite));
+            markers.AddRange(from site in sites
+                             from subsite in site.Subsites
+                             where subsite.TreesWithSpecifiedCoordinatesCount > 0
+                             from tree in subsite.Trees
+                             where tree.Coordinates.IsSpecified
+                             select Mapper.Map<Model.Trees.Tree, MapMarkerModel>(tree));
+            return Json(new { Markers = markers.Select(m => m.ToJson(Url)).ToArray() }, JsonRequestBehavior.AllowGet);
         }
 
-        public object renderSiteMarker(Model.Sites.Site site)
-        {
-            return new
-            {
-                Title = site.Name,
-                Coordinates = new
-                {
-                    Latitude = site.CalculatedCoordinates.Latitude.TotalDegrees,
-                    Longitude = site.CalculatedCoordinates.Longitude.TotalDegrees
-                },
-                Icon = site.Subsites.Count == 1 && site.Subsites[0].Photos.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = site.Subsites[0].Photos[0].PhotoId, size = PhotoSize.MiniSquare })
-                    : "/images/icons/Site32.png",
-                Info = RenderPartialViewToString("SiteMarkerInfoPartial", Mapper.Map<Model.Sites.Site, MapSiteMarkerModel>(site)),
-                MinZoom = 0, MaxZoom = site.ContainsSingleSubsite ? 13 : 11
-            };
-        }
-
-        public object renderSubsiteMarker(Model.Sites.Subsite subsite)
-        {
-            return new
-            {
-                Title = subsite.Name,
-                Coordinates = new
-                {
-                    Latitude = subsite.CalculatedCoordinates.Latitude.TotalDegrees,
-                    Longitude = subsite.CalculatedCoordinates.Longitude.TotalDegrees
-                },
-                Icon = subsite.Photos.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = subsite.Photos[0].PhotoId, size = PhotoSize.MiniSquare })
-                    : "/images/icons/Subsite32.png",
-                Info = RenderPartialViewToString("SubsiteMarkerInfoPartial", Mapper.Map<Model.Sites.Subsite, MapSubsiteMarkerModel>(subsite)),
-                MinZoom = 12, MaxZoom = 13
-            };
-        }
-
-        public object renderTreeMarker(Model.Trees.Tree tree)
-        {
-            return new
-            {
-                Title = tree.ScientificName,
-                Coordinates = new
-                {
-                    Latitude = tree.CalculatedCoordinates.Latitude.TotalDegrees,
-                    Longitude = tree.CalculatedCoordinates.Longitude.TotalDegrees
-                },
-                Icon = tree.Photos.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = tree.Photos[0].PhotoId, size = PhotoSize.MiniSquare })
-                    : "/images/icons/SingleTrunkTree32.png",
-                Info = RenderPartialViewToString("TreeMarkerInfoPartial", Mapper.Map<Model.Trees.Tree, MapTreeMarkerModel>(tree)),
-                MinZoom = 14, MaxZoom = 30
-            };
-        }
-
-        private object renderImportSiteMarker(Site site)
-        {
-            if (site.Subsites.Count == 1)
-            {
-                return new
-                {
-                    Title = site.Subsites[0].Name,
-                    Coordinates = new {
-                        Latitude = site.Subsites[0].Coordinates.Latitude.TotalDegrees,
-                        Longitude = site.Subsites[0].Coordinates.Longitude.TotalDegrees
-                    },
-                    Icon = site.Subsites[0].Photos.Count > 0 ?
-                        Url.Action("View", "Photos", new { id = site.Subsites[0].Photos[0].PhotoId, size = PhotoSize.MiniSquare })
-                        : "/images/icons/Site32.png",
-                    Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", Mapper.Map<Subsite, MapImportSubsiteMarkerModel>(site.Subsites[0]))
-                };
-            }
-            return new
-            {
-                Title = site.Name,
-                Coordinates = new {
-                    Latitude = site.Coordinates.Latitude.TotalDegrees,
-                    Longitude = site.Coordinates.Longitude.TotalDegrees
-                },
-                Icon = "/images/icons/Site32.png",
-                Info = RenderPartialViewToString("ImportSiteMarkerInfoPartial", Mapper.Map<Site, MapImportSiteMarkerModel>(site))
-            };
-        }
-
-        private object renderImportSubsiteMarker(Subsite subsite)
-        {
-            return new
-            {
-                Title = subsite.Name,
-                Coordinates = new {
-                    Latitude = subsite.Coordinates.Latitude.TotalDegrees,
-                    Longitude = subsite.Coordinates.Longitude.TotalDegrees
-                },
-                Icon = subsite.Photos.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = subsite.Photos[0].PhotoId, size = PhotoSize.MiniSquare }) 
-                    : "/images/icons/Subsite32.png",
-                Info = RenderPartialViewToString("ImportSubsiteMarkerInfoPartial", Mapper.Map<Subsite, MapImportSubsiteMarkerModel>(subsite))
-            };
-        }
-
-        private object renderImportTreeMarker(TreeBase tree)
-        {
-            return new
-            {
-                Title = tree.ScientificName,
-                Coordinates = new {
-                    Latitude = tree.Coordinates.Latitude.TotalDegrees,
-                    Longitude = tree.Coordinates.Longitude.TotalDegrees
-                },
-                Icon = tree.Photos.Count > 0 ?
-                    Url.Action("View", "Photos", new { id = tree.Photos[0].PhotoId, size = PhotoSize.MiniSquare }) 
-                    : "/images/icons/SingleTrunkTree32.png",
-                Info = RenderPartialViewToString("ImportTreeMarkerInfoPartial", Mapper.Map<TreeBase, MapImportTreeMarkerModel>(tree))
-            };
-        }
-
-        public virtual ActionResult ViewMarkersForImportSite(int id, int siteId)
+        public virtual ActionResult ImportSiteMarkers(int id, int siteId)
         {
             var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            var renderedMarkers = new List<object>();
-            renderedMarkers.AddRange(from sv in trip.Sites
-                where sv.Coordinates.IsValidAndSpecified() && sv.Id != siteId
-                select renderImportSiteMarker(sv));
-            renderedMarkers.AddRange(from sv in trip.Sites
-                where sv.Subsites.Count != 1
-                from ssv in sv.Subsites
-                where ssv.Coordinates.IsValidAndSpecified()
-                select renderImportSubsiteMarker(ssv));
-            renderedMarkers.AddRange(from sv in trip.Sites
-                from ssv in sv.Subsites
-                from tm in ssv.Trees
-                where tm.Coordinates.IsValidAndSpecified()
-                select renderImportTreeMarker(tm));
-            var calculatedCoordinates = trip.FindSiteById(siteId).CalculateCoordinates();
+            List<MapMarkerModel> markers = new List<MapMarkerModel>();
+            markers.AddRange(from site in trip.Sites
+                             where site.Coordinates.IsValidAndSpecified() && site.Subsites.Count > 1 && site.Id != siteId
+                             select Mapper.Map<Model.Imports.Site, MapMarkerModel>(site));
+            markers.AddRange(from site in trip.Sites
+                             from subsite in site.Subsites
+                             where subsite.Coordinates.IsValidAndSpecified()
+                             select Mapper.Map<Model.Imports.Subsite, MapMarkerModel>(subsite));
+            markers.AddRange(from site in trip.Sites
+                             from subsite in site.Subsites
+                             from tree in subsite.Trees
+                             where tree.Coordinates.IsValidAndSpecified()
+                             select Mapper.Map<Model.Imports.TreeBase, MapMarkerModel>(tree));
+            Coordinates calculatedCoordinates = trip.FindSiteById(siteId).CalculateCoordinates();
             if (calculatedCoordinates.IsValidAndSpecified())
             {
-                return Json(new
-                {
+                return Json(new {
                     CalculatedCoordinates = new { Latitude = calculatedCoordinates.Latitude.TotalDegrees, Longitude = calculatedCoordinates.Longitude.TotalDegrees },
-                    Markers = renderedMarkers.ToArray()
+                    Markers = markers.Select(m => m.ToJson(Url)).ToArray()
                 }, JsonRequestBehavior.AllowGet);
             }
-            return Json(new { Markers = renderedMarkers.ToArray() }, JsonRequestBehavior.AllowGet);
+            return Json(new { Markers = markers.Select(m => m.ToJson(Url)).ToArray() }, JsonRequestBehavior.AllowGet);
         }
 
-        public virtual ActionResult ViewMarkersForImportSubsite(int id, int subsiteId)
+        public virtual ActionResult ImportSubsiteMarkers(int id, int subsiteId)
         {
             var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            var renderedMarkers = new List<object>();
-            renderedMarkers.AddRange(from sv in trip.Sites
-                where sv.Coordinates.IsValidAndSpecified() && (sv.Subsites.Count != 1 || sv.Subsites[0].Id != subsiteId)
-                select renderImportSiteMarker(sv));
-            renderedMarkers.AddRange(from sv in trip.Sites
-                where sv.Subsites.Count != 1
-                from ssv in sv.Subsites
-                where ssv.Coordinates.IsValidAndSpecified() && ssv.Id != subsiteId
-                select renderImportSubsiteMarker(ssv));
-            renderedMarkers.AddRange(from sv in trip.Sites
-                from ssv in sv.Subsites
-                from tm in ssv.Trees
-                where tm.Coordinates.IsValidAndSpecified()
-                select renderImportTreeMarker(tm));
-            var calculatedCoordinates = trip.FindSubsiteById(subsiteId).CalculateCoordinates();
+            List<MapMarkerModel> markers = new List<MapMarkerModel>();
+            markers.AddRange(from site in trip.Sites
+                             where site.Coordinates.IsValidAndSpecified() && site.Subsites.Count > 1
+                             select Mapper.Map<Model.Imports.Site, MapMarkerModel>(site));
+            markers.AddRange(from site in trip.Sites
+                             from subsite in site.Subsites
+                             where subsite.Coordinates.IsValidAndSpecified() && subsite.Id != subsiteId
+                             select Mapper.Map<Model.Imports.Subsite, MapMarkerModel>(subsite));
+            markers.AddRange(from site in trip.Sites
+                             from subsite in site.Subsites
+                             from tree in subsite.Trees
+                             where tree.Coordinates.IsValidAndSpecified()
+                             select Mapper.Map<Model.Imports.TreeBase, MapMarkerModel>(tree));
+            Coordinates calculatedCoordinates = trip.FindSubsiteById(subsiteId).CalculateCoordinates();
             if (calculatedCoordinates.IsValidAndSpecified())
             {
-                return Json(new
-                {
+                return Json(new {
                     CalculatedCoordinates = new { Latitude = calculatedCoordinates.Latitude.TotalDegrees, Longitude = calculatedCoordinates.Longitude.TotalDegrees },
-                    Markers = renderedMarkers.ToArray()
+                    Markers = markers.Select(m => m.ToJson(Url)).ToArray()
                 }, JsonRequestBehavior.AllowGet);
             }
-            return Json(new { Markers = renderedMarkers.ToArray() }, JsonRequestBehavior.AllowGet);
+            return Json(new { Markers = markers.Select(m => m.ToJson(Url)).ToArray() }, JsonRequestBehavior.AllowGet);
         }
 
-        public virtual ActionResult ViewMarkersForImportTree(int id, int treeId)
+        public virtual ActionResult ImportTreeMarkers(int id, int treeId)
         {
             var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            var renderedMarkers = new List<object>();
-            renderedMarkers.AddRange(from sv in trip.Sites
-                where sv.Coordinates.IsValidAndSpecified()
-                select renderImportSiteMarker(sv));
-            renderedMarkers.AddRange(from sv in trip.Sites
-                where sv.Subsites.Count != 1
-                from ssv in sv.Subsites
-                where ssv.Coordinates.IsValidAndSpecified()
-                select renderImportSubsiteMarker(ssv));
-            renderedMarkers.AddRange(from sv in trip.Sites
-                from ssv in sv.Subsites
-                from tm in ssv.Trees
-                where tm.Coordinates.IsValidAndSpecified() && tm.Id != treeId
-                select renderImportTreeMarker(tm));
-            var calculatedCoordinates = trip.FindTreeById(treeId).CalculateCoordinates();
-            if (calculatedCoordinates.IsValidAndSpecified()) 
+            List<MapMarkerModel> markers = new List<MapMarkerModel>();
+            markers.AddRange(from site in trip.Sites
+                             where site.Coordinates.IsValidAndSpecified() && site.Subsites.Count > 1
+                             select Mapper.Map<Model.Imports.Site, MapMarkerModel>(site));
+            markers.AddRange(from site in trip.Sites
+                             from subsite in site.Subsites
+                             where subsite.Coordinates.IsValidAndSpecified()
+                             select Mapper.Map<Model.Imports.Subsite, MapMarkerModel>(subsite));
+            markers.AddRange(from site in trip.Sites
+                             from subsite in site.Subsites
+                             from tree in subsite.Trees
+                             where tree.Coordinates.IsValidAndSpecified() && tree.Id != treeId
+                             select Mapper.Map<Model.Imports.TreeBase, MapMarkerModel>(tree));
+            Coordinates calculatedCoordinates = trip.FindTreeById(treeId).CalculateCoordinates();
+            if (calculatedCoordinates.IsValidAndSpecified())
             {
-                return Json(new
-                {
+                return Json(new {
                     CalculatedCoordinates = new { Latitude = calculatedCoordinates.Latitude.TotalDegrees, Longitude = calculatedCoordinates.Longitude.TotalDegrees },
-                    Markers = renderedMarkers.ToArray()
+                    Markers = markers.Select(m => m.ToJson(Url)).ToArray()
                 }, JsonRequestBehavior.AllowGet);
             }
-            return Json(new { Markers = renderedMarkers.ToArray() }, JsonRequestBehavior.AllowGet);
+            return Json(new { Markers = markers.Select(m => m.ToJson(Url)).ToArray() }, JsonRequestBehavior.AllowGet);
+        }
+
+        public virtual ActionResult ImportTreeMarkerInfo(int id, int treeId)
+        {
+            var trip = Repositories.Imports.FindById(id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            var tree = trip.FindTreeById(treeId);
+            var model = Mapper.Map<Model.Imports.TreeBase, MapImportTreeMarkerInfoModel>(tree);
+            return PartialView(model);
+        }
+
+        public virtual ActionResult ImportSiteMarkerInfo(int id, int siteId)
+        {
+            var trip = Repositories.Imports.FindById(id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            var site = trip.FindSiteById(siteId);
+            var model = Mapper.Map<Model.Imports.Site, MapImportSiteMarkerInfoModel>(site);
+            return PartialView(model);
+        }
+
+        public virtual ActionResult ImportSubsiteMarkerInfo(int id, int subsiteId)
+        {
+            var trip = Repositories.Imports.FindById(id);
+            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            var subsite = trip.FindSubsiteById(subsiteId);
+            var model = Mapper.Map<Model.Imports.Subsite, MapImportSubsiteMarkerInfoModel>(subsite);
+            return PartialView(model);
         }
     }
 }
