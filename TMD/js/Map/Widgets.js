@@ -41,9 +41,9 @@
                 mapTypeId: google.maps.MapTypeId.TERRAIN,
                 scaleControl: true,
                 mapTypeControlOptions: {
-                    mapTypeIds: [google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID],
+                    mapTypeIds: [google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID],
                     position: google.maps.ControlPosition.RIGHT_BOTTOM,
-                    style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
                 },
                 navigationControlOptions: {
                     position: google.maps.ControlPosition.LEFT_BOTTOM,
@@ -60,8 +60,7 @@
 
 
             function addMarker(options) {
-                var marker = new google.maps.Marker({
-                    map: map,
+                var marker = new google.maps.Marker({map: map,
                     icon: options.DefaultIconUrl,
                     title: options.Title,
                     position: new google.maps.LatLng(options.Latitude, options.Longitude)
@@ -121,11 +120,11 @@
         var options = $.extend(defaults, options);
         return this.each(function () {
             var $pickerContainer = $(this);
-            $pickerContainer.find('button').show();
+            var $pickerButton = $pickerContainer.find('button').show();
             var $coordinateContainer = $pickerContainer.find('input[type=text]');
 
-            $pickerContainer.bind('PickCoordinates', function (event, mapLoader) {
-                $.get(mapLoader, function (response) {
+            $pickerContainer.click(function () {
+                $.get($pickerButton.attr('data-markerloaderurl'), function (response) {
                     var coordinates = Coordinates.Parse($coordinateContainer.val());
                     if (coordinates.IsValid() && coordinates.IsSpecified()) {
                         CoordinatePicker.Open({ Coordinates: coordinates, Zoom: 15, Markers: response.Markers, Callback: handleCoordinatePickerResult });

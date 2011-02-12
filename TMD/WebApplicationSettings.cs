@@ -14,8 +14,9 @@ namespace TMD
             public const string HostName = "hostName";
             public const string WebmasterEmail = "webmasterEmail";
             public const string HandleControllerExceptions = "handleControllerExceptions";
-            public const string StaticResourceVersion = "staticResourceVersion";
-            public const string StaticResourceHostname = "staticResourceHostname";
+            public const string StaticContentVersion = "staticContentVersion";
+            public const string StaticContentHostname = "staticContentHostname";
+            public const string MinifyStaticContent = "minifyStaticContent";
         }
 
         [ConfigurationProperty(PropertyNames.GoogleApiKey, IsRequired = true)]
@@ -46,18 +47,25 @@ namespace TMD
             set { this[PropertyNames.HandleControllerExceptions] = value; }
         }
 
-        [ConfigurationProperty(PropertyNames.StaticResourceVersion, DefaultValue = "")]
-        public string StaticResourceVersion
+        [ConfigurationProperty(PropertyNames.StaticContentVersion, DefaultValue = "")]
+        public string StaticContentVersion
         {
-            get { return (string)this[PropertyNames.StaticResourceVersion]; }
-            set { this[PropertyNames.StaticResourceVersion] = value; }
+            get { return (string)this[PropertyNames.StaticContentVersion]; }
+            set { this[PropertyNames.StaticContentVersion] = value; }
         }
 
-        [ConfigurationProperty(PropertyNames.StaticResourceHostname, DefaultValue = "")]
-        public string StaticResourceHostname
+        [ConfigurationProperty(PropertyNames.StaticContentHostname, DefaultValue = "")]
+        public string StaticContentHostname
         {
-            get { return (string)this[PropertyNames.StaticResourceHostname]; }
-            set { this[PropertyNames.StaticResourceHostname] = value; }
+            get { return (string)this[PropertyNames.StaticContentHostname]; }
+            set { this[PropertyNames.StaticContentHostname] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.MinifyStaticContent, DefaultValue = false)]
+        public bool MinifyStaticContent
+        {
+            get { return (bool)this[PropertyNames.MinifyStaticContent]; }
+            set { this[PropertyNames.MinifyStaticContent] = value; }
         }
     }
 }

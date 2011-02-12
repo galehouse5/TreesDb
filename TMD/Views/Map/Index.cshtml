@@ -11,7 +11,7 @@
 
 @section Scripts {
     @{ Html.RenderAction(Mvc.Map.InitializeGoogleMaps()); }
-    <script type="text/javascript" src="@Links.js.Map.Widgets_js"></script>
+    <script src="@Url.ManagedContent(Links.js.Map_js, Links.js.Map_min_js)" type="text/javascript"></script>
     <script type="text/javascript">
         // normalize html structure and css rules
         $(function () {

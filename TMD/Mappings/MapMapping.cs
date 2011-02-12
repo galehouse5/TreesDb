@@ -102,7 +102,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.ScientificName))
                 .ForMember(dest => dest.Position, opt => opt.MapFrom(src => src.Coordinates))
                 .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue("/images/icons/SingleTrunkTree32.png"))
-                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.ImportSubsiteMarkerInfo(src.Subsite.Site.Trip.Id, src.Id)))
+                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.ImportTreeMarkerInfo(src.Subsite.Site.Trip.Id, src.Id)))
                 .ForMember(dest => dest.DynamicIcons, opt => opt.MapFrom(src =>
                 {
                     if (src.Photos.Count > 0)

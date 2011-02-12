@@ -194,7 +194,19 @@
     <Content Include="css\jquery\images\ui-icons_ffffff_256x240.png" />
     <Content Include="css\jquery\jquery-ui-1.8.7.custom.css" />
     <Content Include="css\login.css" />
-    <Content Include="css\Shared.css" />
+    <Content Include="css\LoginOnly.css">
+      <DependentUpon>Css.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="css\LoginOnly.min.css">
+      <DependentUpon>Css.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="css\Shared.css">
+      <DependentUpon>Css.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="css\Shared.min.css">
+      <DependentUpon>Css.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="css\Theme\Shared.css" />
     <Content Include="css\plugin.css" />
     <Content Include="css\plugin\dataTables.css" />
     <Content Include="css\plugin\facebox.css" />
@@ -263,33 +275,56 @@
     <Content Include="images\title.png" />
     <Content Include="images\white oak in fog.jpg" />
     <Content Include="images\white oak in fog_small.jpg" />
+    <Content Include="js\Import.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Import.min.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\jquery\jquery.dataTables.js" />
+    <Content Include="js\jquery\jquery.tablesorter.js" />
+    <Content Include="js\jquery\jquery.uniform.js" />
+    <Content Include="js\Map.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Map.min.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Map\Extensions.js" />
     <Content Include="js\Map\Widgets.js" />
-    <Content Include="js\Shared\PhotoGallery.js" />
+    <Content Include="js\misc\excanvas.js" />
+    <Content Include="js\misc\upclick.js" />
+    <Content Include="js\Plugins.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Plugins.min.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Shared.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Shared.min.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
     <Content Include="js\Shared\Widgets.js" />
-    <Content Include="js\Shared\Plugin.js" />
     <Content Include="js\Map\Coordinates.js" />
     <Content Include="js\Import\Trees.js" />
     <Content Include="js\Import\Sites.js" />
     <Content Include="js\jquery\facebox.js" />
     <Content Include="js\jquery\jquery-1.4.4.min.js" />
     <Content Include="js\jquery\jquery-ui-1.8.7.custom.min.js" />
-    <Content Include="js\jquery\jquery.dataTables.min.js" />
-    <Content Include="js\jquery\jquery.lightbox-0.5.min.js" />
     <Content Include="js\jquery\jquery.quicksearch.js" />
-    <Content Include="js\jquery\jquery.tablesorter.min.js" />
     <Content Include="js\jquery\jquery.tipsy.js" />
-    <Content Include="js\jquery\jquery.uniform.min.js" />
     <Content Include="js\jquery\jquery.visualize.js" />
     <Content Include="js\Map\CoordinatePicker.js" />
-    <Content Include="js\Shared\upclick.js" />
-    <Content Include="js\misc\excanvas.min.js" />
-    <Content Include="js\plugin.js" />
-    <Content Include="js\Shared.js" />
+    <Content Include="js\Shared\Extensions.js" />
     <Content Include="js\slate\slate.js" />
     <Content Include="js\slate\slate.message.js" />
     <Content Include="js\slate\slate.portlet.js" />
     <Content Include="js\widgets.js" />
     <Content Include="Views\Account\CompletePasswordAssistance.cshtml" />
+    <Content Include="js\Javascript.chirp.config" />
+    <Content Include="css\Css.chirp.config" />
     <None Include="Views\Account\PasswordAssistance.cshtml" />
     <None Include="Views\Account\CompleteRegistration.cshtml" />
     <None Include="Views\Account\Edit.cshtml" />

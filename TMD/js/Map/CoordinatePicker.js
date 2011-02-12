@@ -1,5 +1,5 @@
 ﻿var CoordinatePicker = new function () {
-    var public = {};
+    var external = {};
 
     var $container = $(
         "<div id='CoordinatePicker' style='position: absolute; left: 0; right: 0; z-index: 101;'>\
@@ -38,7 +38,7 @@
             </div>\
         </div>");
 
-    public.GetCoordinates = function () {
+    external.GetCoordinates = function () {
         return Coordinates.Parse($container.find('form.CoordinatePickerCoordinates input[name=Coordinates]').val());
     };
 
@@ -46,9 +46,9 @@
         $container.find('form.CoordinatePickerCoordinates input[name=Coordinates]').val(coordinates.ToString());
     };
 
-    public.Options = {};
+    external.Options = {};
 
-    public.Open = function (options) {
+    external.Open = function (options) {
         if (options != null) {
             var defaults = {
                 Coordinates: Coordinates.Create(Latitude.Create(36.94167), Longitude.Create(-95.825)),
@@ -56,29 +56,28 @@
                 Markers: null,
                 Callback: function (result) { }
             };
-            public.Options = $.extend(defaults, options);
+            external.Options = $.extend(defaults, options);
         }
         initialize();
     };
 
-    public.Close = function (success) {
+    external.Close = function (success) {
         dispose();
-        public.Options.Callback({
+        external.Options.Callback({
             Success: success,
-            Coordinates: public.GetCoordinates()
+            Coordinates: external.GetCoordinates()
         });
     };
 
-    var m_Map, m_PickerMarker, m_Info;
-    var m_EventListeners = new Array(), m_Markers = new Array();
+    var m_Map, m_PickerMarker;
     function initialize() {
-        SetCoordinates(public.Options.Coordinates);
+        SetCoordinates(external.Options.Coordinates);
         $('body').css('overflow', 'hidden').append($container);
         $(window).bind('resize', windowResized)
-            .bind('keyup', function (event) { if (event.keyCode == 27) { public.Close(false); } });
+            .bind('keyup', function (event) { if (event.keyCode == 27) { external.Close(false); } });
         $container.find('form.CoordinatePickerCoordinates button[name=Action]').click(function () {
-            if ($(this).val() == 'Save') { public.Close(true); }
-            else if ($(this).val() == 'Back') { public.Close(false); }
+            if ($(this).val() == 'Save') { external.Close(true); }
+            else if ($(this).val() == 'Back') { external.Close(false); }
             return false;
         });
         $container.find('form.CoordinatePickerCoordinates input[name=Coordinates]').change(function () {
@@ -106,8 +105,8 @@
             return false;
         });
 
-        var center = new google.maps.LatLng(public.Options.Coordinates.Latitude().TotalDegrees(), public.Options.Coordinates.Longitude().TotalDegrees());
-        var options = { center: center, zoom: public.Options.Zoom,
+        var center = new google.maps.LatLng(external.Options.Coordinates.Latitude().TotalDegrees(), external.Options.Coordinates.Longitude().TotalDegrees());
+        var options = { center: center, zoom: external.Options.Zoom,
             mapTypeId: google.maps.MapTypeId.TERRAIN,
             scaleControl: true,
             mapTypeControlOptions: {
@@ -122,35 +121,22 @@
         };
         m_Map = new google.maps.Map($container.find('.CoordinatePickerMap')[0], options);
         m_PickerMarker = new google.maps.Marker({ position: center, map: m_Map, draggable: true, zIndex: 1000 });
-        m_Info = new google.maps.InfoWindow({ content: "Drag this marker into position to pick a coordinate." });
+        m_Map.getSingletonInfoWindow().setContent("Drag this marker into position to pick a coordinate.");
 
-        m_EventListeners.push(google.maps.event.addListener(m_PickerMarker, 'position_changed', markerPositionChanged));
-        m_EventListeners.push(google.maps.event.addListener(m_Map, 'click', markerClick));
-        m_EventListeners.push(google.maps.event.addListener(m_PickerMarker, 'dragend', markerClick));
+        m_Map.UseEventListener(google.maps.event.addListener(m_PickerMarker, 'position_changed', markerPositionChanged));
+        m_Map.UseEventListener(google.maps.event.addListener(m_Map, 'click', markerClick));
+        m_Map.UseEventListener(google.maps.event.addListener(m_PickerMarker, 'dragend', markerClick));
 
         markerPositionChanged();
-        m_Info.open(m_Map, m_PickerMarker);
+        m_Map.getSingletonInfoWindow().open(m_Map, m_PickerMarker);
         windowResized();
 
-        if (public.Options.Markers != null) {
-            for (i in public.Options.Markers) {
-                initializeMarker(public.Options.Markers[i]);
+        if (external.Options.Markers != null) {
+            for (i in external.Options.Markers) {
+                m_Map.CreateAndAddMarker(external.Options.Markers[i]);
             }
             fitMarkerBounds();
         }
-    };
-
-    function initializeMarker(options) {
-        var marker = new google.maps.Marker({
-            icon: options.Icon, map: m_Map, title: options.Title,
-            position: new google.maps.LatLng(options.Coordinates.Latitude, options.Coordinates.Longitude)
-        });
-        m_Markers.push(marker);
-        m_EventListeners.push(google.maps.event.addListener(marker, 'click', function () {
-            var initializedInfo = $(options.Info).InitializeUi();
-            m_Info.setContent(initializedInfo[0]);
-            m_Info.open(m_Map, marker);
-        }));
     };
 
     function windowResized() {
@@ -159,8 +145,8 @@
     };
 
     function markerPositionChanged() {
-        m_Info.close();
-        var currentCoordinates = public.GetCoordinates();
+        m_Map.getSingletonInfoWindow().close();
+        var currentCoordinates = external.GetCoordinates();
         var newCoordinates = Coordinates.Create(
             Latitude.Create(m_PickerMarker.getPosition().lat()),
             Longitude.Create(m_PickerMarker.getPosition().lng()));
@@ -179,26 +165,21 @@
     };
 
     function fitMarkerBounds() {
-        if (m_Markers.length == 0) {
+        if (m_Map.getMarkers().length == 0) {
             m_Map.panTo(m_PickerMarker.getPosition());
         } else {
             var bounds = new google.maps.LatLngBounds();
             bounds.extend(m_PickerMarker.getPosition());
-            for (var i in m_Markers) {
-                bounds.extend(m_Markers[i].getPosition());
+            for (var i in m_Map.getMarkers()) {
+                bounds.extend(m_Map.getMarkers()[i].getPosition());
             }
             m_Map.fitBounds(bounds);
         }
     }
 
     function dispose() {
-        while (m_Markers.length > 0) {
-            var marker = m_Markers.pop();
-            marker.setMap(null);
-        }
-        while (m_EventListeners.length > 0) {
-            google.maps.event.removeListener(m_EventListeners.pop());
-        }
+        m_Map.DisposeMarkers();
+        m_Map.DisposeEventListeners();
         $(window).unbind('resize').unbind('keyup');
         $container.find('form.CoordinatePickerCoordinates input[name=Action]').unbind('click');
         $container.find('form.CoordinatePickerCoordinates input[name=Coordinates]').unbind('change');
@@ -207,5 +188,5 @@
         $('body').css('overflow', 'visible');
     };
 
-    return public;
+    return external;
 };

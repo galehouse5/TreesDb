@@ -290,6 +290,11 @@ namespace Links {
         private const string URLPATH = "~/css";
         public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
         public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+        public static readonly string Css_chirp_config = Url("Css.chirp.config");
+        public static readonly string LoginOnly_css = Url("LoginOnly.css");
+        public static readonly string LoginOnly_min_css = Url("LoginOnly.min.css");
+        public static readonly string Shared_css = Url("Shared.css");
+        public static readonly string Shared_min_css = Url("Shared.min.css");
         public static readonly string custom_css = Url("custom.css");
         public static readonly string Import_css = Url("Import.css");
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -347,7 +352,6 @@ namespace Links {
         }
     
         public static readonly string screen_css = Url("screen.css");
-        public static readonly string Shared_css = Url("Shared.css");
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class Theme {
             private const string URLPATH = "~/css/Theme";
@@ -356,6 +360,7 @@ namespace Links {
             public static readonly string Login_css = Url("Login.css");
             public static readonly string Plugin_css = Url("Plugin.css");
             public static readonly string Screen_css = Url("Screen.css");
+            public static readonly string Shared_css = Url("Shared.css");
         }
     
     }
@@ -444,6 +449,19 @@ namespace Links {
                           
         }
     
+        public static readonly string Javascript_chirp_config = Url("Javascript.chirp.config");
+        public static readonly string Import_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Import.min.js") ? Url("Import.min.js") : Url("Import.js");
+                      
+        public static readonly string Import_min_js = Url("Import.min.js");
+        public static readonly string Map_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Map.min.js") ? Url("Map.min.js") : Url("Map.js");
+                      
+        public static readonly string Map_min_js = Url("Map.min.js");
+        public static readonly string Plugins_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Plugins.min.js") ? Url("Plugins.min.js") : Url("Plugins.js");
+                      
+        public static readonly string Plugins_min_js = Url("Plugins.min.js");
+        public static readonly string Shared_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Shared.min.js") ? Url("Shared.min.js") : Url("Shared.js");
+                      
+        public static readonly string Shared_min_js = Url("Shared.min.js");
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class jquery {
             private const string URLPATH = "~/js/jquery";
@@ -453,14 +471,16 @@ namespace Links {
                           
             public static readonly string jquery_1_4_4_min_js = Url("jquery-1.4.4.min.js");
             public static readonly string jquery_ui_1_8_7_custom_min_js = Url("jquery-ui-1.8.7.custom.min.js");
-            public static readonly string jquery_dataTables_min_js = Url("jquery.dataTables.min.js");
-            public static readonly string jquery_lightbox_0_5_min_js = Url("jquery.lightbox-0.5.min.js");
+            public static readonly string jquery_dataTables_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.dataTables.min.js") ? Url("jquery.dataTables.min.js") : Url("jquery.dataTables.js");
+                          
             public static readonly string jquery_quicksearch_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.quicksearch.min.js") ? Url("jquery.quicksearch.min.js") : Url("jquery.quicksearch.js");
                           
-            public static readonly string jquery_tablesorter_min_js = Url("jquery.tablesorter.min.js");
+            public static readonly string jquery_tablesorter_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.tablesorter.min.js") ? Url("jquery.tablesorter.min.js") : Url("jquery.tablesorter.js");
+                          
             public static readonly string jquery_tipsy_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.tipsy.min.js") ? Url("jquery.tipsy.min.js") : Url("jquery.tipsy.js");
                           
-            public static readonly string jquery_uniform_min_js = Url("jquery.uniform.min.js");
+            public static readonly string jquery_uniform_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.uniform.min.js") ? Url("jquery.uniform.min.js") : Url("jquery.uniform.js");
+                          
             public static readonly string jquery_visualize_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.visualize.min.js") ? Url("jquery.visualize.min.js") : Url("jquery.visualize.js");
                           
         }
@@ -474,6 +494,8 @@ namespace Links {
                           
             public static readonly string Coordinates_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Coordinates.min.js") ? Url("Coordinates.min.js") : Url("Coordinates.js");
                           
+            public static readonly string Extensions_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Extensions.min.js") ? Url("Extensions.min.js") : Url("Extensions.js");
+                          
             public static readonly string Widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Widgets.min.js") ? Url("Widgets.min.js") : Url("Widgets.js");
                           
         }
@@ -483,30 +505,23 @@ namespace Links {
             private const string URLPATH = "~/js/misc";
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string excanvas_min_js = Url("excanvas.min.js");
+            public static readonly string excanvas_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/excanvas.min.js") ? Url("excanvas.min.js") : Url("excanvas.js");
+                          
+            public static readonly string upclick_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/upclick.min.js") ? Url("upclick.min.js") : Url("upclick.js");
+                          
         }
     
-        public static readonly string plugin_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/plugin.min.js") ? Url("plugin.min.js") : Url("plugin.js");
-                      
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class Shared {
             private const string URLPATH = "~/js/Shared";
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string CoordinatePicker_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/CoordinatePicker.min.js") ? Url("CoordinatePicker.min.js") : Url("CoordinatePicker.js");
-                          
-            public static readonly string PhotoGallery_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/PhotoGallery.min.js") ? Url("PhotoGallery.min.js") : Url("PhotoGallery.js");
-                          
-            public static readonly string Plugin_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Plugin.min.js") ? Url("Plugin.min.js") : Url("Plugin.js");
-                          
-            public static readonly string upclick_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/upclick.min.js") ? Url("upclick.min.js") : Url("upclick.js");
+            public static readonly string Extensions_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Extensions.min.js") ? Url("Extensions.min.js") : Url("Extensions.js");
                           
             public static readonly string Widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Widgets.min.js") ? Url("Widgets.min.js") : Url("Widgets.js");
                           
         }
     
-        public static readonly string Shared_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Shared.min.js") ? Url("Shared.min.js") : Url("Shared.js");
-                      
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class slate {
             private const string URLPATH = "~/js/slate";

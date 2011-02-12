@@ -9,20 +9,28 @@ namespace TMD.Extensions
 {
     public static class UrlHelperExtensions
     {
-        public static string VersionedContent(this UrlHelper helper, string contentPath, bool isSecure = false)
+        public static string ManagedContent(this UrlHelper helper, string contentPath, string minifiedContentPath = "")
         {
-            var sb = new StringBuilder(helper.Content(contentPath));
-            if (!string.IsNullOrEmpty(WebApplicationRegistry.Settings.StaticResourceVersion))
+            StringBuilder builder = new StringBuilder();
+            if (!string.IsNullOrEmpty(minifiedContentPath) && WebApplicationRegistry.Settings.MinifyStaticContent)
             {
-                sb.Append('?');
-                sb.Append(WebApplicationRegistry.Settings.StaticResourceVersion);
+                builder.Append(helper.Content(minifiedContentPath));
             }
-            if (!string.IsNullOrEmpty(WebApplicationRegistry.Settings.StaticResourceHostname))
+            else
             {
-                sb.Insert(0, WebApplicationRegistry.Settings.StaticResourceHostname);
-                sb.Insert(0, isSecure ? "https://" : "http://");
+                builder.Append(helper.Content(contentPath));
             }
-            return sb.ToString();
+            if (!string.IsNullOrEmpty(WebApplicationRegistry.Settings.StaticContentVersion))
+            {
+                builder.Append('?');
+                builder.Append(WebApplicationRegistry.Settings.StaticContentVersion);
+            }
+            if (!string.IsNullOrEmpty(WebApplicationRegistry.Settings.StaticContentHostname))
+            {
+                builder.Insert(0, WebApplicationRegistry.Settings.StaticContentHostname);
+                builder.Insert(0, helper.RequestContext.HttpContext.Request.IsSecureConnection ? "https://" : "http://");
+            }
+            return builder.ToString();           
         }
     }
 }

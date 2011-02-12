@@ -16,7 +16,8 @@
 }
 
 @section Scripts {
-    <script src="@Url.VersionedContent(Links.js.Import.Sites_js)" type="text/javascript"></script>
+    @{ Html.RenderAction(Mvc.Map.InitializeGoogleMaps()); }
+    <script src="@Url.ManagedContent(Links.js.Map_js, Links.js.Map_min_js)" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
             $('body').InitializeSitesUi();
@@ -29,9 +30,6 @@
             }
         });
     </script>
-    @{ Html.RenderAction(Mvc.Map.InitializeGoogleMaps()); }
-    <script src="@Url.VersionedContent(Links.js.Map.Coordinates_js)" type="text/javascript"></script>
-    <script src="@Url.VersionedContent(Links.js.Map.CoordinatePicker_js)" type="text/javascript"></script>
 }
 
 @using (Html.BeginForm(Mvc.Import.Sites(null, Model.Id), FormMethod.Post, new { @class = "form Sites" })) {

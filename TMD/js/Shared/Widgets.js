@@ -34,7 +34,6 @@
     }
 })(jQuery);
 
-
 (function ($) {
     $.fn.PhotoGallery = function (options) {
         var defaults = {};

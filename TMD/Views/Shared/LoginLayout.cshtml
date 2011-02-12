@@ -3,16 +3,10 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>@ViewBag.Title</title>
-    <link href="@Url.VersionedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
-    <link href="@Url.VersionedContent(Links.css.screen_css)" rel="Stylesheet" type="text/css" />
-    <link href="@Url.VersionedContent(Links.css.plugin_css)" rel="Stylesheet" type="text/css" />
-    <link href="@Url.VersionedContent(Links.css.custom_css)" rel="Stylesheet" type="text/css" />
-    <link href="@Url.VersionedContent(Links.css.login_css)" rel="Stylesheet" type="text/css" />
-    <link href="@Url.VersionedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
-    <link href="@Url.VersionedContent(Links.css.Theme.Screen_css)" rel="Stylesheet" type="text/css" />
-    <link href="@Url.VersionedContent(Links.css.Theme.Plugin_css)" rel="Stylesheet" type="text/css" />
-    <link href="@Url.VersionedContent(Links.css.Theme.Login_css)" rel="Stylesheet" type="text/css" />
-    <link href="@Url.VersionedContent(Links.css.Shared_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.ManagedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="@Url.ManagedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.ManagedContent(Links.css.Shared_css, Links.css.Shared_min_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.ManagedContent(Links.css.LoginOnly_css, Links.css.LoginOnly_min_css)" rel="Stylesheet" type="text/css" />
     @RenderSection("Styles", false)
 </head>
 <body>
