@@ -1,21 +1,26 @@
-﻿@model TMD.Models.MapSubsiteMarkerModel
+﻿@model TMD.Models.MapSiteMarkerInfoModel
 @using TMD.Model.Photos
 <table class="reports_table" style="width: 350px;">
     <tr>
         <td class="description"><strong>@Model.Name</strong></td>
         <td class="value">@Html.ActionLink("View more details", Mvc.Browse.SiteDetails(Model.Id))</td>
     </tr>
-    @Html.ReportDisplayFor(m => m.State)
-    @Html.ReportDisplayFor(m => m.County)
-    @Html.ReportDisplayFor(m => m.OwnershipType)
+    @if (Model.SubsitesCount == 1) {
+        @Html.ReportDisplayFor(m => m.State)
+        @Html.ReportDisplayFor(m => m.County)
+        @Html.ReportDisplayFor(m => m.OwnershipType)
+    }
     @Html.IfSpecifiedReportDisplayFor(m => m.RHI5)
     @Html.IfSpecifiedReportDisplayFor(m => m.RHI10)
     @Html.IfSpecifiedReportDisplayFor(m => m.RHI20)
     @Html.IfSpecifiedReportDisplayFor(m => m.RGI5)
     @Html.IfSpecifiedReportDisplayFor(m => m.RGI10)
     @Html.IfSpecifiedReportDisplayFor(m => m.RGI20)
-    @Html.ReportDisplayFor(m => m.TreesCount)
-    @if (Model.Photos.Count > 0) {
+    @Html.ReportDisplayFor(m => m.TreesMeasured)
+    @if (Model.SubsitesCount > 1) {
+        @Html.ReportDisplayFor(m => m.SubsitesCount)
+    }
+    @if (Model.SubsitesCount == 1 && Model.Photos.Count > 0) {
         <tr>
             <td class="description">Photos</td>
             <td class="value">

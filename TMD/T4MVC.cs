@@ -474,6 +474,8 @@ namespace Links {
                           
             public static readonly string Coordinates_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Coordinates.min.js") ? Url("Coordinates.min.js") : Url("Coordinates.js");
                           
+            public static readonly string Widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Widgets.min.js") ? Url("Widgets.min.js") : Url("Widgets.js");
+                          
         }
     
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]

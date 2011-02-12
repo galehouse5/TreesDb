@@ -22,6 +22,7 @@ namespace TMD.Model.Photos
                 case PhotoSize.MiniSquare: return new MiniSquarePhotoSize();
                 case PhotoSize.MapSquare: return new MapSquarePhotoSize();
                 case PhotoSize.MiniMapSquare: return new MiniMapSquarePhotoSize();
+                case PhotoSize.SmallMapSquare: return new SmallMapSquarePhotoSize();
                 default: throw new NotImplementedException();
             }
         }
@@ -103,7 +104,17 @@ namespace TMD.Model.Photos
         internal MapSquarePhotoSize() { }
         public override PhotoSize Size { get { return PhotoSize.MapSquare; } }
         public override bool Square { get { return true; } }
-        public override int MaxWidthOrHeight { get { return 50; } }
+        public override int MaxWidthOrHeight { get { return 60; } }
+        public override int BorderWidth { get { return 3; } }
+        public override Color BorderColor { get { return Color.White; } }
+    }
+
+    public class SmallMapSquarePhotoSize : PhotoSizeBase
+    {
+        internal SmallMapSquarePhotoSize() { }
+        public override PhotoSize Size { get { return PhotoSize.MapSquare; } }
+        public override bool Square { get { return true; } }
+        public override int MaxWidthOrHeight { get { return 30; } }
         public override int BorderWidth { get { return 2; } }
         public override Color BorderColor { get { return Color.White; } }
     }
@@ -113,7 +124,7 @@ namespace TMD.Model.Photos
         internal MiniMapSquarePhotoSize() { }
         public override PhotoSize Size { get { return PhotoSize.MiniMapSquare; } }
         public override bool Square { get { return true; } }
-        public override int MaxWidthOrHeight { get { return 10; } }
+        public override int MaxWidthOrHeight { get { return 15; } }
         public override int BorderWidth { get { return 1; } }
         public override Color BorderColor { get { return Color.White; } }
     }
@@ -121,14 +132,10 @@ namespace TMD.Model.Photos
     public enum PhotoSize
     {
         Original,
-        Medium,
-        Small,
-        Thumbnail,
-        SquareThumbnail,
-        Square,
-        MiniSquare,
-        MapSquare,
-        MiniMapSquare
+        Medium, Small, 
+        Thumbnail, SquareThumbnail, 
+        Square, MiniSquare,
+        MapSquare, SmallMapSquare, MiniMapSquare
     }
 
     public abstract class PhotoSizeBase

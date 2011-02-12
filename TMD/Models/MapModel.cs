@@ -17,13 +17,13 @@ namespace TMD.Models
         public bool IsSelected { get; set; }
     }
 
-    public abstract class CoordinatePickerModel
+    public class CoordinatePickerModel
     {
         public Coordinates Coordinates { get; set; }
         public ActionResult MarkerLoaderAction { get; set; }
     }
 
-    public abstract class MapViewportModel
+    public class MapViewportModel
     {
         public int Zoom { get; set; }
         public Coordinates Center { get; set; }

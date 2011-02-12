@@ -90,9 +90,9 @@ namespace TMD.Mappings
                         if (src.Photos.Count > 0)
                         {
                             return new List<MapMarkerIconModel> {
-                                new MapMarkerIconModel { MaxZoom = 7, MinZoom = 0, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].Id, PhotoSize.MiniMapSquare) },
-                                new MapMarkerIconModel { MaxZoom = 17, MinZoom = 8, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].Id, PhotoSize.MiniSquare) },
-                                new MapMarkerIconModel { MaxZoom = 30, MinZoom = 18, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].Id, PhotoSize.MapSquare) }
+                                new MapMarkerIconModel { MaxZoom = 7, MinZoom = 0, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MiniMapSquare) },
+                                new MapMarkerIconModel { MaxZoom = 17, MinZoom = 8, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MiniSquare) },
+                                new MapMarkerIconModel { MaxZoom = 30, MinZoom = 18, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MapSquare) }
                             };
                         }
                         return new List<MapMarkerIconModel>();
@@ -108,9 +108,9 @@ namespace TMD.Mappings
                     if (src.Photos.Count > 0)
                     {
                         return new List<MapMarkerIconModel> {
-                                new MapMarkerIconModel { MaxZoom = 7, MinZoom = 0, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].Id, PhotoSize.MiniMapSquare) },
-                                new MapMarkerIconModel { MaxZoom = 17, MinZoom = 8, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].Id, PhotoSize.MiniSquare) },
-                                new MapMarkerIconModel { MaxZoom = 30, MinZoom = 18, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].Id, PhotoSize.MapSquare) }
+                                new MapMarkerIconModel { MaxZoom = 7, MinZoom = 0, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MiniMapSquare) },
+                                new MapMarkerIconModel { MaxZoom = 17, MinZoom = 8, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MiniSquare) },
+                                new MapMarkerIconModel { MaxZoom = 30, MinZoom = 18, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MapSquare) }
                             };
                     }
                     return new List<MapMarkerIconModel>();
@@ -128,8 +128,9 @@ namespace TMD.Mappings
                         if (src.Subsites.Count == 1 && src.Subsites[0].Photos.Count > 0)
                         {
                             return new List<MapMarkerIconModel> {
-                                new MapMarkerIconModel { MaxZoom = 13, MinZoom = 8, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].Id, PhotoSize.MiniSquare) },
-                                new MapMarkerIconModel { MaxZoom = 7, MinZoom = 0, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].Id, PhotoSize.MiniMapSquare) }
+                                new MapMarkerIconModel { MaxZoom = 13, MinZoom = 12, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].PhotoId, PhotoSize.MapSquare) },
+                                new MapMarkerIconModel { MaxZoom = 11, MinZoom = 9, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].PhotoId, PhotoSize.SmallMapSquare) },
+                                new MapMarkerIconModel { MaxZoom = 8, MinZoom = 0, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].PhotoId, PhotoSize.MiniMapSquare) }
                             };
                         }
                         return new List<MapMarkerIconModel>();
@@ -147,7 +148,7 @@ namespace TMD.Mappings
                     if (src.Photos.Count > 0)
                     {
                         return new List<MapMarkerIconModel> {
-                                new MapMarkerIconModel { MaxZoom = 13, MinZoom = 12, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].Id, PhotoSize.MiniSquare) },
+                                new MapMarkerIconModel { MaxZoom = 13, MinZoom = 12, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare) },
                             };
                     }
                     return new List<MapMarkerIconModel>();
@@ -165,8 +166,9 @@ namespace TMD.Mappings
                     if (src.Photos.Count > 0)
                     {
                         return new List<MapMarkerIconModel> {
-                                new MapMarkerIconModel { MaxZoom = 17, MinZoom = 14, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].Id, PhotoSize.MiniSquare) },
-                                new MapMarkerIconModel { MaxZoom = 30, MinZoom = 18, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].Id, PhotoSize.MapSquare) }
+                                new MapMarkerIconModel { MaxZoom = 15, MinZoom = 14, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MiniMapSquare) },
+                                new MapMarkerIconModel { MaxZoom = 17, MinZoom = 16, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare) },
+                                new MapMarkerIconModel { MaxZoom = 30, MinZoom = 18, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MapSquare) }
                             };
                     }
                     return new List<MapMarkerIconModel>();

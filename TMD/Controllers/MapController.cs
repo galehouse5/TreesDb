@@ -43,7 +43,7 @@ namespace TMD.Controllers
         {
             var site = Repositories.Sites.FindById(id);
             var model = Mapper.Map<Model.Sites.Site, MapViewportModel>(site);
-            return PartialView(model);
+            return PartialView("MapViewport", model);
         }
 
         [ChildActionOnly]
@@ -52,7 +52,7 @@ namespace TMD.Controllers
             var site = Repositories.Sites.FindById(id);
             var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
             var model = Mapper.Map<Model.Sites.Subsite, MapViewportModel>(subsite);
-            return PartialView(model);
+            return PartialView("MapViewport", model);
         }
 
         [ChildActionOnly]
@@ -60,7 +60,7 @@ namespace TMD.Controllers
         {
             var tree = Repositories.Trees.FindById(id);
             var model = Mapper.Map<Model.Trees.Tree, MapViewportModel>(tree);
-            return PartialView(model);
+            return PartialView("MapViewport", model);
         }
 
         public virtual ActionResult SiteMarkerInfo(int id)

@@ -154,15 +154,16 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
-            public readonly string ImportSiteMarkerInfoPartial = "~/Views/Map/ImportSiteMarkerInfoPartial.cshtml";
-            public readonly string ImportSubsiteMarkerInfoPartial = "~/Views/Map/ImportSubsiteMarkerInfoPartial.cshtml";
-            public readonly string ImportTreeMarkerInfoPartial = "~/Views/Map/ImportTreeMarkerInfoPartial.cshtml";
+            public readonly string ImportSiteMarkerInfo = "~/Views/Map/ImportSiteMarkerInfo.cshtml";
+            public readonly string ImportSubsiteMarkerInfo = "~/Views/Map/ImportSubsiteMarkerInfo.cshtml";
+            public readonly string ImportTreeMarkerInfo = "~/Views/Map/ImportTreeMarkerInfo.cshtml";
             public readonly string Index = "~/Views/Map/Index.cshtml";
             public readonly string InitializeGoogleMaps = "~/Views/Map/InitializeGoogleMaps.cshtml";
+            public readonly string MapViewport = "~/Views/Map/MapViewport.cshtml";
             public readonly string MenuWidget = "~/Views/Map/MenuWidget.cshtml";
-            public readonly string SiteMarkerInfoPartial = "~/Views/Map/SiteMarkerInfoPartial.cshtml";
-            public readonly string SubsiteMarkerInfoPartial = "~/Views/Map/SubsiteMarkerInfoPartial.cshtml";
-            public readonly string TreeMarkerInfoPartial = "~/Views/Map/TreeMarkerInfoPartial.cshtml";
+            public readonly string SiteMarkerInfo = "~/Views/Map/SiteMarkerInfo.cshtml";
+            public readonly string SubsiteMarkerInfo = "~/Views/Map/SubsiteMarkerInfo.cshtml";
+            public readonly string TreeMarkerInfo = "~/Views/Map/TreeMarkerInfo.cshtml";
         }
     }
 
