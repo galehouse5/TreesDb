@@ -9,6 +9,7 @@ using System.ComponentModel;
 using TMD.Model.Photos;
 using System.ComponentModel.DataAnnotations;
 using TMD.Extensions;
+using System.Drawing;
 
 namespace TMD.Models
 {
@@ -23,7 +24,7 @@ namespace TMD.Models
         public ActionResult MarkerLoaderAction { get; set; }
     }
 
-    public class MapViewportModel
+    public class MapModel
     {
         public int Zoom { get; set; }
         public Coordinates Center { get; set; }
@@ -39,7 +40,7 @@ namespace TMD.Models
         public int? MinZoom { get; set; }
         public int? MaxZoom { get; set; }
         public string DefaultIconUrl { get; set; }
-        public IEnumerable<MapMarkerIconModel> DynamicIcons { get; set; }
+        public ActionResult IconLoaderAction { get; set; }
 
         public object ToJson(UrlHelper url)
         {
@@ -48,25 +49,7 @@ namespace TMD.Models
                 Title, MinZoom, MaxZoom,
                 Latitude = Position.Latitude.TotalDegrees, Longitude = Position.Longitude.TotalDegrees,
                 InfoLoaderUrl = url.Action(InfoLoaderAction),
-                DefaultIconUrl,
-                DynamicIcons = DynamicIcons == null ? new object [0]
-                    : DynamicIcons.Select(di => di.ToJson(url)).ToArray()
-            };
-        }
-    }
-
-    public class MapMarkerIconModel
-    {
-        public int MinZoom { get; set; }
-        public int MaxZoom { get; set; }
-        public ActionResult IconLoaderAction { get; set; }
-
-        public object ToJson(UrlHelper url)
-        {
-            return new 
-            { 
-                MinZoom, MaxZoom, 
-                IconLoaderUrl = url.Action(IconLoaderAction) 
+                IconUrl = IconLoaderAction == null ? DefaultIconUrl : url.Action(IconLoaderAction)
             };
         }
     }

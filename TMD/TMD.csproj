@@ -118,6 +118,7 @@
     </Compile>
     <Compile Include="Extensions\AttributesExtensions.cs" />
     <Compile Include="Extensions\CaptchaExtensions.cs" />
+    <Compile Include="Extensions\NameValueCollectionExtensions.cs" />
     <Compile Include="Extensions\PhotoExtensions.cs" />
     <Compile Include="Extensions\DisplayExtensions.cs" />
     <Compile Include="Extensions\SessionExtensions.cs" />
@@ -330,6 +331,7 @@
     <None Include="Views\Account\Edit.cshtml" />
     <None Include="Views\Account\Register.cshtml" />
     <None Include="Views\Account\AccountWidget.cshtml" />
+    <Content Include="Views\Browse\Trees.cshtml" />
     <None Include="Views\Browse\DisplayTemplates\BrowsePhotoSumaryModel.cshtml" />
     <Content Include="Views\Browse\MenuWidget.cshtml" />
     <None Include="Views\Browse\TreeDetails.cshtml" />
@@ -365,7 +367,7 @@
     <None Include="Views\Main\Index.cshtml" />
     <None Include="Views\Main\MenuWidget.cshtml" />
     <None Include="Views\Map\Index.cshtml" />
-    <Content Include="Views\Map\MapViewport.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\MapModel.cshtml" />
     <None Include="Views\Map\SiteMarkerInfo.cshtml" />
     <None Include="Views\Map\SubsiteMarkerInfo.cshtml" />
     <None Include="Views\Map\TreeMarkerInfo.cshtml" />

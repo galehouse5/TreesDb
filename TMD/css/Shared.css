@@ -2492,6 +2492,7 @@ table.calendar th { background: #255648  !important; }
 	border-radius: 3px;	
 }
 
+.table a { color: #FFFFFF; text-decoration: none; }
 /* /css/plugin.css */
 div.selector { margin-bottom: 0; }
 .paginate_enabled_previous { background-image: url(/images/Theme/back_enabled.png); }

@@ -37,6 +37,7 @@ namespace T4MVC {
                 public readonly string Distance = "Distance";
                 public readonly string Elevation = "Elevation";
                 public readonly string Enum = "Enum";
+                public readonly string MapModel = "MapModel";
                 public readonly string Name = "Name";
                 public readonly string ObjectReport = "ObjectReport";
                 public readonly string PhotoGalleryModel = "PhotoGalleryModel";

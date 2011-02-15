@@ -15,7 +15,7 @@ namespace TMD.Mappings
         {
             configureForCoordinatePickers();
             configureForMarkerInfo();
-            configureForViewports();
+            configureForMaps();
             configureForMarkers();
         }
 
@@ -50,24 +50,24 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.MarkerLoaderAction, opt => opt.MapFrom(src => Mvc.Map.ImportSiteMarkers(src.Trip.Id, src.Id)));
         }
 
-        private void configureForViewports()
+        private void configureForMaps()
         {
-            CreateMap<Model.Sites.Site, MapViewportModel>()
+            CreateMap<Model.Sites.Site, MapModel>()
                 .ForMember(dest => dest.Zoom, opt => opt.MapFrom(src => src.ContainsSingleSubsite ? 13 : 11))
                 .ForMember(dest => dest.Center, opt => opt.MapFrom(src => src.CalculatedCoordinates))
-                .ForMember(dest => dest.MarkerLoaderAction, opt => opt.MapFrom(src => Mvc.Map.SiteMarker(src.Id)));
+                .ForMember(dest => dest.MarkerLoaderAction, opt => opt.MapFrom(src => Mvc.Map.TreeMarker(src.Id)));
 
-            CreateMap<Model.Sites.Subsite, MapViewportModel>()
+            CreateMap<Model.Sites.Subsite, MapModel>()
                 .ForMember(dest => dest.Zoom, opt => opt.UseValue(13))
                 .ForMember(dest => dest.Center, opt => opt.MapFrom(src => src.CalculatedCoordinates))
                 .ForMember(dest => dest.MarkerLoaderAction, opt => opt.MapFrom(src => Mvc.Map.SubsiteMarker(src.Site.Id, src.Id)));
 
-            CreateMap<Model.Trees.Tree, MapViewportModel>()
-                .ForMember(dest => dest.Zoom, opt => opt.UseValue(14))
+            CreateMap<Model.Trees.Tree, MapModel>()
+                .ForMember(dest => dest.Zoom, opt => opt.UseValue(30))
                 .ForMember(dest => dest.Center, opt => opt.MapFrom(src => src.CalculatedCoordinates))
                 .ForMember(dest => dest.MarkerLoaderAction, opt => opt.MapFrom(src => Mvc.Map.TreeMarker(src.Id)));
 
-            CreateMap<IEnumerable<Model.Sites.Site>, MapViewportModel>()
+            CreateMap<IEnumerable<Model.Sites.Site>, MapModel>()
                 .ForMember(dest => dest.Bounds, opt => opt.MapFrom(src => CoordinateBounds.Create(from site in src select site.Coordinates)))
                 .ForMember(dest => dest.MarkerLoaderAction, opt => opt.MapFrom(src => Mvc.Map.AllMarkers()));
         }
@@ -77,102 +77,52 @@ namespace TMD.Mappings
             CreateMap<Model.Imports.Site, MapMarkerModel>()
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.Name))
                 .ForMember(dest => dest.Position, opt => opt.MapFrom(src => src.Coordinates))
-                .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue("/images/icons/Site32.png"))
+                .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue(Links.images.icons.Site32_png))
                 .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.ImportSiteMarkerInfo(src.Trip.Id, src.Id)));
 
             CreateMap<Model.Imports.Subsite, MapMarkerModel>()
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.Name))
                 .ForMember(dest => dest.Position, opt => opt.MapFrom(src => src.Coordinates))
-                .ForMember(dest => dest.DefaultIconUrl, opt => opt.MapFrom(src => src.Site.Subsites.Count == 1 ? "/images/icons/Site32.png" : "/images/icons/Subsite32.png"))
-                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.ImportSubsiteMarkerInfo(src.Site.Trip.Id, src.Id)))
-                .ForMember(dest => dest.DynamicIcons, opt => opt.MapFrom(src =>
-                    {
-                        if (src.Photos.Count > 0)
-                        {
-                            return new List<MapMarkerIconModel> {
-                                new MapMarkerIconModel { MaxZoom = 7, MinZoom = 0, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MiniMapSquare) },
-                                new MapMarkerIconModel { MaxZoom = 17, MinZoom = 8, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MiniSquare) },
-                                new MapMarkerIconModel { MaxZoom = 30, MinZoom = 18, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MapSquare) }
-                            };
-                        }
-                        return new List<MapMarkerIconModel>();
-                    }));
-            
+                .ForMember(dest => dest.DefaultIconUrl, opt => opt.MapFrom(src => src.Site.Subsites.Count == 1 ? Links.images.icons.Site32_png : Links.images.icons.Subsite32_png))
+                .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Photos.Count == 0 ? null : Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare)))
+                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.ImportSubsiteMarkerInfo(src.Site.Trip.Id, src.Id)));
+
             CreateMap<Model.Imports.TreeBase, MapMarkerModel>()
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.ScientificName))
                 .ForMember(dest => dest.Position, opt => opt.MapFrom(src => src.Coordinates))
-                .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue("/images/icons/SingleTrunkTree32.png"))
-                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.ImportTreeMarkerInfo(src.Subsite.Site.Trip.Id, src.Id)))
-                .ForMember(dest => dest.DynamicIcons, opt => opt.MapFrom(src =>
-                {
-                    if (src.Photos.Count > 0)
-                    {
-                        return new List<MapMarkerIconModel> {
-                                new MapMarkerIconModel { MaxZoom = 7, MinZoom = 0, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MiniMapSquare) },
-                                new MapMarkerIconModel { MaxZoom = 17, MinZoom = 8, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MiniSquare) },
-                                new MapMarkerIconModel { MaxZoom = 30, MinZoom = 18, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MapSquare) }
-                            };
-                    }
-                    return new List<MapMarkerIconModel>();
-                }));
+                .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue(Links.images.icons.SingleTrunkTree32_png))
+                .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Photos.Count == 0 ? null : Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare)))
+                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.ImportTreeMarkerInfo(src.Subsite.Site.Trip.Id, src.Id)));
 
             CreateMap<Model.Sites.Site, MapMarkerModel>()
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.Name))
                 .ForMember(dest => dest.Position, opt => opt.MapFrom(src => src.CalculatedCoordinates))
-                .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue("/images/icons/Site32.png"))
-                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.SiteMarkerInfo(src.Id)))
+                .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue(Links.images.icons.Site32_png))
                 .ForMember(dest => dest.MinZoom, opt => opt.UseValue(0))
                 .ForMember(dest => dest.MaxZoom, opt => opt.MapFrom(src => src.ContainsSingleSubsite ? 13 : 11))
-                .ForMember(dest => dest.DynamicIcons, opt => opt.MapFrom(src =>
-                    {
-                        if (src.Subsites.Count == 1 && src.Subsites[0].Photos.Count > 0)
-                        {
-                            return new List<MapMarkerIconModel> {
-                                new MapMarkerIconModel { MaxZoom = 13, MinZoom = 12, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].PhotoId, PhotoSize.MapSquare) },
-                                new MapMarkerIconModel { MaxZoom = 11, MinZoom = 9, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].PhotoId, PhotoSize.SmallMapSquare) },
-                                new MapMarkerIconModel { MaxZoom = 8, MinZoom = 0, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].PhotoId, PhotoSize.MiniMapSquare) }
-                            };
-                        }
-                        return new List<MapMarkerIconModel>();
-                    }));
+                .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Subsites.Count > 1 || src.Subsites[0].Photos.Count == 0 ?
+                    null : Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].PhotoId, PhotoSize.SmallMapSquare)))
+                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.SiteMarkerInfo(src.Id)));
 
             CreateMap<Model.Sites.Subsite, MapMarkerModel>()
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.Name))
                 .ForMember(dest => dest.Position, opt => opt.MapFrom(src => src.CalculatedCoordinates))
-                .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue("/images/icons/Subsite32.png"))
-                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.SubsiteMarkerInfo(src.Site.Id, src.Id)))
                 .ForMember(dest => dest.MinZoom, opt => opt.UseValue(12))
                 .ForMember(dest => dest.MaxZoom, opt => opt.UseValue(13))
-                .ForMember(dest => dest.DynamicIcons, opt => opt.MapFrom(src =>
-                {
-                    if (src.Photos.Count > 0)
-                    {
-                        return new List<MapMarkerIconModel> {
-                                new MapMarkerIconModel { MaxZoom = 13, MinZoom = 12, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare) },
-                            };
-                    }
-                    return new List<MapMarkerIconModel>();
-                }));
+                .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue(Links.images.icons.Subsite32_png))
+                .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Photos.Count == 0 ?
+                    null : Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare)))
+                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.SubsiteMarkerInfo(src.Site.Id, src.Id)));
 
             CreateMap<Model.Trees.Tree, MapMarkerModel>()
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.ScientificName))
                 .ForMember(dest => dest.Position, opt => opt.MapFrom(src => src.CalculatedCoordinates))
-                .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue("/images/icons/SingleTrunkTree32.png"))
-                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.TreeMarkerInfo(src.Id)))
                 .ForMember(dest => dest.MinZoom, opt => opt.UseValue(14))
                 .ForMember(dest => dest.MaxZoom, opt => opt.UseValue(30))
-                .ForMember(dest => dest.DynamicIcons, opt => opt.MapFrom(src =>
-                {
-                    if (src.Photos.Count > 0)
-                    {
-                        return new List<MapMarkerIconModel> {
-                                new MapMarkerIconModel { MaxZoom = 15, MinZoom = 14, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MiniMapSquare) },
-                                new MapMarkerIconModel { MaxZoom = 17, MinZoom = 16, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare) },
-                                new MapMarkerIconModel { MaxZoom = 30, MinZoom = 18, IconLoaderAction = Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.MapSquare) }
-                            };
-                    }
-                    return new List<MapMarkerIconModel>();
-                }));
+                .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue(Links.images.icons.SingleTrunkTree32_png))
+                .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Photos.Count == 0 ?
+                    null : Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare)))
+                .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.TreeMarkerInfo(src.Id)));
         }
     }
 }

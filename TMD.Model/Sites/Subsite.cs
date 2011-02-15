@@ -114,6 +114,22 @@ namespace TMD.Model.Sites
         public virtual IList<SubsiteVisit> Visits { get; private set; }
         public virtual IList<Tree> Trees { get; private set; }
 
+        public virtual void AddTree(Tree tree)
+        {
+            Trees.Add(tree);
+            tree.Subsite = this;
+        }
+
+        public virtual bool RemoveTree(Tree tree)
+        {
+            if (Trees.Remove(tree))
+            {
+                tree.Subsite = null;
+                return true;
+            }
+            return false;
+        }
+
         public const float CoordinateMinutesEquivalenceProximity = 5f;
         public virtual bool ShouldMerge(Subsite subsiteToMerge)
         {
@@ -142,7 +158,7 @@ namespace TMD.Model.Sites
             var treesToAdd = from treeToAdd in subsiteToMerge.Trees
                              where !ShouldMerge(treeToAdd)
                              select treeToAdd;
-            treesToAdd.ForEach(tree => Trees.Add(tree));
+            treesToAdd.ForEach(tree => AddTree(tree));
             return RecalculateProperties();
         }
 

@@ -1,0 +1,15 @@
+﻿@model TMD.Models.MapModel
+<div class="@(ViewBag.@class == null ? "Map" : ViewBag.@class + " Map")"
+    @if(Model.Bounds != null ) {
+        @: data-ne-latitude="@Model.Bounds.NE.Latitude.TotalDegrees" data-ne-longitude="@Model.Bounds.NE.Longitude.TotalDegrees"
+        @: data-sw-latitude="@Model.Bounds.SW.Latitude.TotalDegrees" data-sw-longitude="@Model.Bounds.SW.Longitude.TotalDegrees"
+        @: data-center-latitude="@Model.Bounds.Center.Latitude.TotalDegrees" data-center-longitude="@Model.Bounds.Center.Longitude.TotalDegrees"
+    } else {
+        @: data-center-latitude="@Model.Center.Latitude.TotalDegrees" data-center-longitude="@Model.Center.Longitude.TotalDegrees"
+        @: data-zoom="@Model.Zoom" 
+    }
+    data-markerloaderurl="@Url.Action(Model.MarkerLoaderAction)"
+    @if (ViewBag.style != null) { 
+        @: style="@ViewBag.style" 
+    }>
+</div>

@@ -79,5 +79,10 @@ namespace TMD.Infrastructure.Repositories
                          select tree.Tree;
             return sorted.Take(results).ToList();
         }
+
+        public IList<Tree> ListAll()
+        {
+            return Registry.Session.CreateCriteria<Tree>().List<Tree>();
+        }
     }
 }

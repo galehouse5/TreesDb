@@ -133,7 +133,9 @@ var CoordinatePicker = new function () {
 
         if (external.Options.Markers != null) {
             for (i in external.Options.Markers) {
-                m_Map.CreateAndAddMarker(external.Options.Markers[i]);
+                var marker = new google.maps.Marker();
+                marker.Initialize(external.Options.Markers[i]);
+                m_Map.AddMarker(marker);
             }
             fitMarkerBounds();
         }
@@ -408,32 +410,29 @@ google.maps.Map.prototype.getSingletonInfoWindow = function () {
     if (!this.internalSingletonInfoWindow) { this.internalSingletonInfoWindow = new google.maps.InfoWindow(); }
     return this.internalSingletonInfoWindow;
 };
-
 google.maps.Map.prototype.UseEventListener = function (eventListener) {
     if (!this.internalEventListeners) { this.internalEventListeners = new Array(); }
     this.internalEventListeners.push(eventListener);
 };
-
-google.maps.Map.prototype.DisposeEventListeners = function () {
+google.maps.Map.prototype.getMarkers = function () {
+    if (!this.internalMarkers) { this.internalMarkers = new Array(); }
+    return this.internalMarkers;
+};
+google.maps.Map.prototype.AddMarker = function (initializedMarker) {
+    initializedMarker.setMap(this);
+    initializedMarker.NotifyMapZoomChanged(this);
+    var map = this;
+    this.UseEventListener(google.maps.event.addListener(this, 'zoom_changed', function () { initializedMarker.NotifyMapZoomChanged(map); }));
+    this.UseEventListener(google.maps.event.addListener(initializedMarker, 'click', function () { initializedMarker.ShowInfo(map); }));
+    this.UseEventListener(google.maps.event.addListener(initializedMarker, 'dblclick', function () { initializedMarker.Focus(map); }));
+    this.getMarkers().push(initializedMarker);
+};
+google.maps.Map.prototype.DisposeEventListeners = function () {    
     if (!this.internalEventListeners) { this.internalEventListeners = new Array(); }
     while (this.internalEventListeners.length > 0) {
         google.maps.event.removeListener(this.internalEventListeners.pop());
     }
 };
-
-google.maps.Marker.prototype.getLoadedInfo = function () {
-    return this.internalLoadedInfo;
-};
-
-google.maps.Marker.prototype.setLoadedInfo = function (info) {
-    this.internalLoadedInfo = info;
-};
-
-google.maps.Map.prototype.getMarkers = function () {
-    if (!this.internalMarkers) { this.internalMarkers = new Array(); }
-    return this.internalMarkers;
-};
-
 google.maps.Map.prototype.DisposeMarkers = function () {
     while (this.getMarkers().length > 0) {
         var marker = this.getMarkers().pop();
@@ -441,164 +440,108 @@ google.maps.Map.prototype.DisposeMarkers = function () {
     }
 };
 
-google.maps.Map.prototype.CreateAndAddMarker = function (options) {
-
-    var map = this;
-    var marker = new google.maps.Marker({ map: this,
-        icon: options.DefaultIconUrl, title: options.Title,
-        position: new google.maps.LatLng(options.Latitude, options.Longitude)
-    });
-    this.getMarkers().push(marker);
-
-    function refreshVisibilityAndIcon() {
-        if (options.MaxZoom) {
-            marker.setVisible(map.getZoom() <= options.MaxZoom && map.getZoom() >= options.MinZoom);
-        }
-        if (options.DynamicIcons) {
-            for (i in options.DynamicIcons) {
-                var icon = options.DynamicIcons[i];
-                if (map.getZoom() <= icon.MaxZoom && map.getZoom() >= icon.MinZoom) {
-                    marker.setIcon(icon.IconLoaderUrl);
-                }
-            }
-        }
+google.maps.Marker.prototype.getLoadedInfo = function () { return this.internalLoadedInfo; };
+google.maps.Marker.prototype.setLoadedInfo = function (info) { this.internalLoadedInfo = info; };
+google.maps.Marker.prototype.setOptions = function (options) { this.internalOptions = options; };
+google.maps.Marker.prototype.getOptions = function () { return this.internalOptions; };
+google.maps.Marker.prototype.NotifyMapZoomChanged = function (map) {
+    if (this.getOptions().MinZoom || this.getOptions().MaxZoom) {
+        this.setVisible(
+            map.getZoom() <= this.getOptions().MaxZoom
+            && map.getZoom() >= this.getOptions().MinZoom);
     }
-
-    function showInfo() {
-        if (!marker.getLoadedInfo()) {
-            $.get(options.InfoLoaderUrl, function (response) {
-                marker.setLoadedInfo($(response).InitializeUi());
-                map.getSingletonInfoWindow().setContent(marker.getLoadedInfo()[0]);
-                map.getSingletonInfoWindow().open(map, marker);
-            });
-        } else {
+};
+google.maps.Marker.prototype.Initialize = function (options) {
+    this.setOptions(options);
+    this.setTitle(options.Title);
+    this.setIcon(options.IconUrl);
+    this.setPosition(new google.maps.LatLng(options.Latitude, options.Longitude));
+};
+google.maps.Marker.prototype.ShowInfo = function (map) {
+    if (this.getLoadedInfo()) {
+        map.getSingletonInfoWindow().setContent(this.getLoadedInfo()[0]);
+        map.getSingletonInfoWindow().open(map, this);
+    } else {
+        var marker = this;
+        $.get(this.getOptions().InfoLoaderUrl, function (response) {
+            marker.setLoadedInfo($(response).InitializeUi());
             map.getSingletonInfoWindow().setContent(marker.getLoadedInfo()[0]);
             map.getSingletonInfoWindow().open(map, marker);
-        }
+        });
     }
-
-    function focus() {
-        map.setZoom(options.MaxZoom + 1);
-        map.panTo(marker.getPosition());
-    }
-
-    this.UseEventListener(google.maps.event.addListener(this, 'zoom_changed', refreshVisibilityAndIcon));
-    this.UseEventListener(google.maps.event.addListener(marker, 'click', showInfo));
-    this.UseEventListener(google.maps.event.addListener(marker, 'dblclick', focus));
-
-    refreshVisibilityAndIcon();
+};
+google.maps.Marker.prototype.Focus = function (map) {
+    map.setZoom(this.getOptions().MaxZoom + 1);
+    map.panTo(this.getPosition());
 };
 
-
-
 (function ($) {
-    $.fn.MapViewport = function (options) {
+    $.fn.Mapify = function (options) {
+        var defaults = {
+            mapTypeId: google.maps.MapTypeId.TERRAIN,
+            mapTypeControlOptions: {
+                mapTypeIds: [ google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID ],
+                position: google.maps.ControlPosition.RIGHT_BOTTOM,
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+            },
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.SMALL,
+                position: google.maps.ControlPosition.LEFT_BOTTOM
+            },
+            panControl: false,
+            streetViewControl: false
+        }
+        options = $.extend(defaults, options);
 
-        function getCenter(viewport) {
+        function getCenter(element) {
             return new google.maps.LatLng(
-                $(viewport).attr('data-center-latitude'),
-                $(viewport).attr('data-center-longitude')
+                $(element).attr('data-center-latitude'),
+                $(element).attr('data-center-longitude')
             );
         }
 
-        function getZoom(viewport) {
-            return $(viewport).attr('data-zoom') || 5;
+        function getZoom(element) {
+            return parseInt($(element).attr('data-zoom')) || 5;
         }
 
-        function hasBounds(viewport) {
-            return $(viewport).attr('data-ne-latitude');
+        function hasBounds(element) {
+            return $(element).attr('data-ne-latitude');
         }
 
-        function getBounds(viewport) {
+        function getBounds(element) {
             return new google.maps.LatLngBounds(
                 new google.maps.LatLng(
-                    $(viewport).attr('data-sw-latitude'),
-                    $(viewport).attr('data-sw-longitude')
+                    $(element).attr('data-sw-latitude'),
+                    $(element).attr('data-sw-longitude')
                 ),
                 new google.maps.LatLng(
-                    $(viewport).attr('data-ne-latitude'),
-                    $(viewport).attr('data-ne-longitude')
+                    $(element).attr('data-ne-latitude'),
+                    $(element).attr('data-ne-longitude')
                 )
             );
         }
 
-        function getMarkerLoader(viewport) {
-            return $(viewport).attr('data-markerloaderurl');
+        function getMarkerLoader(element) {
+            return $(element).attr('data-markerloaderurl');
         }
 
         return this.each(function () {
+            options.center = getCenter(this);
+            options.zoom = getZoom(this);
 
-            var map = new google.maps.Map(this, {
-                center: getCenter(this),
-                zoom: getZoom(this),
-                mapTypeId: google.maps.MapTypeId.TERRAIN,
-                scaleControl: true,
-                mapTypeControlOptions: {
-                    mapTypeIds: [google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID],
-                    position: google.maps.ControlPosition.RIGHT_BOTTOM,
-                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-                },
-                navigationControlOptions: {
-                    position: google.maps.ControlPosition.LEFT_BOTTOM,
-                    style: google.maps.NavigationControlStyle.SMALL
-                }
-            });
+            var map = new google.maps.Map(this, options);
 
             if (hasBounds(this)) {
                 map.fitBounds(getBounds(this));
             }
 
-            var info = new google.maps.InfoWindow();
-            google.maps.event.addListener(map, 'zoom_changed', function () { info.close(); });
-
-
-            function addMarker(options) {
-                var marker = new google.maps.Marker({map: map,
-                    icon: options.DefaultIconUrl,
-                    title: options.Title,
-                    position: new google.maps.LatLng(options.Latitude, options.Longitude)
-                });
-
-                function refreshVisibilityAndIcon() {
-                    marker.setVisible(map.getZoom() <= options.MaxZoom && map.getZoom() >= options.MinZoom);
-                    if (options.DynamicIcons) {
-                        for (i in options.DynamicIcons) {
-                            var icon = options.DynamicIcons[i];
-                            if (map.getZoom() <= icon.MaxZoom && map.getZoom() >= icon.MinZoom) {
-                                marker.setIcon(icon.IconLoaderUrl);
-                            }
-                        }
-                    }
-                }
-
-                function showInfo() {
-                    if (!marker.loadedInfo) {
-                        $.get(options.InfoLoaderUrl, function (response) {
-                            marker.loadedInfo = $(response).InitializeUi();
-                            info.setContent(marker.loadedInfo[0]);
-                            info.open(map, marker);
-                        });
-                    } else {
-                        info.setContent(marker.loadedInfo[0]);
-                        info.open(map, marker);
-                    }
-                }
-
-                function focus() {
-                    map.setZoom(options.MaxZoom + 1);
-                    map.panTo(marker.getPosition());
-                }
-
-                google.maps.event.addListener(map, 'zoom_changed', refreshVisibilityAndIcon);
-                google.maps.event.addListener(marker, 'click', showInfo);
-                google.maps.event.addListener(marker, 'dblclick', focus);
-
-                refreshVisibilityAndIcon();
-            }
+            google.maps.event.addListener(map, 'zoom_changed', function () { map.getSingletonInfoWindow().close(); });
 
             $.get(getMarkerLoader(this), function (response) {
                 for (i in response.Markers) {
-                    addMarker(response.Markers[i]);
+                    var marker = new google.maps.Marker();
+                    marker.Initialize(response.Markers[i]);
+                    map.AddMarker(marker);
                 }
             });
 
@@ -610,7 +553,7 @@ google.maps.Map.prototype.CreateAndAddMarker = function (options) {
 (function ($) {
     $.fn.CoordinatePicker = function (options) {
         var defaults = { AddressCalculator: null };
-        var options = $.extend(defaults, options);
+        options = $.extend(defaults, options);
         return this.each(function () {
             var $pickerContainer = $(this);
             var $pickerButton = $pickerContainer.find('button').show();

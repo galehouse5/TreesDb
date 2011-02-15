@@ -12,7 +12,7 @@
                 <div style="height: 30px">
                     @Html.ValidationMessageFor(m => m.AddPhotoActionName, null, new { style = "margin: 0;" })
                 </div>
-                @Html.AnchorButton("Add", Model.AddPhotoActionName, Model.AddPhotoRouteValues, new { @class = "Add", style = "margin: 5px;" }, ButtonColor.Orange, ButtonSize.Small)
+                @Html.AnchorButton("Add photo", Model.AddPhotoActionName, Model.AddPhotoRouteValues, new { @class = "Add", style = "display: block; margin: 5px 15px;" }, ButtonColor.Orange, ButtonSize.Small)
             </div>
         </li>
     }

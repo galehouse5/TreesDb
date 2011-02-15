@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RepositoryBase.cs" />
     <Compile Include="Extensions\ISpecified.cs" />
     <Compile Include="Logging\ILogProvider.cs" />
     <Compile Include="Logging\Logger.cs" />

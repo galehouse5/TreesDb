@@ -11,6 +11,7 @@ using System.ComponentModel.DataAnnotations;
 using TMD.Model.Imports;
 using TMD.Extensions;
 using TMD.Model.Locations;
+using System.Web.Mvc;
 
 namespace TMD.Models
 {
@@ -89,6 +90,8 @@ namespace TMD.Models
     public class BrowseTreeLocationModel
     {
         [ScaffoldColumn(false)]
+        public int Id { get; set; }
+        [ScaffoldColumn(false)]
         public int SiteId { get; set; }
         [DisplayName("Site name")]
         public string SiteName { get; set; }
@@ -105,6 +108,21 @@ namespace TMD.Models
         public string OwnershipType { get; set; }
         public State State { get; set; }
         public string County { get; set; }
-        public Coordinates Coordinates { get; set; }
+        [Emphasize(false)]
+        public MapModel Map { get; set; }
+    }
+
+    public class BrowseColumnModel
+    {
+        public string Header { get; set; }
+        public string SortProperty { get; set; }
+        public string FilterProperty { get; set; }
+        public Func<dynamic, object> Format { get; set; }
+    }
+
+    public class BrowseTableOptionsModel
+    {
+
+
     }
 }

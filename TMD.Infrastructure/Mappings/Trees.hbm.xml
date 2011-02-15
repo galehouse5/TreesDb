@@ -107,6 +107,7 @@
     <id name="Id">
       <generator class="native"/>
     </id>
+    <many-to-one name="Subsite" column="SubsiteId" />
     <many-to-one name="Species" column="ComputedMeasuredSpeciesId" insert="false" update="false" cascade="none" />
     <bag name="Measurements" table="Measurements" inverse="false" cascade="all-delete-orphan">
       <key column="TreeId"></key>

@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\Criteria.cs" />
     <Compile Include="Log4NetLogProvider.cs" />
     <Compile Include="Registry.cs" />
     <Compile Include="Repositories\LocationRepository.cs" />

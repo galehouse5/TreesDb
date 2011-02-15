@@ -49,5 +49,12 @@ namespace TMD.Controllers
         {
             throw new NotImplementedException();
         }
+
+        [DefaultReturnUrl]
+        public virtual ActionResult Trees(string sort = null, string sortdir = null)
+        {
+            var trees = Repositories.Trees.ListAll();
+            return View(trees);
+        }
     }
 }

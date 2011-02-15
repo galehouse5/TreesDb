@@ -72,6 +72,7 @@ namespace TMD.Controllers {
             public readonly string TreeDetails = "TreeDetails";
             public readonly string SubsiteDetails = "SubsiteDetails";
             public readonly string SiteDetails = "SiteDetails";
+            public readonly string Trees = "Trees";
         }
 
 
@@ -82,6 +83,7 @@ namespace TMD.Controllers {
         public class ViewNames {
             public readonly string MenuWidget = "~/Views/Browse/MenuWidget.cshtml";
             public readonly string TreeDetails = "~/Views/Browse/TreeDetails.cshtml";
+            public readonly string Trees = "~/Views/Browse/Trees.cshtml";
             static readonly _DisplayTemplates s_DisplayTemplates = new _DisplayTemplates();
             public _DisplayTemplates DisplayTemplates { get { return s_DisplayTemplates; } }
             public partial class _DisplayTemplates{
@@ -121,6 +123,13 @@ namespace TMD.Controllers {
         public override System.Web.Mvc.ActionResult SiteDetails(int id) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SiteDetails);
             callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult Trees(string sort, string sortdir) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
+            callInfo.RouteValueDictionary.Add("sort", sort);
+            callInfo.RouteValueDictionary.Add("sortdir", sortdir);
             return callInfo;
         }
 

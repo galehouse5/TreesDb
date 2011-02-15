@@ -1,9 +1,9 @@
-﻿@model TMD.Models.MapViewportModel
+﻿@model TMD.Models.MapModel
 @{ ViewBag.Title = "Map"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
 
 @section Styles {
     <style type="text/css">
-        .MapViewport { position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
+        .Map { position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
         #header { z-index: 100; }
         #nav { z-index: 100; }
     </style>
@@ -13,14 +13,12 @@
     @{ Html.RenderAction(Mvc.Map.InitializeGoogleMaps()); }
     <script src="@Url.ManagedContent(Links.js.Map_js, Links.js.Map_min_js)" type="text/javascript"></script>
     <script type="text/javascript">
-        // normalize html structure and css rules
         $(function () {
-            var map = $('.MapViewport');
-            $('#content').remove();
-            $('#footer').remove();
+            var map = $('.Map');
+            $('#content, #footer').remove();
             $('#wrapper').css('margin-bottom', 0).append(map);
             $('body').css('min-height', '0');
-            $('.MapViewport').MapViewport();
+            map.Mapify();
 
             var timeout = setTimeout(function () {
                     timeout = null;
@@ -42,4 +40,4 @@
     </script>
 }
 
-@{ Html.RenderPartial("MapViewport", Model); }
+@Html.DisplayFor(m => m);

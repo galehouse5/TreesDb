@@ -135,7 +135,7 @@
       <key column="SubsiteId"></key>
       <one-to-many class="TMD.Model.Sites.SubsiteVisit"/>
     </bag>
-    <bag name="Trees" table="Trees.Trees" inverse="false" cascade="all-delete-orphan">
+    <bag name="Trees" table="Trees.Trees" cascade="all-delete-orphan">
       <key column="SubsiteId"></key>
       <one-to-many class="TMD.Model.Trees.Tree"/>
     </bag>

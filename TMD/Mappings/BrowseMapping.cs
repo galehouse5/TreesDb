@@ -31,20 +31,20 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.GeneralComments, opt => opt.MapFrom(src => src.LastMeasurement.GeneralComments));
 
             CreateMap<Tree, BrowseTreeLocationModel>()
-                .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => src.CalculatedCoordinates));
+                .ForMember(dest => dest.Map, opt => opt.MapFrom(src => Mapper.Map<Tree, MapModel>(src)));
 
             CreateMap<Site, BrowseTreeLocationModel>()
                 .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.Name))
                 .ForMember(dest => dest.SiteComments, opt => opt.MapFrom(src => src.LastVisit.Comments))
                 .ForMember(dest => dest.SiteSubsitesCount, opt => opt.MapFrom(src => src.Subsites.Count))
-                .ForMember(dest => dest.Coordinates, opt => opt.Ignore());
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             CreateMap<Subsite, BrowseTreeLocationModel>()
                 .ForMember(dest => dest.SubsiteId, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.SubsiteName, opt => opt.MapFrom(src => src.Name))
                 .ForMember(dest => dest.SubsiteComments, opt => opt.MapFrom(src => src.LastVisit.Comments))
-                .ForMember(dest => dest.Coordinates, opt => opt.Ignore());
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             CreateMap<Tree, BrowseTreeModel>()
                 .ForMember(dest => dest.Details, opt => opt.MapFrom(src => src))

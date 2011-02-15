@@ -34,77 +34,8 @@ namespace TMD.Controllers
         {
             ViewData.SetJavascriptRequired(true);
             var sites = Repositories.Sites.ListAll();
-            var model = Mapper.Map<IList<Model.Sites.Site>, MapViewportModel>(sites);
+            var model = Mapper.Map<IList<Model.Sites.Site>, MapModel>(sites);
             return View(model);
-        }
-
-        [ChildActionOnly]
-        public virtual ActionResult SiteViewport(int id)
-        {
-            var site = Repositories.Sites.FindById(id);
-            var model = Mapper.Map<Model.Sites.Site, MapViewportModel>(site);
-            return PartialView("MapViewport", model);
-        }
-
-        [ChildActionOnly]
-        public virtual ActionResult SubsiteViewport(int id, int subsiteId)
-        {
-            var site = Repositories.Sites.FindById(id);
-            var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
-            var model = Mapper.Map<Model.Sites.Subsite, MapViewportModel>(subsite);
-            return PartialView("MapViewport", model);
-        }
-
-        [ChildActionOnly]
-        public virtual ActionResult TreeViewport(int id)
-        {
-            var tree = Repositories.Trees.FindById(id);
-            var model = Mapper.Map<Model.Trees.Tree, MapViewportModel>(tree);
-            return PartialView("MapViewport", model);
-        }
-
-        public virtual ActionResult SiteMarkerInfo(int id)
-        {
-            var site = Repositories.Sites.FindById(id);
-            var model = Mapper.Map<Model.Sites.Site, MapSiteMarkerInfoModel>(site);
-            return PartialView(model);
-        }
-
-        public virtual ActionResult SubsiteMarkerInfo(int id, int subsiteId)
-        {
-            var site = Repositories.Sites.FindById(id);
-            var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
-            var model = Mapper.Map<Model.Sites.Subsite, MapSubsiteMarkerInfoModel>(subsite);
-            return PartialView(model);
-        }
-
-        public virtual ActionResult TreeMarkerInfo(int id)
-        {
-            var tree = Repositories.Trees.FindById(id);
-            var model = Mapper.Map<Model.Trees.Tree, MapTreeMarkerInfoModel>(tree);
-            return PartialView(model);
-        }
-
-        public virtual ActionResult SiteMarker(int id)
-        {
-            var site = Repositories.Sites.FindById(id);
-            var model = Mapper.Map<Model.Sites.Site, MapMarkerModel>(site);
-            return Json(model.ToJson(Url), JsonRequestBehavior.AllowGet);
-        }
-
-        public virtual ActionResult SubsiteMarker(int id, int subsiteId)
-        {
-            var site = Repositories.Sites.FindById(id);
-            var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
-            var model = Mapper.Map<Model.Sites.Subsite, MapMarkerModel>(subsite);
-            return Json(model.ToJson(Url), JsonRequestBehavior.AllowGet);
-        }
-
-        public virtual ActionResult TreeMarker(int id)
-        {
-            var tree = Repositories.Trees.FindById(id);
-            var model = Mapper.Map<Model.Trees.Tree, MapMarkerModel>(tree);
-            return Json(model.ToJson(Url), JsonRequestBehavior.AllowGet);
         }
 
         public virtual ActionResult AllMarkers()
@@ -126,6 +57,28 @@ namespace TMD.Controllers
                              where tree.Coordinates.IsSpecified
                              select Mapper.Map<Model.Trees.Tree, MapMarkerModel>(tree));
             return Json(new { Markers = markers.Select(m => m.ToJson(Url)).ToArray() }, JsonRequestBehavior.AllowGet);
+        }
+
+        public virtual ActionResult TreeMarker(int id)
+        {
+            var tree = Repositories.Trees.FindById(id);
+            var marker = Mapper.Map<Model.Trees.Tree, MapMarkerModel>(tree);
+            return Json(new { Markers = new [] { marker.ToJson(Url) } }, JsonRequestBehavior.AllowGet);
+        }
+
+        public virtual ActionResult SubsiteMarker(int id, int subsiteId)
+        {
+            var site = Repositories.Sites.FindById(id);
+            var subsite = site.Subsites.Where(ss => ss.Id == id).Single();
+            var marker = Mapper.Map<Model.Sites.Subsite, MapMarkerModel>(subsite);
+            return Json(new { Markers = new[] { marker.ToJson(Url) } }, JsonRequestBehavior.AllowGet);
+        }
+
+        public virtual ActionResult SiteMarker(int id)
+        {
+            var site = Repositories.Sites.FindById(id);
+            var marker = Mapper.Map<Model.Sites.Site, MapMarkerModel>(site);
+            return Json(new { Markers = new[] { marker.ToJson(Url) } }, JsonRequestBehavior.AllowGet);
         }
 
         public virtual ActionResult ImportSiteMarkers(int id, int siteId)
@@ -236,6 +189,28 @@ namespace TMD.Controllers
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             var subsite = trip.FindSubsiteById(subsiteId);
             var model = Mapper.Map<Model.Imports.Subsite, MapImportSubsiteMarkerInfoModel>(subsite);
+            return PartialView(model);
+        }
+
+        public virtual ActionResult SiteMarkerInfo(int id)
+        {
+            var site = Repositories.Sites.FindById(id);
+            var model = Mapper.Map<Model.Sites.Site, MapSiteMarkerInfoModel>(site);
+            return PartialView(model);
+        }
+
+        public virtual ActionResult SubsiteMarkerInfo(int id, int subsiteId)
+        {
+            var site = Repositories.Sites.FindById(id);
+            var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
+            var model = Mapper.Map<Model.Sites.Subsite, MapSubsiteMarkerInfoModel>(subsite);
+            return PartialView(model);
+        }
+
+        public virtual ActionResult TreeMarkerInfo(int id)
+        {
+            var tree = Repositories.Trees.FindById(id);
+            var model = Mapper.Map<Model.Trees.Tree, MapTreeMarkerInfoModel>(tree);
             return PartialView(model);
         }
     }

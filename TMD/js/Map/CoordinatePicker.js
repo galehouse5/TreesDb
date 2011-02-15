@@ -133,7 +133,9 @@
 
         if (external.Options.Markers != null) {
             for (i in external.Options.Markers) {
-                m_Map.CreateAndAddMarker(external.Options.Markers[i]);
+                var marker = new google.maps.Marker();
+                marker.Initialize(external.Options.Markers[i]);
+                m_Map.AddMarker(marker);
             }
             fitMarkerBounds();
         }
