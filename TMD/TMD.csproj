@@ -122,6 +122,7 @@
     <Compile Include="Extensions\PhotoExtensions.cs" />
     <Compile Include="Extensions\DisplayExtensions.cs" />
     <Compile Include="Extensions\SessionExtensions.cs" />
+    <Compile Include="Extensions\WebGridExtensions.cs" />
     <Compile Include="Extensions\TempDataExtensions.cs" />
     <Compile Include="Extensions\FluentTagBuilder.cs" />
     <Compile Include="Extensions\LabelExtensions.cs" />

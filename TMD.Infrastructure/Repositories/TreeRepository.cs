@@ -84,5 +84,64 @@ namespace TMD.Infrastructure.Repositories
         {
             return Registry.Session.CreateCriteria<Tree>().List<Tree>();
         }
+
+        public PagedList<Tree> ListAll(TreeBrowser browser)
+        {
+            return new PagedList<Tree>(browser)
+            {
+                Page = Registry.Session.CreateCriteria<Tree>()
+                    .CreateAlias("Subsite", "subsite")
+                    .CreateAlias("subsite.Site", "site")
+                    .ApplyFilters(browser)
+                    .ApplySorting(browser)
+                    .ApplyPaging(browser)
+                    .List<Tree>(),
+                Count = Registry.Session.CreateCriteria<Tree>()
+                    .CreateAlias("Subsite", "subsite")
+                    .CreateAlias("subsite.Site", "site")
+                    .ApplyFilters(browser)
+                    .SetProjection(Projections.Count("Id"))
+                    .UniqueResult<int>()
+            };
+        }
+    }
+
+    public static class TreeBrowserExtensions
+    {
+        public static ICriteria ApplyFilters(this ICriteria criteria, TreeBrowser browser)
+        {
+            if (!string.IsNullOrEmpty(browser.SiteFilter))
+            {
+                criteria.Add(Restrictions.Or(
+                    Restrictions.Like("site.Name", browser.SiteFilter, MatchMode.Anywhere),
+                    Restrictions.Like("subsite.Name", browser.SiteFilter, MatchMode.Anywhere)));
+            }
+            if (!string.IsNullOrEmpty(browser.SpeciesFilter))
+            {
+                criteria.Add(Restrictions.Like("ScientificName", browser.SpeciesFilter, MatchMode.Anywhere));
+            }
+            return criteria;
+        }
+
+        public static ICriteria ApplySorting(this ICriteria criteria, TreeBrowser browser)
+        {
+            if (browser.SortProperty.HasValue)
+            {
+                switch (browser.SortProperty.Value)
+                {
+                    case TreeBrowser.Property.Girth :
+                        return criteria.AddOrder(new Order("Girth.Feet", browser.SortAscending));
+                    case TreeBrowser.Property.Height :
+                        return criteria.AddOrder(new Order("Height.Feet", browser.SortAscending));
+                    case TreeBrowser.Property.Site :
+                        return criteria.AddOrder(new Order("subsite.Name", browser.SortAscending))
+                            .AddOrder(new Order("site.Name", browser.SortAscending));
+                    case TreeBrowser.Property.Species :
+                        return criteria.AddOrder(new Order("ScientificName", browser.SortAscending));
+                    default: throw new NotImplementedException();
+                }
+            }
+            return criteria;
+        }
     }
 }

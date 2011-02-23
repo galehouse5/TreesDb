@@ -2491,8 +2491,6 @@ table.calendar th { background: #255648  !important; }
 	-webkit-border-radius: 3px;
 	border-radius: 3px;	
 }
-
-.table a { color: #FFFFFF; text-decoration: none; }
 /* /css/plugin.css */
 div.selector { margin-bottom: 0; }
 .paginate_enabled_previous { background-image: url(/images/Theme/back_enabled.png); }
@@ -2508,6 +2506,7 @@ div.selector { margin-bottom: 0; }
 .RequiresJavascript { display: none; }
 .captcha { margin-bottom: 15px; }
 .captcha .recaptcha_input_area input { left: 0; }
+table.display a { color: #FFFFFF; text-decoration: none; }
 
 /* jQuery Controls */
 table.ui-datepicker-calendar thead tr th { background-color: #FFFFFF !important; color: #000000 !important; }

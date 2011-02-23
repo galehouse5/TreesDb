@@ -111,18 +111,4 @@ namespace TMD.Models
         [Emphasize(false)]
         public MapModel Map { get; set; }
     }
-
-    public class BrowseColumnModel
-    {
-        public string Header { get; set; }
-        public string SortProperty { get; set; }
-        public string FilterProperty { get; set; }
-        public Func<dynamic, object> Format { get; set; }
-    }
-
-    public class BrowseTableOptionsModel
-    {
-
-
-    }
 }

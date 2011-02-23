@@ -13,5 +13,17 @@ namespace TMD.Model.Trees
         IList<KnownSpecies> FindKnownSpeciesBySimilarScientificName(string scientificName, int results);
         void RemoveMeasurementsByTrip(Imports.Trip trip);
         IList<Tree> ListAll();
+        PagedList<Tree> ListAll(TreeBrowser browser);
+    }
+
+    public class TreeBrowser : IListPager
+    {
+        public enum Property { Species, Height, Girth, Site }
+        public Property? SortProperty { get; set; }
+        public bool SortAscending { get; set; }
+        public string SpeciesFilter { get; set; }
+        public string SiteFilter { get; set; }
+        public int PageIndex { get; set; }
+        public int PageSize { get; set; }
     }
 }

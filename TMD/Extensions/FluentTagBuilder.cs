@@ -70,6 +70,12 @@ namespace TMD.Extensions
             return this;
         }
 
+        public Tag InnerText(string format, params object[] args)
+        {
+            m_InnerHtml.AppendFormat(format, args);
+            return this;
+        }
+
         public Tag InnerHtml(Tag builder)
         {
             m_InnerHtml.Append(builder.ToString());

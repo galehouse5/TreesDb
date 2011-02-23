@@ -1,41 +1,40 @@
-﻿@model IList<TMD.Model.Trees.Tree>
+﻿@model PagedList<TMD.Model.Trees.Tree>
 @{ ViewBag.Title = "Browse Trees"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
 @{
-    var grid = new WebGrid(Model);
-    
+    var grid = new WebGrid(rowsPerPage: Model.PageSize);
+    grid.Bind(Model.Page, autoSortAndPage: false, rowCount: Model.Count);
 }
 
 <div class="portlet x12">
 	<div class="portlet-header"><h4>Trees</h4></div>
 	<div class="portlet-content">
-
-
-
-        @grid.Table(
-            htmlAttributes: new { border = 0, cellpadding = 0, cellspacing = 0 },
-            alternatingRowStyle: "even", rowStyle: "odd", tableStyle: "table", headerStyle: "sorting",
-            columns: grid.Columns(
-                grid.Column("Species.ScientificName", header: "Species"),
-                grid.Column("Height.Feet", format: tree => tree.Height.ToString(DistanceFormat.Default)),
-                grid.Column("Girth.Feet", format: tree => tree.Girth.ToString(DistanceFormat.Default)),
-                grid.Column("Site", format: tree =>
-                {
-                    if (tree.Subsite.Site.ContainsSingleSubsite)
-                    {
-                        return tree.Subsite.Name;
-                    }
-                    return string.Format("{0} ({1})", tree.Subsite.Name, tree.Subsite.Site.Name);
-                }),
-                grid.Column("", "", format: tree => "View more details")
-            )
-        )
-
-        @grid.Pager()
-
-
-
-
-
-
+        @using (Html.BeginForm(Mvc.Browse.Trees(), FormMethod.Get))
+        {
+            <div class="dataTables_wrapper">
+                <div class="dataTables_length">
+                </div>
+                <div class="dataTables_filter">
+                    Search: <input type="text" />
+                </div>
+                @grid.GetHtml(
+                    htmlAttributes: new { border = 0, cellpadding = 0, cellspacing = 0, @class = "display" },
+                    alternatingRowStyle: "even", rowStyle: "odd", tableStyle: "table",
+                    columns: grid.Columns(
+                        grid.Column("ScientificName", header: "Species"),
+                        grid.Column("Height.Feet", format: tree => tree.Height.ToString(DistanceFormat.Default), header: "Height"),
+                        grid.Column("Girth.Feet", format: tree => tree.Girth.ToString(DistanceFormat.Default), header: "Girth"),
+                        grid.Column("Site", format: tree =>
+                        {
+                            if (tree.Subsite.Site.ContainsSingleSubsite)
+                            {
+                                return tree.Subsite.Name;
+                            }
+                            return string.Format("{0} ({1})", tree.Subsite.Name, tree.Subsite.Site.Name);
+                        })
+                    )
+                )
+                @grid.ExternalPager()
+            </div>
+        }
     </div>
 </div>

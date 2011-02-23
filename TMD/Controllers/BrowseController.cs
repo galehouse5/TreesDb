@@ -7,6 +7,7 @@ using TMD.Models;
 using TMD.Model;
 using AutoMapper;
 using TMD.Model.Trees;
+using TMD.Extensions;
 
 namespace TMD.Controllers
 {
@@ -51,9 +52,24 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult Trees(string sort = null, string sortdir = null)
+        public virtual ActionResult Trees(
+            int? page, string sort, string sortdir,
+            string speciesFilter, string siteFilter)
         {
-            var trees = Repositories.Trees.ListAll();
+            TreeBrowser browser = new TreeBrowser
+            {
+                PageIndex = (page ?? 1) - 1,
+                PageSize = 100,
+                SiteFilter = siteFilter,
+                SpeciesFilter = speciesFilter,
+                SortAscending = "ASC".Equals(sortdir),
+                SortProperty = "ScientificName".Equals(sort) ? TreeBrowser.Property.Species
+                    : "Height.Feet".Equals(sort) ? TreeBrowser.Property.Height
+                    : "Girth.Feet".Equals(sort) ? TreeBrowser.Property.Girth
+                    : "Site".Equals(sort) ? TreeBrowser.Property.Site
+                    : (TreeBrowser.Property?)null
+            };
+            PagedList<Tree> trees = Repositories.Trees.ListAll(browser);
             return View(trees);
         }
     }

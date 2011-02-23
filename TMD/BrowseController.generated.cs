@@ -54,6 +54,11 @@ namespace TMD.Controllers {
         public System.Web.Mvc.ActionResult SiteDetails() {
             return new T4MVC_ActionResult(Area, Name, ActionNames.SiteDetails);
         }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult Trees() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
+        }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public BrowseController Actions { get { return Mvc.Browse; } }
@@ -126,10 +131,13 @@ namespace TMD.Controllers {
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Trees(string sort, string sortdir) {
+        public override System.Web.Mvc.ActionResult Trees(int? page, string sort, string direction, string speciesFilter, string siteFilter) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
+            callInfo.RouteValueDictionary.Add("page", page);
             callInfo.RouteValueDictionary.Add("sort", sort);
-            callInfo.RouteValueDictionary.Add("sortdir", sortdir);
+            callInfo.RouteValueDictionary.Add("direction", direction);
+            callInfo.RouteValueDictionary.Add("speciesFilter", speciesFilter);
+            callInfo.RouteValueDictionary.Add("siteFilter", siteFilter);
             return callInfo;
         }
 

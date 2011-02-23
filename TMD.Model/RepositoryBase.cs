@@ -2,24 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TMD.Model.Users;
 
 namespace TMD.Model
 {
-    public enum SortDirection { ASC, DESC }
-
-    public class RepositoryDataSourceOptions
+    public interface IListPager
     {
-        public IDictionary<string, SortDirection> PropertySortings { get; set; }
-        public IDictionary<string, string> PropertyFilterings { get; set; }
-        public int? PageIndex { get; set; }
-        public int? EntitiesPerPage { get; set; }
+        int PageIndex { get; set; }
+        int PageSize { get; set; }
     }
 
-    public class RepositoryDataSource<T>
+    public class PagedList<T>
         where T : IEntity
     {
-        public IEnumerable<T> PagedDataSource { get; set; }
-        public int TotalEntityCount { get; set; }
+        public PagedList(IListPager pager)
+        {
+            PageIndex = pager.PageIndex;
+            PageSize = pager.PageSize;
+        }
+
+        public int PageIndex { get; private set; }
+        public int PageSize { get; private set; }
+        public IList<T> Page { get; set; }
+        public int Count { get; set; }
     }
 }

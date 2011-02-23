@@ -9,6 +9,7 @@
 .RequiresJavascript { display: none; }
 .captcha { margin-bottom: 15px; }
 .captcha .recaptcha_input_area input { left: 0; }
+table.display a { color: #FFFFFF; text-decoration: none; }
 
 /* jQuery Controls */
 table.ui-datepicker-calendar thead tr th { background-color: #FFFFFF !important; color: #000000 !important; }

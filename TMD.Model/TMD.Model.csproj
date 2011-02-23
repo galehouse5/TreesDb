@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RepositoryBase.cs" />
     <Compile Include="Extensions\ISpecified.cs" />
     <Compile Include="Logging\ILogProvider.cs" />
     <Compile Include="Logging\Logger.cs" />
@@ -68,6 +67,7 @@
     <Compile Include="Photos\PhotoReference.cs" />
     <Compile Include="Photos\PhotoSize.cs" />
     <Compile Include="Photos\PhotoStoreBase.cs" />
+    <Compile Include="RepositoryBase.cs" />
     <Compile Include="Sites\SiteVisit.cs" />
     <Compile Include="Sites\SubsiteVisit.cs" />
     <Compile Include="Sites\ISiteRepository.cs" />
