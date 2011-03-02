@@ -8,9 +8,9 @@ namespace TMD.Model
 {
     public static class CriteriaExtensions
     {
-        public static ICriteria ApplyPaging(this ICriteria criteria, IListPager pager)
+        public static ICriteria ApplyPaging(this ICriteria criteria, IPagingOptions pager)
         {
-            criteria.SetFirstResult(pager.PageSize * pager.PageIndex);
+            criteria.SetFirstResult(pager.PageSize * (pager.PageNumber - 1));
             criteria.SetMaxResults(pager.PageSize);
             return criteria;
         }

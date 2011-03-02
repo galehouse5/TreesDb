@@ -46,6 +46,7 @@
       <one-to-many class="TMD.Model.Sites.Subsite"/>
     </bag>
     <property name="VisitCount" />
+    <property name="SubsiteCount" />
     <property name="TreesWithSpecifiedCoordinatesCount" />
     <bag name="Visitors" cascade="all-delete-orphan">
       <key column="SiteId" />

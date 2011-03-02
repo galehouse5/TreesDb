@@ -1,0 +1,20 @@
+﻿@model PageModelBase<TMD.Model.Trees.MeasuredSpecies>
+@{ ViewBag.Title = "Browse Species"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+
+<div class="portlet x12">
+	<div class="portlet-header"><h4>Species</h4></div>
+	<div class="portlet-content">
+		@(Html.Grid(Model)
+            .Columns(column =>
+                {
+                    column.For(species => species.ScientificName).Named("Botanical Name");
+                    column.For(species => species.CommonName).Named("Common Name");
+                })
+            .Attributes(border => 0, cellpadding => 0, cellspacing => 0, @class => "display", tableStyle => "table")
+            .RowAttributes(row => new Hash(@class => row.IsAlternate ? "even" : "odd"))
+            .Sort(Model.Sort)
+            .RenderUsing(new DataTablesGridRenderer<TMD.Model.Trees.MeasuredSpecies>())
+        )
+        @Html.Pager(Model)
+    </div>
+</div>

@@ -7,6 +7,7 @@ using TMD.Model;
 using NHibernate.Criterion;
 using TMD.Model.Extensions;
 using NHibernate.Transform;
+using NHibernate;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -117,6 +118,64 @@ namespace TMD.Infrastructure.Repositories
                 .CreateAlias("subsite.Trees", "tree")
                 .Add(Restrictions.Eq("tree.Id", treeId))
                 .UniqueResult<Site>();
+        }
+
+        public PagedList<Subsite> ListAllSubsites(SubsiteBrowser browser)
+        {
+            return new PagedList<Subsite>(browser)
+            {
+                Page = Registry.Session.CreateCriteria<Subsite>()
+                    .CreateAlias("Site", "site")
+                    .CreateAlias("State", "state")
+                    .ApplyFilters(browser)
+                    .ApplySorting(browser)
+                    .ApplyPaging(browser)
+                    .List<Subsite>(),
+                TotalItems = Registry.Session.CreateCriteria<Subsite>()
+                    .CreateAlias("Site", "site")
+                    .CreateAlias("State", "state")
+                    .ApplyFilters(browser)
+                    .SetProjection(Projections.Count("Id"))
+                    .UniqueResult<int>()
+            };
+        }
+    }
+
+    public static class SubsiteBrowserExtensions
+    {
+        public static ICriteria ApplyFilters(this ICriteria criteria, SubsiteBrowser browser)
+        {
+            if (!string.IsNullOrEmpty(browser.SiteFilter))
+            {
+                criteria.Add(Restrictions.Like("site.Name", browser.SiteFilter, MatchMode.Anywhere));
+            }
+            if (!string.IsNullOrEmpty(browser.SubsiteFilter))
+            {
+                criteria.Add(Restrictions.Like("Name", browser.SubsiteFilter, MatchMode.Anywhere));
+            }
+            if (!string.IsNullOrEmpty(browser.StateFilter))
+            {
+                criteria.Add(Restrictions.Like("state.Name", browser.StateFilter, MatchMode.Anywhere));
+            }
+            return criteria;
+        }
+
+        public static ICriteria ApplySorting(this ICriteria criteria, SubsiteBrowser browser)
+        {
+            if (browser.SortProperty.HasValue)
+            {
+                switch (browser.SortProperty.Value)
+                {
+                    case SubsiteBrowser.Property.Site :
+                        return criteria.AddOrder(new Order("site.Name", browser.SortAscending));
+                    case SubsiteBrowser.Property.State :
+                        return criteria.AddOrder(new Order("state.Name", browser.SortAscending));
+                    case SubsiteBrowser.Property.Subsite :
+                        return criteria.AddOrder(new Order("Name", browser.SortAscending));
+                    default: throw new NotImplementedException();
+                }
+            }
+            return criteria;
         }
     }
 }

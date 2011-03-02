@@ -85,20 +85,16 @@ namespace TMD.Infrastructure.Repositories
             return Registry.Session.CreateCriteria<Tree>().List<Tree>();
         }
 
-        public PagedList<Tree> ListAll(TreeBrowser browser)
+        public PagedList<MeasuredSpecies> ListAllMeasuredSpecies(SpeciesBrowser browser)
         {
-            return new PagedList<Tree>(browser)
+            return new PagedList<MeasuredSpecies>(browser)
             {
-                Page = Registry.Session.CreateCriteria<Tree>()
-                    .CreateAlias("Subsite", "subsite")
-                    .CreateAlias("subsite.Site", "site")
+                Page = Registry.Session.CreateCriteria<MeasuredSpecies>()
                     .ApplyFilters(browser)
                     .ApplySorting(browser)
                     .ApplyPaging(browser)
-                    .List<Tree>(),
-                Count = Registry.Session.CreateCriteria<Tree>()
-                    .CreateAlias("Subsite", "subsite")
-                    .CreateAlias("subsite.Site", "site")
+                    .List<MeasuredSpecies>(),
+                TotalItems = Registry.Session.CreateCriteria<MeasuredSpecies>()
                     .ApplyFilters(browser)
                     .SetProjection(Projections.Count("Id"))
                     .UniqueResult<int>()
@@ -106,38 +102,31 @@ namespace TMD.Infrastructure.Repositories
         }
     }
 
-    public static class TreeBrowserExtensions
+    public static class SpeciesBrowserExtensions
     {
-        public static ICriteria ApplyFilters(this ICriteria criteria, TreeBrowser browser)
+        public static ICriteria ApplyFilters(this ICriteria criteria, SpeciesBrowser browser)
         {
-            if (!string.IsNullOrEmpty(browser.SiteFilter))
+            if (!string.IsNullOrEmpty(browser.BotanicalNameFilter))
             {
-                criteria.Add(Restrictions.Or(
-                    Restrictions.Like("site.Name", browser.SiteFilter, MatchMode.Anywhere),
-                    Restrictions.Like("subsite.Name", browser.SiteFilter, MatchMode.Anywhere)));
+                criteria.Add(Restrictions.Like("ScientificName", browser.BotanicalNameFilter, MatchMode.Anywhere));
             }
-            if (!string.IsNullOrEmpty(browser.SpeciesFilter))
+            if (!string.IsNullOrEmpty(browser.CommonNameFilter))
             {
-                criteria.Add(Restrictions.Like("ScientificName", browser.SpeciesFilter, MatchMode.Anywhere));
+                criteria.Add(Restrictions.Like("CommonName", browser.CommonNameFilter, MatchMode.Anywhere));
             }
             return criteria;
         }
 
-        public static ICriteria ApplySorting(this ICriteria criteria, TreeBrowser browser)
+        public static ICriteria ApplySorting(this ICriteria criteria, SpeciesBrowser browser)
         {
             if (browser.SortProperty.HasValue)
             {
                 switch (browser.SortProperty.Value)
                 {
-                    case TreeBrowser.Property.Girth :
-                        return criteria.AddOrder(new Order("Girth.Feet", browser.SortAscending));
-                    case TreeBrowser.Property.Height :
-                        return criteria.AddOrder(new Order("Height.Feet", browser.SortAscending));
-                    case TreeBrowser.Property.Site :
-                        return criteria.AddOrder(new Order("subsite.Name", browser.SortAscending))
-                            .AddOrder(new Order("site.Name", browser.SortAscending));
-                    case TreeBrowser.Property.Species :
+                    case SpeciesBrowser.Property.BotanicalName :
                         return criteria.AddOrder(new Order("ScientificName", browser.SortAscending));
+                    case SpeciesBrowser.Property.CommonName :
+                        return criteria.AddOrder(new Order("CommonName", browser.SortAscending));
                     default: throw new NotImplementedException();
                 }
             }

@@ -92,16 +92,16 @@ namespace TMD
 
         public void Dispose()
         {
-            ApplicationContext.AcquireRequestState -= Context_AcquireRequestState;
+            ApplicationContext.AcquireRequestState -= Context_PostAuthenticateRequest;
         }
 
         public void Init(HttpApplication context)
         {
             ApplicationContext = context;
-            ApplicationContext.AcquireRequestState += new EventHandler(Context_AcquireRequestState);
+            ApplicationContext.PostAuthenticateRequest += new EventHandler(Context_PostAuthenticateRequest);
         }
 
-        void Context_AcquireRequestState(object sender, EventArgs e)
+        void Context_PostAuthenticateRequest(object sender, EventArgs e)
         {
             ApplicationContext.Context.User = ApplicationContext.Context.User.Identity.IsAuthenticated ?
                 new WebUser(Repositories.Users.FindByEmail(ApplicationContext.Context.User.Identity.Name)) :

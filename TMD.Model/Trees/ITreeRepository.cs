@@ -13,17 +13,17 @@ namespace TMD.Model.Trees
         IList<KnownSpecies> FindKnownSpeciesBySimilarScientificName(string scientificName, int results);
         void RemoveMeasurementsByTrip(Imports.Trip trip);
         IList<Tree> ListAll();
-        PagedList<Tree> ListAll(TreeBrowser browser);
+        PagedList<MeasuredSpecies> ListAllMeasuredSpecies(SpeciesBrowser browser);
     }
 
-    public class TreeBrowser : IListPager
+    public class SpeciesBrowser : IPagingOptions
     {
-        public enum Property { Species, Height, Girth, Site }
+        public enum Property { BotanicalName, CommonName }
         public Property? SortProperty { get; set; }
         public bool SortAscending { get; set; }
-        public string SpeciesFilter { get; set; }
-        public string SiteFilter { get; set; }
-        public int PageIndex { get; set; }
+        public string BotanicalNameFilter { get; set; }
+        public string CommonNameFilter { get; set; }
+        public int PageNumber { get; set; }
         public int PageSize { get; set; }
     }
 }

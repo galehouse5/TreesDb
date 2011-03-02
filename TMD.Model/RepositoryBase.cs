@@ -2,27 +2,36 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections;
 
 namespace TMD.Model
 {
-    public interface IListPager
+    public interface IPagingOptions
     {
-        int PageIndex { get; set; }
+        int PageNumber { get; set; }
         int PageSize { get; set; }
     }
 
-    public class PagedList<T>
+    public interface IPaged : IEnumerable
+    {
+        int PageNumber { get; }
+        int PageSize { get; }
+        int TotalItems { get; }
+    }
+
+    public class PagedList<T> : IPaged
         where T : IEntity
     {
-        public PagedList(IListPager pager)
+        public PagedList(IPagingOptions pager)
         {
-            PageIndex = pager.PageIndex;
+            PageNumber = pager.PageNumber;
             PageSize = pager.PageSize;
         }
 
-        public int PageIndex { get; private set; }
+        public int PageNumber { get; private set; }
         public int PageSize { get; private set; }
+        public int TotalItems { get; set; }
         public IList<T> Page { get; set; }
-        public int Count { get; set; }
+        public IEnumerator GetEnumerator() { return Page.GetEnumerator(); }
     }
 }

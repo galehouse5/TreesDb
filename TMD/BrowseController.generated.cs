@@ -46,8 +46,8 @@ namespace TMD.Controllers {
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult SubsiteDetails() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.SubsiteDetails);
+        public System.Web.Mvc.ActionResult MeasurementDetails() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.MeasurementDetails);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -56,8 +56,18 @@ namespace TMD.Controllers {
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Trees() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
+        public System.Web.Mvc.ActionResult SpeciesDetails() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.SpeciesDetails);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult StateDetails() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.StateDetails);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult Species() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.Species);
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -75,9 +85,12 @@ namespace TMD.Controllers {
             public readonly string MenuWidget = "MenuWidget";
             public readonly string Index = "Index";
             public readonly string TreeDetails = "TreeDetails";
-            public readonly string SubsiteDetails = "SubsiteDetails";
+            public readonly string MeasurementDetails = "MeasurementDetails";
             public readonly string SiteDetails = "SiteDetails";
-            public readonly string Trees = "Trees";
+            public readonly string SpeciesDetails = "SpeciesDetails";
+            public readonly string StateDetails = "StateDetails";
+            public readonly string Species = "Species";
+            public readonly string Locations = "Locations";
         }
 
 
@@ -87,8 +100,8 @@ namespace TMD.Controllers {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
             public readonly string MenuWidget = "~/Views/Browse/MenuWidget.cshtml";
+            public readonly string Species = "~/Views/Browse/Species.cshtml";
             public readonly string TreeDetails = "~/Views/Browse/TreeDetails.cshtml";
-            public readonly string Trees = "~/Views/Browse/Trees.cshtml";
             static readonly _DisplayTemplates s_DisplayTemplates = new _DisplayTemplates();
             public _DisplayTemplates DisplayTemplates { get { return s_DisplayTemplates; } }
             public partial class _DisplayTemplates{
@@ -119,8 +132,8 @@ namespace TMD.Controllers {
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult SubsiteDetails(int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SubsiteDetails);
+        public override System.Web.Mvc.ActionResult MeasurementDetails(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.MeasurementDetails);
             callInfo.RouteValueDictionary.Add("id", id);
             return callInfo;
         }
@@ -131,13 +144,27 @@ namespace TMD.Controllers {
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Trees(int? page, string sort, string direction, string speciesFilter, string siteFilter) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
+        public override System.Web.Mvc.ActionResult SpeciesDetails(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SpeciesDetails);
+            callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult StateDetails(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.StateDetails);
+            callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult Species(int? page, MvcContrib.UI.Grid.GridSortOptions sort) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Species);
             callInfo.RouteValueDictionary.Add("page", page);
             callInfo.RouteValueDictionary.Add("sort", sort);
-            callInfo.RouteValueDictionary.Add("direction", direction);
-            callInfo.RouteValueDictionary.Add("speciesFilter", speciesFilter);
-            callInfo.RouteValueDictionary.Add("siteFilter", siteFilter);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult Locations() {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Locations);
             return callInfo;
         }
 

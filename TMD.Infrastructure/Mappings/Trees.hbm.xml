@@ -22,6 +22,7 @@
       <property name="InputFormat" column="MaxHeightInputFormat"/>
     </component>
     <property name="ScientificName" />
+    <property name="CommonName" />
     <component name="MaxGirth" class="Distance">
       <property name="Feet" column="MaxGirth"/>
       <property name="InputFormat" column="MaxGirthInputFormat"/>

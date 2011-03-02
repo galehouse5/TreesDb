@@ -8,6 +8,7 @@ using TMD.Model;
 using AutoMapper;
 using TMD.Model.Trees;
 using TMD.Extensions;
+using MvcContrib.UI.Grid;
 
 namespace TMD.Controllers
 {
@@ -40,7 +41,7 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult SubsiteDetails(int id)
+        public virtual ActionResult MeasurementDetails(int id)
         {
             throw new NotImplementedException();
         }
@@ -52,25 +53,40 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult Trees(
-            int? page, string sort, string sortdir,
-            string speciesFilter, string siteFilter)
+        public virtual ActionResult SpeciesDetails(int id)
         {
-            TreeBrowser browser = new TreeBrowser
+            throw new NotImplementedException();
+        }
+
+        [DefaultReturnUrl]
+        public virtual ActionResult StateDetails(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        [DefaultReturnUrl]
+        public virtual ActionResult Species(int? page, GridSortOptions sort = null)
+        {
+            sort = sort ?? new GridSortOptions { Column = "ScientificName", Direction = MvcContrib.Sorting.SortDirection.Ascending };
+            SpeciesBrowser browser = new SpeciesBrowser
             {
-                PageIndex = (page ?? 1) - 1,
-                PageSize = 100,
-                SiteFilter = siteFilter,
-                SpeciesFilter = speciesFilter,
-                SortAscending = "ASC".Equals(sortdir),
-                SortProperty = "ScientificName".Equals(sort) ? TreeBrowser.Property.Species
-                    : "Height.Feet".Equals(sort) ? TreeBrowser.Property.Height
-                    : "Girth.Feet".Equals(sort) ? TreeBrowser.Property.Girth
-                    : "Site".Equals(sort) ? TreeBrowser.Property.Site
-                    : (TreeBrowser.Property?)null
+                PageNumber = page ?? 1,
+                PageSize = 5,
+                BotanicalNameFilter = string.Empty,
+                CommonNameFilter = string.Empty,
+                SortAscending = sort.Direction == MvcContrib.Sorting.SortDirection.Ascending,
+                SortProperty = "ScientificName".Equals(sort.Column) ? SpeciesBrowser.Property.BotanicalName
+                    : "CommonName".Equals(sort.Column) ? SpeciesBrowser.Property.CommonName
+                    : (SpeciesBrowser.Property?)null
             };
-            PagedList<Tree> trees = Repositories.Trees.ListAll(browser);
-            return View(trees);
+            var model = new PageModelBase<MeasuredSpecies> (Repositories.Trees.ListAllMeasuredSpecies(browser)) { Sort = sort };
+            return View(model);
+        }
+
+        [DefaultReturnUrl]
+        public virtual ActionResult Locations()
+        {
+            throw new NotImplementedException();
         }
     }
 }

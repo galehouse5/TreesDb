@@ -27,6 +27,7 @@ namespace TMD.Model.Trees
 
         public virtual int Id { get; private set; }
         public virtual string ScientificName { get; private set; }
+        public virtual string CommonName { get; private set; }
         public virtual Distance MaxHeight { get; private set; }
         public virtual Distance MaxGirth { get; private set; }
         public virtual Distance MaxCrownSpread { get; private set; }

@@ -3,10 +3,8 @@
 	@Html.ActionLink("Browse", Mvc.Browse.Index(), new { @class = "mega-tab hasSub" })
 	<div class="mega-content mega-menu ">						
 		<ul>
-			<li>@Html.ActionLink("Trees", Mvc.Browse.Trees())</li>
-			<li>@Html.ActionLink("Species", "Index", "Browse", new { entity = "species" }, null)</li>
-            <li>@Html.ActionLink("Sites", "Index", "Browse", new { entity = "sites" }, null)</li>
-            <li>@Html.ActionLink("States", "Index", "Browse", new { entity = "states" }, null)</li>
+			<li>@Html.ActionLink("Species", Mvc.Browse.Species())</li>
+            <li>@Html.ActionLink("Locations", Mvc.Browse.Locations())</li>
 		</ul>
 	</div>	
 </li>

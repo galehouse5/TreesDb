@@ -16,10 +16,10 @@ namespace TMD.Mappings
     {
         protected override void Configure()
         {
-            configureForTree();
+            configureForTrees();
         }
 
-        private void configureForTree()
+        private void configureForTrees()
         {
             CreateMap<Measurement, BrowsePhotoSumaryModel>()
                 .ForMember(dest => dest.Date, opt => opt.MapFrom(src => src.Measured))
