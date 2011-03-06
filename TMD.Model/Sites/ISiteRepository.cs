@@ -16,7 +16,7 @@ namespace TMD.Model.Sites
         void RemoveVisitsByTrip(Imports.Trip trip);
         void Remove(Site site);
         Site FindSiteContainingTree(int treeId);
-        PagedList<Subsite> ListAllSubsites(SubsiteBrowser browser);
+        EntityPage<Subsite> ListAllSubsites(SubsiteBrowser browser);
     }
 
     public class SubsiteBrowser : IPagingOptions
@@ -27,7 +27,7 @@ namespace TMD.Model.Sites
         public string StateFilter { get; set; }
         public string SiteFilter { get; set; }
         public string SubsiteFilter { get; set; }
-        public int PageNumber { get; set; }
+        public int PageIndex { get; set; }
         public int PageSize { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace TMD.Model.Trees
         IList<KnownSpecies> FindKnownSpeciesBySimilarScientificName(string scientificName, int results);
         void RemoveMeasurementsByTrip(Imports.Trip trip);
         IList<Tree> ListAll();
-        PagedList<MeasuredSpecies> ListAllMeasuredSpecies(SpeciesBrowser browser);
+        EntityPage<MeasuredSpecies> ListAllMeasuredSpecies(SpeciesBrowser browser);
     }
 
     public class SpeciesBrowser : IPagingOptions
@@ -23,7 +23,7 @@ namespace TMD.Model.Trees
         public bool SortAscending { get; set; }
         public string BotanicalNameFilter { get; set; }
         public string CommonNameFilter { get; set; }
-        public int PageNumber { get; set; }
+        public int PageIndex { get; set; }
         public int PageSize { get; set; }
     }
 }

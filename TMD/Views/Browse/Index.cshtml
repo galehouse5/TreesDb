@@ -1,0 +1,43 @@
+﻿@model Tuple<TMD.Model.EntityPage<TMD.Model.Trees.MeasuredSpecies>, TMD.Model.EntityPage<TMD.Model.Sites.Subsite>>
+@{ ViewBag.Title = "Browse Species"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+
+<div class="portlet x6">
+	<div class="portlet-header"><h4>Species</h4></div>
+	<div class="portlet-content">
+        @(Html.DataTablesGrid<TMD.Model.Trees.MeasuredSpecies>(parameterNamePrefix: "species",
+            columns: builder =>
+            {
+                builder
+                    .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.Id)))
+                    .Options(header: "Botanical Name", canFilter: true);
+                builder
+                    .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.Id)))
+                    .Options(header: "Common Name", canFilter: true);
+            },
+            rowsPerPage: 5,
+            dataSource: Model.Item1.Page, filteredRowCount: Model.Item1.FilteredItems, totalRowCount: Model.Item1.TotalItems))
+    </div>
+</div>
+
+<div class="portlet x6">
+	<div class="portlet-header"><h4>Locations</h4></div>
+	<div class="portlet-content">
+        @(Html.DataTablesGrid<TMD.Model.Sites.Subsite>(parameterNamePrefix: "location",
+            columns: builder =>
+            {
+                builder
+                    .Custom("State", subsite => Html.ActionLink(subsite.State.Name, Mvc.Browse.StateDetails(subsite.State.Id)))
+                    .Options(canFilter: true);
+                builder
+                    .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+                    .Options(canFilter: true);
+                builder
+                    .Custom("Subsite", subsite => subsite.Site.ContainsSingleSubsite ?
+                        MvcHtmlString.Create("-")
+                        : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+                    .Options(canFilter: true);
+            },
+            rowsPerPage: 5,
+            dataSource: Model.Item2.Page, filteredRowCount: Model.Item2.FilteredItems, totalRowCount: Model.Item2.TotalItems))
+    </div>
+</div>

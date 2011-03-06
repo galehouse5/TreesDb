@@ -64,11 +64,6 @@ namespace TMD.Controllers {
         public System.Web.Mvc.ActionResult StateDetails() {
             return new T4MVC_ActionResult(Area, Name, ActionNames.StateDetails);
         }
-        [NonAction]
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Species() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Species);
-        }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public BrowseController Actions { get { return Mvc.Browse; } }
@@ -83,7 +78,6 @@ namespace TMD.Controllers {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNamesClass {
             public readonly string MenuWidget = "MenuWidget";
-            public readonly string Index = "Index";
             public readonly string TreeDetails = "TreeDetails";
             public readonly string MeasurementDetails = "MeasurementDetails";
             public readonly string SiteDetails = "SiteDetails";
@@ -91,6 +85,7 @@ namespace TMD.Controllers {
             public readonly string StateDetails = "StateDetails";
             public readonly string Species = "Species";
             public readonly string Locations = "Locations";
+            public readonly string Index = "Index";
         }
 
 
@@ -99,6 +94,7 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
+            public readonly string Locations = "~/Views/Browse/Locations.cshtml";
             public readonly string MenuWidget = "~/Views/Browse/MenuWidget.cshtml";
             public readonly string Species = "~/Views/Browse/Species.cshtml";
             public readonly string TreeDetails = "~/Views/Browse/TreeDetails.cshtml";
@@ -118,11 +114,6 @@ namespace TMD.Controllers {
         public override System.Web.Mvc.ActionResult MenuWidget(bool isSelected) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);
             callInfo.RouteValueDictionary.Add("isSelected", isSelected);
-            return callInfo;
-        }
-
-        public override System.Web.Mvc.ActionResult Index() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Index);
             return callInfo;
         }
 
@@ -156,15 +147,40 @@ namespace TMD.Controllers {
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Species(int? page, MvcContrib.UI.Grid.GridSortOptions sort) {
+        public override System.Web.Mvc.ActionResult Species(int? page, string sort, bool? sortAsc, string botanicalNameFilter, string commonNameFilter) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Species);
             callInfo.RouteValueDictionary.Add("page", page);
             callInfo.RouteValueDictionary.Add("sort", sort);
+            callInfo.RouteValueDictionary.Add("sortAsc", sortAsc);
+            callInfo.RouteValueDictionary.Add("botanicalNameFilter", botanicalNameFilter);
+            callInfo.RouteValueDictionary.Add("commonNameFilter", commonNameFilter);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Locations() {
+        public override System.Web.Mvc.ActionResult Locations(int? page, string sort, bool? sortAsc, string stateFilter, string siteFilter, string subsiteFilter) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Locations);
+            callInfo.RouteValueDictionary.Add("page", page);
+            callInfo.RouteValueDictionary.Add("sort", sort);
+            callInfo.RouteValueDictionary.Add("sortAsc", sortAsc);
+            callInfo.RouteValueDictionary.Add("stateFilter", stateFilter);
+            callInfo.RouteValueDictionary.Add("siteFilter", siteFilter);
+            callInfo.RouteValueDictionary.Add("subsiteFilter", subsiteFilter);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult Index(int? speciesPage, string speciesSort, bool? speciesSortAsc, string speciesBotanicalNameFilter, string speciesCommonNameFilter, int? locationPage, string locationSort, bool? locationSortAsc, string locationStateFilter, string locationSiteFilter, string locationSubsiteFilter) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Index);
+            callInfo.RouteValueDictionary.Add("speciesPage", speciesPage);
+            callInfo.RouteValueDictionary.Add("speciesSort", speciesSort);
+            callInfo.RouteValueDictionary.Add("speciesSortAsc", speciesSortAsc);
+            callInfo.RouteValueDictionary.Add("speciesBotanicalNameFilter", speciesBotanicalNameFilter);
+            callInfo.RouteValueDictionary.Add("speciesCommonNameFilter", speciesCommonNameFilter);
+            callInfo.RouteValueDictionary.Add("locationPage", locationPage);
+            callInfo.RouteValueDictionary.Add("locationSort", locationSort);
+            callInfo.RouteValueDictionary.Add("locationSortAsc", locationSortAsc);
+            callInfo.RouteValueDictionary.Add("locationStateFilter", locationStateFilter);
+            callInfo.RouteValueDictionary.Add("locationSiteFilter", locationSiteFilter);
+            callInfo.RouteValueDictionary.Add("locationSubsiteFilter", locationSubsiteFilter);
             return callInfo;
         }
 

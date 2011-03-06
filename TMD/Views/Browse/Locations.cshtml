@@ -1,0 +1,25 @@
+﻿@model EntityPage<TMD.Model.Sites.Subsite>
+@{ ViewBag.Title = "Browse Species"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+
+<div class="portlet x12">
+	<div class="portlet-header"><h4>Locations</h4></div>
+	<div class="portlet-content">
+        @(Html.DataTablesGrid<TMD.Model.Sites.Subsite>(
+            columns: builder =>
+            {
+                builder
+                    .Custom("State", subsite => Html.ActionLink(subsite.State.Name, Mvc.Browse.StateDetails(subsite.State.Id)))
+                    .Options(canFilter: true);
+                builder
+                    .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+                    .Options(canFilter: true);
+                builder
+                    .Custom("Subsite", subsite => subsite.Site.ContainsSingleSubsite ?
+                        MvcHtmlString.Create("-")
+                        : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+                    .Options(canFilter: true);
+            },
+            rowsPerPage: 50,
+            dataSource: Model.Page, filteredRowCount: Model.FilteredItems, totalRowCount: Model.TotalItems))
+    </div>
+</div>

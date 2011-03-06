@@ -2506,8 +2506,12 @@ div.selector { margin-bottom: 0; }
 .RequiresJavascript { display: none; }
 .captcha { margin-bottom: 15px; }
 .captcha .recaptcha_input_area input { left: 0; }
-table.display a { color: #FFFFFF; text-decoration: none; }
 
 /* jQuery Controls */
 table.ui-datepicker-calendar thead tr th { background-color: #FFFFFF !important; color: #000000 !important; }
 ul.ui-autocomplete li { list-style-type: none; }
+
+/* Grid */
+table.display th a { color: #FFFFFF; text-decoration: none; }
+table.display tfoot { display: table-footer-group; }
+table.display tfoot th { background-color: #255648 !important; padding: 3px 18px 3px 10px;  }

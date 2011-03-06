@@ -120,24 +120,15 @@ namespace TMD.Infrastructure.Repositories
                 .UniqueResult<Site>();
         }
 
-        public PagedList<Subsite> ListAllSubsites(SubsiteBrowser browser)
+        public EntityPage<Subsite> ListAllSubsites(SubsiteBrowser browser)
         {
-            return new PagedList<Subsite>(browser)
-            {
-                Page = Registry.Session.CreateCriteria<Subsite>()
+            return CriteriaExtensions.ListAllEntitiesByBrowser<Subsite>(
+                browserAliaser: criteria => criteria
                     .CreateAlias("Site", "site")
-                    .CreateAlias("State", "state")
-                    .ApplyFilters(browser)
-                    .ApplySorting(browser)
-                    .ApplyPaging(browser)
-                    .List<Subsite>(),
-                TotalItems = Registry.Session.CreateCriteria<Subsite>()
-                    .CreateAlias("Site", "site")
-                    .CreateAlias("State", "state")
-                    .ApplyFilters(browser)
-                    .SetProjection(Projections.Count("Id"))
-                    .UniqueResult<int>()
-            };
+                    .CreateAlias("State", "state"),
+                browserFilterer: criteria => criteria.ApplyFilters(browser),
+                browserSorter: criteria => criteria.ApplySorting(browser),
+                browserPager: criteria => criteria.ApplyPaging(browser));
         }
     }
 

@@ -8,7 +8,7 @@ using TMD.Model;
 using AutoMapper;
 using TMD.Model.Trees;
 using TMD.Extensions;
-using MvcContrib.UI.Grid;
+using TMD.Model.Sites;
 
 namespace TMD.Controllers
 {
@@ -21,11 +21,6 @@ namespace TMD.Controllers
             {
                 IsSelected = isSelected
             });
-        }
-
-        public virtual ActionResult Index()
-        {
-            return View();
         }
 
         [DefaultReturnUrl]
@@ -65,28 +60,72 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult Species(int? page, GridSortOptions sort = null)
+        public virtual ActionResult Species(int? page = null, string sort = null, bool? sortAsc = null, 
+            string botanicalNameFilter = "", string commonNameFilter = "")
         {
-            sort = sort ?? new GridSortOptions { Column = "ScientificName", Direction = MvcContrib.Sorting.SortDirection.Ascending };
             SpeciesBrowser browser = new SpeciesBrowser
             {
-                PageNumber = page ?? 1,
-                PageSize = 5,
-                BotanicalNameFilter = string.Empty,
-                CommonNameFilter = string.Empty,
-                SortAscending = sort.Direction == MvcContrib.Sorting.SortDirection.Ascending,
-                SortProperty = "ScientificName".Equals(sort.Column) ? SpeciesBrowser.Property.BotanicalName
-                    : "CommonName".Equals(sort.Column) ? SpeciesBrowser.Property.CommonName
-                    : (SpeciesBrowser.Property?)null
+                PageIndex = page ?? 0,
+                PageSize = 50,
+                BotanicalNameFilter = botanicalNameFilter, CommonNameFilter = commonNameFilter,
+                SortAscending = !sortAsc.HasValue || sortAsc.Value,
+                SortProperty = "BotanicalName".Equals(sort) ? SpeciesBrowser.Property.BotanicalName
+                    : "CommonName".Equals(sort) ? SpeciesBrowser.Property.CommonName
+                    : SpeciesBrowser.Property.BotanicalName
             };
-            var model = new PageModelBase<MeasuredSpecies> (Repositories.Trees.ListAllMeasuredSpecies(browser)) { Sort = sort };
+            var model = Repositories.Trees.ListAllMeasuredSpecies(browser);
             return View(model);
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult Locations()
+        public virtual ActionResult Locations(int? page = null, string sort = null, bool? sortAsc = null,
+            string stateFilter = "", string siteFilter = "", string subsiteFilter = "")
         {
-            throw new NotImplementedException();
+            SubsiteBrowser browser = new SubsiteBrowser
+            {
+                PageIndex = page ?? 0,
+                PageSize = 50,
+                StateFilter = stateFilter, SiteFilter = siteFilter, SubsiteFilter = subsiteFilter,
+                SortAscending = !sortAsc.HasValue || sortAsc.Value,
+                SortProperty = "State".Equals(sort) ? SubsiteBrowser.Property.State
+                    : "Site".Equals(sort) ? SubsiteBrowser.Property.Site
+                    : "Subsite".Equals(sort) ? SubsiteBrowser.Property.Subsite
+                    : SubsiteBrowser.Property.State
+            };
+            var model = Repositories.Sites.ListAllSubsites(browser);
+            return View(model);
+        }
+        
+        [DefaultReturnUrl]
+        public virtual ActionResult Index(int? speciesPage = null, string speciesSort = null, bool? speciesSortAsc = null, 
+            string speciesBotanicalNameFilter = "", string speciesCommonNameFilter = "",
+            int? locationPage = null, string locationSort = null, bool? locationSortAsc = null,
+            string locationStateFilter = "", string locationSiteFilter = "", string locationSubsiteFilter = "")
+        {
+            SpeciesBrowser speciesBrowser = new SpeciesBrowser
+            {
+                PageIndex = speciesPage ?? 0,
+                PageSize = 5,
+                BotanicalNameFilter = speciesBotanicalNameFilter, CommonNameFilter = speciesCommonNameFilter,
+                SortAscending = !speciesSortAsc.HasValue || speciesSortAsc.Value,
+                SortProperty = "BotanicalName".Equals(speciesSort) ? SpeciesBrowser.Property.BotanicalName
+                    : "CommonName".Equals(speciesSort) ? SpeciesBrowser.Property.CommonName
+                    : SpeciesBrowser.Property.BotanicalName
+            };
+            var speciesModel = Repositories.Trees.ListAllMeasuredSpecies(speciesBrowser);
+            SubsiteBrowser locationsBrowser = new SubsiteBrowser
+            {
+                PageIndex = locationPage ?? 0,
+                PageSize = 5,
+                StateFilter = locationStateFilter, SiteFilter = locationSiteFilter, SubsiteFilter = locationSubsiteFilter,
+                SortAscending = !locationSortAsc.HasValue || locationSortAsc.Value,
+                SortProperty = "State".Equals(locationSort) ? SubsiteBrowser.Property.State
+                    : "Site".Equals(locationSort) ? SubsiteBrowser.Property.Site
+                    : "Subsite".Equals(locationSort) ? SubsiteBrowser.Property.Subsite
+                    : SubsiteBrowser.Property.State
+            };
+            var locationsModel = Repositories.Sites.ListAllSubsites(locationsBrowser);
+            return View(new Tuple<EntityPage<MeasuredSpecies>, EntityPage<Subsite>>(speciesModel, locationsModel));
         }
     }
 }

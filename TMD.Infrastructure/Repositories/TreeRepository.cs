@@ -6,8 +6,8 @@ using TMD.Model.Trees;
 using TMD.Model;
 using NHibernate;
 using TMD.Infrastructure.StringComparison;
-using NHibernate.Criterion;
 using TMD.Model.Extensions;
+using NHibernate.Criterion;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -85,20 +85,12 @@ namespace TMD.Infrastructure.Repositories
             return Registry.Session.CreateCriteria<Tree>().List<Tree>();
         }
 
-        public PagedList<MeasuredSpecies> ListAllMeasuredSpecies(SpeciesBrowser browser)
+        public EntityPage<MeasuredSpecies> ListAllMeasuredSpecies(SpeciesBrowser browser)
         {
-            return new PagedList<MeasuredSpecies>(browser)
-            {
-                Page = Registry.Session.CreateCriteria<MeasuredSpecies>()
-                    .ApplyFilters(browser)
-                    .ApplySorting(browser)
-                    .ApplyPaging(browser)
-                    .List<MeasuredSpecies>(),
-                TotalItems = Registry.Session.CreateCriteria<MeasuredSpecies>()
-                    .ApplyFilters(browser)
-                    .SetProjection(Projections.Count("Id"))
-                    .UniqueResult<int>()
-            };
+            return CriteriaExtensions.ListAllEntitiesByBrowser<MeasuredSpecies>(
+                browserFilterer: criteria => criteria.ApplyFilters(browser),
+                browserSorter: criteria => criteria.ApplySorting(browser),
+                browserPager: criteria => criteria.ApplyPaging(browser));
         }
     }
 
