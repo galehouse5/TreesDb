@@ -105,7 +105,7 @@ namespace TMD.Controllers
             SpeciesBrowser speciesBrowser = new SpeciesBrowser
             {
                 PageIndex = speciesPage ?? 0,
-                PageSize = 5,
+                PageSize = 25,
                 BotanicalNameFilter = speciesBotanicalNameFilter, CommonNameFilter = speciesCommonNameFilter,
                 SortAscending = !speciesSortAsc.HasValue || speciesSortAsc.Value,
                 SortProperty = "BotanicalName".Equals(speciesSort) ? SpeciesBrowser.Property.BotanicalName
@@ -116,7 +116,7 @@ namespace TMD.Controllers
             SubsiteBrowser locationsBrowser = new SubsiteBrowser
             {
                 PageIndex = locationPage ?? 0,
-                PageSize = 5,
+                PageSize = 25,
                 StateFilter = locationStateFilter, SiteFilter = locationSiteFilter, SubsiteFilter = locationSubsiteFilter,
                 SortAscending = !locationSortAsc.HasValue || locationSortAsc.Value,
                 SortProperty = "State".Equals(locationSort) ? SubsiteBrowser.Property.State
