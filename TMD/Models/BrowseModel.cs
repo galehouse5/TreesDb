@@ -23,7 +23,7 @@ namespace TMD.Models
     public class BrowseTreeModel
     {
         public BrowseTreeDetailsModel Details { get; set; }
-        public IList<BrowseMeasurementSummaryModel> MeasurementSummaries { get; set; }
+        public IList<BrowseTreeDetailsModel> MeasurementDetails { get; set; }
         public IList<BrowsePhotoSumaryModel> PhotoSummaries { get; set; }
         public BrowseTreeLocationModel Location { get; set; }
     }
@@ -37,26 +37,16 @@ namespace TMD.Models
         public IList<Name> Photographers { get; set; }
     }
 
-    public class BrowseMeasurementSummaryModel
-    {
-        [ScaffoldColumn(false)]
-        public int Id { get; set; }
-        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")] 
-        public DateTime Measured { get; set; }
-        [UIHint("ConcatenatedNames")]
-        public IList<Name> Measurers { get; set; }
-        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(no general comments)")]
-        public string GeneralComments { get; set; } 
-    }
-
     public class BrowseTreeDetailsModel
     {
         [ScaffoldColumn(false)]
         public int Id { get; set; }
-        [DisplayName("Scientific name")]
+        [DisplayName("Botanical name")]
         public string ScientificName { get; set; }
         [DisplayName("Common name")]
         public string CommonName { get; set; }
+        [ScaffoldColumn(false)]
+        public int SpeciesId { get; set; }
         [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
         public string GeneralComments { get; set; } 
         [DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
@@ -85,6 +75,10 @@ namespace TMD.Models
         public virtual Distance Diameter { get; private set; }
         [DisplayName("Conical volume"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
         public virtual Volume ConicalVolume { get; private set; }
+        [UIHint("ConcatenatedNames"), Emphasize(false)]
+        public IList<Name> Measurers { get; set; }
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+        public DateTime Measured { get; set; }
     }
 
     public class BrowseTreeLocationModel
@@ -110,5 +104,25 @@ namespace TMD.Models
         public string County { get; set; }
         [Emphasize(false)]
         public MapModel Map { get; set; }
+    }
+
+    public class BrowseSpeciesDetailsModel
+    {
+        [DisplayName("Botanical name")]
+        public string ScientificName { get; set; }
+        [DisplayName("Common name")]
+        public string CommonName { get; set; }
+        [DisplayName("Max height"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        public Distance MaxHeight { get; set; }
+        [ScaffoldColumn(false)]
+        public int MaxHeightTreeId { get; set; }
+        [DisplayName("Max girth"), DisplayFormat(DataFormatString = "FeetDecimalInches", NullDisplayText = "(no data)")]
+        public Distance MaxGirth { get; set; }
+        [ScaffoldColumn(false)]
+        public int MaxGirthTreeId { get; set; }
+        [DisplayName("Max crown spread"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        public Distance MaxCrownSpread { get; set; }
+        [ScaffoldColumn(false)]
+        public int MaxCrownSpreadTreeId { get; set; }
     }
 }

@@ -10,20 +10,12 @@ namespace TMD
     {
         private class PropertyNames
         {
-            public const string GoogleApiKey = "googleApiKey";
             public const string HostName = "hostName";
             public const string WebmasterEmail = "webmasterEmail";
             public const string HandleControllerExceptions = "handleControllerExceptions";
             public const string StaticContentVersion = "staticContentVersion";
             public const string StaticContentHostname = "staticContentHostname";
             public const string MinifyStaticContent = "minifyStaticContent";
-        }
-
-        [ConfigurationProperty(PropertyNames.GoogleApiKey, IsRequired = true)]
-        public string GoogleApiKey
-        {
-            get { return (string)this[PropertyNames.GoogleApiKey]; }
-            set { this[PropertyNames.GoogleApiKey] = value; }
         }
 
         [ConfigurationProperty(PropertyNames.HostName, IsRequired = true)]

@@ -96,3 +96,98 @@ Number.prototype.RoundToDecimals = function (decimals) {
     };
 })(jQuery);
 
+var slate = {};
+
+slate = function ()
+{
+	var pub = {};
+	var self = {};
+	var chartColors = ['#263849','#FF9900','#555','#777','#999','#bbb','#ccc','#eee'];
+
+	pub.init = function () {
+	    $('#search').find('input').live('click', function () { $(this).val('') });
+	    $("form.form select, form.form input:checkbox, form.form input:radio, form.form input:file").uniform();
+
+	    $('*[rel=datatable]').dataTable();
+
+	    $("*[rel=tooltip]").tipsy({ gravity: 's' });
+	    $("*[rel=facebox]").facebox();
+
+	    $('table.stats').each(function () {
+	        var chartType = '';
+
+	        if ($(this).attr('title')) {
+	            chartType = $(this).attr('title');
+	        }
+	        else {
+	            chartType = 'area';
+	        }
+
+	        var chart_width = $(this).parents('.portlet').width() * .85;
+
+	        $(this).hide().visualize({
+	            type: chartType, // 'bar', 'area', 'pie', 'line'
+	            width: chart_width,
+	            height: '240px',
+	            colors: chartColors
+	        });
+	    });
+	}
+
+	return pub;
+	
+}();
+slate.portlet = function ()
+{
+	var pub = {};
+	var self = {};
+	
+	pub.init = function ()
+	{
+		$('.portlet-closable .portlet-header').live ( 'click', self.togglePortlet );
+		$('.portlet-tab-nav a').live ( 'click' , self.selectTabContent );
+		
+		$('.portlet-closable .portlet-header').each ( function () 
+		{			
+			$(this).append ('<span class="portlet-toggle-icon"></span>');
+		});		
+		
+		$('.portlet-tab-nav li').each ( function () 
+		{			
+			if ( $(this).hasClass ('portlet-tab-nav-active') )
+			{
+				var id = $(this).find ('a').attr ('href');
+				$(this).parents ('.portlet').find ( id ).show ().addClass ('portlet-tab-content-active').siblings ().hide ();
+			}			
+		});
+	}
+	
+	self.selectTabContent = function ()
+	{
+		$(this).parents ('ul').find ('li').removeClass ('portlet-tab-nav-active');
+		$(this).parents ('li').addClass ('portlet-tab-nav-active');
+		var $portlet = $(this).parents ('.portlet');
+		$portlet.find ('#' + $(this).attr ('href') ).show ().siblings ().hide ();
+		return false;
+	}
+	
+	self.togglePortlet = function ()
+	{
+		var $this = $(this);	
+		var $portlet = $this.parent ();
+		var $content = $portlet.find ('.portlet-content');
+		
+		var browser = $.browser.msie + $.browser.version;
+		if ( browser == 'true7.0' )
+			$content.toggle ();
+		else
+			$content.slideToggle ();
+		
+		$portlet.toggleClass ('portlet-state-closed');
+		return false;
+	}
+
+	
+	return pub;
+	
+}();

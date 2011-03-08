@@ -94,6 +94,7 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
+            public readonly string Index = "~/Views/Browse/Index.cshtml";
             public readonly string Locations = "~/Views/Browse/Locations.cshtml";
             public readonly string MenuWidget = "~/Views/Browse/MenuWidget.cshtml";
             public readonly string Species = "~/Views/Browse/Species.cshtml";
@@ -102,6 +103,8 @@ namespace TMD.Controllers {
             public _DisplayTemplates DisplayTemplates { get { return s_DisplayTemplates; } }
             public partial class _DisplayTemplates{
                 public readonly string BrowsePhotoSumaryModel = "BrowsePhotoSumaryModel";
+                public readonly string BrowseTreeDetailsModel = "BrowseTreeDetailsModel";
+                public readonly string BrowseTreeSummaryModel = "BrowseTreeSummaryModel";
                 public readonly string ConcatenatedNames = "ConcatenatedNames";
             }
         }

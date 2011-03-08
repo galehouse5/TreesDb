@@ -144,7 +144,7 @@ namespace TMD.Models
     {
         public int Id { get; set; }
         [DisplayName("Common name")] public string CommonName { get; set; }
-        [DisplayName("Scientific name")] public string ScientificName { get; set; }
+        [DisplayName("Botanical name")] public string ScientificName { get; set; }
         [DisplayFormat(DataFormatString = "Default")] 
         public Distance Height { get; set; }
         [DisplayFormat(DataFormatString = "FeetDecimalInches")] 

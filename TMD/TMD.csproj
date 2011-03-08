@@ -339,6 +339,8 @@
     <Content Include="Views\Browse\Index.cshtml" />
     <None Include="Views\Browse\DisplayTemplates\BrowsePhotoSumaryModel.cshtml" />
     <Content Include="Views\Browse\MenuWidget.cshtml" />
+    <Content Include="Views\Browse\DisplayTemplates\BrowseTreeDetailsModel.cshtml" />
+    <Content Include="Views\Browse\DisplayTemplates\BrowseTreeSummaryModel.cshtml" />
     <None Include="Views\Browse\TreeDetails.cshtml" />
     <None Include="Views\Error\Unauthorized.cshtml" />
     <None Include="Views\Export\MenuWidget.cshtml" />
@@ -379,7 +381,6 @@
     <None Include="Views\Map\ImportSiteMarkerInfo.cshtml" />
     <None Include="Views\Map\ImportSubsiteMarkerInfo.cshtml" />
     <None Include="Views\Map\ImportTreeMarkerInfo.cshtml" />
-    <None Include="Views\Map\InitializeGoogleMaps.cshtml" />
     <None Include="Views\Map\MenuWidget.cshtml" />
     <None Include="Views\Photos\EditPhotoGalleryPartial.cshtml" />
     <None Include="Views\Shared\DisplayTemplates\Distance.cshtml" />

@@ -21,16 +21,19 @@
       <property name="Feet" column="MaxHeight"/>
       <property name="InputFormat" column="MaxHeightInputFormat"/>
     </component>
+    <many-to-one name="MaxHeightTree" column="MaxHeightTreeId" />
     <property name="ScientificName" />
     <property name="CommonName" />
     <component name="MaxGirth" class="Distance">
       <property name="Feet" column="MaxGirth"/>
       <property name="InputFormat" column="MaxGirthInputFormat"/>
     </component>
+    <many-to-one name="MaxGirthTree" column="MaxGirthTreeId" />
     <component name="MaxCrownSpread" class="Distance">
       <property name="Feet" column="MaxCrownSpread"/>
       <property name="InputFormat" column="MaxCrownSpreadInputFormat"/>
-    </component>    
+    </component>
+    <many-to-one name="MaxCrownSpreadTree" column="MaxCrownSpreadTreeId" />
   </class>
 
   <class name="TMD.Model.Trees.Measurement" table="Measurements">
@@ -38,6 +41,7 @@
       <generator class="native"/>
     </id>
     <property name="Measured" />
+    <many-to-one name="Species" column="ComputedMeasuredSpeciesId" insert="false" update="false" cascade="none" />
     <many-to-one name="ImportingTrip" column="ImportingTripId" cascade="none" />
     <property name="CommonName"/>
     <property name="ScientificName"/>

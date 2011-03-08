@@ -8,10 +8,13 @@
 }
 
 @section Scripts {
-    @{ Html.RenderAction(Mvc.Map.InitializeGoogleMaps()); }
+    <script type="text/javascript"src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script src="@Url.ManagedContent(Links.js.Map_js, Links.js.Map_min_js)" type="text/javascript"></script>
     <script type="text/javascript">
-        $(function () { $('.Map').Mapify(); });
+        $(function () {
+            slate.portlet.init();
+            $('.Map').Mapify();
+        });
     </script>
 }
 
@@ -21,52 +24,38 @@
 		<div class="portlet-header"><h4>Tree</h4></div>
 		<div class="portlet-content">
 			<table class="reports_table">
-				@Html.ReportDisplayFor(m => m.Details.ScientificName)
-				@Html.ReportDisplayFor(m => m.Details.CommonName)
-				@Html.ReportDisplayFor(m => m.Details.GeneralComments)
-				@Html.ReportDisplayFor(m => m.Details.Height)
-				@Html.ReportDisplayFor(m => m.Details.HeightMeasurementMethod)
-				@Html.ReportDisplayFor(m => m.Details.Girth)
-				@Html.ReportDisplayFor(m => m.Details.CrownSpread)
-				@Html.ReportDisplayFor(m => m.Details.ENTSPTS2)
-				@Html.ReportDisplayFor(m => m.Details.ENTSPTS)
-				@Html.ReportDisplayFor(m => m.Details.TDI3)
-				@Html.ReportDisplayFor(m => m.Details.TDI2)
-				@if (Model.Details.ChampionPoints.HasValue) {
-					@Html.ReportDisplayFor(m => m.Details.ChampionPoints)
-				} else if (Model.Details.AbbreviatedChampionPoints.HasValue) {
-					@Html.ReportDisplayFor(m => m.Details.AbbreviatedChampionPoints)
-				} else {
-					<tr><td class="description">Champion points</td><td class="value">(not enough data)</td></tr>
-				}
-				@Html.ReportDisplayFor(m => m.Details.Diameter)
-				@Html.ReportDisplayFor(m => m.Details.ConicalVolume)
+                
+                @Html.DisplayFor(m => m.Details)
 			</table>
 		</div>
 	</div>
 
-	<div class="portlet x12">
-		<div class="portlet-header"><h4>Measurements</h4></div>
-		<div class="portlet-content">
-			<table class="support_table">
-				@for (int summaryIndex = 0; summaryIndex < Model.MeasurementSummaries.Count; summaryIndex++) { 
-					<tr>
-						<td>
-							<span class="ticket open">@Html.DisplayFor(m => m.MeasurementSummaries[summaryIndex].Measured)</span>
-						</td>
-						<td class="full">
-							@Html.DisplayFor(m => m.MeasurementSummaries[summaryIndex].GeneralComments)
-							<br />
-							<a href="@Url.Action("TreeMeasurementDetails", new { id = Model.MeasurementSummaries[summaryIndex].Id })">View more details</a>
-						</td>
-						<td class="who">
-							Measured by @Html.DisplayFor(m => m.MeasurementSummaries[summaryIndex].Measurers)
-						</td>
-					</tr>
-				}
-			</table>
-		</div>
-	</div>
+    @for (int measurementIndex = 0; measurementIndex < Model.MeasurementDetails.Count; measurementIndex++)
+    { 
+        <div class="portlet x12">
+		    <div class="portlet-header">
+                <h4>Measured on @Html.DisplayFor(m => m.MeasurementDetails[measurementIndex].Measured)</h4>
+                <ul class="portlet-tab-nav">
+                    <li class="portlet-tab-nav-active"><a href="#@("MeasurementSummary" + measurementIndex)">Summary</a></li>
+                    <li><a href="#@("MeasurementDetails" + measurementIndex)">Details</a></li>
+                </ul>
+            </div>
+            <div class="portlet-content">
+                <div id="@("MeasurementSummary" + measurementIndex)" class="portlet-tab-content portlet-tab-content-active">   
+                    <table class="reports_table">
+                        @Html.DisplayFor(m => m.MeasurementDetails[measurementIndex], "BrowseTreeSummaryModel")
+                        @Html.ReportDisplayFor(m => m.MeasurementDetails[measurementIndex].Measurers)
+			        </table>
+                </div>
+		        <div id="@("MeasurementDetails" + measurementIndex)" class="portlet-tab-content">   
+                    <table class="reports_table">
+                        @Html.DisplayFor(m => m.MeasurementDetails[measurementIndex])
+                        @Html.ReportDisplayFor(m => m.MeasurementDetails[measurementIndex].Measurers)
+			        </table>
+                </div>
+            </div>
+        </div>
+    }
 
 </div>
 <div class="x6">
@@ -75,15 +64,25 @@
 		<div class="portlet-header"><h4>Location</h4></div>
 		<div class="portlet-content">
 			<table class="reports_table">
-				@Html.ReportDisplayFor(m => m.Location.SiteName)
+                <tr>
+                    <td class="description">Site Name</td>
+                    <td class="value"><a href="@Url.Action(Mvc.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SiteName)</a></td>
+                </tr>
 				@Html.ReportDisplayFor(m => m.Location.SiteComments)
-				@if (Model.Location.SiteSubsitesCount > 1) { 
-					@Html.ReportDisplayFor(m => m.Location.SubsiteName)
+				@if (Model.Location.SiteSubsitesCount > 1)
+    { 
+                    <tr>
+                        <td class="description">Subsite Name</td>
+                        <td class="value"><a href="@Url.Action(Mvc.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SubsiteName)</a></td>
+                    </tr>
 					@Html.ReportDisplayFor(m => m.Location.SubsiteComments)
-				}
+    }
 				@Html.ReportDisplayFor(m => m.Location.OwnershipType)
 				@Html.ReportDisplayFor(m => m.Location.County)
-				@Html.ReportDisplayFor(m => m.Location.State)
+                <tr>
+                    <td class="description">State Name</td>
+                    <td class="value"><a href="@Url.Action(Mvc.Browse.StateDetails(Model.Location.State.Id))">@Html.DisplayFor(m => m.Location.State)</a></td>
+                </tr>
                 <tr class="RequiresJavascript"><td colspan="2">
                     @Html.DisplayFor(m => m.Location.Map)
                 </td></tr>
@@ -94,13 +93,17 @@
 	<div class="portlet x12">
 		<div class="portlet-header"><h4>Photos</h4></div>
 		<div class="portlet-content">
-			@if (Model.PhotoSummaries.Count == 0) { 
+			@if (Model.PhotoSummaries.Count == 0)
+   { 
 				@:(no photos)
-			} else {
+			}
+   else
+   {
 				<table class="support_table">
-					@for (int summaryIndex = 0; summaryIndex < Model.PhotoSummaries.Count; summaryIndex++) {
+					@for (int summaryIndex = 0; summaryIndex < Model.PhotoSummaries.Count; summaryIndex++)
+     {
 						@Html.DisplayFor(m => m.PhotoSummaries[summaryIndex])
-					}
+     }
 				</table>
 			}
 		</div>

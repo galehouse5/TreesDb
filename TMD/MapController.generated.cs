@@ -112,7 +112,6 @@ namespace TMD.Controllers {
         public ActionNamesClass ActionNames { get { return s_actions; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNamesClass {
-            public readonly string InitializeGoogleMaps = "InitializeGoogleMaps";
             public readonly string MenuWidget = "MenuWidget";
             public readonly string Index = "Index";
             public readonly string AllMarkers = "AllMarkers";
@@ -140,7 +139,6 @@ namespace TMD.Controllers {
             public readonly string ImportSubsiteMarkerInfo = "~/Views/Map/ImportSubsiteMarkerInfo.cshtml";
             public readonly string ImportTreeMarkerInfo = "~/Views/Map/ImportTreeMarkerInfo.cshtml";
             public readonly string Index = "~/Views/Map/Index.cshtml";
-            public readonly string InitializeGoogleMaps = "~/Views/Map/InitializeGoogleMaps.cshtml";
             public readonly string MenuWidget = "~/Views/Map/MenuWidget.cshtml";
             public readonly string SiteMarkerInfo = "~/Views/Map/SiteMarkerInfo.cshtml";
             public readonly string SubsiteMarkerInfo = "~/Views/Map/SubsiteMarkerInfo.cshtml";
@@ -151,11 +149,6 @@ namespace TMD.Controllers {
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
     public class T4MVC_MapController: TMD.Controllers.MapController {
         public T4MVC_MapController() : base(Dummy.Instance) { }
-
-        public override System.Web.Mvc.ActionResult InitializeGoogleMaps() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.InitializeGoogleMaps);
-            return callInfo;
-        }
 
         public override System.Web.Mvc.ActionResult MenuWidget(bool isSelected) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);

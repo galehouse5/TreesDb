@@ -15,12 +15,6 @@ namespace TMD.Controllers
     public partial class MapController : ControllerBase
     {
         [ChildActionOnly]
-        public virtual ActionResult InitializeGoogleMaps()
-        {
-            return PartialView((object)WebApplicationRegistry.Settings.GoogleApiKey);
-        }
-
-        [ChildActionOnly]
         public virtual ActionResult MenuWidget(bool isSelected)
         {
             return PartialView(new MapMenuWidgetModel

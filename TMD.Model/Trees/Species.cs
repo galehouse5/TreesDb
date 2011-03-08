@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using TMD.Model.Extensions;
+using TMD.Model.Locations;
 
 namespace TMD.Model.Trees
 {
@@ -29,8 +30,11 @@ namespace TMD.Model.Trees
         public virtual string ScientificName { get; private set; }
         public virtual string CommonName { get; private set; }
         public virtual Distance MaxHeight { get; private set; }
+        public virtual Tree MaxHeightTree { get; private set; }
         public virtual Distance MaxGirth { get; private set; }
+        public virtual Tree MaxGirthTree { get; private set; }
         public virtual Distance MaxCrownSpread { get; private set; }
+        public virtual Tree MaxCrownSpreadTree { get; private set; }
 
         public virtual float? CalculateTDI2(Distance height, Distance girth)
         {
@@ -65,4 +69,15 @@ namespace TMD.Model.Trees
             );
         }
     }
+
+    [DebuggerDisplay("{ScientificName} for {State.Code}")]
+    public class StateMeasuredSpecies : MeasuredSpecies
+    {
+        protected StateMeasuredSpecies()
+        { }
+
+        public virtual State State { get; private set; }
+    }
+
+    // TODO: implement global, site, and subsite measured species and make MeasuredSpecies abstract
 }

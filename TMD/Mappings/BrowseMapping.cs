@@ -25,10 +25,11 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Date, opt => opt.MapFrom(src => src.Measured))
                 .ForMember(dest => dest.Photographers, opt => opt.MapFrom(src => src.Measurers));
 
-            CreateMap<Measurement, BrowseMeasurementSummaryModel>();
-
             CreateMap<Tree, BrowseTreeDetailsModel>()
-                .ForMember(dest => dest.GeneralComments, opt => opt.MapFrom(src => src.LastMeasurement.GeneralComments));
+                .ForMember(dest => dest.GeneralComments, opt => opt.MapFrom(src => src.LastMeasurement.GeneralComments))
+                .ForMember(dest => dest.Measured, opt => opt.MapFrom(src => src.LastMeasured));
+
+            CreateMap<Measurement, BrowseTreeDetailsModel>();
 
             CreateMap<Tree, BrowseTreeLocationModel>()
                 .ForMember(dest => dest.Map, opt => opt.MapFrom(src => Mapper.Map<Tree, MapModel>(src)));
@@ -48,7 +49,7 @@ namespace TMD.Mappings
 
             CreateMap<Tree, BrowseTreeModel>()
                 .ForMember(dest => dest.Details, opt => opt.MapFrom(src => src))
-                .ForMember(dest => dest.MeasurementSummaries, opt => opt.MapFrom(src => (from measurement in src.Measurements
+                .ForMember(dest => dest.MeasurementDetails, opt => opt.MapFrom(src => (from measurement in src.Measurements
                                                                                          orderby measurement.Measured descending
                                                                                          select measurement)))
                 .ForMember(dest => dest.PhotoSummaries, opt => opt.MapFrom(src => (from measurement in src.Measurements
