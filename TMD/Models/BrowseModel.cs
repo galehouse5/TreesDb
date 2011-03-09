@@ -106,7 +106,7 @@ namespace TMD.Models
         public MapModel Map { get; set; }
     }
 
-    public class BrowseSpeciesDetailsModel
+    public class BrowseSpeciesModel
     {
         [DisplayName("Botanical name")]
         public string ScientificName { get; set; }
@@ -124,5 +124,6 @@ namespace TMD.Models
         public Distance MaxCrownSpread { get; set; }
         [ScaffoldColumn(false)]
         public int MaxCrownSpreadTreeId { get; set; }
+        public IList<StateMeasuredSpecies> MeasuredSpeciesByState { get; set; }
     }
 }

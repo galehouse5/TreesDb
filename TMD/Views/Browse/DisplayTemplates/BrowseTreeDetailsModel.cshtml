@@ -1,10 +1,10 @@
 ﻿@model TMD.Models.BrowseTreeDetailsModel
 <tr>
-    <td class="description">Botanical Name</td>
+    <td class="description">Botanical name</td>
     <td class="value"><a href="@Url.Action(Mvc.Browse.SpeciesDetails(Model.SpeciesId))">@Html.DisplayFor(m => m.ScientificName)</a></td>
 </tr>
 <tr>
-    <td class="description">Common Name</td>
+    <td class="description">Common name</td>
     <td class="value"><a href="@Url.Action(Mvc.Browse.SpeciesDetails(Model.SpeciesId))">@Html.DisplayFor(m => m.CommonName)</a></td>
 </tr>
 @Html.ReportDisplayFor(m => m.Height)

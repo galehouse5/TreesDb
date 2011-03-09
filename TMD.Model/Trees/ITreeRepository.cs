@@ -13,7 +13,9 @@ namespace TMD.Model.Trees
         IList<KnownSpecies> FindKnownSpeciesBySimilarScientificName(string scientificName, int results);
         void RemoveMeasurementsByTrip(Imports.Trip trip);
         IList<Tree> ListAll();
-        EntityPage<MeasuredSpecies> ListAllMeasuredSpecies(SpeciesBrowser browser);
+        EntityPage<T> ListAllMeasuredSpecies<T>(SpeciesBrowser browser) where T : MeasuredSpecies;
+        T FindMeasuredSpeciesById<T>(int id) where T : MeasuredSpecies;
+        IList<StateMeasuredSpecies> FindStateMeasuredSpeciesByBotanicalName(string botanicalName);
     }
 
     public class SpeciesBrowser : IPagingOptions

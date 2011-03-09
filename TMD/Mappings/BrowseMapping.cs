@@ -17,6 +17,7 @@ namespace TMD.Mappings
         protected override void Configure()
         {
             configureForTrees();
+            configureForSpecies();
         }
 
         private void configureForTrees()
@@ -57,6 +58,14 @@ namespace TMD.Mappings
                                                                                    select measurement)))
                 .ForMember(dest => dest.Location, opt => opt.MapFrom(src => src))
                 .AfterMap((src, dest) => dest.PhotoSummaries.RemoveAll(ps => ps.Photos.Count == 0));
+        }
+
+        private void configureForSpecies()
+        {
+            CreateMap<MeasuredSpecies, BrowseSpeciesModel>();
+
+            CreateMap<IList<StateMeasuredSpecies>, BrowseSpeciesModel>()
+                .ForMember(dest => dest.MeasuredSpeciesByState, opt => opt.MapFrom(src => src));
         }
     }
 }

@@ -50,7 +50,11 @@ namespace TMD.Controllers
         [DefaultReturnUrl]
         public virtual ActionResult SpeciesDetails(int id)
         {
-            throw new NotImplementedException();
+            var species = Repositories.Trees.FindMeasuredSpeciesById<GlobalMeasuredSpecies>(id);
+            var states = Repositories.Trees.FindStateMeasuredSpeciesByBotanicalName(species.ScientificName);
+            var model = Mapper.Map<MeasuredSpecies, BrowseSpeciesModel>(species);
+            Mapper.Map(states, model);
+            return View(model);
         }
 
         [DefaultReturnUrl]
@@ -73,7 +77,7 @@ namespace TMD.Controllers
                     : "CommonName".Equals(sort) ? SpeciesBrowser.Property.CommonName
                     : SpeciesBrowser.Property.BotanicalName
             };
-            var model = Repositories.Trees.ListAllMeasuredSpecies(browser);
+            var model = Repositories.Trees.ListAllMeasuredSpecies<GlobalMeasuredSpecies>(browser);
             return View(model);
         }
 
@@ -112,7 +116,7 @@ namespace TMD.Controllers
                     : "CommonName".Equals(speciesSort) ? SpeciesBrowser.Property.CommonName
                     : SpeciesBrowser.Property.BotanicalName
             };
-            var speciesModel = Repositories.Trees.ListAllMeasuredSpecies(speciesBrowser);
+            var speciesModel = Repositories.Trees.ListAllMeasuredSpecies<GlobalMeasuredSpecies>(speciesBrowser);
             SubsiteBrowser locationsBrowser = new SubsiteBrowser
             {
                 PageIndex = locationPage ?? 0,
@@ -125,7 +129,7 @@ namespace TMD.Controllers
                     : SubsiteBrowser.Property.State
             };
             var locationsModel = Repositories.Sites.ListAllSubsites(locationsBrowser);
-            return View(new Tuple<EntityPage<MeasuredSpecies>, EntityPage<Subsite>>(speciesModel, locationsModel));
+            return View(new Tuple<EntityPage<GlobalMeasuredSpecies>, EntityPage<Subsite>>(speciesModel, locationsModel));
         }
     }
 }

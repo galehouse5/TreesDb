@@ -337,6 +337,7 @@
     <Content Include="Views\Browse\Species.cshtml" />
     <Content Include="Views\Browse\Locations.cshtml" />
     <Content Include="Views\Browse\Index.cshtml" />
+    <Content Include="Views\Browse\SpeciesDetails.cshtml" />
     <None Include="Views\Browse\DisplayTemplates\BrowsePhotoSumaryModel.cshtml" />
     <Content Include="Views\Browse\MenuWidget.cshtml" />
     <Content Include="Views\Browse\DisplayTemplates\BrowseTreeDetailsModel.cshtml" />

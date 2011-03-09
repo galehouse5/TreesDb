@@ -18,7 +18,7 @@ namespace TMD.Model.Trees
 
         public virtual int Id { get; private set; }
         public virtual Model.Sites.Subsite Subsite { get; protected internal set; }
-        public virtual MeasuredSpecies Species { get; private set; }
+        public virtual GlobalMeasuredSpecies Species { get; private set; }
         public virtual DateTime LastMeasured { get; private set; }
         public virtual string CommonName { get; private set; }
         public virtual string ScientificName { get; private set; }

@@ -13,10 +13,8 @@
     <property name="CommonName" />
   </class>
 
-  <class name="TMD.Model.Trees.MeasuredSpecies" table="MeasuredSpecies">
-    <id name="Id">
-      <generator class="native" />
-    </id>
+  <class name="TMD.Model.Trees.MeasuredSpecies" abstract="true">
+    <id name="Id"></id>
     <component name="MaxHeight" class="Distance">
       <property name="Feet" column="MaxHeight"/>
       <property name="InputFormat" column="MaxHeightInputFormat"/>
@@ -34,6 +32,17 @@
       <property name="InputFormat" column="MaxCrownSpreadInputFormat"/>
     </component>
     <many-to-one name="MaxCrownSpreadTree" column="MaxCrownSpreadTreeId" />
+    <union-subclass name="TMD.Model.Trees.GlobalMeasuredSpecies" table="MeasuredSpecies">
+    </union-subclass>
+    <union-subclass name="TMD.Model.Trees.StateMeasuredSpecies" table="MeasuredSpeciesByState">
+      <many-to-one name="State" column="StateId"></many-to-one>
+    </union-subclass>
+    <union-subclass name="TMD.Model.Trees.SiteMeasuredSpecies" table="MeasuredSpeciesBySite">
+      <many-to-one name="Site" column="SiteId"></many-to-one>
+    </union-subclass>
+    <union-subclass name="TMD.Model.Trees.SubsiteMeasuredSpecies" table="MeasuredSpeciesBySubsite">
+      <many-to-one name="Subsite" column="SubsiteId"></many-to-one>
+    </union-subclass>
   </class>
 
   <class name="TMD.Model.Trees.Measurement" table="Measurements">

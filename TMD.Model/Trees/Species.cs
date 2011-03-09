@@ -5,10 +5,11 @@ using System.Text;
 using System.Diagnostics;
 using TMD.Model.Extensions;
 using TMD.Model.Locations;
+using TMD.Model.Sites;
 
 namespace TMD.Model.Trees
 {
-    [DebuggerDisplay("{ScientificName} ({CommonName})")]
+    [DebuggerDisplay("Known {ScientificName}'s")]
     public class KnownSpecies : IEntity
     {
         protected KnownSpecies() 
@@ -21,7 +22,7 @@ namespace TMD.Model.Trees
     }
 
     [DebuggerDisplay("{ScientificName}")]
-    public class MeasuredSpecies : IEntity
+    public abstract class MeasuredSpecies : IEntity
     {
         protected MeasuredSpecies() 
         {}
@@ -70,7 +71,14 @@ namespace TMD.Model.Trees
         }
     }
 
-    [DebuggerDisplay("{ScientificName} for {State.Code}")]
+    [DebuggerDisplay("{ScientificName}'s measured globally")]
+    public class GlobalMeasuredSpecies : MeasuredSpecies
+    {
+        protected GlobalMeasuredSpecies()
+        { }
+    }
+
+    [DebuggerDisplay("{ScientificName}'s measured in state of {State.Name}")]
     public class StateMeasuredSpecies : MeasuredSpecies
     {
         protected StateMeasuredSpecies()
@@ -79,5 +87,21 @@ namespace TMD.Model.Trees
         public virtual State State { get; private set; }
     }
 
-    // TODO: implement global, site, and subsite measured species and make MeasuredSpecies abstract
+    [DebuggerDisplay("{ScientificName}'s measured in site of {Site.Name} ({Site.Id})")]
+    public class SiteMeasuredSpecies : MeasuredSpecies
+    {
+        protected SiteMeasuredSpecies()
+        { }
+
+        public virtual Site Site { get; private set; }
+    }
+
+    [DebuggerDisplay("{ScientificName}'s measured in subsite of {Subsite.Name} ({Subsite.Id})")]
+    public class SubsiteMeasuredSpecies : MeasuredSpecies
+    {
+        protected SubsiteMeasuredSpecies()
+        { }
+
+        public virtual Subsite Subsite { get; private set; }
+    }
 }

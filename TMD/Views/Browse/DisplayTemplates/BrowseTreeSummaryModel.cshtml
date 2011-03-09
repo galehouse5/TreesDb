@@ -1,8 +1,4 @@
 ﻿@model TMD.Models.BrowseTreeDetailsModel
-<tr>
-    <td class="description">Botanical Name</td>
-    <td class="value"><a href="@Url.Action(Mvc.Browse.SpeciesDetails(Model.SpeciesId))">@Html.DisplayFor(m => m.ScientificName)</a></td>
-</tr>
 @Html.IfSpecifiedReportDisplayFor(m => m.Height)
 @Html.IfSpecifiedReportDisplayFor(m => m.Girth)
 @Html.IfSpecifiedReportDisplayFor(m => m.CrownSpread)

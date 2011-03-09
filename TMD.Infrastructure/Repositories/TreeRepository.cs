@@ -85,12 +85,26 @@ namespace TMD.Infrastructure.Repositories
             return Registry.Session.CreateCriteria<Tree>().List<Tree>();
         }
 
-        public EntityPage<MeasuredSpecies> ListAllMeasuredSpecies(SpeciesBrowser browser)
+        public EntityPage<T> ListAllMeasuredSpecies<T>(SpeciesBrowser browser) where T : MeasuredSpecies
         {
-            return CriteriaExtensions.ListAllEntitiesByBrowser<MeasuredSpecies>(
+            return CriteriaExtensions.ListAllEntitiesByBrowser<T>(
                 browserFilterer: criteria => criteria.ApplyFilters(browser),
                 browserSorter: criteria => criteria.ApplySorting(browser),
                 browserPager: criteria => criteria.ApplyPaging(browser));
+        }
+
+        public T FindMeasuredSpeciesById<T>(int id) where T : MeasuredSpecies
+        {
+            return Registry.Session.Get<T>(id);
+        }
+
+        public IList<StateMeasuredSpecies> FindStateMeasuredSpeciesByBotanicalName(string botanicalName)
+        {
+            return Registry.Session.CreateCriteria<StateMeasuredSpecies>()
+                .CreateAlias("State", "state")
+                .Add(Restrictions.Eq("ScientificName", botanicalName))
+                .AddOrder(Order.Asc("state.Name"))
+                .List<StateMeasuredSpecies>();
         }
     }
 

@@ -480,7 +480,7 @@ google.maps.Marker.prototype.Focus = function (map) {
         var defaults = {
             mapTypeId: google.maps.MapTypeId.TERRAIN,
             mapTypeControlOptions: {
-                mapTypeIds: [ google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID ],
+                mapTypeIds: [google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID],
                 position: google.maps.ControlPosition.RIGHT_BOTTOM,
                 style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
             },
@@ -526,10 +526,17 @@ google.maps.Marker.prototype.Focus = function (map) {
         }
 
         return this.each(function () {
+            // if this map has already been initialized then just refresh the ui
+            if (this.InternalMap) {
+                google.maps.event.trigger(this.InternalMap, 'resize');
+                return;
+            }
+
             options.center = getCenter(this);
             options.zoom = getZoom(this);
 
             var map = new google.maps.Map(this, options);
+            this.InternalMap = map;
 
             if (hasBounds(this)) {
                 map.fitBounds(getBounds(this));
@@ -544,7 +551,6 @@ google.maps.Marker.prototype.Focus = function (map) {
                     map.AddMarker(marker);
                 }
             });
-
         });
     }
 })(jQuery);

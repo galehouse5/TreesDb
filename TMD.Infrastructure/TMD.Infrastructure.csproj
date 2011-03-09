@@ -113,7 +113,9 @@
     <EmbeddedResource Include="Mappings\Sites.hbm.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mappings\Trees.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Trees.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mappings\Photos.hbm.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>

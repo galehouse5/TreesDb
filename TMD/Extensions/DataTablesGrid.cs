@@ -23,7 +23,8 @@ namespace TMD.Extensions
             string sortColumnName = null,
             IEnumerable<T> dataSource = null,
             int? totalRowCount = null,
-            int? filteredRowCount = null)
+            int? filteredRowCount = null,
+            bool canPage = true)
             where T : class
         {
             var model = new DataTablesGridModel<T>(helper.ViewContext);
@@ -46,6 +47,10 @@ namespace TMD.Extensions
             {
                 model.RowsPerPage = rowsPerPage.Value;
             }
+            if (!canPage)
+            {
+                model.RowsPerPage = int.MaxValue;
+            }
             if (sortAscending.HasValue)
             {
                 model.SortAscending = sortAscending.Value;
@@ -58,19 +63,16 @@ namespace TMD.Extensions
             {
                 throw new ArgumentException("Expected non null value for dataSource.");
             }
-            if (!totalRowCount.HasValue)
-            {
-                throw new ArgumentException("Expected non null value for totalRowCount.");
-            }
-            if (!filteredRowCount.HasValue)
-            {
-                throw new ArgumentException("Expected non null value for filteredRowCount.");
-            }
+            int calculatedTotalRowCount = totalRowCount.HasValue ? totalRowCount.Value : dataSource.Count();
+            int calculatedFilteredRowCount = filteredRowCount.HasValue ? filteredRowCount.Value : dataSource.Count();
             using (TextWriter output = new StringWriter())
             {
                 var render = new DataTablesGridRenderer<T>();
-                render.Render(model, dataSource, filteredRowCount.Value, totalRowCount.Value, output);
-                render.RenderPager(model, dataSource, filteredRowCount.Value, totalRowCount.Value, output);
+                render.Render(model, dataSource, calculatedFilteredRowCount, calculatedTotalRowCount, output);
+                if (canPage)
+                {
+                    render.RenderPager(model, dataSource, calculatedFilteredRowCount, calculatedTotalRowCount, output);
+                }
                 return new HtmlString(output.ToString());
             }
         }
@@ -387,16 +389,18 @@ namespace TMD.Extensions
             output.Write("<thead><tr>");
             foreach (var column in model.Columns)
             {
-                string @class = column.CanSort && column.IsSorted(model)  ?
-                    model.SortAscending ? "sorting_asc" : "sorting_desc"
-                    : "sorting";
-                output.Write("<th class='{0}'>", @class);
                 if (column.CanSort)
                 {
+                    string @class = column.IsSorted(model) ?
+                        model.SortAscending ? "sorting_asc"
+                        : "sorting_desc"
+                        : "sorting";
+                    output.Write("<th class='{0}'>", @class);
                     output.Write("<a href='{0}'>{1}</a>", model.GetSortUrl(column.ColumnName), HttpUtility.HtmlEncode(column.Header));
                 }
                 else
                 {
+                    output.Write("<th>");
                     output.Write(HttpUtility.HtmlEncode(column.Header));
                 }
                 output.Write("</th>");

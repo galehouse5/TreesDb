@@ -1,4 +1,4 @@
-﻿@model Tuple<TMD.Model.EntityPage<TMD.Model.Trees.MeasuredSpecies>, TMD.Model.EntityPage<TMD.Model.Sites.Subsite>>
+﻿@model Tuple<TMD.Model.EntityPage<TMD.Model.Trees.GlobalMeasuredSpecies>, TMD.Model.EntityPage<TMD.Model.Sites.Subsite>>
 @{ ViewBag.Title = "Browse Species"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
 
 <div class="portlet x6">
@@ -26,7 +26,7 @@
             columns: builder =>
             {
                 builder
-                    .Custom("State", subsite => Html.ActionLink(subsite.State.Name, Mvc.Browse.StateDetails(subsite.State.Id)))
+                    .Custom("State or province", subsite => Html.ActionLink(subsite.State.Name, Mvc.Browse.StateDetails(subsite.State.Id)))
                     .Options(canFilter: true);
                 builder
                     .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))

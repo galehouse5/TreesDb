@@ -13,7 +13,9 @@
     <script type="text/javascript">
         $(function () {
             slate.portlet.init();
-            $('.Map').Mapify();
+            $('#LocationMap').bind('PortletTabActivated', function () {
+                $('.Map').Mapify();
+            });
         });
     </script>
 }
@@ -23,8 +25,7 @@
 	<div class="portlet x12">
 		<div class="portlet-header"><h4>Tree</h4></div>
 		<div class="portlet-content">
-			<table class="reports_table">
-                
+			<table class="reports_table">                
                 @Html.DisplayFor(m => m.Details)
 			</table>
 		</div>
@@ -47,7 +48,7 @@
                         @Html.ReportDisplayFor(m => m.MeasurementDetails[measurementIndex].Measurers)
 			        </table>
                 </div>
-		        <div id="@("MeasurementDetails" + measurementIndex)" class="portlet-tab-content">   
+		        <div id="@("MeasurementDetails" + measurementIndex)" class="portlet-tab-content RequiresJavascript">   
                     <table class="reports_table">
                         @Html.DisplayFor(m => m.MeasurementDetails[measurementIndex])
                         @Html.ReportDisplayFor(m => m.MeasurementDetails[measurementIndex].Measurers)
@@ -61,32 +62,39 @@
 <div class="x6">
 
 	<div class="portlet x12">
-		<div class="portlet-header"><h4>Location</h4></div>
+		<div class="portlet-header">
+            <h4>Location</h4>
+            <ul class="portlet-tab-nav">
+                <li class="portlet-tab-nav-active"><a href="#LocationSummary">Summary</a></li>
+                <li><a href="#LocationMap">Map</a></li>
+            </ul>
+        </div>
 		<div class="portlet-content">
-			<table class="reports_table">
-                <tr>
-                    <td class="description">Site Name</td>
-                    <td class="value"><a href="@Url.Action(Mvc.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SiteName)</a></td>
-                </tr>
-				@Html.ReportDisplayFor(m => m.Location.SiteComments)
-				@if (Model.Location.SiteSubsitesCount > 1)
-    { 
+            <div id="LocationSummary" class="portlet-tab-content portlet-tab-content-active">
+                <table class="reports_table">
                     <tr>
-                        <td class="description">Subsite Name</td>
-                        <td class="value"><a href="@Url.Action(Mvc.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SubsiteName)</a></td>
+                        <td class="description">Site Name</td>
+                        <td class="value"><a href="@Url.Action(Mvc.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SiteName)</a></td>
                     </tr>
-					@Html.ReportDisplayFor(m => m.Location.SubsiteComments)
-    }
-				@Html.ReportDisplayFor(m => m.Location.OwnershipType)
-				@Html.ReportDisplayFor(m => m.Location.County)
-                <tr>
-                    <td class="description">State Name</td>
-                    <td class="value"><a href="@Url.Action(Mvc.Browse.StateDetails(Model.Location.State.Id))">@Html.DisplayFor(m => m.Location.State)</a></td>
-                </tr>
-                <tr class="RequiresJavascript"><td colspan="2">
-                    @Html.DisplayFor(m => m.Location.Map)
-                </td></tr>
-			</table>
+				    @Html.ReportDisplayFor(m => m.Location.SiteComments)
+				    @if (Model.Location.SiteSubsitesCount > 1) { 
+                        <tr>
+                            <td class="description">Subsite Name</td>
+                            <td class="value"><a href="@Url.Action(Mvc.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SubsiteName)</a></td>
+                        </tr>
+					    @Html.ReportDisplayFor(m => m.Location.SubsiteComments)
+                    }
+				    @Html.ReportDisplayFor(m => m.Location.OwnershipType)
+				    @Html.ReportDisplayFor(m => m.Location.County)
+                    <tr>
+                        <td class="description">State Name</td>
+                        <td class="value"><a href="@Url.Action(Mvc.Browse.StateDetails(Model.Location.State.Id))">@Html.DisplayFor(m => m.Location.State)</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="LocationMap" class="portlet-tab-content RequiresJavascript">
+                @Html.DisplayFor(m => m.Location.Map)
+            </div>
 		</div>
 	</div>
 
