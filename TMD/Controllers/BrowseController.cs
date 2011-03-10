@@ -29,9 +29,23 @@ namespace TMD.Controllers
             var tree = Repositories.Trees.FindById(id);
             var site = Repositories.Sites.FindSiteContainingTree(id);
             var subsite = site.Subsites.Where(ss => ss.Trees.Contains(tree)).First();
-            var model = Mapper.Map<Tree, BrowseTreeModel>(tree);
-            Mapper.Map(site, model.Location);
-            Mapper.Map(subsite, model.Location);
+            var orderedMeasurements = from measurement in tree.Measurements
+                                      orderby measurement.Measured descending
+                                      select measurement;
+            var measurementsWithPhotos = from measurement in tree.Measurements
+                                         orderby measurement.Measured descending
+                                         where measurement.Photos.Count > 0
+                                         select measurement;
+            var locationModel = Mapper.Map<Tree, BrowseTreeLocationModel>(tree);
+            Mapper.Map(site, locationModel);
+            Mapper.Map(subsite, locationModel);
+            var model = new BrowseTreeModel
+            {
+                Details = Mapper.Map<Tree, BrowseTreeDetailsModel>(tree),
+                MeasurementDetails = Mapper.Map<IEnumerable<Measurement>, IList<BrowseTreeDetailsModel>>(orderedMeasurements),
+                PhotoSummaries = Mapper.Map<IEnumerable<Measurement>, IList<BrowsePhotoSumaryModel>>(measurementsWithPhotos),
+                Location = locationModel
+            };
             return View(model);
         }
 
@@ -44,13 +58,27 @@ namespace TMD.Controllers
         [DefaultReturnUrl]
         public virtual ActionResult SiteDetails(int id)
         {
-            throw new NotImplementedException();
+            var site = Repositories.Sites.FindById(id);
+            var subsite = site.Subsites[0];
+            var visitsWithPhotos = from visit in subsite.Visits
+                                   orderby visit.Visited descending
+                                   where visit.Photos.Count > 0
+                                   select visit;
+            var species = Repositories.Trees.FindSubsiteMeasuredSpeciesBySubsiteId(subsite.Id);
+            var model = new BrowseSubsiteModel
+            {
+                Details = Mapper.Map<Subsite, BrowseSubsiteDetailsModel>(subsite),
+                Location = Mapper.Map<Subsite, BrowseSubsiteLocationModel>(subsite),
+                PhotoSummaries = Mapper.Map<IEnumerable<SubsiteVisit>, IList<BrowsePhotoSumaryModel>>(visitsWithPhotos),
+                Species = species
+            };
+            return View(model);
         }
 
         [DefaultReturnUrl]
         public virtual ActionResult SpeciesDetails(int id)
         {
-            var species = Repositories.Trees.FindMeasuredSpeciesById<GlobalMeasuredSpecies>(id);
+            var species = Repositories.Trees.FindMeasuredSpeciesById<MeasuredSpecies>(id);
             var states = Repositories.Trees.FindStateMeasuredSpeciesByBotanicalName(species.ScientificName);
             var model = Mapper.Map<MeasuredSpecies, BrowseSpeciesModel>(species);
             Mapper.Map(states, model);

@@ -83,21 +83,21 @@ namespace TMD.Models
 
     public class BrowseTreeLocationModel
     {
+        [DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        public Coordinates Coordinates { get; set; }
+        [DisplayName("Coordinates (calculated)"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        public Coordinates CalculatedCoordinates { get; set; }
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
         public int SiteId { get; set; }
-        [DisplayName("Site name")]
+        [DisplayName("Site")]
         public string SiteName { get; set; }
-        [DisplayName("Site comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
-        public string SiteComments { get; set; }
         public int SiteSubsitesCount { get; set; }
         [ScaffoldColumn(false)]
         public int SubsiteId { get; set; }
-        [DisplayName("Subsite name")]
+        [DisplayName("Subsite")]
         public string SubsiteName { get; set; }
-        [DisplayName("Subsite comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
-        public string SubsiteComments { get; set; }
         [DisplayName("Ownership type")]
         public string OwnershipType { get; set; }
         public State State { get; set; }
@@ -125,5 +125,58 @@ namespace TMD.Models
         [ScaffoldColumn(false)]
         public int MaxCrownSpreadTreeId { get; set; }
         public IList<StateMeasuredSpecies> MeasuredSpeciesByState { get; set; }
+    }
+
+    public class BrowseSubsiteModel
+    {
+        public BrowseSubsiteDetailsModel Details { get; set; }
+        public IList<BrowsePhotoSumaryModel> PhotoSummaries { get; set; }
+        public BrowseSubsiteLocationModel Location { get; set; }
+        public IList<SubsiteMeasuredSpecies> Species { get; set; }
+    }
+
+    public class BrowseSubsiteDetailsModel
+    {
+        [ScaffoldColumn(false)]
+        public int Id { get; set; }
+        public string Name { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RHI5 { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RHI10 { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RHI20 { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RGI5 { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RGI10 { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RGI20 { get; set; }
+        [DisplayName("Ownership contact"), DisplayFormat(NullDisplayText = "(no data)")]
+        public string OwnershipContactInfo { get; set; }
+        [ScaffoldColumn(false)]
+        public bool MakeOwnershipContactInfoPublic { get; set; }
+        [DisplayName("Last visit"), DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+        public DateTime LastVisited { get; set; }
+        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
+        public string LastVisitComments { get; set; }
+        [DisplayName("Past visitors"), UIHint("ConcatenatedNames"), Emphasize(false)]
+        public IList<Name> Visitors { get; set; }
+    }
+
+    public class BrowseSubsiteLocationModel
+    {
+        [DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        public Coordinates Coordinates { get; set; }
+        [DisplayName("Coordinates (calculated)"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        public Coordinates CalculatedCoordinates { get; set; }
+        [ScaffoldColumn(false)]
+        public int Id { get; set; }
+        [DisplayName("Ownership type")]
+        public string OwnershipType { get; set; }
+        public State State { get; set; }
+        public string County { get; set; }
+        [Emphasize(false)]
+        public MapModel Map { get; set; }
     }
 }

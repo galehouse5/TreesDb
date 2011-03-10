@@ -18,6 +18,7 @@ namespace TMD.Mappings
         {
             configureForTrees();
             configureForSpecies();
+            configureForSubsites();
         }
 
         private void configureForTrees()
@@ -38,26 +39,17 @@ namespace TMD.Mappings
             CreateMap<Site, BrowseTreeLocationModel>()
                 .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.Name))
-                .ForMember(dest => dest.SiteComments, opt => opt.MapFrom(src => src.LastVisit.Comments))
                 .ForMember(dest => dest.SiteSubsitesCount, opt => opt.MapFrom(src => src.Subsites.Count))
-                .ForMember(dest => dest.Id, opt => opt.Ignore());
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ForMember(dest => dest.Coordinates, opt => opt.Ignore())
+                .ForMember(dest => dest.CalculatedCoordinates, opt => opt.Ignore());
 
             CreateMap<Subsite, BrowseTreeLocationModel>()
                 .ForMember(dest => dest.SubsiteId, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.SubsiteName, opt => opt.MapFrom(src => src.Name))
-                .ForMember(dest => dest.SubsiteComments, opt => opt.MapFrom(src => src.LastVisit.Comments))
-                .ForMember(dest => dest.Id, opt => opt.Ignore());
-
-            CreateMap<Tree, BrowseTreeModel>()
-                .ForMember(dest => dest.Details, opt => opt.MapFrom(src => src))
-                .ForMember(dest => dest.MeasurementDetails, opt => opt.MapFrom(src => (from measurement in src.Measurements
-                                                                                         orderby measurement.Measured descending
-                                                                                         select measurement)))
-                .ForMember(dest => dest.PhotoSummaries, opt => opt.MapFrom(src => (from measurement in src.Measurements
-                                                                                   orderby measurement.Measured descending
-                                                                                   select measurement)))
-                .ForMember(dest => dest.Location, opt => opt.MapFrom(src => src))
-                .AfterMap((src, dest) => dest.PhotoSummaries.RemoveAll(ps => ps.Photos.Count == 0));
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ForMember(dest => dest.Coordinates, opt => opt.Ignore())
+                .ForMember(dest => dest.CalculatedCoordinates, opt => opt.Ignore());
         }
 
         private void configureForSpecies()
@@ -66,6 +58,18 @@ namespace TMD.Mappings
 
             CreateMap<IList<StateMeasuredSpecies>, BrowseSpeciesModel>()
                 .ForMember(dest => dest.MeasuredSpeciesByState, opt => opt.MapFrom(src => src));
+        }
+
+        private void configureForSubsites()
+        {
+            CreateMap<SubsiteVisit, BrowsePhotoSumaryModel>()
+                .ForMember(dest => dest.Date, opt => opt.MapFrom(src => src.Visited))
+                .ForMember(dest => dest.Photographers, opt => opt.MapFrom(src => src.Visitors));
+
+            CreateMap<Subsite, BrowseSubsiteDetailsModel>();
+
+            CreateMap<Subsite, BrowseSubsiteLocationModel>()
+                .ForMember(dest => dest.Map, opt => opt.MapFrom(src => Mapper.Map<Subsite, MapModel>(src)));
         }
     }
 }

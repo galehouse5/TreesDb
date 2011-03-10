@@ -63,7 +63,7 @@ namespace TMD.Controllers
         public virtual ActionResult SubsiteMarker(int id, int subsiteId)
         {
             var site = Repositories.Sites.FindById(id);
-            var subsite = site.Subsites.Where(ss => ss.Id == id).Single();
+            var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
             var marker = Mapper.Map<Model.Sites.Subsite, MapMarkerModel>(subsite);
             return Json(new { Markers = new[] { marker.ToJson(Url) } }, JsonRequestBehavior.AllowGet);
         }

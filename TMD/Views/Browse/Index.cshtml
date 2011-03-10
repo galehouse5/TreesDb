@@ -9,10 +9,10 @@
             {
                 builder
                     .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.Id)))
-                    .Options(header: "Botanical Name", canFilter: true);
+                    .Options(header: "Botanical name", canFilter: true);
                 builder
                     .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.Id)))
-                    .Options(header: "Common Name", canFilter: true);
+                    .Options(header: "Common name", canFilter: true);
             },
             rowsPerPage: 25,
             dataSource: Model.Item1.Page, filteredRowCount: Model.Item1.FilteredItems, totalRowCount: Model.Item1.TotalItems))

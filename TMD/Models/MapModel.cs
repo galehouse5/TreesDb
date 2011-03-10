@@ -115,6 +115,7 @@ namespace TMD.Models
 
     public class MapSubsiteMarkerInfoModel
     {
+        public int SiteId { get; set; }
         public int Id { get; set; }
         public string Name { get; set; }
         public State State { get; set; }

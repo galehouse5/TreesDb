@@ -72,22 +72,25 @@
 		<div class="portlet-content">
             <div id="LocationSummary" class="portlet-tab-content portlet-tab-content-active">
                 <table class="reports_table">
+                    @if (Model.Location.Coordinates.IsValidAndSpecified()) {
+                        @Html.ReportDisplayFor(m => m.Location.Coordinates);
+                    } else {
+                        @Html.ReportDisplayFor(m => m.Location.CalculatedCoordinates);
+                    }
                     <tr>
-                        <td class="description">Site Name</td>
+                        <td class="description">Site</td>
                         <td class="value"><a href="@Url.Action(Mvc.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SiteName)</a></td>
                     </tr>
-				    @Html.ReportDisplayFor(m => m.Location.SiteComments)
 				    @if (Model.Location.SiteSubsitesCount > 1) { 
                         <tr>
-                            <td class="description">Subsite Name</td>
+                            <td class="description">Subsite</td>
                             <td class="value"><a href="@Url.Action(Mvc.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SubsiteName)</a></td>
                         </tr>
-					    @Html.ReportDisplayFor(m => m.Location.SubsiteComments)
                     }
 				    @Html.ReportDisplayFor(m => m.Location.OwnershipType)
 				    @Html.ReportDisplayFor(m => m.Location.County)
                     <tr>
-                        <td class="description">State Name</td>
+                        <td class="description">State</td>
                         <td class="value"><a href="@Url.Action(Mvc.Browse.StateDetails(Model.Location.State.Id))">@Html.DisplayFor(m => m.Location.State)</a></td>
                     </tr>
                 </table>
@@ -101,19 +104,7 @@
 	<div class="portlet x12">
 		<div class="portlet-header"><h4>Photos</h4></div>
 		<div class="portlet-content">
-			@if (Model.PhotoSummaries.Count == 0)
-   { 
-				@:(no photos)
-			}
-   else
-   {
-				<table class="support_table">
-					@for (int summaryIndex = 0; summaryIndex < Model.PhotoSummaries.Count; summaryIndex++)
-     {
-						@Html.DisplayFor(m => m.PhotoSummaries[summaryIndex])
-     }
-				</table>
-			}
+            @Html.DisplayFor(m => m.PhotoSummaries, "BrowsePhotoSummaryList")
 		</div>
 	</div>
 
