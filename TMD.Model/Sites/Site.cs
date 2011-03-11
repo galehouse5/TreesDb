@@ -77,9 +77,9 @@ namespace TMD.Model.Sites
             VisitCount = Visits.Count;
             SubsiteCount = Subsites.Count;
             TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
-            Visitors.RemoveAll().AddRange(from visit in Visits
-                                          from visitor in visit.Visitors
-                                          select visitor).Distinct();
+            Visitors.RemoveAll().AddRange((from visit in Visits
+                                           from visitor in visit.Visitors
+                                           select visitor).Distinct());
             return this;
         }
 
@@ -160,13 +160,18 @@ namespace TMD.Model.Sites
         public static Site Create(Imports.Site importedSite)
         {
             importedSite.Trip.AssertIsImported();
-            return new Site
+            var site = new Site
             {
-                Subsites = (from importedSubsite in importedSite.Subsites select Subsite.Create(importedSubsite)).ToList(),
+                Subsites = new List<Subsite>(),
                 Visits = new List<SiteVisit> { SiteVisit.Create(importedSite) },
                 Name = importedSite.Name,
                 Visitors = new List<Name>()
-            }.RecalculateProperties();
+            };
+            foreach (var subsite in importedSite.Subsites.Select(importedSubsite => Subsite.Create(importedSubsite)))
+            {
+                site.AddSubsite(subsite);
+            }
+            return site.RecalculateProperties();
         }
     }
 }

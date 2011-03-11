@@ -103,9 +103,9 @@ namespace TMD.Model.Sites
             RGI10 = CalculateRGI(10);
             RGI20 = CalculateRGI(20);
             Photos.RemoveAll().AddRange(from photo in LastVisit.Photos select new SubsitePhotoReference(photo.ToPhoto(), this));
-            Visitors.RemoveAll().AddRange(from visit in Visits
+            Visitors.RemoveAll().AddRange((from visit in Visits
                                           from visitor in visit.Visitors
-                                          select visitor).Distinct();
+                                          select visitor).Distinct());
             VisitCount = Visits.Count;
             TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
             return this;
@@ -179,16 +179,21 @@ namespace TMD.Model.Sites
         public static Subsite Create(Imports.Subsite importedSubsite)
         {
             importedSubsite.Site.Trip.AssertIsImported();
-            return new Subsite
+            var subsite = new Subsite
             {
-                Trees = (from importedTree in importedSubsite.Trees select Tree.Create(importedTree)).ToList(),
+                Trees = new List<Tree>(),
                 Visits = new List<SubsiteVisit> { SubsiteVisit.Create(importedSubsite) },
                 Name = importedSubsite.Name,
                 State = importedSubsite.State,
                 County = importedSubsite.County,
                 Photos = new List<IPhoto>(),
                 Visitors = new List<Name>()
-            }.RecalculateProperties();
+            };
+            foreach (var tree in importedSubsite.Trees.Select(importedTree => Tree.Create(importedTree)))
+            {
+                subsite.AddTree(tree);
+            }
+            return subsite.RecalculateProperties();
         }
     }
 

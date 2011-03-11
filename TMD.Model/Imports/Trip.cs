@@ -6,9 +6,11 @@ using TMD.Model.Locations;
 using TMD.Model.Validation;
 using TMD.Model.Extensions;
 using NHibernate.Validator.Constraints;
+using System.Diagnostics;
 
 namespace TMD.Model.Imports
 {
+    [DebuggerDisplay("{Name} ({Id})")]
     public class Trip : UserCreatedEntityBase
     {
         protected Trip()

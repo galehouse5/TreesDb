@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
-using TMD.Model.Imports;
 using TMD.Model.Extensions;
 using TMD.Model.Photos;
 using TMD.Model.Users;
+using TMD.Model.Sites;
 
 namespace TMD.Model.Trees
 {
@@ -17,13 +17,13 @@ namespace TMD.Model.Trees
         { }
 
         public virtual int Id { get; private set; }
-        public virtual Model.Sites.Subsite Subsite { get; protected internal set; }
+        public virtual Subsite Subsite { get; protected internal set; }
         public virtual GlobalMeasuredSpecies Species { get; private set; }
         public virtual DateTime LastMeasured { get; private set; }
         public virtual string CommonName { get; private set; }
         public virtual string ScientificName { get; private set; }
         public virtual Distance Height { get; private set; }
-        public virtual TreeHeightMeasurementMethod HeightMeasurementMethod { get; private set; }
+        public virtual Imports.TreeHeightMeasurementMethod HeightMeasurementMethod { get; private set; }
         public virtual Distance Girth { get; private set; }
         public virtual Distance CrownSpread { get; private set; }
         public virtual Coordinates Coordinates { get; private set; }

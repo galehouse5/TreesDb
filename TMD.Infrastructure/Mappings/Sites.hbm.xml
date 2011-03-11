@@ -41,7 +41,7 @@
       <key column="SiteId"></key>
       <one-to-many class="TMD.Model.Sites.SiteVisit"/>
     </bag>
-    <bag name="Subsites" table="Subsites" cascade="all-delete-orphan">
+    <bag name="Subsites" table="Subsites" cascade="all-delete-orphan" inverse="true">
       <key column="SiteId"></key>
       <one-to-many class="TMD.Model.Sites.Subsite"/>
     </bag>
@@ -136,7 +136,7 @@
       <key column="SubsiteId"></key>
       <one-to-many class="TMD.Model.Sites.SubsiteVisit"/>
     </bag>
-    <bag name="Trees" table="Trees.Trees" cascade="all-delete-orphan">
+    <bag name="Trees" table="Trees.Trees" cascade="all-delete-orphan" inverse="true">
       <key column="SubsiteId"></key>
       <one-to-many class="TMD.Model.Trees.Tree"/>
     </bag>
