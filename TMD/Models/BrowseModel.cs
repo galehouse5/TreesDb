@@ -8,7 +8,6 @@ using System.ComponentModel;
 using TMD.Model.Sites;
 using TMD.Model.Photos;
 using System.ComponentModel.DataAnnotations;
-using TMD.Model.Imports;
 using TMD.Extensions;
 using TMD.Model.Locations;
 using System.Web.Mvc;
@@ -52,7 +51,7 @@ namespace TMD.Models
         [DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
         public Distance Height { get; set; }
         [DisplayName("Height measurement method"), DisplayFormat(NullDisplayText = "(no data)"), UIHint("Enum")]
-        public TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
+        public TMD.Model.Imports.TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
         [DisplayFormat(DataFormatString = "FeetDecimalInches", NullDisplayText = "(no data)")]
         public Distance Girth { get; set; }
         [DisplayName("Crown spread"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
@@ -72,9 +71,9 @@ namespace TMD.Models
         [DisplayName("Champion points (abbreviated)"), DisplayFormat(DataFormatString = "{0:0.00}")]
         public float? AbbreviatedChampionPoints { get; set; }
         [DisplayFormat(DataFormatString = "FeetDecimalInches", NullDisplayText = "(no data)")]
-        public virtual Distance Diameter { get; private set; }
+        public Distance Diameter { get; private set; }
         [DisplayName("Conical volume"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
-        public virtual Volume ConicalVolume { get; private set; }
+        public Volume ConicalVolume { get; private set; }
         [UIHint("ConcatenatedNames"), Emphasize(false)]
         public IList<Name> Measurers { get; set; }
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
@@ -178,5 +177,28 @@ namespace TMD.Models
         public string County { get; set; }
         [Emphasize(false)]
         public MapModel Map { get; set; }
+    }
+
+    public class BrowseStateModel
+    {
+        public Country Country { get; set; }
+        public string Name { get; set; }
+        public string Code { get; private set; }
+        [DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        public Coordinates Coordinates { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RHI5 { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RHI10 { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RHI20 { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RGI5 { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RGI10 { get; set; }
+        [DisplayFormat(NullDisplayText = "(not enough data)")]
+        public float? RGI20 { get; set; }
+        public IList<StateMeasuredSpecies> Species { get; set; }
+        public IList<Subsite> Subsites { get; set; }
     }
 }

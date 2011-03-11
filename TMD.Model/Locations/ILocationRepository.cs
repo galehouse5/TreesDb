@@ -13,5 +13,6 @@ namespace TMD.Model.Locations
         State FindStateById(int id);
         State FindStateByCountryAndStateCode(string countryCode, string stateCode);
         IList<State> FindStatesByCountryCode(string code);
+        VisitedState FindVisitedStateById(int id);
     }
 }

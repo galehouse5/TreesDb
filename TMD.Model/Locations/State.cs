@@ -14,21 +14,11 @@ namespace TMD.Model.Locations
         protected State()
         { }
 
-        public virtual Country Country { get; protected set; }
-
-        private string m_DoubleLetterCode;
-        public virtual string DoubleLetterCode
-        {
-            get { return m_DoubleLetterCode; }
-            protected set { m_DoubleLetterCode = value.OrEmptyAndTrimToUpper();}
-        }
-
-        private string m_TripleLetterCode;
-        public virtual string TripleLetterCode
-        {
-            get { return m_TripleLetterCode; }
-            protected set { m_TripleLetterCode = value.OrEmptyAndTrimToUpper(); }
-        }
+        public virtual string Name { get; private set; }
+        public virtual CoordinateBounds CoordinateBounds { get; private set; }
+        public virtual Country Country { get; private set; }
+        public virtual string DoubleLetterCode { get; private set; }
+        public virtual string TripleLetterCode { get; private set; }
 
         public virtual string Code
         {
@@ -42,18 +32,19 @@ namespace TMD.Model.Locations
             }
         }
 
-        private string m_Name;
-        public virtual string Name
-        {
-            get { return m_Name; }
-            protected set { m_Name = value.OrEmptyAndTrimToTitleCase(); }
-        }
-
-        public virtual CoordinateBounds CoordinateBounds { get; private set; }
-
         public override string ToString()
         {
             return Name;
         }
+    }
+
+    public class VisitedState : State
+    {
+        public virtual float? RHI5 { get; private set; }
+        public virtual float? RHI10 { get; private set; }
+        public virtual float? RHI20 { get; private set; }
+        public virtual float? RGI5 { get; private set; }
+        public virtual float? RGI10 { get; private set; }
+        public virtual float? RGI20 { get; private set; }
     }
 }

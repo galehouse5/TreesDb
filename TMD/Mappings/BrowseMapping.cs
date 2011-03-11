@@ -9,6 +9,7 @@ using TMD.Model;
 using TMD.Model.Trees;
 using TMD.Model.Extensions;
 using TMD.Model.Sites;
+using TMD.Model.Locations;
 
 namespace TMD.Mappings
 {
@@ -19,6 +20,7 @@ namespace TMD.Mappings
             configureForTrees();
             configureForSpecies();
             configureForSubsites();
+            configureForStates();
         }
 
         private void configureForTrees()
@@ -70,6 +72,12 @@ namespace TMD.Mappings
 
             CreateMap<Subsite, BrowseSubsiteLocationModel>()
                 .ForMember(dest => dest.Map, opt => opt.MapFrom(src => Mapper.Map<Subsite, MapModel>(src)));
+        }
+
+        private void configureForStates()
+        {
+            CreateMap<VisitedState, BrowseStateModel>()
+                .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => src.CoordinateBounds.Center));
         }
     }
 }

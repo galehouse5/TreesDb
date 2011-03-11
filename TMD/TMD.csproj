@@ -339,6 +339,7 @@
     <Content Include="Views\Browse\Index.cshtml" />
     <Content Include="Views\Browse\SpeciesDetails.cshtml" />
     <Content Include="Views\Browse\SiteDetails.cshtml" />
+    <Content Include="Views\Browse\StateDetails.cshtml" />
     <None Include="Views\Browse\DisplayTemplates\BrowsePhotoSumaryModel.cshtml" />
     <Content Include="Views\Browse\MenuWidget.cshtml" />
     <Content Include="Views\Browse\DisplayTemplates\BrowseTreeDetailsModel.cshtml" />
@@ -387,6 +388,7 @@
     <None Include="Views\Map\MenuWidget.cshtml" />
     <None Include="Views\Photos\EditPhotoGalleryPartial.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Coordinates.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Country.cshtml" />
     <None Include="Views\Shared\DisplayTemplates\Distance.cshtml" />
     <None Include="Views\Shared\DisplayTemplates\Name.cshtml" />
     <None Include="Views\Browse\DisplayTemplates\ConcatenatedNames.cshtml" />

@@ -114,6 +114,15 @@ namespace TMD.Infrastructure.Repositories
                 .AddOrder(Order.Asc("ScientificName"))
                 .List<SubsiteMeasuredSpecies>();
         }
+
+
+        public IList<StateMeasuredSpecies> FindStateMeasuredSpeciesByStateId(int id)
+        {
+            return Registry.Session.CreateCriteria<StateMeasuredSpecies>()
+                .Add(Restrictions.Eq("State.Id", id))
+                .AddOrder(Order.Asc("ScientificName"))
+                .List<StateMeasuredSpecies>();
+        }
     }
 
     public static class SpeciesBrowserExtensions

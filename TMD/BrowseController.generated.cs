@@ -46,11 +46,6 @@ namespace TMD.Controllers {
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult MeasurementDetails() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.MeasurementDetails);
-        }
-        [NonAction]
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public System.Web.Mvc.ActionResult SiteDetails() {
             return new T4MVC_ActionResult(Area, Name, ActionNames.SiteDetails);
         }
@@ -79,7 +74,6 @@ namespace TMD.Controllers {
         public class ActionNamesClass {
             public readonly string MenuWidget = "MenuWidget";
             public readonly string TreeDetails = "TreeDetails";
-            public readonly string MeasurementDetails = "MeasurementDetails";
             public readonly string SiteDetails = "SiteDetails";
             public readonly string SpeciesDetails = "SpeciesDetails";
             public readonly string StateDetails = "StateDetails";
@@ -97,12 +91,16 @@ namespace TMD.Controllers {
             public readonly string Index = "~/Views/Browse/Index.cshtml";
             public readonly string Locations = "~/Views/Browse/Locations.cshtml";
             public readonly string MenuWidget = "~/Views/Browse/MenuWidget.cshtml";
+            public readonly string SiteDetails = "~/Views/Browse/SiteDetails.cshtml";
             public readonly string Species = "~/Views/Browse/Species.cshtml";
+            public readonly string SpeciesDetails = "~/Views/Browse/SpeciesDetails.cshtml";
+            public readonly string StateDetails = "~/Views/Browse/StateDetails.cshtml";
             public readonly string TreeDetails = "~/Views/Browse/TreeDetails.cshtml";
             static readonly _DisplayTemplates s_DisplayTemplates = new _DisplayTemplates();
             public _DisplayTemplates DisplayTemplates { get { return s_DisplayTemplates; } }
             public partial class _DisplayTemplates{
                 public readonly string BrowsePhotoSumaryModel = "BrowsePhotoSumaryModel";
+                public readonly string BrowsePhotoSummaryList = "BrowsePhotoSummaryList";
                 public readonly string BrowseTreeDetailsModel = "BrowseTreeDetailsModel";
                 public readonly string BrowseTreeSummaryModel = "BrowseTreeSummaryModel";
                 public readonly string ConcatenatedNames = "ConcatenatedNames";
@@ -122,12 +120,6 @@ namespace TMD.Controllers {
 
         public override System.Web.Mvc.ActionResult TreeDetails(int id) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.TreeDetails);
-            callInfo.RouteValueDictionary.Add("id", id);
-            return callInfo;
-        }
-
-        public override System.Web.Mvc.ActionResult MeasurementDetails(int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.MeasurementDetails);
             callInfo.RouteValueDictionary.Add("id", id);
             return callInfo;
         }

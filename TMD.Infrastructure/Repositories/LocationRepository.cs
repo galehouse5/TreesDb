@@ -59,5 +59,10 @@ namespace TMD.Infrastructure.Repositories
                 .SetCacheable(true)
                 .List<State>();
         }
+
+        public VisitedState FindVisitedStateById(int id)
+        {
+            return Registry.Session.Get<VisitedState>(id);
+        }
     }
 }

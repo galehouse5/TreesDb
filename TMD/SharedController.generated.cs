@@ -34,6 +34,8 @@ namespace T4MVC {
             static readonly _DisplayTemplates s_DisplayTemplates = new _DisplayTemplates();
             public _DisplayTemplates DisplayTemplates { get { return s_DisplayTemplates; } }
             public partial class _DisplayTemplates{
+                public readonly string Coordinates = "Coordinates";
+                public readonly string Country = "Country";
                 public readonly string Distance = "Distance";
                 public readonly string Elevation = "Elevation";
                 public readonly string Enum = "Enum";

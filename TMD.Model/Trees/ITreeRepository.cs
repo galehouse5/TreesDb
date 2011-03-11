@@ -17,6 +17,7 @@ namespace TMD.Model.Trees
         T FindMeasuredSpeciesById<T>(int id) where T : MeasuredSpecies;
         IList<StateMeasuredSpecies> FindStateMeasuredSpeciesByBotanicalName(string botanicalName);
         IList<SubsiteMeasuredSpecies> FindSubsiteMeasuredSpeciesBySubsiteId(int id);
+        IList<StateMeasuredSpecies> FindStateMeasuredSpeciesByStateId(int id);
     }
 
     public class SpeciesBrowser : IPagingOptions

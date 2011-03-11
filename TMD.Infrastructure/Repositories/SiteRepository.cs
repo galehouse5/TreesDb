@@ -111,15 +111,6 @@ namespace TMD.Infrastructure.Repositories
             Registry.Session.Delete(site);
         }
 
-        public Site FindSiteContainingTree(int treeId)
-        {
-            return Registry.Session.CreateCriteria<Site>()
-                .CreateAlias("Subsites", "subsite")
-                .CreateAlias("subsite.Trees", "tree")
-                .Add(Restrictions.Eq("tree.Id", treeId))
-                .UniqueResult<Site>();
-        }
-
         public EntityPage<Subsite> ListAllSubsites(SubsiteBrowser browser)
         {
             return CriteriaExtensions.ListAllEntitiesByBrowser<Subsite>(
@@ -129,6 +120,15 @@ namespace TMD.Infrastructure.Repositories
                 browserFilterer: criteria => criteria.ApplyFilters(browser),
                 browserSorter: criteria => criteria.ApplySorting(browser),
                 browserPager: criteria => criteria.ApplyPaging(browser));
+        }
+
+        public IList<Subsite> FindSubsitesByStateId(int stateId)
+        {
+            return Registry.Session.CreateCriteria<Subsite>()
+                .CreateAlias("Site", "site")
+                .Add(Restrictions.Eq("State.Id", stateId))
+                .AddOrder(Order.Asc("site.Name")).AddOrder(Order.Asc("Name"))
+                .List<Subsite>();
         }
     }
 

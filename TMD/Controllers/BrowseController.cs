@@ -9,6 +9,7 @@ using AutoMapper;
 using TMD.Model.Trees;
 using TMD.Extensions;
 using TMD.Model.Sites;
+using TMD.Model.Locations;
 
 namespace TMD.Controllers
 {
@@ -27,8 +28,6 @@ namespace TMD.Controllers
         public virtual ActionResult TreeDetails(int id)
         {
             var tree = Repositories.Trees.FindById(id);
-            var site = Repositories.Sites.FindSiteContainingTree(id);
-            var subsite = site.Subsites.Where(ss => ss.Trees.Contains(tree)).First();
             var orderedMeasurements = from measurement in tree.Measurements
                                       orderby measurement.Measured descending
                                       select measurement;
@@ -37,8 +36,8 @@ namespace TMD.Controllers
                                          where measurement.Photos.Count > 0
                                          select measurement;
             var locationModel = Mapper.Map<Tree, BrowseTreeLocationModel>(tree);
-            Mapper.Map(site, locationModel);
-            Mapper.Map(subsite, locationModel);
+            Mapper.Map(tree.Subsite, locationModel);
+            Mapper.Map(tree.Subsite.Site, locationModel);
             var model = new BrowseTreeModel
             {
                 Details = Mapper.Map<Tree, BrowseTreeDetailsModel>(tree),
@@ -47,12 +46,6 @@ namespace TMD.Controllers
                 Location = locationModel
             };
             return View(model);
-        }
-
-        [DefaultReturnUrl]
-        public virtual ActionResult MeasurementDetails(int id)
-        {
-            throw new NotImplementedException();
         }
 
         [DefaultReturnUrl]
@@ -88,7 +81,11 @@ namespace TMD.Controllers
         [DefaultReturnUrl]
         public virtual ActionResult StateDetails(int id)
         {
-            throw new NotImplementedException();
+            var state = Repositories.Locations.FindVisitedStateById(id);
+            var model = Mapper.Map<VisitedState, BrowseStateModel>(state);
+            model.Species = Repositories.Trees.FindStateMeasuredSpeciesByStateId(state.Id);
+            model.Subsites = Repositories.Sites.FindSubsitesByStateId(state.Id);
+            return View(model);
         }
 
         [DefaultReturnUrl]

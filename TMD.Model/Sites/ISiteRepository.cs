@@ -15,8 +15,8 @@ namespace TMD.Model.Sites
         IList<Site> ListAllForMap();
         void RemoveVisitsByTrip(Imports.Trip trip);
         void Remove(Site site);
-        Site FindSiteContainingTree(int treeId);
         EntityPage<Subsite> ListAllSubsites(SubsiteBrowser browser);
+        IList<Subsite> FindSubsitesByStateId(int stateId);
     }
 
     public class SubsiteBrowser : IPagingOptions
