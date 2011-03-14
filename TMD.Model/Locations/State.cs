@@ -14,7 +14,7 @@ namespace TMD.Model.Locations
         protected State()
         { }
 
-        public virtual string Name { get; private set; }
+        public virtual string Name { get; protected set; }
         public virtual CoordinateBounds CoordinateBounds { get; private set; }
         public virtual Country Country { get; private set; }
         public virtual string DoubleLetterCode { get; private set; }

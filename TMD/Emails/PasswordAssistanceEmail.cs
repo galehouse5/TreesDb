@@ -20,7 +20,7 @@ namespace TMD.EmailTemplates
         public static PasswordAssistanceEmail Create(User u, string completePasswordAssistancePath)
         {
             StringBuilder body = new StringBuilder();
-            string path = HttpContext.Current.Server.MapPath("~/EmailTemplates/PasswordAssistance.htm");
+            string path = HttpContext.Current.Server.MapPath("~/Emails/PasswordAssistance.htm");
             using (StreamReader sr = new StreamReader(path))
             {
                 body.Append(sr.ReadToEnd());

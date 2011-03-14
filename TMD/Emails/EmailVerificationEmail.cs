@@ -20,7 +20,7 @@ namespace TMD.EmailTemplates
         public static EmailVerificationEmail Create(User u, string completeRegistrationPath)
         {
             StringBuilder body = new StringBuilder();
-            string path = HttpContext.Current.Server.MapPath("~/EmailTemplates/EmailVerification.htm");
+            string path = HttpContext.Current.Server.MapPath("~/Emails/EmailVerification.htm");
             using (StreamReader sr = new StreamReader(path))
             {
                 body.Append(sr.ReadToEnd());
