@@ -1,6 +1,12 @@
 ﻿@model Tuple<TMD.Model.EntityPage<TMD.Model.Trees.GlobalMeasuredSpecies>, TMD.Model.EntityPage<TMD.Model.Sites.Subsite>>
 @{ ViewBag.Title = "Browse"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
 
+@section Scripts {
+    <script type="text/javascript">
+        $(function () { $('tfoot input[title!=""]').fieldtag({ markedClass: "search_init" }); });
+    </script>
+}
+
 <div class="portlet x6">
 	<div class="portlet-header"><h4>Species</h4></div>
 	<div class="portlet-content">
@@ -9,10 +15,10 @@
             {
                 builder
                     .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.Id)))
-                    .Options(header: "Botanical name", canFilter: true);
+                    .Options(header: "Botanical name", canFilter: true, filterTitle: "Search botanical names");
                 builder
                     .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.Id)))
-                    .Options(header: "Common name", canFilter: true);
+                    .Options(header: "Common name", canFilter: true, filterTitle: "Search common names");
             },
             rowsPerPage: 25,
             dataSource: Model.Item1.Page, filteredRowCount: Model.Item1.FilteredItems, totalRowCount: Model.Item1.TotalItems))
@@ -26,16 +32,16 @@
             columns: builder =>
             {
                 builder
-                    .Custom("State or province", subsite => Html.ActionLink(subsite.State.Name, Mvc.Browse.StateDetails(subsite.State.Id)))
-                    .Options(canFilter: true);
+                    .Custom("State", subsite => Html.ActionLink(subsite.State.Name, Mvc.Browse.StateDetails(subsite.State.Id)))
+                    .Options(canFilter: true, header: "State or province", filterTitle: "Search states and provinces");
                 builder
                     .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
-                    .Options(canFilter: true);
+                    .Options(canFilter: true, filterTitle: "Search sites");
                 builder
                     .Custom("Subsite", subsite => subsite.Site.ContainsSingleSubsite ?
                         MvcHtmlString.Create("-")
                         : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
-                    .Options(canFilter: true);
+                    .Options(canFilter: true, filterTitle: "Search subsites");
             },
             rowsPerPage: 25,
             dataSource: Model.Item2.Page, filteredRowCount: Model.Item2.FilteredItems, totalRowCount: Model.Item2.TotalItems))

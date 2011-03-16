@@ -1,6 +1,12 @@
 ﻿@model EntityPage<TMD.Model.Sites.Subsite>
 @{ ViewBag.Title = "Browse Locations"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
 
+@section Scripts {
+    <script type="text/javascript">
+        $(function () { $('tfoot input[title!=""]').fieldtag({ markedClass: "search_init" }); });
+    </script>
+}
+
 <div class="portlet x12">
 	<div class="portlet-header"><h4>Locations</h4></div>
 	<div class="portlet-content">
@@ -8,16 +14,16 @@
             columns: builder =>
             {
                 builder
-                    .Custom("State or province", subsite => Html.ActionLink(subsite.State.Name, Mvc.Browse.StateDetails(subsite.State.Id)))
-                    .Options(canFilter: true);
+                    .Custom("State", subsite => Html.ActionLink(subsite.State.Name, Mvc.Browse.StateDetails(subsite.State.Id)))
+                    .Options(canFilter: true, header: "State or province", filterTitle: "Search states and provinces");
                 builder
                     .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
-                    .Options(canFilter: true);
+                    .Options(canFilter: true, filterTitle: "Search sites");
                 builder
                     .Custom("Subsite", subsite => subsite.Site.ContainsSingleSubsite ?
                         MvcHtmlString.Create("-")
                         : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
-                    .Options(canFilter: true);
+                        .Options(canFilter: true, filterTitle: "Search subsites");
             },
             rowsPerPage: 50,
             dataSource: Model.Page, filteredRowCount: Model.FilteredItems, totalRowCount: Model.TotalItems))

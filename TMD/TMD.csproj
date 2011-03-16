@@ -284,6 +284,7 @@
       <DependentUpon>Javascript.chirp.config</DependentUpon>
     </Content>
     <Content Include="js\jquery\jquery.dataTables.js" />
+    <Content Include="js\jquery\jquery.fieldtag.js" />
     <Content Include="js\jquery\jquery.tablesorter.js" />
     <Content Include="js\jquery\jquery.uniform.js" />
     <Content Include="js\Map.js">

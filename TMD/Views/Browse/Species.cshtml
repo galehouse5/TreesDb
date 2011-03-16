@@ -1,6 +1,12 @@
 ﻿@model EntityPage<TMD.Model.Trees.GlobalMeasuredSpecies>
 @{ ViewBag.Title = "Browse Species"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
 
+@section Scripts {
+    <script type="text/javascript">
+        $(function () { $('tfoot input[title!=""]').fieldtag({ markedClass: "search_init" }); });
+    </script>
+}
+
 <div class="portlet x12">
 	<div class="portlet-header"><h4>Species</h4></div>
 	<div class="portlet-content">
@@ -9,10 +15,10 @@
             {
                 builder
                     .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.Id)))
-                    .Options(header: "Botanical name", canFilter: true);
+                    .Options(header: "Botanical name", canFilter: true, filterTitle: "Search botanical names");
                 builder
                     .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.Id)))
-                    .Options(header: "Common name", canFilter: true);
+                    .Options(header: "Common name", canFilter: true, filterTitle: "Search common names");
             },
             rowsPerPage: 50,
             dataSource: Model.Page, filteredRowCount: Model.FilteredItems, totalRowCount: Model.TotalItems))

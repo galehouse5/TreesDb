@@ -81,7 +81,7 @@ namespace TMD.Extensions
     public static class DataTablesGridColumnExtensions
     {
         public static DataTablesGridColumnModel<T> Options<T>(this DataTablesGridColumnModel<T> model, 
-            bool? canFilter = null, bool? canSort = null, string columnName = null, bool? encodeValue = null, string header = null, string valueFormat = null)
+            bool? canFilter = null, bool? canSort = null, string columnName = null, bool? encodeValue = null, string header = null, string valueFormat = null, string filterTitle = null)
             where T : class
         {
             if (canFilter.HasValue)
@@ -107,6 +107,10 @@ namespace TMD.Extensions
             if (valueFormat != null)
             {
                 model.ValueFormat = valueFormat;
+            }
+            if (filterTitle != null)
+            {
+                model.FilterTitle = filterTitle;
             }
             return model;
         }
@@ -344,6 +348,7 @@ namespace TMD.Extensions
         public Func<T, object> Evaluator { get; set; }
         public bool EncodeValue { get; set; }
         public string ValueFormat { get; set; }
+        public string FilterTitle { get; set; }
 
         public bool IsSorted(DataTablesGridModel<T> model)
         {
@@ -414,11 +419,16 @@ namespace TMD.Extensions
                     output.Write("<th>");
                     if (column.CanFilter)
                     {
-                        output.Write("<input type='text' name='{0}' value='{1}'/>",
+                        output.Write("<input type='text' name='{0}' value='{1}'",
                             model.GetFilterParameterName(column.ColumnName),
                             model.FiltersByColumnName.ContainsKey(column.ColumnName) ? 
                                 HttpUtility.HtmlEncode(model.FiltersByColumnName[column.ColumnName]) : string.Empty
-                            );   
+                        );
+                        if (column.FilterTitle != null)
+                        {
+                            output.Write(" title='{0}'", HttpUtility.HtmlEncode(column.FilterTitle));
+                        }
+                        output.Write("/>");
                     }
                     output.Write("</th>");
                 }
