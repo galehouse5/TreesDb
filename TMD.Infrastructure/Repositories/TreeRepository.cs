@@ -157,6 +157,7 @@ namespace TMD.Infrastructure.Repositories
                 .CreateAlias("Site", "site")
                 .Add(Restrictions.Eq("ScientificName", botanicalName)
                     & Subqueries.Exists(subquery))
+                .AddOrder(Order.Asc("site.Name"))
                     .List<SiteMeasuredSpecies>();
         }
 
@@ -165,6 +166,7 @@ namespace TMD.Infrastructure.Repositories
             return Registry.Session.CreateCriteria<Tree>()
                 .CreateAlias("Subsite", "subsite")
                 .Add(Restrictions.Eq("ScientificName", botanicalName) & Restrictions.Eq("subsite.Site.Id", siteId))
+                .AddOrder(Order.Desc("Height.Feet"))
                 .List<Tree>();
         }
     }
