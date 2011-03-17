@@ -19,7 +19,7 @@ namespace TMD.Controllers
     {
         public virtual ActionResult FindKnownSpeciesWithSimilarCommonName(string term, int results = 5)
         {
-            var trees = Repositories.Trees.FindKnownSpeciesBySimilarCommonName(term, results);
+            var trees = Repositories.Trees.ListKnownSpeciesBySimilarCommonName(term, results);
             return Json(from tree in trees
                         select new 
                         {
@@ -32,7 +32,7 @@ namespace TMD.Controllers
 
         public virtual ActionResult FindKnownSpeciesWithSimilarScientificName(string term, int results = 5)
         {
-            var trees = Repositories.Trees.FindKnownSpeciesBySimilarScientificName(term, results);
+            var trees = Repositories.Trees.ListKnownSpeciesBySimilarScientificName(term, results);
             return Json(from tree in trees
                         select new
                         {

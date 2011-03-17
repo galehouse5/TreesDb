@@ -49,8 +49,10 @@ namespace TMD
             routes.MapRoute("CompleteAccountRegistration", "Account/{token}/CompleteRegistration", new { controller = "Account", action = "CompleteRegistration" });
             routes.MapRoute("Account", "Account/{action}", new { controller = "Account", action = "Index" });
 
+            routes.MapRoute("BrowseStateSpeciesDetails", "Browse/States/{stateId}/Species/{botanicalName}/Details", new { controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseSiteSpeciesDetails", "Browse/Sites/{siteId}/Species/{botanicalName}/Details", new { controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseSpeciesDetails", "Browse/Species/{botanicalName}/Details", new { controller = "Browse", action = "SpeciesDetails" });
             routes.MapRoute("BrowseTreeDetails", "Browse/Trees/{id}/Details", new { controller = "Browse", action = "TreeDetails" });
-            routes.MapRoute("BrowseSpeciesDetails", "Browse/Species/{id}/Details", new { controller = "Browse", action = "SpeciesDetails" });
             routes.MapRoute("BrowseStateDetails", "Browse/States/{id}/Details", new { controller = "Browse", action = "StateDetails" });
             routes.MapRoute("BrowseSiteDetails", "Browse/Sites/{id}/Details", new { controller = "Browse", action = "SiteDetails" });
             routes.MapRoute("BrowseSpecies", "Browse/Species", new { controller = "Browse", action = "Species" });

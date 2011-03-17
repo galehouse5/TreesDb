@@ -9,15 +9,22 @@ namespace TMD.Model.Trees
     {
         void Save(Tree tree);
         Tree FindById(int id);
-        IList<KnownSpecies> FindKnownSpeciesBySimilarCommonName(string commonName, int results);
-        IList<KnownSpecies> FindKnownSpeciesBySimilarScientificName(string scientificName, int results);
-        void RemoveMeasurementsByTrip(Imports.Trip trip);
         IList<Tree> ListAll();
+        IList<Tree> ListByBotanicalNameAndSiteId(string botanicalName, int siteId);
+        void RemoveMeasurementsByTrip(Imports.Trip trip);
+
+        IList<KnownSpecies> ListKnownSpeciesBySimilarCommonName(string commonName, int results);
+        IList<KnownSpecies> ListKnownSpeciesBySimilarScientificName(string scientificName, int results);
+
         EntityPage<T> ListAllMeasuredSpecies<T>(SpeciesBrowser browser) where T : MeasuredSpecies;
-        T FindMeasuredSpeciesById<T>(int id) where T : MeasuredSpecies;
-        IList<StateMeasuredSpecies> FindStateMeasuredSpeciesByBotanicalName(string botanicalName);
-        IList<SubsiteMeasuredSpecies> FindSubsiteMeasuredSpeciesBySubsiteId(int id);
-        IList<StateMeasuredSpecies> FindStateMeasuredSpeciesByStateId(int id);
+        GlobalMeasuredSpecies FindMeasuredSpeciesByBotanicalName(string botanicalName);
+        StateMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndStateId(string botanicalName, int stateId);
+        SiteMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndSiteId(string botanicalName, int siteId);
+        SubsiteMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndSubsiteId(string botanicalName, int subsiteId);
+        IList<StateMeasuredSpecies> ListMeasuredSpeciesForStatesByBotanicalName(string botanicalName);
+        IList<SiteMeasuredSpecies> ListMeasuredSpeciesForSitesByBotanicalNameAndStateId(string botanicalName, int stateId);
+        IList<SubsiteMeasuredSpecies> ListMeasuredSpeciesBySubsiteId(int id);
+        IList<StateMeasuredSpecies> ListMeasuredSpeciesByStateId(int id);
     }
 
     public class SpeciesBrowser : IPagingOptions

@@ -30,6 +30,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Photographers, opt => opt.MapFrom(src => src.Measurers));
 
             CreateMap<Tree, BrowseTreeDetailsModel>()
+                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Subsite.Site.Id))
                 .ForMember(dest => dest.GeneralComments, opt => opt.MapFrom(src => src.LastMeasurement.GeneralComments))
                 .ForMember(dest => dest.Measured, opt => opt.MapFrom(src => src.LastMeasured));
 
@@ -56,10 +57,13 @@ namespace TMD.Mappings
 
         private void configureForSpecies()
         {
-            CreateMap<MeasuredSpecies, BrowseSpeciesModel>();
+            CreateMap<GlobalMeasuredSpecies, BrowseSpeciesDetailsModel>();
 
-            CreateMap<IList<StateMeasuredSpecies>, BrowseSpeciesModel>()
-                .ForMember(dest => dest.MeasuredSpeciesByState, opt => opt.MapFrom(src => src));
+            CreateMap<StateMeasuredSpecies, BrowseSpeciesStateDetailsModel>();
+
+            CreateMap<SiteMeasuredSpecies, BrowseSpeciesSiteDetailsModel>()
+                .ForMember(dest => dest.County, opt => opt.MapFrom(src => src.Site.Subsites[0].County))
+                .ForMember(dest => dest.OwnershipType, opt => opt.MapFrom(src => src.Site.Subsites[0].OwnershipType));
         }
 
         private void configureForSubsites()

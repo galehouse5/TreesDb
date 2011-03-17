@@ -40,6 +40,8 @@ namespace TMD.Models
     {
         [ScaffoldColumn(false)]
         public int Id { get; set; }
+        [ScaffoldColumn(false)]
+        public int SiteId { get; set; }
         [DisplayName("Botanical name")]
         public string ScientificName { get; set; }
         [DisplayName("Common name")]
@@ -105,7 +107,7 @@ namespace TMD.Models
         public MapModel Map { get; set; }
     }
 
-    public class BrowseSpeciesModel
+    public class BrowseSpeciesDetailsModel
     {
         [DisplayName("Botanical name")]
         public string ScientificName { get; set; }
@@ -123,7 +125,32 @@ namespace TMD.Models
         public Distance MaxCrownSpread { get; set; }
         [ScaffoldColumn(false)]
         public int MaxCrownSpreadTreeId { get; set; }
-        public IList<StateMeasuredSpecies> MeasuredSpeciesByState { get; set; }
+    }
+
+    public class BrowseSpeciesStateDetailsModel : BrowseSpeciesDetailsModel
+    {
+        public State State { get; set; }
+    }
+
+    public class BrowseSpeciesSiteDetailsModel : BrowseSpeciesDetailsModel
+    {
+        [ScaffoldColumn(false)]
+        public int SiteId { get; set; }
+        [DisplayName("Site")]
+        public string SiteName { get; set; }
+        [DisplayName("Ownership type")]
+        public string OwnershipType { get; set; }
+        public string County { get; set; }
+    }
+
+    public class BrowseSpeciesModel
+    {
+        public BrowseSpeciesDetailsModel GlobalDetails { get; set; }
+        public IList<StateMeasuredSpecies> StatesContainingSpecies { get; set; }
+        public BrowseSpeciesStateDetailsModel StateDetails { get; set; }
+        public IList<SiteMeasuredSpecies> SitesInStateContainingSpecies { get; set; }
+        public BrowseSpeciesSiteDetailsModel SiteDetails { get; set; }
+        public IList<Tree> TreesOfSpeciesContainedBySite { get; set; }
     }
 
     public class BrowseSubsiteModel

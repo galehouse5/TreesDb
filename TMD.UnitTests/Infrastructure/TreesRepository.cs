@@ -16,7 +16,7 @@ namespace TMD.UnitTests.Infrastructure
         [TestMethod]
         public void FindTreesWithSimilarCommonName()
         {
-            IList<KnownSpecies> knownTrees = Repositories.Trees.FindKnownSpeciesBySimilarCommonName("fur white", 10);
+            IList<KnownSpecies> knownTrees = Repositories.Trees.ListKnownSpeciesBySimilarCommonName("fur white", 10);
             Assert.AreNotSame(0, knownTrees.Count);
             Assert.AreEqual("White Fir", knownTrees[0].CommonName);
         }
@@ -24,7 +24,7 @@ namespace TMD.UnitTests.Infrastructure
         [TestMethod]
         public void FindKnownSpeciesBySimilarScientificName()
         {
-            IList<KnownSpecies> knownTrees = Repositories.Trees.FindKnownSpeciesBySimilarScientificName("vitamix", 10);
+            IList<KnownSpecies> knownTrees = Repositories.Trees.ListKnownSpeciesBySimilarScientificName("vitamix", 10);
             Assert.AreNotSame(0, knownTrees.Count);
             Assert.AreEqual("Vitex agnus-castus", knownTrees[0].ScientificName);
         }

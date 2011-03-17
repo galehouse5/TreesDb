@@ -55,10 +55,10 @@
                 columns: builder =>
                 {
                     builder
-                        .Custom("Botanical name", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.Id)))
+                        .Custom("Botanical name", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.ScientificName, siteId: species.Subsite.Site.Id)))
                         .Options(canSort: false);
                     builder
-                        .Custom("Common name", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.Id)))
+                        .Custom("Common name", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName, siteId: species.Subsite.Site.Id)))
                         .Options(canSort: false);
                     builder
                         .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ? 

@@ -473,6 +473,8 @@ namespace Links {
             public static readonly string jquery_ui_1_8_7_custom_min_js = Url("jquery-ui-1.8.7.custom.min.js");
             public static readonly string jquery_dataTables_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.dataTables.min.js") ? Url("jquery.dataTables.min.js") : Url("jquery.dataTables.js");
                           
+            public static readonly string jquery_fieldtag_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.fieldtag.min.js") ? Url("jquery.fieldtag.min.js") : Url("jquery.fieldtag.js");
+                          
             public static readonly string jquery_quicksearch_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.quicksearch.min.js") ? Url("jquery.quicksearch.min.js") : Url("jquery.quicksearch.js");
                           
             public static readonly string jquery_tablesorter_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.tablesorter.min.js") ? Url("jquery.tablesorter.min.js") : Url("jquery.tablesorter.js");

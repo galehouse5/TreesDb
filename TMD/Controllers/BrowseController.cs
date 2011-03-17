@@ -57,7 +57,7 @@ namespace TMD.Controllers
                                    orderby visit.Visited descending
                                    where visit.Photos.Count > 0
                                    select visit;
-            var species = Repositories.Trees.FindSubsiteMeasuredSpeciesBySubsiteId(subsite.Id);
+            var species = Repositories.Trees.ListMeasuredSpeciesBySubsiteId(subsite.Id);
             var model = new BrowseSubsiteModel
             {
                 Details = Mapper.Map<Subsite, BrowseSubsiteDetailsModel>(subsite),
@@ -69,12 +69,27 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult SpeciesDetails(int id)
+        public virtual ActionResult SpeciesDetails(string botanicalName, int? siteId = null, int? stateId = null)
         {
-            var species = Repositories.Trees.FindMeasuredSpeciesById<MeasuredSpecies>(id);
-            var states = Repositories.Trees.FindStateMeasuredSpeciesByBotanicalName(species.ScientificName);
-            var model = Mapper.Map<MeasuredSpecies, BrowseSpeciesModel>(species);
-            Mapper.Map(states, model);
+            GlobalMeasuredSpecies globalSpecies = Repositories.Trees.FindMeasuredSpeciesByBotanicalName(botanicalName);
+            BrowseSpeciesModel model = new BrowseSpeciesModel
+            {
+                GlobalDetails = Mapper.Map<GlobalMeasuredSpecies, BrowseSpeciesDetailsModel>(globalSpecies),
+                StatesContainingSpecies = Repositories.Trees.ListMeasuredSpeciesForStatesByBotanicalName(botanicalName)
+            };
+            if (siteId.HasValue)
+            {
+                SiteMeasuredSpecies siteSpecies = Repositories.Trees.FindMeasuredSpeciesByBotanicalNameAndSiteId(botanicalName, siteId.Value);
+                model.SiteDetails = Mapper.Map<SiteMeasuredSpecies, BrowseSpeciesSiteDetailsModel>(siteSpecies);
+                model.TreesOfSpeciesContainedBySite = Repositories.Trees.ListByBotanicalNameAndSiteId(botanicalName, siteId.Value);
+                stateId = siteSpecies.Site.Subsites[0].State.Id;
+            }
+            if (stateId.HasValue)
+            {
+                StateMeasuredSpecies stateSpecies = Repositories.Trees.FindMeasuredSpeciesByBotanicalNameAndStateId(botanicalName, stateId.Value);
+                model.StateDetails = Mapper.Map<StateMeasuredSpecies, BrowseSpeciesStateDetailsModel>(stateSpecies);
+                model.SitesInStateContainingSpecies = Repositories.Trees.ListMeasuredSpeciesForSitesByBotanicalNameAndStateId(botanicalName, stateId.Value);
+            }
             return View(model);
         }
 
@@ -83,7 +98,7 @@ namespace TMD.Controllers
         {
             var state = Repositories.Locations.FindVisitedStateById(id);
             var model = Mapper.Map<VisitedState, BrowseStateModel>(state);
-            model.Species = Repositories.Trees.FindStateMeasuredSpeciesByStateId(state.Id);
+            model.Species = Repositories.Trees.ListMeasuredSpeciesByStateId(state.Id);
             model.Subsites = Repositories.Sites.FindSubsitesByStateId(state.Id);
             return View(model);
         }
