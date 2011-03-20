@@ -159,6 +159,19 @@ namespace TMD.Models
         public IList<BrowsePhotoSumaryModel> PhotoSummaries { get; set; }
         public BrowseSubsiteLocationModel Location { get; set; }
         public IList<SubsiteMeasuredSpecies> Species { get; set; }
+        public IList<BrowseSiteVisitModel> Visits { get; set; }
+    }
+
+    public class BrowseSiteVisitModel
+    {
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+        public DateTime Visited { get; set; }
+        [DataType(DataType.Url), DisplayName("Trip report url"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
+        public string TripReportUrl { get; set; }
+        [UIHint("ConcatenatedNames"), Emphasize(false)]
+        public IList<Name> Visitors { get; set; }
+        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
+        public string Comments { get; set; }
     }
 
     public class BrowseSubsiteDetailsModel
@@ -186,8 +199,6 @@ namespace TMD.Models
         public DateTime LastVisited { get; set; }
         [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
         public string LastVisitComments { get; set; }
-        [DisplayName("Past visitors"), UIHint("ConcatenatedNames"), Emphasize(false)]
-        public IList<Name> Visitors { get; set; }
     }
 
     public class BrowseSubsiteLocationModel

@@ -44,7 +44,7 @@
                 /* space here is needed for proper html rendering */ @:
             }
             @if (Model.EditMode == EImportTreeModelEditMode.Simple) {
-                @Html.ImportInnerActionButton("Advanced edit", ImportModelLevel.Tree, Model.Id, ImportModelAction.AdvancedEdit, ButtonColor.Orange)
+                @Html.ImportInnerActionButton("Detailed edit", ImportModelLevel.Tree, Model.Id, ImportModelAction.DetailedEdit, ButtonColor.Orange)
             }
         </div>
     </div>

@@ -52,6 +52,8 @@ namespace TMD.Models
         public string SecondMeasurer { get; set; }
         [DisplayName("Third measurer"), Display(Description = "Lastname, Firstname")]
         public string ThirdMeasurer { get; set; }
+        [DataType(DataType.Url), DisplayName("Trip report url")]
+        public string Website { get; set; }
     }
 
     public static class ImportInnerActionModelExtensions
@@ -64,7 +66,7 @@ namespace TMD.Models
     }
 
     public enum ImportModelLevel { Unknown, Trip, Site, Subsite, Tree }
-    public enum ImportModelAction { Unknown, Add, Save, Edit, Remove, AdvancedEdit }
+    public enum ImportModelAction { Unknown, Add, Save, Edit, Remove, DetailedEdit }
 
     [DebuggerDisplay("{Action} {Level} with Id {Id}")]
     public class ImportInnerActionModel : IModelBinder
@@ -257,7 +259,7 @@ namespace TMD.Models
         }
     }
 
-    public enum EImportTreeModelEditMode { Simple, Advanced }
+    public enum EImportTreeModelEditMode { Simple, Detailed }
 
     public class ImportTreeModel
     {

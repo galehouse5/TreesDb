@@ -52,6 +52,9 @@ namespace TMD.Controllers
         public virtual ActionResult SiteDetails(int id)
         {
             var site = Repositories.Sites.FindById(id);
+            var siteVisits = from visit in site.Visits
+                             orderby visit.Visited descending
+                             select visit;
             var subsite = site.Subsites[0];
             var visitsWithPhotos = from visit in subsite.Visits
                                    orderby visit.Visited descending
@@ -63,7 +66,8 @@ namespace TMD.Controllers
                 Details = Mapper.Map<Subsite, BrowseSubsiteDetailsModel>(subsite),
                 Location = Mapper.Map<Subsite, BrowseSubsiteLocationModel>(subsite),
                 PhotoSummaries = Mapper.Map<IEnumerable<SubsiteVisit>, IList<BrowsePhotoSumaryModel>>(visitsWithPhotos),
-                Species = species
+                Species = species,
+                Visits = Mapper.Map<IEnumerable<SiteVisit>, IList<BrowseSiteVisitModel>>(siteVisits)
             };
             return View(model);
         }

@@ -21,6 +21,7 @@ namespace TMD.Model.Sites
         public virtual Coordinates CalculatedCoordinates { get; private set; }
         public virtual string Comments { get; private set; }
         public virtual IList<Name> Visitors { get; private set; }
+        public virtual string TripReportUrl { get; private set; }
 
         public static SiteVisit Create(Imports.Site importedSite)
         {
@@ -33,7 +34,8 @@ namespace TMD.Model.Sites
                 Coordinates = importedSite.Coordinates,
                 CalculatedCoordinates = importedSite.CalculateCoordinates(),
                 Comments = importedSite.Comments,
-                Visitors = new List<Name>(importedSite.Trip.Measurers)
+                Visitors = new List<Name>(importedSite.Trip.Measurers),
+                TripReportUrl = importedSite.Trip.Website
             };
         }
     }

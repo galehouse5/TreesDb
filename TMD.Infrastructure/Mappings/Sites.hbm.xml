@@ -92,6 +92,7 @@
         <property name="LastName" />
       </composite-element>
     </bag>
+    <property name="TripReportUrl" />
   </class>
 
   <class name="TMD.Model.Sites.Subsite" table="Subsites">

@@ -23,28 +23,51 @@
 <div class="x6">
 
 	<div class="portlet x12">
-		<div class="portlet-header"><h4>Site</h4></div>
+		<div class="portlet-header">
+            <h4>Site</h4>
+            <ul class="portlet-tab-nav">
+                <li class="portlet-tab-nav-active"><a href="#SiteSummary">Summary</a></li>
+                <li><a href="#TripHistory">Trip history</a></li>
+            </ul>
+        </div>
 		<div class="portlet-content">
-			<table class="reports_table">                
-                @Html.ReportDisplayFor(m => m.Details.Name)
-                @Html.ReportDisplayFor(m => m.Details.RHI5)
-                @Html.ReportDisplayFor(m => m.Details.RHI10)
-                @Html.ReportDisplayFor(m => m.Details.RHI20)
-                @Html.ReportDisplayFor(m => m.Details.RGI5)
-                @Html.ReportDisplayFor(m => m.Details.RGI10)
-                @Html.ReportDisplayFor(m => m.Details.RGI20)
-                @Html.ReportDisplayFor(m => m.Details.LastVisited)
-                @if (Model.Details.MakeOwnershipContactInfoPublic) { 
-                    @Html.ReportDisplayFor(m => m.Details.OwnershipContactInfo)
-                } else {
-                    <tr>
-                        <td class="description">Ownership contact</td>
-                        <td class="value">(private)</td>
-                    </tr>
-                }
-                @Html.ReportDisplayFor(m => m.Details.LastVisitComments)
-                @Html.ReportDisplayFor(m => m.Details.Visitors)
-			</table>
+            <div id="SiteSummary" class="portlet-tab-content portlet-tab-content-active">
+                <table class="reports_table">                
+                    @Html.ReportDisplayFor(m => m.Details.Name)
+                    @Html.ReportDisplayFor(m => m.Details.RHI5)
+                    @Html.ReportDisplayFor(m => m.Details.RHI10)
+                    @Html.ReportDisplayFor(m => m.Details.RHI20)
+                    @Html.ReportDisplayFor(m => m.Details.RGI5)
+                    @Html.ReportDisplayFor(m => m.Details.RGI10)
+                    @Html.ReportDisplayFor(m => m.Details.RGI20)
+                    @Html.ReportDisplayFor(m => m.Details.LastVisited)
+                    @if (Model.Details.MakeOwnershipContactInfoPublic) { 
+                        @Html.ReportDisplayFor(m => m.Details.OwnershipContactInfo)
+                    } else {
+                        <tr>
+                            <td class="description">Ownership contact</td>
+                            <td class="value">(private)</td>
+                        </tr>
+                    }
+                    @Html.ReportDisplayFor(m => m.Details.LastVisitComments)
+			    </table>
+            </div>
+            <div id="TripHistory" class="portlet-tab-content RequiresJavascript">
+                <table class="support_table">
+                    @for (int i = 0; i < Model.Visits.Count; i++) { 
+                        <tr>
+                            <td><span class="ticket open">@Html.DisplayFor(m => m.Visits[i].Visited)</span></td>
+                            <td>
+                                <table class="reports_table">
+                                    @Html.ReportDisplayFor(m => m.Visits[i].Visitors)
+                                    @Html.ReportDisplayFor(m => m.Visits[i].TripReportUrl)
+                                    @Html.ReportDisplayFor(m => m.Visits[i].Comments)
+                                </table>
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
 		</div>
 	</div>
 
@@ -61,8 +84,8 @@
                         .Custom("Common name", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName, siteId: species.Subsite.Site.Id)))
                         .Options(canSort: false);
                     builder
-                        .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ? 
-                            Html.ActionLink(species.MaxHeight.ToString(DistanceFormat.Default) , Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
+                        .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ?
+                            Html.ActionLink(species.MaxHeight.ToString(DistanceFormat.Default), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
                             : MvcHtmlString.Create("-"))
                         .Options(canSort: false);
                     builder

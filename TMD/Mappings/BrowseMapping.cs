@@ -19,7 +19,7 @@ namespace TMD.Mappings
         {
             configureForTrees();
             configureForSpecies();
-            configureForSubsites();
+            configureForSites();
             configureForStates();
         }
 
@@ -66,16 +66,19 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.OwnershipType, opt => opt.MapFrom(src => src.Site.Subsites[0].OwnershipType));
         }
 
-        private void configureForSubsites()
+        private void configureForSites()
         {
             CreateMap<SubsiteVisit, BrowsePhotoSumaryModel>()
                 .ForMember(dest => dest.Date, opt => opt.MapFrom(src => src.Visited))
                 .ForMember(dest => dest.Photographers, opt => opt.MapFrom(src => src.Visitors));
 
-            CreateMap<Subsite, BrowseSubsiteDetailsModel>();
+            CreateMap<Subsite, BrowseSubsiteDetailsModel>()
+                .ForMember(dest => dest.LastVisitComments, opt => opt.MapFrom(src => src.Site.LastVisit.Comments));
 
             CreateMap<Subsite, BrowseSubsiteLocationModel>()
                 .ForMember(dest => dest.Map, opt => opt.MapFrom(src => Mapper.Map<Subsite, MapModel>(src)));
+
+            CreateMap<SiteVisit, BrowseSiteVisitModel>();
         }
 
         private void configureForStates()
