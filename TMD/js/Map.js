@@ -565,7 +565,7 @@ google.maps.Marker.prototype.Focus = function (map) {
             var $pickerButton = $pickerContainer.find('button').show();
             var $coordinateContainer = $pickerContainer.find('input[type=text]');
 
-            $pickerContainer.click(function () {
+            $pickerButton.click(function () {
                 $.get($pickerButton.attr('data-markerloaderurl'), function (response) {
                     var coordinates = Coordinates.Parse($coordinateContainer.val());
                     if (coordinates.IsValid() && coordinates.IsSpecified()) {
