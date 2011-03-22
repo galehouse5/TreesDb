@@ -12,7 +12,7 @@ using TMD.Model.Users;
 
 namespace TMD.Model.Sites
 {
-    [DebuggerDisplay("{Name}")]
+    [DebuggerDisplay("{Name} ({Id})")]
     public class Subsite : IEntity
     {
         protected Subsite()

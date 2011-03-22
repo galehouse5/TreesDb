@@ -12,7 +12,7 @@ using TMD.Model.Extensions;
 
 namespace TMD.Model.Sites
 {
-    [DebuggerDisplay("{Name} ({Visited})")]
+    [DebuggerDisplay("{Name} ({Id})")]
     public class SubsiteVisit : IEntity
     {
         protected SubsiteVisit()

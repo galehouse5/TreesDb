@@ -10,7 +10,7 @@ using TMD.Model.Extensions;
 
 namespace TMD.Model.Trees
 {
-    [DebuggerDisplay("{ScientificName} ({CommonName})")]
+    [DebuggerDisplay("{ScientificName} ({Id})")]
     public class Measurement : IEntity
     {
         protected Measurement()

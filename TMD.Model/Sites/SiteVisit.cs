@@ -7,7 +7,7 @@ using TMD.Model.Imports;
 
 namespace TMD.Model.Sites
 {
-    [DebuggerDisplay("{Name} ({Visited})")]
+    [DebuggerDisplay("{Name} ({Id})")]
     public class SiteVisit : IEntity
     {
         protected SiteVisit()

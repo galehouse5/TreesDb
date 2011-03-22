@@ -10,7 +10,7 @@ using TMD.Model.Sites;
 
 namespace TMD.Model.Trees
 {
-    [DebuggerDisplay("{ScientificName} ({CommonName})")]
+    [DebuggerDisplay("{ScientificName} ({Id})")]
     public class Tree : IEntity
     {
         protected Tree()

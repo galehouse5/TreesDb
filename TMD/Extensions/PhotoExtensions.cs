@@ -10,7 +10,7 @@ namespace TMD.Extensions
 {
     public static class PhotoExtensions
     {
-        public static MvcHtmlString Photo(this HtmlHelper html, IPhoto photo, PhotoSize inlineSize = PhotoSize.SquareThumbnail, PhotoSize zoomableSize = PhotoSize.Original)
+        public static MvcHtmlString Photo(this HtmlHelper html, IPhoto photo, PhotoSize inlineSize = PhotoSize.SquareThumbnail, PhotoSize zoomableSize = PhotoSize.Large)
         {
             UrlHelper url = new UrlHelper(html.ViewContext.RequestContext);
             switch (inlineSize) 
@@ -37,7 +37,7 @@ namespace TMD.Extensions
             }
         }
 
-        public static MvcHtmlString RemovablePhoto(this HtmlHelper html, IPhoto photo, PhotoSize inlineSize = PhotoSize.SquareThumbnail, PhotoSize zoomableSize = PhotoSize.Original)
+        public static MvcHtmlString RemovablePhoto(this HtmlHelper html, IPhoto photo, PhotoSize inlineSize = PhotoSize.SquareThumbnail, PhotoSize zoomableSize = PhotoSize.Large)
         {
             UrlHelper url = new UrlHelper(html.ViewContext.RequestContext);
             switch (inlineSize)

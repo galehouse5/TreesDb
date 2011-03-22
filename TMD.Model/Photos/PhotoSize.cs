@@ -14,6 +14,7 @@ namespace TMD.Model.Photos
             switch (photoSize)
             {
                 case PhotoSize.Original: return new OriginalPhotoSize();
+                case PhotoSize.Large: return new LargePhotoSize();
                 case PhotoSize.Medium: return new MediumPhotoSize();
                 case PhotoSize.Small: return new SmallPhotoSize();
                 case PhotoSize.Thumbnail: return new ThumbnailPhotoSize();
@@ -37,6 +38,16 @@ namespace TMD.Model.Photos
         public override int BorderWidth { get { return 0; } }
         public override Color BorderColor { get { return Color.White; } }
         public override Bitmap Normalize(Bitmap photo) { return new Bitmap(photo); }
+    }
+
+    public class LargePhotoSize : PhotoSizeBase
+    {
+        internal LargePhotoSize() { }
+        public override PhotoSize Size { get { return PhotoSize.Large; } }
+        public override bool Square { get { return false; } }
+        public override int MaxWidthOrHeight { get { return 800; } }
+        public override int BorderWidth { get { return 0; } }
+        public override Color BorderColor { get { return Color.White; } }
     }
 
     public class MediumPhotoSize : PhotoSizeBase
@@ -132,7 +143,7 @@ namespace TMD.Model.Photos
     public enum PhotoSize
     {
         Original,
-        Medium, Small, 
+        Large, Medium, Small, 
         Thumbnail, SquareThumbnail, 
         Square, MiniSquare,
         MapSquare, SmallMapSquare, MiniMapSquare

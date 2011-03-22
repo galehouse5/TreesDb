@@ -8,7 +8,7 @@ using TMD.Model.Extensions;
 
 namespace TMD.Model.Sites
 {
-    [DebuggerDisplay("{Name}")]
+    [DebuggerDisplay("{Name} ({Id})")]
     public class Site : IEntity
     {
         protected Site()

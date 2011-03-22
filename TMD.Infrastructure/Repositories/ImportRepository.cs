@@ -63,6 +63,9 @@ namespace TMD.Infrastructure.Repositories
         {
             Model.Repositories.Trees.RemoveMeasurementsByTrip(t);
             Model.Repositories.Sites.RemoveVisitsByTrip(t);
+            // resolves obscure NHibernate exception
+            // "deleted object would be re-saved by cascade (remove deleted object from associations)"
+            Registry.Session.Flush();
             InternalImport(t);
         }
     }

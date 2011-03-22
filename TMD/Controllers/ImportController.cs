@@ -409,10 +409,12 @@ namespace TMD.Controllers
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             if (trip.IsImported)
             {
-                Repositories.Trees.RemoveMeasurementsByTrip(trip);
-                Repositories.Sites.RemoveVisitsByTrip(trip);
+                Repositories.Imports.Reimport(trip);
             }
-            Repositories.Imports.Import(trip);
+            else
+            {
+                Repositories.Imports.Import(trip);
+            }
             uow.Persist();
             return RedirectToAction(Mvc.Import.Index());
         }
