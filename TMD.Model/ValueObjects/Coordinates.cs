@@ -190,7 +190,7 @@ namespace TMD.Model
 
         public string ToString(CoordinatesFormat format)
         {
-            switch (InputFormat)
+            switch (format)
             {
                 case CoordinatesFormat.DegreesMinutesDecimalSeconds:
                     return string.Format("{0:00} {1:00} {2:00.0}", AbsoluteWholeDegrees * Sign, AbsoluteWholeMinutes, AbsoluteSeconds);
