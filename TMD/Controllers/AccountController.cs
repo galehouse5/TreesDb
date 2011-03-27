@@ -39,7 +39,6 @@ namespace TMD.Controllers
             }
             else
             {
-                ((ControllerBase)filterContext.Controller).Session.SetDefaultReturnUrl(((ControllerBase)filterContext.Controller).Request.RawUrl);
                 filterContext.Result = new RedirectResult("/Account/Logon");
             }
         }

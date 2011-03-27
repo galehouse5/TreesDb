@@ -153,8 +153,9 @@ namespace TMD.Models
         public IList<Tree> TreesOfSpeciesContainedBySite { get; set; }
     }
 
-    public class BrowseSubsiteModel
+    public class BrowseSiteModel
     {
+        public int Id { get; set; }
         public BrowseSubsiteDetailsModel Details { get; set; }
         public IList<BrowsePhotoSumaryModel> PhotoSummaries { get; set; }
         public BrowseSubsiteLocationModel Location { get; set; }
@@ -219,6 +220,7 @@ namespace TMD.Models
 
     public class BrowseStateModel
     {
+        public int Id { get; set; }
         public Country Country { get; set; }
         public string Name { get; set; }
         public string Code { get; private set; }

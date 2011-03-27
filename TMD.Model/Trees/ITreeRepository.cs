@@ -12,6 +12,10 @@ namespace TMD.Model.Trees
         IList<Tree> ListAll();
         IList<Tree> ListByBotanicalNameAndSiteId(string botanicalName, int siteId);
         void RemoveMeasurementsByTrip(Imports.Trip trip);
+        IList<Tree> ListByState(int stateId);
+        IList<Tree> ListByBotanicalName(string botanicalName);
+        IList<Tree> ListByBotanicalNameAndCommonNameFilters(string botanicalName, string commonName);
+        IList<Tree> ListByStateSiteAndSubsiteFilters(string state, string site, string subsite);
 
         IList<KnownSpecies> ListKnownSpeciesBySimilarCommonName(string commonName, int results);
         IList<KnownSpecies> ListKnownSpeciesBySimilarScientificName(string scientificName, int results);

@@ -77,6 +77,10 @@ namespace TMD.Model
 
         public string ToString(ElevationFormat format)
         {
+            if (!IsSpecified)
+            {
+                return string.Empty;
+            }
             switch (format)
             {
                 case ElevationFormat.Default:

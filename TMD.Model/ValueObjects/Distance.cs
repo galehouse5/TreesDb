@@ -58,6 +58,10 @@ namespace TMD.Model
 
         public string ToString(DistanceFormat format)
         {
+            if (!IsSpecified)
+            {
+                return string.Empty;
+            }
             switch (format)
             {
                 case DistanceFormat.Default:

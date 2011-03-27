@@ -190,6 +190,10 @@ namespace TMD.Model
 
         public string ToString(CoordinatesFormat format)
         {
+            if (!IsSpecified)
+            {
+                return string.Empty;
+            }
             switch (format)
             {
                 case CoordinatesFormat.DegreesMinutesDecimalSeconds:
@@ -360,6 +364,10 @@ namespace TMD.Model
 
         public string ToString(CoordinatesFormat format)
         {
+            if (!IsSpecified)
+            {
+                return string.Empty;
+            }
             switch (format)
             {
                 case CoordinatesFormat.DegreesMinutesDecimalSeconds:

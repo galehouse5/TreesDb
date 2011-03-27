@@ -65,6 +65,11 @@ namespace TMD
             routes.MapRoute("ImportNew", "Import/New", new { controller = "Import", action = "New" });
             routes.MapRoute("ImportHistory", "Import/History", new { controller = "Import", action = "History" });
 
+            routes.MapRoute("ExportSpecies", "Export/Species/{botanicalName}", new { controller = "Export", action = "Species" });
+            routes.MapRoute("ExportSitesSpecies", "Export/Sites/{id}/Species/{botanicalName}", new { controller = "Export", action = "SitesSpecies" });
+            routes.MapRoute("ExportStatesSpecies", "Export/States/{id}/Species/{botanicalName}", new { controller = "Export", action = "StatesSpecies" });
+            routes.MapRoute("ExportDefault", "Export/{action}/{id}", new { controller = "Export" });
+
             routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}", new { controller = "Main", action = "Index" }, new { id = @"\d+" });
             routes.MapRoute("Default", "{controller}/{action}", new { controller = "Main", action = "Index" });
 

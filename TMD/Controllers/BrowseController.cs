@@ -61,8 +61,9 @@ namespace TMD.Controllers
                                    where visit.Photos.Count > 0
                                    select visit;
             var species = Repositories.Trees.ListMeasuredSpeciesBySubsiteId(subsite.Id);
-            var model = new BrowseSubsiteModel
+            var model = new BrowseSiteModel
             {
+                Id = id,
                 Details = Mapper.Map<Subsite, BrowseSubsiteDetailsModel>(subsite),
                 Location = Mapper.Map<Subsite, BrowseSubsiteLocationModel>(subsite),
                 PhotoSummaries = Mapper.Map<IEnumerable<SubsiteVisit>, IList<BrowsePhotoSumaryModel>>(visitsWithPhotos),

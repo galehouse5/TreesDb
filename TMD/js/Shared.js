@@ -143,7 +143,7 @@ slate.portlet = function () {
 
     pub.init = function () {
         $('.portlet-closable .portlet-header').live('click', self.togglePortlet);
-        $('.portlet-tab-nav a').live('click', self.selectTabContent);
+        $('.portlet-tab-nav li:not(.portlet-tab-nav-ignore) a').live('click', self.selectTabContent);
 
         $('.portlet-closable .portlet-header').each(function () {
             $(this).append('<span class="portlet-toggle-icon"></span>');

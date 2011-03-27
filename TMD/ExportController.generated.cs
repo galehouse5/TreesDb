@@ -36,8 +36,43 @@ namespace TMD.Controllers {
 
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult MenuWidget() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);
+        public System.Web.Mvc.ActionResult Trees() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult Sites() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.Sites);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult SitesSpecies() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.SitesSpecies);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult States() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.States);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult StatesSpecies() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.StatesSpecies);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult Species() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.Species);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult SpeciesByFilters() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.SpeciesByFilters);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult LocationsByFilters() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.LocationsByFilters);
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -52,8 +87,14 @@ namespace TMD.Controllers {
         public ActionNamesClass ActionNames { get { return s_actions; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNamesClass {
-            public readonly string MenuWidget = "MenuWidget";
-            public readonly string Index = "Index";
+            public readonly string Trees = "Trees";
+            public readonly string Sites = "Sites";
+            public readonly string SitesSpecies = "SitesSpecies";
+            public readonly string States = "States";
+            public readonly string StatesSpecies = "StatesSpecies";
+            public readonly string Species = "Species";
+            public readonly string SpeciesByFilters = "SpeciesByFilters";
+            public readonly string LocationsByFilters = "LocationsByFilters";
         }
 
 
@@ -62,7 +103,6 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
-            public readonly string MenuWidget = "~/Views/Export/MenuWidget.cshtml";
         }
     }
 
@@ -70,14 +110,56 @@ namespace TMD.Controllers {
     public class T4MVC_ExportController: TMD.Controllers.ExportController {
         public T4MVC_ExportController() : base(Dummy.Instance) { }
 
-        public override System.Web.Mvc.ActionResult MenuWidget(bool isSelected) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);
-            callInfo.RouteValueDictionary.Add("isSelected", isSelected);
+        public override System.Web.Mvc.ActionResult Trees(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
+            callInfo.RouteValueDictionary.Add("id", id);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Index() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Index);
+        public override System.Web.Mvc.ActionResult Sites(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Sites);
+            callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult SitesSpecies(int id, string botanicalName) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SitesSpecies);
+            callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("botanicalName", botanicalName);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult States(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.States);
+            callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult StatesSpecies(int id, string botanicalName) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.StatesSpecies);
+            callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("botanicalName", botanicalName);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult Species(string botanicalName) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Species);
+            callInfo.RouteValueDictionary.Add("botanicalName", botanicalName);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult SpeciesByFilters(string botanicalNameFilter, string commonNameFilter) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SpeciesByFilters);
+            callInfo.RouteValueDictionary.Add("botanicalNameFilter", botanicalNameFilter);
+            callInfo.RouteValueDictionary.Add("commonNameFilter", commonNameFilter);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult LocationsByFilters(string stateFilter, string siteFilter, string subsiteFilter) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.LocationsByFilters);
+            callInfo.RouteValueDictionary.Add("stateFilter", stateFilter);
+            callInfo.RouteValueDictionary.Add("siteFilter", siteFilter);
+            callInfo.RouteValueDictionary.Add("subsiteFilter", subsiteFilter);
             return callInfo;
         }
 

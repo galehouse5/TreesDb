@@ -8,7 +8,14 @@
 }
 
 <div class="portlet x6">
-	<div class="portlet-header"><h4>Species</h4></div>
+	<div class="portlet-header">
+        <h4>Species</h4>
+        <ul class="portlet-tab-nav">
+            <li class="portlet-tab-nav-ignore">
+                <a href="@Url.Action(Mvc.Export.SpeciesByFilters(Request["SpeciesBotanicalNameFilter"], Request["SpeciesCommonNameFilter"]))">Export tree data</a>
+            </li>
+        </ul>
+    </div>
 	<div class="portlet-content">
         @(Html.DataTablesGrid<TMD.Model.Trees.MeasuredSpecies>(parameterNamePrefix: "species",
             columns: builder =>
@@ -26,7 +33,14 @@
 </div>
 
 <div class="portlet x6">
-	<div class="portlet-header"><h4>Locations</h4></div>
+	<div class="portlet-header">
+        <h4>Locations</h4>
+        <ul class="portlet-tab-nav">
+            <li class="portlet-tab-nav-ignore">
+                <a href="@Url.Action(Mvc.Export.LocationsByFilters(Request["LocationStateFilter"], Request["LocationSiteFilter"], Request["LocationSubsiteFilter"]))">Export tree data</a>
+            </li>
+        </ul>
+    </div>
 	<div class="portlet-content">
         @(Html.DataTablesGrid<TMD.Model.Sites.Subsite>(parameterNamePrefix: "location",
             columns: builder =>

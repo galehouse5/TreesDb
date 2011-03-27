@@ -21,8 +21,7 @@
                     @{ Html.RenderAction(Mvc.Main.MenuWidget(ViewContext.Controller is TMD.Controllers.MainController));
                        Html.RenderAction(Mvc.Import.MenuWidget(ViewContext.Controller is TMD.Controllers.ImportController));
                        Html.RenderAction(Mvc.Browse.MenuWidget(ViewContext.Controller is TMD.Controllers.BrowseController));
-                       Html.RenderAction(Mvc.Map.MenuWidget(ViewContext.Controller is TMD.Controllers.MapController));
-                       Html.RenderAction(Mvc.Export.MenuWidget(ViewContext.Controller is TMD.Controllers.ExportController)); }
+                       Html.RenderAction(Mvc.Map.MenuWidget(ViewContext.Controller is TMD.Controllers.MapController)); }
                 </ul>
             </div>
             <!-- #nav -->
