@@ -13,6 +13,11 @@ namespace TMD
 {
     public class AnonymousUser : User
     {
+        public AnonymousUser()
+        {
+            Roles = UserRoles.None | UserRoles.Export;
+        }
+
         public override bool AttemptLogon(string password)
         {
             throw new InvalidEntityOperationException(this);
@@ -67,12 +72,6 @@ namespace TMD
         public override void ReportActivity()
         {
             throw new InvalidEntityOperationException(this);
-        }
-
-        protected override UserRoles Roles
-        {
-            get { return base.Roles; }
-            set { base.Roles = UserRoles.None; }
         }
 
         public override void VerifyEmail(string urlEncodedEmailVerificationToken)

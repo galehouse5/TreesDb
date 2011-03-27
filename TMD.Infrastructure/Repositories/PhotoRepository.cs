@@ -96,5 +96,26 @@ namespace TMD.Infrastructure.Repositories
                 .List<PhotoReferenceBase>());
             return references;
         }
+
+        public IList<Photo> FindRecentPublicPhotos(int number)
+        {
+            return Registry.Session.CreateCriteria<Photo>("photo")
+                .Add(Restrictions.Or(
+                    // is a subsite photo
+                    Subqueries.Exists(
+                        DetachedCriteria.For<SubsitePhotoReference>("reference")
+                        .SetProjection(Projections.Id())
+                        .Add(Property.ForName("reference.Photo.Id").EqProperty("photo.Id"))
+                    ),
+                    // or is a tree photo
+                    Subqueries.Exists(
+                        DetachedCriteria.For<TreePhotoReference>("reference")
+                        .SetProjection(Projections.Id())
+                        .Add(Property.ForName("reference.Photo.Id").EqProperty("photo.Id"))
+                    )
+                ))
+                .AddOrder(Order.Desc("photo.Created"))
+                .SetMaxResults(number).List<Photo>();
+        }
     }
 }

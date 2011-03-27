@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using TMD.Extensions;
 using TMD.Models;
+using TMD.Model;
 
 namespace TMD.Controllers
 {
@@ -24,7 +25,11 @@ namespace TMD.Controllers
         [HttpGet]
         public virtual ActionResult Index()
         {
-            return View();
+            var model = new MainModel
+            {
+                InterestingPhotos = Repositories.Photos.FindRecentPublicPhotos(5)
+            };
+            return View(model);
         }
     }
 }

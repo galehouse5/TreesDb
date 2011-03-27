@@ -1,4 +1,5 @@
-﻿@{ ViewBag.Title = "Trees Database"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+﻿@model MainModel
+@{ ViewBag.Title = "Trees Database"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
 
 <div class="portlet x6">
 	<div class="portlet-header"><h4>Welcome</h4></div>
@@ -18,6 +19,9 @@
 	<div class="portlet-header"><h4>Images</h4></div>
 	<div class="portlet-content">
 		<ul class="gallery">
+            @foreach (var photo in Model.InterestingPhotos) { 
+                <li>@Html.Photo(photo)</li>
+            }
 			<li>
 				<img src="@Url.ManagedContent(Links.images.white_oak_in_fog_small_jpg)" alt="White oak in fog" />
 				<div class="actions">
@@ -31,7 +35,7 @@
 <div class="xbreak"></div> <!-- .xbreak -->
 
 <div class="portlet x3">
-	<div class="portlet-header"><h4>Import</h4></div>		
+	<div class="portlet-header"><h4><a href="@Url.Action(Mvc.Import.Index())">Import</a></h4></div>		
 	<div class="portlet-content">
 		<p>
 			Add your tree data to the site using this page. Several formats for importing are functional, with more to follow.
@@ -39,29 +43,21 @@
 	</div>
 </div>
 
+
 <div class="portlet x3">
-	<div class="portlet-header"><h4>Map</h4></div>
+	<div class="portlet-header"><h4><a href="@Url.Action(Mvc.Browse.Index())">Browse and export</a></h4></div>
+	<div class="portlet-content">
+		<p>
+			Review and download data using several functions.
+		</p>
+	</div>
+</div>
+
+<div class="portlet x3">
+	<div class="portlet-header"><h4><a href="@Url.Action(Mvc.Map.Index())">Map</a></h4></div>
 	<div class="portlet-content">
 		<p>
 			View trees and site locations on Google Maps.
-		</p>
-	</div>
-</div>
-
-<div class="portlet x3">
-	<div class="portlet-header"><h4>Browse</h4></div>
-	<div class="portlet-content">
-		<p>
-			Review data using several functions.
-		</p>
-	</div>
-</div>
-
-<div class="portlet x3">
-	<div class="portlet-header"><h4>Export</h4></div>
-	<div class="portlet-content">
-		<p>
-			Download data to your computer.
 		</p>
 	</div>
 </div>

@@ -1,6 +1,6 @@
 ﻿@model TMD.Models.BrowseMenuWidgetModel
 <li class="@(Model.IsSelected ? "mega mega-current" : "mega")">
-	@Html.ActionLink("Browse", Mvc.Browse.Index(), new { @class = "mega-tab hasSub" })
+	@Html.ActionLink("Browse and export", Mvc.Browse.Index(), new { @class = "mega-tab hasSub" })
 	<div class="mega-content mega-menu ">						
 		<ul>
 			<li>@Html.ActionLink("Species", Mvc.Browse.Species())</li>

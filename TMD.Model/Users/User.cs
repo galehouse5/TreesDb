@@ -209,7 +209,7 @@ namespace TMD.Model.Users
                 ForgottenPasswordAssistanceTokenUsed = null,
                 RecentlyFailedLogonAttempts = 0,
                 LastFailedLogonAttempt = null,
-                Roles = UserRoles.Import
+                Roles = UserRoles.Import | UserRoles.Export
             };
         }
     }

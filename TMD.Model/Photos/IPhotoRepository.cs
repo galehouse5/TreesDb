@@ -18,5 +18,7 @@ namespace TMD.Model.Photos
         PhotoStoreBase FindPermanentPhotoStore();
         IList<Photo> FindOrphaned();
         IList<Photo> FindAll();
+
+        IList<Photo> FindRecentPublicPhotos(int number);
     }
 }

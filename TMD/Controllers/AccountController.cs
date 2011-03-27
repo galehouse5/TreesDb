@@ -20,10 +20,6 @@ namespace TMD.Controllers
     {
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
-            if (!httpContext.User.Identity.IsAuthenticated)
-            {
-                return false;
-            }
             if (!((User)((WebUser)httpContext.User)).IsInRole(Roles))
             {
                 return false;
@@ -39,6 +35,7 @@ namespace TMD.Controllers
             }
             else
             {
+                ((ControllerBase)filterContext.Controller).Session.SetDefaultReturnUrl(((ControllerBase)filterContext.Controller).Request.RawUrl);
                 filterContext.Result = new RedirectResult("/Account/Logon");
             }
         }
