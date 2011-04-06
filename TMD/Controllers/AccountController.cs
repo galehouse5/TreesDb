@@ -20,6 +20,10 @@ namespace TMD.Controllers
     {
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
+            if (!httpContext.User.Identity.IsAuthenticated)
+            {
+                return false;
+            }
             if (!((User)((WebUser)httpContext.User)).IsInRole(Roles))
             {
                 return false;
@@ -90,7 +94,7 @@ namespace TMD.Controllers
                     return View(model);
                 }
                 // TODO: decouple from FormsAuthentication class so this controller is unit testable
-                FormsAuthentication.SetAuthCookie(user.Email, model.RememberMe);
+                FormsAuthentication.SetAuthCookie(user.Id.ToString(), model.RememberMe);
                 Session.ClearRegardingUserSpecificData();
                 TempData.SetAccountMessage(string.Empty);
                 return Redirect(Session.GetDefaultReturnUrl());

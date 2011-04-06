@@ -103,7 +103,7 @@ namespace TMD
         void Context_PostAuthenticateRequest(object sender, EventArgs e)
         {
             ApplicationContext.Context.User = ApplicationContext.Context.User.Identity.IsAuthenticated ?
-                new WebUser(Repositories.Users.FindByEmail(ApplicationContext.Context.User.Identity.Name)) :
+                new WebUser(Repositories.Users.FindById(int.Parse(ApplicationContext.Context.User.Identity.Name))) :
                 new WebUser(new AnonymousUser());
         }
 

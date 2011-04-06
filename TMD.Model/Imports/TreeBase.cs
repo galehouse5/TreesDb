@@ -93,7 +93,7 @@ namespace TMD.Model.Imports
         /// <summary>
         /// Four digit number unique in the scope of the subsite.
         /// </summary>
-        [Range(1, 9999, Message = "Tree number must be within the range of 0 to 9999.", Tags = ValidationTag.Screening)]
+        [Range(1, 9999, Message = "Tree number must be within the range of 1 to 9999.", Tags = ValidationTag.Screening)]
         public virtual int? TreeNumber { get; set; }
 
         private string m_TreeName;

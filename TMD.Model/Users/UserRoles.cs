@@ -12,7 +12,8 @@ namespace TMD.Model.Users
         None = 0x0,
         Import = 0x1,
         Export = 0x2,
-        Admin = 0x4
+        Admin = 0x4,
+        Registered = 0x8
     }
 
     public partial class User

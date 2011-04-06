@@ -58,6 +58,16 @@ namespace TMD
             ar.ExecuteResult(ControllerContext);
         }
 
+        protected override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            if (base.User.Identity.IsAuthenticated)
+            {
+                User.ReportActivity();
+                Repositories.Users.Save(User);
+            }
+            base.OnActionExecuting(filterContext);
+        }
+
         protected override void ExecuteCore()
         {
             if (WebApplicationRegistry.Settings.HandleControllerExceptions)
