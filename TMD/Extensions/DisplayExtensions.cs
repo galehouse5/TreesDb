@@ -23,6 +23,8 @@ namespace TMD.Extensions
                     .InnerText(expressionMetadata.GetDisplayName())
                 )
                 .InnerHtml(Tag.TD().Css("value")
+                    .If(!string.IsNullOrEmpty(expressionMetadata.Classification()) && !expressionMetadata.IsModelNull(),
+                        tag => tag.Css(expressionMetadata.Classification()))
                     .IfElse(expressionMetadata.IsModelNull(),
                         tag1 => tag1.InnerHtml(expressionMetadata.NullDisplayText),
                         tag1 =>

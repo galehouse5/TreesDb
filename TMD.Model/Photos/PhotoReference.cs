@@ -32,7 +32,7 @@ namespace TMD.Model.Photos
 
         public virtual int Id { get; private set; }
         [Valid] public virtual Photo Photo { get; protected set; }
-        public virtual int PhotoId { get { return Photo.Id; } }
+        public virtual int StaticId { get { return Photo.Id; } }
         public virtual Size Size { get { return Photo.Size; } }
         public virtual int Bytes { get { return Photo.Bytes; } }
         public virtual PhotoFormat Format { get { return Photo.Format; } }
@@ -40,6 +40,10 @@ namespace TMD.Model.Photos
         public virtual ImageFormat ImageFormat { get { return Photo.ImageFormat; } }
         public virtual Bitmap Get() { return Photo.Get(); }
         public virtual Bitmap Get(PhotoSize size) { return Photo.Get(size); }
+        public abstract IList<Name> Photographers { get; }
+        public virtual string Caption { get; set; }
+        public virtual int CaptionId { get { return Id; } }
+        public virtual bool HasCaption { get { return true; } }
 
         public virtual bool EqualsPhoto(IPhoto photo)
         {
@@ -60,6 +64,11 @@ namespace TMD.Model.Photos
     {
         protected PublicPhotoReference() { }
         public PublicPhotoReference(Photo photo) : base(photo) { }
+
+        public override IList<Name> Photographers
+        {
+            get { return new List<Name>(); }
+        }
     }
 
     public class PhotoReferences : List<PhotoReferenceBase>, IPhotoPermissions

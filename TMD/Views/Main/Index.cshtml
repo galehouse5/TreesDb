@@ -16,18 +16,12 @@
 
 
 <div class="portlet x6">
-	<div class="portlet-header"><h4>Recently imported photos</h4></div>
+	<div class="portlet-header"><h4>Recent photos</h4></div>
 	<div class="portlet-content">
 		<ul class="gallery">
-            @foreach (var photo in Model.InterestingPhotos) { 
+            @foreach (var photo in Model.RecentPhotos) { 
                 <li>@Html.Photo(photo)</li>
             }
-			<li>
-				<img src="@Url.ManagedContent(Links.images.white_oak_in_fog_small_jpg)" alt="White oak in fog" />
-				<div class="actions">
-					<a  class="btn btn-orange btn-small" rel="facebox" href="@Url.ManagedContent(Links.images.white_oak_in_fog_jpg)">View</a>
-				</div>
-			</li>
 		</ul>
 	</div>
 </div>

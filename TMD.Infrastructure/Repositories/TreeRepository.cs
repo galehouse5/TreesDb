@@ -33,7 +33,11 @@ namespace TMD.Infrastructure.Repositories
                 .List<Tree>();
             foreach (var tree in trees)
             {
-                tree.Measurements.RemoveAll(measurement => measurement.ImportingTrip.Equals(trip));
+                // evaluate where clause immediately by calling ToList() to avoid modification of collection during enumeration
+                foreach (var measurementToRemove in tree.Measurements.Where(measurement => measurement.ImportingTrip.Equals(trip)).ToList())
+                {
+                    tree.RemoveMeasurement(measurementToRemove);
+                }
                 if (tree.Measurements.Count < 1)
                 {
                     Registry.Session.Delete(tree);

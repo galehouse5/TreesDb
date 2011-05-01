@@ -64,7 +64,11 @@ namespace TMD.Infrastructure.Repositories
                 .List<Subsite>();
             foreach (var subsite in subsites)
             {
-                subsite.Visits.RemoveAll(visit => visit.ImportingTrip.Equals(trip));
+                // evaluate where clause immediately by calling ToList() to avoid modification of collection during enumeration
+                foreach (var visitToRemove in subsite.Visits.Where(visit => visit.ImportingTrip.Equals(trip)).ToList())
+                {
+                    subsite.RemoveVisit(visitToRemove);
+                }
                 if (subsite.Visits.Count < 1)
                 {
                     Registry.Session.Delete(subsite);

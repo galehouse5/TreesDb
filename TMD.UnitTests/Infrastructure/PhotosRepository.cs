@@ -32,7 +32,7 @@ namespace TMD.UnitTests.Infrastructure
             UnitOfWork.Dispose();
             using (var uow = UnitOfWork.Begin())
             {
-                IPhoto found = Repositories.Photos.FindById(photo.PhotoId);
+                IPhoto found = Repositories.Photos.FindById(photo.StaticId);
                 Assert.IsNotNull(found);
                 Assert.IsTrue("Original.jpg".GetPhoto().CompareByContent(found.Get()));
                 Repositories.Photos.Remove(found);

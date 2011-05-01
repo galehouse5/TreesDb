@@ -19,11 +19,19 @@ namespace TMD.Controllers
 {
     public partial class PhotosController : ControllerBase
     {
+        [OutputCache(CacheProfile = "Photos")]
+        public virtual ActionResult Caption(int id)
+        {
+            PhotoReferenceBase reference = Repositories.Photos.FindReferenceById(id);
+            if (!reference.IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
+            return View(Mapper.Map<PhotoReferenceBase, PhotoCaptionModel>(reference));
+        }
+
         [ActionName("View"), HttpGet, OutputCache(CacheProfile = "Photos")]
         public virtual ActionResult ViewPhoto(int id, PhotoSize size)
         {
             var photo = Repositories.Photos.FindById(id);
-            if (!Repositories.Photos.FindAllReferencesByPhotoId(id).IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
+            if (!Repositories.Photos.ListAllReferencesByPhotoId(id).IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
             using (Bitmap image = photo.Get(size))
             {
                 Stream data = new MemoryStream();
@@ -68,7 +76,7 @@ namespace TMD.Controllers
                     if (ModelState.IsValid)
                     {
                         UnitOfWork.Flush();
-                        if (!Repositories.Photos.FindAllReferencesByPhotoId(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                        if (!Repositories.Photos.ListAllReferencesByPhotoId(photo.StaticId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                         uow.Persist();
                     }
                     else { tree.RemovePhoto(photo); }
@@ -93,7 +101,7 @@ namespace TMD.Controllers
                     if (ModelState.IsValid)
                     {
                         UnitOfWork.Flush();
-                        if (!Repositories.Photos.FindAllReferencesByPhotoId(photo.PhotoId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                        if (!Repositories.Photos.ListAllReferencesByPhotoId(photo.StaticId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
                         uow.Persist();
                     }
                     else { subsite.RemovePhoto(photo); }

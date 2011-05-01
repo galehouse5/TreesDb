@@ -185,5 +185,10 @@ namespace TMD.Model.Imports
         public override bool IsAuthorizedToAdd(User user) { return user.IsAuthorizedToEdit(Subsite.Site.Trip); }
         public override bool IsAuthorizedToView(User user) { return user.IsAuthorizedToEdit(Subsite.Site.Trip); }
         public override bool IsAuthorizedToRemove(User user) { return user.IsAuthorizedToEdit(Subsite.Site.Trip); }
+
+        public override IList<Name> Photographers
+        {
+            get { return Subsite.Site.Trip.Measurers; }
+        }
     }
 }

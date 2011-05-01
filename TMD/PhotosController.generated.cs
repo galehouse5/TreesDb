@@ -36,6 +36,11 @@ namespace TMD.Controllers {
 
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult Caption() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.Caption);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public System.Web.Mvc.ActionResult ViewPhoto() {
             return new T4MVC_ActionResult(Area, Name, ActionNames.ViewPhoto);
         }
@@ -72,6 +77,7 @@ namespace TMD.Controllers {
         public ActionNamesClass ActionNames { get { return s_actions; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNamesClass {
+            public readonly string Caption = "Caption";
             public readonly string ViewPhoto = "View";
             public readonly string Remove = "Remove";
             public readonly string PhotoAdded = "PhotoAdded";
@@ -85,6 +91,7 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
+            public readonly string Caption = "~/Views/Photos/Caption.cshtml";
             public readonly string EditPhotoGalleryPartial = "~/Views/Photos/EditPhotoGalleryPartial.cshtml";
         }
     }
@@ -92,6 +99,12 @@ namespace TMD.Controllers {
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
     public class T4MVC_PhotosController: TMD.Controllers.PhotosController {
         public T4MVC_PhotosController() : base(Dummy.Instance) { }
+
+        public override System.Web.Mvc.ActionResult Caption(int id) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Caption);
+            callInfo.RouteValueDictionary.Add("id", id);
+            return callInfo;
+        }
 
         public override System.Web.Mvc.ActionResult ViewPhoto(int id, TMD.Model.Photos.PhotoSize size) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ViewPhoto);

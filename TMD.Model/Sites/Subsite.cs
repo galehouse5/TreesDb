@@ -114,6 +114,22 @@ namespace TMD.Model.Sites
         public virtual IList<SubsiteVisit> Visits { get; private set; }
         public virtual IList<Tree> Trees { get; private set; }
 
+        public virtual void AddVisit(SubsiteVisit visit)
+        {
+            Visits.Add(visit);
+            visit.Subsite = this;
+        }
+
+        public virtual bool RemoveVisit(SubsiteVisit visit)
+        {
+            if (Visits.Remove(visit))
+            {
+                visit.Subsite = null;
+                return true;
+            }
+            return false;
+        }
+
         public virtual void AddTree(Tree tree)
         {
             Trees.Add(tree);
@@ -150,7 +166,10 @@ namespace TMD.Model.Sites
 
         public virtual Subsite Merge(Subsite subsiteToMerge)
         {
-            Visits.AddRange(subsiteToMerge.Visits);
+            foreach (var visit in subsiteToMerge.Visits)
+            {
+                AddVisit(visit);
+            }
             var treesToMerge = from treeToMerge in subsiteToMerge.Trees
                                where ShouldMerge(treeToMerge)
                                select treeToMerge;
@@ -203,5 +222,10 @@ namespace TMD.Model.Sites
         protected internal SubsitePhotoReference(Photo photo, Subsite subsite) : base(photo) { this.Subsite = subsite; }
         public virtual Subsite Subsite { get; private set; }
         public override bool IsAuthorizedToView(User user) { return true; }
+
+        public override IList<Name> Photographers
+        {
+            get { return Subsite.Visitors; }
+        }
     }
 }

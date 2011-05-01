@@ -16,7 +16,15 @@ namespace TMD.Extensions
                 var props = TypeDescriptor.GetProperties(attributes);
                 foreach (PropertyDescriptor prop in props)
                 {
-                    values.Add(prop.Name, prop.GetValue(attributes));
+                    // assist in handling of html 5 data-* attributes 
+                    if (prop.Name.StartsWith("data_"))
+                    {
+                        values.Add("data-" + prop.Name.Substring(5), prop.GetValue(attributes));
+                    }
+                    else
+                    {
+                        values.Add(prop.Name, prop.GetValue(attributes));
+                    }
                 }
             }
             return values;

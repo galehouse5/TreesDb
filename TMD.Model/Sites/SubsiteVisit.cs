@@ -20,6 +20,8 @@ namespace TMD.Model.Sites
 
         public virtual int Id { get; private set; }
         public virtual Trip ImportingTrip { get; private set; }
+        public virtual Subsite Subsite { get; protected internal set; }
+
         public virtual DateTime Visited { get; private set; }
         public virtual string Name { get; private set; }
         public virtual State State { get; private set; }
@@ -63,5 +65,10 @@ namespace TMD.Model.Sites
         protected internal SubsiteVisitPhotoReference(Photo photo, SubsiteVisit subsiteVisit) : base(photo) { this.SubsiteVisit = subsiteVisit; }
         public virtual SubsiteVisit SubsiteVisit { get; private set; }
         public override bool IsAuthorizedToView(User user) { return true; }
+
+        public override IList<Name> Photographers
+        {
+            get { return SubsiteVisit.ImportingTrip.Measurers; }
+        }
     }
 }

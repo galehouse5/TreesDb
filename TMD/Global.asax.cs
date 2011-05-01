@@ -38,6 +38,7 @@ namespace TMD
 
             routes.MapRoute("AddPhoto", "Photos/{action}/{id}", new { controller = "Photos" }, new { action = "AddTo.+" });
             routes.MapRoute("RemovePhoto", "Photos/{id}/Remove", new { controller = "Photos", action = "Remove" });
+            routes.MapRoute("PhotoCaption", "Photos/{id}/Caption", new { controller = "Photos", action = "Caption" });
             routes.MapRoute("ViewPhoto", "Photos/{id}/{size}", new { controller = "Photos", action = "View", size = "Original" });
 
             routes.MapRoute("ViewMapMarkesForImportTree", "Map/ViewMarkersForImport/{id}/Tree/{treeId}", new { controller = "Map", action = "ViewMarkersForImportTree" });
@@ -90,7 +91,7 @@ namespace TMD
             ControllerBuilder.Current.SetControllerFactory(typeof(ControllerFactory));
 
             Mapper.AddProfile<ImportMapping>();
-            Mapper.AddProfile<PhotoMapping>();
+            Mapper.AddProfile<PhotosMapping>();
             Mapper.AddProfile<MapMapping>();
             Mapper.AddProfile<AccountMapping>();
             Mapper.AddProfile<BrowseMapping>();

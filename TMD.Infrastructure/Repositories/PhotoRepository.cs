@@ -72,7 +72,7 @@ namespace TMD.Infrastructure.Repositories
                 .UniqueResult<PhotoStoreBase>();
         }
 
-        public IList<Photo> FindOrphaned()
+        public IList<Photo> ListOrphaned()
         {
             return Registry.Session.CreateCriteria<Photo>("photo")
                 .Add(Subqueries.NotExists(
@@ -82,12 +82,23 @@ namespace TMD.Infrastructure.Repositories
                 )).List<Photo>();
         }
 
-        public IList<Photo> FindAll()
+        public IList<Photo> ListAll()
         {
             return Registry.Session.CreateCriteria<Photo>().List<Photo>();
         }
 
-        public PhotoReferences FindAllReferencesByPhotoId(int photoId)
+        public IList<IPhoto> ListRecentPublicPhotos(int number)
+        {
+            return Registry.Session
+                .CreateCriteria<PhotoReferenceBase>("reference")
+                .CreateAlias("reference.Photo", "photo")
+                .Add(Restrictions.Eq("class", typeof(Model.Sites.SubsiteVisitPhotoReference)) 
+                    | Restrictions.Eq("class", typeof(Model.Trees.TreeMeasurementPhotoReference)))
+                .AddOrder(Order.Desc("photo.Created"))                
+                .SetMaxResults(number).List<IPhoto>();
+        }
+
+        public PhotoReferences ListAllReferencesByPhotoId(int photoId)
         {
             var references = new PhotoReferences();
             references.AddRange(Registry.Session.CreateCriteria<PhotoReferenceBase>()
@@ -95,27 +106,6 @@ namespace TMD.Infrastructure.Repositories
                 .Add(Restrictions.Eq("p.Id", photoId))
                 .List<PhotoReferenceBase>());
             return references;
-        }
-
-        public IList<Photo> FindRecentPublicPhotos(int number)
-        {
-            return Registry.Session.CreateCriteria<Photo>("photo")
-                .Add(Restrictions.Or(
-                    // is a subsite photo
-                    Subqueries.Exists(
-                        DetachedCriteria.For<SubsitePhotoReference>("reference")
-                        .SetProjection(Projections.Id())
-                        .Add(Property.ForName("reference.Photo.Id").EqProperty("photo.Id"))
-                    ),
-                    // or is a tree photo
-                    Subqueries.Exists(
-                        DetachedCriteria.For<TreePhotoReference>("reference")
-                        .SetProjection(Projections.Id())
-                        .Add(Property.ForName("reference.Photo.Id").EqProperty("photo.Id"))
-                    )
-                ))
-                .AddOrder(Order.Desc("photo.Created"))
-                .SetMaxResults(number).List<Photo>();
         }
     }
 }

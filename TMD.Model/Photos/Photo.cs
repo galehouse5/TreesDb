@@ -22,7 +22,9 @@ namespace TMD.Model.Photos
     public interface IPhoto
     {
         int Id { get; }
-        int PhotoId { get; }
+        int StaticId { get; }
+        int CaptionId { get; }
+        bool HasCaption { get; }
         Size Size { get; }
         int Bytes { get; }
         PhotoFormat Format { get; }
@@ -43,10 +45,12 @@ namespace TMD.Model.Photos
             TemporaryStore = new MemoryPhotoStore();
         }
 
-        public virtual int PhotoId { get { return Id; } }
+        public virtual int StaticId { get { return Id; } }
         public virtual PhotoStoreBase TemporaryStore { get; private set; }
         public virtual PhotoStoreBase PermanentStore { get; protected internal set; }
         public virtual Size Size { get; protected internal set; }
+        public virtual int CaptionId { get { return 0; } }
+        public virtual bool HasCaption { get { return false; } }
 
         [Within2(0, MaxBytes, Inclusive = true, Message = "Photo must not be too large.", Tags = ValidationTag.Screening)]
         public virtual int Bytes { get; protected internal set; }

@@ -148,7 +148,7 @@
     <Compile Include="Mappings\BrowseMapping.cs" />
     <Compile Include="Mappings\MapMapping.cs" />
     <Compile Include="Mappings\ImportMapping.cs" />
-    <Compile Include="Mappings\PhotoMapping.cs" />
+    <Compile Include="Mappings\PhotosMapping.cs" />
     <Compile Include="Mappings\ValidationMapper.cs" />
     <Compile Include="Mappings\ValidationMapping\MessageMapper.cs" />
     <Compile Include="Mappings\ValidationMapping\PathMapper.cs" />
@@ -209,10 +209,8 @@
       <DependentUpon>Css.chirp.config</DependentUpon>
     </Content>
     <Content Include="css\Theme\Shared.css" />
-    <Content Include="css\plugin.css" />
     <Content Include="css\plugin\dataTables.css" />
     <Content Include="css\plugin\facebox.css" />
-    <Content Include="css\plugin\jquery.lightbox-0.5.css" />
     <Content Include="css\plugin\jquery.visualize.css" />
     <Content Include="css\plugin\tipsy.css" />
     <Content Include="css\plugin\uniform.default.css" />
@@ -238,7 +236,6 @@
     <Content Include="images\bg-lite.png" />
     <Content Include="images\button-gradient.png" />
     <Content Include="images\button_sprite.png" />
-    <Content Include="images\closelabel.gif" />
     <Content Include="images\cross.png" />
     <Content Include="images\email.png" />
     <Content Include="images\icon.ico" />
@@ -275,8 +272,6 @@
     <Content Include="images\Theme\title.png" />
     <Content Include="images\tipsy.gif" />
     <Content Include="images\title.png" />
-    <Content Include="images\white oak in fog.jpg" />
-    <Content Include="images\white oak in fog_small.jpg" />
     <Content Include="js\Import.js">
       <DependentUpon>Javascript.chirp.config</DependentUpon>
     </Content>
@@ -391,7 +386,7 @@
     <Content Include="Views\Shared\DisplayTemplates\Country.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Distance.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Name.cshtml" />
-    <Content Include="Views\Browse\DisplayTemplates\ConcatenatedNames.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\ConcatenatedNames.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\PhotoGalleryModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\ObjectReport.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Volume.cshtml" />
@@ -437,6 +432,7 @@
     <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
     <Content Include="Views\Shared\SiteLayout.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
+    <Content Include="Views\Photos\Caption.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TMD.Infrastructure\TMD.Infrastructure.csproj">

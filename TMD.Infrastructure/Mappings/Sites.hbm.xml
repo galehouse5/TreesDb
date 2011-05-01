@@ -133,7 +133,7 @@
     <property name="RGI5" />
     <property name="RGI10" />
     <property name="RGI20" />
-    <bag name="Visits" table="SubsiteVisits" inverse="false" cascade="all-delete-orphan">
+    <bag name="Visits" table="SubsiteVisits" inverse="true" cascade="all-delete-orphan">
       <key column="SubsiteId"></key>
       <one-to-many class="TMD.Model.Sites.SubsiteVisit"/>
     </bag>
@@ -161,6 +161,7 @@
       <generator class="native"/>
     </id>
     <many-to-one name="ImportingTrip" column="ImportingTripId" cascade="none" />
+    <many-to-one name="Subsite" column="SubsiteId" cascade="none" />
     <property name="Visited" />
     <property name="Name" />
     <many-to-one name="State" column="StateId" cascade="none" />

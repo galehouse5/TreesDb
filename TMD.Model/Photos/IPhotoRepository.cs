@@ -12,13 +12,14 @@ namespace TMD.Model.Photos
     {
         void Save(IPhoto photo);
         void Remove(IPhoto photo);
-        Photo FindById(int id);
-        PhotoReferenceBase FindReferenceById(int id);
-        PhotoReferences FindAllReferencesByPhotoId(int photoId);
-        PhotoStoreBase FindPermanentPhotoStore();
-        IList<Photo> FindOrphaned();
-        IList<Photo> FindAll();
 
-        IList<Photo> FindRecentPublicPhotos(int number);
+        Photo FindById(int id);
+        PhotoStoreBase FindPermanentPhotoStore();
+        PhotoReferenceBase FindReferenceById(int id);
+
+        PhotoReferences ListAllReferencesByPhotoId(int photoId);
+        IList<Photo> ListOrphaned();
+        IList<Photo> ListAll();
+        IList<IPhoto> ListRecentPublicPhotos(int number);
     }
 }

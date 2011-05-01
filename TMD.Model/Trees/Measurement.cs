@@ -19,6 +19,8 @@ namespace TMD.Model.Trees
         public virtual int Id { get; private set; }
         public virtual GlobalMeasuredSpecies Species { get; private set; }
         public virtual Trip ImportingTrip { get; private set; }
+        public virtual Tree Tree { get; protected internal set; }
+
         public virtual DateTime Measured { get; private set; }
         public virtual string CommonName { get; private set; }
         public virtual string ScientificName { get; private set; }
@@ -165,5 +167,10 @@ namespace TMD.Model.Trees
         protected internal TreeMeasurementPhotoReference(Photo photo, Measurement measurement) : base(photo) { this.TreeMeasurement = measurement; }
         public virtual Measurement TreeMeasurement { get; private set; }
         public override bool IsAuthorizedToView(User user) { return true; }
+
+        public override IList<Name> Photographers
+        {
+            get { return TreeMeasurement.Measurers; }
+        }
     }
 }

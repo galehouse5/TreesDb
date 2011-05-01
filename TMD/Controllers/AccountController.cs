@@ -20,10 +20,6 @@ namespace TMD.Controllers
     {
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
-            if (!httpContext.User.Identity.IsAuthenticated)
-            {
-                return false;
-            }
             if (!((User)((WebUser)httpContext.User)).IsInRole(Roles))
             {
                 return false;

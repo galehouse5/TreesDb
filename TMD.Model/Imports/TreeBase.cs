@@ -342,10 +342,15 @@ namespace TMD.Model.Imports
     public class TreePhotoReference : PhotoReferenceBase
     {
         protected TreePhotoReference() { }
-        protected internal TreePhotoReference(Photo photo, TreeBase subsite) : base(photo) { this.Tree = subsite; }
+        protected internal TreePhotoReference(Photo photo, TreeBase tree) : base(photo) { this.Tree = tree; }
         public virtual TreeBase Tree { get; private set; }
         public override bool IsAuthorizedToAdd(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
         public override bool IsAuthorizedToView(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
         public override bool IsAuthorizedToRemove(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
+
+        public override IList<Name> Photographers
+        {
+            get { return Tree.Subsite.Site.Trip.Measurers; }
+        }
     }
 }

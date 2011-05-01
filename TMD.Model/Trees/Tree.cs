@@ -84,9 +84,28 @@ namespace TMD.Model.Trees
         public virtual IList<Measurement> Measurements { get; private set; }
         public virtual int MeasurementCount { get; private set; }
 
+        public virtual void AddMeasurement(Measurement measurement)
+        {
+            Measurements.Add(measurement);
+            measurement.Tree = this;
+        }
+
+        public virtual bool RemoveMeasurement(Measurement measurement)
+        {
+            if (Measurements.Remove(measurement))
+            {
+                measurement.Tree = null;
+                return true;
+            }
+            return false;
+        }
+
         public virtual Tree Merge(Tree treeToMerge)
         {
-            Measurements.AddRange(treeToMerge.Measurements);
+            foreach (var measurement in treeToMerge.Measurements)
+            {
+                AddMeasurement(measurement);
+            }
             return RecalculateProperties();
         }
 
@@ -123,5 +142,10 @@ namespace TMD.Model.Trees
         protected internal TreePhotoReference(Photo photo, Tree tree) : base(photo) { this.Tree = tree; }
         public virtual Tree Tree { get; private set; }
         public override bool IsAuthorizedToView(User user) { return true; }
+
+        public override IList<Name> Photographers
+        {
+            get { return Tree.Measurers; }
+        }
     }
 }

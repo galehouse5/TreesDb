@@ -103,7 +103,6 @@ namespace TMD.Controllers {
                 public readonly string BrowsePhotoSummaryList = "BrowsePhotoSummaryList";
                 public readonly string BrowseTreeDetailsModel = "BrowseTreeDetailsModel";
                 public readonly string BrowseTreeSummaryModel = "BrowseTreeSummaryModel";
-                public readonly string ConcatenatedNames = "ConcatenatedNames";
             }
         }
     }

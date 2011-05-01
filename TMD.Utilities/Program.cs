@@ -94,7 +94,7 @@ namespace TMD.Utilities
             int orphans = 0;
             using (var uow = UnitOfWork.Begin())
             {
-                foreach (var orphan in Repositories.Photos.FindOrphaned())
+                foreach (var orphan in Repositories.Photos.ListOrphaned())
                 {
                     Repositories.Photos.Remove(orphan);
                     orphans++;
@@ -110,7 +110,7 @@ namespace TMD.Utilities
             {
                 var threshold = DateTime.Now;
                 var store = Repositories.Photos.FindPermanentPhotoStore();
-                var knownPhotos = Repositories.Photos.FindAll();
+                var knownPhotos = Repositories.Photos.ListAll();
                 return store.RemovePhotosCreatedBefore(threshold, knownPhotos);
             }
         }

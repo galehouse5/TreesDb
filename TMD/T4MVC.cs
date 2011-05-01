@@ -331,13 +331,11 @@ namespace Links {
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
             public static readonly string dataTables_css = Url("dataTables.css");
             public static readonly string facebox_css = Url("facebox.css");
-            public static readonly string jquery_lightbox_0_5_css = Url("jquery.lightbox-0.5.css");
             public static readonly string jquery_visualize_css = Url("jquery.visualize.css");
             public static readonly string tipsy_css = Url("tipsy.css");
             public static readonly string uniform_default_css = Url("uniform.default.css");
         }
     
-        public static readonly string plugin_css = Url("plugin.css");
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class screen {
             private const string URLPATH = "~/css/screen";
@@ -379,7 +377,6 @@ namespace Links {
         public static readonly string bg_lite_png = Url("bg-lite.png");
         public static readonly string button_gradient_png = Url("button-gradient.png");
         public static readonly string button_sprite_png = Url("button_sprite.png");
-        public static readonly string closelabel_gif = Url("closelabel.gif");
         public static readonly string cross_png = Url("cross.png");
         public static readonly string email_png = Url("email.png");
         public static readonly string forward_disabled_png = Url("forward_disabled.png");
@@ -429,8 +426,6 @@ namespace Links {
     
         public static readonly string tipsy_gif = Url("tipsy.gif");
         public static readonly string title_png = Url("title.png");
-        public static readonly string white_oak_in_fog_jpg = Url("white oak in fog.jpg");
-        public static readonly string white_oak_in_fog_small_jpg = Url("white oak in fog_small.jpg");
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]

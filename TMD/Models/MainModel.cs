@@ -13,6 +13,6 @@ namespace TMD.Models
 
     public class MainModel
     {
-        public IEnumerable<Photo> InterestingPhotos { get; set; }
+        public IEnumerable<IPhoto> RecentPhotos { get; set; }
     }
 }

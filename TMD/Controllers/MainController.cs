@@ -27,7 +27,7 @@ namespace TMD.Controllers
         {
             var model = new MainModel
             {
-                InterestingPhotos = Repositories.Photos.FindRecentPublicPhotos(5)
+                RecentPhotos = Repositories.Photos.ListRecentPublicPhotos(8)
             };
             return View(model);
         }

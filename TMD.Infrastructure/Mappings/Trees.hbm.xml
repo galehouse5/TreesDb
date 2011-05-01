@@ -52,6 +52,7 @@
     <property name="Measured" />
     <many-to-one name="Species" column="ComputedMeasuredSpeciesId" insert="false" update="false" cascade="none" />
     <many-to-one name="ImportingTrip" column="ImportingTripId" cascade="none" />
+    <many-to-one name="Tree" column="TreeId" cascade="none" />
     <property name="CommonName"/>
     <property name="ScientificName"/>
     <component name="Height" class="Distance">
@@ -123,7 +124,7 @@
     </id>
     <many-to-one name="Subsite" column="SubsiteId" />
     <many-to-one name="Species" column="ComputedMeasuredSpeciesId" insert="false" update="false" cascade="none" />
-    <bag name="Measurements" table="Measurements" inverse="false" cascade="all-delete-orphan">
+    <bag name="Measurements" table="Measurements" inverse="true" cascade="all-delete-orphan">
       <key column="TreeId"></key>
       <one-to-many class="TMD.Model.Trees.Measurement"/>
     </bag>

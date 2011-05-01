@@ -21,7 +21,15 @@
             $(this).find("select, input:checkbox, input:radio, input:file")
                 .not('.UiInitialized').addClass('UiInitialized').uniform();
             $(this).find("*[rel=facebox]")
-                .not('.UiInitialized').addClass('UiInitialized').facebox();
+                .not('.UiInitialized').addClass('UiInitialized')
+                .click(function () {
+                    $('#facebox .footer .Caption').remove();
+                    $.get($(this).attr('data-captionurl'), 
+                        function (response) {
+                            $('#facebox .footer').append($(response).hide());
+                            $('#facebox .footer .Caption').fadeIn();
+                        });
+                }).facebox();
             $(this).find("*[rel=tooltip]")
                 .not('.UiInitialized').addClass('UiInitialized').tipsy({ gravity: 's' });
             $(this).find('input[type=text].DatePicker')

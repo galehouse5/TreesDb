@@ -84,14 +84,14 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.Name))
                 .ForMember(dest => dest.Position, opt => opt.MapFrom(src => src.Coordinates))
                 .ForMember(dest => dest.DefaultIconUrl, opt => opt.MapFrom(src => src.Site.Subsites.Count == 1 ? Links.images.icons.Site32_png : Links.images.icons.Subsite32_png))
-                .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Photos.Count == 0 ? null : Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare)))
+                .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Photos.Count == 0 ? null : Mvc.Photos.ViewPhoto(src.Photos[0].StaticId, PhotoSize.SmallMapSquare)))
                 .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.ImportSubsiteMarkerInfo(src.Site.Trip.Id, src.Id)));
 
             CreateMap<Model.Imports.TreeBase, MapMarkerModel>()
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.ScientificName))
                 .ForMember(dest => dest.Position, opt => opt.MapFrom(src => src.Coordinates))
                 .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue(Links.images.icons.SingleTrunkTree32_png))
-                .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Photos.Count == 0 ? null : Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare)))
+                .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Photos.Count == 0 ? null : Mvc.Photos.ViewPhoto(src.Photos[0].StaticId, PhotoSize.SmallMapSquare)))
                 .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.ImportTreeMarkerInfo(src.Subsite.Site.Trip.Id, src.Id)));
 
             CreateMap<Model.Sites.Site, MapMarkerModel>()
@@ -101,7 +101,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.MinZoom, opt => opt.UseValue(0))
                 .ForMember(dest => dest.MaxZoom, opt => opt.MapFrom(src => src.ContainsSingleSubsite ? 13 : 11))
                 .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Subsites.Count > 1 || src.Subsites[0].Photos.Count == 0 ?
-                    null : Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].PhotoId, PhotoSize.SmallMapSquare)))
+                    null : Mvc.Photos.ViewPhoto(src.Subsites[0].Photos[0].StaticId, PhotoSize.SmallMapSquare)))
                 .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.SiteMarkerInfo(src.Id)));
 
             CreateMap<Model.Sites.Subsite, MapMarkerModel>()
@@ -111,7 +111,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.MaxZoom, opt => opt.UseValue(13))
                 .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue(Links.images.icons.Subsite32_png))
                 .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Photos.Count == 0 ?
-                    null : Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare)))
+                    null : Mvc.Photos.ViewPhoto(src.Photos[0].StaticId, PhotoSize.SmallMapSquare)))
                 .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.SubsiteMarkerInfo(src.Site.Id, src.Id)));
 
             CreateMap<Model.Trees.Tree, MapMarkerModel>()
@@ -121,7 +121,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.MaxZoom, opt => opt.UseValue(30))
                 .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue(Links.images.icons.SingleTrunkTree32_png))
                 .ForMember(dest => dest.IconLoaderAction, opt => opt.MapFrom(src => src.Photos.Count == 0 ?
-                    null : Mvc.Photos.ViewPhoto(src.Photos[0].PhotoId, PhotoSize.SmallMapSquare)))
+                    null : Mvc.Photos.ViewPhoto(src.Photos[0].StaticId, PhotoSize.SmallMapSquare)))
                 .ForMember(dest => dest.InfoLoaderAction, opt => opt.MapFrom(src => Mvc.Map.TreeMarkerInfo(src.Id)));
         }
     }

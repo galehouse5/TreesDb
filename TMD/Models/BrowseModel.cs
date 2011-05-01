@@ -48,7 +48,7 @@ namespace TMD.Models
         public string CommonName { get; set; }
         [ScaffoldColumn(false)]
         public int SpeciesId { get; set; }
-        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
+        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false), Classification("Comment")]
         public string GeneralComments { get; set; } 
         [DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
         public Distance Height { get; set; }
@@ -171,7 +171,7 @@ namespace TMD.Models
         public string TripReportUrl { get; set; }
         [UIHint("ConcatenatedNames"), Emphasize(false)]
         public IList<Name> Visitors { get; set; }
-        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
+        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false), Classification("Comment")]
         public string Comments { get; set; }
     }
 
@@ -198,7 +198,7 @@ namespace TMD.Models
         public bool MakeOwnershipContactInfoPublic { get; set; }
         [DisplayName("Last visit"), DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime LastVisited { get; set; }
-        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
+        [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false), Classification("Comment")]
         public string LastVisitComments { get; set; }
     }
 
