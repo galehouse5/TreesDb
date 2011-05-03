@@ -37,15 +37,23 @@ namespace TMD.Utilities
                         initializeForPersistence();
                         Console.WriteLine(string.Format("Reimported {0} valid trips.", reimportValidTrips()));
                         return;
+                    case "-rit":
+                        if (args.Length < 2) { break; }
+                        int tripId = int.Parse(args[1]);
+                        initializeForPersistence();
+                        reimportTrip(tripId);
+                        Console.WriteLine(string.Format("Reimported trip {0}.", tripId));
+                        return;
                 }
             }
             Console.WriteLine(string.Empty);
             Console.WriteLine("TMD Utilities");
             Console.WriteLine(string.Empty);
-            Console.WriteLine("   -rpo      Remove photos without any photo references.");
-            Console.WriteLine("   -rpso     Remove photo store files without any associated photo.");
-            Console.WriteLine("   -logi     Logs an info message.");
-            Console.WriteLine("   -rivt     Reimport valid trips.");
+            Console.WriteLine("   -rpo            Remove photos without any photo references.");
+            Console.WriteLine("   -rpso           Remove photo store files without any associated photo.");
+            Console.WriteLine("   -logi           Logs an info message.");
+            Console.WriteLine("   -rivt           Reimport valid trips.");
+            Console.WriteLine("   -rit tripId     Reimport valid trips.");
             Console.WriteLine(string.Empty);
         }
 
@@ -86,6 +94,16 @@ namespace TMD.Utilities
                 }
                 uow.Persist();
                 return validTrips.Count();
+            }
+        }
+
+        static void reimportTrip(int tripId)
+        {
+            using (var uow = UnitOfWork.Begin())
+            {
+                var trip = Repositories.Imports.FindById(tripId);
+                Repositories.Imports.Reimport(trip);
+                uow.Persist();
             }
         }
 

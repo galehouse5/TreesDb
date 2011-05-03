@@ -201,13 +201,14 @@ namespace TMD.Model.Sites
             var subsite = new Subsite
             {
                 Trees = new List<Tree>(),
-                Visits = new List<SubsiteVisit> { SubsiteVisit.Create(importedSubsite) },
+                Visits = new List<SubsiteVisit>(),
                 Name = importedSubsite.Name,
                 State = importedSubsite.State,
                 County = importedSubsite.County,
                 Photos = new List<IPhoto>(),
                 Visitors = new List<Name>()
             };
+            subsite.AddVisit(SubsiteVisit.Create(importedSubsite));
             foreach (var tree in importedSubsite.Trees.Select(importedTree => Tree.Create(importedTree)))
             {
                 subsite.AddTree(tree);

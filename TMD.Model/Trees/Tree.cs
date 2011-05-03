@@ -127,12 +127,14 @@ namespace TMD.Model.Trees
         public static Tree Create(Imports.TreeBase importedTree)
         {
             importedTree.Subsite.Site.Trip.AssertIsImported();
-            return new Tree
+            Tree tree = new Tree
             {
-                Measurements = new List<Measurement> { Measurement.Create(importedTree) },
+                Measurements = new List<Measurement>(),
                 Photos = new List<IPhoto>(),
                 Measurers = new List<Name>()
-            }.RecalculateProperties();
+            };
+            tree.AddMeasurement(Measurement.Create(importedTree));            
+            return tree.RecalculateProperties();
         }
     }
 
