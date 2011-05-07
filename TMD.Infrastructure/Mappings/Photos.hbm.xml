@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="TMD.Model"
+                   namespace="TMD.Model.Photos" 
+                   schema="Photos"
+                   auto-import="false">
+  
+  <class name="PhotoStoreBase" table="Stores" abstract="true" >
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <discriminator column="Type"/>
+    <property name="IsActive" />
+    <subclass name="DiskPhotoStore" discriminator-value="2">
+      <property name="RootPath" />
+    </subclass>
+  </class>
+
+  <class name="Photo" table="Photos">
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
+    <component name="Size">
+      <property name="Height" />
+      <property name="Width" />
+    </component>
+    <property name="Bytes" />
+    <property name="Format" />
+    <many-to-one name="PermanentStore" column="StoreId" />
+  </class>
+
+  <class name="PhotoReferenceBase" abstract="true" table="[References]">
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <discriminator column="Type"/>
+    <many-to-one name="Photo" column="PhotoId" cascade="save-update"></many-to-one>
+    <subclass name="PublicPhotoReference" discriminator-value="1">
+    </subclass>
+    <subclass name="TMD.Model.Imports.SubsitePhotoReference" discriminator-value="2">
+      <many-to-one name="Subsite" column="ImportSubsiteId"></many-to-one>
+    </subclass>
+    <subclass name="TMD.Model.Imports.TreePhotoReference" discriminator-value="3">
+      <many-to-one name="Tree" column="ImportTreeId"></many-to-one>
+    </subclass>
+    <subclass name="TMD.Model.Sites.SubsitePhotoReference" discriminator-value="4">
+      <many-to-one name="Subsite" column="SubsiteId"></many-to-one>
+    </subclass>
+    <subclass name="TMD.Model.Sites.SubsiteVisitPhotoReference" discriminator-value="5">
+      <many-to-one name="SubsiteVisit" column="SubsiteVisitId"></many-to-one>
+    </subclass>
+    <subclass name="TMD.Model.Trees.TreePhotoReference" discriminator-value="6">
+      <many-to-one name="Tree" column="TreeId"></many-to-one>
+    </subclass>
+    <subclass name="TMD.Model.Trees.TreeMeasurementPhotoReference" discriminator-value="7">
+      <many-to-one name="TreeMeasurement" column="TreeMeasurementId"></many-to-one>
+    </subclass>
+  </class>
+  
+</hibernate-mapping>

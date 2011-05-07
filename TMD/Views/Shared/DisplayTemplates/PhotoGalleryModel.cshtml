@@ -1,0 +1,6 @@
+﻿@model TMD.Models.PhotoGalleryModel
+<ul class="gallery">
+    @foreach(var photo in Model.Photos) {
+        <li>@Html.Photo(photo)</li>
+    }
+</ul>

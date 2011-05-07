@@ -1,0 +1,6 @@
+﻿@model TMD.Model.Volume
+@if (!string.IsNullOrEmpty(ViewData.ModelMetadata.DisplayFormatString)) {
+    @Model.ToString(ViewData.ModelMetadata.DisplayFormatString.ParseEnum(VolumeFormat.Default))
+} else {
+    @Model.ToString()
+}

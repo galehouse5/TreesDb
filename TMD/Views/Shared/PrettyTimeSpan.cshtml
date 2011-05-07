@@ -1,0 +1,91 @@
+﻿@model TimeSpan
+@{ 
+    if (Model.TotalDays < 1)
+    {
+        ViewContext.Writer.Write("today");
+    }
+    else if (Model.TotalDays < 2)
+    {
+        ViewContext.Writer.Write("yesterday");
+    }
+    else if (Model.TotalDays < 3)
+    {
+        ViewContext.Writer.Write("two days ago");
+    }
+    else if (Model.TotalDays < 4)
+    {
+        ViewContext.Writer.Write("three days ago");
+    }
+    else if (Model.TotalDays < 8)
+    {
+        ViewContext.Writer.Write("this week");
+    }
+    else if (Model.TotalDays < 15)
+    {
+        ViewContext.Writer.Write("last week");
+    }
+    else if (Model.TotalDays < 22)
+    {
+        ViewContext.Writer.Write("two weeks ago");
+    }
+    else if (Model.TotalDays < 31)
+    {
+        ViewContext.Writer.Write("this month");
+    }
+    else if (Model.TotalDays < 61)
+    {
+        ViewContext.Writer.Write("last month");
+    }
+    else if (Model.TotalDays < 91)
+    {
+        ViewContext.Writer.Write("two months ago");
+    }
+    else if (Model.TotalDays < 121)
+    {
+        ViewContext.Writer.Write("three months ago");
+    }
+    else if (Model.TotalDays < 151)
+    {
+        ViewContext.Writer.Write("four months ago");
+    }
+    else if (Model.TotalDays < 181)
+    {
+        ViewContext.Writer.Write("five months ago");
+    }
+    else if (Model.TotalDays < 221)
+    {
+        ViewContext.Writer.Write("six months ago");
+    }
+    else if (Model.TotalDays < 366)
+    {
+        ViewContext.Writer.Write("this year");
+    }
+    else if (Model.TotalDays < 731)
+    {
+        ViewContext.Writer.Write("last year");
+    }
+    else if (Model.TotalDays < 1096)
+    {
+        ViewContext.Writer.Write("two years ago");
+    }
+    else if (Model.TotalDays < 1461)
+    {
+        ViewContext.Writer.Write("three years ago");
+    }
+    else if (Model.TotalDays < 1826)
+    {
+        ViewContext.Writer.Write("four years ago");
+    }
+    else if (Model.TotalDays < 2191)
+    {
+        ViewContext.Writer.Write("five years ago");
+    }
+    else if (Model.TotalDays < 2556)
+    {
+        ViewContext.Writer.Write("six years ago");
+    }
+    else
+    {
+        ViewContext.Writer.Write("over six years ago");
+    }
+}

@@ -2,25 +2,55 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using StructureMap;
+using System.Data;
 
 namespace TMD.Model
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWorkProvider : IDisposable
     {
-        void PersistAll();
-        void Clean();
+        IUnitOfWork Begin();
+        IUnitOfWork Begin(IsolationLevel isolationLevel);
+        void Refresh(object obj);
+        void Flush();
+    }
+
+    public interface IUnitOfWork : IDisposable
+    {
+        void Persist();
+        void Rollback();
     }
 
     public static class UnitOfWork
     {
-        public static void PersistAll()
+        private static IUnitOfWorkProvider Provider
         {
-            ModelRegistry.UnitOfWork.PersistAll();
+            get { return ObjectFactory.GetInstance<IUnitOfWorkProvider>(); }
         }
 
-        public static void Clean()
+        public static IUnitOfWork Begin()
         {
-            ModelRegistry.UnitOfWork.Clean();
+            return Provider.Begin();
+        }
+
+        public static IUnitOfWork Begin(IsolationLevel isolationLevel)
+        {
+            return Provider.Begin(isolationLevel);
+        }
+
+        public static void Dispose()
+        {
+            Provider.Dispose();
+        }
+
+        public static void Refresh(object obj)
+        {
+            Provider.Refresh(obj);
+        }
+
+        public static void Flush()
+        {
+            Provider.Flush();
         }
     }
 }

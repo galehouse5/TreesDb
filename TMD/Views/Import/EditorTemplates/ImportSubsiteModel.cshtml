@@ -1,0 +1,21 @@
+﻿@model TMD.Models.ImportSubsiteModel
+<div class="portlet x12 Subsite">        
+    <div class="portlet-header">
+        <h4>Enter subsite</h4>
+    </div>
+    <div class="portlet-content">
+        @Html.HiddenFor(m => m.Id)
+        @Html.FieldEditorFor(m => m.Name)
+        @Html.FieldEditorFor(m => m.State)
+        @Html.FieldEditorFor(m => m.County)
+        @Html.FieldEditorFor(m => m.OwnershipType)
+        @Html.FieldEditorFor(m => m.Coordinates)
+        @Html.FieldEditorFor(m => m.OwnershipContactInfo)
+        @Html.FieldEditorFor(m => m.MakeOwnershipContactInfoPublic)
+        @Html.FieldEditorFor(m => m.Comments)
+        @Html.FieldEditorFor(m => m.Photos)
+        <div class="buttonrow">
+            @Html.ImportInnerActionButton("Remove", ImportModelLevel.Subsite, Model.Id, ImportModelAction.Remove, ButtonColor.Grey)
+        </div>
+    </div>
+</div>

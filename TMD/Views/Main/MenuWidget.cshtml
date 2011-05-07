@@ -1,0 +1,6 @@
+﻿@model TMD.Models.MainMenuWidgetModel
+<li class="@(Model.IsSelected ? "mega mega-current" : "mega")">
+    @Html.ActionLink("Home", Mvc.Main.Index(), new { @class = "mega-link" })
+</li>
+
+

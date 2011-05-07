@@ -1,0 +1,5 @@
+﻿@model TMD.Models.CoordinatePickerModel
+@Html.EditorFor(m => m.Coordinates)
+<button type="button" data-markerloaderurl="@Url.Action(Model.MarkerLoaderAction)">
+    <img src="@Url.ManagedContent(Links.images.icons.Map_png)" alt="Coordinate picker" />
+</button>

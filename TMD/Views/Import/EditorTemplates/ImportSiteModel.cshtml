@@ -1,0 +1,38 @@
+﻿@model TMD.Models.ImportSiteModel
+<div class="portlet x12 Site">        
+    <div class="portlet-header">
+        <h4>Enter site</h4>
+    </div>
+    <div class="portlet-content">
+        @Html.HiddenFor(m => m.Id)
+        @Html.HiddenFor(m => m.IsEditing)
+        @Html.HiddenFor(m => m.IsSaveableAndRemovable)
+        @if (Model.Subsites.Count == 1) {
+            @Html.HiddenFor(m => m.Subsites[0].Id)
+            @Html.FieldEditorFor(m => m.Subsites[0].Name)
+            @Html.FieldEditorFor(m => m.Subsites[0].State)
+            @Html.FieldEditorFor(m => m.Subsites[0].County)
+            @Html.FieldEditorFor(m => m.Subsites[0].OwnershipType)
+            @Html.FieldEditorFor(m => m.Subsites[0].Coordinates)
+            @Html.FieldEditorFor(m => m.Subsites[0].OwnershipContactInfo)
+            @Html.FieldEditorFor(m => m.Subsites[0].MakeOwnershipContactInfoPublic)
+            @Html.FieldEditorFor(m => m.Subsites[0].Comments)
+            @Html.FieldEditorFor(m => m.Subsites[0].Photos)
+        } else {
+            @Html.FieldEditorFor(m => m.Name)
+            @Html.FieldEditorFor(m => m.Coordinates)
+            @Html.FieldEditorFor(m => m.Comments)
+            for(int subsiteIndex = 0; subsiteIndex < Model.Subsites.Count; subsiteIndex++) {
+                @Html.EditorFor(m => m.Subsites[subsiteIndex])
+            }
+        }
+        <div class="buttonrow">
+            @if (Model.IsSaveableAndRemovable) {
+                @Html.ImportInnerActionButton("Save", ImportModelLevel.Site, Model.Id, ImportModelAction.Save)
+                /* space here is needed for proper html rendering */ @:
+                @Html.ImportInnerActionButton("Remove", ImportModelLevel.Site, Model.Id, ImportModelAction.Remove, ButtonColor.Grey)
+            }
+            @Html.ImportInnerActionButton("Add subsite", ImportModelLevel.Site, Model.Id, ImportModelAction.Add, ButtonColor.Orange)
+        </div>
+    </div>
+</div>

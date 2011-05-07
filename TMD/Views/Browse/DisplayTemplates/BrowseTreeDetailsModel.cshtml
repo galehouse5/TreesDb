@@ -1,0 +1,31 @@
+﻿@model TMD.Models.BrowseTreeDetailsModel
+<tr>
+    <td class="description">Botanical name</td>
+    <td class="value"><a href="@Url.Action(Mvc.Browse.SpeciesDetails(Model.ScientificName, siteId: Model.SiteId))">@Html.DisplayFor(m => m.ScientificName)</a></td>
+</tr>
+<tr>
+    <td class="description">Common name</td>
+    <td class="value"><a href="@Url.Action(Mvc.Browse.SpeciesDetails(Model.ScientificName, siteId: Model.SiteId))">@Html.DisplayFor(m => m.CommonName)</a></td>
+</tr>
+@Html.ReportDisplayFor(m => m.Height)
+@Html.ReportDisplayFor(m => m.HeightMeasurementMethod)
+@Html.ReportDisplayFor(m => m.Girth)
+@Html.ReportDisplayFor(m => m.CrownSpread)
+@Html.ReportDisplayFor(m => m.ENTSPTS2)
+@Html.ReportDisplayFor(m => m.ENTSPTS)
+@Html.ReportDisplayFor(m => m.TDI3)
+@Html.ReportDisplayFor(m => m.TDI2)
+@if (Model.ChampionPoints.HasValue) {
+    @Html.ReportDisplayFor(m => m.ChampionPoints)
+}
+else if (Model.AbbreviatedChampionPoints.HasValue) {
+    @Html.ReportDisplayFor(m => m.AbbreviatedChampionPoints)
+} else {
+    <tr>
+        <td class="description">Champion points</td>
+        <td class="value">(not enough data)</td>
+    </tr>
+}
+@Html.ReportDisplayFor(m => m.Diameter)
+@Html.ReportDisplayFor(m => m.ConicalVolume)
+@Html.ReportDisplayFor(m => m.GeneralComments)

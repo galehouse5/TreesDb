@@ -2,179 +2,152 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
+using TMD.Model.Extensions;
+using TMD.Model.Photos;
 using TMD.Model.Users;
-using TMD.Model.Validation;
+using TMD.Model.Sites;
 
 namespace TMD.Model.Trees
 {
-    [Serializable]
-    public class Tree : EntityBase, IEntity, IIsValid
+    [DebuggerDisplay("{ScientificName} ({Id})")]
+    public class Tree : IEntity
     {
-        private Tree()
+        protected Tree()
         { }
 
-        public string Code { get; private set; }
-        public bool IsDeleted { get; private set; }
-        public User Deletor { get; private set; }
-        public DateTime Deleted { get; private set; }
-        public Measurement CurrentMeasurement { get; private set; }
-        internal IList<Measurement> MeasurementHistory { get; private set; }
+        public virtual int Id { get; private set; }
+        public virtual Subsite Subsite { get; protected internal set; }
+        public virtual GlobalMeasuredSpecies Species { get; private set; }
+        public virtual DateTime LastMeasured { get; private set; }
+        public virtual string CommonName { get; private set; }
+        public virtual string ScientificName { get; private set; }
+        public virtual Distance Height { get; private set; }
+        public virtual Imports.TreeHeightMeasurementMethod HeightMeasurementMethod { get; private set; }
+        public virtual Distance Girth { get; private set; }
+        public virtual Distance CrownSpread { get; private set; }
+        public virtual Coordinates Coordinates { get; private set; }
+        public virtual Coordinates CalculatedCoordinates { get; private set; }
+        public virtual Elevation Elevation { get; private set; }
 
-        public Measurement TakeNewMeasurement()
-        {
-            if (CurrentMeasurement.IsValid)
-            {
-                Measurement m = (Measurement)CurrentMeasurement.Clone();
-                m.Code = string.Format("{0:000}", int.Parse(m.Code) + 1);
-                MeasurementHistory.Add(CurrentMeasurement);
-                CurrentMeasurement = m;
-            }
-            return CurrentMeasurement;
+        public virtual Distance Diameter { get; private set; }
+        public virtual float? ENTSPTS { get; private set; }
+        public virtual Volume ConicalVolume { get; private set; }
+        public virtual float? ENTSPTS2 { get; private set; }
+        public virtual float? ChampionPoints { get; private set; }
+        public virtual float? AbbreviatedChampionPoints { get; private set; }
+
+        public virtual IList<IPhoto> Photos { get; private set; }
+        public virtual Measurement LastMeasurement { get { return (from m in Measurements orderby m.Measured select m).Last(); } }
+        public virtual IList<Name> Measurers { get; private set; }
+
+        public virtual Coordinates CalculateCoordinates() 
+        { 
+            return (from m in Measurements orderby m.Measured where m.Coordinates.IsSpecified select m.Coordinates).LastOrDefault() ?? Coordinates.Null(); 
         }
 
-        public Measurement CorrectCurrentMeasurement()
-        {
-            if (CurrentMeasurement.IsValid)
-            {
-                Measurement m = (Measurement)CurrentMeasurement.Clone();
-                MeasurementHistory.Add(CurrentMeasurement);
-                CurrentMeasurement = m;
-            }
-            return CurrentMeasurement;
+        public virtual Coordinates CalculateCalculatedCoordinates() 
+        { 
+            return (from m in Measurements orderby m.Measured where m.CalculatedCoordinates.IsSpecified select m.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); 
         }
 
-        public void Delete()
+        public virtual Tree RecalculateProperties()
         {
-            UserSession.User.AssertRole(EUserRoles.DataAdmin);
-            IsDeleted = true;
-            Deletor = UserSession.User;
-            Deleted = DateTime.Now;
+            LastMeasured = LastMeasurement.Measured;
+            CommonName = LastMeasurement.CommonName;
+            ScientificName = LastMeasurement.ScientificName;
+            Height = LastMeasurement.Height;
+            HeightMeasurementMethod = LastMeasurement.HeightMeasurementMethod;
+            Girth = LastMeasurement.Girth;
+            CrownSpread = LastMeasurement.CrownSpread;
+            Coordinates = CalculateCoordinates();
+            CalculatedCoordinates = CalculateCalculatedCoordinates();
+            Elevation = LastMeasurement.Elevation;
+            Diameter = LastMeasurement.Diameter;
+            ENTSPTS = LastMeasurement.ENTSPTS;
+            ConicalVolume = LastMeasurement.ConicalVolume;
+            ENTSPTS2 = LastMeasurement.ENTSPTS2;
+            ChampionPoints = LastMeasurement.ChampionPoints;
+            AbbreviatedChampionPoints = LastMeasurement.AbbreviatedChampionPoints;
+            Photos.RemoveAll().AddRange(from photo in LastMeasurement.Photos 
+                                        select new TreePhotoReference(photo.ToPhoto(), this));
+            Measurers.RemoveAll().AddRange(from measurement in Measurements
+                                           from measurer in measurement.Measurers
+                                           select measurer).Distinct();
+            MeasurementCount = Measurements.Count;
+            return this;
         }
 
-        public Measurer AddMeasurer()
+        public virtual float? TDI2 { get { return Species.CalculateTDI2(Height, Girth); } }
+        public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
+
+        public virtual IList<Measurement> Measurements { get; private set; }
+        public virtual int MeasurementCount { get; private set; }
+
+        public virtual void AddMeasurement(Measurement measurement)
         {
-            return CurrentMeasurement.AddMeasurer();
+            Measurements.Add(measurement);
+            measurement.Tree = this;
         }
 
-        public bool RemoveMeasurer(Measurer m)
+        public virtual bool RemoveMeasurement(Measurement measurement)
         {
-            return CurrentMeasurement.RemoveMeasurer(m);
+            if (Measurements.Remove(measurement))
+            {
+                measurement.Tree = null;
+                return true;
+            }
+            return false;
         }
 
-        public float TDI2
+        public virtual Tree Merge(Tree treeToMerge)
         {
-            get
+            foreach (var measurement in treeToMerge.Measurements)
             {
-                return (float)((double)CurrentMeasurement.Height.Feet / (double)TreeService.FindTreeOfGreatestHeightBySpecies(CurrentMeasurement.Species).CurrentMeasurement.Height.Feet
-                    + (double)CurrentMeasurement.GirthBreastHeight.Feet / (double)TreeService.FindTreeOfGreatestGirthBySpecies(CurrentMeasurement.Species).CurrentMeasurement.Height.Feet);
+                AddMeasurement(measurement);
             }
+            return RecalculateProperties();
         }
 
-        public float TDI3
+        public virtual bool ShouldMerge(Tree treeToMerge)
         {
-            get
+            if (!CommonName.Equals(treeToMerge.CommonName, StringComparison.OrdinalIgnoreCase)
+                || !ScientificName.Equals(treeToMerge.ScientificName, StringComparison.OrdinalIgnoreCase))
             {
-                return (float)((double)CurrentMeasurement.Height.Feet / (double)TreeService.FindTreeOfGreatestHeightBySpecies(CurrentMeasurement.Species).CurrentMeasurement.Height.Feet
-                    + (double)CurrentMeasurement.GirthBreastHeight.Feet / (double)TreeService.FindTreeOfGreatestGirthBySpecies(CurrentMeasurement.Species).CurrentMeasurement.Height.Feet
-                    + (double)CurrentMeasurement.TDICrownSpread.Feet / (double)TreeService.FindTreeOfGreatestTDICrownSpreadBySpecies(CurrentMeasurement.Species).CurrentMeasurement.Height.Feet);
+                return false;
             }
+            if (!Coordinates.IsSpecified || !treeToMerge.Coordinates.IsSpecified
+                || !Coordinates.Equals(treeToMerge.Coordinates))
+            {
+                return false;
+            }
+            return true;
         }
 
-        public static Tree Create()
+        public static Tree Create(Imports.TreeBase importedTree)
         {
-            Tree t = new Tree();
-            t.IsDeleted = false;
-            Measurement m = Measurement.Create();
-            m.Code = string.Format("{0:000}", 1);
-            t.CurrentMeasurement = m;
-            return t;
+            importedTree.Subsite.Site.Trip.AssertIsImported();
+            Tree tree = new Tree
+            {
+                Measurements = new List<Measurement>(),
+                Photos = new List<IPhoto>(),
+                Measurers = new List<Name>()
+            };
+            tree.AddMeasurement(Measurement.Create(importedTree));            
+            return tree.RecalculateProperties();
         }
+    }
 
-        public override bool IsValid
-        {
-            get
-            {
-                return base.IsValid
-                    && CurrentMeasurement.IsValid;
-            }
-        }
+    public class TreePhotoReference : PhotoReferenceBase
+    {
+        protected TreePhotoReference() { }
+        protected internal TreePhotoReference(Photo photo, Tree tree) : base(photo) { this.Tree = tree; }
+        public virtual Tree Tree { get; private set; }
+        public override bool IsAuthorizedToView(User user) { return true; }
 
-        public override IList<string> GetValidationErrors()
+        public override IList<Name> Photographers
         {
-            List<string> errors = new List<string>();
-            errors.AddRange(base.GetValidationErrors());
-            errors.AddRange(CurrentMeasurement.GetValidationErrors());
-            return errors;
-        }
-
-        public static Distance CalculateRuckerHeightIndex(int species, IEnumerable<Tree> trees)
-        {
-            Dictionary<string, float> speciesHeights = new Dictionary<string, float>();
-            foreach (Tree t in trees)
-            {
-                if (!t.CurrentMeasurement.Height.IsNull)
-                {
-                    if (!speciesHeights.ContainsKey(t.CurrentMeasurement.Species))
-                    {
-                        speciesHeights.Add(t.CurrentMeasurement.Species, t.CurrentMeasurement.Height.Feet);
-                    }
-                    else
-                    {
-                        speciesHeights[t.CurrentMeasurement.Species] = Math.Max(speciesHeights[t.CurrentMeasurement.Species], t.CurrentMeasurement.Height.Feet);
-                    }
-                }
-            }
-            if (speciesHeights.Count >= species)
-            {
-                List<float> sortedHeights = speciesHeights.Values.ToList();
-                sortedHeights.Sort();
-                double ruckerHeightIndex = 0d;
-                for (int i = sortedHeights.Count - 1; i > sortedHeights.Count - 1 - species; i--)
-                {
-                    ruckerHeightIndex += sortedHeights[i];
-                }
-                ruckerHeightIndex /= species;
-                return Distance.Create((float)ruckerHeightIndex);
-            }
-            else
-            {
-                return Distance.Null();
-            }
-        }
-
-        public static Distance CalculateRuckerGirthIndex(int species, IEnumerable<Tree> trees)
-        {
-            Dictionary<string, float> speciesGirths = new Dictionary<string, float>();
-            foreach (Tree t in trees)
-            {
-                if (!t.CurrentMeasurement.Height.IsNull)
-                {
-                    if (!speciesGirths.ContainsKey(t.CurrentMeasurement.Species))
-                    {
-                        speciesGirths.Add(t.CurrentMeasurement.Species, t.CurrentMeasurement.GirthBreastHeight.Feet);
-                    }
-                    else
-                    {
-                        speciesGirths[t.CurrentMeasurement.Species] = Math.Max(speciesGirths[t.CurrentMeasurement.Species], t.CurrentMeasurement.GirthBreastHeight.Feet);
-                    }
-                }
-            }
-            if (speciesGirths.Count >= species)
-            {
-                List<float> sortedGirths = speciesGirths.Values.ToList();
-                sortedGirths.Sort();
-                double ruckerGirthIndex = 0d;
-                for (int i = sortedGirths.Count - 1; i > sortedGirths.Count - 1 - species; i--)
-                {
-                    ruckerGirthIndex += sortedGirths[i];
-                }
-                ruckerGirthIndex /= species;
-                return Distance.Create((float)ruckerGirthIndex);
-            }
-            else
-            {
-                return Distance.Null();
-            }
+            get { return Tree.Measurers; }
         }
     }
 }

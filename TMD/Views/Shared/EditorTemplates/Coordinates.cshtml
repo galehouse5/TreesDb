@@ -1,0 +1,7 @@
+﻿@model TMD.Model.Coordinates
+@{ ViewBag.@class = ViewBag.@class == null ? "text" : ViewBag.@class + " text";
+   ViewBag.size = ViewBag.size ?? "40";
+   if (ViewData.ModelMetadata.IsReadOnly) {
+       ViewBag.disabled = true;
+   } }
+@Html.TextBoxFor(m => m, ViewData)

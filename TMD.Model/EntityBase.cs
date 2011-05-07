@@ -2,71 +2,76 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TMD.Model.Validation;
 using TMD.Model.Users;
 
 namespace TMD.Model
 {
-    [Serializable]
-    public class EntityBase : PropertyAttributeValidator, IIsValid, IEntity
+    public interface ISpecified
     {
-        protected EntityBase()
-        {
-            Created = DateTime.Now;
-            if (!UserSession.User.IsAnonymous)
-            {
-                Creator = UserSession.User;
-            }
-        }
+        bool IsSpecified { get; }
+    }
 
-        protected EntityBase(bool ignoreCreator)
-        {
-            Created = DateTime.Now;
-            if (!ignoreCreator && !UserSession.User.IsAnonymous)
-            {
-                Creator = UserSession.User;
-            }
-        }
+    public interface IEntity 
+    {
+        int Id { get; }
+    }
 
-        public Guid Id { get; private set; }
-        public DateTime Created { get; private set; }
-        public User Creator { get; private set; } 
-
-        public static bool operator ==(EntityBase e1, EntityBase e2)
-        {
-            if ((object)e1 == null || (object)e2 == null)
-            {
-                return (object)e1 == null && (object)e2 == null;
-            }
-            if (e1.Id == Guid.Empty || e2.Id == Guid.Empty)
-            {
-                return (object)e1 == (object)e2;
-            }
-            return e1.Id == e2.Id;
-        }
-
-        public static bool operator !=(EntityBase e1, EntityBase e2)
-        {
-            if ((object)e1 == null || (object)e2 == null)
-            {
-                return !((object)e1 == null && (object)e2 == null);
-            }
-            if (e1.Id == Guid.Empty || e2.Id == Guid.Empty)
-            {
-                return (object)e1 != (object)e2;
-            }
-            return e1.Id != e2.Id;
-        }
+    public abstract class EntityBase : IEntity
+    {
+        public virtual int Id { get; private set; }
 
         public override bool Equals(object obj)
         {
-            EntityBase e = obj as EntityBase;
-            return e != null && e == this;
+            EntityBase other = obj as EntityBase;
+            if (other == null)
+            {
+                return false;
+            }
+            if (!GetUnproxiedType().Equals(other.GetUnproxiedType()))
+            {
+                return false;
+            }
+            if (Id == 0)
+            {
+                return this == other;
+            }
+            return this.Id == other.Id;
+        }
+
+        public virtual Type GetUnproxiedType()
+        {
+            return this.GetType();
         }
 
         public override int GetHashCode()
         {
-            return Id.GetHashCode();
+            return GetUnproxiedType().GetHashCode()
+                ^ Id.GetHashCode();
         }
+    }
+
+    public abstract class UserCreatedEntityBase : EntityBase
+    {
+        protected UserCreatedEntityBase()
+            : this(false)
+        { }
+
+        protected UserCreatedEntityBase(bool recordCreationNow)
+        {
+            if (recordCreationNow)
+            {
+                this.RecordCreation();
+            }
+        }
+
+        protected internal virtual UserCreatedEntityBase RecordCreation()
+        {
+            Created = DateTime.Now;
+            Creator = UserSession.User;
+            return this;
+        }
+
+        public virtual DateTime Created { get; private set; }
+        public virtual User Creator { get; private set; }
     }
 }

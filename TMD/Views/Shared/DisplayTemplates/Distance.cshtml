@@ -1,0 +1,6 @@
+﻿@model TMD.Model.Distance
+@if (!string.IsNullOrEmpty(ViewData.ModelMetadata.DisplayFormatString)) {
+    @Model.ToString(ViewData.ModelMetadata.DisplayFormatString.ParseEnum(DistanceFormat.Default))
+} else {
+    @Model.ToString()
+}

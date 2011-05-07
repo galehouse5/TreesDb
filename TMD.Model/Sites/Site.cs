@@ -2,72 +2,176 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TMD.Common;
-using TMD.Model.Validation;
+using System.Diagnostics;
+using TMD.Model.Imports;
+using TMD.Model.Extensions;
 
 namespace TMD.Model.Sites
 {
-    [Serializable]
-    public class Site : EntityBase, IEntity
+    [DebuggerDisplay("{Name} ({Id})")]
+    public class Site : IEntity
     {
-        private string m_Name;
-        private string m_County;
+        protected Site()
+        { }
 
-        private Site()
+        public virtual int Id { get; private set; }
+        public virtual DateTime LastVisited { get; private set; }
+        public virtual string Name { get; private set; }
+        public virtual Coordinates Coordinates { get; private set; }
+        public virtual Coordinates CalculatedCoordinates { get; private set; }
+        public virtual float? RHI5 { get; private set; }
+        public virtual float? RHI10 { get; private set; }
+        public virtual float? RHI20 { get; private set; }
+        public virtual float? RGI5 { get; private set; }
+        public virtual float? RGI10 { get; private set; }
+        public virtual float? RGI20 { get; private set; }
+        public virtual int TreesWithSpecifiedCoordinatesCount { get; private set; }
+        public virtual SiteVisit LastVisit { get { return (from visit in Visits orderby visit.Visited select visit).Last(); } }
+        public virtual Coordinates CalculateCalculatedCoordinates() { return (from visit in Visits orderby visit.Visited where visit.CalculatedCoordinates.IsSpecified select visit.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
+        public virtual Coordinates CalculateCoordinates() { return (from visit in Visits orderby visit.Visited where visit.Coordinates.IsSpecified select visit.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
+        public virtual int CalculateTreesWithSpecifiedCoordinatesCount() { return (from ss in Subsites select ss.TreesWithSpecifiedCoordinatesCount).Sum(); }
+
+        public virtual float? CalculateRHI(int number)
         {
-            this.Country = Country.Null();
-            this.State = State.Null();
-            this.Coordinates = Coordinates.Null();
-            this.Subsites = new List<Subsite>();
+            var heightsByScientificName = from subsite in Subsites from tree in subsite.Trees
+                                          where tree.Height.IsSpecified
+                                          group tree by tree.ScientificName into treesByScientificName
+                                          select new { ScientificName = treesByScientificName.Key, Height = treesByScientificName.Max(tree => tree.Height.Feet) };
+            if (heightsByScientificName.Count() < number)
+            {
+                return null;
+            }
+            var orderedHeights = from heightByScientificName in heightsByScientificName
+                                 orderby heightByScientificName.Height descending
+                                 select heightByScientificName.Height;
+            return (float)(orderedHeights.Take(number).Sum(height => (double)height) / (double)number);
         }
 
-        public string Code { get; private set; }
-
-        [EmptyStringValidator("Site name must be specified.")]
-        [StringMaxLengthValidator("Site name must not exceed 100 characters.", 100)]
-        public string Name
+        public virtual float? CalculateRGI(int number)
         {
-            get { return m_Name; }
-            set { m_Name = value.Trim().ToTitleCase(); }
+            var girthsByScientificName = from subsite in Subsites from tree in subsite.Trees
+                                         where tree.Girth.IsSpecified
+                                         group tree by tree.ScientificName into treesByScientificName
+                                         select new { ScientificName = treesByScientificName.Key, Girth = treesByScientificName.Max(tree => tree.Girth.Feet) };
+            if (girthsByScientificName.Count() < number)
+            {
+                return null;
+            }
+            var orderedGirths = from girthByScientificName in girthsByScientificName
+                                orderby girthByScientificName.Girth descending
+                                select girthByScientificName.Girth;
+            return (float)(orderedGirths.Take(number).Sum(height => (double)height) / (double)number);
         }
 
-        [IsNullValidator("Site country must be specified.")]
-        [IsValidValidator("Site country must be valid.")]
-        public Country Country { get; set; }
-
-        [IsNullValidator("Site state must be specified.")]
-        [IsValidValidator("Site state must be valid.")]
-        public State State { get; set; }
-
-        [EmptyStringValidator("Site county must be specified.")]
-        [StringMaxLengthValidator("Site county must not exceed 100 characters,", 100)]
-        public string County
+        public virtual Site RecalculateProperties()
         {
-            get { return m_County; }
-            set { m_County = value.Trim().ToTitleCase(); }
+            LastVisited = LastVisit.Visited;
+            Coordinates = CalculateCoordinates();
+            CalculatedCoordinates = CalculateCalculatedCoordinates();
+            RHI5 = CalculateRHI(5);
+            RHI10 = CalculateRHI(10);
+            RHI20 = CalculateRHI(20);
+            RGI5 = CalculateRGI(5);
+            RGI10 = CalculateRGI(10);
+            RGI20 = CalculateRGI(20);
+            VisitCount = Visits.Count;
+            SubsiteCount = Subsites.Count;
+            TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
+            Visitors.RemoveAll().AddRange((from visit in Visits
+                                           from visitor in visit.Visitors
+                                           select visitor).Distinct());
+            return this;
         }
 
-        [IsNullValidator("Site coordinates must be specified.")]
-        [IsValidValidator("Site coordinates must be valid.")]
-        public Coordinates Coordinates { get; set; }
+        public virtual IList<SiteVisit> Visits { get; private set; }
+        public virtual int VisitCount { get; private set; }
+        public virtual IList<Subsite> Subsites { get; private set; }
+        public virtual int SubsiteCount { get; private set; }
+        public virtual IList<Name> Visitors { get; private set; }
 
-        internal IList<Subsite> Subsites { get; private set; }
-
-        public Subsite AddSubsite()
+        public virtual void AddSubsite(Subsite subsite)
         {
-            Subsite subsite = new Subsite();
             Subsites.Add(subsite);
-            return subsite;
+            subsite.Site = this;
         }
 
-        public bool RemoveSubsite(Subsite subsite)
+        public virtual bool RemoveSubsite(Subsite subsite)
         {
-            return Subsites.Remove(subsite);
+            if (Subsites.Remove(subsite))
+            {
+                subsite.Site = null;
+                return true;
+            }
+            return false;
         }
 
-        public static Site Create()
+        public virtual bool ContainsSingleSubsite
         {
-            return new Site();
+            get { return Subsites.Count == 1; }
+        }
+
+        public virtual int TreesMeasured
+        {
+            get { return (from subsite in Subsites select subsite.Trees.Count).Sum(); }
+        }
+
+        public const float CoordinateMinutesEquivalenceProximity = 25f;
+        public virtual bool ShouldMerge(Site siteToMerge)
+        {
+            if (!Name.Equals(siteToMerge.Name, StringComparison.OrdinalIgnoreCase))
+            {
+                return false;
+            }
+            if (CalculatedCoordinates.CalculateDistanceInMinutesTo(siteToMerge.CalculatedCoordinates) > CoordinateMinutesEquivalenceProximity)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public virtual Site Merge(Site siteToMerge)
+        {
+            Visits.AddRange(siteToMerge.Visits);
+            var subsitesToMerge = from subsiteToMerge in siteToMerge.Subsites
+                                  where ShouldMerge(subsiteToMerge)
+                                  select subsiteToMerge;
+            subsitesToMerge.ForEach(subsite => Merge(subsite));
+            var subsitesToAdd = from subsiteToAdd in siteToMerge.Subsites
+                                where !ShouldMerge(subsiteToAdd)
+                                select subsiteToAdd;
+            subsitesToAdd.ForEach(subsite => AddSubsite(subsite));
+            return RecalculateProperties();
+        }
+
+        public virtual bool ShouldMerge(Subsite subsiteToMerge)
+        {
+            return (from subsite in Subsites
+                    where subsite.ShouldMerge(subsiteToMerge)
+                    select 1).Count() > 0;
+        }
+
+        public virtual Subsite Merge(Subsite subsiteToMerge)
+        {
+            return (from subsite in Subsites
+                    where subsite.ShouldMerge(subsiteToMerge)
+                    select subsite).First().Merge(subsiteToMerge);
+        }
+
+        public static Site Create(Imports.Site importedSite)
+        {
+            importedSite.Trip.AssertIsImported();
+            var site = new Site
+            {
+                Subsites = new List<Subsite>(),
+                Visits = new List<SiteVisit> { SiteVisit.Create(importedSite) },
+                Name = importedSite.Name,
+                Visitors = new List<Name>()
+            };
+            foreach (var subsite in importedSite.Subsites.Select(importedSubsite => Subsite.Create(importedSubsite)))
+            {
+                site.AddSubsite(subsite);
+            }
+            return site.RecalculateProperties();
         }
     }
 }

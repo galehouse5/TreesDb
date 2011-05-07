@@ -1,0 +1,10 @@
+﻿@model Enum
+@Html.DropDownListFor(m => m,
+    from Enum value in Enum.GetValues(Model.GetType())
+    select new SelectListItem
+    {
+        Text = "NotSpecified".Equals(value.ToString()) && string.Empty.Equals(value.Describe()) ?
+            "None selected" : value.Describe(),
+        Value = value.ToString("D"),
+        Selected = Model.Equals(value)
+    })

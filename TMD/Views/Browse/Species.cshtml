@@ -1,0 +1,33 @@
+﻿@model EntityPage<TMD.Model.Trees.GlobalMeasuredSpecies>
+@{ ViewBag.Title = "Browse Species"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () { $('tfoot input[title!=""]').fieldtag({ markedClass: "search_init" }); });
+    </script>
+}
+
+<div class="portlet x12">
+	<div class="portlet-header">
+        <h4>Species</h4>
+        <ul class="portlet-tab-nav">
+            <li class="portlet-tab-nav-ignore">
+                <a href="@Url.Action(Mvc.Export.SpeciesByFilters(Request["BotanicalNameFilter"], Request["CommonNameFilter"]))">Export tree data</a>
+            </li>
+        </ul>
+    </div>
+	<div class="portlet-content">
+        @(Html.DataTablesGrid<TMD.Model.Trees.MeasuredSpecies>(
+            columns: builder =>
+            {
+                builder
+                    .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.ScientificName)))
+                    .Options(header: "Botanical name", canFilter: true, filterTitle: "Search botanical names");
+                builder
+                    .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName)))
+                    .Options(header: "Common name", canFilter: true, filterTitle: "Search common names");
+            },
+            rowsPerPage: 50,
+            dataSource: Model.Page, filteredRowCount: Model.FilteredItems, totalRowCount: Model.TotalItems))
+    </div>
+</div>

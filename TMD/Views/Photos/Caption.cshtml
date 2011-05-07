@@ -1,0 +1,16 @@
+﻿@model TMD.Models.PhotoCaptionModel
+<div class="Caption" style="float: left; text-align: left;">
+    <div>
+        @{
+            object[] argumentAnchors = new object[Model.ContextArguments.Count];
+            for (int i = 0; i < Model.ContextArguments.Count; i++)
+            {
+                argumentAnchors[i] = Html.ActionLink(Model.ContextArguments[i], Model.ContextArgumentActionNames[i], Model.ContextArgumentRouteValues[i]);
+            }
+        }
+        @Html.Raw(string.Format(Model.ContextFormat, argumentAnchors)) 
+    </div>
+    <div style="color: #999999;">
+        Taken by @Html.DisplayFor(m => m.Photographers)
+    </div>
+</div>

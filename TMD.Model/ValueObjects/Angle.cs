@@ -3,69 +3,50 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Validation;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
-    [Serializable]
-    public class Angle : ICloneable, IIsValid, IIsNull
+    public enum AngleFormat
     {
-        public enum EInputFormat
-        {
-            Invalid,
-            Decimal
-        }
+        Invalid = 0,
+        Unspecified = 1,
+        Default = 2,
+        Decimal = 3
+    }
 
+    public class Angle : ISpecified
+    {
         private Angle()
-        {
-            this.InputFormat = EInputFormat.Decimal;
-        }
+        { }
 
-        private Angle(float degrees, EInputFormat inputFormat) 
-        {
-            this.Degrees = degrees;
-            this.InputFormat = inputFormat;
-        }
+        public string RawValue { get; private set; }
 
+        [Within2(0f, 90f, Inclusive = true, Message = "Angle must be in the range of 0 to 90 degrees.", Tags = ValidationTag.Screening)]
         public float Degrees { get; private set; }
-        public EInputFormat InputFormat { get; private set; }
+
+        [NotEquals(AngleFormat.Invalid, Message = "Angle must be in decimal format.", Tags = ValidationTag.Screening)]
+        public AngleFormat InputFormat { get; private set; }
+
+        public float Radians { get { return (float)(((double)Degrees / 360d) * 2d * Math.PI); } }
+        public bool IsSpecified { get { return InputFormat != AngleFormat.Unspecified; } }
 
         public override string ToString()
         {
-            string s;
             switch (InputFormat)
             {
-                case EInputFormat.Decimal :
-                    s = Degrees.ToString();
-                    break;
-                default :
-                    s = string.Empty;
-                    break;
+                case AngleFormat.Default:
+                case AngleFormat.Decimal:
+                    return Degrees.ToString();
+                default:
+                    return RawValue;
             }
-            return s;
-        }
-
-        public static bool operator ==(Angle a1, Angle a2)
-        {
-            if ((object)a1 == null || (object)a2 == null)
-            {
-                return (object)a1 == null && (object)a2 == null;
-            }
-            return a1.Degrees == a2.Degrees;
-        }
-
-        public static bool operator !=(Angle a1, Angle a2)
-        {
-            if ((object)a1 == null || (object)a2 == null)
-            {
-                return !((object)a1 == null && (object)a2 == null);
-            }
-            return a1.Degrees != a2.Degrees;
         }
 
         public override bool Equals(object obj)
         {
-            Angle a = obj as Angle;
-            return a != null && a == this;
+            var other = obj as Angle;
+            return other != null && Degrees.Equals(other.Degrees);
         }
 
         public override int GetHashCode()
@@ -76,53 +57,50 @@ namespace TMD.Model
         public static Angle Create(string s)
         {
             float degrees;
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                return new Angle()
+                {
+                    Degrees = 0,
+                    InputFormat = AngleFormat.Unspecified,
+                    RawValue = s
+                };
+            }
             if (float.TryParse(s.Trim(), out degrees))
             {
-                return new Angle(degrees, EInputFormat.Decimal);
+                return new Angle()
+                {
+                    Degrees = degrees,
+                    InputFormat = AngleFormat.Decimal,
+                    RawValue = s
+                };
             }
-            return new Angle(0f, EInputFormat.Invalid);
+            return new Angle()
+            {
+                Degrees = 0f,
+                InputFormat = AngleFormat.Invalid,
+                RawValue = s
+            };
+        }
+
+        public static Angle Create(float degrees)
+        {
+            return new Angle()
+            {
+                Degrees = degrees,
+                InputFormat = AngleFormat.Default,
+                RawValue = degrees.ToString()
+            };
         }
 
         public static Angle Null()
         {
-            return new Angle(0f, EInputFormat.Decimal);
-        }
-
-        #region ICloneable Members
-
-        public object Clone()
-        {
-            return new Angle(this.Degrees, this.InputFormat);
-        }
-
-        #endregion
-
-        #region IIsValid Members
-
-        public bool IsValid
-        {
-            get { return InputFormat != EInputFormat.Invalid; }
-        }
-
-        public IList<string> GetValidationErrors()
-        {
-            List<string> errors = new List<string>();
-            if (InputFormat == EInputFormat.Invalid)
+            return new Angle()
             {
-                errors.Add("Angle must be in decimal format.");
-            }
-            return errors;
+                Degrees = 0f,
+                InputFormat = AngleFormat.Unspecified,
+                RawValue = string.Empty
+            };
         }
-
-        #endregion
-
-        #region IIsNull Members
-
-        public bool IsNull
-        {
-            get { return Degrees == 0f; }
-        }
-
-        #endregion
     }
 }

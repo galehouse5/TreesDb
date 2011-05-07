@@ -3,38 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TMD.Model.Users;
+using StructureMap;
 
 namespace TMD.Model
 {
-    public interface IUserSession
+    public interface IUserSessionProvider
     {
-        DateTime StartTime { get; }
+        bool IsAnonymous { get; }
         User User { get; }
+    }
 
-        void Start(User user);
-        void End(User user);
+    public class NullUserSessionProvider : IUserSessionProvider
+    {
+        public bool IsAnonymous { get { return true; } }
+        public User User { get { return null; } }
     }
 
     public static class UserSession
     {
-        public static DateTime StartTime
+        private static IUserSessionProvider Provider
         {
-            get { return ModelRegistry.UserSession.StartTime; }
+            get { return ObjectFactory.GetInstance<IUserSessionProvider>(); }
         }
 
-        public static User User 
+        public static bool IsAnonymous
         {
-            get { return ModelRegistry.UserSession.User; }
+            get { return Provider.IsAnonymous; }
         }
 
-        public static void Start(User user)
+        public static User User
         {
-            ModelRegistry.UserSession.Start(user);
-        }
-
-        public static void End(User user)
-        {
-            ModelRegistry.UserSession.End(user);
+            get { return Provider.User; }
         }
     }
 }

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="TMD.Model"
+                   namespace="TMD.Model.Users">
+
+  <class name="User" table="Users.Users">
+    <id name="Id">
+      <generator class="native"/>
+    </id>
+    <property name="Email"/>
+    <property name="Firstname"/>
+    <property name="Lastname"/>
+    <component name="Password" class="Password">
+      <property name="Hash" column="PasswordHash" />
+      <property name="Numerics" column="PasswordNumerics" />
+      <property name="Uppercase" column="PasswordUppercase" />
+      <property name="Lowercase" column="PasswordLowercase" />
+      <property name="Specials" column="PasswordSpecials" />
+      <property name="Length" column="PasswordLength" />
+    </component>
+    <property name="Created" />
+    <property name="LastActivity" />
+    <property name="LastLogon" column="LastLogin" />
+    <component name="EmailVerificationToken" class="SecureToken">
+      <property name="Value" column="EmailVerificationToken"/>
+    </component>
+    <property name="EmailVerified" />
+    <property name="RecentlyFailedLogonAttempts" column="RecentlyFailedLoginAttempts" />
+    <property name="LastFailedLogonAttempt" column="LastFailedLoginAttempt" />
+    <component name="ForgottenPasswordAssistanceToken" class="SecureToken" >
+      <property name="Value" column="ForgottenPasswordAssistanceToken"/>
+    </component>
+    <property name="ForgottenPasswordAssistanceTokenIssued" />
+    <property name="ForgottenPasswordAssistanceTokenUsed" />
+    <property name="Roles"/>
+  </class>
+  
+</hibernate-mapping>

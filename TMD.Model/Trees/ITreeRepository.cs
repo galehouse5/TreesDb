@@ -2,29 +2,43 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TMD.Model.Sites;
 
 namespace TMD.Model.Trees
 {
-    interface ITreeRepository
+    public interface ITreeRepository
     {
-        Tree FindBy(Guid id);
-        void Update(Tree tree);
+        void Save(Tree tree);
+        Tree FindById(int id);
+        IList<Tree> ListAll();
+        IList<Tree> ListByBotanicalNameAndSiteId(string botanicalName, int siteId);
+        void RemoveMeasurementsByTrip(Imports.Trip trip);
+        IList<Tree> ListByState(int stateId);
+        IList<Tree> ListByBotanicalName(string botanicalName);
+        IList<Tree> ListByBotanicalNameAndCommonNameFilters(string botanicalName, string commonName);
+        IList<Tree> ListByStateSiteAndSubsiteFilters(string state, string site, string subsite);
 
-        IList<Tree> FindUniqueSpeciesOfGreatestHeightByCountry(Country c);
-        IList<Tree> FindUniqueSpeciesOfGreatestHeightByState(State s);
-        IList<Tree> FindUniqueSpeciesOfGreatestHeightByCounty(string c);
-        IList<Tree> FindUniqueSpeciesOfGreatestHeightBySite(Site s);
-        IList<Tree> FindUniqueSpeciesOfGreatestHeightBySubsite(Subsite s);
+        IList<KnownSpecies> ListKnownSpeciesBySimilarCommonName(string commonName, int results);
+        IList<KnownSpecies> ListKnownSpeciesBySimilarScientificName(string scientificName, int results);
 
-        IList<Tree> FindUniqueSpeciesWithSingleTrunkOfGreatestGirthByCountry(Country c);
-        IList<Tree> FindUniqueSpeciesWithSingleTrunkOfGreatestGirthtByState(State s);
-        IList<Tree> FindUniqueSpeciesWithSingleTrunkOfGreatestGirthByCounty(string c);
-        IList<Tree> FindUniqueSpeciesWithSingleTrunkOfGreatestGirthBySite(Site s);
-        IList<Tree> FindUniqueSpeciesWithSingleTrunkOfGreatestGirthBySubsite(Subsite s);
+        EntityPage<T> ListAllMeasuredSpecies<T>(SpeciesBrowser browser) where T : MeasuredSpecies;
+        GlobalMeasuredSpecies FindMeasuredSpeciesByBotanicalName(string botanicalName);
+        StateMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndStateId(string botanicalName, int stateId);
+        SiteMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndSiteId(string botanicalName, int siteId);
+        SubsiteMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndSubsiteId(string botanicalName, int subsiteId);
+        IList<StateMeasuredSpecies> ListMeasuredSpeciesForStatesByBotanicalName(string botanicalName);
+        IList<SiteMeasuredSpecies> ListMeasuredSpeciesForSitesByBotanicalNameAndStateId(string botanicalName, int stateId);
+        IList<SubsiteMeasuredSpecies> ListMeasuredSpeciesBySubsiteId(int id);
+        IList<StateMeasuredSpecies> ListMeasuredSpeciesByStateId(int id);
+    }
 
-        Tree FindTreeOfGreatestHeightBySpecies(string s);
-        Tree FindTreeOfGreatestGirthBySpecies(string s);
-        Tree FindTreeOfGreatestTDICrownSpreadBySpecies(string s);
+    public class SpeciesBrowser : IPagingOptions
+    {
+        public enum Property { BotanicalName, CommonName }
+        public Property? SortProperty { get; set; }
+        public bool SortAscending { get; set; }
+        public string BotanicalNameFilter { get; set; }
+        public string CommonNameFilter { get; set; }
+        public int PageIndex { get; set; }
+        public int PageSize { get; set; }
     }
 }

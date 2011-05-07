@@ -1,0 +1,51 @@
+﻿@model IList<TMD.Models.ImportTripSummaryModel>
+@{ ViewBag.Title = "Import"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+
+@section Styles {
+    <link href="@Url.ManagedContent(Links.css.Import_css)" rel="Stylesheet" type="text/css" />
+}
+
+<div class="portlet x12">
+    <div class="portlet-header">
+        <h4>New import</h4>
+    </div>
+    <div class="portlet-content">
+        @using (Html.BeginForm(Mvc.Import.New(), FormMethod.Post, new { @class = "form" })) {
+            @Html.Partial("StartSteps")
+            <div class="buttonrow">
+                @Html.SubmitButton("Start")
+            </div>
+        }
+    </div>
+</div>
+
+@if (Model.Where(t => !t.IsImported).Count() > 0) {
+    <div class="portlet x12 Trips">
+        <div class="portlet-header">
+            <h4>Started imports</h4>
+        </div>
+        <div class="portlet-content">
+            @using(Html.BeginForm()) {
+                foreach (var trip in Model.Where(t => !t.IsImported)) { 
+                    @Html.EditorFor(m => trip)
+                }
+            }
+        </div>
+    </div>
+}
+
+@if (Model.Where(t => t.IsImported).Count() > 0) {
+    <div class="portlet x12 Trips">
+        <div class="portlet-header">
+            <h4>Finished imports</h4>
+        </div>
+        <div class="portlet-content">
+            @using(Html.BeginForm()) {
+                foreach (var trip in Model.Where(t => t.IsImported)) { 
+                    @Html.EditorFor(m => trip)
+                }
+            }
+        </div>
+    </div>
+}
+

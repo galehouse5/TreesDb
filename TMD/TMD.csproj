@@ -6,13 +6,14 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AB477BD8-BB4B-4B7D-BD34-7975EC5F6D2F}</ProjectGuid>
-    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectGuid>{43C1791D-5894-4EB6-9772-1E1470FA80CF}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TMD</RootNamespace>
     <AssemblyName>TMD</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,94 +33,412 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\ThirdPartyAssemblies\AutoMapper\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\LazyLoading\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate.ByteCode.LinFu, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\LazyLoading\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Validator, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=70154e18752585bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\NHibernate.Validator\NHibernate.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="Recaptcha, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\reCAPTCHA .NET\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=2.6.1.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\StructureMap\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseStats.ascx.cs">
-      <DependentUpon>DatabaseStats.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="AccountController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseStats.ascx.designer.cs">
-      <DependentUpon>DatabaseStats.ascx</DependentUpon>
+    <Compile Include="Binders\BinderBase.cs" />
+    <Compile Include="Binders\ImportBinders.cs" />
+    <Compile Include="Binders\ValueObjectBinders.cs" />
+    <Compile Include="BrowseController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
-    <Compile Include="Import\Import.aspx.cs">
-      <DependentUpon>Import.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BrowseController.cs" />
+    <Compile Include="Controllers\ControllerBase.cs" />
+    <Compile Include="Controllers\ControllerFactory.cs" />
+    <Compile Include="Controllers\TreesController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\ExportController.cs" />
+    <Compile Include="Controllers\ImportController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Controllers\MapController.cs" />
+    <Compile Include="Controllers\PhotosController.cs" />
+    <Compile Include="Emails\PasswordAssistanceEmail.cs" />
+    <Compile Include="Emails\EmailVerificationEmail.cs" />
+    <Compile Include="ErrorController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
-    <Compile Include="Import\Import.aspx.designer.cs">
-      <DependentUpon>Import.aspx</DependentUpon>
+    <Compile Include="ExportController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
-    <Compile Include="Import\ImportSteps.ascx.cs">
-      <DependentUpon>ImportSteps.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Import\ImportSteps.ascx.designer.cs">
-      <DependentUpon>ImportSteps.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Import\ImportTripInfo.aspx.cs">
-      <DependentUpon>ImportTripInfo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Import\ImportTripInfo.aspx.designer.cs">
-      <DependentUpon>ImportTripInfo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="JavascriptDisabled.ascx.cs">
-      <DependentUpon>JavascriptDisabled.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="JavascriptDisabled.ascx.designer.cs">
-      <DependentUpon>JavascriptDisabled.ascx</DependentUpon>
-    </Compile>
+    <Compile Include="Extensions\AttributesExtensions.cs" />
+    <Compile Include="Extensions\CaptchaExtensions.cs" />
+    <Compile Include="Extensions\DataTablesGrid.cs" />
+    <Compile Include="Extensions\NameValueCollectionExtensions.cs" />
+    <Compile Include="Extensions\PhotoExtensions.cs" />
+    <Compile Include="Extensions\DisplayExtensions.cs" />
+    <Compile Include="Extensions\SessionExtensions.cs" />
+    <Compile Include="Extensions\TempDataExtensions.cs" />
+    <Compile Include="Extensions\FluentTagBuilder.cs" />
+    <Compile Include="Extensions\LabelExtensions.cs" />
+    <Compile Include="Extensions\EditorExtensions.cs" />
+    <Compile Include="Extensions\ControllerExtensions.cs" />
+    <Compile Include="Extensions\ButtonExtensions.cs" />
+    <Compile Include="Extensions\UrlHelperExtensions.cs" />
+    <Compile Include="Extensions\ValidationExtensions.cs" />
+    <Compile Include="Extensions\ViewDataExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ImportController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MainController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MapController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mappings\AccountMapping.cs" />
+    <Compile Include="Mappings\BrowseMapping.cs" />
+    <Compile Include="Mappings\MapMapping.cs" />
+    <Compile Include="Mappings\ImportMapping.cs" />
+    <Compile Include="Mappings\PhotosMapping.cs" />
+    <Compile Include="Mappings\ValidationMapper.cs" />
+    <Compile Include="Mappings\ValidationMapping\MessageMapper.cs" />
+    <Compile Include="Mappings\ValidationMapping\PathMapper.cs" />
+    <Compile Include="Mappings\ValidationMapping\PathMatcher.cs" />
+    <Compile Include="Extensions\ModelMetadataExtensions.cs" />
+    <Compile Include="Models\AccountModel.cs" />
+    <Compile Include="Models\BrowseModel.cs" />
+    <Compile Include="Models\ExportModel.cs" />
+    <Compile Include="Models\MapModel.cs" />
+    <Compile Include="Models\ImportModel.cs" />
+    <Compile Include="Models\MainModel.cs" />
+    <Compile Include="Models\PhotosModel.cs" />
+    <Compile Include="PhotosController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TMDSite.Master.cs">
-      <DependentUpon>TMDSite.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="SharedController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
-    <Compile Include="TMDSite.Master.designer.cs">
-      <DependentUpon>TMDSite.Master</DependentUpon>
+    <Compile Include="T4MVC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
-    <Compile Include="TMDRegistry.cs" />
-    <Compile Include="TMDSettings.cs" />
-    <Compile Include="TMDWizard.master.cs">
-      <DependentUpon>TMDWizard.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TreesController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
-    <Compile Include="TMDWizard.master.designer.cs">
-      <DependentUpon>TMDWizard.master</DependentUpon>
-    </Compile>
-    <Compile Include="WebApplicationSessionProvider.cs" />
+    <Compile Include="WebApplicationRegistry.cs" />
+    <Compile Include="WebApplicationSettings.cs" />
+    <Compile Include="WebUserSessionProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Account\" />
-    <Folder Include="Services\" />
-    <Folder Include="Styles\ThirdParty\" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\Import.css" />
+    <Content Include="css\jquery\images\ui-bg_flat_0_000000_40x100.png" />
+    <Content Include="css\jquery\images\ui-bg_flat_70_ffffff_40x100.png" />
+    <Content Include="css\jquery\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\jquery\images\ui-bg_glass_0_255648_1x400.png" />
+    <Content Include="css\jquery\images\ui-bg_glass_15_255648_1x400.png" />
+    <Content Include="css\jquery\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\jquery\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="css\jquery\images\ui-icons_000000_256x240.png" />
+    <Content Include="css\jquery\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\jquery\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\jquery\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\jquery\jquery-ui-1.8.7.custom.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\LoginOnly.css">
+      <DependentUpon>Css.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="css\LoginOnly.min.css">
+      <DependentUpon>Css.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="css\Shared.css">
+      <DependentUpon>Css.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="css\Shared.min.css">
+      <DependentUpon>Css.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="css\Theme\Shared.css" />
+    <Content Include="css\plugin\dataTables.css" />
+    <Content Include="css\plugin\facebox.css" />
+    <Content Include="css\plugin\jquery.visualize.css" />
+    <Content Include="css\plugin\tipsy.css" />
+    <Content Include="css\plugin\uniform.default.css" />
+    <Content Include="css\screen.css" />
+    <Content Include="css\screen\buttons.css" />
+    <Content Include="css\screen\layout.css" />
+    <Content Include="css\screen\mega.css" />
+    <Content Include="css\screen\reset.css" />
+    <Content Include="css\screen\text.css" />
+    <Content Include="css\screen\xGrid.css" />
+    <Content Include="css\Theme\Plugin.css" />
+    <Content Include="css\Theme\Login.css" />
+    <Content Include="css\Theme\Screen.css" />
+    <Content Include="Emails\EmailVerification.htm" />
+    <Content Include="Emails\PasswordAssistance.htm" />
+    <Content Include="Global.asax" />
+    <Content Include="images\accordion_header.png" />
+    <Content Include="images\amp-btn-icon-sprite.png" />
+    <Content Include="images\avatar.jpg" />
+    <Content Include="images\back_disabled.png" />
+    <Content Include="images\back_enabled.png" />
+    <Content Include="images\bg-dark.png" />
+    <Content Include="images\bg-lite.png" />
+    <Content Include="images\button-gradient.png" />
+    <Content Include="images\button_sprite.png" />
+    <Content Include="images\closelabel.gif" />
+    <Content Include="images\cross.png" />
+    <Content Include="images\email.png" />
+    <Content Include="images\icon.ico" />
+    <Content Include="images\forward_disabled.png" />
+    <Content Include="images\forward_enabled.png" />
+    <Content Include="images\header_bg.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\icons\Calendar.gif" />
+    <Content Include="images\icons\Map.png" />
+    <Content Include="images\icons\MultiTrunkTree32.png" />
+    <Content Include="images\icons\SingleTrunkTree32.png" />
+    <Content Include="images\icons\Site32.png" />
+    <Content Include="images\icons\Subsite32.png" />
+    <Content Include="images\icons\Trip32.png" />
+    <Content Include="images\link-menu-arrow.png" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\page_white_copy.png" />
+    <Content Include="images\page_white_go.png" />
+    <Content Include="images\pencil.png" />
+    <Content Include="images\portlet-header-bg.png" />
+    <Content Include="images\printer.png" />
+    <Content Include="images\sort_asc.png" />
+    <Content Include="images\sort_asc_disabled.png" />
+    <Content Include="images\sort_both.png" />
+    <Content Include="images\sort_desc.png" />
+    <Content Include="images\sort_desc_disabled.png" />
+    <Content Include="images\sprite.png" />
+    <Content Include="images\Theme\accordion_header.png" />
+    <Content Include="images\Theme\back_enabled.png" />
+    <Content Include="images\Theme\button_sprite.png" />
+    <Content Include="images\Theme\forward_enabled.png" />
+    <Content Include="images\Theme\header_bg.png" />
+    <Content Include="images\Theme\title.png" />
+    <Content Include="images\tipsy.gif" />
+    <Content Include="images\title.png" />
+    <Content Include="js\Import.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Import.min.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\jquery\jquery.dataTables.js" />
+    <Content Include="js\jquery\jquery.fieldtag.js" />
+    <Content Include="js\jquery\jquery.tablesorter.js" />
+    <Content Include="js\jquery\jquery.uniform.js" />
+    <Content Include="js\Map.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Map.min.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Map\Extensions.js" />
+    <Content Include="js\Map\Widgets.js" />
+    <Content Include="js\misc\excanvas.js" />
+    <Content Include="js\misc\upclick.js" />
+    <Content Include="js\Plugins.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Plugins.min.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Shared.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Shared.min.js">
+      <DependentUpon>Javascript.chirp.config</DependentUpon>
+    </Content>
+    <Content Include="js\Shared\Widgets.js" />
+    <Content Include="js\Map\Coordinates.js" />
+    <Content Include="js\Import\Trees.js" />
+    <Content Include="js\Import\Sites.js" />
+    <Content Include="js\jquery\facebox.js" />
+    <Content Include="js\jquery\jquery-1.4.4.min.js" />
+    <Content Include="js\jquery\jquery-ui-1.8.7.custom.min.js" />
+    <Content Include="js\jquery\jquery.quicksearch.js" />
+    <Content Include="js\jquery\jquery.tipsy.js" />
+    <Content Include="js\jquery\jquery.visualize.js" />
+    <Content Include="js\Map\CoordinatePicker.js" />
+    <Content Include="js\Shared\Extensions.js" />
+    <Content Include="js\slate\slate.js" />
+    <Content Include="js\slate\slate.message.js" />
+    <Content Include="js\slate\slate.portlet.js" />
+    <Content Include="js\widgets.js" />
+    <Content Include="Views\Account\CompletePasswordAssistance.cshtml" />
+    <Content Include="js\Javascript.chirp.config" />
+    <Content Include="css\Css.chirp.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Account\PasswordAssistance.cshtml" />
+    <Content Include="Views\Account\CompleteRegistration.cshtml" />
+    <Content Include="Views\Account\Edit.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\AccountWidget.cshtml" />
+    <Content Include="Views\Browse\Species.cshtml" />
+    <Content Include="Views\Browse\Locations.cshtml" />
+    <Content Include="Views\Browse\Index.cshtml" />
+    <Content Include="Views\Browse\SpeciesDetails.cshtml" />
+    <Content Include="Views\Browse\SiteDetails.cshtml" />
+    <Content Include="Views\Browse\StateDetails.cshtml" />
+    <Content Include="Views\Browse\DisplayTemplates\BrowsePhotoSumaryModel.cshtml" />
+    <Content Include="Views\Browse\MenuWidget.cshtml" />
+    <Content Include="Views\Browse\DisplayTemplates\BrowseTreeDetailsModel.cshtml" />
+    <Content Include="Views\Browse\DisplayTemplates\BrowseTreeSummaryModel.cshtml" />
+    <Content Include="Views\Browse\DisplayTemplates\BrowsePhotoSummaryList.cshtml" />
+    <Content Include="Views\Browse\TreeDetails.cshtml" />
+    <Content Include="Views\Error\Unauthorized.cshtml" />
+    <Content Include="Views\Import\WizardLayout.cshtml" />
+    <Content Include="Views\Import\Index.cshtml" />
+    <Content Include="Views\Import\EditorTemplates\ImportTripSummaryModel.cshtml" />
+    <Content Include="Views\Import\History.cshtml" />
+    <Content Include="Views\Import\View.cshtml" />
+    <Content Include="Views\Import\DisplayTemplates\ImportFinishedTripModel.cshtml" />
+    <Content Include="Views\Import\DisplayTemplates\ImportFinishedSiteModel.cshtml" />
+    <Content Include="Views\Import\DisplayTemplates\ImportFinishedSubsiteModel.cshtml" />
+    <Content Include="Views\Import\DisplayTemplates\ImportFinishedTreeModel.cshtml" />
+    <Content Include="Views\Import\Start.cshtml" />
+    <Content Include="Views\Import\StartSteps.cshtml" />
+    <Content Include="Views\Import\Trip.cshtml" />
+    <Content Include="Views\Import\Sites.cshtml" />
+    <Content Include="Views\Import\SubsiteTreesPartial.cshtml" />
+    <Content Include="Views\Import\TreePartial.cshtml" />
+    <Content Include="Views\Import\DisplayTemplates\ImportTreeModel.cshtml" />
+    <Content Include="Views\Import\EditorTemplates\ImportSiteTreesModel.cshtml" />
+    <Content Include="Views\Import\EditorTemplates\ImportSubsiteTreesModel.cshtml" />
+    <Content Include="Views\Import\EditorTemplates\ImportTreeModel.cshtml" />
+    <Content Include="Views\Import\SitesPartial.cshtml" />
+    <Content Include="Views\Import\Trees.cshtml" />
+    <Content Include="Views\Import\SitePartial.cshtml" />
+    <Content Include="Views\Import\DisplayTemplates\ImportSubsiteModel.cshtml" />
+    <Content Include="Views\Import\DisplayTemplates\ImportSiteModel.cshtml" />
+    <Content Include="Views\Import\EditorTemplates\ImportSubsiteModel.cshtml" />
+    <Content Include="Views\Import\EditorTemplates\ImportSiteModel.cshtml" />
+    <Content Include="Views\Import\MenuWidget.cshtml" />
+    <Content Include="Views\Main\Index.cshtml" />
+    <Content Include="Views\Main\MenuWidget.cshtml" />
+    <Content Include="Views\Map\Index.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\MapModel.cshtml" />
+    <Content Include="Views\Map\SiteMarkerInfo.cshtml" />
+    <Content Include="Views\Map\SubsiteMarkerInfo.cshtml" />
+    <Content Include="Views\Map\TreeMarkerInfo.cshtml" />
+    <Content Include="Views\Map\ImportSiteMarkerInfo.cshtml" />
+    <Content Include="Views\Map\ImportSubsiteMarkerInfo.cshtml" />
+    <Content Include="Views\Map\ImportTreeMarkerInfo.cshtml" />
+    <Content Include="Views\Map\MenuWidget.cshtml" />
+    <Content Include="Views\Photos\EditPhotoGalleryPartial.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Coordinates.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Country.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Distance.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Name.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\ConcatenatedNames.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\PhotoGalleryModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\ObjectReport.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Volume.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Enum.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Elevation.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\State.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\CoordinatePickerModel.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\State.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\PhotoGalleryModel.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Enum.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Elevation.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Distance.cshtml" />
+    <Content Include="Views\Import\Finish.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Error\ServerError.cshtml" />
+    <Content Include="Views\Error\IncompatibleBrowser.cshtml" />
+    <Content Include="Views\Shared\PrettyTimeSpan.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\EditorTemplates\MultilineText.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Password.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Object.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Boolean.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Decimal.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Coordinates.cshtml" />
+    <Content Include="packages.config" />
+    <None Include="T4MVC.settings.t4" />
+    <None Include="T4MVC.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>T4MVC.cs</LastGenOutput>
+    </None>
+    <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
+    <Content Include="Views\Shared\SiteLayout.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
+    <Content Include="Views\Photos\Caption.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TMD.Application\TMD.Application.csproj">
-      <Project>{6BBC56F8-5B6C-4F6C-8ED9-E2BDCEAC79A1}</Project>
-      <Name>TMD.Application</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TMD.Common\TMD.Common.csproj">
-      <Project>{5CE0121A-A36A-4504-8CD2-658548A79108}</Project>
-      <Name>TMD.Common</Name>
+    <ProjectReference Include="..\TMD.Infrastructure\TMD.Infrastructure.csproj">
+      <Project>{FB757EFB-7C14-48EC-A77A-4B2415FA6060}</Project>
+      <Name>TMD.Infrastructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\TMD.Model\TMD.Model.csproj">
       <Project>{82C94CBA-58DA-46EA-A3F6-9786EB32CC17}</Project>
@@ -127,40 +446,32 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DatabaseStats.ascx" />
-    <Content Include="Import\Import.aspx" />
-    <Content Include="Import\ImportSteps.ascx" />
-    <Content Include="Import\ImportTripInfo.aspx" />
-    <Content Include="JavascriptDisabled.ascx" />
-    <Content Include="Global.asax" />
-    <Content Include="Scripts\common.js" />
-    <Content Include="Scripts\includes.js" />
-    <Content Include="Scripts\ThirdParty\jquery.validate.min.js" />
-    <Content Include="Styles\common.css" />
-    <Content Include="Styles\includes.css" />
-    <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
+    <Content Include="Views\Shared\LoginLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TMDSite.Master" />
+    <Content Include="Views\Account\Logon.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TMDWizard.master" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50061</DevelopmentServerPort>
+          <DevelopmentServerPort>50777</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
@@ -173,11 +484,4 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

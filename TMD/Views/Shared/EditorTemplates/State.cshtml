@@ -1,0 +1,17 @@
+﻿@model TMD.Model.Locations.State
+@Html.DropDownListFor(m => m, 
+    new List<SelectListItem> { 
+        new SelectListItem { 
+            Text = "None selected", 
+            Value = 0.ToString(), 
+            Selected = Model == null
+        } 
+    }.Union(from state in Repositories.Locations.FindAllStates()
+            select new SelectListItem {
+                Text = string.Format("{0} ({1})", state.Name, state.Country.Code),
+                Value = state.Id.ToString(),
+                Selected = state.Equals(Model) 
+            }
+    )
+)
+

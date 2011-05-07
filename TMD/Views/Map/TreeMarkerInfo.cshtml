@@ -1,0 +1,32 @@
+﻿@model TMD.Models.MapTreeMarkerInfoModel
+@using TMD.Model.Photos
+<table class="reports_table" style="width: 350px;">
+    <tr>
+        <td class="description"><strong>@Model.ScientificName</strong></td>
+        <td class="value">@Html.ActionLink("View more details", Mvc.Browse.TreeDetails(Model.Id))</td>
+    </tr>
+    @Html.ReportDisplayFor(m => m.CommonName)
+    @Html.IfSpecifiedReportDisplayFor(m => m.Height)
+    @Html.IfSpecifiedReportDisplayFor(m => m.Girth)
+    @Html.IfSpecifiedReportDisplayFor(m => m.CrownSpread)
+    @Html.IfSpecifiedReportDisplayFor(m => m.TDI3)
+    @Html.IfSpecifiedReportDisplayFor(m => m.TDI2)
+    @Html.IfSpecifiedReportDisplayFor(m => m.ENTSPTS2)
+    @Html.IfSpecifiedReportDisplayFor(m => m.ENTSPTS)
+    @if (Model.ChampionPoints.HasValue) { 
+        @Html.ReportDisplayFor(m => m.ChampionPoints) 
+    } else if (Model.AbbreviatedChampionPoints.HasValue) {
+        @Html.ReportDisplayFor(m => m.AbbreviatedChampionPoints) 
+    }
+    @if (Model.Photos.Count > 0) {
+        <tr>
+            <td class="description">Photos</td>
+            <td class="value">
+                @foreach (var photo in Model.Photos) {
+                    @Html.Photo(photo, PhotoSize.Square, PhotoSize.Medium);
+                }
+            </td>
+        </tr>
+    }
+    @Html.ReportDisplayFor(m => m.LastMeasured)
+</table>

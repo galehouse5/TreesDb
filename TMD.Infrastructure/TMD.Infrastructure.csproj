@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB757EFB-7C14-48EC-A77A-4B2415FA6060}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TMD.Infrastructure</RootNamespace>
+    <AssemblyName>TMD.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\LazyLoading\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\ThirdPartyAssemblies\NHibernate\LazyLoading\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="SimMetrics">
+      <HintPath>..\ThirdPartyAssemblies\SimMetrics\SimMetrics.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\ThirdPartyAssemblies\StructureMap\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Log4NetLogProvider.cs" />
+    <Compile Include="Registry.cs" />
+    <Compile Include="Repositories\LocationRepository.cs" />
+    <Compile Include="Repositories\PhotoRepository.cs" />
+    <Compile Include="Repositories\RepositoryRegistry.cs" />
+    <Compile Include="Repositories\RepositorySettings.cs" />
+    <Compile Include="Repositories\SiteRepository.cs" />
+    <Compile Include="Repositories\TreeRepository.cs" />
+    <Compile Include="Repositories\ImportRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NHibernateUnitOfWorkProvider.cs" />
+    <Compile Include="RepositoryBase.cs" />
+    <Compile Include="StringComparison\Expressions\EToken.cs" />
+    <Compile Include="StringComparison\Expressions\Expression.cs" />
+    <Compile Include="StringComparison\Expressions\Factor.cs" />
+    <Compile Include="StringComparison\Expressions\IEvaluator.cs" />
+    <Compile Include="StringComparison\Expressions\IParser.cs" />
+    <Compile Include="StringComparison\Expressions\IPrinter.cs" />
+    <Compile Include="StringComparison\Expressions\Term.cs" />
+    <Compile Include="StringComparison\Expressions\Tokenizer.cs" />
+    <Compile Include="StringComparison\SimilarityMetricFactory.cs" />
+    <Compile Include="StringComparison\SimilarityMetrics\Equality.cs" />
+    <Compile Include="StringComparison\SimilarityMetrics\FirstContains.cs" />
+    <Compile Include="StringComparison\SimilarityMetrics\SecondContains.cs" />
+    <Compile Include="StringComparison\StringComparisonExpression.cs" />
+    <Compile Include="StringComparison\StringComparisonService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TMD.Model\TMD.Model.csproj">
+      <Project>{82C94CBA-58DA-46EA-A3F6-9786EB32CC17}</Project>
+      <Name>TMD.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Locations.hbm.xml" />
+    <EmbeddedResource Include="Mappings\Imports.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Users.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Create.sql" />
+    <EmbeddedResource Include="Mappings\Sites.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\Trees.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\Photos.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

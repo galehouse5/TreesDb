@@ -2,94 +2,123 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Security;
-using System.Web.SessionState;
-using TMD.Application;
-using System.Web.Configuration;
-using System.Text.RegularExpressions;
+using System.Web.Mvc;
+using System.Web.Routing;
+using TMD.Model;
+using TMD.Model.Logging;
+using TMD.Infrastructure.Repositories;
+using TMD.Mappings;
+using AutoMapper;
+using TMD.Extensions;
+using TMD.Binders;
+using TMD.Infrastructure;
+using StructureMap;
 
 namespace TMD
 {
-    public class Global : System.Web.HttpApplication
+    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
+    // visit http://go.microsoft.com/?LinkId=9394801
+
+    public class MvcApplication : System.Web.HttpApplication
     {
-        private static string m_LoginPath;
-
-        protected void Application_Start(object sender, EventArgs e)
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            // Code that runs on application startup
-            AuthenticationSection authenticationConfiguration =
-                (AuthenticationSection)WebConfigurationManager.GetSection("system.web/authentication");
-            m_LoginPath = Server.MapPath(authenticationConfiguration.Forms.LoginUrl);
-
-            ApplicationSession.DefaultGoToOnWizardCancelCreator = delegate() { return "~/Main.aspx"; };
-            ApplicationSession.DefaultGoToOnWizardCompleteCreator = delegate() { return "~/Main.aspx"; };
+            filters.Add(new HandleErrorAttribute());
         }
 
-        protected void Session_Start(object sender, EventArgs e)
+        public static void RegisterRoutes(RouteCollection routes)
         {
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //routes.MapRoute(
+            //    "Default", // Route name
+            //    "{controller}/{action}/{id}", // URL with parameters
+            //    new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+            //);
+
+            routes.MapRoute("AddPhoto", "Photos/{action}/{id}", new { controller = "Photos" }, new { action = "AddTo.+" });
+            routes.MapRoute("RemovePhoto", "Photos/{id}/Remove", new { controller = "Photos", action = "Remove" });
+            routes.MapRoute("PhotoCaption", "Photos/{id}/Caption", new { controller = "Photos", action = "Caption" });
+            routes.MapRoute("ViewPhoto", "Photos/{id}/{size}", new { controller = "Photos", action = "View", size = "Original" });
+
+            routes.MapRoute("ViewMapMarkesForImportTree", "Map/ViewMarkersForImport/{id}/Tree/{treeId}", new { controller = "Map", action = "ViewMarkersForImportTree" });
+            routes.MapRoute("ViewMapMarkesForImportSubsite", "Map/ViewMarkersForImport/{id}/Subsite/{subsiteId}", new { controller = "Map", action = "ViewMarkersForImportSubsite" });
+            routes.MapRoute("ViewMapMarkesForImportSite", "Map/ViewMarkersForImport/{id}/Site/{siteId}", new { controller = "Map", action = "ViewMarkersForImportSite" });
+            routes.MapRoute("Map", "Map/{action}", new { controller = "Map", action = "Index" });
+
+            routes.MapRoute("CompleteAccountPasswordAssistance", "Account/{token}/CompletePasswordAssistance", new { controller = "Account", action = "CompletePasswordAssistance" });
+            routes.MapRoute("CompleteAccountRegistration", "Account/{token}/CompleteRegistration", new { controller = "Account", action = "CompleteRegistration" });
+            routes.MapRoute("Account", "Account/{action}", new { controller = "Account", action = "Index" });
+
+            routes.MapRoute("BrowseStateSpeciesDetails", "Browse/States/{stateId}/Species/{botanicalName}/Details", new { controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseSiteSpeciesDetails", "Browse/Sites/{siteId}/Species/{botanicalName}/Details", new { controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseSpeciesDetails", "Browse/Species/{botanicalName}/Details", new { controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseTreeDetails", "Browse/Trees/{id}/Details", new { controller = "Browse", action = "TreeDetails" });
+            routes.MapRoute("BrowseStateDetails", "Browse/States/{id}/Details", new { controller = "Browse", action = "StateDetails" });
+            routes.MapRoute("BrowseSiteDetails", "Browse/Sites/{id}/Details", new { controller = "Browse", action = "SiteDetails" });
+            routes.MapRoute("BrowseSpecies", "Browse/Species", new { controller = "Browse", action = "Species" });
+            routes.MapRoute("BrowseLocations", "Browse/Locations", new { controller = "Browse", action = "Locations" });
+            routes.MapRoute("Browse", "Browse", new { controller = "Browse", action = "Index" });
+
+            routes.MapRoute("Main", "Main/{action}", new { controller = "Main", action = "Index" });
+
+            routes.MapRoute("ImportIndex", "Import", new { controller = "Import", action = "Index" });
+            routes.MapRoute("ImportNew", "Import/New", new { controller = "Import", action = "New" });
+            routes.MapRoute("ImportHistory", "Import/History", new { controller = "Import", action = "History" });
+
+            routes.MapRoute("ExportSpecies", "Export/Species/{botanicalName}", new { controller = "Export", action = "Species" });
+            routes.MapRoute("ExportSitesSpecies", "Export/Sites/{id}/Species/{botanicalName}", new { controller = "Export", action = "SitesSpecies" });
+            routes.MapRoute("ExportStatesSpecies", "Export/States/{id}/Species/{botanicalName}", new { controller = "Export", action = "StatesSpecies" });
+            routes.MapRoute("ExportDefault", "Export/{action}/{id}", new { controller = "Export" });
+
+            routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}", new { controller = "Main", action = "Index" }, new { id = @"\d+" });
+            routes.MapRoute("Default", "{controller}/{action}", new { controller = "Main", action = "Index" });
+
+            routes.MapRoute("CatchAll", "{*pathInfo}", new { controller = "Error", action = "NotFound" });
         }
 
-        private static Regex s_BrowserCompatibilityCheckBlacklistRegex = new Regex("^.+\\.aspx$", RegexOptions.Compiled);
-        private static Regex s_BrowserCompatibilityCheckWhitelistRegex = new Regex("^(^/home\\.aspx)|(/incompatiblebrowser\\.aspx)$", RegexOptions.Compiled);
-        protected void Application_BeginRequest(object sender, EventArgs e)
+        protected void Application_Start()
         {
-            if (s_BrowserCompatibilityCheckBlacklistRegex.IsMatch(Request.Path.ToLower())
-                && !s_BrowserCompatibilityCheckWhitelistRegex.IsMatch(Request.Path.ToLower()))
+            AreaRegistration.RegisterAllAreas();
+
+            RegisterGlobalFilters(GlobalFilters.Filters);
+            RegisterRoutes(RouteTable.Routes);
+
+            //ModelBinders.Binders.DefaultBinder = new DefaultGraphModelBinder();
+            ModelBinders.Binders.Add(typeof(IUnitOfWork), new NullModelBinder());
+            new ValueObjectBinders().Bind(ModelBinders.Binders);
+
+            ControllerBuilder.Current.SetControllerFactory(typeof(ControllerFactory));
+
+            Mapper.AddProfile<ImportMapping>();
+            Mapper.AddProfile<PhotosMapping>();
+            Mapper.AddProfile<MapMapping>();
+            Mapper.AddProfile<AccountMapping>();
+            Mapper.AddProfile<BrowseMapping>();
+
+            log4net.Config.XmlConfigurator.Configure();
+            ObjectFactory.Initialize(x =>
             {
-                switch (Request.Browser.Browser.ToLower())
-                {
-                    case "firefox":
-                        if (Request.Browser.MajorVersion < 3)
-                        {
-                            Response.Redirect("~/IncompatibleBrowser.aspx");
-                        }
-                        break;
-                    case "ie":
-                        if (Request.Browser.MajorVersion < 8)
-                        {
-                            Response.Redirect("~/IncompatibleBrowser.aspx");
-                        }
-                        break;
-                    default:
-                        Response.Redirect("~/IncompatibleBrowser.aspx");
-                        break;
-                }
-            }
+                x.AddRegistry(new RepositoryRegistry());
+                x.For<IUnitOfWorkProvider>().HttpContextScoped().Use<NHibernateUnitOfWorkProvider>();
+                x.For<IUserSessionProvider>().Singleton().Use<WebUserSessionProvider>();
+                x.For<ILogProvider>().Singleton().Use<Log4NetLogProvider>()
+                    .OnCreation(lp =>
+                    {
+                        lp.AddContextProperty("Request.Url", () => HttpContext.Current.Request.Url.ToString());
+                        lp.AddContextProperty("Request.Path", () => HttpContext.Current.Request.Path);
+                        lp.AddContextProperty("Request.UserHostAddress", () => HttpContext.Current.Request.UserHostAddress);
+                        lp.AddContextProperty("Request.User", () => HttpContext.Current.User.Identity.Name);
+                        lp.AddContextProperty("Request.IsAuthenticated", () => HttpContext.Current.User.Identity.IsAuthenticated.ToString());
+                        lp.AddContextProperty("Application.Path", () => HttpContext.Current.Request.PhysicalApplicationPath);
+                        lp.AddContextProperty("Application.Machine", () => Environment.MachineName);
+                    });
+            });
         }
 
-        void Application_AuthorizeRequest(Object sender, EventArgs e)
+        protected void Application_EndRequest()
         {
-            // if the request is being redirected to the login page 
-            // with a ReturnUrl querystring parameter
-            // and the user has been authenticated
-            // the user must have requested a page he lacks access to
-            if (Request.PhysicalPath.Equals(m_LoginPath)
-                && Request.QueryString["ReturnUrl"] != null
-                && Request.IsAuthenticated)
-            {
-                Response.Redirect("~/Account/Unauthorized.aspx?ReturnUrl=" + Request.QueryString["ReturnUrl"]);
-            }
-        }
-
-        protected void Application_AuthenticateRequest(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_Error(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Session_End(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_End(object sender, EventArgs e)
-        {
-
+            UnitOfWork.Dispose();
         }
     }
 }

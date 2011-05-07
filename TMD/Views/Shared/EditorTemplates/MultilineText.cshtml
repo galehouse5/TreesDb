@@ -1,0 +1,8 @@
+﻿@model String
+@{ ViewBag.@class = ViewBag.@class == null ? "text" : ViewBag.@class + " text";
+   ViewBag.cols = ViewBag.cols ?? "50";
+   ViewBag.rows = ViewBag.rows ?? "5";
+   if (ViewData.ModelMetadata.IsReadOnly) {
+       ViewBag.disabled = true;
+   } }
+@Html.TextAreaFor(m => m, ViewData)

@@ -7,90 +7,42 @@ using TMD.Model.Validation;
 
 namespace TMD.Model
 {
-    [Serializable]
-    public class DirectedDistance : ICloneable, IIsValid, IIsNull
+    public enum DirectedDistanceFormat
     {
-        public enum EInputFormat
-        {
-            Invalid,
-            FeetDecimalInches,
-            DecimalFeet,
-            DecimalInches,
-            DecimalMeters,
-            DecimalYards
-        }
+        Invalid = 0,
+        Unspecified = 1,
+        Default = 2,
+        FeetDecimalInches = 3,
+        DecimalFeet = 4,
+        DecimalInches = 5,
+        DecimalMeters = 6,
+        DecimalYards = 7
+    }
 
+    public class DirectedDistance : ISpecified
+    {
         private DirectedDistance()
-        {
-            InputFormat = EInputFormat.DecimalFeet;
-        }
+        { }
 
-        private DirectedDistance(float feet, EInputFormat inputFormat)
-        {
-            this.Feet = feet;
-            this.InputFormat = inputFormat;
-        }
-
+        public string RawValue { get; private set; }
         public float Feet { get; private set; }
-        public EInputFormat InputFormat { get; private set; }
 
-        public int Sign
-        {
-            get { return Math.Sign(Feet); }
-        }
+        [NotEqualsAttribute(DirectedDistanceFormat.Invalid, Message = "Directed distance must be in +/-fff.f', +/-fff' ii'', +/-mmm.mm m, or +/-yyy.yy yd format.", Tags = ValidationTag.Screening)]
+        public DirectedDistanceFormat InputFormat { get; private set; }
 
-        public float AbsoluteFeet
-        {
-            get { return Math.Abs(Feet); }
-        }
-
-        public int AbsoluteWholeFeet
-        {
-            get { return (int)Math.Floor(AbsoluteFeet); }
-        }
-
-        public float AbsoluteRemainderInches
-        {
-            get { return 12f * (AbsoluteFeet - AbsoluteWholeFeet); }
-        }
-
-        public float AbsoluteInches
-        {
-            get { return 12f * AbsoluteFeet; }
-        }
-
-        public float AbsoluteYards
-        {
-            get { return 3f * AbsoluteFeet; }
-        }
-
-        public float AbsoluteMeters
-        {
-            get { return AbsoluteFeet / 3.2808399f; }
-        }
-
-        public static bool operator ==(DirectedDistance d1, DirectedDistance d2)
-        {
-            if ((object)d1 == null || (object)d2 == null)
-            {
-                return (object)d1 == null && (object)d2 == null;
-            }
-            return d1.Feet == d2.Feet;
-        }
-
-        public static bool operator !=(DirectedDistance d1, DirectedDistance d2)
-        {
-            if ((object)d1 == null || (object)d2 == null)
-            {
-                return !((object)d1 == null && (object)d2 == null);
-            }
-            return d1.Feet != d2.Feet;
-        }
+        public int Sign { get { return Math.Sign(Feet); } }
+        public float AbsoluteFeet { get { return Math.Abs(Feet); } }
+        public int AbsoluteWholeFeet { get { return (int)Math.Floor(AbsoluteFeet); } }
+        public float AbsoluteRemainderInches { get { return 12f * (AbsoluteFeet - AbsoluteWholeFeet); } }
+        public float AbsoluteInches { get { return 12f * AbsoluteFeet; } }
+        public float AbsoluteYards { get { return 3f * AbsoluteFeet; } }
+        public float AbsoluteMeters { get { return AbsoluteFeet / 3.2808399f; } }
+        public bool IsSpecified { get { return InputFormat != DirectedDistanceFormat.Unspecified; } }
 
         public override bool Equals(object obj)
         {
-            DirectedDistance d = obj as DirectedDistance;
-            return d != null && d == this;
+            var other = obj as DirectedDistance;
+            return other != null && Feet.Equals(other.Feet);
         }
 
         public override int GetHashCode()
@@ -100,122 +52,108 @@ namespace TMD.Model
 
         public override string ToString()
         {
-            string s;
             switch (InputFormat)
             {
-                case EInputFormat.DecimalFeet:
-                    s = string.Format("{0}{1:0.0}'", (Sign < 0) ? "-" : "", AbsoluteFeet);
-                    break;
-                case EInputFormat.DecimalInches:
-                    s = string.Format("{0}{1:0}''", (Sign < 0) ? "-" : "", AbsoluteInches);
-                    break;
-                case EInputFormat.DecimalMeters:
-                    s = string.Format("{0}{1:0.00} m", (Sign < 0) ? "-" : "", AbsoluteMeters);
-                    break;
-                case EInputFormat.DecimalYards:
-                    s = string.Format("{0}{1:0.00} yd", (Sign < 0) ? "-" : "", AbsoluteYards);
-                    break;
-                case EInputFormat.FeetDecimalInches:
-                    s = string.Format("{0}{1:0}' {2:0}''", (Sign < 0) ? "-" : "", AbsoluteFeet, AbsoluteRemainderInches);
-                    break;
+                case DirectedDistanceFormat.Default :
+                case DirectedDistanceFormat.DecimalFeet:
+                    return string.Format("{0}{1:0.0}'", (Sign < 0) ? "-" : "", AbsoluteFeet);
+                case DirectedDistanceFormat.DecimalInches:
+                    return string.Format("{0}{1:0}''", (Sign < 0) ? "-" : "", AbsoluteInches);
+                case DirectedDistanceFormat.DecimalMeters:
+                    return string.Format("{0}{1:0.00} m", (Sign < 0) ? "-" : "", AbsoluteMeters);
+                case DirectedDistanceFormat.DecimalYards:
+                    return string.Format("{0}{1:0.00} yd", (Sign < 0) ? "-" : "", AbsoluteYards);
+                case DirectedDistanceFormat.FeetDecimalInches:
+                    if (AbsoluteRemainderInches == 0f)
+                    {
+                        return string.Format("{0}{1:0}'", (Sign < 0) ? "-" : "", AbsoluteFeet, AbsoluteRemainderInches);
+                    }
+                    return string.Format("{0}{1:0}' {2:0}''", (Sign < 0) ? "-" : "", AbsoluteFeet, AbsoluteRemainderInches);
                 default:
-                    s = string.Empty;
-                    break;
+                    return RawValue;
             }
-            return s;
         }
 
-        #region ICloneable Members
-
-        public object Clone()
-        {
-            return new DirectedDistance(Feet, InputFormat);
-        }
-
-        #endregion
-
-        #region IIsValid Members
-
-        public bool IsValid
-        {
-            get { return InputFormat != EInputFormat.Invalid; }
-        }
-
-        public IList<string> GetValidationErrors()
-        {
-            List<string> errors = new List<string>();
-            if (InputFormat == EInputFormat.Invalid)
-            {
-                errors.Add("Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.");
-            }
-            return errors;
-        }
-
-        #endregion
-
-        #region IIsNull Members
-
-        public bool IsNull
-        {
-            get { return Feet != 0f; }
-        }
-
-        #endregion
-
-        private static Regex FeetDecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*'')|(\\s*ft)|(\\s*feet))\\s+(?<inches>[0-9]+(\\.[0-9]+)?)((\\s*')|(\\s*in)|(\\s*inches?))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalFeetFormat = new Regex("^\\s*(?<sign>[+-])?(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*'')|(\\s*ft)|(\\s*feet))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?(?<inches>[0-9]+(\\.[0-9]+)?)((\\s*')|(\\s*in)|(\\s*inches?))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalMetersFormat = new Regex("^\\s*(?<sign>[+-])?(?<meters>[0-9]+(\\.[0-9]+)?)((\\s*m)|(\\s*meters?))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalYardsFormat = new Regex("^\\s*(?<sign>[+-])?(?<yards>[0-9]+(\\.[0-9]+)?)((\\s*yds?)|(\\s*yards?))\\s*$", RegexOptions.Compiled);
-
+        private static Regex FeetDecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?|\\s)\\s*(?<inches>[0-9]+(\\.[0-9]+)?)\\s*(\"|''|``|ins?|inchs?|inches?)?\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalFeetFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?)?\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<inches>[0-9]+(\\.[0-9]+)?)\\s*(\"|''|``|ins?|inchs?|inches?)\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalMetersFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<meters>[0-9]+(\\.[0-9]+)?)\\s*(ms?|meters?|metres?)\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalYardsFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<yards>[0-9]+(\\.[0-9]+)?)\\s*(ys?|yds?|yards?)\\s*$", RegexOptions.Compiled);
         public static DirectedDistance Create(string s)
         {
             Match match;
             float sign, feet;
-            EInputFormat inputFormat;
-            if ((match = FeetDecimalInchesFormat.Match(s)).Success)
+            DirectedDistanceFormat inputFormat;
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                sign = 1f;
+                feet = 0;
+                inputFormat = DirectedDistanceFormat.Unspecified;
+            }
+            else if ((match = FeetDecimalInchesFormat.Match(s)).Success)
             {
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
                 feet = float.Parse(match.Groups["feet"].Value);
-                feet += float.Parse(match.Groups["inches"].Value) * 12f;
-                inputFormat = EInputFormat.FeetDecimalInches;
+                feet += float.Parse(match.Groups["inches"].Value) / 12f;
+                inputFormat = DirectedDistanceFormat.FeetDecimalInches;
             }
             else if ((match = DecimalFeetFormat.Match(s)).Success)
             {
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
                 feet = float.Parse(match.Groups["feet"].Value);
-                inputFormat = EInputFormat.DecimalFeet;
+                inputFormat = DirectedDistanceFormat.DecimalFeet;
             }
             else if ((match = DecimalInchesFormat.Match(s)).Success)
             {
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
-                feet = float.Parse(match.Groups["inches"].Value) * 12f;
-                inputFormat = EInputFormat.DecimalInches;
+                feet = float.Parse(match.Groups["inches"].Value) / 12f;
+                inputFormat = DirectedDistanceFormat.DecimalInches;
             }
             else if ((match = DecimalMetersFormat.Match(s)).Success)
             {
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
                 feet = float.Parse(match.Groups["meters"].Value) * 3.2808399f;
-                inputFormat = EInputFormat.DecimalMeters;
+                inputFormat = DirectedDistanceFormat.DecimalMeters;
             }
             else if ((match = DecimalYardsFormat.Match(s)).Success)
             {
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
                 feet = float.Parse(match.Groups["yards"].Value) * 3f;
-                inputFormat = EInputFormat.DecimalYards;
+                inputFormat = DirectedDistanceFormat.DecimalYards;
             }
             else
             {
                 sign = 1f;
                 feet = 0f;
-                inputFormat = EInputFormat.Invalid;
+                inputFormat = DirectedDistanceFormat.Invalid;
             }
-            return new DirectedDistance(sign * feet, inputFormat);
+            return new DirectedDistance()
+            {
+                Feet = sign * feet,
+                InputFormat = inputFormat,
+                RawValue = s
+            };
+        }
+
+        public static DirectedDistance Create(float feet)
+        {
+
+            return new DirectedDistance()
+            {
+                Feet = feet,
+                InputFormat = DirectedDistanceFormat.Default,
+                RawValue = feet.ToString()
+            };
         }
 
         public static DirectedDistance Null()
         {
-            return new DirectedDistance(0f, EInputFormat.DecimalFeet);
+            return new DirectedDistance()
+            {
+                Feet = 0f,
+                InputFormat = DirectedDistanceFormat.Unspecified,
+                RawValue = string.Empty
+            };
         }
     }
 }

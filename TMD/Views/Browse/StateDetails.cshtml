@@ -1,0 +1,95 @@
+﻿@model TMD.Models.BrowseStateModel
+@{ ViewBag.Title = "State Details"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+
+<div class="x6">
+
+	<div class="portlet x12">
+		<div class="portlet-header">
+            <h4>State</h4>
+            <ul class="portlet-tab-nav">
+                <li class="portlet-tab-nav-ignore"><a href="@Url.Action(Mvc.Export.States(Model.Id))">Export tree data</a></li>
+            </ul>
+        </div>
+		<div class="portlet-content">
+			<table class="reports_table">                
+                @Html.ReportDisplayFor(m => m.Name)
+                @Html.ReportDisplayFor(m => m.Code)
+                @Html.ReportDisplayFor(m => m.RHI5)
+                @Html.ReportDisplayFor(m => m.RHI10)
+                @Html.ReportDisplayFor(m => m.RHI20)
+                @Html.ReportDisplayFor(m => m.RGI5)
+                @Html.ReportDisplayFor(m => m.RGI10)
+                @Html.ReportDisplayFor(m => m.RGI20)
+			</table>
+		</div>
+	</div>
+
+    <div class="portlet x12">
+		<div class="portlet-header"><h4>Species</h4></div>
+		<div class="portlet-content">               
+            @(Html.DataTablesGrid<TMD.Model.Trees.StateMeasuredSpecies>(
+                columns: builder =>
+                {
+                    builder
+                        .Custom("Botanical name", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.ScientificName, stateId: species.State.Id)))
+                        .Options(canSort: false);
+                    builder
+                        .Custom("Common name", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName, stateId: species.State.Id)))
+                        .Options(canSort: false);
+                    builder
+                        .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ? 
+                            Html.ActionLink(species.MaxHeight.ToString(DistanceFormat.Default) , Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
+                            : MvcHtmlString.Create("-"))
+                        .Options(canSort: false);
+                    builder
+                        .Custom("Max girth", species => species.MaxGirth.IsValidAndSpecified() ?
+                            Html.ActionLink(species.MaxGirth.ToString(DistanceFormat.FeetDecimalInches), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
+                            : MvcHtmlString.Create("-"))
+                        .Options(canSort: false);
+                    builder
+                        .Custom("Max crown spread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
+                            Html.ActionLink(species.MaxCrownSpread.ToString(DistanceFormat.Default), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
+                            : MvcHtmlString.Create("-"))
+                        .Options(canSort: false);
+                },
+                canPage: false,
+                dataSource: Model.Species))
+		</div>
+	</div>
+
+</div>
+<div class="x6">
+
+	<div class="portlet x12">
+		<div class="portlet-header">
+            <h4>Location</h4>
+        </div>
+		<div class="portlet-content">
+            <table class="reports_table">
+                @Html.ReportDisplayFor(m => m.Coordinates)
+                @Html.ReportDisplayFor(m => m.Country)
+            </table>
+		</div>
+	</div>
+
+    <div class="portlet x12">
+		<div class="portlet-header"><h4>Sites</h4></div>
+		<div class="portlet-content">               
+            @(Html.DataTablesGrid<TMD.Model.Sites.Subsite>(
+                columns: builder =>
+                {
+                    builder
+                    .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+                        .Options(canSort: false);
+                    builder
+                        .Custom("Subsite", subsite => subsite.Site.ContainsSingleSubsite ?
+                            MvcHtmlString.Create("-")
+                            : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+                        .Options(canSort: false);
+                },
+                canPage: false,
+                dataSource: Model.Subsites))
+		</div>
+	</div>
+
+</div>

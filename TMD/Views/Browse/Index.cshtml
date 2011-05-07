@@ -1,0 +1,63 @@
+﻿@model Tuple<TMD.Model.EntityPage<TMD.Model.Trees.GlobalMeasuredSpecies>, TMD.Model.EntityPage<TMD.Model.Sites.Subsite>>
+@{ ViewBag.Title = "Browse"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () { $('tfoot input[title!=""]').fieldtag({ markedClass: "search_init" }); });
+    </script>
+}
+
+<div class="portlet x6">
+	<div class="portlet-header">
+        <h4>Species</h4>
+        <ul class="portlet-tab-nav">
+            <li class="portlet-tab-nav-ignore">
+                <a href="@Url.Action(Mvc.Export.SpeciesByFilters(Request["SpeciesBotanicalNameFilter"], Request["SpeciesCommonNameFilter"]))">Export tree data</a>
+            </li>
+        </ul>
+    </div>
+	<div class="portlet-content">
+        @(Html.DataTablesGrid<TMD.Model.Trees.MeasuredSpecies>(parameterNamePrefix: "species",
+            columns: builder =>
+            {
+                builder
+                    .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.ScientificName)))
+                    .Options(header: "Botanical name", canFilter: true, filterTitle: "Search botanical names");
+                builder
+                    .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName)))
+                    .Options(header: "Common name", canFilter: true, filterTitle: "Search common names");
+            },
+            rowsPerPage: 25,
+            dataSource: Model.Item1.Page, filteredRowCount: Model.Item1.FilteredItems, totalRowCount: Model.Item1.TotalItems))
+    </div>
+</div>
+
+<div class="portlet x6">
+	<div class="portlet-header">
+        <h4>Locations</h4>
+        <ul class="portlet-tab-nav">
+            <li class="portlet-tab-nav-ignore">
+                <a href="@Url.Action(Mvc.Export.LocationsByFilters(Request["LocationStateFilter"], Request["LocationSiteFilter"], Request["LocationSubsiteFilter"]))">Export tree data</a>
+            </li>
+        </ul>
+    </div>
+	<div class="portlet-content">
+        @(Html.DataTablesGrid<TMD.Model.Sites.Subsite>(parameterNamePrefix: "location",
+            columns: builder =>
+            {
+                builder
+                    .Custom("State", subsite => Html.ActionLink(subsite.State.Name, Mvc.Browse.StateDetails(subsite.State.Id)))
+                    .Options(canFilter: true, header: "State or province", filterTitle: "Search states and provinces");
+                builder
+                    .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+                    .Options(canFilter: true, filterTitle: "Search sites");
+                builder
+                    .Custom("Subsite", subsite => subsite.Site.ContainsSingleSubsite ?
+                        MvcHtmlString.Create("-")
+                        : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+                    .Options(canFilter: true, filterTitle: "Search subsites");
+            },
+            rowsPerPage: 25,
+            dataSource: Model.Item2.Page, filteredRowCount: Model.Item2.FilteredItems, totalRowCount: Model.Item2.TotalItems))
+    </div>
+</div>

@@ -31,9 +31,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NHibernate.Validator, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=70154e18752585bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyAssemblies\NHibernate.Validator\NHibernate.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\ThirdPartyAssemblies\StructureMap\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,65 +50,74 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntityBase.cs" />
-    <Compile Include="Trees\TreeService.cs" />
-    <Compile Include="UserSession.cs" />
-    <Compile Include="Validation\CollectionMaxCountValidatorAttribute.cs" />
-    <Compile Include="Validation\DateTimeRangeValidatorAttribute.cs" />
-    <Compile Include="Validation\EmptyCollectionValidatorAttribute.cs" />
-    <Compile Include="Validation\IIsConflicting.cs" />
-    <Compile Include="ModelRegistry.cs" />
-    <Compile Include="ModelSettings.cs" />
+    <Compile Include="Extensions\ISpecified.cs" />
+    <Compile Include="Logging\ILogProvider.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Imports\MultiTrunkTree.cs" />
+    <Compile Include="Imports\SingleTrunkTree.cs" />
+    <Compile Include="Imports\Site.cs" />
+    <Compile Include="Imports\Subsite.cs" />
+    <Compile Include="Imports\TreeBase.cs" />
+    <Compile Include="Imports\Trip.cs" />
+    <Compile Include="Imports\ImportRepository.cs" />
+    <Compile Include="Imports\Trunk.cs" />
+    <Compile Include="Photos\IPhotoRepository.cs" />
+    <Compile Include="Photos\PhotoFactory.cs" />
+    <Compile Include="Photos\Photo.cs" />
+    <Compile Include="Photos\PhotoReference.cs" />
+    <Compile Include="Photos\PhotoSize.cs" />
+    <Compile Include="Photos\PhotoStoreBase.cs" />
+    <Compile Include="RepositoryBase.cs" />
+    <Compile Include="Sites\SiteVisit.cs" />
+    <Compile Include="Sites\SubsiteVisit.cs" />
     <Compile Include="Sites\ISiteRepository.cs" />
+    <Compile Include="Sites\Subsite.cs" />
+    <Compile Include="Sites\Site.cs" />
+    <Compile Include="Trees\Species.cs" />
+    <Compile Include="Trees\Measurement.cs" />
+    <Compile Include="Trees\Tree.cs" />
+    <Compile Include="Users\UserRoles.cs" />
+    <Compile Include="Validation\BooleanMethodAttribute.cs" />
+    <Compile Include="Validation\ContextMethodAttribute.cs" />
+    <Compile Include="Validation\Size2Attribute.cs" />
+    <Compile Include="Validation\ValidationError.cs" />
+    <Compile Include="Validation\Validator.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Extensions\Enum.cs" />
+    <Compile Include="Extensions\Enumerable.cs" />
+    <Compile Include="Extensions\List.cs" />
+    <Compile Include="Extensions\Reflection.cs" />
+    <Compile Include="Extensions\String.cs" />
+    <Compile Include="Repositories.cs" />
+    <Compile Include="Locations\ILocationRepository.cs" />
     <Compile Include="Trees\ITreeRepository.cs" />
-    <Compile Include="Trips\SubsiteVisit.cs" />
+    <Compile Include="UserSession.cs" />
+    <Compile Include="Registry.cs" />
     <Compile Include="UnitOfWork.cs" />
-    <Compile Include="Users\IUserRepository.cs" />
-    <Compile Include="Validation\EmptyStringValidatorAttribute.cs" />
-    <Compile Include="Validation\IsNullValidatorAttribute.cs" />
-    <Compile Include="Validation\IsValidValidatorAttribute.cs" />
-    <Compile Include="Validation\NonNegativeValidatorAttribute.cs" />
-    <Compile Include="Validation\NumberRangeValidatorAttribute.cs" />
-    <Compile Include="Validation\PropertyAttributeValidator.cs" />
-    <Compile Include="Validation\StringMaxLengthValidator.cs" />
-    <Compile Include="Validation\ValidatorBaseAttribute.cs" />
-    <Compile Include="Validation\ZeroValidatorAttribute.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\Password.cs" />
+    <Compile Include="Users\SecureToken.cs" />
+    <Compile Include="Users\User.cs" />
+    <Compile Include="Users\UserRepository.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Validation\NotEqualsAttribute.cs" />
+    <Compile Include="Validation\SpecifiedAttribute.cs" />
+    <Compile Include="Validation\NotEmptyOrWhitesapceAttribute.cs" />
+    <Compile Include="Validation\Within2Attribute.cs" />
     <Compile Include="ValueObjects\Angle.cs" />
     <Compile Include="ValueObjects\CoordinateBounds.cs" />
     <Compile Include="ValueObjects\Coordinates.cs" />
-    <Compile Include="ValueObjects\CoordinateDistance.cs" />
-    <Compile Include="ValueObjects\Country.cs" />
-    <Compile Include="ValueObjects\CountryCollection.cs" />
-    <Compile Include="ValueObjects\Distance.cs" />
+    <Compile Include="Locations\Country.cs" />
     <Compile Include="ValueObjects\DirectedDistance.cs" />
+    <Compile Include="ValueObjects\Distance.cs" />
     <Compile Include="ValueObjects\Elevation.cs" />
-    <Compile Include="Validation\IIsValid.cs" />
-    <Compile Include="Sites\Site.cs" />
-    <Compile Include="Sites\Subsite.cs" />
-    <Compile Include="Trees\Enums.cs" />
-    <Compile Include="IEntity.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Trees\Measurement.cs" />
-    <Compile Include="Trees\Measurer.cs" />
-    <Compile Include="Trees\Tree.cs" />
-    <Compile Include="Trips\Trip.cs" />
-    <Compile Include="Trips\SiteVisit.cs" />
-    <Compile Include="Users\EUserRoles.cs" />
-    <Compile Include="Users\User.cs" />
     <Compile Include="ValueObjects\HeightMeasurements.cs" />
-    <Compile Include="ValueObjects\IIsNull.cs" />
-    <Compile Include="ValueObjects\Latitude.cs" />
-    <Compile Include="ValueObjects\Longitude.cs" />
-    <Compile Include="ValueObjects\State.cs" />
-    <Compile Include="ValueObjects\StateCollection.cs" />
+    <Compile Include="Locations\State.cs" />
+    <Compile Include="ValueObjects\Name.cs" />
     <Compile Include="ValueObjects\Volume.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TMD.Common\TMD.Common.csproj">
-      <Project>{5CE0121A-A36A-4504-8CD2-658548A79108}</Project>
-      <Name>TMD.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

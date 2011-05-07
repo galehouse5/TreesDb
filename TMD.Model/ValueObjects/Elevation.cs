@@ -4,37 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
+using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
-    [Serializable]
-    public class Elevation : ICloneable, IIsValid, IIsNull
+    public enum ElevationFormat
     {
-        public enum EInputFormat
-        {
-            Invalid,
-            DecimalFeet,
-            DecimalMeters,
-            DecimalYards
-        }
+        Invalid = 0,
+        Unspecified = 1,
+        Default = 2,
+        DecimalFeet = 3,
+        DecimalMeters = 4,
+        DecimalYards = 5
+    }
 
+    public class Elevation : ISpecified
+    {
         private Elevation()
-        {
-            InputFormat = EInputFormat.DecimalFeet;
-        }
+        { }
 
-        private Elevation(float feet, EInputFormat inputFormat)
-        {
-            this.Feet = feet;
-            this.InputFormat = inputFormat;
-        }
+        public string RawValue { get; private set; }
 
+        [Within2(0, 17000, Inclusive = true, Message = "Elevation must fall within sea level to 17000 feet.", Tags = ValidationTag.Screening)]
         public float Feet { get; private set; }
-        public EInputFormat InputFormat { get; private set; }
+
+        [NotEqualsAttribute(ElevationFormat.Invalid, Message = "Elevation must be in fffff ft or mmmmm m format.", Tags = ValidationTag.Screening)]
+        public ElevationFormat InputFormat { get; private set; }
 
         public float Yards
         {
-            get { return 3f * Feet; }
+            get { return Feet / 3f; }
         }
 
         public float Meters
@@ -73,106 +72,98 @@ namespace TMD.Model
 
         public override string ToString()
         {
-            string s;
-            switch (InputFormat)
+            return ToString(InputFormat);
+        }
+
+        public string ToString(ElevationFormat format)
+        {
+            if (!IsSpecified)
             {
-                case EInputFormat.DecimalFeet:
-                    s = string.Format("{0:0.0} ft", Feet);
-                    break;
-                case EInputFormat.DecimalMeters:
-                    s = string.Format("{0:0.00} m", Meters);
-                    break;
-                case EInputFormat.DecimalYards:
-                    s = string.Format("{0:0.00} yd", Yards);
-                    break;
+                return string.Empty;
+            }
+            switch (format)
+            {
+                case ElevationFormat.Default:
+                case ElevationFormat.DecimalFeet:
+                    return string.Format("{0:0.0} ft", Feet);
+                case ElevationFormat.DecimalMeters:
+                    return string.Format("{0:0.00} m", Meters);
+                case ElevationFormat.DecimalYards:
+                    return string.Format("{0:0.00} yd", Yards);
                 default:
-                    s = string.Empty;
-                    break;
+                    return RawValue;
             }
-            return s;
         }
 
-        #region ICloneable Members
+        #region IIsSpecified Members
 
-        public object Clone()
+        public bool IsSpecified
         {
-            return new Elevation(Feet, InputFormat);
+            get { return InputFormat != ElevationFormat.Unspecified; }
         }
 
         #endregion
 
-        #region IIsValid Members
-
-        public bool IsValid
-        {
-            get { return InputFormat != EInputFormat.Invalid && Feet >= 0f && Feet <= 17000; }
-        }
-
-        public IList<string> GetValidationErrors()
-        {
-            List<string> errors = new List<string>();
-            if (InputFormat == EInputFormat.Invalid)
-            {
-                errors.Add("Elevation must be in fffff ft or mmmmm m format.");
-            }
-            if (Feet < 0f)
-            {
-                errors.Add("Elevation must be non-negative.");
-            }
-            if (Feet > 17000)
-            {
-                Elevation maxElevation = new Elevation(17000, InputFormat);
-                errors.Add(string.Format("Elevation must not exceed {0}.", maxElevation.ToString()));
-            }
-            return errors;
-        }
-
-        #endregion
-
-        #region IIsNull Members
-
-        public bool IsNull
-        {
-            get { return Feet != 0f; }
-        }
-
-        #endregion
-
-        private static Regex DecimalFeetFormat = new Regex("^\\s*(?<feet>[0-9]+(\\.[0-9]+)?)((\\s*'')|(\\s*ft)|(\\s*feet))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalMetersFormat = new Regex("^\\s*(?<meters>[0-9]+(\\.[0-9]+)?)((\\s*m)|(\\s*meters?))\\s*$", RegexOptions.Compiled);
-        private static Regex DecimalYardsFormat = new Regex("^\\s*(?<yards>[0-9]+(\\.[0-9]+)?)((\\s*yds?)|(\\s*yards?))\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalFeetFormat = new Regex("^\\s*(?<feet>[0-9]+(\\.[0-9]+)?)\\s*('|`|ft|feets?|foots?)?\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalMetersFormat = new Regex("^\\s*(?<meters>[0-9]+(\\.[0-9]+)?)\\s*(ms?|meters?|metres?)\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalYardsFormat = new Regex("^\\s*(?<yards>[0-9]+(\\.[0-9]+)?)\\s*(ys?|yds?|yards?)\\s*$", RegexOptions.Compiled);
 
         public static Elevation Create(string s)
         {
             Match match;
             float feet;
-            EInputFormat inputFormat;
-            if ((match = DecimalFeetFormat.Match(s)).Success)
+            ElevationFormat inputFormat;
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                feet = 0;
+                inputFormat = ElevationFormat.Unspecified;
+            }
+            else if ((match = DecimalFeetFormat.Match(s)).Success)
             {
                 feet = float.Parse(match.Groups["feet"].Value);
-                inputFormat = EInputFormat.DecimalFeet;
+                inputFormat = ElevationFormat.DecimalFeet;
             }
             else if ((match = DecimalMetersFormat.Match(s)).Success)
             {
                 feet = float.Parse(match.Groups["meters"].Value) * 3.2808399f;
-                inputFormat = EInputFormat.DecimalMeters;
+                inputFormat = ElevationFormat.DecimalMeters;
             }
             else if ((match = DecimalYardsFormat.Match(s)).Success)
             {
                 feet = float.Parse(match.Groups["yards"].Value) * 3f;
-                inputFormat = EInputFormat.DecimalYards;
+                inputFormat = ElevationFormat.DecimalYards;
             }
             else
             {
                 feet = 0f;
-                inputFormat = EInputFormat.Invalid;
+                inputFormat = ElevationFormat.Invalid;
             }
-            return new Elevation(feet, inputFormat);
+            return new Elevation()
+            {
+                Feet = feet,
+                InputFormat = inputFormat,
+                RawValue = s
+            };
+        }
+
+        public static Elevation Create(float feet)
+        {
+            return new Elevation()
+            {
+                Feet = feet,
+                InputFormat = ElevationFormat.Default,
+                RawValue = feet.ToString()
+            };
         }
 
         public static Elevation Null()
         {
-            return new Elevation(0f, EInputFormat.DecimalFeet);
+            return new Elevation()
+            {
+                Feet = 0f,
+                InputFormat = ElevationFormat.Unspecified,
+                RawValue = string.Empty
+            };
         }
     }
 }

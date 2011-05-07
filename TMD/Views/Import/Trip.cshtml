@@ -1,0 +1,45 @@
+﻿@model TMD.Models.ImportTripModel
+@{ ViewBag.Title = "Import Trip"; Layout = "~/Views/Import/WizardLayout.cshtml"; }
+
+@section Steps {
+    <ol>
+        <li>@Html.ActionLink("Start", Mvc.Import.Start(Model.Id))</li>
+        <li><strong>> @Html.ActionLink("Enter trip", @Mvc.Import.Trip(Model.Id)) <</strong></li>
+        <li>Enter sites</li>
+        <li>Enter trees</li>
+        <li>Finish</li>
+    </ol>
+}
+
+@section StepHeader {
+    <h4>Enter trip</h4>
+}
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            if ($('form.Trip .input-validation-error').length > 0) {
+                $('form.Trip .input-validation-error:first').focus()
+                .closest('.Trip').each(function () { $(this).SmoothScrollInFocus(); });
+            } else {
+                $('form.Trip input[type=text]:first').focus()
+                .closest('.Trip').each(function () { $(this).SmoothScrollInFocus(); });
+            }
+        });
+    </script>
+}
+
+@using (Html.BeginForm(Mvc.Import.Trip(Model.Id), FormMethod.Post, new { @class = "form Trip" })) {
+    @Html.FieldEditorFor(m => m.Name)
+    @Html.FieldEditorFor(m => m.Date)
+    @Html.FieldEditorFor(m => m.MeasurerContactInfo)
+    @Html.FieldEditorFor(m => m.MakeMeasurerContactInfoPublic)
+    @Html.FieldEditorFor(m => m.FirstMeasurer)
+    @Html.FieldEditorFor(m => m.SecondMeasurer)
+    @Html.FieldEditorFor(m => m.ThirdMeasurer)
+    @Html.FieldEditorFor(m => m.Website)
+    <div class="buttonrow">
+        @Html.SubmitButton("Continue")
+        @Html.AnchorButton("Back", Mvc.Import.Start(Model.Id), ButtonColor.Grey)
+    </div>
+}

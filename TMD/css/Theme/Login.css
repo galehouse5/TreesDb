@@ -1,0 +1,11 @@
+﻿/* /css/login.css */
+body { background: #255648; }
+#login h1#title { background-image: url(/images/Theme/title.png); width: 250px; height: 71px; }
+#login-body textarea { border: inherit; }
+#login-body .required { display: none; }
+
+/* /css/custom.css */
+.ticket.responded { background-color: #255648; }
+.info_table .value { color: #255648; }
+.stat .value { color: #255648; }
+table.calendar th { background: #255648  !important; }
