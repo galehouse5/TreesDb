@@ -83,7 +83,11 @@ namespace TMD.Controllers
 
         private static readonly CompatibleBrowser[] s_CompatibleBrowsers = new[] { 
             new CompatibleBrowser("Firefox", 3),
+            new CompatibleBrowser("Firefox", 4),
+            new CompatibleBrowser("Firefox", 5),
+            new CompatibleBrowser("Firefox", 6),
             new CompatibleBrowser("IE", 8),
+            new CompatibleBrowser("IE", 9),
             new CompatibleBrowser("Safari", 5)
         };
 

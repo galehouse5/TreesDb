@@ -74,26 +74,26 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult SpeciesDetails(string botanicalName, int? siteId = null, int? stateId = null)
+        public virtual ActionResult SpeciesDetails(string botanicalName, string commonName, int? siteId = null, int? stateId = null)
         {
-            GlobalMeasuredSpecies globalSpecies = Repositories.Trees.FindMeasuredSpeciesByBotanicalName(botanicalName);
+            GlobalMeasuredSpecies globalSpecies = Repositories.Trees.FindMeasuredSpeciesByName(botanicalName, commonName);
             BrowseSpeciesModel model = new BrowseSpeciesModel
             {
                 GlobalDetails = Mapper.Map<GlobalMeasuredSpecies, BrowseSpeciesDetailsModel>(globalSpecies),
-                StatesContainingSpecies = Repositories.Trees.ListMeasuredSpeciesForStatesByBotanicalName(botanicalName)
+                StatesContainingSpecies = Repositories.Trees.ListMeasuredSpeciesForStatesByName(botanicalName, commonName)
             };
             if (siteId.HasValue)
             {
-                SiteMeasuredSpecies siteSpecies = Repositories.Trees.FindMeasuredSpeciesByBotanicalNameAndSiteId(botanicalName, siteId.Value);
+                SiteMeasuredSpecies siteSpecies = Repositories.Trees.FindMeasuredSpeciesByNameAndSiteId(botanicalName, commonName, siteId.Value);
                 model.SiteDetails = Mapper.Map<SiteMeasuredSpecies, BrowseSpeciesSiteDetailsModel>(siteSpecies);
-                model.TreesOfSpeciesContainedBySite = Repositories.Trees.ListByBotanicalNameAndSiteId(botanicalName, siteId.Value);
+                model.TreesOfSpeciesContainedBySite = Repositories.Trees.ListByNameAndSiteId(botanicalName, commonName, siteId.Value);
                 stateId = siteSpecies.Site.Subsites[0].State.Id;
             }
             if (stateId.HasValue)
             {
-                StateMeasuredSpecies stateSpecies = Repositories.Trees.FindMeasuredSpeciesByBotanicalNameAndStateId(botanicalName, stateId.Value);
+                StateMeasuredSpecies stateSpecies = Repositories.Trees.FindMeasuredSpeciesByNameAndStateId(botanicalName, commonName, stateId.Value);
                 model.StateDetails = Mapper.Map<StateMeasuredSpecies, BrowseSpeciesStateDetailsModel>(stateSpecies);
-                model.SitesInStateContainingSpecies = Repositories.Trees.ListMeasuredSpeciesForSitesByBotanicalNameAndStateId(botanicalName, stateId.Value);
+                model.SitesInStateContainingSpecies = Repositories.Trees.ListMeasuredSpeciesForSitesByNameAndStateId(botanicalName, commonName, stateId.Value);
             }
             return View(model);
         }

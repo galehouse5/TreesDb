@@ -138,9 +138,9 @@ namespace TMD.Controllers
         }
 
         [AuthorizeUser(Roles = UserRoles.Export)]
-        public virtual ActionResult Species(string botanicalName)
+        public virtual ActionResult Species(string botanicalName, string commonName)
         {
-            IList<Tree> speciesTrees = Repositories.Trees.ListByBotanicalName(botanicalName);
+            IList<Tree> speciesTrees = Repositories.Trees.ListByName(botanicalName, commonName);
             DataTable export = ExportToDataTable(
                 from tree in speciesTrees
                 orderby tree.Subsite.State.Code, tree.Subsite.County, tree.Subsite.Name, tree.Height.Feet
@@ -154,7 +154,7 @@ namespace TMD.Controllers
         [AuthorizeUser(Roles = UserRoles.Export)]
         public virtual ActionResult SpeciesByFilters(string botanicalNameFilter, string commonNameFilter)
         {
-            IList<Tree> speciesTrees = Repositories.Trees.ListByBotanicalNameAndCommonNameFilters(botanicalNameFilter, commonNameFilter);
+            IList<Tree> speciesTrees = Repositories.Trees.ListByNameFilters(botanicalNameFilter, commonNameFilter);
             DataTable export = ExportToDataTable(
                 from tree in speciesTrees
                 orderby tree.Subsite.State.Code, tree.Subsite.County, tree.Subsite.Name, tree.ScientificName, tree.Height.Feet

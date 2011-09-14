@@ -142,9 +142,10 @@ namespace TMD.Controllers {
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Species(string botanicalName) {
+        public override System.Web.Mvc.ActionResult Species(string botanicalName, string commonName) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Species);
             callInfo.RouteValueDictionary.Add("botanicalName", botanicalName);
+            callInfo.RouteValueDictionary.Add("commonName", commonName);
             return callInfo;
         }
 

@@ -377,6 +377,7 @@ namespace Links {
         public static readonly string bg_lite_png = Url("bg-lite.png");
         public static readonly string button_gradient_png = Url("button-gradient.png");
         public static readonly string button_sprite_png = Url("button_sprite.png");
+        public static readonly string closelabel_gif = Url("closelabel.gif");
         public static readonly string cross_png = Url("cross.png");
         public static readonly string email_png = Url("email.png");
         public static readonly string forward_disabled_png = Url("forward_disabled.png");

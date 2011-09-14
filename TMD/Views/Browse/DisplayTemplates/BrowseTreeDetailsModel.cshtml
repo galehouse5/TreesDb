@@ -1,11 +1,11 @@
 ﻿@model TMD.Models.BrowseTreeDetailsModel
 <tr>
     <td class="description">Botanical name</td>
-    <td class="value"><a href="@Url.Action(Mvc.Browse.SpeciesDetails(Model.ScientificName, siteId: Model.SiteId))">@Html.DisplayFor(m => m.ScientificName)</a></td>
+    <td class="value"><a href="@Url.Action(Mvc.Browse.SpeciesDetails(Model.ScientificName, Model.CommonName, siteId: Model.SiteId))">@Html.DisplayFor(m => m.ScientificName)</a></td>
 </tr>
 <tr>
     <td class="description">Common name</td>
-    <td class="value"><a href="@Url.Action(Mvc.Browse.SpeciesDetails(Model.ScientificName, siteId: Model.SiteId))">@Html.DisplayFor(m => m.CommonName)</a></td>
+    <td class="value"><a href="@Url.Action(Mvc.Browse.SpeciesDetails(Model.ScientificName, Model.CommonName, siteId: Model.SiteId))">@Html.DisplayFor(m => m.CommonName)</a></td>
 </tr>
 @Html.ReportDisplayFor(m => m.Height)
 @Html.ReportDisplayFor(m => m.HeightMeasurementMethod)
