@@ -10,23 +10,23 @@ namespace TMD.Model.Trees
         void Save(Tree tree);
         Tree FindById(int id);
         IList<Tree> ListAll();
-        IList<Tree> ListByBotanicalNameAndSiteId(string botanicalName, int siteId);
+        IList<Tree> ListByNameAndSiteId(string botanicalName, string commonName, int siteId);
         void RemoveMeasurementsByTrip(Imports.Trip trip);
         IList<Tree> ListByState(int stateId);
-        IList<Tree> ListByBotanicalName(string botanicalName);
-        IList<Tree> ListByBotanicalNameAndCommonNameFilters(string botanicalName, string commonName);
+        IList<Tree> ListByName(string botanicalName, string commonName);
+        IList<Tree> ListByNameFilters(string botanicalName, string commonName);
         IList<Tree> ListByStateSiteAndSubsiteFilters(string state, string site, string subsite);
 
         IList<KnownSpecies> ListKnownSpeciesBySimilarCommonName(string commonName, int results);
         IList<KnownSpecies> ListKnownSpeciesBySimilarScientificName(string scientificName, int results);
 
         EntityPage<T> ListAllMeasuredSpecies<T>(SpeciesBrowser browser) where T : MeasuredSpecies;
-        GlobalMeasuredSpecies FindMeasuredSpeciesByBotanicalName(string botanicalName);
-        StateMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndStateId(string botanicalName, int stateId);
-        SiteMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndSiteId(string botanicalName, int siteId);
-        SubsiteMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndSubsiteId(string botanicalName, int subsiteId);
-        IList<StateMeasuredSpecies> ListMeasuredSpeciesForStatesByBotanicalName(string botanicalName);
-        IList<SiteMeasuredSpecies> ListMeasuredSpeciesForSitesByBotanicalNameAndStateId(string botanicalName, int stateId);
+        GlobalMeasuredSpecies FindMeasuredSpeciesByName(string botanicalName, string commonName);
+        StateMeasuredSpecies FindMeasuredSpeciesByNameAndStateId(string botanicalName, string commonName, int stateId);
+        SiteMeasuredSpecies FindMeasuredSpeciesByNameAndSiteId(string botanicalName, string commonName, int siteId);
+        SubsiteMeasuredSpecies FindMeasuredSpeciesByNameAndSubsiteId(string botanicalName, string commonName, int subsiteId);
+        IList<StateMeasuredSpecies> ListMeasuredSpeciesForStatesByName(string botanicalName, string commonName);
+        IList<SiteMeasuredSpecies> ListMeasuredSpeciesForSitesByNameAndStateId(string botanicalName, string commonName, int stateId);
         IList<SubsiteMeasuredSpecies> ListMeasuredSpeciesBySubsiteId(int id);
         IList<StateMeasuredSpecies> ListMeasuredSpeciesByStateId(int id);
     }

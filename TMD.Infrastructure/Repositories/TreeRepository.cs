@@ -98,11 +98,12 @@ namespace TMD.Infrastructure.Repositories
                 browserPager: criteria => criteria.ApplyPaging(browser));
         }
 
-        public IList<StateMeasuredSpecies> ListMeasuredSpeciesForStatesByBotanicalName(string botanicalName)
+        public IList<StateMeasuredSpecies> ListMeasuredSpeciesForStatesByName(string botanicalName, string commonName)
         {
             return Registry.Session.CreateCriteria<StateMeasuredSpecies>()
                 .CreateAlias("State", "state")
-                .Add(Restrictions.Eq("ScientificName", botanicalName))
+                .Add(Restrictions.Eq("ScientificName", botanicalName) 
+                    & Restrictions.Eq("CommonName", commonName))
                 .AddOrder(Order.Asc("state.Name"))
                 .List<StateMeasuredSpecies>();
         }
@@ -123,35 +124,42 @@ namespace TMD.Infrastructure.Repositories
                 .List<StateMeasuredSpecies>();
         }
 
-        public StateMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndStateId(string botanicalName, int stateId)
-        {
-            return Registry.Session.CreateCriteria<StateMeasuredSpecies>()
-                .Add(Restrictions.Eq("ScientificName", botanicalName) & Restrictions.Eq("State.Id", stateId))
-                .UniqueResult<StateMeasuredSpecies>();
-        }
-
-        public SiteMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndSiteId(string botanicalName, int siteId)
-        {
-            return Registry.Session.CreateCriteria<SiteMeasuredSpecies>()
-                .Add(Restrictions.Eq("ScientificName", botanicalName) & Restrictions.Eq("Site.Id", siteId))
-                .UniqueResult<SiteMeasuredSpecies>();
-        }
-
-        public GlobalMeasuredSpecies FindMeasuredSpeciesByBotanicalName(string botanicalName)
+        public GlobalMeasuredSpecies FindMeasuredSpeciesByName(string botanicalName, string commonName)
         {
             return Registry.Session.CreateCriteria<GlobalMeasuredSpecies>()
-                .Add(Restrictions.Eq("ScientificName", botanicalName))
+                .Add(Restrictions.Eq("ScientificName", botanicalName)
+                    & Restrictions.Eq("CommonName", commonName))
                 .UniqueResult<GlobalMeasuredSpecies>();
         }
 
-        public SubsiteMeasuredSpecies FindMeasuredSpeciesByBotanicalNameAndSubsiteId(string botanicalName, int subsiteId)
+        public StateMeasuredSpecies FindMeasuredSpeciesByNameAndStateId(string botanicalName, string commonName, int stateId)
+        {
+            return Registry.Session.CreateCriteria<StateMeasuredSpecies>()
+                .Add(Restrictions.Eq("ScientificName", botanicalName)
+                    & Restrictions.Eq("CommonName", commonName)
+                    & Restrictions.Eq("State.Id", stateId))
+                .UniqueResult<StateMeasuredSpecies>();
+        }
+
+        public SiteMeasuredSpecies FindMeasuredSpeciesByNameAndSiteId(string botanicalName, string commonName, int siteId)
+        {
+            return Registry.Session.CreateCriteria<SiteMeasuredSpecies>()
+                .Add(Restrictions.Eq("ScientificName", botanicalName)
+                    & Restrictions.Eq("CommonName", commonName)
+                    & Restrictions.Eq("Site.Id", siteId))
+                .UniqueResult<SiteMeasuredSpecies>();
+        }
+
+        public SubsiteMeasuredSpecies FindMeasuredSpeciesByNameAndSubsiteId(string botanicalName, string commonName, int subsiteId)
         {
             return Registry.Session.CreateCriteria<SubsiteMeasuredSpecies>()
-                .Add(Restrictions.Eq("ScientificName", botanicalName) & Restrictions.Eq("Subsite.Id", subsiteId))
+                .Add(Restrictions.Eq("ScientificName", botanicalName)
+                    & Restrictions.Eq("CommonName", commonName)
+                    & Restrictions.Eq("Subsite.Id", subsiteId))
                 .UniqueResult<SubsiteMeasuredSpecies>();
         }
 
-        public IList<SiteMeasuredSpecies> ListMeasuredSpeciesForSitesByBotanicalNameAndStateId(string botanicalName, int stateId)
+        public IList<SiteMeasuredSpecies> ListMeasuredSpeciesForSitesByNameAndStateId(string botanicalName, string commonName, int stateId)
         {
             var subquery = DetachedCriteria.For<Subsite>("subsite")
                 .Add(Restrictions.Eq("subsite.State.Id", stateId)
@@ -160,16 +168,19 @@ namespace TMD.Infrastructure.Repositories
             return Registry.Session.CreateCriteria<SiteMeasuredSpecies>()
                 .CreateAlias("Site", "site")
                 .Add(Restrictions.Eq("ScientificName", botanicalName)
+                    & Restrictions.Eq("CommonName", commonName)
                     & Subqueries.Exists(subquery))
                 .AddOrder(Order.Asc("site.Name"))
                     .List<SiteMeasuredSpecies>();
         }
 
-        public IList<Tree> ListByBotanicalNameAndSiteId(string botanicalName, int siteId)
+        public IList<Tree> ListByNameAndSiteId(string botanicalName, string commonName, int siteId)
         {
             return Registry.Session.CreateCriteria<Tree>()
                 .CreateAlias("Subsite", "subsite")
-                .Add(Restrictions.Eq("ScientificName", botanicalName) & Restrictions.Eq("subsite.Site.Id", siteId))
+                .Add(Restrictions.Eq("ScientificName", botanicalName) 
+                    & Restrictions.Eq("CommonName", commonName)
+                    & Restrictions.Eq("subsite.Site.Id", siteId))
                 .AddOrder(Order.Desc("Height.Feet"))
                 .List<Tree>();
         }
@@ -184,17 +195,17 @@ namespace TMD.Infrastructure.Repositories
                 .List<Tree>();
         }
 
-        public IList<Tree> ListByBotanicalName(string botanicalName)
+        public IList<Tree> ListByName(string botanicalName, string commonName)
         {
             return Registry.Session.CreateCriteria<Tree>()
                 .CreateAlias("Subsite", "subsite")
                 .CreateAlias("subsite.Site", "site")
                 .CreateAlias("subsite.State", "state")
-                .Add(Restrictions.Eq("ScientificName", botanicalName))
+                .Add(Restrictions.Eq("ScientificName", botanicalName) & Restrictions.Eq("CommonName", commonName))
                 .List<Tree>();
         }
 
-        public IList<Tree> ListByBotanicalNameAndCommonNameFilters(string botanicalName, string commonName)
+        public IList<Tree> ListByNameFilters(string botanicalName, string commonName)
         {
             return Registry.Session.CreateCriteria<Tree>()
                 .CreateAlias("Subsite", "subsite")
