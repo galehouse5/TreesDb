@@ -9,6 +9,24 @@ using TMD.Extensions;
 
 namespace TMD.Controllers
 {
+    public class MaintenanceResult : ActionResult
+    {
+        public bool IsExecuting(ControllerContext context)
+        {
+            return context.RouteData.Values["controller"] == "Error"
+                && context.RouteData.Values["action"] == "Maintenance";
+        }
+
+        public override void ExecuteResult(ControllerContext context)
+        {
+            RouteData rd = new RouteData();
+            rd.Values.Add("controller", "Error");
+            rd.Values.Add("action", "Maintenance");
+            IController c = new ErrorController();
+            c.Execute(new RequestContext(context.HttpContext, rd));
+        }
+    }
+
     public class NotFoundResult : ActionResult
     {
         public override void ExecuteResult(ControllerContext context)
@@ -144,6 +162,12 @@ namespace TMD.Controllers
         public virtual ActionResult Unauthorized()
         {
             Response.StatusCode = (int)HttpStatusCode.Forbidden;
+            return View();
+        }
+
+        public virtual ActionResult Maintenance()
+        {
+            Response.StatusCode = (int)HttpStatusCode.ServiceUnavailable;
             return View();
         }
     }

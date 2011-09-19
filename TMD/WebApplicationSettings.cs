@@ -16,6 +16,7 @@ namespace TMD
             public const string StaticContentVersion = "staticContentVersion";
             public const string StaticContentHostname = "staticContentHostname";
             public const string MinifyStaticContent = "minifyStaticContent";
+            public const string EnableMaintenance = "enableMaintenance";
         }
 
         [ConfigurationProperty(PropertyNames.HostName, IsRequired = true)]
@@ -58,6 +59,13 @@ namespace TMD
         {
             get { return (bool)this[PropertyNames.MinifyStaticContent]; }
             set { this[PropertyNames.MinifyStaticContent] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.EnableMaintenance, IsRequired = true)]
+        public bool EnableMaintenance
+        {
+            get { return (bool)this[PropertyNames.EnableMaintenance]; }
+            set { this[PropertyNames.EnableMaintenance] = value; }
         }
     }
 }

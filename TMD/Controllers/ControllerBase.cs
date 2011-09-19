@@ -60,6 +60,16 @@ namespace TMD
 
         protected override void OnActionExecuting(ActionExecutingContext filterContext)
         {
+            if (WebApplicationRegistry.Settings.EnableMaintenance)
+            {
+                MaintenanceResult result = new MaintenanceResult();
+                if (!result.IsExecuting(ControllerContext))
+                {
+                    filterContext.Result = new MaintenanceResult();
+                }
+                base.OnActionExecuting(filterContext);
+                return;
+            }
             if (base.User.Identity.IsAuthenticated)
             {
                 User.ReportActivity();
@@ -79,8 +89,8 @@ namespace TMD
                 catch (Exception ex)
                 {
                     this.Error("Unhandled exception executing controller action.", ex);
-                    ActionResult ar = new ServerErrorResult();
-                    ar.ExecuteResult(ControllerContext);
+                    ActionResult result = new ServerErrorResult();
+                    result.ExecuteResult(ControllerContext);
                 }
             }
             else
