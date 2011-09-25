@@ -13,8 +13,8 @@ namespace TMD.Controllers
     {
         public bool IsExecuting(ControllerContext context)
         {
-            return context.RouteData.Values["controller"] == "Error"
-                && context.RouteData.Values["action"] == "Maintenance";
+            return "Error".Equals(context.RouteData.Values["controller"])
+                && "Maintenance".Equals(context.RouteData.Values["action"]);
         }
 
         public override void ExecuteResult(ControllerContext context)
