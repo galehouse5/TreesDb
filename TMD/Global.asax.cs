@@ -50,9 +50,9 @@ namespace TMD
             routes.MapRoute("CompleteAccountRegistration", "Account/{token}/CompleteRegistration", new { controller = "Account", action = "CompleteRegistration" });
             routes.MapRoute("Account", "Account/{action}", new { controller = "Account", action = "Index" });
 
-            routes.MapRoute("BrowseStateSpeciesDetails", "Browse/States/{stateId}/Species/{botanicalName}-{commonName}/Details", new { controller = "Browse", action = "SpeciesDetails" });
-            routes.MapRoute("BrowseSiteSpeciesDetails", "Browse/Sites/{siteId}/Species/{botanicalName}-{commonName}/Details", new { controller = "Browse", action = "SpeciesDetails" });
-            routes.MapRoute("BrowseSpeciesDetails", "Browse/Species/{botanicalName}-{commonName}/Details", new { controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseStateSpeciesDetails", "Browse/States/{stateId}/Species/{botanicalName} ({commonName})/Details", new { controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseSiteSpeciesDetails", "Browse/Sites/{siteId}/Species/{botanicalName} ({commonName})/Details", new { controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseSpeciesDetails", "Browse/Species/{botanicalName} ({commonName})/Details", new { controller = "Browse", action = "SpeciesDetails" });
             routes.MapRoute("BrowseTreeDetails", "Browse/Trees/{id}/Details", new { controller = "Browse", action = "TreeDetails" });
             routes.MapRoute("BrowseStateDetails", "Browse/States/{id}/Details", new { controller = "Browse", action = "StateDetails" });
             routes.MapRoute("BrowseSiteDetails", "Browse/Sites/{id}/Details", new { controller = "Browse", action = "SiteDetails" });
@@ -66,9 +66,9 @@ namespace TMD
             routes.MapRoute("ImportNew", "Import/New", new { controller = "Import", action = "New" });
             routes.MapRoute("ImportHistory", "Import/History", new { controller = "Import", action = "History" });
 
-            routes.MapRoute("ExportSpecies", "Export/Species/{botanicalName}-{commonName}", new { controller = "Export", action = "Species" });
-            routes.MapRoute("ExportSitesSpecies", "Export/Sites/{id}/Species/{botanicalName}", new { controller = "Export", action = "SitesSpecies" });
-            routes.MapRoute("ExportStatesSpecies", "Export/States/{id}/Species/{botanicalName}", new { controller = "Export", action = "StatesSpecies" });
+            routes.MapRoute("ExportSpecies", "Export/Species/{botanicalName} ({commonName})", new { controller = "Export", action = "Species" });
+            routes.MapRoute("ExportSitesSpecies", "Export/Sites/{id}/Species/{botanicalName} ({commonName})", new { controller = "Export", action = "SitesSpecies" });
+            routes.MapRoute("ExportStatesSpecies", "Export/States/{id}/Species/{botanicalName} ({commonName})", new { controller = "Export", action = "StatesSpecies" });
             routes.MapRoute("ExportDefault", "Export/{action}/{id}", new { controller = "Export" });
 
             routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}", new { controller = "Main", action = "Index" }, new { id = @"\d+" });
