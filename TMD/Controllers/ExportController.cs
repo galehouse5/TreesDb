@@ -68,6 +68,7 @@ namespace TMD.Controllers
         public virtual ActionResult Trees(int id)
         {
             var tree = Repositories.Trees.FindById(id);
+            if (tree == null) { return new NotFoundResult(); }
             DataTable export = ExportToDataTable(new List<Tree> { tree });
             return new ExcelActionResult(export)
             {
@@ -79,6 +80,7 @@ namespace TMD.Controllers
         public virtual ActionResult Sites(int id)
         {
             var site = Repositories.Sites.FindById(id);
+            if (site == null) { return new NotFoundResult(); }
             DataTable export = ExportToDataTable(
                 from subsite in site.Subsites
                 from tree in subsite.Trees
@@ -94,6 +96,7 @@ namespace TMD.Controllers
         public virtual ActionResult SitesSpecies(int id, string botanicalName)
         {
             var site = Repositories.Sites.FindById(id);
+            if (site == null) { return new NotFoundResult(); }
             DataTable export = ExportToDataTable(
                 from subsite in site.Subsites
                 from tree in subsite.Trees
@@ -110,6 +113,7 @@ namespace TMD.Controllers
         public virtual ActionResult States(int id)
         {
             var state = Repositories.Locations.FindStateById(id);
+            if (state == null) { return new NotFoundResult(); }
             IList<Tree> stateTrees = Repositories.Trees.ListByState(id);
             DataTable export = ExportToDataTable(
                 from tree in stateTrees
@@ -125,6 +129,7 @@ namespace TMD.Controllers
         public virtual ActionResult StatesSpecies(int id, string botanicalName)
         {
             var state = Repositories.Locations.FindStateById(id);
+            if (state == null) { return new NotFoundResult(); }
             IList<Tree> stateTrees = Repositories.Trees.ListByState(id);
             DataTable export = ExportToDataTable(
                 from tree in stateTrees

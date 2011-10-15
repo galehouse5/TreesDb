@@ -28,6 +28,7 @@ namespace TMD.Controllers
         public virtual ActionResult TreeDetails(int id)
         {
             var tree = Repositories.Trees.FindById(id);
+            if (tree == null) { return new NotFoundResult(); }
             var orderedMeasurements = from measurement in tree.Measurements
                                       orderby measurement.Measured descending
                                       select measurement;
@@ -52,6 +53,7 @@ namespace TMD.Controllers
         public virtual ActionResult SiteDetails(int id)
         {
             var site = Repositories.Sites.FindById(id);
+            if (site == null) { return new NotFoundResult(); }
             var siteVisits = from visit in site.Visits
                              orderby visit.Visited descending
                              select visit;
@@ -77,6 +79,7 @@ namespace TMD.Controllers
         public virtual ActionResult SpeciesDetails(string botanicalName, string commonName, int? siteId = null, int? stateId = null)
         {
             GlobalMeasuredSpecies globalSpecies = Repositories.Trees.FindMeasuredSpeciesByName(botanicalName, commonName);
+            if (globalSpecies == null) { return new NotFoundResult(); }
             BrowseSpeciesModel model = new BrowseSpeciesModel
             {
                 GlobalDetails = Mapper.Map<GlobalMeasuredSpecies, BrowseSpeciesDetailsModel>(globalSpecies),
@@ -85,6 +88,7 @@ namespace TMD.Controllers
             if (siteId.HasValue)
             {
                 SiteMeasuredSpecies siteSpecies = Repositories.Trees.FindMeasuredSpeciesByNameAndSiteId(botanicalName, commonName, siteId.Value);
+                if (siteSpecies == null) { return new NotFoundResult(); }
                 model.SiteDetails = Mapper.Map<SiteMeasuredSpecies, BrowseSpeciesSiteDetailsModel>(siteSpecies);
                 model.TreesOfSpeciesContainedBySite = Repositories.Trees.ListByNameAndSiteId(botanicalName, commonName, siteId.Value);
                 stateId = siteSpecies.Site.Subsites[0].State.Id;
@@ -92,6 +96,7 @@ namespace TMD.Controllers
             if (stateId.HasValue)
             {
                 StateMeasuredSpecies stateSpecies = Repositories.Trees.FindMeasuredSpeciesByNameAndStateId(botanicalName, commonName, stateId.Value);
+                if (stateSpecies == null) { return new NotFoundResult(); }
                 model.StateDetails = Mapper.Map<StateMeasuredSpecies, BrowseSpeciesStateDetailsModel>(stateSpecies);
                 model.SitesInStateContainingSpecies = Repositories.Trees.ListMeasuredSpeciesForSitesByNameAndStateId(botanicalName, commonName, stateId.Value);
             }
@@ -102,6 +107,7 @@ namespace TMD.Controllers
         public virtual ActionResult StateDetails(int id)
         {
             var state = Repositories.Locations.FindVisitedStateById(id);
+            if (state == null) { return new NotFoundResult(); }
             var model = Mapper.Map<VisitedState, BrowseStateModel>(state);
             model.Species = Repositories.Trees.ListMeasuredSpeciesByStateId(state.Id);
             model.Subsites = Repositories.Sites.FindSubsitesByStateId(state.Id);
