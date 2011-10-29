@@ -12,7 +12,7 @@ namespace TMD.Infrastructure.Logging
     {
         public Log4NetContextPropertyValueProvider(Func<object> evaluator) { this.Evaluator = evaluator; }
         public Func<object> Evaluator { get; private set; }
-        public TypeCode GetTypeCode() { return TypeCode.Object; }
+        public override string ToString() { return (Evaluator() ?? string.Empty).ToString(); }
 
         #region IConvertible implementation
 
