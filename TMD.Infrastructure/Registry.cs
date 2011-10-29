@@ -7,7 +7,6 @@ using NHibernate.Cfg;
 using System.Reflection;
 using TMD.Model;
 using TMD.Infrastructure.Repositories;
-using System.Configuration;
 using StructureMap;
 using NHibernate.Event;
 
@@ -33,6 +32,34 @@ namespace TMD.Infrastructure
         public static ISession Session
         {
             get { return (ObjectFactory.GetInstance<IUnitOfWorkProvider>() as NHibernateUnitOfWorkProvider).Session; }
+        }
+
+        private static string s_ConnectionString;
+        internal static string ConnectionString
+        {
+            get
+            {
+                if (s_ConnectionString == null)
+                {
+                    s_ConnectionString = getConnectionString(new Configuration().Configure());
+                }
+                return s_ConnectionString;
+            }
+        }
+
+        private static string getConnectionString(Configuration configuration)
+        {
+            if (configuration.Properties.ContainsKey(NHibernate.Cfg.Environment.ConnectionString))
+            {
+                return configuration.GetProperty(NHibernate.Cfg.Environment.ConnectionString);
+            }
+            if (configuration.Properties.ContainsKey(NHibernate.Cfg.Environment.ConnectionStringName))
+            {
+                return System.Configuration.ConfigurationManager.ConnectionStrings[
+                    configuration.GetProperty(NHibernate.Cfg.Environment.ConnectionStringName)
+                    ].ConnectionString;
+            }
+            throw new NotImplementedException();
         }
     }
 }

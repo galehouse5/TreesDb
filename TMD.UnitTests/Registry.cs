@@ -8,6 +8,7 @@ using TMD.Infrastructure.Repositories;
 using TMD.Model;
 using TMD.Infrastructure;
 using TMD.Model.Logging;
+using TMD.Infrastructure.Logging;
 
 namespace TMD.UnitTests
 {

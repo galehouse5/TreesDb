@@ -4,14 +4,109 @@ using System.Linq;
 using System.Text;
 using TMD.Model.Logging;
 using log4net;
+using System.ComponentModel;
 
-namespace TMD.Infrastructure
+namespace TMD.Infrastructure.Logging
 {
-    public class Log4NetContextPropertyValueProvider
+    public class Log4NetContextPropertyValueProvider : IConvertible
     {
-        public Log4NetContextPropertyValueProvider(Func<string> evaluator) { this.Evaluator = evaluator; }
-        public Func<string> Evaluator { get; private set; }
-        public override string ToString() { return Evaluator(); }
+        public Log4NetContextPropertyValueProvider(Func<object> evaluator) { this.Evaluator = evaluator; }
+        public Func<object> Evaluator { get; private set; }
+        public TypeCode GetTypeCode() { return TypeCode.Object; }
+
+        #region IConvertible implementation
+
+        TypeCode IConvertible.GetTypeCode()
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IConvertible.ToBoolean(IFormatProvider provider)
+        {
+            object value = Evaluator();
+            if (value is bool) { return (bool)value; }
+            throw new NotImplementedException();
+        }
+
+        byte IConvertible.ToByte(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        char IConvertible.ToChar(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        DateTime IConvertible.ToDateTime(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        decimal IConvertible.ToDecimal(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        double IConvertible.ToDouble(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        short IConvertible.ToInt16(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        int IConvertible.ToInt32(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        long IConvertible.ToInt64(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        sbyte IConvertible.ToSByte(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        float IConvertible.ToSingle(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        string IConvertible.ToString(IFormatProvider provider)
+        {
+            object value = Evaluator();
+            if (value == null) { return string.Empty; }
+            if (value is string) { return (string)value; }
+            return value.ToString();
+        }
+
+        object IConvertible.ToType(Type conversionType, IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        ushort IConvertible.ToUInt16(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        uint IConvertible.ToUInt32(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        ulong IConvertible.ToUInt64(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
     }
 
     public class Log4NetLogProvider : ILogProvider
@@ -48,7 +143,7 @@ namespace TMD.Infrastructure
         public void FatalFormat(Type type, string format, params object[] args) { getLog(type).FatalFormat(format, args); }
         public void FatalFormat(Type type, IFormatProvider provider, string format, params object[] args) { getLog(type).FatalFormat(provider, format, args); }
 
-        public void AddContextProperty(string property, Func<string> evaluator)
+        public void AddContextProperty(string property, Func<object> evaluator)
         {
             GlobalContext.Properties[property] = new Log4NetContextPropertyValueProvider(evaluator);
         }

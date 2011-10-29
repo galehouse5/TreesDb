@@ -13,6 +13,7 @@ using TMD.Extensions;
 using TMD.Binders;
 using TMD.Infrastructure;
 using StructureMap;
+using TMD.Infrastructure.Logging;
 
 namespace TMD
 {
@@ -105,11 +106,11 @@ namespace TMD
                 x.For<ILogProvider>().Singleton().Use<Log4NetLogProvider>()
                     .OnCreation(lp =>
                     {
-                        lp.AddContextProperty("Request.Url", () => HttpContext.Current.Request.Url.ToString());
+                        lp.AddContextProperty("Request.Url", () => HttpContext.Current.Request.Url);
                         lp.AddContextProperty("Request.UserHostAddress", () => HttpContext.Current.Request.UserHostAddress);
-                        lp.AddContextProperty("Request.UrlReferrer", () => HttpContext.Current.Request.UrlReferrer == null ? string.Empty : HttpContext.Current.Request.UrlReferrer.ToString());
+                        lp.AddContextProperty("Request.UrlReferrer", () => HttpContext.Current.Request.UrlReferrer);
                         lp.AddContextProperty("Request.User", () => HttpContext.Current.User.Identity.Name);
-                        lp.AddContextProperty("Request.IsAuthenticated", () => HttpContext.Current.User.Identity.IsAuthenticated.ToString());
+                        lp.AddContextProperty("Request.IsAuthenticated", () => HttpContext.Current.User.Identity.IsAuthenticated);
                         lp.AddContextProperty("Application.Path", () => HttpContext.Current.Request.PhysicalApplicationPath);
                         lp.AddContextProperty("Application.Machine", () => Environment.MachineName);
                     });

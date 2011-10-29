@@ -65,7 +65,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Log4NetLogProvider.cs" />
+    <Compile Include="Logging\DatabaseErrorLogAppender.cs" />
+    <Compile Include="Logging\Log4NetLogProvider.cs" />
     <Compile Include="Registry.cs" />
     <Compile Include="Repositories\LocationRepository.cs" />
     <Compile Include="Repositories\PhotoRepository.cs" />

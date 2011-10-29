@@ -38,7 +38,7 @@ namespace TMD.Model.Logging
         void FatalFormat(Type type, string format, params object[] args);
         void FatalFormat(Type type, IFormatProvider provider, string format, params object[] args);
 
-        void AddContextProperty(string property, Func<string> evaluator);
+        void AddContextProperty(string property, Func<object> evaluator);
         bool RemoveContextProperty(string property);
         void ClearContextProperties();
     }
