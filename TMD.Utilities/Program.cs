@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using TMD.Model;
-using TMD.Infrastructure.Repositories;
-using TMD.Infrastructure;
-using TMD.Model.Logging;
 using StructureMap;
+using TMD.Infrastructure;
+using TMD.Infrastructure.Logging;
+using TMD.Infrastructure.Repositories;
+using TMD.Model;
+using TMD.Model.Logging;
 using TMD.Model.Validation;
 
 namespace TMD.Utilities
