@@ -1,4 +1,4 @@
-String.prototype.Trim = function () {
+﻿String.prototype.Trim = function () {
     return this.replace(/^\s*/, '').replace(/\s*$/, '');
 };
 

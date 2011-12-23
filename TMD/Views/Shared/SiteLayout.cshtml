@@ -48,8 +48,12 @@
         <!-- #content -->
         <div id="footer">
             <p>
-                Copyright &copy; @DateTime.Now.Year @Html.ActionLink("Trees Database", Mvc.Main.Index()),
-                all rights reserved.</p>
+                <img id="footer-logo" src="@Url.ManagedContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
+                <br />
+                Contact: <a href="mailto:@WebApplicationRegistry.Settings.WebmasterEmail">@WebApplicationRegistry.Settings.WebmasterEmail</a>
+                <br />
+                &copy; @DateTime.Now.Year @Html.ActionLink("Trees Database", Mvc.Main.Index())
+            </p>
         </div>
         <!-- #footer -->
     </div>

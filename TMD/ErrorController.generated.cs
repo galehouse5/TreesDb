@@ -57,6 +57,7 @@ namespace TMD.Controllers {
             public readonly string IncompatibleBrowser = "IncompatibleBrowser";
             public readonly string BypassBrowserCheck = "BypassBrowserCheck";
             public readonly string Unauthorized = "Unauthorized";
+            public readonly string Maintenance = "Maintenance";
         }
 
 
@@ -66,6 +67,7 @@ namespace TMD.Controllers {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
             public readonly string IncompatibleBrowser = "~/Views/Error/IncompatibleBrowser.cshtml";
+            public readonly string Maintenance = "~/Views/Error/Maintenance.cshtml";
             public readonly string NotFound = "~/Views/Error/NotFound.cshtml";
             public readonly string ServerError = "~/Views/Error/ServerError.cshtml";
             public readonly string Unauthorized = "~/Views/Error/Unauthorized.cshtml";
@@ -99,6 +101,11 @@ namespace TMD.Controllers {
 
         public override System.Web.Mvc.ActionResult Unauthorized() {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Unauthorized);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult Maintenance() {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Maintenance);
             return callInfo;
         }
 

@@ -1,4 +1,4 @@
-var CoordinatePicker = new function () {
+﻿var CoordinatePicker = new function () {
     var external = {};
 
     var $container = $(

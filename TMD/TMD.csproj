@@ -271,6 +271,7 @@
     <Content Include="images\Theme\button_sprite.png" />
     <Content Include="images\Theme\forward_enabled.png" />
     <Content Include="images\Theme\header_bg.png" />
+    <Content Include="images\Theme\icon.png" />
     <Content Include="images\Theme\title.png" />
     <Content Include="images\tipsy.gif" />
     <Content Include="images\title.png" />
@@ -323,7 +324,9 @@
     <Content Include="js\slate\slate.portlet.js" />
     <Content Include="js\widgets.js" />
     <Content Include="Views\Account\CompletePasswordAssistance.cshtml" />
-    <Content Include="js\Javascript.chirp.config" />
+    <Content Include="js\Javascript.chirp.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="css\Css.chirp.config">
       <SubType>Designer</SubType>
     </Content>

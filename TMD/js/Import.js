@@ -1,4 +1,4 @@
-(function ($) {
+﻿(function ($) {
     $.fn.InitializeSitesUi = function (options) {
         return this.each(function () {
 

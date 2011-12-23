@@ -422,6 +422,7 @@ namespace Links {
             public static readonly string button_sprite_png = Url("button_sprite.png");
             public static readonly string forward_enabled_png = Url("forward_enabled.png");
             public static readonly string header_bg_png = Url("header_bg.png");
+            public static readonly string icon_png = Url("icon.png");
             public static readonly string title_png = Url("title.png");
         }
     
