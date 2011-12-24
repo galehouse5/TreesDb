@@ -101,29 +101,16 @@ namespace TMD.Controllers
 
         private static readonly CompatibleBrowser[] s_CompatibleBrowsers = new[] { 
             new CompatibleBrowser("Firefox", 3),
-            new CompatibleBrowser("Firefox", 4),
-            new CompatibleBrowser("Firefox", 5),
-            new CompatibleBrowser("Firefox", 6),
             new CompatibleBrowser("IE", 8),
-            new CompatibleBrowser("IE", 9),
             new CompatibleBrowser("Safari", 5)
         };
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (!false.Equals(((ControllerBase)filterContext.Controller).Session.GetPerformBrowserCheck()))
+            if (!filterContext.IsChildAction && true.Equals(((ControllerBase)filterContext.Controller).Session.GetPerformBrowserCheck()))
             {
                 HttpBrowserCapabilitiesBase browser = ((Controller)filterContext.Controller).Request.Browser;
-                bool isCompatible = false;
-                foreach (CompatibleBrowser compatibleBrowser in s_CompatibleBrowsers)
-                {
-                    if (compatibleBrowser.Is(browser))
-                    {
-                        isCompatible = true;
-                        break;
-                    }
-                }
-                if (!isCompatible)
+                if (!s_CompatibleBrowsers.Any(compatibleBrowser => compatibleBrowser.Is(browser)))
                 {
                     filterContext.Result = new IncompatibleBrowserResult();
                 }

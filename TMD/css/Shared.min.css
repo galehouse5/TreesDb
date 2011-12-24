@@ -562,6 +562,7 @@ ul.tabs li{background-image:url(/images/Theme/accordion_header.png)}
 ul.tabs li a{color:#255648}
 h2.accordion_panel{background-image:url(/images/Theme/accordion_header.png)}
 h2.accordion_panel a{color:#255648}
+.xfluid .xColumn{margin-left:.45%;width:49%;margin-right:.35%}
 .btn:visited,.btn-icon:visited,.btn-mini:visited{background-color:#255648}
 .btn-pink,.btn-pink:visited{background-color:#F06}
 .btn-blue,.btn-blue:visited{background-color:#066ECD}
@@ -583,7 +584,7 @@ h2.accordion_panel a{color:#255648}
 .portlet-header h4{color:#255648}
 .portlet-tab-nav .portlet-tab-nav-active{background-color:#255648!important}
 .portlet-header{cursor:inherit}
-#wrapper>.content{width:95%;margin:0 auto;position:relative;z-index:10}
+#wrapper>.content{width:95%;margin:0 auto;position:relative;z-index:10;padding-left:.5%}
 #footer-logo{float:left;margin-top:5px}
 .mega-menu li a{color:#327487}
 .mega-container .mega-current .mega-link{background-color:#255648;border-color:#1B4736}

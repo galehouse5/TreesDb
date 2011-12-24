@@ -13,6 +13,7 @@ using TMD.Model.Locations;
 
 namespace TMD.Controllers
 {
+    [CheckBrowserCompatibilityFilterAttribute]
     public partial class BrowseController : ControllerBase
     {
         [ChildActionOnly]

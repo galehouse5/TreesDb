@@ -48,11 +48,13 @@
         <!-- #content -->
         <div id="footer">
             <p>
-                <img id="footer-logo" src="@Url.ManagedContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
+                <a href="@Url.Action(Mvc.Main.Index())">
+                    <img id="footer-logo" src="@Url.ManagedContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
+                </a>
                 <br />
                 Contact: <a href="mailto:@WebApplicationRegistry.Settings.WebmasterEmail">@WebApplicationRegistry.Settings.WebmasterEmail</a>
                 <br />
-                &copy; @DateTime.Now.Year @Html.ActionLink("Trees Database", Mvc.Main.Index())
+                &copy;@DateTime.Now.Year Trees Database
             </p>
         </div>
         <!-- #footer -->
