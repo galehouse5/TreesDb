@@ -50,15 +50,15 @@ namespace TMD.Models
         public int SpeciesId { get; set; }
         [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false), Classification("Comment")]
         public string GeneralComments { get; set; } 
-        [DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        [DisplayFormat(NullDisplayText = "(no data)")]
         public Distance Height { get; set; }
         [DisplayName("Height measurement method"), DisplayFormat(NullDisplayText = "(no data)"), UIHint("Enum")]
         public TMD.Model.Imports.TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
-        [DisplayFormat(DataFormatString = "FeetDecimalInches", NullDisplayText = "(no data)")]
+        [DisplayFormat(DataFormatString = "SubprefixOnly", NullDisplayText = "(no data)")]
         public Distance Girth { get; set; }
         [DisplayName("Crown spread"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
         public Distance CrownSpread { get; set; }
-        [DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        [DisplayFormat(NullDisplayText = "(no data)")]
         public Elevation Elevation { get; set; }
         [DisplayFormat(DataFormatString = "{0:0.00}", NullDisplayText = "(not enough data)")]
         public float? TDI3 { get; set; }
@@ -72,9 +72,9 @@ namespace TMD.Models
         public float? ChampionPoints { get; set; }
         [DisplayName("Champion points (abbreviated)"), DisplayFormat(DataFormatString = "{0:0.00}")]
         public float? AbbreviatedChampionPoints { get; set; }
-        [DisplayFormat(DataFormatString = "FeetDecimalInches", NullDisplayText = "(no data)")]
+        [DisplayFormat(DataFormatString = "SubprefixOnly", NullDisplayText = "(no data)")]
         public Distance Diameter { get; private set; }
-        [DisplayName("Conical volume"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        [DisplayName("Conical volume"), DisplayFormat(NullDisplayText = "(no data)")]
         public Volume ConicalVolume { get; private set; }
         [UIHint("ConcatenatedNames"), Emphasize(false)]
         public IList<Name> Measurers { get; set; }
@@ -113,15 +113,15 @@ namespace TMD.Models
         public string ScientificName { get; set; }
         [DisplayName("Common name")]
         public string CommonName { get; set; }
-        [DisplayName("Max height"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        [DisplayName("Max height"), DisplayFormat(NullDisplayText = "(no data)")]
         public Distance MaxHeight { get; set; }
         [ScaffoldColumn(false)]
         public int MaxHeightTreeId { get; set; }
-        [DisplayName("Max girth"), DisplayFormat(DataFormatString = "FeetDecimalInches", NullDisplayText = "(no data)")]
+        [DisplayName("Max girth"), DisplayFormat(DataFormatString = "SubprefixOnly", NullDisplayText = "(no data)")]
         public Distance MaxGirth { get; set; }
         [ScaffoldColumn(false)]
         public int MaxGirthTreeId { get; set; }
-        [DisplayName("Max crown spread"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
+        [DisplayName("Max crown spread"), DisplayFormat(NullDisplayText = "(no data)")]
         public Distance MaxCrownSpread { get; set; }
         [ScaffoldColumn(false)]
         public int MaxCrownSpreadTreeId { get; set; }

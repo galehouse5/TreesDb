@@ -39,6 +39,11 @@ namespace TMD.Controllers {
         public System.Web.Mvc.ActionResult MenuWidget() {
             return new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);
         }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public System.Web.Mvc.ActionResult SetUnits() {
+            return new T4MVC_ActionResult(Area, Name, ActionNames.SetUnits);
+        }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public MainController Actions { get { return Mvc.Main; } }
@@ -54,6 +59,7 @@ namespace TMD.Controllers {
         public class ActionNamesClass {
             public readonly string MenuWidget = "MenuWidget";
             public readonly string Index = "Index";
+            public readonly string SetUnits = "SetUnits";
         }
 
 
@@ -79,6 +85,13 @@ namespace TMD.Controllers {
 
         public override System.Web.Mvc.ActionResult Index() {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Index);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult SetUnits(TMD.Model.Units units, string returnUrl) {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SetUnits);
+            callInfo.RouteValueDictionary.Add("units", units);
+            callInfo.RouteValueDictionary.Add("returnUrl", returnUrl);
             return callInfo;
         }
 

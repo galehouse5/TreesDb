@@ -72,7 +72,7 @@ namespace TMD.Controllers
             DataTable export = ExportToDataTable(new List<Tree> { tree });
             return new ExcelActionResult(export)
             {
-                FileDownloadName = string.Format("Tree-{0}.xls", tree.Id)
+                FileDownloadName = string.Format("Tree-{0}({1}).xls", tree.Id, UserSession.Units.Describe())
             };
         }
 
@@ -88,7 +88,7 @@ namespace TMD.Controllers
                 select tree);
             return new ExcelActionResult(export)
             {
-                FileDownloadName = string.Format("Site-{0}-Trees.xls", site.Id)
+                FileDownloadName = string.Format("Site-{0}-Trees({1}).xls", site.Id, UserSession.Units.Describe())
             };
         }
 
@@ -105,7 +105,7 @@ namespace TMD.Controllers
                 select tree);
             return new ExcelActionResult(export)
             {
-                FileDownloadName = string.Format("Site-{0}-Species-{1}-Trees.xls", site.Id, botanicalName)
+                FileDownloadName = string.Format("Site-{0}-Species-{1}-Trees({2}).xls", site.Id, botanicalName, UserSession.Units.Describe())
             };
         }
 
@@ -121,7 +121,7 @@ namespace TMD.Controllers
                 select tree);
             return new ExcelActionResult(export)
             {
-                FileDownloadName = string.Format("State-{0}-Trees.xls", state.Code)
+                FileDownloadName = string.Format("State-{0}-Trees({1}).xls", state.Code, UserSession.Units.Describe())
             };
         }
 
@@ -138,7 +138,7 @@ namespace TMD.Controllers
                 select tree);
             return new ExcelActionResult(export)
             {
-                FileDownloadName = string.Format("State-{0}-Species-{1}-Trees.xls", state.Code, botanicalName)
+                FileDownloadName = string.Format("State-{0}-Species-{1}-Trees({2}).xls", state.Code, botanicalName, UserSession.Units.Describe())
             };
         }
 
@@ -152,7 +152,7 @@ namespace TMD.Controllers
                 select tree);
             return new ExcelActionResult(export)
             {
-                FileDownloadName = string.Format("Species-{0}-Trees.xls", botanicalName)
+                FileDownloadName = string.Format("Species-{0}-Trees({1}).xls", botanicalName, UserSession.Units.Describe())
             };
         }
 
@@ -184,7 +184,7 @@ namespace TMD.Controllers
                 filename.Append("All");
                 filename.Append('-');
             }
-            filename.Append("Trees.xls");
+            filename.AppendFormat("Trees({0}).xls", UserSession.Units.Describe());
             return new ExcelActionResult(export)
             {
                 FileDownloadName = filename.ToString()
@@ -226,7 +226,7 @@ namespace TMD.Controllers
                 filename.Append("All");
                 filename.Append('-');
             }
-            filename.Append("Trees.xls");
+            filename.AppendFormat("Trees({0}).xls", UserSession.Units.Describe());
             return new ExcelActionResult(export)
             {
                 FileDownloadName = filename.ToString()
@@ -252,11 +252,44 @@ namespace TMD.Controllers
             table.Columns.Add("Longitude");
             table.Columns.Add("Elevation");
             table.Columns.Add("Ownership type");
-            table.Columns.Add("Height (ft)");
+            switch (UserSession.Units)
+            {
+                case Units.Default:
+                case Units.Feet:
+                    table.Columns.Add("Height (ft)");
+                    break;
+                case Units.Meters:
+                    table.Columns.Add("Height (m)");
+                    break;
+                case Units.Yards:
+                    table.Columns.Add("Height (yd)");
+                    break;
+                default:
+                    throw new NotImplementedException();
+            }
             table.Columns.Add("Height measurement method");
-            table.Columns.Add("Girth (ft)");
-            table.Columns.Add("Girth (in)");
-            table.Columns.Add("Crown spread (ft)");
+
+            switch (UserSession.Units)
+            {
+                case Units.Default:
+                case Units.Feet:
+                    table.Columns.Add("Girth (ft)");
+                    table.Columns.Add("Girth (in)");
+                    table.Columns.Add("Crown spread (ft)");
+                    break;
+                case Units.Meters:
+                    table.Columns.Add("Girth (m)");
+                    table.Columns.Add("Girth (cm)");
+                    table.Columns.Add("Crown spread (m)");
+                    break;
+                case Units.Yards:
+                    table.Columns.Add("Girth (yd)");
+                    table.Columns.Add("Girth (in)");
+                    table.Columns.Add("Crown spread (yd)");
+                    break;
+                default:
+                    throw new NotImplementedException();
+            }            
             table.Columns.Add("Tree comments");
             table.Columns.Add("Measurer(s)");
             table.Columns.Add("Measured");
@@ -281,11 +314,11 @@ namespace TMD.Controllers
                     tree.Coordinates.Longitude.ToString(CoordinatesFormat.DegreesDecimalMinutes),
                     tree.Elevation.ToString(ElevationFormat.DecimalFeet),
                     tree.Subsite.OwnershipType,
-                    tree.Height.ToString(DistanceFormat.DecimalFeet),
+                    tree.Height.ToString(UserSession.Units),
                     tree.HeightMeasurementMethod.Describe(),
-                    tree.Girth.ToString(DistanceFormat.DecimalFeet),
-                    tree.Girth.ToString(DistanceFormat.DecimalInches),
-                    tree.CrownSpread.ToString(DistanceFormat.DecimalFeet),
+                    tree.Girth.ToString(UserSession.Units, renderMode: UnitRenderMode.PrefixOnly),
+                    tree.Girth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly),
+                    tree.CrownSpread.ToString(UserSession.Units),
                     tree.LastMeasurement.GeneralComments,
                     string.Join(", ", tree.Measurers.Select(m => m.ToString())),
                     tree.LastMeasured.ToString("yyyy-MM-dd"),

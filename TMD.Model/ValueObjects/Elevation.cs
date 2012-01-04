@@ -95,6 +95,26 @@ namespace TMD.Model
             }
         }
 
+        public string ToString(Units units, bool useSubprefixPrecision = false)
+        {
+            if (!IsSpecified)
+            {
+                return string.Empty;
+            }
+            switch (units)
+            {
+                case Units.Default:
+                case Units.Feet:
+                    return string.Format("{0:0.0} ft", Feet);
+                case Units.Meters:
+                    return string.Format("{0:0.00} m", Meters);
+                case Units.Yards:
+                    return string.Format("{0:0.00} yd", Yards);
+                default:
+                    throw new NotImplementedException();
+            }
+        }
+
         #region IIsSpecified Members
 
         public bool IsSpecified

@@ -92,6 +92,7 @@ namespace TMD.Controllers
                 // TODO: decouple from FormsAuthentication class so this controller is unit testable
                 FormsAuthentication.SetAuthCookie(user.Id.ToString(), model.RememberMe);
                 Session.ClearRegardingUserSpecificData();
+                Response.Cookies.ClearRegardingUserSpecificData();
                 TempData.SetAccountMessage(string.Empty);
                 return Redirect(Session.GetDefaultReturnUrl());
             }
@@ -103,6 +104,7 @@ namespace TMD.Controllers
             // TODO: decouple from FormsAuthentication class so this controller is unit testable
             FormsAuthentication.SignOut();
             Session.ClearRegardingUserSpecificData();
+            Response.Cookies.ClearRegardingUserSpecificData();
             TempData.SetAccountMessage("You have logged out.");
             return Redirect(Session.GetDefaultReturnUrl());
         }

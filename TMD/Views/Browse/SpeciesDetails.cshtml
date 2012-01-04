@@ -126,18 +126,18 @@
                         .Custom("State or province", species => Html.ActionLink(species.State.Name, Mvc.Browse.StateDetails(species.State.Id)))
                         .Options(canSort: false);
                     builder
-                        .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ? 
-                            Html.ActionLink(species.MaxHeight.ToString(DistanceFormat.Default) , Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
+                        .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ?
+                            Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
                             : MvcHtmlString.Create("-"))
                         .Options(canSort: false);
                     builder
                         .Custom("Max girth", species => species.MaxGirth.IsValidAndSpecified() ?
-                            Html.ActionLink(species.MaxGirth.ToString(DistanceFormat.FeetDecimalInches), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
+                            Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
                             : MvcHtmlString.Create("-"))
                         .Options(canSort: false);
                     builder
                         .Custom("Max crown spread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
-                            Html.ActionLink(species.MaxCrownSpread.ToString(DistanceFormat.Default), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
+                            Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
                             : MvcHtmlString.Create("-"))
                         .Options(canSort: false);
                 },
@@ -157,18 +157,18 @@
                             .Custom("Site", species => Html.ActionLink(species.Site.Name, Mvc.Browse.SiteDetails(species.Site.Id)))
                             .Options(canSort: false);
                         builder
-                            .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ? 
-                                Html.ActionLink(species.MaxHeight.ToString(DistanceFormat.Default) , Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
+                            .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ?
+                                Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
                                 : MvcHtmlString.Create("-"))
                             .Options(canSort: false);
                         builder
                             .Custom("Max girth", species => species.MaxGirth.IsValidAndSpecified() ?
-                                Html.ActionLink(species.MaxGirth.ToString(DistanceFormat.FeetDecimalInches), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
+                                Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
                                 : MvcHtmlString.Create("-"))
                             .Options(canSort: false);
                         builder
                             .Custom("Max crown spread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
-                                Html.ActionLink(species.MaxCrownSpread.ToString(DistanceFormat.Default), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
+                                Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
                                 : MvcHtmlString.Create("-"))
                             .Options(canSort: false);
                     },
@@ -187,17 +187,17 @@
                     {
                         builder
                             .Custom("Height", tree => tree.Height.IsValidAndSpecified() ?
-                                Html.ActionLink(tree.Height.ToString(DistanceFormat.Default), Mvc.Browse.TreeDetails(tree.Id))
+                                Html.ActionLink(tree.Height.ToString(UserSession.Units), Mvc.Browse.TreeDetails(tree.Id))
                                 : MvcHtmlString.Create("-"))
                             .Options(canSort: false);
                         builder
                             .Custom("Girth", tree => tree.Girth.IsValidAndSpecified() ?
-                                Html.ActionLink(tree.Girth.ToString(DistanceFormat.FeetDecimalInches), Mvc.Browse.TreeDetails(tree.Id))
+                                Html.ActionLink(tree.Girth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(tree.Id))
                                 : MvcHtmlString.Create("-"))
                             .Options(canSort: false);
                         builder
                             .Custom("Crown spread", tree => tree.CrownSpread.IsValidAndSpecified() ?
-                                Html.ActionLink(tree.CrownSpread.ToString(DistanceFormat.Default), Mvc.Browse.TreeDetails(tree.Id))
+                                Html.ActionLink(tree.CrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(tree.Id))
                                 : MvcHtmlString.Create("-"))
                             .Options(canSort: false);
                     },

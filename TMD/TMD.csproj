@@ -119,6 +119,7 @@
     </Compile>
     <Compile Include="Extensions\AttributesExtensions.cs" />
     <Compile Include="Extensions\CaptchaExtensions.cs" />
+    <Compile Include="Extensions\CookieExtensions.cs" />
     <Compile Include="Extensions\DataTablesGrid.cs" />
     <Compile Include="Extensions\NameValueCollectionExtensions.cs" />
     <Compile Include="Extensions\PhotoExtensions.cs" />

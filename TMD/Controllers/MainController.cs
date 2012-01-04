@@ -31,5 +31,12 @@ namespace TMD.Controllers
             };
             return View(model);
         }
+
+        [HttpPost]
+        public virtual ActionResult SetUnits(Units units, string returnUrl)
+        {
+            Response.Cookies.SetUnitsPreference(units);
+            return Redirect(returnUrl);
+        }
     }
 }
