@@ -58,6 +58,7 @@
                 &copy;: @DateTime.Now.Year Trees Database
             </p>
             @using(Html.BeginForm(Mvc.Main.SetUnits(), FormMethod.Post, new { style = "float: right;" })) {
+                <span>Units:</span>
                 @Html.Hidden("returnUrl", Request.Url)
                 if (Units.Default == Request.Cookies.GetUnitsPreference() || Units.Feet == Request.Cookies.GetUnitsPreference()) {
                     @(Html.SubmitButton("ft", "units", "Feet", size: ButtonSize.Small, color: ButtonColor.Default)) 
