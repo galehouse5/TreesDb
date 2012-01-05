@@ -82,7 +82,7 @@ namespace TMD.Model
                     }
                     return string.Format("{0:0}' {1:0}''", WholeFeet, RemainderInches);
                 case DistanceFormat.DecimalCentimeters:
-                    return string.Format("{0:0.0} cm", Centimeters);
+                    return string.Format("{0:0} cm", Centimeters);
                 default:
                     return RawValue;
             }
@@ -115,7 +115,7 @@ namespace TMD.Model
                         case UnitRenderMode.PrefixOnly:
                             return string.Format("{0:0.00} m", Meters);
                         case UnitRenderMode.SubprefixOnly:
-                            return string.Format("{0:0.0} cm", Centimeters);
+                            return string.Format("{0:0} cm", Centimeters);
                         default:
                             throw new NotImplementedException();
                     }                    

@@ -72,7 +72,7 @@ namespace TMD.Model
                     }
                     return string.Format("{0}{1:0}' {2:0}''", (Sign < 0) ? "-" : "", AbsoluteFeet, AbsoluteRemainderInches);
                 case DirectedDistanceFormat.DecimalCentimeters:
-                    return string.Format("{0}{1:0.0} cm", (Sign < 0) ? "-" : "", AbsoluteCentimeters);
+                    return string.Format("{0}{1:0} cm", (Sign < 0) ? "-" : "", AbsoluteCentimeters);
                 default:
                     return RawValue;
             }
@@ -105,7 +105,7 @@ namespace TMD.Model
                         case UnitRenderMode.PrefixOnly:
                             return string.Format("{0}{1:0.00} m", (Sign < 0) ? "-" : "", AbsoluteMeters);
                         case UnitRenderMode.SubprefixOnly:
-                            return string.Format("{0}{1:0.0} cm", (Sign < 0) ? "-" : "", AbsoluteCentimeters);
+                            return string.Format("{0}{1:0} cm", (Sign < 0) ? "-" : "", AbsoluteCentimeters);
                         default:
                             throw new NotImplementedException();
                     }                    
