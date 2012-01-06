@@ -11,12 +11,14 @@ namespace TMD.Model
     {
         bool IsAnonymous { get; }
         User User { get; }
+        Units Units { get; }
     }
 
     public class NullUserSessionProvider : IUserSessionProvider
     {
         public bool IsAnonymous { get { return true; } }
         public User User { get { return null; } }
+        public Units Units { get { return Units.Default; } }
     }
 
     public static class UserSession
@@ -34,6 +36,11 @@ namespace TMD.Model
         public static User User
         {
             get { return Provider.User; }
+        }
+
+        public static Units Units 
+        {
+            get { return Provider.Units; }
         }
     }
 }

@@ -72,17 +72,41 @@ namespace TMD.Model
 
         public string ToString(VolumeFormat format)
         {
+            if (!IsSpecified)
+            {
+                return string.Empty;
+            }
             switch (InputFormat)
             {
                 case VolumeFormat.Default:
                 case VolumeFormat.DecimalCubicFeet:
-                    return string.Format("{0:0} ft³", CubicFeet);
+                    return string.Format("{0:0.0} ft³", CubicFeet);
                 case VolumeFormat.DecimalCubicMeters:
-                    return string.Format("{0:0} m³", CubicMeters);
+                    return string.Format("{0:0.00} m³", CubicMeters);
                 case VolumeFormat.DecimalCubicYards:
-                    return string.Format("{0:0} yd³", CubicYards);
+                    return string.Format("{0:0.00} yd³", CubicYards);
                 default:
                     return RawValue;
+            }
+        }
+
+        public string ToString(Units units, bool useSubprefixPrecision = false)
+        {
+            if (!IsSpecified)
+            {
+                return string.Empty;
+            }
+            switch (units)
+            {
+                case Units.Default:
+                case Units.Feet:
+                    return string.Format("{0:0.0} ft³", CubicFeet);
+                case Units.Meters:
+                    return string.Format("{0:0.00} m³", CubicMeters);
+                case Units.Yards:
+                    return string.Format("{0:0.00} yd³", CubicYards);
+                default:
+                    throw new NotImplementedException();
             }
         }
 

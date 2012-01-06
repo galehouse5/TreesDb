@@ -16,7 +16,8 @@ namespace TMD.Model
         DecimalFeet = 4,
         DecimalInches = 5,
         DecimalMeters = 6,
-        DecimalYards = 7
+        DecimalYards = 7,
+        DecimalCentimeters = 8
     }
 
     public class DirectedDistance : ISpecified
@@ -37,6 +38,7 @@ namespace TMD.Model
         public float AbsoluteInches { get { return 12f * AbsoluteFeet; } }
         public float AbsoluteYards { get { return 3f * AbsoluteFeet; } }
         public float AbsoluteMeters { get { return AbsoluteFeet / 3.2808399f; } }
+        public float AbsoluteCentimeters { get { return AbsoluteMeters * 100f; } }
         public bool IsSpecified { get { return InputFormat != DirectedDistanceFormat.Unspecified; } }
 
         public override bool Equals(object obj)
@@ -69,8 +71,57 @@ namespace TMD.Model
                         return string.Format("{0}{1:0}'", (Sign < 0) ? "-" : "", AbsoluteFeet, AbsoluteRemainderInches);
                     }
                     return string.Format("{0}{1:0}' {2:0}''", (Sign < 0) ? "-" : "", AbsoluteFeet, AbsoluteRemainderInches);
+                case DirectedDistanceFormat.DecimalCentimeters:
+                    return string.Format("{0}{1:0} cm", (Sign < 0) ? "-" : "", AbsoluteCentimeters);
                 default:
                     return RawValue;
+            }
+        }
+
+        public string ToString(Units units, UnitRenderMode renderMode = UnitRenderMode.Default)
+        {
+            if (!IsSpecified)
+            {
+                return string.Empty;
+            }
+            switch (units)
+            {
+                case Units.Default:
+                case Units.Feet:
+                    switch (renderMode)
+                    {
+                        case UnitRenderMode.Default:
+                        case UnitRenderMode.PrefixOnly:
+                            return string.Format("{0}{1:0.0}'", (Sign < 0) ? "-" : "", AbsoluteFeet);
+                        case UnitRenderMode.SubprefixOnly:
+                            return string.Format("{0}{1:0}''", (Sign < 0) ? "-" : "", AbsoluteInches);
+                        default:
+                            throw new NotImplementedException();
+                    }
+                case Units.Meters:
+                    switch (renderMode)
+                    {
+                        case UnitRenderMode.Default:
+                        case UnitRenderMode.PrefixOnly:
+                            return string.Format("{0}{1:0.00} m", (Sign < 0) ? "-" : "", AbsoluteMeters);
+                        case UnitRenderMode.SubprefixOnly:
+                            return string.Format("{0}{1:0} cm", (Sign < 0) ? "-" : "", AbsoluteCentimeters);
+                        default:
+                            throw new NotImplementedException();
+                    }                    
+                case Units.Yards:
+                    switch (renderMode)
+                    {
+                        case UnitRenderMode.Default:
+                        case UnitRenderMode.PrefixOnly:
+                            return string.Format("{0}{1:0.00} yd", (Sign < 0) ? "-" : "", AbsoluteYards);
+                        case UnitRenderMode.SubprefixOnly:
+                            return string.Format("{0}{1:0}''", (Sign < 0) ? "-" : "", AbsoluteInches);
+                        default:
+                            throw new NotImplementedException();
+                    }
+                default:
+                    throw new NotImplementedException();
             }
         }
 
@@ -79,6 +130,7 @@ namespace TMD.Model
         private static Regex DecimalInchesFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<inches>[0-9]+(\\.[0-9]+)?)\\s*(\"|''|``|ins?|inchs?|inches?)\\s*$", RegexOptions.Compiled);
         private static Regex DecimalMetersFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<meters>[0-9]+(\\.[0-9]+)?)\\s*(ms?|meters?|metres?)\\s*$", RegexOptions.Compiled);
         private static Regex DecimalYardsFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<yards>[0-9]+(\\.[0-9]+)?)\\s*(ys?|yds?|yards?)\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalCentimetersFormat = new Regex("^\\s*(?<sign>[+-])?\\s*(?<centimeters>[0-9]+(\\.[0-9]+)?)\\s*(cms?|centimeters?)\\s*$", RegexOptions.Compiled);
         public static DirectedDistance Create(string s)
         {
             Match match;
@@ -120,6 +172,12 @@ namespace TMD.Model
                 sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
                 feet = float.Parse(match.Groups["yards"].Value) * 3f;
                 inputFormat = DirectedDistanceFormat.DecimalYards;
+            }
+            else if ((match = DecimalCentimetersFormat.Match(s)).Success)
+            {
+                sign = (match.Groups["sign"].Value == "-" ? -1f : 1f);
+                feet = float.Parse(match.Groups["centimeters"].Value) * 3.2808399f * 100f;
+                inputFormat = DirectedDistanceFormat.DecimalCentimeters;
             }
             else
             {

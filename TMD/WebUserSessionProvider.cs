@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Security.Principal;
 using TMD.Model.Extensions;
 using System.Diagnostics;
+using TMD.Extensions;
 
 namespace TMD
 {
@@ -107,14 +108,19 @@ namespace TMD
                 new WebUser(new AnonymousUser());
         }
 
-        public bool IsAnonymous
+        bool IUserSessionProvider.IsAnonymous
         {
             get { return !HttpContext.Current.User.Identity.IsAuthenticated; }
         }
 
-        public User User
+        User IUserSessionProvider.User
         {
             get { return HttpContext.Current.User is GenericPrincipal ? null : (WebUser)HttpContext.Current.User; }
+        }
+
+        Units IUserSessionProvider.Units
+        {
+            get { return HttpContext.Current.Request.Cookies.GetUnitsPreference(); }
         }
     }
 

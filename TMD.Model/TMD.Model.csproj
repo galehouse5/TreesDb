@@ -115,6 +115,7 @@
     <Compile Include="ValueObjects\HeightMeasurements.cs" />
     <Compile Include="Locations\State.cs" />
     <Compile Include="ValueObjects\Name.cs" />
+    <Compile Include="ValueObjects\Units.cs" />
     <Compile Include="ValueObjects\Volume.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -47,7 +47,7 @@
         </div>
         <!-- #content -->
         <div id="footer">
-            <p>
+            <p style="float: left;">
                 <a href="@Url.Action(Mvc.Main.Index())">
                     <img id="footer-logo" src="@Url.ManagedContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
                 </a>
@@ -57,6 +57,25 @@
                 <br />
                 &copy;: @DateTime.Now.Year Trees Database
             </p>
+            @using(Html.BeginForm(Mvc.Main.SetUnits(), FormMethod.Post, new { style = "float: right;" })) {
+                <span>Units:</span>
+                @Html.Hidden("returnUrl", Request.Url)
+                if (Units.Default == Request.Cookies.GetUnitsPreference() || Units.Feet == Request.Cookies.GetUnitsPreference()) {
+                    @(Html.SubmitButton("ft", "units", "Feet", size: ButtonSize.Small, color: ButtonColor.Default)) 
+                } else {
+                    @(Html.SubmitButton("ft", "units", "Feet", size: ButtonSize.Small, color: ButtonColor.Orange)) 
+                }
+                if (Units.Meters == Request.Cookies.GetUnitsPreference()) { 
+                    @(Html.SubmitButton("m", "units", "Meters", size: ButtonSize.Small, color: ButtonColor.Default)) 
+                } else {
+                    @(Html.SubmitButton("m", "units", "Meters", size: ButtonSize.Small, color: ButtonColor.Orange)) 
+                }
+                if (Units.Yards == Request.Cookies.GetUnitsPreference()) { 
+                    @(Html.SubmitButton("yd", "units", "Yards", size: ButtonSize.Small, color: ButtonColor.Default))
+                } else {
+                    @(Html.SubmitButton("yd", "units", "Yards", size: ButtonSize.Small, color: ButtonColor.Orange))
+                }
+            }
         </div>
         <!-- #footer -->
     </div>

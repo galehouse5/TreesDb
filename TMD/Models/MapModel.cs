@@ -146,13 +146,11 @@ namespace TMD.Models
         public int Id { get; set; }
         [DisplayName("Common name")] public string CommonName { get; set; }
         [DisplayName("Botanical name")] public string ScientificName { get; set; }
-        [DisplayFormat(DataFormatString = "Default")] 
         public Distance Height { get; set; }
-        [DisplayFormat(DataFormatString = "FeetDecimalInches")] 
+        [DisplayFormat(DataFormatString = "SubprefixOnly")] 
         public Distance Girth { get; set; }
-        [DisplayName("Crown spread"), DisplayFormat(DataFormatString = "Default")] 
+        [DisplayName("Crown spread")] 
         public Distance CrownSpread { get; set; }
-        [DisplayFormat(DataFormatString = "Default")] 
         public Elevation Elevation { get; set; }
         [DisplayFormat(DataFormatString = "{0:0.00}")]
         public float? TDI3 { get; set; }

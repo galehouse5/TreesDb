@@ -17,7 +17,8 @@ namespace TMD.Model
         DecimalFeet = 4,
         DecimalInches = 5,
         DecimalMeters = 6,
-        DecimalYards = 7
+        DecimalYards = 7,
+        DecimalCentimeters = 8
     }
 
     public class Distance : ISpecified
@@ -38,6 +39,7 @@ namespace TMD.Model
         public float Inches { get { return 12f * Feet; } }
         public float Yards { get { return Feet / 3f; } }
         public float Meters { get { return Feet / 3.2808399f; } }
+        public float Centimeters { get { return Meters * 100f; } }
         public bool IsSpecified { get { return InputFormat != DistanceFormat.Unspecified; } }
 
         public override bool Equals(object obj)
@@ -79,8 +81,57 @@ namespace TMD.Model
                         return string.Format("{0:0}'", WholeFeet, RemainderInches);
                     }
                     return string.Format("{0:0}' {1:0}''", WholeFeet, RemainderInches);
+                case DistanceFormat.DecimalCentimeters:
+                    return string.Format("{0:0} cm", Centimeters);
                 default:
                     return RawValue;
+            }
+        }
+
+        public string ToString(Units units, UnitRenderMode renderMode = UnitRenderMode.Default)
+        {
+            if (!IsSpecified)
+            {
+                return string.Empty;
+            }
+            switch (units)
+            {
+                case Units.Default:
+                case Units.Feet:
+                    switch (renderMode)
+                    {
+                        case UnitRenderMode.Default:
+                        case UnitRenderMode.PrefixOnly:
+                            return string.Format("{0:0.0}'", Feet);
+                        case UnitRenderMode.SubprefixOnly:
+                            return string.Format("{0:0}''", Inches);
+                        default:
+                            throw new NotImplementedException();
+                    }
+                case Units.Meters:
+                    switch (renderMode)
+                    {
+                        case UnitRenderMode.Default:
+                        case UnitRenderMode.PrefixOnly:
+                            return string.Format("{0:0.00} m", Meters);
+                        case UnitRenderMode.SubprefixOnly:
+                            return string.Format("{0:0} cm", Centimeters);
+                        default:
+                            throw new NotImplementedException();
+                    }                    
+                case Units.Yards:
+                    switch (renderMode)
+                    {
+                        case UnitRenderMode.Default:
+                        case UnitRenderMode.PrefixOnly:
+                            return string.Format("{0:0.00} yd", Yards);
+                        case UnitRenderMode.SubprefixOnly:
+                            return string.Format("{0:0}''", Inches);
+                        default:
+                            throw new NotImplementedException();
+                    }
+                default:
+                    throw new NotImplementedException();
             }
         }
 
@@ -89,6 +140,7 @@ namespace TMD.Model
         private static Regex DecimalInchesFormat = new Regex("^\\s*(?<inches>[0-9]+(\\.[0-9]+)?)\\s*(\"|''|``|ins?|inchs?|inches?)\\s*$", RegexOptions.Compiled);
         private static Regex DecimalMetersFormat = new Regex("^\\s*(?<meters>[0-9]+(\\.[0-9]+)?)\\s*(ms?|meters?|metres?)\\s*$", RegexOptions.Compiled);
         private static Regex DecimalYardsFormat = new Regex("^\\s*(?<yards>[0-9]+(\\.[0-9]+)?)\\s*(ys?|yds?|yards?)\\s*$", RegexOptions.Compiled);
+        private static Regex DecimalCentimetersFormat = new Regex("^\\s*(?<meters>[0-9]+(\\.[0-9]+)?)\\s*(cms?|centimeters?)\\s*$", RegexOptions.Compiled);
         public static Distance Create(string s)
         {
             Match match;
@@ -124,6 +176,11 @@ namespace TMD.Model
             {
                 feet = float.Parse(match.Groups["yards"].Value) * 3f;
                 inputFormat = DistanceFormat.DecimalYards;
+            }
+            else if ((match = DecimalCentimetersFormat.Match(s)).Success)
+            {
+                feet = float.Parse(match.Groups["centimeters"].Value) * 3.2808399f;
+                inputFormat = DistanceFormat.DecimalCentimeters;
             }
             else
             {
