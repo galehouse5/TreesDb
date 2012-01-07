@@ -17,6 +17,8 @@ namespace TMD
             public const string StaticContentHostname = "staticContentHostname";
             public const string MinifyStaticContent = "minifyStaticContent";
             public const string EnableMaintenance = "enableMaintenance";
+            public const string EnableGoogleAnalytics = "enableGoogleAnalytics";
+            public const string GoogleAnalyticsPropertyID = "googleAnalyticsPropertyID";
         }
 
         [ConfigurationProperty(PropertyNames.HostName, IsRequired = true)]
@@ -66,6 +68,20 @@ namespace TMD
         {
             get { return (bool)this[PropertyNames.EnableMaintenance]; }
             set { this[PropertyNames.EnableMaintenance] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.EnableGoogleAnalytics, IsRequired = false, DefaultValue = false)]
+        public bool EnableGoogleAnalytics
+        {
+            get { return (bool)this[PropertyNames.EnableGoogleAnalytics]; }
+            set { this[PropertyNames.EnableGoogleAnalytics] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.GoogleAnalyticsPropertyID, DefaultValue = "")]
+        public string GoogleAnalyticsPropertyID
+        {
+            get { return (string)this[PropertyNames.GoogleAnalyticsPropertyID]; }
+            set { this[PropertyNames.GoogleAnalyticsPropertyID] = value; }
         }
     }
 }

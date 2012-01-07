@@ -27,6 +27,7 @@ namespace TMD.Controllers
         public virtual ActionResult Index()
         {
             ViewData.SetJavascriptRequired(true);
+            ViewData.SetRenderFooter(false);
             var sites = Repositories.Sites.ListAll();
             var model = Mapper.Map<IList<Model.Sites.Site>, MapModel>(sites);
             return View(model);

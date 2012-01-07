@@ -30,10 +30,6 @@ Number.prototype.RoundToDecimals = function (decimals) {
 (function ($) {
     $.fn.InitializeUi = function (options) {
         return this.each(function () {
-            $(this).find('.RequiresJavascript')
-                .not('.UiInitialized').addClass('UiInitialized').show();
-            $(this).find('.LacksJavascript')
-                .not('.UiInitialized').addClass('UiInitialized').hide();
             $(this).find("select, input:checkbox, input:radio, input:file")
                 .not('.UiInitialized').addClass('UiInitialized').uniform();
             $(this).find("*[rel=facebox]")

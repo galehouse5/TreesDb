@@ -3,10 +3,17 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>@ViewBag.Title</title>
+    @if (ViewData.GetJavascriptRequired()) {
+        <style type="text/css">.RequiresJavascript { display: block; } .LacksJavascript { display: none; }</style>
+        <noscript><style type="text/css">.RequiresJavascript { display: none; } .LacksJavascript { display: block; }</style></noscript>
+    }
     <link href="@Url.ManagedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
     <link href="@Url.ManagedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
     <link href="@Url.ManagedContent(Links.css.Shared_css, Links.css.Shared_min_css)" rel="Stylesheet" type="text/css" />
     @RenderSection("Styles", false)
+    @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics) {
+        @Html.Partial("GoogleAnalyticsScript", WebApplicationRegistry.Settings.GoogleAnalyticsPropertyID)
+    }
 </head>
 <body>
     <div id="wrapper" class="clearfix">
@@ -27,8 +34,7 @@
             <!-- #nav -->
         </div>
         <!-- #top -->
-        @if (ViewData.GetJavascriptRequired())
-        { 
+        @if (ViewData.GetJavascriptRequired()) {
             <div class="content xfluid LacksJavascript">
                 <div class="portlet x12 ">
                     <div class="portlet-header">
@@ -46,38 +52,40 @@
             @RenderBody()
         </div>
         <!-- #content -->
-        <div id="footer">
-            <p style="float: left;">
-                <a href="@Url.Action(Mvc.Main.Index())">
-                    <img id="footer-logo" src="@Url.ManagedContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
-                </a>
-                Contact: Steve or Mitch Galehouse
-                <br />
-                Email: <a href="mailto:@WebApplicationRegistry.Settings.WebmasterEmail">@WebApplicationRegistry.Settings.WebmasterEmail</a>
-                <br />
-                &copy;: @DateTime.Now.Year Trees Database
-            </p>
-            @using(Html.BeginForm(Mvc.Main.SetUnits(), FormMethod.Post, new { style = "float: right;" })) {
-                <span>Units:</span>
-                @Html.Hidden("returnUrl", Request.Url)
-                if (Units.Default == Request.Cookies.GetUnitsPreference() || Units.Feet == Request.Cookies.GetUnitsPreference()) {
-                    @(Html.SubmitButton("ft", "units", "Feet", size: ButtonSize.Small, color: ButtonColor.Default)) 
-                } else {
-                    @(Html.SubmitButton("ft", "units", "Feet", size: ButtonSize.Small, color: ButtonColor.Orange)) 
+        @if (ViewData.GetRenderFooter()) {
+            <div id="footer">
+                <p style="float: left;">
+                    <a href="@Url.Action(Mvc.Main.Index())">
+                        <img id="footer-logo" src="@Url.ManagedContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
+                    </a>
+                    Contact: Steve or Mitch Galehouse
+                    <br />
+                    Email: <a href="mailto:@WebApplicationRegistry.Settings.WebmasterEmail">@WebApplicationRegistry.Settings.WebmasterEmail</a>
+                    <br />
+                    &copy;: @DateTime.Now.Year Trees Database
+                </p>
+                @using(Html.BeginForm(Mvc.Main.SetUnits(), FormMethod.Post, new { style = "float: right;" })) {
+                    <span>Units:</span>
+                    @Html.Hidden("returnUrl", Request.Url)
+                    if (Units.Default == Request.Cookies.GetUnitsPreference() || Units.Feet == Request.Cookies.GetUnitsPreference()) {
+                        @(Html.SubmitButton("ft", "units", "Feet", size: ButtonSize.Small, color: ButtonColor.Default)) 
+                    } else {
+                        @(Html.SubmitButton("ft", "units", "Feet", size: ButtonSize.Small, color: ButtonColor.Orange)) 
+                    }
+                    if (Units.Meters == Request.Cookies.GetUnitsPreference()) { 
+                        @(Html.SubmitButton("m", "units", "Meters", size: ButtonSize.Small, color: ButtonColor.Default)) 
+                    } else {
+                        @(Html.SubmitButton("m", "units", "Meters", size: ButtonSize.Small, color: ButtonColor.Orange)) 
+                    }
+                    if (Units.Yards == Request.Cookies.GetUnitsPreference()) { 
+                        @(Html.SubmitButton("yd", "units", "Yards", size: ButtonSize.Small, color: ButtonColor.Default))
+                    } else {
+                        @(Html.SubmitButton("yd", "units", "Yards", size: ButtonSize.Small, color: ButtonColor.Orange))
+                    }
                 }
-                if (Units.Meters == Request.Cookies.GetUnitsPreference()) { 
-                    @(Html.SubmitButton("m", "units", "Meters", size: ButtonSize.Small, color: ButtonColor.Default)) 
-                } else {
-                    @(Html.SubmitButton("m", "units", "Meters", size: ButtonSize.Small, color: ButtonColor.Orange)) 
-                }
-                if (Units.Yards == Request.Cookies.GetUnitsPreference()) { 
-                    @(Html.SubmitButton("yd", "units", "Yards", size: ButtonSize.Small, color: ButtonColor.Default))
-                } else {
-                    @(Html.SubmitButton("yd", "units", "Yards", size: ButtonSize.Small, color: ButtonColor.Orange))
-                }
-            }
-        </div>
-        <!-- #footer -->
+            </div>
+            <!-- #footer -->
+        }
     </div>
     <!-- #wrapper -->
     <script src="@Url.ManagedContent(Links.js.jquery.jquery_1_4_4_min_js)" type="text/javascript"></script>
