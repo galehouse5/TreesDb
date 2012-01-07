@@ -440,6 +440,7 @@
     <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
     <Content Include="Views\Photos\Caption.cshtml" />
     <Content Include="Views\Error\Maintenance.cshtml" />
+    <Content Include="Views\Shared\GoogleAnalyticsScript.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TMD.Infrastructure\TMD.Infrastructure.csproj">
