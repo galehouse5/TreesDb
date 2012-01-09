@@ -453,9 +453,8 @@ namespace TMD.Extensions
             output.Write("</table>");
             if (model.CanAnyColumnFilter)
             {
-                // this hidden submit button enables functionality of the enter key without the use of javascript
-                // in submitting this form when pressed with a filter text field having focus
-                output.Write("<input type='submit' style='display: none;'/>");
+                // workaround to allow form submission by enter key
+                output.Write("<input type='submit' style='position: absolute; left: -9999px;' />");
                 output.Write("</form>");
             }
         }
