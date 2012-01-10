@@ -21,7 +21,7 @@ namespace TMD.Model
         DecimalCentimeters = 8
     }
 
-    public class Distance : ISpecified
+    public class Distance : ISpecified, IComparable
     {
         private Distance()
         { }
@@ -218,6 +218,16 @@ namespace TMD.Model
                 InputFormat = DistanceFormat.Unspecified,
                 RawValue = string.Empty
             };
+        }
+
+        int IComparable.CompareTo(object obj)
+        {
+            Distance other = obj as Distance;
+            if (other == null)
+            {
+                throw new NotImplementedException();
+            }
+            return Feet.CompareTo(other.Feet);
         }
     }
 }

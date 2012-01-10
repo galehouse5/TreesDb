@@ -27,7 +27,7 @@
                     .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName, species.CommonName)))
                     .Options(header: "Common name", canFilter: true, filterTitle: "Search common names");
             },
-            rowsPerPage: 50,
+            rowsPerPage: 40,
             dataSource: Model.Page, filteredRowCount: Model.FilteredItems, totalRowCount: Model.TotalItems))
     </div>
 </div>

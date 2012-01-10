@@ -19,6 +19,7 @@ namespace TMD
             public const string EnableMaintenance = "enableMaintenance";
             public const string EnableGoogleAnalytics = "enableGoogleAnalytics";
             public const string GoogleAnalyticsPropertyID = "googleAnalyticsPropertyID";
+            public const string EnableBrowserCompatibilityCheck = "enableBrowserCompatibilityCheck";
         }
 
         [ConfigurationProperty(PropertyNames.HostName, IsRequired = true)]
@@ -82,6 +83,13 @@ namespace TMD
         {
             get { return (string)this[PropertyNames.GoogleAnalyticsPropertyID]; }
             set { this[PropertyNames.GoogleAnalyticsPropertyID] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.EnableBrowserCompatibilityCheck, IsRequired = false, DefaultValue = true)]
+        public bool EnableBrowserCompatibilityCheck
+        {
+            get { return (bool)this[PropertyNames.EnableBrowserCompatibilityCheck]; }
+            set { this[PropertyNames.EnableBrowserCompatibilityCheck] = value; }
         }
     }
 }

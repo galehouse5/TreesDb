@@ -123,24 +123,42 @@ namespace TMD.Controllers {
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult SiteDetails(int id) {
+        public override System.Web.Mvc.ActionResult SiteDetails(int id, int? subsiteSpeciesPage, string subsiteSpeciesSort, bool? subsiteSpeciesSortAsc) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SiteDetails);
             callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("subsiteSpeciesPage", subsiteSpeciesPage);
+            callInfo.RouteValueDictionary.Add("subsiteSpeciesSort", subsiteSpeciesSort);
+            callInfo.RouteValueDictionary.Add("subsiteSpeciesSortAsc", subsiteSpeciesSortAsc);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult SpeciesDetails(string botanicalName, string commonName, int? siteId, int? stateId) {
+        public override System.Web.Mvc.ActionResult SpeciesDetails(string botanicalName, string commonName, int? siteId, int? stateId, int? stateSpeciesPage, string stateSpeciesSort, bool? stateSpeciesSortAsc, int? treesPage, string treesSort, bool? treesSortAsc, int? siteSpeciesPage, string siteSpeciesSort, bool? siteSpeciesSortAsc) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SpeciesDetails);
             callInfo.RouteValueDictionary.Add("botanicalName", botanicalName);
             callInfo.RouteValueDictionary.Add("commonName", commonName);
             callInfo.RouteValueDictionary.Add("siteId", siteId);
             callInfo.RouteValueDictionary.Add("stateId", stateId);
+            callInfo.RouteValueDictionary.Add("stateSpeciesPage", stateSpeciesPage);
+            callInfo.RouteValueDictionary.Add("stateSpeciesSort", stateSpeciesSort);
+            callInfo.RouteValueDictionary.Add("stateSpeciesSortAsc", stateSpeciesSortAsc);
+            callInfo.RouteValueDictionary.Add("treesPage", treesPage);
+            callInfo.RouteValueDictionary.Add("treesSort", treesSort);
+            callInfo.RouteValueDictionary.Add("treesSortAsc", treesSortAsc);
+            callInfo.RouteValueDictionary.Add("siteSpeciesPage", siteSpeciesPage);
+            callInfo.RouteValueDictionary.Add("siteSpeciesSort", siteSpeciesSort);
+            callInfo.RouteValueDictionary.Add("siteSpeciesSortAsc", siteSpeciesSortAsc);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult StateDetails(int id) {
+        public override System.Web.Mvc.ActionResult StateDetails(int id, int? stateSpeciesPage, string stateSpeciesSort, bool? stateSpeciesSortAsc, int? subsitesPage, string subsitesSort, bool? subsitesSortAsc) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.StateDetails);
             callInfo.RouteValueDictionary.Add("id", id);
+            callInfo.RouteValueDictionary.Add("stateSpeciesPage", stateSpeciesPage);
+            callInfo.RouteValueDictionary.Add("stateSpeciesSort", stateSpeciesSort);
+            callInfo.RouteValueDictionary.Add("stateSpeciesSortAsc", stateSpeciesSortAsc);
+            callInfo.RouteValueDictionary.Add("subsitesPage", subsitesPage);
+            callInfo.RouteValueDictionary.Add("subsitesSort", subsitesSort);
+            callInfo.RouteValueDictionary.Add("subsitesSortAsc", subsitesSortAsc);
             return callInfo;
         }
 

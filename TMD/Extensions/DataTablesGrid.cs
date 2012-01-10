@@ -64,14 +64,13 @@ namespace TMD.Extensions
                 throw new ArgumentException("Expected non null value for dataSource.");
             }
             int calculatedTotalRowCount = totalRowCount.HasValue ? totalRowCount.Value : dataSource.Count();
-            int calculatedFilteredRowCount = filteredRowCount.HasValue ? filteredRowCount.Value : dataSource.Count();
             using (TextWriter output = new StringWriter())
             {
                 var render = new DataTablesGridRenderer<T>();
-                render.Render(model, dataSource, calculatedFilteredRowCount, calculatedTotalRowCount, output);
+                render.Render(model, dataSource, filteredRowCount, calculatedTotalRowCount, output);
                 if (canPage)
                 {
-                    render.RenderPager(model, dataSource, calculatedFilteredRowCount, calculatedTotalRowCount, output);
+                    render.RenderPager(model, dataSource, filteredRowCount, calculatedTotalRowCount, output);
                 }
                 return new HtmlString(output.ToString());
             }
@@ -81,7 +80,7 @@ namespace TMD.Extensions
     public static class DataTablesGridColumnExtensions
     {
         public static DataTablesGridColumnModel<T> Options<T>(this DataTablesGridColumnModel<T> model, 
-            bool? canFilter = null, bool? canSort = null, string columnName = null, bool? encodeValue = null, string header = null, string valueFormat = null, string filterTitle = null)
+            bool? canFilter = null, bool? canSort = null, string columnName = null, bool? encodeValue = null, string header = null, string valueFormat = null, string filterTitle = null, bool? defaultSortAscending = null)
             where T : class
         {
             if (canFilter.HasValue)
@@ -111,6 +110,10 @@ namespace TMD.Extensions
             if (filterTitle != null)
             {
                 model.FilterTitle = filterTitle;
+            }
+            if (defaultSortAscending != null)
+            {
+                model.DefaultSortAscending = defaultSortAscending.Value;
             }
             return model;
         }
@@ -295,9 +298,9 @@ namespace TMD.Extensions
             get { return "Filter"; }
         }
 
-        public string GetSortUrl(string columnName)
+        public string GetSortUrl(string columnName, bool defaultSortingAscending)
         {
-            bool sortAscending = true;
+            bool sortAscending = defaultSortingAscending;
             if (columnName.Equals(SortColumnName, StringComparison.OrdinalIgnoreCase))
             {
                 sortAscending = !SortAscending;
@@ -339,6 +342,7 @@ namespace TMD.Extensions
         public DataTablesGridColumnModel()
         {
             CanSort = true;
+            DefaultSortAscending = true;
         }
 
         public bool CanSort { get; set; }
@@ -349,6 +353,7 @@ namespace TMD.Extensions
         public bool EncodeValue { get; set; }
         public string ValueFormat { get; set; }
         public string FilterTitle { get; set; }
+        public bool DefaultSortAscending { get; set; }
 
         public bool IsSorted(DataTablesGridModel<T> model)
         {
@@ -373,12 +378,12 @@ namespace TMD.Extensions
     public class DataTablesGridRenderer<T> where T : class
     {
         public void Render(DataTablesGridModel<T> model, 
-            IEnumerable<T> dataSource, int filteredRowCount, int totalRowCount, 
+            IEnumerable<T> dataSource, int? filteredRowCount, int totalRowCount, 
             TextWriter output)
         {
             if (model.CanAnyColumnFilter)
             {
-                output.Write("<form method='get' action='{0}'>", model.GetFilterUrl());
+                output.Write("<form method='get' action='{0}'>", HttpUtility.HtmlEncode(model.GetFilterUrl()));
                 if (model.IsSortParameterSpecified)
                 {
                     output.Write("<input type='hidden' name='{0}' value='{1}'/>",
@@ -401,7 +406,7 @@ namespace TMD.Extensions
                         : "sorting_desc"
                         : "sorting";
                     output.Write("<th class='{0}'>", @class);
-                    output.Write("<a href='{0}'>{1}</a>", model.GetSortUrl(column.ColumnName), HttpUtility.HtmlEncode(column.Header));
+                    output.Write("<a href='{0}'><span>{1}</span></a>", HttpUtility.HtmlEncode(model.GetSortUrl(column.ColumnName, column.DefaultSortAscending)), HttpUtility.HtmlEncode(column.Header));
                 }
                 else
                 {
@@ -453,29 +458,29 @@ namespace TMD.Extensions
             output.Write("</table>");
             if (model.CanAnyColumnFilter)
             {
-                // workaround to allow form submission by enter key
+                // workaround to allow form submission using enter key
                 output.Write("<input type='submit' style='position: absolute; left: -9999px;' />");
                 output.Write("</form>");
             }
         }
 
         public void RenderPager(DataTablesGridModel<T> model, 
-            IEnumerable<T> dataSource, int filteredRowCount, int totalRowCount, 
+            IEnumerable<T> dataSource, int? filteredRowCount, int totalRowCount, 
             TextWriter output)
         {
             output.Write("<div class='dataTables_info'>");
-            if (filteredRowCount < 1)
+            if ((filteredRowCount ?? totalRowCount) < 1)
             {
                 output.Write("No entries");
             }
             else
             {
                 output.Write("Showing {0} to {1} of {2} entries",
-                    Math.Min(model.PageIndex * model.RowsPerPage + 1, filteredRowCount),
-                    Math.Min((model.PageIndex + 1) * model.RowsPerPage, filteredRowCount),
-                    filteredRowCount);
+                    Math.Min(model.PageIndex * model.RowsPerPage + 1, (filteredRowCount ?? totalRowCount)),
+                    Math.Min((model.PageIndex + 1) * model.RowsPerPage, (filteredRowCount ?? totalRowCount)),
+                    filteredRowCount ?? totalRowCount);
             }
-            if (filteredRowCount < totalRowCount)
+            if (filteredRowCount.HasValue && filteredRowCount < totalRowCount)
             {
                 output.Write(" (filtered from {0} total entries)", totalRowCount);
             }
@@ -488,17 +493,133 @@ namespace TMD.Extensions
             }
             else
             {
-                output.Write("<a href='{0}' class='paginate_enabled_previous' title='Previous'></a>", model.GetPageUrl(model.PageIndex - 1));
+                output.Write("<a href='{0}' class='paginate_enabled_previous' title='Previous'></a>", HttpUtility.HtmlEncode(model.GetPageUrl(model.PageIndex - 1)));
             }
-            if ((model.PageIndex + 1) * model.RowsPerPage >= filteredRowCount)
+            if ((model.PageIndex + 1) * model.RowsPerPage >= (filteredRowCount ?? totalRowCount))
             {
                 output.Write("<div class='paginate_disabled_next' title='Next' title='Next'></div>");
             }
             else
             {
-                output.Write("<a href='{0}' class='paginate_enabled_next' title='Next'></a>", model.GetPageUrl(model.PageIndex + 1));
+                output.Write("<a href='{0}' class='paginate_enabled_next' title='Next'></a>", HttpUtility.HtmlEncode(model.GetPageUrl(model.PageIndex + 1)));
             }
             output.Write("</div>");
+        }
+    }
+
+    public static class DataSourceExtensions
+    {
+        public static IEnumerable<T> PageInMemory<T>(this IEnumerable<T> allRows, int? page = null, int? rowsPerPage = null)
+        {
+            return allRows
+                .Skip((page ?? 0) * (rowsPerPage ?? 10))
+                .Take((rowsPerPage ?? 10));
+        }
+
+        public static IEnumerable<T> SortInMemory<T>(this IEnumerable<T> allRows, Func<string, Func<T, object>> customRendererFinder, string column = null, bool? sortAscending = null)
+        {
+            if (string.IsNullOrWhiteSpace(column))
+            {
+                return allRows;
+            }
+            Func<T, object> customRenderer = customRendererFinder(column);
+            IEnumerable<T> orderedRows = allRows.OrderBy(customRenderer);
+            if (false.Equals(sortAscending))
+            {
+                orderedRows = orderedRows.Reverse();
+            }
+            return orderedRows;
+        }
+
+        public static IEnumerable<T> FilterInMemory<T>(this IEnumerable<T> allRows, Func<string, Func<T, object>> customRendererFinder, IDictionary<string, string> columnFilters = null)
+        {
+            if (columnFilters == null)
+            {
+                return allRows;
+            }
+            IEnumerable<T> filteredRows = allRows;
+            foreach (var columnFilter in columnFilters)
+            {
+                if (string.IsNullOrWhiteSpace(columnFilter.Value))
+                {
+                    continue;
+                }
+                filteredRows = filteredRows.Where(row =>
+                    {
+                        object columnValue = customRendererFinder(columnFilter.Key);
+                        return columnValue.ToString().Contains(columnFilter.Value);
+                    });
+            }
+            return filteredRows;
+        }
+
+        public static SortedPage<T> SortAndPageInMemory<T>(this IEnumerable<T> allRows,
+            Func<string, Func<T, object>> customRendererFinder = null, string sortColumn = null, bool? sortAscending = null,
+            int? page = null, int? rowsPerPage = null)
+        {
+            return new SortedPage<T>(
+                allRows.SortInMemory(customRendererFinder, sortColumn, sortAscending)
+                    .PageInMemory(page, rowsPerPage),
+                allRows.Count());
+        }
+
+        public class SortedPage<T> : IEnumerable<T>
+        {
+            internal SortedPage(IEnumerable<T> pageDataSource, int totalRowCount)
+            {
+                this.PageDataSource = pageDataSource;
+                this.TotalRowCount = totalRowCount;
+            }
+
+            public IEnumerable<T> PageDataSource { get; private set; }
+            public int TotalRowCount { get; private set; }
+
+            IEnumerator<T> IEnumerable<T>.GetEnumerator()
+            {
+                return PageDataSource.GetEnumerator();
+            }
+
+            System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+            {
+                return ((System.Collections.IEnumerable)PageDataSource).GetEnumerator();
+            }
+        }
+
+        public static FilteredSortedPage<T> FilterSortAndPageInMemory<T>(this IEnumerable<T> allRows, 
+            Func<string, Func<T, object>> customRendererFinder, IDictionary<string, string> columnFilters = null, 
+            Func<string, Func<T, object>> sortingCustomRendererFinder = null, string sortColumn = null, bool? sortAscending = null, 
+            int? page = null, int? rowsPerPage = null)
+        {
+            return new FilteredSortedPage<T>(
+                allRows.FilterInMemory(customRendererFinder, columnFilters)
+                    .SortInMemory(sortingCustomRendererFinder ?? customRendererFinder, sortColumn, sortAscending)
+                    .PageInMemory(page, rowsPerPage),
+                allRows.FilterInMemory(customRendererFinder, columnFilters).Count(),
+                allRows.Count());
+        }
+
+        public class FilteredSortedPage<T> : IEnumerable<T>
+        {
+            internal FilteredSortedPage(IEnumerable<T> pageDataSource, int filteredRowCount, int totalRowCount)
+            {
+                this.PageDataSource = pageDataSource;
+                this.FilteredRowCount = filteredRowCount;
+                this.TotalRowCount = totalRowCount;
+            }
+
+            public IEnumerable<T> PageDataSource { get; private set; }
+            public int FilteredRowCount { get; private set; }
+            public int TotalRowCount { get; private set; }
+
+            IEnumerator<T> IEnumerable<T>.GetEnumerator()
+            {
+                return PageDataSource.GetEnumerator();
+            }
+
+            System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+            {
+                return ((System.Collections.IEnumerable)PageDataSource).GetEnumerator();
+            }
         }
     }
 }

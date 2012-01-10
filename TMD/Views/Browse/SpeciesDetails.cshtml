@@ -3,208 +3,205 @@
 
 <div class="x6 xColumn">
 
-    <div class="portlet x12">
-	    <div class="portlet-header">
-            <h4>Species</h4>
-            <ul class="portlet-tab-nav">
-                <li class="portlet-tab-nav-ignore"><a href="@Url.Action(Mvc.Export.Species(Model.GlobalDetails.ScientificName, Model.GlobalDetails.CommonName))">Export tree data</a></li>
-            </ul>
-        </div>
-	    <div class="portlet-content">
-            <table class="reports_table">  
-                @Html.ReportDisplayFor(m => m.GlobalDetails.ScientificName)
-                @Html.ReportDisplayFor(m => m.GlobalDetails.CommonName)
-                @if (Model.GlobalDetails.MaxHeight.IsValidAndSpecified()) {
-                    <tr>
-                        <td class="description">Max height</td>
-                        <td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.GlobalDetails.MaxHeightTreeId))">@Html.DisplayFor(m => m.GlobalDetails.MaxHeight)</a></td>
-                    </tr>
-                }
-                @if (Model.GlobalDetails.MaxGirth.IsValidAndSpecified()) { 
-                    <tr>
-                        <td class="description">Max girth</td>
-                        <td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.GlobalDetails.MaxGirthTreeId))">@Html.DisplayFor(m => m.GlobalDetails.MaxGirth)</a></td>
-                    </tr>
-                }
-                @if (Model.GlobalDetails.MaxCrownSpread.IsValidAndSpecified()) {
-                    <tr>
-                        <td class="description">Max crown spread</td>
-                        <td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.GlobalDetails.MaxCrownSpreadTreeId))">@Html.DisplayFor(m => m.GlobalDetails.MaxCrownSpread)</a></td>
-                    </tr>
-                }
-            </table>
-	    </div>
-    </div>
+	<div class="portlet x12">
+		<div class="portlet-header">
+			<h4>Species</h4>
+			<ul class="portlet-tab-nav">
+				<li class="portlet-tab-nav-ignore"><a href="@Url.Action(Mvc.Export.Species(Model.GlobalDetails.ScientificName, Model.GlobalDetails.CommonName))">Export tree data</a></li>
+			</ul>
+		</div>
+		<div class="portlet-content">
+			<table class="reports_table">  
+				@Html.ReportDisplayFor(m => m.GlobalDetails.ScientificName)
+				@Html.ReportDisplayFor(m => m.GlobalDetails.CommonName)
+				@if (Model.GlobalDetails.MaxHeight.IsValidAndSpecified()) {
+					<tr>
+						<td class="description">Max height</td>
+						<td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.GlobalDetails.MaxHeightTreeId))">@Html.DisplayFor(m => m.GlobalDetails.MaxHeight)</a></td>
+					</tr>
+				}
+				@if (Model.GlobalDetails.MaxGirth.IsValidAndSpecified()) { 
+					<tr>
+						<td class="description">Max girth</td>
+						<td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.GlobalDetails.MaxGirthTreeId))">@Html.DisplayFor(m => m.GlobalDetails.MaxGirth)</a></td>
+					</tr>
+				}
+				@if (Model.GlobalDetails.MaxCrownSpread.IsValidAndSpecified()) {
+					<tr>
+						<td class="description">Max crown spread</td>
+						<td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.GlobalDetails.MaxCrownSpreadTreeId))">@Html.DisplayFor(m => m.GlobalDetails.MaxCrownSpread)</a></td>
+					</tr>
+				}
+			</table>
+		</div>
+	</div>
 
-    @if (Model.StateDetails != null) {    
-        <div class="portlet x12">
-            <div class="portlet-header">
-                <h4>Species within @Html.DisplayFor(m => m.StateDetails.State)</h4>
-                <ul class="portlet-tab-nav">
-                    <li class="portlet-tab-nav-ignore"><a href="@Url.Action(Mvc.Export.StatesSpecies(Model.StateDetails.State.Id, Model.StateDetails.ScientificName))">Export tree data</a></li>
-                </ul>
-            </div>
-            <div class="portlet-content">
-                <table class="reports_table">
-                    <tr>
-                        <td class="description">State</td>
-                        <td class="value"><a href="@Url.Action(Mvc.Browse.StateDetails(Model.StateDetails.State.Id))">@Html.DisplayFor(m => m.StateDetails.State)</a></td>
-                    </tr>
-                    @if (Model.StateDetails.MaxHeight.IsValidAndSpecified()) {
-                        <tr>
-                            <td class="description">Max height</td>
-                            <td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.StateDetails.MaxHeightTreeId))">@Html.DisplayFor(m => m.StateDetails.MaxHeight)</a></td>
-                        </tr>
-                    }
-                    @if (Model.StateDetails.MaxGirth.IsValidAndSpecified()) { 
-                        <tr>
-                            <td class="description">Max girth</td>
-                            <td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.StateDetails.MaxGirthTreeId))">@Html.DisplayFor(m => m.StateDetails.MaxGirth)</a></td>
-                        </tr>
-                    }
-                    @if (Model.StateDetails.MaxCrownSpread.IsValidAndSpecified()) {
-                        <tr>
-                            <td class="description">Max crown spread</td>
-                            <td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.StateDetails.MaxCrownSpreadTreeId))">@Html.DisplayFor(m => m.StateDetails.MaxCrownSpread)</a></td>
-                        </tr>
-                    }
-                </table>
-            </div>
-        </div>
-    }
-    
-    @if (Model.SiteDetails != null) {    
-        <div class="portlet x12">
-            <div class="portlet-header">
-                <h4>Species within @Html.DisplayFor(m => m.SiteDetails.SiteName)</h4>
-                <ul class="portlet-tab-nav">
-                    <li class="portlet-tab-nav-ignore"><a href="@Url.Action(Mvc.Export.SitesSpecies(Model.SiteDetails.SiteId, Model.SiteDetails.ScientificName))">Export tree data</a></li>
-                </ul>
-            </div>
-            <div class="portlet-content">
-                <table class="reports_table">
-                    <tr>
-                        <td class="description">Site</td>
-                        <td class="value"><a href="@Url.Action(Mvc.Browse.SiteDetails(Model.SiteDetails.SiteId))">@Html.DisplayFor(m => m.SiteDetails.SiteName)</a></td>
-                    </tr>
-                    @Html.ReportDisplayFor(m => m.SiteDetails.OwnershipType)
-                    @Html.ReportDisplayFor(m => m.SiteDetails.County)
-                    @if (Model.SiteDetails.MaxHeight.IsValidAndSpecified()) {
-                        <tr>
-                            <td class="description">Max height</td>
-                            <td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.SiteDetails.MaxHeightTreeId))">@Html.DisplayFor(m => m.SiteDetails.MaxHeight)</a></td>
-                        </tr>
-                    }
-                    @if (Model.SiteDetails.MaxGirth.IsValidAndSpecified()) { 
-                        <tr>
-                            <td class="description">Max girth</td>
-                            <td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.SiteDetails.MaxGirthTreeId))">@Html.DisplayFor(m => m.SiteDetails.MaxGirth)</a></td>
-                        </tr>
-                    }
-                    @if (Model.SiteDetails.MaxCrownSpread.IsValidAndSpecified()) {
-                        <tr>
-                            <td class="description">Max crown spread</td>
-                            <td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.SiteDetails.MaxCrownSpreadTreeId))">@Html.DisplayFor(m => m.SiteDetails.MaxCrownSpread)</a></td>
-                        </tr>
-                    }
-                </table>
-            </div>
-        </div>
-    }
-    
+	@if (Model.StateDetails != null) {    
+		<div class="portlet x12">
+			<div class="portlet-header">
+				<h4>Species within @Html.DisplayFor(m => m.StateDetails.State)</h4>
+				<ul class="portlet-tab-nav">
+					<li class="portlet-tab-nav-ignore"><a href="@Url.Action(Mvc.Export.StatesSpecies(Model.StateDetails.State.Id, Model.StateDetails.ScientificName))">Export tree data</a></li>
+				</ul>
+			</div>
+			<div class="portlet-content">
+				<table class="reports_table">
+					<tr>
+						<td class="description">State</td>
+						<td class="value"><a href="@Url.Action(Mvc.Browse.StateDetails(Model.StateDetails.State.Id))">@Html.DisplayFor(m => m.StateDetails.State)</a></td>
+					</tr>
+					@if (Model.StateDetails.MaxHeight.IsValidAndSpecified()) {
+						<tr>
+							<td class="description">Max height</td>
+							<td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.StateDetails.MaxHeightTreeId))">@Html.DisplayFor(m => m.StateDetails.MaxHeight)</a></td>
+						</tr>
+					}
+					@if (Model.StateDetails.MaxGirth.IsValidAndSpecified()) { 
+						<tr>
+							<td class="description">Max girth</td>
+							<td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.StateDetails.MaxGirthTreeId))">@Html.DisplayFor(m => m.StateDetails.MaxGirth)</a></td>
+						</tr>
+					}
+					@if (Model.StateDetails.MaxCrownSpread.IsValidAndSpecified()) {
+						<tr>
+							<td class="description">Max crown spread</td>
+							<td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.StateDetails.MaxCrownSpreadTreeId))">@Html.DisplayFor(m => m.StateDetails.MaxCrownSpread)</a></td>
+						</tr>
+					}
+				</table>
+			</div>
+		</div>
+	}
+	
+	@if (Model.SiteDetails != null) {    
+		<div class="portlet x12">
+			<div class="portlet-header">
+				<h4>Species within @Html.DisplayFor(m => m.SiteDetails.SiteName)</h4>
+				<ul class="portlet-tab-nav">
+					<li class="portlet-tab-nav-ignore"><a href="@Url.Action(Mvc.Export.SitesSpecies(Model.SiteDetails.SiteId, Model.SiteDetails.ScientificName))">Export tree data</a></li>
+				</ul>
+			</div>
+			<div class="portlet-content">
+				<table class="reports_table">
+					<tr>
+						<td class="description">Site</td>
+						<td class="value"><a href="@Url.Action(Mvc.Browse.SiteDetails(Model.SiteDetails.SiteId))">@Html.DisplayFor(m => m.SiteDetails.SiteName)</a></td>
+					</tr>
+					@Html.ReportDisplayFor(m => m.SiteDetails.OwnershipType)
+					@Html.ReportDisplayFor(m => m.SiteDetails.County)
+					@if (Model.SiteDetails.MaxHeight.IsValidAndSpecified()) {
+						<tr>
+							<td class="description">Max height</td>
+							<td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.SiteDetails.MaxHeightTreeId))">@Html.DisplayFor(m => m.SiteDetails.MaxHeight)</a></td>
+						</tr>
+					}
+					@if (Model.SiteDetails.MaxGirth.IsValidAndSpecified()) { 
+						<tr>
+							<td class="description">Max girth</td>
+							<td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.SiteDetails.MaxGirthTreeId))">@Html.DisplayFor(m => m.SiteDetails.MaxGirth)</a></td>
+						</tr>
+					}
+					@if (Model.SiteDetails.MaxCrownSpread.IsValidAndSpecified()) {
+						<tr>
+							<td class="description">Max crown spread</td>
+							<td class="value"><a href="@Url.Action(Mvc.Browse.TreeDetails(Model.SiteDetails.MaxCrownSpreadTreeId))">@Html.DisplayFor(m => m.SiteDetails.MaxCrownSpread)</a></td>
+						</tr>
+					}
+				</table>
+			</div>
+		</div>
+	}
+	
 </div>
 
 <div class="x6 xColumn">
 
-    <div class="portlet x12">
-	    <div class="portlet-header"><h4>Recorded states</h4></div>
-	    <div class="portlet-content">
-            @(Html.DataTablesGrid<TMD.Model.Trees.StateMeasuredSpecies>(
-                columns: builder =>
-                {
-                    builder
-                        .Custom("State or province", species => Html.ActionLink(species.State.Name, Mvc.Browse.StateDetails(species.State.Id)))
-                        .Options(canSort: false);
-                    builder
-                        .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ?
-                            Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
-                            : MvcHtmlString.Create("-"))
-                        .Options(canSort: false);
-                    builder
-                        .Custom("Max girth", species => species.MaxGirth.IsValidAndSpecified() ?
-                            Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
-                            : MvcHtmlString.Create("-"))
-                        .Options(canSort: false);
-                    builder
-                        .Custom("Max crown spread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
-                            Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
-                            : MvcHtmlString.Create("-"))
-                        .Options(canSort: false);
-                },
-                canPage: false,
-                dataSource: Model.StatesContainingSpecies))
-	    </div>
-    </div>
+	<div class="portlet x12">
+		<div class="portlet-header"><h4>Recorded states</h4></div>
+		<div class="portlet-content">
+			@(Html.DataTablesGrid<TMD.Model.Trees.StateMeasuredSpecies>(parameterNamePrefix: "stateSpecies",
+				columns: builder =>
+				{
+					builder
+						.Custom("State", species => Html.ActionLink(species.State.Name, Mvc.Browse.StateDetails(species.State.Id)))
+						.Options(header: "State or province", canSort: true);
+					builder
+						.Custom("MaxHeight", species => species.MaxHeight.IsValidAndSpecified() ?
+							Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
+							: MvcHtmlString.Create("-"))
+							.Options(header: "Max height", canSort: true, defaultSortAscending: false);
+					builder
+						.Custom("MaxGirth", species => species.MaxGirth.IsValidAndSpecified() ?
+							Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
+							: MvcHtmlString.Create("-"))
+						.Options(header: "Max girth", canSort: true, defaultSortAscending: false);
+					builder
+						.Custom("MaxCrownSpread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
+							Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
+							: MvcHtmlString.Create("-"))
+						.Options(header: "Max crown spread", canSort: true, defaultSortAscending: false);
+				},
+				rowsPerPage: 10, dataSource: Model.StateSpeciesPage, totalRowCount: Model.StateSpeciesTotalCount))
+		</div>
+	</div>
 
-    @if (Model.SitesInStateContainingSpecies != null) { 
-        <div class="portlet x12">
-	        <div class="portlet-header"><h4>Recorded sites within @Html.DisplayFor(m => m.StateDetails.State)</h4></div>
-	        <div class="portlet-content">
-                @(Html.DataTablesGrid<TMD.Model.Trees.SiteMeasuredSpecies>(
-                    columns: builder =>
-                    {
-                        builder
-                            .Custom("Site", species => Html.ActionLink(species.Site.Name, Mvc.Browse.SiteDetails(species.Site.Id)))
-                            .Options(canSort: false);
-                        builder
-                            .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ?
-                                Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
-                                : MvcHtmlString.Create("-"))
-                            .Options(canSort: false);
-                        builder
-                            .Custom("Max girth", species => species.MaxGirth.IsValidAndSpecified() ?
-                                Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
-                                : MvcHtmlString.Create("-"))
-                            .Options(canSort: false);
-                        builder
-                            .Custom("Max crown spread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
-                                Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
-                                : MvcHtmlString.Create("-"))
-                            .Options(canSort: false);
-                    },
-                    canPage: false,
-                dataSource: Model.SitesInStateContainingSpecies))
-	        </div>
-        </div>
-    }
-    
-    @if (Model.TreesOfSpeciesContainedBySite != null) { 
-        <div class="portlet x12">
-	        <div class="portlet-header"><h4>Recorded trees within @Html.DisplayFor(m => m.SiteDetails.SiteName)</h4></div>
-	        <div class="portlet-content">
-                @(Html.DataTablesGrid<TMD.Model.Trees.Tree>(
-                    columns: builder =>
-                    {
-                        builder
-                            .Custom("Height", tree => tree.Height.IsValidAndSpecified() ?
-                                Html.ActionLink(tree.Height.ToString(UserSession.Units), Mvc.Browse.TreeDetails(tree.Id))
-                                : MvcHtmlString.Create("-"))
-                            .Options(canSort: false);
-                        builder
-                            .Custom("Girth", tree => tree.Girth.IsValidAndSpecified() ?
-                                Html.ActionLink(tree.Girth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(tree.Id))
-                                : MvcHtmlString.Create("-"))
-                            .Options(canSort: false);
-                        builder
-                            .Custom("Crown spread", tree => tree.CrownSpread.IsValidAndSpecified() ?
-                                Html.ActionLink(tree.CrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(tree.Id))
-                                : MvcHtmlString.Create("-"))
-                            .Options(canSort: false);
-                    },
-                    canPage: false,
-                dataSource: Model.TreesOfSpeciesContainedBySite))
-	        </div>
-        </div>
-    }
+	@if (Model.SiteSpeciesPage != null) { 
+		<div class="portlet x12">
+			<div class="portlet-header"><h4>Recorded sites within @Html.DisplayFor(m => m.StateDetails.State)</h4></div>
+			<div class="portlet-content">
+				@(Html.DataTablesGrid<TMD.Model.Trees.SiteMeasuredSpecies>(parameterNamePrefix: "siteSpecies",
+					columns: builder =>
+					{
+						builder
+							.Custom("Site", species => Html.ActionLink(species.Site.Name, Mvc.Browse.SiteDetails(species.Site.Id)))
+							.Options(canSort: true);
+						builder
+							.Custom("MaxHeight", species => species.MaxHeight.IsValidAndSpecified() ?
+								Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
+								: MvcHtmlString.Create("-"))
+							.Options(header: "Max height", canSort: true, defaultSortAscending: false);
+						builder
+							.Custom("MaxGirth", species => species.MaxGirth.IsValidAndSpecified() ?
+								Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
+								: MvcHtmlString.Create("-"))
+							.Options(header: "Max girth", canSort: true, defaultSortAscending: false);
+						builder
+							.Custom("MaxCrownSpread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
+								Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
+								: MvcHtmlString.Create("-"))
+							.Options(header: "Max crown spread", canSort: true, defaultSortAscending: false);
+					},
+					rowsPerPage: 10, dataSource: Model.SiteSpeciesPage, totalRowCount: Model.SiteSpeciesTotalCount))
+			</div>
+		</div>
+	}
+	
+	@if (Model.TreesPage != null) { 
+		<div class="portlet x12">
+			<div class="portlet-header"><h4>Recorded trees within @Html.DisplayFor(m => m.SiteDetails.SiteName)</h4></div>
+			<div class="portlet-content">
+				@(Html.DataTablesGrid<TMD.Model.Trees.Tree>(parameterNamePrefix: "trees",
+					columns: builder =>
+					{
+						builder
+							.Custom("Height", tree => tree.Height.IsValidAndSpecified() ?
+								Html.ActionLink(tree.Height.ToString(UserSession.Units), Mvc.Browse.TreeDetails(tree.Id))
+								: MvcHtmlString.Create("-"))
+							.Options(canSort: true, defaultSortAscending: false);
+						builder
+							.Custom("Girth", tree => tree.Girth.IsValidAndSpecified() ?
+								Html.ActionLink(tree.Girth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(tree.Id))
+								: MvcHtmlString.Create("-"))
+							.Options(canSort: true, defaultSortAscending: false);
+						builder
+							.Custom("CrownSpread", tree => tree.CrownSpread.IsValidAndSpecified() ?
+								Html.ActionLink(tree.CrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(tree.Id))
+								: MvcHtmlString.Create("-"))
+							.Options(header: "Crown spread", canSort: true, defaultSortAscending: false);
+					},
+					rowsPerPage: 10, dataSource: Model.TreesPage, totalRowCount: Model.TreesTotalCount))
+			</div>
+		</div>
+	}
 
 </div>

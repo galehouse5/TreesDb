@@ -107,7 +107,9 @@ namespace TMD.Controllers
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (!filterContext.IsChildAction && true.Equals(((ControllerBase)filterContext.Controller).Session.GetPerformBrowserCheck()))
+            if (WebApplicationRegistry.Settings.EnableBrowserCompatibilityCheck
+                && !filterContext.IsChildAction 
+                && true.Equals(((ControllerBase)filterContext.Controller).Session.GetPerformBrowserCheck()))
             {
                 HttpBrowserCapabilitiesBase browser = ((Controller)filterContext.Controller).Request.Browser;
                 if (!s_CompatibleBrowsers.Any(compatibleBrowser => compatibleBrowser.Is(browser)))

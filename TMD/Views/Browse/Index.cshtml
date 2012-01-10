@@ -27,7 +27,7 @@
                     .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName, species.CommonName)))
                     .Options(header: "Common name", canFilter: true, filterTitle: "Search common names");
             },
-            rowsPerPage: 25,
+            rowsPerPage: 20,
             dataSource: Model.Item1.Page, filteredRowCount: Model.Item1.FilteredItems, totalRowCount: Model.Item1.TotalItems))
     </div>
 </div>
@@ -57,7 +57,7 @@
                         : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
                     .Options(canFilter: true, filterTitle: "Search subsites");
             },
-            rowsPerPage: 25,
+            rowsPerPage: 20,
             dataSource: Model.Item2.Page, filteredRowCount: Model.Item2.FilteredItems, totalRowCount: Model.Item2.TotalItems))
     </div>
 </div>

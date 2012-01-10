@@ -146,11 +146,14 @@ namespace TMD.Models
     public class BrowseSpeciesModel
     {
         public BrowseSpeciesDetailsModel GlobalDetails { get; set; }
-        public IList<StateMeasuredSpecies> StatesContainingSpecies { get; set; }
         public BrowseSpeciesStateDetailsModel StateDetails { get; set; }
-        public IList<SiteMeasuredSpecies> SitesInStateContainingSpecies { get; set; }
+        public IEnumerable<StateMeasuredSpecies> StateSpeciesPage { get; set; }
+        public int StateSpeciesTotalCount { get; set; }
         public BrowseSpeciesSiteDetailsModel SiteDetails { get; set; }
-        public IList<Tree> TreesOfSpeciesContainedBySite { get; set; }
+        public IEnumerable<SiteMeasuredSpecies> SiteSpeciesPage { get; set; }
+        public int SiteSpeciesTotalCount { get; set; }
+        public IEnumerable<Tree> TreesPage { get; set; }
+        public int TreesTotalCount { get; set; }
     }
 
     public class BrowseSiteModel
@@ -159,8 +162,9 @@ namespace TMD.Models
         public BrowseSubsiteDetailsModel Details { get; set; }
         public IList<BrowsePhotoSumaryModel> PhotoSummaries { get; set; }
         public BrowseSubsiteLocationModel Location { get; set; }
-        public IList<SubsiteMeasuredSpecies> Species { get; set; }
         public IList<BrowseSiteVisitModel> Visits { get; set; }
+        public IEnumerable<SubsiteMeasuredSpecies> SubsiteSpeciesPage { get; set; }
+        public int SubsiteSpeciesTotalCount { get; set; }
     }
 
     public class BrowseSiteVisitModel
@@ -238,7 +242,9 @@ namespace TMD.Models
         public float? RGI10 { get; set; }
         [DisplayFormat(NullDisplayText = "(not enough data)")]
         public float? RGI20 { get; set; }
-        public IList<StateMeasuredSpecies> Species { get; set; }
-        public IList<Subsite> Subsites { get; set; }
+        public IEnumerable<StateMeasuredSpecies> StateSpeciesPage { get; set; }
+        public int StateSpeciesTotalCount { get; set; }
+        public IEnumerable<Subsite> SubsitesPage { get; set; }
+        public int SubsitesTotalCount { get; set; }
     }
 }

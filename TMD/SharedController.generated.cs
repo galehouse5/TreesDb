@@ -28,6 +28,7 @@ namespace T4MVC {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
+            public readonly string GoogleAnalyticsScript = "~/Views/Shared/GoogleAnalyticsScript.cshtml";
             public readonly string LoginLayout = "~/Views/Shared/LoginLayout.cshtml";
             public readonly string PrettyTimeSpan = "~/Views/Shared/PrettyTimeSpan.cshtml";
             public readonly string SiteLayout = "~/Views/Shared/SiteLayout.cshtml";

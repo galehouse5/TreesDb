@@ -51,7 +51,8 @@ namespace TMD.Controllers
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult SiteDetails(int id)
+        public virtual ActionResult SiteDetails(int id,
+            int? subsiteSpeciesPage = null, string subsiteSpeciesSort = null, bool? subsiteSpeciesSortAsc = null)
         {
             var site = Repositories.Sites.FindById(id);
             if (site == null) { return new NotFoundResult(); }
@@ -63,55 +64,130 @@ namespace TMD.Controllers
                                    orderby visit.Visited descending
                                    where visit.Photos.Count > 0
                                    select visit;
-            var species = Repositories.Trees.ListMeasuredSpeciesBySubsiteId(subsite.Id);
+            var allSubsiteSpecies = Repositories.Trees.ListMeasuredSpeciesBySubsiteId(subsite.Id);
+            var subsiteSpeciesDataSource = allSubsiteSpecies.SortAndPageInMemory(
+                column =>
+                {
+                    if ("BotanicalName".Equals(column)) { return species => species.ScientificName; }
+                    if ("CommonName".Equals(column)) { return species => species.CommonName; }
+                    if ("MaxHeight".Equals(column)) { return species => species.MaxHeight; }
+                    if ("MaxGirth".Equals(column)) { return species => species.MaxGirth; }
+                    if ("MaxCrownSpread".Equals(column)) { return species => species.MaxCrownSpread; }
+                    throw new NotImplementedException();
+                },
+                subsiteSpeciesSort, subsiteSpeciesSortAsc, subsiteSpeciesPage, 10);
             var model = new BrowseSiteModel
             {
                 Id = id,
                 Details = Mapper.Map<Subsite, BrowseSubsiteDetailsModel>(subsite),
                 Location = Mapper.Map<Subsite, BrowseSubsiteLocationModel>(subsite),
                 PhotoSummaries = Mapper.Map<IEnumerable<SubsiteVisit>, IList<BrowsePhotoSumaryModel>>(visitsWithPhotos),
-                Species = species,
-                Visits = Mapper.Map<IEnumerable<SiteVisit>, IList<BrowseSiteVisitModel>>(siteVisits)
+                Visits = Mapper.Map<IEnumerable<SiteVisit>, IList<BrowseSiteVisitModel>>(siteVisits),
+                SubsiteSpeciesPage = subsiteSpeciesDataSource,
+                SubsiteSpeciesTotalCount = subsiteSpeciesDataSource.TotalRowCount
             };
             return View(model);
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult SpeciesDetails(string botanicalName, string commonName, int? siteId = null, int? stateId = null)
+        public virtual ActionResult SpeciesDetails(string botanicalName, string commonName, int? siteId = null, int? stateId = null,
+            int? stateSpeciesPage = null, string stateSpeciesSort = null, bool? stateSpeciesSortAsc = null,
+            int? treesPage = null, string treesSort = null, bool? treesSortAsc = null,
+            int? siteSpeciesPage = null, string siteSpeciesSort = null, bool? siteSpeciesSortAsc = null)
         {
             GlobalMeasuredSpecies globalSpecies = Repositories.Trees.FindMeasuredSpeciesByName(botanicalName, commonName);
             if (globalSpecies == null) { return new NotFoundResult(); }
             BrowseSpeciesModel model = new BrowseSpeciesModel
             {
-                GlobalDetails = Mapper.Map<GlobalMeasuredSpecies, BrowseSpeciesDetailsModel>(globalSpecies),
-                StatesContainingSpecies = Repositories.Trees.ListMeasuredSpeciesForStatesByName(botanicalName, commonName)
+                GlobalDetails = Mapper.Map<GlobalMeasuredSpecies, BrowseSpeciesDetailsModel>(globalSpecies)
             };
+            IList<StateMeasuredSpecies> allStateSpecies = Repositories.Trees.ListMeasuredSpeciesForStatesByName(botanicalName, commonName);
+            var stateSpeciesDataSource = allStateSpecies.SortAndPageInMemory(
+                column =>
+                {
+                    if ("State".Equals(column)) { return species => species.State.Name; }
+                    if ("MaxHeight".Equals(column)) { return species => species.MaxHeight; }
+                    if ("MaxGirth".Equals(column)) { return species => species.MaxGirth; }
+                    if ("MaxCrownSpread".Equals(column)) { return species => species.MaxCrownSpread; }
+                    throw new NotImplementedException();
+                },
+                stateSpeciesSort, stateSpeciesSortAsc, stateSpeciesPage, 10);
+            model.StateSpeciesPage = stateSpeciesDataSource;
+            model.StateSpeciesTotalCount = stateSpeciesDataSource.TotalRowCount;
             if (siteId.HasValue)
             {
                 SiteMeasuredSpecies siteSpecies = Repositories.Trees.FindMeasuredSpeciesByNameAndSiteId(botanicalName, commonName, siteId.Value);
                 if (siteSpecies == null) { return new NotFoundResult(); }
-                model.SiteDetails = Mapper.Map<SiteMeasuredSpecies, BrowseSpeciesSiteDetailsModel>(siteSpecies);
-                model.TreesOfSpeciesContainedBySite = Repositories.Trees.ListByNameAndSiteId(botanicalName, commonName, siteId.Value);
                 stateId = siteSpecies.Site.Subsites[0].State.Id;
+                model.SiteDetails = Mapper.Map<SiteMeasuredSpecies, BrowseSpeciesSiteDetailsModel>(siteSpecies);
+                IList<Tree> allTrees = Repositories.Trees.ListByNameAndSiteId(botanicalName, commonName, siteId.Value);
+                var treesDataSource = allTrees.SortAndPageInMemory(
+                    column =>
+                    {
+                        if ("Height".Equals(column)) { return tree => tree.Height; }
+                        if ("Girth".Equals(column)) { return tree => tree.Girth; }
+                        if ("CrownSpread".Equals(column)) { return tree => tree.CrownSpread; }
+                        throw new NotImplementedException();
+                    },
+                    treesSort, treesSortAsc, treesPage, 10);
+                model.TreesPage = treesDataSource;
+                model.TreesTotalCount = treesDataSource.TotalRowCount;
             }
             if (stateId.HasValue)
             {
                 StateMeasuredSpecies stateSpecies = Repositories.Trees.FindMeasuredSpeciesByNameAndStateId(botanicalName, commonName, stateId.Value);
                 if (stateSpecies == null) { return new NotFoundResult(); }
                 model.StateDetails = Mapper.Map<StateMeasuredSpecies, BrowseSpeciesStateDetailsModel>(stateSpecies);
-                model.SitesInStateContainingSpecies = Repositories.Trees.ListMeasuredSpeciesForSitesByNameAndStateId(botanicalName, commonName, stateId.Value);
+                IList<SiteMeasuredSpecies> allSiteSpecies = Repositories.Trees.ListMeasuredSpeciesForSitesByNameAndStateId(botanicalName, commonName, stateId.Value);
+                var siteSpeciesDataSource = allSiteSpecies.SortAndPageInMemory(
+                    column =>
+                    {
+                        if ("Site".Equals(column)) { return species => species.Site.Name; }
+                        if ("MaxHeight".Equals(column)) { return species => species.MaxHeight; }
+                        if ("MaxGirth".Equals(column)) { return species => species.MaxGirth; }
+                        if ("MaxCrownSpread".Equals(column)) { return species => species.MaxCrownSpread; }
+                        throw new NotImplementedException();
+                    },
+                    siteSpeciesSort, siteSpeciesSortAsc, siteSpeciesPage, 10);
+                model.SiteSpeciesPage = siteSpeciesDataSource;
+                model.SiteSpeciesTotalCount = siteSpeciesDataSource.TotalRowCount;
             }
             return View(model);
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult StateDetails(int id)
+        public virtual ActionResult StateDetails(int id,
+            int? stateSpeciesPage = null, string stateSpeciesSort = null, bool? stateSpeciesSortAsc = null,
+            int? subsitesPage = null, string subsitesSort = null, bool? subsitesSortAsc = null)
         {
             var state = Repositories.Locations.FindVisitedStateById(id);
             if (state == null) { return new NotFoundResult(); }
             var model = Mapper.Map<VisitedState, BrowseStateModel>(state);
-            model.Species = Repositories.Trees.ListMeasuredSpeciesByStateId(state.Id);
-            model.Subsites = Repositories.Sites.FindSubsitesByStateId(state.Id);
+            IList<StateMeasuredSpecies> allStateSpecies = Repositories.Trees.ListMeasuredSpeciesByStateId(state.Id);
+            var stateSpeciesDataSource = allStateSpecies.SortAndPageInMemory(
+                column =>
+                {
+                    if ("BotanicalName".Equals(column)) { return species => species.ScientificName; }
+                    if ("CommonName".Equals(column)) { return species => species.CommonName; }
+                    if ("MaxHeight".Equals(column)) { return species => species.MaxHeight; }
+                    if ("MaxGirth".Equals(column)) { return species => species.MaxGirth; }
+                    if ("MaxCrownSpread".Equals(column)) { return species => species.MaxCrownSpread; }
+                    throw new NotImplementedException();
+                },
+                stateSpeciesSort, stateSpeciesSortAsc, stateSpeciesPage, 10);
+            model.StateSpeciesPage = stateSpeciesDataSource;
+            model.StateSpeciesTotalCount = stateSpeciesDataSource.TotalRowCount;
+            IList<Subsite> allSubsites = Repositories.Sites.FindSubsitesByStateId(state.Id);
+            var subsitesDataSource = allSubsites.SortAndPageInMemory(
+                column =>
+                {
+                    if ("Site".Equals(column)) { return subsite => subsite.Site.Name; }
+                    if ("Subsite".Equals(column)) { return subsite => subsite.Name; }
+                    throw new NotImplementedException();
+                },
+                subsitesSort, subsitesSortAsc, subsitesPage, 10);
+            model.SubsitesPage = subsitesDataSource;
+            model.SubsitesTotalCount = subsitesDataSource.TotalRowCount;
             return View(model);
         }
 
@@ -122,7 +198,7 @@ namespace TMD.Controllers
             SpeciesBrowser browser = new SpeciesBrowser
             {
                 PageIndex = page ?? 0,
-                PageSize = 50,
+                PageSize = 40,
                 BotanicalNameFilter = botanicalNameFilter, CommonNameFilter = commonNameFilter,
                 SortAscending = !sortAsc.HasValue || sortAsc.Value,
                 SortProperty = "BotanicalName".Equals(sort) ? SpeciesBrowser.Property.BotanicalName
@@ -140,7 +216,7 @@ namespace TMD.Controllers
             SubsiteBrowser browser = new SubsiteBrowser
             {
                 PageIndex = page ?? 0,
-                PageSize = 50,
+                PageSize = 40,
                 StateFilter = stateFilter, SiteFilter = siteFilter, SubsiteFilter = subsiteFilter,
                 SortAscending = !sortAsc.HasValue || sortAsc.Value,
                 SortProperty = "State".Equals(sort) ? SubsiteBrowser.Property.State
@@ -161,7 +237,7 @@ namespace TMD.Controllers
             SpeciesBrowser speciesBrowser = new SpeciesBrowser
             {
                 PageIndex = speciesPage ?? 0,
-                PageSize = 25,
+                PageSize = 20,
                 BotanicalNameFilter = speciesBotanicalNameFilter, CommonNameFilter = speciesCommonNameFilter,
                 SortAscending = !speciesSortAsc.HasValue || speciesSortAsc.Value,
                 SortProperty = "BotanicalName".Equals(speciesSort) ? SpeciesBrowser.Property.BotanicalName
@@ -172,7 +248,7 @@ namespace TMD.Controllers
             SubsiteBrowser locationsBrowser = new SubsiteBrowser
             {
                 PageIndex = locationPage ?? 0,
-                PageSize = 25,
+                PageSize = 20,
                 StateFilter = locationStateFilter, SiteFilter = locationSiteFilter, SubsiteFilter = locationSubsiteFilter,
                 SortAscending = !locationSortAsc.HasValue || locationSortAsc.Value,
                 SortProperty = "State".Equals(locationSort) ? SubsiteBrowser.Property.State

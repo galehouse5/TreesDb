@@ -32,7 +32,7 @@
                         : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
                         .Options(canFilter: true, filterTitle: "Search subsites");
             },
-            rowsPerPage: 50,
+            rowsPerPage: 40,
             dataSource: Model.Page, filteredRowCount: Model.FilteredItems, totalRowCount: Model.TotalItems))
     </div>
 </div>

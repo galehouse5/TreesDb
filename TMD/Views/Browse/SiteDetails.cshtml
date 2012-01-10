@@ -75,33 +75,32 @@
     <div class="portlet x12">
 		<div class="portlet-header"><h4>Species</h4></div>
 		<div class="portlet-content">               
-            @(Html.DataTablesGrid<TMD.Model.Trees.SubsiteMeasuredSpecies>(
+            @(Html.DataTablesGrid<TMD.Model.Trees.SubsiteMeasuredSpecies>(parameterNamePrefix: "subsiteSpecies",
                 columns: builder =>
                 {
                     builder
-                        .Custom("Botanical name", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.ScientificName, species.CommonName, siteId: species.Subsite.Site.Id)))
-                        .Options(canSort: false);
+                        .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.ScientificName, species.CommonName, siteId: species.Subsite.Site.Id)))
+                        .Options(header: "Botanical name", canSort: true);
                     builder
-                        .Custom("Common name", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName, species.CommonName, siteId: species.Subsite.Site.Id)))
-                        .Options(canSort: false);
+                        .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName, species.CommonName, siteId: species.Subsite.Site.Id)))
+                        .Options(header: "Common name", canSort: true);
                     builder
-                        .Custom("Max height", species => species.MaxHeight.IsValidAndSpecified() ?
+                        .Custom("MaxHeight", species => species.MaxHeight.IsValidAndSpecified() ?
                             Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
                             : MvcHtmlString.Create("-"))
-                        .Options(canSort: false);
+                        .Options(header: "Max height", canSort: true, defaultSortAscending: false);
                     builder
-                        .Custom("Max girth", species => species.MaxGirth.IsValidAndSpecified() ?
+                        .Custom("MaxGirth", species => species.MaxGirth.IsValidAndSpecified() ?
                             Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
                             : MvcHtmlString.Create("-"))
-                        .Options(canSort: false);
+                        .Options(header: "Max girth", canSort: true, defaultSortAscending: false);
                     builder
-                        .Custom("Max crown spread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
+                        .Custom("MaxCrownSpread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
                             Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
                             : MvcHtmlString.Create("-"))
-                        .Options(canSort: false);
+                        .Options(header: "Max crown spread", canSort: true, defaultSortAscending: false);
                 },
-                canPage: false,
-                dataSource: Model.Species))
+                rowsPerPage: 10, dataSource: Model.SubsiteSpeciesPage, totalRowCount: Model.SubsiteSpeciesTotalCount))
 		</div>
 	</div>
 

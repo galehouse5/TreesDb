@@ -1,6 +1,8 @@
 ﻿/* /css/screen.css */
 a { color: #327487; }
 table thead th { background-color: #255648 !important; }
+table thead tr th { padding-right: 0; }
+table thead tr th span { display: block; }
 #header { background: #255648; }
 #header h1 { width: 250px; height: 71px; top: 10px; }
 #info { width: 300px; padding-right: inherit; }
