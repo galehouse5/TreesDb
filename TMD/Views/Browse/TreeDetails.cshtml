@@ -53,7 +53,7 @@
                         @Html.ReportDisplayFor(m => m.MeasurementDetails[measurementIndex].Measurers)
 			        </table>
                 </div>
-		        <div id="@("MeasurementDetails" + measurementIndex)" class="portlet-tab-content RequiresJavascript">   
+		        <div id="@("MeasurementDetails" + measurementIndex)" class="portlet-tab-content ShowIfJavascriptEnabled">   
                     <table class="reports_table">
                         @Html.DisplayFor(m => m.MeasurementDetails[measurementIndex])
                         @Html.ReportDisplayFor(m => m.MeasurementDetails[measurementIndex].Measurers)
@@ -101,7 +101,7 @@
                     </tr>
                 </table>
             </div>
-            <div id="LocationMap" class="portlet-tab-content RequiresJavascript">
+            <div id="LocationMap" class="portlet-tab-content ShowIfJavascriptEnabled">
                 @Html.DisplayFor(m => m.Location.Map)
             </div>
 		</div>

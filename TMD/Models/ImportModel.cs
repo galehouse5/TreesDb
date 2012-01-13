@@ -165,7 +165,7 @@ namespace TMD.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates RequiresJavascript")]
+        [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates ShowIfJavascriptEnabled")]
         public CoordinatePickerModel Coordinates { get; set; }
         [Required, Classification("State")]
         public State State { get; set; }
@@ -179,7 +179,7 @@ namespace TMD.Models
         public bool MakeOwnershipContactInfoPublic { get; set; }
         [DataType(DataType.MultilineText)]
         public string Comments { get; set; }
-        [Classification("RequiresJavascript")]
+        [Classification("ShowIfJavascriptEnabled")]
         public PhotoGalleryModel Photos { get; set; }
     }
 
@@ -271,7 +271,7 @@ namespace TMD.Models
         public string CommonName { get; set; }
         [DisplayName("Scientific name"), Required, Classification("ScientificName")]
         public string ScientificName { get; set; }
-        [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates RequiresJavascript")]
+        [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates ShowIfJavascriptEnabled")]
         public CoordinatePickerModel Coordinates { get; set; }
         public Distance Height { get; set; }
         [DisplayName("Measurement method"), UIHint("Enum")]
@@ -282,7 +282,7 @@ namespace TMD.Models
         [DisplayName("Comments"), DataType(DataType.MultilineText)]
         public string GeneralComments { get; set; }
         public Elevation Elevation { get; set; }
-        [Classification("RequiresJavascript")]
+        [Classification("ShowIfJavascriptEnabled")]
         public PhotoGalleryModel Photos { get; set; }
     }
 

@@ -2508,7 +2508,6 @@ div.selector { margin-bottom: 0; }
 #login_form .field-validation-error { margin-left: 5px; float: left; font-size: 11px; color: #C00; line-height: 16px; }
 
 /* Misc */
-.RequiresJavascript { display: none; }
 .captcha { margin-bottom: 15px; }
 .captcha .recaptcha_input_area input { left: 0; }
 .reports_table .value.Comment { text-align: justify; }

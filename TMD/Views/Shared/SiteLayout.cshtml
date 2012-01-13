@@ -3,10 +3,8 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>@ViewBag.Title</title>
-    @if (ViewData.GetJavascriptRequired()) {
-        <style type="text/css">.RequiresJavascript { display: block; } .LacksJavascript { display: none; }</style>
-        <noscript><style type="text/css">.RequiresJavascript { display: none; } .LacksJavascript { display: block; }</style></noscript>
-    }
+    <style type="text/css">.ShowIfJavascriptEnabled { display: block; } .ShowIfJavascriptDisabled { display: none; }</style>
+    <noscript><style type="text/css">.ShowIfJavascriptEnabled { display: none; } .ShowIfJavascriptDisabled { display: block; }</style></noscript>
     <link href="@Url.ManagedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
     <link href="@Url.ManagedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
     <link href="@Url.ManagedContent(Links.css.Shared_css, Links.css.Shared_min_css)" rel="Stylesheet" type="text/css" />
@@ -35,7 +33,7 @@
         </div>
         <!-- #top -->
         @if (ViewData.GetJavascriptRequired()) {
-            <div class="content xfluid LacksJavascript">
+            <div class="content xfluid ShowIfJavascriptDisabled">
                 <div class="portlet x12 ">
                     <div class="portlet-header">
                         <h4>
@@ -48,7 +46,7 @@
                 </div>
             </div>
         }
-        <div id="content" class="@(ViewData.GetJavascriptRequired() ? "content xfluid RequiresJavascript" : "content xfluid")">
+        <div id="content" class="@(ViewData.GetJavascriptRequired() ? "content xfluid ShowIfJavascriptEnabled" : "content xfluid")">
             @RenderBody()
         </div>
         <!-- #content -->

@@ -607,7 +607,6 @@ div.selector{margin-bottom:0}
 .field input.input-validation-error,.field textarea.input-validation-error,.field select.input-validation-error{border-color:#c00!important;-moz-box-shadow:0 0 5px #F00!important;-webkit-box-shadow:0 0 5px #F00!important}
 .field-validation-error{margin-left:145px;display:block;font-size:11px;color:#C00;line-height:16px}
 #login_form .field-validation-error{margin-left:5px;float:left;font-size:11px;color:#C00;line-height:16px}
-.RequiresJavascript{display:none}
 .captcha{margin-bottom:15px}
 .captcha .recaptcha_input_area input{left:0}
 .reports_table .value.Comment{text-align:justify}
