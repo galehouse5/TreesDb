@@ -58,6 +58,7 @@ namespace TMD.Controllers {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNamesClass {
             public readonly string MenuWidget = "MenuWidget";
+            public readonly string SuggestionsMenuWidget = "SuggestionsMenuWidget";
             public readonly string Index = "Index";
             public readonly string SetUnits = "SetUnits";
         }
@@ -70,6 +71,7 @@ namespace TMD.Controllers {
         public class ViewNames {
             public readonly string Index = "~/Views/Main/Index.cshtml";
             public readonly string MenuWidget = "~/Views/Main/MenuWidget.cshtml";
+            public readonly string SuggestionsMenuWidget = "~/Views/Main/SuggestionsMenuWidget.cshtml";
         }
     }
 
@@ -80,6 +82,11 @@ namespace TMD.Controllers {
         public override System.Web.Mvc.ActionResult MenuWidget(bool isSelected) {
             var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);
             callInfo.RouteValueDictionary.Add("isSelected", isSelected);
+            return callInfo;
+        }
+
+        public override System.Web.Mvc.ActionResult SuggestionsMenuWidget() {
+            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SuggestionsMenuWidget);
             return callInfo;
         }
 

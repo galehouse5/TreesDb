@@ -14,6 +14,7 @@
     <AssemblyName>TMD</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -441,6 +442,7 @@
     <Content Include="Views\Photos\Caption.cshtml" />
     <Content Include="Views\Error\Maintenance.cshtml" />
     <Content Include="Views\Shared\GoogleAnalyticsScript.cshtml" />
+    <Content Include="Views\Main\SuggestionsMenuWidget.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TMD.Infrastructure\TMD.Infrastructure.csproj">

@@ -5,18 +5,18 @@
             if (!string.IsNullOrWhiteSpace(TempData.GetAccountMessage())) {
                 @TempData.GetAccountMessage()
             } else {
-                @:You are not logged on.
+                @:You are not logged on
             }
             <br />
-            @:@Html.ActionLink("Logon", Mvc.Account.Logon()) or @Html.ActionLink("Register", Mvc.Account.Register()).
+            @:@Html.ActionLink("Logon", Mvc.Account.Logon()) or @Html.ActionLink("Register", Mvc.Account.Register())
         } else {
             if (!string.IsNullOrWhiteSpace(TempData.GetAccountMessage())) {
                 @TempData.GetAccountMessage()
             } else {
-                @:Welcome @Model.Email.
+                @:Welcome @Model.Email
             }
             <br />
-            @:@Html.ActionLink("Edit account", Mvc.Account.Edit()) or @Html.ActionLink("Logout", Mvc.Account.Logout()).
+            @:@Html.ActionLink("Edit account", Mvc.Account.Edit()) or @Html.ActionLink("Logout", Mvc.Account.Logout())
         }
     </p>
 </div> <!-- #info -->

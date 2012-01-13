@@ -15,10 +15,13 @@ namespace TMD.Controllers
         [ChildActionOnly]
         public virtual ActionResult MenuWidget(bool isSelected)
         {
-            return PartialView(new MainMenuWidgetModel
-            {
-                IsSelected = isSelected
-            });
+            return PartialView(isSelected);
+        }
+
+        [ChildActionOnly]
+        public virtual ActionResult SuggestionsMenuWidget()
+        {
+            return PartialView((object)WebApplicationRegistry.Settings.SuggestionsUrl);
         }
 
         [DefaultReturnUrl]
