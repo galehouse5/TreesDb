@@ -9,6 +9,7 @@ using System.Web.WebPages;
 using System.Web.Mvc;
 using System.Text;
 using System.Linq.Expressions;
+using TMD.Model;
 
 namespace TMD.Extensions
 {
@@ -66,12 +67,14 @@ namespace TMD.Extensions
             int calculatedTotalRowCount = totalRowCount.HasValue ? totalRowCount.Value : dataSource.Count();
             using (TextWriter output = new StringWriter())
             {
+                output.Write("<div class='dataTablesGrid'>");
                 var render = new DataTablesGridRenderer<T>();
                 render.Render(model, dataSource, filteredRowCount, calculatedTotalRowCount, output);
                 if (canPage)
                 {
                     render.RenderPager(model, dataSource, filteredRowCount, calculatedTotalRowCount, output);
                 }
+                output.Write("</div>");
                 return new HtmlString(output.ToString());
             }
         }
@@ -200,7 +203,7 @@ namespace TMD.Extensions
 
         public bool IsPageParameterSpecified
         {
-            get { return !string.IsNullOrEmpty(Parameters[PageParameterName]); }
+            get { return !string.IsNullOrWhiteSpace(Parameters[PageParameterName]); }
         }
 
         private string m_SortColumnName;
@@ -208,11 +211,11 @@ namespace TMD.Extensions
         { 
             get
             {
-                if (!string.IsNullOrEmpty(m_SortColumnName))
+                if (!string.IsNullOrWhiteSpace(m_SortColumnName))
                 {
                     return m_SortColumnName;
                 }
-                if (!string.IsNullOrEmpty(Parameters[SortParameterName]))
+                if (!string.IsNullOrWhiteSpace(Parameters[SortParameterName]))
                 {
                     return Parameters[SortParameterName];
                 }
@@ -223,7 +226,7 @@ namespace TMD.Extensions
 
         public bool IsSortParameterSpecified
         {
-            get { return !string.IsNullOrEmpty(Parameters[SortParameterName]); }
+            get { return !string.IsNullOrWhiteSpace(Parameters[SortParameterName]); }
         }
 
         private bool? m_SortAscending;
@@ -236,7 +239,7 @@ namespace TMD.Extensions
                     return m_SortAscending.Value;
                 }
                 bool sortAscending;
-                if (!string.IsNullOrEmpty(Parameters[SortAscendingParameterName]) && bool.TryParse(Parameters[SortAscendingParameterName], out sortAscending))
+                if (!string.IsNullOrWhiteSpace(Parameters[SortAscendingParameterName]) && bool.TryParse(Parameters[SortAscendingParameterName], out sortAscending))
                 {
                     return sortAscending;
                 }
@@ -247,7 +250,7 @@ namespace TMD.Extensions
 
         public bool IsSortAscendingParameterSpecified
         {
-            get { return !string.IsNullOrEmpty(Parameters[SortAscendingParameterName]); }
+            get { return !string.IsNullOrWhiteSpace(Parameters[SortAscendingParameterName]); }
         }
 
         private IDictionary<string, string> m_FiltersByColumnName;
@@ -308,6 +311,10 @@ namespace TMD.Extensions
             NameValueCollection additionalParameters = new NameValueCollection(2);
             additionalParameters[SortParameterName] = columnName;
             additionalParameters[SortAscendingParameterName] = sortAscending.ToString();
+            if (!string.IsNullOrWhiteSpace(ParameterNamePrefix))
+            {
+                additionalParameters["parameterNamePrefix"] = ParameterNamePrefix;
+            }
             NameValueCollection mergedParameters = Parameters.Merge(additionalParameters, true);
             return string.Format("{0}?{1}", Path, mergedParameters.ToQueryString());
         }
@@ -317,6 +324,10 @@ namespace TMD.Extensions
             NameValueCollection additionalParameters = new NameValueCollection(1);
             additionalParameters[PageParameterName] = page.ToString(CultureInfo.CurrentCulture);
             NameValueCollection mergedParameters = Parameters.Merge(additionalParameters, true);
+            if (!string.IsNullOrWhiteSpace(ParameterNamePrefix))
+            {
+                additionalParameters["parameterNamePrefix"] = ParameterNamePrefix;
+            }
             return string.Format("{0}?{1}", Path, mergedParameters.ToQueryString());
         }
 
@@ -363,7 +374,7 @@ namespace TMD.Extensions
         public object Evaluate(T row)
         {
             object value = Evaluator(row);
-            if (!string.IsNullOrEmpty(ValueFormat))
+            if (!string.IsNullOrWhiteSpace(ValueFormat))
             {
                 value = string.Format(ValueFormat, value);
             }
@@ -386,13 +397,15 @@ namespace TMD.Extensions
                 output.Write("<form method='get' action='{0}'>", HttpUtility.HtmlEncode(model.GetFilterUrl()));
                 if (model.IsSortParameterSpecified)
                 {
-                    output.Write("<input type='hidden' name='{0}' value='{1}'/>",
-                        HttpUtility.HtmlEncode(model.SortParameterName), HttpUtility.HtmlEncode(model.SortColumnName));
+                    output.Write("<input type='hidden' name='{0}' value='{1}'/>", HttpUtility.HtmlEncode(model.SortParameterName), HttpUtility.HtmlEncode(model.SortColumnName));
                 }
                 if (model.IsSortAscendingParameterSpecified)
                 {
-                    output.Write("<input type='hidden' name='{0}' value='{1}'/>",
-                        HttpUtility.HtmlEncode(model.SortAscendingParameterName), model.SortAscending);
+                    output.Write("<input type='hidden' name='{0}' value='{1}'/>", HttpUtility.HtmlEncode(model.SortAscendingParameterName), model.SortAscending);
+                }
+                if (!string.IsNullOrWhiteSpace(model.ParameterNamePrefix))
+                {
+                    output.Write("<input type='hidden' name='parameterNamePrefix' value='{0}'/>", HttpUtility.HtmlEncode(model.ParameterNamePrefix));
                 }
             }
             output.Write("<table cellspacing='0' cellpadding='0' border='0' class='display'>");
@@ -401,10 +414,7 @@ namespace TMD.Extensions
             {
                 if (column.CanSort)
                 {
-                    string @class = column.IsSorted(model) ?
-                        model.SortAscending ? "sorting_asc"
-                        : "sorting_desc"
-                        : "sorting";
+                    string @class = column.IsSorted(model) ? model.SortAscending ? "sorting_asc" : "sorting_desc" : "sorting";
                     output.Write("<th class='{0}'>", @class);
                     output.Write("<a href='{0}'><span>{1}</span></a>", HttpUtility.HtmlEncode(model.GetSortUrl(column.ColumnName, column.DefaultSortAscending)), HttpUtility.HtmlEncode(column.Header));
                 }
@@ -432,6 +442,7 @@ namespace TMD.Extensions
                         if (column.FilterTitle != null)
                         {
                             output.Write(" title='{0}'", HttpUtility.HtmlEncode(column.FilterTitle));
+                            output.Write(" placeholder='{0}'", HttpUtility.HtmlEncode(column.FilterTitle));
                         }
                         output.Write("/>");
                     }
@@ -480,7 +491,7 @@ namespace TMD.Extensions
                     Math.Min((model.PageIndex + 1) * model.RowsPerPage, (filteredRowCount ?? totalRowCount)),
                     filteredRowCount ?? totalRowCount);
             }
-            if (filteredRowCount.HasValue && filteredRowCount < totalRowCount)
+            if (filteredRowCount.HasValue)
             {
                 output.Write(" (filtered from {0} total entries)", totalRowCount);
             }
@@ -510,6 +521,7 @@ namespace TMD.Extensions
     public static class DataSourceExtensions
     {
         public static IEnumerable<T> PageInMemory<T>(this IEnumerable<T> allRows, int? page = null, int? rowsPerPage = null)
+             where T : class, IEntity
         {
             return allRows
                 .Skip((page ?? 0) * (rowsPerPage ?? 10))
@@ -517,6 +529,7 @@ namespace TMD.Extensions
         }
 
         public static IEnumerable<T> SortInMemory<T>(this IEnumerable<T> allRows, Func<string, Func<T, object>> customRendererFinder, string column = null, bool? sortAscending = null)
+             where T : class, IEntity
         {
             if (string.IsNullOrWhiteSpace(column))
             {
@@ -532,6 +545,7 @@ namespace TMD.Extensions
         }
 
         public static IEnumerable<T> FilterInMemory<T>(this IEnumerable<T> allRows, Func<string, Func<T, object>> customRendererFinder, IDictionary<string, string> columnFilters = null)
+             where T : class, IEntity
         {
             if (columnFilters == null)
             {
@@ -553,44 +567,47 @@ namespace TMD.Extensions
             return filteredRows;
         }
 
-        public static SortedPage<T> SortAndPageInMemory<T>(this IEnumerable<T> allRows,
+        public static SortedEntitiesPage<T> SortAndPageInMemory<T>(this IEnumerable<T> allRows,
             Func<string, Func<T, object>> customRendererFinder = null, string sortColumn = null, bool? sortAscending = null,
-            int? page = null, int? rowsPerPage = null)
+            int? page = null, int? rowsPerPage = null) 
+            where T : class, IEntity
         {
-            return new SortedPage<T>(
+            return new SortedEntitiesPage<T>(
                 allRows.SortInMemory(customRendererFinder, sortColumn, sortAscending)
                     .PageInMemory(page, rowsPerPage),
                 allRows.Count());
         }
 
-        public class SortedPage<T> : IEnumerable<T>
+        public class SortedEntitiesPage<T> : IEnumerable<T>, IEntityPage<T> where T : class, IEntity
         {
-            internal SortedPage(IEnumerable<T> pageDataSource, int totalRowCount)
+            internal SortedEntitiesPage(IEnumerable<T> pageDataSource, int totalRowCount)
             {
-                this.PageDataSource = pageDataSource;
-                this.TotalRowCount = totalRowCount;
+                this.PageEntities = pageDataSource;
+                this.TotalEntitiesCount = totalRowCount;
             }
 
-            public IEnumerable<T> PageDataSource { get; private set; }
-            public int TotalRowCount { get; private set; }
+            public IEnumerable<T> PageEntities { get; private set; }
+            public int TotalEntitiesCount { get; private set; }
+            public int? FilteredEntitiesCount { get { return null; } }
 
             IEnumerator<T> IEnumerable<T>.GetEnumerator()
             {
-                return PageDataSource.GetEnumerator();
+                return PageEntities.GetEnumerator();
             }
 
             System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
             {
-                return ((System.Collections.IEnumerable)PageDataSource).GetEnumerator();
+                return ((System.Collections.IEnumerable)PageEntities).GetEnumerator();
             }
         }
 
-        public static FilteredSortedPage<T> FilterSortAndPageInMemory<T>(this IEnumerable<T> allRows, 
+        public static FilteredSortedEntitiesPage<T> FilterSortAndPageInMemory<T>(this IEnumerable<T> allRows, 
             Func<string, Func<T, object>> customRendererFinder, IDictionary<string, string> columnFilters = null, 
-            Func<string, Func<T, object>> sortingCustomRendererFinder = null, string sortColumn = null, bool? sortAscending = null, 
-            int? page = null, int? rowsPerPage = null)
+            Func<string, Func<T, object>> sortingCustomRendererFinder = null, string sortColumn = null, bool? sortAscending = null,
+            int? page = null, int? rowsPerPage = null) 
+            where T : class, IEntity
         {
-            return new FilteredSortedPage<T>(
+            return new FilteredSortedEntitiesPage<T>(
                 allRows.FilterInMemory(customRendererFinder, columnFilters)
                     .SortInMemory(sortingCustomRendererFinder ?? customRendererFinder, sortColumn, sortAscending)
                     .PageInMemory(page, rowsPerPage),
@@ -598,27 +615,27 @@ namespace TMD.Extensions
                 allRows.Count());
         }
 
-        public class FilteredSortedPage<T> : IEnumerable<T>
+        public class FilteredSortedEntitiesPage<T> : IEnumerable<T>, IEntityPage<T> where T : class, IEntity
         {
-            internal FilteredSortedPage(IEnumerable<T> pageDataSource, int filteredRowCount, int totalRowCount)
+            internal FilteredSortedEntitiesPage(IEnumerable<T> pageDataSource, int filteredRowCount, int totalRowCount)
             {
-                this.PageDataSource = pageDataSource;
-                this.FilteredRowCount = filteredRowCount;
-                this.TotalRowCount = totalRowCount;
+                this.PageEntities = pageDataSource;
+                this.FilteredEntitiesCount = filteredRowCount;
+                this.TotalEntitiesCount = totalRowCount;
             }
 
-            public IEnumerable<T> PageDataSource { get; private set; }
-            public int FilteredRowCount { get; private set; }
-            public int TotalRowCount { get; private set; }
+            public IEnumerable<T> PageEntities { get; private set; }
+            public int? FilteredEntitiesCount { get; private set; }
+            public int TotalEntitiesCount { get; private set; }
 
             IEnumerator<T> IEnumerable<T>.GetEnumerator()
             {
-                return PageDataSource.GetEnumerator();
+                return PageEntities.GetEnumerator();
             }
 
             System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
             {
-                return ((System.Collections.IEnumerable)PageDataSource).GetEnumerator();
+                return ((System.Collections.IEnumerable)PageEntities).GetEnumerator();
             }
         }
     }

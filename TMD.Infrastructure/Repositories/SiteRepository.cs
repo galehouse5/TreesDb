@@ -121,7 +121,7 @@ namespace TMD.Infrastructure.Repositories
                 browserAliaser: criteria => criteria
                     .CreateAlias("Site", "site")
                     .CreateAlias("State", "state"),
-                browserFilterer: criteria => criteria.ApplyFilters(browser),
+                browserFilterer: browser.HasFilters ? criteria => criteria.ApplyFilters(browser) : (Action<ICriteria>)null,
                 browserSorter: criteria => criteria.ApplySorting(browser),
                 browserPager: criteria => criteria.ApplyPaging(browser));
         }

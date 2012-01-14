@@ -205,6 +205,7 @@
     <Content Include="css\LoginOnly.min.css">
       <DependentUpon>Css.chirp.config</DependentUpon>
     </Content>
+    <Content Include="css\plugin\jquery.placeholder.css" />
     <Content Include="css\Shared.css">
       <DependentUpon>Css.chirp.config</DependentUpon>
     </Content>
@@ -284,7 +285,7 @@
       <DependentUpon>Javascript.chirp.config</DependentUpon>
     </Content>
     <Content Include="js\jquery\jquery.dataTables.js" />
-    <Content Include="js\jquery\jquery.fieldtag.js" />
+    <Content Include="js\jquery\jquery.placeholder-1.1.9.js" />
     <Content Include="js\jquery\jquery.tablesorter.js" />
     <Content Include="js\jquery\jquery.uniform.js" />
     <Content Include="js\Map.js">
@@ -443,6 +444,14 @@
     <Content Include="Views\Error\Maintenance.cshtml" />
     <Content Include="Views\Shared\GoogleAnalyticsScript.cshtml" />
     <Content Include="Views\Main\SuggestionsMenuWidget.cshtml" />
+    <Content Include="Views\Browse\GlobalSpeciesGridPartial.cshtml" />
+    <Content Include="Views\Browse\LocationsGridPartial.cshtml" />
+    <Content Include="Views\Browse\StateSpeciesGridPartial.cshtml" />
+    <Content Include="Views\Browse\SitesGridPartial.cshtml" />
+    <Content Include="Views\Browse\SpeciesByStateGridPartial.cshtml" />
+    <Content Include="Views\Browse\SiteSpeciesGridPartial.cshtml" />
+    <Content Include="Views\Browse\TreesGridPartial.cshtml" />
+    <Content Include="Views\Browse\SubsiteSpeciesGridPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TMD.Infrastructure\TMD.Infrastructure.csproj">

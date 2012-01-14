@@ -1,0 +1,24 @@
+﻿@model EntityGridModel<TMD.Model.Trees.StateMeasuredSpecies>
+@(Html.DataTablesGrid<TMD.Model.Trees.StateMeasuredSpecies>(parameterNamePrefix: Model.ParameterNamePrefix,
+    columns: builder =>
+    {
+    	builder
+    		.Custom("State", species => Html.ActionLink(species.State.Name, Mvc.Browse.StateDetails(species.State.Id)))
+    		.Options(header: "State or province", canSort: true);
+    	builder
+    		.Custom("MaxHeight", species => species.MaxHeight.IsValidAndSpecified() ?
+    			Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
+    			: MvcHtmlString.Create("-"))
+    			.Options(header: "Max height", canSort: true, defaultSortAscending: false);
+    	builder
+    		.Custom("MaxGirth", species => species.MaxGirth.IsValidAndSpecified() ?
+    			Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
+    			: MvcHtmlString.Create("-"))
+    		.Options(header: "Max girth", canSort: true, defaultSortAscending: false);
+    	builder
+    		.Custom("MaxCrownSpread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
+    			Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
+    			: MvcHtmlString.Create("-"))
+    		.Options(header: "Max crown spread", canSort: true, defaultSortAscending: false);
+    },
+    rowsPerPage: 10, dataSource: Model.PageEntities, totalRowCount: Model.TotalEntitiesCount))

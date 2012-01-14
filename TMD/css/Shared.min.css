@@ -450,6 +450,10 @@ div.uploader{position:relative;float:left;overflow:hidden;cursor:default}
 div.uploader span.action{float:left;display:inline;padding:2px 0;overflow:hidden;cursor:pointer}
 div.uploader span.filename{padding:0 10px;float:left;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:default}
 div.uploader input{opacity:0;position:absolute;top:0;right:0;bottom:0;float:right;height:25px;border:0;cursor:default}
+label.placeholder{cursor:text;padding:8px 4px;color:#999}
+input:placeholder,textarea:placeholder{color:#999}
+input:-moz-placeholder,textarea:-moz-placeholder{color:#999}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#999}
 .visualize{margin-bottom:4em}
 .ticket{padding:3px 4px;text-align:right;color:#fff;font-size:10px;display:inline;white-space:nowrap;width:60px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
 .ticket.open{background-color:#F90}

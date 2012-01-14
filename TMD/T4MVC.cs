@@ -331,6 +331,7 @@ namespace Links {
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
             public static readonly string dataTables_css = Url("dataTables.css");
             public static readonly string facebox_css = Url("facebox.css");
+            public static readonly string jquery_placeholder_css = Url("jquery.placeholder.css");
             public static readonly string jquery_visualize_css = Url("jquery.visualize.css");
             public static readonly string tipsy_css = Url("tipsy.css");
             public static readonly string uniform_default_css = Url("uniform.default.css");
@@ -470,7 +471,7 @@ namespace Links {
             public static readonly string jquery_ui_1_8_7_custom_min_js = Url("jquery-ui-1.8.7.custom.min.js");
             public static readonly string jquery_dataTables_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.dataTables.min.js") ? Url("jquery.dataTables.min.js") : Url("jquery.dataTables.js");
                           
-            public static readonly string jquery_fieldtag_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.fieldtag.min.js") ? Url("jquery.fieldtag.min.js") : Url("jquery.fieldtag.js");
+            public static readonly string jquery_placeholder_1_1_9_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.placeholder-1.1.9.min.js") ? Url("jquery.placeholder-1.1.9.min.js") : Url("jquery.placeholder-1.1.9.js");
                           
             public static readonly string jquery_quicksearch_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.quicksearch.min.js") ? Url("jquery.quicksearch.min.js") : Url("jquery.quicksearch.js");
                           

@@ -1,58 +1,39 @@
 ﻿@model TMD.Models.BrowseStateModel
 @{ ViewBag.Title = "State Details"; Layout = "~/Views/Shared/SiteLayout.cshtml"; }
 
+@section Scripts {
+	<script type="text/javascript">
+		$(function () { $('div.dataTablesGrid').AjaxDataTablesGrid(); });
+	</script>
+}
+
 <div class="x6 xColumn">
 
 	<div class="portlet x12">
 		<div class="portlet-header">
-            <h4>State</h4>
-            <ul class="portlet-tab-nav">
-                <li class="portlet-tab-nav-ignore"><a href="@Url.Action(Mvc.Export.States(Model.Id))">Export tree data</a></li>
-            </ul>
-        </div>
+			<h4>State</h4>
+			<ul class="portlet-tab-nav">
+				<li class="portlet-tab-nav-ignore"><a href="@Url.Action(Mvc.Export.States(Model.Id))">Export tree data</a></li>
+			</ul>
+		</div>
 		<div class="portlet-content">
 			<table class="reports_table">                
-                @Html.ReportDisplayFor(m => m.Name)
-                @Html.ReportDisplayFor(m => m.Code)
-                @Html.ReportDisplayFor(m => m.RHI5)
-                @Html.ReportDisplayFor(m => m.RHI10)
-                @Html.ReportDisplayFor(m => m.RHI20)
-                @Html.ReportDisplayFor(m => m.RGI5)
-                @Html.ReportDisplayFor(m => m.RGI10)
-                @Html.ReportDisplayFor(m => m.RGI20)
+				@Html.ReportDisplayFor(m => m.Name)
+				@Html.ReportDisplayFor(m => m.Code)
+				@Html.ReportDisplayFor(m => m.RHI5)
+				@Html.ReportDisplayFor(m => m.RHI10)
+				@Html.ReportDisplayFor(m => m.RHI20)
+				@Html.ReportDisplayFor(m => m.RGI5)
+				@Html.ReportDisplayFor(m => m.RGI10)
+				@Html.ReportDisplayFor(m => m.RGI20)
 			</table>
 		</div>
 	</div>
 
-    <div class="portlet x12">
+	<div class="portlet x12">
 		<div class="portlet-header"><h4>Species</h4></div>
-		<div class="portlet-content">               
-            @(Html.DataTablesGrid<TMD.Model.Trees.StateMeasuredSpecies>(parameterNamePrefix: "stateSpecies",
-                columns: builder =>
-                {
-                    builder
-                        .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.ScientificName, species.CommonName, stateId: species.State.Id)))
-                        .Options(header: "Botanical name", canSort: true);
-                    builder
-                        .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName, species.CommonName, stateId: species.State.Id)))
-                        .Options(header: "Common name", canSort: true);
-                    builder
-                        .Custom("MaxHeight", species => species.MaxHeight.IsValidAndSpecified() ?
-                            Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
-                            : MvcHtmlString.Create("-"))
-                        .Options(header: "Max height", canSort: true, defaultSortAscending: false);
-                    builder
-                        .Custom("MaxGirth", species => species.MaxGirth.IsValidAndSpecified() ?
-                            Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
-                            : MvcHtmlString.Create("-"))
-                        .Options(header: "Max girth", canSort: true, defaultSortAscending: false);
-                    builder
-                        .Custom("MaxCrownSpread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
-                            Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
-                            : MvcHtmlString.Create("-"))
-                        .Options(header: "Max crown spread", canSort: true, defaultSortAscending: false);
-                },
-                rowsPerPage: 10, dataSource: Model.StateSpeciesPage, totalRowCount: Model.StateSpeciesTotalCount))
+		<div class="portlet-content">
+			@Html.Partial("StateSpeciesGridPartial", Model.StateSpeciesModel)
 		</div>
 	</div>
 
@@ -62,32 +43,20 @@
 
 	<div class="portlet x12">
 		<div class="portlet-header">
-            <h4>Location</h4>
-        </div>
+			<h4>Location</h4>
+		</div>
 		<div class="portlet-content">
-            <table class="reports_table">
-                @Html.ReportDisplayFor(m => m.Coordinates)
-                @Html.ReportDisplayFor(m => m.Country)
-            </table>
+			<table class="reports_table">
+				@Html.ReportDisplayFor(m => m.Coordinates)
+				@Html.ReportDisplayFor(m => m.Country)
+			</table>
 		</div>
 	</div>
 
-    <div class="portlet x12">
+	<div class="portlet x12">
 		<div class="portlet-header"><h4>Sites</h4></div>
-		<div class="portlet-content">               
-            @(Html.DataTablesGrid<TMD.Model.Sites.Subsite>(parameterNamePrefix: "subsites",
-                columns: builder =>
-                {
-                    builder
-                        .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
-                        .Options(canSort: true);
-                    builder
-                        .Custom("Subsite", subsite => subsite.Site.ContainsSingleSubsite ?
-                            MvcHtmlString.Create("-")
-                            : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
-                        .Options(canSort: true);
-                },
-                rowsPerPage: 10, dataSource: Model.SubsitesPage, totalRowCount: Model.SubsitesTotalCount))
+		<div class="portlet-content">
+			@Html.Partial("SitesGridPartial", Model.SitesModel)
 		</div>
 	</div>
 

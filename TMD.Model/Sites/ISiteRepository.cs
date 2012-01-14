@@ -29,5 +29,15 @@ namespace TMD.Model.Sites
         public string SubsiteFilter { get; set; }
         public int PageIndex { get; set; }
         public int PageSize { get; set; }
+
+        public bool HasFilters
+        {
+            get
+            {
+                return !string.IsNullOrEmpty(SiteFilter)
+                    || !string.IsNullOrEmpty(SubsiteFilter)
+                    || !string.IsNullOrEmpty(StateFilter);
+            }
+        }
     }
 }

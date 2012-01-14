@@ -12,10 +12,17 @@ namespace TMD.Model
         int PageSize { get; set; }
     }
 
-    public class EntityPage<T> where T : class, IEntity
+    public interface IEntityPage<T> where T : class, IEntity
     {
-        public int TotalItems { get; set; }
-        public int FilteredItems { get; set; }
-        public IEnumerable<T> Page { get; set; }
+        int TotalEntitiesCount { get; }
+        int? FilteredEntitiesCount { get; }
+        IEnumerable<T> PageEntities { get;  }
+    }
+
+    public class EntityPage<T> : IEntityPage<T> where T : class, IEntity
+    {
+        public int TotalEntitiesCount { get; set; }
+        public int? FilteredEntitiesCount { get; set; }
+        public IEnumerable<T> PageEntities { get; set; }
     }
 }

@@ -83,3 +83,30 @@
         });
     };
 })(jQuery);
+
+(function ($) {
+    $.fn.AjaxDataTablesGrid = function (options) {
+        return this.each(function () {
+            var $gridContainer = $(this);
+            $gridContainer.find('tfoot th input[placeholder]').placeholder();
+            $gridContainer.find('thead th.sorting a, thead th.sorting_desc a, thead th.sorting_asc a, div.dataTables_paginate a').click(function (event) {
+                var $anchor = $(this);
+                $.get($anchor.attr('href'), function (response) {
+                    var $newGridContainer = $(response);
+                    $gridContainer.replaceWith($newGridContainer);
+                    $newGridContainer.AjaxDataTablesGrid();
+                });
+                return false;
+            });
+            $gridContainer.find('form').submit(function () {
+                var $form = $(this);
+                $.get($form.attr('action') + '?' + $form.serialize(), function (response) {
+                    var $newGridContainer = $(response);
+                    $gridContainer.replaceWith($newGridContainer);
+                    $newGridContainer.AjaxDataTablesGrid();
+                });
+                return false;
+            });
+        });
+    }
+})(jQuery);

@@ -1,0 +1,14 @@
+﻿@model EntityGridModel<TMD.Model.Sites.Subsite>
+@(Html.DataTablesGrid<TMD.Model.Sites.Subsite>(parameterNamePrefix: Model.ParameterNamePrefix,
+    columns: builder =>
+    {
+        builder
+            .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+            .Options(canSort: true);
+        builder
+            .Custom("Subsite", subsite => subsite.Site.ContainsSingleSubsite ?
+                MvcHtmlString.Create("-")
+                : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+            .Options(canSort: true);
+    },
+    rowsPerPage: Model.RowsPerPage, dataSource: Model.PageEntities, totalRowCount: Model.TotalEntitiesCount))

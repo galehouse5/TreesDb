@@ -40,5 +40,14 @@ namespace TMD.Model.Trees
         public string CommonNameFilter { get; set; }
         public int PageIndex { get; set; }
         public int PageSize { get; set; }
+
+        public bool HasFilters
+        {
+            get 
+            {
+                return !string.IsNullOrEmpty(BotanicalNameFilter)
+                    || !string.IsNullOrEmpty(CommonNameFilter);
+            }
+        }
     }
 }

@@ -93,7 +93,7 @@ namespace TMD.Infrastructure.Repositories
         public EntityPage<T> ListAllMeasuredSpecies<T>(SpeciesBrowser browser) where T : MeasuredSpecies
         {
             return CriteriaExtensions.ListAllEntitiesByBrowser<T>(
-                browserFilterer: criteria => criteria.ApplyFilters(browser),
+                browserFilterer: browser.HasFilters ? criteria => criteria.ApplyFilters(browser) : (Action<ICriteria>)null,
                 browserSorter: criteria => criteria.ApplySorting(browser),
                 browserPager: criteria => criteria.ApplyPaging(browser));
         }

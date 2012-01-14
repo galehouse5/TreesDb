@@ -147,13 +147,10 @@ namespace TMD.Models
     {
         public BrowseSpeciesDetailsModel GlobalDetails { get; set; }
         public BrowseSpeciesStateDetailsModel StateDetails { get; set; }
-        public IEnumerable<StateMeasuredSpecies> StateSpeciesPage { get; set; }
-        public int StateSpeciesTotalCount { get; set; }
+        public EntityGridModel<StateMeasuredSpecies> StateSpeciesModel { get; set; }
         public BrowseSpeciesSiteDetailsModel SiteDetails { get; set; }
-        public IEnumerable<SiteMeasuredSpecies> SiteSpeciesPage { get; set; }
-        public int SiteSpeciesTotalCount { get; set; }
-        public IEnumerable<Tree> TreesPage { get; set; }
-        public int TreesTotalCount { get; set; }
+        public EntityGridModel<SiteMeasuredSpecies> SiteSpeciesModel { get; set; }
+        public EntityGridModel<Tree> TreesModel { get; set; }
     }
 
     public class BrowseSiteModel
@@ -163,8 +160,7 @@ namespace TMD.Models
         public IList<BrowsePhotoSumaryModel> PhotoSummaries { get; set; }
         public BrowseSubsiteLocationModel Location { get; set; }
         public IList<BrowseSiteVisitModel> Visits { get; set; }
-        public IEnumerable<SubsiteMeasuredSpecies> SubsiteSpeciesPage { get; set; }
-        public int SubsiteSpeciesTotalCount { get; set; }
+        public EntityGridModel<SubsiteMeasuredSpecies> SubsiteSpeciesModel { get; set; }
     }
 
     public class BrowseSiteVisitModel
@@ -242,9 +238,24 @@ namespace TMD.Models
         public float? RGI10 { get; set; }
         [DisplayFormat(NullDisplayText = "(not enough data)")]
         public float? RGI20 { get; set; }
-        public IEnumerable<StateMeasuredSpecies> StateSpeciesPage { get; set; }
-        public int StateSpeciesTotalCount { get; set; }
-        public IEnumerable<Subsite> SubsitesPage { get; set; }
-        public int SubsitesTotalCount { get; set; }
+        public EntityGridModel<StateMeasuredSpecies> StateSpeciesModel { get; set; }
+        public EntityGridModel<Subsite> SitesModel { get; set; }
+    }
+
+    public class EntityGridModel<T> : IEntityPage<T>
+        where T : class, IEntity
+    {
+        private IEntityPage<T> entityPage;
+
+        public EntityGridModel(IEntityPage<T> entityPage)
+        {
+            this.entityPage = entityPage;
+        }
+
+        public IEnumerable<T> PageEntities { get { return entityPage.PageEntities; } }
+        public int? FilteredEntitiesCount { get { return entityPage.FilteredEntitiesCount; } }
+        public int TotalEntitiesCount { get { return entityPage.TotalEntitiesCount; } }
+        public int RowsPerPage { get; set; }
+        public string ParameterNamePrefix { get; set; }
     }
 }

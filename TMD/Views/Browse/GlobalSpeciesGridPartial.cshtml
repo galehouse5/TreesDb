@@ -1,0 +1,13 @@
+﻿@model EntityGridModel<TMD.Model.Trees.GlobalMeasuredSpecies>
+@(Html.DataTablesGrid<TMD.Model.Trees.GlobalMeasuredSpecies>(parameterNamePrefix: Model.ParameterNamePrefix,
+    columns: builder =>
+    {
+        builder
+            .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, Mvc.Browse.SpeciesDetails(species.ScientificName, species.CommonName)))
+            .Options(header: "Botanical name", canFilter: true, filterTitle: "Search botanical names");
+        builder
+            .Custom("CommonName", species => Html.ActionLink(species.CommonName, Mvc.Browse.SpeciesDetails(species.ScientificName, species.CommonName)))
+            .Options(header: "Common name", canFilter: true, filterTitle: "Search common names");
+    },
+    rowsPerPage: Model.RowsPerPage,
+    dataSource: Model.PageEntities, filteredRowCount: Model.FilteredEntitiesCount, totalRowCount: Model.TotalEntitiesCount))

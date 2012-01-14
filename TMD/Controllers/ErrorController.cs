@@ -107,17 +107,13 @@ namespace TMD.Controllers
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (WebApplicationRegistry.Settings.EnableBrowserCompatibilityCheck
-                && !filterContext.IsChildAction 
-                && true.Equals(((ControllerBase)filterContext.Controller).Session.GetPerformBrowserCheck()))
-            {
-                HttpBrowserCapabilitiesBase browser = ((Controller)filterContext.Controller).Request.Browser;
-                if (!s_CompatibleBrowsers.Any(compatibleBrowser => compatibleBrowser.Is(browser)))
-                {
-                    filterContext.Result = new IncompatibleBrowserResult();
-                }
-            }
-            base.OnActionExecuting(filterContext);
+            if (!WebApplicationRegistry.Settings.EnableBrowserCompatibilityCheck) { return; }
+            if (filterContext.IsChildAction) { return; }
+            if (filterContext.HttpContext.Request.IsAjaxRequest()) { return; }
+            if (false.Equals(((ControllerBase)filterContext.Controller).Session.GetPerformBrowserCheck())) { return; }
+            HttpBrowserCapabilitiesBase browser = ((Controller)filterContext.Controller).Request.Browser;
+            if (s_CompatibleBrowsers.Any(compatibleBrowser => compatibleBrowser.Is(browser))) { return; }
+            filterContext.Result = new IncompatibleBrowserResult();
         }
     }
 

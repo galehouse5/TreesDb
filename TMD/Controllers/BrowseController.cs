@@ -52,7 +52,7 @@ namespace TMD.Controllers
 
         [DefaultReturnUrl]
         public virtual ActionResult SiteDetails(int id,
-            int? subsiteSpeciesPage = null, string subsiteSpeciesSort = null, bool? subsiteSpeciesSortAsc = null)
+            int? page = null, string sort = null, bool? sortAsc = null)
         {
             var site = Repositories.Sites.FindById(id);
             if (site == null) { return new NotFoundResult(); }
@@ -75,7 +75,12 @@ namespace TMD.Controllers
                     if ("MaxCrownSpread".Equals(column)) { return species => species.MaxCrownSpread; }
                     throw new NotImplementedException();
                 },
-                subsiteSpeciesSort, subsiteSpeciesSortAsc, subsiteSpeciesPage, 10);
+                sort, sortAsc, page, 10);
+            var subsiteSpeciesGridModel = new EntityGridModel<SubsiteMeasuredSpecies>(subsiteSpeciesDataSource) { RowsPerPage = 10 };
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView("SubsiteSpeciesGridPartial", subsiteSpeciesGridModel);
+            }
             var model = new BrowseSiteModel
             {
                 Id = id,
@@ -83,8 +88,7 @@ namespace TMD.Controllers
                 Location = Mapper.Map<Subsite, BrowseSubsiteLocationModel>(subsite),
                 PhotoSummaries = Mapper.Map<IEnumerable<SubsiteVisit>, IList<BrowsePhotoSumaryModel>>(visitsWithPhotos),
                 Visits = Mapper.Map<IEnumerable<SiteVisit>, IList<BrowseSiteVisitModel>>(siteVisits),
-                SubsiteSpeciesPage = subsiteSpeciesDataSource,
-                SubsiteSpeciesTotalCount = subsiteSpeciesDataSource.TotalRowCount
+                SubsiteSpeciesModel = subsiteSpeciesGridModel
             };
             return View(model);
         }
@@ -93,7 +97,8 @@ namespace TMD.Controllers
         public virtual ActionResult SpeciesDetails(string botanicalName, string commonName, int? siteId = null, int? stateId = null,
             int? stateSpeciesPage = null, string stateSpeciesSort = null, bool? stateSpeciesSortAsc = null,
             int? treesPage = null, string treesSort = null, bool? treesSortAsc = null,
-            int? siteSpeciesPage = null, string siteSpeciesSort = null, bool? siteSpeciesSortAsc = null)
+            int? siteSpeciesPage = null, string siteSpeciesSort = null, bool? siteSpeciesSortAsc = null,
+            string parameterNamePrefix = null)
         {
             GlobalMeasuredSpecies globalSpecies = Repositories.Trees.FindMeasuredSpeciesByName(botanicalName, commonName);
             if (globalSpecies == null) { return new NotFoundResult(); }
@@ -112,8 +117,12 @@ namespace TMD.Controllers
                     throw new NotImplementedException();
                 },
                 stateSpeciesSort, stateSpeciesSortAsc, stateSpeciesPage, 10);
-            model.StateSpeciesPage = stateSpeciesDataSource;
-            model.StateSpeciesTotalCount = stateSpeciesDataSource.TotalRowCount;
+            var stateSpeciesGridModel = new EntityGridModel<StateMeasuredSpecies>(stateSpeciesDataSource) { ParameterNamePrefix = "stateSpecies", RowsPerPage = 10 };
+            if (Request.IsAjaxRequest() && "stateSpecies".Equals(parameterNamePrefix))
+            {
+                return PartialView("SpeciesByStateGridPartial", stateSpeciesGridModel);
+            }
+            model.StateSpeciesModel = stateSpeciesGridModel;
             if (siteId.HasValue)
             {
                 SiteMeasuredSpecies siteSpecies = Repositories.Trees.FindMeasuredSpeciesByNameAndSiteId(botanicalName, commonName, siteId.Value);
@@ -130,8 +139,12 @@ namespace TMD.Controllers
                         throw new NotImplementedException();
                     },
                     treesSort, treesSortAsc, treesPage, 10);
-                model.TreesPage = treesDataSource;
-                model.TreesTotalCount = treesDataSource.TotalRowCount;
+                var treesGridModel = new EntityGridModel<Tree>(treesDataSource) { ParameterNamePrefix = "trees", RowsPerPage = 10 };
+                if (Request.IsAjaxRequest() && "trees".Equals(parameterNamePrefix))
+                {
+                    return PartialView("TreesGridPartial", treesGridModel);
+                }
+                model.TreesModel = treesGridModel;
             }
             if (stateId.HasValue)
             {
@@ -149,8 +162,12 @@ namespace TMD.Controllers
                         throw new NotImplementedException();
                     },
                     siteSpeciesSort, siteSpeciesSortAsc, siteSpeciesPage, 10);
-                model.SiteSpeciesPage = siteSpeciesDataSource;
-                model.SiteSpeciesTotalCount = siteSpeciesDataSource.TotalRowCount;
+                var siteSpeciesGridModel = new EntityGridModel<SiteMeasuredSpecies>(siteSpeciesDataSource) { ParameterNamePrefix = "siteSpecies", RowsPerPage = 10 };
+                if (Request.IsAjaxRequest() && "siteSpecies".Equals(parameterNamePrefix))
+                {
+                    return PartialView("SiteSpeciesGridPartial", siteSpeciesGridModel);
+                }
+                model.SiteSpeciesModel = siteSpeciesGridModel;
             }
             return View(model);
         }
@@ -158,12 +175,13 @@ namespace TMD.Controllers
         [DefaultReturnUrl]
         public virtual ActionResult StateDetails(int id,
             int? stateSpeciesPage = null, string stateSpeciesSort = null, bool? stateSpeciesSortAsc = null,
-            int? subsitesPage = null, string subsitesSort = null, bool? subsitesSortAsc = null)
+            int? subsitesPage = null, string subsitesSort = null, bool? subsitesSortAsc = null,
+            string parameterNamePrefix = null)
         {
             var state = Repositories.Locations.FindVisitedStateById(id);
             if (state == null) { return new NotFoundResult(); }
             var model = Mapper.Map<VisitedState, BrowseStateModel>(state);
-            IList<StateMeasuredSpecies> allStateSpecies = Repositories.Trees.ListMeasuredSpeciesByStateId(state.Id);
+            IEnumerable<StateMeasuredSpecies> allStateSpecies = Repositories.Trees.ListMeasuredSpeciesByStateId(state.Id);
             var stateSpeciesDataSource = allStateSpecies.SortAndPageInMemory(
                 column =>
                 {
@@ -175,8 +193,12 @@ namespace TMD.Controllers
                     throw new NotImplementedException();
                 },
                 stateSpeciesSort, stateSpeciesSortAsc, stateSpeciesPage, 10);
-            model.StateSpeciesPage = stateSpeciesDataSource;
-            model.StateSpeciesTotalCount = stateSpeciesDataSource.TotalRowCount;
+            var stateSpeciesGridModel = new EntityGridModel<StateMeasuredSpecies>(stateSpeciesDataSource) { ParameterNamePrefix = "stateSpecies", RowsPerPage = 10 };
+            if (Request.IsAjaxRequest() && "stateSpecies".Equals(parameterNamePrefix))
+            {
+                return PartialView("StateSpeciesGridPartial", stateSpeciesGridModel);
+            }
+            model.StateSpeciesModel = stateSpeciesGridModel;
             IList<Subsite> allSubsites = Repositories.Sites.FindSubsitesByStateId(state.Id);
             var subsitesDataSource = allSubsites.SortAndPageInMemory(
                 column =>
@@ -186,8 +208,12 @@ namespace TMD.Controllers
                     throw new NotImplementedException();
                 },
                 subsitesSort, subsitesSortAsc, subsitesPage, 10);
-            model.SubsitesPage = subsitesDataSource;
-            model.SubsitesTotalCount = subsitesDataSource.TotalRowCount;
+            var subsitesGridModel = new EntityGridModel<Subsite>(subsitesDataSource) { ParameterNamePrefix = "subsites", RowsPerPage = 10 };
+            if (Request.IsAjaxRequest() && "subsites".Equals(parameterNamePrefix))
+            {
+                return PartialView("SitesGridPartial", subsitesGridModel);
+            }
+            model.SitesModel = subsitesGridModel;
             return View(model);
         }
 
@@ -206,7 +232,12 @@ namespace TMD.Controllers
                     : SpeciesBrowser.Property.BotanicalName
             };
             var model = Repositories.Trees.ListAllMeasuredSpecies<GlobalMeasuredSpecies>(browser);
-            return View(model);
+            var gridModel = new EntityGridModel<GlobalMeasuredSpecies>(model) { RowsPerPage = 40 };
+            if (Request.IsAjaxRequest()) 
+            {
+                return PartialView("GlobalSpeciesGridPartial", gridModel);
+            }
+            return View(gridModel);
         }
 
         [DefaultReturnUrl]
@@ -225,14 +256,20 @@ namespace TMD.Controllers
                     : SubsiteBrowser.Property.State
             };
             var model = Repositories.Sites.ListAllSubsites(browser);
-            return View(model);
+            var gridModel = new EntityGridModel<Subsite>(model) { RowsPerPage = 40 };
+            if (Request.IsAjaxRequest()) 
+            {
+                return PartialView("LocationsGridPartial", gridModel);
+            }
+            return View(gridModel);
         }
         
         [DefaultReturnUrl]
         public virtual ActionResult Index(int? speciesPage = null, string speciesSort = null, bool? speciesSortAsc = null, 
             string speciesBotanicalNameFilter = "", string speciesCommonNameFilter = "",
-            int? locationPage = null, string locationSort = null, bool? locationSortAsc = null,
-            string locationStateFilter = "", string locationSiteFilter = "", string locationSubsiteFilter = "")
+            int? locationsPage = null, string locationsSort = null, bool? locationsSortAsc = null,
+            string locationsStateFilter = "", string locationsSiteFilter = "", string locationsSubsiteFilter = "",
+            string parameterNamePrefix = null)
         {
             SpeciesBrowser speciesBrowser = new SpeciesBrowser
             {
@@ -245,19 +282,29 @@ namespace TMD.Controllers
                     : SpeciesBrowser.Property.BotanicalName
             };
             var speciesModel = Repositories.Trees.ListAllMeasuredSpecies<GlobalMeasuredSpecies>(speciesBrowser);
+            var speciesGridModel = new EntityGridModel<GlobalMeasuredSpecies>(speciesModel) { ParameterNamePrefix = "species", RowsPerPage = 20 };
+            if (Request.IsAjaxRequest() && "species".Equals(parameterNamePrefix))
+            {
+                return PartialView("GlobalSpeciesGridPartial", speciesGridModel);
+            }
             SubsiteBrowser locationsBrowser = new SubsiteBrowser
             {
-                PageIndex = locationPage ?? 0,
+                PageIndex = locationsPage ?? 0,
                 PageSize = 20,
-                StateFilter = locationStateFilter, SiteFilter = locationSiteFilter, SubsiteFilter = locationSubsiteFilter,
-                SortAscending = !locationSortAsc.HasValue || locationSortAsc.Value,
-                SortProperty = "State".Equals(locationSort) ? SubsiteBrowser.Property.State
-                    : "Site".Equals(locationSort) ? SubsiteBrowser.Property.Site
-                    : "Subsite".Equals(locationSort) ? SubsiteBrowser.Property.Subsite
+                StateFilter = locationsStateFilter, SiteFilter = locationsSiteFilter, SubsiteFilter = locationsSubsiteFilter,
+                SortAscending = !locationsSortAsc.HasValue || locationsSortAsc.Value,
+                SortProperty = "State".Equals(locationsSort) ? SubsiteBrowser.Property.State
+                    : "Site".Equals(locationsSort) ? SubsiteBrowser.Property.Site
+                    : "Subsite".Equals(locationsSort) ? SubsiteBrowser.Property.Subsite
                     : SubsiteBrowser.Property.State
             };
             var locationsModel = Repositories.Sites.ListAllSubsites(locationsBrowser);
-            return View(new Tuple<EntityPage<GlobalMeasuredSpecies>, EntityPage<Subsite>>(speciesModel, locationsModel));
+            var locationsGridModel = new EntityGridModel<Subsite>(locationsModel) { ParameterNamePrefix = "locations", RowsPerPage = 20 };
+            if (Request.IsAjaxRequest() && "locations".Equals(parameterNamePrefix))
+            {
+                return PartialView("LocationsGridPartial", locationsGridModel);
+            }
+            return View(new Tuple<EntityGridModel<GlobalMeasuredSpecies>, EntityGridModel<Subsite>>(speciesGridModel, locationsGridModel));
         }
     }
 }
