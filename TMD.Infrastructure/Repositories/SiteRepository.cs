@@ -167,6 +167,14 @@ namespace TMD.Infrastructure.Repositories
                         return criteria.AddOrder(new Order("state.Name", browser.SortAscending));
                     case SubsiteBrowser.Property.Subsite :
                         return criteria.AddOrder(new Order("Name", browser.SortAscending));
+                    case SubsiteBrowser.Property.RHI5 :
+                        return criteria.AddOrder(new Order("RHI5", browser.SortAscending));
+                    case SubsiteBrowser.Property.RHI10 :
+                        return criteria.AddOrder(new Order("RHI10", browser.SortAscending));
+                    case SubsiteBrowser.Property.RGI5 :
+                        return criteria.AddOrder(new Order("RGI5", browser.SortAscending));
+                    case SubsiteBrowser.Property.RGI10 :
+                        return criteria.AddOrder(new Order("RGI10", browser.SortAscending));
                     default: throw new NotImplementedException();
                 }
             }

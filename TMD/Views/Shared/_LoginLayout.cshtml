@@ -8,9 +8,6 @@
     <link href="@Url.ManagedContent(Links.css.Shared_css, Links.css.Shared_min_css)" rel="Stylesheet" type="text/css" />
     <link href="@Url.ManagedContent(Links.css.LoginOnly_css, Links.css.LoginOnly_min_css)" rel="Stylesheet" type="text/css" />
     @RenderSection("Styles", false)
-    @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics) {
-        @Html.Partial("GoogleAnalyticsScript", WebApplicationRegistry.Settings.GoogleAnalyticsPropertyID)
-    }
 </head>
 <body>
     <div id="login">
@@ -21,5 +18,8 @@
     </div>
     <!-- #login -->
     @RenderSection("Scripts", false)
+    @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics) {
+        @Html.Partial("GoogleAnalyticsScript", WebApplicationRegistry.Settings.GoogleAnalyticsPropertyID)
+    }
 </body>
 </html>

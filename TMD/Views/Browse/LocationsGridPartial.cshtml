@@ -9,10 +9,25 @@
             .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
             .Options(canFilter: true, filterTitle: "Search sites");
         builder
-            .Custom("Subsite", subsite => subsite.Site.ContainsSingleSubsite ?
-                MvcHtmlString.Create("-")
-                : Html.ActionLink(subsite.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
-                .Options(canFilter: true, filterTitle: "Search subsites");
+            .Custom("RHI5", subsite => subsite.RHI5.HasValue ? 
+                MvcHtmlString.Create(subsite.RHI5.ToString()) 
+                : MvcHtmlString.Create("-"))
+            .Options(canFilter: false, defaultSortAscending: false);
+        builder
+            .Custom("RHI10", subsite => subsite.RHI10.HasValue ?
+                MvcHtmlString.Create(subsite.RHI10.ToString())
+                : MvcHtmlString.Create("-"))
+            .Options(canFilter: false, defaultSortAscending: false);
+        builder
+            .Custom("RGI5", subsite => subsite.RGI5.HasValue ?
+                MvcHtmlString.Create(subsite.RGI5.ToString())
+                : MvcHtmlString.Create("-"))
+            .Options(canFilter: false, defaultSortAscending: false);
+        builder
+            .Custom("RGI10", subsite => subsite.RGI10.HasValue ?
+                MvcHtmlString.Create(subsite.RGI10.ToString())
+                : MvcHtmlString.Create("-"))
+            .Options(canFilter: false, defaultSortAscending: false);
     },
     rowsPerPage: Model.RowsPerPage,
     dataSource: Model.PageEntities, filteredRowCount: Model.FilteredEntitiesCount, totalRowCount: Model.TotalEntitiesCount))

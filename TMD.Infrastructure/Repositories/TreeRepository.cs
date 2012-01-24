@@ -254,6 +254,12 @@ namespace TMD.Infrastructure.Repositories
                         return criteria.AddOrder(new Order("ScientificName", browser.SortAscending));
                     case SpeciesBrowser.Property.CommonName :
                         return criteria.AddOrder(new Order("CommonName", browser.SortAscending));
+                    case SpeciesBrowser.Property.MaxHeight:
+                        return criteria.AddOrder(new Order("MaxHeight", browser.SortAscending));
+                    case SpeciesBrowser.Property.MaxGirth :
+                        return criteria.AddOrder(new Order("MaxGirth", browser.SortAscending));
+                    case SpeciesBrowser.Property.MaxCrownSpread:
+                        return criteria.AddOrder(new Order("MaxCrownSpread", browser.SortAscending));
                     default: throw new NotImplementedException();
                 }
             }

@@ -12,7 +12,6 @@ namespace TMD
         {
             public const string HostName = "hostName";
             public const string WebmasterEmail = "webmasterEmail";
-            public const string HandleControllerExceptions = "handleControllerExceptions";
             public const string StaticContentVersion = "staticContentVersion";
             public const string StaticContentHostname = "staticContentHostname";
             public const string MinifyStaticContent = "minifyStaticContent";
@@ -35,13 +34,6 @@ namespace TMD
         {
             get { return (string)this[PropertyNames.WebmasterEmail]; }
             set { this[PropertyNames.WebmasterEmail] = value; }
-        }
-
-        [ConfigurationProperty(PropertyNames.HandleControllerExceptions, DefaultValue = true)]
-        public bool HandleControllerExceptions
-        {
-            get { return (bool)this[PropertyNames.HandleControllerExceptions]; }
-            set { this[PropertyNames.HandleControllerExceptions] = value; }
         }
 
         [ConfigurationProperty(PropertyNames.StaticContentVersion, DefaultValue = "")]

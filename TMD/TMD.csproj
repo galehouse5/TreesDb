@@ -438,7 +438,7 @@
       <LastGenOutput>T4MVC.cs</LastGenOutput>
     </None>
     <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
-    <Content Include="Views\Shared\SiteLayout.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
     <Content Include="Views\Photos\Caption.cshtml" />
     <Content Include="Views\Error\Maintenance.cshtml" />
@@ -452,6 +452,9 @@
     <Content Include="Views\Browse\SiteSpeciesGridPartial.cshtml" />
     <Content Include="Views\Browse\TreesGridPartial.cshtml" />
     <Content Include="Views\Browse\SubsiteSpeciesGridPartial.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Error\_ViewStart.cshtml" />
+    <Content Include="Views\Account\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TMD.Infrastructure\TMD.Infrastructure.csproj">
@@ -464,7 +467,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\LoginLayout.cshtml" />
+    <Content Include="Views\Shared\_LoginLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Account\Logon.cshtml" />

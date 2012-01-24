@@ -33,7 +33,7 @@ namespace TMD.Model.Trees
 
     public class SpeciesBrowser : IPagingOptions
     {
-        public enum Property { BotanicalName, CommonName }
+        public enum Property { BotanicalName, CommonName, MaxHeight, MaxGirth, MaxCrownSpread }
         public Property? SortProperty { get; set; }
         public bool SortAscending { get; set; }
         public string BotanicalNameFilter { get; set; }

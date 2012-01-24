@@ -21,7 +21,7 @@ namespace TMD.Model.Sites
 
     public class SubsiteBrowser : IPagingOptions
     {
-        public enum Property { State, Site, Subsite }
+        public enum Property { State, Site, Subsite, RHI5, RHI10, RGI5, RGI10 }
         public Property? SortProperty { get; set; }
         public bool SortAscending { get; set; }
         public string StateFilter { get; set; }

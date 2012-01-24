@@ -9,9 +9,6 @@
     <link href="@Url.ManagedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
     <link href="@Url.ManagedContent(Links.css.Shared_css, Links.css.Shared_min_css)" rel="Stylesheet" type="text/css" />
     @RenderSection("Styles", false)
-    @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics) {
-        @Html.Partial("GoogleAnalyticsScript", WebApplicationRegistry.Settings.GoogleAnalyticsPropertyID)
-    }
 </head>
 <body>
     <div id="wrapper" class="clearfix">
@@ -95,5 +92,8 @@
         $(function () { $('body').InitializeUi(); });
     </script>
     @RenderSection("Scripts", false)
+    @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics) {
+        @Html.Partial("GoogleAnalyticsScript", WebApplicationRegistry.Settings.GoogleAnalyticsPropertyID)
+    }
 </body>
 </html>

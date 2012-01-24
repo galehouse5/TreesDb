@@ -80,7 +80,7 @@ namespace TMD
 
         protected override void ExecuteCore()
         {
-            if (WebApplicationRegistry.Settings.HandleControllerExceptions)
+            if (HttpContext.IsCustomErrorEnabled)
             {
                 try
                 {

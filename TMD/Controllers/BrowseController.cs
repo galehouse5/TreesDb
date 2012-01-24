@@ -204,7 +204,10 @@ namespace TMD.Controllers
                 column =>
                 {
                     if ("Site".Equals(column)) { return subsite => subsite.Site.Name; }
-                    if ("Subsite".Equals(column)) { return subsite => subsite.Name; }
+                    if ("RHI5".Equals(column)) { return subsite => subsite.Site.RHI5; }
+                    if ("RHI10".Equals(column)) { return subsite => subsite.Site.RHI10; }
+                    if ("RGI5".Equals(column)) { return subsite => subsite.Site.RGI5; }
+                    if ("RGI10".Equals(column)) { return subsite => subsite.Site.RGI10; }
                     throw new NotImplementedException();
                 },
                 subsitesSort, subsitesSortAsc, subsitesPage, 10);
@@ -229,6 +232,9 @@ namespace TMD.Controllers
                 SortAscending = !sortAsc.HasValue || sortAsc.Value,
                 SortProperty = "BotanicalName".Equals(sort) ? SpeciesBrowser.Property.BotanicalName
                     : "CommonName".Equals(sort) ? SpeciesBrowser.Property.CommonName
+                    : "MaxHeight".Equals(sort) ? SpeciesBrowser.Property.MaxHeight
+                    : "MaxGirth".Equals(sort) ? SpeciesBrowser.Property.MaxGirth
+                    : "MaxCrownSpread".Equals(sort) ? SpeciesBrowser.Property.MaxCrownSpread
                     : SpeciesBrowser.Property.BotanicalName
             };
             var model = Repositories.Trees.ListAllMeasuredSpecies<GlobalMeasuredSpecies>(browser);
@@ -253,6 +259,10 @@ namespace TMD.Controllers
                 SortProperty = "State".Equals(sort) ? SubsiteBrowser.Property.State
                     : "Site".Equals(sort) ? SubsiteBrowser.Property.Site
                     : "Subsite".Equals(sort) ? SubsiteBrowser.Property.Subsite
+                    : "RHI5".Equals(sort) ? SubsiteBrowser.Property.RHI5
+                    : "RHI10".Equals(sort) ? SubsiteBrowser.Property.RHI10
+                    : "RGI5".Equals(sort) ? SubsiteBrowser.Property.RGI5
+                    : "RGI10".Equals(sort) ? SubsiteBrowser.Property.RGI10
                     : SubsiteBrowser.Property.State
             };
             var model = Repositories.Sites.ListAllSubsites(browser);
@@ -279,6 +289,9 @@ namespace TMD.Controllers
                 SortAscending = !speciesSortAsc.HasValue || speciesSortAsc.Value,
                 SortProperty = "BotanicalName".Equals(speciesSort) ? SpeciesBrowser.Property.BotanicalName
                     : "CommonName".Equals(speciesSort) ? SpeciesBrowser.Property.CommonName
+                    : "MaxHeight".Equals(speciesSort) ? SpeciesBrowser.Property.MaxHeight
+                    : "MaxGirth".Equals(speciesSort) ? SpeciesBrowser.Property.MaxGirth
+                    : "MaxCrownSpread".Equals(speciesSort) ? SpeciesBrowser.Property.MaxCrownSpread
                     : SpeciesBrowser.Property.BotanicalName
             };
             var speciesModel = Repositories.Trees.ListAllMeasuredSpecies<GlobalMeasuredSpecies>(speciesBrowser);
@@ -296,6 +309,10 @@ namespace TMD.Controllers
                 SortProperty = "State".Equals(locationsSort) ? SubsiteBrowser.Property.State
                     : "Site".Equals(locationsSort) ? SubsiteBrowser.Property.Site
                     : "Subsite".Equals(locationsSort) ? SubsiteBrowser.Property.Subsite
+                    : "RHI5".Equals(locationsSort) ? SubsiteBrowser.Property.RHI5
+                    : "RHI10".Equals(locationsSort) ? SubsiteBrowser.Property.RHI10
+                    : "RGI5".Equals(locationsSort) ? SubsiteBrowser.Property.RGI5
+                    : "RGI10".Equals(locationsSort) ? SubsiteBrowser.Property.RGI10
                     : SubsiteBrowser.Property.State
             };
             var locationsModel = Repositories.Sites.ListAllSubsites(locationsBrowser);
