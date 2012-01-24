@@ -3,154 +3,158 @@
 
 <div class="x6 xColumn">
 
-    <div class="portlet x12">
-	    <div class="portlet-header"><h4>An experimental project with utilization by the <a href="http://www.nativetreesociety.org/" style="white-space: nowrap;">Native Tree Society</a> in mind</h4></div>
-	    <div class="portlet-content">
-		    <p>
-			    The Trees Database allows you to add, search, sort, and download information concerning native (and exotic) tree species, including height, girth dimension, geographic location, and site specifics. 
-			    The intent is to include as many tree species from as many locations as possible to make it possible to compare tree species' size potentials across their native ranges.
-		    </p>
+	<div class="portlet x12">
+		<div class="portlet-header"><h4>An experimental project with utilization by the <a href="http://www.nativetreesociety.org/" style="white-space: nowrap;">Native Tree Society</a> in mind</h4></div>
+		<div class="portlet-content">
+			<p>
+				The Trees Database allows you to add, search, sort, and download information concerning native (and exotic) tree species, including height, girth dimension, geographic location, and site specifics. 
+				The intent is to include as many tree species from as many locations as possible to make it possible to compare tree species' size potentials across their native ranges.
+			</p>
 
-            <div class="portlet x4" style="margin-left: 0;">
-	            <div class="portlet-header"><h4><a href="@Url.Action(Mvc.Import.Index())">Import</a></h4></div>		
-	            <div class="portlet-content">
-		            <p>
-			            Add your tree data to the site using this page. Several formats for importing are functional, with more to follow.
-		            </p>
-	            </div>
-            </div>
+			<div class="portlet x4" style="margin-left: 0;">
+				<div class="portlet-header"><h4><a href="@Url.Action(Mvc.Import.Index())">Import</a></h4></div>		
+				<div class="portlet-content">
+					<p>
+						Add your tree data to the site using this page. Several formats for importing are functional, with more to follow.
+					</p>
+				</div>
+			</div>
 
 
-            <div class="portlet x4">
-	            <div class="portlet-header"><h4><a href="@Url.Action(Mvc.Browse.Index())">Browse and export</a></h4></div>
-	            <div class="portlet-content">
-		            <p>
-			            Review and download data using several functions.
-		            </p>
-	            </div>
-            </div>
+			<div class="portlet x4">
+				<div class="portlet-header"><h4><a href="@Url.Action(Mvc.Browse.Index())">Browse and export</a></h4></div>
+				<div class="portlet-content">
+					<p>
+						Review and download data using several functions.
+					</p>
+				</div>
+			</div>
 
-            <div class="portlet x4">
-	            <div class="portlet-header"><h4><a href="@Url.Action(Mvc.Map.Index())">Map</a></h4></div>
-	            <div class="portlet-content">
-		            <p>
-			            View trees and site locations on Google Maps.
-		            </p>
-	            </div>
-            </div>
+			<div class="portlet x4">
+				<div class="portlet-header"><h4><a href="@Url.Action(Mvc.Map.Index())">Map</a></h4></div>
+				<div class="portlet-content">
+					<p>
+						View trees and site locations on Google Maps.
+					</p>
+				</div>
+			</div>
 
-		    <p style="clear: left;">
-		    </p>
-	    </div>
-    </div>
+			<p style="clear: left;">
+			</p>
+		</div>
+	</div>
 
-    <div class="portlet x12">
-	    <div class="portlet-header"><h4>Recently imported trees and sites</h4></div>
-	    <div class="portlet-content">
-		    <ul class="gallery">
-                @foreach (var photo in Model.RecentPhotos) { 
-                    <li>@Html.Photo(photo)</li>
-                }
-		    </ul>
-            <div class="xbreak"></div>
-	    </div>
-    </div>
+	<div class="portlet x12">
+		<div class="portlet-header"><h4>Recently imported trees and sites</h4></div>
+		<div class="portlet-content">
+			<ul class="gallery">
+				@foreach (var photo in Model.RecentPhotos) { 
+					<li>@Html.Photo(photo)</li>
+				}
+			</ul>
+			<div class="xbreak"></div>
+		</div>
+	</div>
 
 </div>
 
 <div class="x6 xColumn">
 
-    <div class="portlet x12">
-	    <div class="portlet-header">
-            <h4>Update release notes</h4>
-
-            <ul class="portlet-tab-nav">
-                <li class="portlet-tab-nav-ignore">
-                    <a href="@WebApplicationRegistry.Settings.SuggestionsUrl">Suggest changes for the next update</a>
-                </li>
-            </ul>
-        </div>
-	    <div class="portlet-content">
-            <table cellspacing="0" class="info_table">
-                <tr>
-                    <td class="value">
-				        01/23
-                    </td>
-				    <td class="full">
-                        <ul>
-                            <li>Added sortable columns to Site grids for RHI5, RHI10, RGI5, and RGI10</li>
-                            <li>Added sortable columns to Species grids for Max height, Max girth, and Max crown spread</li>
-                            <li>Fixed bug in paging functionality for grids in Browse page</li>
-                        </ul>
-                    </td>
-			    </tr>
-                <tr>
-                    <td class="value">
-				        01/13
-                    </td>
-				    <td class="full">
-                        <ul>
-                            <li>Improved responsiveness of all grids</li>
-                            <li>Added Suggestions link on the right side of the main navigation bar to allow users to submit and vote on feature suggestions</li>
-                            <li>Improved responsiveness of loading for pages that require Javascript support</li>
-                        </ul>
-                    </td>
-			    </tr>
-                <tr>
-                    <td class="value">
-                        01/09
-                    </td>
-                    <td class="full">
-                        <ul>
-                            <li>Implemented paging and sorting functions for many grids that previously lacked this functionality</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="value">
-                        01/08
-                    </td>
-                    <td class="full">
-                        <ul>
-                            <li>Fixed bug preventing usage of the Enter key to submit grid column filters in various browsers</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="value">
-                        01/03/2012
-                    </td>
-                    <td class="full">
-                        <ul>
-                            <li>Implemented mechanism for configuring display units on the right side of the footer</li>
-                            <li>Fixed some alignment issues in page layout</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="value">
-                        12/23/2011
-                    </td>
-                    <td class="full">
-                        <ul>
-                            <li>Added footer to page layout with contact information</li>
-                            <li>Tightened supported browser list until more testing is performed</li>
-                            <li>Fixed some styling bugs</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr style="border-bottom: none;">
-                    <td class="value" style="border-bottom: none;">
-                        Older
-                    </td>
-                    <td class="full" style="border-bottom: none;">
-                        <ul>
-                            <li>Many older update release notes omitted</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-	    </div>
-    </div>
+	<div class="portlet x12">
+		<div class="portlet-header">
+			<h4>Update release notes</h4>
+		</div>
+		<div class="portlet-content">
+			<table cellspacing="0" class="info_table">
+				<tr>
+					<td class="value">
+						Future
+					</td>
+					<td class="full">
+						<ul>
+							<li><a href="@WebApplicationRegistry.Settings.SuggestionsUrl">Click here</a> to suggest or vote on features and changes for a future update release</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="value">
+						01/23/2012
+					</td>
+					<td class="full">
+						<ul>
+							<li>Added sortable columns to Site grids for RHI5, RHI10, RGI5, and RGI10</li>
+							<li>Added sortable columns to Species grids for Max height, Max girth, and Max crown spread</li>
+							<li>Fixed bug in paging functionality for grids in Browse page</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="value">
+						01/13
+					</td>
+					<td class="full">
+						<ul>
+							<li>Improved responsiveness of all grids</li>
+							<li>Added Suggestions link on the right side of the main navigation bar to allow users to submit and vote on feature suggestions</li>
+							<li>Improved responsiveness of loading for pages that require Javascript support</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="value">
+						01/09
+					</td>
+					<td class="full">
+						<ul>
+							<li>Implemented paging and sorting functions for many grids that previously lacked this functionality</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="value">
+						01/08
+					</td>
+					<td class="full">
+						<ul>
+							<li>Fixed bug preventing usage of the Enter key to submit grid column filters in various browsers</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="value">
+						01/03
+					</td>
+					<td class="full">
+						<ul>
+							<li>Implemented mechanism for configuring display units on the right side of the footer</li>
+							<li>Fixed some alignment issues in page layout</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td class="value">
+						12/23/2011
+					</td>
+					<td class="full">
+						<ul>
+							<li>Added footer to page layout with contact information</li>
+							<li>Tightened supported browser list until more testing is performed</li>
+							<li>Fixed some styling bugs</li>
+						</ul>
+					</td>
+				</tr>
+				<tr style="border-bottom: none;">
+					<td class="value" style="border-bottom: none;">
+						Older
+					</td>
+					<td class="full" style="border-bottom: none;">
+						<ul>
+							<li>Many older update release notes omitted</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 
 </div>
