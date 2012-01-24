@@ -323,11 +323,11 @@ namespace TMD.Extensions
         {
             NameValueCollection additionalParameters = new NameValueCollection(1);
             additionalParameters[PageParameterName] = page.ToString(CultureInfo.CurrentCulture);
-            NameValueCollection mergedParameters = Parameters.Merge(additionalParameters, true);
             if (!string.IsNullOrWhiteSpace(ParameterNamePrefix))
             {
                 additionalParameters["parameterNamePrefix"] = ParameterNamePrefix;
             }
+            NameValueCollection mergedParameters = Parameters.Merge(additionalParameters, true);
             return string.Format("{0}?{1}", Path, mergedParameters.ToQueryString());
         }
 
