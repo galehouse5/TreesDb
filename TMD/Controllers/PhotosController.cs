@@ -24,7 +24,7 @@ namespace TMD.Controllers
         {
             PhotoReferenceBase reference = Repositories.Photos.FindReferenceById(id);
             if (!reference.IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
-            return View(Mapper.Map<PhotoReferenceBase, PhotoCaptionModel>(reference));
+            return PartialView("CaptionPartial", Mapper.Map<PhotoReferenceBase, PhotoCaptionModel>(reference));
         }
 
         [ActionName("View"), HttpGet, OutputCache(CacheProfile = "Photos")]

@@ -440,7 +440,7 @@
     <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
-    <Content Include="Views\Photos\Caption.cshtml" />
+    <Content Include="Views\Photos\CaptionPartial.cshtml" />
     <Content Include="Views\Error\Maintenance.cshtml" />
     <Content Include="Views\Shared\GoogleAnalyticsScript.cshtml" />
     <Content Include="Views\Main\SuggestionsMenuWidget.cshtml" />
