@@ -1,6 +1,13 @@
 ﻿@model MainModel
 @{ ViewBag.Title = "Trees Database"; }
 
+@section Styles {
+	<style type="text/css">
+		.info_table .value { font-size: 14px; width: 15%; }
+		.info_table tr.bottom td { border-bottom: none; }
+	</style>
+}
+
 <div class="x6 xColumn">
 
 	<div class="portlet x12">
@@ -62,17 +69,17 @@
 
 	<div class="portlet x12">
 		<div class="portlet-header">
-			<h4>Update release notes</h4>
+			<h4>Recent update release notes</h4>
 		</div>
 		<div class="portlet-content">
 			<table cellspacing="0" class="info_table">
 				<tr>
 					<td class="value">
-						Future
+						Upcoming
 					</td>
 					<td class="full">
 						<ul>
-							<li><a href="@WebApplicationRegistry.Settings.SuggestionsUrl" target="_blank">Suggest or vote</a> on features and changes for a future update release</li>
+							<li><a href="@WebApplicationRegistry.Settings.SuggestionsUrl" target="_blank">Suggest or vote</a> on features and changes for an upcoming release</li>
 						</ul>
 					</td>
 				</tr>
@@ -131,7 +138,7 @@
 						</ul>
 					</td>
 				</tr>
-				<tr>
+				<tr class="bottom">
 					<td class="value">
 						12/23/2011
 					</td>
@@ -140,16 +147,6 @@
 							<li>Added footer to page layout with contact information</li>
 							<li>Tightened supported browser list until more testing is performed</li>
 							<li>Fixed some styling bugs</li>
-						</ul>
-					</td>
-				</tr>
-				<tr style="border-bottom: none;">
-					<td class="value" style="border-bottom: none;">
-						Older
-					</td>
-					<td class="full" style="border-bottom: none;">
-						<ul>
-							<li>Many older update release notes omitted</li>
 						</ul>
 					</td>
 				</tr>
