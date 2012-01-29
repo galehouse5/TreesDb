@@ -91,7 +91,7 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
-            public readonly string Caption = "~/Views/Photos/Caption.cshtml";
+            public readonly string CaptionPartial = "~/Views/Photos/CaptionPartial.cshtml";
             public readonly string EditPhotoGalleryPartial = "~/Views/Photos/EditPhotoGalleryPartial.cshtml";
         }
     }

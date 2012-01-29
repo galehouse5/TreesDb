@@ -351,7 +351,7 @@
     <Content Include="Views\Browse\DisplayTemplates\BrowsePhotoSummaryList.cshtml" />
     <Content Include="Views\Browse\TreeDetails.cshtml" />
     <Content Include="Views\Error\Unauthorized.cshtml" />
-    <Content Include="Views\Import\WizardLayout.cshtml" />
+    <Content Include="Views\Import\_WizardLayout.cshtml" />
     <Content Include="Views\Import\Index.cshtml" />
     <Content Include="Views\Import\EditorTemplates\ImportTripSummaryModel.cshtml" />
     <Content Include="Views\Import\History.cshtml" />

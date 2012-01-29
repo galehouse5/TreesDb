@@ -79,6 +79,7 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
+            public readonly string _ViewStart = "~/Views/Account/_ViewStart.cshtml";
             public readonly string AccountWidget = "~/Views/Account/AccountWidget.cshtml";
             public readonly string CompletePasswordAssistance = "~/Views/Account/CompletePasswordAssistance.cshtml";
             public readonly string CompleteRegistration = "~/Views/Account/CompleteRegistration.cshtml";

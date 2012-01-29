@@ -66,6 +66,7 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
+            public readonly string _ViewStart = "~/Views/Error/_ViewStart.cshtml";
             public readonly string IncompatibleBrowser = "~/Views/Error/IncompatibleBrowser.cshtml";
             public readonly string Maintenance = "~/Views/Error/Maintenance.cshtml";
             public readonly string NotFound = "~/Views/Error/NotFound.cshtml";

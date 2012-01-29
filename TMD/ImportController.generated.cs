@@ -112,6 +112,7 @@ namespace TMD.Controllers {
         public ViewNames Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ViewNames {
+            public readonly string _WizardLayout = "~/Views/Import/_WizardLayout.cshtml";
             public readonly string Finish = "~/Views/Import/Finish.cshtml";
             public readonly string History = "~/Views/Import/History.cshtml";
             public readonly string Index = "~/Views/Import/Index.cshtml";
@@ -126,7 +127,6 @@ namespace TMD.Controllers {
             public readonly string Trees = "~/Views/Import/Trees.cshtml";
             public readonly string Trip = "~/Views/Import/Trip.cshtml";
             public readonly string View = "~/Views/Import/View.cshtml";
-            public readonly string WizardLayout = "~/Views/Import/WizardLayout.cshtml";
             static readonly _DisplayTemplates s_DisplayTemplates = new _DisplayTemplates();
             public _DisplayTemplates DisplayTemplates { get { return s_DisplayTemplates; } }
             public partial class _DisplayTemplates{

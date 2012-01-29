@@ -30,7 +30,6 @@ namespace T4MVC {
         public class ViewNames {
             public readonly string _Layout = "~/Views/Shared/_Layout.cshtml";
             public readonly string _LoginLayout = "~/Views/Shared/_LoginLayout.cshtml";
-            public readonly string _ViewStart = "~/Views/Shared/_ViewStart.cshtml";
             public readonly string GoogleAnalyticsScript = "~/Views/Shared/GoogleAnalyticsScript.cshtml";
             public readonly string PrettyTimeSpan = "~/Views/Shared/PrettyTimeSpan.cshtml";
             static readonly _DisplayTemplates s_DisplayTemplates = new _DisplayTemplates();
