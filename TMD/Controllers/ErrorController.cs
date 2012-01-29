@@ -43,11 +43,16 @@ namespace TMD.Controllers
     {
         public override void ExecuteResult(ControllerContext context)
         {
+            ExecuteResult(context.HttpContext);
+        }
+
+        public void ExecuteResult(HttpContextBase context)
+        {
             RouteData rd = new RouteData();
             rd.Values.Add("controller", "Error");
             rd.Values.Add("action", "ServerError");
             IController c = new ErrorController();
-            c.Execute(new RequestContext(context.HttpContext, rd));
+            c.Execute(new RequestContext(context, rd));
         }
     }
 

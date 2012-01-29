@@ -78,27 +78,6 @@ namespace TMD
             base.OnActionExecuting(filterContext);
         }
 
-        protected override void ExecuteCore()
-        {
-            if (HttpContext.IsCustomErrorEnabled)
-            {
-                try
-                {
-                    base.ExecuteCore();
-                }
-                catch (Exception ex)
-                {
-                    this.Error("Unhandled exception executing controller action.", ex);
-                    ActionResult result = new ServerErrorResult();
-                    result.ExecuteResult(ControllerContext);
-                }
-            }
-            else
-            {
-                base.ExecuteCore();
-            }
-        }
-
         public bool IsAuthenticated
         {
             get { return base.User.Identity.IsAuthenticated; }

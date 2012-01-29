@@ -111,37 +111,37 @@ namespace TMD.Infrastructure.Logging
 
     public class Log4NetLogProvider : ILogProvider
     {
-        private ILog getLog(Type type) { return LogManager.GetLogger(type); }
+        private ILog getLog(string @namespace) { return LogManager.GetLogger(@namespace); }
 
-        public bool IsDebugEnabled(Type type) { return getLog(type).IsDebugEnabled; }
-        public void Debug(Type type, object message) { getLog(type).Debug(message); }
-        public void Debug(Type type, object message, Exception exception) { getLog(type).Debug(message, exception); }
-        public void DebugFormat(Type type, string format, params object[] args) { getLog(type).DebugFormat(format, args); }
-        public void DebugFormat(Type type, IFormatProvider provider, string format, params object[] args) { getLog(type).DebugFormat(provider, format, args); }
+        public bool IsDebugEnabled(string @namespace) { return getLog(@namespace).IsDebugEnabled; }
+        public void Debug(string @namespace, object message) { getLog(@namespace).Debug(message); }
+        public void Debug(string @namespace, object message, Exception exception) { getLog(@namespace).Debug(message, exception); }
+        public void DebugFormat(string @namespace, string format, params object[] args) { getLog(@namespace).DebugFormat(format, args); }
+        public void DebugFormat(string @namespace, IFormatProvider provider, string format, params object[] args) { getLog(@namespace).DebugFormat(provider, format, args); }
 
-        public bool IsInfoEnabled(Type type) { return getLog(type).IsInfoEnabled; }
-        public void Info(Type type, object message) { getLog(type).Info(message); }
-        public void Info(Type type, object message, Exception exception) { getLog(type).Info(message, exception); }
-        public void InfoFormat(Type type, string format, params object[] args) { getLog(type).InfoFormat(format, args); }
-        public void InfoFormat(Type type, IFormatProvider provider, string format, params object[] args) { getLog(type).InfoFormat(provider, format, args); }
+        public bool IsInfoEnabled(string @namespace) { return getLog(@namespace).IsInfoEnabled; }
+        public void Info(string @namespace, object message) { getLog(@namespace).Info(message); }
+        public void Info(string @namespace, object message, Exception exception) { getLog(@namespace).Info(message, exception); }
+        public void InfoFormat(string @namespace, string format, params object[] args) { getLog(@namespace).InfoFormat(format, args); }
+        public void InfoFormat(string @namespace, IFormatProvider provider, string format, params object[] args) { getLog(@namespace).InfoFormat(provider, format, args); }
 
-        public bool IsWarnEnabled(Type type) { return getLog(type).IsWarnEnabled; }
-        public void Warn(Type type, object message) { getLog(type).Warn(message); }
-        public void Warn(Type type, object message, Exception exception) { getLog(type).Warn(message, exception); }
-        public void WarnFormat(Type type, string format, params object[] args) { getLog(type).WarnFormat(format, args); }
-        public void WarnFormat(Type type, IFormatProvider provider, string format, params object[] args) { getLog(type).WarnFormat(provider, format, args); }
+        public bool IsWarnEnabled(string @namespace) { return getLog(@namespace).IsWarnEnabled; }
+        public void Warn(string @namespace, object message) { getLog(@namespace).Warn(message); }
+        public void Warn(string @namespace, object message, Exception exception) { getLog(@namespace).Warn(message, exception); }
+        public void WarnFormat(string @namespace, string format, params object[] args) { getLog(@namespace).WarnFormat(format, args); }
+        public void WarnFormat(string @namespace, IFormatProvider provider, string format, params object[] args) { getLog(@namespace).WarnFormat(provider, format, args); }
 
-        public bool IsErrorEnabled(Type type) { return getLog(type).IsErrorEnabled; }
-        public void Error(Type type, object message) { getLog(type).Error(message); }
-        public void Error(Type type, object message, Exception exception) { getLog(type).Error(message, exception); }
-        public void ErrorFormat(Type type, string format, params object[] args) { getLog(type).ErrorFormat(format, args); }
-        public void ErrorFormat(Type type, IFormatProvider provider, string format, params object[] args) { getLog(type).ErrorFormat(provider, format, args); }
+        public bool IsErrorEnabled(string @namespace) { return getLog(@namespace).IsErrorEnabled; }
+        public void Error(string @namespace, object message) { getLog(@namespace).Error(message); }
+        public void Error(string @namespace, object message, Exception exception) { getLog(@namespace).Error(message, exception); }
+        public void ErrorFormat(string @namespace, string format, params object[] args) { getLog(@namespace).ErrorFormat(format, args); }
+        public void ErrorFormat(string @namespace, IFormatProvider provider, string format, params object[] args) { getLog(@namespace).ErrorFormat(provider, format, args); }
 
-        public bool IsFatalEnabled(Type type) { return getLog(type).IsFatalEnabled; }
-        public void Fatal(Type type, object message) { getLog(type).Fatal(message); }
-        public void Fatal(Type type, object message, Exception exception) { getLog(type).Fatal(message, exception); }
-        public void FatalFormat(Type type, string format, params object[] args) { getLog(type).FatalFormat(format, args); }
-        public void FatalFormat(Type type, IFormatProvider provider, string format, params object[] args) { getLog(type).FatalFormat(provider, format, args); }
+        public bool IsFatalEnabled(string @namespace) { return getLog(@namespace).IsFatalEnabled; }
+        public void Fatal(string @namespace, object message) { getLog(@namespace).Fatal(message); }
+        public void Fatal(string @namespace, object message, Exception exception) { getLog(@namespace).Fatal(message, exception); }
+        public void FatalFormat(string @namespace, string format, params object[] args) { getLog(@namespace).FatalFormat(format, args); }
+        public void FatalFormat(string @namespace, IFormatProvider provider, string format, params object[] args) { getLog(@namespace).FatalFormat(provider, format, args); }
 
         public void AddContextProperty(string property, Func<object> evaluator)
         {

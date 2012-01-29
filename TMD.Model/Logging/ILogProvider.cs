@@ -8,35 +8,35 @@ namespace TMD.Model.Logging
 {
     public interface ILogProvider
     {
-        bool IsDebugEnabled(Type type);
-        void Debug(Type type, object message);
-        void Debug(Type type, object message, Exception exception);
-        void DebugFormat(Type type, string format, params object[] args);
-        void DebugFormat(Type type, IFormatProvider provider, string format, params object[] args);
+        bool IsDebugEnabled(string @namespace);
+        void Debug(string @namespace, object message);
+        void Debug(string @namespace, object message, Exception exception);
+        void DebugFormat(string @namespace, string format, params object[] args);
+        void DebugFormat(string @namespace, IFormatProvider provider, string format, params object[] args);
 
-        bool IsInfoEnabled(Type type);
-        void Info(Type type, object message);
-        void Info(Type type, object message, Exception exception);
-        void InfoFormat(Type type, string format, params object[] args);
-        void InfoFormat(Type type, IFormatProvider provider, string format, params object[] args);
+        bool IsInfoEnabled(string @namespace);
+        void Info(string @namespace, object message);
+        void Info(string @namespace, object message, Exception exception);
+        void InfoFormat(string @namespace, string format, params object[] args);
+        void InfoFormat(string @namespace, IFormatProvider provider, string format, params object[] args);
 
-        bool IsWarnEnabled(Type type);
-        void Warn(Type type, object message);
-        void Warn(Type type, object message, Exception exception);
-        void WarnFormat(Type type, string format, params object[] args);
-        void WarnFormat(Type type, IFormatProvider provider, string format, params object[] args);
+        bool IsWarnEnabled(string @namespace);
+        void Warn(string @namespace, object message);
+        void Warn(string @namespace, object message, Exception exception);
+        void WarnFormat(string @namespace, string format, params object[] args);
+        void WarnFormat(string @namespace, IFormatProvider provider, string format, params object[] args);
 
-        bool IsErrorEnabled(Type type);
-        void Error(Type type, object message);
-        void Error(Type type, object message, Exception exception);
-        void ErrorFormat(Type type, string format, params object[] args);
-        void ErrorFormat(Type type, IFormatProvider provider, string format, params object[] args);
+        bool IsErrorEnabled(string @namespace);
+        void Error(string @namespace, object message);
+        void Error(string @namespace, object message, Exception exception);
+        void ErrorFormat(string @namespace, string format, params object[] args);
+        void ErrorFormat(string @namespace, IFormatProvider provider, string format, params object[] args);
 
-        bool IsFatalEnabled(Type type);
-        void Fatal(Type type, object message);
-        void Fatal(Type type, object message, Exception exception);
-        void FatalFormat(Type type, string format, params object[] args);
-        void FatalFormat(Type type, IFormatProvider provider, string format, params object[] args);
+        bool IsFatalEnabled(string @namespace);
+        void Fatal(string @namespace, object message);
+        void Fatal(string @namespace, object message, Exception exception);
+        void FatalFormat(string @namespace, string format, params object[] args);
+        void FatalFormat(string @namespace, IFormatProvider provider, string format, params object[] args);
 
         void AddContextProperty(string property, Func<object> evaluator);
         bool RemoveContextProperty(string property);

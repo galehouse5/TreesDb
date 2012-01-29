@@ -14,6 +14,7 @@ using TMD.Binders;
 using TMD.Infrastructure;
 using StructureMap;
 using TMD.Infrastructure.Logging;
+using TMD.Controllers;
 
 namespace TMD
 {
@@ -24,7 +25,7 @@ namespace TMD
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            // do nothing
         }
 
         public static void RegisterRoutes(RouteCollection routes)
@@ -120,6 +121,18 @@ namespace TMD
         protected void Application_EndRequest()
         {
             UnitOfWork.Dispose();
+        }
+
+        protected void Application_Error()
+        {
+            if (Context.IsCustomErrorEnabled)
+            {
+                // executing server error result causes a second call to this method at which point there is no need to perform further error handling
+                if (Context.Error == null) { return; }
+                Context.Error.Source.Error(Context.Error.Message, Context.Error);
+                Context.ClearError();
+                new ServerErrorResult().ExecuteResult(new HttpContextWrapper(Context));
+            }
         }
     }
 }
