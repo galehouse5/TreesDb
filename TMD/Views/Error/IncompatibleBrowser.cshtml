@@ -1,25 +1,31 @@
-﻿@{ ViewBag.Title = "Incompatible Browser"; }
+﻿@model IEnumerable<ErrorModel.CompatibleBrowser>
+@{ ViewBag.Title = "Incompatible Browser"; }
 <div class="content_front">
 	<div class="pad">
 		<h2>This page may be incompatible</h2>
 		<p>
-			Sorry, this page hasn't been tested for compatibility with your browser.
-			The following browsers have been tested and verified for compatibility:
+			Sorry, this page hasn't been tested with your browser yet.  Please try one of these instead:
 		</p>
 		<ul>
-			<li><b><a href="http://www.mozilla.com/en-US/products/download.html">Firefox 3 (recommended)</a></b></li>
-			<li><a href="http://www.apple.com/safari/download/">Safari 5</a></li>
-			<li><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Internet Explorer 8</a></li>
+            @foreach (var compatibleBrowser in Model) { 
+			<li style="@(compatibleBrowser.IsRecommended ? "font-weight: bold;" : string.Empty)">
+				@if (string.IsNullOrEmpty(compatibleBrowser.DownloadUrl)) { 
+					@(compatibleBrowser.DisplayName ?? compatibleBrowser.Browser) @compatibleBrowser.MajorVersion@(compatibleBrowser.IncludeFutureMajorVersions ? "+" : string.Empty) @(compatibleBrowser.IsRecommended ? "(recommended)" : string.Empty)
+				} else {
+					<a href="@compatibleBrowser.DownloadUrl" target="_blank">@(compatibleBrowser.DisplayName ?? compatibleBrowser.Browser) @compatibleBrowser.MajorVersion@(compatibleBrowser.IncludeFutureMajorVersions ? "+" : string.Empty) @(compatibleBrowser.IsRecommended ? "(recommended)" : string.Empty)</a>    
+                }
+			</li>
+            }
 		</ul>
 		<p>
-			Please contact an administrator or email <a href="mailto:@WebApplicationRegistry.Settings.WebmasterEmail">@WebApplicationRegistry.Settings.WebmasterEmail</a> to request support for your browser.
+            Or, email <a href="mailto:@WebApplicationRegistry.Settings.WebmasterEmail">@WebApplicationRegistry.Settings.WebmasterEmail</a> to get your browser added to this list.
 		</p>
         @using (Html.BeginForm(Mvc.Error.BypassBrowserCheck())) { 
             @Html.Hidden("ReturnUrl", Url.RequestContext.HttpContext.Request.RawUrl)
 			<div class="field">
 				<span class="label">&nbsp;</span>
 				<div>
-					<button type="submit" class="btn">Continue</button>
+					<button type="submit" class="btn">Ignore this warning and continue anyway</button>
 				</div>
 			</div> <!-- .field -->
         }

@@ -82,42 +82,25 @@ namespace TMD.Controllers
 
     public class CheckBrowserCompatibilityFilterAttribute : ActionFilterAttribute
     {
-        private class CompatibleBrowser
-        {
-            public readonly string Browser;
-            public readonly int MajorVersion;
-
-            public CompatibleBrowser(string browser, int majorVersion)
-            {
-                this.Browser = browser;
-                this.MajorVersion = majorVersion;
-            }
-
-            public bool Is(HttpBrowserCapabilitiesBase browser)
-            {
-                if (Browser == browser.Browser
-                    && MajorVersion == browser.MajorVersion)
-                {
-                    return true;
-                }
-                return false;
-            }
-        }
-
-        private static readonly CompatibleBrowser[] s_CompatibleBrowsers = new[] { 
-            new CompatibleBrowser("Firefox", 3),
-            new CompatibleBrowser("IE", 8),
-            new CompatibleBrowser("Safari", 5)
-        };
-
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (!WebApplicationRegistry.Settings.EnableBrowserCompatibilityCheck) { return; }
-            if (filterContext.IsChildAction) { return; }
-            if (filterContext.HttpContext.Request.IsAjaxRequest()) { return; }
-            if (false.Equals(((ControllerBase)filterContext.Controller).Session.GetPerformBrowserCheck())) { return; }
-            HttpBrowserCapabilitiesBase browser = ((Controller)filterContext.Controller).Request.Browser;
-            if (s_CompatibleBrowsers.Any(compatibleBrowser => compatibleBrowser.Is(browser))) { return; }
+            if (!WebApplicationRegistry.Settings.EnableBrowserCompatibilityCheck)
+            {
+                return;
+            }
+            if (filterContext.IsChildAction)
+            {
+                return;
+            }
+            if (filterContext.HttpContext.Request.IsAjaxRequest())
+            {
+                return;
+            }
+            HttpBrowserCapabilitiesBase requestBrowser = filterContext.RequestContext.HttpContext.Request.Browser;
+            if (WebApplicationRegistry.CompatibleBrowsers.Any(compatibleBrowser => compatibleBrowser.Is(requestBrowser)))
+            {
+                return;
+            }
             filterContext.Result = new IncompatibleBrowserResult();
         }
     }
@@ -139,7 +122,7 @@ namespace TMD.Controllers
         public virtual ActionResult IncompatibleBrowser()
         {
             Response.StatusCode = (int)HttpStatusCode.BadRequest;
-            return View();
+            return View(WebApplicationRegistry.CompatibleBrowsers);
         }
 
         [HttpPost]

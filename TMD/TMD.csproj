@@ -159,6 +159,7 @@
     <Compile Include="Extensions\ModelMetadataExtensions.cs" />
     <Compile Include="Models\AccountModel.cs" />
     <Compile Include="Models\BrowseModel.cs" />
+    <Compile Include="Models\ErrorModels.cs" />
     <Compile Include="Models\ExportModel.cs" />
     <Compile Include="Models\MapModel.cs" />
     <Compile Include="Models\ImportModel.cs" />
