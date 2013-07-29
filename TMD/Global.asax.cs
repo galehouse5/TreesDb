@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using AutoMapper;
+using StructureMap;
+using System;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using TMD.Model;
-using TMD.Model.Logging;
+using TMD.Binders;
+using TMD.Controllers;
+using TMD.Infrastructure;
+using TMD.Infrastructure.Logging;
 using TMD.Infrastructure.Repositories;
 using TMD.Mappings;
-using AutoMapper;
-using TMD.Extensions;
-using TMD.Binders;
-using TMD.Infrastructure;
-using StructureMap;
-using TMD.Infrastructure.Logging;
-using TMD.Controllers;
+using TMD.Model;
+using TMD.Model.Logging;
 
 namespace TMD
 {
@@ -38,45 +35,45 @@ namespace TMD
             //    new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             //);
 
-            routes.MapRoute("AddPhoto", "Photos/{action}/{id}", new { controller = "Photos" }, new { action = "AddTo.+" });
-            routes.MapRoute("RemovePhoto", "Photos/{id}/Remove", new { controller = "Photos", action = "Remove" });
-            routes.MapRoute("PhotoCaption", "Photos/{id}/Caption", new { controller = "Photos", action = "Caption" });
-            routes.MapRoute("ViewPhoto", "Photos/{id}/{size}", new { controller = "Photos", action = "View", size = "Original" });
+            routes.MapRoute("AddPhoto", "Photos/{action}/{id}", new { area = string.Empty, controller = "Photos" }, new { action = "AddTo.+" });
+            routes.MapRoute("RemovePhoto", "Photos/{id}/Remove", new { area = string.Empty, controller = "Photos", action = "Remove" });
+            routes.MapRoute("PhotoCaption", "Photos/{id}/Caption", new { area = string.Empty, controller = "Photos", action = "Caption" });
+            routes.MapRoute("ViewPhoto", "Photos/{id}/{size}", new { area = string.Empty, controller = "Photos", action = "View", size = "Original" });
 
-            routes.MapRoute("ViewMapMarkesForImportTree", "Map/ViewMarkersForImport/{id}/Tree/{treeId}", new { controller = "Map", action = "ViewMarkersForImportTree" });
-            routes.MapRoute("ViewMapMarkesForImportSubsite", "Map/ViewMarkersForImport/{id}/Subsite/{subsiteId}", new { controller = "Map", action = "ViewMarkersForImportSubsite" });
-            routes.MapRoute("ViewMapMarkesForImportSite", "Map/ViewMarkersForImport/{id}/Site/{siteId}", new { controller = "Map", action = "ViewMarkersForImportSite" });
-            routes.MapRoute("Map", "Map/{action}", new { controller = "Map", action = "Index" });
+            routes.MapRoute("ViewMapMarkesForImportTree", "Map/ViewMarkersForImport/{id}/Tree/{treeId}", new { area = string.Empty, controller = "Map", action = "ViewMarkersForImportTree" });
+            routes.MapRoute("ViewMapMarkesForImportSubsite", "Map/ViewMarkersForImport/{id}/Subsite/{subsiteId}", new { area = string.Empty, controller = "Map", action = "ViewMarkersForImportSubsite" });
+            routes.MapRoute("ViewMapMarkesForImportSite", "Map/ViewMarkersForImport/{id}/Site/{siteId}", new { area = string.Empty, controller = "Map", action = "ViewMarkersForImportSite" });
+            routes.MapRoute("Map", "Map/{action}", new { area = string.Empty, controller = "Map", action = "Index" });
 
-            routes.MapRoute("CompleteAccountPasswordAssistance", "Account/{token}/CompletePasswordAssistance", new { controller = "Account", action = "CompletePasswordAssistance" });
-            routes.MapRoute("CompleteAccountRegistration", "Account/{token}/CompleteRegistration", new { controller = "Account", action = "CompleteRegistration" });
-            routes.MapRoute("Account", "Account/{action}", new { controller = "Account", action = "Index" });
+            routes.MapRoute("CompleteAccountPasswordAssistance", "Account/{token}/CompletePasswordAssistance", new { area = string.Empty, controller = "Account", action = "CompletePasswordAssistance" });
+            routes.MapRoute("CompleteAccountRegistration", "Account/{token}/CompleteRegistration", new { area = string.Empty, controller = "Account", action = "CompleteRegistration" });
+            routes.MapRoute("Account", "Account/{action}", new { area = string.Empty, controller = "Account", action = "Index" });
 
-            routes.MapRoute("BrowseStateSpeciesDetails", "Browse/States/{stateId}/Species/{botanicalName} ({commonName})/Details", new { controller = "Browse", action = "SpeciesDetails" });
-            routes.MapRoute("BrowseSiteSpeciesDetails", "Browse/Sites/{siteId}/Species/{botanicalName} ({commonName})/Details", new { controller = "Browse", action = "SpeciesDetails" });
-            routes.MapRoute("BrowseSpeciesDetails", "Browse/Species/{botanicalName} ({commonName})/Details", new { controller = "Browse", action = "SpeciesDetails" });
-            routes.MapRoute("BrowseTreeDetails", "Browse/Trees/{id}/Details", new { controller = "Browse", action = "TreeDetails" });
-            routes.MapRoute("BrowseStateDetails", "Browse/States/{id}/Details", new { controller = "Browse", action = "StateDetails" });
-            routes.MapRoute("BrowseSiteDetails", "Browse/Sites/{id}/Details", new { controller = "Browse", action = "SiteDetails" });
-            routes.MapRoute("BrowseSpecies", "Browse/Species", new { controller = "Browse", action = "Species" });
-            routes.MapRoute("BrowseLocations", "Browse/Locations", new { controller = "Browse", action = "Locations" });
-            routes.MapRoute("Browse", "Browse", new { controller = "Browse", action = "Index" });
+            routes.MapRoute("BrowseStateSpeciesDetails", "Browse/States/{stateId}/Species/{botanicalName} ({commonName})/Details", new { area = string.Empty, controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseSiteSpeciesDetails", "Browse/Sites/{siteId}/Species/{botanicalName} ({commonName})/Details", new { area = string.Empty, controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseSpeciesDetails", "Browse/Species/{botanicalName} ({commonName})/Details", new { area = string.Empty, controller = "Browse", action = "SpeciesDetails" });
+            routes.MapRoute("BrowseTreeDetails", "Browse/Trees/{id}/Details", new { area = string.Empty, controller = "Browse", action = "TreeDetails" });
+            routes.MapRoute("BrowseStateDetails", "Browse/States/{id}/Details", new { area = string.Empty, controller = "Browse", action = "StateDetails" });
+            routes.MapRoute("BrowseSiteDetails", "Browse/Sites/{id}/Details", new { area = string.Empty, controller = "Browse", action = "SiteDetails" });
+            routes.MapRoute("BrowseSpecies", "Browse/Species", new { area = string.Empty, controller = "Browse", action = "Species" });
+            routes.MapRoute("BrowseLocations", "Browse/Locations", new { area = string.Empty, controller = "Browse", action = "Locations" });
+            routes.MapRoute("Browse", "Browse", new { area = string.Empty, controller = "Browse", action = "Index" });
 
-            routes.MapRoute("Main", "Main/{action}", new { controller = "Main", action = "Index" });
+            routes.MapRoute("Main", "Main/{action}", new { area = string.Empty, controller = "Main", action = "Index" });
 
-            routes.MapRoute("ImportIndex", "Import", new { controller = "Import", action = "Index" });
-            routes.MapRoute("ImportNew", "Import/New", new { controller = "Import", action = "New" });
-            routes.MapRoute("ImportHistory", "Import/History", new { controller = "Import", action = "History" });
+            routes.MapRoute("ImportIndex", "Import", new { area = string.Empty, controller = "Import", action = "Index" });
+            routes.MapRoute("ImportNew", "Import/New", new { area = string.Empty, controller = "Import", action = "New" });
+            routes.MapRoute("ImportHistory", "Import/History", new { area = string.Empty, controller = "Import", action = "History" });
 
-            routes.MapRoute("ExportSpecies", "Export/Species/{botanicalName} ({commonName})", new { controller = "Export", action = "Species" });
-            routes.MapRoute("ExportSitesSpecies", "Export/Sites/{id}/Species/{botanicalName} ({commonName})", new { controller = "Export", action = "SitesSpecies" });
-            routes.MapRoute("ExportStatesSpecies", "Export/States/{id}/Species/{botanicalName} ({commonName})", new { controller = "Export", action = "StatesSpecies" });
-            routes.MapRoute("ExportDefault", "Export/{action}/{id}", new { controller = "Export" });
+            routes.MapRoute("ExportSpecies", "Export/Species/{botanicalName} ({commonName})", new { area = string.Empty, controller = "Export", action = "Species" });
+            routes.MapRoute("ExportSitesSpecies", "Export/Sites/{id}/Species/{botanicalName} ({commonName})", new { area = string.Empty, controller = "Export", action = "SitesSpecies" });
+            routes.MapRoute("ExportStatesSpecies", "Export/States/{id}/Species/{botanicalName} ({commonName})", new { area = string.Empty, controller = "Export", action = "StatesSpecies" });
+            routes.MapRoute("ExportDefault", "Export/{action}/{id}", new { area = string.Empty, controller = "Export" });
 
-            routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}", new { controller = "Main", action = "Index" }, new { id = @"\d+" });
-            routes.MapRoute("Default", "{controller}/{action}", new { controller = "Main", action = "Index" });
+            routes.MapRoute("DefaultWithId", "{controller}/{id}/{action}", new { area = string.Empty, controller = "Main", action = "Index" }, new { id = @"\d+" });
+            routes.MapRoute("Default", "{controller}/{action}", new { area = string.Empty, controller = "Main", action = "Index" });
 
-            routes.MapRoute("CatchAll", "{*pathInfo}", new { controller = "Error", action = "NotFound" });
+            routes.MapRoute("CatchAll", "{*pathInfo}", new { area = string.Empty, controller = "Error", action = "NotFound" });
         }
 
         protected void Application_Start()
