@@ -1,4 +1,4 @@
 ﻿/* /css/plugin.css */
 div.selector { margin-bottom: 0; }
-.paginate_enabled_previous { background-image: url(/images/Theme/back_enabled.png); }
-.paginate_enabled_next { background-image: url(/images/Theme/forward_enabled.png); }
+.paginate_enabled_previous { background-image: url(../images/Theme/back_enabled.png); }
+.paginate_enabled_next { background-image: url(../images/Theme/forward_enabled.png); }

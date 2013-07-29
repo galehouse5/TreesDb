@@ -20,8 +20,10 @@ using System.Web.Mvc.Ajax;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 using T4MVC;
-namespace TMD.Controllers {
-    public partial class ImportController {
+namespace TMD.Controllers
+{
+    public partial class ImportController
+    {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ImportController() { }
 
@@ -29,69 +31,89 @@ namespace TMD.Controllers {
         protected ImportController(Dummy d) { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        protected RedirectToRouteResult RedirectToAction(ActionResult result) {
+        protected RedirectToRouteResult RedirectToAction(ActionResult result)
+        {
             var callInfo = result.GetT4MVCResult();
             return RedirectToRoute(callInfo.RouteValueDictionary);
         }
 
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        protected RedirectToRouteResult RedirectToActionPermanent(ActionResult result)
+        {
+            var callInfo = result.GetT4MVCResult();
+            return RedirectToRoutePermanent(callInfo.RouteValueDictionary);
+        }
+
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult MenuWidget() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);
+        public virtual System.Web.Mvc.ActionResult MenuWidget()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.MenuWidget);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult StartNew() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.StartNew);
+        public virtual System.Web.Mvc.ActionResult StartNew()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.StartNew);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Start() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Start);
+        public virtual System.Web.Mvc.ActionResult Start()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Start);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Trip() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Trip);
+        public virtual System.Web.Mvc.ActionResult Trip()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Trip);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Sites() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Sites);
+        public virtual System.Web.Mvc.ActionResult Sites()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Sites);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Trees() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
+        public virtual System.Web.Mvc.ActionResult Trees()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Trees);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Finish() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Finish);
+        public virtual System.Web.Mvc.ActionResult Finish()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Finish);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Finalize() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Finalize);
+        public virtual System.Web.Mvc.ActionResult Finalize()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Finalize);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult ViewImport() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.ViewImport);
+        public virtual System.Web.Mvc.ActionResult ViewImport()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ViewImport);
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ImportController Actions { get { return Mvc.Import; } }
+        public ImportController Actions { get { return MVC.Import; } }
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Area = "";
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Name = "Import";
+        [GeneratedCode("T4MVC", "2.0")]
+        public const string NameConst = "Import";
 
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ActionNamesClass ActionNames { get { return s_actions; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionNamesClass {
+        public class ActionNamesClass
+        {
             public readonly string MenuWidget = "MenuWidget";
             public readonly string Index = "Index";
             public readonly string History = "History";
@@ -106,12 +128,149 @@ namespace TMD.Controllers {
             public readonly string ViewImport = "View";
         }
 
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionNameConstants
+        {
+            public const string MenuWidget = "MenuWidget";
+            public const string Index = "Index";
+            public const string History = "History";
+            public const string New = "New";
+            public const string StartNew = "New";
+            public const string Start = "Start";
+            public const string Trip = "Trip";
+            public const string Sites = "Sites";
+            public const string Trees = "Trees";
+            public const string Finish = "Finish";
+            public const string Finalize = "Finalize";
+            public const string ViewImport = "View";
+        }
 
-        static readonly ViewNames s_views = new ViewNames();
+
+        static readonly ActionParamsClass_MenuWidget s_params_MenuWidget = new ActionParamsClass_MenuWidget();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ViewNames Views { get { return s_views; } }
+        public ActionParamsClass_MenuWidget MenuWidgetParams { get { return s_params_MenuWidget; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ViewNames {
+        public class ActionParamsClass_MenuWidget
+        {
+            public readonly string isSelected = "isSelected";
+        }
+        static readonly ActionParamsClass_Index s_params_Index = new ActionParamsClass_Index();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Index IndexParams { get { return s_params_Index; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Index
+        {
+            public readonly string uow = "uow";
+            public readonly string innerAction = "innerAction";
+        }
+        static readonly ActionParamsClass_History s_params_History = new ActionParamsClass_History();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_History HistoryParams { get { return s_params_History; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_History
+        {
+            public readonly string uow = "uow";
+            public readonly string innerAction = "innerAction";
+        }
+        static readonly ActionParamsClass_StartNew s_params_StartNew = new ActionParamsClass_StartNew();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_StartNew StartNewParams { get { return s_params_StartNew; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_StartNew
+        {
+            public readonly string uow = "uow";
+        }
+        static readonly ActionParamsClass_Start s_params_Start = new ActionParamsClass_Start();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Start StartParams { get { return s_params_Start; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Start
+        {
+            public readonly string id = "id";
+        }
+        static readonly ActionParamsClass_Trip s_params_Trip = new ActionParamsClass_Trip();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Trip TripParams { get { return s_params_Trip; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Trip
+        {
+            public readonly string id = "id";
+            public readonly string uow = "uow";
+            public readonly string model = "model";
+        }
+        static readonly ActionParamsClass_Sites s_params_Sites = new ActionParamsClass_Sites();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Sites SitesParams { get { return s_params_Sites; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Sites
+        {
+            public readonly string uow = "uow";
+            public readonly string id = "id";
+            public readonly string model = "model";
+            public readonly string innerAction = "innerAction";
+        }
+        static readonly ActionParamsClass_Trees s_params_Trees = new ActionParamsClass_Trees();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Trees TreesParams { get { return s_params_Trees; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Trees
+        {
+            public readonly string uow = "uow";
+            public readonly string id = "id";
+            public readonly string model = "model";
+            public readonly string innerAction = "innerAction";
+        }
+        static readonly ActionParamsClass_Finish s_params_Finish = new ActionParamsClass_Finish();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Finish FinishParams { get { return s_params_Finish; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Finish
+        {
+            public readonly string id = "id";
+        }
+        static readonly ActionParamsClass_Finalize s_params_Finalize = new ActionParamsClass_Finalize();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Finalize FinalizeParams { get { return s_params_Finalize; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Finalize
+        {
+            public readonly string uow = "uow";
+            public readonly string id = "id";
+        }
+        static readonly ActionParamsClass_ViewImport s_params_ViewImport = new ActionParamsClass_ViewImport();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_ViewImport ViewImportParams { get { return s_params_ViewImport; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_ViewImport
+        {
+            public readonly string id = "id";
+        }
+        static readonly ViewsClass s_views = new ViewsClass();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ViewsClass Views { get { return s_views; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ViewsClass
+        {
+            static readonly _ViewNamesClass s_ViewNames = new _ViewNamesClass();
+            public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
+            public class _ViewNamesClass
+            {
+                public readonly string _WizardLayout = "_WizardLayout";
+                public readonly string Finish = "Finish";
+                public readonly string History = "History";
+                public readonly string Index = "Index";
+                public readonly string MenuWidget = "MenuWidget";
+                public readonly string SitePartial = "SitePartial";
+                public readonly string Sites = "Sites";
+                public readonly string SitesPartial = "SitesPartial";
+                public readonly string Start = "Start";
+                public readonly string StartSteps = "StartSteps";
+                public readonly string SubsiteTreesPartial = "SubsiteTreesPartial";
+                public readonly string TreePartial = "TreePartial";
+                public readonly string Trees = "Trees";
+                public readonly string Trip = "Trip";
+                public readonly string View = "View";
+            }
             public readonly string _WizardLayout = "~/Views/Import/_WizardLayout.cshtml";
             public readonly string Finish = "~/Views/Import/Finish.cshtml";
             public readonly string History = "~/Views/Import/History.cshtml";
@@ -127,9 +286,11 @@ namespace TMD.Controllers {
             public readonly string Trees = "~/Views/Import/Trees.cshtml";
             public readonly string Trip = "~/Views/Import/Trip.cshtml";
             public readonly string View = "~/Views/Import/View.cshtml";
-            static readonly _DisplayTemplates s_DisplayTemplates = new _DisplayTemplates();
-            public _DisplayTemplates DisplayTemplates { get { return s_DisplayTemplates; } }
-            public partial class _DisplayTemplates{
+            static readonly _DisplayTemplatesClass s_DisplayTemplates = new _DisplayTemplatesClass();
+            public _DisplayTemplatesClass DisplayTemplates { get { return s_DisplayTemplates; } }
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public partial class _DisplayTemplatesClass
+            {
                 public readonly string ImportFinishedSiteModel = "ImportFinishedSiteModel";
                 public readonly string ImportFinishedSubsiteModel = "ImportFinishedSubsiteModel";
                 public readonly string ImportFinishedTreeModel = "ImportFinishedTreeModel";
@@ -138,9 +299,11 @@ namespace TMD.Controllers {
                 public readonly string ImportSubsiteModel = "ImportSubsiteModel";
                 public readonly string ImportTreeModel = "ImportTreeModel";
             }
-            static readonly _EditorTemplates s_EditorTemplates = new _EditorTemplates();
-            public _EditorTemplates EditorTemplates { get { return s_EditorTemplates; } }
-            public partial class _EditorTemplates{
+            static readonly _EditorTemplatesClass s_EditorTemplates = new _EditorTemplatesClass();
+            public _EditorTemplatesClass EditorTemplates { get { return s_EditorTemplates; } }
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public partial class _EditorTemplatesClass
+            {
                 public readonly string ImportSiteModel = "ImportSiteModel";
                 public readonly string ImportSiteTreesModel = "ImportSiteTreesModel";
                 public readonly string ImportSubsiteModel = "ImportSubsiteModel";
@@ -152,115 +315,184 @@ namespace TMD.Controllers {
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public class T4MVC_ImportController: TMD.Controllers.ImportController {
+    public partial class T4MVC_ImportController : TMD.Controllers.ImportController
+    {
         public T4MVC_ImportController() : base(Dummy.Instance) { }
 
-        public override System.Web.Mvc.ActionResult MenuWidget(bool isSelected) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);
-            callInfo.RouteValueDictionary.Add("isSelected", isSelected);
+        partial void MenuWidgetOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, bool isSelected);
+
+        public override System.Web.Mvc.ActionResult MenuWidget(bool isSelected)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.MenuWidget);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "isSelected", isSelected);
+            MenuWidgetOverride(callInfo, isSelected);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Index() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Index);
+        partial void IndexOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult Index()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Index);
+            IndexOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Index(TMD.Model.IUnitOfWork uow, TMD.Models.ImportInnerActionModel innerAction) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Index);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("innerAction", innerAction);
+        partial void IndexOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.ImportInnerActionModel innerAction);
+
+        public override System.Web.Mvc.ActionResult Index(TMD.Model.IUnitOfWork uow, TMD.Models.ImportInnerActionModel innerAction)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Index);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "innerAction", innerAction);
+            IndexOverride(callInfo, uow, innerAction);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult History() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.History);
+        partial void HistoryOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult History()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.History);
+            HistoryOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult History(TMD.Model.IUnitOfWork uow, TMD.Models.ImportInnerActionModel innerAction) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.History);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("innerAction", innerAction);
+        partial void HistoryOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.ImportInnerActionModel innerAction);
+
+        public override System.Web.Mvc.ActionResult History(TMD.Model.IUnitOfWork uow, TMD.Models.ImportInnerActionModel innerAction)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.History);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "innerAction", innerAction);
+            HistoryOverride(callInfo, uow, innerAction);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult New() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.New);
+        partial void NewOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult New()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.New);
+            NewOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult StartNew(TMD.Model.IUnitOfWork uow) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.StartNew);
-            callInfo.RouteValueDictionary.Add("uow", uow);
+        partial void StartNewOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow);
+
+        public override System.Web.Mvc.ActionResult StartNew(TMD.Model.IUnitOfWork uow)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.StartNew);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            StartNewOverride(callInfo, uow);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Start(int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Start);
-            callInfo.RouteValueDictionary.Add("id", id);
+        partial void StartOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
+
+        public override System.Web.Mvc.ActionResult Start(int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Start);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            StartOverride(callInfo, id);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Trip(int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Trip);
-            callInfo.RouteValueDictionary.Add("id", id);
+        partial void TripOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
+
+        public override System.Web.Mvc.ActionResult Trip(int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Trip);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            TripOverride(callInfo, id);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Trip(TMD.Model.IUnitOfWork uow, TMD.Models.ImportTripModel model) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Trip);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("model", model);
+        partial void TripOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.ImportTripModel model);
+
+        public override System.Web.Mvc.ActionResult Trip(TMD.Model.IUnitOfWork uow, TMD.Models.ImportTripModel model)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Trip);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
+            TripOverride(callInfo, uow, model);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Sites(TMD.Model.IUnitOfWork uow, int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Sites);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("id", id);
+        partial void SitesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, int id);
+
+        public override System.Web.Mvc.ActionResult Sites(TMD.Model.IUnitOfWork uow, int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Sites);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            SitesOverride(callInfo, uow, id);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Sites(TMD.Model.IUnitOfWork uow, TMD.Models.ImportSitesModel model, TMD.Models.ImportInnerActionModel innerAction) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Sites);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("model", model);
-            callInfo.RouteValueDictionary.Add("innerAction", innerAction);
+        partial void SitesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.ImportSitesModel model, TMD.Models.ImportInnerActionModel innerAction);
+
+        public override System.Web.Mvc.ActionResult Sites(TMD.Model.IUnitOfWork uow, TMD.Models.ImportSitesModel model, TMD.Models.ImportInnerActionModel innerAction)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Sites);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "innerAction", innerAction);
+            SitesOverride(callInfo, uow, model, innerAction);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Trees(TMD.Model.IUnitOfWork uow, int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("id", id);
+        partial void TreesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, int id);
+
+        public override System.Web.Mvc.ActionResult Trees(TMD.Model.IUnitOfWork uow, int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Trees);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            TreesOverride(callInfo, uow, id);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Trees(TMD.Model.IUnitOfWork uow, TMD.Models.ImportTreesModel model, TMD.Models.ImportInnerActionModel innerAction) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("model", model);
-            callInfo.RouteValueDictionary.Add("innerAction", innerAction);
+        partial void TreesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.ImportTreesModel model, TMD.Models.ImportInnerActionModel innerAction);
+
+        public override System.Web.Mvc.ActionResult Trees(TMD.Model.IUnitOfWork uow, TMD.Models.ImportTreesModel model, TMD.Models.ImportInnerActionModel innerAction)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Trees);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "innerAction", innerAction);
+            TreesOverride(callInfo, uow, model, innerAction);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Finish(int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Finish);
-            callInfo.RouteValueDictionary.Add("id", id);
+        partial void FinishOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
+
+        public override System.Web.Mvc.ActionResult Finish(int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Finish);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            FinishOverride(callInfo, id);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Finalize(TMD.Model.IUnitOfWork uow, int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Finalize);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("id", id);
+        partial void FinalizeOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, int id);
+
+        public override System.Web.Mvc.ActionResult Finalize(TMD.Model.IUnitOfWork uow, int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Finalize);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            FinalizeOverride(callInfo, uow, id);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult ViewImport(int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ViewImport);
-            callInfo.RouteValueDictionary.Add("id", id);
+        partial void ViewImportOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
+
+        public override System.Web.Mvc.ActionResult ViewImport(int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ViewImport);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            ViewImportOverride(callInfo, id);
             return callInfo;
         }
 

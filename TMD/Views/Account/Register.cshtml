@@ -16,7 +16,7 @@
 		</div>
 	</div>
 } else {
-	using (Html.BeginForm(Mvc.Account.Register(), FormMethod.Post, new { id = "login_form", name = "login" })) {
+	using (Html.BeginForm(MVC.Account.Register(), FormMethod.Post, new { id = "login_form", name = "login" })) {
 		<div class="content_front">
 			<div class="pad">
 				@if (Model.PerformHumanVerification) {
@@ -39,7 +39,7 @@
 						<div>
 							@Html.SubmitButton("Register")
 							&nbsp;&nbsp;
-							@Html.ActionLink("Already have an account?", Mvc.Account.Logon())
+							@Html.ActionLink("Already have an account?", MVC.Account.Logon())
 						</div>
 					</div> <!-- .field -->
 				}

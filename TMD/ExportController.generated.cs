@@ -20,8 +20,10 @@ using System.Web.Mvc.Ajax;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 using T4MVC;
-namespace TMD.Controllers {
-    public partial class ExportController {
+namespace TMD.Controllers
+{
+    public partial class ExportController
+    {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ExportController() { }
 
@@ -29,64 +31,83 @@ namespace TMD.Controllers {
         protected ExportController(Dummy d) { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        protected RedirectToRouteResult RedirectToAction(ActionResult result) {
+        protected RedirectToRouteResult RedirectToAction(ActionResult result)
+        {
             var callInfo = result.GetT4MVCResult();
             return RedirectToRoute(callInfo.RouteValueDictionary);
         }
 
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        protected RedirectToRouteResult RedirectToActionPermanent(ActionResult result)
+        {
+            var callInfo = result.GetT4MVCResult();
+            return RedirectToRoutePermanent(callInfo.RouteValueDictionary);
+        }
+
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Trees() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
+        public virtual System.Web.Mvc.ActionResult Trees()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Trees);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Sites() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Sites);
+        public virtual System.Web.Mvc.ActionResult Sites()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Sites);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult SitesSpecies() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.SitesSpecies);
+        public virtual System.Web.Mvc.ActionResult SitesSpecies()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SitesSpecies);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult States() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.States);
+        public virtual System.Web.Mvc.ActionResult States()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.States);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult StatesSpecies() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.StatesSpecies);
+        public virtual System.Web.Mvc.ActionResult StatesSpecies()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.StatesSpecies);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Species() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Species);
+        public virtual System.Web.Mvc.ActionResult Species()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Species);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult SpeciesByFilters() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.SpeciesByFilters);
+        public virtual System.Web.Mvc.ActionResult SpeciesByFilters()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SpeciesByFilters);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult LocationsByFilters() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.LocationsByFilters);
+        public virtual System.Web.Mvc.ActionResult LocationsByFilters()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.LocationsByFilters);
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ExportController Actions { get { return Mvc.Export; } }
+        public ExportController Actions { get { return MVC.Export; } }
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Area = "";
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Name = "Export";
+        [GeneratedCode("T4MVC", "2.0")]
+        public const string NameConst = "Export";
 
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ActionNamesClass ActionNames { get { return s_actions; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionNamesClass {
+        public class ActionNamesClass
+        {
             public readonly string Trees = "Trees";
             public readonly string Sites = "Sites";
             public readonly string SitesSpecies = "SitesSpecies";
@@ -97,70 +118,192 @@ namespace TMD.Controllers {
             public readonly string LocationsByFilters = "LocationsByFilters";
         }
 
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionNameConstants
+        {
+            public const string Trees = "Trees";
+            public const string Sites = "Sites";
+            public const string SitesSpecies = "SitesSpecies";
+            public const string States = "States";
+            public const string StatesSpecies = "StatesSpecies";
+            public const string Species = "Species";
+            public const string SpeciesByFilters = "SpeciesByFilters";
+            public const string LocationsByFilters = "LocationsByFilters";
+        }
 
-        static readonly ViewNames s_views = new ViewNames();
+
+        static readonly ActionParamsClass_Trees s_params_Trees = new ActionParamsClass_Trees();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ViewNames Views { get { return s_views; } }
+        public ActionParamsClass_Trees TreesParams { get { return s_params_Trees; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ViewNames {
+        public class ActionParamsClass_Trees
+        {
+            public readonly string id = "id";
+        }
+        static readonly ActionParamsClass_Sites s_params_Sites = new ActionParamsClass_Sites();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Sites SitesParams { get { return s_params_Sites; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Sites
+        {
+            public readonly string id = "id";
+        }
+        static readonly ActionParamsClass_SitesSpecies s_params_SitesSpecies = new ActionParamsClass_SitesSpecies();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_SitesSpecies SitesSpeciesParams { get { return s_params_SitesSpecies; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_SitesSpecies
+        {
+            public readonly string id = "id";
+            public readonly string botanicalName = "botanicalName";
+        }
+        static readonly ActionParamsClass_States s_params_States = new ActionParamsClass_States();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_States StatesParams { get { return s_params_States; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_States
+        {
+            public readonly string id = "id";
+        }
+        static readonly ActionParamsClass_StatesSpecies s_params_StatesSpecies = new ActionParamsClass_StatesSpecies();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_StatesSpecies StatesSpeciesParams { get { return s_params_StatesSpecies; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_StatesSpecies
+        {
+            public readonly string id = "id";
+            public readonly string botanicalName = "botanicalName";
+        }
+        static readonly ActionParamsClass_Species s_params_Species = new ActionParamsClass_Species();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Species SpeciesParams { get { return s_params_Species; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Species
+        {
+            public readonly string botanicalName = "botanicalName";
+            public readonly string commonName = "commonName";
+        }
+        static readonly ActionParamsClass_SpeciesByFilters s_params_SpeciesByFilters = new ActionParamsClass_SpeciesByFilters();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_SpeciesByFilters SpeciesByFiltersParams { get { return s_params_SpeciesByFilters; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_SpeciesByFilters
+        {
+            public readonly string botanicalNameFilter = "botanicalNameFilter";
+            public readonly string commonNameFilter = "commonNameFilter";
+        }
+        static readonly ActionParamsClass_LocationsByFilters s_params_LocationsByFilters = new ActionParamsClass_LocationsByFilters();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_LocationsByFilters LocationsByFiltersParams { get { return s_params_LocationsByFilters; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_LocationsByFilters
+        {
+            public readonly string stateFilter = "stateFilter";
+            public readonly string siteFilter = "siteFilter";
+            public readonly string subsiteFilter = "subsiteFilter";
+        }
+        static readonly ViewsClass s_views = new ViewsClass();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ViewsClass Views { get { return s_views; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ViewsClass
+        {
+            static readonly _ViewNamesClass s_ViewNames = new _ViewNamesClass();
+            public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
+            public class _ViewNamesClass
+            {
+            }
         }
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public class T4MVC_ExportController: TMD.Controllers.ExportController {
+    public partial class T4MVC_ExportController : TMD.Controllers.ExportController
+    {
         public T4MVC_ExportController() : base(Dummy.Instance) { }
 
-        public override System.Web.Mvc.ActionResult Trees(int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Trees);
-            callInfo.RouteValueDictionary.Add("id", id);
+        partial void TreesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
+
+        public override System.Web.Mvc.ActionResult Trees(int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Trees);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            TreesOverride(callInfo, id);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Sites(int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Sites);
-            callInfo.RouteValueDictionary.Add("id", id);
+        partial void SitesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
+
+        public override System.Web.Mvc.ActionResult Sites(int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Sites);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            SitesOverride(callInfo, id);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult SitesSpecies(int id, string botanicalName) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SitesSpecies);
-            callInfo.RouteValueDictionary.Add("id", id);
-            callInfo.RouteValueDictionary.Add("botanicalName", botanicalName);
+        partial void SitesSpeciesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, string botanicalName);
+
+        public override System.Web.Mvc.ActionResult SitesSpecies(int id, string botanicalName)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SitesSpecies);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "botanicalName", botanicalName);
+            SitesSpeciesOverride(callInfo, id, botanicalName);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult States(int id) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.States);
-            callInfo.RouteValueDictionary.Add("id", id);
+        partial void StatesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
+
+        public override System.Web.Mvc.ActionResult States(int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.States);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            StatesOverride(callInfo, id);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult StatesSpecies(int id, string botanicalName) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.StatesSpecies);
-            callInfo.RouteValueDictionary.Add("id", id);
-            callInfo.RouteValueDictionary.Add("botanicalName", botanicalName);
+        partial void StatesSpeciesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, string botanicalName);
+
+        public override System.Web.Mvc.ActionResult StatesSpecies(int id, string botanicalName)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.StatesSpecies);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "botanicalName", botanicalName);
+            StatesSpeciesOverride(callInfo, id, botanicalName);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Species(string botanicalName, string commonName) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Species);
-            callInfo.RouteValueDictionary.Add("botanicalName", botanicalName);
-            callInfo.RouteValueDictionary.Add("commonName", commonName);
+        partial void SpeciesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, string botanicalName, string commonName);
+
+        public override System.Web.Mvc.ActionResult Species(string botanicalName, string commonName)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Species);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "botanicalName", botanicalName);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "commonName", commonName);
+            SpeciesOverride(callInfo, botanicalName, commonName);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult SpeciesByFilters(string botanicalNameFilter, string commonNameFilter) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SpeciesByFilters);
-            callInfo.RouteValueDictionary.Add("botanicalNameFilter", botanicalNameFilter);
-            callInfo.RouteValueDictionary.Add("commonNameFilter", commonNameFilter);
+        partial void SpeciesByFiltersOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, string botanicalNameFilter, string commonNameFilter);
+
+        public override System.Web.Mvc.ActionResult SpeciesByFilters(string botanicalNameFilter, string commonNameFilter)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SpeciesByFilters);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "botanicalNameFilter", botanicalNameFilter);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "commonNameFilter", commonNameFilter);
+            SpeciesByFiltersOverride(callInfo, botanicalNameFilter, commonNameFilter);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult LocationsByFilters(string stateFilter, string siteFilter, string subsiteFilter) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.LocationsByFilters);
-            callInfo.RouteValueDictionary.Add("stateFilter", stateFilter);
-            callInfo.RouteValueDictionary.Add("siteFilter", siteFilter);
-            callInfo.RouteValueDictionary.Add("subsiteFilter", subsiteFilter);
+        partial void LocationsByFiltersOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, string stateFilter, string siteFilter, string subsiteFilter);
+
+        public override System.Web.Mvc.ActionResult LocationsByFilters(string stateFilter, string siteFilter, string subsiteFilter)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.LocationsByFilters);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "stateFilter", stateFilter);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "siteFilter", siteFilter);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteFilter", subsiteFilter);
+            LocationsByFiltersOverride(callInfo, stateFilter, siteFilter, subsiteFilter);
             return callInfo;
         }
 

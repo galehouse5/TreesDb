@@ -20,7 +20,7 @@
 		<p>
             Or, email <a href="mailto:@WebApplicationRegistry.Settings.WebmasterEmail">@WebApplicationRegistry.Settings.WebmasterEmail</a> to get your browser added to this list.
 		</p>
-        @using (Html.BeginForm(Mvc.Error.BypassBrowserCheck())) { 
+        @using (Html.BeginForm(MVC.Error.BypassBrowserCheck())) { 
             @Html.Hidden("ReturnUrl", Url.RequestContext.HttpContext.Request.RawUrl)
 			<div class="field">
 				<span class="label">&nbsp;</span>

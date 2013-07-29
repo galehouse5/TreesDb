@@ -20,8 +20,10 @@ using System.Web.Mvc.Ajax;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 using T4MVC;
-namespace TMD.Controllers {
-    public partial class MainController {
+namespace TMD.Controllers
+{
+    public partial class MainController
+    {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public MainController() { }
 
@@ -29,46 +31,94 @@ namespace TMD.Controllers {
         protected MainController(Dummy d) { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        protected RedirectToRouteResult RedirectToAction(ActionResult result) {
+        protected RedirectToRouteResult RedirectToAction(ActionResult result)
+        {
             var callInfo = result.GetT4MVCResult();
             return RedirectToRoute(callInfo.RouteValueDictionary);
         }
 
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        protected RedirectToRouteResult RedirectToActionPermanent(ActionResult result)
+        {
+            var callInfo = result.GetT4MVCResult();
+            return RedirectToRoutePermanent(callInfo.RouteValueDictionary);
+        }
+
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult MenuWidget() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);
+        public virtual System.Web.Mvc.ActionResult MenuWidget()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.MenuWidget);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult SetUnits() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.SetUnits);
+        public virtual System.Web.Mvc.ActionResult SetUnits()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SetUnits);
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public MainController Actions { get { return Mvc.Main; } }
+        public MainController Actions { get { return MVC.Main; } }
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Area = "";
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Name = "Main";
+        [GeneratedCode("T4MVC", "2.0")]
+        public const string NameConst = "Main";
 
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ActionNamesClass ActionNames { get { return s_actions; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionNamesClass {
+        public class ActionNamesClass
+        {
             public readonly string MenuWidget = "MenuWidget";
             public readonly string SuggestionsMenuWidget = "SuggestionsMenuWidget";
             public readonly string Index = "Index";
             public readonly string SetUnits = "SetUnits";
         }
 
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionNameConstants
+        {
+            public const string MenuWidget = "MenuWidget";
+            public const string SuggestionsMenuWidget = "SuggestionsMenuWidget";
+            public const string Index = "Index";
+            public const string SetUnits = "SetUnits";
+        }
 
-        static readonly ViewNames s_views = new ViewNames();
+
+        static readonly ActionParamsClass_MenuWidget s_params_MenuWidget = new ActionParamsClass_MenuWidget();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ViewNames Views { get { return s_views; } }
+        public ActionParamsClass_MenuWidget MenuWidgetParams { get { return s_params_MenuWidget; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ViewNames {
+        public class ActionParamsClass_MenuWidget
+        {
+            public readonly string isSelected = "isSelected";
+        }
+        static readonly ActionParamsClass_SetUnits s_params_SetUnits = new ActionParamsClass_SetUnits();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_SetUnits SetUnitsParams { get { return s_params_SetUnits; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_SetUnits
+        {
+            public readonly string units = "units";
+            public readonly string returnUrl = "returnUrl";
+        }
+        static readonly ViewsClass s_views = new ViewsClass();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ViewsClass Views { get { return s_views; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ViewsClass
+        {
+            static readonly _ViewNamesClass s_ViewNames = new _ViewNamesClass();
+            public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
+            public class _ViewNamesClass
+            {
+                public readonly string Index = "Index";
+                public readonly string MenuWidget = "MenuWidget";
+                public readonly string SuggestionsMenuWidget = "SuggestionsMenuWidget";
+            }
             public readonly string Index = "~/Views/Main/Index.cshtml";
             public readonly string MenuWidget = "~/Views/Main/MenuWidget.cshtml";
             public readonly string SuggestionsMenuWidget = "~/Views/Main/SuggestionsMenuWidget.cshtml";
@@ -76,29 +126,46 @@ namespace TMD.Controllers {
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public class T4MVC_MainController: TMD.Controllers.MainController {
+    public partial class T4MVC_MainController : TMD.Controllers.MainController
+    {
         public T4MVC_MainController() : base(Dummy.Instance) { }
 
-        public override System.Web.Mvc.ActionResult MenuWidget(bool isSelected) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.MenuWidget);
-            callInfo.RouteValueDictionary.Add("isSelected", isSelected);
+        partial void MenuWidgetOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, bool isSelected);
+
+        public override System.Web.Mvc.ActionResult MenuWidget(bool isSelected)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.MenuWidget);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "isSelected", isSelected);
+            MenuWidgetOverride(callInfo, isSelected);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult SuggestionsMenuWidget() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SuggestionsMenuWidget);
+        partial void SuggestionsMenuWidgetOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult SuggestionsMenuWidget()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SuggestionsMenuWidget);
+            SuggestionsMenuWidgetOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Index() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Index);
+        partial void IndexOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult Index()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Index);
+            IndexOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult SetUnits(TMD.Model.Units units, string returnUrl) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.SetUnits);
-            callInfo.RouteValueDictionary.Add("units", units);
-            callInfo.RouteValueDictionary.Add("returnUrl", returnUrl);
+        partial void SetUnitsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.Units units, string returnUrl);
+
+        public override System.Web.Mvc.ActionResult SetUnits(TMD.Model.Units units, string returnUrl)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SetUnits);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "units", units);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "returnUrl", returnUrl);
+            SetUnitsOverride(callInfo, units, returnUrl);
             return callInfo;
         }
 

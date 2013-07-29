@@ -4,9 +4,9 @@
 @section Steps {
     <ol> 
         @if (!Model.HasValue) {
-            <li><strong>> @Html.ActionLink("Start", Mvc.Import.New()) <</strong></li>
+            <li><strong>> @Html.ActionLink("Start", MVC.Import.New()) <</strong></li>
         } else {
-            <li><strong>> @Html.ActionLink("Start", Mvc.Import.Start(Model.Value)) <</strong></li>
+            <li><strong>> @Html.ActionLink("Start", MVC.Import.Start(Model.Value)) <</strong></li>
         }
         <li>Enter trip</li>
         <li>Enter sites</li>
@@ -20,7 +20,7 @@
 }
 
 @if (!Model.HasValue) { 
-    using (Html.BeginForm(Mvc.Import.StartNew(), FormMethod.Post, new { @class = "form" })) {
+    using (Html.BeginForm(MVC.Import.StartNew(), FormMethod.Post, new { @class = "form" })) {
         @Html.Partial("StartSteps")
         <div class="buttonrow">
             @Html.SubmitButton("Continue")
@@ -28,7 +28,7 @@
     }
 }
 else {
-    using (Html.BeginForm(Mvc.Import.Trip(Model.Value), FormMethod.Get, new { @class = "form" })) {
+    using (Html.BeginForm(MVC.Import.Trip(Model.Value), FormMethod.Get, new { @class = "form" })) {
         @Html.Partial("StartSteps")
         <div class="buttonrow">
             @Html.SubmitButton("Continue")

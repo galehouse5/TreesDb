@@ -22,7 +22,8 @@ using System.Web.Routing;
 using T4MVC;
 
 [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-public static class Mvc {
+public static class MVC
+{
     public static TMD.Controllers.AccountController Account = new TMD.Controllers.T4MVC_AccountController();
     public static TMD.Controllers.BrowseController Browse = new TMD.Controllers.T4MVC_BrowseController();
     public static TMD.Controllers.ErrorController Error = new TMD.Controllers.T4MVC_ErrorController();
@@ -35,268 +36,56 @@ public static class Mvc {
     public static T4MVC.SharedController Shared = new T4MVC.SharedController();
 }
 
-namespace T4MVC {
+namespace T4MVC
+{
 }
 
-namespace System.Web.Mvc {
+namespace T4MVC
+{
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public static class T4Extensions {
-        public static MvcHtmlString ActionLink(this HtmlHelper htmlHelper, string linkText, ActionResult result) {
-            return htmlHelper.RouteLink(linkText, result.GetRouteValueDictionary());
-        }
-
-        public static MvcHtmlString ActionLink(this HtmlHelper htmlHelper, string linkText, ActionResult result, object htmlAttributes) {
-            return ActionLink(htmlHelper, linkText, result, new RouteValueDictionary(htmlAttributes));
-        }
-
-        public static MvcHtmlString ActionLink(this HtmlHelper htmlHelper, string linkText, ActionResult result, IDictionary<string, object> htmlAttributes) {
-            return htmlHelper.RouteLink(linkText, result.GetRouteValueDictionary(), htmlAttributes);
-        }
-
-        public static MvcForm BeginForm(this HtmlHelper htmlHelper, ActionResult result) {
-            return htmlHelper.BeginForm(result, FormMethod.Post);
-        }
-
-        public static MvcForm BeginForm(this HtmlHelper htmlHelper, ActionResult result, FormMethod formMethod) {
-            return htmlHelper.BeginForm(result, formMethod, null);
-        }
-
-        public static MvcForm BeginForm(this HtmlHelper htmlHelper, ActionResult result, FormMethod formMethod, object htmlAttributes) {
-            return BeginForm(htmlHelper, result, formMethod, new RouteValueDictionary(htmlAttributes));
-        }
-
-        public static MvcForm BeginForm(this HtmlHelper htmlHelper, ActionResult result, FormMethod formMethod, IDictionary<string, object> htmlAttributes) {
-            var callInfo = result.GetT4MVCResult();
-            return htmlHelper.BeginForm(callInfo.Action, callInfo.Controller, callInfo.RouteValueDictionary, formMethod, htmlAttributes);
-        }
-
-        public static void RenderAction(this HtmlHelper htmlHelper, ActionResult result) {
-            var callInfo = result.GetT4MVCResult();
-            htmlHelper.RenderAction(callInfo.Action, callInfo.Controller, callInfo.RouteValueDictionary);
-        }
-
-        public static MvcHtmlString Action(this HtmlHelper htmlHelper, ActionResult result) {
-            var callInfo = result.GetT4MVCResult();
-            return htmlHelper.Action(callInfo.Action, callInfo.Controller, callInfo.RouteValueDictionary);
-        }
-        public static string Action(this UrlHelper urlHelper, ActionResult result) {
-            return urlHelper.RouteUrl(result.GetRouteValueDictionary());
-        }
-
-        public static string ActionAbsolute(this UrlHelper urlHelper, ActionResult result) {
-            return string.Format("{0}{1}",urlHelper.RequestContext.HttpContext.Request.Url.GetLeftPart(UriPartial.Authority),
-                urlHelper.RouteUrl(result.GetRouteValueDictionary()));
-        }
-
-        public static MvcHtmlString ActionLink(this AjaxHelper ajaxHelper, string linkText, ActionResult result, AjaxOptions ajaxOptions) {
-            return ajaxHelper.RouteLink(linkText, result.GetRouteValueDictionary(), ajaxOptions);
-        }
-
-        public static MvcHtmlString ActionLink(this AjaxHelper ajaxHelper, string linkText, ActionResult result, AjaxOptions ajaxOptions, object htmlAttributes) {
-            return ajaxHelper.RouteLink(linkText, result.GetRouteValueDictionary(), ajaxOptions, new RouteValueDictionary(htmlAttributes));
-        }
-
-        public static MvcHtmlString ActionLink(this AjaxHelper ajaxHelper, string linkText, ActionResult result, AjaxOptions ajaxOptions, IDictionary<string, object> htmlAttributes) {
-            return ajaxHelper.RouteLink(linkText, result.GetRouteValueDictionary(), ajaxOptions, htmlAttributes);
-        }
-
-        public static MvcForm BeginForm(this AjaxHelper ajaxHelper, ActionResult result, AjaxOptions ajaxOptions) {
-            return ajaxHelper.BeginForm(result, ajaxOptions, null);
-        }
-
-        public static MvcForm BeginForm(this AjaxHelper ajaxHelper, ActionResult result, AjaxOptions ajaxOptions, object htmlAttributes) {
-            return BeginForm(ajaxHelper, result, ajaxOptions, new RouteValueDictionary(htmlAttributes));
-        }
-
-        public static MvcForm BeginForm(this AjaxHelper ajaxHelper, ActionResult result, AjaxOptions ajaxOptions, IDictionary<string, object> htmlAttributes) {
-            var callInfo = result.GetT4MVCResult();
-            return ajaxHelper.BeginForm(callInfo.Action, callInfo.Controller, callInfo.RouteValueDictionary, ajaxOptions, htmlAttributes);
-        }
-
-        public static Route MapRoute(this RouteCollection routes, string name, string url, ActionResult result) {
-            return MapRoute(routes, name, url, result, null /*namespaces*/);
-        }
-
-        public static Route MapRoute(this RouteCollection routes, string name, string url, ActionResult result, object defaults) {
-            return MapRoute(routes, name, url, result, defaults, null /*constraints*/, null /*namespaces*/);
-        }
-
-        public static Route MapRoute(this RouteCollection routes, string name, string url, ActionResult result, string[] namespaces) {
-            return MapRoute(routes, name, url, result, null /*defaults*/, namespaces);
-        }
-
-        public static Route MapRoute(this RouteCollection routes, string name, string url, ActionResult result, object defaults, object constraints) {
-            return MapRoute(routes, name, url, result, defaults, constraints, null /*namespaces*/);
-        }
-
-        public static Route MapRoute(this RouteCollection routes, string name, string url, ActionResult result, object defaults, string[] namespaces) {
-            return MapRoute(routes, name, url, result, defaults, null /*constraints*/, namespaces);
-        }
-
-        public static Route MapRoute(this RouteCollection routes, string name, string url, ActionResult result, object defaults, object constraints, string[] namespaces) {
-            // Create and add the route
-            var route = CreateRoute(url, result, defaults, constraints, namespaces);
-            routes.Add(name, route);
-            return route;
-        }
-
-        // Note: can't name the AreaRegistrationContext methods 'MapRoute', as that conflicts with the existing methods
-        public static Route MapRouteArea(this AreaRegistrationContext context, string name, string url, ActionResult result) {
-            return MapRouteArea(context, name, url, result, null /*namespaces*/);
-        }
-
-        public static Route MapRouteArea(this AreaRegistrationContext context, string name, string url, ActionResult result, object defaults) {
-            return MapRouteArea(context, name, url, result, defaults, null /*constraints*/, null /*namespaces*/);
-        }
-
-        public static Route MapRouteArea(this AreaRegistrationContext context, string name, string url, ActionResult result, string[] namespaces) {
-            return MapRouteArea(context, name, url, result, null /*defaults*/, namespaces);
-        }
-
-        public static Route MapRouteArea(this AreaRegistrationContext context, string name, string url, ActionResult result, object defaults, object constraints) {
-            return MapRouteArea(context, name, url, result, defaults, constraints, null /*namespaces*/);
-        }
-
-        public static Route MapRouteArea(this AreaRegistrationContext context, string name, string url, ActionResult result, object defaults, string[] namespaces) {
-            return MapRouteArea(context, name, url, result, defaults, null /*constraints*/, namespaces);
-        }
-
-        public static Route MapRouteArea(this AreaRegistrationContext context, string name, string url, ActionResult result, object defaults, object constraints, string[] namespaces) {
-            // Create and add the route
-            if ((namespaces == null) && (context.Namespaces != null)) {
-                 namespaces = context.Namespaces.ToArray();
-            }
-            var route = CreateRoute(url, result, defaults, constraints, namespaces);
-            context.Routes.Add(name, route);
-            route.DataTokens["area"] = context.AreaName;
-            bool useNamespaceFallback = (namespaces == null) || (namespaces.Length == 0);
-            route.DataTokens["UseNamespaceFallback"] = useNamespaceFallback;
-            return route;
-        }
-
-        private static Route CreateRoute(string url, ActionResult result, object defaults, object constraints, string[] namespaces) {
-            // Start by adding the default values from the anonymous object (if any)
-            var routeValues = new RouteValueDictionary(defaults);
-
-            // Then add the Controller/Action names and the parameters from the call
-            foreach (var pair in result.GetRouteValueDictionary()) {
-                routeValues.Add(pair.Key, pair.Value);
-            }
-
-            var routeConstraints = new RouteValueDictionary(constraints);
-
-            // Create and add the route
-            var route = new Route(url, routeValues, routeConstraints, new MvcRouteHandler());
-
-            route.DataTokens = new RouteValueDictionary();
-
-            if (namespaces != null && namespaces.Length > 0) {
-                route.DataTokens["Namespaces"] = namespaces;
-            }
-
-            return route;
-        }
-
-        public static IT4MVCActionResult GetT4MVCResult(this ActionResult result) {
-            var t4MVCResult = result as IT4MVCActionResult;
-            if (t4MVCResult == null) {
-                throw new InvalidOperationException("T4MVC was called incorrectly. You may need to force it to regenerate by right clicking on T4MVC.tt and choosing Run Custom Tool");
-            }
-            return t4MVCResult;
-        }
-
-        public static RouteValueDictionary GetRouteValueDictionary(this ActionResult result) {
-            return result.GetT4MVCResult().RouteValueDictionary;
-        }
-
-        public static ActionResult AddRouteValues(this ActionResult result, object routeValues) {
-            return result.AddRouteValues(new RouteValueDictionary(routeValues));
-        }
-
-        public static ActionResult AddRouteValues(this ActionResult result, RouteValueDictionary routeValues) {
-            RouteValueDictionary currentRouteValues = result.GetRouteValueDictionary();
-
-            // Add all the extra values
-            foreach (var pair in routeValues) {
-                currentRouteValues.Add(pair.Key, pair.Value);
-            }
-
-            return result;
-        }
-
-        public static ActionResult AddRouteValues(this ActionResult result, System.Collections.Specialized.NameValueCollection nameValueCollection) {
-            // Copy all the values from the NameValueCollection into the route dictionary
-            nameValueCollection.CopyTo(result.GetRouteValueDictionary());
-            return result;
-        }
-
-        public static ActionResult AddRouteValue(this ActionResult result, string name, object value) {
-            RouteValueDictionary routeValues = result.GetRouteValueDictionary();
-            routeValues.Add(name, value);
-            return result;
-        }
-        
-        public static void InitMVCT4Result(this IT4MVCActionResult result, string area, string controller, string action) {
-            result.Controller = controller;
-            result.Action = action;
-            result.RouteValueDictionary = new RouteValueDictionary();
-             
-            result.RouteValueDictionary.Add("Controller", controller);
-            result.RouteValueDictionary.Add("Action", action);
-        }
-
-        public static bool FileExists(string virtualPath) {
-            if (!HostingEnvironment.IsHosted) return false;
-            string filePath = HostingEnvironment.MapPath(virtualPath);
-            return System.IO.File.Exists(filePath);
-        }
-
-        static DateTime CenturyBegin=new DateTime(2001,1,1);
-        public static string TimestampString(string virtualPath) {
-            if (!HostingEnvironment.IsHosted) return string.Empty;
-            string filePath = HostingEnvironment.MapPath(virtualPath);
-            return Convert.ToString((System.IO.File.GetLastWriteTimeUtc(filePath).Ticks-CenturyBegin.Ticks)/1000000000,16);            
-        }
+    public class Dummy
+    {
+        private Dummy() { }
+        public static Dummy Instance = new Dummy();
     }
 }
 
-   
-[GeneratedCode("T4MVC", "2.0")]   
-public interface IT4MVCActionResult {   
-    string Action { get; set; }   
-    string Controller { get; set; }   
-    RouteValueDictionary RouteValueDictionary { get; set; }   
-}   
-  
-
 [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-public class T4MVC_ActionResult : System.Web.Mvc.ActionResult, IT4MVCActionResult {
-    public T4MVC_ActionResult(string area, string controller, string action): base()  {
-        this.InitMVCT4Result(area, controller, action);
+internal partial class T4MVC_System_Web_Mvc_ActionResult : System.Web.Mvc.ActionResult, IT4MVCActionResult
+{
+    public T4MVC_System_Web_Mvc_ActionResult(string area, string controller, string action, string protocol = null): base()
+    {
+        this.InitMVCT4Result(area, controller, action, protocol);
     }
      
     public override void ExecuteResult(System.Web.Mvc.ControllerContext context) { }
     
     public string Controller { get; set; }
     public string Action { get; set; }
+    public string Protocol { get; set; }
     public RouteValueDictionary RouteValueDictionary { get; set; }
 }
 
 
 
-namespace Links {
+namespace Links
+{
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
     public static class css {
         private const string URLPATH = "~/css";
         public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
         public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
         public static readonly string Css_chirp_config = Url("Css.chirp.config");
-        public static readonly string LoginOnly_css = Url("LoginOnly.css");
+        public static readonly string LoginOnly_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/LoginOnly.min.css") ? Url("LoginOnly.min.css") : Url("LoginOnly.css");
+             
         public static readonly string LoginOnly_min_css = Url("LoginOnly.min.css");
-        public static readonly string Shared_css = Url("Shared.css");
+        public static readonly string Shared_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Shared.min.css") ? Url("Shared.min.css") : Url("Shared.css");
+             
         public static readonly string Shared_min_css = Url("Shared.min.css");
-        public static readonly string custom_css = Url("custom.css");
-        public static readonly string Import_css = Url("Import.css");
+        public static readonly string custom_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/custom.min.css") ? Url("custom.min.css") : Url("custom.css");
+             
+        public static readonly string Import_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Import.min.css") ? Url("Import.min.css") : Url("Import.css");
+             
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class jquery {
             private const string URLPATH = "~/css/jquery";
@@ -320,21 +109,29 @@ namespace Links {
                 public static readonly string ui_icons_ffffff_256x240_png = Url("ui-icons_ffffff_256x240.png");
             }
         
-            public static readonly string jquery_ui_1_8_7_custom_css = Url("jquery-ui-1.8.7.custom.css");
+            public static readonly string jquery_ui_1_8_7_custom_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery-ui-1.8.7.custom.min.css") ? Url("jquery-ui-1.8.7.custom.min.css") : Url("jquery-ui-1.8.7.custom.css");
+                 
         }
     
-        public static readonly string login_css = Url("login.css");
+        public static readonly string login_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/login.min.css") ? Url("login.min.css") : Url("login.css");
+             
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class plugin {
             private const string URLPATH = "~/css/plugin";
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string dataTables_css = Url("dataTables.css");
-            public static readonly string facebox_css = Url("facebox.css");
-            public static readonly string jquery_placeholder_css = Url("jquery.placeholder.css");
-            public static readonly string jquery_visualize_css = Url("jquery.visualize.css");
-            public static readonly string tipsy_css = Url("tipsy.css");
-            public static readonly string uniform_default_css = Url("uniform.default.css");
+            public static readonly string dataTables_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/dataTables.min.css") ? Url("dataTables.min.css") : Url("dataTables.css");
+                 
+            public static readonly string facebox_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/facebox.min.css") ? Url("facebox.min.css") : Url("facebox.css");
+                 
+            public static readonly string jquery_placeholder_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.placeholder.min.css") ? Url("jquery.placeholder.min.css") : Url("jquery.placeholder.css");
+                 
+            public static readonly string jquery_visualize_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.visualize.min.css") ? Url("jquery.visualize.min.css") : Url("jquery.visualize.css");
+                 
+            public static readonly string tipsy_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/tipsy.min.css") ? Url("tipsy.min.css") : Url("tipsy.css");
+                 
+            public static readonly string uniform_default_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/uniform.default.min.css") ? Url("uniform.default.min.css") : Url("uniform.default.css");
+                 
         }
     
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -342,26 +139,119 @@ namespace Links {
             private const string URLPATH = "~/css/screen";
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string buttons_css = Url("buttons.css");
-            public static readonly string layout_css = Url("layout.css");
-            public static readonly string mega_css = Url("mega.css");
-            public static readonly string reset_css = Url("reset.css");
-            public static readonly string text_css = Url("text.css");
-            public static readonly string xGrid_css = Url("xGrid.css");
+            public static readonly string buttons_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/buttons.min.css") ? Url("buttons.min.css") : Url("buttons.css");
+                 
+            public static readonly string layout_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/layout.min.css") ? Url("layout.min.css") : Url("layout.css");
+                 
+            public static readonly string mega_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/mega.min.css") ? Url("mega.min.css") : Url("mega.css");
+                 
+            public static readonly string reset_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/reset.min.css") ? Url("reset.min.css") : Url("reset.css");
+                 
+            public static readonly string text_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/text.min.css") ? Url("text.min.css") : Url("text.css");
+                 
+            public static readonly string xGrid_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/xGrid.min.css") ? Url("xGrid.min.css") : Url("xGrid.css");
+                 
         }
     
-        public static readonly string screen_css = Url("screen.css");
+        public static readonly string screen_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/screen.min.css") ? Url("screen.min.css") : Url("screen.css");
+             
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class Theme {
             private const string URLPATH = "~/css/Theme";
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string Login_css = Url("Login.css");
-            public static readonly string Plugin_css = Url("Plugin.css");
-            public static readonly string Screen_css = Url("Screen.css");
-            public static readonly string Shared_css = Url("Shared.css");
+            public static readonly string Login_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Login.min.css") ? Url("Login.min.css") : Url("Login.css");
+                 
+            public static readonly string Plugin_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Plugin.min.css") ? Url("Plugin.min.css") : Url("Plugin.css");
+                 
+            public static readonly string Screen_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Screen.min.css") ? Url("Screen.min.css") : Url("Screen.css");
+                 
+            public static readonly string Shared_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Shared.min.css") ? Url("Shared.min.css") : Url("Shared.css");
+                 
         }
     
+    }
+
+    [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+    public static class js {
+        private const string URLPATH = "~/js";
+        public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+        public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class Import {
+            private const string URLPATH = "~/js/Import";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string Sites_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Sites.min.js") ? Url("Sites.min.js") : Url("Sites.js");
+            public static readonly string Trees_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Trees.min.js") ? Url("Trees.min.js") : Url("Trees.js");
+        }
+    
+        public static readonly string Javascript_chirp_config = Url("Javascript.chirp.config");
+        public static readonly string Import_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Import.min.js") ? Url("Import.min.js") : Url("Import.js");
+        public static readonly string Import_min_js = Url("Import.min.js");
+        public static readonly string Map_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Map.min.js") ? Url("Map.min.js") : Url("Map.js");
+        public static readonly string Map_min_js = Url("Map.min.js");
+        public static readonly string Plugins_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Plugins.min.js") ? Url("Plugins.min.js") : Url("Plugins.js");
+        public static readonly string Plugins_min_js = Url("Plugins.min.js");
+        public static readonly string Shared_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Shared.min.js") ? Url("Shared.min.js") : Url("Shared.js");
+        public static readonly string Shared_min_js = Url("Shared.min.js");
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class jquery {
+            private const string URLPATH = "~/js/jquery";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string facebox_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/facebox.min.js") ? Url("facebox.min.js") : Url("facebox.js");
+            public static readonly string jquery_1_4_4_min_js = Url("jquery-1.4.4.min.js");
+            public static readonly string jquery_ui_1_8_7_custom_min_js = Url("jquery-ui-1.8.7.custom.min.js");
+            public static readonly string jquery_dataTables_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.dataTables.min.js") ? Url("jquery.dataTables.min.js") : Url("jquery.dataTables.js");
+            public static readonly string jquery_placeholder_1_1_9_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.placeholder-1.1.9.min.js") ? Url("jquery.placeholder-1.1.9.min.js") : Url("jquery.placeholder-1.1.9.js");
+            public static readonly string jquery_quicksearch_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.quicksearch.min.js") ? Url("jquery.quicksearch.min.js") : Url("jquery.quicksearch.js");
+            public static readonly string jquery_tablesorter_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.tablesorter.min.js") ? Url("jquery.tablesorter.min.js") : Url("jquery.tablesorter.js");
+            public static readonly string jquery_tipsy_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.tipsy.min.js") ? Url("jquery.tipsy.min.js") : Url("jquery.tipsy.js");
+            public static readonly string jquery_uniform_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.uniform.min.js") ? Url("jquery.uniform.min.js") : Url("jquery.uniform.js");
+            public static readonly string jquery_visualize_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.visualize.min.js") ? Url("jquery.visualize.min.js") : Url("jquery.visualize.js");
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class Map {
+            private const string URLPATH = "~/js/Map";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string CoordinatePicker_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/CoordinatePicker.min.js") ? Url("CoordinatePicker.min.js") : Url("CoordinatePicker.js");
+            public static readonly string Coordinates_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Coordinates.min.js") ? Url("Coordinates.min.js") : Url("Coordinates.js");
+            public static readonly string Extensions_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Extensions.min.js") ? Url("Extensions.min.js") : Url("Extensions.js");
+            public static readonly string Widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Widgets.min.js") ? Url("Widgets.min.js") : Url("Widgets.js");
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class misc {
+            private const string URLPATH = "~/js/misc";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string excanvas_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/excanvas.min.js") ? Url("excanvas.min.js") : Url("excanvas.js");
+            public static readonly string upclick_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/upclick.min.js") ? Url("upclick.min.js") : Url("upclick.js");
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class Shared {
+            private const string URLPATH = "~/js/Shared";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string Extensions_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Extensions.min.js") ? Url("Extensions.min.js") : Url("Extensions.js");
+            public static readonly string Widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Widgets.min.js") ? Url("Widgets.min.js") : Url("Widgets.js");
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class slate {
+            private const string URLPATH = "~/js/slate";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string slate_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/slate.min.js") ? Url("slate.min.js") : Url("slate.js");
+            public static readonly string slate_message_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/slate.message.min.js") ? Url("slate.message.min.js") : Url("slate.message.js");
+            public static readonly string slate_portlet_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/slate.portlet.min.js") ? Url("slate.portlet.min.js") : Url("slate.portlet.js");
+        }
+    
+        public static readonly string widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/widgets.min.js") ? Url("widgets.min.js") : Url("widgets.js");
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -432,116 +322,17 @@ namespace Links {
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public static class js {
-        private const string URLPATH = "~/js";
-        public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
-        public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+    public static partial class Bundles
+    {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public static class Import {
-            private const string URLPATH = "~/js/Import";
-            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
-            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string Sites_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Sites.min.js") ? Url("Sites.min.js") : Url("Sites.js");
-                          
-            public static readonly string Trees_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Trees.min.js") ? Url("Trees.min.js") : Url("Trees.js");
-                          
-        }
-    
-        public static readonly string Javascript_chirp_config = Url("Javascript.chirp.config");
-        public static readonly string Import_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Import.min.js") ? Url("Import.min.js") : Url("Import.js");
-                      
-        public static readonly string Import_min_js = Url("Import.min.js");
-        public static readonly string Map_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Map.min.js") ? Url("Map.min.js") : Url("Map.js");
-                      
-        public static readonly string Map_min_js = Url("Map.min.js");
-        public static readonly string Plugins_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Plugins.min.js") ? Url("Plugins.min.js") : Url("Plugins.js");
-                      
-        public static readonly string Plugins_min_js = Url("Plugins.min.js");
-        public static readonly string Shared_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Shared.min.js") ? Url("Shared.min.js") : Url("Shared.js");
-                      
-        public static readonly string Shared_min_js = Url("Shared.min.js");
+        public static partial class Scripts {}
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public static class jquery {
-            private const string URLPATH = "~/js/jquery";
-            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
-            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string facebox_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/facebox.min.js") ? Url("facebox.min.js") : Url("facebox.js");
-                          
-            public static readonly string jquery_1_4_4_min_js = Url("jquery-1.4.4.min.js");
-            public static readonly string jquery_ui_1_8_7_custom_min_js = Url("jquery-ui-1.8.7.custom.min.js");
-            public static readonly string jquery_dataTables_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.dataTables.min.js") ? Url("jquery.dataTables.min.js") : Url("jquery.dataTables.js");
-                          
-            public static readonly string jquery_placeholder_1_1_9_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.placeholder-1.1.9.min.js") ? Url("jquery.placeholder-1.1.9.min.js") : Url("jquery.placeholder-1.1.9.js");
-                          
-            public static readonly string jquery_quicksearch_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.quicksearch.min.js") ? Url("jquery.quicksearch.min.js") : Url("jquery.quicksearch.js");
-                          
-            public static readonly string jquery_tablesorter_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.tablesorter.min.js") ? Url("jquery.tablesorter.min.js") : Url("jquery.tablesorter.js");
-                          
-            public static readonly string jquery_tipsy_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.tipsy.min.js") ? Url("jquery.tipsy.min.js") : Url("jquery.tipsy.js");
-                          
-            public static readonly string jquery_uniform_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.uniform.min.js") ? Url("jquery.uniform.min.js") : Url("jquery.uniform.js");
-                          
-            public static readonly string jquery_visualize_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/jquery.visualize.min.js") ? Url("jquery.visualize.min.js") : Url("jquery.visualize.js");
-                          
-        }
-    
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public static class Map {
-            private const string URLPATH = "~/js/Map";
-            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
-            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string CoordinatePicker_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/CoordinatePicker.min.js") ? Url("CoordinatePicker.min.js") : Url("CoordinatePicker.js");
-                          
-            public static readonly string Coordinates_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Coordinates.min.js") ? Url("Coordinates.min.js") : Url("Coordinates.js");
-                          
-            public static readonly string Extensions_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Extensions.min.js") ? Url("Extensions.min.js") : Url("Extensions.js");
-                          
-            public static readonly string Widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Widgets.min.js") ? Url("Widgets.min.js") : Url("Widgets.js");
-                          
-        }
-    
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public static class misc {
-            private const string URLPATH = "~/js/misc";
-            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
-            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string excanvas_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/excanvas.min.js") ? Url("excanvas.min.js") : Url("excanvas.js");
-                          
-            public static readonly string upclick_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/upclick.min.js") ? Url("upclick.min.js") : Url("upclick.js");
-                          
-        }
-    
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public static class Shared {
-            private const string URLPATH = "~/js/Shared";
-            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
-            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string Extensions_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Extensions.min.js") ? Url("Extensions.min.js") : Url("Extensions.js");
-                          
-            public static readonly string Widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Widgets.min.js") ? Url("Widgets.min.js") : Url("Widgets.js");
-                          
-        }
-    
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public static class slate {
-            private const string URLPATH = "~/js/slate";
-            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
-            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string slate_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/slate.min.js") ? Url("slate.min.js") : Url("slate.js");
-                          
-            public static readonly string slate_message_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/slate.message.min.js") ? Url("slate.message.min.js") : Url("slate.message.js");
-                          
-            public static readonly string slate_portlet_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/slate.portlet.min.js") ? Url("slate.portlet.min.js") : Url("slate.portlet.js");
-                          
-        }
-    
-        public static readonly string widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/widgets.min.js") ? Url("widgets.min.js") : Url("widgets.js");
-                      
+        public static partial class Styles {}
     }
-
 }
 
-static class T4MVCHelpers {
+[GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+internal static class T4MVCHelpers {
     // You can change the ProcessVirtualPath method to modify the path that gets returned to the client.
     // e.g. you can prepend a domain, or append a query string:
     //      return "http://localhost" + path + "?foo=bar";
@@ -556,6 +347,8 @@ static class T4MVCHelpers {
     // Calling ProcessVirtualPath through delegate to allow it to be replaced for unit testing
     public static Func<string, string> ProcessVirtualPath = ProcessVirtualPathDefault;
 
+    // Calling T4Extension.TimestampString through delegate to allow it to be replaced for unit testing and other purposes
+    public static Func<string, string> TimestampString = System.Web.Mvc.T4Extensions.TimestampString;
 
     // Logic to determine if the app is running in production or dev environment
     public static bool IsProduction() { 
@@ -566,15 +359,6 @@ static class T4MVCHelpers {
 
 
 
-namespace T4MVC {
-    [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public class Dummy {
-        private Dummy() { }
-        public static Dummy Instance = new Dummy();
-    }
-}
-
-	
 
 #endregion T4MVC
 #pragma warning restore 1591

@@ -20,8 +20,10 @@ using System.Web.Mvc.Ajax;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 using T4MVC;
-namespace TMD.Controllers {
-    public partial class AccountController {
+namespace TMD.Controllers
+{
+    public partial class AccountController
+    {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public AccountController() { }
 
@@ -29,39 +31,53 @@ namespace TMD.Controllers {
         protected AccountController(Dummy d) { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        protected RedirectToRouteResult RedirectToAction(ActionResult result) {
+        protected RedirectToRouteResult RedirectToAction(ActionResult result)
+        {
             var callInfo = result.GetT4MVCResult();
             return RedirectToRoute(callInfo.RouteValueDictionary);
         }
 
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        protected RedirectToRouteResult RedirectToActionPermanent(ActionResult result)
+        {
+            var callInfo = result.GetT4MVCResult();
+            return RedirectToRoutePermanent(callInfo.RouteValueDictionary);
+        }
+
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult Logon() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.Logon);
+        public virtual System.Web.Mvc.ActionResult Logon()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Logon);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult CompleteRegistration() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.CompleteRegistration);
+        public virtual System.Web.Mvc.ActionResult CompleteRegistration()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.CompleteRegistration);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult CompletePasswordAssistance() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.CompletePasswordAssistance);
+        public virtual System.Web.Mvc.ActionResult CompletePasswordAssistance()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.CompletePasswordAssistance);
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public AccountController Actions { get { return Mvc.Account; } }
+        public AccountController Actions { get { return MVC.Account; } }
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Area = "";
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Name = "Account";
+        [GeneratedCode("T4MVC", "2.0")]
+        public const string NameConst = "Account";
 
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ActionNamesClass ActionNames { get { return s_actions; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionNamesClass {
+        public class ActionNamesClass
+        {
             public readonly string AccountWidget = "AccountWidget";
             public readonly string LogOn = "LogOn";
             public readonly string Logon = "Logon";
@@ -73,12 +89,97 @@ namespace TMD.Controllers {
             public readonly string Edit = "Edit";
         }
 
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionNameConstants
+        {
+            public const string AccountWidget = "AccountWidget";
+            public const string LogOn = "LogOn";
+            public const string Logon = "Logon";
+            public const string Logout = "Logout";
+            public const string Register = "Register";
+            public const string CompleteRegistration = "CompleteRegistration";
+            public const string PasswordAssistance = "PasswordAssistance";
+            public const string CompletePasswordAssistance = "CompletePasswordAssistance";
+            public const string Edit = "Edit";
+        }
 
-        static readonly ViewNames s_views = new ViewNames();
+
+        static readonly ActionParamsClass_Logon s_params_Logon = new ActionParamsClass_Logon();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ViewNames Views { get { return s_views; } }
+        public ActionParamsClass_Logon LogonParams { get { return s_params_Logon; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ViewNames {
+        public class ActionParamsClass_Logon
+        {
+            public readonly string model = "model";
+            public readonly string captchaValid = "captchaValid";
+        }
+        static readonly ActionParamsClass_Register s_params_Register = new ActionParamsClass_Register();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Register RegisterParams { get { return s_params_Register; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Register
+        {
+            public readonly string uow = "uow";
+            public readonly string model = "model";
+            public readonly string captchaValid = "captchaValid";
+        }
+        static readonly ActionParamsClass_CompleteRegistration s_params_CompleteRegistration = new ActionParamsClass_CompleteRegistration();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_CompleteRegistration CompleteRegistrationParams { get { return s_params_CompleteRegistration; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_CompleteRegistration
+        {
+            public readonly string uow = "uow";
+            public readonly string token = "token";
+        }
+        static readonly ActionParamsClass_PasswordAssistance s_params_PasswordAssistance = new ActionParamsClass_PasswordAssistance();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_PasswordAssistance PasswordAssistanceParams { get { return s_params_PasswordAssistance; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_PasswordAssistance
+        {
+            public readonly string uow = "uow";
+            public readonly string model = "model";
+            public readonly string captchaValid = "captchaValid";
+        }
+        static readonly ActionParamsClass_CompletePasswordAssistance s_params_CompletePasswordAssistance = new ActionParamsClass_CompletePasswordAssistance();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_CompletePasswordAssistance CompletePasswordAssistanceParams { get { return s_params_CompletePasswordAssistance; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_CompletePasswordAssistance
+        {
+            public readonly string token = "token";
+            public readonly string uow = "uow";
+            public readonly string model = "model";
+        }
+        static readonly ActionParamsClass_Edit s_params_Edit = new ActionParamsClass_Edit();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Edit EditParams { get { return s_params_Edit; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Edit
+        {
+            public readonly string uow = "uow";
+            public readonly string model = "model";
+        }
+        static readonly ViewsClass s_views = new ViewsClass();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ViewsClass Views { get { return s_views; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ViewsClass
+        {
+            static readonly _ViewNamesClass s_ViewNames = new _ViewNamesClass();
+            public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
+            public class _ViewNamesClass
+            {
+                public readonly string _ViewStart = "_ViewStart";
+                public readonly string AccountWidget = "AccountWidget";
+                public readonly string CompletePasswordAssistance = "CompletePasswordAssistance";
+                public readonly string CompleteRegistration = "CompleteRegistration";
+                public readonly string Edit = "Edit";
+                public readonly string Logon = "Logon";
+                public readonly string PasswordAssistance = "PasswordAssistance";
+                public readonly string Register = "Register";
+            }
             public readonly string _ViewStart = "~/Views/Account/_ViewStart.cshtml";
             public readonly string AccountWidget = "~/Views/Account/AccountWidget.cshtml";
             public readonly string CompletePasswordAssistance = "~/Views/Account/CompletePasswordAssistance.cshtml";
@@ -91,87 +192,140 @@ namespace TMD.Controllers {
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public class T4MVC_AccountController: TMD.Controllers.AccountController {
+    public partial class T4MVC_AccountController : TMD.Controllers.AccountController
+    {
         public T4MVC_AccountController() : base(Dummy.Instance) { }
 
-        public override System.Web.Mvc.ActionResult AccountWidget() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.AccountWidget);
+        partial void AccountWidgetOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult AccountWidget()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AccountWidget);
+            AccountWidgetOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult LogOn() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.LogOn);
+        partial void LogOnOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult LogOn()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.LogOn);
+            LogOnOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Logon(TMD.Models.AccountLogonModel model, bool captchaValid) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Logon);
-            callInfo.RouteValueDictionary.Add("model", model);
-            callInfo.RouteValueDictionary.Add("captchaValid", captchaValid);
+        partial void LogonOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountLogonModel model, bool captchaValid);
+
+        public override System.Web.Mvc.ActionResult Logon(TMD.Models.AccountLogonModel model, bool captchaValid)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Logon);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "captchaValid", captchaValid);
+            LogonOverride(callInfo, model, captchaValid);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Logout() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Logout);
+        partial void LogoutOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult Logout()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Logout);
+            LogoutOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Register() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Register);
+        partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult Register()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Register);
+            RegisterOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Register(TMD.Model.IUnitOfWork uow, TMD.Models.AccountRegistrationModel model, bool captchaValid) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Register);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("model", model);
-            callInfo.RouteValueDictionary.Add("captchaValid", captchaValid);
+        partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.AccountRegistrationModel model, bool captchaValid);
+
+        public override System.Web.Mvc.ActionResult Register(TMD.Model.IUnitOfWork uow, TMD.Models.AccountRegistrationModel model, bool captchaValid)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Register);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "captchaValid", captchaValid);
+            RegisterOverride(callInfo, uow, model, captchaValid);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult CompleteRegistration(TMD.Model.IUnitOfWork uow, string token) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.CompleteRegistration);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("token", token);
+        partial void CompleteRegistrationOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, string token);
+
+        public override System.Web.Mvc.ActionResult CompleteRegistration(TMD.Model.IUnitOfWork uow, string token)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.CompleteRegistration);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "token", token);
+            CompleteRegistrationOverride(callInfo, uow, token);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult PasswordAssistance() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.PasswordAssistance);
+        partial void PasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult PasswordAssistance()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.PasswordAssistance);
+            PasswordAssistanceOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult PasswordAssistance(TMD.Model.IUnitOfWork uow, TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.PasswordAssistance);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("model", model);
-            callInfo.RouteValueDictionary.Add("captchaValid", captchaValid);
+        partial void PasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid);
+
+        public override System.Web.Mvc.ActionResult PasswordAssistance(TMD.Model.IUnitOfWork uow, TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.PasswordAssistance);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "captchaValid", captchaValid);
+            PasswordAssistanceOverride(callInfo, uow, model, captchaValid);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult CompletePasswordAssistance(string token) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.CompletePasswordAssistance);
-            callInfo.RouteValueDictionary.Add("token", token);
+        partial void CompletePasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, string token);
+
+        public override System.Web.Mvc.ActionResult CompletePasswordAssistance(string token)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.CompletePasswordAssistance);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "token", token);
+            CompletePasswordAssistanceOverride(callInfo, token);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult CompletePasswordAssistance(TMD.Model.IUnitOfWork uow, TMD.Models.CompleteAccountPasswordAssistanceModel model, string token) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.CompletePasswordAssistance);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("model", model);
-            callInfo.RouteValueDictionary.Add("token", token);
+        partial void CompletePasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.CompleteAccountPasswordAssistanceModel model, string token);
+
+        public override System.Web.Mvc.ActionResult CompletePasswordAssistance(TMD.Model.IUnitOfWork uow, TMD.Models.CompleteAccountPasswordAssistanceModel model, string token)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.CompletePasswordAssistance);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "token", token);
+            CompletePasswordAssistanceOverride(callInfo, uow, model, token);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Edit() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Edit);
+        partial void EditOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult Edit()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Edit);
+            EditOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Edit(TMD.Model.IUnitOfWork uow, TMD.Models.AccountEditModel model) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Edit);
-            callInfo.RouteValueDictionary.Add("uow", uow);
-            callInfo.RouteValueDictionary.Add("model", model);
+        partial void EditOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.AccountEditModel model);
+
+        public override System.Web.Mvc.ActionResult Edit(TMD.Model.IUnitOfWork uow, TMD.Models.AccountEditModel model)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Edit);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
+            EditOverride(callInfo, uow, model);
             return callInfo;
         }
 

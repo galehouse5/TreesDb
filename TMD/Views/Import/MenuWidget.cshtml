@@ -1,14 +1,14 @@
 ﻿@model TMD.Models.ImportMenuWidgetModel
 <li class="@(Model.IsSelected ? "mega mega-current" : "mega")">
-    @Html.ActionLink("Import", Mvc.Import.Index(), new { @class="mega-tab hasSub" })
+    @Html.ActionLink("Import", MVC.Import.Index(), new { @class="mega-tab hasSub" })
     <div class="mega-content mega-menu">						
         <ul>
-            <li>@Html.ActionLink("New", Mvc.Import.New())</li>	
+            <li>@Html.ActionLink("New", MVC.Import.New())</li>	
             @if (Model.LatestTrip != null && !Model.LatestTrip.IsImported) {
-                <li>@Html.ActionLink("Continue", Mvc.Import.Trip(Model.LatestTrip.Id))</li>
+                <li>@Html.ActionLink("Continue", MVC.Import.Trip(Model.LatestTrip.Id))</li>
             }
             @if (Model.LatestTrip != null) {
-                <li>@Html.ActionLink("History", Mvc.Import.History())</li>
+                <li>@Html.ActionLink("History", MVC.Import.History())</li>
             }
         </ul>
     </div>

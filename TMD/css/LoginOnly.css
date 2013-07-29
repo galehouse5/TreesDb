@@ -109,7 +109,7 @@
 }
 /* /css/login.css */
 body { background: #255648; }
-#login h1#title { background-image: url(/images/Theme/title.png); width: 250px; height: 71px; }
+#login h1#title { background-image: url(../images/Theme/title.png); width: 250px; height: 71px; }
 #login-body textarea { border: inherit; }
 #login-body .required { display: none; }
 

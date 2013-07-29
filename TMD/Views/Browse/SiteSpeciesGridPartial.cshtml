@@ -3,21 +3,21 @@
     columns: builder =>
     {
     	builder
-    		.Custom("Site", species => Html.ActionLink(species.Site.Name, Mvc.Browse.SiteDetails(species.Site.Id)))
+    		.Custom("Site", species => Html.ActionLink(species.Site.Name, MVC.Browse.SiteDetails(species.Site.Id)))
     		.Options(canSort: true);
     	builder
     		.Custom("MaxHeight", species => species.MaxHeight.IsValidAndSpecified() ?
-    			Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxHeightTree.Id))
+    			Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), MVC.Browse.TreeDetails(species.MaxHeightTree.Id))
     			: MvcHtmlString.Create("-"))
     		.Options(header: "Max height", canSort: true, defaultSortAscending: false);
     	builder
     		.Custom("MaxGirth", species => species.MaxGirth.IsValidAndSpecified() ?
-    			Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), Mvc.Browse.TreeDetails(species.MaxGirthTree.Id))
+    			Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), MVC.Browse.TreeDetails(species.MaxGirthTree.Id))
     			: MvcHtmlString.Create("-"))
     		.Options(header: "Max girth", canSort: true, defaultSortAscending: false);
     	builder
     		.Custom("MaxCrownSpread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
-    			Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), Mvc.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
+    			Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), MVC.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
     			: MvcHtmlString.Create("-"))
     		.Options(header: "Max crown spread", canSort: true, defaultSortAscending: false);
     },

@@ -86,7 +86,7 @@ namespace TMD.Controllers
             var trip = Model.Imports.Trip.Create();
             Repositories.Imports.Save(trip); 
             uow.Persist();
-            return RedirectToAction(Mvc.Import.Trip(trip.Id));
+            return RedirectToAction(MVC.Import.Trip(trip.Id));
         }
 
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
@@ -120,7 +120,7 @@ namespace TMD.Controllers
             }
             Repositories.Imports.Save(trip); 
             uow.Persist();
-            return RedirectToAction(Mvc.Import.Sites(null, trip.Id));
+            return RedirectToAction(MVC.Import.Sites(null, trip.Id));
         }
 
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import), UnitOfWork]
@@ -185,7 +185,7 @@ namespace TMD.Controllers
                 (from site in trip.Sites from subsite in site.Subsites select subsite).Last().SetTripDefaults();
                 Repositories.Imports.Save(trip);  
                 uow.Persist();
-                return RedirectToAction(Mvc.Import.Trees(null, trip.Id));
+                return RedirectToAction(MVC.Import.Trees(null, trip.Id));
             }
             if (innerAction.Equals(ImportModelLevel.Trip, ImportModelAction.Add))
             {
@@ -389,7 +389,7 @@ namespace TMD.Controllers
                 (from site in trip.Sites from subsite in site.Subsites from tree in subsite.Trees select tree).Last().SetTripDefaults();
                 Repositories.Imports.Save(trip); 
                 uow.Persist();
-                return RedirectToAction(Mvc.Import.Finish(trip.Id));
+                return RedirectToAction(MVC.Import.Finish(trip.Id));
             }
             throw new NotImplementedException();
         }
@@ -416,7 +416,7 @@ namespace TMD.Controllers
                 Repositories.Imports.Import(trip);
             }
             uow.Persist();
-            return RedirectToAction(Mvc.Import.Index());
+            return RedirectToAction(MVC.Import.Index());
         }
 
         [ActionName("View"), DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]

@@ -10,7 +10,7 @@
         <h4>New import</h4>
     </div>
     <div class="portlet-content">
-        @using (Html.BeginForm(Mvc.Import.New(), FormMethod.Post, new { @class = "form" })) {
+        @using (Html.BeginForm(MVC.Import.New(), FormMethod.Post, new { @class = "form" })) {
             @Html.Partial("StartSteps")
             <div class="buttonrow">
                 @Html.SubmitButton("Start")

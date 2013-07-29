@@ -1,5 +1,5 @@
 ﻿@model TMD.Models.ImportSitesModel
-@using (Html.BeginForm(Mvc.Import.Sites(), FormMethod.Post, new { @class = "form Sites" })) {
+@using (Html.BeginForm(MVC.Import.Sites(), FormMethod.Post, new { @class = "form Sites" })) {
     for (int siteIndex = 0; siteIndex < Model.Sites.Count; siteIndex++) {
         if (Model.Sites[siteIndex].IsEditing) {
             @Html.EditorFor(m => m.Sites[siteIndex])
@@ -9,7 +9,7 @@
      }
      <div class="buttonrow">
         @Html.ImportInnerActionButton("Continue", ImportModelLevel.Trip, Model.Id, ImportModelAction.Save)
-        @Html.AnchorButton("Back", Mvc.Import.Trip(Model.Id), ButtonColor.Grey)
+        @Html.AnchorButton("Back", MVC.Import.Trip(Model.Id), ButtonColor.Grey)
         @Html.ImportInnerActionButton("Add site", ImportModelLevel.Trip, Model.Id, ImportModelAction.Add, ButtonColor.Orange)
      </div>
 }

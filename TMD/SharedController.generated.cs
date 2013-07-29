@@ -20,21 +20,35 @@ using System.Web.Mvc.Ajax;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 using T4MVC;
-namespace T4MVC {
-    public class SharedController {
+namespace T4MVC
+{
+    public class SharedController
+    {
 
-        static readonly ViewNames s_views = new ViewNames();
+        static readonly ViewsClass s_views = new ViewsClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ViewNames Views { get { return s_views; } }
+        public ViewsClass Views { get { return s_views; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ViewNames {
+        public class ViewsClass
+        {
+            static readonly _ViewNamesClass s_ViewNames = new _ViewNamesClass();
+            public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
+            public class _ViewNamesClass
+            {
+                public readonly string _Layout = "_Layout";
+                public readonly string _LoginLayout = "_LoginLayout";
+                public readonly string GoogleAnalyticsScript = "GoogleAnalyticsScript";
+                public readonly string PrettyTimeSpan = "PrettyTimeSpan";
+            }
             public readonly string _Layout = "~/Views/Shared/_Layout.cshtml";
             public readonly string _LoginLayout = "~/Views/Shared/_LoginLayout.cshtml";
             public readonly string GoogleAnalyticsScript = "~/Views/Shared/GoogleAnalyticsScript.cshtml";
             public readonly string PrettyTimeSpan = "~/Views/Shared/PrettyTimeSpan.cshtml";
-            static readonly _DisplayTemplates s_DisplayTemplates = new _DisplayTemplates();
-            public _DisplayTemplates DisplayTemplates { get { return s_DisplayTemplates; } }
-            public partial class _DisplayTemplates{
+            static readonly _DisplayTemplatesClass s_DisplayTemplates = new _DisplayTemplatesClass();
+            public _DisplayTemplatesClass DisplayTemplates { get { return s_DisplayTemplates; } }
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public partial class _DisplayTemplatesClass
+            {
                 public readonly string ConcatenatedNames = "ConcatenatedNames";
                 public readonly string Coordinates = "Coordinates";
                 public readonly string Country = "Country";
@@ -48,9 +62,11 @@ namespace T4MVC {
                 public readonly string State = "State";
                 public readonly string Volume = "Volume";
             }
-            static readonly _EditorTemplates s_EditorTemplates = new _EditorTemplates();
-            public _EditorTemplates EditorTemplates { get { return s_EditorTemplates; } }
-            public partial class _EditorTemplates{
+            static readonly _EditorTemplatesClass s_EditorTemplates = new _EditorTemplatesClass();
+            public _EditorTemplatesClass EditorTemplates { get { return s_EditorTemplates; } }
+            [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+            public partial class _EditorTemplatesClass
+            {
                 public readonly string Boolean = "Boolean";
                 public readonly string CoordinatePickerModel = "CoordinatePickerModel";
                 public readonly string Coordinates = "Coordinates";

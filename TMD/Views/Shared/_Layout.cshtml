@@ -14,17 +14,17 @@
     <div id="wrapper" class="clearfix">
         <div id="top">
             <div id="header">
-                <h1>@Html.ActionLink("Trees Database", Mvc.Main.Index())</h1>
-                @{ Html.RenderAction(Mvc.Account.AccountWidget()); }
+                <h1>@Html.ActionLink("Trees Database", MVC.Main.Index())</h1>
+                @{ Html.RenderAction(MVC.Account.AccountWidget()); }
             </div>
             <!-- #header -->
             <div id="nav">
                 <ul class="mega-container mega-grey">
-                    @{ Html.RenderAction(Mvc.Main.MenuWidget(ViewContext.Controller is TMD.Controllers.MainController));
-                       Html.RenderAction(Mvc.Import.MenuWidget(ViewContext.Controller is TMD.Controllers.ImportController));
-                       Html.RenderAction(Mvc.Browse.MenuWidget(ViewContext.Controller is TMD.Controllers.BrowseController));
-                       Html.RenderAction(Mvc.Map.MenuWidget(ViewContext.Controller is TMD.Controllers.MapController));
-                       Html.RenderAction(Mvc.Main.SuggestionsMenuWidget()); }
+                    @{ Html.RenderAction(MVC.Main.MenuWidget(ViewContext.Controller is TMD.Controllers.MainController));
+                       Html.RenderAction(MVC.Import.MenuWidget(ViewContext.Controller is TMD.Controllers.ImportController));
+                       Html.RenderAction(MVC.Browse.MenuWidget(ViewContext.Controller is TMD.Controllers.BrowseController));
+                       Html.RenderAction(MVC.Map.MenuWidget(ViewContext.Controller is TMD.Controllers.MapController));
+                       Html.RenderAction(MVC.Main.SuggestionsMenuWidget()); }
                 </ul>
             </div>
             <!-- #nav -->
@@ -51,7 +51,7 @@
         @if (ViewData.GetRenderFooter()) {
             <div id="footer">
                 <p style="float: left;">
-                    <a href="@Url.Action(Mvc.Main.Index())">
+                    <a href="@Url.Action(MVC.Main.Index())">
                         <img id="footer-logo" src="@Url.ManagedContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
                     </a>
                     Contact: Steve or Mitch Galehouse
@@ -60,7 +60,7 @@
                     <br />
                     &copy;: @DateTime.Now.Year Trees Database
                 </p>
-                @using(Html.BeginForm(Mvc.Main.SetUnits(), FormMethod.Post, new { style = "float: right;" })) {
+                @using(Html.BeginForm(MVC.Main.SetUnits(), FormMethod.Post, new { style = "float: right;" })) {
                     <span>Units:</span>
                     @Html.Hidden("returnUrl", Request.Url)
                     if (Units.Default == Request.Cookies.GetUnitsPreference() || Units.Feet == Request.Cookies.GetUnitsPreference()) {

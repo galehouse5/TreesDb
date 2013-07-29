@@ -19,9 +19,9 @@ table thead tr th span { display: block; }
 .mega-container li > ul { background-color: #255648 !important; }
 .btn, .btn-icon, .btn-mini,
 .btn:visited, .btn-icon:visited, .btn-mini:visited { background-color: #255648; }
-ul.tabs li { background-image: url(/images/Theme/accordion_header.png); }
+ul.tabs li { background-image: url(../images/Theme/accordion_header.png); }
 ul.tabs li a { color: #255648; }
-h2.accordion_panel { background-image: url(/images/Theme/accordion_header.png); }
+h2.accordion_panel { background-image: url(../images/Theme/accordion_header.png); }
 h2.accordion_panel a { color: #255648; }
 .xfluid .xColumn { margin-left: 0.45%; width: 49%; margin-right: 0.35%; }
 
@@ -40,11 +40,11 @@ h2.accordion_panel a { color: #255648; }
 .btn-grey, .btn-grey:visited  { background-color: #999; }
 
 /* /css/screen/layout.css */
-#header { background-image: url(/images/Theme/header_bg.png); background-color: #255648; }
-#header h1 { background-image: url(/images/Theme/title.png); }
+#header { background-image: url(../images/Theme/header_bg.png); background-color: #255648; }
+#header h1 { background-image: url(../images/Theme/title.png); }
 #nav { background: #255648; }
 .layout-sidebar #top { background: #255648; }
-.layout-sidebar #header { background-image: url(/images/Theme/header_bg.png); background-color: #255648; }
+.layout-sidebar #header { background-image: url(../images/Theme/header_bg.png); background-color: #255648; }
 .layout-sidebar #nav a { color: #255648;}
 .portlet-header h4 { color: #255648; }
 .portlet-tab-nav .portlet-tab-nav-active { background-color: #255648 !important; }

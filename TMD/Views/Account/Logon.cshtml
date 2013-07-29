@@ -8,7 +8,7 @@
     </script>
 }
 
-@using(Html.BeginForm(Mvc.Account.Logon(), FormMethod.Post, new { id = "login_form", name = "login" })) {
+@using(Html.BeginForm(MVC.Account.Logon(), FormMethod.Post, new { id = "login_form", name = "login" })) {
     if (Model.PerformHumanVerification) {
         <div class="content_front">
             <div class="pad">
@@ -30,7 +30,7 @@
                     @Html.FieldLabelFor(m => m.Password, new { @for = "login_password" })
     		        <div><span class="input">
                         @Html.EditorFor(m => m.Password, new { id = "login_password" })
-                        @Html.ActionLink("Forgot password?", Mvc.Account.PasswordAssistance())
+                        @Html.ActionLink("Forgot password?", MVC.Account.PasswordAssistance())
                         @Html.ValidationMessageFor(m => m.Password, string.Empty, new { style = "margin-top: 34px;" })
                     </span></div>
     	        </div> <!-- .field -->
@@ -45,7 +45,7 @@
     		        <span class="label">&nbsp;</span>
     		        <div>
                         @Html.SubmitButton("Logon")&nbsp;&nbsp;
-                        @Html.ActionLink("Need an account?", Mvc.Account.Register())
+                        @Html.ActionLink("Need an account?", MVC.Account.Register())
                     </div>
     	        </div> <!-- .field -->
             </div>

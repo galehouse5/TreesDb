@@ -3,7 +3,7 @@
     columns: builder =>
     {
         builder
-            .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, Mvc.Browse.SiteDetails(subsite.Site.Id)))
+            .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, MVC.Browse.SiteDetails(subsite.Site.Id)))
             .Options(canSort: true);
         builder
             .Custom("RHI5", subsite => subsite.RHI5.HasValue ?

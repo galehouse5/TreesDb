@@ -20,8 +20,10 @@ using System.Web.Mvc.Ajax;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
 using T4MVC;
-namespace TMD.Controllers {
-    public partial class ErrorController {
+namespace TMD.Controllers
+{
+    public partial class ErrorController
+    {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ErrorController() { }
 
@@ -29,29 +31,41 @@ namespace TMD.Controllers {
         protected ErrorController(Dummy d) { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        protected RedirectToRouteResult RedirectToAction(ActionResult result) {
+        protected RedirectToRouteResult RedirectToAction(ActionResult result)
+        {
             var callInfo = result.GetT4MVCResult();
             return RedirectToRoute(callInfo.RouteValueDictionary);
         }
 
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        protected RedirectToRouteResult RedirectToActionPermanent(ActionResult result)
+        {
+            var callInfo = result.GetT4MVCResult();
+            return RedirectToRoutePermanent(callInfo.RouteValueDictionary);
+        }
+
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public System.Web.Mvc.ActionResult BypassBrowserCheck() {
-            return new T4MVC_ActionResult(Area, Name, ActionNames.BypassBrowserCheck);
+        public virtual System.Web.Mvc.ActionResult BypassBrowserCheck()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.BypassBrowserCheck);
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ErrorController Actions { get { return Mvc.Error; } }
+        public ErrorController Actions { get { return MVC.Error; } }
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Area = "";
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Name = "Error";
+        [GeneratedCode("T4MVC", "2.0")]
+        public const string NameConst = "Error";
 
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ActionNamesClass ActionNames { get { return s_actions; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionNamesClass {
+        public class ActionNamesClass
+        {
             public readonly string NotFound = "NotFound";
             public readonly string ServerError = "ServerError";
             public readonly string IncompatibleBrowser = "IncompatibleBrowser";
@@ -60,12 +74,43 @@ namespace TMD.Controllers {
             public readonly string Maintenance = "Maintenance";
         }
 
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionNameConstants
+        {
+            public const string NotFound = "NotFound";
+            public const string ServerError = "ServerError";
+            public const string IncompatibleBrowser = "IncompatibleBrowser";
+            public const string BypassBrowserCheck = "BypassBrowserCheck";
+            public const string Unauthorized = "Unauthorized";
+            public const string Maintenance = "Maintenance";
+        }
 
-        static readonly ViewNames s_views = new ViewNames();
+
+        static readonly ActionParamsClass_BypassBrowserCheck s_params_BypassBrowserCheck = new ActionParamsClass_BypassBrowserCheck();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ViewNames Views { get { return s_views; } }
+        public ActionParamsClass_BypassBrowserCheck BypassBrowserCheckParams { get { return s_params_BypassBrowserCheck; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ViewNames {
+        public class ActionParamsClass_BypassBrowserCheck
+        {
+            public readonly string ReturnUrl = "ReturnUrl";
+        }
+        static readonly ViewsClass s_views = new ViewsClass();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ViewsClass Views { get { return s_views; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ViewsClass
+        {
+            static readonly _ViewNamesClass s_ViewNames = new _ViewNamesClass();
+            public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
+            public class _ViewNamesClass
+            {
+                public readonly string _ViewStart = "_ViewStart";
+                public readonly string IncompatibleBrowser = "IncompatibleBrowser";
+                public readonly string Maintenance = "Maintenance";
+                public readonly string NotFound = "NotFound";
+                public readonly string ServerError = "ServerError";
+                public readonly string Unauthorized = "Unauthorized";
+            }
             public readonly string _ViewStart = "~/Views/Error/_ViewStart.cshtml";
             public readonly string IncompatibleBrowser = "~/Views/Error/IncompatibleBrowser.cshtml";
             public readonly string Maintenance = "~/Views/Error/Maintenance.cshtml";
@@ -76,37 +121,62 @@ namespace TMD.Controllers {
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public class T4MVC_ErrorController: TMD.Controllers.ErrorController {
+    public partial class T4MVC_ErrorController : TMD.Controllers.ErrorController
+    {
         public T4MVC_ErrorController() : base(Dummy.Instance) { }
 
-        public override System.Web.Mvc.ActionResult NotFound() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.NotFound);
+        partial void NotFoundOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult NotFound()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.NotFound);
+            NotFoundOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult ServerError() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.ServerError);
+        partial void ServerErrorOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult ServerError()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ServerError);
+            ServerErrorOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult IncompatibleBrowser() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.IncompatibleBrowser);
+        partial void IncompatibleBrowserOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult IncompatibleBrowser()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.IncompatibleBrowser);
+            IncompatibleBrowserOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult BypassBrowserCheck(string ReturnUrl) {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.BypassBrowserCheck);
-            callInfo.RouteValueDictionary.Add("ReturnUrl", ReturnUrl);
+        partial void BypassBrowserCheckOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, string ReturnUrl);
+
+        public override System.Web.Mvc.ActionResult BypassBrowserCheck(string ReturnUrl)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.BypassBrowserCheck);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "ReturnUrl", ReturnUrl);
+            BypassBrowserCheckOverride(callInfo, ReturnUrl);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Unauthorized() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Unauthorized);
+        partial void UnauthorizedOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult Unauthorized()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Unauthorized);
+            UnauthorizedOverride(callInfo);
             return callInfo;
         }
 
-        public override System.Web.Mvc.ActionResult Maintenance() {
-            var callInfo = new T4MVC_ActionResult(Area, Name, ActionNames.Maintenance);
+        partial void MaintenanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        public override System.Web.Mvc.ActionResult Maintenance()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Maintenance);
+            MaintenanceOverride(callInfo);
             return callInfo;
         }
 

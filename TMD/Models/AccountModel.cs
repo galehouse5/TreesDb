@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.ComponentModel;
-using TMD.Model.Users;
-using TMD.Model.Validation;
-using TMD.Model;
+﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 using TMD.Extensions;
+using TMD.Model.Users;
 
 namespace TMD.Models
 {
@@ -42,7 +36,7 @@ namespace TMD.Models
     {
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "You must enter an email."), StringLength(100, ErrorMessage = "Email must not exceed 100 characters."), Email]
-        [Compare("ConfirmEmail", ErrorMessage = "Your emails do not match.")]
+        [System.Web.Mvc.Compare("ConfirmEmail", ErrorMessage = "Your emails do not match.")]
         public string Email { get; set; }
 
         [DataType(DataType.EmailAddress), DisplayName("Confirm")]
@@ -51,7 +45,7 @@ namespace TMD.Models
 
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "You must enter a password."), StringLength(100, ErrorMessage = "Password must not exceed 100 characters.")]
-        [Compare("ConfirmPassword", ErrorMessage = "Your passwords do not match.")]
+        [System.Web.Mvc.Compare("ConfirmPassword", ErrorMessage = "Your passwords do not match.")]
         public string Password { get; set; }
 
         [DataType(DataType.Password), DisplayName("Confirm")]
@@ -68,7 +62,7 @@ namespace TMD.Models
     {
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "You must enter an email."), StringLength(100, ErrorMessage = "Email must not exceed 100 characters."), Email]
-        [Compare("ConfirmEmail", ErrorMessage = "Your emails do not match.")]
+        [System.Web.Mvc.Compare("ConfirmEmail", ErrorMessage = "Your emails do not match.")]
         public string Email { get; set; }
 
         [DataType(DataType.EmailAddress), DisplayName("Confirm")]
@@ -88,7 +82,7 @@ namespace TMD.Models
 
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "You must enter a password."), StringLength(100, ErrorMessage = "Password must not exceed 100 characters.")]
-        [Compare("ConfirmPassword", ErrorMessage = "Your passwords do not match.")]
+        [System.Web.Mvc.Compare("ConfirmPassword", ErrorMessage = "Your passwords do not match.")]
         public string Password { get; set; }
 
         [DataType(DataType.Password), DisplayName("Confirm")]
@@ -121,7 +115,7 @@ namespace TMD.Models
 
         [DataType(DataType.Password), DisplayName("New password")]
         [Required(ErrorMessage = "You must enter a password."), StringLength(100, ErrorMessage = "Password must not exceed 100 characters.")]
-        [Compare("ConfirmPassword", ErrorMessage = "Your passwords do not match.")]
+        [System.Web.Mvc.Compare("ConfirmPassword", ErrorMessage = "Your passwords do not match.")]
         public string NewPassword { get; set; }
 
         [DataType(DataType.Password), DisplayName("Confirm")]

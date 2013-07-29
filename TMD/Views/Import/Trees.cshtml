@@ -3,10 +3,10 @@
 
 @section Steps {
     <ol>
-        <li>@Html.ActionLink("Start", Mvc.Import.Start())</li>
-        <li>@Html.ActionLink("Enter trip", Mvc.Import.Trip(Model.Id))</li>
-        <li>@Html.ActionLink("Enter sites", Mvc.Import.Sites(null, Model.Id))</li>
-        <li><strong>> @Html.ActionLink("Enter trees", Mvc.Import.Trees(null, Model.Id)) <</strong></li>
+        <li>@Html.ActionLink("Start", MVC.Import.Start())</li>
+        <li>@Html.ActionLink("Enter trip", MVC.Import.Trip(Model.Id))</li>
+        <li>@Html.ActionLink("Enter sites", MVC.Import.Sites(null, Model.Id))</li>
+        <li><strong>> @Html.ActionLink("Enter trees", MVC.Import.Trees(null, Model.Id)) <</strong></li>
         <li>Finish</li>
     </ol>
 }
@@ -32,13 +32,13 @@
     </script>
 }
 
-@using (Html.BeginForm(Mvc.Import.Trees(null, Model.Id), FormMethod.Post, new { @class = "form Trees" })) {
+@using (Html.BeginForm(MVC.Import.Trees(null, Model.Id), FormMethod.Post, new { @class = "form Trees" })) {
     for (int i = 0; i < Model.Sites.Count; i++) {
         @Html.EditorFor(m => m.Sites[i])
     }
     <div class="buttonrow">
         @Html.ImportInnerActionButton("Continue", ImportModelLevel.Trip, Model.Id, ImportModelAction.Save)
-        @Html.AnchorButton("Back", Mvc.Import.Sites(null, Model.Id), ButtonColor.Grey)
+        @Html.AnchorButton("Back", MVC.Import.Sites(null, Model.Id), ButtonColor.Grey)
     </div>
 }
 

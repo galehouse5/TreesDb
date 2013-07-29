@@ -31,7 +31,7 @@ namespace TMD.Binders
                     } 
                     else 
                     {
-                        siteModel.Coordinates.MarkerLoaderAction = Mvc.Map.ImportSiteMarkers(trip.Id, site.Id);
+                        siteModel.Coordinates.MarkerLoaderAction = MVC.Map.ImportSiteMarkers(trip.Id, site.Id);
                     }
                     siteModel.Subsites.ForEach(subsiteModel =>
                         {
@@ -43,7 +43,7 @@ namespace TMD.Binders
                             } 
                             else 
                             {
-                                subsiteModel.Coordinates.MarkerLoaderAction = Mvc.Map.ImportSubsiteMarkers(trip.Id, subsite.Id);
+                                subsiteModel.Coordinates.MarkerLoaderAction = MVC.Map.ImportSubsiteMarkers(trip.Id, subsite.Id);
                             }
                         });
                     if (siteModel.Subsites.Count == 1)
@@ -86,7 +86,7 @@ namespace TMD.Binders
                                     }
                                     else
                                     {
-                                        treeModel.Coordinates.MarkerLoaderAction = Mvc.Map.ImportTreeMarkers(trip.Id, tree.Id);
+                                        treeModel.Coordinates.MarkerLoaderAction = MVC.Map.ImportTreeMarkers(trip.Id, tree.Id);
                                     }
                                 });
                         });

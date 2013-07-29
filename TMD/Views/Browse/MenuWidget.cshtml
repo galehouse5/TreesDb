@@ -1,10 +1,10 @@
 ﻿@model TMD.Models.BrowseMenuWidgetModel
 <li class="@(Model.IsSelected ? "mega mega-current" : "mega")">
-	@Html.ActionLink("Browse and export", Mvc.Browse.Index(), new { @class = "mega-tab hasSub" })
+	@Html.ActionLink("Browse and export", MVC.Browse.Index(), new { @class = "mega-tab hasSub" })
 	<div class="mega-content mega-menu ">						
 		<ul>
-			<li>@Html.ActionLink("Species", Mvc.Browse.Species())</li>
-            <li>@Html.ActionLink("Locations", Mvc.Browse.Locations())</li>
+			<li>@Html.ActionLink("Species", MVC.Browse.Species())</li>
+            <li>@Html.ActionLink("Locations", MVC.Browse.Locations())</li>
 		</ul>
 	</div>
 </li>

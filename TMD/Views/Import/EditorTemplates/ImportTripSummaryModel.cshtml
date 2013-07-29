@@ -4,14 +4,14 @@
         @if (Model.IsImported) {
             <h4>@Model.Name&nbsp;</h4>
             <div class="actions">
-                @Html.AnchorButton("View", Mvc.Import.ViewImport(Model.Id), ButtonColor.Orange, ButtonSize.Small)
-                @Html.AnchorButton("Revise", Mvc.Import.Trip(Model.Id), ButtonColor.Orange, ButtonSize.Small)
+                @Html.AnchorButton("View", MVC.Import.ViewImport(Model.Id), ButtonColor.Orange, ButtonSize.Small)
+                @Html.AnchorButton("Revise", MVC.Import.Trip(Model.Id), ButtonColor.Orange, ButtonSize.Small)
                 @Html.ImportInnerActionButton("Remove", ImportModelLevel.Trip, Model.Id, ImportModelAction.Remove, ButtonColor.Orange, ButtonSize.Small)
             </div>
         } else {
             <h4>@Model.Name (started @Html.Partial("PrettyTimeSpan", DateTime.Now.Subtract(Model.Created))) &nbsp;</h4>
             <div class="actions">
-                @Html.AnchorButton("Continue", Mvc.Import.Trip(Model.Id), ButtonColor.Orange, ButtonSize.Small)            
+                @Html.AnchorButton("Continue", MVC.Import.Trip(Model.Id), ButtonColor.Orange, ButtonSize.Small)            
                 @Html.ImportInnerActionButton("Remove", ImportModelLevel.Trip, Model.Id, ImportModelAction.Remove, ButtonColor.Orange, ButtonSize.Small)
             </div>
         }
