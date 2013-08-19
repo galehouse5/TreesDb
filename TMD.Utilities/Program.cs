@@ -1,11 +1,9 @@
-﻿using System;
+﻿using StructureMap;
+using System;
 using System.Linq;
-using StructureMap;
 using TMD.Infrastructure;
-using TMD.Infrastructure.Logging;
 using TMD.Infrastructure.Repositories;
 using TMD.Model;
-using TMD.Model.Logging;
 using TMD.Model.Validation;
 
 namespace TMD.Utilities
@@ -26,12 +24,6 @@ namespace TMD.Utilities
                         initializeForPersistence();
                         Console.WriteLine(string.Format("Removed {0} photo store orphans.", removeStoreOrphans()));
                         return;
-                    case "-logi":
-                        initializeForLogging();
-                        string message = args.Length > 1 ? string.Join(" ", args, 1, args.Length - 1)
-                            : Console.ReadLine();
-                        new Program().Info(message);
-                        return;
                     case "-rivt":
                         initializeForPersistence();
                         Console.WriteLine(string.Format("Reimported {0} valid trips.", reimportValidTrips()));
@@ -50,19 +42,9 @@ namespace TMD.Utilities
             Console.WriteLine(string.Empty);
             Console.WriteLine("   -rpo            Remove photos without any photo references.");
             Console.WriteLine("   -rpso           Remove photo store files without any associated photo.");
-            Console.WriteLine("   -logi           Logs an info message.");
             Console.WriteLine("   -rivt           Reimport valid trips.");
             Console.WriteLine("   -rit tripId     Reimport valid trips.");
             Console.WriteLine(string.Empty);
-        }
-
-        static void initializeForLogging()
-        {
-            log4net.Config.XmlConfigurator.Configure();
-            ObjectFactory.Initialize(x =>
-            {
-                x.For<ILogProvider>().Singleton().Use<Log4NetLogProvider>();
-            });
         }
 
         static void initializeForPersistence()

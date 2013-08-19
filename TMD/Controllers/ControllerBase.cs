@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using System.Net;
-using System.Web.Routing;
-using TMD.Model.Users;
-using TMD.Controllers;
+﻿using System.Data;
 using System.IO;
-using System.Data;
-using TMD.Model;
-using TMD.Model.Logging;
+using System.Web.Mvc;
+using TMD.Controllers;
 using TMD.Extensions;
+using TMD.Model;
+using TMD.Model.Users;
 
 namespace TMD
 {

@@ -68,8 +68,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logging\DatabaseErrorLogAppender.cs" />
-    <Compile Include="Logging\Log4NetLogProvider.cs" />
     <Compile Include="Registry.cs" />
     <Compile Include="Repositories\LocationRepository.cs" />
     <Compile Include="Repositories\PhotoRepository.cs" />
@@ -113,7 +111,6 @@
     <EmbeddedResource Include="Mappings\Users.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Create.sql" />
     <EmbeddedResource Include="Mappings\Sites.hbm.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>

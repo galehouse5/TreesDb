@@ -1,17 +1,13 @@
 ﻿using AutoMapper;
 using StructureMap;
-using System;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using TMD.Binders;
-using TMD.Controllers;
+using TMD.Filters;
 using TMD.Infrastructure;
-using TMD.Infrastructure.Logging;
 using TMD.Infrastructure.Repositories;
 using TMD.Mappings;
 using TMD.Model;
-using TMD.Model.Logging;
 
 namespace TMD
 {
@@ -22,7 +18,8 @@ namespace TMD
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            // do nothing
+            filters.Add(new LogExceptionFilter());
+            filters.Add(new HandleExceptionFilter());
         }
 
         public static void RegisterRoutes(RouteCollection routes)
@@ -95,41 +92,17 @@ namespace TMD
             Mapper.AddProfile<AccountMapping>();
             Mapper.AddProfile<BrowseMapping>();
 
-            log4net.Config.XmlConfigurator.Configure();
             ObjectFactory.Initialize(x =>
             {
                 x.AddRegistry(new RepositoryRegistry());
                 x.For<IUnitOfWorkProvider>().HttpContextScoped().Use<NHibernateUnitOfWorkProvider>();
                 x.For<IUserSessionProvider>().Singleton().Use<WebUserSessionProvider>();
-                x.For<ILogProvider>().Singleton().Use<Log4NetLogProvider>()
-                    .OnCreation(lp =>
-                    {
-                        lp.AddContextProperty("Request.Url", () => HttpContext.Current.Request.Url);
-                        lp.AddContextProperty("Request.UserHostAddress", () => HttpContext.Current.Request.UserHostAddress);
-                        lp.AddContextProperty("Request.UrlReferrer", () => HttpContext.Current.Request.UrlReferrer);
-                        lp.AddContextProperty("Request.User", () => HttpContext.Current.User.Identity.Name);
-                        lp.AddContextProperty("Request.IsAuthenticated", () => HttpContext.Current.User.Identity.IsAuthenticated);
-                        lp.AddContextProperty("Application.Path", () => HttpContext.Current.Request.PhysicalApplicationPath);
-                        lp.AddContextProperty("Application.Machine", () => Environment.MachineName);
-                    });
             });
         }
 
         protected void Application_EndRequest()
         {
             UnitOfWork.Dispose();
-        }
-
-        protected void Application_Error()
-        {
-            if (Context.IsCustomErrorEnabled)
-            {
-                // executing server error result causes a second call to this method at which point there is no need to perform further error handling
-                if (Context.Error == null) { return; }
-                Context.Error.Source.Error(Context.Error.Message, Context.Error);
-                Context.ClearError();
-                new ServerErrorResult().ExecuteResult(new HttpContextWrapper(Context));
-            }
         }
     }
 }

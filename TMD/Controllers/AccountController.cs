@@ -105,7 +105,7 @@ namespace TMD.Controllers
             FormsAuthentication.SignOut();
             Session.ClearRegardingUserSpecificData();
             Response.Cookies.ClearRegardingUserSpecificData();
-            TempData.SetAccountMessage("You have logged out.");
+            TempData.SetAccountMessage("You have logged out");
             return Redirect(Session.GetDefaultReturnUrl());
         }
 
@@ -272,7 +272,7 @@ namespace TMD.Controllers
                     return View(Mapper.Map<User, AccountEditModel>(User));
                 }
                 uow.Persist();
-                TempData.SetAccountMessage("Your password has been changed.");
+                TempData.SetAccountMessage("Your password has been changed");
                 return Redirect(Session.GetDefaultReturnUrl());
             }
             if (model.EditingDetails)
@@ -288,7 +288,7 @@ namespace TMD.Controllers
                     return View(model);
                 }
                 uow.Persist();
-                TempData.SetAccountMessage("Your account has been saved.");
+                TempData.SetAccountMessage("Your account has been saved");
                 return Redirect(Session.GetDefaultReturnUrl());
             }
             throw new NotImplementedException();
