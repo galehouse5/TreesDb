@@ -110,6 +110,7 @@
     <Compile Include="Binders\BinderBase.cs" />
     <Compile Include="Binders\ImportBinders.cs" />
     <Compile Include="Binders\ValueObjectBinders.cs" />
+    <Compile Include="BlobStoragePhotoStoreProvider.cs" />
     <Compile Include="BrowseController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
@@ -473,6 +474,10 @@
     <ProjectReference Include="..\TMD.Model\TMD.Model.csproj">
       <Project>{82C94CBA-58DA-46EA-A3F6-9786EB32CC17}</Project>
       <Name>TMD.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tmd.WindowsAzure\Tmd.WindowsAzure.csproj">
+      <Project>{5d59b2e3-9ff2-4058-8e0f-d10bf3792b4b}</Project>
+      <Name>Tmd.WindowsAzure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

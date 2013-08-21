@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using StructureMap;
+using System.Configuration;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Tmd.WindowsAzure;
 using TMD.Binders;
 using TMD.Filters;
 using TMD.Infrastructure;
@@ -100,7 +102,11 @@ namespace TMD
                 x.For<IUserSessionProvider>().Singleton().Use<WebUserSessionProvider>();
             });
 
+#if DEBUG
             PhotoStoreProvider.Current = new DefaultPhotoStoreProvider(Server.MapPath(@"~\PhotoStore"));
+#else
+            PhotoStoreProvider.Current = new BlobStoragePhotoStoreProvider(ConfigurationManager.ConnectionStrings["TmdStorage"].ConnectionString);
+#endif
         }
 
         protected void Application_EndRequest()
