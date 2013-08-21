@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Photos;
-using TMD.Model.Imports;
-using NHibernate;
-using NHibernate.Type;
+﻿using NHibernate.Criterion;
 using NHibernate.Event;
-using NHibernate.Criterion;
-using TMD.Model.Extensions;
-using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using TMD.Model.Photos;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -28,9 +21,13 @@ namespace TMD.Infrastructure.Repositories
                 var photo = @event.Entity as Photo;
                 if (photo != null)
                 {
-                    if (!photo.IsStoredPermanently)
+                    if (photo is TemporaryPhoto)
                     {
-                        photo.TemporaryStore.MigrateTo(photo.PermanentStore, photo);
+                        using (Stream sourceData = photo.GetData())
+                        using (Stream destinationData = PhotoStoreProvider.Current.GetWriteStream(photo))
+                        {
+                            sourceData.CopyTo(destinationData);
+                        }
                     }
                 }
             }
@@ -40,7 +37,7 @@ namespace TMD.Infrastructure.Repositories
                 var photo = @event.Entity as Photo;
                 if (photo != null)
                 {
-                    photo.PermanentStore.Remove(photo);
+                    PhotoStoreProvider.Current.Remove(photo);
                 }
             }
         }
@@ -63,13 +60,6 @@ namespace TMD.Infrastructure.Repositories
         public void Remove(IPhoto photo)
         {
             Registry.Session.Delete(photo);
-        }
-
-        public PhotoStoreBase FindPermanentPhotoStore()
-        {
-            return Registry.Session.CreateCriteria<PhotoStoreBase>()
-                .Add(Restrictions.Eq("IsActive", true))
-                .UniqueResult<PhotoStoreBase>();
         }
 
         public IList<Photo> ListOrphaned()

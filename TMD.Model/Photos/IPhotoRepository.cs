@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Drawing;
-using System.IO;
-using TMD.Model.Imports;
+﻿using System.Collections.Generic;
 
 namespace TMD.Model.Photos
 {
@@ -14,7 +8,6 @@ namespace TMD.Model.Photos
         void Remove(IPhoto photo);
 
         Photo FindById(int id);
-        PhotoStoreBase FindPermanentPhotoStore();
         PhotoReferenceBase FindReferenceById(int id);
 
         PhotoReferences ListAllReferencesByPhotoId(int photoId);

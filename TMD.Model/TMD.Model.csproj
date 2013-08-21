@@ -62,12 +62,14 @@
     <Compile Include="Imports\Trip.cs" />
     <Compile Include="Imports\ImportRepository.cs" />
     <Compile Include="Imports\Trunk.cs" />
+    <Compile Include="Photos\DefaultPhotoStoreProvider.cs" />
+    <Compile Include="Photos\IPhoto.cs" />
     <Compile Include="Photos\IPhotoRepository.cs" />
-    <Compile Include="Photos\PhotoFactory.cs" />
     <Compile Include="Photos\Photo.cs" />
     <Compile Include="Photos\PhotoReference.cs" />
     <Compile Include="Photos\PhotoSize.cs" />
-    <Compile Include="Photos\PhotoStoreBase.cs" />
+    <Compile Include="Photos\PhotoStoreProvider.cs" />
+    <Compile Include="Photos\TemporaryPhoto.cs" />
     <Compile Include="RepositoryBase.cs" />
     <Compile Include="Sites\SiteVisit.cs" />
     <Compile Include="Sites\SubsiteVisit.cs" />
@@ -119,7 +121,9 @@
     <Compile Include="ValueObjects\Units.cs" />
     <Compile Include="ValueObjects\Volume.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Photos\icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

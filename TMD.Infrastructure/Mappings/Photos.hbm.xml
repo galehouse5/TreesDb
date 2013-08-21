@@ -5,17 +5,6 @@
                    schema="Photos"
                    auto-import="false">
   
-  <class name="PhotoStoreBase" table="Stores" abstract="true" >
-    <id name="Id">
-      <generator class="native" />
-    </id>
-    <discriminator column="Type"/>
-    <property name="IsActive" />
-    <subclass name="DiskPhotoStore" discriminator-value="2">
-      <property name="RootPath" />
-    </subclass>
-  </class>
-
   <class name="Photo" table="Photos">
     <id name="Id">
       <generator class="native" />
@@ -28,7 +17,6 @@
     </component>
     <property name="Bytes" />
     <property name="Format" />
-    <many-to-one name="PermanentStore" column="StoreId" />
   </class>
 
   <class name="PhotoReferenceBase" abstract="true" table="[References]">

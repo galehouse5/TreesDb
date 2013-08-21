@@ -1,53 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Drawing;
-using System.IO;
 using System.Drawing.Imaging;
-using TMD.Model.Users;
+using System.IO;
 using TMD.Model.Validation;
-using NHibernate.Validator.Constraints;
 
 namespace TMD.Model.Photos
 {
-    public enum PhotoFormat
-    {
-        NotSpecified = 0,
-        Jpeg = 1,
-        Gif = 2,
-        Png = 3
-    }
-
-    public interface IPhoto
-    {
-        int Id { get; }
-        int StaticId { get; }
-        int CaptionId { get; }
-        bool HasCaption { get; }
-        Size Size { get; }
-        int Bytes { get; }
-        PhotoFormat Format { get; }
-        string ContentType { get; }
-        ImageFormat ImageFormat { get; }
-        Bitmap Get();
-        Bitmap Get(PhotoSize size);
-        bool EqualsPhoto(IPhoto photo);
-        Photo ToPhoto();
-    }
-
     public class Photo : UserCreatedEntityBase, IPhoto
     {
         public const int MaxBytes = 5 * 1024 * 1024;
 
         protected internal Photo()
-        {
-            TemporaryStore = new MemoryPhotoStore();
-        }
+        { }
 
         public virtual int StaticId { get { return Id; } }
-        public virtual PhotoStoreBase TemporaryStore { get; private set; }
-        public virtual PhotoStoreBase PermanentStore { get; protected internal set; }
         public virtual Size Size { get; protected internal set; }
         public virtual int CaptionId { get { return 0; } }
         public virtual bool HasCaption { get { return false; } }
@@ -57,11 +23,6 @@ namespace TMD.Model.Photos
 
         [NotEquals(PhotoFormat.NotSpecified, Message = "Photo must be in a proper format.", Tags = ValidationTag.Screening)]
         public virtual PhotoFormat Format { get; protected internal set; }
-
-        public virtual bool IsStoredPermanently
-        {
-            get { return PermanentStore.Contains(this); }
-        }
 
         public virtual string ContentType
         {
@@ -91,17 +52,17 @@ namespace TMD.Model.Photos
             }
         }
 
+        public virtual Stream GetData()
+        {
+            return PhotoStoreProvider.Current.GetReadStream(this);
+        }
+
         public virtual Bitmap Get()
         {
-            if (TemporaryStore.Contains(this))
+            using (Stream data = GetData())
             {
-                return TemporaryStore.Retrieve(this);
+                return new Bitmap(data);
             }
-            if (PermanentStore.Contains(this))
-            {
-                return PermanentStore.Retrieve(this);
-            }
-            throw new InvalidEntityStateException(this);
         }
 
         public virtual Bitmap Get(PhotoSize size)

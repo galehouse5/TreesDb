@@ -4,6 +4,7 @@ using System.Linq;
 using TMD.Infrastructure;
 using TMD.Infrastructure.Repositories;
 using TMD.Model;
+using TMD.Model.Photos;
 using TMD.Model.Validation;
 
 namespace TMD.Utilities
@@ -108,9 +109,8 @@ namespace TMD.Utilities
             using (var uow = UnitOfWork.Begin())
             {
                 var threshold = DateTime.Now;
-                var store = Repositories.Photos.FindPermanentPhotoStore();
-                var knownPhotos = Repositories.Photos.ListAll();
-                return store.RemovePhotosCreatedBefore(threshold, knownPhotos);
+                var allParentedPhotos = Repositories.Photos.ListAll();
+                return PhotoStoreProvider.Current.RemoveOrphans(allParentedPhotos);
             }
         }
     }

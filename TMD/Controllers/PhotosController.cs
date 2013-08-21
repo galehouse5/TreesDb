@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using AutoMapper;
+using System.Drawing;
+using System.IO;
 using System.Web;
 using System.Web.Mvc;
-using System.IO;
-using System.Drawing;
-using TMD.Model.Photos;
-using TMD.Model;
-using TMD.Model.Extensions;
-using System.Drawing.Imaging;
-using TMD.Model.Imports;
-using TMD.Models;
-using TMD.Model.Validation;
-using AutoMapper;
 using TMD.Extensions;
+using TMD.Model;
+using TMD.Model.Imports;
+using TMD.Model.Photos;
+using TMD.Models;
 
 namespace TMD.Controllers
 {
@@ -70,7 +64,7 @@ namespace TMD.Controllers
                 var tree = trip.FindTreeById(treeId);
                 using (imageData.InputStream)
                 {
-                    var photo = new PhotoFactory().Create(imageData.InputStream);
+                    var photo = TemporaryPhoto.Create(imageData.InputStream);
                     tree.AddPhoto(photo);
                     this.ValidateMappedModel<TreeBase, PhotoGalleryModel>(tree);
                     if (ModelState.IsValid)
@@ -95,7 +89,7 @@ namespace TMD.Controllers
                 var subsite = trip.FindSubsiteById(subsiteId);
                 using (imageData.InputStream)
                 {
-                    var photo = new PhotoFactory().Create(imageData.InputStream);
+                    var photo = TemporaryPhoto.Create(imageData.InputStream);
                     subsite.AddPhoto(photo);
                     this.ValidateMappedModel<Subsite, PhotoGalleryModel>(subsite);
                     if (ModelState.IsValid)

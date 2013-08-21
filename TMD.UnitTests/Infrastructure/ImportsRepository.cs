@@ -1,13 +1,9 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TMD.Model.Imports;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using TMD.Model;
-using TMD.Model.Locations;
-using TMD.UnitTests.Extensions;
+using TMD.Model.Imports;
 using TMD.Model.Photos;
+using TMD.UnitTests.Extensions;
 
 namespace TMD.UnitTests.Infrastructure
 {
@@ -314,8 +310,8 @@ namespace TMD.UnitTests.Infrastructure
             tm2.CommonName = "tree measurement 2 common name";
             tm2.ScientificName = "tree measurement 2 scientific name";
             
-            tm2.AddPhoto(new PhotoFactory().Create("Square.jpg".GetPhoto()));
-            tm2.AddPhoto(new PhotoFactory().Create("Thumbnail.jpg".GetPhoto()));
+            tm2.AddPhoto(TemporaryPhoto.Create("Square.jpg".GetPhoto()));
+            tm2.AddPhoto(TemporaryPhoto.Create("Thumbnail.jpg".GetPhoto()));
 
             using (var uow = UnitOfWork.Begin())
             {

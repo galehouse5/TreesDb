@@ -1,11 +1,9 @@
-﻿using System;
+﻿using NHibernate.Validator.Constraints;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Linq;
 using TMD.Model.Users;
-using NHibernate.Validator.Constraints;
 
 namespace TMD.Model.Photos
 {
@@ -91,5 +89,4 @@ namespace TMD.Model.Photos
                     select reference.IsAuthorizedToRemove(user)).Count() > 0;
         }
     }
-
 }

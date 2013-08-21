@@ -8,6 +8,7 @@ using TMD.Infrastructure;
 using TMD.Infrastructure.Repositories;
 using TMD.Mappings;
 using TMD.Model;
+using TMD.Model.Photos;
 
 namespace TMD
 {
@@ -98,6 +99,8 @@ namespace TMD
                 x.For<IUnitOfWorkProvider>().HttpContextScoped().Use<NHibernateUnitOfWorkProvider>();
                 x.For<IUserSessionProvider>().Singleton().Use<WebUserSessionProvider>();
             });
+
+            PhotoStoreProvider.Current = new DefaultPhotoStoreProvider(Server.MapPath(@"~\PhotoStore"));
         }
 
         protected void Application_EndRequest()
