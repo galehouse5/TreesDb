@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
-using System.Diagnostics;
-using TMD.Model.Extensions;
+﻿using System.Diagnostics;
 
 namespace TMD.Model.Locations
 {
     [DebuggerDisplay("{Code}")]
-    public class State : EntityBase
+    public abstract class StateBase : EntityBase
     {
-        protected State()
+        protected StateBase()
         { }
 
         public virtual string Name { get; protected set; }
@@ -38,7 +32,7 @@ namespace TMD.Model.Locations
         }
     }
 
-    public class VisitedState : State
+    public class VisitedState : StateBase
     {
         public virtual float? RHI5 { get; private set; }
         public virtual float? RHI10 { get; private set; }
@@ -46,5 +40,12 @@ namespace TMD.Model.Locations
         public virtual float? RGI5 { get; private set; }
         public virtual float? RGI10 { get; private set; }
         public virtual float? RGI20 { get; private set; }
+    }
+
+    // simplifies differentiation from VisitedState in HQL queries
+    public class State : StateBase
+    {
+        protected State()
+        { }
     }
 }

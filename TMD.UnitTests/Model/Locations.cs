@@ -1,10 +1,6 @@
-﻿using System;
-using System.Text;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TMD.Model;
-using TMD.Infrastructure;
 using TMD.Model.Locations;
 
 namespace TMD.UnitTests.Model
@@ -24,11 +20,11 @@ namespace TMD.UnitTests.Model
         public void FindStatesByCountryCode()
         {
             IList<State> states = Repositories.Locations.FindStatesByCountryCode("US");
-            Assert.IsTrue(states.Count == 57);
+            Assert.AreEqual(57, states.Count);
             states = Repositories.Locations.FindStatesByCountryCode("USA");
-            Assert.IsTrue(states.Count == 57);
+            Assert.AreEqual(57, states.Count);
             states = Repositories.Locations.FindStatesByCountryCode("United States");
-            Assert.IsTrue(states.Count == 57);
+            Assert.AreEqual(57, states.Count);
             Assert.IsNotNull(states[0].CoordinateBounds);
         }
 

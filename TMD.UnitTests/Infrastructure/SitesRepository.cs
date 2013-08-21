@@ -1,15 +1,10 @@
-﻿using System;
-using System.Text;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TMD.Model;
-using TMD.Model.Locations;
-using TMD.UnitTests.Extensions;
-using TMD.Model.Photos;
-using TMD.UnitTests.Stubs;
-using TMD.Model.Sites;
 using TMD.Model.Extensions;
+using TMD.Model.Sites;
+using TMD.UnitTests.Stubs;
 
 namespace TMD.UnitTests.Infrastructure
 {
@@ -19,7 +14,11 @@ namespace TMD.UnitTests.Infrastructure
         [TestMethod]
         public void SavesSiteWithSubsite()
         {
-            var importedTrip = new ImportedTripStub { Date = DateTime.Now.AddDays(1) };
+            var importedTrip = new ImportedTripStub
+            {
+                Date = DateTime.Now.AddDays(1),
+                Website = "http://www.example.com"
+            };
             var importedSite = new ImportedSiteStub(importedTrip)
             {
                 Comments = "Comments",
@@ -61,7 +60,11 @@ namespace TMD.UnitTests.Infrastructure
         [TestMethod]
         public void FindsByProximity()
         {
-            var importedTrip = new ImportedTripStub { Date = DateTime.Now };
+            var importedTrip = new ImportedTripStub
+            {
+                Date = DateTime.Now.AddDays(1),
+                Website = "http://www.example.com"
+            };
             var site1 = Site.Create(new ImportedSiteStub(importedTrip)
             {
                 Coordinates = Coordinates.Create(1, 2),
@@ -124,16 +127,5 @@ namespace TMD.UnitTests.Infrastructure
         //        uow.Persist();
         //    }
         //}
-
-        [TestMethod]
-        public void Removes()
-        {
-            using (var uow = UnitOfWork.Begin())
-            {
-                Repositories.Sites.Remove(Repositories.Sites.FindById(151));
-                //uow.Rollback();
-                uow.Persist();
-            }
-        }
     }
 }

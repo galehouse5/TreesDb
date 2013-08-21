@@ -1,12 +1,11 @@
-﻿using System;
+﻿using NHibernate.Validator.Constraints;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Text;
+using TMD.Model.Extensions;
 using TMD.Model.Locations;
 using TMD.Model.Validation;
-using TMD.Model.Extensions;
-using NHibernate.Validator.Constraints;
-using System.Diagnostics;
 
 namespace TMD.Model.Imports
 {
@@ -14,7 +13,10 @@ namespace TMD.Model.Imports
     public class Trip : UserCreatedEntityBase
     {
         protected Trip()
-        { }
+        {
+            Sites = new List<Site>();
+            Measurers = new List<Name>();
+        }
 
         private string m_Name;
         [NotEmptyOrWhitesapce(Message = "Trip name must be specified.", Tags =  ValidationTag.Screening)]
