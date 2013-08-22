@@ -502,6 +502,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\treesdb - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\treesdb - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
