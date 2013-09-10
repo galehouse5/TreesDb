@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Diagnostics;
+using System.Linq;
 using TMD.Model.Extensions;
 using TMD.Model.Photos;
-using TMD.Model.Users;
 using TMD.Model.Sites;
+using TMD.Model.Users;
 
 namespace TMD.Model.Trees
 {
@@ -100,27 +99,26 @@ namespace TMD.Model.Trees
             return false;
         }
 
-        public virtual Tree Merge(Tree treeToMerge)
+        public virtual Tree Merge(Tree otherTree)
         {
-            foreach (var measurement in treeToMerge.Measurements)
+            foreach (var measurement in otherTree.Measurements)
             {
                 AddMeasurement(measurement);
             }
+
             return RecalculateProperties();
         }
 
-        public virtual bool ShouldMerge(Tree treeToMerge)
+        public virtual bool ShouldMerge(Tree otherTree)
         {
-            if (!CommonName.Equals(treeToMerge.CommonName, StringComparison.OrdinalIgnoreCase)
-                || !ScientificName.Equals(treeToMerge.ScientificName, StringComparison.OrdinalIgnoreCase))
-            {
+            if (!CommonName.Equals(otherTree.CommonName, StringComparison.OrdinalIgnoreCase)
+                || !ScientificName.Equals(otherTree.ScientificName, StringComparison.OrdinalIgnoreCase))
                 return false;
-            }
-            if (!Coordinates.IsSpecified || !treeToMerge.Coordinates.IsSpecified
-                || !Coordinates.Equals(treeToMerge.Coordinates))
-            {
+
+            if (!Coordinates.IsSpecified || !otherTree.Coordinates.IsSpecified
+                || !Coordinates.Equals(otherTree.Coordinates))
                 return false;
-            }
+
             return true;
         }
 

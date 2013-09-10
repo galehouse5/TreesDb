@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Diagnostics;
-using TMD.Model.Imports;
-using TMD.Model.Trees;
-using TMD.Model.Locations;
+using System.Linq;
 using TMD.Model.Extensions;
+using TMD.Model.Locations;
 using TMD.Model.Photos;
+using TMD.Model.Trees;
 using TMD.Model.Users;
 
 namespace TMD.Model.Sites
@@ -150,49 +148,48 @@ namespace TMD.Model.Sites
         public virtual bool ShouldMerge(Subsite subsiteToMerge)
         {
             if (!Name.Equals(subsiteToMerge.Name, StringComparison.OrdinalIgnoreCase))
-            {
                 return false;
-            }
+
             if (!State.Equals(subsiteToMerge.State) || !County.Equals(subsiteToMerge.County, StringComparison.OrdinalIgnoreCase))
-            {
                 return false;
-            }
+            
             if (CalculatedCoordinates.CalculateDistanceInMinutesTo(subsiteToMerge.CalculatedCoordinates) > CoordinateMinutesEquivalenceProximity)
-            {
                 return false;
-            }
+            
             return true;
         }
 
-        public virtual Subsite Merge(Subsite subsiteToMerge)
+        public virtual Subsite Merge(Subsite otherSubsite)
         {
-            foreach (var visit in subsiteToMerge.Visits)
+            foreach (var visit in otherSubsite.Visits)
             {
                 AddVisit(visit);
             }
-            var treesToMerge = from treeToMerge in subsiteToMerge.Trees
-                               where ShouldMerge(treeToMerge)
-                               select treeToMerge;
-            treesToMerge.ForEach(tree => Merge(tree));
-            var treesToAdd = from treeToAdd in subsiteToMerge.Trees
-                             where !ShouldMerge(treeToAdd)
-                             select treeToAdd;
-            treesToAdd.ForEach(tree => AddTree(tree));
+
+            foreach (Tree tree in otherSubsite.Trees)
+            {
+                if (ShouldMerge(tree))
+                {
+                    Merge(tree);
+                }
+                else
+                {
+                    AddTree(tree);
+                }
+            }
+
             return RecalculateProperties();
         }
 
-        public virtual bool ShouldMerge(Tree treeToMerge)
+        public virtual bool ShouldMerge(Tree otherTree)
         {
-            return (from tree in Trees
-                    where tree.ShouldMerge(treeToMerge)
-                    select 1).Count() > 0;
+            return Trees.Any(t => t.ShouldMerge(otherTree));
         }
 
-        public virtual Tree Merge(Tree treeToMerge)
+        public virtual Tree Merge(Tree otherTree)
         {
-            return (from tree in Trees
-                    where tree.ShouldMerge(treeToMerge)
-                    select tree).First().Merge(treeToMerge);
+            Tree tree = Trees.First(t => t.ShouldMerge(otherTree));
+            return tree.Merge(otherTree);
         }
 
         public static Subsite Create(Imports.Subsite importedSubsite)

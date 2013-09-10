@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Diagnostics;
-using TMD.Model.Imports;
+using System.Linq;
 using TMD.Model.Extensions;
 
 namespace TMD.Model.Sites
@@ -116,45 +114,45 @@ namespace TMD.Model.Sites
         }
 
         public const float CoordinateMinutesEquivalenceProximity = 25f;
-        public virtual bool ShouldMerge(Site siteToMerge)
+        public virtual bool ShouldMerge(Site otherSite)
         {
-            if (!Name.Equals(siteToMerge.Name, StringComparison.OrdinalIgnoreCase))
-            {
+            if (!Name.Equals(otherSite.Name, StringComparison.OrdinalIgnoreCase))
                 return false;
-            }
-            if (CalculatedCoordinates.CalculateDistanceInMinutesTo(siteToMerge.CalculatedCoordinates) > CoordinateMinutesEquivalenceProximity)
-            {
+
+            if (CalculatedCoordinates.CalculateDistanceInMinutesTo(otherSite.CalculatedCoordinates) > CoordinateMinutesEquivalenceProximity)
                 return false;
-            }
+
             return true;
         }
 
-        public virtual Site Merge(Site siteToMerge)
+        public virtual Site Merge(Site otherSite)
         {
-            Visits.AddRange(siteToMerge.Visits);
-            var subsitesToMerge = from subsiteToMerge in siteToMerge.Subsites
-                                  where ShouldMerge(subsiteToMerge)
-                                  select subsiteToMerge;
-            subsitesToMerge.ForEach(subsite => Merge(subsite));
-            var subsitesToAdd = from subsiteToAdd in siteToMerge.Subsites
-                                where !ShouldMerge(subsiteToAdd)
-                                select subsiteToAdd;
-            subsitesToAdd.ForEach(subsite => AddSubsite(subsite));
+            Visits.AddRange(otherSite.Visits);
+
+            foreach (Subsite subsite in otherSite.Subsites)
+            {
+                if (ShouldMerge(subsite))
+                {
+                    Merge(subsite);
+                }
+                else
+                {
+                    AddSubsite(subsite);
+                }
+            }
+
             return RecalculateProperties();
         }
 
-        public virtual bool ShouldMerge(Subsite subsiteToMerge)
+        public virtual bool ShouldMerge(Subsite otherSubsite)
         {
-            return (from subsite in Subsites
-                    where subsite.ShouldMerge(subsiteToMerge)
-                    select 1).Count() > 0;
+            return Subsites.Any(ss => ss.ShouldMerge(otherSubsite));
         }
 
-        public virtual Subsite Merge(Subsite subsiteToMerge)
+        public virtual Subsite Merge(Subsite otherSubsite)
         {
-            return (from subsite in Subsites
-                    where subsite.ShouldMerge(subsiteToMerge)
-                    select subsite).First().Merge(subsiteToMerge);
+            Subsite subsite = Subsites.First(ss => ss.ShouldMerge(otherSubsite));
+            return subsite.Merge(otherSubsite);
         }
 
         public static Site Create(Imports.Site importedSite)
