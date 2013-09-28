@@ -1,9 +1,8 @@
 ﻿using AutoMapper;
+using log4net.Config;
 using StructureMap;
-using System.Configuration;
 using System.Web.Mvc;
 using System.Web.Routing;
-using Tmd.WindowsAzure;
 using TMD.Binders;
 using TMD.Filters;
 using TMD.Infrastructure;
@@ -78,6 +77,8 @@ namespace TMD
 
         protected void Application_Start()
         {
+            XmlConfigurator.Configure();
+
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);
