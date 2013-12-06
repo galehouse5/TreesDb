@@ -1,15 +1,14 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using TMD.Models;
-using TMD.Model;
-using AutoMapper;
-using TMD.Model.Trees;
 using TMD.Extensions;
-using TMD.Model.Sites;
+using TMD.Model;
 using TMD.Model.Locations;
+using TMD.Model.Sites;
+using TMD.Model.Trees;
+using TMD.Models;
 
 namespace TMD.Controllers
 {
@@ -19,10 +18,7 @@ namespace TMD.Controllers
         [ChildActionOnly]
         public virtual ActionResult MenuWidget(bool isSelected)
         {
-            return PartialView(new BrowseMenuWidgetModel
-            {
-                IsSelected = isSelected
-            });
+            return PartialView("_MenuWidget", new BrowseMenuWidgetModel { IsSelected = isSelected });
         }
 
         [DefaultReturnUrl]

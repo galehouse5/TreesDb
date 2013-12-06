@@ -89,7 +89,7 @@
     @Scripts.Render("~/js/Plugins.js")
     @Scripts.Render("~/js/Shared.js")
     <script type="text/javascript">
-        var applicationPath = '@Request.ApplicationPath';
+        var applicationRootUrl = '@Request.ApplicationPath.TrimEnd('/')';
 
         $(function () {
             $('body').InitializeUi();

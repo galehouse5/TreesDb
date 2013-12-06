@@ -31,7 +31,7 @@
             $(this).find('input[type=text].DatePicker')
                 .not('.UiInitialized').addClass('UiInitialized').datepicker({
                     showOn: 'button',
-                    buttonImage: applicationPath + '/images/icons/Calendar.gif',
+                    buttonImage: applicationRootUrl + '/images/icons/Calendar.gif',
                     duration: 0
                 });
         });
