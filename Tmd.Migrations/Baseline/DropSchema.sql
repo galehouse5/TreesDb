@@ -40,8 +40,6 @@ ALTER TABLE [Photos].[References] DROP CONSTRAINT [FK_References_Subsites]
 GO
 ALTER TABLE [Photos].[References] DROP CONSTRAINT [FK_References_Measurements]
 GO
-ALTER TABLE [Photos].[Photos] DROP CONSTRAINT [FK_Photos_Stores]
-GO
 ALTER TABLE [Imports].[Trunks] DROP CONSTRAINT [FK_TrunkMeasurements_Users]
 GO
 ALTER TABLE [Imports].[Trunks] DROP CONSTRAINT [FK_TrunkMeasurements_TreeMeasurements1]
@@ -132,129 +130,135 @@ ALTER TABLE [Imports].[Subsites] DROP CONSTRAINT [DF_SubsiteVisits_Created]
 GO
 ALTER TABLE [Imports].[Sites] DROP CONSTRAINT [DF_SiteVisits_Created]
 GO
-/****** Object:  Index [IX_Users_Email]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Index [IX_Users_Email]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP INDEX [IX_Users_Email] ON [Users].[Users]
 GO
-/****** Object:  View [Locations].[VisitedStates]    Script Date: 8/19/2013 5:09:38 PM ******/
-DROP VIEW [Locations].[VisitedStates]
+/****** Object:  UserDefinedFunction [dbo].[SearchSubsites]    Script Date: 12/5/2013 11:56:43 PM ******/
+DROP FUNCTION [dbo].[SearchSubsites]
 GO
-/****** Object:  View [Trees].[MeasuredSpeciesBySite]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  View [Trees].[MeasuredSpeciesBySite]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP VIEW [Trees].[MeasuredSpeciesBySite]
 GO
-/****** Object:  View [Trees].[MeasuredSpeciesBySubsite]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  View [Trees].[MeasuredSpeciesBySubsite]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP VIEW [Trees].[MeasuredSpeciesBySubsite]
 GO
-/****** Object:  View [Trees].[MeasuredSpeciesByState]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  View [Trees].[MeasuredSpeciesByState]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP VIEW [Trees].[MeasuredSpeciesByState]
 GO
-/****** Object:  View [Trees].[MeasuredSpecies]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  UserDefinedFunction [dbo].[SearchVisitedStates]    Script Date: 12/5/2013 11:56:43 PM ******/
+DROP FUNCTION [dbo].[SearchVisitedStates]
+GO
+/****** Object:  View [Locations].[VisitedStates]    Script Date: 12/5/2013 11:56:43 PM ******/
+DROP VIEW [Locations].[VisitedStates]
+GO
+/****** Object:  UserDefinedFunction [dbo].[SearchMeasuredSpecies]    Script Date: 12/5/2013 11:56:43 PM ******/
+DROP FUNCTION [dbo].[SearchMeasuredSpecies]
+GO
+/****** Object:  View [Trees].[MeasuredSpecies]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP VIEW [Trees].[MeasuredSpecies]
 GO
-/****** Object:  View [ValueObjects].[DistanceFormats]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  View [ValueObjects].[DistanceFormats]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP VIEW [ValueObjects].[DistanceFormats]
 GO
-/****** Object:  Table [Users].[Users]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Users].[Users]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Users].[Users]
 GO
-/****** Object:  Table [Trees].[Trees]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Trees].[Trees]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Trees].[Trees]
 GO
-/****** Object:  Table [Trees].[Measurers]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Trees].[Measurers]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Trees].[Measurers]
 GO
-/****** Object:  Table [Trees].[Measurements]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Trees].[Measurements]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Trees].[Measurements]
 GO
-/****** Object:  Table [Trees].[KnownSpecies]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Trees].[KnownSpecies]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Trees].[KnownSpecies]
 GO
-/****** Object:  Table [Sites].[Visitors]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Sites].[Visitors]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Sites].[Visitors]
 GO
-/****** Object:  Table [Sites].[SubsiteVisits]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Sites].[SubsiteVisits]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Sites].[SubsiteVisits]
 GO
-/****** Object:  Table [Sites].[Subsites]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Sites].[Subsites]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Sites].[Subsites]
 GO
-/****** Object:  Table [Sites].[SiteVisits]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Sites].[SiteVisits]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Sites].[SiteVisits]
 GO
-/****** Object:  Table [Sites].[Sites]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Sites].[Sites]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Sites].[Sites]
 GO
-/****** Object:  Table [Photos].[Stores]    Script Date: 8/19/2013 5:09:38 PM ******/
-DROP TABLE [Photos].[Stores]
-GO
-/****** Object:  Table [Photos].[References]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Photos].[References]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Photos].[References]
 GO
-/****** Object:  Table [Photos].[Photos]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Photos].[Photos]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Photos].[Photos]
 GO
-/****** Object:  Table [Logging].[Errors]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Logging].[Errors]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Logging].[Errors]
 GO
-/****** Object:  Table [Locations].[States]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Locations].[States]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Locations].[States]
 GO
-/****** Object:  Table [Locations].[Countries]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Locations].[Countries]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Locations].[Countries]
 GO
-/****** Object:  Table [Imports].[Trunks]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Imports].[Trunks]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Imports].[Trunks]
 GO
-/****** Object:  Table [Imports].[Trips]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Imports].[Trips]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Imports].[Trips]
 GO
-/****** Object:  Table [Imports].[Trees]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Imports].[Trees]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Imports].[Trees]
 GO
-/****** Object:  Table [Imports].[Subsites]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Imports].[Subsites]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Imports].[Subsites]
 GO
-/****** Object:  Table [Imports].[Sites]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Imports].[Sites]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Imports].[Sites]
 GO
-/****** Object:  Table [Imports].[Measurers]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Table [Imports].[Measurers]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP TABLE [Imports].[Measurers]
 GO
-/****** Object:  UserDefinedFunction [Helpers].[ToTitleCase]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  UserDefinedFunction [Helpers].[ToTitleCase]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP FUNCTION [Helpers].[ToTitleCase]
 GO
-/****** Object:  UserDefinedFunction [Helpers].[Max]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  UserDefinedFunction [Helpers].[Max]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP FUNCTION [Helpers].[Max]
 GO
-/****** Object:  UserDefinedFunction [Helpers].[DistanceEuclidean]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  UserDefinedFunction [Helpers].[DistanceEuclidean]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP FUNCTION [Helpers].[DistanceEuclidean]
 GO
-/****** Object:  Schema [ValueObjects]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Schema [ValueObjects]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP SCHEMA [ValueObjects]
 GO
-/****** Object:  Schema [Users]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Schema [Users]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP SCHEMA [Users]
 GO
-/****** Object:  Schema [Trips]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Schema [Trips]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP SCHEMA [Trips]
 GO
-/****** Object:  Schema [Trees]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Schema [Trees]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP SCHEMA [Trees]
 GO
-/****** Object:  Schema [Sites]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Schema [Sites]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP SCHEMA [Sites]
 GO
-/****** Object:  Schema [Photos]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Schema [Photos]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP SCHEMA [Photos]
 GO
-/****** Object:  Schema [Logging]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Schema [Logging]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP SCHEMA [Logging]
 GO
-/****** Object:  Schema [Locations]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Schema [Locations]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP SCHEMA [Locations]
 GO
-/****** Object:  Schema [Imports]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Schema [Imports]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP SCHEMA [Imports]
 GO
-/****** Object:  Schema [Helpers]    Script Date: 8/19/2013 5:09:38 PM ******/
+/****** Object:  Schema [Helpers]    Script Date: 12/5/2013 11:56:43 PM ******/
 DROP SCHEMA [Helpers]
 GO

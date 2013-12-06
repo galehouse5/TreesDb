@@ -1,0 +1,31 @@
+﻿@using TMD.Models.Search;
+
+@model IEnumerable<ResultModel>
+
+<div class="portlet x12">
+    <div class="portlet-header">
+        <h4>Search results for "@ViewBag.Term"</h4>
+    </div>
+
+    <div class="portlet-content">
+        @if (!Model.Any()) {
+            @:No results found.
+        } else {
+            <table>
+                <tbody>
+                    @foreach (ResultModel result in Model) {
+                        <tr class="search-result">
+                            <td class="value @result.Category">
+                            </td>
+                            <td class="full">
+                                <a href="@result.Url"><strong>@result.Subject</strong></a>
+                                <br />
+                                @result.Description
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>

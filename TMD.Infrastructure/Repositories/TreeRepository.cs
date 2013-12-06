@@ -1,14 +1,12 @@
-﻿using System;
+﻿using NHibernate;
+using NHibernate.Criterion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using TMD.Model.Trees;
-using TMD.Model;
-using NHibernate;
 using TMD.Infrastructure.StringComparison;
-using TMD.Model.Extensions;
-using NHibernate.Criterion;
+using TMD.Model;
 using TMD.Model.Sites;
+using TMD.Model.Trees;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -226,6 +224,20 @@ namespace TMD.Infrastructure.Repositories
                     && Restrictions.Like("site.Name", site, MatchMode.Anywhere)
                     && Restrictions.Like("subsite.Name", subsite, MatchMode.Anywhere))
                 .List<Tree>();
+        }
+
+        public IEnumerable<GlobalMeasuredSpecies> SearchMeasuredSpecies(string expression, int maxResults)
+        {
+            return Registry.Session.CreateSQLQuery(
+@"select species.*
+from dbo.SearchMeasuredSpecies(:expression) rank
+join Trees.MeasuredSpecies species
+    on species.Id = rank.Id
+order by rank.Rank desc")
+                .AddEntity(typeof(GlobalMeasuredSpecies))
+                .SetParameter("expression", expression)
+                .SetMaxResults(maxResults)
+                .List<GlobalMeasuredSpecies>();
         }
     }
 

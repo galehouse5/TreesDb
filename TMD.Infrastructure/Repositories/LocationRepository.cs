@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using TMD.Model.Locations;
-using NHibernate;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -63,6 +59,21 @@ namespace TMD.Infrastructure.Repositories
         public VisitedState FindVisitedStateById(int id)
         {
             return Registry.Session.Get<VisitedState>(id);
+        }
+
+        public IEnumerable<VisitedState> SearchVisitedStates(string expression, int maxResults)
+        {
+            return Registry.Session.CreateSQLQuery(
+@"select state.*
+from dbo.SearchVisitedStates(:expression) rank
+join Locations.VisitedStates state
+    on state.Id = rank.Id
+order by rank.Rank desc")
+                .AddEntity(typeof(VisitedState))
+                .SetParameter("expression", expression)
+                .SetMaxResults(maxResults)
+                .List<VisitedState>();
+            
         }
     }
 }

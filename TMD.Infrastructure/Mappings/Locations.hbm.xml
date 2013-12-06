@@ -15,21 +15,17 @@
       <component name="NE" class="Coordinates">
         <component name="Latitude" class="Latitude">
           <property name="TotalDegrees" column="NELatitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
         <component name="Longitude" class="Longitude">
           <property name="TotalDegrees" column="NELongitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
       </component>
       <component name="SW" class="Coordinates">
         <component name="Latitude" class="Latitude">
           <property name="TotalDegrees" column="SWLatitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
         <component name="Longitude" class="Longitude">
           <property name="TotalDegrees" column="SWLongitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
       </component>
     </component>
@@ -48,21 +44,17 @@
       <component name="NE" class="Coordinates">
         <component name="Latitude" class="Latitude">
           <property name="TotalDegrees" column="NELatitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
         <component name="Longitude" class="Longitude">
           <property name="TotalDegrees" column="NELongitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
       </component>
       <component name="SW" class="Coordinates">
         <component name="Latitude" class="Latitude">
           <property name="TotalDegrees" column="SWLatitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
         <component name="Longitude" class="Longitude">
           <property name="TotalDegrees" column="SWLongitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
       </component>
     </component>
@@ -81,21 +73,17 @@
       <component name="NE" class="Coordinates">
         <component name="Latitude" class="Latitude">
           <property name="TotalDegrees" column="NELatitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
         <component name="Longitude" class="Longitude">
           <property name="TotalDegrees" column="NELongitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
       </component>
       <component name="SW" class="Coordinates">
         <component name="Latitude" class="Latitude">
           <property name="TotalDegrees" column="SWLatitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
         <component name="Longitude" class="Longitude">
           <property name="TotalDegrees" column="SWLongitude" />
-          <property name="InputFormat" formula="(select 2)" />
         </component>
       </component>
     </component>

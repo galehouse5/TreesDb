@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace TMD.Model.Sites
 {
@@ -17,6 +14,7 @@ namespace TMD.Model.Sites
         void Remove(Site site);
         EntityPage<Subsite> ListAllSubsites(SubsiteBrowser browser);
         IList<Subsite> FindSubsitesByStateId(int stateId);
+        IEnumerable<Subsite> SearchSubsites(string expression, int maxResults);
     }
 
     public class SubsiteBrowser : IPagingOptions

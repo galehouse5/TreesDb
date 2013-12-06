@@ -7,7 +7,7 @@
     <noscript><style type="text/css">.ShowIfJavascriptEnabled { display: none; } .ShowIfJavascriptDisabled { display: block; }</style></noscript>
     <link href="@Url.ManagedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
     <link href="@Url.ManagedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
-    <link href="@Url.ManagedContent(Links.css.Shared_css, Links.css.Shared_min_css)" rel="Stylesheet" type="text/css" />
+    @Styles.Render("~/css/Shared.css")
     @RenderSection("Styles", false)
 </head>
 <body>
@@ -24,7 +24,7 @@
                        Html.RenderAction(MVC.Browse.MenuWidget(ViewContext.Controller is TMD.Controllers.BrowseController));
                        Html.RenderAction(MVC.Import.MenuWidget(ViewContext.Controller is TMD.Controllers.ImportController));
                        Html.RenderAction(MVC.Main.MenuWidget(ViewContext.Controller is TMD.Controllers.MainController));
-                       Html.RenderAction(MVC.Main.SuggestionsMenuWidget()); }
+                       Html.RenderAction(MVC.Search.MenuWidget()); }
                 </ul>
             </div>
             <!-- #nav -->
@@ -86,10 +86,14 @@
     <!-- #wrapper -->
     <script src="@Url.ManagedContent(Links.js.jquery.jquery_1_4_4_min_js)" type="text/javascript"></script>
     <script src="@Url.ManagedContent(Links.js.jquery.jquery_ui_1_8_7_custom_min_js)" type="text/javascript"></script>
-    <script src="@Url.ManagedContent(Links.js.Plugins_js, Links.js.Plugins_min_js)" type="text/javascript"></script>
-    <script src="@Url.ManagedContent(Links.js.Shared_js, Links.js.Shared_min_js)" type="text/javascript"></script>
+    @Scripts.Render("~/js/Plugins.js")
+    @Scripts.Render("~/js/Shared.js")
     <script type="text/javascript">
-        $(function () { $('body').InitializeUi(); });
+        var applicationPath = '@Request.ApplicationPath';
+
+        $(function () {
+            $('body').InitializeUi();
+        });
     </script>
     @RenderSection("Scripts", false)
     @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics) {

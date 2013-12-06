@@ -73,7 +73,6 @@ namespace TMD.Controllers
         public class ActionNamesClass
         {
             public readonly string MenuWidget = "MenuWidget";
-            public readonly string SuggestionsMenuWidget = "SuggestionsMenuWidget";
             public readonly string Index = "Index";
             public readonly string About = "About";
             public readonly string SetUnits = "SetUnits";
@@ -83,7 +82,6 @@ namespace TMD.Controllers
         public class ActionNameConstants
         {
             public const string MenuWidget = "MenuWidget";
-            public const string SuggestionsMenuWidget = "SuggestionsMenuWidget";
             public const string Index = "Index";
             public const string About = "About";
             public const string SetUnits = "SetUnits";
@@ -117,13 +115,11 @@ namespace TMD.Controllers
             public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
             public class _ViewNamesClass
             {
-                public readonly string Index = "Index";
+                public readonly string About = "About";
                 public readonly string MenuWidget = "MenuWidget";
-                public readonly string SuggestionsMenuWidget = "SuggestionsMenuWidget";
             }
-            public readonly string Index = "~/Views/Main/Index.cshtml";
+            public readonly string About = "~/Views/Main/About.cshtml";
             public readonly string MenuWidget = "~/Views/Main/MenuWidget.cshtml";
-            public readonly string SuggestionsMenuWidget = "~/Views/Main/SuggestionsMenuWidget.cshtml";
         }
     }
 
@@ -139,15 +135,6 @@ namespace TMD.Controllers
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.MenuWidget);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "isSelected", isSelected);
             MenuWidgetOverride(callInfo, isSelected);
-            return callInfo;
-        }
-
-        partial void SuggestionsMenuWidgetOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
-
-        public override System.Web.Mvc.ActionResult SuggestionsMenuWidget()
-        {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SuggestionsMenuWidget);
-            SuggestionsMenuWidgetOverride(callInfo);
             return callInfo;
         }
 

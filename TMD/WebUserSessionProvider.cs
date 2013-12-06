@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using TMD.Model;
-using TMD.Model.Users;
-using System.Web.Security;
-using System.Security.Principal;
-using TMD.Model.Extensions;
 using System.Diagnostics;
+using System.Security.Principal;
+using System.Web;
 using TMD.Extensions;
+using TMD.Model;
+using TMD.Model.Extensions;
+using TMD.Model.Users;
 
 namespace TMD
 {
@@ -88,39 +85,35 @@ namespace TMD
 
     public class WebUserSessionProvider : IUserSessionProvider, IHttpModule
     {
-        private HttpApplication ApplicationContext { get; set; }
-
-        public void Dispose()
-        {
-            ApplicationContext.AcquireRequestState -= Context_PostAuthenticateRequest;
-        }
-
-        public void Init(HttpApplication context)
-        {
-            ApplicationContext = context;
-            ApplicationContext.PostAuthenticateRequest += new EventHandler(Context_PostAuthenticateRequest);
-        }
-
-        void Context_PostAuthenticateRequest(object sender, EventArgs e)
-        {
-            ApplicationContext.Context.User = ApplicationContext.Context.User.Identity.IsAuthenticated ?
-                new WebUser(Repositories.Users.FindById(int.Parse(ApplicationContext.Context.User.Identity.Name))) :
-                new WebUser(new AnonymousUser());
-        }
-
-        bool IUserSessionProvider.IsAnonymous
+        public bool IsAnonymous
         {
             get { return !HttpContext.Current.User.Identity.IsAuthenticated; }
         }
 
-        User IUserSessionProvider.User
+        public User User
         {
             get { return HttpContext.Current.User is GenericPrincipal ? null : (WebUser)HttpContext.Current.User; }
         }
 
-        Units IUserSessionProvider.Units
+        public Units Units
         {
             get { return HttpContext.Current.Request.Cookies.GetUnitsPreference(); }
+        }
+
+        void IHttpModule.Init(HttpApplication context)
+        {
+            context.PostAuthenticateRequest += (sender, e) =>
+                {
+                    IIdentity identity = context.Context.User.Identity;
+                    context.Context.User = identity.IsAuthenticated ?
+                        new WebUser(Repositories.Users.FindById(int.Parse(identity.Name)))
+                        : new WebUser(new AnonymousUser());
+                };
+        }
+
+        void IHttpModule.Dispose()
+        {
+            // do nothing
         }
     }
 

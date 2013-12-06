@@ -14,27 +14,16 @@ namespace TMD.Controllers
             return PartialView(isSelected);
         }
 
-        [ChildActionOnly]
-        public virtual ActionResult SuggestionsMenuWidget()
-        {
-            return PartialView((object)WebApplicationRegistry.Settings.SuggestionsUrl);
-        }
-
         [HttpGet]
         public virtual ActionResult Index()
         {
             return RedirectToAction("Index", "Map");
         }
 
-        [DefaultReturnUrl]
-        [HttpGet]
+        [HttpGet, DefaultReturnUrl]
         public virtual ActionResult About()
         {
-            var model = new MainModel
-            {
-                RecentPhotos = Repositories.Photos.ListRecentPublicPhotos(10)
-            };
-            return View(model);
+            return View();
         }
 
         [HttpPost]

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Configuration;
+﻿using System.Configuration;
 
 namespace TMD
 {
@@ -19,7 +15,6 @@ namespace TMD
             public const string EnableGoogleAnalytics = "enableGoogleAnalytics";
             public const string GoogleAnalyticsPropertyID = "googleAnalyticsPropertyID";
             public const string EnableBrowserCompatibilityCheck = "enableBrowserCompatibilityCheck";
-            public const string SuggestionsUrl = "suggestionsUrl";
         }
 
         [ConfigurationProperty(PropertyNames.HostName, IsRequired = true)]
@@ -83,13 +78,6 @@ namespace TMD
         {
             get { return (bool)this[PropertyNames.EnableBrowserCompatibilityCheck]; }
             set { this[PropertyNames.EnableBrowserCompatibilityCheck] = value; }
-        }
-
-        [ConfigurationProperty(PropertyNames.SuggestionsUrl, IsRequired = false)]
-        public string SuggestionsUrl
-        {
-            get { return (string)this[PropertyNames.SuggestionsUrl]; }
-            set { this[PropertyNames.SuggestionsUrl] = value; }
         }
     }
 }

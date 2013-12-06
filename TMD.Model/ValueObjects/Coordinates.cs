@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using NHibernate.Validator.Constraints;
+using System;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
-using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
@@ -170,7 +167,9 @@ namespace TMD.Model
     public class Latitude : ISpecified, ICloneable
     {
         private Latitude()
-        { }
+        {
+            InputFormat = CoordinatesFormat.Default;
+        }
 
         public string RawValue { get; private set; }
 
@@ -344,7 +343,9 @@ namespace TMD.Model
     public class Longitude : ISpecified, ICloneable
     {
         private Longitude()
-        { }
+        {
+            InputFormat = CoordinatesFormat.Default;
+        }
 
         public string RawValue { get; private set; }
 

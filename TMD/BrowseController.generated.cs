@@ -231,11 +231,11 @@ namespace TMD.Controllers
             public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
             public class _ViewNamesClass
             {
+                public readonly string _MenuWidget = "_MenuWidget";
                 public readonly string GlobalSpeciesGridPartial = "GlobalSpeciesGridPartial";
                 public readonly string Index = "Index";
                 public readonly string Locations = "Locations";
                 public readonly string LocationsGridPartial = "LocationsGridPartial";
-                public readonly string MenuWidget = "MenuWidget";
                 public readonly string SiteDetails = "SiteDetails";
                 public readonly string SitesGridPartial = "SitesGridPartial";
                 public readonly string SiteSpeciesGridPartial = "SiteSpeciesGridPartial";
@@ -248,11 +248,11 @@ namespace TMD.Controllers
                 public readonly string TreeDetails = "TreeDetails";
                 public readonly string TreesGridPartial = "TreesGridPartial";
             }
+            public readonly string _MenuWidget = "~/Views/Browse/_MenuWidget.cshtml";
             public readonly string GlobalSpeciesGridPartial = "~/Views/Browse/GlobalSpeciesGridPartial.cshtml";
             public readonly string Index = "~/Views/Browse/Index.cshtml";
             public readonly string Locations = "~/Views/Browse/Locations.cshtml";
             public readonly string LocationsGridPartial = "~/Views/Browse/LocationsGridPartial.cshtml";
-            public readonly string MenuWidget = "~/Views/Browse/MenuWidget.cshtml";
             public readonly string SiteDetails = "~/Views/Browse/SiteDetails.cshtml";
             public readonly string SitesGridPartial = "~/Views/Browse/SitesGridPartial.cshtml";
             public readonly string SiteSpeciesGridPartial = "~/Views/Browse/SiteSpeciesGridPartial.cshtml";

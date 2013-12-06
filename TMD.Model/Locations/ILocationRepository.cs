@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace TMD.Model.Locations
 {
@@ -14,5 +11,6 @@ namespace TMD.Model.Locations
         State FindStateByCountryAndStateCode(string countryCode, string stateCode);
         IList<State> FindStatesByCountryCode(string code);
         VisitedState FindVisitedStateById(int id);
+        IEnumerable<VisitedState> SearchVisitedStates(string expression, int maxResults);
     }
 }

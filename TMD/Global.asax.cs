@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
 using log4net.Config;
 using StructureMap;
+using System.Configuration;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
+using Tmd.WindowsAzure;
 using TMD.Binders;
 using TMD.Filters;
 using TMD.Infrastructure;
@@ -15,7 +18,6 @@ namespace TMD
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
-
     public class MvcApplication : System.Web.HttpApplication
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
@@ -83,6 +85,7 @@ namespace TMD
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             //ModelBinders.Binders.DefaultBinder = new DefaultGraphModelBinder();
             ModelBinders.Binders.Add(typeof(IUnitOfWork), new NullModelBinder());

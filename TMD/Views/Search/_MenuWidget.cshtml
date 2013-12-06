@@ -1,0 +1,7 @@
+﻿<li id="search" class="mega">
+    @using (Html.BeginForm("Index", "Search", new { id = (int?)null }, FormMethod.Get)) {
+        <div class="field">
+            <input type="text" name="term" value="@ViewBag.Term" placeholder="Search species and locations" size="50" />
+        </div>
+    }
+</li>

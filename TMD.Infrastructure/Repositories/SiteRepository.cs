@@ -1,13 +1,12 @@
-﻿using System;
+﻿using NHibernate;
+using NHibernate.Criterion;
+using NHibernate.Transform;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using TMD.Model.Sites;
 using TMD.Model;
-using NHibernate.Criterion;
 using TMD.Model.Extensions;
-using NHibernate.Transform;
-using NHibernate;
+using TMD.Model.Sites;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -132,6 +131,20 @@ namespace TMD.Infrastructure.Repositories
                 .CreateAlias("Site", "site")
                 .Add(Restrictions.Eq("State.Id", stateId))
                 .AddOrder(Order.Asc("site.Name")).AddOrder(Order.Asc("Name"))
+                .List<Subsite>();
+        }
+
+        public IEnumerable<Subsite> SearchSubsites(string expression, int maxResults)
+        {
+            return Registry.Session.CreateSQLQuery(
+@"select subsite.*
+from dbo.SearchSubsites(:expression) rank
+join Sites.Subsites subsite
+    on subsite.Id = rank.Id
+order by rank.Rank desc")
+                .AddEntity(typeof(Subsite))
+                .SetParameter("expression", expression)
+                .SetMaxResults(maxResults)
                 .List<Subsite>();
         }
     }

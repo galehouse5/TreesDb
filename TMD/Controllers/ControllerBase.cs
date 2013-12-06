@@ -13,6 +13,10 @@ namespace TMD
         public override void OnResultExecuted(ResultExecutedContext filterContext)
         {
             base.OnResultExecuted(filterContext);
+
+            if (filterContext.HttpContext.Request.IsAjaxRequest())
+                return;
+
             ((ControllerBase)filterContext.Controller).Session.SetDefaultReturnUrl(((ControllerBase)filterContext.Controller).Request.RawUrl);
         }
     }

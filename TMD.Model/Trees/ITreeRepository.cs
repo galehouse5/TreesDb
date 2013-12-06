@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace TMD.Model.Trees
 {
@@ -22,6 +19,7 @@ namespace TMD.Model.Trees
 
         EntityPage<T> ListAllMeasuredSpecies<T>(SpeciesBrowser browser) where T : MeasuredSpecies;
         GlobalMeasuredSpecies FindMeasuredSpeciesByName(string botanicalName, string commonName);
+        IEnumerable<GlobalMeasuredSpecies> SearchMeasuredSpecies(string expression, int maxResults);
         StateMeasuredSpecies FindMeasuredSpeciesByNameAndStateId(string botanicalName, string commonName, int stateId);
         SiteMeasuredSpecies FindMeasuredSpeciesByNameAndSiteId(string botanicalName, string commonName, int siteId);
         SubsiteMeasuredSpecies FindMeasuredSpeciesByNameAndSubsiteId(string botanicalName, string commonName, int subsiteId);
