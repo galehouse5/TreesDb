@@ -414,7 +414,7 @@ namespace TMD.Extensions
             {
                 if (column.CanSort)
                 {
-                    string @class = column.IsSorted(model) ? model.SortAscending ? "sorting_asc" : "sorting_desc" : "sorting";
+                    string @class = column.IsSorted(model) ? model.SortAscending ? "sorting_asc" : "sorting_desc" : string.Empty;
                     output.Write("<th class='{0}'>", @class);
                     output.Write("<a href='{0}'><span>{1}</span></a>", HttpUtility.HtmlEncode(model.GetSortUrl(column.ColumnName, column.DefaultSortAscending)), HttpUtility.HtmlEncode(column.Header));
                 }
@@ -425,10 +425,9 @@ namespace TMD.Extensions
                 }
                 output.Write("</th>");
             }
-            output.Write("</tr></thead>");
             if (model.CanAnyColumnFilter)
             {
-                output.Write("<tfoot><tr>");
+                output.Write("</tr><tr>");
                 foreach (var column in model.Columns)
                 {
                     output.Write("<th>");
@@ -436,7 +435,7 @@ namespace TMD.Extensions
                     {
                         output.Write("<input type='text' name='{0}' value='{1}'",
                             model.GetFilterParameterName(column.ColumnName),
-                            model.FiltersByColumnName.ContainsKey(column.ColumnName) ? 
+                            model.FiltersByColumnName.ContainsKey(column.ColumnName) ?
                                 HttpUtility.HtmlEncode(model.FiltersByColumnName[column.ColumnName]) : string.Empty
                         );
                         if (column.FilterTitle != null)
@@ -448,8 +447,8 @@ namespace TMD.Extensions
                     }
                     output.Write("</th>");
                 }
-                output.Write("</tr></tfoot>");
             }
+            output.Write("</tr></thead>");
             output.Write("<tbody>");
             bool isEven = false;
             foreach (T row in dataSource)

@@ -4,7 +4,7 @@
     {
     	builder
     		.Custom("State", species => Html.ActionLink(species.State.Name, MVC.Browse.StateDetails(species.State.Id)))
-    		.Options(header: "State or province", canSort: true);
+    		.Options(header: "State", canSort: true);
     	builder
     		.Custom("MaxHeight", species => species.MaxHeight.IsValidAndSpecified() ?
     			Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), MVC.Browse.TreeDetails(species.MaxHeightTree.Id))

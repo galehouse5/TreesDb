@@ -238,7 +238,7 @@ namespace TMD.Controllers
             DataTable table = new DataTable();
             table.Columns.Add("Common Name");
             table.Columns.Add("Botanical Name");
-            table.Columns.Add("State or province");
+            table.Columns.Add("State");
             table.Columns.Add("County or township");
             table.Columns.Add("Site");
             table.Columns.Add("Subsite");
