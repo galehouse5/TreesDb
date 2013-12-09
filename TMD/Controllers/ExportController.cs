@@ -239,7 +239,7 @@ namespace TMD.Controllers
             table.Columns.Add("Common Name");
             table.Columns.Add("Botanical Name");
             table.Columns.Add("State");
-            table.Columns.Add("County or township");
+            table.Columns.Add("County");
             table.Columns.Add("Site");
             table.Columns.Add("Subsite");
             table.Columns.Add("Subsite Latitude");
