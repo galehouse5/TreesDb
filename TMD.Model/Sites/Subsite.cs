@@ -16,28 +16,28 @@ namespace TMD.Model.Sites
         protected Subsite()
         { }
 
-        public virtual int Id { get; private set; }
+        public virtual int Id { get; protected set; }
         public virtual Site Site { get; protected internal set; }
-        public virtual DateTime LastVisited { get; private set; }
-        public virtual string Name { get; private set; }
-        public virtual State State { get; private set; }
-        public virtual string County { get; private set; }
-        public virtual string OwnershipType { get; private set; }
-        public virtual Coordinates Coordinates { get; private set; }
-        public virtual Coordinates CalculatedCoordinates { get; private set; }
-        public virtual string OwnershipContactInfo { get; private set; }
-        public virtual bool MakeOwnershipContactInfoPublic { get; private set; }
-        public virtual float? RHI5 { get; private set; }
-        public virtual float? RHI10 { get; private set; }
-        public virtual float? RHI20 { get; private set; }
-        public virtual float? RGI5 { get; private set; }
-        public virtual float? RGI10 { get; private set; }
-        public virtual float? RGI20 { get; private set; }
-        public virtual IList<IPhoto> Photos { get; private set; }
-        public virtual int TreesWithSpecifiedCoordinatesCount { get; private set; }
-        public virtual int VisitCount { get; private set; }
+        public virtual DateTime LastVisited { get; protected set; }
+        public virtual string Name { get; protected set; }
+        public virtual State State { get; protected set; }
+        public virtual string County { get; protected set; }
+        public virtual string OwnershipType { get; protected set; }
+        public virtual Coordinates Coordinates { get; protected set; }
+        public virtual Coordinates CalculatedCoordinates { get; protected set; }
+        public virtual string OwnershipContactInfo { get; protected set; }
+        public virtual bool MakeOwnershipContactInfoPublic { get; protected set; }
+        public virtual float? RHI5 { get; protected set; }
+        public virtual float? RHI10 { get; protected set; }
+        public virtual float? RHI20 { get; protected set; }
+        public virtual float? RGI5 { get; protected set; }
+        public virtual float? RGI10 { get; protected set; }
+        public virtual float? RGI20 { get; protected set; }
+        public virtual IList<IPhoto> Photos { get; protected set; }
+        public virtual int TreesWithSpecifiedCoordinatesCount { get; protected set; }
+        public virtual int VisitCount { get; protected set; }
         public virtual SubsiteVisit LastVisit { get { return (from v in Visits orderby v.Visited select v).Last(); } }
-        public virtual IList<Name> Visitors { get; private set; }
+        public virtual IList<Name> Visitors { get; protected set; }
         
         public virtual Coordinates CalculateCoordinates() 
         { 
@@ -109,8 +109,8 @@ namespace TMD.Model.Sites
             return this;
         }
 
-        public virtual IList<SubsiteVisit> Visits { get; private set; }
-        public virtual IList<Tree> Trees { get; private set; }
+        public virtual IList<SubsiteVisit> Visits { get; protected set; }
+        public virtual IList<Tree> Trees { get; protected set; }
 
         public virtual void AddVisit(SubsiteVisit visit)
         {
@@ -218,7 +218,7 @@ namespace TMD.Model.Sites
     {
         protected SubsitePhotoReference() { }
         protected internal SubsitePhotoReference(Photo photo, Subsite subsite) : base(photo) { this.Subsite = subsite; }
-        public virtual Subsite Subsite { get; private set; }
+        public virtual Subsite Subsite { get; protected set; }
         public override bool IsAuthorizedToView(User user) { return true; }
 
         public override IList<Name> Photographers

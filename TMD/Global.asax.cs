@@ -1,11 +1,9 @@
 ﻿using AutoMapper;
 using log4net.Config;
 using StructureMap;
-using System.Configuration;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Tmd.WindowsAzure;
 using TMD.Binders;
 using TMD.Filters;
 using TMD.Infrastructure;

@@ -9,10 +9,10 @@ namespace TMD.Model.Locations
         { }
 
         public virtual string Name { get; protected set; }
-        public virtual CoordinateBounds CoordinateBounds { get; private set; }
-        public virtual Country Country { get; private set; }
-        public virtual string DoubleLetterCode { get; private set; }
-        public virtual string TripleLetterCode { get; private set; }
+        public virtual CoordinateBounds CoordinateBounds { get; protected set; }
+        public virtual Country Country { get; protected set; }
+        public virtual string DoubleLetterCode { get; protected set; }
+        public virtual string TripleLetterCode { get; protected set; }
 
         public virtual string Code
         {
@@ -34,12 +34,12 @@ namespace TMD.Model.Locations
 
     public class VisitedState : StateBase
     {
-        public virtual float? RHI5 { get; private set; }
-        public virtual float? RHI10 { get; private set; }
-        public virtual float? RHI20 { get; private set; }
-        public virtual float? RGI5 { get; private set; }
-        public virtual float? RGI10 { get; private set; }
-        public virtual float? RGI20 { get; private set; }
+        public virtual float? RHI5 { get; protected set; }
+        public virtual float? RHI10 { get; protected set; }
+        public virtual float? RHI20 { get; protected set; }
+        public virtual float? RGI5 { get; protected set; }
+        public virtual float? RGI10 { get; protected set; }
+        public virtual float? RGI20 { get; protected set; }
     }
 
     // simplifies differentiation from VisitedState in HQL queries

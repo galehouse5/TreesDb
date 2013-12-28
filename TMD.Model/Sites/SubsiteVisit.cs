@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Diagnostics;
+using System.Linq;
+using TMD.Model.Extensions;
 using TMD.Model.Imports;
-using TMD.Model.Trees;
 using TMD.Model.Locations;
 using TMD.Model.Photos;
 using TMD.Model.Users;
-using TMD.Model.Extensions;
 
 namespace TMD.Model.Sites
 {
@@ -18,22 +16,22 @@ namespace TMD.Model.Sites
         protected SubsiteVisit()
         { }
 
-        public virtual int Id { get; private set; }
-        public virtual Trip ImportingTrip { get; private set; }
+        public virtual int Id { get; protected set; }
+        public virtual Trip ImportingTrip { get; protected set; }
         public virtual Subsite Subsite { get; protected internal set; }
 
-        public virtual DateTime Visited { get; private set; }
-        public virtual string Name { get; private set; }
-        public virtual State State { get; private set; }
-        public virtual string County { get; private set; }
-        public virtual string OwnershipType { get; private set; }
-        public virtual Coordinates Coordinates { get; private set; }
-        public virtual Coordinates CalculatedCoordinates { get; private set; }
-        public virtual string OwnershipContactInfo { get; private set; }
-        public virtual bool MakeOwnershipContactInfoPublic { get; private set; }
-        public virtual string Comments { get; private set; }
-        public virtual IList<IPhoto> Photos { get; private set; }
-        public virtual IList<Name> Visitors { get; private set; }
+        public virtual DateTime Visited { get; protected set; }
+        public virtual string Name { get; protected set; }
+        public virtual State State { get; protected set; }
+        public virtual string County { get; protected set; }
+        public virtual string OwnershipType { get; protected set; }
+        public virtual Coordinates Coordinates { get; protected set; }
+        public virtual Coordinates CalculatedCoordinates { get; protected set; }
+        public virtual string OwnershipContactInfo { get; protected set; }
+        public virtual bool MakeOwnershipContactInfoPublic { get; protected set; }
+        public virtual string Comments { get; protected set; }
+        public virtual IList<IPhoto> Photos { get; protected set; }
+        public virtual IList<Name> Visitors { get; protected set; }
 
         public static SubsiteVisit Create(Imports.Subsite importedSubsite)
         {
@@ -63,7 +61,7 @@ namespace TMD.Model.Sites
     {
         protected SubsiteVisitPhotoReference() { }
         protected internal SubsiteVisitPhotoReference(Photo photo, SubsiteVisit subsiteVisit) : base(photo) { this.SubsiteVisit = subsiteVisit; }
-        public virtual SubsiteVisit SubsiteVisit { get; private set; }
+        public virtual SubsiteVisit SubsiteVisit { get; protected set; }
         public override bool IsAuthorizedToView(User user) { return true; }
 
         public override IList<Name> Photographers

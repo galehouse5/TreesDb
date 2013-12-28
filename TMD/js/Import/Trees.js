@@ -10,7 +10,7 @@
 
             $(this).find('.CommonName input[type=text]')
                 .not('.UiTreesInitialized').addClass('UiTreesInitialized')
-                .autocomplete({ source: "/Trees/FindKnownSpeciesWithSimilarCommonName", minLength: 2,
+                .autocomplete({ source: applicationRootUrl + "/Trees/FindKnownSpeciesWithSimilarCommonName", minLength: 2,
                     select: function (event, ui) {
                         var $scientificNameContainer = $(this).closest('.Tree').find('.ScientificName input[type=text]');
                         $scientificNameContainer.val(ui.item.ScientificName);
@@ -19,7 +19,7 @@
 
             $(this).find('.ScientificName input[type=text]')
                 .not('.UiTreesInitialized').addClass('UiTreesInitialized')
-                .autocomplete({ source: "/Trees/FindKnownSpeciesWithSimilarScientificName", minLength: 2,
+                .autocomplete({ source: applicationRootUrl + "/Trees/FindKnownSpeciesWithSimilarScientificName", minLength: 2,
                     select: function (event, ui) {
                         var $commonNameContainer = $(this).closest('.Tree').find('.CommonName input[type=text]');
                         $commonNameContainer.val(ui.item.CommonName);

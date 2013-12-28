@@ -28,7 +28,7 @@ namespace TMD.Model.Photos
         public virtual bool IsAuthorizedToAdd(User user) { return false; }
         public virtual bool IsAuthorizedToRemove(User user) { return false; }
 
-        public virtual int Id { get; private set; }
+        public virtual int Id { get; protected set; }
         [Valid] public virtual Photo Photo { get; protected set; }
         public virtual int StaticId { get { return Photo.Id; } }
         public virtual Size Size { get { return Photo.Size; } }

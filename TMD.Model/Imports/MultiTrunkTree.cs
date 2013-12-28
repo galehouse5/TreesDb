@@ -77,7 +77,7 @@ namespace TMD.Model.Imports
 
         [Valid]
         [Size(0, 100, Message = "This tree contains too many trunk measurements.", Tags = new [] { ValidationTag.Screening, ValidationTag.Persistence })]
-        public virtual IList<Trunk> Trunks { get; private set; }
+        public virtual IList<Trunk> Trunks { get; protected set; }
 
         public virtual Trunk AddTrunkMeasurement()
         {

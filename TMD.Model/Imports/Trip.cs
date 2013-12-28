@@ -58,7 +58,7 @@ namespace TMD.Model.Imports
 
         [Valid, Size2(1, int.MaxValue, Message = "You must record at least one measurer.", Tags = ValidationTag.Screening)]
         [Size2(0, 3, Message = "You have recorded too many measurers.", Tags = new [] { ValidationTag.Screening, ValidationTag.Persistence })]
-        public virtual IList<Name> Measurers { get; private set; }
+        public virtual IList<Name> Measurers { get; protected set; }
 
         public virtual bool IsImported { get { return Imported != null; } }
         public virtual DateTime? Imported { get; protected internal set; }

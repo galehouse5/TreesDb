@@ -1,15 +1,12 @@
-﻿using System;
+﻿using NHibernate.Validator.Constraints;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
 using System.Diagnostics;
-using TMD.Model.Locations;
+using System.Linq;
 using TMD.Model.Extensions;
-using NHibernate.Validator.Constraints;
+using TMD.Model.Locations;
 using TMD.Model.Photos;
-using System.Drawing;
 using TMD.Model.Users;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Imports
 {
@@ -181,7 +178,7 @@ namespace TMD.Model.Imports
     {
         protected SubsitePhotoReference() {}
         protected internal SubsitePhotoReference(Photo photo, Subsite subsite) : base(photo) { this.Subsite = subsite; }
-        public virtual Subsite Subsite { get; private set; }
+        public virtual Subsite Subsite { get; protected set; }
         public override bool IsAuthorizedToAdd(User user) { return user.IsAuthorizedToEdit(Subsite.Site.Trip); }
         public override bool IsAuthorizedToView(User user) { return user.IsAuthorizedToEdit(Subsite.Site.Trip); }
         public override bool IsAuthorizedToRemove(User user) { return user.IsAuthorizedToEdit(Subsite.Site.Trip); }

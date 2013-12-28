@@ -15,30 +15,30 @@ namespace TMD.Model.Trees
         protected Tree()
         { }
 
-        public virtual int Id { get; private set; }
+        public virtual int Id { get; protected set; }
         public virtual Subsite Subsite { get; protected internal set; }
-        public virtual GlobalMeasuredSpecies Species { get; private set; }
-        public virtual DateTime LastMeasured { get; private set; }
-        public virtual string CommonName { get; private set; }
-        public virtual string ScientificName { get; private set; }
-        public virtual Distance Height { get; private set; }
-        public virtual Imports.TreeHeightMeasurementMethod HeightMeasurementMethod { get; private set; }
-        public virtual Distance Girth { get; private set; }
-        public virtual Distance CrownSpread { get; private set; }
-        public virtual Coordinates Coordinates { get; private set; }
-        public virtual Coordinates CalculatedCoordinates { get; private set; }
-        public virtual Elevation Elevation { get; private set; }
+        public virtual GlobalMeasuredSpecies Species { get; protected set; }
+        public virtual DateTime LastMeasured { get; protected set; }
+        public virtual string CommonName { get; protected set; }
+        public virtual string ScientificName { get; protected set; }
+        public virtual Distance Height { get; protected set; }
+        public virtual Imports.TreeHeightMeasurementMethod HeightMeasurementMethod { get; protected set; }
+        public virtual Distance Girth { get; protected set; }
+        public virtual Distance CrownSpread { get; protected set; }
+        public virtual Coordinates Coordinates { get; protected set; }
+        public virtual Coordinates CalculatedCoordinates { get; protected set; }
+        public virtual Elevation Elevation { get; protected set; }
 
-        public virtual Distance Diameter { get; private set; }
-        public virtual float? ENTSPTS { get; private set; }
-        public virtual Volume ConicalVolume { get; private set; }
-        public virtual float? ENTSPTS2 { get; private set; }
-        public virtual float? ChampionPoints { get; private set; }
-        public virtual float? AbbreviatedChampionPoints { get; private set; }
+        public virtual Distance Diameter { get; protected set; }
+        public virtual float? ENTSPTS { get; protected set; }
+        public virtual Volume ConicalVolume { get; protected set; }
+        public virtual float? ENTSPTS2 { get; protected set; }
+        public virtual float? ChampionPoints { get; protected set; }
+        public virtual float? AbbreviatedChampionPoints { get; protected set; }
 
-        public virtual IList<IPhoto> Photos { get; private set; }
+        public virtual IList<IPhoto> Photos { get; protected set; }
         public virtual Measurement LastMeasurement { get { return (from m in Measurements orderby m.Measured select m).Last(); } }
-        public virtual IList<Name> Measurers { get; private set; }
+        public virtual IList<Name> Measurers { get; protected set; }
 
         public virtual Coordinates CalculateCoordinates() 
         { 
@@ -80,8 +80,8 @@ namespace TMD.Model.Trees
         public virtual float? TDI2 { get { return Species.CalculateTDI2(Height, Girth); } }
         public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
 
-        public virtual IList<Measurement> Measurements { get; private set; }
-        public virtual int MeasurementCount { get; private set; }
+        public virtual IList<Measurement> Measurements { get; protected set; }
+        public virtual int MeasurementCount { get; protected set; }
 
         public virtual void AddMeasurement(Measurement measurement)
         {
@@ -140,7 +140,7 @@ namespace TMD.Model.Trees
     {
         protected TreePhotoReference() { }
         protected internal TreePhotoReference(Photo photo, Tree tree) : base(photo) { this.Tree = tree; }
-        public virtual Tree Tree { get; private set; }
+        public virtual Tree Tree { get; protected set; }
         public override bool IsAuthorizedToView(User user) { return true; }
 
         public override IList<Name> Photographers

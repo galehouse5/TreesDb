@@ -17,7 +17,7 @@ namespace TMD.Model.Users
         protected User()
         { }
 
-        public virtual int Id { get; private set; }
+        public virtual int Id { get; protected set; }
 
         private string m_Email;
         [Email(Message = "You must enter a valid email.", Tags = ValidationTag.Screening)]
@@ -26,7 +26,7 @@ namespace TMD.Model.Users
         public virtual string Email 
         {
             get { return m_Email; }
-            private set { m_Email = value.OrEmptyAndTrimToLower(); }
+            protected set { m_Email = value.OrEmptyAndTrimToLower(); }
         }
 
         private string m_Firstname;
@@ -46,16 +46,16 @@ namespace TMD.Model.Users
         }
 
         [Valid]
-        public virtual Password Password { get; private set; }
+        public virtual Password Password { get; protected set; }
 
-        public virtual DateTime Created { get; private set; }
-        public virtual DateTime LastActivity { get; private set; }
-        public virtual DateTime LastLogon { get; private set; }
+        public virtual DateTime Created { get; protected set; }
+        public virtual DateTime LastActivity { get; protected set; }
+        public virtual DateTime LastLogon { get; protected set; }
 
         #region Email verification
 
-        public virtual SecureToken EmailVerificationToken { get; private set; }
-        public virtual DateTime? EmailVerified { get; private set; }
+        public virtual SecureToken EmailVerificationToken { get; protected set; }
+        public virtual DateTime? EmailVerified { get; protected set; }
 
         public virtual bool IsEmailVerified
         {
@@ -88,9 +88,9 @@ namespace TMD.Model.Users
 
         #region Forgotten password assistance
 
-        public virtual SecureToken ForgottenPasswordAssistanceToken { get; private set; }
-        public virtual DateTime? ForgottenPasswordAssistanceTokenIssued { get; private set; }
-        public virtual DateTime? ForgottenPasswordAssistanceTokenUsed { get; private set; }
+        public virtual SecureToken ForgottenPasswordAssistanceToken { get; protected set; }
+        public virtual DateTime? ForgottenPasswordAssistanceTokenIssued { get; protected set; }
+        public virtual DateTime? ForgottenPasswordAssistanceTokenUsed { get; protected set; }
 
         public virtual bool IsForgottenPasswordAssistanceTokenValid
         {
@@ -124,8 +124,8 @@ namespace TMD.Model.Users
 
         #region Human verification
 
-        public virtual DateTime? LastFailedLogonAttempt { get; private set; }
-        public virtual int RecentlyFailedLogonAttempts { get; private set; }
+        public virtual DateTime? LastFailedLogonAttempt { get; protected set; }
+        public virtual int RecentlyFailedLogonAttempts { get; protected set; }
 
         public virtual bool PerformHumanVerification
         {

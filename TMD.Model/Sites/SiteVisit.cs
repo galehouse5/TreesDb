@@ -10,16 +10,16 @@ namespace TMD.Model.Sites
     {
         protected SiteVisit()
         { }
-        
-        public virtual int Id { get; private set; }
-        public virtual Trip ImportingTrip { get; private set; }
-        public virtual DateTime Visited { get; private set; }
-        public virtual string Name { get; private set; }
-        public virtual Coordinates Coordinates { get; private set; }
-        public virtual Coordinates CalculatedCoordinates { get; private set; }
-        public virtual string Comments { get; private set; }
-        public virtual IList<Name> Visitors { get; private set; }
-        public virtual string TripReportUrl { get; private set; }
+
+        public virtual int Id { get; protected set; }
+        public virtual Trip ImportingTrip { get; protected set; }
+        public virtual DateTime Visited { get; protected set; }
+        public virtual string Name { get; protected set; }
+        public virtual Coordinates Coordinates { get; protected set; }
+        public virtual Coordinates CalculatedCoordinates { get; protected set; }
+        public virtual string Comments { get; protected set; }
+        public virtual IList<Name> Visitors { get; protected set; }
+        public virtual string TripReportUrl { get; protected set; }
 
         public static SiteVisit Create(Imports.Site importedSite)
         {

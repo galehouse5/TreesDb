@@ -12,18 +12,18 @@ namespace TMD.Model.Sites
         protected Site()
         { }
 
-        public virtual int Id { get; private set; }
-        public virtual DateTime LastVisited { get; private set; }
-        public virtual string Name { get; private set; }
-        public virtual Coordinates Coordinates { get; private set; }
-        public virtual Coordinates CalculatedCoordinates { get; private set; }
-        public virtual float? RHI5 { get; private set; }
-        public virtual float? RHI10 { get; private set; }
-        public virtual float? RHI20 { get; private set; }
-        public virtual float? RGI5 { get; private set; }
-        public virtual float? RGI10 { get; private set; }
-        public virtual float? RGI20 { get; private set; }
-        public virtual int TreesWithSpecifiedCoordinatesCount { get; private set; }
+        public virtual int Id { get; protected set; }
+        public virtual DateTime LastVisited { get; protected set; }
+        public virtual string Name { get; protected set; }
+        public virtual Coordinates Coordinates { get; protected set; }
+        public virtual Coordinates CalculatedCoordinates { get; protected set; }
+        public virtual float? RHI5 { get; protected set; }
+        public virtual float? RHI10 { get; protected set; }
+        public virtual float? RHI20 { get; protected set; }
+        public virtual float? RGI5 { get; protected set; }
+        public virtual float? RGI10 { get; protected set; }
+        public virtual float? RGI20 { get; protected set; }
+        public virtual int TreesWithSpecifiedCoordinatesCount { get; protected set; }
         public virtual SiteVisit LastVisit { get { return (from visit in Visits orderby visit.Visited select visit).Last(); } }
         public virtual Coordinates CalculateCalculatedCoordinates() { return (from visit in Visits orderby visit.Visited where visit.CalculatedCoordinates.IsSpecified select visit.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
         public virtual Coordinates CalculateCoordinates() { return (from visit in Visits orderby visit.Visited where visit.Coordinates.IsSpecified select visit.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
@@ -81,11 +81,11 @@ namespace TMD.Model.Sites
             return this;
         }
 
-        public virtual IList<SiteVisit> Visits { get; private set; }
-        public virtual int VisitCount { get; private set; }
-        public virtual IList<Subsite> Subsites { get; private set; }
-        public virtual int SubsiteCount { get; private set; }
-        public virtual IList<Name> Visitors { get; private set; }
+        public virtual IList<SiteVisit> Visits { get; protected set; }
+        public virtual int VisitCount { get; protected set; }
+        public virtual IList<Subsite> Subsites { get; protected set; }
+        public virtual int SubsiteCount { get; protected set; }
+        public virtual IList<Name> Visitors { get; protected set; }
 
         public virtual void AddSubsite(Subsite subsite)
         {

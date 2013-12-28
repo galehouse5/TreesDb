@@ -343,7 +343,7 @@ namespace TMD.Model.Imports
     {
         protected TreePhotoReference() { }
         protected internal TreePhotoReference(Photo photo, TreeBase tree) : base(photo) { this.Tree = tree; }
-        public virtual TreeBase Tree { get; private set; }
+        public virtual TreeBase Tree { get; protected set; }
         public override bool IsAuthorizedToAdd(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
         public override bool IsAuthorizedToView(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
         public override bool IsAuthorizedToRemove(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }

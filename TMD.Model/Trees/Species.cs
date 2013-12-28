@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Diagnostics;
-using TMD.Model.Extensions;
+﻿using System.Diagnostics;
 using TMD.Model.Locations;
 using TMD.Model.Sites;
 
@@ -15,10 +10,10 @@ namespace TMD.Model.Trees
         protected KnownSpecies() 
         {}
 
-        public virtual int Id { get; private set; }
-        public virtual string AcceptedSymbol { get; private set; }
-        public virtual string ScientificName { get; private set; }
-        public virtual string CommonName { get; private set; }
+        public virtual int Id { get; protected set; }
+        public virtual string AcceptedSymbol { get; protected set; }
+        public virtual string ScientificName { get; protected set; }
+        public virtual string CommonName { get; protected set; }
     }
 
     [DebuggerDisplay("{ScientificName}")]
@@ -27,15 +22,15 @@ namespace TMD.Model.Trees
         protected MeasuredSpecies() 
         {}
 
-        public virtual int Id { get; private set; }
-        public virtual string ScientificName { get; private set; }
-        public virtual string CommonName { get; private set; }
-        public virtual Distance MaxHeight { get; private set; }
-        public virtual Tree MaxHeightTree { get; private set; }
-        public virtual Distance MaxGirth { get; private set; }
-        public virtual Tree MaxGirthTree { get; private set; }
-        public virtual Distance MaxCrownSpread { get; private set; }
-        public virtual Tree MaxCrownSpreadTree { get; private set; }
+        public virtual int Id { get; protected set; }
+        public virtual string ScientificName { get; protected set; }
+        public virtual string CommonName { get; protected set; }
+        public virtual Distance MaxHeight { get; protected set; }
+        public virtual Tree MaxHeightTree { get; protected set; }
+        public virtual Distance MaxGirth { get; protected set; }
+        public virtual Tree MaxGirthTree { get; protected set; }
+        public virtual Distance MaxCrownSpread { get; protected set; }
+        public virtual Tree MaxCrownSpreadTree { get; protected set; }
 
         public virtual float? CalculateTDI2(Distance height, Distance girth)
         {
@@ -84,7 +79,7 @@ namespace TMD.Model.Trees
         protected StateMeasuredSpecies()
         { }
 
-        public virtual State State { get; private set; }
+        public virtual State State { get; protected set; }
     }
 
     [DebuggerDisplay("{ScientificName}'s measured in site of {Site.Name} ({Site.Id})")]
@@ -93,7 +88,7 @@ namespace TMD.Model.Trees
         protected SiteMeasuredSpecies()
         { }
 
-        public virtual Site Site { get; private set; }
+        public virtual Site Site { get; protected set; }
     }
 
     [DebuggerDisplay("{ScientificName}'s measured in subsite of {Subsite.Name} ({Subsite.Id})")]
@@ -102,6 +97,6 @@ namespace TMD.Model.Trees
         protected SubsiteMeasuredSpecies()
         { }
 
-        public virtual Subsite Subsite { get; private set; }
+        public virtual Subsite Subsite { get; protected set; }
     }
 }
