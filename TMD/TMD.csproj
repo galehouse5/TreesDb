@@ -14,7 +14,6 @@
     <RootNamespace>TMD</RootNamespace>
     <AssemblyName>TMD</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <MvcBuildViews>true</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -46,6 +45,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <MvcBuildViews>true</MvcBuildViews>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
@@ -506,6 +506,8 @@
   <Target Name="AfterBuild">
   </Target> -->
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <!-- remove temporary files left behind by publish operation to prevent interference with subsequent build or publish operations -->
+    <RemoveDir Directories="$(IntermediateOutputPath)AspnetCompileMerge;$(IntermediateOutputPath)CSAutoParameterize;$(IntermediateOutputPath)Package;$(IntermediateOutputPath)TransformWebConfig" />
     <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
   </Target>
   <ProjectExtensions>
