@@ -8,7 +8,7 @@
         @: data-center-latitude="@Model.Center.Latitude.TotalDegrees" data-center-longitude="@Model.Center.Longitude.TotalDegrees"
         @: data-zoom="@Model.Zoom" 
     }
-    data-markerloaderurl="@Url.Action(Model.MarkerLoaderAction)"
+    data-markerloaderurl="@Model.MarkerLoader.ToUrl(Url)"
     @if (ViewBag.style != null) { 
         @: style="@ViewBag.style" 
     }>

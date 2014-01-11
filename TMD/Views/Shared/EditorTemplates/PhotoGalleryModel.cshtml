@@ -7,7 +7,7 @@
     }
     @if (!string.IsNullOrEmpty(Model.AddPhotoActionName)) { 
         <li>
-            <img src="@Url.ManagedContent(Links.images.loading_gif)" alt="Loading" style="display: none; margin: 34px;" class="LoadingPhoto" />
+            <img src="@Url.ManagedContent("~/images/loading.gif")" alt="Loading" style="display: none; margin: 34px;" class="LoadingPhoto" />
             <div class="actions ReadyToLoadPhoto" style="display: block;">
                 <div style="height: 30px">
                     @Html.ValidationMessageFor(m => m.AddPhotoActionName, null, new { style = "margin: 0;" })

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
+using TMD.Extensions;
 using TMD.Model;
 using TMD.Model.Locations;
 using TMD.Model.Photos;
@@ -14,23 +15,42 @@ namespace TMD.Models
         public bool IsSelected { get; set; }
     }
 
+    public class ActionLoader
+    {
+        public ActionLoader(string actionName, string controllerName = null, object routeValues = null)
+        {
+            this.ActionName = actionName;
+            this.ControllerName = controllerName;
+            this.RouteValues = routeValues;
+        }
+
+        public string ActionName { get; private set; }
+        public string ControllerName { get; private set; }
+        public object RouteValues { get; private set; }
+
+        public string ToUrl(UrlHelper url)
+        {
+            return url.Action(ActionName, ControllerName, RouteValues);
+        }
+    }
+
     public class MapModel
     {
         public int Zoom { get; set; }
         public Coordinates Center { get; set; }
         public CoordinateBounds Bounds { get; set; }
-        public ActionResult MarkerLoaderAction { get; set; }
+        public ActionLoader MarkerLoader { get; set; }
     }
 
     public class MapMarkerModel
     {
         public string Title { get; set; }
         public Coordinates Position { get; set; }
-        public ActionResult InfoLoaderAction { get; set; }
+        public ActionLoader InfoLoader { get; set; }
         public int? MinZoom { get; set; }
         public int? MaxZoom { get; set; }
         public string DefaultIconUrl { get; set; }
-        public ActionResult IconLoaderAction { get; set; }
+        public ActionLoader IconLoader { get; set; }
 
         public object ToJson(UrlHelper url)
         {
@@ -38,8 +58,8 @@ namespace TMD.Models
             {
                 Title, MinZoom, MaxZoom,
                 Latitude = Position.Latitude.TotalDegrees, Longitude = Position.Longitude.TotalDegrees,
-                InfoLoaderUrl = url.Action(InfoLoaderAction),
-                IconUrl = IconLoaderAction == null ? DefaultIconUrl : url.Action(IconLoaderAction)
+                InfoLoaderUrl = InfoLoader.ToUrl(url),
+                IconUrl = IconLoader == null ? url.ManagedContent(DefaultIconUrl) : IconLoader.ToUrl(url)
             };
         }
     }

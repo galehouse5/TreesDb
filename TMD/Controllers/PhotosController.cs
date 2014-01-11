@@ -18,8 +18,8 @@ namespace TMD.Controllers
             return PartialView("CaptionPartial", Mapper.Map<PhotoReferenceBase, PhotoCaptionModel>(reference));
         }
 
-        [ActionName("View"), HttpGet, OutputCache(CacheProfile = "Photos")]
-        public virtual ActionResult ViewPhoto(int id, PhotoSize size)
+        [HttpGet, OutputCache(CacheProfile = "Photos")]
+        public virtual ActionResult View(int id, PhotoSize size)
         {
             var photo = Repositories.Photos.FindById(id);
             if (!Repositories.Photos.ListAllReferencesByPhotoId(id).IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
@@ -32,13 +32,18 @@ namespace TMD.Controllers
             }
         }
 
-        [HttpPost, UnitOfWork]
-        public virtual ActionResult Remove(IUnitOfWork uow, int id)
+        [HttpPost]
+        public virtual ActionResult Remove(int id)
         {
             var reference = Repositories.Photos.FindReferenceById(id);
-            if (!reference.IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
-            Repositories.Photos.Remove(reference);
-            uow.Persist();
+            if (!reference.IsAuthorizedToRemove(User)) return new UnauthorizedResult();
+
+            using (var uow = UnitOfWork.Begin())
+            {
+                Repositories.Photos.Remove(reference);
+                uow.Persist();
+            }
+
             return PhotoRemoval(reference);
         }
 

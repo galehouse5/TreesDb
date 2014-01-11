@@ -3,7 +3,7 @@
 <table class="reports_table" style="width: 350px;">
     <tr>
         <td class="description"><strong>@Model.Name</strong></td>
-        <td class="value">@Html.ActionLink("View more details", MVC.Browse.SiteDetails(Model.SiteId))</td>
+        <td class="value">@Html.ActionLink("View more details", "SiteDetails", "Browse", new { id = Model.SiteId }, null)</td>
     </tr>
     @Html.ReportDisplayFor(m => m.State)
     @Html.ReportDisplayFor(m => m.County)

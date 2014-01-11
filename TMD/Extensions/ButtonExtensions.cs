@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using System.Text;
+﻿using System.Web.Mvc;
 
 namespace TMD.Extensions
 {
@@ -107,13 +102,6 @@ namespace TMD.Extensions
                 .AddCss(color).AddCss(size).Css("btn")
                 .Attr("href", href)
                 .ToMvcHtmlString();
-        }
-
-        public static MvcHtmlString AnchorButton(this HtmlHelper html, string text, ActionResult result, 
-            ButtonColor color = ButtonColor.Default, ButtonSize size = ButtonSize.Default)
-        {
-            UrlHelper url = new UrlHelper(html.ViewContext.RequestContext);
-            return AnchorButton(html, text, url.Action(result), color, size);
         }
 
         public static MvcHtmlString AnchorButton(this HtmlHelper html, string text, string actionName, object routeValues, object htmlAttributes, 

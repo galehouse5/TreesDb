@@ -26,7 +26,7 @@
 		<div class="portlet-header">
             <h4>Tree</h4>
             <ul class="portlet-tab-nav">
-                <li class="portlet-tab-nav-ignore"><a href="@Url.Action(MVC.Export.Trees(Model.Details.Id))">Export tree data</a></li>
+                <li class="portlet-tab-nav-ignore"><a href="@Url.Action("Trees", "Export", new { id = Model.Details.Id })">Export tree data</a></li>
             </ul>
         </div>
 		<div class="portlet-content">
@@ -85,19 +85,19 @@
                     }
                     <tr>
                         <td class="description">Site</td>
-                        <td class="value"><a href="@Url.Action(MVC.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SiteName)</a></td>
+                        <td class="value"><a href="@Url.Action("SiteDetails", "Browse", new { id = Model.Location.SiteId })">@Html.DisplayFor(m => m.Location.SiteName)</a></td>
                     </tr>
 				    @if (Model.Location.SiteSubsitesCount > 1) { 
                         <tr>
                             <td class="description">Subsite</td>
-                            <td class="value"><a href="@Url.Action(MVC.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SubsiteName)</a></td>
+                            <td class="value"><a href="@Url.Action("SiteDetails", "Browse", new { id = Model.Location.SiteId })">@Html.DisplayFor(m => m.Location.SubsiteName)</a></td>
                         </tr>
                     }
 				    @Html.ReportDisplayFor(m => m.Location.OwnershipType)
 				    @Html.ReportDisplayFor(m => m.Location.County)
                     <tr>
                         <td class="description">State</td>
-                        <td class="value"><a href="@Url.Action(MVC.Browse.StateDetails(Model.Location.State.Id))">@Html.DisplayFor(m => m.Location.State)</a></td>
+                        <td class="value"><a href="@Url.Action("StateDetails", "Browse", new { id = Model.Location.State.Id })">@Html.DisplayFor(m => m.Location.State)</a></td>
                     </tr>
                 </table>
             </div>

@@ -3,7 +3,7 @@
 <table class="reports_table" style="width: 350px;">
     <tr>
         <td class="description"><strong>@Model.ScientificName</strong></td>
-        <td class="value">@Html.ActionLink("View more details", MVC.Browse.TreeDetails(Model.Id))</td>
+        <td class="value">@Html.ActionLink("View more details", "TreeDetails", "Browse", new { id = Model.Id }, null)</td>
     </tr>
     @Html.ReportDisplayFor(m => m.CommonName)
     @Html.IfSpecifiedReportDisplayFor(m => m.Height)

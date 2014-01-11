@@ -2,20 +2,20 @@
 @(Html.DataTablesGrid<TMD.Model.Trees.Tree>(parameterNamePrefix: Model.ParameterNamePrefix,
     columns: builder =>
     {
-    	builder
-    		.Custom("Height", tree => tree.Height.IsValidAndSpecified() ?
-                Html.ActionLink(tree.Height.ToString(UserSession.Units), MVC.Browse.TreeDetails(tree.Id))
-    			: MvcHtmlString.Create("-"))
-    		.Options(canSort: true, defaultSortAscending: false);
-    	builder
-    		.Custom("Girth", tree => tree.Girth.IsValidAndSpecified() ?
-                Html.ActionLink(tree.Girth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), MVC.Browse.TreeDetails(tree.Id))
-    			: MvcHtmlString.Create("-"))
-    		.Options(canSort: true, defaultSortAscending: false);
-    	builder
-    		.Custom("CrownSpread", tree => tree.CrownSpread.IsValidAndSpecified() ?
-                Html.ActionLink(tree.CrownSpread.ToString(UserSession.Units), MVC.Browse.TreeDetails(tree.Id))
-    			: MvcHtmlString.Create("-"))
-    		.Options(header: "Crown spread", canSort: true, defaultSortAscending: false);
+        builder
+            .Custom("Height", tree => tree.Height.IsValidAndSpecified() ?
+                Html.ActionLink(tree.Height.ToString(UserSession.Units), "TreeDetails", "Browse", new { id = tree.Id }, null)
+                : MvcHtmlString.Create("-"))
+            .Options(canSort: true, defaultSortAscending: false);
+        builder
+            .Custom("Girth", tree => tree.Girth.IsValidAndSpecified() ?
+                Html.ActionLink(tree.Girth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), "TreeDetails", "Browse", new { id = tree.Id }, null)
+                : MvcHtmlString.Create("-"))
+            .Options(canSort: true, defaultSortAscending: false);
+        builder
+            .Custom("CrownSpread", tree => tree.CrownSpread.IsValidAndSpecified() ?
+                Html.ActionLink(tree.CrownSpread.ToString(UserSession.Units), "TreeDetails", "Browse", new { id = tree.Id }, null)
+                : MvcHtmlString.Create("-"))
+            .Options(header: "Crown spread", canSort: true, defaultSortAscending: false);
     },
     rowsPerPage: 10, dataSource: Model.PageEntities, totalRowCount: Model.TotalEntitiesCount))

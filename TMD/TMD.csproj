@@ -100,21 +100,12 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="T4MVCExtensions">
-      <HintPath>..\packages\T4MVCExtensions.3.7.1\lib\net40\T4MVCExtensions.dll</HintPath>
-    </Reference>
     <Reference Include="WebGrease">
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="BrowseController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BrowseController.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
@@ -128,12 +119,6 @@
     <Compile Include="Controllers\PhotosController.cs" />
     <Compile Include="Emails\PasswordAssistanceEmail.cs" />
     <Compile Include="Emails\EmailVerificationEmail.cs" />
-    <Compile Include="ErrorController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ExportController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
     <Compile Include="Extensions\AttributesExtensions.cs" />
     <Compile Include="Extensions\CaptchaExtensions.cs" />
     <Compile Include="Extensions\CookieExtensions.cs" />
@@ -155,15 +140,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ImportController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MainController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MapController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
     <Compile Include="Mappings\AccountMapping.cs" />
     <Compile Include="Mappings\BrowseMapping.cs" />
     <Compile Include="Mappings\MapMapping.cs" />
@@ -180,24 +156,7 @@
     <Compile Include="Models\MapModel.cs" />
     <Compile Include="Models\PhotosModel.cs" />
     <Compile Include="Models\Search\ResultModel.cs" />
-    <Compile Include="PhotosController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
-    <Compile Include="SharedController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
-    <Compile Include="T4MVC.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TreesController.generated.cs">
-      <DependentUpon>T4MVC.tt</DependentUpon>
-    </Compile>
     <Compile Include="WebApplicationRegistry.cs" />
     <Compile Include="WebApplicationSettings.cs" />
     <Compile Include="WebUserSessionProvider.cs" />
@@ -306,7 +265,6 @@
     <Content Include="js\slate\slate.message.js" />
     <Content Include="js\slate\slate.portlet.js" />
     <Content Include="js\widgets.js" />
-    <Content Include="T4MVC.tt.settings.xml" />
     <Content Include="Views\Account\CompletePasswordAssistance.cshtml" />
     <Content Include="Views\Account\PasswordAssistance.cshtml" />
     <Content Include="Views\Account\CompleteRegistration.cshtml" />
@@ -414,15 +372,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="T4MVC.tt.hooks.t4" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="T4MVC.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>T4MVC.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\treesdb - FTP.pubxml" />

@@ -3,10 +3,10 @@
     columns: builder =>
     {
         builder
-            .Custom("State", subsite => Html.ActionLink(subsite.State.Name, MVC.Browse.StateDetails(subsite.State.Id)))
+            .Custom("State", subsite => Html.ActionLink(subsite.State.Name, "StateDetails", "Browse", new { id = subsite.State.Id }, null))
             .Options(canFilter: true, header: "State", filterTitle: "Search states");
         builder
-            .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, MVC.Browse.SiteDetails(subsite.Site.Id)))
+            .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, "SiteDetails", "Browse", new { id = subsite.Site.Id }, null))
             .Options(canFilter: true, filterTitle: "Search sites");
         builder
             .Custom("RHI5", subsite => subsite.RHI5.HasValue ? 

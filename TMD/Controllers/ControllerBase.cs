@@ -21,32 +21,6 @@ namespace TMD
         }
     }
 
-    public class UnitOfWorkAttribute : ActionFilterAttribute
-    {
-        private IUnitOfWork m_UnitOfWork;
-
-        public UnitOfWorkAttribute()
-        {
-            IsolationLevel = IsolationLevel.Unspecified;
-        }
-
-        public IsolationLevel IsolationLevel { get; set; }
-
-        public override void OnActionExecuting(ActionExecutingContext filterContext)
-        {
-            m_UnitOfWork = IsolationLevel == IsolationLevel.Unspecified ?
-                UnitOfWork.Begin() : UnitOfWork.Begin(IsolationLevel);
-            filterContext.ActionParameters["uow"] = m_UnitOfWork;
-            base.OnActionExecuting(filterContext);
-        }
-
-        public override void OnResultExecuting(ResultExecutingContext filterContext)
-        {
-            base.OnResultExecuting(filterContext);
-            m_UnitOfWork.Dispose();
-        }
-    }
-
     public abstract class ControllerBase : Controller
     {
         protected override void HandleUnknownAction(string actionName)

@@ -5,8 +5,8 @@
     <title>@ViewBag.Title</title>
     <style type="text/css">.ShowIfJavascriptEnabled { display: block; } .ShowIfJavascriptDisabled { display: none; }</style>
     <noscript><style type="text/css">.ShowIfJavascriptEnabled { display: none; } .ShowIfJavascriptDisabled { display: block; }</style></noscript>
-    <link href="@Url.ManagedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
-    <link href="@Url.ManagedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.ManagedContent("~/images/icon.ico")" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="@Url.ManagedContent("~/css/jquery/jquery-ui-1.8.7.custom.css")" rel="Stylesheet" type="text/css" />
     @Styles.Render("~/css/Shared.css")
     @RenderSection("Styles", false)
 </head>
@@ -14,16 +14,16 @@
     <div id="wrapper" class="clearfix">
         <div id="top">
             <div id="header">
-                <h1>@Html.ActionLink("Trees Database", MVC.Main.Index())</h1>
-                @{ Html.RenderAction(MVC.Account.AccountWidget()); }
+                <h1>@Html.ActionLink("Trees Database", "Index", "Main")</h1>
+                @{ Html.RenderAction("AccountWidget", "Account"); }
             </div>
             <!-- #header -->
             <div id="nav">
                 <ul class="mega-container mega-grey">
-                    @{ Html.RenderAction(MVC.Map.MenuWidget(ViewContext.Controller is TMD.Controllers.MapController));
-                       Html.RenderAction(MVC.Browse.MenuWidget(ViewContext.Controller is TMD.Controllers.BrowseController));
-                       Html.RenderAction(MVC.Main.MenuWidget(ViewContext.Controller is TMD.Controllers.MainController));
-                       Html.RenderAction(MVC.Search.MenuWidget()); }
+                    @Html.Action("MenuWidget", "Map", new { isSelected = ViewContext.Controller is TMD.Controllers.MapController })
+                    @Html.Action("MenuWidget", "Browse", new { isSelected = ViewContext.Controller is TMD.Controllers.BrowseController })
+                    @Html.Action("MenuWidget", "Main", new { isSelected = ViewContext.Controller is TMD.Controllers.MainController })
+                    @Html.Action("MenuWidget", "Search")
                 </ul>
             </div>
             <!-- #nav -->
@@ -50,8 +50,8 @@
         @if (ViewData.GetRenderFooter()) {
             <div id="footer">
                 <p style="float: left;">
-                    <a href="@Url.Action(MVC.Main.Index())">
-                        <img id="footer-logo" src="@Url.ManagedContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
+                    <a href="@Url.Action("Index", "Main")">
+                        <img id="footer-logo" src="@Url.ManagedContent("~/images/Theme/icon.png")" alt="Trees Database"/>
                     </a>
                     Contact: Steve or Mitch Galehouse
                     <br />
@@ -59,7 +59,7 @@
                     <br />
                     &copy;: @DateTime.Now.Year Trees Database
                 </p>
-                @using(Html.BeginForm(MVC.Main.SetUnits(), FormMethod.Post, new { style = "float: right;" })) {
+                @using(Html.BeginForm("SetUnits", "Main", null, FormMethod.Post, new { style = "float: right;" })) {
                     <span>Units:</span>
                     @Html.Hidden("returnUrl", Request.Url)
                     if (Units.Default == Request.Cookies.GetUnitsPreference() || Units.Feet == Request.Cookies.GetUnitsPreference()) {
@@ -83,8 +83,8 @@
         }
     </div>
     <!-- #wrapper -->
-    <script src="@Url.ManagedContent(Links.js.jquery.jquery_1_4_4_min_js)" type="text/javascript"></script>
-    <script src="@Url.ManagedContent(Links.js.jquery.jquery_ui_1_8_7_custom_min_js)" type="text/javascript"></script>
+    <script src="@Url.ManagedContent("~/js/jquery/jquery-1.4.4.min.js")" type="text/javascript"></script>
+    <script src="@Url.ManagedContent("~/js/jquery/jquery-ui-1.8.7.custom.min.js")" type="text/javascript"></script>
     @Scripts.Render("~/js/Plugins.js")
     @Scripts.Render("~/js/Shared.js")
     <script type="text/javascript">

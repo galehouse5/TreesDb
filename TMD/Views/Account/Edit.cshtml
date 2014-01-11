@@ -10,7 +10,7 @@
 <div class="portlet x6">
 	<div class="portlet-header"><h4>Edit account</h4></div>
 	<div class="portlet-content">
-		@using (Html.BeginForm(MVC.Account.Edit(), FormMethod.Post, new { @class = "form" })) {
+		@using (Html.BeginForm("Edit", "Account", FormMethod.Post, new { @class = "form" })) {
 			@Html.FieldEditorFor(m => m.Email)
 			@Html.FieldEditorFor(m => m.Details.Name)
 			 <div class="buttonrow">@Html.SubmitButton("Save")</div>
@@ -20,7 +20,7 @@
 <div class="portlet x6">
 	<div class="portlet-header"><h4>Change password</h4></div>
 	<div class="portlet-content">
-		@using (Html.BeginForm(MVC.Account.Edit(), FormMethod.Post, new { @class = "form" })) {
+		@using (Html.BeginForm("Edit", "Account", FormMethod.Post, new { @class = "form" })) {
 			@Html.FieldEditorFor(m => m.Password.ExistingPassword)
 			@Html.FieldEditorFor(m => m.Password.NewPassword)
 			@Html.FieldEditorFor(m => m.Password.ConfirmPassword)

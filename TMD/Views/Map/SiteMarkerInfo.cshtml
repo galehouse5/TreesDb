@@ -3,7 +3,7 @@
 <table class="reports_table" style="width: 350px;">
     <tr>
         <td class="description"><strong>@Model.Name</strong></td>
-        <td class="value">@Html.ActionLink("View more details", MVC.Browse.SiteDetails(Model.Id))</td>
+        <td class="value">@Html.ActionLink("View more details", "SiteDetails", "Browse", new { id = Model.Id }, null)</td>
     </tr>
     @if (Model.SubsitesCount == 1) {
         @Html.ReportDisplayFor(m => m.State)

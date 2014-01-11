@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Text;
 using TMD.Model.Photos;
 
 namespace TMD.Extensions
@@ -20,14 +16,14 @@ namespace TMD.Extensions
                     return MvcHtmlString.Create(
                             Tag.Img()
                                 .Attr("alt", string.Empty)
-                                .Attr("src", url.Action(MVC.Photos.ViewPhoto(photo.StaticId, inlineSize)))
+                                .Attr("src", url.Action("View", "Photos", new { id = photo.StaticId, size = inlineSize }))
                                 .ToString()
                             + 
                             Tag.Div().Css("actions").InnerHtml(
                                 html.AnchorButton("View",
-                                    url.Action(MVC.Photos.ViewPhoto(photo.StaticId, zoomableSize)),
+                                    url.Action("View", "Photos", new { id = photo.StaticId, size = zoomableSize }),
                                     photo.HasCaption ?
-                                        (object)new { @class = "View", rel = "facebox", data_captionurl = url.Action(MVC.Photos.Caption(photo.CaptionId)) } :
+                                        (object)new { @class = "View", rel = "facebox", data_captionurl = url.Action("Caption", "Photos", new { id = photo.CaptionId }) } :
                                         new { @class = "View", rel = "facebox" },
                                     ButtonColor.Orange, ButtonSize.Small)
                             ).ToString()
@@ -37,17 +33,17 @@ namespace TMD.Extensions
                 case PhotoSize.MapSquare :
                 case PhotoSize.MiniMapSquare :
                     return Tag.A()
-                        .Attr("href", url.Action(MVC.Photos.ViewPhoto(photo.StaticId, zoomableSize)))
+                        .Attr("href", url.Action("View", "Photos", new { id = photo.StaticId, size = zoomableSize }))
                         .Attr("rel", "facebox")
-                        .If(photo.HasCaption, tag => tag.Attr("data-captionurl", url.Action(MVC.Photos.Caption(photo.CaptionId))))
+                        .If(photo.HasCaption, tag => tag.Attr("data-captionurl", url.Action("Caption", "Photos", new { id = photo.CaptionId })))
                         .InnerHtml(
                             Tag.Img()
                                 .Attr("alt", string.Empty)
-                                .Attr("src", url.Action(MVC.Photos.ViewPhoto(photo.StaticId, inlineSize)))
+                                .Attr("src", url.Action("View", "Photos", new { id = photo.StaticId, size = inlineSize }))
                                 .ToString()
                         ).ToMvcHtmlString();
                 default :
-                    return Tag.Img().Attr("src", url.Action(MVC.Photos.ViewPhoto(photo.StaticId, inlineSize))).Attr("alt", string.Empty)
+                    return Tag.Img().Attr("src", url.Action("View", "Photos", new { id = photo.StaticId, size = inlineSize })).Attr("alt", string.Empty)
                         .ToMvcHtmlString();
             }
         }
@@ -60,18 +56,18 @@ namespace TMD.Extensions
                 case PhotoSize.Thumbnail:
                 case PhotoSize.SquareThumbnail:
                     return MvcHtmlString.Create(
-                            Tag.Img().Attr("src", url.Action(MVC.Photos.ViewPhoto(photo.StaticId, inlineSize))).Attr("alt", string.Empty).ToString()
+                            Tag.Img().Attr("src", url.Action("View", "Photos", new { id = photo.StaticId, size = inlineSize })).Attr("alt", string.Empty).ToString()
                             +
                             Tag.Div().Css("actions")
                                 .InnerHtml(html.AnchorButton("View",
-                                    url.Action(MVC.Photos.ViewPhoto(photo.StaticId, zoomableSize)),
+                                    url.Action("View", "Photos", new { id = photo.StaticId, size = zoomableSize }),
                                     photo.HasCaption ?
-                                        (object)new { @class = "View", rel = "facebox", data_captionurl = url.Action(MVC.Photos.Caption(photo.CaptionId)) } :
+                                        (object)new { @class = "View", rel = "facebox", data_captionurl = url.Action("Caption", "Photos", new { id = photo.CaptionId }) } :
                                         new { @class = "View", rel = "facebox" },
                                     ButtonColor.Orange, ButtonSize.Small)
                                 ).InnerText(" ") // space here is needed for proper html rendering
                                 .InnerHtml(html.AnchorButton("Remove",
-                                    url.Action(MVC.Photos.Remove(null, photo.Id)), new { @class = "Remove" }, ButtonColor.Grey, ButtonSize.Small)
+                                    url.Action("Remove", "Photos", new { id = photo.Id }), new { @class = "Remove" }, ButtonColor.Grey, ButtonSize.Small)
                                 ).ToString()
                         );
                 default:
