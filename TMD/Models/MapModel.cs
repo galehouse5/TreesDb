@@ -1,27 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using TMD.Model;
-using System.Web.Mvc;
-using TMD.Model.Locations;
 using System.ComponentModel;
-using TMD.Model.Photos;
 using System.ComponentModel.DataAnnotations;
-using TMD.Extensions;
-using System.Drawing;
+using System.Web.Mvc;
+using TMD.Model;
+using TMD.Model.Locations;
+using TMD.Model.Photos;
 
 namespace TMD.Models
 {
     public class MapMenuWidgetModel
     {
         public bool IsSelected { get; set; }
-    }
-
-    public class CoordinatePickerModel
-    {
-        public Coordinates Coordinates { get; set; }
-        public ActionResult MarkerLoaderAction { get; set; }
     }
 
     public class MapModel
@@ -52,36 +42,6 @@ namespace TMD.Models
                 IconUrl = IconLoaderAction == null ? DefaultIconUrl : url.Action(IconLoaderAction)
             };
         }
-    }
-
-    public class MapImportSiteMarkerInfoModel
-    {
-        public string Name { get; set; }
-        public int SubsitesCount { get; set; }
-        public IList<MapImportSubsiteMarkerInfoModel> Subsites { get; set; }
-    }
-
-    public class MapImportSubsiteMarkerInfoModel
-    {
-        public string Name { get; set; }
-        public State State { get; set; }
-        public string County { get; set; }
-        [DisplayName("Ownership type")] 
-        public string OwnershipType { get; set; }
-        public IList<IPhoto> Photos { get; set; }
-    }
-
-    public class MapImportTreeMarkerInfoModel
-    {
-        [DisplayName("Scientific name")]
-        public string ScientificName { get; set; }
-        [DisplayName("Common name")]
-        public string CommonName { get; set; }
-        public Distance Height { get; set; }
-        public Distance Girth { get; set; }
-        [DisplayName("Crown spread")]
-        public Distance CrownSpread { get; set; }
-        public IList<IPhoto> Photos { get; set; }
     }
 
     public class MapSiteMarkerInfoModel

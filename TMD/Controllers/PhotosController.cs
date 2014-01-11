@@ -1,11 +1,8 @@
 ﻿using AutoMapper;
 using System.Drawing;
 using System.IO;
-using System.Web;
 using System.Web.Mvc;
-using TMD.Extensions;
 using TMD.Model;
-using TMD.Model.Imports;
 using TMD.Model.Photos;
 using TMD.Models;
 
@@ -53,56 +50,6 @@ namespace TMD.Controllers
         public virtual ActionResult PhotoAdded(PhotoGalleryModel gallery)
         {
             return PartialView("EditPhotoGalleryPartial", gallery);
-        }
-
-        [HttpPost]
-        public virtual ActionResult AddToImportTree(int id, int treeId, HttpPostedFileBase imageData)
-        {
-            using (var uow = UnitOfWork.Begin())
-            {
-                var trip = Repositories.Imports.FindById(id);
-                var tree = trip.FindTreeById(treeId);
-                using (imageData.InputStream)
-                {
-                    var photo = TemporaryPhoto.Create(imageData.InputStream);
-                    tree.AddPhoto(photo);
-                    this.ValidateMappedModel<TreeBase, PhotoGalleryModel>(tree);
-                    if (ModelState.IsValid)
-                    {
-                        UnitOfWork.Flush();
-                        if (!Repositories.Photos.ListAllReferencesByPhotoId(photo.StaticId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
-                        uow.Persist();
-                    }
-                    else { tree.RemovePhoto(photo); }
-                    var photoGallery = Mapper.Map<TreeBase, ImportTreePhotoGalleryModel>(tree);
-                    return PhotoAdded(photoGallery);
-                }
-            }
-        }
-
-        [HttpPost]
-        public virtual ActionResult AddToImportSubsite(int id, int subsiteId, HttpPostedFileBase imageData)
-        {
-            using (var uow = UnitOfWork.Begin())
-            {
-                var trip = Repositories.Imports.FindById(id);
-                var subsite = trip.FindSubsiteById(subsiteId);
-                using (imageData.InputStream)
-                {
-                    var photo = TemporaryPhoto.Create(imageData.InputStream);
-                    subsite.AddPhoto(photo);
-                    this.ValidateMappedModel<Subsite, PhotoGalleryModel>(subsite);
-                    if (ModelState.IsValid)
-                    {
-                        UnitOfWork.Flush();
-                        if (!Repositories.Photos.ListAllReferencesByPhotoId(photo.StaticId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
-                        uow.Persist();
-                    }
-                    else { subsite.RemovePhoto(photo); }
-                    var photoGallery = Mapper.Map<Subsite, ImportSubsitePhotoGalleryModel>(subsite);
-                    return PhotoAdded(photoGallery);
-                }
-            }
         }
     }
 }

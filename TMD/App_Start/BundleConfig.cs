@@ -15,12 +15,7 @@ namespace TMD
                 "~/js/slate/slate.js",
                 "~/js/slate/slate.portlet.js"));
 
-            bundles.Add(new ScriptBundle("~/js/Import.js").Include(
-                "~/js/Import/Sites.js",
-                "~/js/Import/Trees.js"));
-
             bundles.Add(new ScriptBundle("~/js/Map.js").Include(
-                "~/js/Map/CoordinatePicker.js",
                 "~/js/Map/Coordinates.js",
                 "~/js/Map/Extensions.js",
                 "~/js/Map/Widgets.js"));

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using AutoMapper;
-using TMD.Models;
+﻿using AutoMapper;
 using TMD.Model.Photos;
-using TMD.Model.Trees;
 using TMD.Model.Sites;
+using TMD.Model.Trees;
+using TMD.Models;
 
 namespace TMD.Mappings
 {
@@ -14,25 +10,11 @@ namespace TMD.Mappings
     {
         protected override void Configure()
         {
-            CreateMap<Model.Imports.TreeBase, ImportTreePhotoGalleryModel>()
-                .ForMember(dest => dest.TreeId, opt => opt.MapFrom(src => src.Id))
-                .ForMember(dest => dest.TripId, opt => opt.MapFrom(src => src.Subsite.Site.Trip.Id));
-            ValidationMapper.CreateMap<Model.Imports.TreeBase, PhotoGalleryModel>()
-                .IgnorePath("*").ForPath("Photo*", "AddPhotoActionName");
-
-            CreateMap<Model.Imports.Subsite, ImportSubsitePhotoGalleryModel>()
-                .ForMember(dest => dest.SubsiteId, opt => opt.MapFrom(src => src.Id))
-                .ForMember(dest => dest.TripId, opt => opt.MapFrom(src => src.Site.Trip.Id));
-            ValidationMapper.CreateMap<Model.Imports.Subsite, PhotoGalleryModel>()
-                .IgnorePath("*").ForPath("Photo*", "AddPhotoActionName");
-
             CreateMap<PhotoReferenceBase, PhotoCaptionModel>()
                 .Include<TreeMeasurementPhotoReference, TreePhotoCaptionModel>()
                 .Include<SubsiteVisitPhotoReference, SubsitePhotoCaptionModel>()
                 .Include<TreePhotoReference, TreePhotoCaptionModel>()
-                .Include<SubsitePhotoReference, SubsitePhotoCaptionModel>()
-                .Include<Model.Imports.SubsitePhotoReference, EmptyContextPhotoCaptionModel>()
-                .Include<Model.Imports.TreePhotoReference, EmptyContextPhotoCaptionModel>();
+                .Include<SubsitePhotoReference, SubsitePhotoCaptionModel>();
 
             CreateMap<TreeMeasurementPhotoReference, TreePhotoCaptionModel>()
                 .ForMember(dest => dest.BotanicalName, opt => opt.MapFrom(src => src.TreeMeasurement.ScientificName))
@@ -61,9 +43,6 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Subsite.Site.Id))
                 .ForMember(dest => dest.StateName, opt => opt.MapFrom(src => src.Subsite.State.Name))
                 .ForMember(dest => dest.StateId, opt => opt.MapFrom(src => src.Subsite.State.Id));
-
-            CreateMap<Model.Imports.SubsitePhotoReference, EmptyContextPhotoCaptionModel>();
-            CreateMap<Model.Imports.TreePhotoReference, EmptyContextPhotoCaptionModel>();
         }
     }
 }

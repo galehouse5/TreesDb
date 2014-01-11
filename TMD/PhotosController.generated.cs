@@ -68,18 +68,6 @@ namespace TMD.Controllers
         {
             return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.PhotoAdded);
         }
-        [NonAction]
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public virtual System.Web.Mvc.ActionResult AddToImportTree()
-        {
-            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AddToImportTree);
-        }
-        [NonAction]
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public virtual System.Web.Mvc.ActionResult AddToImportSubsite()
-        {
-            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AddToImportSubsite);
-        }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public PhotosController Actions { get { return MVC.Photos; } }
@@ -100,8 +88,6 @@ namespace TMD.Controllers
             public readonly string ViewPhoto = "View";
             public readonly string Remove = "Remove";
             public readonly string PhotoAdded = "PhotoAdded";
-            public readonly string AddToImportTree = "AddToImportTree";
-            public readonly string AddToImportSubsite = "AddToImportSubsite";
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -111,8 +97,6 @@ namespace TMD.Controllers
             public const string ViewPhoto = "View";
             public const string Remove = "Remove";
             public const string PhotoAdded = "PhotoAdded";
-            public const string AddToImportTree = "AddToImportTree";
-            public const string AddToImportSubsite = "AddToImportSubsite";
         }
 
 
@@ -149,26 +133,6 @@ namespace TMD.Controllers
         public class ActionParamsClass_PhotoAdded
         {
             public readonly string gallery = "gallery";
-        }
-        static readonly ActionParamsClass_AddToImportTree s_params_AddToImportTree = new ActionParamsClass_AddToImportTree();
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ActionParamsClass_AddToImportTree AddToImportTreeParams { get { return s_params_AddToImportTree; } }
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionParamsClass_AddToImportTree
-        {
-            public readonly string id = "id";
-            public readonly string treeId = "treeId";
-            public readonly string imageData = "imageData";
-        }
-        static readonly ActionParamsClass_AddToImportSubsite s_params_AddToImportSubsite = new ActionParamsClass_AddToImportSubsite();
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ActionParamsClass_AddToImportSubsite AddToImportSubsiteParams { get { return s_params_AddToImportSubsite; } }
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionParamsClass_AddToImportSubsite
-        {
-            public readonly string id = "id";
-            public readonly string subsiteId = "subsiteId";
-            public readonly string imageData = "imageData";
         }
         static readonly ViewsClass s_views = new ViewsClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -232,30 +196,6 @@ namespace TMD.Controllers
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.PhotoAdded);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "gallery", gallery);
             PhotoAddedOverride(callInfo, gallery);
-            return callInfo;
-        }
-
-        partial void AddToImportTreeOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int treeId, System.Web.HttpPostedFileBase imageData);
-
-        public override System.Web.Mvc.ActionResult AddToImportTree(int id, int treeId, System.Web.HttpPostedFileBase imageData)
-        {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AddToImportTree);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "treeId", treeId);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "imageData", imageData);
-            AddToImportTreeOverride(callInfo, id, treeId, imageData);
-            return callInfo;
-        }
-
-        partial void AddToImportSubsiteOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int subsiteId, System.Web.HttpPostedFileBase imageData);
-
-        public override System.Web.Mvc.ActionResult AddToImportSubsite(int id, int subsiteId, System.Web.HttpPostedFileBase imageData)
-        {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AddToImportSubsite);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteId", subsiteId);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "imageData", imageData);
-            AddToImportSubsiteOverride(callInfo, id, subsiteId, imageData);
             return callInfo;
         }
 

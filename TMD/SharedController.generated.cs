@@ -68,7 +68,6 @@ namespace T4MVC
             public partial class _EditorTemplatesClass
             {
                 public readonly string Boolean = "Boolean";
-                public readonly string CoordinatePickerModel = "CoordinatePickerModel";
                 public readonly string Coordinates = "Coordinates";
                 public readonly string DateTime = "DateTime";
                 public readonly string Decimal = "Decimal";

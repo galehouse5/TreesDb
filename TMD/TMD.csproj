@@ -112,9 +112,6 @@
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="Binders\BinderBase.cs" />
-    <Compile Include="Binders\ImportBinders.cs" />
-    <Compile Include="Binders\ValueObjectBinders.cs" />
     <Compile Include="BrowseController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
@@ -126,7 +123,6 @@
     <Compile Include="Controllers\TreesController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\ExportController.cs" />
-    <Compile Include="Controllers\ImportController.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Controllers\PhotosController.cs" />
@@ -150,7 +146,6 @@
     <Compile Include="Extensions\FluentTagBuilder.cs" />
     <Compile Include="Extensions\LabelExtensions.cs" />
     <Compile Include="Extensions\EditorExtensions.cs" />
-    <Compile Include="Extensions\ControllerExtensions.cs" />
     <Compile Include="Extensions\ButtonExtensions.cs" />
     <Compile Include="Extensions\UrlHelperExtensions.cs" />
     <Compile Include="Extensions\ValidationExtensions.cs" />
@@ -172,7 +167,6 @@
     <Compile Include="Mappings\AccountMapping.cs" />
     <Compile Include="Mappings\BrowseMapping.cs" />
     <Compile Include="Mappings\MapMapping.cs" />
-    <Compile Include="Mappings\ImportMapping.cs" />
     <Compile Include="Mappings\PhotosMapping.cs" />
     <Compile Include="Mappings\ValidationMapper.cs" />
     <Compile Include="Mappings\ValidationMapping\MessageMapper.cs" />
@@ -184,7 +178,6 @@
     <Compile Include="Models\ErrorModels.cs" />
     <Compile Include="Models\ExportModel.cs" />
     <Compile Include="Models\MapModel.cs" />
-    <Compile Include="Models\ImportModel.cs" />
     <Compile Include="Models\PhotosModel.cs" />
     <Compile Include="Models\Search\ResultModel.cs" />
     <Compile Include="PhotosController.generated.cs">
@@ -211,7 +204,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\custom.css" />
-    <Content Include="css\Import.css" />
     <Content Include="css\jquery\images\ui-bg_flat_0_000000_40x100.png" />
     <Content Include="css\jquery\images\ui-bg_flat_70_ffffff_40x100.png" />
     <Content Include="css\jquery\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -303,15 +295,12 @@
     <Content Include="js\misc\upclick.js" />
     <Content Include="js\Shared\Widgets.js" />
     <Content Include="js\Map\Coordinates.js" />
-    <Content Include="js\Import\Trees.js" />
-    <Content Include="js\Import\Sites.js" />
     <Content Include="js\jquery\facebox.js" />
     <Content Include="js\jquery\jquery-1.4.4.min.js" />
     <Content Include="js\jquery\jquery-ui-1.8.7.custom.min.js" />
     <Content Include="js\jquery\jquery.quicksearch.js" />
     <Content Include="js\jquery\jquery.tipsy.js" />
     <Content Include="js\jquery\jquery.visualize.js" />
-    <Content Include="js\Map\CoordinatePicker.js" />
     <Content Include="js\Shared\Extensions.js" />
     <Content Include="js\slate\slate.js" />
     <Content Include="js\slate\slate.message.js" />
@@ -337,33 +326,6 @@
     <Content Include="Views\Browse\DisplayTemplates\BrowsePhotoSummaryList.cshtml" />
     <Content Include="Views\Browse\TreeDetails.cshtml" />
     <Content Include="Views\Error\Unauthorized.cshtml" />
-    <Content Include="Views\Import\_WizardLayout.cshtml" />
-    <Content Include="Views\Import\Index.cshtml" />
-    <Content Include="Views\Import\EditorTemplates\ImportTripSummaryModel.cshtml" />
-    <Content Include="Views\Import\History.cshtml" />
-    <Content Include="Views\Import\View.cshtml" />
-    <Content Include="Views\Import\DisplayTemplates\ImportFinishedTripModel.cshtml" />
-    <Content Include="Views\Import\DisplayTemplates\ImportFinishedSiteModel.cshtml" />
-    <Content Include="Views\Import\DisplayTemplates\ImportFinishedSubsiteModel.cshtml" />
-    <Content Include="Views\Import\DisplayTemplates\ImportFinishedTreeModel.cshtml" />
-    <Content Include="Views\Import\Start.cshtml" />
-    <Content Include="Views\Import\StartSteps.cshtml" />
-    <Content Include="Views\Import\Trip.cshtml" />
-    <Content Include="Views\Import\Sites.cshtml" />
-    <Content Include="Views\Import\SubsiteTreesPartial.cshtml" />
-    <Content Include="Views\Import\TreePartial.cshtml" />
-    <Content Include="Views\Import\DisplayTemplates\ImportTreeModel.cshtml" />
-    <Content Include="Views\Import\EditorTemplates\ImportSiteTreesModel.cshtml" />
-    <Content Include="Views\Import\EditorTemplates\ImportSubsiteTreesModel.cshtml" />
-    <Content Include="Views\Import\EditorTemplates\ImportTreeModel.cshtml" />
-    <Content Include="Views\Import\SitesPartial.cshtml" />
-    <Content Include="Views\Import\Trees.cshtml" />
-    <Content Include="Views\Import\SitePartial.cshtml" />
-    <Content Include="Views\Import\DisplayTemplates\ImportSubsiteModel.cshtml" />
-    <Content Include="Views\Import\DisplayTemplates\ImportSiteModel.cshtml" />
-    <Content Include="Views\Import\EditorTemplates\ImportSubsiteModel.cshtml" />
-    <Content Include="Views\Import\EditorTemplates\ImportSiteModel.cshtml" />
-    <Content Include="Views\Import\MenuWidget.cshtml" />
     <Content Include="Views\Main\About.cshtml" />
     <Content Include="Views\Main\MenuWidget.cshtml" />
     <Content Include="Views\Map\Index.cshtml" />
@@ -371,9 +333,6 @@
     <Content Include="Views\Map\SiteMarkerInfo.cshtml" />
     <Content Include="Views\Map\SubsiteMarkerInfo.cshtml" />
     <Content Include="Views\Map\TreeMarkerInfo.cshtml" />
-    <Content Include="Views\Map\ImportSiteMarkerInfo.cshtml" />
-    <Content Include="Views\Map\ImportSubsiteMarkerInfo.cshtml" />
-    <Content Include="Views\Map\ImportTreeMarkerInfo.cshtml" />
     <Content Include="Views\Map\MenuWidget.cshtml" />
     <Content Include="Views\Photos\EditPhotoGalleryPartial.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Coordinates.cshtml" />
@@ -387,13 +346,11 @@
     <Content Include="Views\Shared\DisplayTemplates\Enum.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Elevation.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\State.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\CoordinatePickerModel.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\State.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\PhotoGalleryModel.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Enum.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Elevation.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Distance.cshtml" />
-    <Content Include="Views\Import\Finish.cshtml" />
     <Content Include="Views\Error\NotFound.cshtml" />
     <Content Include="Views\Error\ServerError.cshtml" />
     <Content Include="Views\Error\IncompatibleBrowser.cshtml" />
@@ -476,7 +433,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Import\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

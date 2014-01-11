@@ -28,12 +28,12 @@ public static class MVC
     public static TMD.Controllers.BrowseController Browse = new TMD.Controllers.T4MVC_BrowseController();
     public static TMD.Controllers.ErrorController Error = new TMD.Controllers.T4MVC_ErrorController();
     public static TMD.Controllers.ExportController Export = new TMD.Controllers.T4MVC_ExportController();
-    public static TMD.Controllers.ImportController Import = new TMD.Controllers.T4MVC_ImportController();
     public static TMD.Controllers.MainController Main = new TMD.Controllers.T4MVC_MainController();
     public static TMD.Controllers.MapController Map = new TMD.Controllers.T4MVC_MapController();
     public static TMD.Controllers.PhotosController Photos = new TMD.Controllers.T4MVC_PhotosController();
     public static TMD.Controllers.SearchController Search = new TMD.Controllers.T4MVC_SearchController();
     public static TMD.Controllers.TreesController Trees = new TMD.Controllers.T4MVC_TreesController();
+    public static T4MVC.ImportController Import = new T4MVC.ImportController();
     public static T4MVC.SharedController Shared = new T4MVC.SharedController();
 }
 
@@ -77,8 +77,6 @@ namespace Links
         public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
         public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
         public static readonly string custom_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/custom.min.css") ? Url("custom.min.css") : Url("custom.css");
-             
-        public static readonly string Import_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Import.min.css") ? Url("Import.min.css") : Url("Import.css");
              
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class jquery {
@@ -158,15 +156,6 @@ namespace Links
         public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
         public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public static class Import {
-            private const string URLPATH = "~/js/Import";
-            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
-            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string Sites_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Sites.min.js") ? Url("Sites.min.js") : Url("Sites.js");
-            public static readonly string Trees_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Trees.min.js") ? Url("Trees.min.js") : Url("Trees.js");
-        }
-    
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class jquery {
             private const string URLPATH = "~/js/jquery";
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
@@ -188,7 +177,6 @@ namespace Links
             private const string URLPATH = "~/js/Map";
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-            public static readonly string CoordinatePicker_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/CoordinatePicker.min.js") ? Url("CoordinatePicker.min.js") : Url("CoordinatePicker.js");
             public static readonly string Coordinates_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Coordinates.min.js") ? Url("Coordinates.min.js") : Url("Coordinates.js");
             public static readonly string Extensions_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Extensions.min.js") ? Url("Extensions.min.js") : Url("Extensions.js");
             public static readonly string Widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/Widgets.min.js") ? Url("Widgets.min.js") : Url("Widgets.js");
