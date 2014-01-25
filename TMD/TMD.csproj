@@ -175,6 +175,7 @@
     <Compile Include="Models\BrowseModel.cs" />
     <Compile Include="Models\ErrorModels.cs" />
     <Compile Include="Models\ExportModel.cs" />
+    <Compile Include="Models\Import\ImportModel.cs" />
     <Compile Include="Models\MapModel.cs" />
     <Compile Include="Models\PhotosModel.cs" />
     <Compile Include="Models\Search\ResultModel.cs" />

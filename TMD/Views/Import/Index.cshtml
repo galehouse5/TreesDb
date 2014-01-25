@@ -1,3 +1,37 @@
 ﻿@{
     ViewBag.Title = "Import";
 }
+
+<div class="jumbotron">
+    <h1>Import</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>1. Download</h2>
+
+            <a class="btn btn-default btn-lg" href="">
+                <span class="glyphicon glyphicon-file"></span> TMD_MG.xlsx
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <h2>2. Edit</h2>
+            <p>Enter, correct, or remove data</p>
+        </div>
+
+        <div class="col-md-4">
+            <h2>3. Upload</h2>
+        
+            @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" })) {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary()
+
+                <div class="form-group">
+                    <input type="file" name="Database" />
+                </div>
+            
+                <button type="submit" class="btn btn-primary btn-lg">Import</button>
+            }
+        </div>
+    </div>
+</div>
