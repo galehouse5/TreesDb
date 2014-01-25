@@ -1,7 +1,6 @@
 ﻿using System.Web.Mvc;
 using TMD.Extensions;
 using TMD.Model;
-using TMD.Models;
 
 namespace TMD.Controllers
 {
@@ -14,19 +13,19 @@ namespace TMD.Controllers
             return PartialView(isSelected);
         }
 
-        [HttpGet]
+        [HttpGet, Route("")]
         public virtual ActionResult Index()
         {
             return RedirectToAction("Index", "Map");
         }
 
-        [HttpGet, DefaultReturnUrl]
+        [HttpGet, Route("about"), DefaultReturnUrl]
         public virtual ActionResult About()
         {
             return View();
         }
 
-        [HttpPost]
+        [HttpPost, Route("set-units")]
         public virtual ActionResult SetUnits(Units units, string returnUrl)
         {
             Response.Cookies.SetUnitsPreference(units);

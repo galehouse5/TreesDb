@@ -8,7 +8,7 @@
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{43C1791D-5894-4EB6-9772-1E1470FA80CF}</ProjectGuid>
-    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TMD</RootNamespace>
@@ -86,15 +86,34 @@
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.2\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -106,10 +125,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BrowseController.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\ControllerFactory.cs" />
+    <Compile Include="Controllers\ImportController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\TreesController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
@@ -162,6 +184,16 @@
     <Compile Include="WebUserSessionProvider.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\main.css">
+      <DependentUpon>main.less</DependentUpon>
+    </Content>
+    <Content Include="css\main.min.css">
+      <DependentUpon>main.less</DependentUpon>
+    </Content>
+    <Content Include="css\vendor\bootstrap-theme.css" />
+    <Content Include="css\vendor\bootstrap-theme.min.css" />
+    <Content Include="css\vendor\bootstrap.css" />
+    <Content Include="css\vendor\bootstrap.min.css" />
     <Content Include="css\custom.css" />
     <Content Include="css\jquery\images\ui-bg_flat_0_000000_40x100.png" />
     <Content Include="css\jquery\images\ui-bg_flat_70_ffffff_40x100.png" />
@@ -195,6 +227,7 @@
     <Content Include="css\theme-screen.css" />
     <Content Include="Emails\EmailVerification.htm" />
     <Content Include="Emails\PasswordAssistance.htm" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="images\accordion_header.png" />
     <Content Include="images\amp-btn-icon-sprite.png" />
@@ -208,11 +241,10 @@
     <Content Include="images\closelabel.gif" />
     <Content Include="images\cross.png" />
     <Content Include="images\email.png" />
-    <Content Include="images\icon.ico" />
     <Content Include="images\forward_disabled.png" />
     <Content Include="images\forward_enabled.png" />
     <Content Include="images\header_bg.png" />
-    <Content Include="favicon.ico" />
+    <Content Include="images\favicon.ico" />
     <Content Include="images\icons\Calendar.gif" />
     <Content Include="images\icons\Map.png" />
     <Content Include="images\icons\MultiTrunkTree32.png" />
@@ -223,6 +255,7 @@
     <Content Include="images\link-menu-arrow.png" />
     <Content Include="images\loader.gif" />
     <Content Include="images\loading.gif" />
+    <Content Include="images\logo-small.png" />
     <Content Include="images\page_white_copy.png" />
     <Content Include="images\page_white_go.png" />
     <Content Include="images\pencil.png" />
@@ -265,6 +298,15 @@
     <Content Include="js\slate\slate.message.js" />
     <Content Include="js\slate\slate.portlet.js" />
     <Content Include="js\widgets.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\main.less" />
+    <None Include="js\vendor\jquery-1.9.1.intellisense.js" />
+    <Content Include="js\vendor\bootstrap.js" />
+    <Content Include="js\vendor\bootstrap.min.js" />
+    <Content Include="js\vendor\jquery-1.9.1.js" />
+    <Content Include="js\vendor\jquery-1.9.1.min.js" />
     <Content Include="Views\Account\CompletePasswordAssistance.cshtml" />
     <Content Include="Views\Account\PasswordAssistance.cshtml" />
     <Content Include="Views\Account\CompleteRegistration.cshtml" />
@@ -378,13 +420,20 @@
     <None Include="Properties\PublishProfiles\treesdb - Web Deploy.pubxml" />
     <Content Include="Views\Search\_MenuWidget.cshtml" />
     <Content Include="Views\Search\Index.cshtml" />
+    <Content Include="js\vendor\jquery-1.9.1.min.map" />
+    <Content Include="Views\Import\Index.cshtml" />
+    <Content Include="Views\Import\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_BootstrapLayout.cshtml" />
+    <Content Include="Views\Shared\_BootstrapNavbar.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\EmailAddress.cshtml" />
+    <Content Include="Views\Shared\_BootstrapFooter.cshtml" />
+    <Content Include="Views\Main\_ViewStart.cshtml" />
+    <Content Include="Views\Search\_BootstrapMenuWidget.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Import\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

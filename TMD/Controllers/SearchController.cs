@@ -12,13 +12,20 @@ namespace TMD.Controllers
     [CheckBrowserCompatibilityFilterAttribute]
     public partial class SearchController : ControllerBase
     {
+        [ChildActionOnly, Route("search/menu-widget")]
         public virtual ActionResult MenuWidget(string term)
         {
             ViewBag.Term = term;
             return PartialView("_MenuWidget");
         }
 
-        [DefaultReturnUrl]
+        [ChildActionOnly, Route("search/bootstrap-menu-widget")]
+        public virtual ActionResult BootstrapMenuWidget(string term)
+        {
+            return PartialView("_BootstrapMenuWidget", term);
+        }
+
+        [HttpGet, Route("search"), DefaultReturnUrl]
         public virtual ActionResult Index(string term)
         {
             int maxResultsPerCategory = Request.IsAjaxRequest() ? 5 : 25;

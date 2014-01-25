@@ -1,46 +1,13 @@
-﻿@{ ViewBag.Title = "About"; }
-
-@section Styles {
-	<style type="text/css">
-		.info_table .value { font-size: 14px; width: 15%; }
-		.info_table tr.bottom td { border-bottom: none; }
-	</style>
+﻿@{
+    ViewBag.Title = "About";
 }
 
-<div class="portlet x12">
-	<div class="portlet-header"><h4>An experimental project with utilization by the <a href="http://www.nativetreesociety.org/" target="_blank" style="white-space: nowrap;">Native Tree Society</a> in mind</h4></div>
-	<div class="portlet-content">
-		<p>
-			The Trees Database allows you to add, search, sort, and download information concerning native (and exotic) tree species, including height, girth dimension, geographic location, and site specifics. 
-			The intent is to include as many tree species from as many locations as possible to make it possible to compare tree species' size potentials across their native ranges.
-		</p>
-	</div>
+<div class="jumbotron">
+    <h1>Tree Measurement Database</h1>
+    <p>An experimental project with utilization by the <a href="http://www.nativetreesociety.org/">Native Tree Society</a> in mind.</p>
 </div>
 
-<div class="portlet x4">
-	<div class="portlet-header"><h4><a href="@Url.Action("Index", "Import")">Import</a></h4></div>		
-	<div class="portlet-content">
-		<p>
-			Add your tree data to the site using this page. Several formats for importing are functional, with more to follow.
-		</p>
-	</div>
-</div>
-
-
-<div class="portlet x4">
-	<div class="portlet-header"><h4><a href="@Url.Action("Index", "Browse")">Browse</a></h4></div>
-	<div class="portlet-content">
-		<p>
-			Review and download data using several functions.
-		</p>
-	</div>
-</div>
-
-<div class="portlet x4">
-	<div class="portlet-header"><h4><a href="@Url.Action("Index", "Map")">Map</a></h4></div>
-	<div class="portlet-content">
-		<p>
-			View trees and site locations on Google Maps.
-		</p>
-	</div>
-</div>
+<p>
+    The Tree Measurement Database allows you to add, search, sort, and download information concerning native (and exotic) tree species, including height, girth dimension, geographic location, and site specifics. 
+    The intent is to include as many tree species from as many locations as possible to make it possible to compare tree species' size potentials across their native ranges.
+</p>

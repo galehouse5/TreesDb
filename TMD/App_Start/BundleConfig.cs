@@ -32,6 +32,10 @@ namespace TMD
                 "~/js/misc/upclick.js",
                 "~/js/jquery/jquery.placeholder-1.1.9.js"));
 
+            bundles.Add(new ScriptBundle("~/js/vendor/main").Include(
+                "~/js/vendor/jquery-{version}.js",
+                "~/js/vendor/bootstrap.js"));
+
             // css bundles
             bundles.Add(new StyleBundle("~/css/Shared.css").Include(
                 "~/css/screen.css",
@@ -49,6 +53,10 @@ namespace TMD
             bundles.Add(new StyleBundle("~/css/LoginOnly.css").Include(
                 "~/css/login.css",
                 "~/css/theme-login.css"));
+
+            bundles.Add(new StyleBundle("~/css/vendor/main").Include(
+                "~/css/vendor/bootstrap.css",
+                "~/css/vendor/bootstrap-theme.css"));
         }
     }
 }
