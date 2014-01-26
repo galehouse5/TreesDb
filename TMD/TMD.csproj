@@ -417,6 +417,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Portable_TMD.xlsx" />
     <None Include="Properties\PublishProfiles\treesdb - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\treesdb - Web Deploy.pubxml" />
     <Content Include="Views\Search\_MenuWidget.cshtml" />

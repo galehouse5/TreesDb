@@ -57,6 +57,7 @@
     <Compile Include="Extensions\Photo.cs" />
     <Compile Include="Infrastructure\SitesRepository.cs" />
     <Compile Include="Infrastructure\PhotosRepository.cs" />
+    <Compile Include="Model\Import\ExcelImportTests.cs" />
     <Compile Include="Model\Sites.cs" />
     <Compile Include="Model\Locations.cs" />
     <Compile Include="Model\Photos.cs" />
@@ -89,6 +90,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <EmbeddedResource Include="Model\Import\Portable_TMD.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Photos\Original.jpg">

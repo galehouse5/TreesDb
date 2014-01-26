@@ -34,6 +34,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus.3.1.3.3\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate.Validator">
       <HintPath>..\packages\NHibernate.Validator.1.3.2.4000\lib\Net35\NHibernate.Validator.dll</HintPath>
     </Reference>
@@ -55,6 +58,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Import\ExcelImport.cs" />
+    <Compile Include="Import\Excel\Attributes\ExcelBooleanAttribute.cs" />
+    <Compile Include="Import\Excel\Attributes\ExcelDateAttribute.cs" />
+    <Compile Include="Import\Excel\Attributes\ExcelEnumerationAttribute.cs" />
+    <Compile Include="Import\Excel\Attributes\ExcelNumberAttribute.cs" />
+    <Compile Include="Import\Excel\Attributes\ExcelAttribute.cs" />
+    <Compile Include="Import\Excel\Attributes\ExcelStringAttribute.cs" />
+    <Compile Include="Import\Excel\ExcelEntity.cs" />
+    <Compile Include="Import\Excel\ExcelTrunk.cs" />
+    <Compile Include="Import\Excel\ExcelTree.cs" />
+    <Compile Include="Import\Excel\ExcelSubsite.cs" />
+    <Compile Include="Import\Excel\ExcelSite.cs" />
+    <Compile Include="Import\Excel\ExcelValue.cs" />
     <Compile Include="Extensions\ISpecified.cs" />
     <Compile Include="Imports\MultiTrunkTree.cs" />
     <Compile Include="Imports\SingleTrunkTree.cs" />
@@ -64,6 +80,7 @@
     <Compile Include="Imports\Trip.cs" />
     <Compile Include="Imports\ImportRepository.cs" />
     <Compile Include="Imports\Trunk.cs" />
+    <Compile Include="Import\ImportEnumeration.cs" />
     <Compile Include="Photos\DefaultPhotoStoreProvider.cs" />
     <Compile Include="Photos\IPhoto.cs" />
     <Compile Include="Photos\IPhotoRepository.cs" />
