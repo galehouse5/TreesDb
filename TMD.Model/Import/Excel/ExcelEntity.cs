@@ -28,6 +28,11 @@ namespace TMD.Model.Import.Excel
             get { return Values.SingleOrDefault(v => v.Attribute.Name.Equals(name)); }
         }
 
+        public bool HasValue
+        {
+            get { return Values.Any(v => v.HasValue); }
+        }
+
         protected virtual IEnumerable<KeyValuePair<ExcelValue, string>> GetAdditionalValidationErrors()
         {
             yield break;
@@ -39,11 +44,6 @@ namespace TMD.Model.Import.Excel
                     from error in value.Attribute.GetValidationErrors(value.RawValue)
                     select new KeyValuePair<ExcelValue, string>(value, error))
                    .Union(GetAdditionalValidationErrors());
-        }
-
-        public bool HasValue
-        {
-            get { return Values.Any(v => v.HasValue); }
         }
     }
 }

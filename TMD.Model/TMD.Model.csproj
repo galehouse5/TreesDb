@@ -80,6 +80,7 @@
     <Compile Include="Imports\Trip.cs" />
     <Compile Include="Imports\ImportRepository.cs" />
     <Compile Include="Imports\Trunk.cs" />
+    <Compile Include="Import\Excel\ExcelValueStyling.cs" />
     <Compile Include="Import\ImportEnumeration.cs" />
     <Compile Include="Photos\DefaultPhotoStoreProvider.cs" />
     <Compile Include="Photos\IPhoto.cs" />

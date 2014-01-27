@@ -1,6 +1,7 @@
 ﻿using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using TMD.Model.Import.Excel.Attributes;
 
 namespace TMD.Model.Import.Excel
@@ -42,8 +43,23 @@ namespace TMD.Model.Import.Excel
             {
                 ExcelComment comment = cell.Comment ?? cell.AddComment(string.Empty, "TMD");
                 comment.Text = string.Join(Environment.NewLine, errors);
-                
-                cell.StyleName = "Bad";
+
+                ExcelValueStyling.Invalid.SetStyle(cell);
+                sheet.TabColor = Color.Red;
+
+                sheet.Select(cell.Address, true);
+            }
+
+            // draw attention to this cell's row
+            foreach (ExcelValue value in Entity.Values)
+            {
+                using (ExcelRange cell = sheet.Cells[Entity.Row, value.Attribute.Column])
+                {
+                    if (!ExcelValueStyling.Invalid.HasStyle(cell))
+                    {
+                        ExcelValueStyling.Attention.SetStyle(cell);
+                    }
+                }
             }
         }
 
@@ -57,6 +73,7 @@ namespace TMD.Model.Import.Excel
                 }
 
                 cell.StyleName = sheet.Column(Attribute.Column).StyleName;
+                sheet.TabColor = Color.Green;
             }
         }
 
