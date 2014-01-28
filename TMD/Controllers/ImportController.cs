@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 using TMD.Model.Import;
 using TMD.Model.Users;
@@ -10,9 +11,15 @@ namespace TMD.Controllers
     [AuthorizeUser(Roles = UserRoles.Import)]
     public class ImportController : ControllerBase
     {
+        public void SetInvalidDataCookie(bool value)
+        {
+            Response.SetCookie(new HttpCookie("invalid-data", value.ToString()) { Path = Url.Action("Index") });
+        }
+
         [HttpGet, Route("import")]
         public ActionResult Index()
         {
+            SetInvalidDataCookie(false);
             return View();
         }
 
@@ -26,6 +33,7 @@ namespace TMD.Controllers
             {
                 if (import.GetValidationErrors().Any())
                 {
+                    SetInvalidDataCookie(true);
                     import.AddValidationErrors();
                     return File(import.Save(), model.Database.ContentType, model.Database.FileName);
                 }
