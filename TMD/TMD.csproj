@@ -308,6 +308,11 @@
     <Content Include="js\vendor\bootstrap.min.js" />
     <Content Include="js\vendor\jquery-1.9.1.js" />
     <Content Include="js\vendor\jquery-1.9.1.min.js" />
+    <Content Include="js\vendor\jquery.validate.unobtrusive.js" />
+    <Content Include="js\vendor\jquery.validate.unobtrusive.min.js" />
+    <None Include="js\vendor\jquery.validate-vsdoc.js" />
+    <Content Include="js\vendor\jquery.validate.js" />
+    <Content Include="js\vendor\jquery.validate.min.js" />
     <Content Include="Views\Account\CompletePasswordAssistance.cshtml" />
     <Content Include="Views\Account\PasswordAssistance.cshtml" />
     <Content Include="Views\Account\CompleteRegistration.cshtml" />
@@ -417,7 +422,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Portable_TMD.xlsx" />
+    <EmbeddedResource Include="TMD.xlsx" />
     <None Include="Properties\PublishProfiles\treesdb - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\treesdb - Web Deploy.pubxml" />
     <Content Include="Views\Search\_MenuWidget.cshtml" />
@@ -431,6 +436,9 @@
     <Content Include="Views\Shared\_BootstrapFooter.cshtml" />
     <Content Include="Views\Main\_ViewStart.cshtml" />
     <Content Include="Views\Search\_BootstrapMenuWidget.cshtml" />
+    <Content Include="Views\Import\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

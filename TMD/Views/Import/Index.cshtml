@@ -1,37 +1,73 @@
-﻿@{
+﻿@model ImportModel
+
+@{
     ViewBag.Title = "Import";
 }
 
-<div class="jumbotron">
+@section Scripts {
+    <script>
+        (function () {
+            var hasInvalidData = function () {
+                return document.cookie.indexOf('invalid-data=True') > -1;
+            };
+
+            var display = function (hasInvalidData) {
+                $('[data-invalid-data=true]').toggle(hasInvalidData);
+                $('[data-invalid-data=false]').toggle(!hasInvalidData);
+            };
+
+            var poll = function () {
+                display(hasInvalidData());
+                setTimeout(poll, 1000);
+            };
+
+            poll();
+        })();
+    </script>
+}
+
+<div class="jumbotron" data-invalid-data="false">
     <h1>Import</h1>
 
     <div class="row">
-        <div class="col-md-4">
-            <h2>1. Download</h2>
+        <div class="col-sm-6">
+            <p>Download your database to record your site visits and tree measurements.</p>
 
-            <a class="btn btn-default btn-lg" href="@Url.ManagedContent("~/Portable_TMD.xlsx")">
-                <span class="glyphicon glyphicon-file"></span> Portable_TMD.xlsx
+            <a class="btn btn-default btn-lg" href="@Url.ManagedContent("~/TMD.xlsx")">
+                <span class="glyphicon glyphicon-file"></span> TMD.xlsx
             </a>
         </div>
 
-        <div class="col-md-4">
-            <h2>2. Edit</h2>
-            <p>Add, revise, or remove data</p>
-        </div>
+        <div class="col-sm-6">
+            <p>Upload your database to share data with the community.</p>
 
-        <div class="col-md-4">
-            <h2>3. Upload</h2>
-        
             @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" })) {
                 @Html.AntiForgeryToken()
                 @Html.ValidationSummary()
 
                 <div class="form-group">
-                    <input type="file" name="Database" />
+                    <input type="file" name="Database" data-val="true" data-val-required="You must choose a file." />
                 </div>
-            
-                <button type="submit" class="btn btn-primary btn-lg">Import</button>
+
+                <button type="submit" class="btn btn-primary btn-lg">Upload Database</button>
             }
         </div>
     </div>
+</div>
+
+<div class="jumbotron" data-invalid-data="true" style="display: none;">
+    <h1>Fix Invalid Data</h1>
+
+    <p>There were errors detected in your database. Your browser has downloaded a copy with these highlighted. Apply corrections and try uploading again.</p>
+
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" })) {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+
+        <div class="form-group">
+            <input type="file" name="Database" data-val="true" data-val-required="You must choose a file." />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Upload Database</button>
+    }
 </div>

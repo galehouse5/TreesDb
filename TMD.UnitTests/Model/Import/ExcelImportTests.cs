@@ -17,7 +17,7 @@ namespace TMD.UnitTests.Model.Import
         [TestInitialize]
         public void Initialize()
         {
-            data = Assembly.GetExecutingAssembly().GetManifestResourceStream("TMD.UnitTests.Model.Import.Portable_TMD.xlsx");
+            data = Assembly.GetExecutingAssembly().GetManifestResourceStream("TMD.UnitTests.Model.Import.TMD.xlsx");
             import = new ExcelImport(data);
         }
 

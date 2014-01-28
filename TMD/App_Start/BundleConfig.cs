@@ -34,7 +34,9 @@ namespace TMD
 
             bundles.Add(new ScriptBundle("~/js/vendor/main").Include(
                 "~/js/vendor/jquery-{version}.js",
-                "~/js/vendor/bootstrap.js"));
+                "~/js/vendor/bootstrap.js",
+                "~/js/vendor/jquery.validate.js",
+                "~/js/vendor/jquery.validate.unobtrusive.js"));
 
             // css bundles
             bundles.Add(new StyleBundle("~/css/Shared.css").Include(
