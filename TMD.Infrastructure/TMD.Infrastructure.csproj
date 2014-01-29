@@ -43,8 +43,9 @@
     <Reference Include="SimMetrics">
       <HintPath>..\ThirdPartyAssemblies\SimMetrics\SimMetrics.dll</HintPath>
     </Reference>
-    <Reference Include="StructureMap">
-      <HintPath>..\ThirdPartyAssemblies\StructureMap\StructureMap.dll</HintPath>
+    <Reference Include="StructureMap, Version=2.6.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -57,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Registry.cs" />
+    <Compile Include="Repositories\ExcelImportRepository.cs" />
     <Compile Include="Repositories\LocationRepository.cs" />
     <Compile Include="Repositories\PhotoRepository.cs" />
     <Compile Include="Repositories\RepositoryRegistry.cs" />
@@ -91,9 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Mappings\Locations.hbm.xml" />
-    <EmbeddedResource Include="Mappings\Imports.hbm.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Mappings\Users.hbm.xml" />
@@ -111,6 +110,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\ExcelImport.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Imports.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

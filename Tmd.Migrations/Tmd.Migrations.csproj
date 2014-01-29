@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentMigrator">
+      <HintPath>..\packages\FluentMigrator.1.1.2.1\lib\40\FluentMigrator.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,20 +42,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Y2014\M1_CreateExcelImportSchema.cs" />
+    <Compile Include="Profiles\RecompileObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Baseline\CreateSchema.sql" />
-    <Content Include="Baseline\CreateDatabaseUsers.sql" />
+    <Content Include="Baseline\CreateSchema.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Baseline\CreateDatabaseUsers.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Baseline\Debug\CreateServerLogins.sql" />
-    <Content Include="Baseline\DropServerLogins.sql" />
-    <Content Include="Baseline\DropSchema.sql" />
-    <Content Include="Baseline\InsertTestData.sql" />
+    <Content Include="Baseline\DropServerLogins.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Baseline\DropSchema.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Baseline\InsertTestData.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Baseline\Release\CreateServerLogins.sql" />
-    <Content Include="Baseline\DropDatabaseUsers.sql" />
+    <Content Include="Baseline\DropDatabaseUsers.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TMD.Model\TMD.Model.csproj">
+      <Project>{82c94cba-58da-46ea-a3f6-9786eb32cc17}</Project>
+      <Name>TMD.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo "$(SolutionDir)packages\FluentMigrator.1.1.2.1\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -t listmigrations &gt; ListMigrations.bat
+echo "$(SolutionDir)packages\FluentMigrator.1.1.2.1\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -profile RecompileObjects &gt; MigrateUp.bat
+echo "$(SolutionDir)packages\FluentMigrator.1.1.2.1\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -t rollback &gt; Rollback.bat
+copy "$(ProjectDir)\Baseline\$(ConfigurationName)" "$(TargetDir)\Baseline"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

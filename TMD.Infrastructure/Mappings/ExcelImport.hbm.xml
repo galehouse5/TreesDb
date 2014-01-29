@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="TMD.Model"
+                   namespace="TMD.Model.ExcelImport">
+  <class name="ExcelImportEntityType" table="ExcelImport_EntityTypes" lazy="false">
+    <id name="ID">
+      <generator class="native" />
+    </id>
+    <property name="Name" />
+    <property name="Spreadsheet" />
+    <property name="StartRow" />
+    <bag name="Attributes">
+      <key column="EntityTypeID" />
+      <one-to-many class="ExcelImportAttribute" />
+    </bag>
+  </class>
+
+  <class name="ExcelImportAttribute" table="ExcelImport_Attributes" abstract="true" lazy="false">
+    <id name="ID">
+      <generator class="native" />
+    </id>
+    <discriminator column="Type"/>
+    <many-to-one name="EntityType" column="EntityTypeID" />
+    <property name="Name" />
+    <property name="Column" column="[Column]" />
+    <property name="IsRequired" />
+
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportNumberAttribute" discriminator-value="1" lazy="false">
+      <property name="MinInclusive" column="MinNumberInclusive" />
+      <property name="MaxInclusive" column="MaxNumberInclusive" />
+      <property name="MinExclusive" column="MinNumberExclusive" />
+      <property name="MaxExclusive" column="MaxNumberExclusive" />
+    </subclass>
+
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportStringAttribute" discriminator-value="2" lazy="false">
+      <property name="MaxLength" column="MaxStringLength" />
+    </subclass>
+
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportBooleanAttribute" discriminator-value="3" lazy="false" />
+
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportEnumerationAttribute" discriminator-value="4" lazy="false">
+      <property name="EnumerationType" />
+    </subclass>
+
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportDateAttribute" discriminator-value="5" lazy="false" />
+  </class>
+
+  <class name="ExcelImportEntity" table="ExcelImport_Entities" lazy="false">
+    <id name="ID">
+      <generator class="native" />
+    </id>
+    <many-to-one name="EntityType" column="EntityTypeID" />
+    <many-to-one name="User" column="UserID" />
+    <property name="Row" />
+    <bag name="Values" cascade="all" inverse="true">
+      <key column="EntityID" />
+      <one-to-many class="ExcelImportValue" />
+    </bag>
+  </class>
+
+  <class name="ExcelImportValue" table="ExcelImport_Values" lazy="false">
+    <id name="ID">
+      <generator class="native" />
+    </id>
+    <discriminator column="Type"/>
+    <many-to-one name="Entity" column="EntityID" />
+    <many-to-one name="Attribute" column="AttributeID" />
+
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportNumberValue" discriminator-value="1" lazy="false">
+      <property name="NumberValue" />
+    </subclass>
+
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportStringValue" discriminator-value="2" lazy="false">
+      <property name="StringValue" />
+    </subclass>
+
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportBooleanValue" discriminator-value="3" lazy="false">
+      <property name="BooleanValue" />
+    </subclass>
+
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportEnumerationValue" discriminator-value="4" lazy="false">
+      <property name="EnumerationValue" />
+    </subclass>
+   
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportDateValue" discriminator-value="5" lazy="false">
+      <property name="DateValue" />
+    </subclass>
+  </class>
+</hibernate-mapping>

@@ -31,15 +31,15 @@
 
     <div class="row">
         <div class="col-sm-6">
-            <p>Download your database to record your site visits and tree measurements.</p>
+            <p>Download your database to record the sites you visit and the trees you measure.</p>
 
-            <a class="btn btn-default btn-lg" href="@Url.ManagedContent("~/TMD.xlsx")">
+            <a class="btn btn-default btn-lg" href="@Url.Action("Download")">
                 <span class="glyphicon glyphicon-file"></span> TMD.xlsx
             </a>
         </div>
 
         <div class="col-sm-6">
-            <p>Upload your database to share data with the community.</p>
+            <p>Upload your database to share your recordings with the community.</p>
 
             @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" })) {
                 @Html.AntiForgeryToken()

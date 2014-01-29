@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using StructureMap;
-
+﻿
 namespace TMD.Infrastructure.Repositories
 {
     public class RepositoryRegistry : StructureMap.Configuration.DSL.Registry
     {
         public RepositoryRegistry()
         {
-            For<TMD.Model.Locations.ILocationRepository>().Singleton().Use<LocationRepository>();
-            For<TMD.Model.Trees.ITreeRepository>().Singleton().Use<TreeRepository>();
-            For<TMD.Model.Imports.ImportRepository>().Singleton().Use<ImportRepository>();
-            For<TMD.Model.Users.UserRepository>().Singleton().Use<UserRepository>();
-            For<TMD.Model.Photos.IPhotoRepository>().Singleton().Use<PhotoRepository>();
-            For<TMD.Model.Sites.ISiteRepository>().Singleton().Use<SiteRepository>();
+            For<Model.Locations.ILocationRepository>().Singleton().Use<LocationRepository>();
+            For<Model.Trees.ITreeRepository>().Singleton().Use<TreeRepository>();
+            For<Model.Imports.ImportRepository>().Singleton().Use<ImportRepository>();
+            For<Model.Users.UserRepository>().Singleton().Use<UserRepository>();
+            For<Model.Photos.IPhotoRepository>().Singleton().Use<PhotoRepository>();
+            For<Model.Sites.ISiteRepository>().Singleton().Use<SiteRepository>();
+            For<Model.ExcelImport.ExcelImportRepository>().Singleton().Use<ExcelImportRepository>();
         }
 
         internal static void Configure(NHibernate.Cfg.Configuration config)

@@ -36,9 +36,14 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EPPlus, Version=3.1.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EPPlus.3.1.3.3\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="StructureMap">
-      <HintPath>..\ThirdPartyAssemblies\StructureMap\StructureMap.dll</HintPath>
+    <Reference Include="StructureMap, Version=2.6.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -57,7 +62,7 @@
     <Compile Include="Extensions\Photo.cs" />
     <Compile Include="Infrastructure\SitesRepository.cs" />
     <Compile Include="Infrastructure\PhotosRepository.cs" />
-    <Compile Include="Model\Import\ExcelImportTests.cs" />
+    <Compile Include="Model\ExcelImportTests.cs" />
     <Compile Include="Model\Sites.cs" />
     <Compile Include="Model\Locations.cs" />
     <Compile Include="Model\Photos.cs" />
@@ -90,7 +95,8 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <EmbeddedResource Include="Model\Import\TMD.xlsx" />
+    <EmbeddedResource Include="Model\TMD.xlsx" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Photos\Original.jpg">

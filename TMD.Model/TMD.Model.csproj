@@ -43,8 +43,9 @@
     <Reference Include="NHibernate.Validator.Specific">
       <HintPath>..\packages\NHibernate.Validator.1.3.2.4000\lib\Net35\NHibernate.Validator.Specific.dll</HintPath>
     </Reference>
-    <Reference Include="StructureMap">
-      <HintPath>..\ThirdPartyAssemblies\StructureMap\StructureMap.dll</HintPath>
+    <Reference Include="StructureMap, Version=2.6.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -58,30 +59,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Import\ExcelImport.cs" />
-    <Compile Include="Import\Excel\Attributes\ExcelBooleanAttribute.cs" />
-    <Compile Include="Import\Excel\Attributes\ExcelDateAttribute.cs" />
-    <Compile Include="Import\Excel\Attributes\ExcelEnumerationAttribute.cs" />
-    <Compile Include="Import\Excel\Attributes\ExcelNumberAttribute.cs" />
-    <Compile Include="Import\Excel\Attributes\ExcelAttribute.cs" />
-    <Compile Include="Import\Excel\Attributes\ExcelStringAttribute.cs" />
-    <Compile Include="Import\Excel\ExcelEntity.cs" />
-    <Compile Include="Import\Excel\ExcelTrunk.cs" />
-    <Compile Include="Import\Excel\ExcelTree.cs" />
-    <Compile Include="Import\Excel\ExcelSubsite.cs" />
-    <Compile Include="Import\Excel\ExcelSite.cs" />
-    <Compile Include="Import\Excel\ExcelValue.cs" />
+    <Compile Include="ExcelImport\Attributes\ExcelImportDateAttribute.cs" />
+    <Compile Include="ExcelImport\Attributes\ExcelImportBooleanAttribute.cs" />
+    <Compile Include="ExcelImport\Attributes\ExcelImportEnumerationAttribute.cs" />
+    <Compile Include="ExcelImport\Attributes\ExcelImportNumberAttribute.cs" />
+    <Compile Include="ExcelImport\Attributes\ExcelImportStringAttribute.cs" />
+    <Compile Include="ExcelImport\ExcelImportAttribute.cs" />
+    <Compile Include="ExcelImport\ExcelImportDatabase.cs" />
+    <Compile Include="ExcelImport\ExcelImportEntity.cs" />
+    <Compile Include="ExcelImport\ExcelImportEntityType.cs" />
+    <Compile Include="ExcelImport\ExcelImportEnumerations.cs" />
+    <Compile Include="ExcelImport\ExcelImportValue.cs" />
+    <Compile Include="ExcelImport\ExcelImportValueStyling.cs" />
+    <Compile Include="ExcelImport\ExcelImportRepository.cs" />
+    <Compile Include="ExcelImport\Values\ExcelImportDateValue.cs" />
+    <Compile Include="ExcelImport\Values\ExcelImportEnumerationValue.cs" />
+    <Compile Include="ExcelImport\Values\ExcelImportBooleanValue.cs" />
+    <Compile Include="ExcelImport\Values\ExcelImportNumberValue.cs" />
+    <Compile Include="ExcelImport\Values\ExcelImportStringValue.cs" />
     <Compile Include="Extensions\ISpecified.cs" />
+    <Compile Include="Imports\ImportRepository.cs" />
     <Compile Include="Imports\MultiTrunkTree.cs" />
     <Compile Include="Imports\SingleTrunkTree.cs" />
     <Compile Include="Imports\Site.cs" />
     <Compile Include="Imports\Subsite.cs" />
     <Compile Include="Imports\TreeBase.cs" />
     <Compile Include="Imports\Trip.cs" />
-    <Compile Include="Imports\ImportRepository.cs" />
     <Compile Include="Imports\Trunk.cs" />
-    <Compile Include="Import\Excel\ExcelValueStyling.cs" />
-    <Compile Include="Import\ImportEnumeration.cs" />
     <Compile Include="Photos\DefaultPhotoStoreProvider.cs" />
     <Compile Include="Photos\IPhoto.cs" />
     <Compile Include="Photos\IPhotoRepository.cs" />
@@ -147,6 +151,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
