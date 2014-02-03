@@ -59,10 +59,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExcelImport\Attributes\ExcelImportFloatAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportDateAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportBooleanAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportEnumerationAttribute.cs" />
-    <Compile Include="ExcelImport\Attributes\ExcelImportNumberAttribute.cs" />
+    <Compile Include="ExcelImport\Attributes\ExcelImportIntegerAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportStringAttribute.cs" />
     <Compile Include="ExcelImport\ExcelImportAttribute.cs" />
     <Compile Include="ExcelImport\ExcelImportDatabase.cs" />
@@ -72,10 +73,11 @@
     <Compile Include="ExcelImport\ExcelImportValue.cs" />
     <Compile Include="ExcelImport\ExcelImportValueStyling.cs" />
     <Compile Include="ExcelImport\ExcelImportRepository.cs" />
+    <Compile Include="ExcelImport\Values\ExcelImportFloatValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportDateValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportEnumerationValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportBooleanValue.cs" />
-    <Compile Include="ExcelImport\Values\ExcelImportNumberValue.cs" />
+    <Compile Include="ExcelImport\Values\ExcelImportIntegerValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportStringValue.cs" />
     <Compile Include="Extensions\ISpecified.cs" />
     <Compile Include="Imports\ImportRepository.cs" />

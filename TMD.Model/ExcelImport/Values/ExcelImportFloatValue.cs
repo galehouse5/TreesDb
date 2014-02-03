@@ -2,20 +2,20 @@
 
 namespace TMD.Model.ExcelImport.Values
 {
-    public class ExcelImportNumberValue : ExcelImportValue
+    public class ExcelImportFloatValue : ExcelImportValue
     {
-        protected ExcelImportNumberValue()
+        protected ExcelImportFloatValue()
         { }
 
-        public decimal? NumberValue
+        public float? FloatValue
         {
-            get { return (decimal?)Value; }
+            get { return (float?)Value; }
             set { Value = value; }
         }
 
         public static ExcelImportValue Create(ExcelImportEntity entity, ExcelImportAttribute attribute, ExcelWorksheet sheet)
         {
-            return new ExcelImportNumberValue
+            return new ExcelImportFloatValue
             {
                 Entity = entity,
                 Attribute = attribute,

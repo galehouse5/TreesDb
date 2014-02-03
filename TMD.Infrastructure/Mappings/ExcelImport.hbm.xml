@@ -24,25 +24,31 @@
     <property name="Name" />
     <property name="Column" column="[Column]" />
     <property name="IsRequired" />
+    <property name="ValueFormat" />
 
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportNumberAttribute" discriminator-value="1" lazy="false">
-      <property name="MinInclusive" column="MinNumberInclusive" />
-      <property name="MaxInclusive" column="MaxNumberInclusive" />
-      <property name="MinExclusive" column="MinNumberExclusive" />
-      <property name="MaxExclusive" column="MaxNumberExclusive" />
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportFloatAttribute" discriminator-value="1" lazy="false">
+      <property name="MinInclusive" column="MinFloatInclusive" />
+      <property name="MaxInclusive" column="MaxFloatInclusive" />
+      <property name="MinExclusive" column="MinFloatExclusive" />
+      <property name="MaxExclusive" column="MaxFloatExclusive" />
     </subclass>
-
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportStringAttribute" discriminator-value="2" lazy="false">
+    
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportIntegerAttribute" discriminator-value="2" lazy="false">
+      <property name="MinInclusive" column="MinIntegerInclusive" />
+      <property name="MaxInclusive" column="MaxIntegerInclusive" />
+    </subclass>
+    
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportStringAttribute" discriminator-value="3" lazy="false">
       <property name="MaxLength" column="MaxStringLength" />
     </subclass>
 
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportBooleanAttribute" discriminator-value="3" lazy="false" />
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportBooleanAttribute" discriminator-value="4" lazy="false" />
 
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportEnumerationAttribute" discriminator-value="4" lazy="false">
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportEnumerationAttribute" discriminator-value="5" lazy="false">
       <property name="EnumerationType" />
     </subclass>
 
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportDateAttribute" discriminator-value="5" lazy="false" />
+    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportDateAttribute" discriminator-value="6" lazy="false" />
   </class>
 
   <class name="ExcelImportEntity" table="ExcelImport_Entities" lazy="false">
@@ -51,7 +57,7 @@
     </id>
     <many-to-one name="EntityType" column="EntityTypeID" />
     <many-to-one name="User" column="UserID" />
-    <property name="Row" />
+    <property name="RowIndex" />
     <bag name="Values" cascade="all" inverse="true">
       <key column="EntityID" />
       <one-to-many class="ExcelImportValue" />
@@ -66,23 +72,27 @@
     <many-to-one name="Entity" column="EntityID" />
     <many-to-one name="Attribute" column="AttributeID" />
 
-    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportNumberValue" discriminator-value="1" lazy="false">
-      <property name="NumberValue" />
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportFloatValue" discriminator-value="1" lazy="false">
+      <property name="FloatValue" />
+    </subclass>
+    
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportIntegerValue" discriminator-value="2" lazy="false">
+      <property name="IntegerValue" />
     </subclass>
 
-    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportStringValue" discriminator-value="2" lazy="false">
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportStringValue" discriminator-value="3" lazy="false">
       <property name="StringValue" />
     </subclass>
 
-    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportBooleanValue" discriminator-value="3" lazy="false">
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportBooleanValue" discriminator-value="4" lazy="false">
       <property name="BooleanValue" />
     </subclass>
 
-    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportEnumerationValue" discriminator-value="4" lazy="false">
-      <property name="EnumerationValue" />
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportEnumerationValue" discriminator-value="5" lazy="false">
+      <property name="ByteValue" />
     </subclass>
    
-    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportDateValue" discriminator-value="5" lazy="false">
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportDateValue" discriminator-value="6" lazy="false">
       <property name="DateValue" />
     </subclass>
   </class>

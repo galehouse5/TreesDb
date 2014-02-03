@@ -1,23 +1,21 @@
 ﻿using OfficeOpenXml;
-using System;
-using TMD.Model.ExcelImport.Attributes;
 
 namespace TMD.Model.ExcelImport.Values
 {
-    public class ExcelImportEnumerationValue : ExcelImportValue
+    public class ExcelImportIntegerValue : ExcelImportValue
     {
-        protected ExcelImportEnumerationValue()
+        protected ExcelImportIntegerValue()
         { }
 
-        public byte ByteValue
+        public int? IntegerValue
         {
-            get { return (byte)(int)Value; }
-            set { Value = Enum.ToObject(((ExcelImportEnumerationAttribute)Attribute).EnumerationType, value); }
+            get { return (int?)Value; }
+            set { Value = value; }
         }
 
         public static ExcelImportValue Create(ExcelImportEntity entity, ExcelImportAttribute attribute, ExcelWorksheet sheet)
         {
-            return new ExcelImportEnumerationValue
+            return new ExcelImportIntegerValue
             {
                 Entity = entity,
                 Attribute = attribute,

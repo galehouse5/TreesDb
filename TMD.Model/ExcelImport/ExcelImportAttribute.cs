@@ -10,6 +10,7 @@ namespace TMD.Model.ExcelImport
         public string Name { get; protected set; }
         public int Column { get; protected set; }
         public bool IsRequired { get; set; }
+        public string ValueFormat { get; set; }
         public abstract string ParseValidationErrorFormat { get; }
 
         public abstract object GetValue(object rawValue);
@@ -39,6 +40,11 @@ namespace TMD.Model.ExcelImport
                         yield return error;
                 }
             }
+        }
+
+        public string Format(object rawValue)
+        {
+            return string.Format(ValueFormat ?? "{0}", rawValue);
         }
 
         public override string ToString()

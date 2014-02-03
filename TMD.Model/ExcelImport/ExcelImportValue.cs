@@ -51,7 +51,7 @@ namespace TMD.Model.ExcelImport
 
         public void Fill(ExcelWorksheet sheet)
         {
-            sheet.SetValue(Entity.Row, Attribute.Column, RawValue);
+            sheet.SetValue(Entity.Row, Attribute.Column, Attribute.Format(RawValue));
         }
     }
 }

@@ -12,8 +12,14 @@ namespace TMD.Model.ExcelImport
 
         public int ID { get; private set; }
         public ExcelImportEntityType EntityType { get; private set; }
-        public int Row { get; private set; }
+        public int RowIndex { get; private set; }
         public User User { get; private set; }
+
+        public int Row
+        {
+            get { return EntityType.StartRow + RowIndex; }
+            private set { RowIndex = value - EntityType.StartRow; }
+        }
 
         public IEnumerable<ExcelImportValue> Values { get; private set; }
 
