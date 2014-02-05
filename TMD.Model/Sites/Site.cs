@@ -154,22 +154,5 @@ namespace TMD.Model.Sites
             Subsite subsite = Subsites.First(ss => ss.ShouldMerge(otherSubsite));
             return subsite.Merge(otherSubsite);
         }
-
-        public static Site Create(Imports.Site importedSite)
-        {
-            importedSite.Trip.AssertIsImported();
-            var site = new Site
-            {
-                Subsites = new List<Subsite>(),
-                Visits = new List<SiteVisit> { SiteVisit.Create(importedSite) },
-                Name = importedSite.Name,
-                Visitors = new List<Name>()
-            };
-            foreach (var subsite in importedSite.Subsites.Select(importedSubsite => Subsite.Create(importedSubsite)))
-            {
-                site.AddSubsite(subsite);
-            }
-            return site.RecalculateProperties();
-        }
     }
 }

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using TMD.Model.Imports;
 
 namespace TMD.Model.Users
 {
@@ -46,9 +44,8 @@ namespace TMD.Model.Users
             return (Roles & role) == role;
         }
 
-        public virtual bool IsAuthorizedToImport { get { return m_Roles.Count(r => r.IsAuthorizedToImport(this)) > 0; } }   
-        public virtual bool IsAuthorizedToEdit(Trip t) { return m_Roles.Count(r => r.IsAuthorizedToEdit(this, t)) > 0; }
-        public virtual bool IsAuthorizedToExport { get { return m_Roles.Count(r => r.IsAuthorizedToExport(this)) > 0; } }   
+        public virtual bool IsAuthorizedToImport { get { return m_Roles.Count(r => r.IsAuthorizedToImport(this)) > 0; } }
+        public virtual bool IsAuthorizedToExport { get { return m_Roles.Count(r => r.IsAuthorizedToExport(this)) > 0; } }
     }
 
     public abstract class UserRole
@@ -56,7 +53,6 @@ namespace TMD.Model.Users
         public abstract UserRoles Role { get; }
         public virtual bool IsAuthorizedToImport(User user) { return false; }
         public virtual bool IsAuthorizedToExport(User user) { return false; }
-        public virtual bool IsAuthorizedToEdit(User user, Trip trip) { return false; }
     }
 
     public class ImportUserRole : UserRole
@@ -66,7 +62,6 @@ namespace TMD.Model.Users
 
         public override UserRoles Role { get { return UserRoles.Import; } }
         public override bool IsAuthorizedToImport(User user) { return true; }
-        public override bool IsAuthorizedToEdit(User user, Trip trip) { return user == trip.Creator; }
     }
 
     public class ExportUserRole : UserRole

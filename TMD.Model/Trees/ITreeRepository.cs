@@ -8,7 +8,6 @@ namespace TMD.Model.Trees
         Tree FindById(int id);
         IList<Tree> ListAll();
         IList<Tree> ListByNameAndSiteId(string botanicalName, string commonName, int siteId);
-        void RemoveMeasurementsByTrip(Imports.Trip trip);
         IList<Tree> ListByState(int stateId);
         IList<Tree> ListByName(string botanicalName, string commonName);
         IList<Tree> ListByNameFilters(string botanicalName, string commonName);

@@ -1,47 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Users;
-using StructureMap;
-using TMD.Model.Imports;
-using TMD.Model.Locations;
-using TMD.Model.Trees;
-using TMD.Model.Photos;
-using TMD.Model.Sites;
+﻿using StructureMap;
 
 namespace TMD.Model
 {
     public static class Repositories
     {
-        public static ILocationRepository Locations
+        public static Locations.ILocationRepository Locations
         {
-            get { return ObjectFactory.GetInstance<ILocationRepository>(); }
+            get { return ObjectFactory.GetInstance<Locations.ILocationRepository>(); }
         }
 
-        public static ITreeRepository Trees
+        public static Trees.ITreeRepository Trees
         {
-            get { return ObjectFactory.GetInstance<ITreeRepository>(); }
+            get { return ObjectFactory.GetInstance<Trees.ITreeRepository>(); }
         }
 
-        public static ImportRepository Imports
+        public static Users.UserRepository Users
         {
-            get { return ObjectFactory.GetInstance<ImportRepository>(); }
+            get { return ObjectFactory.GetInstance<Users.UserRepository>(); }
         }
 
-        public static UserRepository Users
+        public static Photos.IPhotoRepository Photos
         {
-            get { return ObjectFactory.GetInstance<UserRepository>(); }
+            get { return ObjectFactory.GetInstance<Photos.IPhotoRepository>(); }
         }
 
-        public static IPhotoRepository Photos
+        public static Sites.ISiteRepository Sites
         {
-            get { return ObjectFactory.GetInstance<IPhotoRepository>(); }
-        }
-
-        public static ISiteRepository Sites
-        {
-            get { return ObjectFactory.GetInstance<ISiteRepository>(); }
+            get { return ObjectFactory.GetInstance<Sites.ISiteRepository>(); }
         }
     }
 }

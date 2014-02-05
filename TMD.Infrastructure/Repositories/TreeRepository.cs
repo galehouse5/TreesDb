@@ -22,27 +22,6 @@ namespace TMD.Infrastructure.Repositories
             Registry.Session.Save(tree);
         }
 
-        public void RemoveMeasurementsByTrip(Model.Imports.Trip trip)
-        {
-            var trees = Registry.Session.CreateCriteria<Tree>()
-                .CreateAlias("Measurements", "measurement")
-                .CreateAlias("measurement.ImportingTrip", "importingTrip")
-                .Add(Restrictions.Eq("importingTrip.Id", trip.Id))
-                .List<Tree>();
-            foreach (var tree in trees)
-            {
-                // evaluate where clause immediately by calling ToList() to avoid modification of collection during enumeration
-                foreach (var measurementToRemove in tree.Measurements.Where(measurement => measurement.ImportingTrip.Equals(trip)).ToList())
-                {
-                    tree.RemoveMeasurement(measurementToRemove);
-                }
-                if (tree.Measurements.Count < 1)
-                {
-                    Registry.Session.Delete(tree);
-                }
-            }
-        }
-
         private StringComparisonExpression m_AcceptedSymbolRanker = StringComparisonExpression.Create("equality * 100");
         private StringComparisonExpression m_CommonNameRanker = StringComparisonExpression.Create("jaro * firstlength");
         private StringComparisonExpression m_ScientificNameRanker = StringComparisonExpression.Create("jarowinkler * firstlength");

@@ -51,7 +51,7 @@
     </id>
     <property name="Measured" />
     <many-to-one name="Species" column="ComputedMeasuredSpeciesId" insert="false" update="false" cascade="none" />
-    <many-to-one name="ImportingTrip" column="ImportingTripId" cascade="none" />
+    <property name="ImportingTripId" />
     <many-to-one name="Tree" column="TreeId" cascade="none" />
     <property name="CommonName"/>
     <property name="ScientificName"/>

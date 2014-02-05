@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMD.Model;
-using TMD.Model.Extensions;
 using TMD.Model.Sites;
 
 namespace TMD.Infrastructure.Repositories
@@ -52,40 +51,6 @@ namespace TMD.Infrastructure.Repositories
         {
             return Registry.Session.CreateCriteria<Site>()
                 .List<Site>();
-        }
-
-        public void RemoveVisitsByTrip(Model.Imports.Trip trip)
-        {
-            var subsites = Registry.Session.CreateCriteria<Subsite>()
-                .CreateAlias("Visits", "visit")
-                .CreateAlias("visit.ImportingTrip", "importingTrip")
-                .Add(Restrictions.Eq("importingTrip.Id", trip.Id))
-                .List<Subsite>();
-            foreach (var subsite in subsites)
-            {
-                // evaluate where clause immediately by calling ToList() to avoid modification of collection during enumeration
-                foreach (var visitToRemove in subsite.Visits.Where(visit => visit.ImportingTrip.Equals(trip)).ToList())
-                {
-                    subsite.RemoveVisit(visitToRemove);
-                }
-                if (subsite.Visits.Count < 1)
-                {
-                    Registry.Session.Delete(subsite);
-                }
-            }
-            var sites = Registry.Session.CreateCriteria<Site>()
-                .CreateAlias("Visits", "visit")
-                .CreateAlias("visit.ImportingTrip", "importingTrip")
-                .Add(Restrictions.Eq("importingTrip.Id", trip.Id))
-                .List<Site>();
-            foreach (var site in sites)
-            {
-                site.Visits.RemoveAll(visit => visit.ImportingTrip.Equals(trip));
-                if (site.Visits.Count < 1)
-                {
-                    Registry.Session.Delete(site);
-                }
-            }
         }
 
         public IList<Site> ListAllForMap()

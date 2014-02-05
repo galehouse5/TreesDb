@@ -191,27 +191,6 @@ namespace TMD.Model.Sites
             Tree tree = Trees.First(t => t.ShouldMerge(otherTree));
             return tree.Merge(otherTree);
         }
-
-        public static Subsite Create(Imports.Subsite importedSubsite)
-        {
-            importedSubsite.Site.Trip.AssertIsImported();
-            var subsite = new Subsite
-            {
-                Trees = new List<Tree>(),
-                Visits = new List<SubsiteVisit>(),
-                Name = importedSubsite.Name,
-                State = importedSubsite.State,
-                County = importedSubsite.County,
-                Photos = new List<IPhoto>(),
-                Visitors = new List<Name>()
-            };
-            subsite.AddVisit(SubsiteVisit.Create(importedSubsite));
-            foreach (var tree in importedSubsite.Trees.Select(importedTree => Tree.Create(importedTree)))
-            {
-                subsite.AddTree(tree);
-            }
-            return subsite.RecalculateProperties();
-        }
     }
 
     public class SubsitePhotoReference : PhotoReferenceBase

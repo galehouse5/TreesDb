@@ -8,12 +8,12 @@ namespace TMD.Infrastructure.Repositories
     {
         public override IQueryable<ExcelImportEntityType> EntityTypes
         {
-            get { return Registry.Session.Query<ExcelImportEntityType>(); }
+            get { return Registry.Session.Query<ExcelImportEntityType>().Fetch(t => t.Attributes); }
         }
 
         public override IQueryable<ExcelImportEntity> Entities
         {
-            get { return Registry.Session.Query<ExcelImportEntity>(); }
+            get { return Registry.Session.Query<ExcelImportEntity>().Fetch(e => e.Values); }
         }
 
         protected override void Save(ExcelImportEntity entity)

@@ -122,7 +122,7 @@ namespace Tmd.Migrations.Y2014
             InsertFloatAttribute(2, 6, "Latitude", valueFormat: "{0:#.00000}", minInclusive: -90f, maxInclusive: 90f);
             InsertFloatAttribute(2, 7, "Longitude", valueFormat: "{0:#.00000}", minInclusive: -180f, maxInclusive: 180f);
             InsertStringAttribute(2, 8, "Comments", 500);
-            InsertEnumerationAttribute<ExcelImportSiteOwnershipType>(2, 9, "Ownership Type");
+            InsertStringAttribute(2, 9, "Ownership Type", 100);
             InsertStringAttribute(2, 10, "Ownership Contact", 500);
             InsertBooleanAttribute(2, 11, "Publicize Contact");
         }
@@ -155,8 +155,8 @@ namespace Tmd.Migrations.Y2014
             InsertBooleanAttribute(3, 23, "Publicize Coordinates");
             InsertIntegerAttribute(3, 24, "Elevation", minInclusive: 1);
             InsertStringAttribute(3, 25, "General Comments", 500);
-            InsertEnumerationAttribute<ExcelImportLaserBrand>(3, 26, "Height Laser Brand");
-            InsertEnumerationAttribute<ExcelImportClinometerBrand>(3, 27, "Height Clinometer Brand");
+            InsertStringAttribute(3, 26, "Height Laser Brand", 100);
+            InsertStringAttribute(3, 27, "Height Clinometer Brand", 100);
             InsertEnumerationAttribute<ExcelImportHeightMeasurementType>(3, 28, "Height Measurement Type");
             InsertFloatAttribute(3, 29, "Height Distance Top", minExclusive: 0f);
             InsertFloatAttribute(3, 30, "Height Angle Top", minInclusive: 0f, maxExclusive: 90f);

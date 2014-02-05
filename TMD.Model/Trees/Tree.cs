@@ -22,7 +22,7 @@ namespace TMD.Model.Trees
         public virtual string CommonName { get; protected set; }
         public virtual string ScientificName { get; protected set; }
         public virtual Distance Height { get; protected set; }
-        public virtual Imports.TreeHeightMeasurementMethod HeightMeasurementMethod { get; protected set; }
+        public virtual TreeHeightMeasurementMethod HeightMeasurementMethod { get; protected set; }
         public virtual Distance Girth { get; protected set; }
         public virtual Distance CrownSpread { get; protected set; }
         public virtual Coordinates Coordinates { get; protected set; }
@@ -120,19 +120,6 @@ namespace TMD.Model.Trees
                 return false;
 
             return true;
-        }
-
-        public static Tree Create(Imports.TreeBase importedTree)
-        {
-            importedTree.Subsite.Site.Trip.AssertIsImported();
-            Tree tree = new Tree
-            {
-                Measurements = new List<Measurement>(),
-                Photos = new List<IPhoto>(),
-                Measurers = new List<Name>()
-            };
-            tree.AddMeasurement(Measurement.Create(importedTree));            
-            return tree.RecalculateProperties();
         }
     }
 

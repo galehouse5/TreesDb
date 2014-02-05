@@ -1,5 +1,4 @@
-﻿
-namespace TMD.Infrastructure.Repositories
+﻿namespace TMD.Infrastructure.Repositories
 {
     public class RepositoryRegistry : StructureMap.Configuration.DSL.Registry
     {
@@ -7,7 +6,6 @@ namespace TMD.Infrastructure.Repositories
         {
             For<Model.Locations.ILocationRepository>().Singleton().Use<LocationRepository>();
             For<Model.Trees.ITreeRepository>().Singleton().Use<TreeRepository>();
-            For<Model.Imports.ImportRepository>().Singleton().Use<ImportRepository>();
             For<Model.Users.UserRepository>().Singleton().Use<UserRepository>();
             For<Model.Photos.IPhotoRepository>().Singleton().Use<PhotoRepository>();
             For<Model.Sites.ISiteRepository>().Singleton().Use<SiteRepository>();

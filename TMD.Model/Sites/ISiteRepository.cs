@@ -10,7 +10,6 @@ namespace TMD.Model.Sites
         IList<Site> ListByProximity(Coordinates coordinates, float minutesDistance);
         IList<Site> ListAll();
         IList<Site> ListAllForMap();
-        void RemoveVisitsByTrip(Imports.Trip trip);
         void Remove(Site site);
         EntityPage<Subsite> ListAllSubsites(SubsiteBrowser browser);
         IList<Subsite> FindSubsitesByStateId(int stateId);

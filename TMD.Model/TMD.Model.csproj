@@ -59,10 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExcelImport\Attributes\ExcelImportFloatAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportDateAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportBooleanAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportEnumerationAttribute.cs" />
+    <Compile Include="ExcelImport\Attributes\ExcelImportFloatAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportIntegerAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportStringAttribute.cs" />
     <Compile Include="ExcelImport\ExcelImportAttribute.cs" />
@@ -73,21 +73,13 @@
     <Compile Include="ExcelImport\ExcelImportValue.cs" />
     <Compile Include="ExcelImport\ExcelImportValueStyling.cs" />
     <Compile Include="ExcelImport\ExcelImportRepository.cs" />
-    <Compile Include="ExcelImport\Values\ExcelImportFloatValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportDateValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportEnumerationValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportBooleanValue.cs" />
+    <Compile Include="ExcelImport\Values\ExcelImportFloatValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportIntegerValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportStringValue.cs" />
     <Compile Include="Extensions\ISpecified.cs" />
-    <Compile Include="Imports\ImportRepository.cs" />
-    <Compile Include="Imports\MultiTrunkTree.cs" />
-    <Compile Include="Imports\SingleTrunkTree.cs" />
-    <Compile Include="Imports\Site.cs" />
-    <Compile Include="Imports\Subsite.cs" />
-    <Compile Include="Imports\TreeBase.cs" />
-    <Compile Include="Imports\Trip.cs" />
-    <Compile Include="Imports\Trunk.cs" />
     <Compile Include="Photos\DefaultPhotoStoreProvider.cs" />
     <Compile Include="Photos\IPhoto.cs" />
     <Compile Include="Photos\IPhotoRepository.cs" />
@@ -105,6 +97,7 @@
     <Compile Include="Trees\Species.cs" />
     <Compile Include="Trees\Measurement.cs" />
     <Compile Include="Trees\Tree.cs" />
+    <Compile Include="Trees\TreeEnumerations.cs" />
     <Compile Include="Users\UserRoles.cs" />
     <Compile Include="Validation\BooleanMethodAttribute.cs" />
     <Compile Include="Validation\ContextMethodAttribute.cs" />

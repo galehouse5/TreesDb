@@ -59,7 +59,7 @@
     <id name="Id">
       <generator class="native"/>
     </id>
-    <many-to-one name="ImportingTrip" column="ImportingTripId" cascade="none" />
+    <property name="ImportingTripId" />
     <property name="Visited" />
     <property name="Name" />
     <component name="Coordinates" class="Coordinates">
@@ -154,7 +154,7 @@
     <id name="Id">
       <generator class="native"/>
     </id>
-    <many-to-one name="ImportingTrip" column="ImportingTripId" cascade="none" />
+    <property name="ImportingTripId" />
     <many-to-one name="Subsite" column="SubsiteId" cascade="none" />
     <property name="Visited" />
     <property name="Name" />

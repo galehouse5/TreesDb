@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using TMD.Model.Extensions;
-using TMD.Model.Imports;
 using TMD.Model.Locations;
 using TMD.Model.Photos;
 using TMD.Model.Users;
@@ -17,7 +14,7 @@ namespace TMD.Model.Sites
         { }
 
         public virtual int Id { get; protected set; }
-        public virtual Trip ImportingTrip { get; protected set; }
+        public virtual int ImportingTripId { get; protected set; }
         public virtual Subsite Subsite { get; protected internal set; }
 
         public virtual DateTime Visited { get; protected set; }
@@ -32,29 +29,6 @@ namespace TMD.Model.Sites
         public virtual string Comments { get; protected set; }
         public virtual IList<IPhoto> Photos { get; protected set; }
         public virtual IList<Name> Visitors { get; protected set; }
-
-        public static SubsiteVisit Create(Imports.Subsite importedSubsite)
-        {
-            importedSubsite.Site.Trip.AssertIsImported();
-            var visit = new SubsiteVisit
-            {
-                ImportingTrip = importedSubsite.Site.Trip,
-                Visited = importedSubsite.Site.Trip.Date.Value,
-                Name = importedSubsite.Name,
-                State = importedSubsite.State,
-                County = importedSubsite.County,
-                OwnershipType = importedSubsite.OwnershipType,
-                Coordinates = importedSubsite.Coordinates,
-                CalculatedCoordinates = importedSubsite.CalculateCoordinates(),
-                OwnershipContactInfo = importedSubsite.OwnershipContactInfo,
-                MakeOwnershipContactInfoPublic = importedSubsite.MakeOwnershipContactInfoPublic,
-                Comments = importedSubsite.Comments,
-                Photos = new List<IPhoto>(),
-                Visitors = new List<Name>(importedSubsite.Site.Trip.Measurers)
-            };
-            visit.Photos.AddRange(from photo in importedSubsite.Photos select new SubsiteVisitPhotoReference(photo.ToPhoto(), visit));
-            return visit;
-        }
     }
 
     public class SubsiteVisitPhotoReference : PhotoReferenceBase
@@ -66,7 +40,7 @@ namespace TMD.Model.Sites
 
         public override IList<Name> Photographers
         {
-            get { return SubsiteVisit.ImportingTrip.Measurers; }
+            get { throw new NotImplementedException(); }
         }
     }
 }

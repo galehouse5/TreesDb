@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using TMD.Model.Extensions;
-using TMD.Model.Imports;
 using TMD.Model.Photos;
 using TMD.Model.Users;
 
@@ -17,7 +14,7 @@ namespace TMD.Model.Trees
 
         public virtual int Id { get; protected set; }
         public virtual GlobalMeasuredSpecies Species { get; protected set; }
-        public virtual Trip ImportingTrip { get; protected set; }
+        public virtual int ImportingTripId { get; protected set; }
         public virtual Tree Tree { get; protected internal set; }
 
         public virtual DateTime Measured { get; protected set; }
@@ -134,30 +131,6 @@ namespace TMD.Model.Trees
         public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
         public virtual IList<IPhoto> Photos { get; protected set; }
         public virtual IList<Name> Measurers { get; protected set; }
-
-        public static Measurement Create(Imports.TreeBase importedTree)
-        {
-            importedTree.Subsite.Site.Trip.AssertIsImported();
-            var measurement = new Measurement
-            {
-                ImportingTrip = importedTree.Subsite.Site.Trip,
-                Measured = importedTree.Subsite.Site.Trip.Date.Value,
-                CommonName = importedTree.CommonName,
-                ScientificName = importedTree.ScientificName,
-                Height = importedTree.Height,
-                HeightMeasurementMethod = importedTree.HeightMeasurementMethod,
-                Girth = importedTree.Girth,
-                CrownSpread = importedTree.CrownSpread,
-                Coordinates = importedTree.Coordinates,
-                CalculatedCoordinates = importedTree.CalculateCoordinates(),
-                Elevation = importedTree.Elevation,
-                GeneralComments = importedTree.GeneralComments,
-                Photos = new List<IPhoto>(),
-                Measurers = new List<Name>(importedTree.Subsite.Site.Trip.Measurers)
-            }.RecalculateProperties();
-            measurement.Photos.AddRange(from photo in importedTree.Photos select new TreeMeasurementPhotoReference(photo.ToPhoto(), measurement));
-            return measurement;
-        }
     }
 
     public class TreeMeasurementPhotoReference : PhotoReferenceBase

@@ -27,12 +27,6 @@
     <many-to-one name="Photo" column="PhotoId" cascade="save-update"></many-to-one>
     <subclass name="PublicPhotoReference" discriminator-value="1">
     </subclass>
-    <subclass name="TMD.Model.Imports.SubsitePhotoReference" discriminator-value="2">
-      <many-to-one name="Subsite" column="ImportSubsiteId"></many-to-one>
-    </subclass>
-    <subclass name="TMD.Model.Imports.TreePhotoReference" discriminator-value="3">
-      <many-to-one name="Tree" column="ImportTreeId"></many-to-one>
-    </subclass>
     <subclass name="TMD.Model.Sites.SubsitePhotoReference" discriminator-value="4">
       <many-to-one name="Subsite" column="SubsiteId"></many-to-one>
     </subclass>

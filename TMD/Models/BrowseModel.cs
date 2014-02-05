@@ -50,7 +50,7 @@ namespace TMD.Models
         [DisplayFormat(NullDisplayText = "(no data)")]
         public Distance Height { get; set; }
         [DisplayName("Height measurement method"), DisplayFormat(NullDisplayText = "(no data)"), UIHint("Enum")]
-        public TMD.Model.Imports.TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
+        public TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
         [DisplayFormat(DataFormatString = "SubprefixOnly", NullDisplayText = "(no data)")]
         public Distance Girth { get; set; }
         [DisplayName("Crown spread"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]
