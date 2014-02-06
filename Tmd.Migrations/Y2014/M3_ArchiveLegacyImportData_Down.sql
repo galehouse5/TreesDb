@@ -236,6 +236,10 @@ CREATE TABLE [Imports].[Trunks](
 GO
 SET ANSI_PADDING OFF
 GO
+alter table [Photos].[References] add [ImportSubsiteId] int null
+go
+alter table [Photos].[References] add [ImportTreeId] int null
+go
 ALTER TABLE [Imports].[Sites] ADD  CONSTRAINT [DF_SiteVisits_Created]  DEFAULT (getdate()) FOR [Created]
 GO
 ALTER TABLE [Imports].[Subsites] ADD  CONSTRAINT [DF_SubsiteVisits_Created]  DEFAULT (getdate()) FOR [Created]
@@ -314,6 +318,16 @@ REFERENCES [Users].[Users] ([Id])
 GO
 ALTER TABLE [Imports].[Trunks] CHECK CONSTRAINT [FK_TrunkMeasurements_Users]
 GO
+ALTER TABLE [Photos].[References]  WITH CHECK ADD  CONSTRAINT [FK_References_Subsites] FOREIGN KEY([ImportSubsiteId])
+REFERENCES [Imports].[Subsites] ([Id])
+GO
+ALTER TABLE [Photos].[References] CHECK CONSTRAINT [FK_References_Subsites]
+GO
+ALTER TABLE [Photos].[References]  WITH CHECK ADD  CONSTRAINT [FK_References_Trees] FOREIGN KEY([ImportTreeId])
+REFERENCES [Imports].[Trees] ([Id])
+GO
+ALTER TABLE [Photos].[References] CHECK CONSTRAINT [FK_References_Trees]
+GO
 
 set identity_insert Imports.Trips on
 insert into Imports.Trips ([Id], [CreatorUserId],[Created], [Imported], [Name], [Date], [Website], [PhotosAvailable], [MeasurerContactInfo], [MakeMeasurerContactInfoPublic], [DefaultLaserBrand], [DefaultClinometerBrand], [DefaultHeightMeasurementMethod], [DefaultStateId], [DefaultCounty], [LastSaved])
@@ -351,16 +365,12 @@ select [Id], [Created], [CreatorUserId], [TreeId], [Girth], [GirthInputFormat], 
 from LegacyImport_Trunks
 set identity_insert Imports.Trunks off
 
-ALTER TABLE [Photos].[References]  WITH CHECK ADD  CONSTRAINT [FK_References_Subsites] FOREIGN KEY([ImportSubsiteId])
-REFERENCES [Imports].[Subsites] ([Id])
-GO
-ALTER TABLE [Photos].[References] CHECK CONSTRAINT [FK_References_Subsites]
-GO
-ALTER TABLE [Photos].[References]  WITH CHECK ADD  CONSTRAINT [FK_References_Trees] FOREIGN KEY([ImportTreeId])
-REFERENCES [Imports].[Trees] ([Id])
-GO
-ALTER TABLE [Photos].[References] CHECK CONSTRAINT [FK_References_Trees]
-GO
+set identity_insert [Photos].[References] on
+insert into [Photos].[References] ([Id], [Type], [ImportSubsiteId], [ImportTreeId], [SubsiteId], [SubsiteVisitId], [TreeId], [TreeMeasurementId], [PhotoId])
+select [Id], [Type], [ImportSubsiteId], [ImportTreeId], [SubsiteId], [SubsiteVisitId], [TreeId], [TreeMeasurementId], [PhotoId]
+from LegacyImport_PhotoReferences
+set identity_insert [Photos].[References] off
+
 ALTER TABLE [Trees].[Measurements]  WITH CHECK ADD  CONSTRAINT [FK_TreeMeasurements_Trips] FOREIGN KEY([ImportingTripId])
 REFERENCES [Imports].[Trips] ([Id])
 GO
@@ -388,4 +398,6 @@ go
 drop table LegacyImport_Trees
 go
 drop table LegacyImport_Trunks
+go
+drop table LegacyImport_PhotoReferences
 go
