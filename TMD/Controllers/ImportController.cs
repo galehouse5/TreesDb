@@ -41,7 +41,7 @@ namespace TMD.Controllers
 
             using (ExcelPackage package = new ExcelPackage(model.Database.InputStream))
             {
-                ExcelImportDatabase database = ExcelImportDatabase.Create(repository.EntityTypes, this.User(), package.Workbook);
+                ExcelImportDatabase database = repository.CreateDatabase(this.User(), package.Workbook);
                 if (database.GetValidationErrors().Any())
                 {
                     SetInvalidDataCookie(true);

@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NHibernate;
+﻿using NHibernate;
 using NHibernate.Cfg;
-using System.Reflection;
-using TMD.Model;
-using TMD.Infrastructure.Repositories;
 using StructureMap;
-using NHibernate.Event;
+using System;
+using System.Reflection;
+using TMD.Infrastructure.Repositories;
+using TMD.Model;
 
 namespace TMD.Infrastructure
 {

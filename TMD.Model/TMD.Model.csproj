@@ -80,6 +80,7 @@
     <Compile Include="ExcelImport\Values\ExcelImportIntegerValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportStringValue.cs" />
     <Compile Include="Extensions\ISpecified.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Photos\DefaultPhotoStoreProvider.cs" />
     <Compile Include="Photos\IPhoto.cs" />
     <Compile Include="Photos\IPhotoRepository.cs" />

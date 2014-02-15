@@ -1,26 +1,35 @@
-﻿using System.Linq;
+﻿using OfficeOpenXml;
+using System.Linq;
 using TMD.Model.Users;
 
 namespace TMD.Model.ExcelImport
 {
-    public abstract class ExcelImportRepository
+    public class ExcelImportRepository
     {
-        public abstract IQueryable<ExcelImportEntityType> EntityTypes { get; }
-        public abstract IQueryable<ExcelImportEntity> Entities { get; }
+        private IRepository<ExcelImportEntityType> entityTypeRepository;
+        private IRepository<ExcelImportEntity> entityRepository;
 
-        protected abstract void Save(ExcelImportEntity entity);
-        protected abstract void Delete(ExcelImportEntity entity);
+        public ExcelImportRepository(IFetchableRepository<ExcelImportEntityType> entityTypeRepository, IFetchableRepository<ExcelImportEntity> entityRepository)
+        {
+            this.entityTypeRepository = entityTypeRepository.Fetch(t => t.Attributes);
+            this.entityRepository = entityRepository.Fetch(e => e.Values);
+        }
 
         public ExcelImportDatabase GetDatabase(User user)
         {
-            return ExcelImportDatabase.Create(Entities.Where(e => e.User.Id == user.Id), user);
+            return ExcelImportDatabase.Create(entityRepository.Where(e => e.User.Id == user.Id), user);
+        }
+
+        public ExcelImportDatabase CreateDatabase(User user, ExcelWorkbook workbook)
+        {
+            return ExcelImportDatabase.Create(entityTypeRepository, user, workbook);
         }
 
         public void Save(ExcelImportDatabase database)
         {
             foreach (ExcelImportEntity entity in database.Entities)
             {
-                Save(entity);
+                entityRepository.Save(entity);
             }
         }
 
@@ -28,7 +37,7 @@ namespace TMD.Model.ExcelImport
         {
             foreach (ExcelImportEntity entity in database.Entities)
             {
-                Delete(entity);
+                entityRepository.Delete(entity);
             }
         }
     }

@@ -1,4 +1,7 @@
-﻿namespace TMD.Infrastructure.Repositories
+﻿using NHibernate;
+using TMD.Model;
+
+namespace TMD.Infrastructure.Repositories
 {
     public class RepositoryRegistry : StructureMap.Configuration.DSL.Registry
     {
@@ -9,7 +12,10 @@
             For<Model.Users.UserRepository>().Singleton().Use<UserRepository>();
             For<Model.Photos.IPhotoRepository>().Singleton().Use<PhotoRepository>();
             For<Model.Sites.ISiteRepository>().Singleton().Use<SiteRepository>();
-            For<Model.ExcelImport.ExcelImportRepository>().Singleton().Use<ExcelImportRepository>();
+
+            For<ISession>().HybridHttpOrThreadLocalScoped().Use(c => c.GetInstance<NHibernateUnitOfWorkProvider>().Session);
+            For(typeof(IRepository<>)).HybridHttpOrThreadLocalScoped().Use(typeof(NHibernateFetchableRepository<>));
+            For(typeof(IFetchableRepository<>)).HybridHttpOrThreadLocalScoped().Use(typeof(NHibernateFetchableRepository<>));
         }
 
         internal static void Configure(NHibernate.Cfg.Configuration config)
