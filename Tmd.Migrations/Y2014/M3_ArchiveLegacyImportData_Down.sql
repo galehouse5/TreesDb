@@ -234,6 +234,19 @@ CREATE TABLE [Imports].[Trunks](
 )
 
 GO
+CREATE TABLE [Imports].[ExcelPhotos](
+	[ID] [int] NOT NULL,
+	[CreatorUserID] [int] NOT NULL,
+	[Created] [datetime] NOT NULL,
+	[SubsiteID] [int] NULL,
+	[SubsiteName] [nvarchar](100) NULL,
+	[TreeID] [int] NULL,
+	[TreeName] [nvarchar](100) NULL,
+	[Photographer] [nvarchar](100) NOT NULL,
+	[Filename] [nvarchar](500) NOT NULL
+)
+
+GO
 SET ANSI_PADDING OFF
 GO
 alter table [Photos].[References] add [ImportSubsiteId] int null
@@ -371,6 +384,10 @@ select [Id], [Type], [ImportSubsiteId], [ImportTreeId], [SubsiteId], [SubsiteVis
 from LegacyImport_PhotoReferences
 set identity_insert [Photos].[References] off
 
+INSERT INTO [Imports].[ExcelPhotos] ([ID], [CreatorUserID], [Created], [SubsiteID], [SubsiteName], [TreeID], [TreeName], [Photographer], [Filename])
+SELECT [ID], [CreatorUserID], [Created], [SubsiteID], [SubsiteName], [TreeID], [TreeName], [Photographer], [Filename]
+FROM [dbo].[LegacyImport_ExcelPhotos]
+
 ALTER TABLE [Trees].[Measurements]  WITH CHECK ADD  CONSTRAINT [FK_TreeMeasurements_Trips] FOREIGN KEY([ImportingTripId])
 REFERENCES [Imports].[Trips] ([Id])
 GO
@@ -400,4 +417,6 @@ go
 drop table LegacyImport_Trunks
 go
 drop table LegacyImport_PhotoReferences
+go
+drop table LegacyImport_ExcelPhotos
 go

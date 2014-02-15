@@ -7,55 +7,6 @@ namespace Tmd.Migrations.Y2014
     [Migration(1)]
     public class M1_CreateExcelImportSchema : AutoReversingMigration
     {
-        public override void Up()
-        {
-            Create.Table("ExcelImport_EntityTypes")
-                .WithColumn("ID").AsInt32().PrimaryKey()
-                .WithColumn("Name").AsAnsiString(50)
-                .WithColumn("Spreadsheet").AsAnsiString(50)
-                .WithColumn("StartRow").AsInt32();
-
-            Create.Table("ExcelImport_Entities")
-                .WithColumn("ID").AsInt32().PrimaryKey().Identity()
-                .WithColumn("EntityTypeID").AsInt32().ForeignKey("ExcelImport_EntityTypes", "ID")
-                .WithColumn("UserID").AsInt32().ForeignKey("FK_ExcelImport_Entities_UserID_Users.Users_Id", "Users", "Users", "Id")
-                .WithColumn("RowIndex").AsInt32();
-            
-            Create.Table("ExcelImport_Attributes")
-                .WithColumn("ID").AsInt32().PrimaryKey().Identity()
-                .WithColumn("Type").AsByte()
-                .WithColumn("EntityTypeID").AsInt32().ForeignKey("ExcelImport_EntityTypes", "ID")
-                .WithColumn("Name").AsAnsiString(50)
-                .WithColumn("Column").AsInt32()
-                .WithColumn("IsRequired").AsBoolean()
-                .WithColumn("ValueFormat").AsAnsiString(50).Nullable()
-                .WithColumn("EnumerationType").AsAnsiString(500).Nullable()
-                .WithColumn("MinFloatInclusive").AsFloat().Nullable()
-                .WithColumn("MaxFloatInclusive").AsFloat().Nullable()
-                .WithColumn("MinFloatExclusive").AsFloat().Nullable()
-                .WithColumn("MaxFloatExclusive").AsFloat().Nullable()
-                .WithColumn("MinIntegerInclusive").AsInt32().Nullable()
-                .WithColumn("MaxIntegerInclusive").AsInt32().Nullable()
-                .WithColumn("MaxStringLength").AsInt32().Nullable();
-
-            Create.Table("ExcelImport_Values")
-                .WithColumn("ID").AsInt32().PrimaryKey().Identity()
-                .WithColumn("Type").AsByte()
-                .WithColumn("EntityID").AsInt32().ForeignKey("ExcelImport_Entities", "ID")
-                .WithColumn("AttributeID").AsInt32().ForeignKey("ExcelImport_Attributes", "ID")
-                .WithColumn("BooleanValue").AsBoolean().Nullable()
-                .WithColumn("DateValue").AsDate().Nullable()
-                .WithColumn("ByteValue").AsByte().Nullable()
-                .WithColumn("FloatValue").AsFloat().Nullable()
-                .WithColumn("IntegerValue").AsInt32().Nullable()
-                .WithColumn("StringValue").AsString(500).Nullable();
-
-            InsertSiteDefinition();
-            InsertSubsiteDefinition();
-            InsertTreeDefinition();
-            InsertTrunkDefinition();
-        }
-
         public void InsertEntityType(int id, string name, string spreadsheet, int startRow)
         {
             Insert.IntoTable("ExcelImport_EntityTypes")
@@ -197,6 +148,67 @@ namespace Tmd.Migrations.Y2014
             InsertFloatAttribute(4, 8, "Girth", minExclusive: 0f);
             InsertFloatAttribute(4, 9, "Girth Measurement Height");
             InsertStringAttribute(4, 10, "Comments", 500);
+        }
+
+        public void InsertPhotoDefinition()
+        {
+            InsertEntityType(5, "Photo", "Photos", 2);
+            InsertStringAttribute(5, 1, "Site Name", 100);
+            InsertStringAttribute(5, 2, "Subsite Name", 100);
+            InsertStringAttribute(5, 3, "Tree Name", 100);
+            InsertStringAttribute(5, 4, "Filename", 500);
+            InsertStringAttribute(5, 5, "Photographer", 100);
+            InsertStringAttribute(5, 6, "Caption", 500);
+        }
+
+        public override void Up()
+        {
+            Create.Table("ExcelImport_EntityTypes")
+                .WithColumn("ID").AsInt32().PrimaryKey()
+                .WithColumn("Name").AsAnsiString(50)
+                .WithColumn("Spreadsheet").AsAnsiString(50)
+                .WithColumn("StartRow").AsInt32();
+
+            Create.Table("ExcelImport_Entities")
+                .WithColumn("ID").AsInt32().PrimaryKey().Identity()
+                .WithColumn("EntityTypeID").AsInt32().ForeignKey("ExcelImport_EntityTypes", "ID")
+                .WithColumn("UserID").AsInt32().ForeignKey("FK_ExcelImport_Entities_UserID_Users.Users_Id", "Users", "Users", "Id")
+                .WithColumn("RowIndex").AsInt32();
+
+            Create.Table("ExcelImport_Attributes")
+                .WithColumn("ID").AsInt32().PrimaryKey().Identity()
+                .WithColumn("Type").AsByte()
+                .WithColumn("EntityTypeID").AsInt32().ForeignKey("ExcelImport_EntityTypes", "ID")
+                .WithColumn("Name").AsAnsiString(50)
+                .WithColumn("Column").AsInt32()
+                .WithColumn("IsRequired").AsBoolean()
+                .WithColumn("ValueFormat").AsAnsiString(50).Nullable()
+                .WithColumn("EnumerationType").AsAnsiString(500).Nullable()
+                .WithColumn("MinFloatInclusive").AsFloat().Nullable()
+                .WithColumn("MaxFloatInclusive").AsFloat().Nullable()
+                .WithColumn("MinFloatExclusive").AsFloat().Nullable()
+                .WithColumn("MaxFloatExclusive").AsFloat().Nullable()
+                .WithColumn("MinIntegerInclusive").AsInt32().Nullable()
+                .WithColumn("MaxIntegerInclusive").AsInt32().Nullable()
+                .WithColumn("MaxStringLength").AsInt32().Nullable();
+
+            Create.Table("ExcelImport_Values")
+                .WithColumn("ID").AsInt32().PrimaryKey().Identity()
+                .WithColumn("Type").AsByte()
+                .WithColumn("EntityID").AsInt32().ForeignKey("ExcelImport_Entities", "ID")
+                .WithColumn("AttributeID").AsInt32().ForeignKey("ExcelImport_Attributes", "ID")
+                .WithColumn("BooleanValue").AsBoolean().Nullable()
+                .WithColumn("DateValue").AsDate().Nullable()
+                .WithColumn("ByteValue").AsByte().Nullable()
+                .WithColumn("FloatValue").AsFloat().Nullable()
+                .WithColumn("IntegerValue").AsInt32().Nullable()
+                .WithColumn("StringValue").AsString(500).Nullable();
+
+            InsertSiteDefinition();
+            InsertSubsiteDefinition();
+            InsertTreeDefinition();
+            InsertTrunkDefinition();
+            InsertPhotoDefinition();
         }
     }
 }

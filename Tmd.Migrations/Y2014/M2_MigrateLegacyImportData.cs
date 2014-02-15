@@ -69,53 +69,37 @@ from ({0}) value
 where Value is not null and Value != 0", legacyValueSelectionSql));
         }
 
+        public string BuildAttributeSelectionSql(int entityType, string attribute)
+        {
+            return string.Format("select ID from ExcelImport_Attributes where EntityTypeID = {0} and Name = '{1}'", entityType, attribute);
+        }
+
         public string BuildLegacyValueSelectionSql(int entityType, string attribute, string legacyTable, string legacyColumn)
         {
             return string.Format(
-@"select entity.ID EntityID,
-	(
-		select ID
-		from ExcelImport_Attributes
-		where EntityTypeID = {0}
-			and Name = '{1}'
-	) AttributeID,
-	{3} Value
+@"select entity.ID EntityID, ({0}) AttributeID, {3} Value
 from Imports.{2} legacyEntity
 join ExcelImport_Entities entity
 	on entity.LegacyID = legacyEntity.Id
-where entity.EntityTypeID = {0}", entityType, attribute, legacyTable, legacyColumn);
+where entity.EntityTypeID = {1}", BuildAttributeSelectionSql(entityType, attribute), entityType, legacyTable, legacyColumn);
         }
 
         public string BuildLegacyTripValueSelectionSql(string attribute, string legacyColumn)
         {
             return string.Format(
-@"select entity.ID EntityID,
-	(
-		select ID
-		from ExcelImport_Attributes
-		where EntityTypeID = 1
-			and Name = '{0}'
-	) AttributeID,
-	legacyTrip.{1} Value
+@"select entity.ID EntityID, ({0}) AttributeID, legacyTrip.{1} Value
 from Imports.Trips legacyTrip
 join Imports.Sites legacySite
 	on legacySite.TripId = legacyTrip.Id
 join ExcelImport_Entities entity
 	on entity.LegacyID = legacySite.Id
-where entity.EntityTypeID = 1", attribute, legacyColumn);
+where entity.EntityTypeID = 1", BuildAttributeSelectionSql(1, attribute), legacyColumn);
         }
 
         public string BuildLegacyMeasurerValueSelectionSql(string attribute, int measurer)
         {
             return string.Format(
-@"select entity.ID EntityID,
-	(
-		select ID
-		from ExcelImport_Attributes
-		where EntityTypeID = 3
-			and Name = '{0}'
-	) AttributeID,
-	legacyMeasurer.Name Value
+@"select entity.ID EntityID, ({0}) AttributeID, legacyMeasurer.Name Value
 from Imports.Trees legacyTree
 join Imports.Subsites legacySubsite
 	on legacySubsite.Id = legacyTree.SubsiteId
@@ -132,7 +116,7 @@ join
 join ExcelImport_Entities entity
 	on entity.LegacyID = legacyTree.Id
 where entity.EntityTypeID = 3
-	and legacyMeasurer.Number = {1}", attribute, measurer);
+	and legacyMeasurer.Number = {1}", BuildAttributeSelectionSql(3, attribute), measurer);
         }
 
         public void MigrateSites()
@@ -150,22 +134,27 @@ where entity.EntityTypeID = 3
         public void MigrateSubsites()
         {
             MigrateEntities(2, "Subsites");
-            InsertStringValue(
-@"select entity.ID EntityID,
-	(
-		select ID
-		from ExcelImport_Attributes
-		where EntityTypeID = 2
-			and Name = 'Site Name'
-	) AttributeID,
-	legacySite.Name Value
+            InsertStringValue(string.Format(
+@"select entity.ID EntityID, ({0}) AttributeID, legacySite.Name Value
 from Imports.Subsites legacySubsite
 join Imports.Sites legacySite
 	on legacySite.Id = legacySubsite.SiteId
 join ExcelImport_Entities entity
 	on entity.LegacyID = legacySubsite.Id
-where entity.EntityTypeID = 2");
-            InsertStringValue(BuildLegacyValueSelectionSql(2, "Subsite Name", "Subsites", "Name"));
+where entity.EntityTypeID = 2", BuildAttributeSelectionSql(2, "Site Name")));
+            // Subsite Name is sometimes NULL, auto generate one when needed for photo associations
+            InsertStringValue(string.Format(
+@"select entity.ID EntityID, ({0}) AttributeID,
+    case
+        when legacySubsite.Name is not null and legacySubsite.Name != '' then legacySubsite.Name
+        else legacyPhoto.SubsiteName
+    end Value
+from Imports.Subsites legacySubsite
+join ExcelImport_Entities entity
+	on entity.LegacyID = legacySubsite.Id
+left join Imports.ExcelPhotos legacyPhoto
+    on legacyPhoto.SubsiteID = legacySubsite.Id
+where entity.EntityTypeID = 2", BuildAttributeSelectionSql(2, "Subsite Name")));
             InsertByteValue(BuildLegacyValueSelectionSql(2, "State", "Subsites", "StateId"));
             InsertStringValue(BuildLegacyValueSelectionSql(2, "County", "Subsites", "County"));
             InsertFloatValue(BuildLegacyValueSelectionSql(2, "Latitude", "Subsites", "Latitude"));
@@ -179,37 +168,29 @@ where entity.EntityTypeID = 2");
         public void MigrateTrees()
         {
             MigrateEntities(3, "Trees");
-            InsertStringValue(
-@"select entity.ID EntityID,
-	(
-		select ID
-		from ExcelImport_Attributes
-		where EntityTypeID = 3
-			and Name = 'Subsite Name'
-	) AttributeID,
-	legacySubsite.Name Value
+            InsertStringValue(string.Format(
+@"select entity.ID EntityID, ({0}) AttributeID, legacySubsite.Name Value
 from Imports.Trees legacyTree
 join Imports.Subsites legacySubsite
 	on legacySubsite.Id = legacyTree.SubsiteId
 join ExcelImport_Entities entity
 	on entity.LegacyID = legacyTree.Id
-where entity.EntityTypeID = 3");
-            // Tree Name was never collected
+where entity.EntityTypeID = 3", BuildAttributeSelectionSql(3, "Subsite Name")));
+            // Tree Name was never collected, auto generate one when needed for photo associations
+            InsertStringValue(string.Format(
+@"select entity.ID EntityID, ({0}) AttributeID, legacyPhoto.TreeName Value
+from Imports.ExcelPhotos legacyPhoto
+join ExcelImport_Entities entity
+	on entity.LegacyID = legacyPhoto.TreeID
+where entity.EntityTypeID = 3", BuildAttributeSelectionSql(3, "Tree Name")));
             InsertStringValue(BuildLegacyValueSelectionSql(3, "Common Name", "Trees", "CommonName"));
             InsertStringValue(BuildLegacyValueSelectionSql(3, "Botanical Name", "Trees", "ScientificName"));
             InsertFloatValue(BuildLegacyValueSelectionSql(3, "Height", "Trees", "Height"));
             InsertByteValue(BuildLegacyValueSelectionSql(3, "Height Measurement Method", "Trees", "HeightMeasurementMethod"));
             InsertFloatValue(BuildLegacyValueSelectionSql(3, "Girth", "Trees", "Girth"));
             InsertFloatValue(BuildLegacyValueSelectionSql(3, "Crown Max Spread", "Trees", "CrownSpread"));
-            InsertDateValue(
-@"select entity.ID EntityID,
-	(
-		select ID
-		from ExcelImport_Attributes
-		where EntityTypeID = 3
-			and Name = 'Date'
-	) AttributeID,
-	legacyTrip.Date Value
+            InsertDateValue(string.Format(
+@"select entity.ID EntityID, ({0}) AttributeID, legacyTrip.Date Value
 from Imports.Trees legacyTree
 join Imports.Subsites legacySubsite
 	on legacySubsite.Id = legacyTree.SubsiteId
@@ -219,7 +200,7 @@ join Imports.Trips legacyTrip
 	on legacyTrip.Id = legacySite.TripId
 join ExcelImport_Entities entity
 	on entity.LegacyID = legacyTree.Id
-where entity.EntityTypeID = 3");
+where entity.EntityTypeID = 3", BuildAttributeSelectionSql(3, "Date")));
             InsertStringValue(BuildLegacyMeasurerValueSelectionSql("First Measurer", 1));
             InsertStringValue(BuildLegacyMeasurerValueSelectionSql("Second Measurer", 2));
             InsertStringValue(BuildLegacyMeasurerValueSelectionSql("Third Measurer", 3));
@@ -265,20 +246,88 @@ where entity.EntityTypeID = 3");
             // Terrain Comments was never collected
         }
 
+        public void MigratePhotos()
+        {
+            MigrateEntities(5, "ExcelPhotos");
+            // Site Name was never collected
+            InsertStringValue(BuildLegacyValueSelectionSql(5, "Subsite Name", "ExcelPhotos", "SubsiteName"));
+            InsertStringValue(BuildLegacyValueSelectionSql(5, "Tree Name", "ExcelPhotos", "TreeName"));
+            InsertStringValue(BuildLegacyValueSelectionSql(5, "Filename", "ExcelPhotos", "Filename"));
+            InsertStringValue(BuildLegacyValueSelectionSql(5, "Photographer", "ExcelPhotos", "Photographer"));
+            // Caption was never collected
+        }
+
         public override void Up()
         {
             Create.Column("LegacyID").OnTable("ExcelImport_Entities").AsInt32().Nullable();
+
+            Create.Table("ExcelPhotos").InSchema("Imports")
+                .WithColumn("ID").AsInt32()
+                .WithColumn("CreatorUserID").AsInt32()
+                .WithColumn("Created").AsDateTime()
+                .WithColumn("SubsiteID").AsInt32().Nullable()
+                .WithColumn("SubsiteName").AsString(100).Nullable()
+                .WithColumn("TreeID").AsInt32().Nullable()
+                .WithColumn("TreeName").AsString(100).Nullable()
+                .WithColumn("Photographer").AsString(100)
+                .WithColumn("Filename").AsString(500);
+
+            Execute.Sql(
+@"insert into Imports.ExcelPhotos (ID, CreatorUserID, Created, SubsiteID, SubsiteName, TreeID, TreeName, Photographer, Filename)
+select ID, CreatorUserID, Created, SubsiteID, SubsiteName, TreeID, TreeName, Photographer,
+	case (row_number() over (partition by CreatorUserID, coalesce(SubsiteName, TreeName) order by ID))
+		when 1 then coalesce(SubsiteName, TreeName)
+		else coalesce(SubsiteName, TreeName) + ' (' + convert(varchar, (row_number() over (partition by CreatorUserID, coalesce(SubsiteName, TreeName) order by ID)) - 1) + ')'
+	end + '.' + Extension Filename
+from
+(
+	select
+		photo.ID,
+		photo.Created,
+		coalesce(legacySubsite.CreatorUserId, legacyTree.CreatorUserId) CreatorUserID,
+		legacySubsite.ID SubsiteID, 
+		case reference.Type when 2 then case legacySubsite.Name when '' then '_SS' + convert(varchar, legacySubsite.ID) else legacySubsite.Name end end SubsiteName,
+		legacyTree.ID TreeID,
+		case reference.Type when 3 then '_T' + convert(varchar, legacyTree.ID) end TreeName,
+		(
+			select top 1 measurer.FirstName + ' ' + measurer.LastName
+			from Imports.Measurers measurer
+			join Imports.Trips trip
+				on trip.Id = measurer.TripId
+			join Imports.Sites site
+				on site.TripId = trip.Id
+			join Imports.Subsites subsite
+				on subsite.SiteId = site.Id
+			left join Imports.Trees tree
+				on tree.SubsiteId = subsite.Id
+			where subsite.Id = legacySubsite.Id
+				or tree.Id = legacyTree.Id
+		) Photographer,
+		case photo.Format when 1 then 'jpg' when 2 then 'gif' when 3 then 'png' end Extension
+	from Photos.Photos photo
+	join Photos.[References] reference
+		on photo.Id = reference.PhotoId
+	left join Imports.Subsites legacySubsite
+		on legacySubsite.Id = reference.ImportSubsiteId
+	left join Imports.Trees legacyTree
+		on legacyTree.Id = reference.ImportTreeId
+	where reference.Type in (2, 3)
+		and coalesce(legacySubsite.CreatorUserId, legacyTree.CreatorUserId) is not null
+) photo");
 
             MigrateSites();
             MigrateSubsites();
             MigrateTrees();
             // Trunks were never collected
+            MigratePhotos();
         }
 
         public override void Down()
         {
             Delete.FromTable("ExcelImport_Values").AllRows();
             Delete.FromTable("ExcelImport_Entities").AllRows();
+
+            Delete.Table("ExcelPhotos").InSchema("Imports");
 
             Delete.Column("LegacyID").FromTable("ExcelImport_Entities");
         }

@@ -5,6 +5,7 @@ select * into LegacyImport_Subsites from Imports.Subsites
 select * into LegacyImport_Trees from Imports.Trees
 select * into LegacyImport_Trunks from Imports.Trunks
 select * into LegacyImport_PhotoReferences from [Photos].[References] where [Type] in (2, 3)
+select * into LegacyImport_ExcelPhotos from Imports.ExcelPhotos
 
 ALTER TABLE [Imports].[Trunks] DROP CONSTRAINT [FK_TrunkMeasurements_Users]
 GO
@@ -79,6 +80,8 @@ DROP TABLE [Imports].[Measurers]
 GO
 /****** Object:  Table [Imports].[Trips]    Script Date: 2/4/2014 9:40:46 PM ******/
 DROP TABLE [Imports].[Trips]
+GO
+DROP TABLE Imports.ExcelPhotos
 GO
 
 delete from [Photos].[References] where [Type] in (2, 3)
