@@ -8,7 +8,7 @@ using TMD.Model;
 
 namespace TMD.Infrastructure
 {
-    internal static class Registry
+    public static class Registry
     {
         private static ISessionFactory s_SessionFactory;
         public static ISessionFactory SessionFactory

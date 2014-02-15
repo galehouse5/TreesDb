@@ -4,6 +4,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using TMD.Infrastructure;
 using TMD.Model.ExcelImport;
 
 namespace TMD.UnitTests.Model
@@ -20,7 +21,10 @@ namespace TMD.UnitTests.Model
         {
             data = Assembly.GetExecutingAssembly().GetManifestResourceStream("TMD.UnitTests.Model.TMD.xlsx");
             package = new ExcelPackage(data);
-            database = ExcelImportDatabase.Create(new TMD.Infrastructure.Repositories.ExcelImportRepository().EntityTypes, null, package.Workbook);
+            database = new ExcelImportRepository(
+                new NHibernateFetchableRepository<ExcelImportEntityType>(TMD.Infrastructure.Registry.Session),
+                new NHibernateFetchableRepository<ExcelImportEntity>(TMD.Infrastructure.Registry.Session))
+                .CreateDatabase(null, package.Workbook);
         }
 
         [TestCleanup]
