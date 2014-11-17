@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using StructureMap;
+﻿using StructureMap;
+using System;
 using System.Data;
 
 namespace TMD.Model
@@ -11,8 +8,9 @@ namespace TMD.Model
     {
         IUnitOfWork Begin();
         IUnitOfWork Begin(IsolationLevel isolationLevel);
-        void Refresh(object obj);
+        void Refresh(object instance);
         void Flush();
+        void Evict(object instance);
     }
 
     public interface IUnitOfWork : IDisposable
@@ -43,14 +41,19 @@ namespace TMD.Model
             Provider.Dispose();
         }
 
-        public static void Refresh(object obj)
+        public static void Refresh(object instance)
         {
-            Provider.Refresh(obj);
+            Provider.Refresh(instance);
         }
 
         public static void Flush()
         {
             Provider.Flush();
+        }
+
+        public static void Evict(object instance)
+        {
+            Provider.Evict(instance);
         }
     }
 }

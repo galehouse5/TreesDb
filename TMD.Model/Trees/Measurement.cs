@@ -1,33 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using TMD.Model.Photos;
-using TMD.Model.Users;
+using TMD.Model.Photo;
 
 namespace TMD.Model.Trees
 {
     [DebuggerDisplay("{ScientificName} ({Id})")]
-    public class Measurement : IEntity
+    public class Measurement : UserCreatedEntityBase<Measurement>
     {
-        protected Measurement()
-        { }
+        public Measurement()
+        {
+            Photos = new List<PhotoReference>();
+            Measurers = new List<Name>();
+        }
 
-        public virtual int Id { get; protected set; }
         public virtual GlobalMeasuredSpecies Species { get; protected set; }
         public virtual int ImportingTripId { get; protected set; }
         public virtual Tree Tree { get; protected internal set; }
 
-        public virtual DateTime Measured { get; protected set; }
-        public virtual string CommonName { get; protected set; }
-        public virtual string ScientificName { get; protected set; }
-        public virtual Distance Height { get; protected set; }
-        public virtual TreeHeightMeasurementMethod HeightMeasurementMethod { get; protected set; }
-        public virtual Distance Girth { get; protected set; }
-        public virtual Distance CrownSpread { get; protected set; }
-        public virtual Coordinates Coordinates { get; protected set; }
-        public virtual Coordinates CalculatedCoordinates { get; protected set; }
-        public virtual Elevation Elevation { get; protected set; }
-        public virtual string GeneralComments { get; protected set; }
+        public virtual DateTime Measured { get; set; }
+        public virtual string CommonName { get; set; }
+        public virtual string ScientificName { get; set; }
+        public virtual Distance Height { get; set; }
+        public virtual TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
+        public virtual Distance Girth { get; set; }
+        public virtual Distance CrownSpread { get; set; }
+        public virtual Coordinates Coordinates { get; set; }
+        public virtual Coordinates CalculatedCoordinates { get; set; }
+        public virtual Elevation Elevation { get; set; }
+        public virtual string GeneralComments { get; set; }
 
         public virtual Distance Diameter { get; protected set; }
         public virtual float? ENTSPTS { get; protected set; }
@@ -129,20 +130,7 @@ namespace TMD.Model.Trees
 
         public virtual float? TDI2 { get { return Species.CalculateTDI2(Height, Girth); } }
         public virtual float? TDI3 { get { return Species.CalculateTDI3(Height, Girth, CrownSpread); } }
-        public virtual IList<IPhoto> Photos { get; protected set; }
-        public virtual IList<Name> Measurers { get; protected set; }
-    }
-
-    public class TreeMeasurementPhotoReference : PhotoReferenceBase
-    {
-        protected TreeMeasurementPhotoReference() { }
-        protected internal TreeMeasurementPhotoReference(Photo photo, Measurement measurement) : base(photo) { this.TreeMeasurement = measurement; }
-        public virtual Measurement TreeMeasurement { get; protected set; }
-        public override bool IsAuthorizedToView(User user) { return true; }
-
-        public override IList<Name> Photographers
-        {
-            get { return TreeMeasurement.Measurers; }
-        }
+        public virtual IList<PhotoReference> Photos { get; set; }
+        public virtual IList<Name> Measurers { get; set; }
     }
 }

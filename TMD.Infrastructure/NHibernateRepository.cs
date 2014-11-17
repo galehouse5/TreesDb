@@ -31,6 +31,11 @@ namespace TMD.Infrastructure
             Session.Delete(entity);
         }
 
+        public T Get(int id)
+        {
+            return Session.Get<T>(id);
+        }
+
         #region IQueryable<T> implementation
 
         IEnumerator<T> IEnumerable<T>.GetEnumerator()

@@ -37,6 +37,9 @@
     <Reference Include="Iesi.Collections">
       <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
@@ -57,12 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DebugAppender.cs" />
+    <Compile Include="EventListeners\PhotoFileEventListener.cs" />
     <Compile Include="NHibernateRepository.cs" />
     <Compile Include="Registry.cs" />
     <Compile Include="Repositories\LocationRepository.cs" />
-    <Compile Include="Repositories\PhotoRepository.cs" />
     <Compile Include="Repositories\RepositoryRegistry.cs" />
-    <Compile Include="Repositories\RepositorySettings.cs" />
     <Compile Include="Repositories\SiteRepository.cs" />
     <Compile Include="Repositories\TreeRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />

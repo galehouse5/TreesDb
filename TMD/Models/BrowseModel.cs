@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using TMD.Extensions;
 using TMD.Model;
 using TMD.Model.Locations;
-using TMD.Model.Photos;
+using TMD.Model.Photo;
 using TMD.Model.Sites;
 using TMD.Model.Trees;
 
@@ -28,9 +28,9 @@ namespace TMD.Models
     {
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime Date { get; set; }
-        public IList<IPhoto> Photos { get; set; }
+        public IList<PhotoReference> Photos { get; set; }
         [UIHint("ConcatenatedNames")]
-        public IList<Name> Photographers { get; set; }
+        public IList<string> Photographers { get; set; }
     }
 
     public class BrowseTreeDetailsModel
@@ -74,7 +74,7 @@ namespace TMD.Models
         [DisplayName("Conical volume"), DisplayFormat(NullDisplayText = "(no data)")]
         public Volume ConicalVolume { get; private set; }
         [UIHint("ConcatenatedNames"), Emphasize(false)]
-        public IList<Name> Measurers { get; set; }
+        public IList<string> Measurers { get; set; }
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime Measured { get; set; }
     }
@@ -167,7 +167,7 @@ namespace TMD.Models
         [DataType(DataType.Url), DisplayName("Trip report url"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false)]
         public string TripReportUrl { get; set; }
         [UIHint("ConcatenatedNames"), Emphasize(false)]
-        public IList<Name> Visitors { get; set; }
+        public IList<string> Visitors { get; set; }
         [DisplayName("General comments"), DisplayFormat(NullDisplayText = "(none)"), Emphasize(false), Classification("Comment")]
         public string Comments { get; set; }
     }

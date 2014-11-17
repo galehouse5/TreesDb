@@ -1,11 +1,13 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OfficeOpenXml;
 using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using TMD.Infrastructure;
+using TMD.Model.Excel;
+using TMD.Model.Excel.AsposeCells;
 using TMD.Model.ExcelImport;
+using TMD.Model.ExcelImport.Entities;
+using TMD.Model.ExcelImport.EntityTypes;
 
 namespace TMD.UnitTests.Model
 {
@@ -13,137 +15,133 @@ namespace TMD.UnitTests.Model
     public class ExcelImportTests
     {
         private Stream data;
-        private ExcelPackage package;
+        private IExcelWorkbook workbook;
         private ExcelImportDatabase database;
 
         [TestInitialize]
         public void Initialize()
         {
             data = Assembly.GetExecutingAssembly().GetManifestResourceStream("TMD.UnitTests.Model.TMD.xlsx");
-            package = new ExcelPackage(data);
-            database = new ExcelImportRepository(
-                new NHibernateFetchableRepository<ExcelImportEntityType>(TMD.Infrastructure.Registry.Session),
-                new NHibernateFetchableRepository<ExcelImportEntity>(TMD.Infrastructure.Registry.Session))
-                .CreateDatabase(null, package.Workbook);
+            workbook = new AsposeCellsWorkbook(data);
+            database = ExcelImportDatabase.Create(null, workbook);
         }
 
         [TestCleanup]
         public void Cleanup()
         {
-            package.Dispose();
             data.Dispose();
         }
 
         [TestMethod]
         public void ReadsSites()
         {
-            Assert.AreEqual(4, database.Entities.Count(e => "Site".Equals(e.EntityType.Name)));
+            Assert.AreEqual(4, database.Entities.OfType<ExcelImportSite>().Count());
 
-            ExcelImportEntity site = database.Entities.First(e => "Site".Equals(e.EntityType.Name));
-            Assert.AreEqual("Mohawk Trail State Forest", site["Site Name"].Value);
-            Assert.AreEqual(42.638353f, (float?)site["Latitude"].Value);
-            Assert.AreEqual(-72.936443f, (float?)site["Longitude"].Value);
-            Assert.AreEqual("Bob Leverett", site["Measurer Contact"].Value);
-            Assert.AreEqual(true, site["Publicize Contact"].Value);
-            Assert.AreEqual("7,500 acre forest", site["Comments"].Value);
-            Assert.IsNull(site["Report Url"]);
+            ExcelImportSite site = database.Entities.OfType<ExcelImportSite>().First();
+            Assert.AreEqual("Mohawk Trail State Forest", site.SiteName);
+            Assert.AreEqual(42.638353f, (float?)site.Latitude);
+            Assert.AreEqual(-72.936443f, (float?)site.Longitude);
+            Assert.AreEqual("Bob Leverett", site[ExcelImportSiteType.MeasurerContact]);
+            Assert.AreEqual(true, site[ExcelImportSiteType.PublicizeContact]);
+            Assert.AreEqual("7,500 acre forest", site.Comments);
+            Assert.IsNull(site.ReportUrl);
         }
 
         [TestMethod]
         public void ReadsSubsites()
         {
-            Assert.AreEqual(7, database.Entities.Count(e => "Subsite".Equals(e.EntityType.Name)));
+            Assert.AreEqual(7, database.Entities.OfType<ExcelImportSubsite>().Count());
 
-            ExcelImportEntity subsite = database.Entities.First(e => "Subsite".Equals(e.EntityType.Name));
-            Assert.AreEqual("Mohawk Trail State Forest", subsite["Site Name"].Value);
-            Assert.AreEqual("Trees of Peace", subsite["Subsite Name"].Value);
-            Assert.AreEqual(ExcelImportState.MA, subsite["State"].Value);
-            Assert.AreEqual("Charlemont", subsite["County"].Value);
-            Assert.IsNull(subsite["Township"]);
-            Assert.AreEqual(42.643482f, (float?)subsite["Latitude"].Value);
-            Assert.AreEqual(-72.935085f, (float?)subsite["Longitude"].Value);
-            Assert.IsNull(subsite["Comments"]);
-            Assert.AreEqual("State", subsite["Ownership Type"].Value);
-            Assert.AreEqual("MTSF: 413-339-5504", subsite["Ownership Contact"].Value);
-            Assert.AreEqual(false, subsite["Publicize Contact"].Value);
+            ExcelImportSubsite subsite = database.Entities.OfType<ExcelImportSubsite>().First();
+            Assert.AreEqual("Mohawk Trail State Forest", subsite.SiteName);
+            Assert.AreEqual("Trees of Peace", subsite.SubsiteName);
+            Assert.AreEqual(ExcelImportState.MA, subsite.State);
+            Assert.AreEqual("Charlemont", subsite.County);
+            Assert.IsNull(subsite[ExcelImportSubsiteType.Township]);
+            Assert.AreEqual(42.643482f, (float?)subsite.Latitude);
+            Assert.AreEqual(-72.935085f, (float?)subsite.Longitude);
+            Assert.IsNull(subsite.Comments);
+            Assert.AreEqual("State", subsite.OwnershipType);
+            Assert.AreEqual("MTSF: 413-339-5504", subsite.OwnershipContact);
+            Assert.AreEqual(false, subsite.PublicizeContact);
         }
 
         [TestMethod]
         public void ReadsTrees()
         {
-            Assert.AreEqual(8, database.Entities.Count(e => "Tree".Equals(e.EntityType.Name)));
+            Assert.AreEqual(8, database.Entities.OfType<ExcelImportTree>().Count());
 
-            ExcelImportEntity tree = database.Entities.First(e => "Tree".Equals(e.EntityType.Name));
-            Assert.AreEqual("Trees of Peace", tree["Subsite Name"].Value);
-            Assert.AreEqual("Jake Swamp", tree["Tree Name"].Value);
-            Assert.AreEqual("white pine", tree["Common Name"].Value);
-            Assert.AreEqual("Pinus strobus", tree["Botanical Name"].Value);
-            Assert.AreEqual(172.5f, (float?)tree["Height"].Value);
-            Assert.AreEqual(ExcelImportHeightMeasurementMethod.ClinometerLaserRangefinderSine, tree["Height Measurement Method"].Value);
-            Assert.AreEqual("TruPulse", tree["Height Laser Brand"].Value);
-            Assert.AreEqual("TruPulse", tree["Height Clinometer Brand"].Value);
-            Assert.AreEqual(ExcelImportHeightMeasurementType.SelectionFromASet, tree["Height Measurement Type"].Value);
-            Assert.IsNull(tree["Height Distance Top"]);
-            Assert.IsNull(tree["Height Angle Top"]);
-            Assert.IsNull(tree["Height Distance Bottom"]);
-            Assert.IsNull(tree["Height Angle Bottom"]);
-            Assert.IsNull(tree["Height Vertical Offset"]);
-            Assert.AreEqual("Tallest tree in new England", tree["Height Comments"].Value);
-            Assert.AreEqual(10.6f, (float?)tree["Girth"].Value);
-            Assert.AreEqual(4.5f, (float?)tree["Girth Measurement Height"].Value);
-            Assert.IsNull(tree["Girth Root Collar Height"]);
-            Assert.IsNull(tree["Girth Comments"]);
-            Assert.IsNull(tree["Crown Max Spread"]);
-            Assert.AreEqual(48.5f, (float?)tree["Crown Average Spread"].Value);
-            Assert.AreEqual(ExcelImportCrownSpreadMeasurementMethod.AverageOfMaxAndMin, tree["Crown Spread Measurement Method"].Value);
-            Assert.IsNull(tree["Crown Base Height"]);
-            Assert.IsNull(tree["Crown Area"]);
-            Assert.IsNull(tree["Crown Area Measurement Method"]);
-            Assert.IsNull(tree["Crown Volume"]);
-            Assert.IsNull(tree["Crown Volume Calculation Method"]);
-            Assert.IsNull(tree["Crown Comments"]);
-            Assert.IsNull(tree["Trunk Volume"]);
-            Assert.IsNull(tree["Trunk Volume Calculation Method"]);
-            Assert.IsNull(tree["Trunk Count"]);
-            Assert.IsNull(tree["Trunk Comments"]);
-            Assert.AreEqual(ExcelImportTreeFormType.Single, tree["Form Type"].Value);
-            Assert.IsNull(tree["Form Comments"]);
-            Assert.AreEqual(ExcelImportTreeStatus.Native, tree["Status"].Value);
-            Assert.AreEqual("Good", tree["Health Status"].Value);
-            Assert.AreEqual(ExcelImportTreeAgeClass.Mature, tree["Age Class"].Value);
-            Assert.AreEqual(155, (int?)tree["Age"].Value);
-            Assert.AreEqual(ExcelImportTreeAgeMethod.Estimate, tree["Age Method"].Value);
-            Assert.AreEqual(ExcelImportTerrainType.SideSlope, tree["Terrain Type"].Value);
-            Assert.IsNull(tree["Terrain Shape Index"]);
-            Assert.IsNull(tree["Landform Index"]);
-            Assert.IsNull(tree["Terrain Comments"]);
-            Assert.AreEqual(new DateTime(2013, 12, 6), tree["Date"].Value);
-            Assert.AreEqual("Bob Leverett", tree["First Measurer"].Value);
-            Assert.AreEqual("John Eichholz", tree["Second Measurer"].Value);
-            Assert.AreEqual("Will Blozan", tree["Third Measurer"].Value);
-            Assert.IsNull(tree["Latitude"]);
-            Assert.IsNull(tree["Longitude"]);
-            Assert.AreEqual(false, tree["Publicize Coordinates"].Value);
-            Assert.AreEqual(800, (int?)tree["Elevation"].Value);
-            Assert.IsNull(tree["General Comments"]);
+            ExcelImportTree tree = database.Entities.OfType<ExcelImportTree>().First();
+            Assert.AreEqual("Trees of Peace", tree.SubsiteName);
+            Assert.AreEqual("Jake Swamp", tree.TreeName);
+            Assert.AreEqual("white pine", tree.CommonName);
+            Assert.AreEqual("Pinus strobus", tree.BotanicalName);
+            Assert.AreEqual(172.5f, (float?)tree.Height);
+            Assert.AreEqual(ExcelImportHeightMeasurementMethod.ClinometerLaserRangefinderSine, tree.HeightMeasurementMethod);
+            Assert.AreEqual("TruPulse", tree[ExcelImportTreeType.HeightLaserBrand]);
+            Assert.AreEqual("TruPulse", tree[ExcelImportTreeType.HeightClinometerBrand]);
+            Assert.AreEqual(ExcelImportHeightMeasurementType.SelectionFromASet, tree[ExcelImportTreeType.HeightMeasurementType]);
+            Assert.IsNull(tree[ExcelImportTreeType.HeightDistanceTop]);
+            Assert.IsNull(tree[ExcelImportTreeType.HeightAngleTop]);
+            Assert.IsNull(tree[ExcelImportTreeType.HeightDistanceBottom]);
+            Assert.IsNull(tree[ExcelImportTreeType.HeightAngleBottom]);
+            Assert.IsNull(tree[ExcelImportTreeType.HeightVerticalOffset]);
+            Assert.AreEqual("Tallest tree in new England", tree[ExcelImportTreeType.HeightComments]);
+            Assert.AreEqual(10.6f, (float?)tree.Girth);
+            Assert.AreEqual(4.5f, (float?)tree[ExcelImportTreeType.GirthMeasurementHeight]);
+            Assert.IsNull(tree[ExcelImportTreeType.GirthRootCollarHeight]);
+            Assert.IsNull(tree[ExcelImportTreeType.GirthComments]);
+            Assert.IsNull(tree.CrownMaxSpread);
+            Assert.AreEqual(48.5f, (float?)tree[ExcelImportTreeType.CrownAverageSpread]);
+            Assert.AreEqual(ExcelImportCrownSpreadMeasurementMethod.AverageOfMaxAndMin, tree[ExcelImportTreeType.CrownSpreadMeasurementMethod]);
+            Assert.IsNull(tree[ExcelImportTreeType.CrownBaseHeight]);
+            Assert.IsNull(tree[ExcelImportTreeType.CrownArea]);
+            Assert.IsNull(tree[ExcelImportTreeType.CrownAreaMeasurementMethod]);
+            Assert.IsNull(tree[ExcelImportTreeType.CrownVolume]);
+            Assert.IsNull(tree[ExcelImportTreeType.CrownVolumeCalculationMethod]);
+            Assert.IsNull(tree[ExcelImportTreeType.CrownComments]);
+            Assert.IsNull(tree[ExcelImportTreeType.TrunkVolume]);
+            Assert.IsNull(tree[ExcelImportTreeType.TrunkVolumeCalculationMethod]);
+            Assert.IsNull(tree[ExcelImportTreeType.TrunkCount]);
+            Assert.IsNull(tree[ExcelImportTreeType.TrunkComments]);
+            Assert.AreEqual(ExcelImportTreeFormType.Single, tree[ExcelImportTreeType.FormType]);
+            Assert.IsNull(tree[ExcelImportTreeType.FormComments]);
+            Assert.AreEqual(ExcelImportTreeStatus.Native, tree[ExcelImportTreeType.Status]);
+            Assert.AreEqual("Good", tree[ExcelImportTreeType.HealthStatus]);
+            Assert.AreEqual(ExcelImportTreeAgeClass.Mature, tree[ExcelImportTreeType.AgeClass]);
+            Assert.AreEqual(155, (int?)tree[ExcelImportTreeType.Age]);
+            Assert.AreEqual(ExcelImportTreeAgeMethod.Estimate, tree[ExcelImportTreeType.AgeMethod]);
+            Assert.AreEqual(ExcelImportTerrainType.SideSlope, tree[ExcelImportTreeType.TerrainType]);
+            Assert.IsNull(tree[ExcelImportTreeType.TerrainShapeIndex]);
+            Assert.IsNull(tree[ExcelImportTreeType.LandformIndex]);
+            Assert.IsNull(tree[ExcelImportTreeType.TerrainComments]);
+            Assert.AreEqual(new DateTime(2013, 12, 6), tree.Date);
+            Assert.AreEqual("Bob Leverett", tree.Measurers.ElementAt(0));
+            Assert.AreEqual("John Eichholz", tree.Measurers.ElementAt(1));
+            Assert.AreEqual("Will Blozan", tree.Measurers.ElementAt(2));
+            Assert.IsNull(tree.Latitude);
+            Assert.IsNull(tree.Longitude);
+            Assert.AreEqual(false, tree[ExcelImportTreeType.PublicizeCoordinates]);
+            Assert.AreEqual(800, (int?)tree.Elevation);
+            Assert.IsNull(tree.GeneralComments);
         }
 
         [TestMethod]
         public void ReadsTrunks()
         {
-            Assert.AreEqual(1, database.Entities.Count(e => "Trunk".Equals(e.EntityType.Name)));
+            Assert.AreEqual(1, database.Entities.OfType<ExcelImportTrunk>().Count());
 
-            ExcelImportEntity trunk = database.Entities.First(e => "Trunk".Equals(e.EntityType.Name));
-            Assert.AreEqual("Monarch", trunk["Tree Name"].Value);
-            Assert.AreEqual(1.1f, (float?)trunk["Height"].Value);
-            Assert.AreEqual(2.2f, (float?)trunk["Height Distance Top"].Value);
-            Assert.AreEqual(3.3f, (float?)trunk["Height Angle Top"].Value);
-            Assert.AreEqual(4.4f, (float?)trunk["Height Distance Bottom"].Value);
-            Assert.AreEqual(5.5f, (float?)trunk["Height Angle Bottom"].Value);
-            Assert.AreEqual(6.6f, (float?)trunk["Height Vertical Offset"].Value);
-            Assert.AreEqual(7.7f, (float?)trunk["Girth"].Value);
-            Assert.AreEqual(8.8f, (float?)trunk["Girth Measurement Height"].Value);
-            Assert.AreEqual("hello world", trunk["Comments"].Value);
+            ExcelImportTrunk trunk = database.Entities.OfType<ExcelImportTrunk>().First();
+            Assert.AreEqual("Monarch", trunk.TreeName);
+            Assert.AreEqual(1.1f, (float?)trunk[ExcelImportTrunkType.Height]);
+            Assert.AreEqual(2.2f, (float?)trunk[ExcelImportTrunkType.HeightDistanceTop]);
+            Assert.AreEqual(3.3f, (float?)trunk[ExcelImportTrunkType.HeightAngleTop]);
+            Assert.AreEqual(4.4f, (float?)trunk[ExcelImportTrunkType.HeightDistanceBottom]);
+            Assert.AreEqual(5.5f, (float?)trunk[ExcelImportTrunkType.HeightAngleBottom]);
+            Assert.AreEqual(6.6f, (float?)trunk[ExcelImportTrunkType.HeightVerticalOffset]);
+            Assert.AreEqual(7.7f, (float?)trunk[ExcelImportTrunkType.Girth]);
+            Assert.AreEqual(8.8f, (float?)trunk[ExcelImportTrunkType.GirthMeasurementHeight]);
+            Assert.AreEqual("hello world", trunk[ExcelImportTrunkType.Comments]);
         }
     }
 }

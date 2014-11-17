@@ -1,4 +1,4 @@
-﻿using OfficeOpenXml;
+﻿using TMD.Model.Excel;
 using System.Collections.Generic;
 using TMD.Model.ExcelImport.Values;
 
@@ -6,15 +6,16 @@ namespace TMD.Model.ExcelImport.Attributes
 {
     public class ExcelImportIntegerAttribute : ExcelImportAttribute
     {
-        protected ExcelImportIntegerAttribute()
+        public ExcelImportIntegerAttribute(byte id, string name, int? column = null)
+            : base(id, name, column)
         { }
 
-        public int? MinInclusive { get; private set; }
-        public int? MaxInclusive { get; private set; }
+        public int? MinInclusive { get; set; }
+        public int? MaxInclusive { get; set; }
 
         public override string ParseValidationErrorFormat
         {
-            get { return "{0} must be a whole number"; }
+            get { return "{0} must be a whole number."; }
         }
 
         public override object GetValue(object rawValue)
@@ -29,18 +30,26 @@ namespace TMD.Model.ExcelImport.Attributes
             return (int?)value;
         }
 
-        protected override IEnumerable<string> GetAdditionalValidationErrors(object value)
+        public override IEnumerable<string> GetErrors(ExcelImportValue value, IEnumerable<ExcelImportEntity> context)
         {
-            if (MinInclusive.HasValue && (int?)value < MinInclusive)
-                yield return string.Format("{0} must be greater than or equal to {1}", Name, MinInclusive);
+            foreach (string error in base.GetErrors(value, context))
+                yield return error;
 
-            if (MaxInclusive.HasValue && (int?)value > MaxInclusive)
-                yield return string.Format("{0} must be less than or equal to {1}", Name, MaxInclusive);
+            if (value.IsEmpty)
+                yield break;
+
+            int? intValue = (int?)value.Value;
+
+            if (MinInclusive.HasValue && intValue < MinInclusive)
+                yield return string.Format("{0} must be greater than or equal to {1}.", Name, MinInclusive);
+
+            if (MaxInclusive.HasValue && intValue > MaxInclusive)
+                yield return string.Format("{0} must be less than or equal to {1}.", Name, MaxInclusive);
         }
 
-        public override ExcelImportValue CreateValue(ExcelImportEntity entity, ExcelWorksheet sheet)
+        public override ExcelImportValue CreateValue(ExcelImportEntity entity, IExcelWorksheet worksheet)
         {
-            return ExcelImportIntegerValue.Create(entity, this, sheet);
+            return ExcelImportIntegerValue.Create(entity, this, worksheet);
         }
     }
 }

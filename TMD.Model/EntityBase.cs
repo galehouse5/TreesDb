@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using TMD.Model.Users;
 
 namespace TMD.Model
@@ -50,7 +47,8 @@ namespace TMD.Model
         }
     }
 
-    public abstract class UserCreatedEntityBase : EntityBase
+    public abstract class UserCreatedEntityBase<TEntity> : EntityBase
+        where TEntity : class
     {
         protected UserCreatedEntityBase()
             : this(false)
@@ -64,11 +62,11 @@ namespace TMD.Model
             }
         }
 
-        protected internal virtual UserCreatedEntityBase RecordCreation()
+        protected internal virtual TEntity RecordCreation()
         {
             Created = DateTime.Now;
             Creator = UserSession.User;
-            return this;
+            return this as TEntity;
         }
 
         public virtual DateTime Created { get; private set; }

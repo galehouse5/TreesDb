@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using TMD.Extensions;
 using TMD.Model;
 using TMD.Model.Locations;
-using TMD.Model.Photos;
+using TMD.Model.Photo;
 
 namespace TMD.Models
 {
@@ -88,7 +88,7 @@ namespace TMD.Models
         public int TreesMeasured { get; set; }
         [DisplayName("Subsites")] 
         public int SubsitesCount { get; set; }
-        public IList<IPhoto> Photos { get; set; }
+        public IList<PhotoReference> Photos { get; set; }
         [DisplayName("Visited"), DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")] 
         public DateTime LastVisited { get; set; }
     }
@@ -116,7 +116,7 @@ namespace TMD.Models
         public float? RGI20 { get; set; }
         [DisplayName("Trees")] 
         public int TreesCount { get; set; }
-        public IList<IPhoto> Photos { get; set; }
+        public IList<PhotoReference> Photos { get; set; }
         [DisplayName("Visited"), DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")] 
         public DateTime LastVisited { get; set; }
     }
@@ -144,7 +144,7 @@ namespace TMD.Models
         public float? ChampionPoints { get; set; }
         [DisplayName("Champion points (abbreviated)"), DisplayFormat(DataFormatString = "{0:0.00}")] 
         public float? AbbreviatedChampionPoints { get; set; }
-        public IList<IPhoto> Photos { get; set; }
+        public IList<PhotoReference> Photos { get; set; }
         [DisplayName("Measured"), DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")] 
         public DateTime LastMeasured { get; set; }
     }

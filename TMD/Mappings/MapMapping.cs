@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using TMD.Model;
-using TMD.Model.Photos;
+using TMD.Model.Photo;
 using TMD.Models;
 
 namespace TMD.Mappings
@@ -58,7 +58,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.MinZoom, opt => opt.UseValue(0))
                 .ForMember(dest => dest.MaxZoom, opt => opt.MapFrom(src => src.ContainsSingleSubsite ? 13 : 11))
                 .ForMember(dest => dest.IconLoader, opt => opt.MapFrom(src => src.Subsites.Count > 1 || src.Subsites[0].Photos.Count == 0 ?
-                    null : new ActionLoader("View", "Photos", new { id = src.Subsites[0].Photos[0].StaticId, size = PhotoSize.SmallMapSquare })))
+                    null : new ActionLoader("View", "Photos", new { id = src.Subsites[0].Photos[0].Id, size = ImageSize.SmallMapSquare })))
                 .ForMember(dest => dest.InfoLoader, opt => opt.MapFrom(src => new ActionLoader("SiteMarkerInfo", "Map", new { id = src.Id })));
 
             CreateMap<Model.Sites.Subsite, MapMarkerModel>()
@@ -68,7 +68,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.MaxZoom, opt => opt.UseValue(13))
                 .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue("~/images/icons/Subsite32.png"))
                 .ForMember(dest => dest.IconLoader, opt => opt.MapFrom(src => src.Photos.Count == 0 ?
-                    null : new ActionLoader("View", "Photos", new { id = src.Photos[0].StaticId, size = PhotoSize.SmallMapSquare })))
+                    null : new ActionLoader("View", "Photos", new { id = src.Photos[0].Id, size = ImageSize.SmallMapSquare })))
                 .ForMember(dest => dest.InfoLoader, opt => opt.MapFrom(src => new ActionLoader("SubsiteMarkerInfo", "Map", new { id = src.Site.Id, subsiteId = src.Id })));
 
             CreateMap<Model.Trees.Tree, MapMarkerModel>()
@@ -78,7 +78,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.MaxZoom, opt => opt.UseValue(30))
                 .ForMember(dest => dest.DefaultIconUrl, opt => opt.UseValue("~/images/icons/SingleTrunkTree32.png"))
                 .ForMember(dest => dest.IconLoader, opt => opt.MapFrom(src => src.Photos.Count == 0 ?
-                    null : new ActionLoader("View", "Photos", new { id = src.Photos[0].StaticId, size = PhotoSize.SmallMapSquare })))
+                    null : new ActionLoader("View", "Photos", new { id = src.Photos[0].Id, size = ImageSize.SmallMapSquare })))
                 .ForMember(dest => dest.InfoLoader, opt => opt.MapFrom(src => new ActionLoader("TreeMarkerInfo", "Map", new { id = src.Id })));
         }
     }

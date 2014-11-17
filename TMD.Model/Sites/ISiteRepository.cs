@@ -1,16 +1,18 @@
 ﻿using System.Collections.Generic;
+using TMD.Model.Users;
 
 namespace TMD.Model.Sites
 {
     public interface ISiteRepository
     {
-        void Save(Site site);
-        Site FindById(int id);
         void Merge(Site site);
+        void DeleteVisits(User creator);
+
+        Site Get(int id);
+
         IList<Site> ListByProximity(Coordinates coordinates, float minutesDistance);
         IList<Site> ListAll();
         IList<Site> ListAllForMap();
-        void Remove(Site site);
         EntityPage<Subsite> ListAllSubsites(SubsiteBrowser browser);
         IList<Subsite> FindSubsitesByStateId(int stateId);
         IEnumerable<Subsite> SearchSubsites(string expression, int maxResults);

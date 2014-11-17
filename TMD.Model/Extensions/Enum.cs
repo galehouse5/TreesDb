@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Reflection;
 using System.ComponentModel;
+using System.Reflection;
 
 namespace TMD.Model.Extensions
 {
@@ -16,7 +13,8 @@ namespace TMD.Model.Extensions
             return (attributes.Length > 0) ? attributes[0].Description : value.ToString();
         }
 
-        public static T ParseEnum<T>(this string source, T defaultValue) where T : struct, IComparable, IFormattable, IConvertible
+        public static T ParseEnum<T>(this string source, T defaultValue)
+            where T : struct, IComparable, IFormattable, IConvertible
         {
             if (string.IsNullOrEmpty(source))
             {

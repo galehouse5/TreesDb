@@ -1,6 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using StructureMap;
+using System.Drawing;
+using System.IO;
 using TMD.Model;
-using TMD.Model.Photos;
+using TMD.Model.Photo;
 using TMD.UnitTests.Extensions;
 
 namespace TMD.UnitTests.Infrastructure
@@ -8,24 +11,45 @@ namespace TMD.UnitTests.Infrastructure
     [TestClass]
     public class PhotosRepository
     {
+        private PhotoRepository repository = ObjectFactory.GetInstance<PhotoRepository>();
+
         [TestMethod]
         public void SavesAndFindsPhoto()
         {
-            IPhoto photo = new PublicPhotoReference(TemporaryPhoto.Create("Original.jpg".GetPhoto()));
-            using (var uow = UnitOfWork.Begin())
+            using (Stream data = "Original.jpg".GetPhotoData())
+            using (Bitmap image = new Bitmap(data))
             {
-                Repositories.Photos.Save(photo);
-                uow.Persist();
-            }
-            UnitOfWork.Dispose();
-            using (var uow = UnitOfWork.Begin())
-            {
-                IPhoto found = Repositories.Photos.FindById(photo.StaticId);
-                Assert.IsNotNull(found);
-                Assert.IsTrue("Original.jpg".GetPhoto().CompareByContent(found.Get()));
-                Repositories.Photos.Remove(found);
-                uow.Persist();
+                PhotoFile file = new PhotoFile("Original.jpg", image, (int)data.Length);
+
+                using (var uow = UnitOfWork.Begin())
+                {
+                    repository.Save(file);
+                    uow.Persist();
+                }
+
+                UnitOfWork.Evict(file);
+
+                using (var uow = UnitOfWork.Begin())
+                {
+                    PhotoFile persistedFile = repository.Get(file.Id);
+
+                    Assert.IsNotNull(persistedFile);
+                    Assert.AreEqual(file.Filename, persistedFile.Filename);
+                    Assert.AreEqual(file.Format, persistedFile.Format);
+                    Assert.AreEqual(file.Width, persistedFile.Width);
+                    Assert.AreEqual(file.Height, persistedFile.Height);
+                    Assert.AreEqual(file.Size, persistedFile.Size);
+
+                    using (Bitmap persistedImage = persistedFile.GetImage())
+                    {
+                        Assert.IsTrue(persistedImage.CompareByContent(image));
+                    }
+
+                    repository.Delete(persistedFile);
+                    uow.Persist();
+                }
             }
         }
     }
 }
+

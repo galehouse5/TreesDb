@@ -85,6 +85,11 @@ namespace TMD.Model
             return Latitude.GetHashCode() ^ Longitude.GetHashCode();
         }
 
+        public Coordinates Coalesce(Coordinates other)
+        {
+            return IsSpecified ? this : other.IsSpecified ? other : Null();
+        }
+
         public static Coordinates Create(Latitude latitude, Longitude longitude)
         {
             return new Coordinates()

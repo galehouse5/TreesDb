@@ -6,17 +6,13 @@ using System.Collections.Generic;
 using System.Linq;
 using TMD.Model;
 using TMD.Model.Sites;
+using TMD.Model.Users;
 
 namespace TMD.Infrastructure.Repositories
 {
     public class SiteRepository : ISiteRepository
     {
-        public void Save(Site site)
-        {
-            Registry.Session.Save(site);
-        }
-
-        public Site FindById(int id)
+        public Site Get(int id)
         {
             return Registry.Session.Get<Site>(id);
         }
@@ -53,6 +49,47 @@ namespace TMD.Infrastructure.Repositories
                 .List<Site>();
         }
 
+        public void DeleteVisits(User creator)
+        {
+            var subsites = Registry.Session.CreateCriteria<Subsite>()
+                .CreateAlias("Visits", "visit")
+                .CreateAlias("visit.Creator", "creator")
+                .Add(Restrictions.Eq("creator.Id", creator.Id))
+                .List<Subsite>();
+
+            foreach (var subsite in subsites)
+            {
+                foreach (var visit in subsite.Visits.Where(v => v.Creator.Equals(creator)).ToArray())
+                {
+                    subsite.RemoveVisit(visit);
+                }
+
+                if (subsite.Visits.Count < 1)
+                {
+                    Registry.Session.Delete(subsite);
+                }
+            }
+
+            var sites = Registry.Session.CreateCriteria<Site>()
+                .CreateAlias("Visits", "visit")
+                .CreateAlias("visit.Creator", "creator")
+                .Add(Restrictions.Eq("creator.Id", creator.Id))
+                .List<Site>();
+
+            foreach (var site in sites)
+            {
+                foreach (var visit in site.Visits.Where(v => v.Creator.Equals(creator)).ToArray())
+                {
+                    site.Visits.Remove(visit);
+                }
+
+                if (site.Visits.Count < 1)
+                {
+                    Registry.Session.Delete(site);
+                }
+            }
+        }
+
         public IList<Site> ListAllForMap()
         {
             Registry.Session.CreateCriteria<Model.Trees.Tree>()
@@ -72,11 +109,6 @@ namespace TMD.Infrastructure.Repositories
                 .SetFetchMode("Subsites", NHibernate.FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Site>().ToList();
-        }
-
-        public void Remove(Site site)
-        {
-            Registry.Session.Delete(site);
         }
 
         public EntityPage<Subsite> ListAllSubsites(SubsiteBrowser browser)

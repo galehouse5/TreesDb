@@ -1,0 +1,24 @@
+﻿@model ImportModel
+
+@{
+  ViewBag.Title = "Import";
+}
+
+@section Scripts {
+  <script>
+    $('#process-merge').submit();
+  </script>
+}
+
+@section Header {
+  <h1>
+    <b class="glyphicon glyphicon-time"></b> Please wait...
+  </h1>
+}
+
+<p class="lead">Your recordings are being merged with the community database.  This could take a minute.</p>
+
+@using (Html.BeginForm("ProcessMerge", "Import", FormMethod.Post, new { id = "process-merge", style = "display: none;" }))
+{
+  @Html.AntiForgeryToken()
+}

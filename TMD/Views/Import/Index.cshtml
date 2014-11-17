@@ -1,73 +1,137 @@
 ﻿@model ImportModel
 
 @{
-    ViewBag.Title = "Import";
+  ViewBag.Title = "Import";
+}
+
+@section Styles {
+  <style>
+    .lead > li {
+      margin-bottom: 30px;
+    }
+  </style>
 }
 
 @section Scripts {
-    <script>
-        (function () {
-            var hasInvalidData = function () {
-                return document.cookie.indexOf('invalid-data=True') > -1;
-            };
+  <script>
+    (function () {
+      var setUploadingState = function () {
+        Cookies.expire('isValid', { path: '@Url.Action("Index")' });
 
-            var display = function (hasInvalidData) {
-                $('[data-invalid-data=true]').toggle(hasInvalidData);
-                $('[data-invalid-data=false]').toggle(!hasInvalidData);
-            };
+        $('[data-state][data-state!=uploading]').hide();
+        $('[data-state=uploading]').show();
+      };
 
-            var poll = function () {
-                display(hasInvalidData());
-                setTimeout(poll, 1000);
-            };
+      var setInvalidState = function () {
+        $('[data-state=invalid] form').each(function () {
+          this.reset();
+        });
 
-            poll();
-        })();
-    </script>
+        $('[data-state][data-state!=invalid]').hide();
+        $('[data-state=invalid]').show();
+      };
+
+      var monitorUpload = function () {
+        if (Cookies.get('isValid') === 'False') {
+          setInvalidState();
+        } else {
+          setTimeout(monitorUpload, 100);
+        }
+      };
+
+      $('[data-state] form').submit(function () {
+        setUploadingState();
+
+        monitorUpload();
+      });
+    })();
+  </script>
 }
 
-<div class="jumbotron" data-invalid-data="false">
-    <h1>Import</h1>
+@section Header {
+  <h1 data-state="initial">
+    <b class="glyphicon glyphicon-import"></b> Import
+  </h1>
 
-    <div class="row">
-        <div class="col-sm-6">
-            <p>Download your database to record the sites you visit and the trees you measure.</p>
+  <h1 data-state="invalid" style="display: none;">
+    <b class="glyphicon glyphicon-exclamation-sign"></b> Invalid data
+  </h1>
 
-            <a class="btn btn-default btn-lg" href="@Url.Action("Download")">
-                <span class="glyphicon glyphicon-file"></span> TMD.xlsx
-            </a>
-        </div>
+  <h1 data-state="uploading" style="display: none;">
+    <b class="glyphicon glyphicon-time"></b> Please wait...
+  </h1>
+}
 
-        <div class="col-sm-6">
-            <p>Upload your database to share your recordings with the community.</p>
+<div data-state="initial">
+  <ol class="lead">
+    <li>
+      <p>Record measurements in your personal database:</p>
 
-            @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" })) {
-                @Html.AntiForgeryToken()
-                @Html.ValidationSummary()
+      <a class="btn btn-default" href="@Url.Action("Download", new { userID = Model.UserID })">
+        <span class="glyphicon glyphicon-download-alt"></span> @string.Format("TMD {0}.xlsx", Model.UserID)
+      </a>
+    </li>
 
-                <div class="form-group">
-                    <input type="file" name="Database" data-val="true" data-val-required="You must choose a file." />
-                </div>
+    <li>
+      <p>Upload your database to share your recordings with the community:</p>
 
-                <button type="submit" class="btn btn-primary btn-lg">Upload Database</button>
-            }
-        </div>
-    </div>
-</div>
-
-<div class="jumbotron" data-invalid-data="true" style="display: none;">
-    <h1>Fix Invalid Data</h1>
-
-    <p>There were errors detected in your database. Your browser has downloaded a copy with these highlighted. Apply corrections and try uploading again.</p>
-
-    @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" })) {
+      @using (Html.BeginForm(null, null, FormMethod.Post, new
+      {
+        enctype = "multipart/form-data",
+        @class = "form-inline"
+      }))
+      {
         @Html.AntiForgeryToken()
-        @Html.ValidationSummary()
 
         <div class="form-group">
-            <input type="file" name="Database" data-val="true" data-val-required="You must choose a file." />
+          <input type="file" name="Database" data-val="true" data-val-required="You must choose a file." class="filestyle" data-icon="false" data-buttonbefore="true" />
         </div>
 
-        <button type="submit" class="btn btn-primary btn-lg">Upload Database</button>
-    }
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">
+            <b class="glyphicon glyphicon-import"></b> Upload
+          </button>
+        </div>
+
+        @Html.ValidationSummary()
+      }
+    </li>
+  </ol>
+</div>
+
+<div data-state="uploading" style="display: none;">
+  <p class="lead">Your database is being uploaded and validated.  This could take a minute.</p>
+</div>
+
+<div data-state="invalid" style="display: none;">
+  <ol class="lead">
+    <li>Open the proofed copy of your database</li>
+
+    <li>Correct the highlighted errors</li>
+
+    <li>
+      <p>Upload your corrected copy:</p>
+
+      @using (Html.BeginForm(null, null, FormMethod.Post, new
+      {
+        enctype = "multipart/form-data",
+        @class = "form-inline"
+      }))
+      {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+          <input type="file" name="Database" data-val="true" data-val-required="You must choose a file." class="filestyle" data-icon="false" data-buttonbefore="true" />
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">
+            <b class="glyphicon glyphicon-import"></b> Upload
+          </button>
+        </div>
+
+        @Html.ValidationSummary()
+      }
+    </li>
+  </ol>
 </div>

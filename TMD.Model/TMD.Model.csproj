@@ -34,8 +34,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EPPlus">
-      <HintPath>..\packages\EPPlus.3.1.3.3\lib\net35\EPPlus.dll</HintPath>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\packages\Aspose.Cells.8.2.2\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate.Validator">
       <HintPath>..\packages\NHibernate.Validator.1.3.2.4000\lib\Net35\NHibernate.Validator.dll</HintPath>
@@ -61,44 +61,74 @@
   <ItemGroup>
     <Compile Include="ExcelImport\Attributes\ExcelImportDateAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportBooleanAttribute.cs" />
-    <Compile Include="ExcelImport\Attributes\ExcelImportEnumerationAttribute.cs" />
+    <Compile Include="ExcelImport\Attributes\ExcelImportEnumAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportFloatAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportIntegerAttribute.cs" />
     <Compile Include="ExcelImport\Attributes\ExcelImportStringAttribute.cs" />
+    <Compile Include="ExcelImport\Attributes\ExcelImportAttributeValidator.cs" />
+    <Compile Include="ExcelImport\Attributes\Validation\ExcelImportFileExtensionValidator.cs" />
+    <Compile Include="ExcelImport\Attributes\Validation\ExcelImportForeignKeyValidator.cs" />
+    <Compile Include="ExcelImport\Attributes\Validation\ExcelImportUniquenessValidator.cs" />
+    <Compile Include="ExcelImport\Entities\ExcelImportPhoto.cs" />
+    <Compile Include="ExcelImport\Entities\ExcelImportSite.cs" />
+    <Compile Include="ExcelImport\Entities\ExcelImportSubsite.cs" />
+    <Compile Include="ExcelImport\Entities\ExcelImportTree.cs" />
+    <Compile Include="ExcelImport\Entities\ExcelImportTrunk.cs" />
+    <Compile Include="ExcelImport\EntityTypes\ExcelImportPhotoType.cs" />
+    <Compile Include="ExcelImport\EntityTypes\ExcelImportTrunkType.cs" />
+    <Compile Include="ExcelImport\EntityTypes\ExcelImportSiteType.cs" />
+    <Compile Include="ExcelImport\EntityTypes\ExcelImportSubsiteType.cs" />
+    <Compile Include="ExcelImport\EntityTypes\ExcelImportTreeType.cs" />
     <Compile Include="ExcelImport\ExcelImportAttribute.cs" />
     <Compile Include="ExcelImport\ExcelImportDatabase.cs" />
     <Compile Include="ExcelImport\ExcelImportEntity.cs" />
     <Compile Include="ExcelImport\ExcelImportEntityType.cs" />
     <Compile Include="ExcelImport\ExcelImportEnumerations.cs" />
     <Compile Include="ExcelImport\ExcelImportValue.cs" />
-    <Compile Include="ExcelImport\ExcelImportValueStyling.cs" />
     <Compile Include="ExcelImport\ExcelImportRepository.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportDateValue.cs" />
-    <Compile Include="ExcelImport\Values\ExcelImportEnumerationValue.cs" />
+    <Compile Include="ExcelImport\Values\ExcelImportEnumValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportBooleanValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportFloatValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportIntegerValue.cs" />
+    <Compile Include="ExcelImport\Values\ExcelImportNullValue.cs" />
     <Compile Include="ExcelImport\Values\ExcelImportStringValue.cs" />
+    <Compile Include="Excel\AsposeCells\AsposeCellsCell.cs" />
+    <Compile Include="Excel\AsposeCells\AsposeCellsComment.cs" />
+    <Compile Include="Excel\AsposeCells\AsposeCellsWorkbook.cs" />
+    <Compile Include="Excel\AsposeCells\AsposeCellsWorksheet.cs" />
+    <Compile Include="Excel\ExcelStyle.cs" />
+    <Compile Include="Excel\IExcelCell.cs" />
+    <Compile Include="Excel\IExcelComment.cs" />
+    <Compile Include="Excel\IExcelWorkbook.cs" />
+    <Compile Include="Excel\IExcelWorksheet.cs" />
     <Compile Include="Extensions\ISpecified.cs" />
+    <Compile Include="Extensions\TemporaryFileStream.cs" />
     <Compile Include="IRepository.cs" />
-    <Compile Include="Photos\DefaultPhotoStoreProvider.cs" />
-    <Compile Include="Photos\IPhoto.cs" />
-    <Compile Include="Photos\IPhotoRepository.cs" />
-    <Compile Include="Photos\Photo.cs" />
-    <Compile Include="Photos\PhotoReference.cs" />
-    <Compile Include="Photos\PhotoSize.cs" />
-    <Compile Include="Photos\PhotoStoreProvider.cs" />
-    <Compile Include="Photos\TemporaryPhoto.cs" />
+    <Compile Include="Photo\FileStore\IPhotoFileStore.cs" />
+    <Compile Include="Photo\FileStore\LocalPhotoFileStore.cs" />
+    <Compile Include="Photo\IPhotoFileInternals.cs" />
+    <Compile Include="Photo\PhotoRepository.cs" />
+    <Compile Include="Photo\PhotoFile.cs" />
+    <Compile Include="Photo\PhotoFileStore.cs" />
+    <Compile Include="Photo\PhotoReference.cs" />
+    <Compile Include="Photo\ImageSize.cs" />
+    <Compile Include="Photo\PublicPhotoReference.cs" />
     <Compile Include="RepositoryBase.cs" />
+    <Compile Include="RepositoryDecorator.cs" />
     <Compile Include="Sites\SiteVisit.cs" />
+    <Compile Include="Sites\SubsitePhotoReference.cs" />
     <Compile Include="Sites\SubsiteVisit.cs" />
     <Compile Include="Sites\ISiteRepository.cs" />
     <Compile Include="Sites\Subsite.cs" />
     <Compile Include="Sites\Site.cs" />
+    <Compile Include="Sites\SubsiteVisitPhotoReference.cs" />
     <Compile Include="Trees\Species.cs" />
     <Compile Include="Trees\Measurement.cs" />
     <Compile Include="Trees\Tree.cs" />
     <Compile Include="Trees\TreeEnumerations.cs" />
+    <Compile Include="Trees\TreeMeasurementPhotoReference.cs" />
+    <Compile Include="Trees\TreePhotoReference.cs" />
     <Compile Include="Users\UserRoles.cs" />
     <Compile Include="Validation\BooleanMethodAttribute.cs" />
     <Compile Include="Validation\ContextMethodAttribute.cs" />
@@ -142,12 +172,14 @@
     <Compile Include="ValueObjects\Volume.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Photos\icon.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Aspose.Cells.lic">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Photo\FileStore\logo-sm.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

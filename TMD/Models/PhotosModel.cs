@@ -2,23 +2,14 @@
 using System.ComponentModel.DataAnnotations;
 using TMD.Model;
 using TMD.Model.Locations;
-using TMD.Model.Photos;
 
 namespace TMD.Models
 {
-    public abstract class PhotoGalleryModel
-    {
-        public int Count { get { return Photos.Count; } }
-        public IList<IPhoto> Photos { get; set; }
-        public abstract string AddPhotoActionName { get; }
-        public abstract object AddPhotoRouteValues { get; }
-    }
-
     public abstract class PhotoCaptionModel
     {
         public string Caption { get; set; }
         [UIHint("ConcatenatedNames")]
-        public IList<Name> Photographers { get; set; }
+        public IList<string> Photographers { get; set; }
         public abstract string ContextFormat { get; }
         public abstract IList<string> ContextArguments { get; }
         public abstract IList<string> ContextArgumentActionNames { get; }

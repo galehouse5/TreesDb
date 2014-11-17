@@ -7,12 +7,13 @@ using TMD.Infrastructure.StringComparison;
 using TMD.Model;
 using TMD.Model.Sites;
 using TMD.Model.Trees;
+using TMD.Model.Users;
 
 namespace TMD.Infrastructure.Repositories
 {
     public class TreeRepository : ITreeRepository
     {
-        public Tree FindById(int id)
+        public Tree Get(int id)
         {
             return Registry.Session.Get<Tree>(id);
         }
@@ -20,6 +21,28 @@ namespace TMD.Infrastructure.Repositories
         public void Save(Tree tree)
         {
             Registry.Session.Save(tree);
+        }
+
+        public void DeleteMeasurements(User creator)
+        {
+            var trees = Registry.Session.CreateCriteria<Tree>()
+                .CreateAlias("Measurements", "measurement")
+                .CreateAlias("measurement.Creator", "creator")
+                .Add(Restrictions.Eq("creator.Id", creator.Id))
+                .List<Tree>();
+
+            foreach (var tree in trees)
+            {
+                foreach (var measurement in tree.Measurements.Where(m => m.Creator.Equals(creator)).ToArray())
+                {
+                    tree.RemoveMeasurement(measurement);
+                }
+
+                if (tree.Measurements.Count < 1)
+                {
+                    Registry.Session.Delete(tree);
+                }
+            }
         }
 
         private StringComparisonExpression m_AcceptedSymbolRanker = StringComparisonExpression.Create("equality * 100");

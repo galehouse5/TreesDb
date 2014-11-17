@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using NHibernate.Validator.Constraints;
 using System.Diagnostics;
-using TMD.Model.Validation;
 using TMD.Model.Extensions;
-using NHibernate.Validator.Constraints;
+using TMD.Model.Validation;
 
 namespace TMD.Model
 {
@@ -42,17 +38,17 @@ namespace TMD.Model
                 string.Empty;
         }
 
-        public static Name CreateFromFormalName(string name)
+        public static Name Create(string name)
         {
-            if (!string.IsNullOrWhiteSpace(name))
-            {
-                string[] parts = name.Split(',');
-                if (parts.Length > 1)
-                {
-                    return Name.Create(parts[1], parts[0]);
-                }
-            }
-            return Null();
+            if (string.IsNullOrWhiteSpace(name)) return Null();
+
+            string[] parts = name.Split(',');
+            if (parts.Length > 1) return Name.Create(parts[1], parts[0]);
+
+            parts = name.Split(' ');
+            if (parts.Length > 1) return Name.Create(parts[1], parts[0]);
+
+            return Name.Create(name, string.Empty);
         }
 
         public static Name Create(string first, string last)

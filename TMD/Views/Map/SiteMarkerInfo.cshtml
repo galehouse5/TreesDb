@@ -1,5 +1,6 @@
 ﻿@model TMD.Models.MapSiteMarkerInfoModel
-@using TMD.Model.Photos
+@using TMD.Model.Photo 
+
 <table class="reports_table" style="width: 350px;">
     <tr>
         <td class="description"><strong>@Model.Name</strong></td>
@@ -25,7 +26,7 @@
             <td class="description">Photos</td>
             <td class="value">
                 @foreach (var photo in Model.Photos) {
-                    @Html.Photo(photo, PhotoSize.Square, PhotoSize.Medium);
+                    @Html.Photo(photo, ImageSize.Square, ImageSize.Medium);
                 }
             </td>
         </tr>

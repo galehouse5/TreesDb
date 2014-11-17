@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using AutoMapper;
-using TMD.Models;
-using TMD.Model.Photos;
-using TMD.Model;
-using TMD.Model.Trees;
-using TMD.Model.Extensions;
-using TMD.Model.Sites;
+﻿using AutoMapper;
 using TMD.Model.Locations;
+using TMD.Model.Sites;
+using TMD.Model.Trees;
+using TMD.Models;
 
 namespace TMD.Mappings
 {

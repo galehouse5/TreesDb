@@ -19,11 +19,6 @@ namespace TMD.Model
             get { return ObjectFactory.GetInstance<Users.UserRepository>(); }
         }
 
-        public static Photos.IPhotoRepository Photos
-        {
-            get { return ObjectFactory.GetInstance<Photos.IPhotoRepository>(); }
-        }
-
         public static Sites.ISiteRepository Sites
         {
             get { return ObjectFactory.GetInstance<Sites.ISiteRepository>(); }

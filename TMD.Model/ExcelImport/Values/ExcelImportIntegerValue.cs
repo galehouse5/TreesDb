@@ -1,4 +1,4 @@
-﻿using OfficeOpenXml;
+﻿using TMD.Model.Excel;
 
 namespace TMD.Model.ExcelImport.Values
 {
@@ -13,13 +13,13 @@ namespace TMD.Model.ExcelImport.Values
             set { Value = value; }
         }
 
-        public static ExcelImportValue Create(ExcelImportEntity entity, ExcelImportAttribute attribute, ExcelWorksheet sheet)
+        public static ExcelImportValue Create(ExcelImportEntity entity, ExcelImportAttribute attribute, IExcelWorksheet worksheet)
         {
             return new ExcelImportIntegerValue
             {
                 Entity = entity,
                 Attribute = attribute,
-                RawValue = sheet.GetValue(entity.Row, attribute.Column)
+                RawValue = worksheet.Cell(entity.Row, attribute.Column).Value
             };
         }
     }

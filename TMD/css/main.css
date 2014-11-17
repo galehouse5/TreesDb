@@ -1,11 +1,42 @@
+﻿.navbar-header {
+  height: 90px;
+}
+.navbar-header .navbar-toggle {
+  margin-top: 48px;
+}
 @media (min-width: 768px) {
-  .navbar .navbar-collapse {
+  .navbar-collapse {
     margin-top: 40px;
   }
-  .navbar .navbar-form .input-group {
-    width: 270px;
+  .navbar-form .input-group {
+    width: 300px;
   }
 }
-.navbar .glyphicon {
-  font-size: 15px;
+header {
+  margin-bottom: 20px;
+}
+/* begin footer styles */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 90px;
+}
+footer {
+  position: absolute !important;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 0 !important;
+}
+footer .navbar-form {
+  margin: 16px auto;
+}
+/* end footer styles */
+.bootstrap-filestyle {
+  max-width: 292px;
+}
+.validation-summary-errors {
+  color: #a94442;
 }

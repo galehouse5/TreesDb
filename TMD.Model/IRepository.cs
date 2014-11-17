@@ -8,6 +8,7 @@ namespace TMD.Model
     public interface IRepository<T> : IQueryable<T>
         where T : class
     {
+        T Get(int id);
         void Save(T entity);
         void Delete(T entity);
     }

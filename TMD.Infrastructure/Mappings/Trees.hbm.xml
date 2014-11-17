@@ -49,6 +49,8 @@
     <id name="Id">
       <generator class="native"/>
     </id>
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <property name="Measured" />
     <many-to-one name="Species" column="ComputedMeasuredSpeciesId" insert="false" update="false" cascade="none" />
     <property name="ImportingTripId" />
@@ -104,7 +106,7 @@
     <property name="ChampionPoints" />
     <property name="AbbreviatedChampionPoints" />
     <bag name="Photos" cascade="all-delete-orphan" inverse="true">
-      <key column="TreeMeasurementId"></key>
+      <key column="MeasurementId"></key>
       <one-to-many class="TMD.Model.Trees.TreeMeasurementPhotoReference"/>
     </bag>
     <bag name="Measurers" cascade="all-delete-orphan">

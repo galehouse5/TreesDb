@@ -1,61 +1,107 @@
-﻿using OfficeOpenXml;
-using System.Collections.Generic;
-using System.Drawing;
+﻿using System.Collections.Generic;
 using System.Linq;
+using TMD.Model.Excel;
+using TMD.Model.ExcelImport.EntityTypes;
 using TMD.Model.Users;
 
 namespace TMD.Model.ExcelImport
 {
-    public class ExcelImportEntityType
+    public abstract class ExcelImportEntityType
     {
-        protected ExcelImportEntityType()
-        { }
+        public static readonly ExcelImportEntityType Site = new ExcelImportSiteType(1);
+        public static readonly ExcelImportEntityType Subsite = new ExcelImportSubsiteType(2);
+        public static readonly ExcelImportEntityType Tree = new ExcelImportTreeType(3);
+        public static readonly ExcelImportEntityType Trunk = new ExcelImportTrunkType(4);
+        public static readonly ExcelImportEntityType Photo = new ExcelImportPhotoType(5);
+
+        public static readonly ExcelImportEntityType[] All = new ExcelImportEntityType[] { Site, Subsite, Tree, Trunk, Photo };
+
+        protected ExcelImportEntityType(byte id)
+        {
+            this.ID = id;
+        }
 
         public int ID { get; private set; }
-        public string Name { get; private set; }
-        public string Spreadsheet { get; private set; }
-        public int StartRow { get; private set; }
+        public abstract string Name { get; }
+        public abstract string Worksheet { get; }
+        public abstract int StartRow { get; }
 
-        public IEnumerable<ExcelImportAttribute> Attributes { get; private set; }
+        public abstract IEnumerable<ExcelImportAttribute> Attributes { get; }
 
-        public IEnumerable<ExcelImportEntity> CreateEntities(ExcelWorkbook book, User user)
+        public abstract ExcelImportEntity CreateEntity(IExcelWorksheet worksheet, int row, User user);
+
+        public IEnumerable<ExcelImportEntity> CreateEntities(IExcelWorkbook workbook, User user)
         {
-            return Enumerable.Range(StartRow, book.Worksheets[Spreadsheet].Dimension.End.Row)
-                .Select(i => ExcelImportEntity.Create(this, book.Worksheets[Spreadsheet], i, user))
-                .Where(e => !e.IsEmpty);
-        }
+            IExcelWorksheet worksheet = workbook.Worksheet(Worksheet);
 
-        public void ShowValidationErrors(IEnumerable<KeyValuePair<ExcelImportValue, string>> errors, ExcelWorkbook book)
-        {
-            book.Worksheets[Spreadsheet].TabColor = Color.Red;
-
-            foreach (ExcelImportEntity entity in errors.Select(e => e.Key.Entity).Distinct())
+            int lastNonEmptyIndex = 0;
+            for (int i = 0; i < lastNonEmptyIndex + 100; i++)
             {
-                entity.ShowValidationErrors(errors.Where(e => e.Key.Entity.Equals(entity)), book.Worksheets[Spreadsheet]);
+                ExcelImportEntity entity = CreateEntity(worksheet, StartRow + i, user);
+
+                if (!entity.IsEmpty)
+                {
+                    lastNonEmptyIndex = i;
+                    yield return entity;
+                }
             }
         }
 
-        public void HideValidationErrors(IEnumerable<ExcelImportEntity> entities, ExcelWorkbook book)
+        public void ShowErrors(IEnumerable<KeyValuePair<ExcelImportValue, string>> errors, IExcelWorkbook workbook)
         {
-            book.Worksheets[Spreadsheet].TabColor = Color.Green;
+            IExcelWorksheet worksheet = workbook.Worksheet(Worksheet);
+            worksheet.SetTabStyle(ExcelStyle.Error);
+            worksheet.SetActive();
 
+            foreach (var entityErrors in errors.GroupBy(e => e.Key.Entity))
+            {
+                entityErrors.Key.ShowErrors(entityErrors, worksheet);
+            }
+        }
+
+        public void HideErrors(IEnumerable<ExcelImportEntity> entities, IExcelWorkbook workbook)
+        {
+            IExcelWorksheet worksheet = workbook.Worksheet(Worksheet);
+            worksheet.SetTabStyle(ExcelStyle.Normal);
+
+            int lastNonEmptyIndex = entities.Max(e => e.RowIndex);
+            for (int i = 0; i < lastNonEmptyIndex + 100; i++)
+            {
+                foreach (ExcelImportAttribute attribute in Attributes)
+                {
+                    IExcelCell cell = worksheet.Cell(StartRow + i, attribute.Column);
+                    if (cell.HasStyle(ExcelStyle.Warning) || cell.HasStyle(ExcelStyle.Error))
+                    {
+                        cell.SetStyle(ExcelStyle.Normal);
+                    }
+
+                    IExcelComment comment = worksheet.Comment(StartRow + i, attribute.Column);
+                    if (comment != null && "TMD".Equals(comment.Author))
+                    {
+                        worksheet.Remove(comment);
+                    }
+                }
+            }
+        }
+
+        public void Fill(IEnumerable<ExcelImportEntity> entities, IExcelWorkbook workbook)
+        {
             foreach (ExcelImportEntity entity in entities)
             {
-                entity.HideValidationErrors(book.Worksheets[Spreadsheet]);
+                IExcelWorksheet worksheet = workbook.Worksheet(Worksheet);
+
+                entity.Fill(worksheet);
             }
         }
 
-        public void Fill(IEnumerable<ExcelImportEntity> entities, ExcelWorkbook book)
+        protected IEnumerable<ExcelImportValue> CreateValues(ExcelImportEntity entity, IExcelWorksheet worksheet)
         {
-            foreach (ExcelImportEntity entity in entities)
-            {
-                entity.Fill(book.Worksheets[Spreadsheet]);
-            }
+            return Attributes.Select(a => a.CreateValue(entity, worksheet)).Where(v => v.Attribute.IsRequired || !v.IsEmpty).ToArray();
         }
 
         public override string ToString()
         {
-            return string.Format("{0} ({1}:{2})", Name, Spreadsheet, StartRow);
+            return string.Format("{0}!{1}", Worksheet, StartRow);
         }
     }
 }

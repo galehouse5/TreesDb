@@ -1,11 +1,13 @@
 ﻿@model ImportModel
 
 @{
-    ViewBag.Title = "Import";
+  ViewBag.Title = "Import";
 }
 
-<div class="jumbotron">
-    <h1>Success!</h1>
+@section Header {
+  <h1>
+    <b class="glyphicon glyphicon-ok-sign"></b> Success!
+  </h1>
+}
 
-    <p>Your recordings are being merged with the central database, please check back later.</p>
-</div>
+<p class="lead">Your recordings were merged with the community database.</p>

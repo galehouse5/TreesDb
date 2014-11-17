@@ -30,8 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FluentMigrator">
-      <HintPath>..\packages\FluentMigrator.1.1.2.1\lib\40\FluentMigrator.dll</HintPath>
+    <Reference Include="FluentMigrator, Version=1.2.1.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FluentMigrator.1.2.1.0\lib\40\FluentMigrator.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,12 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Y2014\M3_ArchiveLegacyImportData_Up.sql" />
-    <Compile Include="Y2014\M3_ArchiveLegacyImportData.cs" />
+    <Compile Include="Y2014\M2_RefactorPhotoSchema.cs" />
+    <Compile Include="Y2014\M5_TrackCreatorForVisitsAndMeasurements.cs" />
+    <EmbeddedResource Include="Y2014\M4_ArchiveLegacyImportData_Up.sql" />
+    <Compile Include="Y2014\M4_ArchiveLegacyImportData.cs" />
     <Compile Include="Y2014\M1_CreateExcelImportSchema.cs" />
     <Compile Include="Profiles\RecompileObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Y2014\M2_MigrateLegacyImportData.cs" />
+    <Compile Include="Y2014\M3_MigrateLegacyImportData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Baseline\CreateSchema.sql">
@@ -70,7 +73,7 @@
     <Content Include="Baseline\DropDatabaseUsers.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="Y2014\M3_ArchiveLegacyImportData_Down.sql" />
+    <EmbeddedResource Include="Y2014\M4_ArchiveLegacyImportData_Down.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -84,9 +87,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>echo "$(SolutionDir)packages\FluentMigrator.1.1.2.1\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -t listmigrations &gt; ListMigrations.bat
-echo "$(SolutionDir)packages\FluentMigrator.1.1.2.1\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -profile RecompileObjects &gt; MigrateUp.bat
-echo "$(SolutionDir)packages\FluentMigrator.1.1.2.1\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -t rollback &gt; Rollback.bat
+    <PostBuildEvent>echo "$(SolutionDir)packages\FluentMigrator.1.2.1.0\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -t listmigrations &gt; ListMigrations.bat
+echo "$(SolutionDir)packages\FluentMigrator.1.2.1.0\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -profile RecompileObjects &gt; MigrateUp.bat
+echo "$(SolutionDir)packages\FluentMigrator.1.2.1.0\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -t rollback &gt; Rollback.bat
 copy "$(ProjectDir)\Baseline\$(ConfigurationName)" "$(TargetDir)\Baseline"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

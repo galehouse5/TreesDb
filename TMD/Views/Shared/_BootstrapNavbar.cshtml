@@ -1,49 +1,72 @@
 ﻿@using TMD.Controllers;
 
 <ul class="nav navbar-nav">
-    <li class="@(ViewContext.Controller is MapController ? "active" : null)">
-        <a href="@Url.Action("Index", "Map")">Map</a>
-    </li>
+  <li class="@(ViewContext.Controller is MapController ? "active" : null)">
+    <a href="@Url.Action("Index", "Map")">
+      <b class="glyphicon glyphicon-globe"></b> <span class="hidden-sm">Map</span>
+    </a>
+  </li>
 
-    <li class="dropdown @(ViewContext.Controller is BrowseController ? "active" : null)">
-        <a href="@Url.Action("Index", "Browse")" class="dropdown-toggle" data-toggle="dropdown">
-            Browse <b class="caret"></b>
+  <li class="dropdown @(ViewContext.Controller is BrowseController ? "active" : null)">
+    <a href="@Url.Action("Index", "Browse")" class="dropdown-toggle" data-toggle="dropdown">
+      <b class="glyphicon glyphicon-list"></b> <span class="hidden-sm">Browse</span>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="@Url.Action("Species", "Browse")">
+          <b class="glyphicon glyphicon-leaf"></b> Species
         </a>
-        <ul class="dropdown-menu">
-            <li>
-                <a href="@Url.Action("Species", "Browse")">Species</a>
-            </li>
-            <li>
-                <a href="@Url.Action("Locations", "Browse")">Locations</a>
-            </li>
-        </ul>
-    </li>
+      </li>
+      <li>
+        <a href="@Url.Action("Locations", "Browse")">
+          <b class="glyphicon glyphicon-map-marker"></b> Locations
+        </a>
+      </li>
+    </ul>
+  </li>
 
-    <li class="@(ViewContext.Controller is ImportController ? "active" : null)">
-        <a href="@Url.Action("Index", "Import")">Import</a>
-    </li>
+  <li class="@(ViewContext.Controller is ImportController ? "active" : null)">
+    <a href="@Url.Action("Index", "Import")">
+      <b class="glyphicon glyphicon-import"></b> <span class="hidden-sm">Import</span>
+    </a>
+  </li>
 
-    <li class="@(ViewContext.Controller is MainController ? "active" : null)">
-        <a href="@Url.Action("About", "Main")">About</a>
-    </li>
+  <li class="@(ViewContext.Controller is MainController ? "active" : null)">
+    <a href="@Url.Action("About", "Main")">
+      <b class="glyphicon glyphicon-info-sign"></b> <span class="hidden-sm">About</span>
+    </a>
+  </li>
 </ul>
 
 <ul class="nav navbar-nav navbar-right">
-    @if (User.Identity.IsAuthenticated) {
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <span class="glyphicon glyphicon-cog"></span>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a href="@Url.Action("Edit", "Account")">Settings</a></li>
-                <li><a href="@Url.Action("Logout", "Account")">Logout</a></li>
-            </ul>
-        </li>
-    } else {
+  @if (User.Identity.IsAuthenticated)
+  {
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b class="glyphicon glyphicon-cog"></b> <span class="hidden-sm">Settings</span>
+      </a>
+      <ul class="dropdown-menu">
         <li>
-            <a href="@Url.Action("Logon", "Account")">Logon</a>
+          <a href="@Url.Action("Edit", "Account")">
+            <b class="glyphicon glyphicon glyphicon-user"></b> Account
+          </a>
         </li>
-    }
+        <li>
+          <a href="@Url.Action("Logout", "Account")">
+            <b class="glyphicon glyphicon-off"></b> Logout
+          </a>
+        </li>
+      </ul>
+    </li>
+  }
+  else
+  {
+    <li>
+      <a href="@Url.Action("Logon", "Account")">
+        <b class="glyphicon glyphicon-lock"></b> <span class="hidden-sm">Logon</span>
+      </a>
+    </li>
+  }
 </ul>
 
 @Html.Action("BootstrapMenuWidget", "Search")

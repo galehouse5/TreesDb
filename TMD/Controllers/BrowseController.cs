@@ -24,7 +24,7 @@ namespace TMD.Controllers
         [DefaultReturnUrl]
         public virtual ActionResult TreeDetails(int id)
         {
-            var tree = Repositories.Trees.FindById(id);
+            var tree = Repositories.Trees.Get(id);
             if (tree == null) { return new NotFoundResult(); }
             var orderedMeasurements = from measurement in tree.Measurements
                                       orderby measurement.Measured descending
@@ -50,7 +50,7 @@ namespace TMD.Controllers
         public virtual ActionResult SiteDetails(int id,
             int? page = null, string sort = null, bool? sortAsc = null)
         {
-            var site = Repositories.Sites.FindById(id);
+            var site = Repositories.Sites.Get(id);
             if (site == null) { return new NotFoundResult(); }
             var siteVisits = from visit in site.Visits
                              orderby visit.Visited descending
@@ -174,7 +174,7 @@ namespace TMD.Controllers
             int? subsitesPage = null, string subsitesSort = null, bool? subsitesSortAsc = null,
             string parameterNamePrefix = null)
         {
-            var state = Repositories.Locations.FindVisitedStateById(id);
+            var state = Repositories.Locations.GetVisitedState(id);
             if (state == null) { return new NotFoundResult(); }
             var model = Mapper.Map<VisitedState, BrowseStateModel>(state);
             IEnumerable<StateMeasuredSpecies> allStateSpecies = Repositories.Trees.ListMeasuredSpeciesByStateId(state.Id);

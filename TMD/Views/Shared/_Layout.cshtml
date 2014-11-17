@@ -88,14 +88,13 @@
     <!-- #wrapper -->
     <script src="@Url.ManagedContent("~/js/jquery/jquery-1.4.4.min.js")" type="text/javascript"></script>
     <script src="@Url.ManagedContent("~/js/jquery/jquery-ui-1.8.7.custom.min.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        var applicationRootUrl = '@Request.ApplicationPath.TrimEnd('/')';
+    </script>
     @Scripts.Render("~/js/Plugins.js")
     @Scripts.Render("~/js/Shared.js")
     <script type="text/javascript">
-        var applicationRootUrl = '@Request.ApplicationPath.TrimEnd('/')';
-
-        $(function () {
-            $('body').InitializeUi();
-        });
+        $(function () { $('body').InitializeUi(); });
     </script>
     @RenderSection("Scripts", false)
     @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics) {

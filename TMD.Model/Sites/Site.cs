@@ -9,12 +9,16 @@ namespace TMD.Model.Sites
     [DebuggerDisplay("{Name} ({Id})")]
     public class Site : IEntity
     {
-        protected Site()
-        { }
+        protected internal Site()
+        {
+            Subsites = new List<Subsite>();
+            Visits = new List<SiteVisit>();
+            Visitors = new List<Name>();
+        }
 
         public virtual int Id { get; protected set; }
         public virtual DateTime LastVisited { get; protected set; }
-        public virtual string Name { get; protected set; }
+        public virtual string Name { get; protected internal set; }
         public virtual Coordinates Coordinates { get; protected set; }
         public virtual Coordinates CalculatedCoordinates { get; protected set; }
         public virtual float? RHI5 { get; protected set; }
@@ -81,11 +85,16 @@ namespace TMD.Model.Sites
             return this;
         }
 
-        public virtual IList<SiteVisit> Visits { get; protected set; }
+        public virtual IList<SiteVisit> Visits { get; protected internal set; }
         public virtual int VisitCount { get; protected set; }
         public virtual IList<Subsite> Subsites { get; protected set; }
         public virtual int SubsiteCount { get; protected set; }
         public virtual IList<Name> Visitors { get; protected set; }
+
+        public virtual void AddVisit(SiteVisit visit)
+        {
+            Visits.Add(visit);
+        }
 
         public virtual void AddSubsite(Subsite subsite)
         {

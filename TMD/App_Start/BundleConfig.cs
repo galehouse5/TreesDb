@@ -35,8 +35,14 @@ namespace TMD
             bundles.Add(new ScriptBundle("~/js/vendor/main").Include(
                 "~/js/vendor/jquery-{version}.js",
                 "~/js/vendor/bootstrap.js",
+                "~/js/vendor/bootstrap-filestyle.js",
                 "~/js/vendor/jquery.validate.js",
-                "~/js/vendor/jquery.validate.unobtrusive.js"));
+                "~/js/vendor/jquery.validate.unobtrusive.js",
+                "~/js/vendor/linq.js",
+                "~/js/vendor/cookies.js"));
+
+            bundles.Add(new ScriptBundle("~/js/import").Include(
+                "~/js/import/*.js"));
 
             // css bundles
             bundles.Add(new StyleBundle("~/css/Shared.css").Include(
@@ -57,8 +63,11 @@ namespace TMD
                 "~/css/theme-login.css"));
 
             bundles.Add(new StyleBundle("~/css/vendor/main").Include(
-                "~/css/vendor/bootstrap.css",
-                "~/css/vendor/bootstrap-theme.css"));
+                "~/css/bootstrap/bootstrap.css",
+                "~/css/bootstrap/theme.css"));
+
+            bundles.Add(new ScriptBundle("~/css/import").Include(
+                "~/css/import.css"));
         }
     }
 }

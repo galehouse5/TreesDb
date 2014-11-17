@@ -1,44 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
-                   assembly="TMD.Model"
-                   namespace="TMD.Model.Photos" 
-                   schema="Photos"
-                   auto-import="false">
-  
-  <class name="Photo" table="Photos">
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="TMD.Model" namespace="TMD.Model.Photo" auto-import="false">
+  <class name="PhotoFile" table="PhotoFiles" lazy="false">
     <id name="Id">
       <generator class="native" />
     </id>
     <property name="Created" />
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
-    <component name="Size">
-      <property name="Height" />
-      <property name="Width" />
-    </component>
-    <property name="Bytes" />
+    <property name="Filename" />
+    <property name="Size" />
+    <property name="Width" />
+    <property name="Height" />
     <property name="Format" />
   </class>
 
-  <class name="PhotoReferenceBase" abstract="true" table="[References]">
+  <class name="PhotoReference" abstract="true" table="PhotoReferences" lazy="false">
     <id name="Id">
       <generator class="native" />
     </id>
     <discriminator column="Type"/>
-    <many-to-one name="Photo" column="PhotoId" cascade="save-update"></many-to-one>
-    <subclass name="PublicPhotoReference" discriminator-value="1">
+    <many-to-one name="File" column="PhotoFileId" cascade="save-update"></many-to-one>
+
+    <subclass name="PublicPhotoReference" discriminator-value="1" lazy="false">
     </subclass>
-    <subclass name="TMD.Model.Sites.SubsitePhotoReference" discriminator-value="4">
+
+    <subclass name="TMD.Model.Sites.SubsitePhotoReference" discriminator-value="4" lazy="false">
       <many-to-one name="Subsite" column="SubsiteId"></many-to-one>
     </subclass>
-    <subclass name="TMD.Model.Sites.SubsiteVisitPhotoReference" discriminator-value="5">
+
+    <subclass name="TMD.Model.Sites.SubsiteVisitPhotoReference" discriminator-value="5" lazy="false">
       <many-to-one name="SubsiteVisit" column="SubsiteVisitId"></many-to-one>
     </subclass>
-    <subclass name="TMD.Model.Trees.TreePhotoReference" discriminator-value="6">
+
+    <subclass name="TMD.Model.Trees.TreePhotoReference" discriminator-value="6" lazy="false">
       <many-to-one name="Tree" column="TreeId"></many-to-one>
     </subclass>
-    <subclass name="TMD.Model.Trees.TreeMeasurementPhotoReference" discriminator-value="7">
-      <many-to-one name="TreeMeasurement" column="TreeMeasurementId"></many-to-one>
+
+    <subclass name="TMD.Model.Trees.TreeMeasurementPhotoReference" discriminator-value="7" lazy="false">
+      <many-to-one name="Measurement" column="MeasurementId"></many-to-one>
     </subclass>
   </class>
-  
 </hibernate-mapping>

@@ -1,5 +1,4 @@
-﻿using OfficeOpenXml;
-using System;
+﻿using TMD.Model.Excel;
 using System.Collections.Generic;
 using TMD.Model.ExcelImport.Values;
 
@@ -7,17 +6,18 @@ namespace TMD.Model.ExcelImport.Attributes
 {
     public class ExcelImportFloatAttribute : ExcelImportAttribute
     {
-        protected ExcelImportFloatAttribute()
+        public ExcelImportFloatAttribute(byte id, string name, int? column = null)
+            : base(id, name, column)
         { }
 
-        public float? MinInclusive { get; private set; }
-        public float? MaxInclusive { get; private set; }
-        public float? MinExclusive { get; private set; }
-        public float? MaxExclusive { get; private set; }
+        public float? MinInclusive { get; set; }
+        public float? MaxInclusive { get; set; }
+        public float? MinExclusive { get; set; }
+        public float? MaxExclusive { get; set; }
 
         public override string ParseValidationErrorFormat
         {
-            get { return "{0} must be a number"; }
+            get { return "{0} must be a number."; }
         }
 
         public override object GetValue(object rawValue)
@@ -32,24 +32,32 @@ namespace TMD.Model.ExcelImport.Attributes
             return (float?)value;
         }
 
-        protected override IEnumerable<string> GetAdditionalValidationErrors(object value)
+        public override IEnumerable<string> GetErrors(ExcelImportValue value, IEnumerable<ExcelImportEntity> context)
         {
-            if (MinInclusive.HasValue && (float?)value < MinInclusive)
-                yield return string.Format("{0} must be greater than or equal to {1}", Name, MinInclusive);
+            foreach (string error in base.GetErrors(value, context))
+                yield return error;
 
-            if (MaxInclusive.HasValue && (float?)value > MaxInclusive)
-                yield return string.Format("{0} must be less than or equal to {1}", Name, MaxInclusive);
+            if (value.IsEmpty)
+                yield break;
 
-            if (MinExclusive.HasValue && (float?)value <= MinExclusive)
-                yield return string.Format("{0} must be greater than {1}", Name, MinExclusive);
+            float? floatValue = (float?)value.Value;
 
-            if (MaxExclusive.HasValue && (float?)value >= MaxExclusive)
-                yield return string.Format("{0} must be less than {1}", Name, MaxExclusive);
+            if (MinInclusive.HasValue && floatValue < MinInclusive)
+                yield return string.Format("{0} must be greater than or equal to {1}.", Name, MinInclusive);
+
+            if (MaxInclusive.HasValue && floatValue > MaxInclusive)
+                yield return string.Format("{0} must be less than or equal to {1}.", Name, MaxInclusive);
+
+            if (MinExclusive.HasValue && floatValue <= MinExclusive)
+                yield return string.Format("{0} must be greater than {1}.", Name, MinExclusive);
+
+            if (MaxExclusive.HasValue && floatValue >= MaxExclusive)
+                yield return string.Format("{0} must be less than {1}.", Name, MaxExclusive);
         }
 
-        public override ExcelImportValue CreateValue(ExcelImportEntity entity, ExcelWorksheet sheet)
+        public override ExcelImportValue CreateValue(ExcelImportEntity entity, IExcelWorksheet worksheet)
         {
-            return ExcelImportFloatValue.Create(entity, this, sheet);
+            return ExcelImportFloatValue.Create(entity, this, worksheet);
         }
     }
 }

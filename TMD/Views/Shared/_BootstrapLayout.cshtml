@@ -1,56 +1,65 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="@Url.ManagedContent("~/images/favicon.ico")" rel="Shortcut Icon" type="image/x-icon" />
-    
-    <title>@ViewBag.Title - TMD</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="@Url.ManagedContent("~/images/favicon.ico")" rel="Shortcut Icon" type="image/x-icon" />
 
-    @Styles.Render("~/css/vendor/main")
-    @Styles.Render("~/css/main.css")
-    @RenderSection("Styles", required: false)
+  <title>@ViewBag.Title - TMD</title>
 
-    @*TODO: block IE 8*@
-    @*TODO: warn about javascript*@
+  @Styles.Render("~/css/vendor/main")
+  @Styles.Render("~/css/main.css")
+  @RenderSection("Styles", required: false)
+
+  @*TODO: block IE 8*@
+  @*TODO: warn about javascript*@
 </head>
 <body>
-    <div class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="@Url.Action("Index", "Main")">
-                    <img src="@Url.ManagedContent("~/images/logo-small.png")" alt="Tree Measurement Database" />
-                </a>
-            </div>
+  <noscript>
 
-            <div class="navbar-collapse collapse">
-                @Html.Partial("_BootstrapNavbar")
-            </div>
-        </div>
-    </div>
+  </noscript>
 
-    @RenderSection("Header", required: false)
-
+  <div class="navbar navbar-default">
     <div class="container">
-        @RenderBody()
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="@Url.Action("Index", "Main")">
+          <img src="@Url.ManagedContent("~/images/logo-sm.png")" alt="Tree Measurement Database" />
+        </a>
+      </div>
+
+      <div class="navbar-collapse collapse">
+        @Html.Partial("_BootstrapNavbar")
+      </div>
     </div>
+  </div>
 
-    <footer>
-        @Html.Partial("_BootstrapFooter")
-    </footer>
+  @if (IsSectionDefined("Header"))
+  {
+    <header class="container">
+      @RenderSection("Header", false)
+    </header>
+  }
 
-    @Scripts.Render("~/js/vendor/main")
-    @RenderSection("Scripts", false)
+  <div class="container">
+    @RenderBody()
+  </div>
 
-    @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics) {
-        @Html.Partial("GoogleAnalyticsScript", WebApplicationRegistry.Settings.GoogleAnalyticsPropertyID)
-    }
+  @Html.Partial("_BootstrapFooter")
+
+  @Scripts.Render("~/js/vendor/main")
+  @RenderSection("Scripts", required: false)
+
+  @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics)
+  {
+    @Html.Partial("GoogleAnalyticsScript", WebApplicationRegistry.Settings.GoogleAnalyticsPropertyID)
+  }
 </body>
 </html>

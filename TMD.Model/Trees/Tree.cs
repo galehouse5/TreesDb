@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using TMD.Model.Extensions;
-using TMD.Model.Photos;
+using TMD.Model.Photo;
 using TMD.Model.Sites;
-using TMD.Model.Users;
 
 namespace TMD.Model.Trees
 {
     [DebuggerDisplay("{ScientificName} ({Id})")]
     public class Tree : IEntity
     {
-        protected Tree()
-        { }
+        protected internal Tree()
+        {
+            Measurements = new List<Measurement>();
+            Photos = new List<PhotoReference>();
+            Measurers = new List<Name>();
+        }
 
         public virtual int Id { get; protected set; }
         public virtual Subsite Subsite { get; protected internal set; }
@@ -36,7 +39,7 @@ namespace TMD.Model.Trees
         public virtual float? ChampionPoints { get; protected set; }
         public virtual float? AbbreviatedChampionPoints { get; protected set; }
 
-        public virtual IList<IPhoto> Photos { get; protected set; }
+        public virtual IList<PhotoReference> Photos { get; protected set; }
         public virtual Measurement LastMeasurement { get { return (from m in Measurements orderby m.Measured select m).Last(); } }
         public virtual IList<Name> Measurers { get; protected set; }
 
@@ -69,7 +72,7 @@ namespace TMD.Model.Trees
             ChampionPoints = LastMeasurement.ChampionPoints;
             AbbreviatedChampionPoints = LastMeasurement.AbbreviatedChampionPoints;
             Photos.RemoveAll().AddRange(from photo in LastMeasurement.Photos 
-                                        select new TreePhotoReference(photo.ToPhoto(), this));
+                                        select new TreePhotoReference(photo.File, this));
             Measurers.RemoveAll().AddRange(from measurement in Measurements
                                            from measurer in measurement.Measurers
                                            select measurer).Distinct();
@@ -120,19 +123,6 @@ namespace TMD.Model.Trees
                 return false;
 
             return true;
-        }
-    }
-
-    public class TreePhotoReference : PhotoReferenceBase
-    {
-        protected TreePhotoReference() { }
-        protected internal TreePhotoReference(Photo photo, Tree tree) : base(photo) { this.Tree = tree; }
-        public virtual Tree Tree { get; protected set; }
-        public override bool IsAuthorizedToView(User user) { return true; }
-
-        public override IList<Name> Photographers
-        {
-            get { return Tree.Measurers; }
         }
     }
 }

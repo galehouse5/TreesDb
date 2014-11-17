@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using NHibernate;
 using TMD.Model;
-using NHibernate;
 
 namespace TMD.Infrastructure
 {
@@ -58,9 +54,9 @@ namespace TMD.Infrastructure
             };
         }
 
-        public void Refresh(object obj)
+        public void Refresh(object instance)
         {
-            Session.Refresh(obj);
+            Session.Refresh(instance);
         }
 
         public void Flush()
@@ -75,6 +71,11 @@ namespace TMD.Infrastructure
                 m_Session.Dispose();
             }
             m_Session = null;
-        }        
+        }
+
+        public void Evict(object instance)
+        {
+            Session.Evict(instance);
+        }
     }
 }

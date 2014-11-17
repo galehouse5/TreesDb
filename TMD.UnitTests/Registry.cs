@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using log4net.Config;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StructureMap;
 using TMD.Infrastructure;
 using TMD.Infrastructure.Repositories;
@@ -12,6 +13,8 @@ namespace TMD.UnitTests
         [AssemblyInitialize]
         public static void Initialize(TestContext tc)
         {
+            XmlConfigurator.Configure();
+
             ObjectFactory.Initialize(x =>
             {
                 x.AddRegistry(new RepositoryRegistry());

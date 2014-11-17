@@ -1,11 +1,15 @@
 ﻿using System.Collections.Generic;
+using TMD.Model.Users;
 
 namespace TMD.Model.Trees
 {
     public interface ITreeRepository
     {
         void Save(Tree tree);
-        Tree FindById(int id);
+        void DeleteMeasurements(User creator);
+
+        Tree Get(int id);
+
         IList<Tree> ListAll();
         IList<Tree> ListByNameAndSiteId(string botanicalName, string commonName, int siteId);
         IList<Tree> ListByState(int stateId);

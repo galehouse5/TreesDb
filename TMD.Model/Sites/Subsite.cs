@@ -4,24 +4,28 @@ using System.Diagnostics;
 using System.Linq;
 using TMD.Model.Extensions;
 using TMD.Model.Locations;
-using TMD.Model.Photos;
+using TMD.Model.Photo;
 using TMD.Model.Trees;
-using TMD.Model.Users;
 
 namespace TMD.Model.Sites
 {
     [DebuggerDisplay("{Name} ({Id})")]
     public class Subsite : IEntity
     {
-        protected Subsite()
-        { }
+        protected internal Subsite()
+        {
+            Trees = new List<Tree>();
+            Visits = new List<SubsiteVisit>();
+            Photos = new List<PhotoReference>();
+            Visitors = new List<Name>();
+        }
 
         public virtual int Id { get; protected set; }
         public virtual Site Site { get; protected internal set; }
         public virtual DateTime LastVisited { get; protected set; }
-        public virtual string Name { get; protected set; }
-        public virtual State State { get; protected set; }
-        public virtual string County { get; protected set; }
+        public virtual string Name { get; protected internal set; }
+        public virtual State State { get; protected internal set; }
+        public virtual string County { get; protected internal set; }
         public virtual string OwnershipType { get; protected set; }
         public virtual Coordinates Coordinates { get; protected set; }
         public virtual Coordinates CalculatedCoordinates { get; protected set; }
@@ -33,7 +37,7 @@ namespace TMD.Model.Sites
         public virtual float? RGI5 { get; protected set; }
         public virtual float? RGI10 { get; protected set; }
         public virtual float? RGI20 { get; protected set; }
-        public virtual IList<IPhoto> Photos { get; protected set; }
+        public virtual IList<PhotoReference> Photos { get; protected set; }
         public virtual int TreesWithSpecifiedCoordinatesCount { get; protected set; }
         public virtual int VisitCount { get; protected set; }
         public virtual SubsiteVisit LastVisit { get { return (from v in Visits orderby v.Visited select v).Last(); } }
@@ -100,7 +104,7 @@ namespace TMD.Model.Sites
             RGI5 = CalculateRGI(5);
             RGI10 = CalculateRGI(10);
             RGI20 = CalculateRGI(20);
-            Photos.RemoveAll().AddRange(from photo in LastVisit.Photos select new SubsitePhotoReference(photo.ToPhoto(), this));
+            Photos.RemoveAll().AddRange(LastVisit.Photos.Select(p => new SubsitePhotoReference(p.File, this)));
             Visitors.RemoveAll().AddRange((from visit in Visits
                                           from visitor in visit.Visitors
                                           select visitor).Distinct());
@@ -109,7 +113,7 @@ namespace TMD.Model.Sites
             return this;
         }
 
-        public virtual IList<SubsiteVisit> Visits { get; protected set; }
+        public virtual IList<SubsiteVisit> Visits { get; protected internal set; }
         public virtual IList<Tree> Trees { get; protected set; }
 
         public virtual void AddVisit(SubsiteVisit visit)
@@ -190,19 +194,6 @@ namespace TMD.Model.Sites
         {
             Tree tree = Trees.First(t => t.ShouldMerge(otherTree));
             return tree.Merge(otherTree);
-        }
-    }
-
-    public class SubsitePhotoReference : PhotoReferenceBase
-    {
-        protected SubsitePhotoReference() { }
-        protected internal SubsitePhotoReference(Photo photo, Subsite subsite) : base(photo) { this.Subsite = subsite; }
-        public virtual Subsite Subsite { get; protected set; }
-        public override bool IsAuthorizedToView(User user) { return true; }
-
-        public override IList<Name> Photographers
-        {
-            get { return Subsite.Visitors; }
         }
     }
 }

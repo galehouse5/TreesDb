@@ -1,15 +1,58 @@
-﻿@media (min-width: 768px) {
-    .navbar {
-        .navbar-collapse {
-            margin-top: 40px;
-        }
+﻿@import "bootstrap/variables.less";
 
-        .navbar-form .input-group {
-            width: 270px;
-        }
+.navbar-header {
+    height: 90px;
+
+
+    .navbar-toggle {
+        margin-top: 48px;
     }
 }
 
-.navbar .glyphicon {
-    font-size: 15px;
+@media (min-width: 768px) {
+    .navbar-collapse {
+        margin-top: 40px;
+    }
+
+    .navbar-form .input-group {
+        width: 300px;
+    }
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+/* begin footer styles */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 90px;
+}
+
+footer {
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 0 !important;
+
+    .navbar-form {
+        margin: 16px auto;
+    }
+}
+
+/* end footer styles */
+
+.bootstrap-filestyle {
+    max-width: 292px;
+}
+
+
+.validation-summary-errors {
+    color: @state-danger-text;
 }

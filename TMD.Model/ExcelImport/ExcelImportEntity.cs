@@ -1,31 +1,38 @@
-﻿using OfficeOpenXml;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using TMD.Model.Excel;
+using TMD.Model.ExcelImport.Values;
 using TMD.Model.Users;
 
 namespace TMD.Model.ExcelImport
 {
-    public class ExcelImportEntity
+    public abstract class ExcelImportEntity
     {
-        protected ExcelImportEntity()
-        { }
-
         public int ID { get; private set; }
-        public ExcelImportEntityType EntityType { get; private set; }
+        public abstract ExcelImportEntityType EntityType { get; }
         public int RowIndex { get; private set; }
-        public User User { get; private set; }
+        public User User { get; protected internal set; }
 
         public int Row
         {
             get { return EntityType.StartRow + RowIndex; }
-            private set { RowIndex = value - EntityType.StartRow; }
+            protected internal set { RowIndex = value - EntityType.StartRow; }
         }
 
-        public IEnumerable<ExcelImportValue> Values { get; private set; }
-
-        public ExcelImportValue this[string name]
+        public IEnumerable<ExcelImportAttribute> Attributes
         {
-            get { return Values.SingleOrDefault(v => v.Attribute.Name.Equals(name)); }
+            get { return EntityType.Attributes; }
+        }
+
+        public IEnumerable<ExcelImportValue> Values { get; protected internal set; }
+
+        public object this[ExcelImportAttribute attribute]
+        {
+            get
+            {
+                ExcelImportValue value = Values.SingleOrDefault(v => v.Attribute.Equals(attribute));
+                return value == null || value.IsEmpty ? null : value.Value;
+            }
         }
 
         public bool IsEmpty
@@ -33,66 +40,44 @@ namespace TMD.Model.ExcelImport
             get { return Values.All(v => v.IsEmpty); }
         }
 
-        public IEnumerable<KeyValuePair<ExcelImportValue, string>> GetValidationErrors()
+        protected KeyValuePair<ExcelImportValue, string> Error(ExcelImportAttribute attribute, string message)
+        {
+            ExcelImportValue value = Values.SingleOrDefault(v => v.Attribute.Equals(attribute))
+                ?? ExcelImportNullValue.Create(this, attribute);
+            return new KeyValuePair<ExcelImportValue, string>(value, message);
+        }
+
+        public virtual IEnumerable<KeyValuePair<ExcelImportValue, string>> GetErrors(IEnumerable<ExcelImportEntity> context)
         {
             return from value in Values
-                   from error in value.GetValidationErrors()
+                   from error in value.GetErrors(context)
                    select new KeyValuePair<ExcelImportValue, string>(value, error);
         }
 
-        public void ShowValidationErrors(IEnumerable<KeyValuePair<ExcelImportValue, string>> errors, ExcelWorksheet sheet)
+        public void ShowErrors(IEnumerable<KeyValuePair<ExcelImportValue, string>> errors, IExcelWorksheet worksheet)
         {
             foreach (ExcelImportAttribute attribute in EntityType.Attributes)
             {
-                using (ExcelRange cell = sheet.Cells[Row, attribute.Column])
+                IExcelCell cell = worksheet.Cell(Row, attribute.Column);
+
+                if (!cell.HasStyle(ExcelStyle.Error))
                 {
-                    if (!ExcelImportValueStyling.Invalid.HasStyle(cell))
-                    {
-                        ExcelImportValueStyling.Attention.SetStyle(cell);
-                    }
+                    cell.SetStyle(ExcelStyle.Warning);
                 }
             }
 
-            foreach (ExcelImportValue value in errors.Select(e => e.Key).Distinct())
+            foreach (var valueErrors in errors.GroupBy(e => e.Key, e => e.Value))
             {
-                value.ShowValidationErrors(errors.Where(e => e.Key.Equals(value)).Select(e => e.Value), sheet);
+                valueErrors.Key.ShowErrors(valueErrors.Distinct(), worksheet);
             }
         }
 
-        public void HideValidationErrors(ExcelWorksheet sheet)
-        {
-            foreach (ExcelImportAttribute attribute in EntityType.Attributes)
-            {
-                using (ExcelRange cell = sheet.Cells[Row, attribute.Column])
-                {
-                    cell.StyleName = sheet.Column(attribute.Column).StyleName;
-                }
-            }
-
-            foreach (ExcelImportValue value in Values)
-            {
-                value.HideValidationErrors(sheet);
-            }
-        }
-
-        public void Fill(ExcelWorksheet sheet)
+        public void Fill(IExcelWorksheet worksheet)
         {
             foreach (ExcelImportValue value in Values)
             {
-                value.Fill(sheet);
+                value.Fill(worksheet);
             }
-        }
-
-        public static ExcelImportEntity Create(ExcelImportEntityType entityType, ExcelWorksheet sheet, int row, User user)
-        {
-            ExcelImportEntity entity = new ExcelImportEntity
-            {
-                EntityType = entityType,
-                Row = row,
-                User = user
-            };
-            entity.Values = entityType.Attributes.Select(a => a.CreateValue(entity, sheet)).Where(v => !v.IsEmpty).ToArray();
-            return entity;
         }
 
         public override string ToString()

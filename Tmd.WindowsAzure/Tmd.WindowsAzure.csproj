@@ -63,7 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlobStoragePhotoStoreProvider.cs" />
+    <Compile Include="BlobStoragePhotoFileStore.cs" />
     <Compile Include="TableStorageErrorLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

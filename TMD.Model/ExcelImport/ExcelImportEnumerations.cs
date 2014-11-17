@@ -47,42 +47,47 @@ namespace TMD.Model.ExcelImport
     public enum ExcelImportHeightMeasurementType
     {
         [Description("Single measurement")]
-        SingleMeasurement,
+        SingleMeasurement = 1,
         [Description("Average of a set")]
-        AverageOfASet,
+        AverageOfASet = 2,
         [Description("Selection from a set")]
-        SelectionFromASet
+        SelectionFromASet = 3
     }
 
     [Description("Crown Spread Measurement Method")]
     public enum ExcelImportCrownSpreadMeasurementMethod
     {
         [Description("Average of max and min")]
-        AverageOfMaxAndMin,
-        Spoke,
-        Estimate
+        AverageOfMaxAndMin = 1,
+        Spoke = 2,
+        Estimate = 3
     }
 
     [Description("Crown Volume Calculation Method")]
     public enum ExcelImportCrownVolumeCalculationMethod
     {
-        Mapping,
+        Mapping = 1,
         [Description("CFF estimate")]
-        CffEstimate
+        CffEstimate = 2
     }
 
     [Description("Trunk Volume Calculation Method")]
     public enum ExcelImportTrunkVolumeCalculationMethod
     {
-        Reticle,
+        Reticle = 1,
         [Description("Tree climb with tape")]
-        TreeClimbWithTape
+        TreeClimbWithTape = 2
     }
 
     [Description("Tree Form Type")]
     public enum ExcelImportTreeFormType
     {
-        Single = 1, Multi = 2, Fusion = 3, Coppice = 4, Colony = 5, Vine = 6
+        Single = 1,
+        Multi = 2,
+        Fusion = 3,
+        Coppice = 4,
+        Colony = 5,
+        Vine = 6
     }
 
     [Description("Tree Status")]

@@ -53,14 +53,14 @@ namespace TMD.Controllers
 
         public virtual ActionResult TreeMarker(int id)
         {
-            var tree = Repositories.Trees.FindById(id);
+            var tree = Repositories.Trees.Get(id);
             var marker = Mapper.Map<Model.Trees.Tree, MapMarkerModel>(tree);
             return Json(new { Markers = new [] { marker.ToJson(Url) } }, JsonRequestBehavior.AllowGet);
         }
 
         public virtual ActionResult SubsiteMarker(int id, int subsiteId)
         {
-            var site = Repositories.Sites.FindById(id);
+            var site = Repositories.Sites.Get(id);
             var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
             var marker = Mapper.Map<Model.Sites.Subsite, MapMarkerModel>(subsite);
             return Json(new { Markers = new[] { marker.ToJson(Url) } }, JsonRequestBehavior.AllowGet);
@@ -68,21 +68,21 @@ namespace TMD.Controllers
 
         public virtual ActionResult SiteMarker(int id)
         {
-            var site = Repositories.Sites.FindById(id);
+            var site = Repositories.Sites.Get(id);
             var marker = Mapper.Map<Model.Sites.Site, MapMarkerModel>(site);
             return Json(new { Markers = new[] { marker.ToJson(Url) } }, JsonRequestBehavior.AllowGet);
         }
 
         public virtual ActionResult SiteMarkerInfo(int id)
         {
-            var site = Repositories.Sites.FindById(id);
+            var site = Repositories.Sites.Get(id);
             var model = Mapper.Map<Model.Sites.Site, MapSiteMarkerInfoModel>(site);
             return PartialView(model);
         }
 
         public virtual ActionResult SubsiteMarkerInfo(int id, int subsiteId)
         {
-            var site = Repositories.Sites.FindById(id);
+            var site = Repositories.Sites.Get(id);
             var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
             var model = Mapper.Map<Model.Sites.Subsite, MapSubsiteMarkerInfoModel>(subsite);
             return PartialView(model);
@@ -90,7 +90,7 @@ namespace TMD.Controllers
 
         public virtual ActionResult TreeMarkerInfo(int id)
         {
-            var tree = Repositories.Trees.FindById(id);
+            var tree = Repositories.Trees.Get(id);
             var model = Mapper.Map<Model.Trees.Tree, MapTreeMarkerInfoModel>(tree);
             return PartialView(model);
         }

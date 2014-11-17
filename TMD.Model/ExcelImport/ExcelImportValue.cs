@@ -1,20 +1,26 @@
-﻿using OfficeOpenXml;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using TMD.Model.Excel;
 
 namespace TMD.Model.ExcelImport
 {
     public abstract class ExcelImportValue
     {
         public int ID { get; set; }
+        protected byte AttributeID { get; set; }
         public ExcelImportEntity Entity { get; protected set; }
-        public ExcelImportAttribute Attribute { get; protected set; }
-
         public object RawValue { get; protected set; }
 
         public bool IsEmpty
         {
             get { return string.IsNullOrWhiteSpace((RawValue ?? string.Empty).ToString()); }
+        }
+
+        public ExcelImportAttribute Attribute
+        {
+            get { return Entity.Attributes.Single(a => a.ID == AttributeID); }
+            set { AttributeID = value.ID; }
         }
 
         public object Value
@@ -23,35 +29,32 @@ namespace TMD.Model.ExcelImport
             set { RawValue = Attribute.GetRawValue(value); }
         }
 
-        public IEnumerable<string> GetValidationErrors()
+        public IEnumerable<string> GetErrors(IEnumerable<ExcelImportEntity> context)
         {
-            return Attribute.GetValidationErrors(this);
+            return Attribute.GetErrors(this, context);
         }
 
-        public void ShowValidationErrors(IEnumerable<string> errors, ExcelWorksheet sheet)
+        public void ShowErrors(IEnumerable<string> errors, IExcelWorksheet worksheet)
         {
-            using (ExcelRange cell = sheet.Cells[Entity.Row, Attribute.Column])
-            {
-                sheet.Comments.Add(cell, string.Join(Environment.NewLine, errors), "TMD");
-                ExcelImportValueStyling.Invalid.SetStyle(cell);
-                sheet.Select(cell.Address, true);
-            }
+            IExcelCell cell = worksheet.Cell(Entity.Row, Attribute.Column);
+            cell.SetStyle(ExcelStyle.Error);
+            cell.SetActive();
+
+            IExcelComment comment = worksheet.AddComment(Entity.Row, Attribute.Column);
+            comment.Note = string.Join(Environment.NewLine, errors);
+            comment.Author = "TMD";
         }
 
-        public void HideValidationErrors(ExcelWorksheet sheet)
+        public void Fill(IExcelWorksheet worksheet)
         {
-            using (ExcelRange cell = sheet.Cells[Entity.Row, Attribute.Column])
-            {
-                if (null != cell.Comment)
-                {
-                    sheet.Comments.Remove(cell.Comment);
-                }
-            }
+            IExcelCell cell = worksheet.Cell(Entity.Row, Attribute.Column);
+
+            cell.Value = Attribute.Format(RawValue);
         }
 
-        public void Fill(ExcelWorksheet sheet)
+        public override string ToString()
         {
-            sheet.SetValue(Entity.Row, Attribute.Column, Attribute.Format(RawValue));
+            return string.Format("{0} = {1}", Attribute.Name, IsEmpty ? null : Value);
         }
     }
 }

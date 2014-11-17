@@ -3,7 +3,7 @@
                    assembly="TMD.Model"
                    namespace="TMD.Model">
 
-  <class name="TMD.Model.Locations.Country" table="Locations.Countries" mutable="false">
+  <class name="TMD.Model.Locations.Country" table="Locations.Countries" mutable="false" lazy="false">
     <cache usage="read-only" />
     <id name="Id">
       <generator class="native" />
@@ -31,7 +31,7 @@
     </component>
   </class>
   
-  <class name="TMD.Model.Locations.State" table="Locations.States" mutable="false">
+  <class name="TMD.Model.Locations.State" table="Locations.States" mutable="false" lazy="false">
     <cache usage="read-only" />
     <id name="Id">
       <generator class="native" />
@@ -60,7 +60,7 @@
     </component>
   </class>
 
-  <class name="TMD.Model.Locations.VisitedState" table="Locations.VisitedStates" mutable="false">
+  <class name="TMD.Model.Locations.VisitedState" table="Locations.VisitedStates" mutable="false" lazy="false">
     <cache usage="read-only" />
     <id name="Id">
       <generator class="native" />

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NHibernate;
-using TMD.Model;
-using System.Collections;
+﻿using NHibernate;
 using NHibernate.Criterion;
+using System;
+using System.Collections;
+using System.Linq;
+using TMD.Model;
 
 namespace TMD.Infrastructure
 {

@@ -1,60 +1,49 @@
 ﻿using AutoMapper;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Web.Mvc;
 using TMD.Model;
-using TMD.Model.Photos;
+using TMD.Model.Photo;
 using TMD.Models;
 
 namespace TMD.Controllers
 {
     public partial class PhotosController : ControllerBase
     {
+        private IRepository<PhotoReference> repository;
+
+        public PhotosController(IRepository<PhotoReference> repository)
+        {
+            this.repository = repository;
+        }
+
         [OutputCache(CacheProfile = "Photos")]
         public virtual ActionResult Caption(int id)
         {
-            PhotoReferenceBase reference = Repositories.Photos.FindReferenceById(id);
-            if (!reference.IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
-            return PartialView("CaptionPartial", Mapper.Map<PhotoReferenceBase, PhotoCaptionModel>(reference));
+            PhotoReference reference = repository.Get(id);
+            if (!reference.CanView(User))
+                return new UnauthorizedResult();
+
+            return PartialView("CaptionPartial", Mapper.Map<PhotoReference, PhotoCaptionModel>(reference));
         }
 
         [HttpGet, OutputCache(CacheProfile = "Photos")]
-        public virtual ActionResult View(int id, PhotoSize size)
+        public virtual ActionResult View(int id, ImageSize size)
         {
-            var photo = Repositories.Photos.FindById(id);
-            if (!Repositories.Photos.ListAllReferencesByPhotoId(id).IsAuthorizedToView(User)) { return new UnauthorizedResult(); }
-            using (Bitmap image = photo.Get(size))
+            PhotoReference reference = repository.Get(id);
+
+            if (!reference.CanView(User))
+                return new UnauthorizedResult();
+
+            using (Bitmap image = reference.GetImage(size))
             {
                 Stream data = new MemoryStream();
-                image.Save(data, photo.ImageFormat);
+                image.Save(data, ImageFormat.Jpeg);
                 data.Position = 0;
-                return File(data, photo.ContentType);
+
+                return File(data, "image/jpeg");
             }
-        }
-
-        [HttpPost]
-        public virtual ActionResult Remove(int id)
-        {
-            var reference = Repositories.Photos.FindReferenceById(id);
-            if (!reference.IsAuthorizedToRemove(User)) return new UnauthorizedResult();
-
-            using (var uow = UnitOfWork.Begin())
-            {
-                Repositories.Photos.Remove(reference);
-                uow.Persist();
-            }
-
-            return PhotoRemoval(reference);
-        }
-
-        protected ActionResult PhotoRemoval(IPhoto photo)
-        {
-            return Json(new { Success = true });
-        }
-
-        public virtual ActionResult PhotoAdded(PhotoGalleryModel gallery)
-        {
-            return PartialView("EditPhotoGalleryPartial", gallery);
         }
     }
 }

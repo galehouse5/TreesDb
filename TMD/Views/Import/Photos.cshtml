@@ -1,0 +1,71 @@
+﻿@model IEnumerable<string>
+
+@{
+  ViewBag.Title = "Import";
+}
+
+@section Scripts {
+  @Scripts.Render("~/js/import")
+
+  <script>
+    var $photos = $('#photos');
+
+    $photos.on('all-uploads-complete', function () {
+      window.location = '@Url.Action("Merge")';
+    })
+
+    new PhotoCollectionPresenter($photos).bind();
+  </script>
+}
+
+@section Styles {
+  @Styles.Render("~/css/import")
+}
+
+@functions {
+  IEnumerable<string> getClearfixClasses(int i)
+  {
+    if (i % 2 == 1) yield return "visible-xs";
+    if (i % 3 == 2) yield return "visible-sm";
+    if (i % 4 == 3) yield return "visible-md";
+    if (i % 4 == 3) yield return "visible-lg";
+  }
+}
+
+@section Header {
+  <h1>
+    <b class="glyphicon glyphicon-camera"></b> Photos
+  </h1>
+}
+
+<p class="lead">Drag and drop your photos anywhere below to start uploading:</p>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "photos" }))
+{
+  @Html.AntiForgeryToken()
+
+  <div class="row">
+    @{ int i = 0; }
+
+    @foreach (string filename in Model)
+    {
+      <div class="col-xs-6 col-sm-4 col-md-3" data-photo="@filename">
+        <div class="thumbnail text-center">
+          <span data-photo-icon class="glyphicon glyphicon-question-sign"></span>
+          <img data-photo-image alt="@filename thumbnail" style="display: none;" />
+          <h4 data-photo-label>@filename</h4>
+        </div>
+      </div>
+
+      if (getClearfixClasses(i).Any())
+      {
+        // improves formatting when thumbnails in the same row have different heights
+        <div class="clearfix @string.Join(" ", getClearfixClasses(i))"></div>
+      }
+
+      i++;
+    }
+  </div>
+
+  <input type="file" name="Photos" multiple accept="image/*" title="Click to choose your photos" />
+}

@@ -59,6 +59,8 @@
     <id name="Id">
       <generator class="native"/>
     </id>
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <property name="ImportingTripId" />
     <property name="Visited" />
     <property name="Name" />
@@ -154,6 +156,8 @@
     <id name="Id">
       <generator class="native"/>
     </id>
+    <property name="Created" />
+    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
     <property name="ImportingTripId" />
     <many-to-one name="Subsite" column="SubsiteId" cascade="none" />
     <property name="Visited" />
@@ -194,5 +198,5 @@
       </composite-element>
     </bag>
   </class>
-  
+
 </hibernate-mapping>

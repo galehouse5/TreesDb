@@ -58,11 +58,8 @@
     <Reference Include="Elmah">
       <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
     </Reference>
-    <Reference Include="EPPlus, Version=3.1.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EPPlus.3.1.3.3\lib\net35\EPPlus.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -130,6 +127,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\ModelBinderConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\StructureMapConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -177,6 +175,7 @@
     <Compile Include="Mappings\ValidationMapping\PathMapper.cs" />
     <Compile Include="Mappings\ValidationMapping\PathMatcher.cs" />
     <Compile Include="Extensions\ModelMetadataExtensions.cs" />
+    <Compile Include="ModelBinders\ImageSizeModelBinder.cs" />
     <Compile Include="Models\AccountModel.cs" />
     <Compile Include="Models\BrowseModel.cs" />
     <Compile Include="Models\ErrorModels.cs" />
@@ -191,16 +190,105 @@
     <Compile Include="WebUserSessionProvider.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap\bootstrap.css">
+      <DependentUpon>bootstrap.less</DependentUpon>
+    </Content>
+    <Content Include="css\bootstrap\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="css\bootstrap\theme.css">
+      <DependentUpon>theme.less</DependentUpon>
+    </Content>
+    <Content Include="css\bootstrap\theme.min.css">
+      <DependentUpon>theme.css</DependentUpon>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\bootstrap\wells.less" />
+    <Content Include="css\bootstrap\variables.less" />
+    <Content Include="css\bootstrap\utilities.less" />
+    <Content Include="css\bootstrap\type.less" />
+    <Content Include="css\bootstrap\tooltip.less" />
+    <Content Include="css\bootstrap\thumbnails.less" />
+    <Content Include="css\bootstrap\theme.less" />
+    <Content Include="css\bootstrap\tables.less" />
+    <Content Include="css\bootstrap\scaffolding.less" />
+    <Content Include="css\bootstrap\responsive-utilities.less" />
+    <Content Include="css\bootstrap\responsive-embed.less" />
+    <Content Include="css\bootstrap\progress-bars.less" />
+    <Content Include="css\bootstrap\print.less" />
+    <Content Include="css\bootstrap\popovers.less" />
+    <Content Include="css\bootstrap\panels.less" />
+    <Content Include="css\bootstrap\pagination.less" />
+    <Content Include="css\bootstrap\pager.less" />
+    <Content Include="css\bootstrap\normalize.less" />
+    <Content Include="css\bootstrap\navs.less" />
+    <Content Include="css\bootstrap\navbar.less" />
+    <Content Include="css\bootstrap\modals.less" />
+    <Content Include="css\bootstrap\mixins\vendor-prefixes.less" />
+    <Content Include="css\bootstrap\mixins\text-overflow.less" />
+    <Content Include="css\bootstrap\mixins\text-emphasis.less" />
+    <Content Include="css\bootstrap\mixins\table-row.less" />
+    <Content Include="css\bootstrap\mixins\tab-focus.less" />
+    <Content Include="css\bootstrap\mixins\size.less" />
+    <Content Include="css\bootstrap\mixins\responsive-visibility.less" />
+    <Content Include="css\bootstrap\mixins\resize.less" />
+    <Content Include="css\bootstrap\mixins\reset-filter.less" />
+    <Content Include="css\bootstrap\mixins\progress-bar.less" />
+    <Content Include="css\bootstrap\mixins\panels.less" />
+    <Content Include="css\bootstrap\mixins\pagination.less" />
+    <Content Include="css\bootstrap\mixins\opacity.less" />
+    <Content Include="css\bootstrap\mixins\nav-vertical-align.less" />
+    <Content Include="css\bootstrap\mixins\nav-divider.less" />
+    <Content Include="css\bootstrap\mixins\list-group.less" />
+    <Content Include="css\bootstrap\mixins\labels.less" />
+    <Content Include="css\bootstrap\mixins\image.less" />
+    <Content Include="css\bootstrap\mixins\hide-text.less" />
+    <Content Include="css\bootstrap\mixins\grid-framework.less" />
+    <Content Include="css\bootstrap\mixins\grid.less" />
+    <Content Include="css\bootstrap\mixins\gradients.less" />
+    <Content Include="css\bootstrap\mixins\forms.less" />
+    <Content Include="css\bootstrap\mixins\clearfix.less" />
+    <Content Include="css\bootstrap\mixins\center-block.less" />
+    <Content Include="css\bootstrap\mixins\buttons.less" />
+    <Content Include="css\bootstrap\mixins\border-radius.less" />
+    <Content Include="css\bootstrap\mixins\background-variant.less" />
+    <Content Include="css\bootstrap\mixins\alerts.less" />
+    <Content Include="css\bootstrap\mixins.less" />
+    <Content Include="css\bootstrap\media.less" />
+    <Content Include="css\bootstrap\list-group.less" />
+    <Content Include="css\bootstrap\labels.less" />
+    <Content Include="css\bootstrap\jumbotron.less" />
+    <Content Include="css\bootstrap\input-groups.less" />
+    <Content Include="css\bootstrap\grid.less" />
+    <Content Include="css\bootstrap\glyphicons.less" />
+    <Content Include="css\bootstrap\forms.less" />
+    <Content Include="css\bootstrap\dropdowns.less" />
+    <Content Include="css\bootstrap\component-animations.less" />
+    <Content Include="css\bootstrap\code.less" />
+    <Content Include="css\bootstrap\close.less" />
+    <Content Include="css\bootstrap\carousel.less" />
+    <Content Include="css\bootstrap\buttons.less" />
+    <Content Include="css\bootstrap\button-groups.less" />
+    <Content Include="css\bootstrap\breadcrumbs.less" />
+    <Content Include="css\bootstrap\bootstrap.less" />
+    <Content Include="css\bootstrap\badges.less" />
+    <Content Include="css\bootstrap\alerts.less" />
+    <None Include="css\import.less" />
+    <Content Include="css\import.css">
+      <DependentUpon>import.less</DependentUpon>
+    </Content>
+    <Content Include="css\import.min.css">
+      <DependentUpon>import.css</DependentUpon>
+    </Content>
     <Content Include="css\main.css">
       <DependentUpon>main.less</DependentUpon>
     </Content>
     <Content Include="css\main.min.css">
       <DependentUpon>main.less</DependentUpon>
     </Content>
-    <Content Include="css\vendor\bootstrap-theme.css" />
-    <Content Include="css\vendor\bootstrap-theme.min.css" />
-    <Content Include="css\vendor\bootstrap.css" />
-    <Content Include="css\vendor\bootstrap.min.css" />
     <Content Include="css\custom.css" />
     <Content Include="css\jquery\images\ui-bg_flat_0_000000_40x100.png" />
     <Content Include="css\jquery\images\ui-bg_flat_70_ffffff_40x100.png" />
@@ -234,7 +322,6 @@
     <Content Include="css\theme-screen.css" />
     <Content Include="Emails\EmailVerification.htm" />
     <Content Include="Emails\PasswordAssistance.htm" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="images\accordion_header.png" />
     <Content Include="images\amp-btn-icon-sprite.png" />
@@ -262,7 +349,7 @@
     <Content Include="images\link-menu-arrow.png" />
     <Content Include="images\loader.gif" />
     <Content Include="images\loading.gif" />
-    <Content Include="images\logo-small.png" />
+    <Content Include="images\logo-sm.png" />
     <Content Include="images\page_white_copy.png" />
     <Content Include="images\page_white_go.png" />
     <Content Include="images\pencil.png" />
@@ -283,6 +370,13 @@
     <Content Include="images\Theme\title.png" />
     <Content Include="images\tipsy.gif" />
     <Content Include="images\title.png" />
+    <Content Include="js\import\photo-collection-presenter.js" />
+    <Content Include="js\import\photo-presenter-state.js" />
+    <Content Include="js\import\photo-presenter.js" />
+    <Content Include="js\vendor\bootstrap-filestyle.js" />
+    <Content Include="js\vendor\bootstrap-filestyle.min.js" />
+    <Content Include="js\vendor\cookies.js" />
+    <Content Include="js\vendor\cookies.min.js" />
     <Content Include="js\Search\menu-widget.js" />
     <Content Include="js\jquery\jquery.dataTables.js" />
     <Content Include="js\jquery\jquery.placeholder-1.1.9.js" />
@@ -305,13 +399,11 @@
     <Content Include="js\slate\slate.message.js" />
     <Content Include="js\slate\slate.portlet.js" />
     <Content Include="js\widgets.js" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="css\main.less" />
+    <Content Include="css\main.css.map">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
     <None Include="js\vendor\jquery-1.9.1.intellisense.js" />
-    <Content Include="js\vendor\bootstrap.js" />
-    <Content Include="js\vendor\bootstrap.min.js" />
     <Content Include="js\vendor\jquery-1.9.1.js" />
     <Content Include="js\vendor\jquery-1.9.1.min.js" />
     <Content Include="js\vendor\jquery.validate.unobtrusive.js" />
@@ -319,6 +411,11 @@
     <None Include="js\vendor\jquery.validate-vsdoc.js" />
     <Content Include="js\vendor\jquery.validate.js" />
     <Content Include="js\vendor\jquery.validate.min.js" />
+    <None Include="js\vendor\linq-vsdoc.js" />
+    <Content Include="js\vendor\linq.js" />
+    <Content Include="js\vendor\linq.min.js" />
+    <Content Include="js\vendor\bootstrap.js" />
+    <Content Include="js\vendor\bootstrap.min.js" />
     <Content Include="Views\Account\CompletePasswordAssistance.cshtml" />
     <Content Include="Views\Account\PasswordAssistance.cshtml" />
     <Content Include="Views\Account\CompleteRegistration.cshtml" />
@@ -346,20 +443,16 @@
     <Content Include="Views\Map\SubsiteMarkerInfo.cshtml" />
     <Content Include="Views\Map\TreeMarkerInfo.cshtml" />
     <Content Include="Views\Map\MenuWidget.cshtml" />
-    <Content Include="Views\Photos\EditPhotoGalleryPartial.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Coordinates.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Country.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Distance.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Name.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\ConcatenatedNames.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\PhotoGalleryModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\ObjectReport.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Volume.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Enum.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Elevation.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\State.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\State.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\PhotoGalleryModel.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Enum.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Elevation.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Distance.cshtml" />
@@ -428,7 +521,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="_TMD.xlsx" />
     <None Include="Properties\PublishProfiles\treesdb - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\treesdb - Web Deploy.pubxml" />
     <Content Include="Views\Search\_MenuWidget.cshtml" />
@@ -446,6 +538,9 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Import\Success.cshtml" />
+    <Content Include="Views\Import\Merge.cshtml" />
+    <EmbeddedResource Include="ExcelImportTemplate.xlsx" />
+    <Content Include="Views\Import\Photos.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

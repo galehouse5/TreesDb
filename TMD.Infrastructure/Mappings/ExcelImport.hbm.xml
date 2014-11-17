@@ -2,66 +2,23 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
                    assembly="TMD.Model"
                    namespace="TMD.Model.ExcelImport">
-  <class name="ExcelImportEntityType" table="ExcelImport_EntityTypes" lazy="false">
-    <id name="ID">
-      <generator class="native" />
-    </id>
-    <property name="Name" />
-    <property name="Spreadsheet" />
-    <property name="StartRow" />
-    <bag name="Attributes" fetch="join">
-      <key column="EntityTypeID" />
-      <one-to-many class="ExcelImportAttribute" />
-    </bag>
-  </class>
-
-  <class name="ExcelImportAttribute" table="ExcelImport_Attributes" abstract="true" lazy="false">
-    <id name="ID">
-      <generator class="native" />
-    </id>
-    <discriminator column="Type"/>
-    <many-to-one name="EntityType" column="EntityTypeID" />
-    <property name="Name" />
-    <property name="Column" column="[Column]" />
-    <property name="IsRequired" />
-    <property name="ValueFormat" />
-
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportFloatAttribute" discriminator-value="1" lazy="false">
-      <property name="MinInclusive" column="MinFloatInclusive" />
-      <property name="MaxInclusive" column="MaxFloatInclusive" />
-      <property name="MinExclusive" column="MinFloatExclusive" />
-      <property name="MaxExclusive" column="MaxFloatExclusive" />
-    </subclass>
-    
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportIntegerAttribute" discriminator-value="2" lazy="false">
-      <property name="MinInclusive" column="MinIntegerInclusive" />
-      <property name="MaxInclusive" column="MaxIntegerInclusive" />
-    </subclass>
-    
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportStringAttribute" discriminator-value="3" lazy="false">
-      <property name="MaxLength" column="MaxStringLength" />
-    </subclass>
-
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportBooleanAttribute" discriminator-value="4" lazy="false" />
-
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportEnumerationAttribute" discriminator-value="5" lazy="false">
-      <property name="EnumerationType" />
-    </subclass>
-
-    <subclass name="TMD.Model.ExcelImport.Attributes.ExcelImportDateAttribute" discriminator-value="6" lazy="false" />
-  </class>
-
   <class name="ExcelImportEntity" table="ExcelImport_Entities" lazy="false">
     <id name="ID">
       <generator class="native" />
     </id>
-    <many-to-one name="EntityType" column="EntityTypeID" />
+    <discriminator column="EntityTypeID" />
     <many-to-one name="User" column="UserID" />
     <property name="RowIndex" />
     <bag name="Values" cascade="all" inverse="true" fetch="join">
       <key column="EntityID" />
       <one-to-many class="ExcelImportValue" />
     </bag>
+
+    <subclass name="TMD.Model.ExcelImport.Entities.ExcelImportSite" discriminator-value="1" lazy="false" />
+    <subclass name="TMD.Model.ExcelImport.Entities.ExcelImportSubsite" discriminator-value="2" lazy="false" />
+    <subclass name="TMD.Model.ExcelImport.Entities.ExcelImportTree" discriminator-value="3" lazy="false" />
+    <subclass name="TMD.Model.ExcelImport.Entities.ExcelImportTrunk" discriminator-value="4" lazy="false" />
+    <subclass name="TMD.Model.ExcelImport.Entities.ExcelImportPhoto" discriminator-value="5" lazy="false" />
   </class>
 
   <class name="ExcelImportValue" table="ExcelImport_Values" lazy="false">
@@ -69,8 +26,8 @@
       <generator class="native" />
     </id>
     <discriminator column="Type"/>
+    <property name="AttributeID" />
     <many-to-one name="Entity" column="EntityID" />
-    <many-to-one name="Attribute" column="AttributeID" />
 
     <subclass name="TMD.Model.ExcelImport.Values.ExcelImportFloatValue" discriminator-value="1" lazy="false">
       <property name="FloatValue" />
@@ -88,7 +45,7 @@
       <property name="BooleanValue" />
     </subclass>
 
-    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportEnumerationValue" discriminator-value="5" lazy="false">
+    <subclass name="TMD.Model.ExcelImport.Values.ExcelImportEnumValue" discriminator-value="5" lazy="false">
       <property name="ByteValue" />
     </subclass>
    

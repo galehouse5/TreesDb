@@ -7,7 +7,8 @@ using System.Web.Routing;
 using Tmd.WindowsAzure;
 using TMD.Mappings;
 using TMD.Model;
-using TMD.Model.Photos;
+using TMD.Model.Photo;
+using TMD.Model.Photo.FileStore;
 
 namespace TMD
 {
@@ -24,6 +25,7 @@ namespace TMD
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            ModelBinderConfig.RegisterModelBinders(System.Web.Mvc.ModelBinders.Binders);
 
             Mapper.AddProfile<PhotosMapping>();
             Mapper.AddProfile<MapMapping>();
@@ -31,9 +33,9 @@ namespace TMD
             Mapper.AddProfile<BrowseMapping>();
 
 #if DEBUG
-            PhotoStoreProvider.Current = new DefaultPhotoStoreProvider(Server.MapPath(@"~\PhotoStore"));
+            PhotoFileStore.Current = new LocalPhotoFileStore(Server.MapPath(@"~\PhotoStore"));
 #else
-            PhotoStoreProvider.Current = new BlobStoragePhotoStoreProvider(ConfigurationManager.ConnectionStrings["TmdStorage"].ConnectionString);
+            PhotoFileStore.Current = new BlobStoragePhotoFileStore(ConfigurationManager.ConnectionStrings["TmdStorage"].ConnectionString);
 #endif
         }
 

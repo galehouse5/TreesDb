@@ -1,69 +1,31 @@
-﻿using System.Collections.Generic;
+﻿using NHibernate;
+using NHibernate.Linq;
+using System.Collections.Generic;
 using TMD.Model.Locations;
+using System.Linq;
 
 namespace TMD.Infrastructure.Repositories
 {
     public class LocationRepository : ILocationRepository
     {
-        public Country FindCountryByCode(string code)
+        protected ISession Session
         {
-            return Registry.Session.CreateQuery(@"
-                from Country c 
-                where c.DoubleLetterCode = :code or c.TripleLetterCode = :code or c.Name = :code")
-                .SetParameter("code", code)
-                .UniqueResult<Country>();
+            get { return Registry.Session; }
         }
 
-        public IList<Country> FindAllCountries()
+        public State GetState(int id)
         {
-            return Registry.Session.CreateCriteria<Country>().List<Country>();
+            return Session.Get<State>(id);
         }
 
-        public IList<State> FindAllStates()
+        public VisitedState GetVisitedState(int id)
         {
-            return Registry.Session.CreateCriteria<State>().List<State>();
-        }
-
-        public State FindStateById(int id)
-        {
-            return Registry.Session.Get<State>(id);
-        }
-
-        public State FindStateByCountryAndStateCode(string countryCode, string stateCode)
-        {
-            if (string.IsNullOrWhiteSpace(stateCode))
-            {
-                return null;
-            }
-            return Registry.Session.CreateQuery(@"
-                from State s 
-                inner join fetch s.Country c
-                where (s.DoubleLetterCode = :stateCode or s.TripleLetterCode = :stateCode or s.Name = :stateCode)
-                    and (c.DoubleLetterCode = :countryCode or c.TripleLetterCode = :countryCode or c.Name = :countryCode)")
-                .SetParameter("stateCode", stateCode)
-                .SetParameter("countryCode", countryCode)
-                .UniqueResult<State>();
-        }
-
-        public IList<State> FindStatesByCountryCode(string code)
-        {
-            return Registry.Session.CreateQuery(@"
-                from State s 
-                inner join fetch s.Country c
-                where c.DoubleLetterCode = :code or c.TripleLetterCode = :code or c.Name = :code")
-                .SetParameter("code", code)
-                .SetCacheable(true)
-                .List<State>();
-        }
-
-        public VisitedState FindVisitedStateById(int id)
-        {
-            return Registry.Session.Get<VisitedState>(id);
+            return Session.Get<VisitedState>(id);
         }
 
         public IEnumerable<VisitedState> SearchVisitedStates(string expression, int maxResults)
         {
-            return Registry.Session.CreateSQLQuery(
+            return Session.CreateSQLQuery(
 @"select state.*
 from dbo.SearchVisitedStates(:expression) rank
 join Locations.VisitedStates state
@@ -73,7 +35,11 @@ order by rank.Rank desc")
                 .SetParameter("expression", expression)
                 .SetMaxResults(maxResults)
                 .List<VisitedState>();
-            
+        }
+
+        public IEnumerable<State> GetStates()
+        {
+            return Session.Query<State>().ToArray();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using OfficeOpenXml;
+﻿using TMD.Model.Excel;
 using System.Collections.Generic;
 using TMD.Model.ExcelImport.Values;
 
@@ -6,35 +6,48 @@ namespace TMD.Model.ExcelImport.Attributes
 {
     public class ExcelImportStringAttribute : ExcelImportAttribute
     {
-        protected ExcelImportStringAttribute()
-        { }
+        public ExcelImportStringAttribute(byte id, string name, int? column = null)
+            : base(id, name, column)
+        {
+            MaxLength = 100;
+        }
 
-        public int MaxLength { get; private set; }
+        public int MaxLength { get; set; }
 
         public override string ParseValidationErrorFormat
         {
-            get { return "{0} must be text"; }
+            get { return "{0} must be text."; }
         }
 
         public override object GetValue(object rawValue)
         {
-            return rawValue.ToString();
+            string value = rawValue.ToString();
+            if (string.IsNullOrWhiteSpace(value)) return null;
+            return value;
         }
 
         public override object GetRawValue(object value)
         {
-            return value.ToString();
+            return (string)value;
         }
 
-        protected override IEnumerable<string> GetAdditionalValidationErrors(object value)
+        public override IEnumerable<string> GetErrors(ExcelImportValue value, IEnumerable<ExcelImportEntity> context)
         {
-            if (((string)value).Length > MaxLength)
-                yield return string.Format("{0} must be {1} or fewer characters", Name, MaxLength);
+            foreach (string error in base.GetErrors(value, context))
+                yield return error;
+
+            if (value.IsEmpty)
+                yield break;
+
+            string stringValue = (string)value.Value;
+
+            if (stringValue.Length > MaxLength)
+                yield return string.Format("{0} must be {1} or fewer characters.", Name, MaxLength);
         }
 
-        public override ExcelImportValue CreateValue(ExcelImportEntity entity, ExcelWorksheet sheet)
+        public override ExcelImportValue CreateValue(ExcelImportEntity entity, IExcelWorksheet worksheet)
         {
-            return ExcelImportStringValue.Create(entity, this, sheet);
+            return ExcelImportStringValue.Create(entity, this, worksheet);
         }
     }
 }
