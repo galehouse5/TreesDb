@@ -202,6 +202,7 @@
     <Content Include="css\bootstrap\theme.min.css">
       <DependentUpon>theme.css</DependentUpon>
     </Content>
+    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -338,7 +339,6 @@
     <Content Include="images\forward_disabled.png" />
     <Content Include="images\forward_enabled.png" />
     <Content Include="images\header_bg.png" />
-    <Content Include="images\favicon.ico" />
     <Content Include="images\icons\Calendar.gif" />
     <Content Include="images\icons\Map.png" />
     <Content Include="images\icons\MultiTrunkTree32.png" />
