@@ -19,12 +19,6 @@ namespace TMD.Controllers
             return RedirectToAction("Index", "Map");
         }
 
-        [HttpGet, Route("about"), DefaultReturnUrl]
-        public virtual ActionResult About()
-        {
-            return View();
-        }
-
         [HttpPost, Route("set-units")]
         public virtual ActionResult SetUnits(Units units, string returnUrl)
         {

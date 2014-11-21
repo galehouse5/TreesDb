@@ -32,9 +32,9 @@
   </li>
 
   <li class="@(ViewContext.Controller is MainController ? "active" : null)">
-    <a href="@Url.Action("About", "Main")">
+    <button type="button" class="btn btn-link navbar-btn" data-toggle="modal" data-target="#about-modal">
       <b class="glyphicon glyphicon-info-sign"></b> <span class="hidden-sm">About</span>
-    </a>
+    </button>
   </li>
 </ul>
 
