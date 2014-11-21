@@ -7,12 +7,6 @@ namespace TMD.Controllers
     [CheckBrowserCompatibilityFilter]
     public partial class MainController : ControllerBase
     {
-        [ChildActionOnly]
-        public virtual ActionResult MenuWidget(bool isSelected)
-        {
-            return PartialView(isSelected);
-        }
-
         [HttpGet, Route("")]
         public virtual ActionResult Index()
         {
