@@ -94,6 +94,7 @@
     <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.2\lib\net40\System.Web.Optimization.dll</HintPath>
@@ -521,8 +522,8 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\PublishProfiles\treesdb - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\treesdb - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\tmdb-preview.pubxml" />
+    <None Include="Properties\PublishProfiles\treesdb.pubxml" />
     <Content Include="Views\Search\_MenuWidget.cshtml" />
     <Content Include="Views\Search\Index.cshtml" />
     <Content Include="js\vendor\jquery-1.9.1.min.map" />

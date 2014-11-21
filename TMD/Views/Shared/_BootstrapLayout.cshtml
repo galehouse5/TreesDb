@@ -8,7 +8,7 @@
 
   <title>@ViewBag.Title - TMD</title>
 
-  @Styles.Render("~/css/vendor/main")
+  @Styles.Render("~/css/vendor/main-bundle")
   @Styles.Render("~/css/main.css")
   @RenderSection("Styles", required: false)
 
@@ -54,7 +54,7 @@
 
   @Html.Partial("_BootstrapFooter")
 
-  @Scripts.Render("~/js/vendor/main")
+  @Scripts.Render("~/js/vendor/main-bundle")
   @RenderSection("Scripts", required: false)
 
   @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics)

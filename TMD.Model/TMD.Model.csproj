@@ -172,9 +172,7 @@
     <Compile Include="ValueObjects\Volume.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Aspose.Cells.lic">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <EmbeddedResource Include="Excel\AsposeCells\Aspose.Cells.lic" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

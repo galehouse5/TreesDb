@@ -254,7 +254,7 @@ where entity.EntityTypeID = 3");
             Create.Column("LegacyID").OnTable("ExcelImport_Entities").AsInt32().Nullable();
 
             Create.Table("ExcelPhotos").InSchema("Imports")
-                .WithColumn("ID").AsInt32()
+                .WithColumn("ID").AsInt32().PrimaryKey()
                 .WithColumn("CreatorUserID").AsInt32()
                 .WithColumn("Created").AsDateTime()
                 .WithColumn("SubsiteID").AsInt32().Nullable()

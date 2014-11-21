@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 
 namespace TMD.Model.Excel.AsposeCells
 {
@@ -14,8 +15,11 @@ namespace TMD.Model.Excel.AsposeCells
         {
             if (license == null)
             {
-                license = new License();
-                license.SetLicense("Aspose.Cells.lic");
+                using (Stream data = Assembly.GetExecutingAssembly().GetManifestResourceStream("TMD.Model.Excel.AsposeCells.Aspose.Cells.lic"))
+                {
+                    license = new License();
+                    license.SetLicense(data);
+                }
             }
 
             workbook = new Workbook(stream);

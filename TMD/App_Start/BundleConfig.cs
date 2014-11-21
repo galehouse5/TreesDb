@@ -32,7 +32,7 @@ namespace TMD
                 "~/js/misc/upclick.js",
                 "~/js/jquery/jquery.placeholder-1.1.9.js"));
 
-            bundles.Add(new ScriptBundle("~/js/vendor/main").Include(
+            bundles.Add(new ScriptBundle("~/js/vendor/main-bundle").Include(
                 "~/js/vendor/jquery-{version}.js",
                 "~/js/vendor/bootstrap.js",
                 "~/js/vendor/bootstrap-filestyle.js",
@@ -41,7 +41,7 @@ namespace TMD
                 "~/js/vendor/linq.js",
                 "~/js/vendor/cookies.js"));
 
-            bundles.Add(new ScriptBundle("~/js/import").Include(
+            bundles.Add(new ScriptBundle("~/js/import-bundle").Include(
                 "~/js/import/*.js"));
 
             // css bundles
@@ -62,11 +62,11 @@ namespace TMD
                 "~/css/login.css",
                 "~/css/theme-login.css"));
 
-            bundles.Add(new StyleBundle("~/css/vendor/main").Include(
+            bundles.Add(new StyleBundle("~/css/vendor/main-bundle").Include(
                 "~/css/bootstrap/bootstrap.css",
                 "~/css/bootstrap/theme.css"));
 
-            bundles.Add(new ScriptBundle("~/css/import").Include(
+            bundles.Add(new StyleBundle("~/css/import-bundle").Include(
                 "~/css/import.css"));
         }
     }
