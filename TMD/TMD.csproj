@@ -144,6 +144,8 @@
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Controllers\PhotosController.cs" />
+    <Compile Include="ElmahErrorFormatter.cs" />
+    <Compile Include="ElmahErrorMailModule.cs" />
     <Compile Include="Emails\PasswordAssistanceEmail.cs" />
     <Compile Include="Emails\EmailVerificationEmail.cs" />
     <Compile Include="Extensions\AttributesExtensions.cs" />
@@ -151,6 +153,7 @@
     <Compile Include="Extensions\ControllerExtensions.cs" />
     <Compile Include="Extensions\CookieExtensions.cs" />
     <Compile Include="Extensions\DataTablesGrid.cs" />
+    <Compile Include="Extensions\HttpContextExtensions.cs" />
     <Compile Include="Extensions\NameValueCollectionExtensions.cs" />
     <Compile Include="Extensions\PhotoExtensions.cs" />
     <Compile Include="Extensions\DisplayExtensions.cs" />

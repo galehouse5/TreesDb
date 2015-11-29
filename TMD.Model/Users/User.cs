@@ -1,12 +1,10 @@
 ﻿using NHibernate.Validator.Constraints;
 using System;
-using System.Diagnostics;
 using TMD.Model.Extensions;
 using TMD.Model.Validation;
 
 namespace TMD.Model.Users
 {
-    [DebuggerDisplay("{Email}")]
     public partial class User : IEntity
     {
         protected User()
@@ -186,6 +184,9 @@ namespace TMD.Model.Users
         {
             LastActivity = DateTime.Now;
         }
+
+        public override string ToString()
+            => $"{Email} ({Id})";
 
         public static User Create(string email, string password)
         {
