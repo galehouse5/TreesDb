@@ -153,7 +153,6 @@
     <Compile Include="Users\SecureToken.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="Users\UserRepository.cs" />
-    <Compile Include="Settings.cs" />
     <Compile Include="Validation\NotEqualsAttribute.cs" />
     <Compile Include="Validation\SpecifiedAttribute.cs" />
     <Compile Include="Validation\NotEmptyOrWhitesapceAttribute.cs" />

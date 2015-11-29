@@ -82,10 +82,6 @@ namespace TMD.Controllers
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (!WebApplicationRegistry.Settings.EnableBrowserCompatibilityCheck)
-            {
-                return;
-            }
             if (filterContext.IsChildAction)
             {
                 return;

@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
+﻿using NHibernate.Validator.Constraints;
+using System;
 using System.Diagnostics;
-using System.Text.RegularExpressions;
-using System.Security.Principal;
-using NHibernate.Validator.Constraints;
 using TMD.Model.Extensions;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Users
 {
@@ -97,7 +92,7 @@ namespace TMD.Model.Users
             get 
             {
                 return ForgottenPasswordAssistanceToken != null
-                    && ForgottenPasswordAssistanceTokenIssued >= DateTime.Now.Subtract(Registry.Settings.ForgottenPasswordAssistanceTokenLifetime)
+                    && ForgottenPasswordAssistanceTokenIssued >= DateTime.Now.Subtract(Registry.ForgottenPasswordAssistanceTokenLifetime)
                     && ForgottenPasswordAssistanceTokenUsed == null;
             }
         }
@@ -131,9 +126,9 @@ namespace TMD.Model.Users
         {
             get 
             {
-                if (LastFailedLogonAttempt >= DateTime.Now.Subtract(Registry.Settings.FailedLoginMemoryDuration))
+                if (LastFailedLogonAttempt >= DateTime.Now.Subtract(Registry.FailedLoginMemoryDuration))
                 {
-                    if (RecentlyFailedLogonAttempts >= Registry.Settings.FailedLoginsBeforeHumanVerification)
+                    if (RecentlyFailedLogonAttempts >= Registry.FailedLoginsBeforeHumanVerification)
                     {
                         return true;
                     }
@@ -177,7 +172,7 @@ namespace TMD.Model.Users
             }
             else
             {
-                if (LastFailedLogonAttempt < DateTime.Now.Subtract(Registry.Settings.FailedLoginMemoryDuration))
+                if (LastFailedLogonAttempt < DateTime.Now.Subtract(Registry.FailedLoginMemoryDuration))
                 {
                     RecentlyFailedLogonAttempts = 0;
                 }

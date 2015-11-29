@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="@Url.ManagedContent("~/favicon.ico")" rel="Shortcut Icon" type="image/x-icon" />
+  <link href="@Url.StaticContent("~/favicon.ico")" rel="Shortcut Icon" type="image/x-icon" />
 
   <title>@ViewBag.Title - TMD</title>
 
@@ -12,6 +12,7 @@
   @Styles.Render("~/css/main.css")
   @RenderSection("Styles", required: false)
 
+  @Html.Partial("GoogleAnalyticsScript")
   @*TODO: block IE 8*@
   @*TODO: warn about javascript*@
 </head>
@@ -31,7 +32,7 @@
         </button>
 
         <a class="navbar-brand" href="@Url.Action("Index", "Main")">
-          <img src="@Url.ManagedContent("~/images/logo-sm.png")" alt="Tree Measurement Database" />
+          <img src="@Url.StaticContent("~/images/logo-sm.png")" alt="Tree Measurement Database" />
         </a>
       </div>
 
@@ -57,10 +58,5 @@
 
   @Scripts.Render("~/js/vendor/main-bundle")
   @RenderSection("Scripts", required: false)
-
-  @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics)
-  {
-    @Html.Partial("GoogleAnalyticsScript", WebApplicationRegistry.Settings.GoogleAnalyticsPropertyID)
-  }
 </body>
 </html>

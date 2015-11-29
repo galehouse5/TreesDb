@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.IO;
 using System.Net.Mail;
-using TMD.Model.Users;
 using System.Text;
-using System.IO;
+using System.Web;
+using TMD.Model.Users;
 
 namespace TMD.EmailTemplates
 {
@@ -25,11 +22,11 @@ namespace TMD.EmailTemplates
             {
                 body.Append(sr.ReadToEnd());
             }
-            body.Replace("<%HostName%>", WebApplicationRegistry.Settings.HostName);
+            body.Replace("<%HostName%>", WebApplicationRegistry.Hostname);
             body.Replace("<%CompletePasswordAssistancePath%>", completePasswordAssistancePath);
-            body.Replace("<%WebmasterEmail%>", WebApplicationRegistry.Settings.WebmasterEmail);
+            body.Replace("<%WebmasterEmail%>", WebApplicationRegistry.WebmasterEmail);
             return new PasswordAssistanceEmail(
-                WebApplicationRegistry.Settings.WebmasterEmail,
+                WebApplicationRegistry.WebmasterEmail,
                 u.Email,
                 "[Tree Measurement Database] Password Assistance",
                 body.ToString());

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Configuration;
 using TMD.Models;
 
@@ -9,21 +6,14 @@ namespace TMD
 {
     public static class WebApplicationRegistry
     {
-        private const string WebApplicationSettingsSectionName = "webApplicationSettings";
+        public static string Hostname
+            => ConfigurationManager.AppSettings["Hostname"] ?? "localhost";
 
-        private static WebApplicationSettings s_Settings;
-        public static WebApplicationSettings Settings
-        {
-            get
-            {
-                if (s_Settings == null)
-                {
-                    s_Settings = (WebApplicationSettings)ConfigurationManager.GetSection(WebApplicationSettingsSectionName);
-                }
-                return s_Settings;
-            }
-        }
+        public static string WebmasterEmail
+            => ConfigurationManager.AppSettings["WebmasterEmail"] ?? "webmaster@treesdb.org";
 
+        public static bool EnableMaintenance
+            => bool.Parse(ConfigurationManager.AppSettings["EnableMaintenance"] ?? "false");
 
         public static readonly IEnumerable<ErrorModel.CompatibleBrowser> CompatibleBrowsers = new List<ErrorModel.CompatibleBrowser>
         {

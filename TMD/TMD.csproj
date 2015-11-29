@@ -26,6 +26,7 @@
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -187,7 +188,6 @@
     <Compile Include="Models\Search\ResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebApplicationRegistry.cs" />
-    <Compile Include="WebApplicationSettings.cs" />
     <Compile Include="WebUserSessionProvider.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -521,6 +521,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\tmdb-preview.pubxml" />
     <None Include="Properties\PublishProfiles\treesdb.pubxml" />
     <Content Include="Views\Search\_MenuWidget.cshtml" />

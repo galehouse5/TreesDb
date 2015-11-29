@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Security.Cryptography;
-using TMD.Model.Validation;
+﻿using NHibernate.Validator.Constraints;
 using NHibernate.Validator.Engine;
-using NHibernate.Validator.Constraints;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Users
 {
@@ -31,14 +29,14 @@ namespace TMD.Model.Users
         {
             if (Length > 0)
             {
-                if (CharacterTypes < Registry.Settings.PasswordCharacterTypes)
+                if (CharacterTypes < Registry.PasswordCharacterTypes)
                 {
                     context.AddInvalid<Password, int>(string.Format(
                         "Your password must contain {0} character types.",
-                        Registry.Settings.PasswordCharacterTypes == 4 ? "four" : Registry.Settings.PasswordCharacterTypes == 3 ? "three" : Registry.Settings.PasswordCharacterTypes == 2 ? "two" : "one"),
+                        Registry.PasswordCharacterTypes == 4 ? "four" : Registry.PasswordCharacterTypes == 3 ? "three" : Registry.PasswordCharacterTypes == 2 ? "two" : "one"),
                         p => p.CharacterTypes);
                 }
-                if (Length < Registry.Settings.PasswordLength)
+                if (Length < Registry.PasswordLength)
                 {
                     context.AddInvalid<Password, int>("Your password is too short.", p => p.Length);
                 }

@@ -5,10 +5,12 @@
     <title>@ViewBag.Title</title>
     <style type="text/css">.ShowIfJavascriptEnabled { display: block; } .ShowIfJavascriptDisabled { display: none; }</style>
     <noscript><style type="text/css">.ShowIfJavascriptEnabled { display: none; } .ShowIfJavascriptDisabled { display: block; }</style></noscript>
-    <link href="@Url.ManagedContent("~/favicon.ico")" rel="Shortcut Icon" type="image/x-icon" />
-    <link href="@Url.ManagedContent("~/css/jquery/jquery-ui-1.8.7.custom.css")" rel="Stylesheet" type="text/css" />
+    <link href="@Url.StaticContent("~/favicon.ico")" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="@Url.StaticContent("~/css/jquery/jquery-ui-1.8.7.custom.css")" rel="Stylesheet" type="text/css" />
     @Styles.Render("~/css/Shared.css")
     @RenderSection("Styles", false)
+
+    @Html.Partial("GoogleAnalyticsScript")
 </head>
 <body>
     <div id="wrapper" class="clearfix">
@@ -53,11 +55,11 @@
             <div id="footer">
                 <p style="float: left;">
                     <a href="@Url.Action("Index", "Main")">
-                        <img id="footer-logo" src="@Url.ManagedContent("~/images/Theme/icon.png")" alt="Trees Database"/>
+                        <img id="footer-logo" src="@Url.StaticContent("~/images/Theme/icon.png")" alt="Trees Database"/>
                     </a>
                     Contact: Steve or Mitch Galehouse
                     <br />
-                    Email: <a href="mailto:@WebApplicationRegistry.Settings.WebmasterEmail">@WebApplicationRegistry.Settings.WebmasterEmail</a>
+                    Email: <a href="mailto:@WebApplicationRegistry.WebmasterEmail">@WebApplicationRegistry.WebmasterEmail</a>
                     <br />
                     &copy;: @DateTime.Now.Year Trees Database
                 </p>
@@ -85,8 +87,8 @@
         }
     </div>
     <!-- #wrapper -->
-    <script src="@Url.ManagedContent("~/js/jquery/jquery-1.4.4.min.js")" type="text/javascript"></script>
-    <script src="@Url.ManagedContent("~/js/jquery/jquery-ui-1.8.7.custom.min.js")" type="text/javascript"></script>
+    <script src="@Url.StaticContent("~/js/jquery/jquery-1.4.4.min.js")" type="text/javascript"></script>
+    <script src="@Url.StaticContent("~/js/jquery/jquery-ui-1.8.7.custom.min.js")" type="text/javascript"></script>
     <script type="text/javascript">
         var applicationRootUrl = '@Request.ApplicationPath.TrimEnd('/')';
     </script>
@@ -96,8 +98,5 @@
         $(function () { $('body').InitializeUi(); });
     </script>
     @RenderSection("Scripts", false)
-    @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics) {
-        @Html.Partial("GoogleAnalyticsScript", WebApplicationRegistry.Settings.GoogleAnalyticsPropertyID)
-    }
 </body>
 </html>

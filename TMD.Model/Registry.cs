@@ -1,30 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Configuration;
-using TMD.Model.Users;
 
 namespace TMD.Model
 {
     internal static class Registry
     {
-        private class SectionNames
-        {
-            public const string Settings = "modelSettings";
-        }
+        public static TimeSpan ForgottenPasswordAssistanceTokenLifetime
+            => TimeSpan.Parse(ConfigurationManager.AppSettings["ForgottenPasswordAssistanceTokenLifetime"] ?? "01:00:00");
 
-        private static Settings s_ModelSettings;
-        public static Settings Settings
-        {
-            get
-            {
-                if (s_ModelSettings == null)
-                {
-                    s_ModelSettings = (Settings)ConfigurationManager.GetSection(SectionNames.Settings);
-                }
-                return s_ModelSettings;
-            }
-        }
+        public static int PasswordLength
+            => int.Parse(ConfigurationManager.AppSettings["PasswordLength"] ?? "8");
+
+        public static int PasswordCharacterTypes
+            => int.Parse(ConfigurationManager.AppSettings["PasswordCharacterTypes"] ?? "2");
+
+        public static int FailedLoginsBeforeHumanVerification
+            => int.Parse(ConfigurationManager.AppSettings["FailedLoginsBeforeHumanVerification"] ?? "3");
+
+        public static TimeSpan FailedLoginMemoryDuration
+            => TimeSpan.Parse(ConfigurationManager.AppSettings["FailedLoginMemoryDuration"] ?? "01:00:00");
     }
 }

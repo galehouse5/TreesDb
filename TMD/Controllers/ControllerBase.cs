@@ -1,5 +1,4 @@
-﻿using System.Data;
-using System.IO;
+﻿using System.IO;
 using System.Web.Mvc;
 using TMD.Controllers;
 using TMD.Extensions;
@@ -31,7 +30,7 @@ namespace TMD
 
         protected override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (WebApplicationRegistry.Settings.EnableMaintenance)
+            if (WebApplicationRegistry.EnableMaintenance)
             {
                 MaintenanceResult result = new MaintenanceResult();
                 if (!result.IsExecuting(ControllerContext))

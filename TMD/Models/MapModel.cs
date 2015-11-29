@@ -59,7 +59,7 @@ namespace TMD.Models
                 Title, MinZoom, MaxZoom,
                 Latitude = Position.Latitude.TotalDegrees, Longitude = Position.Longitude.TotalDegrees,
                 InfoLoaderUrl = InfoLoader.ToUrl(url),
-                IconUrl = IconLoader == null ? url.ManagedContent(DefaultIconUrl) : IconLoader.ToUrl(url)
+                IconUrl = IconLoader == null ? url.StaticContent(DefaultIconUrl) : IconLoader.ToUrl(url)
             };
         }
     }
