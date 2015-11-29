@@ -13,15 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMD.UnitTests", "TMD.UnitTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tmd.Migrations", "Tmd.Migrations\Tmd.Migrations.csproj", "{5F70BC5D-218D-42A2-9122-62BB5151D25C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{A39C690B-1C34-4DDF-BE0D-F98ADEA57F13}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AAB4F52A-E7BD-4389-A444-3DBA57085D31}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tmd.WindowsAzure", "Tmd.WindowsAzure\Tmd.WindowsAzure.csproj", "{5D59B2E3-9FF2-4058-8E0F-D10BF3792B4B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{1A605D2B-D05E-48CA-B0A1-AEC87B27CC65}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tmd.Tools.LogViewer", "Tmd.Tools.LogViewer\Tmd.Tools.LogViewer.csproj", "{43FD6D80-5B66-42B1-B0CE-DCDC7995A2C1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BEEA2EA0-4496-4A78-9866-9963585ECDBD}"
+	ProjectSection(SolutionItems) = preProject
+		Seed Data.xlsx = Seed Data.xlsx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,22 +76,8 @@ Global
 		{5D59B2E3-9FF2-4058-8E0F-D10BF3792B4B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5D59B2E3-9FF2-4058-8E0F-D10BF3792B4B}.Release|x86.ActiveCfg = Release|Any CPU
 		{5D59B2E3-9FF2-4058-8E0F-D10BF3792B4B}.Release|x86.Build.0 = Release|Any CPU
-		{43FD6D80-5B66-42B1-B0CE-DCDC7995A2C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43FD6D80-5B66-42B1-B0CE-DCDC7995A2C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43FD6D80-5B66-42B1-B0CE-DCDC7995A2C1}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{43FD6D80-5B66-42B1-B0CE-DCDC7995A2C1}.Debug|x86.Build.0 = Debug|Any CPU
-		{43FD6D80-5B66-42B1-B0CE-DCDC7995A2C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43FD6D80-5B66-42B1-B0CE-DCDC7995A2C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43FD6D80-5B66-42B1-B0CE-DCDC7995A2C1}.Release|x86.ActiveCfg = Release|Any CPU
-		{43FD6D80-5B66-42B1-B0CE-DCDC7995A2C1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{D6AEC681-3CF5-4872-A15F-FC45AA16FFEC} = {AAB4F52A-E7BD-4389-A444-3DBA57085D31}
-		{5F70BC5D-218D-42A2-9122-62BB5151D25C} = {A39C690B-1C34-4DDF-BE0D-F98ADEA57F13}
-		{5D59B2E3-9FF2-4058-8E0F-D10BF3792B4B} = {A39C690B-1C34-4DDF-BE0D-F98ADEA57F13}
-		{43FD6D80-5B66-42B1-B0CE-DCDC7995A2C1} = {1A605D2B-D05E-48CA-B0A1-AEC87B27CC65}
 	EndGlobalSection
 EndGlobal
