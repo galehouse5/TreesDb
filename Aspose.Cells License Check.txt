@@ -1,0 +1,18 @@
+How to disable license check temporarily for development environment:
+- deobfuscate "Aspose.Cells.dll" using de4dot to "Aspose.Cells-cleaned.dll"
+- open "Aspose.Cells-cleaned.dll" using a decompiler
+	- open the Aspose.Cells.License class
+	- this class invokes another class internally that maintains license state, go to it's definition
+	- find the method that indicates if the license is valid, this should be internal, static, and return an enumeration type
+- run "ildasm.exe" from "Developer Command Prompt for Visual Studio"
+	- open "Aspose.Cells-cleaned.dll"
+	- dump to "Aspose.Cells-reassembled.il"
+- open "Aspose.Cells-reassembled.il" with a text editor
+	- remove public key signature to prevent exception when loading modified assembly
+		- e.g. ".publickey = (00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00   // .$.............." (spans 10 lines)
+	- correlate the method found using decompiler with the IL code by using nearby string literals as a reference for searching the IL code
+	- change all branches within this method to return the enumeration value that indicates a valid license
+		- e.g. "IL_004a:  ldc.i4.0" is changed to "IL_004a:  ldc.i4.1"
+- run "ilasm.exe /DLL Aspose.Cells-reassembled.il" to generate "Aspose.Cells-reassembled.dll"
+- rename "Aspose.Cells-reassembled.dll" to "Aspose.Cells.dll" and reference it in Visual Studio project
+	- avoid invoking Aspose.Cells.License.SetLicense as it is now redundant and will actually throw an exception, due to a redundant license check that does remain enabled

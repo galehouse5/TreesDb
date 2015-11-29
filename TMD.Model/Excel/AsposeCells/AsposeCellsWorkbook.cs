@@ -2,25 +2,26 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
+//using System.Reflection;
 
 namespace TMD.Model.Excel.AsposeCells
 {
     public class AsposeCellsWorkbook : IExcelWorkbook
     {
-        private static License license;
+        //private static License license;
         private Workbook workbook;
 
         public AsposeCellsWorkbook(Stream stream)
         {
-            if (license == null)
-            {
-                using (Stream data = Assembly.GetExecutingAssembly().GetManifestResourceStream("TMD.Model.Excel.AsposeCells.Aspose.Cells.lic"))
-                {
-                    license = new License();
-                    license.SetLicense(data);
-                }
-            }
+            // license check is disabled temporarily for development environment, see "Aspose.Cells License Check.txt"
+            //if (license == null)
+            //{
+            //    using (Stream data = Assembly.GetExecutingAssembly().GetManifestResourceStream("TMD.Model.Excel.AsposeCells.Aspose.Cells.lic"))
+            //    {
+            //        license = new License();
+            //        license.SetLicense(data);
+            //    }
+            //}
 
             workbook = new Workbook(stream);
         }
