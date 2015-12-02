@@ -95,6 +95,7 @@
     <Compile Include="ExcelImport\Values\ExcelImportStringValue.cs" />
     <Compile Include="Excel\AsposeCells\AsposeCellsCell.cs" />
     <Compile Include="Excel\AsposeCells\AsposeCellsComment.cs" />
+    <Compile Include="Excel\AsposeCells\AsposeCellsLicenseCheckHelper.cs" />
     <Compile Include="Excel\AsposeCells\AsposeCellsWorkbook.cs" />
     <Compile Include="Excel\AsposeCells\AsposeCellsWorksheet.cs" />
     <Compile Include="Excel\ExcelStyle.cs" />
