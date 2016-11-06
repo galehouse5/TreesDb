@@ -1,4 +1,5 @@
-﻿@model TMD.Model.Distance
+﻿@model Distance
+
 @if (!string.IsNullOrEmpty(ViewData.ModelMetadata.DisplayFormatString)) {
     @Model.ToString(UserSession.Units, renderMode: ViewData.ModelMetadata.DisplayFormatString.ParseEnum(UnitRenderMode.Default))
 } else {

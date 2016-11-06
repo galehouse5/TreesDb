@@ -1,4 +1,5 @@
-﻿@model TMD.Models.MapModel
+﻿@model MapModel
+
 <div class="@(ViewBag.@class == null ? "Map" : ViewBag.@class + " Map")"
     @if(Model.Bounds != null ) {
         @: data-ne-latitude="@Model.Bounds.NE.Latitude.TotalDegrees" data-ne-longitude="@Model.Bounds.NE.Longitude.TotalDegrees"

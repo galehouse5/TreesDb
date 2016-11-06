@@ -3,8 +3,10 @@
 // Don't change it directly as your change would get overwritten.  Instead, make changes
 // to the .tt file (i.e. the T4 template) and save it to regenerate this file.
 
-// Make sure the compiler doesn't complain about missing Xml comments
-#pragma warning disable 1591
+// Make sure the compiler doesn't complain about missing Xml comments and CLS compliance
+// 0108: suppress "Foo hides inherited member Foo. Use the new keyword if hiding was intended." when a controller and its abstract parent are both processed
+// 0114: suppress "Foo.BarController.Baz()' hides inherited member 'Qux.BarController.Baz()'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword." when an action (with an argument) overrides an action in a parent controller
+#pragma warning disable 1591, 3008, 3009, 0108, 0114
 #region T4MVC
 
 using System;
@@ -13,6 +15,7 @@ using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Hosting;
 using System.Web.Mvc;
@@ -38,10 +41,22 @@ namespace TMD.Controllers
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        protected RedirectToRouteResult RedirectToAction(Task<ActionResult> taskResult)
+        {
+            return RedirectToAction(taskResult.Result);
+        }
+
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         protected RedirectToRouteResult RedirectToActionPermanent(ActionResult result)
         {
             var callInfo = result.GetT4MVCResult();
             return RedirectToRoutePermanent(callInfo.RouteValueDictionary);
+        }
+
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        protected RedirectToRouteResult RedirectToActionPermanent(Task<ActionResult> taskResult)
+        {
+            return RedirectToActionPermanent(taskResult.Result);
         }
 
         [NonAction]
@@ -71,7 +86,7 @@ namespace TMD.Controllers
         public readonly string Name = "Account";
         [GeneratedCode("T4MVC", "2.0")]
         public const string NameConst = "Account";
-
+        [GeneratedCode("T4MVC", "2.0")]
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ActionNamesClass ActionNames { get { return s_actions; } }
@@ -196,8 +211,10 @@ namespace TMD.Controllers
     {
         public T4MVC_AccountController() : base(Dummy.Instance) { }
 
+        [NonAction]
         partial void AccountWidgetOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult AccountWidget()
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AccountWidget);
@@ -205,8 +222,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void LogOnOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult LogOn()
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.LogOn);
@@ -214,8 +233,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void LogonOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountLogonModel model, bool captchaValid);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult Logon(TMD.Models.AccountLogonModel model, bool captchaValid)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Logon);
@@ -225,8 +246,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void LogoutOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult Logout()
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Logout);
@@ -234,8 +257,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult Register()
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Register);
@@ -243,8 +268,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.AccountRegistrationModel model, bool captchaValid);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult Register(TMD.Model.IUnitOfWork uow, TMD.Models.AccountRegistrationModel model, bool captchaValid)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Register);
@@ -255,8 +282,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void CompleteRegistrationOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, string token);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult CompleteRegistration(TMD.Model.IUnitOfWork uow, string token)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.CompleteRegistration);
@@ -266,8 +295,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void PasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult PasswordAssistance()
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.PasswordAssistance);
@@ -275,8 +306,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void PasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult PasswordAssistance(TMD.Model.IUnitOfWork uow, TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.PasswordAssistance);
@@ -287,8 +320,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void CompletePasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, string token);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult CompletePasswordAssistance(string token)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.CompletePasswordAssistance);
@@ -297,8 +332,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void CompletePasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.CompleteAccountPasswordAssistanceModel model, string token);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult CompletePasswordAssistance(TMD.Model.IUnitOfWork uow, TMD.Models.CompleteAccountPasswordAssistanceModel model, string token)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.CompletePasswordAssistance);
@@ -309,8 +346,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void EditOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult Edit()
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Edit);
@@ -318,8 +357,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void EditOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.AccountEditModel model);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult Edit(TMD.Model.IUnitOfWork uow, TMD.Models.AccountEditModel model)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Edit);
@@ -333,4 +374,4 @@ namespace TMD.Controllers
 }
 
 #endregion T4MVC
-#pragma warning restore 1591
+#pragma warning restore 1591, 3008, 3009, 0108, 0114

@@ -8,13 +8,11 @@ namespace TMD
         {
             public const string HostName = "hostName";
             public const string WebmasterEmail = "webmasterEmail";
-            public const string StaticContentVersion = "staticContentVersion";
-            public const string StaticContentHostname = "staticContentHostname";
-            public const string MinifyStaticContent = "minifyStaticContent";
             public const string EnableMaintenance = "enableMaintenance";
             public const string EnableGoogleAnalytics = "enableGoogleAnalytics";
             public const string GoogleAnalyticsPropertyID = "googleAnalyticsPropertyID";
             public const string EnableBrowserCompatibilityCheck = "enableBrowserCompatibilityCheck";
+            public const string GoogleApiKey = "googleApiKey";
         }
 
         [ConfigurationProperty(PropertyNames.HostName, IsRequired = true)]
@@ -29,27 +27,6 @@ namespace TMD
         {
             get { return (string)this[PropertyNames.WebmasterEmail]; }
             set { this[PropertyNames.WebmasterEmail] = value; }
-        }
-
-        [ConfigurationProperty(PropertyNames.StaticContentVersion, DefaultValue = "")]
-        public string StaticContentVersion
-        {
-            get { return (string)this[PropertyNames.StaticContentVersion]; }
-            set { this[PropertyNames.StaticContentVersion] = value; }
-        }
-
-        [ConfigurationProperty(PropertyNames.StaticContentHostname, DefaultValue = "")]
-        public string StaticContentHostname
-        {
-            get { return (string)this[PropertyNames.StaticContentHostname]; }
-            set { this[PropertyNames.StaticContentHostname] = value; }
-        }
-
-        [ConfigurationProperty(PropertyNames.MinifyStaticContent, DefaultValue = false)]
-        public bool MinifyStaticContent
-        {
-            get { return (bool)this[PropertyNames.MinifyStaticContent]; }
-            set { this[PropertyNames.MinifyStaticContent] = value; }
         }
 
         [ConfigurationProperty(PropertyNames.EnableMaintenance, IsRequired = true)]
@@ -78,6 +55,13 @@ namespace TMD
         {
             get { return (bool)this[PropertyNames.EnableBrowserCompatibilityCheck]; }
             set { this[PropertyNames.EnableBrowserCompatibilityCheck] = value; }
+        }
+
+        [ConfigurationProperty(PropertyNames.GoogleApiKey, IsRequired = true)]
+        public string GoogleApiKey
+        {
+            get { return (string)this[PropertyNames.GoogleApiKey]; }
+            set { this[PropertyNames.GoogleApiKey] = value; }
         }
     }
 }

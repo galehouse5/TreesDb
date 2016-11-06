@@ -24,6 +24,7 @@ namespace TMD
         {
             filters.Add(new LogExceptionFilter());
             filters.Add(new HandleExceptionFilter());
+            filters.Add(new ValidateInputAttribute(enableValidation: false));
         }
 
         public static void RegisterRoutes(RouteCollection routes)

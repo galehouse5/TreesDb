@@ -3,8 +3,8 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>@ViewBag.Title</title>
-    <link href="@Url.ManagedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
-    <link href="@Url.ManagedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.StaticContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="@Url.StaticContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
     @Styles.Render("~/css/Shared.css")
     @Styles.Render("~/css/LoginOnly.css");
     @RenderSection("Styles", false)

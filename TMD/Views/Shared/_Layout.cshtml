@@ -5,8 +5,8 @@
     <title>@ViewBag.Title</title>
     <style type="text/css">.ShowIfJavascriptEnabled { display: block; } .ShowIfJavascriptDisabled { display: none; }</style>
     <noscript><style type="text/css">.ShowIfJavascriptEnabled { display: none; } .ShowIfJavascriptDisabled { display: block; }</style></noscript>
-    <link href="@Url.ManagedContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
-    <link href="@Url.ManagedContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.StaticContent(Links.images.icon_ico)" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="@Url.StaticContent(Links.css.jquery.jquery_ui_1_8_7_custom_css)" rel="Stylesheet" type="text/css" />
     @Styles.Render("~/css/Shared.css")
     @RenderSection("Styles", false)
 </head>
@@ -52,7 +52,7 @@
             <div id="footer">
                 <p style="float: left;">
                     <a href="@Url.Action(MVC.Main.Index())">
-                        <img id="footer-logo" src="@Url.ManagedContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
+                        <img id="footer-logo" src="@Url.StaticContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
                     </a>
                     Contact: Steve or Mitch Galehouse
                     <br />
@@ -84,16 +84,15 @@
         }
     </div>
     <!-- #wrapper -->
-    <script src="@Url.ManagedContent(Links.js.jquery.jquery_1_4_4_min_js)" type="text/javascript"></script>
-    <script src="@Url.ManagedContent(Links.js.jquery.jquery_ui_1_8_7_custom_min_js)" type="text/javascript"></script>
+    <script src="@Url.StaticContent(Links.js.jquery.jquery_1_4_4_min_js)" type="text/javascript"></script>
+    <script src="@Url.StaticContent(Links.js.jquery.jquery_ui_1_8_7_custom_min_js)" type="text/javascript"></script>
+    <script type="text/javascript">
+      var applicationRootUrl = '@Request.ApplicationPath.TrimEnd('/')';
+    </script>
     @Scripts.Render("~/js/Plugins.js")
     @Scripts.Render("~/js/Shared.js")
     <script type="text/javascript">
-        var applicationRootUrl = '@Request.ApplicationPath.TrimEnd('/')';
-
-        $(function () {
-            $('body').InitializeUi();
-        });
+      $(function () { $('body').InitializeUi(); });
     </script>
     @RenderSection("Scripts", false)
     @if (WebApplicationRegistry.Settings.EnableGoogleAnalytics) {

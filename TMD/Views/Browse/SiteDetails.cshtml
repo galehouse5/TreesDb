@@ -1,5 +1,8 @@
-﻿@model TMD.Models.BrowseSiteModel
-@{ ViewBag.Title = "Site Details"; }
+﻿@model BrowseSiteModel
+
+@{
+    ViewBag.Title = "Site Details";
+}
 
 @section Styles {
     <style type="text/css">
@@ -8,7 +11,7 @@
 }
 
 @section Scripts {
-    <script type="text/javascript"src="//maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript"src="//maps.google.com/maps/api/js?key=@WebApplicationRegistry.Settings.GoogleApiKey"></script>
     @Scripts.Render("~/js/Map.js")
     <script type="text/javascript">
         $(function () {
@@ -23,8 +26,8 @@
 
 <div class="x6 xColumn">
 
-	<div class="portlet x12">
-		<div class="portlet-header">
+  <div class="portlet x12">
+    <div class="portlet-header">
             <h4>Site</h4>
             <ul class="portlet-tab-nav">
                 <li class="portlet-tab-nav-ignore"><a href="@Url.Action(MVC.Export.Sites(Model.Id))">Export tree data</a></li>
@@ -32,7 +35,7 @@
                 <li><a href="#TripHistory">Trip history</a></li>
             </ul>
         </div>
-		<div class="portlet-content">
+    <div class="portlet-content">
             <div id="SiteSummary" class="portlet-tab-content portlet-tab-content-active">
                 <table class="reports_table">                
                     @Html.ReportDisplayFor(m => m.Details.Name)
@@ -52,7 +55,7 @@
                         </tr>
                     }
                     @Html.ReportDisplayFor(m => m.Details.LastVisitComments)
-			    </table>
+          </table>
             </div>
             <div id="TripHistory" class="portlet-tab-content ShowIfJavascriptEnabled">
                 <table class="support_table">
@@ -70,29 +73,29 @@
                     }
                 </table>
             </div>
-		</div>
-	</div>
+    </div>
+  </div>
 
     <div class="portlet x12">
-		<div class="portlet-header"><h4>Species</h4></div>
-		<div class="portlet-content">               
+    <div class="portlet-header"><h4>Species</h4></div>
+    <div class="portlet-content">               
             @Html.Partial("SubsiteSpeciesGridPartial", Model.SubsiteSpeciesModel)
-		</div>
-	</div>
+    </div>
+  </div>
 
 </div>
 
 <div class="x6 xColumn">
 
-	<div class="portlet x12">
-		<div class="portlet-header">
+  <div class="portlet x12">
+    <div class="portlet-header">
             <h4>Location</h4>
             <ul class="portlet-tab-nav">
                 <li class="portlet-tab-nav-active"><a href="#LocationSummary">Summary</a></li>
                 <li><a href="#LocationMap">Map</a></li>
             </ul>
         </div>
-		<div class="portlet-content">
+    <div class="portlet-content">
             <div id="LocationSummary" class="portlet-tab-content portlet-tab-content-active">
                 <table class="reports_table">
                     @if (Model.Location.Coordinates.IsValidAndSpecified()) {
@@ -100,8 +103,8 @@
                     } else {
                         @Html.ReportDisplayFor(m => m.Location.CalculatedCoordinates);
                     }
-				    @Html.ReportDisplayFor(m => m.Location.OwnershipType)
-				    @Html.ReportDisplayFor(m => m.Location.County)
+            @Html.ReportDisplayFor(m => m.Location.OwnershipType)
+            @Html.ReportDisplayFor(m => m.Location.County)
                     <tr>
                         <td class="description">State</td>
                         <td class="value"><a href="@Url.Action(MVC.Browse.StateDetails(Model.Location.State.Id))">@Html.DisplayFor(m => m.Location.State)</a></td>
@@ -111,14 +114,14 @@
             <div id="LocationMap" class="portlet-tab-content ShowIfJavascriptEnabled">
                 @Html.DisplayFor(m => m.Location.Map)
             </div>
-		</div>
-	</div>
+    </div>
+  </div>
 
-	<div class="portlet x12">
-		<div class="portlet-header"><h4>Photos</h4></div>
-		<div class="portlet-content">
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Photos</h4></div>
+    <div class="portlet-content">
             @Html.DisplayFor(m => m.PhotoSummaries, "BrowsePhotoSummaryList")
-		</div>
-	</div>
+    </div>
+  </div>
 
 </div>

@@ -1,8 +1,11 @@
-﻿@model IList<TMD.Models.ImportTripSummaryModel>
-@{ ViewBag.Title = "Import"; }
+﻿@model IList<ImportTripSummaryModel>
+
+@{
+    ViewBag.Title = "Import";
+}
 
 @section Styles {
-    <link href="@Url.ManagedContent(Links.css.Import_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.StaticContent(Links.css.Import_css)" rel="Stylesheet" type="text/css" />
 }
 
 <div class="portlet x12">
@@ -48,4 +51,3 @@
         </div>
     </div>
 }
-

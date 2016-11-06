@@ -9,15 +9,18 @@ namespace TMD.Filters
     {
         public void OnException(ExceptionContext filterContext)
         {
-            if (!filterContext.HttpContext.IsCustomErrorEnabled) return;
+            if (filterContext.IsChildAction
+                || filterContext.ExceptionHandled
+                || !filterContext.HttpContext.IsCustomErrorEnabled)
+                return;
 
-            filterContext.ExceptionHandled = true;
+            Exception baseException = filterContext.Exception.GetBaseException();
 
-            if (filterContext.Exception is UnauthorizedAccessException)
+            if (baseException is UnauthorizedAccessException)
             {
                 filterContext.Result = new UnauthorizedResult();
             }
-            else if (filterContext.Exception is KeyNotFoundException)
+            else if (baseException is KeyNotFoundException)
             {
                 filterContext.Result = new NotFoundResult();
             }
@@ -25,6 +28,8 @@ namespace TMD.Filters
             {
                 filterContext.Result = new ServerErrorResult();
             }
+
+            filterContext.ExceptionHandled = true;
         }
     }
 }

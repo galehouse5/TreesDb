@@ -1,5 +1,8 @@
-﻿@model TMD.Models.BrowseTreeModel
-@{ ViewBag.Title = "Tree Details"; }
+﻿@model BrowseTreeModel
+
+@{
+    ViewBag.Title = "Tree Details";
+}
 
 @section Styles {
     <style type="text/css">
@@ -8,7 +11,7 @@
 }
 
 @section Scripts {
-    <script type="text/javascript"src="//maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript"src="//maps.google.com/maps/api/js?key=@WebApplicationRegistry.Settings.GoogleApiKey"></script>
     @Scripts.Render("~/js/Map.js")
     <script type="text/javascript">
         $(function () {
@@ -22,24 +25,24 @@
 
 <div class="x6 xColumn">
 
-	<div class="portlet x12">
-		<div class="portlet-header">
+  <div class="portlet x12">
+    <div class="portlet-header">
             <h4>Tree</h4>
             <ul class="portlet-tab-nav">
                 <li class="portlet-tab-nav-ignore"><a href="@Url.Action(MVC.Export.Trees(Model.Details.Id))">Export tree data</a></li>
             </ul>
         </div>
-		<div class="portlet-content">
-			<table class="reports_table">                
+    <div class="portlet-content">
+      <table class="reports_table">                
                 @Html.DisplayFor(m => m.Details)
-			</table>
-		</div>
-	</div>
+      </table>
+    </div>
+  </div>
 
     @for (int measurementIndex = 0; measurementIndex < Model.MeasurementDetails.Count; measurementIndex++)
     { 
         <div class="portlet x12">
-		    <div class="portlet-header">
+        <div class="portlet-header">
                 <h4>Measured on @Html.DisplayFor(m => m.MeasurementDetails[measurementIndex].Measured)</h4>
                 <ul class="portlet-tab-nav">
                     <li class="portlet-tab-nav-active"><a href="#@("MeasurementSummary" + measurementIndex)">Summary</a></li>
@@ -51,13 +54,13 @@
                     <table class="reports_table">
                         @Html.DisplayFor(m => m.MeasurementDetails[measurementIndex], "BrowseTreeSummaryModel")
                         @Html.ReportDisplayFor(m => m.MeasurementDetails[measurementIndex].Measurers)
-			        </table>
+              </table>
                 </div>
-		        <div id="@("MeasurementDetails" + measurementIndex)" class="portlet-tab-content ShowIfJavascriptEnabled">   
+            <div id="@("MeasurementDetails" + measurementIndex)" class="portlet-tab-content ShowIfJavascriptEnabled">   
                     <table class="reports_table">
                         @Html.DisplayFor(m => m.MeasurementDetails[measurementIndex])
                         @Html.ReportDisplayFor(m => m.MeasurementDetails[measurementIndex].Measurers)
-			        </table>
+              </table>
                 </div>
             </div>
         </div>
@@ -67,15 +70,15 @@
 
 <div class="x6 xColumn">
 
-	<div class="portlet x12">
-		<div class="portlet-header">
+  <div class="portlet x12">
+    <div class="portlet-header">
             <h4>Location</h4>
             <ul class="portlet-tab-nav">
                 <li class="portlet-tab-nav-active"><a href="#LocationSummary">Summary</a></li>
                 <li><a href="#LocationMap">Map</a></li>
             </ul>
         </div>
-		<div class="portlet-content">
+    <div class="portlet-content">
             <div id="LocationSummary" class="portlet-tab-content portlet-tab-content-active">
                 <table class="reports_table">
                     @if (Model.Location.Coordinates.IsValidAndSpecified()) {
@@ -87,14 +90,14 @@
                         <td class="description">Site</td>
                         <td class="value"><a href="@Url.Action(MVC.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SiteName)</a></td>
                     </tr>
-				    @if (Model.Location.SiteSubsitesCount > 1) { 
+            @if (Model.Location.SiteSubsitesCount > 1) { 
                         <tr>
                             <td class="description">Subsite</td>
                             <td class="value"><a href="@Url.Action(MVC.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SubsiteName)</a></td>
                         </tr>
                     }
-				    @Html.ReportDisplayFor(m => m.Location.OwnershipType)
-				    @Html.ReportDisplayFor(m => m.Location.County)
+            @Html.ReportDisplayFor(m => m.Location.OwnershipType)
+            @Html.ReportDisplayFor(m => m.Location.County)
                     <tr>
                         <td class="description">State</td>
                         <td class="value"><a href="@Url.Action(MVC.Browse.StateDetails(Model.Location.State.Id))">@Html.DisplayFor(m => m.Location.State)</a></td>
@@ -104,14 +107,14 @@
             <div id="LocationMap" class="portlet-tab-content ShowIfJavascriptEnabled">
                 @Html.DisplayFor(m => m.Location.Map)
             </div>
-		</div>
-	</div>
+    </div>
+  </div>
 
-	<div class="portlet x12">
-		<div class="portlet-header"><h4>Photos</h4></div>
-		<div class="portlet-content">
+  <div class="portlet x12">
+    <div class="portlet-header"><h4>Photos</h4></div>
+    <div class="portlet-content">
             @Html.DisplayFor(m => m.PhotoSummaries, "BrowsePhotoSummaryList")
-		</div>
-	</div>
+    </div>
+  </div>
 
 </div>

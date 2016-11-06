@@ -1,8 +1,11 @@
-﻿@model TMD.Models.ImportFinishedTripModel
-@{ ViewBag.Title = "Import View"; }
+﻿@model ImportFinishedTripModel
+
+@{
+    ViewBag.Title = "Import View";
+}
 
 @section Styles {
-    <link href="@Url.ManagedContent(Links.css.Import_css)" rel="Stylesheet" type="text/css" />
+    <link href="@Url.StaticContent(Links.css.Import_css)" rel="Stylesheet" type="text/css" />
 }
 
 <div class="portlet x12">

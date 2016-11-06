@@ -1,4 +1,5 @@
 ﻿@model Enum
+
 @Html.DropDownListFor(m => m,
     from Enum value in Enum.GetValues(Model.GetType())
     select new SelectListItem

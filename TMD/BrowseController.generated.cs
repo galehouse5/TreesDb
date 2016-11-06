@@ -3,8 +3,10 @@
 // Don't change it directly as your change would get overwritten.  Instead, make changes
 // to the .tt file (i.e. the T4 template) and save it to regenerate this file.
 
-// Make sure the compiler doesn't complain about missing Xml comments
-#pragma warning disable 1591
+// Make sure the compiler doesn't complain about missing Xml comments and CLS compliance
+// 0108: suppress "Foo hides inherited member Foo. Use the new keyword if hiding was intended." when a controller and its abstract parent are both processed
+// 0114: suppress "Foo.BarController.Baz()' hides inherited member 'Qux.BarController.Baz()'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword." when an action (with an argument) overrides an action in a parent controller
+#pragma warning disable 1591, 3008, 3009, 0108, 0114
 #region T4MVC
 
 using System;
@@ -13,6 +15,7 @@ using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Hosting;
 using System.Web.Mvc;
@@ -38,10 +41,22 @@ namespace TMD.Controllers
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        protected RedirectToRouteResult RedirectToAction(Task<ActionResult> taskResult)
+        {
+            return RedirectToAction(taskResult.Result);
+        }
+
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         protected RedirectToRouteResult RedirectToActionPermanent(ActionResult result)
         {
             var callInfo = result.GetT4MVCResult();
             return RedirectToRoutePermanent(callInfo.RouteValueDictionary);
+        }
+
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        protected RedirectToRouteResult RedirectToActionPermanent(Task<ActionResult> taskResult)
+        {
+            return RedirectToActionPermanent(taskResult.Result);
         }
 
         [NonAction]
@@ -83,7 +98,7 @@ namespace TMD.Controllers
         public readonly string Name = "Browse";
         [GeneratedCode("T4MVC", "2.0")]
         public const string NameConst = "Browse";
-
+        [GeneratedCode("T4MVC", "2.0")]
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ActionNamesClass ActionNames { get { return s_actions; } }
@@ -282,8 +297,10 @@ namespace TMD.Controllers
     {
         public T4MVC_BrowseController() : base(Dummy.Instance) { }
 
+        [NonAction]
         partial void MenuWidgetOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, bool isSelected);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult MenuWidget(bool isSelected)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.MenuWidget);
@@ -292,8 +309,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void TreeDetailsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult TreeDetails(int id)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.TreeDetails);
@@ -302,8 +321,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void SiteDetailsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int? page, string sort, bool? sortAsc);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult SiteDetails(int id, int? page, string sort, bool? sortAsc)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SiteDetails);
@@ -315,8 +336,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void SpeciesDetailsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, string botanicalName, string commonName, int? siteId, int? stateId, int? stateSpeciesPage, string stateSpeciesSort, bool? stateSpeciesSortAsc, int? treesPage, string treesSort, bool? treesSortAsc, int? siteSpeciesPage, string siteSpeciesSort, bool? siteSpeciesSortAsc, string parameterNamePrefix);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult SpeciesDetails(string botanicalName, string commonName, int? siteId, int? stateId, int? stateSpeciesPage, string stateSpeciesSort, bool? stateSpeciesSortAsc, int? treesPage, string treesSort, bool? treesSortAsc, int? siteSpeciesPage, string siteSpeciesSort, bool? siteSpeciesSortAsc, string parameterNamePrefix)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SpeciesDetails);
@@ -338,8 +361,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void StateDetailsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int? stateSpeciesPage, string stateSpeciesSort, bool? stateSpeciesSortAsc, int? subsitesPage, string subsitesSort, bool? subsitesSortAsc, string parameterNamePrefix);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult StateDetails(int id, int? stateSpeciesPage, string stateSpeciesSort, bool? stateSpeciesSortAsc, int? subsitesPage, string subsitesSort, bool? subsitesSortAsc, string parameterNamePrefix)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.StateDetails);
@@ -355,8 +380,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void SpeciesOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int? page, string sort, bool? sortAsc, string botanicalNameFilter, string commonNameFilter);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult Species(int? page, string sort, bool? sortAsc, string botanicalNameFilter, string commonNameFilter)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Species);
@@ -369,8 +396,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void LocationsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int? page, string sort, bool? sortAsc, string stateFilter, string siteFilter, string subsiteFilter);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult Locations(int? page, string sort, bool? sortAsc, string stateFilter, string siteFilter, string subsiteFilter)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Locations);
@@ -384,8 +413,10 @@ namespace TMD.Controllers
             return callInfo;
         }
 
+        [NonAction]
         partial void IndexOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int? speciesPage, string speciesSort, bool? speciesSortAsc, string speciesBotanicalNameFilter, string speciesCommonNameFilter, int? locationsPage, string locationsSort, bool? locationsSortAsc, string locationsStateFilter, string locationsSiteFilter, string locationsSubsiteFilter, string parameterNamePrefix);
 
+        [NonAction]
         public override System.Web.Mvc.ActionResult Index(int? speciesPage, string speciesSort, bool? speciesSortAsc, string speciesBotanicalNameFilter, string speciesCommonNameFilter, int? locationsPage, string locationsSort, bool? locationsSortAsc, string locationsStateFilter, string locationsSiteFilter, string locationsSubsiteFilter, string parameterNamePrefix)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Index);
@@ -409,4 +440,4 @@ namespace TMD.Controllers
 }
 
 #endregion T4MVC
-#pragma warning restore 1591
+#pragma warning restore 1591, 3008, 3009, 0108, 0114

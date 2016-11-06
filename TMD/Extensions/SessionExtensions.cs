@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.ComponentModel;
+﻿using System.Web;
 
 namespace TMD.Extensions
 {
@@ -24,9 +20,9 @@ namespace TMD.Extensions
             session[Keys.PerformBrowserCheck] = performBrowserCheck;
         }
 
-        public static string GetDefaultReturnUrl(this HttpSessionStateBase session)
+        public static string GetDefaultReturnUrl(this HttpContextBase context)
         {
-            return (session[Keys.DefaultReturnUrl] ?? "/").ToString();
+            return (context.Session[Keys.DefaultReturnUrl] ?? context.Request.ApplicationPath).ToString();
         }
 
         public static void SetDefaultReturnUrl(this HttpSessionStateBase session, string defaultReturnUrl)

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Configuration;
 using TMD.Models;
 
@@ -9,21 +6,9 @@ namespace TMD
 {
     public static class WebApplicationRegistry
     {
-        private const string WebApplicationSettingsSectionName = "webApplicationSettings";
-
-        private static WebApplicationSettings s_Settings;
-        public static WebApplicationSettings Settings
-        {
-            get
-            {
-                if (s_Settings == null)
-                {
-                    s_Settings = (WebApplicationSettings)ConfigurationManager.GetSection(WebApplicationSettingsSectionName);
-                }
-                return s_Settings;
-            }
-        }
-
+        private static WebApplicationSettings settings;
+        public static WebApplicationSettings Settings => settings
+            ?? (settings = (WebApplicationSettings)ConfigurationManager.GetSection("webApplicationSettings"));
 
         public static readonly IEnumerable<ErrorModel.CompatibleBrowser> CompatibleBrowsers = new List<ErrorModel.CompatibleBrowser>
         {

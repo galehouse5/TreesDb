@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using AutoMapper;
+using Recaptcha;
+using System;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
-using TMD.Models;
-using TMD.Extensions;
-using Recaptcha;
-using TMD.Model.Users;
-using TMD.Model;
-using System.Net.Mail;
-using TMD.EmailTemplates;
 using System.Web.Security;
+using TMD.EmailTemplates;
+using TMD.Extensions;
+using TMD.Model;
+using TMD.Model.Users;
 using TMD.Model.Validation;
-using AutoMapper;
+using TMD.Models;
 
 namespace TMD.Controllers
 {
@@ -94,7 +92,7 @@ namespace TMD.Controllers
                 Session.ClearRegardingUserSpecificData();
                 Response.Cookies.ClearRegardingUserSpecificData();
                 TempData.SetAccountMessage(string.Empty);
-                return Redirect(Session.GetDefaultReturnUrl());
+                return Redirect(HttpContext.GetDefaultReturnUrl());
             }
         }
 
@@ -106,7 +104,7 @@ namespace TMD.Controllers
             Session.ClearRegardingUserSpecificData();
             Response.Cookies.ClearRegardingUserSpecificData();
             TempData.SetAccountMessage("You have logged out");
-            return Redirect(Session.GetDefaultReturnUrl());
+            return Redirect(HttpContext.GetDefaultReturnUrl());
         }
 
         public virtual ActionResult Register()
@@ -273,7 +271,7 @@ namespace TMD.Controllers
                 }
                 uow.Persist();
                 TempData.SetAccountMessage("Your password has been changed");
-                return Redirect(Session.GetDefaultReturnUrl());
+                return Redirect(HttpContext.GetDefaultReturnUrl());
             }
             if (model.EditingDetails)
             {
@@ -289,7 +287,7 @@ namespace TMD.Controllers
                 }
                 uow.Persist();
                 TempData.SetAccountMessage("Your account has been saved");
-                return Redirect(Session.GetDefaultReturnUrl());
+                return Redirect(HttpContext.GetDefaultReturnUrl());
             }
             throw new NotImplementedException();
         }

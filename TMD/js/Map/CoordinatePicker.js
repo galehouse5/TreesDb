@@ -10,7 +10,7 @@
                         <div class='field'>\
                             <label for='CoordinatePickerCoordinates' style='width: 100px;'>Coordinates</label>\
                             <div><span class='input'>\
-                                <input id='CoordinatePickerCoordinates' name='Coordinates' type='text' size='40'>\
+                                <input id='CoordinatePickerCoordinates' name='Coordinates' type='text' size='35'>\
                             </span></div>\
                             <p class='field_help' style='margin-bottom: 0; margin-left: 120px;'>Latitude, Longitude</p>\
                             <div class='buttonrow' style='margin-bottom: 0; margin-left: 120px;'>\
@@ -27,7 +27,7 @@
                         <div class='field'>\
                             <label for='CoordinatePickerAddress' style='width: 100px;'>Address</label>\
                             <div><span class='input'>\
-                                <input id='CoordinatePickerAddress' name='Address' type='text' size='40'>\
+                                <input id='CoordinatePickerAddress' name='Address' type='text' size='35'>\
                             </span></div>\
                             <div class='buttonrow' style='margin-bottom: 0; margin-left: 120px;'>\
                                 <button class='btn btn-orange' type='Submit' name='Action' value='Search'>Search</button>\

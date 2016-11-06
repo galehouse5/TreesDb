@@ -1,4 +1,5 @@
-﻿@model TMD.Model.Coordinates
+﻿@model Coordinates
+
 @if (!string.IsNullOrEmpty(ViewData.ModelMetadata.DisplayFormatString)) {
     @Model.ToString(ViewData.ModelMetadata.DisplayFormatString.ParseEnum(CoordinatesFormat.Default))
 } else {

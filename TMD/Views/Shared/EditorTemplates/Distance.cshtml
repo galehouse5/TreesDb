@@ -1,8 +1,13 @@
-﻿@model TMD.Model.Distance
-@{ ViewBag.@class = ViewBag.@class == null ? "text" : ViewBag.@class + " text";
-   ViewBag.size = ViewBag.size ?? "40";
-   if (ViewData.ModelMetadata.IsReadOnly)
-   {
-       ViewBag.disabled = true;
-   } }
+﻿@model Distance
+
+@{
+    if (ViewData.ModelMetadata.IsReadOnly)
+    {
+      ViewBag.disabled = true;
+    }
+
+    ViewBag.@class = ViewBag.@class == null ? "text" : ViewBag.@class + " text";
+    ViewBag.size = ViewBag.size ?? "40";
+}
+
 @Html.TextBoxFor(m => m, ViewData)

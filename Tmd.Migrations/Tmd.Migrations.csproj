@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentMigrator, Version=1.6.2.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentMigrator.1.6.2\lib\40\FluentMigrator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,15 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Baseline\CreateSchema.sql" />
-    <Content Include="Baseline\CreateDatabaseUsers.sql" />
-    <Content Include="Baseline\Debug\CreateServerLogins.sql" />
-    <Content Include="Baseline\DropServerLogins.sql" />
+    <Content Include="Baseline\Debug\CreateLoginsAndUsers.sql" />
+    <Content Include="Baseline\Debug\DropLoginsAndUsers.sql" />
     <Content Include="Baseline\DropSchema.sql" />
     <Content Include="Baseline\InsertTestData.sql" />
-    <Content Include="Baseline\Release\CreateServerLogins.sql" />
-    <Content Include="Baseline\DropDatabaseUsers.sql" />
+    <Content Include="Baseline\Release\CreateLoginsAndUsers.sql" />
+    <Content Include="Baseline\Release\DropLoginsAndUsers.sql" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

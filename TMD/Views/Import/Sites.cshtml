@@ -1,5 +1,9 @@
-﻿@model TMD.Models.ImportSitesModel
-@{ ViewBag.Title = "Import Sites"; Layout = "~/Views/Import/_WizardLayout.cshtml"; }
+﻿@model ImportSitesModel
+
+@{
+    ViewBag.Title = "Import Sites";
+    Layout = "~/Views/Import/_WizardLayout.cshtml";
+}
 
 @section Steps {
 <ol>
@@ -16,7 +20,7 @@
 }
 
 @section Scripts {
-    <script type="text/javascript"src="//maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript"src="//maps.google.com/maps/api/js?key=@WebApplicationRegistry.Settings.GoogleApiKey"></script>
     @Scripts.Render("~/js/Map.js")
     <script type="text/javascript">
         $(function () {

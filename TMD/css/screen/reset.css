@@ -2,8 +2,8 @@ html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, code, sup,
 del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td 
+fieldset, form, label, legend, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td
 {
 font-weight: inherit;
 font-style: inherit;

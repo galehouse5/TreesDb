@@ -1,36 +1,55 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Web;
-using System.Web.Mvc;
 using System.Text;
+using System.Web.Mvc;
 
 namespace TMD.Extensions
 {
     public static class UrlHelperExtensions
     {
-        public static string ManagedContent(this UrlHelper helper, string contentPath, string minifiedContentPath = "")
+        public static string StaticContent(this UrlHelper helper, string contentPath, DateTime? lastModifiedTime)
         {
-            StringBuilder builder = new StringBuilder();
-            if (!string.IsNullOrEmpty(minifiedContentPath) && WebApplicationRegistry.Settings.MinifyStaticContent)
+            StringBuilder builder = new StringBuilder(helper.Content(contentPath));
+
+            if (lastModifiedTime.HasValue)
             {
-                builder.Append(helper.Content(minifiedContentPath));
+                builder.AppendFormat("?v={0:yyyyMMddHHmmss}", lastModifiedTime);
             }
-            else
+
+            return builder.ToString().ToLower();
+        }
+
+        private static string getMinifiedContentPath(string contentPath)
+        {
+            if (!contentPath.Contains('.')) return null;
+
+            string[] contentPathParts = contentPath.Split('.');
+            var minifiedContentPathParts = contentPathParts
+                .Take(contentPathParts.Length - 1)
+                .Union(new string[] { "min", contentPathParts.Last() });
+            return string.Join(".", minifiedContentPathParts);
+        }
+
+        public static string StaticContent(this UrlHelper helper, string contentPath)
+        {
+            string filePath = helper.RequestContext.HttpContext.Server.MapPath(contentPath);
+            if (!File.Exists(filePath))
+                throw new ArgumentException($"Expected content to exist at {contentPath}.", "contentPath");
+
+            if (!helper.RequestContext.HttpContext.IsDebuggingEnabled)
             {
-                builder.Append(helper.Content(contentPath));
+                string minifiedContentPath = getMinifiedContentPath(contentPath);
+                if (!string.IsNullOrEmpty(minifiedContentPath))
+                {
+                    string minifiedFilePath = helper.RequestContext.HttpContext.Server.MapPath(minifiedContentPath);
+                    filePath = File.Exists(minifiedFilePath) ? minifiedFilePath : filePath;
+                }
+
+                return helper.StaticContent(contentPath, File.GetLastWriteTimeUtc(filePath));
             }
-            if (!string.IsNullOrEmpty(WebApplicationRegistry.Settings.StaticContentVersion))
-            {
-                builder.Append('?');
-                builder.Append(WebApplicationRegistry.Settings.StaticContentVersion);
-            }
-            if (!string.IsNullOrEmpty(WebApplicationRegistry.Settings.StaticContentHostname))
-            {
-                builder.Insert(0, WebApplicationRegistry.Settings.StaticContentHostname);
-                builder.Insert(0, helper.RequestContext.HttpContext.Request.IsSecureConnection ? "https://" : "http://");
-            }
-            return builder.ToString();           
+
+            return helper.StaticContent(contentPath, null);
         }
     }
 }
