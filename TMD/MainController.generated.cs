@@ -89,7 +89,6 @@ namespace TMD.Controllers
         {
             public readonly string MenuWidget = "MenuWidget";
             public readonly string Index = "Index";
-            public readonly string About = "About";
             public readonly string SetUnits = "SetUnits";
         }
 
@@ -98,7 +97,6 @@ namespace TMD.Controllers
         {
             public const string MenuWidget = "MenuWidget";
             public const string Index = "Index";
-            public const string About = "About";
             public const string SetUnits = "SetUnits";
         }
 
@@ -130,11 +128,7 @@ namespace TMD.Controllers
             public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
             public class _ViewNamesClass
             {
-                public readonly string About = "About";
-                public readonly string MenuWidget = "MenuWidget";
             }
-            public readonly string About = "~/Views/Main/About.cshtml";
-            public readonly string MenuWidget = "~/Views/Main/MenuWidget.cshtml";
         }
     }
 
@@ -163,17 +157,6 @@ namespace TMD.Controllers
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Index);
             IndexOverride(callInfo);
-            return callInfo;
-        }
-
-        [NonAction]
-        partial void AboutOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
-
-        [NonAction]
-        public override System.Web.Mvc.ActionResult About()
-        {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.About);
-            AboutOverride(callInfo);
             return callInfo;
         }
 

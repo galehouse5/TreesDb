@@ -1,7 +1,6 @@
 ﻿using System.Web.Mvc;
 using TMD.Extensions;
 using TMD.Model;
-using TMD.Models;
 
 namespace TMD.Controllers
 {
@@ -18,12 +17,6 @@ namespace TMD.Controllers
         public virtual ActionResult Index()
         {
             return RedirectToAction("Index", "Map");
-        }
-
-        [HttpGet, DefaultReturnUrl]
-        public virtual ActionResult About()
-        {
-            return View();
         }
 
         [HttpPost]

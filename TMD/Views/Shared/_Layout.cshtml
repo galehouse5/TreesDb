@@ -23,7 +23,6 @@
                     @{ Html.RenderAction(MVC.Map.MenuWidget(ViewContext.Controller is TMD.Controllers.MapController));
                        Html.RenderAction(MVC.Browse.MenuWidget(ViewContext.Controller is TMD.Controllers.BrowseController));
                        Html.RenderAction(MVC.Import.MenuWidget(ViewContext.Controller is TMD.Controllers.ImportController));
-                       Html.RenderAction(MVC.Main.MenuWidget(ViewContext.Controller is TMD.Controllers.MainController));
                        Html.RenderAction(MVC.Search.MenuWidget()); }
                 </ul>
             </div>
