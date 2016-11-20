@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using AutoMapper;
 using System.Linq;
-using System.Web;
-using AutoMapper;
-using TMD.Model.Imports;
-using TMD.Models;
-using TMD.Model.Photos;
 using TMD.Model;
-using TMD.Model.Validation;
 using TMD.Model.Extensions;
+using TMD.Model.Imports;
+using TMD.Model.Validation;
+using TMD.Models;
+using TMD.Models.Import;
 
 namespace TMD.Mappings
 {

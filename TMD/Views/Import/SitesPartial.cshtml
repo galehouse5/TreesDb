@@ -1,4 +1,4 @@
-﻿@model TMD.Models.ImportSitesModel
+﻿@model ImportSitesModel
 @using (Html.BeginForm(MVC.Import.Sites(), FormMethod.Post, new { @class = "form Sites" })) {
     for (int siteIndex = 0; siteIndex < Model.Sites.Count; siteIndex++) {
         if (Model.Sites[siteIndex].IsEditing) {

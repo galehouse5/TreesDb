@@ -1,7 +1,7 @@
-﻿@model TMD.Models.ImportTreeModel
-<div class="portlet x12 Tree">        
+﻿@model ImportTreeModel
+<div class="portlet x12 Tree">
     <div class="portlet-header Entity-Header Tree-Header">
-        <h4>@Model.ScientificName</h4>
+        <h4>@(Model.ScientificName.NullIfEmpty() ?? "(Unknown)")</h4>
         <div class="actions">
             @Html.ImportInnerActionButton("Edit", ImportModelLevel.Tree, Model.Id, ImportModelAction.Edit, ButtonColor.Orange, ButtonSize.Small)
         </div>

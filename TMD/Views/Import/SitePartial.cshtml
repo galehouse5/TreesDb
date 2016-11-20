@@ -1,4 +1,4 @@
-﻿@model TMD.Models.ImportSitesModel
+﻿@model ImportSitesModel
 @for (int siteIndex = 0; siteIndex < Model.Sites.Count; siteIndex++) {
     if (Model.Sites[siteIndex].Id.Equals(ViewBag.siteId)) {
         if (Model.Sites[siteIndex].IsEditing) {

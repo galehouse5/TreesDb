@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using TMD.Model.Imports;
+using TMD.Models.Import;
 using TMD.Model;
 using TMD.Model.Locations;
 using TMD.Model.Extensions;

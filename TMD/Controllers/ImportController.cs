@@ -1,18 +1,16 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using TMD.Model.Imports;
-using TMD.Models;
+using TMD.Binders;
 using TMD.Extensions;
 using TMD.Model;
+using TMD.Model.Extensions;
+using TMD.Model.Imports;
 using TMD.Model.Users;
 using TMD.Model.Validation;
-using AutoMapper;
-using TMD.Model.Photos;
-using TMD.Binders;
-using TMD.Model.Extensions;
+using TMD.Models.Import;
 
 namespace TMD.Controllers
 {
@@ -28,28 +26,6 @@ namespace TMD.Controllers
                 CanImport = User.IsInRole(UserRoles.Import),
                 LatestTrip = Repositories.Imports.FindLastCreatedByUser(User.Id)
             });
-        }
-
-        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
-        public virtual ActionResult Index()
-        {
-            return View(Mapper.Map<IList<Trip>, IList<ImportTripSummaryModel>>(
-                Repositories.Imports.ListCreatedByUser(User.Id)));
-        }
-
-        [HttpPost, AuthorizeUser(Roles = UserRoles.Import), UnitOfWork]
-        public virtual ActionResult Index(IUnitOfWork uow, [ModelBinder(typeof(ImportInnerActionModel))] ImportInnerActionModel innerAction)
-        {
-           if (innerAction.Equals(ImportModelLevel.Trip, ImportModelAction.Remove))
-           {
-               var trip = Repositories.Imports.FindById(innerAction.Id);
-               if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-               Repositories.Imports.Remove(trip); 
-               uow.Persist();
-               return View(Mapper.Map<IList<Trip>, IList<ImportTripSummaryModel>>(
-                   Repositories.Imports.ListCreatedByUser(User.Id)));
-           }
-            throw new NotImplementedException();
         }
 
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
@@ -71,37 +47,18 @@ namespace TMD.Controllers
                 return View(Mapper.Map<IList<Trip>, IList<ImportTripSummaryModel>>(
                     Repositories.Imports.ListCreatedByUser(User.Id)));
             }
+
             throw new NotImplementedException();
         }
 
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
-        public virtual ActionResult New()
+        public virtual ActionResult Trip(int? id)
         {
-            return View("Start", null);
-        }
+            Trip trip = !id.HasValue ? Model.Imports.Trip.Create()
+                : Repositories.Imports.FindById(id.Value);
+            if (!User.IsAuthorizedToEdit(trip))
+                return new UnauthorizedResult();
 
-        [HttpPost, ActionName("New"), AuthorizeUser(Roles = UserRoles.Import), UnitOfWork]
-        public virtual ActionResult StartNew(IUnitOfWork uow)
-        {
-            var trip = Model.Imports.Trip.Create();
-            Repositories.Imports.Save(trip); 
-            uow.Persist();
-            return RedirectToAction(MVC.Import.Trip(trip.Id));
-        }
-
-        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
-        public virtual ActionResult Start(int id)
-        {
-            var trip = Repositories.Imports.FindById(id);
-            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            return View(trip.Id);
-        }
-
-        [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
-        public virtual ActionResult Trip(int id)
-        {
-            Trip trip = Repositories.Imports.FindById(id);
-            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             var model = new ImportTripModel(); 
             Mapper.Map(trip, model);
             return View(model);
@@ -110,14 +67,17 @@ namespace TMD.Controllers
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import), UnitOfWork, SkipValidation]
         public virtual ActionResult Trip(IUnitOfWork uow, ImportTripModel model)
         {
-            var trip = Repositories.Imports.FindById(model.Id);
-            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
+            Trip trip = model.Id == 0 ? Model.Imports.Trip.Create()
+                : Repositories.Imports.FindById(model.Id);
+            if (!User.IsAuthorizedToEdit(trip))
+                return new UnauthorizedResult();
+
             Mapper.Map(model, trip);
             this.ValidateMappedModel<Trip, ImportTripModel>(trip, ValidationTag.Screening, ValidationTag.Persistence);
+            ModelState.Remove("Sites");
             if (!ModelState.IsValid)
-            {
                 return View(model);
-            }
+
             Repositories.Imports.Save(trip); 
             uow.Persist();
             return RedirectToAction(MVC.Import.Sites(null, trip.Id));
@@ -389,13 +349,13 @@ namespace TMD.Controllers
                 (from site in trip.Sites from subsite in site.Subsites from tree in subsite.Trees select tree).Last().SetTripDefaults();
                 Repositories.Imports.Save(trip); 
                 uow.Persist();
-                return RedirectToAction(MVC.Import.Finish(trip.Id));
+                return RedirectToAction(MVC.Import.Review(trip.Id));
             }
             throw new NotImplementedException();
         }
 
         [DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]
-        public virtual ActionResult Finish(int id)
+        public virtual ActionResult Review(int id)
         {
             var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
@@ -403,7 +363,7 @@ namespace TMD.Controllers
         }
 
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import), UnitOfWork]
-        public virtual ActionResult Finalize(IUnitOfWork uow, int id)
+        public virtual ActionResult Finish(IUnitOfWork uow, int id)
         {
             var trip = Repositories.Imports.FindById(id);
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
@@ -416,7 +376,7 @@ namespace TMD.Controllers
                 Repositories.Imports.Import(trip);
             }
             uow.Persist();
-            return RedirectToAction(MVC.Import.Index());
+            return RedirectToAction(MVC.Import.History());
         }
 
         [ActionName("View"), DefaultReturnUrl, AuthorizeUser(Roles = UserRoles.Import)]

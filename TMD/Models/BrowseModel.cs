@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using TMD.Model;
-using TMD.Model.Trees;
 using System.ComponentModel;
-using TMD.Model.Sites;
-using TMD.Model.Photos;
 using System.ComponentModel.DataAnnotations;
 using TMD.Extensions;
+using TMD.Model;
 using TMD.Model.Locations;
-using System.Web.Mvc;
+using TMD.Model.Photos;
+using TMD.Model.Sites;
+using TMD.Model.Trees;
 
 namespace TMD.Models
 {
@@ -53,7 +50,7 @@ namespace TMD.Models
         [DisplayFormat(NullDisplayText = "(no data)")]
         public Distance Height { get; set; }
         [DisplayName("Height measurement method"), DisplayFormat(NullDisplayText = "(no data)"), UIHint("Enum")]
-        public TMD.Model.Imports.TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
+        public Model.Imports.TreeHeightMeasurementMethod HeightMeasurementMethod { get; set; }
         [DisplayFormat(DataFormatString = "SubprefixOnly", NullDisplayText = "(no data)")]
         public Distance Girth { get; set; }
         [DisplayName("Crown spread"), DisplayFormat(DataFormatString = "Default", NullDisplayText = "(no data)")]

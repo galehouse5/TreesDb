@@ -1,18 +1,8 @@
 ﻿@model ImportTreesModel
 
 @{
-    ViewBag.Title = "Import Trees";
+    ViewBag.Title = "Import - Trees";
     Layout = "~/Views/Import/_WizardLayout.cshtml";
-}
-
-@section Steps {
-    <ol>
-        <li>@Html.ActionLink("Start", MVC.Import.Start())</li>
-        <li>@Html.ActionLink("Enter trip", MVC.Import.Trip(Model.Id))</li>
-        <li>@Html.ActionLink("Enter sites", MVC.Import.Sites(null, Model.Id))</li>
-        <li><strong>> @Html.ActionLink("Enter trees", MVC.Import.Trees(null, Model.Id)) <</strong></li>
-        <li>Finish</li>
-    </ol>
 }
 
 @section StepHeader {
@@ -41,7 +31,7 @@
         @Html.EditorFor(m => m.Sites[i])
     }
     <div class="buttonrow">
-        @Html.ImportInnerActionButton("Continue", ImportModelLevel.Trip, Model.Id, ImportModelAction.Save)
         @Html.AnchorButton("Back", MVC.Import.Sites(null, Model.Id), ButtonColor.Grey)
+        @Html.ImportInnerActionButton("Continue", ImportModelLevel.Trip, Model.Id, ImportModelAction.Save)
     </div>
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using AutoMapper;
-using TMD.Model.Imports;
+using TMD.Models.Import;
 using TMD.Models;
 using TMD.Model.Photos;
 using TMD.Model;

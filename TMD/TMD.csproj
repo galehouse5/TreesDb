@@ -213,8 +213,22 @@
     <Compile Include="Models\BrowseModel.cs" />
     <Compile Include="Models\ErrorModels.cs" />
     <Compile Include="Models\ExportModel.cs" />
+    <Compile Include="Models\Import\ImportFinishedSiteModel.cs" />
+    <Compile Include="Models\Import\ImportFinishedSubsiteModel.cs" />
+    <Compile Include="Models\Import\ImportFinishedTreeModel.cs" />
+    <Compile Include="Models\Import\ImportFinishedTripModel.cs" />
+    <Compile Include="Models\Import\ImportInnerActionModel.cs" />
+    <Compile Include="Models\Import\ImportMenuWidgetModel.cs" />
+    <Compile Include="Models\Import\ImportSiteModel.cs" />
+    <Compile Include="Models\Import\ImportSitesModel.cs" />
+    <Compile Include="Models\Import\ImportSiteTreesModel.cs" />
+    <Compile Include="Models\Import\ImportSubsiteModel.cs" />
+    <Compile Include="Models\Import\ImportSubsiteTreesModel.cs" />
+    <Compile Include="Models\Import\ImportTreeModel.cs" />
+    <Compile Include="Models\Import\ImportTreesModel.cs" />
+    <Compile Include="Models\Import\ImportTripModel.cs" />
+    <Compile Include="Models\Import\ImportTripSummaryModel.cs" />
     <Compile Include="Models\MapModel.cs" />
-    <Compile Include="Models\ImportModel.cs" />
     <Compile Include="Models\PhotosModel.cs" />
     <Compile Include="Models\Search\ResultModel.cs" />
     <Compile Include="PhotosController.generated.cs">
@@ -373,7 +387,6 @@
     <Content Include="Views\Browse\TreeDetails.cshtml" />
     <Content Include="Views\Error\Unauthorized.cshtml" />
     <Content Include="Views\Import\_WizardLayout.cshtml" />
-    <Content Include="Views\Import\Index.cshtml" />
     <Content Include="Views\Import\EditorTemplates\ImportTripSummaryModel.cshtml" />
     <Content Include="Views\Import\History.cshtml" />
     <Content Include="Views\Import\View.cshtml" />
@@ -381,8 +394,6 @@
     <Content Include="Views\Import\DisplayTemplates\ImportFinishedSiteModel.cshtml" />
     <Content Include="Views\Import\DisplayTemplates\ImportFinishedSubsiteModel.cshtml" />
     <Content Include="Views\Import\DisplayTemplates\ImportFinishedTreeModel.cshtml" />
-    <Content Include="Views\Import\Start.cshtml" />
-    <Content Include="Views\Import\StartSteps.cshtml" />
     <Content Include="Views\Import\Trip.cshtml" />
     <Content Include="Views\Import\Sites.cshtml" />
     <Content Include="Views\Import\SubsiteTreesPartial.cshtml" />
@@ -428,7 +439,7 @@
     <Content Include="Views\Shared\EditorTemplates\Enum.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Elevation.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Distance.cshtml" />
-    <Content Include="Views\Import\Finish.cshtml" />
+    <Content Include="Views\Import\Review.cshtml" />
     <Content Include="Views\Error\NotFound.cshtml" />
     <Content Include="Views\Error\ServerError.cshtml" />
     <Content Include="Views\Error\IncompatibleBrowser.cshtml" />
@@ -500,6 +511,9 @@
     <Content Include="Views\Search\Index.cshtml" />
     <None Include="T4MVC.tt.hooks.t4" />
     <Content Include="Views\Shared\EditorTemplates\EmailAddress.cshtml" />
+    <Content Include="Views\Import\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

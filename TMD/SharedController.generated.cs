@@ -77,6 +77,7 @@ namespace T4MVC
                 public readonly string Decimal = "Decimal";
                 public readonly string Distance = "Distance";
                 public readonly string Elevation = "Elevation";
+                public readonly string EmailAddress = "EmailAddress";
                 public readonly string Enum = "Enum";
                 public readonly string MultilineText = "MultilineText";
                 public readonly string Object = "Object";

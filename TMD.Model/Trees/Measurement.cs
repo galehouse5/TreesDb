@@ -143,7 +143,7 @@ namespace TMD.Model.Trees
                 ImportingTrip = importedTree.Subsite.Site.Trip,
                 Measured = importedTree.Subsite.Site.Trip.Date.Value,
                 CommonName = importedTree.CommonName,
-                ScientificName = importedTree.ScientificName,
+                ScientificName = importedTree.ScientificName.NullIfEmpty() ?? "(Unknown)",
                 Height = importedTree.Height,
                 HeightMeasurementMethod = importedTree.HeightMeasurementMethod,
                 Girth = importedTree.Girth,

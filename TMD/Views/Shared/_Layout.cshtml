@@ -50,15 +50,15 @@
         <!-- #content -->
         @if (ViewData.GetRenderFooter()) {
             <div id="footer">
-                <p style="float: left;">
+                <p style="float: left; width: 200px;">
                     <a href="@Url.Action(MVC.Main.Index())">
                         <img id="footer-logo" src="@Url.StaticContent(Links.images.Theme.icon_png)" alt="Trees Database"/>
                     </a>
-                    Contact: Steve or Mitch Galehouse
+                    <a href="http://ents-bbs.org/viewforum.php?f=15" target="nts-forum">Community Forum</a>
                     <br />
-                    Email: <a href="mailto:@WebApplicationRegistry.Settings.WebmasterEmail">@WebApplicationRegistry.Settings.WebmasterEmail</a>
+                    <a href="mailto:@WebApplicationRegistry.Settings.WebmasterEmail" target="email">Website Technical Help</a>
                     <br />
-                    &copy;: @DateTime.Now.Year Trees Database
+                    &copy;@DateTime.Today.Year Trees Database
                 </p>
                 @using(Html.BeginForm(MVC.Main.SetUnits(), FormMethod.Post, new { style = "float: right;" })) {
                     <span>Units:</span>

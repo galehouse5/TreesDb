@@ -1,13 +1,32 @@
-﻿@model TMD.Models.ImportTreeModel
-<div class="portlet x12 Tree">        
-    <div class="portlet-header">
-        <h4>Enter tree</h4>
-    </div>
-    <div class="portlet-content">
-        @Html.HiddenFor(m => m.Id)
-        @Html.HiddenFor(m => m.IsEditing)
-        @Html.HiddenFor(m => m.EditMode)
-        @if (Model.EditMode == EImportTreeModelEditMode.Simple) {
+﻿@model ImportTreeModel
+<div class="portlet x12 Tree">
+  <div class="portlet-header">
+    <h4>Enter tree</h4>
+  </div>
+  <div class="portlet-content">
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.IsEditing)
+    @Html.HiddenFor(m => m.EditMode)
+    @if (Model.EditMode == EImportTreeModelEditMode.Simple)
+    {
+        @Html.FieldEditorFor(m => m.CommonName)
+        @Html.FieldEditorFor(m => m.ScientificName)
+        @Html.FieldEditorFor(m => m.Height)
+        @Html.FieldEditorFor(m => m.HeightMeasurementMethod)
+        @Html.FieldEditorFor(m => m.Girth)
+        @Html.FieldEditorFor(m => m.CrownSpread)
+        @Html.FieldEditorFor(m => m.Coordinates)
+        @Html.FieldEditorFor(m => m.Elevation)
+        @Html.FieldEditorFor(m => m.GeneralComments)
+        @Html.FieldEditorFor(m => m.Photos)
+    }
+    else
+    {
+        <div class="portlet x12 TreeSection">
+          <div class="portlet-header">
+            <h4>Enter general information</h4>
+          </div>
+          <div class="portlet-content">
             @Html.FieldEditorFor(m => m.CommonName)
             @Html.FieldEditorFor(m => m.ScientificName)
             @Html.FieldEditorFor(m => m.Height)
@@ -18,34 +37,20 @@
             @Html.FieldEditorFor(m => m.Elevation)
             @Html.FieldEditorFor(m => m.GeneralComments)
             @Html.FieldEditorFor(m => m.Photos)
-        } else {
-            <div class="portlet x12 TreeSection">
-                <div class="portlet-header">
-                    <h4>Enter general information</h4>
-                </div>
-                <div class="portlet-content">
-                    @Html.FieldEditorFor(m => m.CommonName)
-                    @Html.FieldEditorFor(m => m.ScientificName)
-                    @Html.FieldEditorFor(m => m.Height)
-                    @Html.FieldEditorFor(m => m.HeightMeasurementMethod)
-                    @Html.FieldEditorFor(m => m.Girth)
-                    @Html.FieldEditorFor(m => m.CrownSpread)
-                    @Html.FieldEditorFor(m => m.Coordinates)
-                    @Html.FieldEditorFor(m => m.Elevation)
-                    @Html.FieldEditorFor(m => m.GeneralComments)
-                    @Html.FieldEditorFor(m => m.Photos)
-                </div>
-            </div>
-        }
-        <div class="buttonrow">
-            @Html.ImportInnerActionButton("Save", ImportModelLevel.Tree, Model.Id, ImportModelAction.Save)
-            @if (Model.IsRemovable) {
-                @Html.ImportInnerActionButton("Remove", ImportModelLevel.Tree, Model.Id, ImportModelAction.Remove, ButtonColor.Grey)
-                /* space here is needed for proper html rendering */ @:
-            }
-            @if (Model.EditMode == EImportTreeModelEditMode.Simple) {
-                @Html.ImportInnerActionButton("Detailed edit", ImportModelLevel.Tree, Model.Id, ImportModelAction.DetailedEdit, ButtonColor.Orange)
-            }
+          </div>
         </div>
+    }
+    <div class="buttonrow">
+      @Html.ImportInnerActionButton("Save", ImportModelLevel.Tree, Model.Id, ImportModelAction.Save)
+      @if (Model.IsRemovable)
+      {
+          @Html.ImportInnerActionButton("Remove", ImportModelLevel.Tree, Model.Id, ImportModelAction.Remove, ButtonColor.Grey)
+        /* space here is needed for proper html rendering */ @:
+            }
+      @if (Model.EditMode == EImportTreeModelEditMode.Simple)
+      {
+          @Html.ImportInnerActionButton("Detailed edit", ImportModelLevel.Tree, Model.Id, ImportModelAction.DetailedEdit, ButtonColor.Orange)
+      }
     </div>
+  </div>
 </div>

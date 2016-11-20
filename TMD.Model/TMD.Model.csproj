@@ -55,7 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions\ISpecified.cs" />
+    <Compile Include="Extensions\ISpecifiedExtensions.cs" />
     <Compile Include="Imports\MultiTrunkTree.cs" />
     <Compile Include="Imports\SingleTrunkTree.cs" />
     <Compile Include="Imports\Site.cs" />
@@ -88,11 +88,11 @@
     <Compile Include="Validation\ValidationError.cs" />
     <Compile Include="Validation\Validator.cs" />
     <Compile Include="Exceptions.cs" />
-    <Compile Include="Extensions\Enum.cs" />
-    <Compile Include="Extensions\Enumerable.cs" />
-    <Compile Include="Extensions\List.cs" />
-    <Compile Include="Extensions\Reflection.cs" />
-    <Compile Include="Extensions\String.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\ReflectionExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Repositories.cs" />
     <Compile Include="Locations\ILocationRepository.cs" />
     <Compile Include="Trees\ITreeRepository.cs" />

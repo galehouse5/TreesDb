@@ -1,16 +1,13 @@
-﻿using System;
+﻿using NHibernate.Validator.Constraints;
+using NHibernate.Validator.Engine;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Linq;
 using TMD.Model.Extensions;
-using NHibernate.Validator.Constraints;
-using NHibernate.Validator.Engine;
-using System.Drawing;
 using TMD.Model.Photos;
 using TMD.Model.Users;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Imports
 {
@@ -74,8 +71,8 @@ namespace TMD.Model.Imports
     }
 
     [DebuggerDisplay("{ScientificName} ({CommonName})")]
-    [ContextMethod("ValidateCanCalculateCoordinates", Tags = ValidationTag.Screening)]
-    [ContextMethod("ValidateCoordinatesAreCloseToSubsite", Tags = ValidationTag.Optional)]
+    [ContextMethod(nameof(ValidateCanCalculateCoordinates), Tags = ValidationTag.Screening)]
+    [ContextMethod(nameof(ValidateCoordinatesAreCloseToSubsite), Tags = ValidationTag.Optional)]
     public abstract class TreeBase : UserCreatedEntityBase
     {
         protected TreeBase()
@@ -105,7 +102,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_CommonName;
-        [NotEmptyOrWhitesapceAttribute(Message = "Common name must be specified.", Tags = ValidationTag.Screening)]
+        [NotEmptyOrWhitesapce(Message = "Common name must be specified.", Tags = ValidationTag.Screening)]
         [Length(100, Message = "Common name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string CommonName
         {
@@ -114,7 +111,6 @@ namespace TMD.Model.Imports
         }
 
         private string m_ScientificName;
-        [NotEmptyOrWhitesapceAttribute(Message = "Scientific name must be specified.", Tags = ValidationTag.Screening)]
         [Length(100, Message = "Scientific name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
         public virtual string ScientificName
         {
@@ -122,21 +118,13 @@ namespace TMD.Model.Imports
             set { m_ScientificName = value.OrEmptyAndTrimToSentenceCase(); }
         }
 
-        [Valid, Specified(Message = "You must specify coordinates for this measurement or its containing subsite.", Tags = ValidationTag.Finalization)]
+        [Valid, Specified(Message = "You must either specify coordinates for this measurement or the subsite that contains it.", Tags = ValidationTag.Finalization)]
         public virtual Coordinates Coordinates { get; set; }
 
         public virtual bool CanCalculateCoordinates(bool ignoreContaingSubsite = false)
-        {
-            if (Coordinates.IsValidAndSpecified())
-            {
-                return true;
-            }
-            if (!ignoreContaingSubsite)
-            {
-                return Subsite.CanCalculateCoordinates();
-            }
-            return false;
-        }
+            => Coordinates.IsValidAndSpecified() ? true
+            : !ignoreContaingSubsite ? Subsite.CanCalculateCoordinates()
+            : false;
 
         public virtual Coordinates CalculateCoordinates(bool ignoreContainingSubsite = false)
         {
@@ -155,7 +143,7 @@ namespace TMD.Model.Imports
         {
             if (!CanCalculateCoordinates())
             {
-                context.AddInvalid<TreeBase, Coordinates>("Coordinates must be specified.", tm => tm.Coordinates);
+                context.AddInvalid<TreeBase, Coordinates>("You must either specify coordinates for this measurement or the subsite that contains it.", tm => tm.Coordinates);
             }
         }
 
