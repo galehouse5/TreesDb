@@ -1,0 +1,13 @@
+﻿@model String
+
+@{
+    if (ViewData.ModelMetadata.IsReadOnly)
+    {
+      ViewBag.disabled = true;
+    }
+
+    ViewBag.@class = ViewBag.@class == null ? "text" : ViewBag.@class + " text";
+    ViewBag.size = ViewBag.size ?? "50";
+}
+
+@Html.TextBoxFor(m => m, ViewData)

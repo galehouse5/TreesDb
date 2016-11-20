@@ -85,6 +85,7 @@ namespace T4MVC
                 public readonly string PhotoGalleryModel = "PhotoGalleryModel";
                 public readonly string State = "State";
                 public readonly string String = "String";
+                public readonly string _Url = "Url";
             }
         }
     }

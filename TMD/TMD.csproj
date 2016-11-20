@@ -512,6 +512,7 @@
     <Content Include="Views\Import\Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\Shared\EditorTemplates\Url.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
