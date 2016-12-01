@@ -1,28 +1,28 @@
-﻿@model EntityGridModel<TMD.Model.Trees.GlobalMeasuredSpecies>
-@(Html.DataTablesGrid<TMD.Model.Trees.GlobalMeasuredSpecies>(parameterNamePrefix: Model.ParameterNamePrefix,
-    columns: builder =>
-    {
-        builder
-            .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, MVC.Browse.SpeciesDetails(species.ScientificName, species.CommonName)))
-            .Options(header: "Botanical name", canFilter: true, filterTitle: "Search botanical names");
-        builder
-            .Custom("CommonName", species => Html.ActionLink(species.CommonName, MVC.Browse.SpeciesDetails(species.ScientificName, species.CommonName)))
-            .Options(header: "Common name", canFilter: true, filterTitle: "Search common names");
-        builder
-            .Custom("MaxHeight", species => species.MaxHeight.IsValidAndSpecified() ?
-                Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), MVC.Browse.TreeDetails(species.MaxHeightTree.Id))
-                : MvcHtmlString.Create("-"))
-            .Options(header: "Max height", canFilter: false, defaultSortAscending: false);
-        builder
-            .Custom("MaxGirth", species => species.MaxGirth.IsValidAndSpecified() ?
-                Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), MVC.Browse.TreeDetails(species.MaxGirthTree.Id))
-                : MvcHtmlString.Create("-"))
-            .Options(header: "Max girth", canFilter: false, defaultSortAscending: false);
-        builder
-            .Custom("MaxCrownSpread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
-                Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), MVC.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
-                : MvcHtmlString.Create("-"))
-            .Options(header: "Max crown spread", canFilter: false, defaultSortAscending: false);
-    },
-    rowsPerPage: Model.RowsPerPage,
-    dataSource: Model.PageEntities, filteredRowCount: Model.FilteredEntitiesCount, totalRowCount: Model.TotalEntitiesCount))
+﻿@model EntityGridModel<GlobalMeasuredSpecies>
+@(Html.DataTablesGrid<GlobalMeasuredSpecies>(parameterNamePrefix: Model.ParameterNamePrefix,
+  columns: builder =>
+  {
+    builder
+      .Custom("BotanicalName", species => Html.ActionLink(species.ScientificName, MVC.Browse.SpeciesDetails(species.ScientificName, species.CommonName)))
+      .Options(header: "Botanical name", canFilter: true, filterTitle: "Search botanical names");
+    builder
+      .Custom("CommonName", species => Html.ActionLink(species.CommonName, MVC.Browse.SpeciesDetails(species.ScientificName, species.CommonName)))
+      .Options(header: "Common name", canFilter: true, filterTitle: "Search common names");
+    builder
+      .Custom("MaxHeight", species => species.MaxHeight.IsValidAndSpecified() ?
+        Html.ActionLink(species.MaxHeight.ToString(UserSession.Units), MVC.Browse.TreeDetails(species.MaxHeightTree.Id))
+        : MvcHtmlString.Create("-"))
+      .Options(header: "Max height", canFilter: false, defaultSortAscending: false);
+    builder
+      .Custom("MaxGirth", species => species.MaxGirth.IsValidAndSpecified() ?
+        Html.ActionLink(species.MaxGirth.ToString(UserSession.Units, renderMode: UnitRenderMode.SubprefixOnly), MVC.Browse.TreeDetails(species.MaxGirthTree.Id))
+        : MvcHtmlString.Create("-"))
+      .Options(header: "Max girth", canFilter: false, defaultSortAscending: false);
+    builder
+      .Custom("MaxCrownSpread", species => species.MaxCrownSpread.IsValidAndSpecified() ?
+        Html.ActionLink(species.MaxCrownSpread.ToString(UserSession.Units), MVC.Browse.TreeDetails(species.MaxCrownSpreadTree.Id))
+        : MvcHtmlString.Create("-"))
+      .Options(header: "Max crown spread", canFilter: false, defaultSortAscending: false);
+  },
+  rowsPerPage: Model.RowsPerPage,
+  dataSource: Model.PageEntities, filteredRowCount: Model.FilteredEntitiesCount, totalRowCount: Model.TotalEntitiesCount))

@@ -1,4 +1,4 @@
-﻿@model TMD.Models.BrowseTreeDetailsModel
+﻿@model BrowseTreeDetailsModel
 <tr>
     <td class="description">Botanical name</td>
     <td class="value"><a href="@Url.Action(MVC.Browse.SpeciesDetails(Model.ScientificName, Model.CommonName, siteId: Model.SiteId))">@Html.DisplayFor(m => m.ScientificName)</a></td>

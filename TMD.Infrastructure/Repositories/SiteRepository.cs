@@ -147,6 +147,20 @@ order by rank.Rank desc")
                 .SetMaxResults(maxResults)
                 .List<Subsite>();
         }
+
+        public IEnumerable<SubsiteVisit> ListRecentSubsiteVisits(int maxResults)
+            => Registry.Session.CreateCriteria<SubsiteVisit>()
+            .SetFetchMode(nameof(SubsiteVisit.State), FetchMode.Eager)
+            .SetFetchMode(nameof(SubsiteVisit.Subsite), FetchMode.Eager)
+            .SetFetchMode($"{nameof(SubsiteVisit.Subsite)}.{nameof(Subsite.Site)}", FetchMode.Eager)
+            .SetFetchMode(nameof(SiteVisit.Visitors), FetchMode.Eager)
+            .SetResultTransformer(Transformers.DistinctRootEntity)
+            .AddOrder(Order.Desc(nameof(SubsiteVisit.Visited)))
+            // Fetching visitors creates in a cross product, which inflates the row count.  Doubling the row
+            // count should accommodate this usually, as the average subsite visit has less than two visitors.
+            .SetMaxResults(maxResults * 2)
+            .List<SubsiteVisit>()
+            .Take(maxResults);
     }
 
     public static class SubsiteBrowserExtensions
@@ -164,6 +178,10 @@ order by rank.Rank desc")
             if (!string.IsNullOrEmpty(browser.StateFilter))
             {
                 criteria.Add(Restrictions.Like("state.Name", browser.StateFilter, MatchMode.Anywhere));
+            }
+            if (!string.IsNullOrEmpty(browser.CountyFilter))
+            {
+                criteria.Add(Restrictions.Like(nameof(Subsite.County), browser.CountyFilter, MatchMode.Anywhere));
             }
             return criteria;
         }

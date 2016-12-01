@@ -1,10 +1,13 @@
-﻿@model EntityGridModel<TMD.Model.Sites.Subsite>
-@(Html.DataTablesGrid<TMD.Model.Sites.Subsite>(parameterNamePrefix: Model.ParameterNamePrefix,
+﻿@model EntityGridModel<Subsite>
+@(Html.DataTablesGrid<Subsite>(parameterNamePrefix: Model.ParameterNamePrefix,
     columns: builder =>
     {
         builder
             .Custom("State", subsite => Html.ActionLink(subsite.State.Name, MVC.Browse.StateDetails(subsite.State.Id)))
             .Options(canFilter: true, header: "State", filterTitle: "Search states");
+        builder
+            .Custom("County", subsite => subsite.County)
+            .Options(canFilter: true, header: "County", filterTitle: "Search county");
         builder
             .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, MVC.Browse.SiteDetails(subsite.Site.Id)))
             .Options(canFilter: true, filterTitle: "Search sites");

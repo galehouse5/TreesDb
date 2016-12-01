@@ -27,6 +27,8 @@ namespace TMD.Model.Trees
         IList<SiteMeasuredSpecies> ListMeasuredSpeciesForSitesByNameAndStateId(string botanicalName, string commonName, int stateId);
         IList<SubsiteMeasuredSpecies> ListMeasuredSpeciesBySubsiteId(int id);
         IList<StateMeasuredSpecies> ListMeasuredSpeciesByStateId(int id);
+
+        IList<MeasurerActivity> ListMostActiveMeasurers(int maxResults);
     }
 
     public class SpeciesBrowser : IPagingOptions

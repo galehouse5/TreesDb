@@ -210,7 +210,21 @@
     <Compile Include="Mappings\ValidationMapping\PathMatcher.cs" />
     <Compile Include="Extensions\ModelMetadataExtensions.cs" />
     <Compile Include="Models\AccountModel.cs" />
-    <Compile Include="Models\BrowseModel.cs" />
+    <Compile Include="Models\Browse\BrowseMenuWidgetModel.cs" />
+    <Compile Include="Models\Browse\BrowsePhotoSummaryModel.cs" />
+    <Compile Include="Models\Browse\BrowseSiteModel.cs" />
+    <Compile Include="Models\Browse\BrowseSiteVisitModel.cs" />
+    <Compile Include="Models\Browse\BrowseSpeciesDetailsModel.cs" />
+    <Compile Include="Models\Browse\BrowseSpeciesModel.cs" />
+    <Compile Include="Models\Browse\BrowseStateModel.cs" />
+    <Compile Include="Models\Browse\BrowseSubsiteDetailsModel.cs" />
+    <Compile Include="Models\Browse\BrowseSubsiteLocationModel.cs" />
+    <Compile Include="Models\Browse\BrowseTreeDetailsModel.cs" />
+    <Compile Include="Models\Browse\BrowseTreeLocationModel.cs" />
+    <Compile Include="Models\Browse\BrowseTreeModel.cs" />
+    <Compile Include="Models\Browse\EntityGridModel.cs" />
+    <Compile Include="Models\Browse\MeasurerActivityModel.cs" />
+    <Compile Include="Models\Browse\TripLogModel.cs" />
     <Compile Include="Models\ErrorModels.cs" />
     <Compile Include="Models\ExportModel.cs" />
     <Compile Include="Models\Import\ImportFinishedSiteModel.cs" />
@@ -277,12 +291,6 @@
     <Content Include="css\plugin-tipsy.css" />
     <Content Include="css\plugin-uniform.default.css" />
     <Content Include="css\screen.css" />
-    <Content Include="css\screen\buttons.css" />
-    <Content Include="css\screen\layout.css" />
-    <Content Include="css\screen\mega.css" />
-    <Content Include="css\screen\reset.css" />
-    <Content Include="css\screen\text.css" />
-    <Content Include="css\screen\xGrid.css" />
     <Content Include="css\theme-plugin.css" />
     <Content Include="css\theme-login.css" />
     <Content Include="css\theme-screen.css" />
@@ -375,7 +383,6 @@
     <Content Include="Views\Account\AccountWidget.cshtml" />
     <Content Include="Views\Browse\Species.cshtml" />
     <Content Include="Views\Browse\Locations.cshtml" />
-    <Content Include="Views\Browse\Index.cshtml" />
     <Content Include="Views\Browse\SpeciesDetails.cshtml" />
     <Content Include="Views\Browse\SiteDetails.cshtml" />
     <Content Include="Views\Browse\StateDetails.cshtml" />
@@ -513,6 +520,10 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Shared\EditorTemplates\Url.cshtml" />
+    <Content Include="Views\Browse\Web.config" />
+    <Content Include="Views\Browse\Activity.cshtml" />
+    <Content Include="Views\Browse\_RecentTrips.cshtml" />
+    <Content Include="Views\Browse\_MostActiveMeasurers.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

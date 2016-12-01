@@ -394,7 +394,7 @@ namespace TMD.Extensions
         {
             if (model.CanAnyColumnFilter)
             {
-                output.Write("<form method='get' action='{0}'>", HttpUtility.HtmlEncode(model.GetFilterUrl()));
+                output.Write("<form method='get' action='{0}' class='form'>", HttpUtility.HtmlEncode(model.GetFilterUrl()));
                 if (model.IsSortParameterSpecified)
                 {
                     output.Write("<input type='hidden' name='{0}' value='{1}'/>", HttpUtility.HtmlEncode(model.SortParameterName), HttpUtility.HtmlEncode(model.SortColumnName));
@@ -427,10 +427,10 @@ namespace TMD.Extensions
             }
             if (model.CanAnyColumnFilter)
             {
-                output.Write("</tr><tr>");
+                output.Write("</tr><tr class='filters'>");
                 foreach (var column in model.Columns)
                 {
-                    output.Write("<th>");
+                    output.Write("<th class='field'>");
                     if (column.CanFilter)
                     {
                         output.Write("<input type='text' name='{0}' value='{1}'",

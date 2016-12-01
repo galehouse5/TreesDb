@@ -1,0 +1,27 @@
+﻿@model IEnumerable<TripLogModel>
+
+<table cellspacing="0" cellpadding="0" border="0" class="display">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>State</th>
+      <th>County</th>
+      <th>Site</th>
+      <th>Measurers</th>
+    </tr>
+  </thead>
+  <tbody>
+    @{ int row = 1; }
+    @foreach (TripLogModel log in Model)
+    {
+      <tr class="@(row % 2 == 1 ? "odd" : "even")">
+        <td>@Html.DisplayFor(m => log.Date)</td>
+        <td>@Html.ActionLink(log.StateName, MVC.Browse.StateDetails(log.StateId))</td>
+        <td>@log.County</td>
+        <td>@Html.ActionLink(log.SiteName, MVC.Browse.SiteDetails(log.SiteId))</td>
+        <td>@Html.DisplayFor(m => log.Visitors)</td>
+      </tr>
+      row++;
+    }
+  </tbody>
+</table>

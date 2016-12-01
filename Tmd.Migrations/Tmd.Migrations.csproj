@@ -46,9 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Profiles\RecompileObjects.cs" />
+    <Compile Include="Profiles\MigrateUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Scripts\RecompileObjects.sql" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Baseline\CreateSchema.sql" />
@@ -58,6 +57,8 @@
     <Content Include="Baseline\InsertTestData.sql" />
     <Content Include="Baseline\Release\CreateLoginsAndUsers.sql" />
     <Content Include="Baseline\Release\DropLoginsAndUsers.sql" />
+    <EmbeddedResource Include="Scripts\CreateObjectsAndTypes.sql" />
+    <EmbeddedResource Include="Scripts\DropObjectsAndTypes.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -67,7 +68,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>echo "$(SolutionDir)packages\FluentMigrator.1.6.2\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -t listmigrations &gt; ListMigrations.bat
-echo "$(SolutionDir)packages\FluentMigrator.1.6.2\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -profile RecompileObjects &gt; MigrateUp.bat
+echo "$(SolutionDir)packages\FluentMigrator.1.6.2\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -profile MigrateUp &gt; MigrateUp.bat
 echo "$(SolutionDir)packages\FluentMigrator.1.6.2\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -t rollback &gt; Rollback.bat
 copy "$(ProjectDir)\Baseline\$(ConfigurationName)" "$(TargetDir)\Baseline"</PostBuildEvent>
   </PropertyGroup>

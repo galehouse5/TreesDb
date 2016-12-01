@@ -5,14 +5,15 @@ using System.Linq;
 using System.Web.Mvc;
 using TMD.Extensions;
 using TMD.Model;
+using TMD.Model.Extensions;
 using TMD.Model.Locations;
 using TMD.Model.Sites;
 using TMD.Model.Trees;
-using TMD.Models;
+using TMD.Models.Browse;
 
 namespace TMD.Controllers
 {
-    [CheckBrowserCompatibilityFilterAttribute]
+    [CheckBrowserCompatibilityFilter]
     public partial class BrowseController : ControllerBase
     {
         [ChildActionOnly]
@@ -244,13 +245,13 @@ namespace TMD.Controllers
 
         [DefaultReturnUrl]
         public virtual ActionResult Locations(int? page = null, string sort = null, bool? sortAsc = null,
-            string stateFilter = "", string siteFilter = "", string subsiteFilter = "")
+            string stateFilter = "", string countyFilter = "", string siteFilter = "", string subsiteFilter = "")
         {
             SubsiteBrowser browser = new SubsiteBrowser
             {
                 PageIndex = page ?? 0,
                 PageSize = 40,
-                StateFilter = stateFilter, SiteFilter = siteFilter, SubsiteFilter = subsiteFilter,
+                StateFilter = stateFilter, CountyFilter = countyFilter, SiteFilter = siteFilter, SubsiteFilter = subsiteFilter,
                 SortAscending = !sortAsc.HasValue || sortAsc.Value,
                 SortProperty = "State".Equals(sort) ? SubsiteBrowser.Property.State
                     : "Site".Equals(sort) ? SubsiteBrowser.Property.Site
@@ -269,55 +270,22 @@ namespace TMD.Controllers
             }
             return View(gridModel);
         }
-        
+
         [DefaultReturnUrl]
-        public virtual ActionResult Index(int? speciesPage = null, string speciesSort = null, bool? speciesSortAsc = null, 
-            string speciesBotanicalNameFilter = "", string speciesCommonNameFilter = "",
-            int? locationsPage = null, string locationsSort = null, bool? locationsSortAsc = null,
-            string locationsStateFilter = "", string locationsSiteFilter = "", string locationsSubsiteFilter = "",
-            string parameterNamePrefix = null)
+        public virtual ActionResult Activity() => View();
+        
+        [ChildActionOnly]
+        public virtual ActionResult RecentTrips()
         {
-            SpeciesBrowser speciesBrowser = new SpeciesBrowser
-            {
-                PageIndex = speciesPage ?? 0,
-                PageSize = 20,
-                BotanicalNameFilter = speciesBotanicalNameFilter, CommonNameFilter = speciesCommonNameFilter,
-                SortAscending = !speciesSortAsc.HasValue || speciesSortAsc.Value,
-                SortProperty = "BotanicalName".Equals(speciesSort) ? SpeciesBrowser.Property.BotanicalName
-                    : "CommonName".Equals(speciesSort) ? SpeciesBrowser.Property.CommonName
-                    : "MaxHeight".Equals(speciesSort) ? SpeciesBrowser.Property.MaxHeight
-                    : "MaxGirth".Equals(speciesSort) ? SpeciesBrowser.Property.MaxGirth
-                    : "MaxCrownSpread".Equals(speciesSort) ? SpeciesBrowser.Property.MaxCrownSpread
-                    : SpeciesBrowser.Property.BotanicalName
-            };
-            var speciesModel = Repositories.Trees.ListAllMeasuredSpecies<GlobalMeasuredSpecies>(speciesBrowser);
-            var speciesGridModel = new EntityGridModel<GlobalMeasuredSpecies>(speciesModel) { ParameterNamePrefix = "species", RowsPerPage = 20 };
-            if (Request.IsAjaxRequest() && "species".Equals(parameterNamePrefix))
-            {
-                return PartialView("GlobalSpeciesGridPartial", speciesGridModel);
-            }
-            SubsiteBrowser locationsBrowser = new SubsiteBrowser
-            {
-                PageIndex = locationsPage ?? 0,
-                PageSize = 20,
-                StateFilter = locationsStateFilter, SiteFilter = locationsSiteFilter, SubsiteFilter = locationsSubsiteFilter,
-                SortAscending = !locationsSortAsc.HasValue || locationsSortAsc.Value,
-                SortProperty = "State".Equals(locationsSort) ? SubsiteBrowser.Property.State
-                    : "Site".Equals(locationsSort) ? SubsiteBrowser.Property.Site
-                    : "Subsite".Equals(locationsSort) ? SubsiteBrowser.Property.Subsite
-                    : "RHI5".Equals(locationsSort) ? SubsiteBrowser.Property.RHI5
-                    : "RHI10".Equals(locationsSort) ? SubsiteBrowser.Property.RHI10
-                    : "RGI5".Equals(locationsSort) ? SubsiteBrowser.Property.RGI5
-                    : "RGI10".Equals(locationsSort) ? SubsiteBrowser.Property.RGI10
-                    : SubsiteBrowser.Property.State
-            };
-            var locationsModel = Repositories.Sites.ListAllSubsites(locationsBrowser);
-            var locationsGridModel = new EntityGridModel<Subsite>(locationsModel) { ParameterNamePrefix = "locations", RowsPerPage = 20 };
-            if (Request.IsAjaxRequest() && "locations".Equals(parameterNamePrefix))
-            {
-                return PartialView("LocationsGridPartial", locationsGridModel);
-            }
-            return View(new Tuple<EntityGridModel<GlobalMeasuredSpecies>, EntityGridModel<Subsite>>(speciesGridModel, locationsGridModel));
+            var visits = Repositories.Sites.ListRecentSubsiteVisits(40);
+            return PartialView("_RecentTrips", visits.Select(TripLogModel.Create));
+        }
+
+        [ChildActionOnly]
+        public virtual ActionResult MostActiveMeasurers()
+        {
+            var measurers = Repositories.Trees.ListMostActiveMeasurers(40);
+            return PartialView("_MostActiveMeasurers", measurers.Select(MeasurerActivityModel.Create));
         }
     }
 }

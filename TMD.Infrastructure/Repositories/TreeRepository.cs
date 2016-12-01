@@ -239,6 +239,12 @@ order by rank.Rank desc")
                 .SetMaxResults(maxResults)
                 .List<GlobalMeasuredSpecies>();
         }
+
+        public IList<MeasurerActivity> ListMostActiveMeasurers(int maxResults)
+            => Registry.Session.CreateCriteria<MeasurerActivity>()
+            .AddOrder(Order.Desc(nameof(MeasurerActivity.TreesMeasuredCount)))
+            .SetMaxResults(maxResults)
+            .List<MeasurerActivity>();
     }
 
     public static class SpeciesBrowserExtensions

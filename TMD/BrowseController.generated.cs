@@ -112,7 +112,9 @@ namespace TMD.Controllers
             public readonly string StateDetails = "StateDetails";
             public readonly string Species = "Species";
             public readonly string Locations = "Locations";
-            public readonly string Index = "Index";
+            public readonly string Activity = "Activity";
+            public readonly string RecentTrips = "RecentTrips";
+            public readonly string MostActiveMeasurers = "MostActiveMeasurers";
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -125,7 +127,9 @@ namespace TMD.Controllers
             public const string StateDetails = "StateDetails";
             public const string Species = "Species";
             public const string Locations = "Locations";
-            public const string Index = "Index";
+            public const string Activity = "Activity";
+            public const string RecentTrips = "RecentTrips";
+            public const string MostActiveMeasurers = "MostActiveMeasurers";
         }
 
 
@@ -214,27 +218,9 @@ namespace TMD.Controllers
             public readonly string sort = "sort";
             public readonly string sortAsc = "sortAsc";
             public readonly string stateFilter = "stateFilter";
+            public readonly string countyFilter = "countyFilter";
             public readonly string siteFilter = "siteFilter";
             public readonly string subsiteFilter = "subsiteFilter";
-        }
-        static readonly ActionParamsClass_Index s_params_Index = new ActionParamsClass_Index();
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ActionParamsClass_Index IndexParams { get { return s_params_Index; } }
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionParamsClass_Index
-        {
-            public readonly string speciesPage = "speciesPage";
-            public readonly string speciesSort = "speciesSort";
-            public readonly string speciesSortAsc = "speciesSortAsc";
-            public readonly string speciesBotanicalNameFilter = "speciesBotanicalNameFilter";
-            public readonly string speciesCommonNameFilter = "speciesCommonNameFilter";
-            public readonly string locationsPage = "locationsPage";
-            public readonly string locationsSort = "locationsSort";
-            public readonly string locationsSortAsc = "locationsSortAsc";
-            public readonly string locationsStateFilter = "locationsStateFilter";
-            public readonly string locationsSiteFilter = "locationsSiteFilter";
-            public readonly string locationsSubsiteFilter = "locationsSubsiteFilter";
-            public readonly string parameterNamePrefix = "parameterNamePrefix";
         }
         static readonly ViewsClass s_views = new ViewsClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -247,8 +233,10 @@ namespace TMD.Controllers
             public class _ViewNamesClass
             {
                 public readonly string _MenuWidget = "_MenuWidget";
+                public readonly string _MostActiveMeasurers = "_MostActiveMeasurers";
+                public readonly string _RecentTrips = "_RecentTrips";
+                public readonly string Activity = "Activity";
                 public readonly string GlobalSpeciesGridPartial = "GlobalSpeciesGridPartial";
-                public readonly string Index = "Index";
                 public readonly string Locations = "Locations";
                 public readonly string LocationsGridPartial = "LocationsGridPartial";
                 public readonly string SiteDetails = "SiteDetails";
@@ -262,10 +250,13 @@ namespace TMD.Controllers
                 public readonly string SubsiteSpeciesGridPartial = "SubsiteSpeciesGridPartial";
                 public readonly string TreeDetails = "TreeDetails";
                 public readonly string TreesGridPartial = "TreesGridPartial";
+                public readonly string Web = "Web";
             }
             public readonly string _MenuWidget = "~/Views/Browse/_MenuWidget.cshtml";
+            public readonly string _MostActiveMeasurers = "~/Views/Browse/_MostActiveMeasurers.cshtml";
+            public readonly string _RecentTrips = "~/Views/Browse/_RecentTrips.cshtml";
+            public readonly string Activity = "~/Views/Browse/Activity.cshtml";
             public readonly string GlobalSpeciesGridPartial = "~/Views/Browse/GlobalSpeciesGridPartial.cshtml";
-            public readonly string Index = "~/Views/Browse/Index.cshtml";
             public readonly string Locations = "~/Views/Browse/Locations.cshtml";
             public readonly string LocationsGridPartial = "~/Views/Browse/LocationsGridPartial.cshtml";
             public readonly string SiteDetails = "~/Views/Browse/SiteDetails.cshtml";
@@ -279,6 +270,7 @@ namespace TMD.Controllers
             public readonly string SubsiteSpeciesGridPartial = "~/Views/Browse/SubsiteSpeciesGridPartial.cshtml";
             public readonly string TreeDetails = "~/Views/Browse/TreeDetails.cshtml";
             public readonly string TreesGridPartial = "~/Views/Browse/TreesGridPartial.cshtml";
+            public readonly string Web = "~/Views/Browse/Web.config";
             static readonly _DisplayTemplatesClass s_DisplayTemplates = new _DisplayTemplatesClass();
             public _DisplayTemplatesClass DisplayTemplates { get { return s_DisplayTemplates; } }
             [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -397,42 +389,53 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void LocationsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int? page, string sort, bool? sortAsc, string stateFilter, string siteFilter, string subsiteFilter);
+        partial void LocationsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int? page, string sort, bool? sortAsc, string stateFilter, string countyFilter, string siteFilter, string subsiteFilter);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Locations(int? page, string sort, bool? sortAsc, string stateFilter, string siteFilter, string subsiteFilter)
+        public override System.Web.Mvc.ActionResult Locations(int? page, string sort, bool? sortAsc, string stateFilter, string countyFilter, string siteFilter, string subsiteFilter)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Locations);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "page", page);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "sort", sort);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "sortAsc", sortAsc);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "stateFilter", stateFilter);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "countyFilter", countyFilter);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "siteFilter", siteFilter);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteFilter", subsiteFilter);
-            LocationsOverride(callInfo, page, sort, sortAsc, stateFilter, siteFilter, subsiteFilter);
+            LocationsOverride(callInfo, page, sort, sortAsc, stateFilter, countyFilter, siteFilter, subsiteFilter);
             return callInfo;
         }
 
         [NonAction]
-        partial void IndexOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int? speciesPage, string speciesSort, bool? speciesSortAsc, string speciesBotanicalNameFilter, string speciesCommonNameFilter, int? locationsPage, string locationsSort, bool? locationsSortAsc, string locationsStateFilter, string locationsSiteFilter, string locationsSubsiteFilter, string parameterNamePrefix);
+        partial void ActivityOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Index(int? speciesPage, string speciesSort, bool? speciesSortAsc, string speciesBotanicalNameFilter, string speciesCommonNameFilter, int? locationsPage, string locationsSort, bool? locationsSortAsc, string locationsStateFilter, string locationsSiteFilter, string locationsSubsiteFilter, string parameterNamePrefix)
+        public override System.Web.Mvc.ActionResult Activity()
         {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Index);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "speciesPage", speciesPage);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "speciesSort", speciesSort);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "speciesSortAsc", speciesSortAsc);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "speciesBotanicalNameFilter", speciesBotanicalNameFilter);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "speciesCommonNameFilter", speciesCommonNameFilter);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "locationsPage", locationsPage);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "locationsSort", locationsSort);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "locationsSortAsc", locationsSortAsc);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "locationsStateFilter", locationsStateFilter);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "locationsSiteFilter", locationsSiteFilter);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "locationsSubsiteFilter", locationsSubsiteFilter);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "parameterNamePrefix", parameterNamePrefix);
-            IndexOverride(callInfo, speciesPage, speciesSort, speciesSortAsc, speciesBotanicalNameFilter, speciesCommonNameFilter, locationsPage, locationsSort, locationsSortAsc, locationsStateFilter, locationsSiteFilter, locationsSubsiteFilter, parameterNamePrefix);
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Activity);
+            ActivityOverride(callInfo);
+            return callInfo;
+        }
+
+        [NonAction]
+        partial void RecentTripsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        [NonAction]
+        public override System.Web.Mvc.ActionResult RecentTrips()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.RecentTrips);
+            RecentTripsOverride(callInfo);
+            return callInfo;
+        }
+
+        [NonAction]
+        partial void MostActiveMeasurersOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+
+        [NonAction]
+        public override System.Web.Mvc.ActionResult MostActiveMeasurers()
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.MostActiveMeasurers);
+            MostActiveMeasurersOverride(callInfo);
             return callInfo;
         }
 

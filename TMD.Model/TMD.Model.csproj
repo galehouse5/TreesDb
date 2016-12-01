@@ -78,6 +78,7 @@
     <Compile Include="Sites\ISiteRepository.cs" />
     <Compile Include="Sites\Subsite.cs" />
     <Compile Include="Sites\Site.cs" />
+    <Compile Include="Trees\MeasurerActivity.cs" />
     <Compile Include="Trees\Species.cs" />
     <Compile Include="Trees\Measurement.cs" />
     <Compile Include="Trees\Tree.cs" />

@@ -15,6 +15,7 @@ namespace TMD.Model.Sites
         EntityPage<Subsite> ListAllSubsites(SubsiteBrowser browser);
         IList<Subsite> FindSubsitesByStateId(int stateId);
         IEnumerable<Subsite> SearchSubsites(string expression, int maxResults);
+        IEnumerable<SubsiteVisit> ListRecentSubsiteVisits(int maxResults);
     }
 
     public class SubsiteBrowser : IPagingOptions
@@ -23,19 +24,16 @@ namespace TMD.Model.Sites
         public Property? SortProperty { get; set; }
         public bool SortAscending { get; set; }
         public string StateFilter { get; set; }
+        public string CountyFilter { get; set; }
         public string SiteFilter { get; set; }
         public string SubsiteFilter { get; set; }
         public int PageIndex { get; set; }
         public int PageSize { get; set; }
 
         public bool HasFilters
-        {
-            get
-            {
-                return !string.IsNullOrEmpty(SiteFilter)
-                    || !string.IsNullOrEmpty(SubsiteFilter)
-                    || !string.IsNullOrEmpty(StateFilter);
-            }
-        }
+            => !string.IsNullOrEmpty(StateFilter)
+            || !string.IsNullOrEmpty(CountyFilter)
+            || !string.IsNullOrEmpty(SiteFilter)
+            || !string.IsNullOrEmpty(SubsiteFilter);
     }
 }

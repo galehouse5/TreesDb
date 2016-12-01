@@ -189,5 +189,15 @@
       </composite-element>
     </bag>
   </class>
-  
+
+  <class name="TMD.Model.Trees.MeasurerActivity" table="MeasurerActivity" schema="dbo">
+    <id name="Id"></id>
+    <component name="Name">
+      <property name="FirstName"/>
+      <property name="LastName"/>
+    </component>
+    <property name="TreesMeasuredCount" />
+    <property name="SitesVisitedCount" />
+    <property name="LastMeasurementDate" />
+  </class>
 </hibernate-mapping>

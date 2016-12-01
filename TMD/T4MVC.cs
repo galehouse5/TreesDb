@@ -114,19 +114,6 @@ namespace Links
         public static readonly string plugin_jquery_visualize_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/plugin-jquery.visualize.min.css") ? Url("plugin-jquery.visualize.min.css") : Url("plugin-jquery.visualize.css");
         public static readonly string plugin_tipsy_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/plugin-tipsy.min.css") ? Url("plugin-tipsy.min.css") : Url("plugin-tipsy.css");
         public static readonly string plugin_uniform_default_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/plugin-uniform.default.min.css") ? Url("plugin-uniform.default.min.css") : Url("plugin-uniform.default.css");
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public static class screen {
-            public const string UrlPath = "~/css/screen";
-            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(UrlPath); }
-            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(UrlPath + "/" + fileName); }
-            public static readonly string buttons_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/buttons.min.css") ? Url("buttons.min.css") : Url("buttons.css");
-            public static readonly string layout_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/layout.min.css") ? Url("layout.min.css") : Url("layout.css");
-            public static readonly string mega_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/mega.min.css") ? Url("mega.min.css") : Url("mega.css");
-            public static readonly string reset_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/reset.min.css") ? Url("reset.min.css") : Url("reset.css");
-            public static readonly string text_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/text.min.css") ? Url("text.min.css") : Url("text.css");
-            public static readonly string xGrid_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/xGrid.min.css") ? Url("xGrid.min.css") : Url("xGrid.css");
-        }
-    
         public static readonly string screen_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/screen.min.css") ? Url("screen.min.css") : Url("screen.css");
         public static readonly string theme_login_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/theme-login.min.css") ? Url("theme-login.min.css") : Url("theme-login.css");
         public static readonly string theme_plugin_css = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/theme-plugin.min.css") ? Url("theme-plugin.min.css") : Url("theme-plugin.css");
@@ -299,18 +286,6 @@ namespace Links
                 public static class Assets
                 {
                     public const string jquery_ui_1_8_7_custom_css = "~/css/jquery/jquery-ui-1.8.7.custom.css";
-                }
-            }
-            public static partial class screen 
-            {
-                public static class Assets
-                {
-                    public const string buttons_css = "~/css/screen/buttons.css";
-                    public const string layout_css = "~/css/screen/layout.css";
-                    public const string mega_css = "~/css/screen/mega.css";
-                    public const string reset_css = "~/css/screen/reset.css";
-                    public const string text_css = "~/css/screen/text.css";
-                    public const string xGrid_css = "~/css/screen/xGrid.css";
                 }
             }
             public static class Assets

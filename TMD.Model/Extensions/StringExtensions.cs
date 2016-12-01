@@ -23,6 +23,5 @@ namespace TMD.Model.Extensions
 
         public static string ToTitleCase(this string source)
             => CultureInfo.CurrentCulture.TextInfo.ToTitleCase(source);
-
     }
 }

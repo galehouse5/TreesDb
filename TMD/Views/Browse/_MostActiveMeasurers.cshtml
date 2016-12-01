@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MeasurerActivityModel>
+
+<table cellspacing="0" cellpadding="0" border="0" class="display">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Measurer</th>
+      <th>Trees measured</th>
+      <th>Sites visited</th>
+      <th>Last measuremenet</th>
+    </tr>
+  </thead>
+  <tbody>
+    @{ int row = 1; }
+    @foreach (MeasurerActivityModel activity in Model)
+    {
+      <tr class="@(row % 2 == 1 ? "odd" : "even")">
+        <td>@row</td>
+        <td>@Html.DisplayFor(m => activity.Name)</td>
+        <td>@(activity.TreesMeasuredCount ?? (object)"-")</td>
+        <td>@(activity.SiteVisitsCount ?? (object)"-")</td>
+        <td>@Html.DisplayFor(m => activity.LastMeasurementDate)</td>
+      </tr>
+      row++;
+    }
+  </tbody>
+</table>
