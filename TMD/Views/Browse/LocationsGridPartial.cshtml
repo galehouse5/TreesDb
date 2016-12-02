@@ -3,14 +3,14 @@
     columns: builder =>
     {
         builder
-            .Custom("State", subsite => Html.ActionLink(subsite.State.Name, MVC.Browse.StateDetails(subsite.State.Id)))
-            .Options(canFilter: true, header: "State", filterTitle: "Search states");
+            .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, MVC.Browse.SiteDetails(subsite.Site.Id)))
+            .Options(canFilter: true, filterTitle: "Search sites");
         builder
             .Custom("County", subsite => subsite.County)
             .Options(canFilter: true, header: "County", filterTitle: "Search county");
         builder
-            .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, MVC.Browse.SiteDetails(subsite.Site.Id)))
-            .Options(canFilter: true, filterTitle: "Search sites");
+            .Custom("State", subsite => Html.ActionLink(subsite.State.Name, MVC.Browse.StateDetails(subsite.State.Id)))
+            .Options(canFilter: true, header: "State", filterTitle: "Search states");
         builder
             .Custom("RHI5", subsite => subsite.RHI5.HasValue ? 
                 MvcHtmlString.Create(subsite.RHI5.ToString()) 
@@ -31,6 +31,9 @@
                 MvcHtmlString.Create(subsite.RGI10.ToString())
                 : MvcHtmlString.Create("-"))
             .Options(canFilter: false, defaultSortAscending: false);
+        builder
+            .Custom("LastVisit", subsite => Html.DisplayFor(m => subsite.LastVisited))
+            .Options(header: "Last visit", canFilter: false);
     },
     rowsPerPage: Model.RowsPerPage,
     dataSource: Model.PageEntities, filteredRowCount: Model.FilteredEntitiesCount, totalRowCount: Model.TotalEntitiesCount))

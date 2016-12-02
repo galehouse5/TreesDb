@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Linq;
 using TMD.Model.Extensions;
@@ -18,6 +19,8 @@ namespace TMD.Model.Sites
 
         public virtual int Id { get; protected set; }
         public virtual Site Site { get; protected internal set; }
+
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public virtual DateTime LastVisited { get; protected set; }
         public virtual string Name { get; protected set; }
         public virtual State State { get; protected set; }

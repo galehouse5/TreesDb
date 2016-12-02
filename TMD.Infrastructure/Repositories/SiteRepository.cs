@@ -188,28 +188,27 @@ order by rank.Rank desc")
 
         public static ICriteria ApplySorting(this ICriteria criteria, SubsiteBrowser browser)
         {
-            if (browser.SortProperty.HasValue)
+            switch (browser.SortProperty)
             {
-                switch (browser.SortProperty.Value)
-                {
-                    case SubsiteBrowser.Property.Site :
-                        return criteria.AddOrder(new Order("site.Name", browser.SortAscending));
-                    case SubsiteBrowser.Property.State :
-                        return criteria.AddOrder(new Order("state.Name", browser.SortAscending));
-                    case SubsiteBrowser.Property.Subsite :
-                        return criteria.AddOrder(new Order("Name", browser.SortAscending));
-                    case SubsiteBrowser.Property.RHI5 :
-                        return criteria.AddOrder(new Order("RHI5", browser.SortAscending));
-                    case SubsiteBrowser.Property.RHI10 :
-                        return criteria.AddOrder(new Order("RHI10", browser.SortAscending));
-                    case SubsiteBrowser.Property.RGI5 :
-                        return criteria.AddOrder(new Order("RGI5", browser.SortAscending));
-                    case SubsiteBrowser.Property.RGI10 :
-                        return criteria.AddOrder(new Order("RGI10", browser.SortAscending));
-                    default: throw new NotImplementedException();
-                }
+                case SubsiteBrowser.Property.Site:
+                    return criteria.AddOrder(new Order("site.Name", browser.SortAscending));
+                case SubsiteBrowser.Property.State:
+                    return criteria.AddOrder(new Order("state.Name", browser.SortAscending));
+                case SubsiteBrowser.Property.Subsite:
+                    return criteria.AddOrder(new Order("Name", browser.SortAscending));
+                case SubsiteBrowser.Property.RHI5:
+                    return criteria.AddOrder(new Order("RHI5", browser.SortAscending));
+                case SubsiteBrowser.Property.RHI10:
+                    return criteria.AddOrder(new Order("RHI10", browser.SortAscending));
+                case SubsiteBrowser.Property.RGI5:
+                    return criteria.AddOrder(new Order("RGI5", browser.SortAscending));
+                case SubsiteBrowser.Property.RGI10:
+                    return criteria.AddOrder(new Order("RGI10", browser.SortAscending));
+                case SubsiteBrowser.Property.LastVisited:
+                    return criteria.AddOrder(new Order(nameof(Subsite.LastVisited), browser.SortAscending));
+                default:
+                    return criteria.AddOrder(new Order(nameof(Subsite.LastVisited), ascending: false));
             }
-            return criteria;
         }
     }
 }

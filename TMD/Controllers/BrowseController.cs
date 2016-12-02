@@ -260,7 +260,8 @@ namespace TMD.Controllers
                     : "RHI10".Equals(sort) ? SubsiteBrowser.Property.RHI10
                     : "RGI5".Equals(sort) ? SubsiteBrowser.Property.RGI5
                     : "RGI10".Equals(sort) ? SubsiteBrowser.Property.RGI10
-                    : SubsiteBrowser.Property.State
+                    : "LastVisit".Equals(sort) ? SubsiteBrowser.Property.LastVisited
+                    : (SubsiteBrowser.Property?)null
             };
             var model = Repositories.Sites.ListAllSubsites(browser);
             var gridModel = new EntityGridModel<Subsite>(model) { RowsPerPage = 40 };
