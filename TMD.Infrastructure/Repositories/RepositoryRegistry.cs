@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using StructureMap;
+﻿using TMD.Model.Exports;
+using TMD.Model.Locations;
+using TMD.Model.Photos;
+using TMD.Model.Sites;
+using TMD.Model.Trees;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -10,12 +10,13 @@ namespace TMD.Infrastructure.Repositories
     {
         public RepositoryRegistry()
         {
-            For<TMD.Model.Locations.ILocationRepository>().Singleton().Use<LocationRepository>();
-            For<TMD.Model.Trees.ITreeRepository>().Singleton().Use<TreeRepository>();
-            For<TMD.Model.Imports.ImportRepository>().Singleton().Use<ImportRepository>();
-            For<TMD.Model.Users.UserRepository>().Singleton().Use<UserRepository>();
-            For<TMD.Model.Photos.IPhotoRepository>().Singleton().Use<PhotoRepository>();
-            For<TMD.Model.Sites.ISiteRepository>().Singleton().Use<SiteRepository>();
+            For<ILocationRepository>().Singleton().Use<LocationRepository>();
+            For<ITreeRepository>().Singleton().Use<TreeRepository>();
+            For<Model.Imports.ImportRepository>().Singleton().Use<ImportRepository>();
+            For<Model.Users.UserRepository>().Singleton().Use<UserRepository>();
+            For<IPhotoRepository>().Singleton().Use<PhotoRepository>();
+            For<ISiteRepository>().Singleton().Use<SiteRepository>();
+            For<IExportRepository>().Singleton().Use<ExportRepository>();
         }
 
         internal static void Configure(NHibernate.Cfg.Configuration config)

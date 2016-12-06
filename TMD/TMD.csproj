@@ -138,6 +138,7 @@
     <Compile Include="AccountController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
+    <Compile Include="ActionResults\CsvFileResult.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Binders\BinderBase.cs" />
     <Compile Include="Binders\ImportBinders.cs" />

@@ -183,49 +183,6 @@ namespace TMD.Infrastructure.Repositories
                 .List<Tree>();
         }
 
-        public IList<Tree> ListByState(int stateId)
-        {
-            return Registry.Session.CreateCriteria<Tree>()
-                .CreateAlias("Subsite", "subsite")
-                .CreateAlias("subsite.Site", "site")
-                .CreateAlias("subsite.State", "state")
-                .Add(Restrictions.Eq("subsite.State.Id", stateId))
-                .List<Tree>();
-        }
-
-        public IList<Tree> ListByName(string botanicalName, string commonName)
-        {
-            return Registry.Session.CreateCriteria<Tree>()
-                .CreateAlias("Subsite", "subsite")
-                .CreateAlias("subsite.Site", "site")
-                .CreateAlias("subsite.State", "state")
-                .Add(Restrictions.Eq("ScientificName", botanicalName) & Restrictions.Eq("CommonName", commonName))
-                .List<Tree>();
-        }
-
-        public IList<Tree> ListByNameFilters(string botanicalName, string commonName)
-        {
-            return Registry.Session.CreateCriteria<Tree>()
-                .CreateAlias("Subsite", "subsite")
-                .CreateAlias("subsite.Site", "site")
-                .CreateAlias("subsite.State", "state")
-                .Add(Restrictions.Like("ScientificName", botanicalName, MatchMode.Anywhere)
-                    && Restrictions.Like("CommonName", commonName, MatchMode.Anywhere))
-                .List<Tree>();
-        }
-
-        public IList<Tree> ListByStateSiteAndSubsiteFilters(string state, string site, string subsite)
-        {
-            return Registry.Session.CreateCriteria<Tree>()
-                .CreateAlias("Subsite", "subsite")
-                .CreateAlias("subsite.Site", "site")
-                .CreateAlias("subsite.State", "state")
-                .Add(Restrictions.Like("state.Name", state, MatchMode.Anywhere)
-                    && Restrictions.Like("site.Name", site, MatchMode.Anywhere)
-                    && Restrictions.Like("subsite.Name", subsite, MatchMode.Anywhere))
-                .List<Tree>();
-        }
-
         public IEnumerable<GlobalMeasuredSpecies> SearchMeasuredSpecies(string expression, int maxResults)
         {
             return Registry.Session.CreateSQLQuery(

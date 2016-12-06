@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 
 namespace TMD.Model
 {
@@ -16,6 +12,19 @@ namespace TMD.Model
         Meters = 2,
         [Description("yd")]
         Yards = 3
+    }
+
+    public static class UnitsExtensions
+    {
+        public static string Abbreviation(this Units value)
+            => value == Units.Yards ? "yd"
+            : value == Units.Meters ? "m"
+            : "ft";
+
+        public static string SubAbbreviation(this Units value)
+            => value == Units.Yards ? "in"
+            : value == Units.Meters ? "cm"
+            : "in";
     }
 
     public enum UnitRenderMode

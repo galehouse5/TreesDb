@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NHibernate;
+﻿using NHibernate;
 using NHibernate.Cfg;
-using System.Reflection;
-using TMD.Model;
-using TMD.Infrastructure.Repositories;
 using StructureMap;
-using NHibernate.Event;
+using System;
+using System.Reflection;
+using TMD.Infrastructure.Repositories;
+using TMD.Model;
 
 namespace TMD.Infrastructure
 {
@@ -21,44 +17,32 @@ namespace TMD.Infrastructure
             {
                 if (s_SessionFactory == null)
                 {
-                    var config = new NHibernate.Cfg.Configuration().Configure().AddAssembly(Assembly.GetExecutingAssembly());
+                    var config = new Configuration().Configure().AddAssembly(Assembly.GetExecutingAssembly());
                     RepositoryRegistry.Configure(config);
                     s_SessionFactory = config.BuildSessionFactory();
                 }
+
                 return s_SessionFactory;
             }
         }
 
         public static ISession Session
-        {
-            get { return (ObjectFactory.GetInstance<IUnitOfWorkProvider>() as NHibernateUnitOfWorkProvider).Session; }
-        }
+            => (ObjectFactory.GetInstance<IUnitOfWorkProvider>() as NHibernateUnitOfWorkProvider).Session;
 
         private static string s_ConnectionString;
         internal static string ConnectionString
-        {
-            get
-            {
-                if (s_ConnectionString == null)
-                {
-                    s_ConnectionString = getConnectionString(new Configuration().Configure());
-                }
-                return s_ConnectionString;
-            }
-        }
+            => s_ConnectionString ?? (s_ConnectionString = getConnectionString(new Configuration().Configure()));
 
         private static string getConnectionString(Configuration configuration)
         {
             if (configuration.Properties.ContainsKey(NHibernate.Cfg.Environment.ConnectionString))
-            {
                 return configuration.GetProperty(NHibernate.Cfg.Environment.ConnectionString);
-            }
+
             if (configuration.Properties.ContainsKey(NHibernate.Cfg.Environment.ConnectionStringName))
-            {
-                return System.Configuration.ConfigurationManager.ConnectionStrings[
-                    configuration.GetProperty(NHibernate.Cfg.Environment.ConnectionStringName)
-                    ].ConnectionString;
-            }
+                return System.Configuration.ConfigurationManager
+                    .ConnectionStrings[configuration.GetProperty(NHibernate.Cfg.Environment.ConnectionStringName)]
+                    .ConnectionString;
+
             throw new NotImplementedException();
         }
     }
