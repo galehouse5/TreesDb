@@ -1,0 +1,9 @@
+﻿@model string
+
+@{
+  Uri uri = new Uri(Model, UriKind.RelativeOrAbsolute);
+}
+
+<a href="@(uri.IsAbsoluteUri ? uri.OriginalString : "http://" + uri.OriginalString)" target="_blank" rel="nofollow">
+  @((uri.IsAbsoluteUri ? uri.Authority + uri.AbsolutePath : uri.OriginalString).TrimEnd('/'))
+</a>

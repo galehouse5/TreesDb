@@ -138,6 +138,7 @@
     <Compile Include="AccountController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
+    <Compile Include="ActionFilters\NoCacheAttribute.cs" />
     <Compile Include="ActionResults\CsvFileResult.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Binders\BinderBase.cs" />
@@ -186,8 +187,8 @@
     <Compile Include="Extensions\UrlHelperExtensions.cs" />
     <Compile Include="Extensions\ValidationExtensions.cs" />
     <Compile Include="Extensions\ViewDataExtensions.cs" />
-    <Compile Include="Filters\HandleExceptionFilter.cs" />
-    <Compile Include="Filters\LogExceptionFilter.cs" />
+    <Compile Include="ActionFilters\HandleExceptionFilter.cs" />
+    <Compile Include="ActionFilters\LogExceptionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -525,6 +526,7 @@
     <Content Include="Views\Browse\Activity.cshtml" />
     <Content Include="Views\Browse\_RecentTrips.cshtml" />
     <Content Include="Views\Browse\_MostActiveMeasurers.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Url.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

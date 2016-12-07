@@ -388,7 +388,13 @@ FORM
     float: none;
   }
 
-.form .field_help { margin-left: 145px; font-size: 90%; color: #777; }
+.form .field_help {
+  margin-left: 145px;
+  font-size: 90%;
+  color: #777;
+  margin-bottom: 0;
+}
+
 .form label, 
 .form span.label { color: #444; margin-right: 10px; padding-right: 10px; width: 125px; display: block; float: left;  font-weight: bold; text-align: right; position: relative; }
 .form label em, 

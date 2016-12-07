@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Tmd.WindowsAzure;
+using TMD.ActionFilters;
 using TMD.Binders;
 using TMD.Filters;
 using TMD.Infrastructure;
@@ -25,6 +26,7 @@ namespace TMD
             filters.Add(new LogExceptionFilter());
             filters.Add(new HandleExceptionFilter());
             filters.Add(new ValidateInputAttribute(enableValidation: false));
+            filters.Add(new NoCacheAttribute());
         }
 
         public static void RegisterRoutes(RouteCollection routes)
