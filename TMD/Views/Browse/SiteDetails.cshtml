@@ -5,81 +5,87 @@
 }
 
 @section Styles {
-    <style type="text/css">
-        .Map { height: 400px; width: 100%; }
-    </style>
+  <style type="text/css">
+    .Map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
 }
 
 @section Scripts {
-    <script type="text/javascript"src="//maps.google.com/maps/api/js?key=@WebApplicationRegistry.Settings.GoogleApiKey"></script>
-    @Scripts.Render("~/js/Map.js")
-    <script type="text/javascript">
-        $(function () {
-            slate.portlet.init();
-            $('div.dataTablesGrid').AjaxDataTablesGrid();
-            $('#LocationMap').bind('PortletTabActivated', function () {
-                $('.Map').Mapify();
-            });
-        });
-    </script>
+  <script type="text/javascript" src="//maps.google.com/maps/api/js?key=@WebApplicationRegistry.Settings.GoogleApiKey"></script>
+  @Scripts.Render("~/js/Map.js")
+  <script type="text/javascript">
+    $(function () {
+      slate.portlet.init();
+      $('div.dataTablesGrid').AjaxDataTablesGrid();
+      $('#LocationMap').bind('PortletTabActivated', function () {
+        $('.Map').Mapify();
+      });
+    });
+  </script>
 }
 
 <div class="x6 xColumn">
-
   <div class="portlet x12">
     <div class="portlet-header">
-            <h4>Site</h4>
-            <ul class="portlet-tab-nav">
-                <li class="portlet-tab-nav-ignore"><a href="@Url.Action(MVC.Export.Sites(Model.Id))">Export tree data</a></li>
-                <li class="portlet-tab-nav-active"><a href="#SiteSummary">Summary</a></li>
-                <li><a href="#TripHistory">Trip history</a></li>
-            </ul>
-        </div>
+      <h4>Site</h4>
+      <ul class="portlet-tab-nav">
+        <li class="portlet-tab-nav-ignore"><a href="@Url.Action(MVC.Export.Sites(Model.Id))">Export tree data</a></li>
+        <li class="portlet-tab-nav-active"><a href="#SiteSummary">Summary</a></li>
+        <li><a href="#TripHistory">Trip history</a></li>
+      </ul>
+    </div>
     <div class="portlet-content">
-            <div id="SiteSummary" class="portlet-tab-content portlet-tab-content-active">
-                <table class="reports_table">                
-                    @Html.ReportDisplayFor(m => m.Details.Name)
-                    @Html.ReportDisplayFor(m => m.Details.RHI5)
-                    @Html.ReportDisplayFor(m => m.Details.RHI10)
-                    @Html.ReportDisplayFor(m => m.Details.RHI20)
-                    @Html.ReportDisplayFor(m => m.Details.RGI5)
-                    @Html.ReportDisplayFor(m => m.Details.RGI10)
-                    @Html.ReportDisplayFor(m => m.Details.RGI20)
-                    @Html.ReportDisplayFor(m => m.Details.LastVisited)
-                    @if (Model.Details.MakeOwnershipContactInfoPublic) { 
-                        @Html.ReportDisplayFor(m => m.Details.OwnershipContactInfo)
-                    } else {
-                        <tr>
-                            <td class="description">Ownership contact</td>
-                            <td class="value">(private)</td>
-                        </tr>
-                    }
-                    @Html.ReportDisplayFor(m => m.Details.LastVisitComments)
-          </table>
-            </div>
-            <div id="TripHistory" class="portlet-tab-content ShowIfJavascriptEnabled">
-                <table class="support_table">
-                    @for (int i = 0; i < Model.Visits.Count; i++) { 
-                        <tr>
-                            <td><span class="ticket open">@Html.DisplayFor(m => m.Visits[i].Visited)</span></td>
-                            <td>
-                                <table class="reports_table">
-                                    @Html.ReportDisplayFor(m => m.Visits[i].Visitors)
-                                    @Html.ReportDisplayFor(m => m.Visits[i].TripReportUrl)
-                                    @Html.ReportDisplayFor(m => m.Visits[i].Comments)
-                                </table>
-                            </td>
-                        </tr>
-                    }
+      <div id="SiteSummary" class="portlet-tab-content portlet-tab-content-active">
+        <table class="reports_table">
+          @Html.ReportDisplayFor(m => m.Details.Name)
+          @Html.ReportDisplayFor(m => m.Details.RHI5)
+          @Html.ReportDisplayFor(m => m.Details.RHI10)
+          @Html.ReportDisplayFor(m => m.Details.RHI20)
+          @Html.ReportDisplayFor(m => m.Details.RGI5)
+          @Html.ReportDisplayFor(m => m.Details.RGI10)
+          @Html.ReportDisplayFor(m => m.Details.RGI20)
+          @Html.ReportDisplayFor(m => m.Details.LastVisited)
+          @if (Model.Details.MakeOwnershipContactInfoPublic)
+          {
+            @Html.ReportDisplayFor(m => m.Details.OwnershipContactInfo)
+          }
+          else
+          {
+            <tr>
+              <td class="description">Ownership contact</td>
+              <td class="value">(private)</td>
+            </tr>
+          }
+          @Html.ReportDisplayFor(m => m.Details.LastVisitComments)
+        </table>
+      </div>
+      <div id="TripHistory" class="portlet-tab-content ShowIfJavascriptEnabled">
+        <table class="support_table">
+          @for (int i = 0; i < Model.Visits.Count; i++)
+          {
+            <tr>
+              <td><span class="ticket open">@Html.DisplayFor(m => m.Visits[i].Visited)</span></td>
+              <td>
+                <table class="reports_table">
+                  @Html.ReportDisplayFor(m => m.Visits[i].Visitors)
+                  @Html.ReportDisplayFor(m => m.Visits[i].TripReportUrl)
+                  @Html.ReportDisplayFor(m => m.Visits[i].Comments)
                 </table>
-            </div>
+              </td>
+            </tr>
+          }
+        </table>
+      </div>
     </div>
   </div>
 
-    <div class="portlet x12">
+  <div class="portlet x12">
     <div class="portlet-header"><h4>Species</h4></div>
-    <div class="portlet-content">               
-            @Html.Partial("SubsiteSpeciesGridPartial", Model.SubsiteSpeciesModel)
+    <div class="portlet-content">
+      @Html.Partial("SubsiteSpeciesGridPartial", Model.SubsiteSpeciesModel)
     </div>
   </div>
 
@@ -89,39 +95,50 @@
 
   <div class="portlet x12">
     <div class="portlet-header">
-            <h4>Location</h4>
-            <ul class="portlet-tab-nav">
-                <li class="portlet-tab-nav-active"><a href="#LocationSummary">Summary</a></li>
-                <li><a href="#LocationMap">Map</a></li>
-            </ul>
-        </div>
+      <h4>Location</h4>
+
+      @if (Model.ShowMap)
+      {
+        <ul class="portlet-tab-nav">
+          <li class="portlet-tab-nav-active"><a href="#LocationSummary">Summary</a></li>
+          <li><a href="#LocationMap">Map</a></li>
+        </ul>
+      }
+    </div>
     <div class="portlet-content">
-            <div id="LocationSummary" class="portlet-tab-content portlet-tab-content-active">
-                <table class="reports_table">
-                    @if (Model.Location.Coordinates.IsValidAndSpecified()) {
-                        @Html.ReportDisplayFor(m => m.Location.Coordinates);
-                    } else {
-                        @Html.ReportDisplayFor(m => m.Location.CalculatedCoordinates);
-                    }
-            @Html.ReportDisplayFor(m => m.Location.OwnershipType)
-            @Html.ReportDisplayFor(m => m.Location.County)
-                    <tr>
-                        <td class="description">State</td>
-                        <td class="value"><a href="@Url.Action(MVC.Browse.StateDetails(Model.Location.State.Id))">@Html.DisplayFor(m => m.Location.State)</a></td>
-                    </tr>
-                </table>
-            </div>
-            <div id="LocationMap" class="portlet-tab-content ShowIfJavascriptEnabled">
-                @Html.DisplayFor(m => m.Location.Map)
-            </div>
+      <div id="LocationSummary" class="portlet-tab-content portlet-tab-content-active">
+        <table class="reports_table">
+          @if (Model.Location.Coordinates.IsValidAndSpecified()
+              || !Model.Location.CalculatedCoordinates.IsValidAndSpecified())
+          {
+            @Html.ReportDisplayFor(m => m.Location.Coordinates);
+          }
+          else
+          {
+            @Html.ReportDisplayFor(m => m.Location.CalculatedCoordinates);
+          }
+          @Html.ReportDisplayFor(m => m.Location.OwnershipType)
+          @Html.ReportDisplayFor(m => m.Location.County)
+          <tr>
+            <td class="description">State</td>
+            <td class="value"><a href="@Url.Action(MVC.Browse.StateDetails(Model.Location.State.Id))">@Html.DisplayFor(m => m.Location.State)</a></td>
+          </tr>
+        </table>
+      </div>
+
+      @if (Model.ShowMap)
+      {
+        <div id="LocationMap" class="portlet-tab-content ShowIfJavascriptEnabled">
+          @Html.DisplayFor(m => m.Location.Map)
+        </div>
+      }
     </div>
   </div>
 
   <div class="portlet x12">
     <div class="portlet-header"><h4>Photos</h4></div>
     <div class="portlet-content">
-            @Html.DisplayFor(m => m.PhotoSummaries, "BrowsePhotoSummaryList")
+      @Html.DisplayFor(m => m.PhotoSummaries, "BrowsePhotoSummaryList")
     </div>
   </div>
-
 </div>

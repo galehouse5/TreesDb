@@ -37,7 +37,6 @@ namespace TMD.Model.Sites
         public virtual float? RGI10 { get; protected set; }
         public virtual float? RGI20 { get; protected set; }
         public virtual IList<IPhoto> Photos { get; protected set; }
-        public virtual int TreesWithSpecifiedCoordinatesCount { get; protected set; }
         public virtual int VisitCount { get; protected set; }
         public virtual SubsiteVisit LastVisit { get { return (from v in Visits orderby v.Visited select v).Last(); } }
         public virtual IList<Name> Visitors { get; protected set; }
@@ -50,11 +49,6 @@ namespace TMD.Model.Sites
         public virtual Coordinates CalculateCalculatedCoordinates() 
         { 
             return (from v in Visits orderby v.Visited where v.CalculatedCoordinates.IsSpecified select v.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); 
-        }
-
-        public virtual int CalculateTreesWithSpecifiedCoordinatesCount() 
-        { 
-            return (from t in Trees where t.Coordinates.IsSpecified select t).Count(); 
         }
 
         public virtual float? CalculateRHI(int number)
@@ -108,7 +102,6 @@ namespace TMD.Model.Sites
                                           from visitor in visit.Visitors
                                           select visitor).Distinct());
             VisitCount = Visits.Count;
-            TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
             return this;
         }
 

@@ -71,7 +71,6 @@ namespace TMD.Model.Imports
     }
 
     [DebuggerDisplay("{ScientificName} ({CommonName})")]
-    [ContextMethod(nameof(ValidateCanCalculateCoordinates), Tags = ValidationTag.Screening)]
     [ContextMethod(nameof(ValidateCoordinatesAreCloseToSubsite), Tags = ValidationTag.Optional)]
     public abstract class TreeBase : UserCreatedEntityBase
     {
@@ -118,7 +117,7 @@ namespace TMD.Model.Imports
             set { m_ScientificName = value.OrEmptyAndTrimToSentenceCase(); }
         }
 
-        [Valid, Specified(Message = "You must either specify coordinates for this measurement or the subsite that contains it.", Tags = ValidationTag.Finalization)]
+        [Valid]
         public virtual Coordinates Coordinates { get; set; }
 
         public virtual bool CanCalculateCoordinates(bool ignoreContaingSubsite = false)
@@ -137,14 +136,6 @@ namespace TMD.Model.Imports
                 return Subsite.CalculateCoordinates();
             }
             return Coordinates.Null();
-        }
-
-        protected internal virtual void ValidateCanCalculateCoordinates(IConstraintValidatorContext context)
-        {
-            if (!CanCalculateCoordinates())
-            {
-                context.AddInvalid<TreeBase, Coordinates>("You must either specify coordinates for this measurement or the subsite that contains it.", tm => tm.Coordinates);
-            }
         }
 
         protected internal virtual void ValidateCoordinatesAreCloseToSubsite(IConstraintValidatorContext context)

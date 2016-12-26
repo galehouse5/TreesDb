@@ -23,11 +23,9 @@ namespace TMD.Model.Sites
         public virtual float? RGI5 { get; protected set; }
         public virtual float? RGI10 { get; protected set; }
         public virtual float? RGI20 { get; protected set; }
-        public virtual int TreesWithSpecifiedCoordinatesCount { get; protected set; }
         public virtual SiteVisit LastVisit { get { return (from visit in Visits orderby visit.Visited select visit).Last(); } }
         public virtual Coordinates CalculateCalculatedCoordinates() { return (from visit in Visits orderby visit.Visited where visit.CalculatedCoordinates.IsSpecified select visit.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); }
         public virtual Coordinates CalculateCoordinates() { return (from visit in Visits orderby visit.Visited where visit.Coordinates.IsSpecified select visit.Coordinates).LastOrDefault() ?? Coordinates.Null(); }
-        public virtual int CalculateTreesWithSpecifiedCoordinatesCount() { return (from ss in Subsites select ss.TreesWithSpecifiedCoordinatesCount).Sum(); }
 
         public virtual float? CalculateRHI(int number)
         {
@@ -74,7 +72,6 @@ namespace TMD.Model.Sites
             RGI20 = CalculateRGI(20);
             VisitCount = Visits.Count;
             SubsiteCount = Subsites.Count;
-            TreesWithSpecifiedCoordinatesCount = CalculateTreesWithSpecifiedCoordinatesCount();
             Visitors.RemoveAll().AddRange((from visit in Visits
                                            from visitor in visit.Visitors
                                            select visitor).Distinct());

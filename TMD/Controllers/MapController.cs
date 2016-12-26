@@ -1,13 +1,11 @@
-﻿using System;
+﻿using AutoMapper;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using TMD.Models;
+using TMD.Extensions;
 using TMD.Model;
 using TMD.Model.Extensions;
-using TMD.Extensions;
-using AutoMapper;
+using TMD.Models;
 
 namespace TMD.Controllers
 {
@@ -38,16 +36,19 @@ namespace TMD.Controllers
             var sites = Repositories.Sites.ListAllForMap();
             List<MapMarkerModel> markers = new List<MapMarkerModel>();
             markers.AddRange(from site in sites
-                             where site.TreesWithSpecifiedCoordinatesCount > 0
+                             where site.CalculatedCoordinates.Latitude.InputFormat != CoordinatesFormat.Unspecified
+                                && site.CalculatedCoordinates.Longitude.InputFormat != CoordinatesFormat.Unspecified
                              select Mapper.Map<Model.Sites.Site, MapMarkerModel>(site));
             markers.AddRange(from site in sites
                              where !site.ContainsSingleSubsite
                              from subsite in site.Subsites
-                             where subsite.TreesWithSpecifiedCoordinatesCount > 0
+                             where subsite.CalculatedCoordinates.Latitude.InputFormat != CoordinatesFormat.Unspecified
+                                && subsite.CalculatedCoordinates.Longitude.InputFormat != CoordinatesFormat.Unspecified
                              select Mapper.Map<Model.Sites.Subsite, MapMarkerModel>(subsite));
             markers.AddRange(from site in sites
                              from subsite in site.Subsites
-                             where subsite.TreesWithSpecifiedCoordinatesCount > 0
+                             where subsite.CalculatedCoordinates.Latitude.InputFormat != CoordinatesFormat.Unspecified
+                                && subsite.CalculatedCoordinates.Longitude.InputFormat != CoordinatesFormat.Unspecified
                              from tree in subsite.Trees
                              where tree.Coordinates.IsSpecified
                              select Mapper.Map<Model.Trees.Tree, MapMarkerModel>(tree));

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Profiles\MigrateUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Y2016\M001_MakeCoordinatesOptional.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Baseline\CreateSchema.sql" />
