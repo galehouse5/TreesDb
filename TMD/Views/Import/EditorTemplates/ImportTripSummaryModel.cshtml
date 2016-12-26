@@ -1,33 +1,53 @@
 ﻿@model ImportTripSummaryModel
+
 <div class="portlet x12 Trip">
-    <div class="portlet-header Trip-Header Entity-Header">
-        @if (Model.IsImported) {
-            <h4>@Model.Name&nbsp;</h4>
-            <div class="actions">
-                @Html.AnchorButton("View", MVC.Import.ViewImport(Model.Id), ButtonColor.Orange, ButtonSize.Small)
-                @Html.AnchorButton("Revise", MVC.Import.Trip(Model.Id), ButtonColor.Orange, ButtonSize.Small)
-                @Html.ImportInnerActionButton("Remove", ImportModelLevel.Trip, Model.Id, ImportModelAction.Remove, ButtonColor.Orange, ButtonSize.Small)
-            </div>
-        } else {
-            <h4>@Model.Name (started @Html.Partial("PrettyTimeSpan", DateTime.Now.Subtract(Model.Created))) &nbsp;</h4>
-            <div class="actions">
-                @Html.AnchorButton("Continue", MVC.Import.Trip(Model.Id), ButtonColor.Orange, ButtonSize.Small)            
-                @Html.ImportInnerActionButton("Remove", ImportModelLevel.Trip, Model.Id, ImportModelAction.Remove, ButtonColor.Orange, ButtonSize.Small)
-            </div>
-        }
-    </div>
-    <div class="portlet-content">
-        <ul>
-            @if (Model.Date.HasValue) {
-                <li>@Html.DisplayFor(m => m.Date)</li>
+  <div class="portlet-header Trip-Header Entity-Header">
+    @if (Model.IsImported)
+    {
+      <h4>@Model.Name&nbsp;</h4>
+      <div class="actions">
+        @Html.AnchorButton("View", MVC.Import.ViewImport(Model.Id), ButtonColor.Orange, ButtonSize.Small)
+        @Html.AnchorButton("Revise", MVC.Import.Trip(Model.Id), ButtonColor.Orange, ButtonSize.Small)
+
+        <button class="btn btn-small btn-orange"
+                data-confirm-button data-confirm-text="Confirm removal" data-confirm-class="btn btn-small btn-red"
+                type="submit" name="innerAction" value="Trip.@(Model.Id).Remove">
+          Remove
+        </button>
+      </div>
+    }
+    else
+    {
+      <h4>@Model.Name (started @Html.Partial("PrettyTimeSpan", DateTime.Now.Subtract(Model.Created))) &nbsp;</h4>
+      <div class="actions">
+        @Html.AnchorButton("Continue", MVC.Import.Trip(Model.Id), ButtonColor.Orange, ButtonSize.Small)
+
+        <button class="btn btn-small btn-orange"
+                data-confirm-button data-confirm-text="Confirm removal" data-confirm-class="btn btn-small btn-red"
+                type="submit" name="innerAction" value="Trip.@(Model.Id).Remove">
+          Remove
+        </button>
+      </div>
+    }
+  </div>
+  <div class="portlet-content">
+    <ul>
+      @if (Model.Date.HasValue)
+      {
+        <li>@Html.DisplayFor(m => m.Date)</li>
+      }
+      @if (Model.Sites.Count > 0)
+      {
+        <li>
+          <strong>Sites:</strong>
+          <ul>
+            @foreach (var site in Model.Sites)
+            {
+              <li>@site</li>
             }
-            @if (Model.Sites.Count > 0) {
-                <li><strong>Sites:</strong><ul>
-                @foreach (var site in Model.Sites) {
-                    <li>@site</li>
-                }
-                </ul></li>
-            }
-        </ul>
-    </div>
+          </ul>
+        </li>
+      }
+    </ul>
+  </div>
 </div>

@@ -355,6 +355,7 @@
     <Content Include="js\Map\Widgets.js" />
     <Content Include="js\misc\excanvas.js" />
     <Content Include="js\misc\upclick.js" />
+    <Content Include="js\Shared\jquery.confirm-button.js" />
     <Content Include="js\Shared\Widgets.js" />
     <Content Include="js\Map\Coordinates.js" />
     <Content Include="js\Import\Trees.js" />

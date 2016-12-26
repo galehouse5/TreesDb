@@ -9,8 +9,7 @@ namespace TMD
         {
             // js bundles
             bundles.Add(new ScriptBundle("~/js/Shared.js").Include(
-                "~/js/Shared/Extensions.js",
-                "~/js/Shared/Widgets.js",
+                "~/js/Shared/*.js",
                 "~/js/Search/menu-widget.js",
                 "~/js/slate/slate.js",
                 "~/js/slate/slate.portlet.js"));
