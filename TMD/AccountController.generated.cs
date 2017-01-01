@@ -134,7 +134,6 @@ namespace TMD.Controllers
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionParamsClass_Register
         {
-            public readonly string uow = "uow";
             public readonly string model = "model";
             public readonly string captchaValid = "captchaValid";
         }
@@ -144,7 +143,6 @@ namespace TMD.Controllers
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionParamsClass_CompleteRegistration
         {
-            public readonly string uow = "uow";
             public readonly string token = "token";
         }
         static readonly ActionParamsClass_PasswordAssistance s_params_PasswordAssistance = new ActionParamsClass_PasswordAssistance();
@@ -153,7 +151,6 @@ namespace TMD.Controllers
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionParamsClass_PasswordAssistance
         {
-            public readonly string uow = "uow";
             public readonly string model = "model";
             public readonly string captchaValid = "captchaValid";
         }
@@ -164,7 +161,6 @@ namespace TMD.Controllers
         public class ActionParamsClass_CompletePasswordAssistance
         {
             public readonly string token = "token";
-            public readonly string uow = "uow";
             public readonly string model = "model";
         }
         static readonly ActionParamsClass_Edit s_params_Edit = new ActionParamsClass_Edit();
@@ -173,7 +169,6 @@ namespace TMD.Controllers
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionParamsClass_Edit
         {
-            public readonly string uow = "uow";
             public readonly string model = "model";
         }
         static readonly ViewsClass s_views = new ViewsClass();
@@ -269,29 +264,27 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.AccountRegistrationModel model, bool captchaValid);
+        partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountRegistrationModel model, bool captchaValid);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Register(TMD.Model.IUnitOfWork uow, TMD.Models.AccountRegistrationModel model, bool captchaValid)
+        public override System.Web.Mvc.ActionResult Register(TMD.Models.AccountRegistrationModel model, bool captchaValid)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Register);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "captchaValid", captchaValid);
-            RegisterOverride(callInfo, uow, model, captchaValid);
+            RegisterOverride(callInfo, model, captchaValid);
             return callInfo;
         }
 
         [NonAction]
-        partial void CompleteRegistrationOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, string token);
+        partial void CompleteRegistrationOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, string token);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult CompleteRegistration(TMD.Model.IUnitOfWork uow, string token)
+        public override System.Web.Mvc.ActionResult CompleteRegistration(string token)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.CompleteRegistration);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "token", token);
-            CompleteRegistrationOverride(callInfo, uow, token);
+            CompleteRegistrationOverride(callInfo, token);
             return callInfo;
         }
 
@@ -307,16 +300,15 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void PasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid);
+        partial void PasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult PasswordAssistance(TMD.Model.IUnitOfWork uow, TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid)
+        public override System.Web.Mvc.ActionResult PasswordAssistance(TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.PasswordAssistance);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "captchaValid", captchaValid);
-            PasswordAssistanceOverride(callInfo, uow, model, captchaValid);
+            PasswordAssistanceOverride(callInfo, model, captchaValid);
             return callInfo;
         }
 
@@ -333,16 +325,15 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void CompletePasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.CompleteAccountPasswordAssistanceModel model, string token);
+        partial void CompletePasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.CompleteAccountPasswordAssistanceModel model, string token);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult CompletePasswordAssistance(TMD.Model.IUnitOfWork uow, TMD.Models.CompleteAccountPasswordAssistanceModel model, string token)
+        public override System.Web.Mvc.ActionResult CompletePasswordAssistance(TMD.Models.CompleteAccountPasswordAssistanceModel model, string token)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.CompletePasswordAssistance);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "token", token);
-            CompletePasswordAssistanceOverride(callInfo, uow, model, token);
+            CompletePasswordAssistanceOverride(callInfo, model, token);
             return callInfo;
         }
 
@@ -358,15 +349,14 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void EditOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, TMD.Models.AccountEditModel model);
+        partial void EditOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountEditModel model);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Edit(TMD.Model.IUnitOfWork uow, TMD.Models.AccountEditModel model)
+        public override System.Web.Mvc.ActionResult Edit(TMD.Models.AccountEditModel model)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Edit);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
-            EditOverride(callInfo, uow, model);
+            EditOverride(callInfo, model);
             return callInfo;
         }
 

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TMD.Model.Users;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading;
 using TMD.Model;
-using TMD.Model.Validation;
+using TMD.Model.Users;
 
 namespace TMD.UnitTests.Model
 {
@@ -19,15 +14,6 @@ namespace TMD.UnitTests.Model
             Password p = Password.Create("Galehouse5!", "abc123");
             Assert.IsFalse(p.VerifyPassword("dfjkgjkl;dfgh", "abc123"));
             Assert.IsTrue(p.VerifyPassword("Galehouse5!", "abc123"));
-        }
-
-        [TestMethod]
-        public void GeneratesRandomPassword()
-        {
-            string randomPassword = Password.GenerateRandomPassword(10);
-            Assert.IsTrue(randomPassword.Length == 10);
-            string randomPassword2 = Password.GenerateRandomPassword(10);
-            Assert.IsFalse(randomPassword == randomPassword2);
         }
 
         [TestMethod]

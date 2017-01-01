@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
-using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
@@ -25,10 +21,10 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within2(0f, double.MaxValue, Inclusive = true, Message = "Volume must be non-negative.", Tags = ValidationTag.Screening)]
+        [Within2(0f, double.MaxValue, Inclusive = true, Message = "Volume must be non-negative.", Tags = ValidationTag.Required)]
         public float CubicFeet { get; private set; }
 
-        [NotEquals(VolumeFormat.Invalid, Message = "Volume must be in fffff ft^3 or mmmmm.mm m^3 format.", Tags = ValidationTag.Screening)]
+        [NotEquals(VolumeFormat.Invalid, Message = "Volume must be in fffff ft^3 or mmmmm.mm m^3 format.", Tags = ValidationTag.Required)]
         public VolumeFormat InputFormat { get; private set; }
 
         public float CubicMeters

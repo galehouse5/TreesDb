@@ -10,6 +10,7 @@ namespace TMD.Models.Import
         public int Id { get; set; }
         public bool IsEditing { get; set; }
         public bool IsSaveableAndRemovable { get; set; }
+        public bool HasOptionalError { get; set; }
 
         [Required]
         public string Name { get; set; }

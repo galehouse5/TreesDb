@@ -11,29 +11,21 @@ namespace TMD.Model.Extensions
             {
                 action(item);
             }
+
             return source;
         }
 
-        public static IEnumerable<T> ForAny<T>(this IEnumerable<T> source, Action<T> action)
+        public static IEnumerable<T> ForEach<T>(this IEnumerable<T> source, Action<T, int> action)
         {
-            foreach (T item in source)
-            {
-                action(item);
-                return source;
-            }
-            return source;
-        }
+            int index = 0;
 
-        public static bool Contains<T>(this IEnumerable<T> source, Predicate<T> predicate)
-        {
             foreach (T item in source)
             {
-                if (predicate(item))
-                {
-                    return true;
-                }
+                action(item, index);
+                index++;
             }
-            return false;
+
+            return source;
         }
     }
 }

@@ -154,7 +154,6 @@ namespace TMD.Controllers
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionParamsClass_Remove
         {
-            public readonly string uow = "uow";
             public readonly string id = "id";
         }
         static readonly ActionParamsClass_PhotoAdded s_params_PhotoAdded = new ActionParamsClass_PhotoAdded();
@@ -234,15 +233,14 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void RemoveOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Model.IUnitOfWork uow, int id);
+        partial void RemoveOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Remove(TMD.Model.IUnitOfWork uow, int id)
+        public override System.Web.Mvc.ActionResult Remove(int id)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Remove);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "uow", uow);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
-            RemoveOverride(callInfo, uow, id);
+            RemoveOverride(callInfo, id);
             return callInfo;
         }
 

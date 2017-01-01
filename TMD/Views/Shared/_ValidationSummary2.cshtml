@@ -1,0 +1,10 @@
+﻿@model IEnumerable<ModelError>
+
+<div class="@(Model.Any() ? "validation-summary-errors" : "validation-summary-valid")" data-valmsg-summary="true">
+  <ul>
+    @foreach (ModelError error in Model)
+    {
+      <li>@error.ErrorMessage</li>
+    }
+  </ul>
+</div>

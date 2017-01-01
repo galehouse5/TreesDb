@@ -19,8 +19,8 @@ namespace TMD.Model.Imports
         }
 
         private string m_Name;
-        [NotEmptyOrWhitesapce(Message = "Trip name must be specified.", Tags =  ValidationTag.Screening)]
-        [Length(100, Message = "Trip name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Trip name must be specified.", Tags = ValidationTag.Required)]
+        [Length(100, Message = "Trip name must not exceed 100 characters.", Tags = ValidationTag.Required)]
         public virtual string Name
         {
             get { return m_Name; }
@@ -29,11 +29,11 @@ namespace TMD.Model.Imports
 
         public virtual DateTime LastSaved { get; protected internal set; }
 
-        [NotNull(Message = "Trip date must be specified.", Tags = ValidationTag.Screening)]
+        [NotNull(Message = "Trip date must be specified.", Tags = ValidationTag.Required)]
         public virtual DateTime? Date { get; set; }
 
         private string m_Website;
-        [Length(100, Message = "Trip website must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
+        [Length(100, Message = "Trip website must not exceed 100 characters.", Tags = ValidationTag.Required)]
         public virtual string Website
         {
             get { return m_Website; }
@@ -43,8 +43,8 @@ namespace TMD.Model.Imports
         public virtual bool PhotosAvailable { get; set; }
 
         private string m_MeasurerContactInfo;
-        [NotEmptyOrWhitesapce(Message = "Measurer contact must be specified for this trip.", Tags = ValidationTag.Screening)]
-        [Length(200, Message = "Trip measurer contact info must not exceed 200 characters.", Tags = ValidationTag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Measurer contact must be specified for this trip.", Tags = ValidationTag.Required)]
+        [Length(200, Message = "Trip measurer contact info must not exceed 200 characters.", Tags = ValidationTag.Required)]
         public virtual string MeasurerContactInfo
         {
             get { return m_MeasurerContactInfo; }
@@ -53,11 +53,11 @@ namespace TMD.Model.Imports
 
         public virtual bool MakeMeasurerContactInfoPublic { get; set; }
 
-        [Valid, Size(1, 100, Message = "You must add site visits to your trip.", Tags = ValidationTag.Screening)]
+        [Size(1, 100, Message = "You must add site visits to your trip.", Tags = ValidationTag.Required)]
         public virtual IList<Site> Sites { get; protected set; }
 
-        [Valid, Size2(1, int.MaxValue, Message = "You must record at least one measurer.", Tags = ValidationTag.Screening)]
-        [Size2(0, 3, Message = "You have recorded too many measurers.", Tags = new [] { ValidationTag.Screening, ValidationTag.Persistence })]
+        [Valid, Size2(1, int.MaxValue, Message = "You must record at least one measurer.", Tags = ValidationTag.Required)]
+        [Size2(0, 3, Message = "You have recorded too many measurers.", Tags = ValidationTag.Required)]
         public virtual IList<Name> Measurers { get; protected set; }
 
         public virtual bool IsImported { get { return Imported != null; } }
@@ -97,6 +97,35 @@ namespace TMD.Model.Imports
             return sv;
         }
 
+        public virtual void InitializeSites()
+        {
+            if (!Sites.Any())
+            {
+                AddSite();
+            }
+        }
+
+        public virtual void InitializeSitesAndSubsites()
+        {
+            InitializeSites();
+
+            foreach (Site site in Sites
+                .Where(s => !s.Subsites.Any()))
+            {
+                site.AddSubsite();
+            }
+        }
+
+        public virtual void InitializeTrees()
+        {
+            foreach (Subsite subsite in Sites
+                .SelectMany(s => s.Subsites)
+                .Where(ss => !ss.Trees.Any()))
+            {
+                subsite.AddSingleTrunkTree();
+            }
+        }
+
         public virtual bool RemoveSite(Site sv)
         {
             return Sites.Remove(sv);
@@ -118,6 +147,17 @@ namespace TMD.Model.Imports
             var site = Sites.FirstOrDefault(s => s.FindTreeById(id) != null);
             return site == null ? null : site.FindTreeById(id);
         }
+
+        public virtual void VisitSites(Action<string, Site> visitor)
+            => Sites.ForEach((s, i) => visitor($"{nameof(Sites)}[{i}]", s));
+
+        public virtual void VisitSubsites(Action<string, Subsite> visitor)
+            => Sites.ForEach((s, i) => s.Subsites.ForEach((ss, j) =>
+                visitor($"{nameof(Sites)}[{i}].{nameof(Site.Subsites)}[{j}]", ss)));
+
+        public virtual void VisitTrees(Action<string, TreeBase> visitor)
+            => Sites.ForEach((s, i) => s.Subsites.ForEach((ss, j) => ss.Trees.ForEach((t, k) =>
+                visitor($"{nameof(Sites)}[{i}].{nameof(Site.Subsites)}[{j}].{nameof(Subsite.Trees)}[{k}]", t))));
 
         public static Trip Create()
         {

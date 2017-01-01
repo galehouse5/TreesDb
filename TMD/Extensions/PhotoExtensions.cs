@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Text;
 using TMD.Model.Photos;
 
 namespace TMD.Extensions
@@ -71,7 +67,7 @@ namespace TMD.Extensions
                                     ButtonColor.Orange, ButtonSize.Small)
                                 ).InnerText(" ") // space here is needed for proper html rendering
                                 .InnerHtml(html.AnchorButton("Remove",
-                                    url.Action(MVC.Photos.Remove(null, photo.Id)), new { @class = "Remove" }, ButtonColor.Grey, ButtonSize.Small)
+                                    url.Action(MVC.Photos.Remove(photo.Id)), new { @class = "Remove" }, ButtonColor.Grey, ButtonSize.Small)
                                 ).ToString()
                         );
                 default:

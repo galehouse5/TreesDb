@@ -1,9 +1,13 @@
 ﻿@model ImportMenuWidgetModel
+
 <li class="mega @(Model.IsSelected ? "mega-current" : null)">
   <span class="mega-tab">Import</span>
   <div class="mega-content mega-menu">
     <ul>
-      <li>@Html.ActionLink("New", MVC.Import.Trip())</li>
+      <li>
+        @* TODO: Find better way of removing ID route value when it's not wanted. *@
+        <a href="@Url.Content("~/Import/Trip")">New</a>
+      </li>
       @if (Model.LatestTrip != null && !Model.LatestTrip.IsImported) {
         <li>@Html.ActionLink("Continue", MVC.Import.Trip(Model.LatestTrip.Id))</li>
       }

@@ -140,6 +140,7 @@
     </Compile>
     <Compile Include="ActionFilters\NoCacheAttribute.cs" />
     <Compile Include="ActionResults\CsvFileResult.cs" />
+    <Content Include="App_Code\ValidationHelpers.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Binders\BinderBase.cs" />
     <Compile Include="Binders\ImportBinders.cs" />
@@ -528,6 +529,7 @@
     <Content Include="Views\Browse\_RecentTrips.cshtml" />
     <Content Include="Views\Browse\_MostActiveMeasurers.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Url.cshtml" />
+    <Content Include="Views\Shared\_ValidationSummary2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

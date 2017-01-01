@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
-
-namespace TMD.Model.Users
+﻿namespace TMD.Model.Users
 {
     public abstract class UserRepository
     {
@@ -27,14 +21,7 @@ namespace TMD.Model.Users
 
         protected abstract User InternalFindByForgottenPasswordAssistanceToken(byte[] token);
 
-        public void Save(User u)
-        {
-            u.AssertIsValidToPersist();
-            InternalSave(u);
-        }
-
-        protected abstract void InternalSave(User u);
-
+        public abstract void Save(User u);
         public abstract void Remove(User u);
     }
 }

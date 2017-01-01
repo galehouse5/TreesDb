@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
-using NHibernate.Validator.Constraints;
+﻿using NHibernate.Validator.Constraints;
 using NHibernate.Validator.Engine;
 using TMD.Model.Extensions;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Imports
 {
-    [ContextMethod("ValidateHeightOrGirthIsSpecified", Tags = ValidationTag.Screening)]
+    [ContextMethod(nameof(RequiredValidate), Tags = ValidationTag.Required)]
     public class Trunk : UserCreatedEntityBase
     {
         protected Trunk()
@@ -21,7 +17,7 @@ namespace TMD.Model.Imports
         [Valid] public virtual Distance GirthMeasurementHeight { get; set; }
         [Valid] public virtual Distance Height { get; set; }
 
-        public virtual void ValidateHeightOrGirthIsSpecified(IConstraintValidatorContext context)
+        public virtual void RequiredValidate(IConstraintValidatorContext context)
         {
             if (!Height.IsSpecified && !Girth.IsSpecified && !HeightMeasurements.IsSpecified)
             {
@@ -33,7 +29,7 @@ namespace TMD.Model.Imports
         [Valid] public virtual HeightMeasurements HeightMeasurements { get; set; }
 
         private string m_TrunkComments;
-        [Length(300, Message = "Trunk comments must not exceed 300 characters.", Tags = ValidationTag.Persistence)]
+        [Length(300, Message = "Trunk comments must not exceed 300 characters.", Tags = ValidationTag.Required)]
         public virtual string TrunkComments
         {
             get { return m_TrunkComments; }

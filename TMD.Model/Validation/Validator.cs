@@ -1,18 +1,13 @@
-﻿using System;
+﻿using NHibernate.Validator.Engine;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using TMD.Model.Extensions;
-using NHibernate.Validator.Engine;
 
 namespace TMD.Model.Validation
 {
     public enum ValidationTag
     {
-        Screening,
-        Persistence,
-        Finalization,
-        Optional
+        Required, Optional
     }
 
     public abstract class ValidatorBase
@@ -33,7 +28,7 @@ namespace TMD.Model.Validation
             if (source is IEnumerable<IValidationError>)
             {
                 return ((IEnumerable<IValidationError>)source)
-                    .Where(iv => tags.Contains(t => iv.Tags.Contains(t)));
+                    .Where(iv => tags.Any(t => iv.Tags.Contains(t)));
             }
             object[] normalizedTags = new object[tags.Length];
             tags.CopyTo(normalizedTags, 0);
@@ -154,16 +149,6 @@ namespace TMD.Model.Validation
         public static bool IsValid(this object source)
         {
             return source.Validate().Count() == 0;
-        }
-
-        public static bool IsValidToPersist(this object source)
-        {
-            return source.IsValidToPersist();
-        }
-
-        public static void AssertIsValidToPersist(this object source)
-        {
-            source.AssertIsValid(ValidationTag.Persistence);
         }
     }
 }

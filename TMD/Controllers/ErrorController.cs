@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
@@ -9,11 +10,9 @@ namespace TMD.Controllers
 {
     public class MaintenanceResult : ActionResult
     {
-        public bool IsExecuting(ControllerContext context)
-        {
-            return "Error".Equals(context.RouteData.Values["controller"])
-                && "Maintenance".Equals(context.RouteData.Values["action"]);
-        }
+        public static bool IsExecuting(ControllerContext context)
+            => string.Equals("Error", context.RouteData.Values["controller"].ToString(), StringComparison.OrdinalIgnoreCase)
+            && string.Equals("Maintenance", context.RouteData.Values["action"].ToString(), StringComparison.OrdinalIgnoreCase);
 
         public override void ExecuteResult(ControllerContext context)
         {

@@ -186,6 +186,7 @@ namespace Links
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(UrlPath); }
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(UrlPath + "/" + fileName); }
             public static readonly string Extensions_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/Extensions.min.js") ? Url("Extensions.min.js") : Url("Extensions.js");
+            public static readonly string jquery_confirm_button_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/jquery.confirm-button.min.js") ? Url("jquery.confirm-button.min.js") : Url("jquery.confirm-button.js");
             public static readonly string Widgets_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(UrlPath + "/Widgets.min.js") ? Url("Widgets.min.js") : Url("Widgets.js");
         }
     
@@ -362,6 +363,7 @@ namespace Links
                 public static class Assets
                 {
                     public const string Extensions_js = "~/js/Shared/Extensions.js"; 
+                    public const string jquery_confirm_button_js = "~/js/Shared/jquery.confirm-button.js"; 
                     public const string Widgets_js = "~/js/Shared/Widgets.js"; 
                 }
             }

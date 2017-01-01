@@ -13,25 +13,25 @@ namespace TMD.Model.Users
         public virtual int Id { get; protected set; }
 
         private string m_Email;
-        [Email(Message = "You must enter a valid email.", Tags = ValidationTag.Screening)]
-        [NotEmptyOrWhitesapceAttribute(Message = "You must enter an email.", Tags = ValidationTag.Screening)]
-        [Length(100, Message = "Email must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
-        public virtual string Email 
+        [Email(Message = "You must enter a valid email.", Tags = ValidationTag.Required)]
+        [NotEmptyOrWhitesapceAttribute(Message = "You must enter an email.", Tags = ValidationTag.Required)]
+        [Length(100, Message = "Email must not exceed 100 characters.", Tags = ValidationTag.Required)]
+        public virtual string Email
         {
             get { return m_Email; }
             protected set { m_Email = value.OrEmptyAndTrimToLower(); }
         }
 
         private string m_Firstname;
-        [Length(50, Message = "First name must not exceed 50 characters.", Tags = ValidationTag.Persistence)]
-        public virtual string Firstname 
+        [Length(50, Message = "First name must not exceed 50 characters.", Tags = ValidationTag.Required)]
+        public virtual string Firstname
         {
             get { return m_Firstname; }
             set { m_Firstname = value.OrEmptyAndTrimToTitleCase(); }
         }
 
         private string m_Lastname;
-        [Length(50, Message = "Last name must not exceed 50 characters.", Tags = ValidationTag.Persistence)]
+        [Length(50, Message = "Last name must not exceed 50 characters.", Tags = ValidationTag.Required)]
         public virtual string Lastname
         {
             get { return m_Lastname; }
@@ -87,7 +87,7 @@ namespace TMD.Model.Users
 
         public virtual bool IsForgottenPasswordAssistanceTokenValid
         {
-            get 
+            get
             {
                 return ForgottenPasswordAssistanceToken != null
                     && ForgottenPasswordAssistanceTokenIssued >= DateTime.Now.Subtract(Registry.Settings.ForgottenPasswordAssistanceTokenLifetime)
@@ -106,9 +106,8 @@ namespace TMD.Model.Users
         {
             if (!ForgottenPasswordAssistanceToken.UrlEncodedValue.Equals(urlEncodedForgottenPasswordAssistanceToken)
                 || !IsForgottenPasswordAssistanceTokenValid)
-            {
                 throw new InvalidEntityOperationException(this, "Unable to change password because forgotten password assistance token is invalid.");
-            }
+
             Password = Password.Create(newPassword, Email);
             ForgottenPasswordAssistanceTokenUsed = DateTime.Now;
         }
@@ -122,7 +121,7 @@ namespace TMD.Model.Users
 
         public virtual bool PerformHumanVerification
         {
-            get 
+            get
             {
                 if (LastFailedLogonAttempt >= DateTime.Now.Subtract(Registry.Settings.FailedLoginMemoryDuration))
                 {
@@ -139,18 +138,16 @@ namespace TMD.Model.Users
 
         public virtual void ChangePasswordIfNonEmailVerified(string newPassword)
         {
-            if (!IsEmailVerified)
-            {
-                Password = Password.Create(newPassword, Email);
-            }
+            if (IsEmailVerified) return;
+
+            Password = Password.Create(newPassword, Email);
         }
 
         public virtual void ChangePasswordUsingExistingPassword(string existingPassword, string newPassword)
         {
             if (!VerifyPassword(existingPassword))
-            {
                 throw new InvalidEntityOperationException(this, "Unable to change password because existing password failed verification.");
-            }
+
             Password = Password.Create(newPassword, Email);
         }
 
@@ -190,7 +187,7 @@ namespace TMD.Model.Users
 
         public static User Create(string email, string password)
         {
-            return new User()
+            return new User
             {
                 Email = (email ?? string.Empty).Trim().ToLower(),
                 Firstname = string.Empty,

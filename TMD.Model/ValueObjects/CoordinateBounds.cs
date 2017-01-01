@@ -1,9 +1,6 @@
-﻿using System;
+﻿using NHibernate.Validator.Constraints;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
-using NHibernate.Validator.Constraints;
 using TMD.Model.Extensions;
 
 namespace TMD.Model
@@ -85,17 +82,11 @@ namespace TMD.Model
 
         public bool Contains(Coordinates c)
         {
-            if (c.IsSpecified)
-            {
-                if (m_MinLatitude <= c.Latitude.TotalDegrees && c.Latitude.TotalDegrees <= m_MinLatitude)
-                {
-                    if (m_MinLongitude <= c.Longitude.TotalDegrees && c.Longitude.TotalDegrees <= m_MinLongitude)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
+            if (!c.IsSpecified)
+                return false;
+
+            return m_MinLatitude <= c.Latitude.TotalDegrees && c.Latitude.TotalDegrees <= m_MaxLatitude
+                && m_MinLongitude <= c.Longitude.TotalDegrees && c.Longitude.TotalDegrees <= m_MaxLongitude;
         }
 
         private void recomputeIfNeeded()

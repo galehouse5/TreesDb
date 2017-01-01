@@ -1,4 +1,5 @@
 ﻿@model ImportFinishedTripModel
+
 @{
     ViewBag.Title = "Import - Review";
     Layout = "~/Views/Import/_WizardLayout.cshtml";
@@ -8,10 +9,10 @@
     <h4>Review</h4>
 }
 
-@using (Html.BeginForm(MVC.Import.Finish(null, Model.Id), FormMethod.Post, new { @class = "form" })) {
+@using (Html.BeginForm(MVC.Import.Finish(Model.Id), FormMethod.Post, new { @class = "form" })) {
     @Html.DisplayFor(m => m)
     <div class="buttonrow">
-        @Html.AnchorButton("Back", MVC.Import.Trees(null, Model.Id), ButtonColor.Grey)
+        @Html.AnchorButton("Back", MVC.Import.Trees(Model.Id), ButtonColor.Grey)
         @Html.SubmitButton("Finish")
     </div>
 }

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
 
@@ -28,7 +25,7 @@ namespace TMD.Model
         public string RawValue { get; private set; }
         public float Feet { get; private set; }
 
-        [NotEqualsAttribute(DirectedDistanceFormat.Invalid, Message = "Directed distance must be in +/-fff.f', +/-fff' ii'', +/-mmm.mm m, or +/-yyy.yy yd format.", Tags = ValidationTag.Screening)]
+        [NotEqualsAttribute(DirectedDistanceFormat.Invalid, Message = "Directed distance must be in +/-fff.f', +/-fff' ii'', +/-mmm.mm m, or +/-yyy.yy yd format.", Tags = ValidationTag.Required)]
         public DirectedDistanceFormat InputFormat { get; private set; }
 
         public int Sign { get { return Math.Sign(Feet); } }

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using NHibernate.Validator.Constraints;
 using System.Diagnostics;
-using TMD.Model.Validation;
 using TMD.Model.Extensions;
-using NHibernate.Validator.Constraints;
+using TMD.Model.Validation;
 
 namespace TMD.Model
 {
@@ -15,12 +11,12 @@ namespace TMD.Model
         protected Name()
         { }
 
-        [NotEmptyOrWhitesapce(Message = "First name must be specified.", Tags = ValidationTag.Screening)]
-        [Length(50, Message = "First name must not exceed 50 characters.", Tags = ValidationTag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "First name must be specified.", Tags = ValidationTag.Required)]
+        [Length(50, Message = "First name must not exceed 50 characters.", Tags = ValidationTag.Required)]
         public virtual string FirstName { get; private set; }
 
-        [NotEmptyOrWhitesapce(Message = "Last name must be specified.", Tags = ValidationTag.Screening)]
-        [Length(50, Message = "Last name must not exceed 50 characters.", Tags = ValidationTag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Last name must be specified.", Tags = ValidationTag.Required)]
+        [Length(50, Message = "Last name must not exceed 50 characters.", Tags = ValidationTag.Required)]
         public virtual string LastName { get; private set; }
 
         public virtual bool IsSpecified

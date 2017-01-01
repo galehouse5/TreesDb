@@ -40,11 +40,13 @@ namespace T4MVC
             {
                 public readonly string _Layout = "_Layout";
                 public readonly string _LoginLayout = "_LoginLayout";
+                public readonly string _ValidationSummary2 = "_ValidationSummary2";
                 public readonly string GoogleAnalyticsScript = "GoogleAnalyticsScript";
                 public readonly string PrettyTimeSpan = "PrettyTimeSpan";
             }
             public readonly string _Layout = "~/Views/Shared/_Layout.cshtml";
             public readonly string _LoginLayout = "~/Views/Shared/_LoginLayout.cshtml";
+            public readonly string _ValidationSummary2 = "~/Views/Shared/_ValidationSummary2.cshtml";
             public readonly string GoogleAnalyticsScript = "~/Views/Shared/GoogleAnalyticsScript.cshtml";
             public readonly string PrettyTimeSpan = "~/Views/Shared/PrettyTimeSpan.cshtml";
             static readonly _DisplayTemplatesClass s_DisplayTemplates = new _DisplayTemplatesClass();
@@ -63,6 +65,7 @@ namespace T4MVC
                 public readonly string ObjectReport = "ObjectReport";
                 public readonly string PhotoGalleryModel = "PhotoGalleryModel";
                 public readonly string State = "State";
+                public readonly string _Url = "Url";
                 public readonly string Volume = "Volume";
             }
             static readonly _EditorTemplatesClass s_EditorTemplates = new _EditorTemplatesClass();

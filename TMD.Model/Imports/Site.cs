@@ -1,13 +1,10 @@
-﻿using System;
+﻿using NHibernate.Validator.Constraints;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
-using TMD.Model.Extensions;
 using System.Diagnostics;
-using System.ComponentModel;
-using TMD.Model.Users;
-using NHibernate.Validator.Constraints;
+using System.Linq;
+using TMD.Model.Extensions;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Imports
 {
@@ -20,15 +17,15 @@ namespace TMD.Model.Imports
         public virtual Trip Trip { get; protected set; }
 
         private string m_Name;
-        [NotEmptyOrWhitesapce(Message = "Site name must be specified.", Tags = ValidationTag.Screening)]
-        [Length(100, Message = "Site name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Site name must be specified.", Tags = ValidationTag.Required)]
+        [Length(100, Message = "Site name must not exceed 100 characters.", Tags = ValidationTag.Required)]
         public virtual string Name
         {
             get { return m_Name; }
             set { m_Name = value.OrEmptyAndTrimToTitleCase(); }
         }
 
-        [Valid, Specified(Message = "You must specify coordinates for this site or any contained subsite.", Tags = ValidationTag.Finalization)]
+        [Valid]
         public virtual Coordinates Coordinates { get; set; }
 
         public virtual bool CanCalculateCoordinates(bool ignoreContainingTrip = false)
@@ -68,16 +65,15 @@ namespace TMD.Model.Imports
         }
 
         private string m_Comments;
-        [Length(300, Message = "Site comments must not exceed 300 characters.", Tags = ValidationTag.Persistence)]
+        [Length(300, Message = "Site comments must not exceed 300 characters.", Tags = ValidationTag.Required)]
         public virtual string Comments
         {
             get { return m_Comments; }
             set { m_Comments = value.OrEmptyAndTrim(); }
         }
 
-        [Valid]
-        [Size2(1, int.MaxValue, Message = "Site must contain at least one subsite.", Tags = ValidationTag.Screening)]
-        [Size2(int.MinValue, 100, Message = "Site contains too many subsites.", Tags = new [] { ValidationTag.Screening, ValidationTag.Persistence })]
+        [Size2(1, int.MaxValue, Message = "Site must contain at least one subsite.", Tags = ValidationTag.Required)]
+        [Size2(int.MinValue, 100, Message = "Site contains too many subsites.", Tags = ValidationTag.Required )]
         public virtual IList<Subsite> Subsites { get; protected set; }
 
         public virtual Subsite AddSubsite()
@@ -102,6 +98,9 @@ namespace TMD.Model.Imports
             var subsite = Subsites.FirstOrDefault(ss => ss.FindTreeById(id) != null);
             return subsite == null ? null : subsite.FindTreeById(id);
         }
+
+        public virtual void VisitSubsites(Action<string, Subsite> visitor)
+            => Subsites.ForEach((ss, i) => visitor($"{nameof(Subsites)}[{i}]", ss));
 
         internal static Site Create(Trip t)
         {

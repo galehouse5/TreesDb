@@ -18,10 +18,10 @@ namespace TMD.Model.Photos
         public virtual int CaptionId { get { return 0; } }
         public virtual bool HasCaption { get { return false; } }
 
-        [Within2(0, MaxBytes, Inclusive = true, Message = "Photo must not be too large.", Tags = ValidationTag.Screening)]
+        [Within2(0, MaxBytes, Inclusive = true, Message = "Photo must not be too large.", Tags = ValidationTag.Required)]
         public virtual int Bytes { get; protected internal set; }
 
-        [NotEquals(PhotoFormat.NotSpecified, Message = "Photo must be in a proper format.", Tags = ValidationTag.Screening)]
+        [NotEquals(PhotoFormat.NotSpecified, Message = "Photo must be in a proper format.", Tags = ValidationTag.Required)]
         public virtual PhotoFormat Format { get; protected internal set; }
 
         public virtual string ContentType

@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using NHibernate.Criterion;
 using TMD.Model.Users;
-using NHibernate.Exceptions;
-using TMD.Model;
-using NHibernate.Criterion;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -32,7 +26,7 @@ namespace TMD.Infrastructure.Repositories
                 .UniqueResult<User>();
         }
 
-        protected override void InternalSave(User u)
+        public override void Save(User u)
         {
             Registry.Session.Save(u);
         }

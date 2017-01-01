@@ -5,10 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using TMD.Extensions;
 using TMD.Model;
-using TMD.Models.Import;
+using TMD.Model.Imports;
 using TMD.Model.Photos;
 using TMD.Models;
-using TMD.Model.Imports;
 
 namespace TMD.Controllers
 {
@@ -36,13 +35,13 @@ namespace TMD.Controllers
             }
         }
 
-        [HttpPost, UnitOfWork]
-        public virtual ActionResult Remove(IUnitOfWork uow, int id)
+        [HttpPost]
+        public virtual ActionResult Remove(int id)
         {
             var reference = Repositories.Photos.FindReferenceById(id);
             if (!reference.IsAuthorizedToRemove(User)) { return new UnauthorizedResult(); }
             Repositories.Photos.Remove(reference);
-            uow.Persist();
+            Uow.Persist();
             return PhotoRemoval(reference);
         }
 

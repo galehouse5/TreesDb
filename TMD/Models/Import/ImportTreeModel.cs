@@ -14,6 +14,7 @@ namespace TMD.Models.Import
         public bool IsEditing { get; set; }
         public EImportTreeModelEditMode EditMode { get; set; }
         public bool IsRemovable { get; set; }
+        public bool HasOptionalErrors { get; set; }
 
         [DisplayName("Common name"), Required, Classification("CommonName")]
         public string CommonName { get; set; }

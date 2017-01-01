@@ -21,34 +21,13 @@ namespace TMD
         }
     }
 
-    public class UnitOfWorkAttribute : ActionFilterAttribute
-    {
-        private IUnitOfWork m_UnitOfWork;
-
-        public UnitOfWorkAttribute()
-        {
-            IsolationLevel = IsolationLevel.Unspecified;
-        }
-
-        public IsolationLevel IsolationLevel { get; set; }
-
-        public override void OnActionExecuting(ActionExecutingContext filterContext)
-        {
-            m_UnitOfWork = IsolationLevel == IsolationLevel.Unspecified ?
-                UnitOfWork.Begin() : UnitOfWork.Begin(IsolationLevel);
-            filterContext.ActionParameters["uow"] = m_UnitOfWork;
-            base.OnActionExecuting(filterContext);
-        }
-
-        public override void OnResultExecuting(ResultExecutingContext filterContext)
-        {
-            base.OnResultExecuting(filterContext);
-            m_UnitOfWork.Dispose();
-        }
-    }
-
     public abstract class ControllerBase : Controller
     {
+        // TODO: Inject as a constructor dependency and move it out of the base class, since many controllers don't even use it.
+        protected IUnitOfWork Uow { get; private set; }
+
+        public virtual IsolationLevel UowIsolationLevel => IsolationLevel.Unspecified;
+
         protected override void HandleUnknownAction(string actionName)
         {
             ActionResult ar = new NotFoundResult();
@@ -57,22 +36,28 @@ namespace TMD
 
         protected override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (WebApplicationRegistry.Settings.EnableMaintenance)
+            Uow = UowIsolationLevel == IsolationLevel.Unspecified ?
+                UnitOfWork.Begin() : UnitOfWork.Begin(UowIsolationLevel);
+
+            if (filterContext.IsChildAction) return;
+
+            if (WebApplicationRegistry.Settings.EnableMaintenance
+                && !MaintenanceResult.IsExecuting(ControllerContext))
             {
-                MaintenanceResult result = new MaintenanceResult();
-                if (!result.IsExecuting(ControllerContext))
-                {
-                    filterContext.Result = new MaintenanceResult();
-                }
-                base.OnActionExecuting(filterContext);
+                filterContext.Result = new MaintenanceResult();
                 return;
             }
+
             if (base.User.Identity.IsAuthenticated)
             {
                 User.ReportActivity();
                 Repositories.Users.Save(User);
             }
-            base.OnActionExecuting(filterContext);
+        }
+
+        protected override void OnResultExecuted(ResultExecutedContext filterContext)
+        {
+            Uow.Dispose();
         }
 
         public bool IsAuthenticated

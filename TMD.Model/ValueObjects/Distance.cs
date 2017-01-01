@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using TMD.Model.Validation;
-using NHibernate.Validator.Constraints;
 
 namespace TMD.Model
 {
@@ -28,10 +24,10 @@ namespace TMD.Model
 
         public string RawValue { get; private set; }
 
-        [Within2(0, float.MaxValue, Inclusive = true, Message = "Distance must be non-negative.", Tags = ValidationTag.Screening)]
+        [Within2(0, float.MaxValue, Inclusive = true, Message = "Distance must be non-negative.", Tags = ValidationTag.Required)]
         public float Feet { get; private set; }
 
-        [NotEqualsAttribute(DistanceFormat.Invalid, Message = "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.", Tags = ValidationTag.Screening)]
+        [NotEqualsAttribute(DistanceFormat.Invalid, Message = "Distance must be in fff.f', fff' ii'', mmm.mm m, or yyy.yy yd format.", Tags = ValidationTag.Required)]
         public DistanceFormat InputFormat { get; private set; }
 
         public int WholeFeet { get { return (int)Math.Floor(Feet); } }

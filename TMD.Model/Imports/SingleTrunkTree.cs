@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
-using System.ComponentModel;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
-using System.ComponentModel.DataAnnotations;
-using TMD.Model.Extensions;
 using TMD.Model.Photos;
 
 namespace TMD.Model.Imports

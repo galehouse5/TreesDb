@@ -1,4 +1,5 @@
 ﻿using NHibernate.Validator.Constraints;
+using NHibernate.Validator.Engine;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -11,6 +12,7 @@ using TMD.Model.Validation;
 namespace TMD.Model.Imports
 {
     [DebuggerDisplay("{Name}")]
+    [ContextMethod(nameof(OptionalValidate), Tags = ValidationTag.Optional)]
     public class Subsite : UserCreatedEntityBase
     {
         protected Subsite()
@@ -25,16 +27,25 @@ namespace TMD.Model.Imports
         }
 
         private string m_Name;
-        [NotEmptyOrWhitesapce(Message = "Subsite name must be specified.", Tags = ValidationTag.Screening)]
-        [Length(100, Message = "Subsite name must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Subsite name must be specified.", Tags = ValidationTag.Required)]
+        [Length(100, Message = "Subsite name must not exceed 100 characters.", Tags = ValidationTag.Required)]
         public virtual string Name
         {
             get { return m_Name; }
             set { m_Name = value.OrEmptyAndTrimToTitleCase(); }
         }
 
-        [Valid, Specified(Message = "You must specify coordinates for this subsite, its containing site, or any contained measurement.", Tags = ValidationTag.Finalization)]
+        [Valid]
         public virtual Coordinates Coordinates { get; set; }
+
+        protected internal virtual void OptionalValidate(IConstraintValidatorContext context)
+        {
+            if (Coordinates.IsSpecified
+                && !State.CoordinateBounds.Contains(Coordinates))
+            {
+                context.AddInvalid($"(Optional) Coordinates appear to fall outside the state's boundaries.  You might want to double check them.", nameof(Coordinates));
+            }
+        }
 
         public virtual bool CanCalculateCoordinates(bool ignoreContainingSite = false)
         {
@@ -72,12 +83,12 @@ namespace TMD.Model.Imports
             return Coordinates.Null();
         }
 
-        [NotNull(Message = "Subsite state must be specified.", Tags = ValidationTag.Screening)]
+        [NotNull(Message = "Subsite state must be specified.", Tags = ValidationTag.Required)]
         public virtual State State { get; set; }
 
         private string m_County;
-        [NotEmptyOrWhitesapce(Message = "Subsite county must be specified.", Tags = ValidationTag.Screening)]
-        [Length(100, Message = "Site county must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Subsite county must be specified.", Tags = ValidationTag.Required)]
+        [Length(100, Message = "Site county must not exceed 100 characters.", Tags = ValidationTag.Required)]
         public virtual string County
         {
             get { return m_County; }
@@ -85,8 +96,8 @@ namespace TMD.Model.Imports
         }
 
         private string m_OwnershipType;
-        [NotEmptyOrWhitesapceAttribute(Message = "Subsite ownership type name must be specified.", Tags = ValidationTag.Screening)]
-        [Length(100, Message = "Subsite ownership type must not exceed 100 characters.", Tags = ValidationTag.Persistence)]
+        [NotEmptyOrWhitesapce(Message = "Subsite ownership type name must be specified.", Tags = ValidationTag.Required)]
+        [Length(100, Message = "Subsite ownership type must not exceed 100 characters.", Tags = ValidationTag.Required)]
         public virtual string OwnershipType
         {
             get { return m_OwnershipType; }
@@ -94,7 +105,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_OwnershipContactInfo;
-        [Length(200, Message = "Subsite ownership contact info must not exceed 200 characters.", Tags = ValidationTag.Persistence)]
+        [Length(200, Message = "Subsite ownership contact info must not exceed 200 characters.", Tags = ValidationTag.Required)]
         public virtual string OwnershipContactInfo
         {
             get { return m_OwnershipContactInfo; }
@@ -104,16 +115,15 @@ namespace TMD.Model.Imports
         public virtual bool MakeOwnershipContactInfoPublic { get; set; }
 
         private string m_Comments;
-        [Length(300, Message = "Subsite comments must not exceed 300 characters.", Tags =  ValidationTag.Persistence)]
+        [Length(300, Message = "Subsite comments must not exceed 300 characters.", Tags =  ValidationTag.Required)]
         public virtual string Comments
         {
             get { return m_Comments; }
             set { m_Comments = value.OrEmptyAndTrim(); }
         }
 
-        [Valid]
-        [Size2(1, int.MaxValue, Message = "You must add tree measurements to this subsite.", Tags = ValidationTag.Screening)]
-        [Size2(0, 10000, Message = "This subsite contains too many tree measurements.", Tags = ValidationTag.Screening)]
+        [Size2(1, int.MaxValue, Message = "You must add tree measurements to this site/subsite.", Tags = ValidationTag.Required)]
+        [Size2(0, 10000, Message = "This site/subsite contains too many tree measurements.", Tags = ValidationTag.Required)]
         public virtual IList<TreeBase> Trees { get; protected set; }
 
         public virtual SingleTrunkTree AddSingleTrunkTree()
@@ -140,7 +150,7 @@ namespace TMD.Model.Imports
             return Trees.FirstOrDefault(tm => id.Equals(tm.Id));
         }
 
-        [Size2(0, 100, Message = "This subsite contains too many photos.", Tags = ValidationTag.Screening)]
+        [Size2(0, 100, Message = "This site/subsite contains too many photos.", Tags = ValidationTag.Required)]
         [Valid] public virtual IList<IPhoto> Photos { get; protected set; }
 
         public virtual void AddPhoto(Photo photo)

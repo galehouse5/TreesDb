@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using StructureMap;
+﻿using StructureMap;
+using System;
 using System.Data;
 
 namespace TMD.Model

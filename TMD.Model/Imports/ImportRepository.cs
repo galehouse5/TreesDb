@@ -6,20 +6,20 @@ namespace TMD.Model.Imports
 {
     public abstract class ImportRepository
     {
+        protected abstract void InternalSave(Trip t);
+
         public void Save(Trip t)
         {
-            t.AssertIsValidToPersist();
             t.LastSaved = DateTime.Now;
             InternalSave(t);
         }
-        protected abstract void InternalSave(Trip t);
-        
+
         public abstract Trip FindById(int id);
         public abstract void Remove(Trip t);
 
         public void Import(Trip t)
         {
-            t.AssertIsValid(ValidationTag.Screening, ValidationTag.Finalization, ValidationTag.Persistence);
+            t.AssertIsValid(ValidationTag.Required);
             t.Imported = DateTime.Now;
             InternalImport(t);
         }
@@ -27,7 +27,7 @@ namespace TMD.Model.Imports
 
         public void Reimport(Trip t)
         {
-            t.AssertIsValid(ValidationTag.Screening, ValidationTag.Finalization, ValidationTag.Persistence);
+            t.AssertIsValid(ValidationTag.Required);
             if (!t.IsImported)
             {
                 throw new InvalidEntityOperationException(t, "Unable to reimport trip because it has not yet been imported.");

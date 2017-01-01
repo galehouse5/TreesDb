@@ -56,20 +56,20 @@ namespace TMD.Mappings
         {
             CreateMap<Trip, ImportSitesModel>()
                 .ForMember(dest => dest.Sites, opt => opt.MapFrom(src => src.Sites));
-            ValidationMapper.CreateMap<Trip, ImportSitesModel>()
-                .ForPath("*.Coordinates.*", "*.Coordinates").IgnorePath("Sites[*].Subsites[*].Trees*");
 
             CreateMap<Site, ImportSiteModel>()
                 .ForMember(dest => dest.IsEditing, opt => opt.MapFrom(src => 
-                    !ValidationMapper.Map<Site, ImportSiteModel>(src.Validate(ValidationTag.Screening, ValidationTag.Persistence)).IsValid()))
+                    !ValidationMapper.Map<Site, ImportSiteModel>(src.Validate(ValidationTag.Required)).IsValid()))
                 .ForMember(dest => dest.IsSaveableAndRemovable, opt => opt.MapFrom(src => src.Trip.Sites.Count > 1))
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Mapper.Map<Site, CoordinatePickerModel>(src)));
             ValidationMapper.CreateMap<Site, ImportSiteModel>()
-                .ForPath("*.Coordinates.*", "*.Coordinates").IgnorePath("Subsites[*].Trees*");
+                .ForPath("*.Coordinates.*", "*.Coordinates");
 
             CreateMap<Subsite, ImportSubsiteModel>()
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<Subsite, ImportSubsitePhotoGalleryModel>(src)))
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Mapper.Map<Subsite, CoordinatePickerModel>(src)));
+            ValidationMapper.CreateMap<Subsite, ImportSubsiteModel>()
+                .ForPath("*.Coordinates.*", "*.Coordinates");
 
             CreateMap<ImportSitesModel, Trip>().ForMember(dest => dest.Sites, opt => opt.Ignore())
                 .AfterMap((src, dest) => src.Sites.ForEach(s => Mapper.Map(s, dest.FindSiteById(s.Id))));
@@ -85,15 +85,13 @@ namespace TMD.Mappings
         {
             CreateMap<Trip, ImportTreesModel>()
                 .ForMember(dest => dest.Sites, opt => opt.MapFrom(src => src.Sites));
-            ValidationMapper.CreateMap<Trip, ImportTreesModel>()
-                .ForPath("*.InputFormat", "*").ForPath("*.Feet", "*").ForPath("*.Latitude.*", "*").ForPath("*.Longitude.*", "*");
 
             CreateMap<Site, ImportSiteTreesModel>();
             CreateMap<Subsite, ImportSubsiteTreesModel>();
 
             CreateMap<TreeBase, ImportTreeModel>()
                 .ForMember(dest => dest.IsEditing, opt => opt.MapFrom(src =>
-                    !ValidationMapper.Map<TreeBase, ImportTreeModel>(src.Validate(ValidationTag.Screening, ValidationTag.Persistence)).IsValid()))
+                    !ValidationMapper.Map<TreeBase, ImportTreeModel>(src.Validate(ValidationTag.Required)).IsValid()))
                 .ForMember(dest => dest.IsRemovable, opt => opt.MapFrom(src => src.Subsite.Trees.Count > 1))
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<TreeBase, ImportTreePhotoGalleryModel>(src)))
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Mapper.Map<TreeBase, CoordinatePickerModel>(src)));

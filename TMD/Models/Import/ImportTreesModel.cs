@@ -7,6 +7,7 @@ namespace TMD.Models.Import
     {
         public int Id { get; set; }
         public IList<ImportSiteTreesModel> Sites { get; set; }
+        public bool HasOptionalErrors { get; set; }
 
         public ImportTreeModel FindTreeById(int id)
         {
@@ -29,6 +30,18 @@ namespace TMD.Models.Import
         {
             var site = Sites.FirstOrDefault(s => s.FindSubsiteById(id) != null);
             return site == null ? null : site.FindSubsiteById(id);
+        }
+
+        public void Initialize()
+        {
+            foreach (ImportSubsiteTreesModel subsite in Sites
+                .SelectMany(s => s.Subsites))
+            {
+                foreach (ImportTreeModel tree in subsite.Trees)
+                {
+                    tree.IsRemovable = subsite.Trees.Count() > 1;
+                }
+            }
         }
     }
 }

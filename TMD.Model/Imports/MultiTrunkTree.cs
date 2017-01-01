@@ -1,13 +1,10 @@
-﻿using System;
+﻿using NHibernate.Validator.Constraints;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
-using System.Diagnostics;
-using NHibernate.Validator.Constraints;
 using System.ComponentModel;
-using TMD.Model.Extensions;
+using System.Diagnostics;
 using TMD.Model.Photos;
+using TMD.Model.Validation;
 
 namespace TMD.Model.Imports
 {
@@ -29,7 +26,7 @@ namespace TMD.Model.Imports
 
         private int? m_NumberOfTrunks;
         
-        [Range(2, int.MaxValue, Message = "Number of trunks must be greater than one.", Tags = ValidationTag.Screening)]
+        [Range(2, int.MaxValue, Message = "Number of trunks must be greater than one.", Tags = ValidationTag.Required)]
         public override int? NumberOfTrunks 
         {
             get 
@@ -47,7 +44,7 @@ namespace TMD.Model.Imports
             set { m_NumberOfTrunks = value; }
         }
 
-        [NotEqualsAttribute(TreeFormType.Single, Message = "Form type must not be single.", Tags = ValidationTag.Screening)]
+        [NotEqualsAttribute(TreeFormType.Single, Message = "Form type must not be single.", Tags = ValidationTag.Required)]
         public override TreeFormType FormType { get; set; }
 
         public virtual MultiTrunkTreeFormType MultiTrunkFormType
@@ -64,7 +61,7 @@ namespace TMD.Model.Imports
             set { Girth = value; }
         }
         
-        [Range(1, int.MaxValue, Message = "Number of trunks in combined girth must be positive.", Tags = ValidationTag.Screening)]
+        [Range(1, int.MaxValue, Message = "Number of trunks in combined girth must be positive.", Tags = ValidationTag.Required)]
         public virtual int? CombinedGirthNumberOfTrunks { get; set; }
 
         public override Distance CrownSpread { get; set; }
@@ -76,7 +73,7 @@ namespace TMD.Model.Imports
         }
 
         [Valid]
-        [Size(0, 100, Message = "This tree contains too many trunk measurements.", Tags = new [] { ValidationTag.Screening, ValidationTag.Persistence })]
+        [Size(0, 100, Message = "This tree contains too many trunk measurements.", Tags = ValidationTag.Required)]
         public virtual IList<Trunk> Trunks { get; protected set; }
 
         public virtual Trunk AddTrunkMeasurement()

@@ -6,21 +6,13 @@ namespace TMD.Model.Extensions
     {
         public static bool IsValidAndSpecified(this object source, params ValidationTag[] tags)
         {
-            if (source.IsValid(tags))
-            {
-                ISpecified specified = source as ISpecified;
-                if (specified != null)
-                {
-                    return specified.IsSpecified;
-                }
-                return false;
-            }
-            return false;
+            if (!source.IsValid(tags)) return false;
+
+            ISpecified specified = source as ISpecified;
+            return specified?.IsSpecified ?? false;
         }
 
         public static bool IsValidAndSpecified(this object source)
-        {
-            return source.IsValidAndSpecified(ValidationTag.Screening, ValidationTag.Persistence, ValidationTag.Finalization, ValidationTag.Optional);
-        }
+            => source.IsValidAndSpecified(ValidationTag.Required);
     }
 }

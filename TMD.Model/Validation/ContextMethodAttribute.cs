@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NHibernate.Validator.Constraints;
+﻿using NHibernate.Validator.Constraints;
 using NHibernate.Validator.Engine;
+using System;
 using System.Reflection;
 
 namespace TMD.Model.Validation

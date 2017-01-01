@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TMD.Model.Validation;
-using System.ComponentModel;
-using NHibernate.Validator.Constraints;
+﻿using NHibernate.Validator.Constraints;
 using NHibernate.Validator.Engine;
+using System;
+using TMD.Model.Validation;
 
 namespace TMD.Model
 {
-    [ContextMethod("ValidateCanCalculateHeightIfSpecified", Tags = ValidationTag.Screening)]
-    [ContextMethod("ValidateCanCalculateOffsetIfSpecified", Tags = ValidationTag.Screening)]
+    [ContextMethod(nameof(RequiredValidate), Tags = ValidationTag.Required)]
     public class HeightMeasurements : ISpecified
     {
         private HeightMeasurements() 
@@ -27,19 +22,12 @@ namespace TMD.Model
         [Valid] public Distance Height { get { return calculateHeight(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); } }
         [Valid] public Distance Offset { get { return calculateOffset(DistanceTop, AngleTop, DistanceBottom, AngleBottom, VerticalOffset); } }
 
-        protected internal virtual void ValidateCanCalculateHeightIfSpecified(IConstraintValidatorContext context)
+        protected internal virtual void RequiredValidate(IConstraintValidatorContext context)
         {
             if (IsSpecified && !Height.IsSpecified)
             {
-                context.AddInvalid<HeightMeasurements, Distance>("You must specify proper distance and angle measurements to calculate a height.", hm => hm.Height);
-            }
-        }
-
-        protected internal virtual void ValidateCanCalculateOffsetIfSpecified(IConstraintValidatorContext context)
-        {
-            if (IsSpecified && !Height.IsSpecified)
-            {
-                context.AddInvalid<HeightMeasurements, Distance>("You must specify proper distance and angle measurements to calculate an offset.", hm => hm.Offset);
+                context.AddInvalid("You must specify proper distance and angle measurements to calculate a height.", nameof(Height));
+                context.AddInvalid("You must specify proper distance and angle measurements to calculate an offset.", nameof(Offset));
             }
         }
 
