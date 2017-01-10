@@ -48,8 +48,6 @@ namespace TMD
         public override int Id { get { return -1; } }
         public override bool IsEmailVerified { get { return false; } }
         public override bool IsForgottenPasswordAssistanceTokenValid { get { return false; } }
-
-        public override DateTime LastActivity { get { return DateTime.MinValue; } }
         public override DateTime? LastFailedLogonAttempt { get { return null; } }
         public override DateTime LastLogon { get { return DateTime.MinValue; } }
         public override string Lastname { get { return "Anonymous"; } }
@@ -63,11 +61,6 @@ namespace TMD
         }
 
         public override void ChangePasswordIfNonEmailVerified(string newPassword)
-        {
-            throw new InvalidEntityOperationException(this);
-        }
-
-        public override void ReportActivity()
         {
             throw new InvalidEntityOperationException(this);
         }

@@ -42,7 +42,6 @@ namespace TMD.Model.Users
         public virtual Password Password { get; protected set; }
 
         public virtual DateTime Created { get; protected set; }
-        public virtual DateTime LastActivity { get; protected set; }
         public virtual DateTime LastLogon { get; protected set; }
 
         #region Email verification
@@ -161,7 +160,6 @@ namespace TMD.Model.Users
             if (VerifyPassword(password))
             {
                 LastLogon = DateTime.Now;
-                LastActivity = DateTime.Now;
                 RecentlyFailedLogonAttempts = 0;
                 return true;
             }
@@ -177,11 +175,6 @@ namespace TMD.Model.Users
             }
         }
 
-        public virtual void ReportActivity()
-        {
-            LastActivity = DateTime.Now;
-        }
-
         public override string ToString()
             => $"{Email} ({Id})";
 
@@ -194,7 +187,6 @@ namespace TMD.Model.Users
                 Lastname = string.Empty,
                 Password = Password.Create(password ?? string.Empty, (email ?? string.Empty).Trim().ToLower()),
                 Created = DateTime.Now,
-                LastActivity = DateTime.Now,
                 LastLogon = DateTime.Now,
                 EmailVerificationToken = SecureToken.Create(),
                 ForgottenPasswordAssistanceToken = null,

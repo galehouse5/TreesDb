@@ -47,12 +47,6 @@ namespace TMD
                 filterContext.Result = new MaintenanceResult();
                 return;
             }
-
-            if (base.User.Identity.IsAuthenticated)
-            {
-                User.ReportActivity();
-                Repositories.Users.Save(User);
-            }
         }
 
         protected override void OnResultExecuted(ResultExecutedContext filterContext)

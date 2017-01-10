@@ -29,7 +29,7 @@ namespace TMD.Model.Imports
         [Valid] public virtual HeightMeasurements HeightMeasurements { get; set; }
 
         private string m_TrunkComments;
-        [Length(300, Message = "Trunk comments must not exceed 300 characters.", Tags = ValidationTag.Required)]
+        [Length(1000, Message = "Trunk comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)]
         public virtual string TrunkComments
         {
             get { return m_TrunkComments; }

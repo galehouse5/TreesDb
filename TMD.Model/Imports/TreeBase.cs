@@ -158,7 +158,7 @@ namespace TMD.Model.Imports
         public virtual bool MakeCoordinatesPublic { get; set; }
 
         private string m_GeneralComments;
-        [Length(300, Message = "General comments must not exceed 300 characters.", Tags = ValidationTag.Required)] 
+        [Length(1000, Message = "General comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)] 
         public virtual string GeneralComments
         {
             get { return m_GeneralComments; }
@@ -194,7 +194,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_HeightComments;
-        [Length(300, Message = "Height comments must not exceed 300 characters.", Tags = ValidationTag.Required)]
+        [Length(1000, Message = "Height comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)]
         public virtual string HeightComments
         {
             get { return m_HeightComments; }
@@ -206,7 +206,7 @@ namespace TMD.Model.Imports
         [Valid] public virtual Distance GirthRootCollarHeight { get; set; }
 
         private string m_GirthComments;
-        [Length(300, Message = "Girth comments must not exceed 300 characters.", Tags = ValidationTag.Required)]
+        [Length(1000, Message = "Girth comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)]
         public virtual string GirthComments
         {
             get { return m_GirthComments; }
@@ -227,7 +227,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_TrunkComments;
-        [Length(300, Message = "Trunk comments must not exceed 300 characters.", Tags = ValidationTag.Required )]
+        [Length(1000, Message = "Trunk comments must not exceed 1,000 characters.", Tags = ValidationTag.Required )]
         public virtual string TrunkComments
         {
             get { return m_TrunkComments; }
@@ -257,7 +257,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_CrownComments;
-        [Length(300, Message = "Crown comments must not exceed 300 characters.", Tags = ValidationTag.Required)]
+        [Length(1000, Message = "Crown comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)]
         public virtual string CrownComments
         {
             get { return m_CrownComments; }
@@ -267,7 +267,7 @@ namespace TMD.Model.Imports
         public virtual TreeFormType FormType { get; set; }
 
         private string m_TreeFormComments;
-        [Length(300, Message = "Tree form comments must not exceed 300 characters.", Tags = ValidationTag.Required)]
+        [Length(1000, Message = "Tree form comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)]
         public virtual string TreeFormComments
         {
             get { return m_TreeFormComments; }
@@ -289,7 +289,7 @@ namespace TMD.Model.Imports
         public virtual float? LandformIndex { get; set; }
 
         private string m_TerrainComments;
-        [Length(300, Message = "Terrain comments must not exceed 300 characters.", Tags = ValidationTag.Required)]
+        [Length(1000, Message = "Terrain comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)]
         public virtual string TerrainComments
         {
             get { return m_TerrainComments; }

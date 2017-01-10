@@ -19,7 +19,6 @@
       <property name="Length" column="PasswordLength" />
     </component>
     <property name="Created" />
-    <property name="LastActivity" />
     <property name="LastLogon" column="LastLogin" />
     <component name="EmailVerificationToken" class="SecureToken">
       <property name="Value" column="EmailVerificationToken"/>

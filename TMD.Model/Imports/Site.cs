@@ -65,7 +65,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_Comments;
-        [Length(300, Message = "Site comments must not exceed 300 characters.", Tags = ValidationTag.Required)]
+        [Length(1000, Message = "Site comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)]
         public virtual string Comments
         {
             get { return m_Comments; }
