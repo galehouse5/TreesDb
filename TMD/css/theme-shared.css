@@ -42,15 +42,15 @@ table.display tfoot th { background-color: #255648 !important; padding: 3px 18px
 }
 
     .search-result.ui-menu-item.states > a, .search-result > .states {
-        background-image: url(../images/icons/Subsite32.png);
+        background-image: url(../images/icons/State32.png);
     }
 
     .search-result.ui-menu-item.sites > a, .search-result > .sites {
-        background-image: url(../images/icons/Site32.png);
+        background-image: url(../images/icons/Site32.png?v=2);
     }
 
     .search-result.ui-menu-item.species > a, .search-result > .species {
-        background-image: url(../images/icons/SingleTrunkTree32.png);
+        background-image: url(../images/icons/Tree32.png);
     }
 
     .search-result.ui-menu-item.message > a {
