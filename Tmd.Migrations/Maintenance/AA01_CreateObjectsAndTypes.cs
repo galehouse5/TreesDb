@@ -2,12 +2,11 @@
 
 namespace Tmd.Migrations.Profiles
 {
-    [Profile("MigrateUp")]
-    public class MigrateUp : ForwardOnlyMigration
+    [Maintenance(MigrationStage.AfterAll)]
+    public class AA01_CreateObjectsAndTypes : ForwardOnlyMigration
     {
         public override void Up()
         {
-            Execute.EmbeddedScript("DropObjectsAndTypes.sql");
             Execute.EmbeddedScript("CreateObjectsAndTypes.sql");
         }
     }

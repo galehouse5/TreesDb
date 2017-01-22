@@ -103,152 +103,6 @@ GO
 
 
 
-CREATE VIEW [Locations].[VisitedStates]
-AS
-    select Id, CountryId, DoubleLetterCode, TripleLetterCode, Name, NELatitude, NELongitude, SWLatitude, SWLongitude,
-    (
-      select 
-        case when COUNT(*) >= 5
-          then SUM(MaxHeight) / 5
-          else NULL
-        end RHI
-      from
-      (
-        select top 5 ScientificName, MaxHeight 
-        from
-        (
-          select t.ScientificName, MAX(t.Height) MaxHeight
-          from Sites.Subsites ss
-          join Trees.Trees t
-            on t.SubsiteId = ss.Id
-          where ss.StateId = s.Id
-          group by t.ScientificName
-        ) SpeciesMaxHeights
-        order by MaxHeight desc
-      ) TopSpeciesMaxHeights
-    ) RHI5,
-    (
-      select 
-        case when COUNT(*) >= 10
-          then SUM(MaxHeight) / 10
-          else NULL
-        end RHI
-      from
-      (
-        select top 10 ScientificName, MaxHeight 
-        from
-        (
-          select t.ScientificName, MAX(t.Height) MaxHeight
-          from Sites.Subsites ss
-          join Trees.Trees t
-            on t.SubsiteId = ss.Id
-          where ss.StateId = s.Id
-          group by t.ScientificName
-        ) SpeciesMaxHeights
-        order by MaxHeight desc
-      ) TopSpeciesMaxHeights
-    ) RHI10,
-    (
-      select 
-        case when COUNT(*) >= 20
-          then SUM(MaxHeight) / 20
-          else NULL
-        end RHI
-      from
-      (
-        select top 20 ScientificName, MaxHeight 
-        from
-        (
-          select t.ScientificName, MAX(t.Height) MaxHeight
-          from Sites.Subsites ss
-          join Trees.Trees t
-            on t.SubsiteId = ss.Id
-          where ss.StateId = s.Id
-          group by t.ScientificName
-        ) SpeciesMaxHeights
-        order by MaxHeight desc
-      ) TopSpeciesMaxHeights
-    ) RHI20,
-    (
-      select 
-        case when COUNT(*) >= 5
-          then SUM(MaxGirth) / 5
-          else NULL
-        end RHI
-      from
-      (
-        select top 5 ScientificName, MaxGirth 
-        from
-        (
-          select t.ScientificName, MAX(t.Girth) MaxGirth
-          from Sites.Subsites ss
-          join Trees.Trees t
-            on t.SubsiteId = ss.Id
-          where ss.StateId = s.Id
-          group by t.ScientificName
-        ) SpeciesMaxGirths
-        order by MaxGirth desc
-      ) TopSpeciesMaxGirths
-    ) RGI5,
-    (
-      select 
-        case when COUNT(*) >= 10
-          then SUM(MaxGirth) / 10
-          else NULL
-        end RHI
-      from
-      (
-        select top 10 ScientificName, MaxGirth
-        from
-        (
-          select t.ScientificName, MAX(t.Girth) MaxGirth
-          from Sites.Subsites ss
-          join Trees.Trees t
-            on t.SubsiteId = ss.Id
-          where ss.StateId = s.Id
-          group by t.ScientificName
-        ) SpeciesMaxGirth
-        order by MaxGirth desc
-      ) TopSpeciesMaxGirth
-    ) RGI10,
-    (
-      select 
-        case when COUNT(*) >= 20
-          then SUM(MaxGirth) / 20
-          else NULL
-        end RHI
-      from
-      (
-        select top 20 ScientificName, MaxGirth
-        from
-        (
-          select t.ScientificName, MAX(t.Girth) MaxGirth
-          from Sites.Subsites ss
-          join Trees.Trees t
-            on t.SubsiteId = ss.Id
-          where ss.StateId = s.Id
-          group by t.ScientificName
-        ) SpeciesMaxGirths
-        order by MaxGirth desc
-      ) TopSpeciesMaxGirths
-    ) RGI20
-    from Locations.States s
-    where exists
-    (
-      select *
-      from Sites.Subsites ss
-      where ss.StateId = s.Id
-    )
-GO
-
-
-
-
-
-
-
-
-
 CREATE VIEW [Trees].[MeasuredSpeciesBySite]
 AS
     select ABS(
@@ -604,7 +458,7 @@ GO
 
 
 
-CREATE FUNCTION [dbo].[SearchVisitedStates]
+CREATE FUNCTION [dbo].[SearchStates]
 (
   @expression nvarchar(100)
 )
@@ -618,7 +472,7 @@ RETURN
     + (case when Name like '%' + @expression + '%' then 1 else 0 end)
     + (case DoubleLetterCode when @expression then 2 else 0 end)
     + (case TripleLetterCode when @expression then 2 else 0 end) [Rank]
-  from Locations.VisitedStates
+  from Locations.States
   where Name like '%' + @expression + '%'
     or DoubleLetterCode = @expression 
     or TripleLetterCode = @expression
@@ -705,3 +559,309 @@ BEGIN
   RETURN ISNULL(@output,'')
 END
 GO
+
+
+
+
+
+
+
+
+
+create view dbo.StateMetrics
+as
+    with trees as
+    (
+        select ss.StateId, t.*
+        from Trees.Trees t
+        join Sites.Subsites ss
+            on ss.Id = t.SubsiteId
+    ),
+
+    species as
+    (
+        select StateId, ScientificName,
+            max(Height) MaxHeight, max(Girth) MaxGirth
+        from trees
+        group by StateId, ScientificName
+    )
+
+    select s.Id StateId,
+        (
+          select case when count(*) >= 5 then sum(MaxHeight) / count(*) else null end
+          from (select top 5 MaxHeight from species where StateId = s.Id order by MaxHeight desc) _
+        ) RHI5,
+        (
+          select case when count(*) >= 10 then sum(MaxHeight) / count(*) else null end
+          from (select top 10 MaxHeight from species where StateId = s.Id order by MaxHeight desc) _
+        ) RHI10,
+        (
+          select case when count(*) >= 20 then sum(MaxHeight) / count(*) else null end
+          from (select top 20 MaxHeight from species where StateId = s.Id order by MaxHeight desc) _
+        ) RHI20,
+        (
+          select case when count(*) >= 5 then sum(MaxGirth) / count(*) else null end
+          from (select top 5 MaxGirth from species where StateId = s.Id order by MaxGirth desc) _
+        ) RGI5,
+        (
+          select case when count(*) >= 10 then sum(MaxGirth) / count(*) else null end
+          from (select top 10 MaxGirth from species where StateId = s.Id order by MaxGirth desc) _
+        ) RGI10,
+        (
+          select case when count(*) >= 20 then sum(MaxGirth) / count(*) else null end
+          from (select top 20 MaxGirth from species where StateId = s.Id order by MaxGirth desc) _
+        ) RGI20,
+        (select count(*) from trees where StateId = s.Id) TreesMeasuredCount,
+        (select max(LastMeasured) from trees where StateId = s.Id) LastMeasurementDate,
+        case when exists
+        (
+            select *
+            from Sites.Subsites
+            where StateId = s.Id
+                and LatitudeInputFormat != 1 -- Unspecified
+                and LongitudeInputFormat != 1 -- Unspecified
+        )
+         then 1 else 0
+        end ContainsEntityWithCoordinates
+    from Locations.States s
+go
+
+
+
+
+
+
+
+
+
+create view dbo.SiteMetrics
+as
+    with trees as
+    (
+        select ss.SiteId, t.*
+        from Trees.Trees t
+        join Sites.Subsites ss
+            on ss.Id = t.SubsiteId
+    ),
+
+    species as
+    (
+        select SiteId, ScientificName,
+            max(Height) MaxHeight,
+            max(Girth) MaxGirth,
+            count(*) TreeCount
+        from trees
+        group by SiteId, ScientificName
+    )
+
+    select s.Id SiteId,
+        (
+          select case when count(*) >= 5 then sum(MaxHeight) / count(*) else null end
+          from (select top 5 MaxHeight from species where SiteId = s.Id order by MaxHeight desc) _
+        ) RHI5,
+        (
+          select case when count(*) >= 10 then sum(MaxHeight) / count(*) else null end
+          from (select top 10 MaxHeight from species where SiteId = s.Id order by MaxHeight desc) _
+        ) RHI10,
+        (
+          select case when count(*) >= 20 then sum(MaxHeight) / count(*) else null end
+          from (select top 20 MaxHeight from species where SiteId = s.Id order by MaxHeight desc) _
+        ) RHI20,
+        (
+          select case when count(*) >= 5 then sum(MaxGirth) / count(*) else null end
+          from (select top 5 MaxGirth from species where SiteId = s.Id order by MaxGirth desc) _
+        ) RGI5,
+        (
+          select case when count(*) >= 10 then sum(MaxGirth) / count(*) else null end
+          from (select top 10 MaxGirth from species where SiteId = s.Id order by MaxGirth desc) _
+        ) RGI10,
+        (
+          select case when count(*) >= 20 then sum(MaxGirth) / count(*) else null end
+          from (select top 20 MaxGirth from species where SiteId = s.Id order by MaxGirth desc) _
+        ) RGI20,
+        (select count(*) from trees where SiteId = s.Id) TreesMeasuredCount,
+        (select max(LastMeasured) from trees where SiteId = s.Id) LastMeasurementDate,
+        case when exists
+        (
+            select *
+            from Sites.Subsites
+            where SiteId = s.Id
+                and LatitudeInputFormat != 1 -- Unspecified
+                and LongitudeInputFormat != 1 -- Unspecified
+        )
+         then 1 else 0
+        end ContainsEntityWithCoordinates
+    from Sites.Sites s
+go
+
+
+
+
+
+
+
+
+
+create view dbo.SubsiteMetrics
+as
+    with species as
+    (
+        select SubsiteId, ScientificName,
+            max(Height) MaxHeight,
+            max(Girth) MaxGirth,
+            count(*) TreeCount
+        from Trees.Trees
+        group by SubsiteId, ScientificName
+    )
+
+    select ss.Id SubsiteId,
+        (
+          select case when count(*) >= 5 then sum(MaxHeight) / count(*) else null end
+          from (select top 5 MaxHeight from species where SubsiteId = ss.Id order by MaxHeight desc) _
+        ) RHI5,
+        (
+          select case when count(*) >= 10 then sum(MaxHeight) / count(*) else null end
+          from (select top 10 MaxHeight from species where SubsiteId = ss.Id order by MaxHeight desc) _
+        ) RHI10,
+        (
+          select case when count(*) >= 20 then sum(MaxHeight) / count(*) else null end
+          from (select top 20 MaxHeight from species where SubsiteId = ss.Id order by MaxHeight desc) _
+        ) RHI20,
+        (
+          select case when count(*) >= 5 then sum(MaxGirth) / count(*) else null end
+          from (select top 5 MaxGirth from species where SubsiteId = ss.Id order by MaxGirth desc) _
+        ) RGI5,
+        (
+          select case when count(*) >= 10 then sum(MaxGirth) / count(*) else null end
+          from (select top 10 MaxGirth from species where SubsiteId = ss.Id order by MaxGirth desc) _
+        ) RGI10,
+        (
+          select case when count(*) >= 20 then sum(MaxGirth) / count(*) else null end
+          from (select top 20 MaxGirth from species where SubsiteId = ss.Id order by MaxGirth desc) _
+        ) RGI20,
+        (select count(*) from Trees.Trees where SubsiteId = ss.Id) TreesMeasuredCount,
+        (select max(LastMeasured) from Trees.Trees where SubsiteId = ss.Id) LastMeasurementDate,
+        case when exists
+        (
+            select *
+            from Trees.Trees
+            where SubsiteId = ss.Id
+                and LatitudeInputFormat != 1 -- Unspecified
+                and LongitudeInputFormat != 1 -- Unspecified
+        ) then 1 else 0
+        end ContainsEntityWithCoordinates
+    from Sites.Subsites ss
+go
+
+
+
+
+
+
+
+
+
+create procedure dbo.UpdateStaleMetrics
+as
+begin
+    update ss
+    set ComputedRHI5 = m.RHI5,
+        ComputedRHI10 = m.RHI10,
+        ComputedRHI20 = m.RHI20,
+        ComputedRGI5 = m.RGI5,
+        ComputedRGI10 = m.RGI10,
+        ComputedRGI20 = m.RGI20,
+        ComputedTreesMeasuredCount = m.TreesMeasuredCount,
+        ComputedLastMeasurementDate = m.LastMeasurementDate,
+        ComputedContainsEntityWithCoordinates = m.ContainsEntityWithCoordinates,
+        AreMetricsStale = 0,
+        LastMetricsUpdateTimestamp = getdate()
+    from Sites.Subsites ss
+    join dbo.SubsiteMetrics m
+        on m.SubsiteId = ss.Id
+    where ss.AreMetricsStale = 1
+
+    update s
+    set ComputedRHI5 = m.RHI5,
+        ComputedRHI10 = m.RHI10,
+        ComputedRHI20 = m.RHI20,
+        ComputedRGI5 = m.RGI5,
+        ComputedRGI10 = m.RGI10,
+        ComputedRGI20 = m.RGI20,
+        ComputedTreesMeasuredCount = m.TreesMeasuredCount,
+        ComputedLastMeasurementDate = m.LastMeasurementDate,
+        ComputedContainsEntityWithCoordinates = m.ContainsEntityWithCoordinates,
+        AreMetricsStale = 0,
+        LastMetricsUpdateTimestamp = getdate()
+    from Sites.Sites s
+    join dbo.SiteMetrics m
+        on m.SiteId = s.Id
+    where s.AreMetricsStale = 1
+
+    update s
+    set ComputedRHI5 = m.RHI5,
+        ComputedRHI10 = m.RHI10,
+        ComputedRHI20 = m.RHI20,
+        ComputedRGI5 = m.RGI5,
+        ComputedRGI10 = m.RGI10,
+        ComputedRGI20 = m.RGI20,
+        ComputedTreesMeasuredCount = m.TreesMeasuredCount,
+        ComputedLastMeasurementDate = m.LastMeasurementDate,
+        ComputedContainsEntityWithCoordinates = m.ContainsEntityWithCoordinates,
+        AreMetricsStale = 0,
+        LastMetricsUpdateTimestamp = getdate()
+    from Locations.States s
+    join dbo.StateMetrics m
+        on m.StateId = s.Id
+    where s.AreMetricsStale = 1
+end
+go
+
+
+
+
+
+
+
+
+
+create trigger Trees.FlagStaleMetrics_Trees
+    on Trees.Trees
+    after insert, update, delete
+as
+begin
+    set nocount on
+
+    update Sites.Subsites
+    set AreMetricsStale = 1
+    where ID in (select SubsiteId from inserted)
+        or ID in (select SubsiteId from deleted)
+end
+go
+
+
+
+
+
+
+
+
+
+create trigger Sites.FlagStaleMetrics_Subsites
+    on Sites.Subsites
+    after insert, update, delete
+as
+begin
+    set nocount on
+
+    update Sites.Sites
+    set AreMetricsStale = 1
+    where ID in (select SiteId from inserted)
+        or ID in (select SiteId from deleted)
+
+    update Locations.States
+    set AreMetricsStale = 1
+    where ID in (select StateId from inserted)
+        or ID in (select StateId from deleted)
+end
+go

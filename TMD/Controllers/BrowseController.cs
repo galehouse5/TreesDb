@@ -5,7 +5,6 @@ using System.Linq;
 using System.Web.Mvc;
 using TMD.Extensions;
 using TMD.Model;
-using TMD.Model.Extensions;
 using TMD.Model.Locations;
 using TMD.Model.Sites;
 using TMD.Model.Trees;
@@ -175,9 +174,9 @@ namespace TMD.Controllers
             int? subsitesPage = null, string subsitesSort = null, bool? subsitesSortAsc = null,
             string parameterNamePrefix = null)
         {
-            var state = Repositories.Locations.FindVisitedStateById(id);
+            var state = Repositories.Locations.FindStateById(id);
             if (state == null) { return new NotFoundResult(); }
-            var model = Mapper.Map<VisitedState, BrowseStateModel>(state);
+            var model = Mapper.Map<State, BrowseStateModel>(state);
             IEnumerable<StateMeasuredSpecies> allStateSpecies = Repositories.Trees.ListMeasuredSpeciesByStateId(state.Id);
             var stateSpeciesDataSource = allStateSpecies.SortAndPageInMemory(
                 column =>
@@ -201,10 +200,10 @@ namespace TMD.Controllers
                 column =>
                 {
                     if ("Site".Equals(column)) { return subsite => subsite.Site.Name; }
-                    if ("RHI5".Equals(column)) { return subsite => subsite.Site.RHI5; }
-                    if ("RHI10".Equals(column)) { return subsite => subsite.Site.RHI10; }
-                    if ("RGI5".Equals(column)) { return subsite => subsite.Site.RGI5; }
-                    if ("RGI10".Equals(column)) { return subsite => subsite.Site.RGI10; }
+                    if ("RHI5".Equals(column)) { return subsite => subsite.Site.ComputedRHI5; }
+                    if ("RHI10".Equals(column)) { return subsite => subsite.Site.ComputedRHI10; }
+                    if ("RGI5".Equals(column)) { return subsite => subsite.Site.ComputedRGI5; }
+                    if ("RGI10".Equals(column)) { return subsite => subsite.Site.ComputedRGI10; }
                     throw new NotImplementedException();
                 },
                 subsitesSort, subsitesSortAsc, subsitesPage, 10);
@@ -255,12 +254,12 @@ namespace TMD.Controllers
                 SortAscending = !sortAsc.HasValue || sortAsc.Value,
                 SortProperty = "State".Equals(sort) ? SubsiteBrowser.Property.State
                     : "Site".Equals(sort) ? SubsiteBrowser.Property.Site
-                    : "Subsite".Equals(sort) ? SubsiteBrowser.Property.Subsite
+                    : "County".Equals(sort) ? SubsiteBrowser.Property.County
                     : "RHI5".Equals(sort) ? SubsiteBrowser.Property.RHI5
                     : "RHI10".Equals(sort) ? SubsiteBrowser.Property.RHI10
                     : "RGI5".Equals(sort) ? SubsiteBrowser.Property.RGI5
                     : "RGI10".Equals(sort) ? SubsiteBrowser.Property.RGI10
-                    : "LastVisit".Equals(sort) ? SubsiteBrowser.Property.LastVisited
+                    : "LastMeasurement".Equals(sort) ? SubsiteBrowser.Property.LastMeasurement
                     : (SubsiteBrowser.Property?)null
             };
             var model = Repositories.Sites.ListAllSubsites(browser);

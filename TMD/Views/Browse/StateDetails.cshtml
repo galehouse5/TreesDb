@@ -17,7 +17,7 @@
 			</ul>
 		</div>
 		<div class="portlet-content">
-			<table class="reports_table">                
+			<table class="reports_table">
 				@Html.ReportDisplayFor(m => m.Name)
 				@Html.ReportDisplayFor(m => m.Code)
 				@Html.ReportDisplayFor(m => m.RHI5)
@@ -26,6 +26,8 @@
 				@Html.ReportDisplayFor(m => m.RGI5)
 				@Html.ReportDisplayFor(m => m.RGI10)
 				@Html.ReportDisplayFor(m => m.RGI20)
+        @Html.ReportDisplayFor(m => m.TreesMeasuredCount)
+        @Html.ReportDisplayFor(m => m.LastMeasurementDate)
 			</table>
 		</div>
 	</div>

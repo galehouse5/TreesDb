@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using TMD.Extensions;
 using TMD.Model;
 using TMD.Model.Locations;
+using TMD.Models.Map;
 
 namespace TMD.Models.Browse
 {

@@ -121,6 +121,12 @@ namespace TMD.Controllers
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public virtual System.Web.Mvc.ActionResult StateMarkerInfo()
+        {
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.StateMarkerInfo);
+        }
+        [NonAction]
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public virtual System.Web.Mvc.ActionResult SiteMarkerInfo()
         {
             return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SiteMarkerInfo);
@@ -165,6 +171,7 @@ namespace TMD.Controllers
             public readonly string ImportTreeMarkerInfo = "ImportTreeMarkerInfo";
             public readonly string ImportSiteMarkerInfo = "ImportSiteMarkerInfo";
             public readonly string ImportSubsiteMarkerInfo = "ImportSubsiteMarkerInfo";
+            public readonly string StateMarkerInfo = "StateMarkerInfo";
             public readonly string SiteMarkerInfo = "SiteMarkerInfo";
             public readonly string SubsiteMarkerInfo = "SubsiteMarkerInfo";
             public readonly string TreeMarkerInfo = "TreeMarkerInfo";
@@ -185,6 +192,7 @@ namespace TMD.Controllers
             public const string ImportTreeMarkerInfo = "ImportTreeMarkerInfo";
             public const string ImportSiteMarkerInfo = "ImportSiteMarkerInfo";
             public const string ImportSubsiteMarkerInfo = "ImportSubsiteMarkerInfo";
+            public const string StateMarkerInfo = "StateMarkerInfo";
             public const string SiteMarkerInfo = "SiteMarkerInfo";
             public const string SubsiteMarkerInfo = "SubsiteMarkerInfo";
             public const string TreeMarkerInfo = "TreeMarkerInfo";
@@ -278,6 +286,14 @@ namespace TMD.Controllers
             public readonly string id = "id";
             public readonly string subsiteId = "subsiteId";
         }
+        static readonly ActionParamsClass_StateMarkerInfo s_params_StateMarkerInfo = new ActionParamsClass_StateMarkerInfo();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_StateMarkerInfo StateMarkerInfoParams { get { return s_params_StateMarkerInfo; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_StateMarkerInfo
+        {
+            public readonly string id = "id";
+        }
         static readonly ActionParamsClass_SiteMarkerInfo s_params_SiteMarkerInfo = new ActionParamsClass_SiteMarkerInfo();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ActionParamsClass_SiteMarkerInfo SiteMarkerInfoParams { get { return s_params_SiteMarkerInfo; } }
@@ -319,8 +335,10 @@ namespace TMD.Controllers
                 public readonly string Index = "Index";
                 public readonly string MenuWidget = "MenuWidget";
                 public readonly string SiteMarkerInfo = "SiteMarkerInfo";
+                public readonly string StateMarkerInfo = "StateMarkerInfo";
                 public readonly string SubsiteMarkerInfo = "SubsiteMarkerInfo";
                 public readonly string TreeMarkerInfo = "TreeMarkerInfo";
+                public readonly string Web = "Web";
             }
             public readonly string ImportSiteMarkerInfo = "~/Views/Map/ImportSiteMarkerInfo.cshtml";
             public readonly string ImportSubsiteMarkerInfo = "~/Views/Map/ImportSubsiteMarkerInfo.cshtml";
@@ -328,8 +346,10 @@ namespace TMD.Controllers
             public readonly string Index = "~/Views/Map/Index.cshtml";
             public readonly string MenuWidget = "~/Views/Map/MenuWidget.cshtml";
             public readonly string SiteMarkerInfo = "~/Views/Map/SiteMarkerInfo.cshtml";
+            public readonly string StateMarkerInfo = "~/Views/Map/StateMarkerInfo.cshtml";
             public readonly string SubsiteMarkerInfo = "~/Views/Map/SubsiteMarkerInfo.cshtml";
             public readonly string TreeMarkerInfo = "~/Views/Map/TreeMarkerInfo.cshtml";
+            public readonly string Web = "~/Views/Map/Web.config";
         }
     }
 
@@ -484,6 +504,18 @@ namespace TMD.Controllers
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteId", subsiteId);
             ImportSubsiteMarkerInfoOverride(callInfo, id, subsiteId);
+            return callInfo;
+        }
+
+        [NonAction]
+        partial void StateMarkerInfoOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
+
+        [NonAction]
+        public override System.Web.Mvc.ActionResult StateMarkerInfo(int id)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.StateMarkerInfo);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
+            StateMarkerInfoOverride(callInfo, id);
             return callInfo;
         }
 

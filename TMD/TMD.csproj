@@ -230,6 +230,7 @@
     <Compile Include="Models\Browse\TripLogModel.cs" />
     <Compile Include="Models\ErrorModels.cs" />
     <Compile Include="Models\ExportModel.cs" />
+    <Compile Include="Models\IGeoAreaMetricsModel.cs" />
     <Compile Include="Models\Import\ImportFinishedSiteModel.cs" />
     <Compile Include="Models\Import\ImportFinishedSubsiteModel.cs" />
     <Compile Include="Models\Import\ImportFinishedTreeModel.cs" />
@@ -245,7 +246,17 @@
     <Compile Include="Models\Import\ImportTreesModel.cs" />
     <Compile Include="Models\Import\ImportTripModel.cs" />
     <Compile Include="Models\Import\ImportTripSummaryModel.cs" />
-    <Compile Include="Models\MapModel.cs" />
+    <Compile Include="Models\Map\MapStateMarkerInfoModel.cs" />
+    <Compile Include="Models\Map\MapTreeMarkerInfoModel.cs" />
+    <Compile Include="Models\Map\CoordinatePickerModel.cs" />
+    <Compile Include="Models\Map\MapImportSiteMarkerInfoModel.cs" />
+    <Compile Include="Models\Map\MapImportSubsiteMarkerInfoModel.cs" />
+    <Compile Include="Models\Map\MapImportTreeMarkerInfoModel.cs" />
+    <Compile Include="Models\Map\MapMarkerModel.cs" />
+    <Compile Include="Models\Map\MapMenuWidgetModel.cs" />
+    <Compile Include="Models\Map\MapModel.cs" />
+    <Compile Include="Models\Map\MapSiteMarkerInfoModel.cs" />
+    <Compile Include="Models\Map\MapSubsiteMarkerInfoModel.cs" />
     <Compile Include="Models\PhotosModel.cs" />
     <Compile Include="Models\Search\ResultModel.cs" />
     <Compile Include="PhotosController.generated.cs">
@@ -319,10 +330,10 @@
     <Content Include="favicon.ico" />
     <Content Include="images\icons\Calendar.gif" />
     <Content Include="images\icons\Map.png" />
-    <Content Include="images\icons\MultiTrunkTree32.png" />
-    <Content Include="images\icons\SingleTrunkTree32.png" />
-    <Content Include="images\icons\Site32.png" />
     <Content Include="images\icons\Subsite32.png" />
+    <Content Include="images\icons\Tree32.png" />
+    <Content Include="images\icons\State32.png" />
+    <Content Include="images\icons\Site32.png" />
     <Content Include="images\icons\Trip32.png" />
     <Content Include="images\link-menu-arrow.png" />
     <Content Include="images\loader.gif" />
@@ -530,6 +541,8 @@
     <Content Include="Views\Browse\_MostActiveMeasurers.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Url.cshtml" />
     <Content Include="Views\Shared\_ValidationSummary2.cshtml" />
+    <Content Include="Views\Map\Web.config" />
+    <Content Include="Views\Map\StateMarkerInfo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

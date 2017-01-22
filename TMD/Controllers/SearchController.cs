@@ -19,7 +19,7 @@ namespace TMD.Controllers
         {
             int maxResultsPerCategory = Request.IsAjaxRequest() ? 5 : 25;
 
-            var states = Repositories.Locations.SearchVisitedStates(term, maxResultsPerCategory + 1);
+            var states = Repositories.Locations.SearchStates(term, maxResultsPerCategory + 1);
             var subsites = Repositories.Sites.SearchSubsites(term, maxResultsPerCategory + 1);
             var species = Repositories.Trees.SearchMeasuredSpecies(term, maxResultsPerCategory + 1);
 

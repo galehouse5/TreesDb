@@ -1,4 +1,5 @@
-﻿using TMD.Model.Exports;
+﻿using TMD.Model;
+using TMD.Model.Exports;
 using TMD.Model.Locations;
 using TMD.Model.Photos;
 using TMD.Model.Sites;
@@ -17,6 +18,7 @@ namespace TMD.Infrastructure.Repositories
             For<IPhotoRepository>().Singleton().Use<PhotoRepository>();
             For<ISiteRepository>().Singleton().Use<SiteRepository>();
             For<IExportRepository>().Singleton().Use<ExportRepository>();
+            For<IGeneralRepository>().Singleton().Use<GeneralRepository>();
         }
 
         internal static void Configure(NHibernate.Cfg.Configuration config)

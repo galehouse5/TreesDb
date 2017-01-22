@@ -1,0 +1,20 @@
+﻿@model MapStateMarkerInfoModel
+
+<table class="reports_table" style="width: 350px;">
+  <tr>
+    <td class="description"><strong>@Model.Name</strong></td>
+    <td class="value">
+      <a href="@Url.Action(MVC.Browse.StateDetails(Model.Id))">View more details</a>
+    </td>
+  </tr>
+
+  @Html.ReportDisplayFor(m => m.Country)
+  @Html.IfSpecifiedReportDisplayFor(m => m.RHI5)
+  @Html.IfSpecifiedReportDisplayFor(m => m.RHI10)
+  @Html.IfSpecifiedReportDisplayFor(m => m.RHI20)
+  @Html.IfSpecifiedReportDisplayFor(m => m.RGI5)
+  @Html.IfSpecifiedReportDisplayFor(m => m.RGI10)
+  @Html.IfSpecifiedReportDisplayFor(m => m.RGI20)
+  @Html.ReportDisplayFor(m => m.TreesMeasuredCount)
+  @Html.ReportDisplayFor(m => m.LastMeasurementDate)
+</table>

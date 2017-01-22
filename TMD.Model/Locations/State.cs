@@ -1,11 +1,10 @@
-﻿using System.Diagnostics;
+﻿using System;
 
 namespace TMD.Model.Locations
 {
-    [DebuggerDisplay("{Code}")]
-    public abstract class StateBase : EntityBase
+    public class State : EntityBase, IGeoAreaMetrics
     {
-        protected StateBase()
+        protected State()
         { }
 
         public virtual string Name { get; protected set; }
@@ -13,6 +12,15 @@ namespace TMD.Model.Locations
         public virtual Country Country { get; protected set; }
         public virtual string DoubleLetterCode { get; protected set; }
         public virtual string TripleLetterCode { get; protected set; }
+        public virtual float? ComputedRHI5 { get; protected set; }
+        public virtual float? ComputedRHI10 { get; protected set; }
+        public virtual float? ComputedRHI20 { get; protected set; }
+        public virtual float? ComputedRGI5 { get; protected set; }
+        public virtual float? ComputedRGI10 { get; protected set; }
+        public virtual float? ComputedRGI20 { get; protected set; }
+        public virtual int? ComputedTreesMeasuredCount { get; protected set; }
+        public virtual DateTime? ComputedLastMeasurementDate { get; protected set; }
+        public virtual bool? ComputedContainsEntityWithCoordinates { get; protected set; }
 
         public virtual string Code
         {
@@ -27,25 +35,6 @@ namespace TMD.Model.Locations
         }
 
         public override string ToString()
-        {
-            return Name;
-        }
-    }
-
-    public class VisitedState : StateBase
-    {
-        public virtual float? RHI5 { get; protected set; }
-        public virtual float? RHI10 { get; protected set; }
-        public virtual float? RHI20 { get; protected set; }
-        public virtual float? RGI5 { get; protected set; }
-        public virtual float? RGI10 { get; protected set; }
-        public virtual float? RGI20 { get; protected set; }
-    }
-
-    // simplifies differentiation from VisitedState in HQL queries
-    public class State : StateBase
-    {
-        protected State()
-        { }
+            => $"{Name} ({Id})";
     }
 }

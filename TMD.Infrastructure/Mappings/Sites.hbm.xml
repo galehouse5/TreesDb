@@ -9,7 +9,6 @@
     <id name="Id">
       <generator class="native"/>
     </id>
-    <property name="LastVisited" />
     <property name="Name" />
     <component name="Coordinates" class="Coordinates">
       <component name="Latitude" class="Latitude">
@@ -31,12 +30,15 @@
         <property name="InputFormat" column="CalculatedLongitudeInputFormat"/>
       </component>
     </component>
-    <property name="RHI5" />
-    <property name="RHI10" />
-    <property name="RHI20" />
-    <property name="RGI5" />
-    <property name="RGI10" />
-    <property name="RGI20" />
+    <property name="ComputedRHI5" />
+    <property name="ComputedRHI10" />
+    <property name="ComputedRHI20" />
+    <property name="ComputedRGI5" />
+    <property name="ComputedRGI10" />
+    <property name="ComputedRGI20" />
+    <property name="ComputedTreesMeasuredCount" />
+    <property name="ComputedLastMeasurementDate" />
+    <property name="ComputedContainsEntityWithCoordinates" />
     <bag name="Visits" table="SiteVisits" inverse="false" cascade="all-delete-orphan">
       <key column="SiteId"></key>
       <one-to-many class="TMD.Model.Sites.SiteVisit"/>
@@ -99,7 +101,6 @@
       <generator class="native"/>
     </id>
     <many-to-one name="Site" column="SiteId" />
-    <property name="LastVisited" />
     <property name="Name" />
     <many-to-one name="State" column="StateId" cascade="none" />
     <property name="County" />
@@ -126,12 +127,15 @@
     </component>
     <property name="OwnershipContactInfo" />
     <property name="MakeOwnershipContactInfoPublic" />
-    <property name="RHI5" />
-    <property name="RHI10" />
-    <property name="RHI20" />
-    <property name="RGI5" />
-    <property name="RGI10" />
-    <property name="RGI20" />
+    <property name="ComputedRHI5" />
+    <property name="ComputedRHI10" />
+    <property name="ComputedRHI20" />
+    <property name="ComputedRGI5" />
+    <property name="ComputedRGI10" />
+    <property name="ComputedRGI20" />
+    <property name="ComputedTreesMeasuredCount" />
+    <property name="ComputedLastMeasurementDate" />
+    <property name="ComputedContainsEntityWithCoordinates" />
     <bag name="Visits" table="SubsiteVisits" inverse="true" cascade="all-delete-orphan">
       <key column="SubsiteId"></key>
       <one-to-many class="TMD.Model.Sites.SubsiteVisit"/>
@@ -200,5 +204,5 @@
       </composite-element>
     </bag>
   </class>
-  
+
 </hibernate-mapping>

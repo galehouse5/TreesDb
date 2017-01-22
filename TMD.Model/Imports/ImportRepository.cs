@@ -27,11 +27,11 @@ namespace TMD.Model.Imports
 
         public void Reimport(Trip t)
         {
-            t.AssertIsValid(ValidationTag.Required);
             if (!t.IsImported)
-            {
                 throw new InvalidEntityOperationException(t, "Unable to reimport trip because it has not yet been imported.");
-            }
+
+            t.AssertIsValid(ValidationTag.Required);
+            t.Imported = DateTime.Now;
             InternalReimport(t);
         }
         protected abstract void InternalReimport(Trip t);

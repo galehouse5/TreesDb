@@ -19,5 +19,6 @@ namespace TMD.Model
         public static IPhotoRepository Photos => ObjectFactory.GetInstance<IPhotoRepository>();
         public static ISiteRepository Sites => ObjectFactory.GetInstance<ISiteRepository>();
         public static IExportRepository Exports => ObjectFactory.GetInstance<IExportRepository>();
+        public static IGeneralRepository General => ObjectFactory.GetInstance<IGeneralRepository>();
     }
 }

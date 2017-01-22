@@ -14,6 +14,7 @@ using TMD.Infrastructure.Repositories;
 using TMD.Mappings;
 using TMD.Model;
 using TMD.Model.Photos;
+using System.Web;
 
 namespace TMD
 {
@@ -119,6 +120,14 @@ namespace TMD
         protected void Application_EndRequest()
         {
             UnitOfWork.Dispose();
+        }
+
+        public override string GetVaryByCustomString(HttpContext context, string custom)
+        {
+            if ("LastMetricsUpdateTimestamp".Equals(custom))
+                return Repositories.General.GetLastMetricsUpdateTimestamp()?.ToString();
+
+            return base.GetVaryByCustomString(context, custom);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿@model TMD.Models.MapMenuWidgetModel
+﻿@model MapMenuWidgetModel
+
 <li class="@(Model.IsSelected ? "mega mega-current" : "mega")">
     @Html.ActionLink("Map", MVC.Map.Index(), new { @class = "mega-link" })
 </li>

@@ -56,23 +56,18 @@ namespace TMD.Infrastructure.Repositories
                 .List<State>();
         }
 
-        public VisitedState FindVisitedStateById(int id)
-        {
-            return Registry.Session.Get<VisitedState>(id);
-        }
-
-        public IEnumerable<VisitedState> SearchVisitedStates(string expression, int maxResults)
+        public IEnumerable<State> SearchStates(string expression, int maxResults)
         {
             return Registry.Session.CreateSQLQuery(
 @"select state.*
-from dbo.SearchVisitedStates(:expression) rank
-join Locations.VisitedStates state
+from dbo.SearchStates(:expression) rank
+join Locations.States state
     on state.Id = rank.Id
 order by rank.Rank desc")
-                .AddEntity(typeof(VisitedState))
+                .AddEntity(typeof(State))
                 .SetParameter("expression", expression)
                 .SetMaxResults(maxResults)
-                .List<VisitedState>();
+                .List<State>();
             
         }
     }

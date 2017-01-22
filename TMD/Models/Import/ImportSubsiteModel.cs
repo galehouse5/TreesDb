@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using TMD.Extensions;
 using TMD.Model.Locations;
+using TMD.Models.Map;
 
 namespace TMD.Models.Import
 {

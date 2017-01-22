@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.2.16.3.0\lib\net45\CsvHelper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FluentMigrator, Version=1.6.2.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentMigrator.1.6.2\lib\40\FluentMigrator.dll</HintPath>
       <Private>True</Private>
@@ -46,10 +50,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Profiles\MigrateUp.cs" />
+    <Compile Include="Maintenance\AA01_CreateObjectsAndTypes.cs" />
+    <Compile Include="Maintenance\AA02_UpdateStaleMetrics.cs" />
+    <Compile Include="Maintenance\BA01_DropObjectsAndTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Y2016\M001_MakeCoordinatesOptional.cs" />
     <Compile Include="Y2017\M002_AllowLongerComments.cs" />
+    <Compile Include="Y2017\M004_UpdateStateCoordinates.cs" />
+    <Compile Include="Y2017\M003_PrecomputeSiteAndStateMetrics.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Baseline\CreateSchema.sql" />
@@ -65,12 +73,13 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <EmbeddedResource Include="Y2017\M004_LocationCoordinateData.csv" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>echo "$(SolutionDir)packages\FluentMigrator.1.6.2\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -t listmigrations &gt; ListMigrations.bat
-echo "$(SolutionDir)packages\FluentMigrator.1.6.2\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -profile MigrateUp &gt; MigrateUp.bat
+echo "$(SolutionDir)packages\FluentMigrator.1.6.2\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" &gt; MigrateUp.bat
 echo "$(SolutionDir)packages\FluentMigrator.1.6.2\tools\Migrate.exe" -a "$(TargetDir)Tmd.Migrations.dll" -db SqlServer2012 -conn "$(ConfigurationName)TmdEntities" -context "$(ConfigurationName)" -t rollback &gt; Rollback.bat
 copy "$(ProjectDir)\Baseline\$(ConfigurationName)" "$(TargetDir)\Baseline"</PostBuildEvent>
   </PropertyGroup>

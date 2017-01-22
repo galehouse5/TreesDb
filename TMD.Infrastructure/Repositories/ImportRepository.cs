@@ -1,14 +1,11 @@
-﻿using System;
+﻿using NHibernate.Criterion;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using TMD.Model.Imports;
-using TMD.Model;
-using NHibernate.Criterion;
 
 namespace TMD.Infrastructure.Repositories
 {
-    public class ImportRepository : TMD.Model.Imports.ImportRepository
+    public class ImportRepository : Model.Imports.ImportRepository
     {
         public override Trip FindById(int id)
         {

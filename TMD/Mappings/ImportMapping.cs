@@ -6,6 +6,7 @@ using TMD.Model.Imports;
 using TMD.Model.Validation;
 using TMD.Models;
 using TMD.Models.Import;
+using TMD.Models.Map;
 
 namespace TMD.Mappings
 {

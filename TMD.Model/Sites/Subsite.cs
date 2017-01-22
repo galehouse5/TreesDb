@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Diagnostics;
 using System.Linq;
 using TMD.Model.Extensions;
 using TMD.Model.Locations;
@@ -11,17 +10,13 @@ using TMD.Model.Users;
 
 namespace TMD.Model.Sites
 {
-    [DebuggerDisplay("{Name} ({Id})")]
-    public class Subsite : IEntity
+    public class Subsite : IEntity, IGeoAreaMetrics
     {
         protected Subsite()
         { }
 
         public virtual int Id { get; protected set; }
         public virtual Site Site { get; protected internal set; }
-
-        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
-        public virtual DateTime LastVisited { get; protected set; }
         public virtual string Name { get; protected set; }
         public virtual State State { get; protected set; }
         public virtual string County { get; protected set; }
@@ -30,77 +25,55 @@ namespace TMD.Model.Sites
         public virtual Coordinates CalculatedCoordinates { get; protected set; }
         public virtual string OwnershipContactInfo { get; protected set; }
         public virtual bool MakeOwnershipContactInfoPublic { get; protected set; }
-        public virtual float? RHI5 { get; protected set; }
-        public virtual float? RHI10 { get; protected set; }
-        public virtual float? RHI20 { get; protected set; }
-        public virtual float? RGI5 { get; protected set; }
-        public virtual float? RGI10 { get; protected set; }
-        public virtual float? RGI20 { get; protected set; }
+        public virtual float? ComputedRHI5 { get; protected set; }
+        public virtual float? ComputedRHI10 { get; protected set; }
+        public virtual float? ComputedRHI20 { get; protected set; }
+        public virtual float? ComputedRGI5 { get; protected set; }
+        public virtual float? ComputedRGI10 { get; protected set; }
+        public virtual float? ComputedRGI20 { get; protected set; }
+        public virtual int? ComputedTreesMeasuredCount { get; protected set; }
+        public virtual bool? ComputedContainsEntityWithCoordinates { get; protected set; }
+
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")] // Used by "Last measurement" column of locations grid.
+        public virtual DateTime? ComputedLastMeasurementDate { get; protected set; }
+
         public virtual IList<IPhoto> Photos { get; protected set; }
         public virtual int VisitCount { get; protected set; }
-        public virtual SubsiteVisit LastVisit { get { return (from v in Visits orderby v.Visited select v).Last(); } }
+
+        public virtual SubsiteVisit LastVisit
+            => (from v in Visits
+                orderby v.Visited
+                select v)
+            .Last();
+
         public virtual IList<Name> Visitors { get; protected set; }
-        
-        public virtual Coordinates CalculateCoordinates() 
-        { 
-            return (from v in Visits orderby v.Visited where v.Coordinates.IsSpecified select v.Coordinates).LastOrDefault() ?? Coordinates.Null(); 
-        }
-        
-        public virtual Coordinates CalculateCalculatedCoordinates() 
-        { 
-            return (from v in Visits orderby v.Visited where v.CalculatedCoordinates.IsSpecified select v.CalculatedCoordinates).LastOrDefault() ?? Coordinates.Null(); 
-        }
 
-        public virtual float? CalculateRHI(int number)
-        {
-            var heightsByScientificName = from tree in Trees
-                                          where tree.Height.IsSpecified
-                                          group tree by tree.ScientificName into treesByScientificName
-                                          select new { ScientificName = treesByScientificName.Key, Height = treesByScientificName.Max(tree => tree.Height.Feet) };
-            if (heightsByScientificName.Count() < number)
-            {
-                return null;
-            }
-            var orderedHeights = from heightByScientificName in heightsByScientificName
-                                 orderby heightByScientificName.Height descending
-                                 select heightByScientificName.Height;
-            return (float)(orderedHeights.Take(number).Sum(height => (double)height) / (double)number);
-        }
+        public virtual Coordinates CalculateCoordinates()
+            => (from v in Visits
+                orderby v.Visited
+                where v.Coordinates.IsSpecified
+                select v.Coordinates)
+            .LastOrDefault() ?? Coordinates.Null();
 
-        public virtual float? CalculateRGI(int number)
-        {
-            var girthsByScientificName = from tree in Trees
-                                          where tree.Girth.IsSpecified
-                                          group tree by tree.ScientificName into treesByScientificName
-                                          select new { ScientificName = treesByScientificName.Key, Girth = treesByScientificName.Max(tree => tree.Girth.Feet) };
-            if (girthsByScientificName.Count() < number)
-            {
-                return null;
-            }
-            var orderedGirths = from girthByScientificName in girthsByScientificName
-                                orderby girthByScientificName.Girth descending
-                                select girthByScientificName.Girth;
-            return (float)(orderedGirths.Take(number).Sum(height => (double)height) / (double)number);
-        }
+        public virtual Coordinates CalculateCalculatedCoordinates()
+            => (from v in Visits
+                orderby v.Visited
+                where v.CalculatedCoordinates.IsSpecified
+                select v.CalculatedCoordinates)
+            .LastOrDefault() ?? Coordinates.Null();
 
         public virtual Subsite RecalculateProperties()
         {
-            LastVisited = LastVisit.Visited;
             OwnershipType = LastVisit.OwnershipType;
             OwnershipContactInfo = LastVisit.OwnershipContactInfo;
             MakeOwnershipContactInfoPublic = LastVisit.MakeOwnershipContactInfoPublic;
             Coordinates = CalculateCoordinates();
             CalculatedCoordinates = CalculateCalculatedCoordinates();
-            RHI5 = CalculateRHI(5);
-            RHI10 = CalculateRHI(10);
-            RHI20 = CalculateRHI(20);
-            RGI5 = CalculateRGI(5);
-            RGI10 = CalculateRGI(10);
-            RGI20 = CalculateRGI(20);
             Photos.RemoveAll().AddRange(from photo in LastVisit.Photos select new SubsitePhotoReference(photo.ToPhoto(), this));
-            Visitors.RemoveAll().AddRange((from visit in Visits
-                                          from visitor in visit.Visitors
-                                          select visitor).Distinct());
+            Visitors.RemoveAll().AddRange(
+                (from visit in Visits
+                 from visitor in visit.Visitors
+                 select visitor).Distinct());
             VisitCount = Visits.Count;
             return this;
         }
@@ -148,10 +121,10 @@ namespace TMD.Model.Sites
 
             if (!State.Equals(subsiteToMerge.State) || !County.Equals(subsiteToMerge.County, StringComparison.OrdinalIgnoreCase))
                 return false;
-            
+
             if (CalculatedCoordinates.CalculateDistanceInMinutesTo(subsiteToMerge.CalculatedCoordinates) > CoordinateMinutesEquivalenceProximity)
                 return false;
-            
+
             return true;
         }
 
@@ -187,6 +160,9 @@ namespace TMD.Model.Sites
             Tree tree = Trees.First(t => t.ShouldMerge(otherTree));
             return tree.Merge(otherTree);
         }
+
+        public override string ToString()
+            => $"{Name} ({Id})";
 
         public static Subsite Create(Imports.Subsite importedSubsite)
         {

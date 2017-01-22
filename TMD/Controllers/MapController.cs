@@ -5,7 +5,7 @@ using System.Web.Mvc;
 using TMD.Extensions;
 using TMD.Model;
 using TMD.Model.Extensions;
-using TMD.Models;
+using TMD.Models.Map;
 
 namespace TMD.Controllers
 {
@@ -31,28 +31,33 @@ namespace TMD.Controllers
             return View(model);
         }
 
+        [OutputCache(Duration = int.MaxValue, VaryByCustom = "LastMetricsUpdateTimestamp")]
         public virtual ActionResult AllMarkers()
         {
             var sites = Repositories.Sites.ListAllForMap();
-            List<MapMarkerModel> markers = new List<MapMarkerModel>();
-            markers.AddRange(from site in sites
-                             where site.CalculatedCoordinates.Latitude.InputFormat != CoordinatesFormat.Unspecified
-                                && site.CalculatedCoordinates.Longitude.InputFormat != CoordinatesFormat.Unspecified
-                             select Mapper.Map<Model.Sites.Site, MapMarkerModel>(site));
-            markers.AddRange(from site in sites
-                             where !site.ContainsSingleSubsite
-                             from subsite in site.Subsites
-                             where subsite.CalculatedCoordinates.Latitude.InputFormat != CoordinatesFormat.Unspecified
-                                && subsite.CalculatedCoordinates.Longitude.InputFormat != CoordinatesFormat.Unspecified
-                             select Mapper.Map<Model.Sites.Subsite, MapMarkerModel>(subsite));
-            markers.AddRange(from site in sites
-                             from subsite in site.Subsites
-                             where subsite.CalculatedCoordinates.Latitude.InputFormat != CoordinatesFormat.Unspecified
-                                && subsite.CalculatedCoordinates.Longitude.InputFormat != CoordinatesFormat.Unspecified
-                             from tree in subsite.Trees
-                             where tree.Coordinates.IsSpecified
-                             select Mapper.Map<Model.Trees.Tree, MapMarkerModel>(tree));
-            return Json(new { Markers = markers.Select(m => m.ToJson(Url)).ToArray() }, JsonRequestBehavior.AllowGet);
+
+            var stateMarkers = sites
+                .SelectMany(s => s.Subsites)
+                .Where(ss => ss.State.ComputedTreesMeasuredCount > 0)
+                .Select(ss => ss.State).Distinct()
+                .Select(Mapper.Map<Model.Locations.State, MapMarkerModel>);
+            var siteMarkers = sites
+                .Where(s => s.CalculatedCoordinates.IsSpecified)
+                .Select(Mapper.Map<Model.Sites.Site, MapMarkerModel>);
+            var subsiteMarkers = sites
+                .Where(s => !s.ContainsSingleSubsite)
+                .SelectMany(s => s.Subsites)
+                .Where(ss => ss.CalculatedCoordinates.IsSpecified)
+                .Select(Mapper.Map<Model.Sites.Subsite, MapMarkerModel>);
+            var treeMarkers = sites
+                .SelectMany(s => s.Subsites)
+                .SelectMany(ss => ss.Trees)
+                .Where(t => t.Coordinates.IsSpecified)
+                .Select(Mapper.Map<Model.Trees.Tree, MapMarkerModel>);
+
+            return Json(
+                new { Markers = stateMarkers.Concat(siteMarkers).Concat(subsiteMarkers).Concat(treeMarkers).Select(m => m.ToJson(Url)).ToArray() },
+                JsonRequestBehavior.AllowGet);
         }
 
         public virtual ActionResult TreeMarker(int id)
@@ -185,6 +190,13 @@ namespace TMD.Controllers
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             var subsite = trip.FindSubsiteById(subsiteId);
             var model = Mapper.Map<Model.Imports.Subsite, MapImportSubsiteMarkerInfoModel>(subsite);
+            return PartialView(model);
+        }
+
+        public virtual ActionResult StateMarkerInfo(int id)
+        {
+            var state = Repositories.Locations.FindStateById(id);
+            var model = Mapper.Map<Model.Locations.State, MapStateMarkerInfoModel>(state);
             return PartialView(model);
         }
 

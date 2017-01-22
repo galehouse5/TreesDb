@@ -1,4 +1,6 @@
-﻿@model MapModel
+﻿@using TMD.Models.Map
+
+@model MapModel
 
 <div class="@(ViewBag.@class == null ? "Map" : ViewBag.@class + " Map")"
     @if(Model.Bounds != null ) {

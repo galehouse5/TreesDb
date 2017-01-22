@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using TMD.Extensions;
 using TMD.Model;
 using TMD.Model.Imports;
+using TMD.Models.Map;
 
 namespace TMD.Models.Import
 {

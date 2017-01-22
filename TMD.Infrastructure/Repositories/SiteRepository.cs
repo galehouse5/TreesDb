@@ -6,7 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using TMD.Model;
 using TMD.Model.Extensions;
+using TMD.Model.Locations;
 using TMD.Model.Sites;
+using TMD.Model.Trees;
 
 namespace TMD.Infrastructure.Repositories
 {
@@ -90,21 +92,21 @@ namespace TMD.Infrastructure.Repositories
 
         public IList<Site> ListAllForMap()
         {
-            Registry.Session.CreateCriteria<Model.Trees.Tree>()
-                .SetFetchMode("Species", NHibernate.FetchMode.Eager)
-                .SetFetchMode("Photos", NHibernate.FetchMode.Eager)
+            Registry.Session.CreateCriteria<Tree>()
+                .SetFetchMode(nameof(Tree.Photos), FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
-                .Future<Model.Trees.Tree>();
+                .Future<Tree>();
             Registry.Session.CreateCriteria<Subsite>()
-                .SetFetchMode("Trees", NHibernate.FetchMode.Eager)
+                .SetFetchMode(nameof(Subsite.Trees), FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Subsite>();
             Registry.Session.CreateCriteria<Subsite>()
-                .SetFetchMode("Photos", NHibernate.FetchMode.Eager)
+                .SetFetchMode(nameof(Subsite.State), FetchMode.Eager)
+                .SetFetchMode(nameof(Subsite.Photos), FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Subsite>();
             return Registry.Session.CreateCriteria<Site>()
-                .SetFetchMode("Subsites", NHibernate.FetchMode.Eager)
+                .SetFetchMode(nameof(Site.Subsites), FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Site>().ToList();
         }
@@ -191,23 +193,23 @@ order by rank.Rank desc")
             switch (browser.SortProperty)
             {
                 case SubsiteBrowser.Property.Site:
-                    return criteria.AddOrder(new Order("site.Name", browser.SortAscending));
+                    return criteria.AddOrder(new Order($"site.{nameof(Site.Name)}", browser.SortAscending));
                 case SubsiteBrowser.Property.State:
-                    return criteria.AddOrder(new Order("state.Name", browser.SortAscending));
-                case SubsiteBrowser.Property.Subsite:
-                    return criteria.AddOrder(new Order("Name", browser.SortAscending));
+                    return criteria.AddOrder(new Order($"state.{nameof(State.Name)}", browser.SortAscending));
+                case SubsiteBrowser.Property.County:
+                    return criteria.AddOrder(new Order(nameof(Subsite.County), browser.SortAscending));
                 case SubsiteBrowser.Property.RHI5:
-                    return criteria.AddOrder(new Order("RHI5", browser.SortAscending));
+                    return criteria.AddOrder(new Order(nameof(Subsite.ComputedRHI5), browser.SortAscending));
                 case SubsiteBrowser.Property.RHI10:
-                    return criteria.AddOrder(new Order("RHI10", browser.SortAscending));
+                    return criteria.AddOrder(new Order(nameof(Subsite.ComputedRHI10), browser.SortAscending));
                 case SubsiteBrowser.Property.RGI5:
-                    return criteria.AddOrder(new Order("RGI5", browser.SortAscending));
+                    return criteria.AddOrder(new Order(nameof(Subsite.ComputedRGI5), browser.SortAscending));
                 case SubsiteBrowser.Property.RGI10:
-                    return criteria.AddOrder(new Order("RGI10", browser.SortAscending));
-                case SubsiteBrowser.Property.LastVisited:
-                    return criteria.AddOrder(new Order(nameof(Subsite.LastVisited), browser.SortAscending));
+                    return criteria.AddOrder(new Order(nameof(Subsite.ComputedRGI10), browser.SortAscending));
+                case SubsiteBrowser.Property.LastMeasurement:
+                    return criteria.AddOrder(new Order(nameof(Subsite.ComputedLastMeasurementDate), browser.SortAscending));
                 default:
-                    return criteria.AddOrder(new Order(nameof(Subsite.LastVisited), ascending: false));
+                    return criteria.AddOrder(new Order(nameof(Subsite.ComputedLastMeasurementDate), ascending: false));
             }
         }
     }

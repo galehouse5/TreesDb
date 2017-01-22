@@ -1,5 +1,7 @@
-﻿@model TMD.Models.MapSubsiteMarkerInfoModel
-@using TMD.Model.Photos
+﻿@using TMD.Model.Photos
+
+@model MapSubsiteMarkerInfoModel
+
 <table class="reports_table" style="width: 350px;">
     <tr>
         <td class="description"><strong>@Model.Name</strong></td>
@@ -14,7 +16,7 @@
     @Html.IfSpecifiedReportDisplayFor(m => m.RGI5)
     @Html.IfSpecifiedReportDisplayFor(m => m.RGI10)
     @Html.IfSpecifiedReportDisplayFor(m => m.RGI20)
-    @Html.ReportDisplayFor(m => m.TreesCount)
+    @Html.ReportDisplayFor(m => m.TreesMeasuredCount)
     @if (Model.Photos.Count > 0) {
         <tr>
             <td class="description">Photos</td>
@@ -25,5 +27,5 @@
             </td>
         </tr>
     }
-    @Html.ReportDisplayFor(m => m.LastVisited)
+    @Html.ReportDisplayFor(m => m.LastMeasurementDate)
 </table>

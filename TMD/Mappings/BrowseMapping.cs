@@ -4,6 +4,7 @@ using TMD.Model.Sites;
 using TMD.Model.Trees;
 using TMD.Models;
 using TMD.Models.Browse;
+using TMD.Models.Map;
 
 namespace TMD.Mappings
 {
@@ -67,7 +68,8 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Photographers, opt => opt.MapFrom(src => src.Visitors));
 
             CreateMap<Subsite, BrowseSubsiteDetailsModel>()
-                .ForMember(dest => dest.LastVisitComments, opt => opt.MapFrom(src => src.Site.LastVisit.Comments));
+                .ForMember(dest => dest.LastVisitComments, opt => opt.MapFrom(src => src.Site.LastVisit.Comments))
+                .ForGeoAreaMetricsMembers();
 
             CreateMap<Subsite, BrowseSubsiteLocationModel>()
                 .ForMember(dest => dest.Map, opt => opt.MapFrom(src => Mapper.Map<Subsite, MapModel>(src)));
@@ -77,8 +79,9 @@ namespace TMD.Mappings
 
         private void configureForStates()
         {
-            CreateMap<VisitedState, BrowseStateModel>()
-                .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => src.CoordinateBounds.Center));
+            CreateMap<State, BrowseStateModel>()
+                .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => src.CoordinateBounds.Center))
+                .ForGeoAreaMetricsMembers();
         }
     }
 }

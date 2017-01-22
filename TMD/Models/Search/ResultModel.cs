@@ -12,7 +12,7 @@ namespace TMD.Models.Search
         public string Description { get; set; }
         public string Url { get; set; }
 
-        public static ResultModel From(StateBase state, UrlHelper helper)
+        public static ResultModel From(State state, UrlHelper helper)
         {
             return new ResultModel
             {

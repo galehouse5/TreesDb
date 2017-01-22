@@ -58,6 +58,8 @@
     <Compile Include="Exports\ICsvExporter.cs" />
     <Compile Include="Exports\IExportRepository.cs" />
     <Compile Include="Extensions\ISpecifiedExtensions.cs" />
+    <Compile Include="IGeneralRepository.cs" />
+    <Compile Include="IGeoAreaMetrics.cs" />
     <Compile Include="Imports\MultiTrunkTree.cs" />
     <Compile Include="Imports\SingleTrunkTree.cs" />
     <Compile Include="Imports\Site.cs" />
@@ -123,6 +125,8 @@
     <Compile Include="ValueObjects\Elevation.cs" />
     <Compile Include="ValueObjects\HeightMeasurements.cs" />
     <Compile Include="Locations\State.cs" />
+    <Compile Include="ValueObjects\Longitude.cs" />
+    <Compile Include="ValueObjects\Latitude.cs" />
     <Compile Include="ValueObjects\Name.cs" />
     <Compile Include="ValueObjects\Units.cs" />
     <Compile Include="ValueObjects\Volume.cs" />

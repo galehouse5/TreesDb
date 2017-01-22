@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Registry.cs" />
     <Compile Include="Repositories\ExportRepository.cs" />
+    <Compile Include="Repositories\GeneralRepository.cs" />
     <Compile Include="Repositories\LocationRepository.cs" />
     <Compile Include="Repositories\PhotoRepository.cs" />
     <Compile Include="Repositories\RepositoryRegistry.cs" />

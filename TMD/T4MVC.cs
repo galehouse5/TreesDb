@@ -231,10 +231,10 @@ namespace Links
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(UrlPath + "/" + fileName); }
             public static readonly string Calendar_gif = Url("Calendar.gif");
             public static readonly string Map_png = Url("Map.png");
-            public static readonly string MultiTrunkTree32_png = Url("MultiTrunkTree32.png");
-            public static readonly string SingleTrunkTree32_png = Url("SingleTrunkTree32.png");
             public static readonly string Site32_png = Url("Site32.png");
+            public static readonly string State32_png = Url("State32.png");
             public static readonly string Subsite32_png = Url("Subsite32.png");
+            public static readonly string Tree32_png = Url("Tree32.png");
             public static readonly string Trip32_png = Url("Trip32.png");
         }
     

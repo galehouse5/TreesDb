@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TMD.Model;
 
 namespace TMD.UnitTests.Model
@@ -11,12 +7,41 @@ namespace TMD.UnitTests.Model
     public class ValueObjects
     {
         [TestMethod]
-        public void ExtendCoordinateBounds()
+        public void CreatesLatitude()
+        {
+            Assert.AreEqual(0f, Latitude.Create(-180f).TotalDegrees);
+            Assert.AreEqual(45f, Latitude.Create(-135f).TotalDegrees);
+            Assert.AreEqual(-90f, Latitude.Create(-90f).TotalDegrees);
+            Assert.AreEqual(-45f, Latitude.Create(-45f).TotalDegrees);
+            Assert.AreEqual(0f, Latitude.Create(0f).TotalDegrees);
+            Assert.AreEqual(45f, Latitude.Create(45f).TotalDegrees);
+            Assert.AreEqual(90f, Latitude.Create(90f).TotalDegrees);
+            Assert.AreEqual(-45f, Latitude.Create(135f).TotalDegrees);
+            Assert.AreEqual(0f, Latitude.Create(180f).TotalDegrees);
+        }
+
+        [TestMethod]
+        public void CreatesLongitude()
+        {
+            Assert.AreEqual(0f, Longitude.Create(-360f).TotalDegrees);
+            Assert.AreEqual(90f, Longitude.Create(-270f).TotalDegrees);
+            Assert.AreEqual(-180f, Longitude.Create(-180f).TotalDegrees);
+            Assert.AreEqual(-90f, Longitude.Create(-90f).TotalDegrees);
+            Assert.AreEqual(0f, Longitude.Create(0f).TotalDegrees);
+            Assert.AreEqual(90f, Longitude.Create(90f).TotalDegrees);
+            Assert.AreEqual(180f, Longitude.Create(180f).TotalDegrees);
+            Assert.AreEqual(-90f, Longitude.Create(270f).TotalDegrees);
+            Assert.AreEqual(0f, Longitude.Create(360f).TotalDegrees);
+        }
+
+        [TestMethod]
+        public void ExtendsCoordinateBounds()
         {
             CoordinateBounds cb1 = CoordinateBounds.Null();
             Assert.AreEqual(cb1.NE, Coordinates.Null());
             Assert.AreEqual(cb1.SW, Coordinates.Null());
             Assert.AreEqual(cb1.Center, Coordinates.Null());
+
             CoordinateBounds cb2 = CoordinateBounds.Null()
                 .Extend(Coordinates.Create(50, 50))
                 .Extend(Coordinates.Create(25, 75))
@@ -27,18 +52,32 @@ namespace TMD.UnitTests.Model
         }
 
         [TestMethod]
-        public void CreateDistance()
+        public void CalculatesCenterForCoordinateBounds()
+        {
+            CoordinateBounds ohioBounds = CoordinateBounds.Create(
+                ne: Coordinates.Create(42.32324f, -80.51899f),
+                sw: Coordinates.Create(38.40314f, -84.82034f));
+            Assert.AreEqual(Coordinates.Create(40.36319f, -82.669665f), ohioBounds.Center);
+
+            CoordinateBounds alaskaBounds = CoordinateBounds.Create(
+                ne: Coordinates.Create(71.60482f, -129.9742f),
+                sw: Coordinates.Create(51.02287f, 172.1155f));
+            Assert.AreEqual(Coordinates.Create(61.3138428f, -158.929352f), alaskaBounds.Center);
+        }
+
+        [TestMethod]
+        public void CreatesDistance()
         {
             Distance d = Distance.Create("7' 10\"");
             Assert.AreEqual(Distance.Create("7 10"), d);
-            
+
             Assert.AreEqual(Distance.Create("7ft 10"), d);
             Assert.AreEqual(Distance.Create("7 ft 10"), d);
             Assert.AreEqual(Distance.Create("7feet 10"), d);
             Assert.AreEqual(Distance.Create("7 feet 10"), d);
             Assert.AreEqual(Distance.Create("7foot 10"), d);
             Assert.AreEqual(Distance.Create("7 foot 10"), d);
-            
+
             Assert.AreEqual(Distance.Create("7 10\""), d);
             Assert.AreEqual(Distance.Create("7 10 \""), d);
             Assert.AreEqual(Distance.Create("7 10''"), d);
