@@ -14,12 +14,12 @@ namespace TMD.Model.Sites
         public virtual string Name { get; protected set; }
         public virtual Coordinates Coordinates { get; protected set; }
         public virtual Coordinates CalculatedCoordinates { get; protected set; }
-        public virtual float? ComputedRHI5 { get; protected set; }
-        public virtual float? ComputedRHI10 { get; protected set; }
-        public virtual float? ComputedRHI20 { get; protected set; }
-        public virtual float? ComputedRGI5 { get; protected set; }
-        public virtual float? ComputedRGI10 { get; protected set; }
-        public virtual float? ComputedRGI20 { get; protected set; }
+        public virtual RuckerIndex? ComputedRHI5 { get; protected set; }
+        public virtual RuckerIndex? ComputedRHI10 { get; protected set; }
+        public virtual RuckerIndex? ComputedRHI20 { get; protected set; }
+        public virtual RuckerIndex? ComputedRGI5 { get; protected set; }
+        public virtual RuckerIndex? ComputedRGI10 { get; protected set; }
+        public virtual RuckerIndex? ComputedRGI20 { get; protected set; }
         public virtual int? ComputedTreesMeasuredCount { get; protected set; }
         public virtual DateTime? ComputedLastMeasurementDate { get; protected set; }
         public virtual bool? ComputedContainsEntityWithCoordinates { get; protected set; }

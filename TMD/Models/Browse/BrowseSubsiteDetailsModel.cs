@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using TMD.Extensions;
+using TMD.Model;
 
 namespace TMD.Models.Browse
 {
@@ -11,17 +12,17 @@ namespace TMD.Models.Browse
         public int Id { get; set; }
         public string Name { get; set; }
         [DisplayFormat(NullDisplayText = "(not enough data)")]
-        public float? RHI5 { get; set; }
+        public RuckerIndex? RHI5 { get; set; }
         [DisplayFormat(NullDisplayText = "(not enough data)")]
-        public float? RHI10 { get; set; }
+        public RuckerIndex? RHI10 { get; set; }
         [DisplayFormat(NullDisplayText = "(not enough data)")]
-        public float? RHI20 { get; set; }
+        public RuckerIndex? RHI20 { get; set; }
         [DisplayFormat(NullDisplayText = "(not enough data)")]
-        public float? RGI5 { get; set; }
+        public RuckerIndex? RGI5 { get; set; }
         [DisplayFormat(NullDisplayText = "(not enough data)")]
-        public float? RGI10 { get; set; }
+        public RuckerIndex? RGI10 { get; set; }
         [DisplayFormat(NullDisplayText = "(not enough data)")]
-        public float? RGI20 { get; set; }
+        public RuckerIndex? RGI20 { get; set; }
         [DisplayName("Trees measured")]
         public int? TreesMeasuredCount { get; set; }
         [DisplayName("Last measurement date"), DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]

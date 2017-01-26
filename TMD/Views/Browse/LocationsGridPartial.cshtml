@@ -2,38 +2,30 @@
 @(Html.DataTablesGrid<Subsite>(parameterNamePrefix: Model.ParameterNamePrefix,
     columns: builder =>
     {
-        builder
-            .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, MVC.Browse.SiteDetails(subsite.Site.Id)))
-            .Options(canFilter: true, filterTitle: "Search sites");
-        builder
-            .Custom("County", subsite => subsite.County)
-            .Options(canFilter: true, header: "County", filterTitle: "Search county");
-        builder
-            .Custom("State", subsite => Html.ActionLink(subsite.State.Name, MVC.Browse.StateDetails(subsite.State.Id)))
-            .Options(canFilter: true, header: "State", filterTitle: "Search states");
-        builder
-            .Custom("RHI5", subsite => subsite.ComputedRHI5.HasValue ? 
-                MvcHtmlString.Create(subsite.ComputedRHI5.ToString()) 
-                : MvcHtmlString.Create("-"))
-            .Options(canFilter: false, defaultSortAscending: false);
-        builder
-            .Custom("RHI10", subsite => subsite.ComputedRHI10.HasValue ?
-                MvcHtmlString.Create(subsite.ComputedRHI10.ToString())
-                : MvcHtmlString.Create("-"))
-            .Options(canFilter: false, defaultSortAscending: false);
-        builder
-            .Custom("RGI5", subsite => subsite.ComputedRGI5.HasValue ?
-                MvcHtmlString.Create(subsite.ComputedRGI5.ToString())
-                : MvcHtmlString.Create("-"))
-            .Options(canFilter: false, defaultSortAscending: false);
-        builder
-            .Custom("RGI10", subsite => subsite.ComputedRGI10.HasValue ?
-                MvcHtmlString.Create(subsite.ComputedRGI10.ToString())
-                : MvcHtmlString.Create("-"))
-            .Options(canFilter: false, defaultSortAscending: false);
-        builder
-            .Custom("LastMeasurement", subsite => Html.DisplayFor(m => subsite.ComputedLastMeasurementDate))
-            .Options(header: "Last measurement", canFilter: false);
+      builder
+          .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, MVC.Browse.SiteDetails(subsite.Site.Id)))
+          .Options(canFilter: true, filterTitle: "Search sites");
+      builder
+          .Custom("County", subsite => subsite.County)
+          .Options(canFilter: true, header: "County", filterTitle: "Search county");
+      builder
+          .Custom("State", subsite => Html.ActionLink(subsite.State.Name, MVC.Browse.StateDetails(subsite.State.Id)))
+          .Options(canFilter: true, header: "State", filterTitle: "Search states");
+      builder
+          .Custom("RHI5", subsite => MvcHtmlString.Create(subsite.ComputedRHI5?.ToString(UserSession.Units) ?? "-"))
+          .Options(canFilter: false, defaultSortAscending: false);
+      builder
+          .Custom("RHI10", subsite => MvcHtmlString.Create(subsite.ComputedRHI10?.ToString(UserSession.Units) ?? "-"))
+          .Options(canFilter: false, defaultSortAscending: false);
+      builder
+          .Custom("RGI5", subsite => MvcHtmlString.Create(subsite.ComputedRGI5?.ToString(UserSession.Units) ?? "-"))
+          .Options(canFilter: false, defaultSortAscending: false);
+      builder
+          .Custom("RGI10", subsite => MvcHtmlString.Create(subsite.ComputedRGI10?.ToString(UserSession.Units) ?? "-"))
+          .Options(canFilter: false, defaultSortAscending: false);
+      builder
+          .Custom("LastMeasurement", subsite => Html.DisplayFor(m => subsite.ComputedLastMeasurementDate))
+          .Options(header: "Last measurement", canFilter: false);
     },
     rowsPerPage: Model.RowsPerPage,
     dataSource: Model.PageEntities, filteredRowCount: Model.FilteredEntitiesCount, totalRowCount: Model.TotalEntitiesCount))

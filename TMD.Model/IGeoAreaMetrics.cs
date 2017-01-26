@@ -4,12 +4,12 @@ namespace TMD.Model
 {
     public interface IGeoAreaMetrics
     {
-        float? ComputedRHI5 { get; }
-        float? ComputedRHI10 { get; }
-        float? ComputedRHI20 { get; }
-        float? ComputedRGI5 { get; }
-        float? ComputedRGI10 { get; }
-        float? ComputedRGI20 { get; }
+        RuckerIndex? ComputedRHI5 { get; }
+        RuckerIndex? ComputedRHI10 { get; }
+        RuckerIndex? ComputedRHI20 { get; }
+        RuckerIndex? ComputedRGI5 { get; }
+        RuckerIndex? ComputedRGI10 { get; }
+        RuckerIndex? ComputedRGI20 { get; }
         int? ComputedTreesMeasuredCount { get; }
         DateTime? ComputedLastMeasurementDate { get; }
         bool? ComputedContainsEntityWithCoordinates { get; }

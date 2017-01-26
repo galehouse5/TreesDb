@@ -128,6 +128,7 @@
     <Compile Include="ValueObjects\Longitude.cs" />
     <Compile Include="ValueObjects\Latitude.cs" />
     <Compile Include="ValueObjects\Name.cs" />
+    <Compile Include="ValueObjects\RuckerIndex.cs" />
     <Compile Include="ValueObjects\Units.cs" />
     <Compile Include="ValueObjects\Volume.cs" />
   </ItemGroup>

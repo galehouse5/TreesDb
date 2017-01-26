@@ -87,9 +87,8 @@ namespace TMD.Model
         public string ToString(Units units, UnitRenderMode renderMode = UnitRenderMode.Default)
         {
             if (!IsSpecified)
-            {
                 return string.Empty;
-            }
+
             switch (units)
             {
                 case Units.Default:
@@ -97,34 +96,25 @@ namespace TMD.Model
                     switch (renderMode)
                     {
                         case UnitRenderMode.Default:
-                        case UnitRenderMode.PrefixOnly:
-                            return string.Format("{0:0.0}'", Feet);
-                        case UnitRenderMode.SubprefixOnly:
-                            return string.Format("{0:0}''", Inches);
-                        default:
-                            throw new NotImplementedException();
+                        case UnitRenderMode.PrefixOnly: return $"{Feet:0.0}'";
+                        case UnitRenderMode.SubprefixOnly: return $"{Inches:0}''";
+                        default: throw new NotImplementedException();
                     }
                 case Units.Meters:
                     switch (renderMode)
                     {
                         case UnitRenderMode.Default:
-                        case UnitRenderMode.PrefixOnly:
-                            return string.Format("{0:0.00} m", Meters);
-                        case UnitRenderMode.SubprefixOnly:
-                            return string.Format("{0:0} cm", Centimeters);
-                        default:
-                            throw new NotImplementedException();
-                    }                    
+                        case UnitRenderMode.PrefixOnly: return $"{Meters:0.00} m";
+                        case UnitRenderMode.SubprefixOnly: return $"{Centimeters:0} cm";
+                        default: throw new NotImplementedException();
+                    }
                 case Units.Yards:
                     switch (renderMode)
                     {
                         case UnitRenderMode.Default:
-                        case UnitRenderMode.PrefixOnly:
-                            return string.Format("{0:0.00} yd", Yards);
-                        case UnitRenderMode.SubprefixOnly:
-                            return string.Format("{0:0}''", Inches);
-                        default:
-                            throw new NotImplementedException();
+                        case UnitRenderMode.PrefixOnly: return $"{Yards:0.00} yd";
+                        case UnitRenderMode.SubprefixOnly: return $"{Inches:0}''";
+                        default: throw new NotImplementedException();
                     }
                 default:
                     throw new NotImplementedException();

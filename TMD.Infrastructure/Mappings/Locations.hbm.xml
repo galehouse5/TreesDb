@@ -58,12 +58,12 @@
         </component>
       </component>
     </component>
-    <property name="ComputedRHI5" />
-    <property name="ComputedRHI10" />
-    <property name="ComputedRHI20" />
-    <property name="ComputedRGI5" />
-    <property name="ComputedRGI10" />
-    <property name="ComputedRGI20" />
+    <property name="ComputedRHI5" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
+    <property name="ComputedRHI10" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
+    <property name="ComputedRHI20" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
+    <property name="ComputedRGI5" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
+    <property name="ComputedRGI10" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
+    <property name="ComputedRGI20" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
     <property name="ComputedTreesMeasuredCount" />
     <property name="ComputedLastMeasurementDate" />
     <property name="ComputedContainsEntityWithCoordinates" />
