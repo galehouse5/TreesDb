@@ -1,6 +1,8 @@
-﻿namespace TMD.Model
+﻿using System;
+
+namespace TMD.Model
 {
-    public struct RuckerIndex
+    public struct RuckerIndex : IComparable<RuckerIndex>, IComparable
     {
         public float FeetBasedValue { get; set; }
 
@@ -23,6 +25,12 @@
 
         public override string ToString()
             => ToString(Units.Default);
+
+        public int CompareTo(RuckerIndex other)
+            => FeetBasedValue.CompareTo(other.FeetBasedValue);
+
+        public int CompareTo(object obj)
+            => CompareTo((RuckerIndex)obj);
 
         public static implicit operator RuckerIndex(float feetBasedValue)
             => new RuckerIndex { FeetBasedValue = feetBasedValue };
