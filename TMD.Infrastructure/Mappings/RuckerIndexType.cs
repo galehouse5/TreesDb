@@ -42,7 +42,7 @@ namespace TMD.Infrastructure.Mappings
         public void NullSafeSet(IDbCommand cmd, object value, int index)
         {
             IDataParameter param = (IDataParameter)cmd.Parameters[index];
-            param.Value = value == null ? DBNull.Value : (object)(float)value;
+            param.Value = value == null ? DBNull.Value : (object)(float)(RuckerIndex)value;
         }
 
         // Unsure how to implement this method...
