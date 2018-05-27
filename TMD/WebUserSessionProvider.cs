@@ -52,7 +52,6 @@ namespace TMD
         public override DateTime LastLogon { get { return DateTime.MinValue; } }
         public override string Lastname { get { return "Anonymous"; } }
         public override Password Password { get { return null; } }
-        public override bool PerformHumanVerification { get { return false; } }
         public override int RecentlyFailedLogonAttempts { get { return 0; } }
 
         public override void RegenerateEmailVerificationToken()

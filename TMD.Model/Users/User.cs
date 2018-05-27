@@ -113,27 +113,8 @@ namespace TMD.Model.Users
 
         #endregion
 
-        #region Human verification
-
         public virtual DateTime? LastFailedLogonAttempt { get; protected set; }
         public virtual int RecentlyFailedLogonAttempts { get; protected set; }
-
-        public virtual bool PerformHumanVerification
-        {
-            get
-            {
-                if (LastFailedLogonAttempt >= DateTime.Now.Subtract(Registry.Settings.FailedLoginMemoryDuration))
-                {
-                    if (RecentlyFailedLogonAttempts >= Registry.Settings.FailedLoginsBeforeHumanVerification)
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
-        }
-
-        #endregion
 
         public virtual void ChangePasswordIfNonEmailVerified(string newPassword)
         {

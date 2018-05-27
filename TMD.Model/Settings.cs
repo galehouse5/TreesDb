@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Configuration;
 
 namespace TMD.Model
@@ -13,7 +10,6 @@ namespace TMD.Model
             public const string ForgottenPasswordAssistanceTokenLifetime = "forgottenPasswordAssistanceTokenLifetime";
             public const string PasswordLength = "passwordLength";
             public const string PasswordCharacterTypes = "passwordCharacterTypes";
-            public const string FailedLoginsBeforeHumanVerification = "failedLoginsBeforeHumanVerification";
             public const string FailedLoginMemoryDuration = "failedLoginMemoryDuration";
         }
 
@@ -36,13 +32,6 @@ namespace TMD.Model
         {
             get { return (int)this[PropertyNames.PasswordCharacterTypes]; }
             set { this[PropertyNames.PasswordCharacterTypes] = value; }
-        }
-
-        [ConfigurationProperty(PropertyNames.FailedLoginsBeforeHumanVerification, IsRequired = false, DefaultValue = 3)]
-        public int FailedLoginsBeforeHumanVerification
-        {
-            get { return (int)this[PropertyNames.FailedLoginsBeforeHumanVerification]; }
-            set { this[PropertyNames.FailedLoginsBeforeHumanVerification] = value; }
         }
 
         [ConfigurationProperty(PropertyNames.FailedLoginMemoryDuration, IsRequired = false, DefaultValue = "01:00:00")]

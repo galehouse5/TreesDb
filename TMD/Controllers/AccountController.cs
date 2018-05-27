@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Recaptcha;
 using System;
 using System.Net.Mail;
 using System.Web;
@@ -59,8 +58,8 @@ namespace TMD.Controllers
             return View(new AccountLogonModel { });
         }
 
-        [HttpPost, RecaptchaControlMvc.CaptchaValidator]
-        public virtual ActionResult Logon(AccountLogonModel model, bool captchaValid)
+        [HttpPost]
+        public virtual ActionResult Logon(AccountLogonModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -72,11 +71,6 @@ namespace TMD.Controllers
                 if (user == null || !user.IsEmailVerified)
                 {
                     ModelState.AddModelError("Email", "Invalid email or password.");
-                    return View(model);
-                }
-                if (user.PerformHumanVerification && !captchaValid)
-                {
-                    model.PerformHumanVerification = true;
                     return View(model);
                 }
                 bool authenticated = user.AttemptLogon(model.Password);
@@ -112,8 +106,8 @@ namespace TMD.Controllers
             return View(new AccountRegistrationModel { });
         }
 
-        [HttpPost, RecaptchaControlMvc.CaptchaValidator]
-        public virtual ActionResult Register(AccountRegistrationModel model, bool captchaValid)
+        [HttpPost]
+        public virtual ActionResult Register(AccountRegistrationModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -123,11 +117,6 @@ namespace TMD.Controllers
             this.ValidateMappedModel<User, AccountRegistrationModel>(user, ValidationTag.Required);
             if (!ModelState.IsValid)
             {
-                return View(model);
-            }
-            if (!captchaValid)
-            {
-                model.PerformHumanVerification = true;
                 return View(model);
             }
             var existingUser = Repositories.Users.FindByEmail(model.Email);
@@ -174,16 +163,11 @@ namespace TMD.Controllers
             return View(new AccountPasswordAssistanceModel { });
         }
 
-        [HttpPost, RecaptchaControlMvc.CaptchaValidator]
-        public virtual ActionResult PasswordAssistance(AccountPasswordAssistanceModel model, bool captchaValid)
+        [HttpPost]
+        public virtual ActionResult PasswordAssistance(AccountPasswordAssistanceModel model)
         {
             if (!ModelState.IsValid)
             {
-                return View(model);
-            }
-            if (!captchaValid)
-            {
-                model.PerformHumanVerification = true;
                 return View(model);
             }
             var user = Repositories.Users.FindByEmail(model.Email);

@@ -64,6 +64,7 @@ namespace T4MVC
                 public readonly string Name = "Name";
                 public readonly string ObjectReport = "ObjectReport";
                 public readonly string PhotoGalleryModel = "PhotoGalleryModel";
+                public readonly string RuckerIndex = "RuckerIndex";
                 public readonly string State = "State";
                 public readonly string _Url = "Url";
                 public readonly string Volume = "Volume";

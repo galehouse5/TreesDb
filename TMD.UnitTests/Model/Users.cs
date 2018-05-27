@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Threading;
 using TMD.Model;
 using TMD.Model.Users;
 
@@ -68,38 +67,6 @@ namespace TMD.UnitTests.Model
                 Repositories.Users.Remove(u);
                 uow.Persist();
             }
-        }
-
-        [TestMethod]
-        public void PerformsHumanVerification()
-        {
-            User u = User.Create("email", "password");
-
-            Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogon("wrongpassword");
-            Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogon("wrongpassword");
-            Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogon("wrongpassword");
-            Assert.IsTrue(u.PerformHumanVerification);
-
-            Thread.Sleep(1000);
-            Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogon("wrongpassword");
-            Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogon("wrongpassword");
-            Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogon("wrongpassword");
-            Assert.IsTrue(u.PerformHumanVerification);
-
-            u.AttemptLogon("password");
-            Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogon("wrongpassword");
-            Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogon("wrongpassword");
-            Assert.IsFalse(u.PerformHumanVerification);
-            u.AttemptLogon("wrongpassword");
-            Assert.IsTrue(u.PerformHumanVerification);
         }
     }
 }

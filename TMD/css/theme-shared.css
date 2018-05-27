@@ -7,8 +7,6 @@
 .validation-summary-errors { color: #C00; }
 
 /* Misc */
-.captcha { margin-bottom: 15px; }
-.captcha .recaptcha_input_area input { left: 0; }
 .reports_table .value.Comment { text-align: justify; }
 
 /* jQuery Controls */

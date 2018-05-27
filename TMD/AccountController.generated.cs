@@ -126,7 +126,6 @@ namespace TMD.Controllers
         public class ActionParamsClass_Logon
         {
             public readonly string model = "model";
-            public readonly string captchaValid = "captchaValid";
         }
         static readonly ActionParamsClass_Register s_params_Register = new ActionParamsClass_Register();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -135,7 +134,6 @@ namespace TMD.Controllers
         public class ActionParamsClass_Register
         {
             public readonly string model = "model";
-            public readonly string captchaValid = "captchaValid";
         }
         static readonly ActionParamsClass_CompleteRegistration s_params_CompleteRegistration = new ActionParamsClass_CompleteRegistration();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -152,7 +150,6 @@ namespace TMD.Controllers
         public class ActionParamsClass_PasswordAssistance
         {
             public readonly string model = "model";
-            public readonly string captchaValid = "captchaValid";
         }
         static readonly ActionParamsClass_CompletePasswordAssistance s_params_CompletePasswordAssistance = new ActionParamsClass_CompletePasswordAssistance();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -229,15 +226,14 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void LogonOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountLogonModel model, bool captchaValid);
+        partial void LogonOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountLogonModel model);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Logon(TMD.Models.AccountLogonModel model, bool captchaValid)
+        public override System.Web.Mvc.ActionResult Logon(TMD.Models.AccountLogonModel model)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Logon);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "captchaValid", captchaValid);
-            LogonOverride(callInfo, model, captchaValid);
+            LogonOverride(callInfo, model);
             return callInfo;
         }
 
@@ -264,15 +260,14 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountRegistrationModel model, bool captchaValid);
+        partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountRegistrationModel model);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Register(TMD.Models.AccountRegistrationModel model, bool captchaValid)
+        public override System.Web.Mvc.ActionResult Register(TMD.Models.AccountRegistrationModel model)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Register);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "captchaValid", captchaValid);
-            RegisterOverride(callInfo, model, captchaValid);
+            RegisterOverride(callInfo, model);
             return callInfo;
         }
 
@@ -300,15 +295,14 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void PasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid);
+        partial void PasswordAssistanceOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, TMD.Models.AccountPasswordAssistanceModel model);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult PasswordAssistance(TMD.Models.AccountPasswordAssistanceModel model, bool captchaValid)
+        public override System.Web.Mvc.ActionResult PasswordAssistance(TMD.Models.AccountPasswordAssistanceModel model)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.PasswordAssistance);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "model", model);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "captchaValid", captchaValid);
-            PasswordAssistanceOverride(callInfo, model, captchaValid);
+            PasswordAssistanceOverride(callInfo, model);
             return callInfo;
         }
 

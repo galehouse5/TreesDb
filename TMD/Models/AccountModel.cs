@@ -26,9 +26,6 @@ namespace TMD.Models
 
         [DisplayName("Remember me on this computer")]
         public bool RememberMe { get; set; }
-
-        [DisplayName("Prove you're human")] 
-        public bool PerformHumanVerification { get; set; }
     }
 
     public class AccountRegistrationModel
@@ -51,9 +48,6 @@ namespace TMD.Models
         [Required(ErrorMessage = "You must confirm your password.")]
         public string ConfirmPassword { get; set; }
 
-        [DisplayName("Prove you're human")] 
-        public bool PerformHumanVerification { get; set; }
-
         public bool RegistrationComplete { get; set; }
     }
 
@@ -67,9 +61,6 @@ namespace TMD.Models
         [DataType(DataType.EmailAddress), DisplayName("Confirm")]
         [Required(ErrorMessage = "You must confirm your email.")]
         public string ConfirmEmail { get; set; }
-
-        [DisplayName("Prove you're human")]
-        public bool PerformHumanVerification { get; set; }
 
         public bool AssistanceComplete { get; set; }
     }

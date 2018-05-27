@@ -80,10 +80,6 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Recaptcha, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ThirdPartyAssemblies\reCAPTCHA .NET\Recaptcha.dll</HintPath>
-    </Reference>
     <Reference Include="StructureMap, Version=2.6.1.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ThirdPartyAssemblies\StructureMap\StructureMap.dll</HintPath>
@@ -179,7 +175,6 @@
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
     <Compile Include="Extensions\AttributesExtensions.cs" />
-    <Compile Include="Extensions\CaptchaExtensions.cs" />
     <Compile Include="Extensions\CookieExtensions.cs" />
     <Compile Include="Extensions\DataTablesGrid.cs" />
     <Compile Include="Extensions\HttpContextExtensions.cs" />
