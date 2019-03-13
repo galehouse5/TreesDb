@@ -29,12 +29,15 @@
                     { latLng: new google.maps.LatLng(coordinates.Latitude().TotalDegrees(), coordinates.Longitude().TotalDegrees()) },
                     function (results, status) {
                         if (status === google.maps.GeocoderStatus.OK) {
+                            var address_components = results[0].address_components;
                             var county, state, country;
-                            for (i in results[0].address_components) {
-                                for (j in results[0].address_components[i].types) {
-                                    if (results[0].address_components[i].types[j] === 'administrative_area_level_2') { county = results[0].address_components[i].long_name; }
-                                    if (results[0].address_components[i].types[j] === 'administrative_area_level_1') { state = results[0].address_components[i].long_name; }
-                                    if (results[0].address_components[i].types[j] === 'country') { country = results[0].address_components[i].short_name; }
+                            for (i in address_components) {
+                                var address_component = address_components[i];
+                                for (j in address_component.types) {
+                                    var type = address_component.types[j];
+                                    if (type === 'administrative_area_level_2') { county = address_component.long_name.replace(/ County$/i, ''); }
+                                    if (type === 'administrative_area_level_1') { state = address_component.long_name; }
+                                    if (type === 'country') { country = address_component.short_name; }
                                 }
                             }
                             if (county !== null) {
