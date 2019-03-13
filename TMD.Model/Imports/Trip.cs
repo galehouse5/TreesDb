@@ -105,24 +105,11 @@ namespace TMD.Model.Imports
             }
         }
 
-        public virtual void InitializeSitesAndSubsites()
-        {
-            InitializeSites();
-
-            foreach (Site site in Sites
-                .Where(s => !s.Subsites.Any()))
-            {
-                site.AddSubsite();
-            }
-        }
-
         public virtual void InitializeTrees()
         {
-            foreach (Subsite subsite in Sites
-                .SelectMany(s => s.Subsites)
-                .Where(ss => !ss.Trees.Any()))
+            foreach (Site site in Sites.Where(s => !s.Trees.Any()))
             {
-                subsite.AddSingleTrunkTree();
+                site.AddSingleTrunkTree();
             }
         }
 
@@ -136,12 +123,6 @@ namespace TMD.Model.Imports
             return Sites.FirstOrDefault(s => id.Equals(s.Id));
         }
 
-        public virtual Subsite FindSubsiteById(int id)
-        {
-            var site = Sites.FirstOrDefault(s => s.FindSubsiteById(id) != null);
-            return site == null ? null : site.FindSubsiteById(id);
-        }
-
         public virtual TreeBase FindTreeById(int id)
         {
             var site = Sites.FirstOrDefault(s => s.FindTreeById(id) != null);
@@ -151,13 +132,9 @@ namespace TMD.Model.Imports
         public virtual void VisitSites(Action<string, Site> visitor)
             => Sites.ForEach((s, i) => visitor($"{nameof(Sites)}[{i}]", s));
 
-        public virtual void VisitSubsites(Action<string, Subsite> visitor)
-            => Sites.ForEach((s, i) => s.Subsites.ForEach((ss, j) =>
-                visitor($"{nameof(Sites)}[{i}].{nameof(Site.Subsites)}[{j}]", ss)));
-
         public virtual void VisitTrees(Action<string, TreeBase> visitor)
-            => Sites.ForEach((s, i) => s.Subsites.ForEach((ss, j) => ss.Trees.ForEach((t, k) =>
-                visitor($"{nameof(Sites)}[{i}].{nameof(Site.Subsites)}[{j}].{nameof(Subsite.Trees)}[{k}]", t))));
+            => Sites.ForEach((s, i) => s.Trees.ForEach((t, k) =>
+                visitor($"{nameof(Sites)}[{i}].{nameof(Site.Trees)}[{k}]", t)));
 
         public static Trip Create()
         {

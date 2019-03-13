@@ -18,10 +18,9 @@ namespace TMD.Model.Trees
         IEnumerable<GlobalMeasuredSpecies> SearchMeasuredSpecies(string expression, int maxResults);
         StateMeasuredSpecies FindMeasuredSpeciesByNameAndStateId(string botanicalName, string commonName, int stateId);
         SiteMeasuredSpecies FindMeasuredSpeciesByNameAndSiteId(string botanicalName, string commonName, int siteId);
-        SubsiteMeasuredSpecies FindMeasuredSpeciesByNameAndSubsiteId(string botanicalName, string commonName, int subsiteId);
         IList<StateMeasuredSpecies> ListMeasuredSpeciesForStatesByName(string botanicalName, string commonName);
         IList<SiteMeasuredSpecies> ListMeasuredSpeciesForSitesByNameAndStateId(string botanicalName, string commonName, int stateId);
-        IList<SubsiteMeasuredSpecies> ListMeasuredSpeciesBySubsiteId(int id);
+        IList<SiteMeasuredSpecies> ListMeasuredSpeciesBySiteId(int id);
         IList<StateMeasuredSpecies> ListMeasuredSpeciesByStateId(int id);
 
         IList<MeasurerActivity> ListMostActiveMeasurers(int maxResults);
@@ -39,7 +38,7 @@ namespace TMD.Model.Trees
 
         public bool HasFilters
         {
-            get 
+            get
             {
                 return !string.IsNullOrEmpty(BotanicalNameFilter)
                     || !string.IsNullOrEmpty(CommonNameFilter);

@@ -81,25 +81,28 @@ namespace TMD.Controllers
         }
 
         [HttpPost]
-        public virtual ActionResult AddToImportSubsite(int id, int subsiteId, HttpPostedFileBase imageData)
+        public virtual ActionResult AddToImportSite(int id, int siteId, HttpPostedFileBase imageData)
         {
             using (var uow = UnitOfWork.Begin())
             {
                 var trip = Repositories.Imports.FindById(id);
-                var subsite = trip.FindSubsiteById(subsiteId);
+                var site = trip.FindSiteById(siteId);
                 using (imageData.InputStream)
                 {
                     var photo = TemporaryPhoto.Create(imageData.InputStream);
-                    subsite.AddPhoto(photo);
-                    this.ValidateMappedModel<Subsite, PhotoGalleryModel>(subsite);
+                    site.AddPhoto(photo);
+                    this.ValidateMappedModel<Site, PhotoGalleryModel>(site);
                     if (ModelState.IsValid)
                     {
                         UnitOfWork.Flush();
-                        if (!Repositories.Photos.ListAllReferencesByPhotoId(photo.StaticId).IsAuthorizedToAdd(User)) { return new UnauthorizedResult(); }
+                        if (!Repositories.Photos.ListAllReferencesByPhotoId(photo.StaticId).IsAuthorizedToAdd(User))
+                            return new UnauthorizedResult();
+
                         uow.Persist();
                     }
-                    else { subsite.RemovePhoto(photo); }
-                    var photoGallery = Mapper.Map<Subsite, ImportSubsitePhotoGalleryModel>(subsite);
+                    else { site.RemovePhoto(photo); }
+
+                    var photoGallery = Mapper.Map<Site, ImportSitePhotoGalleryModel>(site);
                     return PhotoAdded(photoGallery);
                 }
             }

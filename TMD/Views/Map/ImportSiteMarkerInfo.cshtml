@@ -6,19 +6,17 @@
     <tr>
         <td class="description" colspan="2"><strong>@Model.Name</strong></td>
     </tr>
-    @if (Model.SubsitesCount == 1) {
-        @Html.ReportDisplayFor(m => m.Subsites[0].State)
-        @Html.ReportDisplayFor(m => m.Subsites[0].County)
-        @Html.ReportDisplayFor(m => m.Subsites[0].OwnershipType)
-        if (Model.Subsites[0].Photos.Count > 0) {
-            <tr>
-                <td class="description">Photos</td>
-                <td class="value">
-                    @foreach (var photo in Model.Subsites[0].Photos) {
-                        @Html.Photo(photo, PhotoSize.Square, PhotoSize.Medium);
-                    }
-                </td>
-            </tr>
-        }
+    @Html.ReportDisplayFor(m => m.State)
+    @Html.ReportDisplayFor(m => m.County)
+    @Html.ReportDisplayFor(m => m.OwnershipType)
+    @if (Model.Photos.Count > 0) {
+        <tr>
+            <td class="description">Photos</td>
+            <td class="value">
+                @foreach (var photo in Model.Photos) {
+                    @Html.Photo(photo, PhotoSize.Square, PhotoSize.Medium);
+                }
+            </td>
+        </tr>
     }
 </table>

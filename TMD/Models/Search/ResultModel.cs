@@ -23,16 +23,14 @@ namespace TMD.Models.Search
             };
         }
 
-        public static ResultModel From(Subsite subsite, UrlHelper helper)
-        {
-            return new ResultModel
+        public static ResultModel From(Site site, UrlHelper helper)
+            => new ResultModel
             {
                 Category = "sites",
-                Subject = subsite.Name,
-                Description = string.Format("{0}, {1}", subsite.County, subsite.State),
-                Url = helper.Action("SiteDetails", "Browse", new { id = subsite.Site.Id })
+                Subject = site.Name,
+                Description = string.Format("{0}, {1}", site.County, site.State),
+                Url = helper.Action("SiteDetails", "Browse", new { id = site.Id })
             };
-        }
 
         public static ResultModel From(MeasuredSpecies species, UrlHelper helper)
         {
@@ -42,10 +40,10 @@ namespace TMD.Models.Search
                 Subject = species.ScientificName,
                 Description = species.CommonName,
                 Url = helper.Action("SpeciesDetails", "Browse", new
-                    {
-                        botanicalName = species.ScientificName,
-                        commonName = species.CommonName
-                    })
+                {
+                    botanicalName = species.ScientificName,
+                    commonName = species.CommonName
+                })
             };
         }
 

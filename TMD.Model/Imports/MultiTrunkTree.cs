@@ -25,11 +25,11 @@ namespace TMD.Model.Imports
         { }
 
         private int? m_NumberOfTrunks;
-        
+
         [Range(2, int.MaxValue, Message = "Number of trunks must be greater than one.", Tags = ValidationTag.Required)]
-        public override int? NumberOfTrunks 
+        public override int? NumberOfTrunks
         {
-            get 
+            get
             {
                 if (m_NumberOfTrunks == null && Trunks.Count > 1)
                 {
@@ -39,7 +39,7 @@ namespace TMD.Model.Imports
                 {
                     m_NumberOfTrunks = Math.Max((int)m_NumberOfTrunks, Trunks.Count);
                 }
-                return m_NumberOfTrunks; 
+                return m_NumberOfTrunks;
             }
             set { m_NumberOfTrunks = value; }
         }
@@ -60,7 +60,7 @@ namespace TMD.Model.Imports
             get { return Girth; }
             set { Girth = value; }
         }
-        
+
         [Range(1, int.MaxValue, Message = "Number of trunks in combined girth must be positive.", Tags = ValidationTag.Required)]
         public virtual int? CombinedGirthNumberOfTrunks { get; set; }
 
@@ -88,9 +88,8 @@ namespace TMD.Model.Imports
             return Trunks.Remove(tm);
         }
 
-        internal static MultiTrunkTree Create(Subsite ssv)
-        {
-            return new MultiTrunkTree
+        internal static MultiTrunkTree Create(Site site)
+            => new MultiTrunkTree
             {
                 TreeName = string.Empty,
                 TreeNumber = null,
@@ -106,10 +105,10 @@ namespace TMD.Model.Imports
                 Elevation = Elevation.Null(),
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),
-                HeightMeasurementMethod = ssv.Site.Trip.DefaultHeightMeasurementMethod,
+                HeightMeasurementMethod = site.Trip.DefaultHeightMeasurementMethod,
                 HeightMeasurementType = string.Empty,
-                LaserBrand = ssv.Site.Trip.DefaultLaserBrand,
-                ClinometerBrand = ssv.Site.Trip.DefaultClinometerBrand,
+                LaserBrand = site.Trip.DefaultLaserBrand,
+                ClinometerBrand = site.Trip.DefaultClinometerBrand,
                 HeightComments = string.Empty,
                 Girth = Distance.Null(),
                 GirthMeasurementHeight = Distance.Null(),
@@ -132,12 +131,11 @@ namespace TMD.Model.Imports
                 TerrainShapeIndex = null,
                 LandformIndex = null,
                 TerrainComments = string.Empty,
-                Subsite = ssv,
+                Site = site,
                 MakeCoordinatesPublic = true,
                 CombinedGirthNumberOfTrunks = null,
                 Trunks = new List<Trunk>(),
                 Photos = new List<IPhoto>()
             }.RecordCreation() as MultiTrunkTree;
-        }
     }
 }

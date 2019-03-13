@@ -40,9 +40,6 @@
     <union-subclass name="TMD.Model.Trees.SiteMeasuredSpecies" table="MeasuredSpeciesBySite">
       <many-to-one name="Site" column="SiteId"></many-to-one>
     </union-subclass>
-    <union-subclass name="TMD.Model.Trees.SubsiteMeasuredSpecies" table="MeasuredSpeciesBySubsite">
-      <many-to-one name="Subsite" column="SubsiteId"></many-to-one>
-    </union-subclass>
   </class>
 
   <class name="TMD.Model.Trees.Measurement" table="Measurements">
@@ -122,7 +119,7 @@
     <id name="Id">
       <generator class="native"/>
     </id>
-    <many-to-one name="Subsite" column="SubsiteId" />
+    <many-to-one name="Site" column="SiteId" />
     <many-to-one name="Species" column="ComputedMeasuredSpeciesId" insert="false" update="false" cascade="none" />
     <bag name="Measurements" table="Measurements" inverse="true" cascade="all-delete-orphan">
       <key column="TreeId"></key>

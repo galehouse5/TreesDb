@@ -8,8 +8,8 @@
             $(this).find('.CoordinatePicker')
                 .not('.UiSitesInitialized').addClass('UiSitesInitialized').CoordinatePicker({
                     AddressCalculator: function () {
-                        var $countyContainer = $(this).closest('.Site, .Subsite').find('.County input[type=text]');
-                        var $stateContainer = $(this).closest('.Site, .Subsite').find('.State select');
+                        var $countyContainer = $(this).closest('.Site,').find('.County input[type=text]');
+                        var $stateContainer = $(this).closest('.Site').find('.State select');
                         if (!$countyContainer.val().IsNullOrWhitespace() && $stateContainer.find('option:selected').length > 0) {
                             return $countyContainer.val() + ' County, ' + $stateContainer.find('option:selected').text();
                         }
@@ -28,24 +28,24 @@
                         new google.maps.Geocoder().geocode(
                     { latLng: new google.maps.LatLng(coordinates.Latitude().TotalDegrees(), coordinates.Longitude().TotalDegrees()) },
                     function (results, status) {
-                        if (status == google.maps.GeocoderStatus.OK) {
+                        if (status === google.maps.GeocoderStatus.OK) {
                             var county, state, country;
                             for (i in results[0].address_components) {
                                 for (j in results[0].address_components[i].types) {
-                                    if (results[0].address_components[i].types[j] == 'administrative_area_level_2') { county = results[0].address_components[i].long_name; }
-                                    if (results[0].address_components[i].types[j] == 'administrative_area_level_1') { state = results[0].address_components[i].long_name; }
-                                    if (results[0].address_components[i].types[j] == 'country') { country = results[0].address_components[i].short_name; }
+                                    if (results[0].address_components[i].types[j] === 'administrative_area_level_2') { county = results[0].address_components[i].long_name; }
+                                    if (results[0].address_components[i].types[j] === 'administrative_area_level_1') { state = results[0].address_components[i].long_name; }
+                                    if (results[0].address_components[i].types[j] === 'country') { country = results[0].address_components[i].short_name; }
                                 }
                             }
-                            if (county != null) {
-                                var $countyContainer = $coordinateContainer.closest('.Site, .Subsite').find('.County input[type=text]');
+                            if (county !== null) {
+                                var $countyContainer = $coordinateContainer.closest('.Site').find('.County input[type=text]');
                                 $countyContainer.val(county);
                             }
-                            if (state != null && country != null) {
+                            if (state !== null && country !== null) {
                                 var stateText = state + ' (' + country + ')';
-                                var $stateContainer = $coordinateContainer.closest('.Site, .Subsite').find('.State select');
-                                var $stateOption = $stateContainer.find('option').filter(function () { return $(this).text() == stateText });
-                                if ($stateOption != null) {
+                                var $stateContainer = $coordinateContainer.closest('.Site').find('.State select');
+                                var $stateOption = $stateContainer.find('option').filter(function () { return $(this).text() === stateText; });
+                                if ($stateOption !== null) {
                                     $stateContainer.find('option').removeAttr('selected');
                                     $stateOption.attr('selected', 'selected');
                                     $.uniform.update($stateContainer);
@@ -62,11 +62,11 @@
                 this.Id = parts[1];
                 this.Action = parts[2];
                 this.Equals = function (level, action) {
-                    return level == this.Level & action == this.Action;
-                }
+                    return level === this.Level & action === this.Action;
+                };
                 this.Serialize = function () {
                     return 'innerAction=' + this.Level + '.' + this.Id + '.' + this.Action;
-                }
+                };
             }
 
             $(this).find('button[type=submit][name=innerAction]')
@@ -76,8 +76,7 @@
                     var innerAction = new InnerAction($button.attr('value'));
                     if (innerAction.Equals('Site', 'Save')
                         || innerAction.Equals('Site', 'Edit')
-                        || innerAction.Equals('Site', 'Add')
-                        || innerAction.Equals('Subsite', 'Remove')) {
+                        || innerAction.Equals('Site', 'Add')) {
                         $.post($form.attr('action'), $form.serialize() + '&' + innerAction.Serialize(),
                         function (response) {
                             var $siteContainer = $button.closest('.Site');
@@ -85,7 +84,7 @@
                             $siteContainer.replaceWith($siteContent);
                             $siteContent.InitializeUi().InitializeSitesUi();
                             if (innerAction.Equals('Site', 'Save') || innerAction.Equals('Site', 'Edit')) { $siteContent.SmoothScrollInFocus(); }
-                            if (innerAction.Equals('Site', 'Add')  || innerAction.Equals('Subsite', 'Remove')) { $siteContent.find('.Subsite:last').SmoothScrollInFocus(); }
+                            if (innerAction.Equals('Site', 'Add')) { $siteContent.find('.Site:last').SmoothScrollInFocus(); }
                         });
                         return false;
                     }
@@ -119,5 +118,5 @@
                 });
 
         });
-    }
+    };
 })(jQuery);

@@ -58,7 +58,7 @@ namespace TMD.Controllers
             if (!User.IsAuthorizedToEdit(trip))
                 return new UnauthorizedResult();
 
-            var model = new ImportTripModel(); 
+            var model = new ImportTripModel();
             Mapper.Map(trip, model);
             return View(model);
         }
@@ -76,7 +76,7 @@ namespace TMD.Controllers
             this.ValidateMappedModel<Trip, ImportTripModel>(trip, ValidationTag.Required);
             if (!ModelState.IsValid) return View(model);
 
-            Repositories.Imports.Save(trip); 
+            Repositories.Imports.Save(trip);
             Uow.Persist();
             return RedirectToAction(MVC.Import.Sites(trip.Id));
         }
@@ -88,7 +88,7 @@ namespace TMD.Controllers
             if (!User.IsAuthorizedToEdit(trip))
                 return new UnauthorizedResult();
 
-            trip.InitializeSitesAndSubsites();
+            trip.InitializeSites();
             Repositories.Imports.Save(trip);
             Uow.Persist();
 
@@ -101,18 +101,16 @@ namespace TMD.Controllers
             Mapper.Map(model, trip);
 
             trip.VisitSites((p, s) => this.ValidateMappedModel<Site, ImportSiteModel>(s, $"{p}.", ValidationTag.Required));
-            trip.VisitSubsites((p, ss) => this.ValidateMappedModel<Subsite, ImportSubsiteModel>(ss, $"{p}.", ValidationTag.Required));
             if (!ModelState.IsValid) return View(model);
 
             trip.VisitSites((p, s) => this.ValidateMappedModel<Site, ImportSiteModel>(s, $"{p}.", ValidationTag.Optional));
-            trip.VisitSubsites((p, ss) => this.ValidateMappedModel<Subsite, ImportSubsiteModel>(ss, $"{p}.", ValidationTag.Optional));
             if (!ModelState.IsValid && saveUnlessOptionalErrors)
             {
                 model.HasOptionalErrors = true;
                 return View(model);
             }
 
-            (from site in trip.Sites from subsite in site.Subsites select subsite).Last().SetTripDefaults();
+            trip.Sites.Last().SetTripDefaults();
             Repositories.Imports.Save(trip);
             Uow.Persist();
 
@@ -122,7 +120,7 @@ namespace TMD.Controllers
         protected ActionResult AddSite(ImportSitesModel model, Trip trip)
         {
             var site = trip.AddSite();
-            trip.InitializeSitesAndSubsites();
+            trip.InitializeSites();
             Repositories.Imports.Save(trip);
             Uow.Persist();
 
@@ -143,12 +141,10 @@ namespace TMD.Controllers
 
             string modelPrefix = $"Sites[{model.Sites.IndexOf(siteModel)}].";
             this.ValidateMappedModel<Site, ImportSiteModel>(site, modelPrefix, ValidationTag.Required);
-            site.VisitSubsites((p, ss) => this.ValidateMappedModel<Subsite, ImportSubsiteModel>(ss, $"{modelPrefix}{p}.", ValidationTag.Required));
             if (!ModelState.IsValid) return Request.IsAjaxRequest() ?
                     PartialView("SitePartial", model).AddViewData("siteId", site.Id) : View(model);
 
             this.ValidateMappedModel<Site, ImportSiteModel>(site, modelPrefix, ValidationTag.Optional);
-            site.VisitSubsites((p, ss) => this.ValidateMappedModel<Subsite, ImportSubsiteModel>(ss, $"{modelPrefix}{p}.", ValidationTag.Optional));
             if (!ModelState.IsValid && saveUnlessOptionalErrors)
             {
                 siteModel.HasOptionalError = true;
@@ -157,7 +153,7 @@ namespace TMD.Controllers
                     PartialView("SitePartial", model).AddViewData("siteId", site.Id) : View(model);
             }
 
-            site.Subsites.Last().SetTripDefaults();
+            site.SetTripDefaults();
             Repositories.Imports.Save(trip);
             Uow.Persist();
 
@@ -190,45 +186,9 @@ namespace TMD.Controllers
                 PartialView("SitePartial", model).AddViewData("siteId", site.Id) : View(model);
         }
 
-        protected ActionResult AddSubsite(ImportSitesModel model, Trip trip, int siteId)
-        {
-            var site = trip.FindSiteById(siteId);
-            var subsite = site.AddSubsite();
-            Repositories.Imports.Save(trip);
-            Uow.Persist();
-
-            var siteModel = model.FindSiteById(siteId);
-            var subsiteModel = siteModel.AddSubsite();
-            Mapper.Map(subsite, subsiteModel);
-
-            if (siteModel.Subsites.Count == 2)
-            {
-                siteModel.Subsites[1].State = siteModel.Subsites[0].State;
-                siteModel.Subsites[1].County = siteModel.Subsites[0].County;
-            }
-
-            return Request.IsAjaxRequest() ?
-                PartialView("SitePartial", model).AddViewData("siteId", site.Id) : View(model);
-        }
-
-        protected ActionResult RemoveSubsite(ImportSitesModel model, Trip trip, int subsiteId)
-        {
-            var subsite = trip.FindSubsiteById(subsiteId);
-            var site = subsite.Site;
-            site.RemoveSubsite(subsite);
-            Repositories.Imports.Save(trip);
-            Uow.Persist();
-
-            var subsiteModel = model.FindSubsiteById(subsite.Id);
-            var siteModel = model.FindSiteById(site.Id);
-            siteModel.RemoveSubsite(subsiteModel);
-
-            return Request.IsAjaxRequest() ? PartialView("SitePartial", model).AddViewData("siteId", site.Id) : View(model);
-        }
-
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import), SkipValidation]
         public virtual ActionResult Sites(
-            [ModelBinder(typeof(ImportSitesModelBinder))] ImportSitesModel model, 
+            [ModelBinder(typeof(ImportSitesModelBinder))] ImportSitesModel model,
             [ModelBinder(typeof(ImportInnerActionModel))] ImportInnerActionModel innerAction)
         {
             ModelState.Clear();
@@ -237,7 +197,7 @@ namespace TMD.Controllers
             if (!User.IsAuthorizedToEdit(trip))
                 return new UnauthorizedResult();
 
-            trip.InitializeSitesAndSubsites();
+            trip.InitializeSites();
 
             if (innerAction.Equals(ImportModelLevel.Trip, ImportModelAction.SaveUnlessOptionalErrors)
                 || innerAction.Equals(ImportModelLevel.Trip, ImportModelAction.SaveIgnoringOptionalErrors))
@@ -255,12 +215,6 @@ namespace TMD.Controllers
 
             if (innerAction.Equals(ImportModelLevel.Site, ImportModelAction.Edit))
                 return EditSite(model, trip, innerAction.Id);
-
-            if (innerAction.Equals(ImportModelLevel.Site, ImportModelAction.Add))
-                return AddSubsite(model, trip, innerAction.Id);
-
-            if (innerAction.Equals(ImportModelLevel.Subsite, ImportModelAction.Remove))
-                return RemoveSubsite(model, trip, innerAction.Id);
 
             throw new NotImplementedException();
         }
@@ -285,10 +239,9 @@ namespace TMD.Controllers
             var treeModel = model.FindTreeById(tree.Id);
             Mapper.Map(treeModel, tree);
 
-            var subsiteModel = model.FindSubsiteContainingTreeWithId(tree.Id);
             var siteModel = model.FindSiteContainingTreeWithId(tree.Id);
 
-            string modelPrefix = $"Sites[{model.Sites.IndexOf(siteModel)}].Subsites[{siteModel.Subsites.IndexOf(subsiteModel)}].Trees[{subsiteModel.Trees.IndexOf(treeModel)}].";
+            string modelPrefix = $"Sites[{model.Sites.IndexOf(siteModel)}].Trees[{siteModel.Trees.IndexOf(treeModel)}].";
             this.ValidateMappedModel<TreeBase, ImportTreeModel>(tree, modelPrefix, ValidationTag.Required);
             if (!ModelState.IsValid) return Request.IsAjaxRequest() ?
                     PartialView("TreePartial", model).AddViewData("treeId", tree.Id) : View(model);
@@ -319,39 +272,39 @@ namespace TMD.Controllers
                 PartialView("TreePartial", model).AddViewData("treeId", tree.Id) : View(model);
         }
 
-        protected ActionResult AddTree(ImportTreesModel model, Trip trip, int subsiteId)
+        protected ActionResult AddTree(ImportTreesModel model, Trip trip, int siteId)
         {
-            var subsite = trip.FindSubsiteById(subsiteId);
-            var tree = subsite.AddSingleTrunkTree();
+            var site = trip.FindSiteById(siteId);
+            var tree = site.AddSingleTrunkTree();
             Repositories.Imports.Save(trip);
             Uow.Persist();
 
-            var subsiteModel = model.FindSubsiteById(subsite.Id);
-            var treeModel = subsiteModel.AddTree();
+            var siteModel = model.FindSiteById(site.Id);
+            var treeModel = siteModel.AddTree();
             Mapper.Map(tree, treeModel);
             model.Initialize();
 
-            return Request.IsAjaxRequest() ? (subsite.Trees.Count > 2 ?
+            return Request.IsAjaxRequest() ? (site.Trees.Count > 2 ?
                 PartialView("TreePartial", model).AddViewData("treeId", tree.Id)
-                : PartialView("SubsiteTreesPartial", model).AddViewData("subsiteId", subsite.Id))
+                : PartialView("SiteTreesPartial", model).AddViewData("siteId", site.Id))
                 : View(model);
         }
 
         protected ActionResult RemoveTree(ImportTreesModel model, Trip trip, int treeId)
         {
             var tree = trip.FindTreeById(treeId);
-            var subsite = tree.Subsite;
-            tree.Subsite.RemoveTree(tree);
+            var site = tree.Site;
+            tree.Site.RemoveTree(tree);
             Repositories.Imports.Save(trip);
             Uow.Persist();
 
             var treeModel = model.FindTreeById(tree.Id);
-            var subsiteModel = model.FindSubsiteById(subsite.Id);
-            subsiteModel.RemoveTree(treeModel);
+            var siteModel = model.FindSiteById(site.Id);
+            siteModel.RemoveTree(treeModel);
             model.Initialize();
 
             return Request.IsAjaxRequest() ?
-                PartialView("SubsiteTreesPartial", model).AddViewData("subsiteId", subsite.Id) : View(model);
+                PartialView("SiteTreesPartial", model).AddViewData("siteId", site.Id) : View(model);
         }
 
         protected ActionResult SaveTrees(ImportTreesModel model, Trip trip, bool saveUnlessOptionalErrors)
@@ -368,7 +321,7 @@ namespace TMD.Controllers
                 return View(model);
             }
 
-            (from site in trip.Sites from subsite in site.Subsites from tree in subsite.Trees select tree).Last().SetTripDefaults();
+            trip.Sites.SelectMany(s => s.Trees).Last().SetTripDefaults();
             Repositories.Imports.Save(trip);
             Uow.Persist();
 
@@ -377,7 +330,7 @@ namespace TMD.Controllers
 
         [HttpPost, AuthorizeUser(Roles = UserRoles.Import), SkipValidation]
         public virtual ActionResult Trees(
-            [ModelBinder(typeof(ImportTreesModelBinder))] ImportTreesModel model, 
+            [ModelBinder(typeof(ImportTreesModelBinder))] ImportTreesModel model,
             [ModelBinder(typeof(ImportInnerActionModel))] ImportInnerActionModel innerAction)
         {
             ModelState.Clear();
@@ -396,7 +349,7 @@ namespace TMD.Controllers
             if (innerAction.Equals(ImportModelLevel.Tree, ImportModelAction.Edit))
                 return EditTree(model, trip, innerAction.Id);
 
-            if (innerAction.Equals(ImportModelLevel.Subsite, ImportModelAction.Add))
+            if (innerAction.Equals(ImportModelLevel.Site, ImportModelAction.Add))
                 return AddTree(model, trip, innerAction.Id);
 
             if (innerAction.Equals(ImportModelLevel.Tree, ImportModelAction.Remove))

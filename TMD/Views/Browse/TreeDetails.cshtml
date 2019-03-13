@@ -98,13 +98,6 @@
             <td class="description">Site</td>
             <td class="value"><a href="@Url.Action(MVC.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SiteName)</a></td>
           </tr>
-          @if (Model.Location.SiteSubsitesCount > 1)
-          {
-            <tr>
-              <td class="description">Subsite</td>
-              <td class="value"><a href="@Url.Action(MVC.Browse.SiteDetails(Model.Location.SiteId))">@Html.DisplayFor(m => m.Location.SubsiteName)</a></td>
-            </tr>
-          }
           @Html.ReportDisplayFor(m => m.Location.OwnershipType)
           @Html.ReportDisplayFor(m => m.Location.County)
           <tr>

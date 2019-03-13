@@ -96,14 +96,13 @@ namespace TMD.Controllers
         }
 
         [AuthorizeUser(Roles = UserRoles.Export)]
-        public virtual ActionResult LocationsByFilters(string stateFilter, string countyFilter, string siteFilter, string subsiteFilter)
+        public virtual ActionResult LocationsByFilters(string stateFilter, string countyFilter, string siteFilter)
         {
-            var trees = repository.GetTrees(stateFilter: stateFilter, countyFilter: countyFilter, siteFilter: siteFilter, subsiteFilter: subsiteFilter);
+            var trees = repository.GetTrees(stateFilter: stateFilter, countyFilter: countyFilter, siteFilter: siteFilter);
 
             treesExporter.Identifiers["State"] = stateFilter;
             treesExporter.Identifiers["County"] = countyFilter;
             treesExporter.Identifiers["Site"] = siteFilter;
-            treesExporter.Identifiers["Subsite"] = subsiteFilter;
             return new CsvFileResult(treesExporter.Export(trees), treesExporter.Filename);
         }
     }

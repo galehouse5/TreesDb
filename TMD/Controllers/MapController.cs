@@ -37,26 +37,19 @@ namespace TMD.Controllers
             var sites = Repositories.Sites.ListAllForMap();
 
             var stateMarkers = sites
-                .SelectMany(s => s.Subsites)
-                .Where(ss => ss.State.ComputedTreesMeasuredCount > 0)
-                .Select(ss => ss.State).Distinct()
+                .Where(s => s.State.ComputedTreesMeasuredCount > 0)
+                .Select(s => s.State).Distinct()
                 .Select(Mapper.Map<Model.Locations.State, MapMarkerModel>);
             var siteMarkers = sites
                 .Where(s => s.CalculatedCoordinates.IsSpecified)
                 .Select(Mapper.Map<Model.Sites.Site, MapMarkerModel>);
-            var subsiteMarkers = sites
-                .Where(s => !s.ContainsSingleSubsite)
-                .SelectMany(s => s.Subsites)
-                .Where(ss => ss.CalculatedCoordinates.IsSpecified)
-                .Select(Mapper.Map<Model.Sites.Subsite, MapMarkerModel>);
             var treeMarkers = sites
-                .SelectMany(s => s.Subsites)
-                .SelectMany(ss => ss.Trees)
+                .SelectMany(s => s.Trees)
                 .Where(t => t.Coordinates.IsSpecified)
                 .Select(Mapper.Map<Model.Trees.Tree, MapMarkerModel>);
 
             return Json(
-                new { Markers = stateMarkers.Concat(siteMarkers).Concat(subsiteMarkers).Concat(treeMarkers).Select(m => m.ToJson(Url)).ToArray() },
+                new { Markers = stateMarkers.Concat(siteMarkers).Concat(treeMarkers).Select(m => m.ToJson(Url)).ToArray() },
                 JsonRequestBehavior.AllowGet);
         }
 
@@ -64,14 +57,6 @@ namespace TMD.Controllers
         {
             var tree = Repositories.Trees.FindById(id);
             var marker = Mapper.Map<Model.Trees.Tree, MapMarkerModel>(tree);
-            return Json(new { Markers = new [] { marker.ToJson(Url) } }, JsonRequestBehavior.AllowGet);
-        }
-
-        public virtual ActionResult SubsiteMarker(int id, int subsiteId)
-        {
-            var site = Repositories.Sites.FindById(id);
-            var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
-            var marker = Mapper.Map<Model.Sites.Subsite, MapMarkerModel>(subsite);
             return Json(new { Markers = new[] { marker.ToJson(Url) } }, JsonRequestBehavior.AllowGet);
         }
 
@@ -85,56 +70,24 @@ namespace TMD.Controllers
         public virtual ActionResult ImportSiteMarkers(int id, int siteId)
         {
             var trip = Repositories.Imports.FindById(id);
-            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            List<MapMarkerModel> markers = new List<MapMarkerModel>();
+            if (!User.IsAuthorizedToEdit(trip)) return new UnauthorizedResult();
+
+            var markers = new List<MapMarkerModel>();
             markers.AddRange(from site in trip.Sites
-                             where site.Coordinates.IsValidAndSpecified() && site.Subsites.Count > 1 && site.Id != siteId
+                             where site.Coordinates.IsValidAndSpecified() && site.Id != siteId
                              select Mapper.Map<Model.Imports.Site, MapMarkerModel>(site));
             markers.AddRange(from site in trip.Sites
-                             from subsite in site.Subsites
-                             where subsite.Coordinates.IsValidAndSpecified()
-                             select Mapper.Map<Model.Imports.Subsite, MapMarkerModel>(subsite));
-            markers.AddRange(from site in trip.Sites
-                             from subsite in site.Subsites
-                             from tree in subsite.Trees
+                             from tree in site.Trees
                              where tree.Coordinates.IsValidAndSpecified()
                              select Mapper.Map<Model.Imports.TreeBase, MapMarkerModel>(tree));
             Coordinates calculatedCoordinates = trip.FindSiteById(siteId).CalculateCoordinates();
             if (calculatedCoordinates.IsValidAndSpecified())
-            {
-                return Json(new {
+                return Json(new
+                {
                     CalculatedCoordinates = new { Latitude = calculatedCoordinates.Latitude.TotalDegrees, Longitude = calculatedCoordinates.Longitude.TotalDegrees },
                     Markers = markers.Select(m => m.ToJson(Url)).ToArray()
                 }, JsonRequestBehavior.AllowGet);
-            }
-            return Json(new { Markers = markers.Select(m => m.ToJson(Url)).ToArray() }, JsonRequestBehavior.AllowGet);
-        }
 
-        public virtual ActionResult ImportSubsiteMarkers(int id, int subsiteId)
-        {
-            var trip = Repositories.Imports.FindById(id);
-            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            List<MapMarkerModel> markers = new List<MapMarkerModel>();
-            markers.AddRange(from site in trip.Sites
-                             where site.Coordinates.IsValidAndSpecified() && site.Subsites.Count > 1
-                             select Mapper.Map<Model.Imports.Site, MapMarkerModel>(site));
-            markers.AddRange(from site in trip.Sites
-                             from subsite in site.Subsites
-                             where subsite.Coordinates.IsValidAndSpecified() && subsite.Id != subsiteId
-                             select Mapper.Map<Model.Imports.Subsite, MapMarkerModel>(subsite));
-            markers.AddRange(from site in trip.Sites
-                             from subsite in site.Subsites
-                             from tree in subsite.Trees
-                             where tree.Coordinates.IsValidAndSpecified()
-                             select Mapper.Map<Model.Imports.TreeBase, MapMarkerModel>(tree));
-            Coordinates calculatedCoordinates = trip.FindSubsiteById(subsiteId).CalculateCoordinates();
-            if (calculatedCoordinates.IsValidAndSpecified())
-            {
-                return Json(new {
-                    CalculatedCoordinates = new { Latitude = calculatedCoordinates.Latitude.TotalDegrees, Longitude = calculatedCoordinates.Longitude.TotalDegrees },
-                    Markers = markers.Select(m => m.ToJson(Url)).ToArray()
-                }, JsonRequestBehavior.AllowGet);
-            }
             return Json(new { Markers = markers.Select(m => m.ToJson(Url)).ToArray() }, JsonRequestBehavior.AllowGet);
         }
 
@@ -144,25 +97,20 @@ namespace TMD.Controllers
             if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
             List<MapMarkerModel> markers = new List<MapMarkerModel>();
             markers.AddRange(from site in trip.Sites
-                             where site.Coordinates.IsValidAndSpecified() && site.Subsites.Count > 1
+                             where site.Coordinates.IsValidAndSpecified()
                              select Mapper.Map<Model.Imports.Site, MapMarkerModel>(site));
             markers.AddRange(from site in trip.Sites
-                             from subsite in site.Subsites
-                             where subsite.Coordinates.IsValidAndSpecified()
-                             select Mapper.Map<Model.Imports.Subsite, MapMarkerModel>(subsite));
-            markers.AddRange(from site in trip.Sites
-                             from subsite in site.Subsites
-                             from tree in subsite.Trees
+                             from tree in site.Trees
                              where tree.Coordinates.IsValidAndSpecified() && tree.Id != treeId
                              select Mapper.Map<Model.Imports.TreeBase, MapMarkerModel>(tree));
             Coordinates calculatedCoordinates = trip.FindTreeById(treeId).CalculateCoordinates();
             if (calculatedCoordinates.IsValidAndSpecified())
-            {
-                return Json(new {
+                return Json(new
+                {
                     CalculatedCoordinates = new { Latitude = calculatedCoordinates.Latitude.TotalDegrees, Longitude = calculatedCoordinates.Longitude.TotalDegrees },
                     Markers = markers.Select(m => m.ToJson(Url)).ToArray()
                 }, JsonRequestBehavior.AllowGet);
-            }
+
             return Json(new { Markers = markers.Select(m => m.ToJson(Url)).ToArray() }, JsonRequestBehavior.AllowGet);
         }
 
@@ -184,15 +132,6 @@ namespace TMD.Controllers
             return PartialView(model);
         }
 
-        public virtual ActionResult ImportSubsiteMarkerInfo(int id, int subsiteId)
-        {
-            var trip = Repositories.Imports.FindById(id);
-            if (!User.IsAuthorizedToEdit(trip)) { return new UnauthorizedResult(); }
-            var subsite = trip.FindSubsiteById(subsiteId);
-            var model = Mapper.Map<Model.Imports.Subsite, MapImportSubsiteMarkerInfoModel>(subsite);
-            return PartialView(model);
-        }
-
         public virtual ActionResult StateMarkerInfo(int id)
         {
             var state = Repositories.Locations.FindStateById(id);
@@ -204,14 +143,6 @@ namespace TMD.Controllers
         {
             var site = Repositories.Sites.FindById(id);
             var model = Mapper.Map<Model.Sites.Site, MapSiteMarkerInfoModel>(site);
-            return PartialView(model);
-        }
-
-        public virtual ActionResult SubsiteMarkerInfo(int id, int subsiteId)
-        {
-            var site = Repositories.Sites.FindById(id);
-            var subsite = site.Subsites.Where(ss => ss.Id == subsiteId).Single();
-            var model = Mapper.Map<Model.Sites.Subsite, MapSubsiteMarkerInfoModel>(subsite);
             return PartialView(model);
         }
 

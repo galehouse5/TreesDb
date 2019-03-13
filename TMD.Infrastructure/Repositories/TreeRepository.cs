@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using TMD.Infrastructure.StringComparison;
 using TMD.Model;
-using TMD.Model.Sites;
 using TMD.Model.Trees;
 
 namespace TMD.Infrastructure.Repositories
@@ -51,11 +50,12 @@ namespace TMD.Infrastructure.Repositories
         {
             var all = Registry.Session.CreateCriteria<KnownSpecies>().List<KnownSpecies>();
             var ranked = from tree in all
-                         select new {
+                         select new
+                         {
                              Rank = m_AcceptedSymbolRanker.RateWordSimilarity(commonName, tree.AcceptedSymbol)
                                 + m_CommonNameRanker.RateSentenceSimilarity(commonName, tree.CommonName) * 4
-                                + m_ScientificNameRanker.RateSentenceSimilarity(commonName, tree.ScientificName),    
-                            Tree = tree
+                                + m_ScientificNameRanker.RateSentenceSimilarity(commonName, tree.ScientificName),
+                             Tree = tree
                          };
             var sorted = from tree in ranked
                          orderby tree.Rank descending
@@ -100,19 +100,17 @@ namespace TMD.Infrastructure.Repositories
         {
             return Registry.Session.CreateCriteria<StateMeasuredSpecies>()
                 .CreateAlias("State", "state")
-                .Add(Restrictions.Eq("ScientificName", botanicalName) 
+                .Add(Restrictions.Eq("ScientificName", botanicalName)
                     & Restrictions.Eq("CommonName", commonName))
                 .AddOrder(Order.Asc("state.Name"))
                 .List<StateMeasuredSpecies>();
         }
 
-        public IList<SubsiteMeasuredSpecies> ListMeasuredSpeciesBySubsiteId(int id)
-        {
-            return Registry.Session.CreateCriteria<SubsiteMeasuredSpecies>()
-                .Add(Restrictions.Eq("Subsite.Id", id))
-                .AddOrder(Order.Asc("ScientificName"))
-                .List<SubsiteMeasuredSpecies>();
-        }
+        public IList<SiteMeasuredSpecies> ListMeasuredSpeciesBySiteId(int id)
+            => Registry.Session.CreateCriteria<SiteMeasuredSpecies>()
+            .Add(Restrictions.Eq("Site.Id", id))
+            .AddOrder(Order.Asc("ScientificName"))
+            .List<SiteMeasuredSpecies>();
 
         public IList<StateMeasuredSpecies> ListMeasuredSpeciesByStateId(int id)
         {
@@ -148,40 +146,22 @@ namespace TMD.Infrastructure.Repositories
                 .UniqueResult<SiteMeasuredSpecies>();
         }
 
-        public SubsiteMeasuredSpecies FindMeasuredSpeciesByNameAndSubsiteId(string botanicalName, string commonName, int subsiteId)
-        {
-            return Registry.Session.CreateCriteria<SubsiteMeasuredSpecies>()
-                .Add(Restrictions.Eq("ScientificName", botanicalName)
-                    & Restrictions.Eq("CommonName", commonName)
-                    & Restrictions.Eq("Subsite.Id", subsiteId))
-                .UniqueResult<SubsiteMeasuredSpecies>();
-        }
-
         public IList<SiteMeasuredSpecies> ListMeasuredSpeciesForSitesByNameAndStateId(string botanicalName, string commonName, int stateId)
-        {
-            var subquery = DetachedCriteria.For<Subsite>("subsite")
-                .Add(Restrictions.Eq("subsite.State.Id", stateId)
-                    & Restrictions.EqProperty("subsite.Site.Id", "site.Id"))
-                .SetProjection(Projections.Property("Id"));
-            return Registry.Session.CreateCriteria<SiteMeasuredSpecies>()
-                .CreateAlias("Site", "site")
-                .Add(Restrictions.Eq("ScientificName", botanicalName)
-                    & Restrictions.Eq("CommonName", commonName)
-                    & Subqueries.Exists(subquery))
-                .AddOrder(Order.Asc("site.Name"))
-                    .List<SiteMeasuredSpecies>();
-        }
+            => Registry.Session.CreateCriteria<SiteMeasuredSpecies>()
+            .CreateAlias("Site", "site")
+            .Add(Restrictions.Eq("ScientificName", botanicalName)
+                & Restrictions.Eq("CommonName", commonName)
+                & Restrictions.Eq("site.State.Id", stateId))
+            .AddOrder(Order.Asc("site.Name"))
+            .List<SiteMeasuredSpecies>();
 
         public IList<Tree> ListByNameAndSiteId(string botanicalName, string commonName, int siteId)
-        {
-            return Registry.Session.CreateCriteria<Tree>()
-                .CreateAlias("Subsite", "subsite")
-                .Add(Restrictions.Eq("ScientificName", botanicalName) 
-                    & Restrictions.Eq("CommonName", commonName)
-                    & Restrictions.Eq("subsite.Site.Id", siteId))
-                .AddOrder(Order.Desc("Height.Feet"))
-                .List<Tree>();
-        }
+            => Registry.Session.CreateCriteria<Tree>()
+            .Add(Restrictions.Eq("ScientificName", botanicalName)
+                & Restrictions.Eq("CommonName", commonName)
+                & Restrictions.Eq("Site.Id", siteId))
+            .AddOrder(Order.Desc("Height.Feet"))
+            .List<Tree>();
 
         public IEnumerable<GlobalMeasuredSpecies> SearchMeasuredSpecies(string expression, int maxResults)
         {
@@ -225,13 +205,13 @@ order by rank.Rank desc")
             {
                 switch (browser.SortProperty.Value)
                 {
-                    case SpeciesBrowser.Property.BotanicalName :
+                    case SpeciesBrowser.Property.BotanicalName:
                         return criteria.AddOrder(new Order("ScientificName", browser.SortAscending));
-                    case SpeciesBrowser.Property.CommonName :
+                    case SpeciesBrowser.Property.CommonName:
                         return criteria.AddOrder(new Order("CommonName", browser.SortAscending));
                     case SpeciesBrowser.Property.MaxHeight:
                         return criteria.AddOrder(new Order("MaxHeight", browser.SortAscending));
-                    case SpeciesBrowser.Property.MaxGirth :
+                    case SpeciesBrowser.Property.MaxGirth:
                         return criteria.AddOrder(new Order("MaxGirth", browser.SortAscending));
                     case SpeciesBrowser.Property.MaxCrownSpread:
                         return criteria.AddOrder(new Order("MaxCrownSpread", browser.SortAscending));

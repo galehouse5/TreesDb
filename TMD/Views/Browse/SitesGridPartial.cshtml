@@ -1,28 +1,28 @@
-﻿@model EntityGridModel<Subsite>
-@(Html.DataTablesGrid<Subsite>(parameterNamePrefix: Model.ParameterNamePrefix,
+﻿@model EntityGridModel<Site>
+@(Html.DataTablesGrid<Site>(parameterNamePrefix: Model.ParameterNamePrefix,
     columns: builder =>
     {
         builder
-            .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, MVC.Browse.SiteDetails(subsite.Site.Id)))
+            .Custom("Site", site => Html.ActionLink(site.Name, MVC.Browse.SiteDetails(site.Id)))
             .Options(canSort: true);
         builder
-            .Custom("RHI5", subsite => subsite.ComputedRHI5.HasValue ?
-                MvcHtmlString.Create(subsite.ComputedRHI5.ToString())
+            .Custom("RHI5", site => site.ComputedRHI5.HasValue ?
+                MvcHtmlString.Create(site.ComputedRHI5.ToString())
                 : MvcHtmlString.Create("-"))
             .Options(canFilter: false, defaultSortAscending: false);
         builder
-            .Custom("RHI10", subsite => subsite.ComputedRHI10.HasValue ?
-                MvcHtmlString.Create(subsite.ComputedRHI10.ToString())
+            .Custom("RHI10", site => site.ComputedRHI10.HasValue ?
+                MvcHtmlString.Create(site.ComputedRHI10.ToString())
                 : MvcHtmlString.Create("-"))
             .Options(canFilter: false, defaultSortAscending: false);
         builder
-            .Custom("RGI5", subsite => subsite.ComputedRGI5.HasValue ?
-                MvcHtmlString.Create(subsite.ComputedRGI5.ToString())
+            .Custom("RGI5", site => site.ComputedRGI5.HasValue ?
+                MvcHtmlString.Create(site.ComputedRGI5.ToString())
                 : MvcHtmlString.Create("-"))
             .Options(canFilter: false, defaultSortAscending: false);
         builder
-            .Custom("RGI10", subsite => subsite.ComputedRGI10.HasValue ?
-                MvcHtmlString.Create(subsite.ComputedRGI10.ToString())
+            .Custom("RGI10", site => site.ComputedRGI10.HasValue ?
+                MvcHtmlString.Create(site.ComputedRGI10.ToString())
                 : MvcHtmlString.Create("-"))
             .Options(canFilter: false, defaultSortAscending: false);
     },

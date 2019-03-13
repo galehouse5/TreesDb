@@ -67,7 +67,7 @@
     <discriminator column="Type"/>
     <property name="Created" />
     <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
-    <many-to-one name="Subsite" column="SubsiteId" />
+    <many-to-one name="Site" column="SiteId" />
     <property name="TreeName" />
     <property name="TreeNumber" />
     <property name="CommonName"/>
@@ -175,40 +175,6 @@
     </bag>
   </class>
 
-  <class name="TMD.Model.Imports.Subsite" table="Subsites">
-    <id name="Id">
-      <generator class="native"/>
-    </id>
-    <property name="Created" />
-    <many-to-one name="Creator" column="CreatorUserId" cascade="none" />
-    <many-to-one name="Site" column="SiteId" />
-    <property name="Name" />
-    <component name="Coordinates" class="Coordinates">
-      <component name="Latitude" class="Latitude">
-        <property name="TotalDegrees" column="Latitude" />
-        <property name="InputFormat" column="LatitudeInputFormat"/>
-      </component>
-      <component name="Longitude" class="Longitude">
-        <property name="TotalDegrees" column="Longitude" />
-        <property name="InputFormat" column="LongitudeInputFormat"/>
-      </component>
-    </component>
-    <many-to-one name="State" column="StateId" cascade="none" />
-    <property name="County" />
-    <property name="OwnershipType" />
-    <property name="OwnershipContactInfo" />
-    <property name="Comments" />
-    <bag name="Trees" cascade="all-delete-orphan" inverse="true">
-      <key column="SubsiteId" />
-      <one-to-many class="TMD.Model.Imports.TreeBase"/>
-    </bag>
-    <property name="MakeOwnershipContactInfoPublic" />
-    <bag name="Photos" cascade="all-delete-orphan" inverse="true">
-      <key column="ImportSubsiteId"></key>
-      <one-to-many class="TMD.Model.Imports.SubsitePhotoReference"/>
-    </bag>
-  </class>  
-  
   <class name="TMD.Model.Imports.Site" table="Sites">
     <id name="Id">
       <generator class="native"/>
@@ -227,10 +193,19 @@
         <property name="InputFormat" column="LongitudeInputFormat"/>
       </component>
     </component>
+    <many-to-one name="State" column="StateId" cascade="none" />
+    <property name="County" />
+    <property name="OwnershipType" />
+    <property name="OwnershipContactInfo" />
     <property name="Comments" />
-    <bag name="Subsites" cascade="all-delete-orphan" inverse="true">
+    <bag name="Trees" cascade="all-delete-orphan" inverse="true">
       <key column="SiteId" />
-      <one-to-many class="TMD.Model.Imports.Subsite"/>
+      <one-to-many class="TMD.Model.Imports.TreeBase"/>
+    </bag>
+    <property name="MakeOwnershipContactInfoPublic" />
+    <bag name="Photos" cascade="all-delete-orphan" inverse="true">
+      <key column="ImportSiteId"></key>
+      <one-to-many class="TMD.Model.Imports.SitePhotoReference"/>
     </bag>
   </class>
 

@@ -227,7 +227,7 @@ namespace TMD.Controllers
                 public readonly string SitePartial = "SitePartial";
                 public readonly string Sites = "Sites";
                 public readonly string SitesPartial = "SitesPartial";
-                public readonly string SubsiteTreesPartial = "SubsiteTreesPartial";
+                public readonly string SiteTreesPartial = "SiteTreesPartial";
                 public readonly string TreePartial = "TreePartial";
                 public readonly string Trees = "Trees";
                 public readonly string Trip = "Trip";
@@ -241,7 +241,7 @@ namespace TMD.Controllers
             public readonly string SitePartial = "~/Views/Import/SitePartial.cshtml";
             public readonly string Sites = "~/Views/Import/Sites.cshtml";
             public readonly string SitesPartial = "~/Views/Import/SitesPartial.cshtml";
-            public readonly string SubsiteTreesPartial = "~/Views/Import/SubsiteTreesPartial.cshtml";
+            public readonly string SiteTreesPartial = "~/Views/Import/SiteTreesPartial.cshtml";
             public readonly string TreePartial = "~/Views/Import/TreePartial.cshtml";
             public readonly string Trees = "~/Views/Import/Trees.cshtml";
             public readonly string Trip = "~/Views/Import/Trip.cshtml";
@@ -253,11 +253,9 @@ namespace TMD.Controllers
             public partial class _DisplayTemplatesClass
             {
                 public readonly string ImportFinishedSiteModel = "ImportFinishedSiteModel";
-                public readonly string ImportFinishedSubsiteModel = "ImportFinishedSubsiteModel";
                 public readonly string ImportFinishedTreeModel = "ImportFinishedTreeModel";
                 public readonly string ImportFinishedTripModel = "ImportFinishedTripModel";
                 public readonly string ImportSiteModel = "ImportSiteModel";
-                public readonly string ImportSubsiteModel = "ImportSubsiteModel";
                 public readonly string ImportTreeModel = "ImportTreeModel";
             }
             static readonly _EditorTemplatesClass s_EditorTemplates = new _EditorTemplatesClass();
@@ -267,8 +265,6 @@ namespace TMD.Controllers
             {
                 public readonly string ImportSiteModel = "ImportSiteModel";
                 public readonly string ImportSiteTreesModel = "ImportSiteTreesModel";
-                public readonly string ImportSubsiteModel = "ImportSubsiteModel";
-                public readonly string ImportSubsiteTreesModel = "ImportSubsiteTreesModel";
                 public readonly string ImportTreeModel = "ImportTreeModel";
                 public readonly string ImportTripSummaryModel = "ImportTripSummaryModel";
             }

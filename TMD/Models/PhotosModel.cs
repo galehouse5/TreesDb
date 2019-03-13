@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using TMD.Model.Photos;
-using TMD.Model;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using TMD.Model;
 using TMD.Model.Locations;
+using TMD.Model.Photos;
 
 namespace TMD.Models
 {
@@ -25,12 +22,12 @@ namespace TMD.Models
         public override object AddPhotoRouteValues { get { return new { controller = "Photos", id = TripId, treeId = TreeId }; } }
     }
 
-    public class ImportSubsitePhotoGalleryModel : PhotoGalleryModel
+    public class ImportSitePhotoGalleryModel : PhotoGalleryModel
     {
         public int TripId { get; set; }
-        public int SubsiteId { get; set; }
-        public override string AddPhotoActionName { get { return "AddToImportSubsite"; } }
-        public override object AddPhotoRouteValues { get { return new { controller = "Photos", id = TripId, subsiteId = SubsiteId }; } }
+        public int SiteId { get; set; }
+        public override string AddPhotoActionName => "AddToImportSite";
+        public override object AddPhotoRouteValues => new { controller = "Photos", id = TripId, siteId = SiteId };
     }
 
     public abstract class PhotoCaptionModel
@@ -75,32 +72,23 @@ namespace TMD.Models
         }
     }
 
-    public class SubsitePhotoCaptionModel : PhotoCaptionModel
+    public class SitePhotoCaptionModel : PhotoCaptionModel
     {
         public int SiteId { get; set; }
         public string SiteName { get; set; }
         public int StateId { get; set; }
         public string StateName { get; set; }
 
-        public override string ContextFormat
-        {
-            get { return "{0} in {1}"; }
-        }
-
-        public override IList<string> ContextArguments
-        {
-            get { return new List<string> { SiteName, StateName }; }
-        }
-
-        public override IList<string> ContextArgumentActionNames
-        {
-            get { return new List<string> { "SiteDetails", "StateDetails" }; }
-        }
+        public override string ContextFormat => "{0} in {1}";
+        public override IList<string> ContextArguments => new List<string> { SiteName, StateName };
+        public override IList<string> ContextArgumentActionNames => new List<string> { "SiteDetails", "StateDetails" };
 
         public override IList<object> ContextArgumentRouteValues
-        {
-            get { return new List<object> { new { id = SiteId, controller = "Browse" }, new { id = StateId, controller = "Browse" } }; }
-        }
+            => new List<object>
+            {
+                new { id = SiteId, controller = "Browse" },
+                new { id = StateId, controller = "Browse" }
+            };
     }
 
     public class EmptyContextPhotoCaptionModel : PhotoCaptionModel

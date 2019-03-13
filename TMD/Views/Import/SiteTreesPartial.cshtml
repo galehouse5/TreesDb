@@ -1,0 +1,7 @@
+﻿@model ImportTreesModel
+
+@for (int site = 0; site < Model.Sites.Count; site++) {
+  if (!Model.Sites[site].Id.Equals(ViewBag.siteId)) { continue; }
+
+  @Html.EditorFor(m => m.Sites[site])
+}

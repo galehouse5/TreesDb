@@ -63,8 +63,9 @@
     <Compile Include="Imports\MultiTrunkTree.cs" />
     <Compile Include="Imports\SingleTrunkTree.cs" />
     <Compile Include="Imports\Site.cs" />
-    <Compile Include="Imports\Subsite.cs" />
+    <Compile Include="Imports\SitePhotoReference.cs" />
     <Compile Include="Imports\TreeBase.cs" />
+    <Compile Include="Imports\TreePhotoReference.cs" />
     <Compile Include="Imports\Trip.cs" />
     <Compile Include="Imports\ImportRepository.cs" />
     <Compile Include="Imports\Trunk.cs" />
@@ -78,10 +79,10 @@
     <Compile Include="Photos\TemporaryPhoto.cs" />
     <Compile Include="RepositoryBase.cs" />
     <Compile Include="Sites\SiteVisit.cs" />
-    <Compile Include="Sites\SubsiteVisit.cs" />
+    <Compile Include="Sites\SiteVisitPhotoReference.cs" />
     <Compile Include="Sites\ISiteRepository.cs" />
-    <Compile Include="Sites\Subsite.cs" />
     <Compile Include="Sites\Site.cs" />
+    <Compile Include="Sites\SitePhotoReference.cs" />
     <Compile Include="Trees\MeasurerActivity.cs" />
     <Compile Include="Trees\Species.cs" />
     <Compile Include="Trees\Measurement.cs" />

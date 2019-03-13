@@ -6,7 +6,6 @@ using System.Diagnostics;
 using System.Linq;
 using TMD.Model.Extensions;
 using TMD.Model.Photos;
-using TMD.Model.Users;
 using TMD.Model.Validation;
 
 namespace TMD.Model.Imports
@@ -77,17 +76,17 @@ namespace TMD.Model.Imports
         protected TreeBase()
         { }
 
-        public virtual Subsite Subsite { get; protected set; }
+        public virtual Site Site { get; protected set; }
 
         public virtual void SetTripDefaults()
         {
-            Subsite.Site.Trip.DefaultHeightMeasurementMethod = HeightMeasurementMethod;
-            Subsite.Site.Trip.DefaultLaserBrand = LaserBrand;
-            Subsite.Site.Trip.DefaultClinometerBrand = ClinometerBrand;
+            Site.Trip.DefaultHeightMeasurementMethod = HeightMeasurementMethod;
+            Site.Trip.DefaultLaserBrand = LaserBrand;
+            Site.Trip.DefaultClinometerBrand = ClinometerBrand;
         }
 
         /// <summary>
-        /// Four digit number unique in the scope of the subsite.
+        /// Four digit number unique in the scope of the site.
         /// </summary>
         [Range(1, 9999, Message = "Tree number must be within the range of 1 to 9999.", Tags = ValidationTag.Required)]
         public virtual int? TreeNumber { get; set; }
@@ -120,36 +119,30 @@ namespace TMD.Model.Imports
         [Valid]
         public virtual Coordinates Coordinates { get; set; }
 
-        public virtual bool CanCalculateCoordinates(bool ignoreContaingSubsite = false)
+        public virtual bool CanCalculateCoordinates(bool ignoreContaingSite = false)
             => Coordinates.IsValidAndSpecified() ? true
-            : !ignoreContaingSubsite ? Subsite.CanCalculateCoordinates()
+            : !ignoreContaingSite ? Site.CanCalculateCoordinates()
             : false;
 
-        public virtual Coordinates CalculateCoordinates(bool ignoreContainingSubsite = false)
+        public virtual Coordinates CalculateCoordinates(bool ignoreContainingSite = false)
         {
-            if (Coordinates.IsValidAndSpecified())
-            {
-                return Coordinates;
-            }
-            if (!ignoreContainingSubsite && Subsite.CanCalculateCoordinates())
-            {
-                return Subsite.CalculateCoordinates();
-            }
+            if (Coordinates.IsValidAndSpecified()) return Coordinates;
+            if (!ignoreContainingSite && Site.CanCalculateCoordinates()) return Site.CalculateCoordinates();
             return Coordinates.Null();
         }
 
         protected internal virtual void OptionalValidate(IConstraintValidatorContext context)
         {
             if (Coordinates.IsSpecified
-                && Subsite.Coordinates.IsSpecified
-                && Coordinates.CalculateDistanceInMinutesTo(Subsite.Coordinates) > 1f)
+                && Site.Coordinates.IsSpecified
+                && Coordinates.CalculateDistanceInMinutesTo(Site.Coordinates) > 1f)
             {
-                context.AddInvalid("(Optional) Coordinates are more than one mile from site/subsite.  You might want to double check them.", nameof(Coordinates));
+                context.AddInvalid("(Optional) Coordinates are more than one mile from site.  You might want to double check them.", nameof(Coordinates));
             }
-            
+
             if (Coordinates.IsSpecified
-                && Subsite.State.CoordinateBounds.Contains(Subsite.Coordinates)
-                && !Subsite.State.CoordinateBounds.Contains(Coordinates))
+                && Site.State.CoordinateBounds.Contains(Site.Coordinates)
+                && !Site.State.CoordinateBounds.Contains(Coordinates))
             {
                 context.AddInvalid($"(Optional) Coordinates appear to fall outside the state's boundaries.  You might want to double check them.", nameof(Coordinates));
             }
@@ -158,7 +151,7 @@ namespace TMD.Model.Imports
         public virtual bool MakeCoordinatesPublic { get; set; }
 
         private string m_GeneralComments;
-        [Length(1000, Message = "General comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)] 
+        [Length(1000, Message = "General comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)]
         public virtual string GeneralComments
         {
             get { return m_GeneralComments; }
@@ -227,7 +220,7 @@ namespace TMD.Model.Imports
         }
 
         private string m_TrunkComments;
-        [Length(1000, Message = "Trunk comments must not exceed 1,000 characters.", Tags = ValidationTag.Required )]
+        [Length(1000, Message = "Trunk comments must not exceed 1,000 characters.", Tags = ValidationTag.Required)]
         public virtual string TrunkComments
         {
             get { return m_TrunkComments; }
@@ -321,21 +314,6 @@ namespace TMD.Model.Imports
             var reference = (from p in Photos where p.EqualsPhoto(photo) select p).FirstOrDefault();
             if (reference == null) { return false; }
             return Photos.Remove(reference);
-        }
-    }
-
-    public class TreePhotoReference : PhotoReferenceBase
-    {
-        protected TreePhotoReference() { }
-        protected internal TreePhotoReference(Photo photo, TreeBase tree) : base(photo) { this.Tree = tree; }
-        public virtual TreeBase Tree { get; protected set; }
-        public override bool IsAuthorizedToAdd(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
-        public override bool IsAuthorizedToView(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
-        public override bool IsAuthorizedToRemove(User user) { return user.IsAuthorizedToEdit(Tree.Subsite.Site.Trip); }
-
-        public override IList<Name> Photographers
-        {
-            get { return Tree.Subsite.Site.Trip.Measurers; }
         }
     }
 }

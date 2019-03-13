@@ -137,11 +137,11 @@ namespace TMD.Model.Trees
 
         public static Measurement Create(Imports.TreeBase importedTree)
         {
-            importedTree.Subsite.Site.Trip.AssertIsImported();
+            importedTree.Site.Trip.AssertIsImported();
             var measurement = new Measurement
             {
-                ImportingTrip = importedTree.Subsite.Site.Trip,
-                Measured = importedTree.Subsite.Site.Trip.Date.Value,
+                ImportingTrip = importedTree.Site.Trip,
+                Measured = importedTree.Site.Trip.Date.Value,
                 CommonName = importedTree.CommonName,
                 ScientificName = importedTree.ScientificName.NullIfEmpty() ?? "(Unidentified)",
                 Height = importedTree.Height,
@@ -153,7 +153,7 @@ namespace TMD.Model.Trees
                 Elevation = importedTree.Elevation,
                 GeneralComments = importedTree.GeneralComments,
                 Photos = new List<IPhoto>(),
-                Measurers = new List<Name>(importedTree.Subsite.Site.Trip.Measurers)
+                Measurers = new List<Name>(importedTree.Site.Trip.Measurers)
             }.RecalculateProperties();
             measurement.Photos.AddRange(from photo in importedTree.Photos select new TreeMeasurementPhotoReference(photo.ToPhoto(), measurement));
             return measurement;

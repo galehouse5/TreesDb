@@ -7,22 +7,19 @@ namespace TMD.Models.Import
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public IList<ImportSubsiteTreesModel> Subsites { get; set; }
+        public IList<ImportTreeModel> Trees { get; set; }
 
         public ImportTreeModel FindTreeById(int id)
+            => Trees.FirstOrDefault(t => id.Equals(t.Id));
+
+        public ImportTreeModel AddTree()
         {
-            var subsite = FindSubsiteContainingTreeWithId(id);
-            return subsite == null ? null : subsite.FindTreeById(id);
+            var tree = new ImportTreeModel();
+            Trees.Add(tree);
+            return tree;
         }
 
-        public ImportSubsiteTreesModel FindSubsiteContainingTreeWithId(int id)
-        {
-            return Subsites.FirstOrDefault(ss => ss.FindTreeById(id) != null);
-        }
-
-        public ImportSubsiteTreesModel FindSubsiteById(int id)
-        {
-            return Subsites.FirstOrDefault(ss => id.Equals(ss.Id));
-        }
+        public bool RemoveTree(ImportTreeModel tree)
+            => Trees.Remove(tree);
     }
 }

@@ -7,11 +7,11 @@ namespace TMD.Models.Browse
     public class BrowseSiteModel
     {
         public int Id { get; set; }
-        public BrowseSubsiteDetailsModel Details { get; set; }
+        public BrowseSiteDetailsModel Details { get; set; }
         public IList<BrowsePhotoSumaryModel> PhotoSummaries { get; set; }
-        public BrowseSubsiteLocationModel Location { get; set; }
+        public BrowseSiteLocationModel Location { get; set; }
         public IList<BrowseSiteVisitModel> Visits { get; set; }
-        public EntityGridModel<SubsiteMeasuredSpecies> SubsiteSpeciesModel { get; set; }
+        public EntityGridModel<SiteMeasuredSpecies> SiteSpeciesModel { get; set; }
 
         public bool ShowMap => Location.Coordinates.IsValidAndSpecified()
             || Location.CalculatedCoordinates.IsValidAndSpecified();

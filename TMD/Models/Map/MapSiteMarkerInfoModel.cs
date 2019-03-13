@@ -27,8 +27,6 @@ namespace TMD.Models.Map
         [DisplayName("Last measurement date"), DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime? LastMeasurementDate { get; set; }
         public bool? ContainsEntityWithCoordinates { get; set; }
-        [DisplayName("Subsites")]
-        public int SubsitesCount { get; set; }
         public IList<IPhoto> Photos { get; set; }
     }
 }

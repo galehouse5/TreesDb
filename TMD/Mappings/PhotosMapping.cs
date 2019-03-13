@@ -12,53 +12,53 @@ namespace TMD.Mappings
         {
             CreateMap<Model.Imports.TreeBase, ImportTreePhotoGalleryModel>()
                 .ForMember(dest => dest.TreeId, opt => opt.MapFrom(src => src.Id))
-                .ForMember(dest => dest.TripId, opt => opt.MapFrom(src => src.Subsite.Site.Trip.Id));
+                .ForMember(dest => dest.TripId, opt => opt.MapFrom(src => src.Site.Trip.Id));
             ValidationMapper.CreateMap<Model.Imports.TreeBase, PhotoGalleryModel>()
                 .IgnorePath("*").ForPath("Photo*", "AddPhotoActionName");
 
-            CreateMap<Model.Imports.Subsite, ImportSubsitePhotoGalleryModel>()
-                .ForMember(dest => dest.SubsiteId, opt => opt.MapFrom(src => src.Id))
-                .ForMember(dest => dest.TripId, opt => opt.MapFrom(src => src.Site.Trip.Id));
-            ValidationMapper.CreateMap<Model.Imports.Subsite, PhotoGalleryModel>()
+            CreateMap<Model.Imports.Site, ImportSitePhotoGalleryModel>()
+                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.TripId, opt => opt.MapFrom(src => src.Trip.Id));
+            ValidationMapper.CreateMap<Model.Imports.Site, PhotoGalleryModel>()
                 .IgnorePath("*").ForPath("Photo*", "AddPhotoActionName");
 
             CreateMap<PhotoReferenceBase, PhotoCaptionModel>()
                 .Include<TreeMeasurementPhotoReference, TreePhotoCaptionModel>()
-                .Include<SubsiteVisitPhotoReference, SubsitePhotoCaptionModel>()
+                .Include<SiteVisitPhotoReference, SitePhotoCaptionModel>()
                 .Include<TreePhotoReference, TreePhotoCaptionModel>()
-                .Include<SubsitePhotoReference, SubsitePhotoCaptionModel>()
-                .Include<Model.Imports.SubsitePhotoReference, EmptyContextPhotoCaptionModel>()
+                .Include<SitePhotoReference, SitePhotoCaptionModel>()
+                .Include<Model.Imports.SitePhotoReference, EmptyContextPhotoCaptionModel>()
                 .Include<Model.Imports.TreePhotoReference, EmptyContextPhotoCaptionModel>();
 
             CreateMap<TreeMeasurementPhotoReference, TreePhotoCaptionModel>()
                 .ForMember(dest => dest.BotanicalName, opt => opt.MapFrom(src => src.TreeMeasurement.ScientificName))
                 .ForMember(dest => dest.TreeId, opt => opt.MapFrom(src => src.TreeMeasurement.Tree.Id))
-                .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.TreeMeasurement.Tree.Subsite.Site.Name))
-                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.TreeMeasurement.Tree.Subsite.Site.Id))
-                .ForMember(dest => dest.StateName, opt => opt.MapFrom(src => src.TreeMeasurement.Tree.Subsite.State.Name))
-                .ForMember(dest => dest.StateId, opt => opt.MapFrom(src => src.TreeMeasurement.Tree.Subsite.State.Id));
+                .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.TreeMeasurement.Tree.Site.Name))
+                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.TreeMeasurement.Tree.Site.Id))
+                .ForMember(dest => dest.StateName, opt => opt.MapFrom(src => src.TreeMeasurement.Tree.Site.State.Name))
+                .ForMember(dest => dest.StateId, opt => opt.MapFrom(src => src.TreeMeasurement.Tree.Site.State.Id));
 
             CreateMap<TreePhotoReference, TreePhotoCaptionModel>()
                 .ForMember(dest => dest.BotanicalName, opt => opt.MapFrom(src => src.Tree.ScientificName))
                 .ForMember(dest => dest.TreeId, opt => opt.MapFrom(src => src.Tree.Id))
-                .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.Tree.Subsite.Site.Name))
-                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Tree.Subsite.Site.Id))
-                .ForMember(dest => dest.StateName, opt => opt.MapFrom(src => src.Tree.Subsite.State.Name))
-                .ForMember(dest => dest.StateId, opt => opt.MapFrom(src => src.Tree.Subsite.State.Id));
+                .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.Tree.Site.Name))
+                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Tree.Site.Id))
+                .ForMember(dest => dest.StateName, opt => opt.MapFrom(src => src.Tree.Site.State.Name))
+                .ForMember(dest => dest.StateId, opt => opt.MapFrom(src => src.Tree.Site.State.Id));
 
-            CreateMap<SubsiteVisitPhotoReference, SubsitePhotoCaptionModel>()
-                .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.SubsiteVisit.Subsite.Site.Name))
-                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.SubsiteVisit.Subsite.Site.Id))
-                .ForMember(dest => dest.StateName, opt => opt.MapFrom(src => src.SubsiteVisit.Subsite.State.Name))
-                .ForMember(dest => dest.StateId, opt => opt.MapFrom(src => src.SubsiteVisit.Subsite.State.Id));
+            CreateMap<SiteVisitPhotoReference, SitePhotoCaptionModel>()
+                .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.SiteVisit.Site.Name))
+                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.SiteVisit.Site.Id))
+                .ForMember(dest => dest.StateName, opt => opt.MapFrom(src => src.SiteVisit.Site.State.Name))
+                .ForMember(dest => dest.StateId, opt => opt.MapFrom(src => src.SiteVisit.Site.State.Id));
 
-            CreateMap<SubsitePhotoReference, SubsitePhotoCaptionModel>()
-                .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.Subsite.Site.Name))
-                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Subsite.Site.Id))
-                .ForMember(dest => dest.StateName, opt => opt.MapFrom(src => src.Subsite.State.Name))
-                .ForMember(dest => dest.StateId, opt => opt.MapFrom(src => src.Subsite.State.Id));
+            CreateMap<SitePhotoReference, SitePhotoCaptionModel>()
+                .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.Site.Name))
+                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Site.Id))
+                .ForMember(dest => dest.StateName, opt => opt.MapFrom(src => src.Site.State.Name))
+                .ForMember(dest => dest.StateId, opt => opt.MapFrom(src => src.Site.State.Id));
 
-            CreateMap<Model.Imports.SubsitePhotoReference, EmptyContextPhotoCaptionModel>();
+            CreateMap<Model.Imports.SitePhotoReference, EmptyContextPhotoCaptionModel>();
             CreateMap<Model.Imports.TreePhotoReference, EmptyContextPhotoCaptionModel>();
         }
     }

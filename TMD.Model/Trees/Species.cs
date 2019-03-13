@@ -7,8 +7,8 @@ namespace TMD.Model.Trees
     [DebuggerDisplay("Known {ScientificName}'s")]
     public class KnownSpecies : IEntity
     {
-        protected KnownSpecies() 
-        {}
+        protected KnownSpecies()
+        { }
 
         public virtual int Id { get; protected set; }
         public virtual string AcceptedSymbol { get; protected set; }
@@ -19,8 +19,8 @@ namespace TMD.Model.Trees
     [DebuggerDisplay("{ScientificName}")]
     public abstract class MeasuredSpecies : IEntity
     {
-        protected MeasuredSpecies() 
-        {}
+        protected MeasuredSpecies()
+        { }
 
         public virtual int Id { get; protected set; }
         public virtual string ScientificName { get; protected set; }
@@ -89,14 +89,5 @@ namespace TMD.Model.Trees
         { }
 
         public virtual Site Site { get; protected set; }
-    }
-
-    [DebuggerDisplay("{ScientificName}'s measured in subsite of {Subsite.Name} ({Subsite.Id})")]
-    public class SubsiteMeasuredSpecies : MeasuredSpecies
-    {
-        protected SubsiteMeasuredSpecies()
-        { }
-
-        public virtual Subsite Subsite { get; protected set; }
     }
 }

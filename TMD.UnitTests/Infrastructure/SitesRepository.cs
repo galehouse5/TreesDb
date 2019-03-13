@@ -12,7 +12,7 @@ namespace TMD.UnitTests.Infrastructure
     public class SitesRepository
     {
         [TestMethod]
-        public void SavesSiteWithSubsite()
+        public void SavesSite()
         {
             var importedTrip = new ImportedTripStub
             {
@@ -23,23 +23,15 @@ namespace TMD.UnitTests.Infrastructure
             {
                 Comments = "Comments",
                 Coordinates = Coordinates.Create(1, 2),
-                Name = "Name"
-            };
-            var importedSubsite = new ImportedSubsiteStub(importedSite)
-            {
-                Comments = "Comments",
-                Coordinates = Coordinates.Create(3, 4),
                 County = "County",
                 MakeOwnershipContactInfoPublic = true,
                 Name = "Name",
                 OwnershipContactInfo = "OwnershipContactInfo",
                 OwnershipType = "OwnershipType",
-                State = Repositories.Locations.FindStateById(50),
+                State = Repositories.Locations.FindStateById(50)
             };
-            importedSite.Subsites.Add(importedSubsite);
             var site = Site.Create(importedSite);
             site.Visits[0].SetPrivatePropertyValue("ImportingTrip", null);
-            site.Subsites[0].Visits[0].SetPrivatePropertyValue("ImportingTrip", null);
             using (var uow = UnitOfWork.Begin())
             {
                 Repositories.Sites.Save(site);
@@ -48,11 +40,6 @@ namespace TMD.UnitTests.Infrastructure
                 Assert.IsNotNull(site);
                 Assert.IsNotNull(site.Visits);
                 Assert.AreEqual(1, site.Visits.Count);
-                Assert.IsNotNull(site.Subsites);
-                Assert.AreEqual(1, site.Subsites.Count);
-                Assert.IsNotNull(site.Subsites[0]);
-                Assert.IsNotNull(site.Subsites[0].Visits);
-                Assert.AreEqual(1, site.Subsites[0].Visits.Count);
                 uow.Rollback();
             }
         }
@@ -60,6 +47,7 @@ namespace TMD.UnitTests.Infrastructure
         [TestMethod]
         public void FindsByProximity()
         {
+            var state = Repositories.Locations.FindStateById(50);
             var importedTrip = new ImportedTripStub
             {
                 Date = DateTime.Now.AddDays(1),
@@ -68,31 +56,51 @@ namespace TMD.UnitTests.Infrastructure
             var site1 = Site.Create(new ImportedSiteStub(importedTrip)
             {
                 Coordinates = Coordinates.Create(1, 2),
-                Name = "Name1",
-                Comments = "Comments1"
+                County = "County 1",
+                Name = "Name 1",
+                Comments = "Comments 1",
+                OwnershipContactInfo = "OwnershipContactInfo 1",
+                OwnershipType = "OwnershipType 1",
+                State = state
             });
             site1.Visits[0].SetPrivatePropertyValue("ImportingTrip", null);
+
             var site2 = Site.Create(new ImportedSiteStub(importedTrip)
             {
                 Coordinates = Coordinates.Create(1.1f, 2.1f),
-                Name = "Name2",
-                Comments = "Comments2"
+                County = "County 2",
+                Name = "Name 2",
+                Comments = "Comments 2",
+                OwnershipContactInfo = "OwnershipContactInfo 2",
+                OwnershipType = "OwnershipType 2",
+                State = state
             });
             site2.Visits[0].SetPrivatePropertyValue("ImportingTrip", null);
+
             var site3 = Site.Create(new ImportedSiteStub(importedTrip)
             {
                 Coordinates = Coordinates.Create(0.9f, 1.9f),
-                Name = "Name3",
-                Comments = "Comments3"
+                County = "County 3",
+                Name = "Name 3",
+                Comments = "Comments 3",
+                OwnershipContactInfo = "OwnershipContactInfo 3",
+                OwnershipType = "OwnershipType 3",
+                State = state
             });
             site3.Visits[0].SetPrivatePropertyValue("ImportingTrip", null);
+
             var site4 = Site.Create(new ImportedSiteStub(importedTrip)
             {
                 Coordinates = Coordinates.Create(3, 4),
-                Name = "Name4",
-                Comments = "Comments4"
+                County = "County 4",
+                Name = "Name 4",
+                Comments = "Comments 4",
+                OwnershipContactInfo = "OwnershipContactInfo 4",
+                OwnershipType = "OwnershipType 4",
+                State = state
             });
             site4.Visits[0].SetPrivatePropertyValue("ImportingTrip", null);
+
             using (var uow = UnitOfWork.Begin())
             {
                 Repositories.Sites.Save(site1);

@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using TMD.Extensions;
+using TMD.Model.Locations;
 using TMD.Models.Map;
 
 namespace TMD.Models.Import
@@ -9,39 +9,29 @@ namespace TMD.Models.Import
     public class ImportSiteModel
     {
         public int Id { get; set; }
-        public bool IsEditing { get; set; }
-        public bool IsSaveableAndRemovable { get; set; }
-        public bool HasOptionalError { get; set; }
-
         [Required]
         public string Name { get; set; }
-        [Display(Description = "Latitude, Longitude"), Classification("CoordinatePicker Coordinates")]
+        public bool IsEditing { get; set; }
+        public bool IsRemovable { get; set; }
+        public bool HasOptionalError { get; set; }
+
+        [Display(Description = "Latitude, Longitude (e.g. 41 29.959, -81 41.662 or 41.49932, -81.69437 or 41 29 57, -81 41 39)")]
+        [Classification("CoordinatePicker Coordinates ShowIfJavascriptEnabled")]
         public CoordinatePickerModel Coordinates { get; set; }
+
+        [Required, Classification("State")]
+        public State State { get; set; }
+        [Required, Classification("County")]
+        public string County { get; set; }
+        [DisplayName("Ownership type"), Required]
+        public string OwnershipType { get; set; }
+        [DisplayName("Ownership contact"), DataType(DataType.MultilineText)]
+        public string OwnershipContactInfo { get; set; }
+        [DisplayName("Make contact public")]
+        public bool MakeOwnershipContactInfoPublic { get; set; }
+        [DataType(DataType.MultilineText)]
         public string Comments { get; set; }
-
-        public IList<ImportSubsiteModel> Subsites { get; set; }
-
-        public ImportSubsiteModel AddSubsite()
-        {
-            var subsite = new ImportSubsiteModel();
-            if (Subsites.Count == 1)
-            {
-                this.Name = Subsites[0].Name;
-                this.Coordinates.Coordinates = Subsites[0].Coordinates.Coordinates;
-                this.Comments = Subsites[0].Comments;
-            }
-            Subsites.Add(subsite);
-            return subsite;
-        }
-
-        public bool RemoveSubsite(ImportSubsiteModel subsite)
-        {
-            return Subsites.Remove(subsite);
-        }
-
-        public ImportSubsiteModel FindSubsiteById(int id)
-        {
-            return Subsites.FirstOrDefault(ss => id.Equals(ss.Id));
-        }
+        [Classification("ShowIfJavascriptEnabled")]
+        public PhotoGalleryModel Photos { get; set; }
     }
 }

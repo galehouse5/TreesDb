@@ -58,6 +58,7 @@
     <Compile Include="Y2017\M002_AllowLongerComments.cs" />
     <Compile Include="Y2017\M004_UpdateStateCoordinates.cs" />
     <Compile Include="Y2017\M003_PrecomputeSiteAndStateMetrics.cs" />
+    <Compile Include="Y2019\M005_RemoveSubsiteTables.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Baseline\CreateSchema.sql" />

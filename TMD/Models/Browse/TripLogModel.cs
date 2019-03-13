@@ -23,15 +23,15 @@ namespace TMD.Models.Browse
 
         public string TripReportUrl { get; set; }
 
-        public static TripLogModel Create(SubsiteVisit visit)
+        public static TripLogModel Create(SiteVisit visit)
             => new TripLogModel
             {
                 Date = visit.Visited,
                 StateId = visit.State.Id,
                 StateName = visit.State.Name,
                 County = visit.County,
-                SiteId = visit.Subsite.Site.Id,
-                SiteName = visit.Subsite.Site.Name,
+                SiteId = visit.Site.Id,
+                SiteName = visit.Site.Name,
                 Visitors = visit.Visitors
             };
     }

@@ -10,6 +10,9 @@
       <generator class="native"/>
     </id>
     <property name="Name" />
+    <many-to-one name="State" column="StateId" cascade="none" />
+    <property name="County" />
+    <property name="OwnershipType" />
     <component name="Coordinates" class="Coordinates">
       <component name="Latitude" class="Latitude">
         <property name="TotalDegrees" column="Latitude" />
@@ -30,6 +33,8 @@
         <property name="InputFormat" column="CalculatedLongitudeInputFormat"/>
       </component>
     </component>
+    <property name="OwnershipContactInfo" />
+    <property name="MakeOwnershipContactInfoPublic" />
     <property name="ComputedRHI5" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
     <property name="ComputedRHI10" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
     <property name="ComputedRHI20" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
@@ -39,16 +44,19 @@
     <property name="ComputedTreesMeasuredCount" />
     <property name="ComputedLastMeasurementDate" />
     <property name="ComputedContainsEntityWithCoordinates" />
-    <bag name="Visits" table="SiteVisits" inverse="false" cascade="all-delete-orphan">
+    <bag name="Visits" table="SiteVisits" inverse="true" cascade="all-delete-orphan">
       <key column="SiteId"></key>
       <one-to-many class="TMD.Model.Sites.SiteVisit"/>
     </bag>
-    <bag name="Subsites" table="Subsites" cascade="all-delete-orphan" inverse="true">
+    <bag name="Trees" table="Trees.Trees" cascade="all-delete-orphan" inverse="true">
       <key column="SiteId"></key>
-      <one-to-many class="TMD.Model.Sites.Subsite"/>
+      <one-to-many class="TMD.Model.Trees.Tree"/>
+    </bag>
+    <bag name="Photos" cascade="all-delete-orphan" inverse="true">
+      <key column="SiteId"></key>
+      <one-to-many class="TMD.Model.Sites.SitePhotoReference"/>
     </bag>
     <property name="VisitCount" />
-    <property name="SubsiteCount" />
     <bag name="Visitors" cascade="all-delete-orphan">
       <key column="SiteId" />
       <composite-element class="Name">
@@ -63,8 +71,12 @@
       <generator class="native"/>
     </id>
     <many-to-one name="ImportingTrip" column="ImportingTripId" cascade="none" />
+    <many-to-one name="Site" column="SiteId" cascade="none" />
     <property name="Visited" />
     <property name="Name" />
+    <many-to-one name="State" column="StateId" cascade="none" />
+    <property name="County" />
+    <property name="OwnershipType" />
     <component name="Coordinates" class="Coordinates">
       <component name="Latitude" class="Latitude">
         <property name="TotalDegrees" column="Latitude" />
@@ -85,7 +97,13 @@
         <property name="InputFormat" column="CalculatedLongitudeInputFormat"/>
       </component>
     </component>
+    <property name="OwnershipContactInfo" />
+    <property name="MakeOwnershipContactInfoPublic" />
     <property name="Comments" />
+    <bag name="Photos" cascade="all-delete-orphan" inverse="true">
+      <key column="SiteVisitId"></key>
+      <one-to-many class="TMD.Model.Sites.SiteVisitPhotoReference"/>
+    </bag>
     <bag name="Visitors" cascade="all-delete-orphan">
       <key column="SiteVisitId" />
       <composite-element class="Name">
@@ -94,115 +112,6 @@
       </composite-element>
     </bag>
     <property name="TripReportUrl" />
-  </class>
-
-  <class name="TMD.Model.Sites.Subsite" table="Subsites">
-    <id name="Id">
-      <generator class="native"/>
-    </id>
-    <many-to-one name="Site" column="SiteId" />
-    <property name="Name" />
-    <many-to-one name="State" column="StateId" cascade="none" />
-    <property name="County" />
-    <property name="OwnershipType" />
-    <component name="Coordinates" class="Coordinates">
-      <component name="Latitude" class="Latitude">
-        <property name="TotalDegrees" column="Latitude" />
-        <property name="InputFormat" column="LatitudeInputFormat"/>
-      </component>
-      <component name="Longitude" class="Longitude">
-        <property name="TotalDegrees" column="Longitude" />
-        <property name="InputFormat" column="LongitudeInputFormat"/>
-      </component>
-    </component>
-    <component name="CalculatedCoordinates" class="Coordinates">
-      <component name="Latitude" class="Latitude">
-        <property name="TotalDegrees" column="CalculatedLatitude" />
-        <property name="InputFormat" column="CalculatedLatitudeInputFormat"/>
-      </component>
-      <component name="Longitude" class="Longitude">
-        <property name="TotalDegrees" column="CalculatedLongitude" />
-        <property name="InputFormat" column="CalculatedLongitudeInputFormat"/>
-      </component>
-    </component>
-    <property name="OwnershipContactInfo" />
-    <property name="MakeOwnershipContactInfoPublic" />
-    <property name="ComputedRHI5" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
-    <property name="ComputedRHI10" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
-    <property name="ComputedRHI20" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
-    <property name="ComputedRGI5" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
-    <property name="ComputedRGI10" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
-    <property name="ComputedRGI20" type="TMD.Infrastructure.Mappings.RuckerIndexType, TMD.Infrastructure" />
-    <property name="ComputedTreesMeasuredCount" />
-    <property name="ComputedLastMeasurementDate" />
-    <property name="ComputedContainsEntityWithCoordinates" />
-    <bag name="Visits" table="SubsiteVisits" inverse="true" cascade="all-delete-orphan">
-      <key column="SubsiteId"></key>
-      <one-to-many class="TMD.Model.Sites.SubsiteVisit"/>
-    </bag>
-    <bag name="Trees" table="Trees.Trees" cascade="all-delete-orphan" inverse="true">
-      <key column="SubsiteId"></key>
-      <one-to-many class="TMD.Model.Trees.Tree"/>
-    </bag>
-    <bag name="Photos" cascade="all-delete-orphan" inverse="true">
-      <key column="SubsiteId"></key>
-      <one-to-many class="TMD.Model.Sites.SubsitePhotoReference"/>
-    </bag>
-    <property name="VisitCount" />
-    <bag name="Visitors" cascade="all-delete-orphan">
-      <key column="SubsiteId" />
-      <composite-element class="Name">
-        <property name="FirstName" />
-        <property name="LastName" />
-      </composite-element>
-    </bag>
-  </class>
-
-  <class name="TMD.Model.Sites.SubsiteVisit" table="SubsiteVisits">
-    <id name="Id">
-      <generator class="native"/>
-    </id>
-    <many-to-one name="ImportingTrip" column="ImportingTripId" cascade="none" />
-    <many-to-one name="Subsite" column="SubsiteId" cascade="none" />
-    <property name="Visited" />
-    <property name="Name" />
-    <many-to-one name="State" column="StateId" cascade="none" />
-    <property name="County" />
-    <property name="OwnershipType" />
-    <component name="Coordinates" class="Coordinates">
-      <component name="Latitude" class="Latitude">
-        <property name="TotalDegrees" column="Latitude" />
-        <property name="InputFormat" column="LatitudeInputFormat"/>
-      </component>
-      <component name="Longitude" class="Longitude">
-        <property name="TotalDegrees" column="Longitude" />
-        <property name="InputFormat" column="LongitudeInputFormat"/>
-      </component>
-    </component>
-    <component name="CalculatedCoordinates" class="Coordinates">
-      <component name="Latitude" class="Latitude">
-        <property name="TotalDegrees" column="CalculatedLatitude" />
-        <property name="InputFormat" column="CalculatedLatitudeInputFormat"/>
-      </component>
-      <component name="Longitude" class="Longitude">
-        <property name="TotalDegrees" column="CalculatedLongitude" />
-        <property name="InputFormat" column="CalculatedLongitudeInputFormat"/>
-      </component>
-    </component>
-    <property name="OwnershipContactInfo" />
-    <property name="MakeOwnershipContactInfoPublic" />
-    <property name="Comments" />
-    <bag name="Photos" cascade="all-delete-orphan" inverse="true">
-      <key column="SubsiteVisitId"></key>
-      <one-to-many class="TMD.Model.Sites.SubsiteVisitPhotoReference"/>
-    </bag>
-    <bag name="Visitors" cascade="all-delete-orphan">
-      <key column="SubsiteVisitId" />
-      <composite-element class="Name">
-        <property name="FirstName" />
-        <property name="LastName" />
-      </composite-element>
-    </bag>
   </class>
 
 </hibernate-mapping>

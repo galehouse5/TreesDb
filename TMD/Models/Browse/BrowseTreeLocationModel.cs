@@ -19,11 +19,6 @@ namespace TMD.Models.Browse
         public int SiteId { get; set; }
         [DisplayName("Site")]
         public string SiteName { get; set; }
-        public int SiteSubsitesCount { get; set; }
-        [ScaffoldColumn(false)]
-        public int SubsiteId { get; set; }
-        [DisplayName("Subsite")]
-        public string SubsiteName { get; set; }
         [DisplayName("Ownership type")]
         public string OwnershipType { get; set; }
         public State State { get; set; }

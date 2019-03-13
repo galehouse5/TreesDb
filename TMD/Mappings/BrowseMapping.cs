@@ -25,7 +25,7 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Photographers, opt => opt.MapFrom(src => src.Measurers));
 
             CreateMap<Tree, BrowseTreeDetailsModel>()
-                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Subsite.Site.Id))
+                .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Site.Id))
                 .ForMember(dest => dest.GeneralComments, opt => opt.MapFrom(src => src.LastMeasurement.GeneralComments))
                 .ForMember(dest => dest.Measured, opt => opt.MapFrom(src => src.LastMeasured));
 
@@ -37,14 +37,6 @@ namespace TMD.Mappings
             CreateMap<Site, BrowseTreeLocationModel>()
                 .ForMember(dest => dest.SiteId, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.SiteName, opt => opt.MapFrom(src => src.Name))
-                .ForMember(dest => dest.SiteSubsitesCount, opt => opt.MapFrom(src => src.Subsites.Count))
-                .ForMember(dest => dest.Id, opt => opt.Ignore())
-                .ForMember(dest => dest.Coordinates, opt => opt.Ignore())
-                .ForMember(dest => dest.CalculatedCoordinates, opt => opt.Ignore());
-
-            CreateMap<Subsite, BrowseTreeLocationModel>()
-                .ForMember(dest => dest.SubsiteId, opt => opt.MapFrom(src => src.Id))
-                .ForMember(dest => dest.SubsiteName, opt => opt.MapFrom(src => src.Name))
                 .ForMember(dest => dest.Id, opt => opt.Ignore())
                 .ForMember(dest => dest.Coordinates, opt => opt.Ignore())
                 .ForMember(dest => dest.CalculatedCoordinates, opt => opt.Ignore());
@@ -57,22 +49,22 @@ namespace TMD.Mappings
             CreateMap<StateMeasuredSpecies, BrowseSpeciesStateDetailsModel>();
 
             CreateMap<SiteMeasuredSpecies, BrowseSpeciesSiteDetailsModel>()
-                .ForMember(dest => dest.County, opt => opt.MapFrom(src => src.Site.Subsites[0].County))
-                .ForMember(dest => dest.OwnershipType, opt => opt.MapFrom(src => src.Site.Subsites[0].OwnershipType));
+                .ForMember(dest => dest.County, opt => opt.MapFrom(src => src.Site.County))
+                .ForMember(dest => dest.OwnershipType, opt => opt.MapFrom(src => src.Site.OwnershipType));
         }
 
         private void configureForSites()
         {
-            CreateMap<SubsiteVisit, BrowsePhotoSumaryModel>()
+            CreateMap<SiteVisit, BrowsePhotoSumaryModel>()
                 .ForMember(dest => dest.Date, opt => opt.MapFrom(src => src.Visited))
                 .ForMember(dest => dest.Photographers, opt => opt.MapFrom(src => src.Visitors));
 
-            CreateMap<Subsite, BrowseSubsiteDetailsModel>()
-                .ForMember(dest => dest.LastVisitComments, opt => opt.MapFrom(src => src.Site.LastVisit.Comments))
+            CreateMap<Site, BrowseSiteDetailsModel>()
+                .ForMember(dest => dest.LastVisitComments, opt => opt.MapFrom(src => src.LastVisit.Comments))
                 .ForGeoAreaMetricsMembers();
 
-            CreateMap<Subsite, BrowseSubsiteLocationModel>()
-                .ForMember(dest => dest.Map, opt => opt.MapFrom(src => Mapper.Map<Subsite, MapModel>(src)));
+            CreateMap<Site, BrowseSiteLocationModel>()
+                .ForMember(dest => dest.Map, opt => opt.MapFrom(src => Mapper.Map<Site, MapModel>(src)));
 
             CreateMap<SiteVisit, BrowseSiteVisitModel>();
         }

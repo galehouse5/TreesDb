@@ -10,27 +10,18 @@
 
   <div class="portlet-content">
     @Html.HiddenFor(m => m.Id)
-    @if (Model.Subsites.Count == 1)
-    {
-      @Html.ModelScopedValidationSummary2()
 
-      <ul>
-        @Html.SummaryDisplayFor(m => m.Subsites[0].State)
-        @Html.SummaryDisplayFor(m => m.Subsites[0].County)
-        @Html.SummaryDisplayFor(m => m.Subsites[0].OwnershipType)
-      </ul>
+    @Html.ModelScopedValidationSummary2()
 
-      if (Model.Subsites[0].Photos.Count > 0)
-      {
-        @Html.DisplayFor(m => m.Subsites[0].Photos)
-      }
-    }
-    else
+    <ul>
+      @Html.SummaryDisplayFor(m => m.State)
+      @Html.SummaryDisplayFor(m => m.County)
+      @Html.SummaryDisplayFor(m => m.OwnershipType)
+    </ul>
+
+    @if (Model.Photos.Count > 0)
     {
-      for (int subsiteIndex = 0; subsiteIndex < Model.Subsites.Count; subsiteIndex++)
-      {
-        @Html.DisplayFor(m => m.Subsites[subsiteIndex])
-      }
+      @Html.DisplayFor(m => m.Photos)
     }
   </div>
 </div>

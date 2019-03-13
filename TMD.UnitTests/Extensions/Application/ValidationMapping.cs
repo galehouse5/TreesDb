@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TMD.Mappings.ValidationMapping;
 
 namespace TMD.UnitTests.Application
@@ -15,7 +11,7 @@ namespace TMD.UnitTests.Application
         {
             Assert.IsTrue(new ExactPathMatcher("this.is.a.property.path").Matches("this.is.a.property.path"));
             Assert.IsFalse(new ExactPathMatcher("this.is.a.property.path").Matches("this.is.a.property.path.too"));
-            
+
             Assert.IsTrue(new WildcardPathMatcher("this.*").Matches("this.is.a.property.path"));
             Assert.IsFalse(new WildcardPathMatcher("this.*").Matches("thisis.a.property.path"));
             Assert.IsTrue(new WildcardPathMatcher("this.*.a.*.path").Matches("this.is.a.property.path"));

@@ -2,6 +2,7 @@
 using log4net.Config;
 using StructureMap;
 using System.Configuration;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -14,7 +15,6 @@ using TMD.Infrastructure.Repositories;
 using TMD.Mappings;
 using TMD.Model;
 using TMD.Model.Photos;
-using System.Web;
 
 namespace TMD
 {
@@ -46,7 +46,6 @@ namespace TMD
             routes.MapRoute("ViewPhoto", "Photos/{id}/{size}", new { area = string.Empty, controller = "Photos", action = "View", size = "Original" });
 
             routes.MapRoute("ViewMapMarkesForImportTree", "Map/ViewMarkersForImport/{id}/Tree/{treeId}", new { area = string.Empty, controller = "Map", action = "ViewMarkersForImportTree" });
-            routes.MapRoute("ViewMapMarkesForImportSubsite", "Map/ViewMarkersForImport/{id}/Subsite/{subsiteId}", new { area = string.Empty, controller = "Map", action = "ViewMarkersForImportSubsite" });
             routes.MapRoute("ViewMapMarkesForImportSite", "Map/ViewMarkersForImport/{id}/Site/{siteId}", new { area = string.Empty, controller = "Map", action = "ViewMarkersForImportSite" });
             routes.MapRoute("Map", "Map/{action}", new { area = string.Empty, controller = "Map", action = "Index" });
 

@@ -78,15 +78,13 @@ namespace TMD.Infrastructure.Repositories
         }
 
         public IList<IPhoto> ListRecentPublicPhotos(int number)
-        {
-            return Registry.Session
-                .CreateCriteria<PhotoReferenceBase>("reference")
-                .CreateAlias("reference.Photo", "photo")
-                .Add(Restrictions.Eq("class", typeof(Model.Sites.SubsiteVisitPhotoReference)) 
-                    | Restrictions.Eq("class", typeof(Model.Trees.TreeMeasurementPhotoReference)))
-                .AddOrder(Order.Desc("photo.Created"))                
-                .SetMaxResults(number).List<IPhoto>();
-        }
+            => Registry.Session
+            .CreateCriteria<PhotoReferenceBase>("reference")
+            .CreateAlias("reference.Photo", "photo")
+            .Add(Restrictions.Eq("class", typeof(Model.Sites.SiteVisitPhotoReference))
+                | Restrictions.Eq("class", typeof(Model.Trees.TreeMeasurementPhotoReference)))
+            .AddOrder(Order.Desc("photo.Created"))
+            .SetMaxResults(number).List<IPhoto>();
 
         public PhotoReferences ListAllReferencesByPhotoId(int photoId)
         {

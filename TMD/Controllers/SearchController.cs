@@ -20,14 +20,14 @@ namespace TMD.Controllers
             int maxResultsPerCategory = Request.IsAjaxRequest() ? 5 : 25;
 
             var states = Repositories.Locations.SearchStates(term, maxResultsPerCategory + 1);
-            var subsites = Repositories.Sites.SearchSubsites(term, maxResultsPerCategory + 1);
+            var sites = Repositories.Sites.SearchSites(term, maxResultsPerCategory + 1);
             var species = Repositories.Trees.SearchMeasuredSpecies(term, maxResultsPerCategory + 1);
 
             bool hasAllResults = states.Count() <= maxResultsPerCategory
-                && subsites.Count() <= maxResultsPerCategory
+                && sites.Count() <= maxResultsPerCategory
                 && species.Count() <= maxResultsPerCategory;
             var model = states.Take(maxResultsPerCategory).Select(s => ResultModel.From(s, Url))
-                .Union(subsites.Take(maxResultsPerCategory).Select(ss => ResultModel.From(ss, Url)))
+                .Union(sites.Take(maxResultsPerCategory).Select(ss => ResultModel.From(ss, Url)))
                 .Union(species.Take(maxResultsPerCategory).Select(s => ResultModel.From(s, Url)));
 
             if (Request.IsAjaxRequest())

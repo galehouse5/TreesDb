@@ -13,7 +13,6 @@ from
 (
     select LastMetricsUpdateTimestamp from Locations.States
     union all select LastMetricsUpdateTimestamp from Sites.Sites
-    union all select LastMetricsUpdateTimestamp from Sites.Subsites
 ) t")
             .UniqueResult<DateTime?>();
     }

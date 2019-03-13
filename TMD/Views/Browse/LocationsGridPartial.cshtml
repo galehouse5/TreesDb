@@ -1,30 +1,30 @@
-﻿@model EntityGridModel<Subsite>
-@(Html.DataTablesGrid<Subsite>(parameterNamePrefix: Model.ParameterNamePrefix,
+﻿@model EntityGridModel<Site>
+@(Html.DataTablesGrid<Site>(parameterNamePrefix: Model.ParameterNamePrefix,
     columns: builder =>
     {
       builder
-          .Custom("Site", subsite => Html.ActionLink(subsite.Site.Name, MVC.Browse.SiteDetails(subsite.Site.Id)))
+          .Custom("Site", site => Html.ActionLink(site.Name, MVC.Browse.SiteDetails(site.Id)))
           .Options(canFilter: true, filterTitle: "Search sites");
       builder
-          .Custom("County", subsite => subsite.County)
+          .Custom("County", site => site.County)
           .Options(canFilter: true, header: "County", filterTitle: "Search county");
       builder
-          .Custom("State", subsite => Html.ActionLink(subsite.State.Name, MVC.Browse.StateDetails(subsite.State.Id)))
+          .Custom("State", site => Html.ActionLink(site.State.Name, MVC.Browse.StateDetails(site.State.Id)))
           .Options(canFilter: true, header: "State", filterTitle: "Search states");
       builder
-          .Custom("RHI5", subsite => MvcHtmlString.Create(subsite.ComputedRHI5?.ToString(UserSession.Units) ?? "-"))
+          .Custom("RHI5", site => MvcHtmlString.Create(site.ComputedRHI5?.ToString(UserSession.Units) ?? "-"))
           .Options(canFilter: false, defaultSortAscending: false);
       builder
-          .Custom("RHI10", subsite => MvcHtmlString.Create(subsite.ComputedRHI10?.ToString(UserSession.Units) ?? "-"))
+          .Custom("RHI10", site => MvcHtmlString.Create(site.ComputedRHI10?.ToString(UserSession.Units) ?? "-"))
           .Options(canFilter: false, defaultSortAscending: false);
       builder
-          .Custom("RGI5", subsite => MvcHtmlString.Create(subsite.ComputedRGI5?.ToString(UserSession.Units) ?? "-"))
+          .Custom("RGI5", site => MvcHtmlString.Create(site.ComputedRGI5?.ToString(UserSession.Units) ?? "-"))
           .Options(canFilter: false, defaultSortAscending: false);
       builder
-          .Custom("RGI10", subsite => MvcHtmlString.Create(subsite.ComputedRGI10?.ToString(UserSession.Units) ?? "-"))
+          .Custom("RGI10", site => MvcHtmlString.Create(site.ComputedRGI10?.ToString(UserSession.Units) ?? "-"))
           .Options(canFilter: false, defaultSortAscending: false);
       builder
-          .Custom("LastMeasurement", subsite => Html.DisplayFor(m => subsite.ComputedLastMeasurementDate))
+          .Custom("LastMeasurement", site => Html.DisplayFor(m => site.ComputedLastMeasurementDate))
           .Options(header: "Last measurement", canFilter: false);
     },
     rowsPerPage: Model.RowsPerPage,

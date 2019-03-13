@@ -10,36 +10,22 @@ namespace TMD.Models.Import
         public bool HasOptionalErrors { get; set; }
 
         public ImportTreeModel FindTreeById(int id)
-        {
-            var site = FindSiteContainingTreeWithId(id);
-            return site == null ? null : site.FindTreeById(id);
-        }
+            => FindSiteContainingTreeWithId(id)
+            ?.FindTreeById(id);
 
         public ImportSiteTreesModel FindSiteContainingTreeWithId(int id)
-        {
-            return Sites.FirstOrDefault(s => s.FindTreeById(id) != null);
-        }
+            => Sites.FirstOrDefault(s => s.FindTreeById(id) != null);
 
-        public ImportSubsiteTreesModel FindSubsiteContainingTreeWithId(int id)
-        {
-            var site = Sites.FirstOrDefault(s => s.FindSubsiteContainingTreeWithId(id) != null);
-            return site == null ? null : site.FindSubsiteContainingTreeWithId(id);
-        }
-
-        public ImportSubsiteTreesModel FindSubsiteById(int id)
-        {
-            var site = Sites.FirstOrDefault(s => s.FindSubsiteById(id) != null);
-            return site == null ? null : site.FindSubsiteById(id);
-        }
+        public ImportSiteTreesModel FindSiteById(int id)
+            => Sites.SingleOrDefault(s => s.Id == id);
 
         public void Initialize()
         {
-            foreach (ImportSubsiteTreesModel subsite in Sites
-                .SelectMany(s => s.Subsites))
+            foreach (var site in Sites)
             {
-                foreach (ImportTreeModel tree in subsite.Trees)
+                foreach (ImportTreeModel tree in site.Trees)
                 {
-                    tree.IsRemovable = subsite.Trees.Count() > 1;
+                    tree.IsRemovable = site.Trees.Count() > 1;
                 }
             }
         }

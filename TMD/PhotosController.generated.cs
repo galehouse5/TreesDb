@@ -91,9 +91,9 @@ namespace TMD.Controllers
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public virtual System.Web.Mvc.ActionResult AddToImportSubsite()
+        public virtual System.Web.Mvc.ActionResult AddToImportSite()
         {
-            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AddToImportSubsite);
+            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AddToImportSite);
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -116,7 +116,7 @@ namespace TMD.Controllers
             public readonly string Remove = "Remove";
             public readonly string PhotoAdded = "PhotoAdded";
             public readonly string AddToImportTree = "AddToImportTree";
-            public readonly string AddToImportSubsite = "AddToImportSubsite";
+            public readonly string AddToImportSite = "AddToImportSite";
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -127,7 +127,7 @@ namespace TMD.Controllers
             public const string Remove = "Remove";
             public const string PhotoAdded = "PhotoAdded";
             public const string AddToImportTree = "AddToImportTree";
-            public const string AddToImportSubsite = "AddToImportSubsite";
+            public const string AddToImportSite = "AddToImportSite";
         }
 
 
@@ -174,14 +174,14 @@ namespace TMD.Controllers
             public readonly string treeId = "treeId";
             public readonly string imageData = "imageData";
         }
-        static readonly ActionParamsClass_AddToImportSubsite s_params_AddToImportSubsite = new ActionParamsClass_AddToImportSubsite();
+        static readonly ActionParamsClass_AddToImportSite s_params_AddToImportSite = new ActionParamsClass_AddToImportSite();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ActionParamsClass_AddToImportSubsite AddToImportSubsiteParams { get { return s_params_AddToImportSubsite; } }
+        public ActionParamsClass_AddToImportSite AddToImportSiteParams { get { return s_params_AddToImportSite; } }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionParamsClass_AddToImportSubsite
+        public class ActionParamsClass_AddToImportSite
         {
             public readonly string id = "id";
-            public readonly string subsiteId = "subsiteId";
+            public readonly string siteId = "siteId";
             public readonly string imageData = "imageData";
         }
         static readonly ViewsClass s_views = new ViewsClass();
@@ -271,16 +271,16 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void AddToImportSubsiteOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int subsiteId, System.Web.HttpPostedFileBase imageData);
+        partial void AddToImportSiteOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int siteId, System.Web.HttpPostedFileBase imageData);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult AddToImportSubsite(int id, int subsiteId, System.Web.HttpPostedFileBase imageData)
+        public override System.Web.Mvc.ActionResult AddToImportSite(int id, int siteId, System.Web.HttpPostedFileBase imageData)
         {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AddToImportSubsite);
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AddToImportSite);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteId", subsiteId);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "siteId", siteId);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "imageData", imageData);
-            AddToImportSubsiteOverride(callInfo, id, subsiteId, imageData);
+            AddToImportSiteOverride(callInfo, id, siteId, imageData);
             return callInfo;
         }
 

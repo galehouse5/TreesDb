@@ -19,12 +19,11 @@ namespace TMD.Model.Imports
         public override int? NumberOfTrunks
         {
             get { return 1; }
-            set {}
+            set { }
         }
 
-        internal static SingleTrunkTree Create(Subsite ssv)
-        {
-            return new SingleTrunkTree
+        internal static SingleTrunkTree Create(Site site)
+            => new SingleTrunkTree
             {
                 TreeName = string.Empty,
                 TreeNumber = null,
@@ -40,10 +39,10 @@ namespace TMD.Model.Imports
                 Elevation = Elevation.Null(),
                 Height = Distance.Null(),
                 HeightMeasurements = HeightMeasurements.Null(),
-                HeightMeasurementMethod = ssv.Site.Trip.DefaultHeightMeasurementMethod,
+                HeightMeasurementMethod = site.Trip.DefaultHeightMeasurementMethod,
                 HeightMeasurementType = string.Empty,
-                LaserBrand = ssv.Site.Trip.DefaultLaserBrand,
-                ClinometerBrand = ssv.Site.Trip.DefaultClinometerBrand,
+                LaserBrand = site.Trip.DefaultLaserBrand,
+                ClinometerBrand = site.Trip.DefaultClinometerBrand,
                 HeightComments = string.Empty,
                 Girth = Distance.Null(),
                 GirthMeasurementHeight = Distance.Null(),
@@ -65,10 +64,9 @@ namespace TMD.Model.Imports
                 TerrainShapeIndex = null,
                 LandformIndex = null,
                 TerrainComments = string.Empty,
-                Subsite = ssv,
+                Site = site,
                 MakeCoordinatesPublic = true,
                 Photos = new List<IPhoto>()
             }.RecordCreation() as SingleTrunkTree;
-        }
     }
 }

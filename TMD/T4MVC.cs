@@ -233,7 +233,6 @@ namespace Links
             public static readonly string Map_png = Url("Map.png");
             public static readonly string Site32_png = Url("Site32.png");
             public static readonly string State32_png = Url("State32.png");
-            public static readonly string Subsite32_png = Url("Subsite32.png");
             public static readonly string Tree32_png = Url("Tree32.png");
             public static readonly string Trip32_png = Url("Trip32.png");
         }

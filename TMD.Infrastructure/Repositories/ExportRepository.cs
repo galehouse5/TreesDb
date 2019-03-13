@@ -27,107 +27,77 @@ namespace TMD.Infrastructure.Repositories
             return criteria;
         }
 
-        protected DetachedCriteria CreateSubsiteCriteria(
-            string stateFilter, string countyFilter, string subsiteFilter, int? stateId)
-        {
-            DetachedCriteria criteria = DetachedCriteria.For<Subsite>("subsite")
-                .CreateAlias(nameof(Subsite.State), "state");
-            if (!string.IsNullOrEmpty(stateFilter)) { criteria.Add(Restrictions.Like($"state.{nameof(State.Name)}", stateFilter, MatchMode.Anywhere)); }
-            if (!string.IsNullOrEmpty(countyFilter)) { criteria.Add(Restrictions.Like(nameof(Subsite.County), countyFilter, MatchMode.Anywhere)); }
-            if (!string.IsNullOrEmpty(subsiteFilter)) { criteria.Add(Restrictions.Like(nameof(Subsite.Name), subsiteFilter, MatchMode.Anywhere)); }
-            if (stateId.HasValue) { criteria.Add(Restrictions.Eq($"state.{nameof(State.Id)}", stateId)); }
-            return criteria;
-        }
-
         protected DetachedCriteria CreateSiteCriteria(
-            string siteFilter, int? siteId)
+            string stateFilter, string countyFilter, int? stateId, string siteFilter, int? siteId)
         {
-            DetachedCriteria criteria = DetachedCriteria.For<Site>("site");
+            DetachedCriteria criteria = DetachedCriteria.For<Site>("site")
+                .CreateAlias(nameof(Site.State), "state");
+            if (!string.IsNullOrEmpty(stateFilter)) { criteria.Add(Restrictions.Like($"state.{nameof(State.Name)}", stateFilter, MatchMode.Anywhere)); }
+            if (!string.IsNullOrEmpty(countyFilter)) { criteria.Add(Restrictions.Like(nameof(Site.County), countyFilter, MatchMode.Anywhere)); }
+            if (stateId.HasValue) { criteria.Add(Restrictions.Eq($"state.{nameof(State.Id)}", stateId)); }
             if (!string.IsNullOrEmpty(siteFilter)) { criteria.Add(Restrictions.Like(nameof(Site.Name), siteFilter, MatchMode.Anywhere)); }
             if (siteId.HasValue) { criteria.Add(Restrictions.Eq(nameof(Site.Id), siteId)); }
             return criteria;
         }
 
         protected DetachedCriteria CreateCompositeTreeCriteria(
-            string stateFilter, string countyFilter, string siteFilter, string subsiteFilter, string botanicalNameFilter, string commonNameFilter, string botanicalName, string commonName, int? stateId, int? siteId, int? treeId)
+            string stateFilter, string countyFilter, string siteFilter, string botanicalNameFilter, string commonNameFilter, string botanicalName, string commonName, int? stateId, int? siteId, int? treeId)
             => CreateTreeCriteria(botanicalNameFilter, commonNameFilter, botanicalName, commonName, treeId)
-            .Add(Subqueries.Exists(CreateSubsiteCriteria(stateFilter, countyFilter, subsiteFilter, stateId)
-                .Add(Expression.EqProperty($"subsite.{nameof(Subsite.Id)}", $"tree.{nameof(Tree.Subsite)}.{nameof(Subsite.Id)}"))
-                .Add(Subqueries.Exists(CreateSiteCriteria(siteFilter, siteId)
-                    .Add(Expression.EqProperty($"site.{nameof(Site.Id)}", $"subsite.{nameof(Subsite.Site)}.{nameof(Site.Id)}"))
-                    .SetProjection(Projections.Id())))
-                .SetProjection(Projections.Id())));
-
-        protected DetachedCriteria CreateCompositeSubsiteCriteria(
-            string stateFilter, string countyFilter, string siteFilter, string subsiteFilter, string botanicalNameFilter, string commonNameFilter, string botanicalName, string commonName, int? stateId, int? siteId, int? treeId)
-            => CreateSubsiteCriteria(stateFilter, countyFilter, subsiteFilter, stateId)
-            .Add(Subqueries.Exists(CreateSiteCriteria(siteFilter, siteId)
-                .Add(Expression.EqProperty($"site.{nameof(Site.Id)}", $"subsite.{nameof(Subsite.Site)}.{nameof(Site.Id)}"))
-                .SetProjection(Projections.Id())))
-            .Add(Subqueries.Exists(CreateTreeCriteria(botanicalNameFilter, commonNameFilter, botanicalName, commonName, treeId)
-                .Add(Expression.EqProperty($"tree.{nameof(Subsite)}.{nameof(Subsite.Id)}", $"subsite.{nameof(Subsite.Id)}"))
+            .Add(Subqueries.Exists(CreateSiteCriteria(stateFilter, countyFilter, stateId, siteFilter, siteId)
+                .Add(Restrictions.EqProperty($"site.{nameof(Site.Id)}", $"tree.{nameof(Tree.Site)}.{nameof(Site.Id)}"))
                 .SetProjection(Projections.Id())));
 
         protected DetachedCriteria CreateCompositeSiteCriteria(
-            string stateFilter, string countyFilter, string siteFilter, string subsiteFilter, string botanicalNameFilter, string commonNameFilter, string botanicalName, string commonName, int? stateId, int? siteId, int? treeId)
-            => CreateSiteCriteria(siteFilter, siteId)
-            .Add(Subqueries.Exists(CreateSubsiteCriteria(stateFilter, countyFilter, subsiteFilter, stateId)
-                .Add(Expression.EqProperty($"subsite.{nameof(Subsite.Site)}.{nameof(Subsite.Id)}", $"site.{nameof(Site.Id)}"))
-                .Add(Subqueries.Exists(CreateTreeCriteria(botanicalNameFilter, commonNameFilter, botanicalName, commonName, treeId)
-                    .Add(Expression.EqProperty($"tree.{nameof(Subsite)}.{nameof(Subsite.Id)}", $"subsite.{nameof(Subsite.Id)}"))
-                    .SetProjection(Projections.Id())))
+            string stateFilter, string countyFilter, string siteFilter, string botanicalNameFilter, string commonNameFilter, string botanicalName, string commonName, int? stateId, int? siteId, int? treeId)
+            => CreateSiteCriteria(stateFilter, countyFilter, stateId, siteFilter, siteId)
+            .Add(Subqueries.Exists(CreateTreeCriteria(botanicalNameFilter, commonNameFilter, botanicalName, commonName, treeId)
+                .Add(Restrictions.EqProperty($"tree.{nameof(Tree.Site)}.{nameof(Site.Id)}", $"site.{nameof(Site.Id)}"))
                 .SetProjection(Projections.Id())));
 
         // See guidelines for eager loading data with NHibernate here: https://ayende.com/blog/4367/eagerly-loading-entity-associations-efficiently-with-nhibernate
         public IReadOnlyCollection<Tree> GetTrees(
-            string stateFilter, string countyFilter, string siteFilter, string subsiteFilter, string botanicalNameFilter, string commonNameFilter, string botanicalName, string commonName, int? stateId, int? siteId, int? treeId)
+            string stateFilter, string countyFilter, string siteFilter, string botanicalNameFilter, string commonNameFilter, string botanicalName, string commonName, int? stateId, int? siteId, int? treeId)
         {
-            CreateCompositeSiteCriteria(stateFilter, countyFilter, siteFilter, subsiteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
-                .GetExecutableCriteria(session)
-                .SetFetchMode(nameof(Site.Subsites), FetchMode.Eager)
-                .SetResultTransformer(Transformers.DistinctRootEntity)
-                .Future<Site>();
-
-            CreateCompositeSiteCriteria(stateFilter, countyFilter, siteFilter, subsiteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
+            CreateCompositeSiteCriteria(stateFilter, countyFilter, siteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
                 .GetExecutableCriteria(session)
                 .SetFetchMode(nameof(Site.Visits), FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Site>();
 
-            CreateCompositeSubsiteCriteria(stateFilter, countyFilter, siteFilter, subsiteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
+            CreateCompositeSiteCriteria(stateFilter, countyFilter, siteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
                 .GetExecutableCriteria(session)
-                .SetFetchMode(nameof(Subsite.Visits), FetchMode.Eager)
+                .SetFetchMode(nameof(Site.Visits), FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
-                .Future<Subsite>();
+                .Future<Site>();
 
-            CreateCompositeSubsiteCriteria(stateFilter, countyFilter, siteFilter, subsiteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
+            CreateCompositeSiteCriteria(stateFilter, countyFilter, siteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
                 .GetExecutableCriteria(session)
-                .SetFetchMode(nameof(Subsite.State), FetchMode.Eager)
+                .SetFetchMode(nameof(Site.State), FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
-                .Future<Subsite>();
+                .Future<Site>();
 
-            CreateCompositeTreeCriteria(stateFilter, countyFilter, siteFilter, subsiteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
+            CreateCompositeTreeCriteria(stateFilter, countyFilter, siteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
                 .GetExecutableCriteria(session)
                 .SetFetchMode(nameof(Tree.Measurers), FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Tree>();
 
-            CreateCompositeTreeCriteria(stateFilter, countyFilter, siteFilter, subsiteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
+            CreateCompositeTreeCriteria(stateFilter, countyFilter, siteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
                 .GetExecutableCriteria(session)
                 .SetFetchMode(nameof(Tree.Photos), FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Tree>();
 
-            var trees = CreateCompositeTreeCriteria(stateFilter, countyFilter, siteFilter, subsiteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
+            var trees = CreateCompositeTreeCriteria(stateFilter, countyFilter, siteFilter, botanicalNameFilter, commonNameFilter, botanicalName, commonName, stateId, siteId, treeId)
                 .GetExecutableCriteria(session)
                 .SetFetchMode(nameof(Tree.Measurements), FetchMode.Eager)
                 .SetResultTransformer(Transformers.DistinctRootEntity)
                 .Future<Tree>();
 
             return trees
-                .OrderBy(t => t.Subsite.State.Code)
-                .ThenBy(t => t.Subsite.County)
-                .ThenBy(t => t.Subsite.Name)
+                .OrderBy(t => t.Site.State.Code)
+                .ThenBy(t => t.Site.County)
+                .ThenBy(t => t.Site.Name)
                 .ThenBy(t => t.CommonName)
                 .ThenBy(t => t.ScientificName)
                 .ThenBy(t => t.Height.Feet)

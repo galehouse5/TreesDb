@@ -16,7 +16,7 @@ namespace TMD.Model.Trees
         { }
 
         public virtual int Id { get; protected set; }
-        public virtual Subsite Subsite { get; protected internal set; }
+        public virtual Site Site { get; protected internal set; }
         public virtual GlobalMeasuredSpecies Species { get; protected set; }
         public virtual DateTime LastMeasured { get; protected set; }
         public virtual string CommonName { get; protected set; }
@@ -124,7 +124,7 @@ namespace TMD.Model.Trees
 
         public static Tree Create(Imports.TreeBase importedTree)
         {
-            importedTree.Subsite.Site.Trip.AssertIsImported();
+            importedTree.Site.Trip.AssertIsImported();
             Tree tree = new Tree
             {
                 Measurements = new List<Measurement>(),

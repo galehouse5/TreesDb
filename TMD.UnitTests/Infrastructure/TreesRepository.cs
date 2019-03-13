@@ -1,12 +1,10 @@
-﻿using System;
-using System.Text;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TMD.Model.Trees;
 using TMD.Model;
-using TMD.UnitTests.Stubs;
 using TMD.Model.Extensions;
+using TMD.Model.Trees;
+using TMD.UnitTests.Stubs;
 
 namespace TMD.UnitTests.Infrastructure
 {
@@ -34,8 +32,7 @@ namespace TMD.UnitTests.Infrastructure
         {
             var importedTrip = new ImportedTripStub { Date = DateTime.Now.AddDays(1) };
             var importedSite = new ImportedSiteStub(importedTrip);
-            var importedSubsite = new ImportedSubsiteStub(importedSite);
-            var tree = Tree.Create(new ImportedTreeStub(importedSubsite)
+            var tree = Tree.Create(new ImportedTreeStub(importedSite)
             {
                 CommonName = "CommonName",
                 ScientificName = "ScientificName",

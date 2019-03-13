@@ -73,12 +73,6 @@ namespace TMD.Controllers
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public virtual System.Web.Mvc.ActionResult SubsiteMarker()
-        {
-            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SubsiteMarker);
-        }
-        [NonAction]
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public virtual System.Web.Mvc.ActionResult SiteMarker()
         {
             return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SiteMarker);
@@ -88,12 +82,6 @@ namespace TMD.Controllers
         public virtual System.Web.Mvc.ActionResult ImportSiteMarkers()
         {
             return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ImportSiteMarkers);
-        }
-        [NonAction]
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public virtual System.Web.Mvc.ActionResult ImportSubsiteMarkers()
-        {
-            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ImportSubsiteMarkers);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -115,12 +103,6 @@ namespace TMD.Controllers
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public virtual System.Web.Mvc.ActionResult ImportSubsiteMarkerInfo()
-        {
-            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ImportSubsiteMarkerInfo);
-        }
-        [NonAction]
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public virtual System.Web.Mvc.ActionResult StateMarkerInfo()
         {
             return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.StateMarkerInfo);
@@ -130,12 +112,6 @@ namespace TMD.Controllers
         public virtual System.Web.Mvc.ActionResult SiteMarkerInfo()
         {
             return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SiteMarkerInfo);
-        }
-        [NonAction]
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public virtual System.Web.Mvc.ActionResult SubsiteMarkerInfo()
-        {
-            return new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SubsiteMarkerInfo);
         }
         [NonAction]
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -163,17 +139,13 @@ namespace TMD.Controllers
             public readonly string Index = "Index";
             public readonly string AllMarkers = "AllMarkers";
             public readonly string TreeMarker = "TreeMarker";
-            public readonly string SubsiteMarker = "SubsiteMarker";
             public readonly string SiteMarker = "SiteMarker";
             public readonly string ImportSiteMarkers = "ImportSiteMarkers";
-            public readonly string ImportSubsiteMarkers = "ImportSubsiteMarkers";
             public readonly string ImportTreeMarkers = "ImportTreeMarkers";
             public readonly string ImportTreeMarkerInfo = "ImportTreeMarkerInfo";
             public readonly string ImportSiteMarkerInfo = "ImportSiteMarkerInfo";
-            public readonly string ImportSubsiteMarkerInfo = "ImportSubsiteMarkerInfo";
             public readonly string StateMarkerInfo = "StateMarkerInfo";
             public readonly string SiteMarkerInfo = "SiteMarkerInfo";
-            public readonly string SubsiteMarkerInfo = "SubsiteMarkerInfo";
             public readonly string TreeMarkerInfo = "TreeMarkerInfo";
         }
 
@@ -184,17 +156,13 @@ namespace TMD.Controllers
             public const string Index = "Index";
             public const string AllMarkers = "AllMarkers";
             public const string TreeMarker = "TreeMarker";
-            public const string SubsiteMarker = "SubsiteMarker";
             public const string SiteMarker = "SiteMarker";
             public const string ImportSiteMarkers = "ImportSiteMarkers";
-            public const string ImportSubsiteMarkers = "ImportSubsiteMarkers";
             public const string ImportTreeMarkers = "ImportTreeMarkers";
             public const string ImportTreeMarkerInfo = "ImportTreeMarkerInfo";
             public const string ImportSiteMarkerInfo = "ImportSiteMarkerInfo";
-            public const string ImportSubsiteMarkerInfo = "ImportSubsiteMarkerInfo";
             public const string StateMarkerInfo = "StateMarkerInfo";
             public const string SiteMarkerInfo = "SiteMarkerInfo";
-            public const string SubsiteMarkerInfo = "SubsiteMarkerInfo";
             public const string TreeMarkerInfo = "TreeMarkerInfo";
         }
 
@@ -215,15 +183,6 @@ namespace TMD.Controllers
         {
             public readonly string id = "id";
         }
-        static readonly ActionParamsClass_SubsiteMarker s_params_SubsiteMarker = new ActionParamsClass_SubsiteMarker();
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ActionParamsClass_SubsiteMarker SubsiteMarkerParams { get { return s_params_SubsiteMarker; } }
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionParamsClass_SubsiteMarker
-        {
-            public readonly string id = "id";
-            public readonly string subsiteId = "subsiteId";
-        }
         static readonly ActionParamsClass_SiteMarker s_params_SiteMarker = new ActionParamsClass_SiteMarker();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ActionParamsClass_SiteMarker SiteMarkerParams { get { return s_params_SiteMarker; } }
@@ -240,15 +199,6 @@ namespace TMD.Controllers
         {
             public readonly string id = "id";
             public readonly string siteId = "siteId";
-        }
-        static readonly ActionParamsClass_ImportSubsiteMarkers s_params_ImportSubsiteMarkers = new ActionParamsClass_ImportSubsiteMarkers();
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ActionParamsClass_ImportSubsiteMarkers ImportSubsiteMarkersParams { get { return s_params_ImportSubsiteMarkers; } }
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionParamsClass_ImportSubsiteMarkers
-        {
-            public readonly string id = "id";
-            public readonly string subsiteId = "subsiteId";
         }
         static readonly ActionParamsClass_ImportTreeMarkers s_params_ImportTreeMarkers = new ActionParamsClass_ImportTreeMarkers();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -277,15 +227,6 @@ namespace TMD.Controllers
             public readonly string id = "id";
             public readonly string siteId = "siteId";
         }
-        static readonly ActionParamsClass_ImportSubsiteMarkerInfo s_params_ImportSubsiteMarkerInfo = new ActionParamsClass_ImportSubsiteMarkerInfo();
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ActionParamsClass_ImportSubsiteMarkerInfo ImportSubsiteMarkerInfoParams { get { return s_params_ImportSubsiteMarkerInfo; } }
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionParamsClass_ImportSubsiteMarkerInfo
-        {
-            public readonly string id = "id";
-            public readonly string subsiteId = "subsiteId";
-        }
         static readonly ActionParamsClass_StateMarkerInfo s_params_StateMarkerInfo = new ActionParamsClass_StateMarkerInfo();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ActionParamsClass_StateMarkerInfo StateMarkerInfoParams { get { return s_params_StateMarkerInfo; } }
@@ -301,15 +242,6 @@ namespace TMD.Controllers
         public class ActionParamsClass_SiteMarkerInfo
         {
             public readonly string id = "id";
-        }
-        static readonly ActionParamsClass_SubsiteMarkerInfo s_params_SubsiteMarkerInfo = new ActionParamsClass_SubsiteMarkerInfo();
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public ActionParamsClass_SubsiteMarkerInfo SubsiteMarkerInfoParams { get { return s_params_SubsiteMarkerInfo; } }
-        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public class ActionParamsClass_SubsiteMarkerInfo
-        {
-            public readonly string id = "id";
-            public readonly string subsiteId = "subsiteId";
         }
         static readonly ActionParamsClass_TreeMarkerInfo s_params_TreeMarkerInfo = new ActionParamsClass_TreeMarkerInfo();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -330,24 +262,20 @@ namespace TMD.Controllers
             public class _ViewNamesClass
             {
                 public readonly string ImportSiteMarkerInfo = "ImportSiteMarkerInfo";
-                public readonly string ImportSubsiteMarkerInfo = "ImportSubsiteMarkerInfo";
                 public readonly string ImportTreeMarkerInfo = "ImportTreeMarkerInfo";
                 public readonly string Index = "Index";
                 public readonly string MenuWidget = "MenuWidget";
                 public readonly string SiteMarkerInfo = "SiteMarkerInfo";
                 public readonly string StateMarkerInfo = "StateMarkerInfo";
-                public readonly string SubsiteMarkerInfo = "SubsiteMarkerInfo";
                 public readonly string TreeMarkerInfo = "TreeMarkerInfo";
                 public readonly string Web = "Web";
             }
             public readonly string ImportSiteMarkerInfo = "~/Views/Map/ImportSiteMarkerInfo.cshtml";
-            public readonly string ImportSubsiteMarkerInfo = "~/Views/Map/ImportSubsiteMarkerInfo.cshtml";
             public readonly string ImportTreeMarkerInfo = "~/Views/Map/ImportTreeMarkerInfo.cshtml";
             public readonly string Index = "~/Views/Map/Index.cshtml";
             public readonly string MenuWidget = "~/Views/Map/MenuWidget.cshtml";
             public readonly string SiteMarkerInfo = "~/Views/Map/SiteMarkerInfo.cshtml";
             public readonly string StateMarkerInfo = "~/Views/Map/StateMarkerInfo.cshtml";
-            public readonly string SubsiteMarkerInfo = "~/Views/Map/SubsiteMarkerInfo.cshtml";
             public readonly string TreeMarkerInfo = "~/Views/Map/TreeMarkerInfo.cshtml";
             public readonly string Web = "~/Views/Map/Web.config";
         }
@@ -405,19 +333,6 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void SubsiteMarkerOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int subsiteId);
-
-        [NonAction]
-        public override System.Web.Mvc.ActionResult SubsiteMarker(int id, int subsiteId)
-        {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SubsiteMarker);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteId", subsiteId);
-            SubsiteMarkerOverride(callInfo, id, subsiteId);
-            return callInfo;
-        }
-
-        [NonAction]
         partial void SiteMarkerOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
 
         [NonAction]
@@ -439,19 +354,6 @@ namespace TMD.Controllers
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "siteId", siteId);
             ImportSiteMarkersOverride(callInfo, id, siteId);
-            return callInfo;
-        }
-
-        [NonAction]
-        partial void ImportSubsiteMarkersOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int subsiteId);
-
-        [NonAction]
-        public override System.Web.Mvc.ActionResult ImportSubsiteMarkers(int id, int subsiteId)
-        {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ImportSubsiteMarkers);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteId", subsiteId);
-            ImportSubsiteMarkersOverride(callInfo, id, subsiteId);
             return callInfo;
         }
 
@@ -495,19 +397,6 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void ImportSubsiteMarkerInfoOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int subsiteId);
-
-        [NonAction]
-        public override System.Web.Mvc.ActionResult ImportSubsiteMarkerInfo(int id, int subsiteId)
-        {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.ImportSubsiteMarkerInfo);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteId", subsiteId);
-            ImportSubsiteMarkerInfoOverride(callInfo, id, subsiteId);
-            return callInfo;
-        }
-
-        [NonAction]
         partial void StateMarkerInfoOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id);
 
         [NonAction]
@@ -528,19 +417,6 @@ namespace TMD.Controllers
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SiteMarkerInfo);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
             SiteMarkerInfoOverride(callInfo, id);
-            return callInfo;
-        }
-
-        [NonAction]
-        partial void SubsiteMarkerInfoOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int subsiteId);
-
-        [NonAction]
-        public override System.Web.Mvc.ActionResult SubsiteMarkerInfo(int id, int subsiteId)
-        {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.SubsiteMarkerInfo);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteId", subsiteId);
-            SubsiteMarkerInfoOverride(callInfo, id, subsiteId);
             return callInfo;
         }
 

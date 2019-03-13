@@ -25,7 +25,8 @@ namespace TMD.Controllers
         public virtual ActionResult TreeDetails(int id)
         {
             var tree = Repositories.Trees.FindById(id);
-            if (tree == null) { return new NotFoundResult(); }
+            if (tree == null) return new NotFoundResult();
+
             var orderedMeasurements = from measurement in tree.Measurements
                                       orderby measurement.Measured descending
                                       select measurement;
@@ -34,8 +35,7 @@ namespace TMD.Controllers
                                          where measurement.Photos.Count > 0
                                          select measurement;
             var locationModel = Mapper.Map<Tree, BrowseTreeLocationModel>(tree);
-            Mapper.Map(tree.Subsite, locationModel);
-            Mapper.Map(tree.Subsite.Site, locationModel);
+            Mapper.Map(tree.Site, locationModel);
             var model = new BrowseTreeModel
             {
                 Details = Mapper.Map<Tree, BrowseTreeDetailsModel>(tree),
@@ -51,40 +51,32 @@ namespace TMD.Controllers
             int? page = null, string sort = null, bool? sortAsc = null)
         {
             var site = Repositories.Sites.FindById(id);
-            if (site == null) { return new NotFoundResult(); }
-            var siteVisits = from visit in site.Visits
-                             orderby visit.Visited descending
-                             select visit;
-            var subsite = site.Subsites[0];
-            var visitsWithPhotos = from visit in subsite.Visits
-                                   orderby visit.Visited descending
-                                   where visit.Photos.Count > 0
-                                   select visit;
-            var allSubsiteSpecies = Repositories.Trees.ListMeasuredSpeciesBySubsiteId(subsite.Id);
-            var subsiteSpeciesDataSource = allSubsiteSpecies.SortAndPageInMemory(
+            if (site == null) return new NotFoundResult();
+
+            var siteVisits = site.Visits.OrderByDescending(v => v.Visited);
+            var allSiteSpecies = Repositories.Trees.ListMeasuredSpeciesBySiteId(site.Id);
+            var siteSpeciesDataSource = allSiteSpecies.SortAndPageInMemory(
                 column =>
                 {
-                    if ("BotanicalName".Equals(column)) { return species => species.ScientificName; }
-                    if ("CommonName".Equals(column)) { return species => species.CommonName; }
-                    if ("MaxHeight".Equals(column)) { return species => species.MaxHeight; }
-                    if ("MaxGirth".Equals(column)) { return species => species.MaxGirth; }
-                    if ("MaxCrownSpread".Equals(column)) { return species => species.MaxCrownSpread; }
+                    if ("BotanicalName".Equals(column)) return s => s.ScientificName;
+                    if ("CommonName".Equals(column)) return s => s.CommonName;
+                    if ("MaxHeight".Equals(column)) return s => s.MaxHeight;
+                    if ("MaxGirth".Equals(column)) return s => s.MaxGirth;
+                    if ("MaxCrownSpread".Equals(column)) return s => s.MaxCrownSpread;
                     throw new NotImplementedException();
                 },
                 sort, sortAsc, page, 10);
-            var subsiteSpeciesGridModel = new EntityGridModel<SubsiteMeasuredSpecies>(subsiteSpeciesDataSource) { RowsPerPage = 10 };
-            if (Request.IsAjaxRequest())
-            {
-                return PartialView("SubsiteSpeciesGridPartial", subsiteSpeciesGridModel);
-            }
+            var siteSpeciesGridModel = new EntityGridModel<SiteMeasuredSpecies>(siteSpeciesDataSource) { RowsPerPage = 10 };
+            if (Request.IsAjaxRequest()) return PartialView("SiteSpeciesGridPartial2", siteSpeciesGridModel);
+
             var model = new BrowseSiteModel
             {
                 Id = id,
-                Details = Mapper.Map<Subsite, BrowseSubsiteDetailsModel>(subsite),
-                Location = Mapper.Map<Subsite, BrowseSubsiteLocationModel>(subsite),
-                PhotoSummaries = Mapper.Map<IEnumerable<SubsiteVisit>, IList<BrowsePhotoSumaryModel>>(visitsWithPhotos),
+                Details = Mapper.Map<Site, BrowseSiteDetailsModel>(site),
+                Location = Mapper.Map<Site, BrowseSiteLocationModel>(site),
+                PhotoSummaries = Mapper.Map<IEnumerable<SiteVisit>, IList<BrowsePhotoSumaryModel>>(siteVisits.Where(v => v.Photos.Any())),
                 Visits = Mapper.Map<IEnumerable<SiteVisit>, IList<BrowseSiteVisitModel>>(siteVisits),
-                SubsiteSpeciesModel = subsiteSpeciesGridModel
+                SiteSpeciesModel = siteSpeciesGridModel
             };
             return View(model);
         }
@@ -97,134 +89,133 @@ namespace TMD.Controllers
             string parameterNamePrefix = null)
         {
             GlobalMeasuredSpecies globalSpecies = Repositories.Trees.FindMeasuredSpeciesByName(botanicalName, commonName);
-            if (globalSpecies == null) { return new NotFoundResult(); }
-            BrowseSpeciesModel model = new BrowseSpeciesModel
-            {
-                GlobalDetails = Mapper.Map<GlobalMeasuredSpecies, BrowseSpeciesDetailsModel>(globalSpecies)
-            };
-            IList<StateMeasuredSpecies> allStateSpecies = Repositories.Trees.ListMeasuredSpeciesForStatesByName(botanicalName, commonName);
+            if (globalSpecies == null) return new NotFoundResult();
+
+            var model = new BrowseSpeciesModel { GlobalDetails = Mapper.Map<GlobalMeasuredSpecies, BrowseSpeciesDetailsModel>(globalSpecies) };
+            var allStateSpecies = Repositories.Trees.ListMeasuredSpeciesForStatesByName(botanicalName, commonName);
             var stateSpeciesDataSource = allStateSpecies.SortAndPageInMemory(
                 column =>
                 {
-                    if ("State".Equals(column)) { return species => species.State.Name; }
-                    if ("MaxHeight".Equals(column)) { return species => species.MaxHeight; }
-                    if ("MaxGirth".Equals(column)) { return species => species.MaxGirth; }
-                    if ("MaxCrownSpread".Equals(column)) { return species => species.MaxCrownSpread; }
+                    if ("State".Equals(column)) return s => s.State.Name;
+                    if ("MaxHeight".Equals(column)) return s => s.MaxHeight;
+                    if ("MaxGirth".Equals(column)) return s => s.MaxGirth;
+                    if ("MaxCrownSpread".Equals(column)) return s => s.MaxCrownSpread;
                     throw new NotImplementedException();
                 },
                 stateSpeciesSort, stateSpeciesSortAsc, stateSpeciesPage, 10);
             var stateSpeciesGridModel = new EntityGridModel<StateMeasuredSpecies>(stateSpeciesDataSource) { ParameterNamePrefix = "stateSpecies", RowsPerPage = 10 };
             if (Request.IsAjaxRequest() && "stateSpecies".Equals(parameterNamePrefix))
-            {
                 return PartialView("SpeciesByStateGridPartial", stateSpeciesGridModel);
-            }
+
             model.StateSpeciesModel = stateSpeciesGridModel;
             if (siteId.HasValue)
             {
                 SiteMeasuredSpecies siteSpecies = Repositories.Trees.FindMeasuredSpeciesByNameAndSiteId(botanicalName, commonName, siteId.Value);
-                if (siteSpecies == null) { return new NotFoundResult(); }
-                stateId = siteSpecies.Site.Subsites[0].State.Id;
+                if (siteSpecies == null) return new NotFoundResult();
+
+                stateId = siteSpecies.Site.State.Id;
                 model.SiteDetails = Mapper.Map<SiteMeasuredSpecies, BrowseSpeciesSiteDetailsModel>(siteSpecies);
-                IList<Tree> allTrees = Repositories.Trees.ListByNameAndSiteId(botanicalName, commonName, siteId.Value);
+                var allTrees = Repositories.Trees.ListByNameAndSiteId(botanicalName, commonName, siteId.Value);
                 var treesDataSource = allTrees.SortAndPageInMemory(
                     column =>
                     {
-                        if ("Height".Equals(column)) { return tree => tree.Height; }
-                        if ("Girth".Equals(column)) { return tree => tree.Girth; }
-                        if ("CrownSpread".Equals(column)) { return tree => tree.CrownSpread; }
+                        if ("Height".Equals(column)) return t => t.Height;
+                        if ("Girth".Equals(column)) return t => t.Girth;
+                        if ("CrownSpread".Equals(column)) return t => t.CrownSpread;
                         throw new NotImplementedException();
                     },
                     treesSort, treesSortAsc, treesPage, 10);
                 var treesGridModel = new EntityGridModel<Tree>(treesDataSource) { ParameterNamePrefix = "trees", RowsPerPage = 10 };
                 if (Request.IsAjaxRequest() && "trees".Equals(parameterNamePrefix))
-                {
                     return PartialView("TreesGridPartial", treesGridModel);
-                }
+
                 model.TreesModel = treesGridModel;
             }
+
             if (stateId.HasValue)
             {
                 StateMeasuredSpecies stateSpecies = Repositories.Trees.FindMeasuredSpeciesByNameAndStateId(botanicalName, commonName, stateId.Value);
-                if (stateSpecies == null) { return new NotFoundResult(); }
+                if (stateSpecies == null) return new NotFoundResult();
+
                 model.StateDetails = Mapper.Map<StateMeasuredSpecies, BrowseSpeciesStateDetailsModel>(stateSpecies);
-                IList<SiteMeasuredSpecies> allSiteSpecies = Repositories.Trees.ListMeasuredSpeciesForSitesByNameAndStateId(botanicalName, commonName, stateId.Value);
+                var allSiteSpecies = Repositories.Trees.ListMeasuredSpeciesForSitesByNameAndStateId(botanicalName, commonName, stateId.Value);
                 var siteSpeciesDataSource = allSiteSpecies.SortAndPageInMemory(
                     column =>
                     {
-                        if ("Site".Equals(column)) { return species => species.Site.Name; }
-                        if ("MaxHeight".Equals(column)) { return species => species.MaxHeight; }
-                        if ("MaxGirth".Equals(column)) { return species => species.MaxGirth; }
-                        if ("MaxCrownSpread".Equals(column)) { return species => species.MaxCrownSpread; }
+                        if ("Site".Equals(column)) return s => s.Site.Name;
+                        if ("MaxHeight".Equals(column)) return s => s.MaxHeight;
+                        if ("MaxGirth".Equals(column)) return s => s.MaxGirth;
+                        if ("MaxCrownSpread".Equals(column)) return s => s.MaxCrownSpread;
                         throw new NotImplementedException();
                     },
                     siteSpeciesSort, siteSpeciesSortAsc, siteSpeciesPage, 10);
                 var siteSpeciesGridModel = new EntityGridModel<SiteMeasuredSpecies>(siteSpeciesDataSource) { ParameterNamePrefix = "siteSpecies", RowsPerPage = 10 };
                 if (Request.IsAjaxRequest() && "siteSpecies".Equals(parameterNamePrefix))
-                {
                     return PartialView("SiteSpeciesGridPartial", siteSpeciesGridModel);
-                }
+
                 model.SiteSpeciesModel = siteSpeciesGridModel;
             }
+
             return View(model);
         }
 
         [DefaultReturnUrl]
         public virtual ActionResult StateDetails(int id,
             int? stateSpeciesPage = null, string stateSpeciesSort = null, bool? stateSpeciesSortAsc = null,
-            int? subsitesPage = null, string subsitesSort = null, bool? subsitesSortAsc = null,
+            int? sitesPage = null, string sitesSort = null, bool? sitesSortAsc = null,
             string parameterNamePrefix = null)
         {
             var state = Repositories.Locations.FindStateById(id);
-            if (state == null) { return new NotFoundResult(); }
+            if (state == null) return new NotFoundResult();
+
             var model = Mapper.Map<State, BrowseStateModel>(state);
-            IEnumerable<StateMeasuredSpecies> allStateSpecies = Repositories.Trees.ListMeasuredSpeciesByStateId(state.Id);
+            var allStateSpecies = Repositories.Trees.ListMeasuredSpeciesByStateId(state.Id);
             var stateSpeciesDataSource = allStateSpecies.SortAndPageInMemory(
                 column =>
                 {
-                    if ("BotanicalName".Equals(column)) { return species => species.ScientificName; }
-                    if ("CommonName".Equals(column)) { return species => species.CommonName; }
-                    if ("MaxHeight".Equals(column)) { return species => species.MaxHeight; }
-                    if ("MaxGirth".Equals(column)) { return species => species.MaxGirth; }
-                    if ("MaxCrownSpread".Equals(column)) { return species => species.MaxCrownSpread; }
+                    if ("BotanicalName".Equals(column)) return s => s.ScientificName;
+                    if ("CommonName".Equals(column)) return s => s.CommonName;
+                    if ("MaxHeight".Equals(column)) return s => s.MaxHeight;
+                    if ("MaxGirth".Equals(column)) return s => s.MaxGirth;
+                    if ("MaxCrownSpread".Equals(column)) return s => s.MaxCrownSpread;
                     throw new NotImplementedException();
                 },
                 stateSpeciesSort, stateSpeciesSortAsc, stateSpeciesPage, 10);
             var stateSpeciesGridModel = new EntityGridModel<StateMeasuredSpecies>(stateSpeciesDataSource) { ParameterNamePrefix = "stateSpecies", RowsPerPage = 10 };
             if (Request.IsAjaxRequest() && "stateSpecies".Equals(parameterNamePrefix))
-            {
                 return PartialView("StateSpeciesGridPartial", stateSpeciesGridModel);
-            }
+
             model.StateSpeciesModel = stateSpeciesGridModel;
-            IList<Subsite> allSubsites = Repositories.Sites.FindSubsitesByStateId(state.Id);
-            var subsitesDataSource = allSubsites.SortAndPageInMemory(
+            var allSites = Repositories.Sites.FindSitesByStateId(state.Id);
+            var sitesDataSource = allSites.SortAndPageInMemory(
                 column =>
                 {
-                    if ("Site".Equals(column)) { return subsite => subsite.Site.Name; }
-                    if ("RHI5".Equals(column)) { return subsite => subsite.Site.ComputedRHI5; }
-                    if ("RHI10".Equals(column)) { return subsite => subsite.Site.ComputedRHI10; }
-                    if ("RGI5".Equals(column)) { return subsite => subsite.Site.ComputedRGI5; }
-                    if ("RGI10".Equals(column)) { return subsite => subsite.Site.ComputedRGI10; }
+                    if ("Site".Equals(column)) return s => s.Name;
+                    if ("RHI5".Equals(column)) return s => s.ComputedRHI5;
+                    if ("RHI10".Equals(column)) return s => s.ComputedRHI10;
+                    if ("RGI5".Equals(column)) return s => s.ComputedRGI5;
+                    if ("RGI10".Equals(column)) return s => s.ComputedRGI10;
                     throw new NotImplementedException();
                 },
-                subsitesSort, subsitesSortAsc, subsitesPage, 10);
-            var subsitesGridModel = new EntityGridModel<Subsite>(subsitesDataSource) { ParameterNamePrefix = "subsites", RowsPerPage = 10 };
-            if (Request.IsAjaxRequest() && "subsites".Equals(parameterNamePrefix))
-            {
-                return PartialView("SitesGridPartial", subsitesGridModel);
-            }
-            model.SitesModel = subsitesGridModel;
+                sitesSort, sitesSortAsc, sitesPage, 10);
+            var sitesGridModel = new EntityGridModel<Site>(sitesDataSource) { ParameterNamePrefix = "sites", RowsPerPage = 10 };
+            if (Request.IsAjaxRequest() && "sites".Equals(parameterNamePrefix))
+                return PartialView("SitesGridPartial", sitesGridModel);
+
+            model.SitesModel = sitesGridModel;
             return View(model);
         }
 
         [DefaultReturnUrl]
-        public virtual ActionResult Species(int? page = null, string sort = null, bool? sortAsc = null, 
+        public virtual ActionResult Species(int? page = null, string sort = null, bool? sortAsc = null,
             string botanicalNameFilter = "", string commonNameFilter = "")
         {
             SpeciesBrowser browser = new SpeciesBrowser
             {
                 PageIndex = page ?? 0,
                 PageSize = 40,
-                BotanicalNameFilter = botanicalNameFilter, CommonNameFilter = commonNameFilter,
+                BotanicalNameFilter = botanicalNameFilter,
+                CommonNameFilter = commonNameFilter,
                 SortAscending = !sortAsc.HasValue || sortAsc.Value,
                 SortProperty = "BotanicalName".Equals(sort) ? SpeciesBrowser.Property.BotanicalName
                     : "CommonName".Equals(sort) ? SpeciesBrowser.Property.CommonName
@@ -235,49 +226,48 @@ namespace TMD.Controllers
             };
             var model = Repositories.Trees.ListAllMeasuredSpecies<GlobalMeasuredSpecies>(browser);
             var gridModel = new EntityGridModel<GlobalMeasuredSpecies>(model) { RowsPerPage = 40 };
-            if (Request.IsAjaxRequest()) 
-            {
-                return PartialView("GlobalSpeciesGridPartial", gridModel);
-            }
+            if (Request.IsAjaxRequest()) return PartialView("GlobalSpeciesGridPartial", gridModel);
+
             return View(gridModel);
         }
 
         [DefaultReturnUrl]
         public virtual ActionResult Locations(int? page = null, string sort = null, bool? sortAsc = null,
-            string stateFilter = "", string countyFilter = "", string siteFilter = "", string subsiteFilter = "")
+            string stateFilter = "", string countyFilter = "", string siteFilter = "")
         {
-            SubsiteBrowser browser = new SubsiteBrowser
+            SiteBrowser browser = new SiteBrowser
             {
                 PageIndex = page ?? 0,
                 PageSize = 40,
-                StateFilter = stateFilter, CountyFilter = countyFilter, SiteFilter = siteFilter, SubsiteFilter = subsiteFilter,
+                StateFilter = stateFilter,
+                CountyFilter = countyFilter,
+                SiteFilter = siteFilter,
                 SortAscending = !sortAsc.HasValue || sortAsc.Value,
-                SortProperty = "State".Equals(sort) ? SubsiteBrowser.Property.State
-                    : "Site".Equals(sort) ? SubsiteBrowser.Property.Site
-                    : "County".Equals(sort) ? SubsiteBrowser.Property.County
-                    : "RHI5".Equals(sort) ? SubsiteBrowser.Property.RHI5
-                    : "RHI10".Equals(sort) ? SubsiteBrowser.Property.RHI10
-                    : "RGI5".Equals(sort) ? SubsiteBrowser.Property.RGI5
-                    : "RGI10".Equals(sort) ? SubsiteBrowser.Property.RGI10
-                    : "LastMeasurement".Equals(sort) ? SubsiteBrowser.Property.LastMeasurement
-                    : (SubsiteBrowser.Property?)null
+                SortProperty = "State".Equals(sort) ? SiteBrowser.Property.State
+                    : "Site".Equals(sort) ? SiteBrowser.Property.Site
+                    : "County".Equals(sort) ? SiteBrowser.Property.County
+                    : "RHI5".Equals(sort) ? SiteBrowser.Property.RHI5
+                    : "RHI10".Equals(sort) ? SiteBrowser.Property.RHI10
+                    : "RGI5".Equals(sort) ? SiteBrowser.Property.RGI5
+                    : "RGI10".Equals(sort) ? SiteBrowser.Property.RGI10
+                    : "LastMeasurement".Equals(sort) ? SiteBrowser.Property.LastMeasurement
+                    : (SiteBrowser.Property?)null
             };
-            var model = Repositories.Sites.ListAllSubsites(browser);
-            var gridModel = new EntityGridModel<Subsite>(model) { RowsPerPage = 40 };
-            if (Request.IsAjaxRequest()) 
-            {
-                return PartialView("LocationsGridPartial", gridModel);
-            }
+
+            var model = Repositories.Sites.ListAllSites(browser);
+            var gridModel = new EntityGridModel<Site>(model) { RowsPerPage = 40 };
+            if (Request.IsAjaxRequest()) return PartialView("LocationsGridPartial", gridModel);
+
             return View(gridModel);
         }
 
         [DefaultReturnUrl]
         public virtual ActionResult Activity() => View();
-        
+
         [ChildActionOnly]
         public virtual ActionResult RecentTrips()
         {
-            var visits = Repositories.Sites.ListRecentSubsiteVisits(40);
+            var visits = Repositories.Sites.ListRecentSiteVisits(40);
             return PartialView("_RecentTrips", visits.Select(TripLogModel.Create));
         }
 

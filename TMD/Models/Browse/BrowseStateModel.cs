@@ -34,6 +34,6 @@ namespace TMD.Models.Browse
         public DateTime? LastMeasurementDate { get; set; }
         public bool? ContainsEntityWithCoordinates { get; set; }
         public EntityGridModel<StateMeasuredSpecies> StateSpeciesModel { get; set; }
-        public EntityGridModel<Subsite> SitesModel { get; set; }
+        public EntityGridModel<Site> SitesModel { get; set; }
     }
 }

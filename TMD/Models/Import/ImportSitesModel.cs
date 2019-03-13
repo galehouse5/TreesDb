@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TMD.Model.Extensions;
 
 namespace TMD.Models.Import
 {
@@ -11,9 +10,7 @@ namespace TMD.Models.Import
         public bool HasOptionalErrors { get; set; }
 
         public ImportSiteModel FindSiteById(int id)
-        {
-            return Sites.First(s => id.Equals(s.Id));
-        }
+            => Sites.First(s => id.Equals(s.Id));
 
         public ImportSiteModel AddSite()
         {
@@ -27,21 +24,11 @@ namespace TMD.Models.Import
             return Sites.Remove(site);
         }
 
-        public ImportSubsiteModel FindSubsiteById(int id)
-        {
-            var site = Sites.FirstOrDefault(s => s.FindSubsiteById(id) != null);
-            return site == null ? null : site.FindSubsiteById(id);
-        }
-
         public void Initialize()
         {
-            if (Sites.Count == 1)
+            foreach (var site in Sites)
             {
-                Sites.Single().IsSaveableAndRemovable = false;
-            }
-            else
-            {
-                Sites.ForEach(s => s.IsSaveableAndRemovable = true);
+                site.IsRemovable = Sites.Count > 1;
             }
         }
     }

@@ -216,7 +216,6 @@ namespace TMD.Controllers
             public readonly string stateFilter = "stateFilter";
             public readonly string countyFilter = "countyFilter";
             public readonly string siteFilter = "siteFilter";
-            public readonly string subsiteFilter = "subsiteFilter";
         }
         static readonly ViewsClass s_views = new ViewsClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -326,17 +325,16 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void LocationsByFiltersOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, string stateFilter, string countyFilter, string siteFilter, string subsiteFilter);
+        partial void LocationsByFiltersOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, string stateFilter, string countyFilter, string siteFilter);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult LocationsByFilters(string stateFilter, string countyFilter, string siteFilter, string subsiteFilter)
+        public override System.Web.Mvc.ActionResult LocationsByFilters(string stateFilter, string countyFilter, string siteFilter)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.LocationsByFilters);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "stateFilter", stateFilter);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "countyFilter", countyFilter);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "siteFilter", siteFilter);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteFilter", subsiteFilter);
-            LocationsByFiltersOverride(callInfo, stateFilter, countyFilter, siteFilter, subsiteFilter);
+            LocationsByFiltersOverride(callInfo, stateFilter, countyFilter, siteFilter);
             return callInfo;
         }
 

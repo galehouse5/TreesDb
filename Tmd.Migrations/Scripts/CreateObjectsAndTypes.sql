@@ -122,7 +122,7 @@ AS
       select 
         t.ScientificName,
         t.CommonName,
-        ss.SiteId,
+        t.SiteId,
         MAX(t.Height) MaxHeight,
         case MAX(t.Height)
           when 0 then (select Id from ValueObjects.DistanceFormats where Format = 'Invalid')
@@ -134,11 +134,9 @@ AS
           (
             select top 1 t2.Id 
             from Trees.Trees t2
-            join Sites.Subsites ss2
-              on ss2.Id = t2.SubsiteId
             where t2.ScientificName = t.ScientificName
               and t2.CommonName = t.CommonName
-              and ss2.SiteId = ss.SiteId
+              and t2.SiteId = t.SiteId
               and t2.Height = MAX(t.Height)
           )
         end MaxHeightTreeId,
@@ -153,11 +151,9 @@ AS
           (
             select top 1 t2.Id 
             from Trees.Trees t2
-            join Sites.Subsites ss2
-              on ss2.Id = t2.SubsiteId
             where t2.ScientificName = t.ScientificName
               and t2.CommonName = t.CommonName
-              and ss2.SiteId = ss.SiteId
+              and t2.SiteId = t.SiteId
               and t2.Girth = MAX(t.Girth)
           )
         end MaxGirthTreeId,
@@ -172,19 +168,15 @@ AS
           (
             select top 1 t2.Id 
             from Trees.Trees t2
-            join Sites.Subsites ss2
-              on ss2.Id = t2.SubsiteId
             where t2.ScientificName = t.ScientificName
               and t2.CommonName = t.CommonName
-              and ss2.SiteId = ss.SiteId
+              and t2.SiteId = t.SiteId
               and t2.CrownSpread = MAX(t.CrownSpread)
           )
         end MaxCrownSpreadTreeId,
         COUNT(*) Number
-      from Trees.Trees t    
-      join Sites.Subsites ss
-        on ss.Id = t.SubsiteId
-      group by t.ScientificName, t.CommonName, ss.SiteId
+      from Trees.Trees t
+      group by t.ScientificName, t.CommonName, t.SiteId
     ) mt
 GO
 
@@ -215,7 +207,7 @@ AS
       select 
         t.ScientificName,
         t.CommonName,
-        ss.StateId,
+        s.StateId,
         MAX(t.Height) MaxHeight,
         case MAX(t.Height)
           when 0 then (select Id from ValueObjects.DistanceFormats where Format = 'Invalid')
@@ -227,11 +219,11 @@ AS
           (
             select top 1 t2.Id 
             from Trees.Trees t2
-            join Sites.Subsites ss2
-              on ss2.Id = t2.SubsiteId
+            join Sites.Sites s2
+              on s2.Id = t2.SiteId
             where t2.ScientificName = t.ScientificName
               and t2.CommonName = t.CommonName
-              and ss2.StateId = ss.StateId
+              and s2.StateId = s.StateId
               and t2.Height = MAX(t.Height)
           )
         end MaxHeightTreeId,
@@ -246,11 +238,11 @@ AS
           (
             select top 1 t2.Id 
             from Trees.Trees t2
-            join Sites.Subsites ss2
-              on ss2.Id = t2.SubsiteId
+            join Sites.Sites s2
+              on s2.Id = t2.SiteId
             where t2.ScientificName = t.ScientificName
               and t2.CommonName = t.CommonName
-              and ss2.StateId = ss.StateId
+              and s2.StateId = s.StateId
               and t2.Girth = MAX(t.Girth)
           )
         end MaxGirthTreeId,
@@ -265,104 +257,19 @@ AS
           (
             select top 1 t2.Id 
             from Trees.Trees t2
-            join Sites.Subsites ss2
-              on ss2.Id = t2.SubsiteId
+            join Sites.Sites s2
+              on s2.Id = t2.SiteId
             where t2.ScientificName = t.ScientificName
               and t2.CommonName = t.CommonName
-              and ss2.StateId = ss.StateId
+              and s2.StateId = s.StateId
               and t2.CrownSpread = MAX(t.CrownSpread)
           )
         end MaxCrownSpreadTreeId,
         COUNT(*) Number
       from Trees.Trees t
-      join Sites.Subsites ss
-        on ss.Id = t.SubsiteId
-      group by t.ScientificName, t.CommonName, ss.StateId
-    ) mt
-GO
-
-
-
-
-
-
-
-
-
-CREATE VIEW [Trees].[MeasuredSpeciesBySubsite]
-AS
-    select ABS(
-        CAST(HASHBYTES('MD5', LOWER(LTRIM(RTRIM(ScientificName)))) as int)
-        ^ CAST(HASHBYTES('MD5', LOWER(LTRIM(RTRIM(CommonName)))) as int)
-        ^ CAST(HASHBYTES('MD5', CAST(SubsiteId as varchar)) as int)
-        ^ CAST(HASHBYTES('MD5', 'Subsite') as int)
-      ) Id,
-      SubsiteId,
-      ScientificName, CommonName,
-      MaxHeight, MaxHeightInputFormat, MaxHeightTreeId,
-      MaxGirth, MaxGirthInputFormat, MaxGirthTreeId,
-      MaxCrownSpread, MaxCrownSpreadInputFormat, MaxCrownSpreadTreeId,
-      Number
-    from 
-    (
-      select 
-        t.ScientificName,
-        t.CommonName,
-        t.SubsiteId,
-        MAX(t.Height) MaxHeight,
-        case MAX(t.Height)
-          when 0 then (select Id from ValueObjects.DistanceFormats where Format = 'Invalid')
-          else (select Id from ValueObjects.DistanceFormats where Format = 'Default')
-        end MaxHeightInputFormat,
-        case MAX(t.Height)
-          when 0 then null
-          else 
-          (
-            select top 1 Id 
-            from Trees.Trees t2
-            where t2.ScientificName = t.ScientificName
-              and t2.CommonName = t.CommonName
-              and t2.SubsiteId = t.SubsiteId
-              and t2.Height = MAX(t.Height)
-          )
-        end MaxHeightTreeId,
-        MAX(t.Girth) MaxGirth,
-        case MAX(t.Girth)
-          when 0 then (select Id from ValueObjects.DistanceFormats where Format = 'Invalid')
-          else (select Id from ValueObjects.DistanceFormats where Format = 'Default')
-        end MaxGirthInputFormat,
-        case MAX(t.Girth)
-          when 0 then null
-          else 
-          (
-            select top 1 Id 
-            from Trees.Trees t2
-            where t2.ScientificName = t.ScientificName
-              and t2.CommonName = t.CommonName
-              and t2.SubsiteId = t.SubsiteId
-              and t2.Girth = MAX(t.Girth)
-          )
-        end MaxGirthTreeId,
-        MAX(t.CrownSpread) MaxCrownSpread,
-        case MAX(t.CrownSpread)
-          when 0 then (select Id from ValueObjects.DistanceFormats where Format = 'Invalid')
-          else (select Id from ValueObjects.DistanceFormats where Format = 'Default')
-        end MaxCrownSpreadInputFormat,
-        case MAX(t.CrownSpread)
-          when 0 then null
-          else 
-          (
-            select top 1 Id 
-            from Trees.Trees t2
-            where t2.ScientificName = t.ScientificName
-              and t2.CommonName = t.CommonName
-              and t2.SubsiteId = t.SubsiteId
-              and t2.CrownSpread = MAX(t.CrownSpread)
-          )
-        end MaxCrownSpreadTreeId,
-        COUNT(*) Number
-      from Trees.Trees t    
-      group by t.ScientificName, t.CommonName, t.SubsiteId
+      join Sites.Sites s
+        on s.Id = t.SiteId
+      group by t.ScientificName, t.CommonName, s.StateId
     ) mt
 GO
 
@@ -384,7 +291,7 @@ as
         m.LastName,
         m.FirstName,
         count(distinct m.TreeID) TreesMeasuredCount,
-        count(distinct t.SubsiteId) SitesVisitedCount,
+        count(distinct t.SiteId) SitesVisitedCount,
         max(t.LastMeasured) LastMeasurementDate
     from Trees.Measurers m
     join Trees.Trees t
@@ -429,7 +336,7 @@ GO
 
 
 
-CREATE FUNCTION [dbo].[SearchSubsites]
+CREATE FUNCTION [dbo].[SearchSites]
 (  
   @expression nvarchar(100)
 )
@@ -437,14 +344,14 @@ RETURNS TABLE
 AS
 RETURN 
 (
-  select Id, 
+  select Id,
     (case when Name like @expression + '%' then 1 else 0 end)
     + (case when Name like '%' + @expression then 1 else 0 end)
     + (case when Name like '%' + @expression + '%' then 1 else 0 end)
     + (case when County like @expression + '%' then 1 else 0 end)
     + (case when County like '%' + @expression then 1 else 0 end)
     + (case when County like '%' + @expression + '%' then 1 else 0 end) [Rank]
-  from Sites.Subsites 
+  from Sites.Sites 
   where Name like '%' + @expression + '%'
     or County like '%' + @expression + '%'
 )
@@ -572,10 +479,10 @@ create view dbo.StateMetrics
 as
     with trees as
     (
-        select ss.StateId, t.*
+        select s.StateId, t.*
         from Trees.Trees t
-        join Sites.Subsites ss
-            on ss.Id = t.SubsiteId
+        join Sites.Sites s
+            on s.Id = t.SiteId
     ),
 
     species as
@@ -616,7 +523,7 @@ as
         case when exists
         (
             select *
-            from Sites.Subsites
+            from Sites.Sites
             where StateId = s.Id
                 and LatitudeInputFormat != 1 -- Unspecified
                 and LongitudeInputFormat != 1 -- Unspecified
@@ -636,21 +543,13 @@ go
 
 create view dbo.SiteMetrics
 as
-    with trees as
-    (
-        select ss.SiteId, t.*
-        from Trees.Trees t
-        join Sites.Subsites ss
-            on ss.Id = t.SubsiteId
-    ),
-
-    species as
+    with species as
     (
         select SiteId, ScientificName,
             max(Height) MaxHeight,
             max(Girth) MaxGirth,
             count(*) TreeCount
-        from trees
+        from Trees.Trees
         group by SiteId, ScientificName
     )
 
@@ -679,13 +578,13 @@ as
           select case when count(*) >= 20 then sum(MaxGirth) / count(*) else null end
           from (select top 20 MaxGirth from species where SiteId = s.Id order by MaxGirth desc) _
         ) RGI20,
-        (select count(*) from trees where SiteId = s.Id) TreesMeasuredCount,
-        (select max(LastMeasured) from trees where SiteId = s.Id) LastMeasurementDate,
+        (select count(*) from Trees.Trees where SiteId = s.Id) TreesMeasuredCount,
+        (select max(LastMeasured) from Trees.Trees where SiteId = s.Id) LastMeasurementDate,
         case when exists
         (
             select *
-            from Sites.Subsites
-            where SiteId = s.Id
+            from Sites.Sites
+            where Id = s.Id
                 and LatitudeInputFormat != 1 -- Unspecified
                 and LongitudeInputFormat != 1 -- Unspecified
         )
@@ -702,85 +601,9 @@ go
 
 
 
-create view dbo.SubsiteMetrics
-as
-    with species as
-    (
-        select SubsiteId, ScientificName,
-            max(Height) MaxHeight,
-            max(Girth) MaxGirth,
-            count(*) TreeCount
-        from Trees.Trees
-        group by SubsiteId, ScientificName
-    )
-
-    select ss.Id SubsiteId,
-        (
-          select case when count(*) >= 5 then sum(MaxHeight) / count(*) else null end
-          from (select top 5 MaxHeight from species where SubsiteId = ss.Id order by MaxHeight desc) _
-        ) RHI5,
-        (
-          select case when count(*) >= 10 then sum(MaxHeight) / count(*) else null end
-          from (select top 10 MaxHeight from species where SubsiteId = ss.Id order by MaxHeight desc) _
-        ) RHI10,
-        (
-          select case when count(*) >= 20 then sum(MaxHeight) / count(*) else null end
-          from (select top 20 MaxHeight from species where SubsiteId = ss.Id order by MaxHeight desc) _
-        ) RHI20,
-        (
-          select case when count(*) >= 5 then sum(MaxGirth) / count(*) else null end
-          from (select top 5 MaxGirth from species where SubsiteId = ss.Id order by MaxGirth desc) _
-        ) RGI5,
-        (
-          select case when count(*) >= 10 then sum(MaxGirth) / count(*) else null end
-          from (select top 10 MaxGirth from species where SubsiteId = ss.Id order by MaxGirth desc) _
-        ) RGI10,
-        (
-          select case when count(*) >= 20 then sum(MaxGirth) / count(*) else null end
-          from (select top 20 MaxGirth from species where SubsiteId = ss.Id order by MaxGirth desc) _
-        ) RGI20,
-        (select count(*) from Trees.Trees where SubsiteId = ss.Id) TreesMeasuredCount,
-        (select max(LastMeasured) from Trees.Trees where SubsiteId = ss.Id) LastMeasurementDate,
-        case when exists
-        (
-            select *
-            from Trees.Trees
-            where SubsiteId = ss.Id
-                and LatitudeInputFormat != 1 -- Unspecified
-                and LongitudeInputFormat != 1 -- Unspecified
-        ) then 1 else 0
-        end ContainsEntityWithCoordinates
-    from Sites.Subsites ss
-go
-
-
-
-
-
-
-
-
-
 create procedure dbo.UpdateStaleMetrics
 as
 begin
-    update ss
-    set ComputedRHI5 = m.RHI5,
-        ComputedRHI10 = m.RHI10,
-        ComputedRHI20 = m.RHI20,
-        ComputedRGI5 = m.RGI5,
-        ComputedRGI10 = m.RGI10,
-        ComputedRGI20 = m.RGI20,
-        ComputedTreesMeasuredCount = m.TreesMeasuredCount,
-        ComputedLastMeasurementDate = m.LastMeasurementDate,
-        ComputedContainsEntityWithCoordinates = m.ContainsEntityWithCoordinates,
-        AreMetricsStale = 0,
-        LastMetricsUpdateTimestamp = getdate()
-    from Sites.Subsites ss
-    join dbo.SubsiteMetrics m
-        on m.SubsiteId = ss.Id
-    where ss.AreMetricsStale = 1
-
     update s
     set ComputedRHI5 = m.RHI5,
         ComputedRHI10 = m.RHI10,
@@ -832,10 +655,10 @@ as
 begin
     set nocount on
 
-    update Sites.Subsites
+    update Sites.Sites
     set AreMetricsStale = 1
-    where ID in (select SubsiteId from inserted)
-        or ID in (select SubsiteId from deleted)
+    where ID in (select SiteId from inserted)
+        or ID in (select SiteId from deleted)
 end
 go
 
@@ -847,17 +670,12 @@ go
 
 
 
-create trigger Sites.FlagStaleMetrics_Subsites
-    on Sites.Subsites
+create trigger Sites.FlagStaleMetrics_Sites
+    on Sites.Sites
     after insert, update, delete
 as
 begin
     set nocount on
-
-    update Sites.Sites
-    set AreMetricsStale = 1
-    where ID in (select SiteId from inserted)
-        or ID in (select SiteId from deleted)
 
     update Locations.States
     set AreMetricsStale = 1

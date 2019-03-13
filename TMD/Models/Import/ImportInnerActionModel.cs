@@ -6,7 +6,7 @@ using TMD.Model.Extensions;
 
 namespace TMD.Models.Import
 {
-    public enum ImportModelLevel { Unknown, Trip, Site, Subsite, Tree }
+    public enum ImportModelLevel { Unknown, Trip, Site, Tree }
     public enum ImportModelAction { Unknown, Add, SaveUnlessOptionalErrors, Edit, Remove, DetailedEdit, SaveIgnoringOptionalErrors }
 
     [DebuggerDisplay("{Action} {Level} with Id {Id}")]

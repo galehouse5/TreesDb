@@ -1,8 +1,5 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using TMD.Model;
 using TMD.Model.Trees;
 using TMD.UnitTests.Stubs;
@@ -17,8 +14,7 @@ namespace TMD.UnitTests.Model
         {
             var importedTrip = new ImportedTripStub { Date = DateTime.Now };
             var importedSite = new ImportedSiteStub(importedTrip);
-            var importedSubsite = new ImportedSubsiteStub(importedSite);
-            var importedTree = new ImportedTreeStub(importedSubsite)
+            var importedTree = new ImportedTreeStub(importedSite)
             {
                 CommonName = "CommonName",
                 ScientificName = "ScientificName",
@@ -30,8 +26,8 @@ namespace TMD.UnitTests.Model
                 Elevation = Elevation.Create(6),
                 GeneralComments = "GeneralComments"
             };
-
             var tree = Tree.Create(importedTree);
+
             Assert.AreEqual(1, tree.Measurements.Count);
             Assert.AreEqual("Commonname", tree.CommonName);
             Assert.AreEqual("Scientificname", tree.ScientificName);
@@ -51,27 +47,29 @@ namespace TMD.UnitTests.Model
         {
             var importedTrip = new ImportedTripStub { Date = DateTime.Now };
             var importedSite = new ImportedSiteStub(importedTrip);
-            var importedSubsite = new ImportedSubsiteStub(importedSite);
-            var tree1 = Tree.Create(new ImportedTreeStub(importedSubsite)
+            var tree1 = Tree.Create(new ImportedTreeStub(importedSite)
             {
                 CommonName = "CommonName1",
                 ScientificName = "ScientificName1",
                 Coordinates = Coordinates.Create(1, 2)
             });
-            var tree2 = Tree.Create(new ImportedTreeStub(importedSubsite)
+            var tree2 = Tree.Create(new ImportedTreeStub(importedSite)
             {
                 CommonName = "CommonName1",
                 ScientificName = "ScientificName1",
                 Coordinates = Coordinates.Create(3, 4)
             });
+
             Assert.IsFalse(tree1.ShouldMerge(tree2));
             Assert.IsFalse(tree2.ShouldMerge(tree1));
-            var tree3 = Tree.Create(new ImportedTreeStub(importedSubsite)
+
+            var tree3 = Tree.Create(new ImportedTreeStub(importedSite)
             {
                 CommonName = "CommonName1",
                 ScientificName = "ScientificName1",
                 Coordinates = Coordinates.Create(1, 2)
             });
+
             Assert.IsTrue(tree3.ShouldMerge(tree1));
             Assert.IsTrue(tree1.ShouldMerge(tree3));
             Assert.IsFalse(tree3.ShouldMerge(tree2));
@@ -83,8 +81,7 @@ namespace TMD.UnitTests.Model
         {
             var importedTrip1 = new ImportedTripStub { Date = DateTime.Now.AddDays(1) };
             var importedSite1 = new ImportedSiteStub(importedTrip1);
-            var importedSubsite1 = new ImportedSubsiteStub(importedSite1);
-            var tree1 = Tree.Create(new ImportedTreeStub(importedSubsite1)
+            var tree1 = Tree.Create(new ImportedTreeStub(importedSite1)
             {
                 CommonName = "CommonName",
                 ScientificName = "ScientificName",
@@ -98,8 +95,7 @@ namespace TMD.UnitTests.Model
 
             var importedTrip2 = new ImportedTripStub { Date = DateTime.Now };
             var importedSite2 = new ImportedSiteStub(importedTrip2);
-            var importedSubsite2 = new ImportedSubsiteStub(importedSite2);
-            var tree2 = Tree.Create(new ImportedTreeStub(importedSubsite2)
+            var tree2 = Tree.Create(new ImportedTreeStub(importedSite2)
             {
                 CommonName = "CommonName",
                 ScientificName = "ScientificName",

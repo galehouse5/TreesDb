@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using TMD.Model.Extensions;
+using TMD.Model.Locations;
+using TMD.Model.Photos;
+using TMD.Model.Trees;
 
 namespace TMD.Model.Sites
 {
@@ -12,8 +16,13 @@ namespace TMD.Model.Sites
 
         public virtual int Id { get; protected set; }
         public virtual string Name { get; protected set; }
+        public virtual State State { get; protected set; }
+        public virtual string County { get; protected set; }
+        public virtual string OwnershipType { get; protected set; }
         public virtual Coordinates Coordinates { get; protected set; }
         public virtual Coordinates CalculatedCoordinates { get; protected set; }
+        public virtual string OwnershipContactInfo { get; protected set; }
+        public virtual bool MakeOwnershipContactInfoPublic { get; protected set; }
         public virtual RuckerIndex? ComputedRHI5 { get; protected set; }
         public virtual RuckerIndex? ComputedRHI10 { get; protected set; }
         public virtual RuckerIndex? ComputedRHI20 { get; protected set; }
@@ -21,7 +30,10 @@ namespace TMD.Model.Sites
         public virtual RuckerIndex? ComputedRGI10 { get; protected set; }
         public virtual RuckerIndex? ComputedRGI20 { get; protected set; }
         public virtual int? ComputedTreesMeasuredCount { get; protected set; }
+
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")] // Used by "Last measurement" column of locations grid.
         public virtual DateTime? ComputedLastMeasurementDate { get; protected set; }
+
         public virtual bool? ComputedContainsEntityWithCoordinates { get; protected set; }
 
         public virtual SiteVisit LastVisit
@@ -46,10 +58,13 @@ namespace TMD.Model.Sites
 
         public virtual Site RecalculateProperties()
         {
+            OwnershipType = LastVisit.OwnershipType;
             Coordinates = CalculateCoordinates();
             CalculatedCoordinates = CalculateCalculatedCoordinates();
+            OwnershipContactInfo = LastVisit.OwnershipContactInfo;
+            MakeOwnershipContactInfoPublic = LastVisit.MakeOwnershipContactInfoPublic;
+            Photos.RemoveAll().AddRange(from photo in LastVisit.Photos select new SitePhotoReference(photo.ToPhoto(), this));
             VisitCount = Visits.Count;
-            SubsiteCount = Subsites.Count;
             Visitors.RemoveAll().AddRange(
                 (from visit in Visits
                  from visitor in visit.Visitors
@@ -59,76 +74,68 @@ namespace TMD.Model.Sites
 
         public virtual IList<SiteVisit> Visits { get; protected set; }
         public virtual int VisitCount { get; protected set; }
-        public virtual IList<Subsite> Subsites { get; protected set; }
-        public virtual int SubsiteCount { get; protected set; }
+        public virtual IList<Tree> Trees { get; protected set; }
+        public virtual IList<IPhoto> Photos { get; protected set; }
         public virtual IList<Name> Visitors { get; protected set; }
 
-        public virtual void AddSubsite(Subsite subsite)
+        public virtual void AddVisit(SiteVisit visit)
         {
-            Subsites.Add(subsite);
-            subsite.Site = this;
+            Visits.Add(visit);
+            visit.Site = this;
         }
 
-        public virtual bool RemoveSubsite(Subsite subsite)
+        public virtual bool RemoveVisit(SiteVisit visit)
         {
-            if (Subsites.Remove(subsite))
+            if (Visits.Remove(visit))
             {
-                subsite.Site = null;
+                visit.Site = null;
                 return true;
             }
             return false;
         }
 
-        public virtual bool ContainsSingleSubsite
+        public virtual void AddTree(Tree tree)
         {
-            get { return Subsites.Count == 1; }
+            Trees.Add(tree);
+            tree.Site = this;
         }
 
-        public virtual int TreesMeasured
+        public virtual bool RemoveTree(Tree tree)
         {
-            get { return (from subsite in Subsites select subsite.Trees.Count).Sum(); }
+            if (Trees.Remove(tree))
+            {
+                tree.Site = null;
+                return true;
+            }
+            return false;
         }
 
         public const float CoordinateMinutesEquivalenceProximity = 25f;
         public virtual bool ShouldMerge(Site otherSite)
         {
-            if (!Name.Equals(otherSite.Name, StringComparison.OrdinalIgnoreCase))
-                return false;
-
-            if (CalculatedCoordinates.CalculateDistanceInMinutesTo(otherSite.CalculatedCoordinates) > CoordinateMinutesEquivalenceProximity)
-                return false;
+            if (!Name.Equals(otherSite.Name, StringComparison.OrdinalIgnoreCase)) return false;
+            if (!State.Equals(otherSite.State) || !County.Equals(otherSite.County, StringComparison.OrdinalIgnoreCase)) return false;
+            if (CalculatedCoordinates.CalculateDistanceInMinutesTo(otherSite.CalculatedCoordinates) > CoordinateMinutesEquivalenceProximity) return false;
 
             return true;
         }
 
         public virtual Site Merge(Site otherSite)
         {
-            Visits.AddRange(otherSite.Visits);
-
-            foreach (Subsite subsite in otherSite.Subsites)
+            foreach (var visit in otherSite.Visits)
             {
-                if (ShouldMerge(subsite))
-                {
-                    Merge(subsite);
-                }
-                else
-                {
-                    AddSubsite(subsite);
-                }
+                AddVisit(visit);
+            }
+
+            foreach (Tree tree in otherSite.Trees)
+            {
+                Tree sameTree = Trees.SingleOrDefault(t => t.ShouldMerge(tree));
+
+                if (sameTree != null) { tree.Merge(sameTree); }
+                else { AddTree(tree); }
             }
 
             return RecalculateProperties();
-        }
-
-        public virtual bool ShouldMerge(Subsite otherSubsite)
-        {
-            return Subsites.Any(ss => ss.ShouldMerge(otherSubsite));
-        }
-
-        public virtual Subsite Merge(Subsite otherSubsite)
-        {
-            Subsite subsite = Subsites.First(ss => ss.ShouldMerge(otherSubsite));
-            return subsite.Merge(otherSubsite);
         }
 
         public override string ToString()
@@ -139,14 +146,18 @@ namespace TMD.Model.Sites
             importedSite.Trip.AssertIsImported();
             var site = new Site
             {
-                Subsites = new List<Subsite>(),
-                Visits = new List<SiteVisit> { SiteVisit.Create(importedSite) },
+                Trees = new List<Tree>(),
+                Visits = new List<SiteVisit>(),
                 Name = importedSite.Name,
+                State = importedSite.State,
+                County = importedSite.County,
+                Photos = new List<IPhoto>(),
                 Visitors = new List<Name>()
             };
-            foreach (var subsite in importedSite.Subsites.Select(importedSubsite => Subsite.Create(importedSubsite)))
+            site.AddVisit(SiteVisit.Create(importedSite));
+            foreach (var tree in importedSite.Trees.Select(importedTree => Tree.Create(importedTree)))
             {
-                site.AddSubsite(subsite);
+                site.AddTree(tree);
             }
             return site.RecalculateProperties();
         }

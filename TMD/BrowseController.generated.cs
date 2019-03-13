@@ -191,9 +191,9 @@ namespace TMD.Controllers
             public readonly string stateSpeciesPage = "stateSpeciesPage";
             public readonly string stateSpeciesSort = "stateSpeciesSort";
             public readonly string stateSpeciesSortAsc = "stateSpeciesSortAsc";
-            public readonly string subsitesPage = "subsitesPage";
-            public readonly string subsitesSort = "subsitesSort";
-            public readonly string subsitesSortAsc = "subsitesSortAsc";
+            public readonly string sitesPage = "sitesPage";
+            public readonly string sitesSort = "sitesSort";
+            public readonly string sitesSortAsc = "sitesSortAsc";
             public readonly string parameterNamePrefix = "parameterNamePrefix";
         }
         static readonly ActionParamsClass_Species s_params_Species = new ActionParamsClass_Species();
@@ -220,7 +220,6 @@ namespace TMD.Controllers
             public readonly string stateFilter = "stateFilter";
             public readonly string countyFilter = "countyFilter";
             public readonly string siteFilter = "siteFilter";
-            public readonly string subsiteFilter = "subsiteFilter";
         }
         static readonly ViewsClass s_views = new ViewsClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -242,12 +241,12 @@ namespace TMD.Controllers
                 public readonly string SiteDetails = "SiteDetails";
                 public readonly string SitesGridPartial = "SitesGridPartial";
                 public readonly string SiteSpeciesGridPartial = "SiteSpeciesGridPartial";
+                public readonly string SiteSpeciesGridPartial2 = "SiteSpeciesGridPartial2";
                 public readonly string Species = "Species";
                 public readonly string SpeciesByStateGridPartial = "SpeciesByStateGridPartial";
                 public readonly string SpeciesDetails = "SpeciesDetails";
                 public readonly string StateDetails = "StateDetails";
                 public readonly string StateSpeciesGridPartial = "StateSpeciesGridPartial";
-                public readonly string SubsiteSpeciesGridPartial = "SubsiteSpeciesGridPartial";
                 public readonly string TreeDetails = "TreeDetails";
                 public readonly string TreesGridPartial = "TreesGridPartial";
                 public readonly string Web = "Web";
@@ -262,12 +261,12 @@ namespace TMD.Controllers
             public readonly string SiteDetails = "~/Views/Browse/SiteDetails.cshtml";
             public readonly string SitesGridPartial = "~/Views/Browse/SitesGridPartial.cshtml";
             public readonly string SiteSpeciesGridPartial = "~/Views/Browse/SiteSpeciesGridPartial.cshtml";
+            public readonly string SiteSpeciesGridPartial2 = "~/Views/Browse/SiteSpeciesGridPartial2.cshtml";
             public readonly string Species = "~/Views/Browse/Species.cshtml";
             public readonly string SpeciesByStateGridPartial = "~/Views/Browse/SpeciesByStateGridPartial.cshtml";
             public readonly string SpeciesDetails = "~/Views/Browse/SpeciesDetails.cshtml";
             public readonly string StateDetails = "~/Views/Browse/StateDetails.cshtml";
             public readonly string StateSpeciesGridPartial = "~/Views/Browse/StateSpeciesGridPartial.cshtml";
-            public readonly string SubsiteSpeciesGridPartial = "~/Views/Browse/SubsiteSpeciesGridPartial.cshtml";
             public readonly string TreeDetails = "~/Views/Browse/TreeDetails.cshtml";
             public readonly string TreesGridPartial = "~/Views/Browse/TreesGridPartial.cshtml";
             public readonly string Web = "~/Views/Browse/Web.config";
@@ -354,21 +353,21 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void StateDetailsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int? stateSpeciesPage, string stateSpeciesSort, bool? stateSpeciesSortAsc, int? subsitesPage, string subsitesSort, bool? subsitesSortAsc, string parameterNamePrefix);
+        partial void StateDetailsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int id, int? stateSpeciesPage, string stateSpeciesSort, bool? stateSpeciesSortAsc, int? sitesPage, string sitesSort, bool? sitesSortAsc, string parameterNamePrefix);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult StateDetails(int id, int? stateSpeciesPage, string stateSpeciesSort, bool? stateSpeciesSortAsc, int? subsitesPage, string subsitesSort, bool? subsitesSortAsc, string parameterNamePrefix)
+        public override System.Web.Mvc.ActionResult StateDetails(int id, int? stateSpeciesPage, string stateSpeciesSort, bool? stateSpeciesSortAsc, int? sitesPage, string sitesSort, bool? sitesSortAsc, string parameterNamePrefix)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.StateDetails);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "id", id);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "stateSpeciesPage", stateSpeciesPage);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "stateSpeciesSort", stateSpeciesSort);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "stateSpeciesSortAsc", stateSpeciesSortAsc);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsitesPage", subsitesPage);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsitesSort", subsitesSort);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsitesSortAsc", subsitesSortAsc);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "sitesPage", sitesPage);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "sitesSort", sitesSort);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "sitesSortAsc", sitesSortAsc);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "parameterNamePrefix", parameterNamePrefix);
-            StateDetailsOverride(callInfo, id, stateSpeciesPage, stateSpeciesSort, stateSpeciesSortAsc, subsitesPage, subsitesSort, subsitesSortAsc, parameterNamePrefix);
+            StateDetailsOverride(callInfo, id, stateSpeciesPage, stateSpeciesSort, stateSpeciesSortAsc, sitesPage, sitesSort, sitesSortAsc, parameterNamePrefix);
             return callInfo;
         }
 
@@ -389,10 +388,10 @@ namespace TMD.Controllers
         }
 
         [NonAction]
-        partial void LocationsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int? page, string sort, bool? sortAsc, string stateFilter, string countyFilter, string siteFilter, string subsiteFilter);
+        partial void LocationsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int? page, string sort, bool? sortAsc, string stateFilter, string countyFilter, string siteFilter);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Locations(int? page, string sort, bool? sortAsc, string stateFilter, string countyFilter, string siteFilter, string subsiteFilter)
+        public override System.Web.Mvc.ActionResult Locations(int? page, string sort, bool? sortAsc, string stateFilter, string countyFilter, string siteFilter)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Locations);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "page", page);
@@ -401,8 +400,7 @@ namespace TMD.Controllers
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "stateFilter", stateFilter);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "countyFilter", countyFilter);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "siteFilter", siteFilter);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "subsiteFilter", subsiteFilter);
-            LocationsOverride(callInfo, page, sort, sortAsc, stateFilter, countyFilter, siteFilter, subsiteFilter);
+            LocationsOverride(callInfo, page, sort, sortAsc, stateFilter, countyFilter, siteFilter);
             return callInfo;
         }
 

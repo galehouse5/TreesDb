@@ -42,13 +42,13 @@ namespace TMD.Mappings
                             : !string.IsNullOrWhiteSpace(m.SecondMeasurer) ? 2
                             : !string.IsNullOrWhiteSpace(m.FirstMeasurer) ? 1 : 0;
                         while (t.Measurers.Count < lastSpecifiedMeasurer) { t.Measurers.Add(Name.Null()); }
-                        while (t.Measurers.Count > lastSpecifiedMeasurer) { t.Measurers.RemoveAt(t.Measurers.Count -1); }
+                        while (t.Measurers.Count > lastSpecifiedMeasurer) { t.Measurers.RemoveAt(t.Measurers.Count - 1); }
                         switch (lastSpecifiedMeasurer)
                         {
-                            case 3 : t.Measurers[2] = Name.CreateFromFormalName(m.ThirdMeasurer); goto case 2;
-                            case 2 : t.Measurers[1] = Name.CreateFromFormalName(m.SecondMeasurer); goto case 1;
-                            case 1 : t.Measurers[0] = Name.CreateFromFormalName(m.FirstMeasurer); goto default;
-                            default : break;
+                            case 3: t.Measurers[2] = Name.CreateFromFormalName(m.ThirdMeasurer); goto case 2;
+                            case 2: t.Measurers[1] = Name.CreateFromFormalName(m.SecondMeasurer); goto case 1;
+                            case 1: t.Measurers[0] = Name.CreateFromFormalName(m.FirstMeasurer); goto default;
+                            default: break;
                         }
                     });
         }
@@ -59,26 +59,18 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Sites, opt => opt.MapFrom(src => src.Sites));
 
             CreateMap<Site, ImportSiteModel>()
-                .ForMember(dest => dest.IsEditing, opt => opt.MapFrom(src => 
+                .ForMember(dest => dest.IsEditing, opt => opt.MapFrom(src =>
                     !ValidationMapper.Map<Site, ImportSiteModel>(src.Validate(ValidationTag.Required)).IsValid()))
-                .ForMember(dest => dest.IsSaveableAndRemovable, opt => opt.MapFrom(src => src.Trip.Sites.Count > 1))
+                .ForMember(dest => dest.IsRemovable, opt => opt.MapFrom(src => src.Trip.Sites.Count > 1))
+                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<Site, ImportSitePhotoGalleryModel>(src)))
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Mapper.Map<Site, CoordinatePickerModel>(src)));
             ValidationMapper.CreateMap<Site, ImportSiteModel>()
-                .ForPath("*.Coordinates.*", "*.Coordinates");
-
-            CreateMap<Subsite, ImportSubsiteModel>()
-                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<Subsite, ImportSubsitePhotoGalleryModel>(src)))
-                .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Mapper.Map<Subsite, CoordinatePickerModel>(src)));
-            ValidationMapper.CreateMap<Subsite, ImportSubsiteModel>()
                 .ForPath("*.Coordinates.*", "*.Coordinates");
 
             CreateMap<ImportSitesModel, Trip>().ForMember(dest => dest.Sites, opt => opt.Ignore())
                 .AfterMap((src, dest) => src.Sites.ForEach(s => Mapper.Map(s, dest.FindSiteById(s.Id))));
 
-            CreateMap<ImportSiteModel, Site>().ForMember(dest => dest.Subsites, opt => opt.Ignore())
-                .AfterMap((src, dest) => src.Subsites.ForEach(ss => Mapper.Map(ss, dest.FindSubsiteById(ss.Id))));
-
-            CreateMap<ImportSubsiteModel, Subsite>()
+            CreateMap<ImportSiteModel, Site>()
                 .ForMember(dest => dest.Photos, opt => opt.Ignore());
         }
 
@@ -88,12 +80,11 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.Sites, opt => opt.MapFrom(src => src.Sites));
 
             CreateMap<Site, ImportSiteTreesModel>();
-            CreateMap<Subsite, ImportSubsiteTreesModel>();
 
             CreateMap<TreeBase, ImportTreeModel>()
                 .ForMember(dest => dest.IsEditing, opt => opt.MapFrom(src =>
                     !ValidationMapper.Map<TreeBase, ImportTreeModel>(src.Validate(ValidationTag.Required)).IsValid()))
-                .ForMember(dest => dest.IsRemovable, opt => opt.MapFrom(src => src.Subsite.Trees.Count > 1))
+                .ForMember(dest => dest.IsRemovable, opt => opt.MapFrom(src => src.Site.Trees.Count > 1))
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<TreeBase, ImportTreePhotoGalleryModel>(src)))
                 .ForMember(dest => dest.Coordinates, opt => opt.MapFrom(src => Mapper.Map<TreeBase, CoordinatePickerModel>(src)));
             ValidationMapper.CreateMap<TreeBase, ImportTreeModel>()
@@ -102,10 +93,7 @@ namespace TMD.Mappings
             CreateMap<ImportTreesModel, Trip>().ForMember(dest => dest.Sites, opt => opt.Ignore())
                 .AfterMap((src, dest) => src.Sites.ForEach(s => Mapper.Map(s, dest.FindSiteById(s.Id))));
 
-            CreateMap<ImportSiteTreesModel, Site>().ForMember(dest => dest.Subsites, opt => opt.Ignore())
-                .AfterMap((src, dest) => src.Subsites.ForEach(ss => Mapper.Map(ss, dest.FindSubsiteById(ss.Id))));
-
-            CreateMap<ImportSubsiteTreesModel, Subsite>().ForMember(dest => dest.Trees, opt => opt.Ignore())
+            CreateMap<ImportSiteTreesModel, Site>().ForMember(dest => dest.Trees, opt => opt.Ignore())
                 .AfterMap((src, dest) => src.Trees.ForEach(t => Mapper.Map(t, dest.FindTreeById(t.Id))));
 
             CreateMap<ImportTreeModel, TreeBase>()
@@ -120,10 +108,8 @@ namespace TMD.Mappings
                 .ForMember(dest => dest.ThirdMeasurer, opt => opt.MapFrom(src => src.Measurers.Count > 2 ? src.Measurers[2].ToFormalName() : string.Empty))
                 .ForMember(dest => dest.Sites, opt => opt.MapFrom(src => src.Sites));
 
-            CreateMap<Site, ImportFinishedSiteModel>();
-
-            CreateMap<Subsite, ImportFinishedSubsiteModel>()
-                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<Subsite, ImportSubsitePhotoGalleryModel>(src)));
+            CreateMap<Site, ImportFinishedSiteModel>()
+                .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<Site, ImportSitePhotoGalleryModel>(src)));
 
             CreateMap<TreeBase, ImportFinishedTreeModel>()
                 .ForMember(dest => dest.Photos, opt => opt.MapFrom(src => Mapper.Map<TreeBase, ImportTreePhotoGalleryModel>(src)));
