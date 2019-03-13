@@ -89,7 +89,7 @@
         return this.each(function () {
             var $gridContainer = $(this);
             $gridContainer.find('tfoot th input[placeholder]').placeholder();
-            $gridContainer.find('thead th.sorting a, thead th.sorting_desc a, thead th.sorting_asc a, div.dataTables_paginate a').click(function (event) {
+            $gridContainer.find('thead th.sortable a, div.dataTables_paginate a').click(function (event) {
                 var $anchor = $(this);
                 $.get($anchor.attr('href'), function (response) {
                     var $newGridContainer = $(response);

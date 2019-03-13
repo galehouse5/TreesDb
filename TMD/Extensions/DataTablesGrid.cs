@@ -415,7 +415,7 @@ namespace TMD.Extensions
                 if (column.CanSort)
                 {
                     string @class = column.IsSorted(model) ? model.SortAscending ? "sorting_asc" : "sorting_desc" : string.Empty;
-                    output.Write("<th class='{0}'>", @class);
+                    output.Write("<th class='sortable {0}'>", @class);
                     output.Write("<a href='{0}'><span>{1}</span></a>", HttpUtility.HtmlEncode(model.GetSortUrl(column.ColumnName, column.DefaultSortAscending)), HttpUtility.HtmlEncode(column.Header));
                 }
                 else
