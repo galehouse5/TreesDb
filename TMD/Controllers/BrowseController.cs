@@ -270,12 +270,5 @@ namespace TMD.Controllers
             var visits = Repositories.Sites.ListRecentSiteVisits(40);
             return PartialView("_RecentTrips", visits.Select(TripLogModel.Create));
         }
-
-        [ChildActionOnly]
-        public virtual ActionResult MostActiveMeasurers()
-        {
-            var measurers = Repositories.Trees.ListMostActiveMeasurers(40);
-            return PartialView("_MostActiveMeasurers", measurers.Select(MeasurerActivityModel.Create));
-        }
     }
 }

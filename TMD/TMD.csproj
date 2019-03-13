@@ -229,7 +229,6 @@
     <Compile Include="Models\Browse\BrowseTreeLocationModel.cs" />
     <Compile Include="Models\Browse\BrowseTreeModel.cs" />
     <Compile Include="Models\Browse\EntityGridModel.cs" />
-    <Compile Include="Models\Browse\MeasurerActivityModel.cs" />
     <Compile Include="Models\Browse\TripLogModel.cs" />
     <Compile Include="Models\ErrorModels.cs" />
     <Compile Include="Models\ExportModel.cs" />
@@ -529,7 +528,6 @@
     <Content Include="Views\Browse\Web.config" />
     <Content Include="Views\Browse\Activity.cshtml" />
     <Content Include="Views\Browse\_RecentTrips.cshtml" />
-    <Content Include="Views\Browse\_MostActiveMeasurers.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Url.cshtml" />
     <Content Include="Views\Shared\_ValidationSummary2.cshtml" />
     <Content Include="Views\Map\Web.config" />

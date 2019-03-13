@@ -114,7 +114,6 @@ namespace TMD.Controllers
             public readonly string Locations = "Locations";
             public readonly string Activity = "Activity";
             public readonly string RecentTrips = "RecentTrips";
-            public readonly string MostActiveMeasurers = "MostActiveMeasurers";
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -129,7 +128,6 @@ namespace TMD.Controllers
             public const string Locations = "Locations";
             public const string Activity = "Activity";
             public const string RecentTrips = "RecentTrips";
-            public const string MostActiveMeasurers = "MostActiveMeasurers";
         }
 
 
@@ -232,7 +230,6 @@ namespace TMD.Controllers
             public class _ViewNamesClass
             {
                 public readonly string _MenuWidget = "_MenuWidget";
-                public readonly string _MostActiveMeasurers = "_MostActiveMeasurers";
                 public readonly string _RecentTrips = "_RecentTrips";
                 public readonly string Activity = "Activity";
                 public readonly string GlobalSpeciesGridPartial = "GlobalSpeciesGridPartial";
@@ -252,7 +249,6 @@ namespace TMD.Controllers
                 public readonly string Web = "Web";
             }
             public readonly string _MenuWidget = "~/Views/Browse/_MenuWidget.cshtml";
-            public readonly string _MostActiveMeasurers = "~/Views/Browse/_MostActiveMeasurers.cshtml";
             public readonly string _RecentTrips = "~/Views/Browse/_RecentTrips.cshtml";
             public readonly string Activity = "~/Views/Browse/Activity.cshtml";
             public readonly string GlobalSpeciesGridPartial = "~/Views/Browse/GlobalSpeciesGridPartial.cshtml";
@@ -423,17 +419,6 @@ namespace TMD.Controllers
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.RecentTrips);
             RecentTripsOverride(callInfo);
-            return callInfo;
-        }
-
-        [NonAction]
-        partial void MostActiveMeasurersOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
-
-        [NonAction]
-        public override System.Web.Mvc.ActionResult MostActiveMeasurers()
-        {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.MostActiveMeasurers);
-            MostActiveMeasurersOverride(callInfo);
             return callInfo;
         }
 
