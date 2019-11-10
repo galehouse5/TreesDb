@@ -131,7 +131,7 @@ namespace TMD.Model.Sites
             {
                 Tree sameTree = Trees.SingleOrDefault(t => t.ShouldMerge(tree));
 
-                if (sameTree != null) { tree.Merge(sameTree); }
+                if (sameTree != null) { sameTree.Merge(tree); }
                 else { AddTree(tree); }
             }
 
